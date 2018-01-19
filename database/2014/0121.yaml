@@ -1,0 +1,38 @@
+---
+cve: CVE-2014-0121
+title: CVE in io.hawt:hawtio-ide
+description: >
+    The admin terminal in Hawt.io does not require authentication, which allows remote attackers to execute arbitrary commands via the k parameter.
+cvss_v2: 7.5
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1072716
+    - https://github.com/hawtio/hawtio/commit/5289715e4f2657562fdddcbad830a30969b96e1e
+    - https://infocon.org/cons/SyScan/SyScan%202015%20Singapore/SyScan%202015%20Singapore%20presentations/SyScan15%20David%20Jorm%20-%20Finding%20and%20exploiting%20novel%20flaws%20in%20Java%20software.pdf
+
+affected:
+    - groupId: io.hawt
+      artifactId: hawtio-ide
+      version:
+        - "!FIXME!"
+fixedin:
+    - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:redhat:jboss_fuse:6.1.0:beta
+#    - cpe:/a:hawt:hawtio 1.2.2 (including) 
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 22.675163 io.hawt:hawtio-redhat-fuse-branding
+# 18.018223 io.hawt:hawtio-aether
+# 18.018223 io.hawt:hawtio-app
+# 18.018223 io.hawt:hawtio-base
+# 18.018223 io.hawt:hawtio-core
+# 18.018223 io.hawt:hawtio-default
+# 18.018223 io.hawt:hawtio-dozer
+# 18.018223 io.hawt:hawtio-embedded
+# 18.018223 io.hawt:hawtio-git
+# 18.018223 io.hawt:hawtio-ide
