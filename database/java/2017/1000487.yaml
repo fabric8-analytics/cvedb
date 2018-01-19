@@ -12,9 +12,9 @@ affected:
     - groupId: org.codehaus.plexus
       artifactId: plexus-utils
       version:
-        - "!FIXME!"
-fixedin:
-    - "!FIXME!"
+        - "<=3.0.15"
+      fixedin:
+        - ">=3.0.16"
 
 # Additional information:
 #  configurations:
