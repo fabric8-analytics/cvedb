@@ -1,0 +1,36 @@
+---
+cve: CVE-2017-1000487
+title: CVE in org.codehaus.plexus:plexus-utils
+description: >
+    Plexus-utils before 3.0.16 is vulnerable to command injection because it does not correctly process the contents of double quoted strings.
+cvss_v2: 7.5
+references:
+    - https://github.com/codehaus-plexus/plexus-utils/commit/b38a1b3a4352303e4312b2bb601a0d7ec6e28f41
+    - https://snyk.io/vuln/SNYK-JAVA-ORGCODEHAUSPLEXUS-31522
+
+affected:
+    - groupId: org.codehaus.plexus
+      artifactId: plexus-utils
+      version:
+        - "<=3.0.15"
+      fixedin:
+        - ">=3.0.16"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:plexus-utils_project:plexus-utils 3.0.16 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 35.217834 plexus:plexus-utils
+# 33.665863 org.codehaus.plexus:plexus-utils
+# 26.439701 plexus:plexus
+# 23.800674 plexus:plexus-action
+# 23.800674 plexus:plexus-activity
+# 23.800674 plexus:plexus-appserver
+# 23.800674 plexus:plexus-archiver
+# 23.800674 plexus:plexus-bayesian
+# 23.800674 plexus:plexus-cdc
+# 23.800674 plexus:plexus-command
