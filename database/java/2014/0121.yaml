@@ -1,6 +1,6 @@
 ---
 cve: CVE-2014-0121
-title: CVE in io.hawt:hawtio-ide
+title: CVE in io.hawt:hawtio-karaf-terminal
 description: >
     The admin terminal in Hawt.io does not require authentication, which allows remote attackers to execute arbitrary commands via the k parameter.
 cvss_v2: 7.5
@@ -11,28 +11,8 @@ references:
 
 affected:
     - groupId: io.hawt
-      artifactId: hawtio-ide
+      artifactId: hawtio-karaf-terminal
       version:
-        - "!FIXME!"
-fixedin:
-    - "!FIXME!"
-
-# Additional information:
-#  configurations:
-#    - cpe:/a:hawt:hawtio 1.2.2 (including)
-#    - cpe:/a:redhat:jboss_fuse:6.1.0:beta
-#
-# All available versions:
-#versions
-#
-# Other possible package names:
-# 22.675163 io.hawt:hawtio-redhat-fuse-branding
-# 18.018223 io.hawt:hawtio-aether
-# 18.018223 io.hawt:hawtio-app
-# 18.018223 io.hawt:hawtio-base
-# 18.018223 io.hawt:hawtio-core
-# 18.018223 io.hawt:hawtio-default
-# 18.018223 io.hawt:hawtio-dozer
-# 18.018223 io.hawt:hawtio-embedded
-# 18.018223 io.hawt:hawtio-git
-# 18.018223 io.hawt:hawtio-ide
+        - "<=1.2.2"
+      fixedin:
+        - ">=1.2.3"
