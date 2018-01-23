@@ -1,6 +1,6 @@
 ---
 cve: CVE-2017-17837
-title: CVE in org.apache.deltaspike.modules:deltaspike-jsf-module-impl
+title: CVE in org.apache.deltaspike.test:deltaspike-cdictrl-tck
 description: >
     The Apache DeltaSpike-JSF 1.8.0 module has a XSS injection leak in the windowId handling. The default size of the windowId get's cut off after 10 characters (by default), so the impact might be limited. A fix got applied and released in Apache deltaspike-1.8.1.
 cvss_v2: 4.3
@@ -9,9 +9,28 @@ references:
     - https://issues.apache.org/jira/browse/DELTASPIKE-1307
 
 affected:
-    - groupId: org.apache.deltaspike.modules
-      artifactId: deltaspike-jsf-module-impl
+    - groupId: org.apache.deltaspike.test
+      artifactId: deltaspike-cdictrl-tck
       version:
-        - "1.8.0"
+        - "!FIXME!"
 fixedin:
-    - "1.8.1"
+    - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:deltaspike:1.8.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 23.483854 org.apache.deltaspike.modules:deltaspike-jsf-module-api
+# 23.483854 org.apache.deltaspike.modules:deltaspike-jsf-module-impl
+# 19.686937 org.apache.deltaspike.cdictrl:deltaspike-cdictrl-api
+# 19.686937 org.apache.deltaspike.cdictrl:deltaspike-cdictrl-openejb
+# 19.686937 org.apache.deltaspike.cdictrl:deltaspike-cdictrl-owb
+# 19.686937 org.apache.deltaspike.cdictrl:deltaspike-cdictrl-servlet
+# 19.686937 org.apache.deltaspike.cdictrl:deltaspike-cdictrl-weld
+# 19.686937 org.apache.deltaspike.core:deltaspike-core-api
+# 19.686937 org.apache.deltaspike.core:deltaspike-core-impl
+# 19.686937 org.apache.deltaspike.test:deltaspike-cdictrl-tck
