@@ -7,11 +7,10 @@ cvss_v2: 4.3
 references:
     - https://git-wip-us.apache.org/repos/asf?p=deltaspike.git;h=4e25023
     - https://issues.apache.org/jira/browse/DELTASPIKE-1307
-
 affected:
     - groupId: org.apache.deltaspike.modules
       artifactId: deltaspike-jsf-module-impl
       version:
-        - "1.8.0"
-fixedin:
-    - "1.8.1"
+        - "==1.8.0"
+      fixedin:
+        - "==1.8.1"
