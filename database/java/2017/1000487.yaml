@@ -7,11 +7,10 @@ cvss_v2: 7.5
 references:
     - https://github.com/codehaus-plexus/plexus-utils/commit/b38a1b3a4352303e4312b2bb601a0d7ec6e28f41
     - https://snyk.io/vuln/SNYK-JAVA-ORGCODEHAUSPLEXUS-31522
-
 affected:
     - groupId: org.codehaus.plexus
       artifactId: plexus-utils
       version:
         - "<=3.0.15"
-fixedin:
-    - ">=3.0.16"
+      fixedin:
+        - ">=3.0.16"

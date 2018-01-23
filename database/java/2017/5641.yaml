@@ -10,7 +10,6 @@ references:
     - http://www.securitytracker.com/id/1038273
     - https://issues.apache.org/jira/browse/FLEX-35290
     - https://www.kb.cert.org/vuls/id/307983
-
 affected:
     - groupId: org.apache.flex.blazeds
       artifactId: flex-messaging-core
