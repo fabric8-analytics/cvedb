@@ -1,6 +1,6 @@
 ---
 cve: CVE-2014-0120
-title: CVE in io.hawt:hawtio-ide
+title: CVE in io.hawt:hawtio-karaf-terminal
 description: >
     Cross-site request forgery (CSRF) vulnerability in the admin terminal in Hawt.io allows remote attackers to hijack the authentication of arbitrary users for requests that run commands on the Karaf server, as demonstrated by running "shutdown -f."
 cvss_v2: 6.8
@@ -11,28 +11,8 @@ references:
 
 affected:
     - groupId: io.hawt
-      artifactId: hawtio-ide
+      artifactId: hawtio-karaf-terminal
       version:
-        - "!FIXME!"
-fixedin:
-    - "!FIXME!"
-
-# Additional information:
-#  configurations:
-#    - cpe:/a:hawt:hawtio 1.2.2 (including)
-#    - cpe:/a:redhat:jboss_fuse:6.1.0:beta
-#
-# All available versions:
-#versions
-#
-# Other possible package names:
-# 22.675163 io.hawt:hawtio-redhat-fuse-branding
-# 18.018223 io.hawt:hawtio-aether
-# 18.018223 io.hawt:hawtio-app
-# 18.018223 io.hawt:hawtio-base
-# 18.018223 io.hawt:hawtio-core
-# 18.018223 io.hawt:hawtio-default
-# 18.018223 io.hawt:hawtio-dozer
-# 18.018223 io.hawt:hawtio-embedded
-# 18.018223 io.hawt:hawtio-git
-# 18.018223 io.hawt:hawtio-ide
+        - "<=1.2.2"
+      fixedin:
+        - ">=1.2.3"
