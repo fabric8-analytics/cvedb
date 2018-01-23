@@ -1,0 +1,36 @@
+---
+cve: CVE-2018-5214
+title: CVE in com.nhl.link.move:link-move-json
+description: >
+    The "Add Link to Facebook" plugin through 2.3 for WordPress has XSS via the al2fb_facebook_id parameter to wp-admin/profile.php.
+cvss_v2: 3.5
+references:
+    - https://github.com/d4wner/Vulnerabilities-Report/blob/master/Add-Link-to-Facebook.md
+    - https://wordpress.org/support/topic/stored-xss-bug-at-the-latest-version-of-add-link-to-facebook/
+
+affected:
+    - groupId: com.nhl.link.move
+      artifactId: link-move-json
+      version:
+        - "!FIXME!"
+fixedin:
+    - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:add_link_to_facebook_project:add_link_to_facebook:::~~~wordpress~~ 2.3 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 27.638126 com.arcbees.facebook:facebook
+# 27.161516 com.nhl.link.rest:link-rest
+# 27.161516 com.nhl.link.move:link-move
+# 26.489485 com.github.asne.facebook:facebook
+# 24.68558 com.nhl.link.rest:link-rest-annotations
+# 24.68558 com.nhl.link.rest:link-rest-base
+# 24.68558 com.nhl.link.rest:link-rest-client
+# 24.68558 com.nhl.link.rest:link-rest-sencha
+# 24.68558 com.nhl.link.move:link-move-csv
+# 24.68558 com.nhl.link.move:link-move-json
