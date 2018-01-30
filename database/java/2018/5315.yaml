@@ -1,0 +1,36 @@
+---
+cve: CVE-2018-5315
+title: CVE in com.googlecode.events-on-fire:events-on-fire
+description: >
+    The Wachipi WP Events Calendar plugin 1.0 for WordPress has SQL Injection via the event_id parameter to event.php.
+cvss_v2: 7.5
+references:
+    - http://packetstormsecurity.com/files/145833/WordPress-Events-Calendar-1.0-SQL-Injection.html
+    - https://www.exploit-db.com/exploits/43479/
+
+affected:
+    - groupId: com.googlecode.events-on-fire
+      artifactId: events-on-fire
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:wp_events_calendar_project:wp_events_calendar:1.0::~~~wordpress~~
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 30.638348 org.zkoss.calendar:calendar
+# 25.320892 org.sakaiproject.calendar:sakai-calendar-api
+# 25.320892 org.sakaiproject.calendar:sakai-calendar-bundles
+# 25.320892 org.sakaiproject.calendar:sakai-calendar-hbm
+# 25.320892 org.sakaiproject.calendar:sakai-calendar-impl
+# 25.320892 org.sakaiproject.calendar:sakai-calendar-util
+# 25.320892 org.sakaiproject.calendar:sakai-calendar-tool
+# 25.320892 org.sakaiproject.calendar:sakai-calendar-help
+# 25.320892 org.sakaiproject.calendar:sakai-calendar-pack
+# 24.758419 com.googlecode.events-on-fire:events-on-fire
