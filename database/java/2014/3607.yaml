@@ -1,0 +1,40 @@
+---
+cve: CVE-2014-3607
+title: CVE in org.ldaptive:ldaptive
+description: >
+    DefaultHostnameVerifier in Ldaptive (formerly vt-ldap) does not properly verify that the server hostname matches a domain name in the subject's Common Name (CN) field of the X.509 certificate, which allows man-in-the-middle attackers to spoof SSL servers via an arbitrary valid certificate.
+cvss_v2: 4.3
+references:
+    - http://shibboleth.net/community/advisories/secadv_20140919.txt
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1140438
+    - https://code.google.com/archive/p/vt-middleware/issues/226
+    - https://code.google.com/archive/p/vt-middleware/issues/227
+    - https://code.google.com/archive/p/vt-middleware/issues/228
+
+affected:
+    - groupId: org.ldaptive
+      artifactId: ldaptive
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:ldaptive:ldaptive 1.0.5 (excluding)
+#    - cpe:/a:ldaptive:vt-ldap 3.3.8 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 25.661228 org.ldaptive:ldaptive
+# 23.765228 org.ldaptive:ldaptive-apache
+# 23.765228 org.ldaptive:ldaptive-beans
+# 23.765228 org.ldaptive:ldaptive-jldap
+# 23.765228 org.ldaptive:ldaptive-json
+# 23.765228 org.ldaptive:ldaptive-ldapi
+# 23.765228 org.ldaptive:ldaptive-opendj
+# 23.765228 org.ldaptive:ldaptive-templates
+# 23.765228 org.ldaptive:ldaptive-unboundid
+# 23.765228 org.ldaptive:ldaptive-webapp
