@@ -1,0 +1,38 @@
+---
+cve: CVE-2017-17485
+title: CVE in com.fasterxml.jackson.core:jackson-databind
+description: >
+    FasterXML jackson-databind through 2.8.10 and 2.9.x through 2.9.3 allows unauthenticated remote code execution because of an incomplete fix for the CVE-2017-7525 deserialization flaw. This is exploitable by sending maliciously crafted JSON input to the readValue method of the ObjectMapper, bypassing a blacklist that is ineffective if the Spring libraries are available in the classpath.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/archive/1/archive/1/541652/100/0/threaded
+    - https://access.redhat.com/errata/RHSA-2018:0116
+    - https://github.com/FasterXML/jackson-databind/issues/1855
+    - https://github.com/irsl/jackson-rce-via-spel/
+
+affected:
+    - groupId: com.fasterxml.jackson.core
+      artifactId: jackson-databind
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:fasterxml:jackson-databind 2.9.3 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 25.207308 com.fasterxml:jackson-xml-databind
+# 24.408531 com.fasterxml.jackson.core:jackson-databind
+# 15.761789 com.fasterxml:jackson-module-scala
+# 15.761789 com.fasterxml:jackson-module-hibernate
+# 15.761789 com.fasterxml:jackson-module-afterburner
+# 15.761789 com.fasterxml:jackson-module-json-org
+# 13.949345 com.fasterxml.jackson:jackson-datatype-guava
+# 13.949345 com.fasterxml.jackson:jackson-dataformat-csv
+# 13.949345 com.fasterxml.jackson:jackson-datatype-json-org
+# 13.949345 com.fasterxml.jackson:jackson-module-afterburner
