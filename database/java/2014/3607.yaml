@@ -10,31 +10,16 @@ references:
     - https://code.google.com/archive/p/vt-middleware/issues/226
     - https://code.google.com/archive/p/vt-middleware/issues/227
     - https://code.google.com/archive/p/vt-middleware/issues/228
-
 affected:
     - groupId: org.ldaptive
       artifactId: ldaptive
       version:
-        - "!FIXME!"
+        - "<=1.0.4"
       fixedin:
-        - "!FIXME!"
-
-# Additional information:
-#  configurations:
-#    - cpe:/a:ldaptive:ldaptive 1.0.5 (excluding)
-#    - cpe:/a:ldaptive:vt-ldap 3.3.8 (excluding)
-#
-# All available versions:
-#versions
-#
-# Other possible package names:
-# 25.661228 org.ldaptive:ldaptive
-# 23.765228 org.ldaptive:ldaptive-apache
-# 23.765228 org.ldaptive:ldaptive-beans
-# 23.765228 org.ldaptive:ldaptive-jldap
-# 23.765228 org.ldaptive:ldaptive-json
-# 23.765228 org.ldaptive:ldaptive-ldapi
-# 23.765228 org.ldaptive:ldaptive-opendj
-# 23.765228 org.ldaptive:ldaptive-templates
-# 23.765228 org.ldaptive:ldaptive-unboundid
-# 23.765228 org.ldaptive:ldaptive-webapp
+        - ">=1.0.5"
+    - groupId: edu.vt.middleware
+      artifactId: vt-ldap
+      version:
+        - "<=3.3.7"
+      fixedin:
+        - ">=3.3.8"
