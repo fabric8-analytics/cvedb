@@ -1,0 +1,36 @@
+---
+cve: CVE-2014-6071
+title: CVE in net.disy.jquery:jquery
+description: >
+    jQuery 1.4.2 allows remote attackers to conduct cross-site scripting (XSS) attacks via vectors related to use of the text method inside after.
+cvss_v2: 4.3
+references:
+    - http://seclists.org/fulldisclosure/2014/Sep/10
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1136683
+
+affected:
+    - groupId: net.disy.jquery
+      artifactId: jquery
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:jquery:jquery:1.4.2
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 16.371483 net.disy.jquery:jquery
+# 15.198333 com.efsavage.jquery:jquery-maven
+# 15.198333 net.disy.jquery:jquery-ui
+# 14.323454 org.cometd.jquery:cometd-jquery-examples
+# 14.323454 net.disy.jquery:jquery-ui-custom
+# 13.890839 com.asayama.gwt.jquery:gwt-jquery
+# 13.645922 com.soashable.jquery:sanitizeHtml-jquery-plugin
+# 12.063742 com.googlecode.wicket-jquery-ui:wicket-jquery-ui
+# 12.063742 com.googlecode.wicket-jquery-ui:jquery-ui-calendar
+# 12.063742 com.googlecode.wicket-jquery-ui:jquery-ui-core
