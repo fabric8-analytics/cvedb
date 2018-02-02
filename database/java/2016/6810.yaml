@@ -9,30 +9,13 @@ references:
     - http://www.securityfocus.com/bid/94882
     - http://www.securitytracker.com/id/1037475
     - https://lists.apache.org/thread.html/924a3a27fad192d711436421e02977ff90d9fc0f298e1efe6757cfbc@%3Cusers.activemq.apache.org%3E
-
+    - https://github.com/apache/activemq/commit/77b827f46e5198f7db1b5885bda71cb2af84e04d
+    - https://issues.apache.org/jira/browse/AMQ-6468
 affected:
     - groupId: org.apache.activemq
-      artifactId: apache-activemq
+      artifactId: activemq-web-console
       version:
-        - "!FIXME!"
+        - "<=5.14.1"
+        - ">=5.0.0"
       fixedin:
-        - "!FIXME!"
-
-# Additional information:
-#  configurations:
-#    - cpe:/a:apache:activemq 5.14.2 (excluding)
-#
-# All available versions:
-#versions
-#
-# Other possible package names:
-# 16.193707 org.apache.activemq:apache-activemq
-# 14.049241 org.apache.servicemix.activemq:org.apache.servicemix.activemq
-# 13.722623 org.apache.servicemix.servicemix.activemq:org.apache.servicemix.activemq
-# 12.735824 org.apache.servicemix.activemq:org.apache.servicemix.activemq.camel
-# 12.735824 org.apache.servicemix.activemq:org.apache.servicemix.activemq.service
-# 12.735824 org.apache.servicemix.activemq:org.apache.servicemix.activemq.web
-# 12.735824 org.apache.servicemix.activemq:org.apache.servicemix.activemq.commands
-# 12.409205 org.apache.servicemix.servicemix.activemq:org.apache.servicemix.activemq.commands
-# 11.840504 org.apache.geronimo.configs:activemq
-# 10.914676 org.apache.activemq:activemq-branding
+        - ">=5.14.2"
