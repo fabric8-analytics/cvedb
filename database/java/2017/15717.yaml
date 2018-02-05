@@ -1,0 +1,37 @@
+---
+cve: CVE-2017-15717
+title: CVE in org.apache.sling:org.apache.sling.xss.compat
+description: >
+    A flaw in the way URLs are escaped and encoded in the org.apache.sling.xss.impl.XSSAPIImpl#getValidHref and org.apache.sling.xss.impl.XSSFilterImpl#isValidHref allows special crafted URLs to pass as valid, although they carry XSS payloads. The affected versions are Apache Sling XSS Protection API 1.0.4 to 1.0.18, Apache Sling XSS Protection API Compat 1.1.0 and Apache Sling XSS Protection API 2.0.0.
+cvss_v2: 4.3
+references:
+    - https://s.apache.org/CVE-2017-15717
+
+affected:
+    - groupId: org.apache.sling
+      artifactId: org.apache.sling.xss.compat
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:sling_xss_protection_api:2.0.0
+#    - cpe:/a:apache:sling_xss_protection_api_compat:1.1.0
+#    - cpe:/a:apache:sling_xss_protection_api 1.0.18 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 48.136112 org.apache.sling:org.apache.sling.xss.compat
+# 46.831917 org.apache.sling:org.apache.sling.xss
+# 23.439898 org.apache.sling:org.apache.sling.api
+# 21.12532 org.apache.sling:org.apache.sling.servlets.compat
+# 21.117924 org.apache.sling:org.apache.sling.hc.api
+# 21.117924 org.apache.sling:org.apache.sling.models.api
+# 21.117924 org.apache.sling:org.apache.sling.validation.api
+# 21.117924 org.apache.sling:org.apache.sling.scripting.api
+# 21.117924 org.apache.sling:org.apache.sling.event.api
+# 21.117924 org.apache.sling:org.apache.sling.caconfig.api
