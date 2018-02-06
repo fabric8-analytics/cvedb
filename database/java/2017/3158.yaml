@@ -1,0 +1,28 @@
+---
+cve: CVE-2017-3158
+title: CVE in org.apache.guacamole:guacamole-common
+description: >
+    A race condition in Guacamole's terminal emulator in versions 0.9.5 through 0.9.10-incubating could allow writes of blocks of printed data to overlap. Such overlapping writes could cause packet data to be misread as the packet length, resulting in the remaining data being written beyond the end of a statically-allocated buffer.
+cvss_v2: 6.8
+references:
+    - https://lists.apache.org/thread.html/b218d36bfdaf655d27382daec4dcd02ec717631f4aee8b7e4300ad65@%3Cuser.guacamole.apache.org%3E
+
+affected:
+    - groupId: org.apache.guacamole
+      artifactId: guacamole-common
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:guacamole:0.9.10-incubating
+#    - cpe:/a:apache:guacamole 0.9.9 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 15.162962 org.apache.guacamole:guacamole-common
+# 15.162962 org.apache.guacamole:guacamole-ext
