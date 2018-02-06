@@ -1,0 +1,36 @@
+---
+cve: CVE-2012-3353
+title: CVE in org.apache.sling:org.apache.sling.jcr.contentloader
+description: >
+    The Apache Sling JCR ContentLoader 2.1.4 XmlReader used in the Sling JCR content loader module makes it possible to import arbitrary files in the content repository, including local files, causing potential information leaks. Users should upgrade to version 2.1.6 of the JCR ContentLoader
+cvss_v2: 5.0
+references:
+    - https://issues.apache.org/jira/browse/SLING-2512
+    - https://lists.apache.org/thread.html/50994d80dd5cf93f1365dacfcaecf5c12f1efe522c4ff6040b3c521a@%3Cdev.sling.apache.org%3E
+
+affected:
+    - groupId: org.apache.sling
+      artifactId: org.apache.sling.jcr.contentloader
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:sling_jcr_contentloader:2.1.4
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 54.058586 org.apache.sling:org.apache.sling.jcr.contentloader
+# 34.670876 org.apache.sling:org.apache.sling.jcr.jcr-wrapper
+# 32.26755 org.apache.sling:org.apache.sling.jcr.registration
+# 32.26755 org.apache.sling:org.apache.sling.jcr.davex
+# 32.26755 org.apache.sling:org.apache.sling.jcr.resource
+# 32.26755 org.apache.sling:org.apache.sling.jcr.base
+# 32.26755 org.apache.sling:org.apache.sling.jcr.contentparser
+# 32.26755 org.apache.sling:org.apache.sling.jcr.webdav
+# 32.26755 org.apache.sling:org.apache.sling.jcr.repoinit
+# 32.26755 org.apache.sling:org.apache.sling.jcr.api
