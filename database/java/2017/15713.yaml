@@ -1,49 +1,19 @@
 ---
 cve: CVE-2017-15713
-title: CVE in org.apache.hadoop:hadoop-mapreduce-examples
+title: Apache Hadoop MapReduce job history server vulnerability
 description: >
     Vulnerability in Apache Hadoop 0.23.x, 2.x before 2.7.5, 2.8.x before 2.8.3, and 3.0.0-alpha through 3.0.0-beta1 allows a cluster user to expose private files owned by the user running the MapReduce job history server process. The malicious user can construct a configuration file containing XML directives that reference sensitive files on the MapReduce job history server host.
 cvss_v2: 4.0
 references:
     - https://lists.apache.org/thread.html/a790a251ace7213bde9f69777dedb453b1a01a6d18289c14a61d4f91@%3Cgeneral.hadoop.apache.org%3E
-
+    - https://nvd.nist.gov/vuln/detail/CVE-2017-15713
+    - https://github.com/apache/hadoop/commit/5eb7dbe9b31a45f57f2e1623aa1c9ce84a56c4d1
 affected:
     - groupId: org.apache.hadoop
-      artifactId: hadoop-mapreduce-examples
+      artifactId: hadoop-mapreduce-client-hs
       version:
-        - "!FIXME!"
+        - "<=0.23.11,0.23.0"
+        - "<=2.8.2,2.0.0-alpha"
+        - "<=3.0.0-beta1,3.0.0-alpha"
       fixedin:
-        - "!FIXME!"
-
-# Additional information:
-#  configurations:
-#    - cpe:/a:apache:hadoop:3.0.0:alpha2
-#    - cpe:/a:apache:hadoop:2.1.0:beta
-#    - cpe:/a:apache:hadoop:2.0.2:alpha
-#    - cpe:/a:apache:hadoop:2.0.1:alpha
-#    - cpe:/a:apache:hadoop:2.0.0:alpha
-#    - cpe:/a:apache:hadoop:2.0.4:alpha
-#    - cpe:/a:apache:hadoop:3.0.0:beta1
-#    - cpe:/a:apache:hadoop:3.0.0:alpha3
-#    - cpe:/a:apache:hadoop:3.0.0:alpha1
-#    - cpe:/a:apache:hadoop:2.0.5:alpha
-#    - cpe:/a:apache:hadoop:2.1.1:beta
-#    - cpe:/a:apache:hadoop:3.0.0:alpha4
-#    - cpe:/a:apache:hadoop:2.0.3:alpha
-#    - cpe:/a:apache:hadoop 2.8.2 (including)
-#    - cpe:/a:apache:hadoop:2.0.6:alpha
-#
-# All available versions:
-#versions
-#
-# Other possible package names:
-# 17.272839 org.apache.hadoop:hadoop-mapreduce-examples
-# 15.646426 org.apache.hadoop:hadoop-mapreduce-client-app
-# 15.646426 org.apache.hadoop:hadoop-mapreduce-client-common
-# 15.646426 org.apache.hadoop:hadoop-mapreduce-client-core
-# 15.646426 org.apache.hadoop:hadoop-mapreduce-client-hs
-# 15.646426 org.apache.hadoop:hadoop-mapreduce-client-jobclient
-# 15.646426 org.apache.hadoop:hadoop-mapreduce-client-nativetask
-# 15.646426 org.apache.hadoop:hadoop-mapreduce-client-shuffle
-# 14.349703 org.apache.hadoop:hadoop-mapreduce-client-hs-plugins
-# 12.205909 org.apache.tez:tez-mapreduce
+        - ">=3.0.0"
