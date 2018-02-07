@@ -13,6 +13,8 @@ affected:
     - groupId: com.fasterxml.jackson.core
       artifactId: jackson-databind
       version:
-        - "<=2.9.3,2.8.10"
+        - "<=2.9.3,2.9.0"
+        - "<=2.8.10,2.8.0"
       fixedin:
-        - ">=2.9.4,2.8.11"
+        - ">=2.9.4"
+        - "==2.8.11"
