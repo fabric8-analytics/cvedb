@@ -1,0 +1,36 @@
+---
+cve: CVE-2018-6196
+title: CVE in com.m3:curly-scala_2.9.3
+description: >
+    w3m through 0.5.3 is prone to an infinite recursion flaw in HTMLlineproc0 because the feed_table_block_tag function in table.c does not prevent a negative indent value.
+cvss_v2: 5.0
+references:
+    - https://github.com/tats/w3m/commit/8354763b90490d4105695df52674d0fcef823e92
+    - https://github.com/tats/w3m/issues/88
+
+affected:
+    - groupId: com.m3
+      artifactId: curly-scala_2.9.3
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:w3m_project:w3m 0.5.3 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.7726548 com.uber.m3:tally-m3
+# 0.72712314 com.m3:m3util_2.9.3
+# 0.71917534 com.m3:m3util_2.10
+# 0.71917534 com.m3:m3util_2.9.1
+# 0.71917534 com.m3:m3util_2.9.2
+# 0.71917534 com.m3:m3util_2.11
+# 0.68927306 com.m3:curly-scala_2.9.3
+# 0.30755064 org.w3:banana-n3-js_sjs0.6_2.11
+# 0.29594153 org.hisrc.w3c:w3c-schemas
+# 0.2884642 org.w3:banana-plantain_sjs0.6_2.11
