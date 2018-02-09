@@ -5,41 +5,13 @@ description: >
     The password hash generation algorithm in the BUILTIN authentication functionality for Apache Derby before 10.6.1.0 performs a transformation that reduces the size of the set of inputs to SHA-1, which produces a small search space that makes it easier for local and possibly remote attackers to crack passwords by generating hash collisions, related to password substitution.
 cvss_v2: 2.1
 references:
-    - http://blogs.sun.com/kah/entry/derby_10_6_1_has
     - http://db.apache.org/derby/releases/release-10.6.1.0.cgi#Fix+for+Security+Bug+CVE-2009-4269
     - http://marc.info/?l=apache-db-general&m=127428514905504&w=1
-    - http://marcellmajor.com/derbyhash.html
-    - http://secunia.com/advisories/42948
-    - http://secunia.com/advisories/42970
-    - http://www.oracle.com/technetwork/topics/security/cpujan2011-194091.html
-    - http://www.securityfocus.com/bid/42637
-    - http://www.securitytracker.com/id?1024977
-    - http://www.vupen.com/english/advisories/2011/0149
     - https://issues.apache.org/jira/browse/DERBY-4483
-
 affected:
     - groupId: org.apache.derby
       artifactId: derby
       version:
-        - "!FIXME!"
+        - "<=10.5.3.0"
       fixedin:
-        - "!FIXME!"
-
-# Additional information:
-#  configurations:
-#    - cpe:/a:apache:derby 10.5.3.0 (including)
-#
-# All available versions:
-#versions
-#
-# Other possible package names:
-# 1.1562482 org.apache.derby:derby
-# 1.1521647 org.apache.servicemix.bundles:org.apache.servicemix.bundles.derby
-# 1.1179079 org.apache.geronimo.configs:derby
-# 0.87986386 org.apache.geronimo.gshell.commands:gshell-builtin
-# 0.8192302 org.apache.aries.samples.ariestrader:org.apache.aries.samples.ariestrader.derby.ds
-# 0.7367644 org.apache:apache-jar-resource-bundle
-# 0.7314854 org.apache.geronimo:geronimo-derby
-# 0.7162112 org.apache:apache-incubator-disclaimer-resource-bundle
-# 0.7162112 org.apache:apache-license-header-resource-bundle
-# 0.6931451 org.apache.geronimo.modules:geronimo-derby
+        - ">=10.6.1.0"
