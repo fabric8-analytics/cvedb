@@ -1,0 +1,36 @@
+---
+cve: CVE-2017-15718
+title: CVE in org.apache.hadoop:hadoop-yarn-server-nodemanager
+description: >
+    The YARN NodeManager in Apache Hadoop 2.7.3 and 2.7.4 can leak the password for credential store provider used by the NodeManager to YARN Applications.
+cvss_v2: 5.0
+references:
+    - https://lists.apache.org/thread.html/773c93c2d8a6a52bbe97610c2b1c2ad205b970e1b8c04fb5b2fccad6@%3Cgeneral.hadoop.apache.org%3E
+
+affected:
+    - groupId: org.apache.hadoop
+      artifactId: hadoop-yarn-server-nodemanager
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:hadoop:2.7.4
+#    - cpe:/a:apache:hadoop:2.7.3
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 3.3352067 org.apache.hadoop:hadoop-yarn-server-nodemanager
+# 3.3352067 org.apache.hadoop:hadoop-yarn-server-nodemanager
+# 2.6194127 org.apache.hadoop:hadoop-yarn-applications-distributedshell
+# 2.6194127 org.apache.hadoop:hadoop-yarn-applications-distributedshell
+# 1.8624603 org.apache.hadoop:hadoop-yarn-applications-unmanaged-am-launcher
+# 1.8624603 org.apache.hadoop:hadoop-yarn-applications-unmanaged-am-launcher
+# 1.4054506 org.apache.hadoop:hadoop-yarn-api
+# 1.4054506 org.apache.hadoop:hadoop-yarn-client
+# 1.4054506 org.apache.hadoop:hadoop-yarn-common
+# 1.4054506 org.apache.hadoop:hadoop-yarn-registry
