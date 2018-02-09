@@ -6,13 +6,31 @@ description: >
 cvss_v2: 5.0
 references:
     - https://lists.apache.org/thread.html/773c93c2d8a6a52bbe97610c2b1c2ad205b970e1b8c04fb5b2fccad6@%3Cgeneral.hadoop.apache.org%3E
-    - https://nvd.nist.gov/vuln/detail/CVE-2017-15718
-    - https://github.com/apache/hadoop/commit/bfa736b7782b0075b3dc4c956ae7426952c49f83
+
 affected:
     - groupId: org.apache.hadoop
       artifactId: hadoop-yarn-server-nodemanager
       version:
-        - "==2.7.3"
-        - "==2.7.4"
+        - "!FIXME!"
       fixedin:
-        - ">=2.7.5"
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:hadoop:2.7.3
+#    - cpe:/a:apache:hadoop:2.7.4
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 3.3352067 org.apache.hadoop:hadoop-yarn-server-nodemanager
+# 3.3352067 org.apache.hadoop:hadoop-yarn-server-nodemanager
+# 2.6194127 org.apache.hadoop:hadoop-yarn-applications-distributedshell
+# 2.6194127 org.apache.hadoop:hadoop-yarn-applications-distributedshell
+# 1.8624603 org.apache.hadoop:hadoop-yarn-applications-unmanaged-am-launcher
+# 1.8624603 org.apache.hadoop:hadoop-yarn-applications-unmanaged-am-launcher
+# 1.4054506 org.apache.hadoop:hadoop-yarn-api
+# 1.4054506 org.apache.hadoop:hadoop-yarn-client
+# 1.4054506 org.apache.hadoop:hadoop-yarn-common
+# 1.4054506 org.apache.hadoop:hadoop-yarn-registry
