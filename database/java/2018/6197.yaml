@@ -1,0 +1,37 @@
+---
+cve: CVE-2018-6197
+title: CVE in com.m3:curly-scala_2.9.3
+description: >
+    w3m through 0.5.3 is prone to a NULL pointer dereference flaw in formUpdateBuffer in form.c.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/102846
+    - https://github.com/tats/w3m/commit/7fdc83b0364005a0b5ed869230dd81752ba022e8
+    - https://github.com/tats/w3m/issues/89
+
+affected:
+    - groupId: com.m3
+      artifactId: curly-scala_2.9.3
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:w3m_project:w3m 0.5.3 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.79453474 com.m3:m3util_2.9.3
+# 0.79241335 com.uber.m3:tally-m3
+# 0.7886096 com.m3:m3util_2.10
+# 0.7886096 com.m3:m3util_2.9.1
+# 0.7886096 com.m3:m3util_2.9.2
+# 0.7886096 com.m3:m3util_2.11
+# 0.76631725 com.m3:curly-scala_2.9.3
+# 0.31744063 org.w3:banana-n3-js_sjs0.6_2.11
+# 0.29493055 org.hisrc.w3c:w3c-schemas
+# 0.28052676 org.jibx.schema.org.w3:org.jibx.schema.org.w3._2001.xml
