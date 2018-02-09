@@ -1,0 +1,36 @@
+---
+cve: CVE-2016-8744
+title: CVE in org.apache.brooklyn:apache-brooklyn
+description: >
+    Apache Brooklyn uses the SnakeYAML library for parsing YAML inputs. SnakeYAML allows the use of YAML tags to indicate that SnakeYAML should unmarshal data to a Java type. In the default configuration in Brooklyn before 0.10.0, SnakeYAML will allow unmarshalling to any Java type available on the classpath. This could provide an authenticated user with a means to cause the JVM running Brooklyn to load and run Java code without detection by Brooklyn. Such code would have the privileges of the Java process running Brooklyn, including the ability to open files and network connections, and execute system commands. There is known to be a proof-of-concept exploit using this vulnerability.
+cvss_v2: 9.0
+references:
+    - https://brooklyn.apache.org/community/security/CVE-2016-8744.html
+    - https://lists.apache.org/thread.html/3f4d09c1c1a3cdfd1da0a05c8362769b917c078eed5b6c2f8e37a761@%3Cdev.brooklyn.apache.org%3E
+
+affected:
+    - groupId: org.apache.brooklyn
+      artifactId: apache-brooklyn
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:brooklyn 0.9.0 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.7869717 org.apache.brooklyn:apache-brooklyn
+# 1.2275965 org.apache.camel:camel-snakeyaml
+# 1.1233516 org.apache.camel:camel-snakeyaml-starter
+# 0.94553816 org.apache:apache-jar-resource-bundle
+# 0.9191609 org.apache:apache-incubator-disclaimer-resource-bundle
+# 0.9191609 org.apache:apache-license-header-resource-bundle
+# 0.8792865 org.apache.brooklyn:brooklyn-all
+# 0.8792865 org.apache.brooklyn:brooklyn-api
+# 0.8792865 org.apache.brooklyn:brooklyn-camp
+# 0.8792865 org.apache.brooklyn:brooklyn-cli
