@@ -1,0 +1,38 @@
+---
+cve: CVE-2018-6198
+title: CVE in com.m3:curly-scala_2.9.3
+description: >
+    w3m through 0.5.3 does not properly handle temporary files when the ~/.w3m directory is unwritable, which allows a local attacker to craft a symlink attack to overwrite arbitrary files.
+cvss_v2: 3.3
+references:
+    - http://www.securityfocus.com/bid/102855
+    - https://bugs.debian.org/888097
+    - https://github.com/tats/w3m/commit/18dcbadf2771cdb0c18509b14e4e73505b242753
+    - https://salsa.debian.org/debian/w3m/commit/18dcbadf2771cdb0c18509b14e4e73505b242753
+
+affected:
+    - groupId: com.m3
+      artifactId: curly-scala_2.9.3
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:w3m_project:w3m 0.5.3 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.1783088 com.uber.m3:tally-m3
+# 0.9489235 com.m3:m3util_2.9.3
+# 0.9295099 com.m3:m3util_2.10
+# 0.9295099 com.m3:m3util_2.9.1
+# 0.9295099 com.m3:m3util_2.9.2
+# 0.9295099 com.m3:m3util_2.11
+# 0.85646933 com.m3:curly-scala_2.9.3
+# 0.4794233 org.hisrc.w3c:w3c-schemas
+# 0.4322297 org.jibx.schema.org.w3:org.jibx.schema.org.w3._2001.xml
+# 0.4322297 org.jibx.schema.org.w3:org.jibx.schema.org.w3._2005._05.xmlmime
