@@ -1,0 +1,48 @@
+---
+cve: CVE-2015-5262
+title: CVE in org.apache.httpcomponents:httpclient
+description: >
+    http/conn/ssl/SSLConnectionSocketFactory.java in Apache HttpComponents HttpClient before 4.3.6 ignores the http.socket.timeout configuration setting during an SSL handshake, which allows remote attackers to cause a denial of service (HTTPS call hang) via unspecified vectors.
+cvss_v2: 4.3
+references:
+    - http://lists.fedoraproject.org/pipermail/package-announce/2015-October/167962.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2015-October/167999.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2015-October/168030.html
+    - http://svn.apache.org/viewvc?view=revision&revision=1626784
+    - http://www.securitytracker.com/id/1033743
+    - http://www.ubuntu.com/usn/USN-2769-1
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1261538
+    - https://issues.apache.org/jira/browse/HTTPCLIENT-1478
+
+affected:
+    - groupId: org.apache.httpcomponents
+      artifactId: httpclient
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/o:canonical:ubuntu_linux:15.04
+#    - cpe:/o:fedoraproject:fedora:22
+#    - cpe:/o:fedoraproject:fedora:21
+#    - cpe:/o:canonical:ubuntu_linux:12.04::~~lts~~~
+#    - cpe:/o:fedoraproject:fedora:23
+#    - cpe:/a:apache:httpclient 4.3.5 (including)
+#    - cpe:/o:canonical:ubuntu_linux:14.04::~~lts~~~
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 2.0325067 org.apache.directory.studio:org.apache.httpcomponents.httpclient
+# 1.1192166 org.apache.directory.studio:org.apache.httpcomponents.httpcore
+# 0.71521986 org.apache.wink:wink-client-apache-httpclient
+# 0.6525217 org.apache.httpcomponents:httpclient
+# 0.651578 org.apache:apache-jar-resource-bundle
+# 0.6387441 org.apache:apache-incubator-disclaimer-resource-bundle
+# 0.6387441 org.apache:apache-license-header-resource-bundle
+# 0.6244924 org.apache.servicemix.bundles:org.apache.servicemix.bundles.not-yet-commons-ssl
+# 0.6079868 org.apache.servicemix.bundles:org.apache.servicemix.bundles.commons-httpclient
+# 0.5822154 org.apache.brooklyn:brooklyn-karaf-httpcomponents-extension
