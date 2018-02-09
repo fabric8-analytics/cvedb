@@ -7,34 +7,11 @@ cvss_v2: 7.5
 references:
     - http://svn.apache.org/r1528614
     - http://www.apache.org/dist/httpcomponents/httpclient/RELEASE_NOTES-4.3.x.txt
-
+    - https://nvd.nist.gov/vuln/detail/CVE-2013-4366
 affected:
     - groupId: org.apache.httpcomponents
       artifactId: httpclient
       version:
-        - "!FIXME!"
+        - "<=4.3"
       fixedin:
-        - "!FIXME!"
-
-# Additional information:
-#  configurations:
-#    - cpe:/a:apache:httpclient:4.3:final
-#    - cpe:/a:apache:httpclient:4.3:beta1
-#    - cpe:/a:apache:httpclient:4.3:alpha1
-#    - cpe:/a:apache:httpclient:4.3
-#    - cpe:/a:apache:httpclient:4.3:beta2
-#
-# All available versions:
-#versions
-#
-# Other possible package names:
-# 0.6937378 org.httpobjects.apache-httpclient-4.x:httpobjects-apache-httpclient-4.x
-# 0.66008085 org.apache.directory.studio:org.apache.httpcomponents.httpclient
-# 0.61317956 org.apache.wink:wink-client-apache-httpclient
-# 0.5511168 org.apache.httpcomponents:httpclient
-# 0.5188823 org.apache.servicemix.bundles:org.apache.servicemix.bundles.commons-httpclient
-# 0.45539078 org.apache:apache-jar-resource-bundle
-# 0.44268695 org.apache:apache-incubator-disclaimer-resource-bundle
-# 0.44268695 org.apache:apache-license-header-resource-bundle
-# 0.400887 org.apache.oltu.oauth2:org.apache.oltu.oauth2.httpclient4
-# 0.37035036 org.apache.httpcomponents:httpclient-cache
+        - ">=4.3.1"
