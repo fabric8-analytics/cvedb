@@ -13,7 +13,7 @@ affected:
       artifactId: axis
       version:
         - "<=1.4"
-    - groupId: org.apache.axis
-      artifactId: axis-rt-core
+    - groupId: axis
+      artifactId: axis
       version:
         - "<=1.4"
