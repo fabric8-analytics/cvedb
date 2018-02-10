@@ -1,0 +1,69 @@
+---
+cve: CVE-2012-5784
+title: CVE in com.paypal.sdk:paypal-core
+description: >
+    Apache Axis 1.4 and earlier, as used in PayPal Payments Pro, PayPal Mass Pay, PayPal Transactional Information SOAP, the Java Message Service implementation in Apache ActiveMQ, and other products, does not verify that the server hostname matches a domain name in the subject's Common Name (CN) or subjectAltName field of the X.509 certificate, which allows man-in-the-middle attackers to spoof SSL servers via an arbitrary valid certificate.
+cvss_v2: 5.8
+references:
+    - http://rhn.redhat.com/errata/RHSA-2013-0269.html
+    - http://rhn.redhat.com/errata/RHSA-2013-0683.html
+    - http://rhn.redhat.com/errata/RHSA-2014-0037.html
+    - http://secunia.com/advisories/51219
+    - http://www.cs.utexas.edu/~shmat/shmat_ccs12.pdf
+    - http://www.securityfocus.com/bid/56408
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/79829
+
+affected:
+    - groupId: com.paypal.sdk
+      artifactId: paypal-core
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:axis:1.3
+#    - cpe:/a:apache:axis:-:beta1
+#    - cpe:/a:apache:axis:1.2:beta1
+#    - cpe:/a:apache:axis:1.2.1
+#    - cpe:/a:apache:axis:-:alpha2
+#    - cpe:/a:paypal:mass_pay:-
+#    - cpe:/a:apache:axis:-:alpha3
+#    - cpe:/a:apache:axis:1.2:alpha
+#    - cpe:/a:apache:axis:1.1:beta
+#    - cpe:/a:apache:axis:1.1:rc2
+#    - cpe:/a:apache:axis:1.0:rc2
+#    - cpe:/a:apache:axis:1.0
+#    - cpe:/a:paypal:payments_pro:-
+#    - cpe:/a:apache:axis:1.2:rc3
+#    - cpe:/a:apache:axis:-:beta2
+#    - cpe:/a:apache:axis:-:beta3
+#    - cpe:/a:apache:axis:1.2
+#    - cpe:/a:apache:axis:1.1:rc1
+#    - cpe:/a:apache:axis:1.0:rc1
+#    - cpe:/a:apache:axis:1.2:beta2
+#    - cpe:/a:paypal:transactional_information_soap:-
+#    - cpe:/a:apache:axis:-:alpha1
+#    - cpe:/a:apache:axis:1.2:rc2
+#    - cpe:/a:apache:axis 1.4 (including)
+#    - cpe:/a:apache:axis:1.1
+#    - cpe:/a:apache:axis:1.2:rc1
+#    - cpe:/a:apache:axis:1.0:beta
+#    - cpe:/a:apache:activemq 5.7.0 (including)
+#    - cpe:/a:apache:axis:1.2:beta3
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.7653946 com.paypal:cascade-common_2.11
+# 0.7653946 com.paypal:cascade-common_2.10
+# 0.41317132 com.paypal.sdk:paypal-core
+# 0.3863177 com.paypal.selion:SeLion-Common
+# 0.3863177 com.paypal.cascade:cascade-common_2.11
+# 0.3657867 im.amomo.paypal:paypal-android
+# 0.3615249 com.paypal.android.sdk:paypal-one-touch
+# 0.3572631 im.amomo.paypal:paypal-android-without-so
+# 0.26563114 org.apache.activemq.examples.broker:transactional
+# 0.15646368 org.apache.servicemix.activemq:org.apache.servicemix.activemq.service
