@@ -1,44 +1,19 @@
 ---
 cve: CVE-2017-12197
-title: CVE in org.neo4j:neo4j
+title: CVE in libpam4j
 description: >
     It was found that libpam4j up to and including 1.8 did not properly validate user accounts when authenticating. A user with a valid password for a disabled account would be able to bypass security restrictions and possibly access sensitive information.
 cvss_v2: 4.0
 references:
-    - https://access.redhat.com/errata/RHSA-2017:2904
-    - https://access.redhat.com/errata/RHSA-2017:2905
-    - https://access.redhat.com/errata/RHSA-2017:2906
-    - https://bugzilla.redhat.com/show_bug.cgi?id=1503103
-    - https://lists.debian.org/debian-lts-announce/2017/11/msg00008.html
-    - https://www.debian.org/security/2017/dsa-4025
-
+    - https://nvd.nist.gov/vuln/detail/CVE-2017-12197
+    - https://access.redhat.com/security/cve/cve-2017-12197
+    - https://github.com/kohsuke/libpam4j/issues/18
 affected:
-    - groupId: org.neo4j
-      artifactId: neo4j
+    - groupId: org.jvnet.libpam4j
+      artifactId: libpam4j
       version:
-        - "!FIXME!"
-      fixedin:
-        - "!FIXME!"
-
-# Additional information:
-#  configurations:
-#    - cpe:/o:debian:debian_linux:7.0
-#    - cpe:/o:debian:debian_linux:8.0
-#    - cpe:/a:libpam4j_project:libpam4j 1.8 (including)
-#    - cpe:/o:redhat:enterprise_linux:6
-#    - cpe:/o:debian:debian_linux:9.0
-#
-# All available versions:
-#versions
-#
-# Other possible package names:
-# 12.225164 org.jvnet.libpam4j:libpam4j
-# 0.7750578 org.j4j:j4j
-# 0.73097336 org.jvnet.com4j:com4j
-# 0.6776217 org.snmp4j:snmp4j
-# 0.6776217 com.assist4j:assist4j
-# 0.6776217 org.neo4j:neo4j
-# 0.6776217 org.neo4j:neo4j-com
-# 0.6776217 org.pcap4j:pcap4j
-# 0.6776217 org.digidoc4j:digidoc4j
-# 0.6776217 org.citygml4j:citygml4j
+        - "<=1.4"
+    - groupId: org.kohsuke
+      artifactId: libpam4j
+      version:
+        - "<=1.8"
