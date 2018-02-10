@@ -1,6 +1,6 @@
 ---
 cve: CVE-2014-3596
-title: CVE in org.apache.axis:axis
+title: CVE in Apache Axis
 description: >
     The getCN function in Apache Axis 1.4 and earlier does not properly verify that the server hostname matches a domain name in the subject's Common Name (CN) or subjectAltName field of the X.509 certificate, which allows man-in-the-middle attackers to spoof SSL servers via a certificate with a subject that specifies a common name in a field that is not the CN field.  NOTE: this issue exists because of an incomplete fix for CVE-2012-5784.
 cvss_v2: 5.8
@@ -11,5 +11,9 @@ references:
 affected:
     - groupId: org.apache.axis
       artifactId: axis
+      version:
+        - "<=1.4"
+    - groupId: org.apache.axis
+      artifactId: axis-rt-core
       version:
         - "<=1.4"
