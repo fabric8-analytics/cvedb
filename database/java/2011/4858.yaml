@@ -6,113 +6,25 @@ description: >
 cvss_v2: 5.0
 references:
     - http://mail-archives.apache.org/mod_mbox/tomcat-announce/201112.mbox/%3c4EFB9800.5010106@apache.org%3e
-    - http://marc.info/?l=bugtraq&m=132871655717248&w=2
-    - http://marc.info/?l=bugtraq&m=133294394108746&w=2
-    - http://marc.info/?l=bugtraq&m=136485229118404&w=2
-    - http://rhn.redhat.com/errata/RHSA-2012-0074.html
-    - http://rhn.redhat.com/errata/RHSA-2012-0075.html
-    - http://rhn.redhat.com/errata/RHSA-2012-0076.html
-    - http://rhn.redhat.com/errata/RHSA-2012-0077.html
-    - http://rhn.redhat.com/errata/RHSA-2012-0078.html
-    - http://rhn.redhat.com/errata/RHSA-2012-0089.html
-    - http://rhn.redhat.com/errata/RHSA-2012-0325.html
-    - http://rhn.redhat.com/errata/RHSA-2012-0406.html
-    - http://secunia.com/advisories/48549
-    - http://secunia.com/advisories/48790
-    - http://secunia.com/advisories/48791
-    - http://secunia.com/advisories/54971
-    - http://secunia.com/advisories/55115
     - http://tomcat.apache.org/tomcat-7.0-doc/changelog.html
-    - http://www.debian.org/security/2012/dsa-2401
-    - http://www.kb.cert.org/vuls/id/903934
-    - http://www.nruns.com/_downloads/advisory28122011.pdf
-    - http://www.ocert.org/advisories/ocert-2011-003.html
-    - http://www.securityfocus.com/bid/51200
     - https://bugzilla.redhat.com/show_bug.cgi?id=750521
     - https://github.com/FireFart/HashCollision-DOS-POC/blob/master/HashtablePOC.py
-    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A18886
-
+    - https://nvd.nist.gov/vuln/detail/CVE-2011-4858
+    - https://github.com/apache/tomcat/commit/c1c2e29d55ea41d76ab4bf688dbaafb9b100eadf
 affected:
     - groupId: org.apache.tomcat
-      artifactId: tomcat-api
+      artifactId: tomcat-catalina
       version:
-        - "!FIXME!"
+        - "<=7.0.22,7.0.0"
       fixedin:
-        - "!FIXME!"
-
-# Additional information:
-#  configurations:
-#    - cpe:/a:apache:tomcat:6.0.2
-#    - cpe:/a:apache:tomcat:7.0.16
-#    - cpe:/a:apache:tomcat:6.0.5
-#    - cpe:/a:apache:tomcat:6.0.0
-#    - cpe:/a:apache:tomcat:7.0.1
-#    - cpe:/a:apache:tomcat:6.0.10
-#    - cpe:/a:apache:tomcat:7.0.9
-#    - cpe:/a:apache:tomcat:6.0.28
-#    - cpe:/a:apache:tomcat:7.0.11
-#    - cpe:/a:apache:tomcat:6.0.32
-#    - cpe:/a:apache:tomcat:6.0.34
-#    - cpe:/a:apache:tomcat:7.0.2
-#    - cpe:/a:apache:tomcat:7.0.5
-#    - cpe:/a:apache:tomcat:6.0.30
-#    - cpe:/a:apache:tomcat:6.0.8
-#    - cpe:/a:apache:tomcat:7.0.0
-#    - cpe:/a:apache:tomcat:6.0.16
-#    - cpe:/a:apache:tomcat:6.0.13
-#    - cpe:/a:apache:tomcat:7.0.15
-#    - cpe:/a:apache:tomcat:6.0.4
-#    - cpe:/a:apache:tomcat:7.0.13
-#    - cpe:/a:apache:tomcat:6.0.26
-#    - cpe:/a:apache:tomcat:6.0.22
-#    - cpe:/a:apache:tomcat:6.0.33
-#    - cpe:/a:apache:tomcat:6.0.20
-#    - cpe:/a:apache:tomcat:6.0.11
-#    - cpe:/a:apache:tomcat:6.0.19
-#    - cpe:/a:apache:tomcat:6.0.7
-#    - cpe:/a:apache:tomcat:7.0.21
-#    - cpe:/a:apache:tomcat:7.0.10
-#    - cpe:/a:apache:tomcat:7.0.22
-#    - cpe:/a:apache:tomcat:7.0.4
-#    - cpe:/a:apache:tomcat:7.0.6
-#    - cpe:/a:apache:tomcat:6.0.15
-#    - cpe:/a:apache:tomcat:6.0.6
-#    - cpe:/a:apache:tomcat:7.0.14
-#    - cpe:/a:apache:tomcat:6.0.17
-#    - cpe:/a:apache:tomcat:6.0.23
-#    - cpe:/a:apache:tomcat:6.0.21
-#    - cpe:/a:apache:tomcat:6.0.9
-#    - cpe:/a:apache:tomcat:7.0.17
-#    - cpe:/a:apache:tomcat:7.0.8
-#    - cpe:/a:apache:tomcat:6.0.24
-#    - cpe:/a:apache:tomcat:6.0.18
-#    - cpe:/a:apache:tomcat:7.0.20
-#    - cpe:/a:apache:tomcat:6.0.1
-#    - cpe:/a:apache:tomcat:6.0.25
-#    - cpe:/a:apache:tomcat:6.0.27
-#    - cpe:/a:apache:tomcat:6.0.29
-#    - cpe:/a:apache:tomcat:6.0.31
-#    - cpe:/a:apache:tomcat:7.0.12
-#    - cpe:/a:apache:tomcat:7.0.3
-#    - cpe:/a:apache:tomcat:7.0.18
-#    - cpe:/a:apache:tomcat:7.0.19
-#    - cpe:/a:apache:tomcat:6.0.14
-#    - cpe:/a:apache:tomcat:5.5.35
-#    - cpe:/a:apache:tomcat:6.0.12
-#    - cpe:/a:apache:tomcat:7.0.7
-#    - cpe:/a:apache:tomcat:6.0.3
-#
-# All available versions:
-#versions
-#
-# Other possible package names:
-# 1.5292308 org.apache.geronimo.configs:tomcat
-# 1.2478437 org.apache:apache-jar-resource-bundle
-# 1.2038825 org.apache:apache-incubator-disclaimer-resource-bundle
-# 1.2038825 org.apache:apache-license-header-resource-bundle
-# 1.0413868 org.apache.tomcat:tomcat-api
-# 1.0413868 org.apache.tomcat:tomcat-catalina
-# 1.0413868 org.apache.tomcat:tomcat-coyote
-# 1.0413868 org.apache.tomcat:tomcat-dbcp
-# 1.0413868 org.apache.tomcat:tomcat-jasper
-# 1.0413868 org.apache.tomcat:tomcat-jdbc
+        - ">=7.0.23"
+    - groupId: org.apache.tomcat
+      artifactId: catalina
+      version:
+        - "<=6.0.34,6.0.0"
+      fixedin:
+        - ">=6.0.35"
+    - groupId: tomcat
+      artifactId: catalina
+      version:
+        - "<=5.5.34"
