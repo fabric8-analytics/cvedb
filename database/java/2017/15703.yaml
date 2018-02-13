@@ -1,0 +1,35 @@
+---
+cve: CVE-2017-15703
+title: CVE in org.apache.nifi:nifi-nifi-example-processors
+description: >
+    Any authenticated user (valid client certificate but without ACL permissions) could upload a template which contained malicious code and caused a denial of service via Java deserialization attack. The fix to properly handle Java deserialization was applied on the Apache NiFi 1.4.0 release. Users running a prior 1.x release should upgrade to the appropriate release.
+cvss_v2: 3.5
+references:
+    - https://nifi.apache.org/security.html#CVE-2017-15703
+
+affected:
+    - groupId: org.apache.nifi
+      artifactId: nifi-nifi-example-processors
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:nifi 1.4.0 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.3198206 org.apache.onami.logging:org.apache.onami.logging.acl
+# 1.219619 org.apache.nifi:nifi-nifi-example-processors
+# 1.1776948 org.apache.nifi:nifi-administration
+# 1.1776948 org.apache.nifi:nifi-api
+# 1.1776948 org.apache.nifi:nifi-authorizer
+# 1.1776948 org.apache.nifi:nifi-bootstrap
+# 1.1776948 org.apache.nifi:nifi-documentation
+# 1.1776948 org.apache.nifi:nifi-framework-api
+# 1.1776948 org.apache.nifi:nifi-framework-authorization
+# 1.1776948 org.apache.nifi:nifi-framework-cluster
