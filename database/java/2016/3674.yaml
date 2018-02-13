@@ -1,0 +1,46 @@
+---
+cve: CVE-2016-3674
+title: CVE in com.thoughtworks.xstream:xstream
+description: >
+    Multiple XML external entity (XXE) vulnerabilities in the (1) Dom4JDriver, (2) DomDriver, (3) JDomDriver, (4) JDom2Driver, (5) SjsxpDriver, (6) StandardStaxDriver, and (7) WstxDriver drivers in XStream before 1.4.9 allow remote attackers to read arbitrary files via a crafted XML document.
+cvss_v2: 5.0
+references:
+    - http://lists.fedoraproject.org/pipermail/package-announce/2016-April/183180.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2016-April/183208.html
+    - http://rhn.redhat.com/errata/RHSA-2016-2822.html
+    - http://rhn.redhat.com/errata/RHSA-2016-2823.html
+    - http://www.debian.org/security/2016/dsa-3575
+    - http://www.openwall.com/lists/oss-security/2016/03/25/8
+    - http://www.openwall.com/lists/oss-security/2016/03/28/1
+    - http://www.securityfocus.com/bid/85381
+    - http://www.securitytracker.com/id/1036419
+    - http://x-stream.github.io/changes.html#1.4.9
+    - https://github.com/x-stream/xstream/issues/25
+
+affected:
+    - groupId: com.thoughtworks.xstream
+      artifactId: xstream
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:x-stream:xstream 1.4.8 (including)
+#    - cpe:/o:debian:debian_linux:8.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.70701826 xstream:xstream
+# 0.41728783 com.thoughtworks.xstream:xstream
+# 0.38107157 org.sonatype.nexus.xstream:xstream
+# 0.3543141 com.raquo.xstream:xstream_sjs0.6_2.11
+# 0.3543141 com.raquo.xstream:xstream_sjs0.6_2.12
+# 0.35350913 com.thoughtworks.xstream:xstream-benchmark
+# 0.35350913 com.thoughtworks.xstream:xstream-hibernate
+# 0.35350913 com.thoughtworks.xstream:xstream-jmh
+# 0.35350913 com.thoughtworks.xstream:xstream-distribution
+# 0.35350913 com.thoughtworks.xstream:xstream-parent
