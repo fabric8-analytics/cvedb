@@ -5,37 +5,12 @@ description: >
     XStream through 1.4.9, when a certain denyTypes workaround is not used, mishandles attempts to create an instance of the primitive type 'void' during unmarshalling, leading to a remote application crash, as demonstrated by an xstream.fromXML("<void/>") call.
 cvss_v2: 5.0
 references:
-    - http://www.debian.org/security/2017/dsa-3841
-    - http://www.securityfocus.com/bid/100687
-    - http://www.securitytracker.com/id/1039499
     - http://x-stream.github.io/CVE-2017-7957.html
-    - https://access.redhat.com/errata/RHSA-2017:1832
-    - https://access.redhat.com/errata/RHSA-2017:2888
-    - https://access.redhat.com/errata/RHSA-2017:2889
-
+    - https://nvd.nist.gov/vuln/detail/CVE-2017-7957
 affected:
     - groupId: com.thoughtworks.xstream
       artifactId: xstream
       version:
-        - "!FIXME!"
+        - "<=1.4.9"
       fixedin:
-        - "!FIXME!"
-
-# Additional information:
-#  configurations:
-#    - cpe:/a:xstream_project:xstream 1.4.9 (including)
-#
-# All available versions:
-#versions
-#
-# Other possible package names:
-# 7.575065 xstream:xstream
-# 4.590522 com.thoughtworks.xstream:xstream
-# 4.217454 org.sonatype.nexus.xstream:xstream
-# 3.7875326 com.thoughtworks.xstream:xstream-benchmark
-# 3.7875326 com.thoughtworks.xstream:xstream-hibernate
-# 3.7875326 com.thoughtworks.xstream:xstream-jmh
-# 3.7875326 com.thoughtworks.xstream:xstream-distribution
-# 3.7875326 com.thoughtworks.xstream:xstream-parent
-# 3.3860378 com.raquo.xstream:xstream_sjs0.6_2.11
-# 3.3860378 com.raquo.xstream:xstream_sjs0.6_2.12
+        - ">=1.4.10"
