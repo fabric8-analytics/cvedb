@@ -1,0 +1,35 @@
+---
+cve: CVE-2017-18042
+title: CVE in com.atlassian.bamboo:bamboo-specs
+description: >
+    The update user administration resource in Atlassian Bamboo before version 6.3.1 allows remote attackers to modify user data including passwords via a Cross-site request forgery (CSRF) vulnerability.
+cvss_v2: 6.8
+references:
+    - https://jira.atlassian.com/browse/BAM-19663
+
+affected:
+    - groupId: com.atlassian.bamboo
+      artifactId: bamboo-specs
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:atlassian:bamboo 6.3.1 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.6098938 com.atlassian.bamboo:bamboo-specs
+# 1.5533113 com.atlassian.bamboo:bamboo-specs-api
+# 1.5533113 com.atlassian.bamboo:bamboo-specs-archetype
+# 1.5533113 com.atlassian.bamboo:bamboo-specs-runner
+# 1.5230963 org.adeptnet.atlassian:atlassian-auth-common
+# 1.5230963 org.adeptnet.atlassian:atlassian-auth-confluence
+# 1.5230963 org.adeptnet.atlassian:atlassian-auth-jira
+# 1.5230963 com.atlassian.amps:atlassian-plugin-sdk
+# 1.5230963 com.atlassian.xmlrpc:atlassian-xmlrpc-binder
+# 1.496729 com.atlassian.bamboo:bamboo-specs-runner-test
