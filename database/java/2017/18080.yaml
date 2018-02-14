@@ -1,0 +1,35 @@
+---
+cve: CVE-2017-18080
+title: CVE in com.atlassian.bamboo:bamboo-specs
+description: >
+    The saveConfigureSecurity resource in Atlassian Bamboo before version 6.3.1 allows remote attackers to modify security settings via a Cross-site request forgery (CSRF) vulnerability.
+cvss_v2: 6.8
+references:
+    - https://jira.atlassian.com/browse/BAM-19664
+
+affected:
+    - groupId: com.atlassian.bamboo
+      artifactId: bamboo-specs
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:atlassian:bamboo 6.3.1 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.3617183 com.atlassian.bamboo:bamboo-specs
+# 1.321149 com.atlassian.bamboo:bamboo-specs-api
+# 1.321149 com.atlassian.bamboo:bamboo-specs-archetype
+# 1.321149 com.atlassian.bamboo:bamboo-specs-runner
+# 1.299485 org.adeptnet.atlassian:atlassian-auth-common
+# 1.299485 org.adeptnet.atlassian:atlassian-auth-confluence
+# 1.299485 org.adeptnet.atlassian:atlassian-auth-jira
+# 1.299485 com.atlassian.amps:atlassian-plugin-sdk
+# 1.299485 com.atlassian.xmlrpc:atlassian-xmlrpc-binder
+# 1.2805797 com.atlassian.bamboo:bamboo-specs-runner-test
