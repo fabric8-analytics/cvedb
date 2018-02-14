@@ -1,0 +1,35 @@
+---
+cve: CVE-2017-12632
+title: CVE in org.apache.nifi:nifi-http-context-map
+description: >
+    A malicious host header in an incoming HTTP request could cause NiFi to load resources from an external server. The fix to sanitize host headers and compare to a controlled whitelist was applied on the Apache NiFi 1.5.0 release. Users running a prior 1.x release should upgrade to the appropriate release.
+cvss_v2: 5.0
+references:
+    - https://nifi.apache.org/security.html#CVE-2017-12632
+
+affected:
+    - groupId: org.apache.nifi
+      artifactId: nifi-http-context-map
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:nifi 1.4.0 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 3.9718654 org.apache.nifi:nifi-http-context-map
+# 3.4216626 org.apache.nifi:nifi-http-context-map-api
+# 3.4216626 org.apache.nifi:nifi-http-context-map-nar
+# 2.1862545 org.apache.nifi:nifi-nifi-example-processors
+# 2.0995758 org.apache.nifi:nifi-administration
+# 2.0995758 org.apache.nifi:nifi-api
+# 2.0995758 org.apache.nifi:nifi-authorizer
+# 2.0995758 org.apache.nifi:nifi-bootstrap
+# 2.0995758 org.apache.nifi:nifi-documentation
+# 2.0995758 org.apache.nifi:nifi-framework-api
