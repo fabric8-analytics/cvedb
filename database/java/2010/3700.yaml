@@ -1,59 +1,26 @@
 ---
 cve: CVE-2010-3700
-title: CVE in org.acegisecurity:acegi-security
+title: CVE in Spring Security
 description: >
     VMware SpringSource Spring Security 2.x before 2.0.6 and 3.x before 3.0.4, and Acegi Security 1.0.0 through 1.0.7, as used in IBM WebSphere Application Server (WAS) 6.1 and 7.0, allows remote attackers to bypass security constraints via a path parameter.
 cvss_v2: 5.0
 references:
-    - http://osvdb.org/68931
-    - http://secunia.com/advisories/42024
-    - http://www.securityfocus.com/archive/1/archive/1/514517/100/0/threaded
-    - http://www.securityfocus.com/bid/44496
-    - http://www.springsource.com/security/cve-2010-3700
-    - https://issues.apache.org/bugzilla/show_bug.cgi?id=25015
-
+    - https://nvd.nist.gov/vuln/detail/CVE-2010-3700
+    - https://jira.spring.io/browse/SEC-1584
 affected:
     - groupId: org.acegisecurity
       artifactId: acegi-security
       version:
-        - "!FIXME!"
+        - "<=1.0.7,1.0.0"
+    - groupId: org.springframework.security
+      artifactId: spring-security-core
+      version:
+        - "<=2.0.5.RELEASE,2.0.0"
       fixedin:
-        - "!FIXME!"
-
-# Additional information:
-#  configurations:
-#    - cpe:/a:vmware:springsource_spring_security:2.0.5
-#    - cpe:/a:acegisecurity:acegi-security:1.0.6
-#    - cpe:/a:vmware:springsource_spring_security:3.0.1
-#    - cpe:/a:vmware:springsource_spring_security:2.0.4
-#    - cpe:/a:acegisecurity:acegi-security:1.0.4
-#    - cpe:/a:vmware:springsource_spring_security:2.0.1
-#    - cpe:/a:vmware:springsource_spring_security:3.0.2
-#    - cpe:/a:acegisecurity:acegi-security:1.0.5
-#    - cpe:/a:vmware:springsource_spring_security:3.0.3
-#    - cpe:/a:ibm:websphere_application_server:6.1
-#    - cpe:/a:vmware:springsource_spring_security:3.0.0
-#    - cpe:/a:acegisecurity:acegi-security:1.0.1
-#    - cpe:/a:acegisecurity:acegi-security:1.0.3
-#    - cpe:/a:acegisecurity:acegi-security:1.0.0
-#    - cpe:/a:vmware:springsource_spring_security:2.0.0
-#    - cpe:/a:acegisecurity:acegi-security:1.0.2
-#    - cpe:/a:vmware:springsource_spring_security:2.0.2
-#    - cpe:/a:acegisecurity:acegi-security:1.0.7
-#    - cpe:/a:vmware:springsource_spring_security:2.0.3
-#    - cpe:/a:ibm:websphere_application_server:7.0
-#
-# All available versions:
-#versions
-#
-# Other possible package names:
-# 2.2923636 acegisecurity:acegi-security-catalina-server
-# 2.0017076 acegisecurity:acegi-security
-# 2.0017076 org.acegisecurity:acegi-security
-# 1.8389405 acegisecurity:acegi-security-cas
-# 1.8389405 acegisecurity:acegi-security-catalina
-# 1.8389405 acegisecurity:acegi-security-jboss
-# 1.8389405 acegisecurity:acegi-security-jetty
-# 1.8389405 acegisecurity:acegi-security-resin
-# 1.8389405 acegisecurity:acegi-security-taglib
-# 1.8389405 acegisecurity:acegi-security-tiger
+        - ">=2.0.6.RELEASE"
+    - groupId: org.springframework.security
+      artifactId: spring-security-web
+      version:
+        - "<=3.0.3.RELEASE,3.0.0.RELEASE"
+      fixedin:
+        - ">=3.0.4.RELEASE"
