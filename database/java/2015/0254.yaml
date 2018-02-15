@@ -1,50 +1,16 @@
 ---
 cve: CVE-2015-0254
-title: CVE in org.apache.taglibs:taglibs-standard-compat
+title: XXE and RCE via XSL extension in JSTL XML tags
 description: >
     Apache Standard Taglibs before 1.2.3 allows remote attackers to execute arbitrary code or conduct external XML entity (XXE) attacks via a crafted XSLT extension in a (1) <x:parse> or (2) <x:transform> JSTL XML tag.
 cvss_v2: 7.5
 references:
-    - http://lists.opensuse.org/opensuse-updates/2015-10/msg00033.html
     - http://mail-archives.apache.org/mod_mbox/tomcat-taglibs-user/201502.mbox/%3C82207A16-6348-4DEE-877E-F7B87292576A%40apache.org%3E
-    - http://packetstormsecurity.com/files/130575/Apache-Standard-Taglibs-1.2.1-XXE-Remote-Command-Execution.html
-    - http://rhn.redhat.com/errata/RHSA-2015-1695.html
-    - http://rhn.redhat.com/errata/RHSA-2016-1838.html
-    - http://rhn.redhat.com/errata/RHSA-2016-1839.html
-    - http://rhn.redhat.com/errata/RHSA-2016-1840.html
-    - http://rhn.redhat.com/errata/RHSA-2016-1841.html
-    - http://www.oracle.com/technetwork/security-advisory/cpujul2017-3236622.html
-    - http://www.securityfocus.com/archive/1/archive/1/534772/100/0/threaded
-    - http://www.securityfocus.com/bid/72809
-    - http://www.securitytracker.com/id/1034934
-    - http://www.ubuntu.com/usn/USN-2551-1
-    - https://access.redhat.com/errata/RHSA-2016:1376
-
+    - https://nvd.nist.gov/vuln/detail/CVE-2015-0254
 affected:
     - groupId: org.apache.taglibs
-      artifactId: taglibs-standard-compat
+      artifactId: taglibs-standard-impl
       version:
-        - "!FIXME!"
+        - "<=1.2.1"
       fixedin:
-        - "!FIXME!"
-
-# Additional information:
-#  configurations:
-#    - cpe:/o:canonical:ubuntu_linux:14.10
-#    - cpe:/o:canonical:ubuntu_linux:14.04::~~lts~~~
-#    - cpe:/a:apache:standard_taglibs 1.2.1 (including)
-#
-# All available versions:
-#versions
-#
-# Other possible package names:
-# 1.7912647 org.apache.taglibs:taglibs-standard-compat
-# 1.7912647 org.apache.taglibs:taglibs-standard-impl
-# 1.7912647 org.apache.taglibs:taglibs-standard-jstlel
-# 1.7912647 org.apache.taglibs:taglibs-standard-spec
-# 0.95455146 org.apache.karaf.assemblies.features:standard
-# 0.89171976 org.apache.james:apache-mailet-standard
-# 0.89171976 org.apache.james:apache-standard-mailets
-# 0.7117824 org.apache.taglibs:taglibs-build-tools
-# 0.7020588 org.apache.servicemix.bundles:org.apache.servicemix.bundles.spring-security-taglibs
-# 0.57560223 org.apache.geronimo.bundles:jstl
+        - ">=1.2.5"
