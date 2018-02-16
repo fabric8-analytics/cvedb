@@ -14,7 +14,6 @@ affected:
         - "<=1.2.1"
       fixedin:
         - ">=1.2.3"
-affected:
     - groupId: taglibs
       artifactId: standard
       version:
