@@ -1,0 +1,115 @@
+---
+cve: CVE-2017-5638
+title: CVE in org.apache.struts:struts2-pell-multipart-plugin
+description: >
+    The Jakarta Multipart parser in Apache Struts 2 2.3.x before 2.3.32 and 2.5.x before 2.5.10.1 has incorrect exception handling and error-message generation during file-upload attempts, which allows remote attackers to execute arbitrary commands via a crafted Content-Type, Content-Disposition, or Content-Length HTTP header, as exploited in the wild in March 2017 with a Content-Type header containing a #cmd= string.
+cvss_v2: 10.0
+references:
+    - http://blog.talosintelligence.com/2017/03/apache-0-day-exploited.html
+    - http://blog.trendmicro.com/trendlabs-security-intelligence/cve-2017-5638-apache-struts-vulnerability-remote-code-execution/
+    - http://www.eweek.com/security/apache-struts-vulnerability-under-attack.html
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2017-3236622.html
+    - http://www.securityfocus.com/bid/96729
+    - http://www.securitytracker.com/id/1037973
+    - https://arstechnica.com/security/2017/03/critical-vulnerability-under-massive-attack-imperils-high-impact-sites/
+    - https://cwiki.apache.org/confluence/display/WW/S2-045
+    - https://cwiki.apache.org/confluence/display/WW/S2-046
+    - https://exploit-db.com/exploits/41570
+    - https://git1-us-west.apache.org/repos/asf?p=struts.git;a=commit;h=352306493971e7d5a756d61780d57a76eb1f519a
+    - https://git1-us-west.apache.org/repos/asf?p=struts.git;a=commit;h=6b8272ce47160036ed120a48345d9aa884477228
+    - https://github.com/mazen160/struts-pwn
+    - https://github.com/rapid7/metasploit-framework/issues/8064
+    - https://h20566.www2.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbgn03733en_us
+    - https://h20566.www2.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbgn03749en_us
+    - https://h20566.www2.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbhf03723en_us
+    - https://isc.sans.edu/diary/22169
+    - https://nmap.org/nsedoc/scripts/http-vuln-cve2017-5638.html
+    - https://packetstormsecurity.com/files/141494/S2-45-poc.py.txt
+    - https://security.netapp.com/advisory/ntap-20170310-0001/
+    - https://struts.apache.org/docs/s2-045.html
+    - https://struts.apache.org/docs/s2-046.html
+    - https://support.lenovo.com/us/en/product_security/len-14200
+    - https://twitter.com/theog150/status/841146956135124993
+    - https://www.exploit-db.com/exploits/41614/
+    - https://www.imperva.com/blog/2017/03/cve-2017-5638-new-remote-code-execution-rce-vulnerability-in-apache-struts-2/
+    - https://www.kb.cert.org/vuls/id/834067
+    - https://www.symantec.com/security-center/network-protection-security-advisories/SA145
+
+affected:
+    - groupId: org.apache.struts
+      artifactId: struts2-pell-multipart-plugin
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:struts:2.3.17
+#    - cpe:/a:apache:struts:2.5.3
+#    - cpe:/a:apache:struts:2.3.29
+#    - cpe:/a:apache:struts:2.3.16.2
+#    - cpe:/a:apache:struts:2.3.16
+#    - cpe:/a:apache:struts:2.3.21
+#    - cpe:/a:apache:struts:2.3.14
+#    - cpe:/a:apache:struts:2.3.10
+#    - cpe:/a:apache:struts:2.3.20
+#    - cpe:/a:apache:struts:2.3.12
+#    - cpe:/a:apache:struts:2.5.7
+#    - cpe:/a:apache:struts:2.3.11
+#    - cpe:/a:apache:struts:2.5.5
+#    - cpe:/a:apache:struts:2.3.7
+#    - cpe:/a:apache:struts:2.3.22
+#    - cpe:/a:apache:struts:2.3.16.1
+#    - cpe:/a:apache:struts:2.3.28.1
+#    - cpe:/a:apache:struts:2.3.15.3
+#    - cpe:/a:apache:struts:2.3.25
+#    - cpe:/a:apache:struts:2.3.5
+#    - cpe:/a:apache:struts:2.3.23
+#    - cpe:/a:apache:struts:2.3.14.2
+#    - cpe:/a:apache:struts:2.3.24
+#    - cpe:/a:apache:struts:2.3.8
+#    - cpe:/a:apache:struts:2.3.6
+#    - cpe:/a:apache:struts:2.5.10
+#    - cpe:/a:apache:struts:2.3.16.3
+#    - cpe:/a:apache:struts:2.3.15.1
+#    - cpe:/a:apache:struts:2.3.26
+#    - cpe:/a:apache:struts:2.3.31
+#    - cpe:/a:apache:struts:2.5.4
+#    - cpe:/a:apache:struts:2.3.27
+#    - cpe:/a:apache:struts:2.3.30
+#    - cpe:/a:apache:struts:2.5.2
+#    - cpe:/a:apache:struts:2.5.6
+#    - cpe:/a:apache:struts:2.3.14.1
+#    - cpe:/a:apache:struts:2.3.19
+#    - cpe:/a:apache:struts:2.3.20.1
+#    - cpe:/a:apache:struts:2.5.1
+#    - cpe:/a:apache:struts:2.3.24.2
+#    - cpe:/a:apache:struts:2.3.14.3
+#    - cpe:/a:apache:struts:2.3.15
+#    - cpe:/a:apache:struts:2.3.28
+#    - cpe:/a:apache:struts:2.3.24.3
+#    - cpe:/a:apache:struts:2.5
+#    - cpe:/a:apache:struts:2.3.15.2
+#    - cpe:/a:apache:struts:2.3.20.3
+#    - cpe:/a:apache:struts:2.5.9
+#    - cpe:/a:apache:struts:2.5.8
+#    - cpe:/a:apache:struts:2.3.24.1
+#    - cpe:/a:apache:struts:2.3.20.2
+#    - cpe:/a:apache:struts:2.3.13
+#    - cpe:/a:apache:struts:2.3.9
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.7601218 org.apache.struts:struts2-secure-jakarta-multipart-parser-plugin
+# 0.6874889 org.apache.struts:struts2-secure-jakarta-stream-multipart-parser-plugin
+# 0.5836629 org.apache.archiva.redback:redback-struts2-content
+# 0.55553985 org.apache.sling:org.apache.sling.launchpad.content
+# 0.43004608 org.apache.sling:org.apache.sling.scripting.sightly.testing-content
+# 0.42755544 org.apache.clerezza:platform.content
+# 0.41455853 org.apache.struts:struts2-pell-multipart-plugin
+# 0.40517312 org.apache.clerezza.provisioning:content-launcher
+# 0.40517312 org.apache.clerezza.provisioning:platform.content
+# 0.39984745 org.apache.servicemix.bundles:org.apache.servicemix.bundles.jakarta-regexp
