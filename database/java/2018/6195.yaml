@@ -1,0 +1,30 @@
+---
+cve: CVE-2018-6195
+title: CVE in io.fabric8.jube.images.fabric8:fabric8-http-gateway
+description: >
+    admin/partials/wp-splashing-admin-main.php in the Splashing Images plugin (wp-splashing-images) before 2.1.1 for WordPress allows authenticated (administrator, editor, or author) remote attackers to conduct PHP Object Injection attacks via crafted serialized data in the 'session' HTTP GET parameter to wp-admin/upload.php.
+cvss_v2: 6.5
+references:
+    - http://packetstormsecurity.com/files/146109/WordPress-Splashing-Images-2.1-Cross-Site-Scripting-PHP-Object-Injection.html
+    - http://seclists.org/fulldisclosure/2018/Jan/91
+    - https://plugins.trac.wordpress.org/changeset/1807349/wp-splashing-images
+    - https://wpvulndb.com/vulnerabilities/9015
+
+affected:
+    - groupId: io.fabric8.jube.images.fabric8
+      artifactId: fabric8-http-gateway
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:splashing_images_project:splashing_images:::~~~wordpress~~ 2.1.1 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.15313251 io.fabric8.jube.images.fabric8:quickstart-java-camel-cdi-http
+# 0.15313251 io.fabric8.jube.images.fabric8:fabric8-http-gateway
