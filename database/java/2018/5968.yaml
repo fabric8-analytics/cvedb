@@ -6,14 +6,31 @@ description: >
 cvss_v2: 5.1
 references:
     - https://github.com/FasterXML/jackson-databind/issues/1899
-    - https://nvd.nist.gov/vuln/detail/CVE-2018-5968
-    - https://github.com/FasterXML/jackson-databind/commit/038b471e2efde2e8f96b4e0be958d3e5a1ff1d05
+    - https://www.debian.org/security/2018/dsa-4114
+
 affected:
     - groupId: com.fasterxml.jackson.core
       artifactId: jackson-databind
       version:
-        - "<=2.8.11"
-        - "<=2.9.3,2.9.0"
+        - "!FIXME!"
       fixedin:
-        - ">=2.8.11.1"
-        - ">=2.9.4"
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:fasterxml:jackson-databind 2.9.3 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.7765101 com.fasterxml:jackson-xml-databind
+# 1.5821548 com.fasterxml:jackson-module-scala
+# 1.5821548 com.fasterxml:jackson-module-hibernate
+# 1.5821548 com.fasterxml:jackson-module-afterburner
+# 1.5821548 com.fasterxml:jackson-module-json-org
+# 1.4457741 com.fasterxml.jackson.core:jackson-databind
+# 0.8092143 com.fasterxml.jackson:jackson-datatype-guava
+# 0.8092143 com.fasterxml.jackson:jackson-dataformat-csv
+# 0.8092143 com.fasterxml.jackson:jackson-datatype-json-org
+# 0.8092143 com.fasterxml.jackson:jackson-module-afterburner
