@@ -1,0 +1,45 @@
+---
+cve: CVE-2017-15706
+title: CVE in org.apache.tomcat:tomcat-servlet-api
+description: >
+    As part of the fix for bug 61201, the documentation for Apache Tomcat 9.0.0.M22 to 9.0.1, 8.5.16 to 8.5.23, 8.0.45 to 8.0.47 and 7.0.79 to 7.0.82 included an updated description of the search algorithm used by the CGI Servlet to identify which script to execute. The update was not correct. As a result, some scripts may have failed to execute as expected and other scripts may have been executed unexpectedly. Note that the behaviour of the CGI servlet has remained unchanged in this regard. It is only the documentation of the behaviour that was wrong and has been corrected.
+cvss_v2: 5.0
+references:
+    - https://lists.apache.org/thread.html/e1ef853fc0079cdb55befbd2dac042934e49288b476d5f6a649e5da2@%3Cannounce.tomcat.apache.org%3E
+
+affected:
+    - groupId: org.apache.tomcat
+      artifactId: tomcat-servlet-api
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:tomcat:9.0.0:m9
+#    - cpe:/a:apache:tomcat 8.5.23 (including)
+#    - cpe:/a:apache:tomcat:9.0.0:m4
+#    - cpe:/a:apache:tomcat:9.0.1
+#    - cpe:/a:apache:tomcat:9.0.0:m8
+#    - cpe:/a:apache:tomcat:9.0.0:m6
+#    - cpe:/a:apache:tomcat:9.0.0:m25
+#    - cpe:/a:apache:tomcat:9.0.0:m22
+#    - cpe:/a:apache:tomcat:9.0.0:m26
+#    - cpe:/a:apache:tomcat:9.0.0:m3
+#    - cpe:/a:apache:tomcat:9.0.0:m27
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.80923086 org.apache.tomcat:tomcat-servlet-api
+# 0.7781481 org.apache.tuscany.sca:tuscany-tomcat-servlet
+# 0.7781481 org.apache.geronimo.configs:servlet-examples-tomcat
+# 0.7781481 org.apache.geronimo.samples:servlet-examples-tomcat
+# 0.7291496 org.apache.camel:camel-example-servlet-tomcat
+# 0.6849 org.apache.geronimo.samples.javaee5:servlet-examples-tomcat
+# 0.64906824 org.apache.camel:camel-example-servlet-tomcat-no-spring
+# 0.64906824 org.apache.camel:camel-example-servlet-rest-tomcat
+# 0.64906824 org.apache.camel:camel-example-servlet-tomcat-blueprintweb
+# 0.63924783 org.apache.sling:org.apache.sling.servlet-helpers
