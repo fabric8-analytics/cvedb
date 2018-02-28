@@ -1,0 +1,67 @@
+---
+cve: CVE-2017-7525
+title: CVE in com.fasterxml.jackson.core:jackson-databind
+description: >
+    A deserialization flaw was discovered in the jackson-databind, versions before 2.6.7.1, 2.7.9.1 and 2.8.9, which could allow an unauthenticated user to perform code execution by sending the maliciously crafted input to the readValue method of the ObjectMapper.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/99623
+    - http://www.securitytracker.com/id/1039744
+    - http://www.securitytracker.com/id/1039947
+    - http://www.securitytracker.com/id/1040360
+    - https://access.redhat.com/errata/RHSA-2017:1834
+    - https://access.redhat.com/errata/RHSA-2017:1835
+    - https://access.redhat.com/errata/RHSA-2017:1836
+    - https://access.redhat.com/errata/RHSA-2017:1837
+    - https://access.redhat.com/errata/RHSA-2017:1839
+    - https://access.redhat.com/errata/RHSA-2017:1840
+    - https://access.redhat.com/errata/RHSA-2017:2477
+    - https://access.redhat.com/errata/RHSA-2017:2546
+    - https://access.redhat.com/errata/RHSA-2017:2547
+    - https://access.redhat.com/errata/RHSA-2017:2633
+    - https://access.redhat.com/errata/RHSA-2017:2635
+    - https://access.redhat.com/errata/RHSA-2017:2636
+    - https://access.redhat.com/errata/RHSA-2017:2637
+    - https://access.redhat.com/errata/RHSA-2017:2638
+    - https://access.redhat.com/errata/RHSA-2017:3141
+    - https://access.redhat.com/errata/RHSA-2017:3454
+    - https://access.redhat.com/errata/RHSA-2017:3455
+    - https://access.redhat.com/errata/RHSA-2017:3456
+    - https://access.redhat.com/errata/RHSA-2017:3458
+    - https://access.redhat.com/errata/RHSA-2018:0294
+    - https://access.redhat.com/errata/RHSA-2018:0342
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1462702
+    - https://cwiki.apache.org/confluence/display/WW/S2-055
+    - https://github.com/FasterXML/jackson-databind/issues/1599
+    - https://github.com/FasterXML/jackson-databind/issues/1723
+    - https://security.netapp.com/advisory/ntap-20171214-0002/
+    - https://www.debian.org/security/2017/dsa-4004
+
+affected:
+    - groupId: com.fasterxml.jackson.core
+      artifactId: jackson-databind
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/o:debian:debian_linux:9.0
+#    - cpe:/a:fasterxml:jackson-databind 2.8.9 (excluding)
+#    - cpe:/o:debian:debian_linux:8.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 3.6223059 com.fasterxml:jackson-xml-databind
+# 3.3269362 com.fasterxml.jackson.core:jackson-databind
+# 3.1158352 com.fasterxml:jackson-module-scala
+# 3.1158352 com.fasterxml:jackson-module-hibernate
+# 3.1158352 com.fasterxml:jackson-module-afterburner
+# 3.1158352 com.fasterxml:jackson-module-json-org
+# 1.6051805 com.fasterxml.jackson:jackson-datatype-guava
+# 1.6051805 com.fasterxml.jackson:jackson-dataformat-csv
+# 1.6051805 com.fasterxml.jackson:jackson-datatype-json-org
+# 1.6051805 com.fasterxml.jackson:jackson-module-afterburner
