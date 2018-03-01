@@ -1,0 +1,77 @@
+---
+cve: CVE-2014-0193
+title: CVE in io.netty:netty
+description: >
+    WebSocket08FrameDecoder in Netty 3.6.x before 3.6.9, 3.7.x before 3.7.1, 3.8.x before 3.8.2, 3.9.x before 3.9.1, and 4.0.x before 4.0.19 allows remote attackers to cause a denial of service (memory consumption) via a TextWebSocketFrame followed by a long stream of ContinuationWebSocketFrames.
+cvss_v2: 5.0
+references:
+    - http://netty.io/news/2014/04/30/release-day.html
+    - http://rhn.redhat.com/errata/RHSA-2014-1019.html
+    - http://rhn.redhat.com/errata/RHSA-2014-1020.html
+    - http://rhn.redhat.com/errata/RHSA-2014-1021.html
+    - http://rhn.redhat.com/errata/RHSA-2014-1351.html
+    - http://rhn.redhat.com/errata/RHSA-2015-0675.html
+    - http://rhn.redhat.com/errata/RHSA-2015-0720.html
+    - http://rhn.redhat.com/errata/RHSA-2015-0765.html
+    - http://secunia.com/advisories/58280
+    - http://secunia.com/advisories/59290
+    - http://www.securityfocus.com/bid/67182
+    - https://github.com/netty/netty/issues/2441
+
+affected:
+    - groupId: io.netty
+      artifactId: netty
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:netty_project:netty:3.6.7
+#    - cpe:/a:netty_project:netty:4.0.2
+#    - cpe:/a:netty_project:netty:4.0.6
+#    - cpe:/a:netty_project:netty:4.0.8
+#    - cpe:/a:netty_project:netty:4.0.12
+#    - cpe:/a:netty_project:netty:3.6.3
+#    - cpe:/a:netty_project:netty:4.0.16
+#    - cpe:/a:netty_project:netty:4.0.14
+#    - cpe:/a:netty_project:netty:3.8.0
+#    - cpe:/a:netty_project:netty:4.0.11
+#    - cpe:/a:netty_project:netty:4.0.9
+#    - cpe:/a:netty_project:netty:4.0.13
+#    - cpe:/a:netty_project:netty:3.6.4
+#    - cpe:/a:netty_project:netty:4.0.1
+#    - cpe:/a:netty_project:netty:3.6.5
+#    - cpe:/a:netty_project:netty:4.0.10
+#    - cpe:/a:netty_project:netty:3.7.0
+#    - cpe:/a:netty_project:netty:4.0.0
+#    - cpe:/a:netty_project:netty:3.9.0
+#    - cpe:/a:netty_project:netty:4.0.4
+#    - cpe:/a:netty_project:netty:4.0.17
+#    - cpe:/a:netty_project:netty:3.6.0
+#    - cpe:/a:netty_project:netty:4.0.3
+#    - cpe:/a:netty_project:netty:4.0.18
+#    - cpe:/a:netty_project:netty:4.0.15
+#    - cpe:/a:netty_project:netty:4.0.7
+#    - cpe:/a:netty_project:netty:4.0.5
+#    - cpe:/a:netty_project:netty:3.6.1
+#    - cpe:/a:netty_project:netty:3.6.8
+#    - cpe:/a:netty_project:netty:3.8.1
+#    - cpe:/a:netty_project:netty:3.6.6
+#    - cpe:/a:netty_project:netty:3.6.2
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.3758653 io.netty:netty
+# 1.3758653 org.jboss.netty:netty
+# 1.2060654 io.netty:netty-all
+# 1.2060654 io.netty:netty-buffer
+# 1.2060654 io.netty:netty-codec
+# 1.2060654 io.netty:netty-common
+# 1.2060654 io.netty:netty-example
+# 1.2060654 io.netty:netty-handler
+# 1.2060654 io.netty:netty-microbench
+# 1.2060654 io.netty:netty-resolver
