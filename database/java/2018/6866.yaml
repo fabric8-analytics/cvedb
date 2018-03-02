@@ -1,0 +1,35 @@
+---
+cve: CVE-2018-6866
+title: CVE in org.apache.karaf.management.mbeans:org.apache.karaf.management.mbeans.system
+description: >
+    Cross Site Scripting (XSS) exists in PHP Scripts Mall Learning and Examination Management System Script 2.3.1 via a crafted message.
+cvss_v2: 3.5
+references:
+    - https://exploit-db.com/exploits/44170
+
+affected:
+    - groupId: org.apache.karaf.management.mbeans
+      artifactId: org.apache.karaf.management.mbeans.system
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:learning_and_examination_management_system_script_project:learning_and_examination_management_system_script:2.3.1
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.21301173 org.apache.karaf.management.mbeans:org.apache.karaf.management.mbeans.system
+# 0.1838509 net.lecousin.framework.system:system-api
+# 0.17479701 org.dkpro.script:dkpro-script-groovy
+# 0.17479701 org.picocontainer.script:picocontainer-script-bsh
+# 0.17479701 org.picocontainer.script:picocontainer-script-core
+# 0.17479701 org.picocontainer.script:picocontainer-script-groovy
+# 0.17479701 org.picocontainer.script:picocontainer-script-jruby
+# 0.17479701 org.picocontainer.script:picocontainer-script-jython
+# 0.17479701 org.picocontainer.script:picocontainer-script-rhino
+# 0.17479701 org.picocontainer.script:picocontainer-script-tck
