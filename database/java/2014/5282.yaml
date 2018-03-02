@@ -1,0 +1,36 @@
+---
+cve: CVE-2014-5282
+title: CVE in net.wouterdanes.docker:docker-maven-plugin
+description: >
+    Docker before 1.3 does not properly validate image IDs, which allows remote attackers to redirect to another image through the loading of untrusted images via 'docker load'.
+cvss_v2: 5.5
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1168436
+    - https://groups.google.com/forum/#%21msg/docker-announce/aQoVmQlcE0A/smPuBNYf8VwJ
+
+affected:
+    - groupId: net.wouterdanes.docker
+      artifactId: docker-maven-plugin
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:docker:docker 1.3 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 3.987679 org.avaje.docker:docker-commands
+# 3.8731055 com.alexecollins.docker:docker-maven-plugin
+# 3.8731055 net.wouterdanes.docker:docker-maven-plugin
+# 3.8731055 com.alexecollins.docker:docker-java-orchestration
+# 3.758532 com.alexecollins.docker:docker-java-orchestration-core
+# 3.758532 com.alexecollins.docker:docker-java-orchestration-model
+# 3.758532 org.avaje.docker:docker-run-maven-plugin
+# 3.7192166 com.alexecollins.docker:docker-java-orchestration-plugin-boot2docker
+# 3.6439586 com.alexecollins.docker:docker-java-orchestration-plugin-api
+# 3.6037927 com.github.docker-java:docker-java
