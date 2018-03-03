@@ -14,12 +14,16 @@ affected:
       artifactId: netty-codec-http
       version:
         - "<=4.0.18,4.0.0"
+      fixedin:
+        - ">=4.0.19"
+    - groupId: io.netty
+      artifactId: netty
+      version:
         - "==3.9.0"
         - "<=3.8.1,3.8.0"
         - "==3.7.0"
-        - "<=3.6.8,3.0.0"
+        - "<=3.6.8,3.6.0"
       fixedin:
-        - ">=4.0.19"
         - ">=3.9.1"
         - ">=3.8.2"
         - ">=3.7.1"
