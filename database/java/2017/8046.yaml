@@ -1,0 +1,41 @@
+---
+cve: CVE-2017-8046
+title: CVE in org.springframework.data:spring-data-rest-core
+description: >
+    Malicious PATCH requests submitted to spring-data-rest servers in Pivotal Spring Data REST versions prior to 2.5.12, 2.6.7, 3.0 RC3, Spring Boot versions prior to 2.0.0M4, and Spring Data release trains prior to Kay-RC3 can use specially crafted JSON data to run arbitrary Java code.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/100948
+    - https://pivotal.io/security/cve-2017-8046
+
+affected:
+    - groupId: org.springframework.data
+      artifactId: spring-data-rest-core
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:pivotal_software:spring_boot 2.0.0m4 (excluding)
+#    - cpe:/a:pivotal_software:spring_data_rest:3.0:rc1
+#    - cpe:/a:pivotal_software:spring_data_rest:3.0:rc2
+#    - cpe:/a:pivotal_software:spring_data kay-rc3 (excluding)
+#    - cpe:/a:pivotal_software:spring_data_rest 2.6.7 (excluding)
+#    - cpe:/a:pivotal_software:spring_data_rest:3.0:rc3
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.0821939 org.springframework.data:spring-data-rest-core
+# 1.0821939 org.springframework.data:spring-data-rest-webmvc
+# 1.0821939 org.springframework.data:spring-data-rest-repository
+# 0.9076212 org.springframework.boot:spring-boot-starter-data-rest
+# 0.9068462 org.springframework.data:spring-data-rest-hal-browser
+# 0.74020725 org.springframework.data:spring-data-hadoop-boot
+# 0.62206066 org.springframework.data:spring-data-neo4j-rest
+# 0.5939583 com.4dconcept.springframework.data:spring-data-marklogic
+# 0.5832153 org.springframework.data:spring-data-cassandra
+# 0.5832153 org.springframework.data:spring-data-commons
