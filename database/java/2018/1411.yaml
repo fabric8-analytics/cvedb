@@ -1,0 +1,44 @@
+---
+cve: CVE-2018-1411
+title: CVE in nl.cloudfarming.client:application
+description: >
+    IBM Notes Diagnostics (IBM Client Application Access and IBM Notes) could allow a local user to execute commands on the system. By crafting a command line sent via the shared memory IPC, which could be tricked into executing an executable chosen by the attacker. IBM X-Force ID: 138710.
+cvss_v2: 7.2
+references:
+    - http://www.ibm.com/support/docview.wss?uid=swg22010766
+    - http://www.ibm.com/support/docview.wss?uid=swg22010767
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/138710
+
+affected:
+    - groupId: nl.cloudfarming.client
+      artifactId: application
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:ibm:notes:8.5.2.4
+#    - cpe:/a:ibm:notes:9.0.1.9
+#    - cpe:/a:ibm:client_application_access:1.0.0.1
+#    - cpe:/a:ibm:client_application_access:1.0.1
+#    - cpe:/a:ibm:notes:8.5.1.5
+#    - cpe:/a:ibm:notes:8.5.3.6
+#    - cpe:/a:ibm:notes:9.0
+#    - cpe:/a:ibm:client_application_access:1.0.1.2
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.55009156 nl.cloudfarming.client:application
+# 0.5248498 org.netpreserve.openwayback.access-control:access-control-core
+# 0.5248498 org.netpreserve.openwayback.access-control:access-control-oracle
+# 0.5226883 com.ibm.websphere.appserver.spi:com.ibm.websphere.appserver.spi.application
+# 0.5179578 com.coherentlogic.fred.client:fred-client-webstart-application
+# 0.5179578 com.coherentlogic.wb.client:wb-client-webstart-application
+# 0.4126622 org.glassfish.main.diagnostics:diagnostics-api
+# 0.4126622 org.glassfish.main.diagnostics:diagnostics-context
+# 0.364721 com.ibm.event:ibm-db2-event-store-desktop-client
+# 0.364721 com.ibm.event:ibm-db2-event-store-client
