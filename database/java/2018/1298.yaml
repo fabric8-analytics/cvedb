@@ -1,0 +1,35 @@
+---
+cve: CVE-2018-1298
+title: CVE in org.apache.qpid:qpid-broker-plugins-management-amqp
+description: >
+    A Denial of Service vulnerability was found in Apache Qpid Broker-J 7.0.0 in functionality for authentication of connections for AMQP protocols 0-8, 0-9, 0-91 and 0-10 when PLAIN or XOAUTH2 SASL mechanism is used. The vulnerability allows unauthenticated attacker to crash the broker instance. AMQP 1.0 and HTTP connections are not affected. An authentication of incoming AMQP connections in Apache Qpid Broker-J is performed by special entities called "Authentication Providers". Each Authentication Provider can support several SASL mechanisms which are offered to the connecting clients as part of SASL negotiation process. The client chooses the most appropriate SASL mechanism for authentication. Authentication Providers of following types supports PLAIN SASL mechanism: Plain, PlainPasswordFile, SimpleLDAP, Base64MD5PasswordFile, MD5, SCRAM-SHA-256, SCRAM-SHA-1. XOAUTH2 SASL mechanism is supported by Authentication Providers of type OAuth2. If an AMQP port is configured with any of these Authentication Providers, the Broker may be vulnerable.
+cvss_v2: 4.3
+references:
+    - https://lists.apache.org/thread.html/d9087e9e57c9b6376754e2b4ea8cd5e9ae6449ed17fc384640c9c9e1@%3Cusers.qpid.apache.org%3E
+
+affected:
+    - groupId: org.apache.qpid
+      artifactId: qpid-broker-plugins-management-amqp
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:qpid_broker-j:7.0.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.8364394 org.apache.qpid:qpid-broker-plugins-management-amqp
+# 0.8012919 org.apache.qpid:qpid-broker
+# 0.72303885 org.apache.qpid:qpid-broker-codegen
+# 0.72303885 org.apache.qpid:qpid-broker-core
+# 0.704205 org.apache.qpid:qpid-broker-plugins-amqp-0-10-protocol
+# 0.704205 org.apache.qpid:qpid-broker-plugins-amqp-0-8-protocol
+# 0.704205 org.apache.qpid:qpid-broker-plugins-amqp-1-0-protocol
+# 0.64478576 org.apache.qpid:qpid-broker-plugins-websocket
+# 0.64478576 org.apache.qpid:qpid-broker-plugins-firewall
+# 0.6380878 org.apache.qpid:qpid-broker-plugins-amqp-msg-conv-0-10-to-1-0
