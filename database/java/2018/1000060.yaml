@@ -12,9 +12,9 @@ affected:
     - groupId: org.apache.deltaspike.core
       artifactId: core-project
       version:
-        - "!FIXME!"
+        - 1.2.0
       fixedin:
-        - "!FIXME!"
+        - 1.21
 
 # Additional information:
 #  configurations:
