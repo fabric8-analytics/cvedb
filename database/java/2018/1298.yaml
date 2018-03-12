@@ -9,11 +9,11 @@ references:
 
 affected:
     - groupId: org.apache.qpid
-      artifactId: Qpid Broker-J
+      artifactId: qpid-broker-core
       version:
-        - 7.0.0
+        - "==7.0.0"
       fixedin:
-        - 7.0.1
+        - ">=7.0.1"
 
 # Additional information:
 #  configurations:
