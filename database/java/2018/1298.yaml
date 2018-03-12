@@ -1,0 +1,17 @@
+---
+cve: 2018-1298
+title: DoS in Apache Qpid Broker-J
+description: >
+    A Denial of Service vulnerability was found in Apache Qpid Broker-J 7.0.0 in functionality for authentication of connections for AMQP protocols 0-8, 0-9, 0-91 and 0-10 when PLAIN or XOAUTH2 SASL mechanism is used. The vulnerability allows unauthenticated attacker to crash the broker instance. AMQP 1.0 and HTTP connections are not affected. An authentication of incoming AMQP connections in Apache Qpid Broker-J is performed by special entities called "Authentication Providers". Each Authentication Provider can support several SASL mechanisms which are offered to the connecting clients as part of SASL negotiation process. The client chooses the most appropriate SASL mechanism for authentication. Authentication Providers of following types supports PLAIN SASL mechanism: Plain, PlainPasswordFile, SimpleLDAP, Base64MD5PasswordFile, MD5, SCRAM-SHA-256, SCRAM-SHA-1. XOAUTH2 SASL mechanism is supported by Authentication Providers of type OAuth2. If an AMQP port is configured with any of these Authentication Providers, the Broker may be vulnerable.
+cvss_v2: 4.3
+references:
+    - https://lists.apache.org/thread.html/d9087e9e57c9b6376754e2b4ea8cd5e9ae6449ed17fc384640c9c9e1@%3Cusers.qpid.apache.org%3E
+    - https://nvd.nist.gov/vuln/detail/CVE-2018-1298
+    - https://github.com/apache/qpid-broker-j/commit/de509dd955229a395c086a7cca874dc55306648a
+affected:
+    - groupId: org.apache.qpid
+      artifactId: qpid-broker-core
+      version:
+        - "==7.0.0"
+      fixedin:
+        - ">=7.0.1"
