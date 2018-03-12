@@ -1,0 +1,65 @@
+---
+cve: 2013-1768
+title: CVE in org.apache.openjpa:openjpa
+description: >
+    The BrokerFactory functionality in Apache OpenJPA 1.x before 1.2.3 and 2.x before 2.2.2 creates local executable JSP files containing logging trace data produced during deserialization of certain crafted OpenJPA objects, which makes it easier for remote attackers to execute arbitrary code by creating a serialized object and leveraging improperly secured server programs.
+cvss_v2: 7.5
+references:
+    - http://archives.neohapsis.com/archives/fulldisclosure/2013-06/0099.html
+    - http://rhn.redhat.com/errata/RHSA-2013-1862.html
+    - http://svn.apache.org/viewvc?view=revision&revision=1462076
+    - http://svn.apache.org/viewvc?view=revision&revision=1462225
+    - http://svn.apache.org/viewvc?view=revision&revision=1462268
+    - http://svn.apache.org/viewvc?view=revision&revision=1462318
+    - http://svn.apache.org/viewvc?view=revision&revision=1462328
+    - http://svn.apache.org/viewvc?view=revision&revision=1462488
+    - http://svn.apache.org/viewvc?view=revision&revision=1462512
+    - http://svn.apache.org/viewvc?view=revision&revision=1462558
+    - http://www-01.ibm.com/support/docview.wss?uid=swg1PM86780
+    - http://www-01.ibm.com/support/docview.wss?uid=swg1PM86786
+    - http://www-01.ibm.com/support/docview.wss?uid=swg1PM86788
+    - http://www-01.ibm.com/support/docview.wss?uid=swg1PM86791
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21635999
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21644047
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/82268
+
+affected:
+    - groupId: org.apache.openjpa
+      artifactId: openjpa
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:openjpa:1.2.1
+#    - cpe:/a:apache:openjpa:1.0.1
+#    - cpe:/a:apache:openjpa:2.0.0
+#    - cpe:/a:apache:openjpa:1.0.0
+#    - cpe:/a:apache:openjpa:1.0.4
+#    - cpe:/a:apache:openjpa:1.1.0
+#    - cpe:/a:apache:openjpa:1.0.3
+#    - cpe:/a:apache:openjpa:1.2.0
+#    - cpe:/a:apache:openjpa:2.1.0
+#    - cpe:/a:apache:openjpa:1.0.2
+#    - cpe:/a:apache:openjpa:2.2.0
+#    - cpe:/a:apache:openjpa:1.2.2
+#    - cpe:/a:apache:openjpa:2.1.1
+#    - cpe:/a:apache:openjpa:2.2.1
+#    - cpe:/a:apache:openjpa:2.0.1
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.7524228 org.apache.openjpa:openjpa
+# 1.3890644 org.apache.openjpa:openjpa-all
+# 1.3890644 org.apache.openjpa:openjpa-jdbc
+# 1.3890644 org.apache.openjpa:openjpa-jest
+# 1.3890644 org.apache.openjpa:openjpa-kernel
+# 1.3890644 org.apache.openjpa:openjpa-lib
+# 1.3890644 org.apache.openjpa:openjpa-persistence
+# 1.3890644 org.apache.openjpa:openjpa-slice
+# 1.3890644 org.apache.openjpa:openjpa-xmlstore
+# 1.3890644 org.apache.openjpa:openjpa-examples
