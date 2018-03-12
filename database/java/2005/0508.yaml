@@ -1,0 +1,39 @@
+---
+cve: 2005-0508
+title: CVE in rhino:rhino
+description: >
+    Unknown vulnerability in Squiggle for Batik before 1.5.1 allows attackers to bypass certain access controls via certain features of the Rhino scripting engine due to a "script security issue."
+cvss_v2: 4.6
+references:
+    - http://secunia.com/advisories/14336
+    - http://www.securityfocus.com/bid/12619
+    - http://xml.apache.org/batik/#SecurityWarning
+
+affected:
+    - groupId: rhino
+      artifactId: rhino
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:batik:1.5
+#    - cpe:/a:apache:batik:1.0
+#    - cpe:/a:apache:batik:1.1
+#    - cpe:/a:apache:batik:1.1.1
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 2.134709 batik:batik-squiggle
+# 1.9445987 batik:batik-squiggle-ext
+# 1.5636804 org.apache.xmlgraphics:batik-squiggle
+# 1.4973227 rhino:rhino
+# 1.3735702 org.apache.xmlgraphics:batik-squiggle-ext
+# 1.1733947 batik:batik
+# 0.893611 batik:batik-bridge
+# 0.893611 batik:batik-css
+# 0.893611 batik:batik-dom
+# 0.893611 batik:batik-ext
