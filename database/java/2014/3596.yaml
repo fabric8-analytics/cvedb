@@ -1,19 +1,59 @@
 ---
-cve: CVE-2014-3596
-title: CVE in Apache Axis
+cve: 2014-3596
+title: CVE in org.apache.axis:axis
 description: >
     The getCN function in Apache Axis 1.4 and earlier does not properly verify that the server hostname matches a domain name in the subject's Common Name (CN) or subjectAltName field of the X.509 certificate, which allows man-in-the-middle attackers to spoof SSL servers via a certificate with a subject that specifies a common name in a field that is not the CN field.  NOTE: this issue exists because of an incomplete fix for CVE-2012-5784.
 cvss_v2: 5.8
 references:
+    - http://linux.oracle.com/errata/ELSA-2014-1193.html
     - http://rhn.redhat.com/errata/RHSA-2014-1193.html
+    - http://secunia.com/advisories/61222
+    - http://www.openwall.com/lists/oss-security/2014/08/20/2
+    - http://www.securityfocus.com/bid/69295
+    - http://www.securitytracker.com/id/1030745
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/95377
     - https://issues.apache.org/jira/browse/AXIS-2905
-    - https://nvd.nist.gov/vuln/detail/CVE-2014-3596
+
 affected:
     - groupId: org.apache.axis
       artifactId: axis
       version:
-        - "<=1.4"
-    - groupId: axis
-      artifactId: axis
-      version:
-        - "<=1.4"
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:axis:1.0:rc2
+#    - cpe:/a:apache:axis:1.2:alpha
+#    - cpe:/a:apache:axis:1.2:beta3
+#    - cpe:/a:apache:axis:1.0:beta
+#    - cpe:/a:apache:axis 1.4 (including)
+#    - cpe:/a:apache:axis:1.2.1
+#    - cpe:/a:apache:axis:1.1
+#    - cpe:/a:apache:axis:1.1:rc1
+#    - cpe:/a:apache:axis:1.1:beta
+#    - cpe:/a:apache:axis:1.2:rc3
+#    - cpe:/a:apache:axis:1.2:beta1
+#    - cpe:/a:apache:axis:1.2:rc2
+#    - cpe:/a:apache:axis:1.2:rc1
+#    - cpe:/a:apache:axis:1.0:rc1
+#    - cpe:/a:apache:axis:1.2:beta2
+#    - cpe:/a:apache:axis:1.2
+#    - cpe:/a:apache:axis:1.3
+#    - cpe:/a:apache:axis:1.0
+#    - cpe:/a:apache:axis:1.1:rc2
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.5224899 org.apache.axis:axis
+# 0.47489452 axis:axis
+# 0.44438624 com.framework-x:framework-x
+# 0.42775008 org.apache.axis2:org.apache.axis2.osgi
+# 0.4108748 org.apache.axis:axis-ant
+# 0.4108748 org.apache.axis:axis-jaxrpc
+# 0.4108748 org.apache.axis:axis-saaj
+# 0.37127492 org.httpobjects.apache-httpclient-4.x:httpobjects-apache-httpclient-4.x
+# 0.36678892 org.commonjava.ssl:ssl-tools
+# 0.36327943 axis:axis-ant
