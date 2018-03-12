@@ -9,12 +9,12 @@ references:
     - https://github.com/sensu/sensu/pull/1810
 
 affected:
-    - groupId: org.apache.deltaspike.core
-      artifactId: core-project
+    - groupId: sensuapp
+      artifactId: sensu_core
       version:
-        - "!FIXME!"
+        - 1.2.0
       fixedin:
-        - "!FIXME!"
+        - 1.2.1
 
 # Additional information:
 #  configurations:
