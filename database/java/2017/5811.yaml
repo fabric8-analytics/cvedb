@@ -15,7 +15,7 @@ affected:
       version:
         - "1.0.0"
       fixedin:
-        - "1.0.0"
+        - "!FixMe"
 
 # Additional information:
 #  configurations:
