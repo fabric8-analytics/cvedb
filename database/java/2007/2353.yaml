@@ -1,0 +1,37 @@
+---
+cve: 2007-2353
+title: CVE in axis:axis
+description: >
+    Apache Axis 1.0 allows remote attackers to obtain sensitive information by requesting a non-existent WSDL file, which reveals the installation path in the resulting exception message.
+cvss_v2: 5.0
+references:
+    - http://attrition.org/pipermail/vim/2007-April/001562.html
+    - http://www.osvdb.org/34154
+    - http://www.securityfocus.com/bid/23687
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/34167
+
+affected:
+    - groupId: axis
+      artifactId: axis
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:axis:1.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 2.8070168 axis:axis-wsdl4j
+# 2.6904984 org.apache.axis:axis
+# 2.4454117 axis:axis
+# 2.3646328 org.apache.axis2:axis2-java2wsdl
+# 2.2135227 org.apache.axis2:axis2-java2wsdl-maven-plugin
+# 2.2135227 org.apache.axis2:axis2-wsdl2code-maven-plugin
+# 2.2026472 org.apache.axis2:org.apache.axis2.osgi
+# 2.11575 org.apache.axis:axis-ant
+# 2.11575 org.apache.axis:axis-jaxrpc
+# 2.11575 org.apache.axis:axis-saaj
