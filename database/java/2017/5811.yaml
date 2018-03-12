@@ -13,9 +13,9 @@ affected:
     - groupId: com.hpe.nv
       artifactId: hpe-nv-dtos
       version:
-        - "!FIXME!"
+        - "1.0.0"
       fixedin:
-        - "!FIXME!"
+        - "1.0.0"
 
 # Additional information:
 #  configurations:
