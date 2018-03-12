@@ -1,0 +1,36 @@
+---
+cve: CVE-2018-1000060
+title: CVE in org.apache.deltaspike.core:core-project
+description: >
+    Sensu, Inc. Sensu Core version Before 1.2.0 & before commit 46ff10023e8cbf1b6978838f47c51b20b98fe30b contains a CWE-522 vulnerability in Sensu::Utilities.redact_sensitive() that can result in sensitive configuration data (e.g. passwords) may be logged in clear-text. This attack appear to be exploitable via victims with configuration matching a specific pattern will observe sensitive data outputted in their service log files. This vulnerability appears to have been fixed in 1.2.1 and later, after commit 46ff10023e8cbf1b6978838f47c51b20b98fe30b.
+cvss_v2: 5.0
+references:
+    - https://github.com/sensu/sensu/issues/1804
+    - https://github.com/sensu/sensu/pull/1810
+
+affected:
+    - groupId: sensuapp
+      artifactId: sensu_core
+      version:
+        - 1.2.0
+      fixedin:
+        - 1.2.1
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:sensuapp:sensu_core 1.2.1 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.46571547 org.jdtaus.core:jdtaus-core-utilities
+# 0.25831637 com.gestalt.sip.utilities:sip-message-utilities
+# 0.2286863 com.axway.ats.framework.utilities:ats-s3-utilities
+# 0.21414176 tech.rsqn.simple-cluster-utilities:simple-cluster-utilities
+# 0.2039688 com.bluecatcode.core:core
+# 0.2039688 net.awired.core:core
+# 0.19642505 org.apache.deltaspike.core:core-project
+# 0.19642505 net.open-esb.core:framework-core
+# 0.19642505 fr.norad.core:core
+# 0.1365657 org.appverse.web.framework.modules.backend.tests.test-utilities.frontfacade-mvc:appverse-web-modules-backend-test-utilities-frontfacade-mvc.
