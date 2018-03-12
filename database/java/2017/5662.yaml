@@ -1,0 +1,40 @@
+---
+cve: 2017-5662
+title: CVE in org.apache.xmlgraphics:batik-svg-dom
+description: >
+    In Apache Batik before 1.9, files lying on the filesystem of the server which uses batik can be revealed to arbitrary users who send maliciously formed SVG files. The file types that can be shown depend on the user context in which the exploitable application is running. If the user is root a full compromise of the server - including confidential or sensitive files - would be possible. XXE can also be used to attack the availability of the server via denial of service as the references within a xml document can trivially trigger an amplification attack.
+cvss_v2: 7.9
+references:
+    - http://www.oracle.com/technetwork/security-advisory/cpuoct2017-3236626.html
+    - http://www.securityfocus.com/bid/97948
+    - http://www.securitytracker.com/id/1038334
+    - https://access.redhat.com/errata/RHSA-2017:2546
+    - https://access.redhat.com/errata/RHSA-2017:2547
+    - https://access.redhat.com/errata/RHSA-2018:0319
+    - https://xmlgraphics.apache.org/security.html
+
+affected:
+    - groupId: org.apache.xmlgraphics
+      artifactId: batik-svg-dom
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:batik 1.8 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 3.7057307 batik:batik-svg-dom
+# 3.10724 batik:batik-ttf2svg
+# 2.7858987 batik:batik
+# 2.2070444 org.apache.xmlgraphics:batik-svg-dom
+# 2.1984563 batik:batik-bridge
+# 2.1984563 batik:batik-css
+# 2.1984563 batik:batik-dom
+# 2.1984563 batik:batik-ext
+# 2.1984563 batik:batik-extension
+# 2.1984563 batik:batik-gvt
