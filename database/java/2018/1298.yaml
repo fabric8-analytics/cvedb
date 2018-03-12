@@ -9,11 +9,11 @@ references:
 
 affected:
     - groupId: org.apache.qpid
-      artifactId: qpid-broker-plugins-management-amqp
+      artifactId: Qpid Broker-J
       version:
-        - "!FIXME!"
+        - 7.0.0
       fixedin:
-        - "!FIXME!"
+        - 7.0.1
 
 # Additional information:
 #  configurations:
