@@ -1,0 +1,42 @@
+---
+cve: CVE-2015-6420
+title: CVE in commons-collections:commons-collections
+description: >
+    Serialized-object interfaces in certain Cisco Collaboration and Social Media; Endpoint Clients and Client Software; Network Application, Service, and Acceleration; Network and Content Security Devices; Network Management and Provisioning; Routing and Switching - Enterprise and Service Provider; Unified Computing; Voice and Unified Communications Devices; Video, Streaming, TelePresence, and Transcoding Devices; Wireless; and Cisco Hosted Services products allow remote attackers to execute arbitrary commands via a crafted serialized Java object, related to the Apache Commons Collections (ACC) library.
+cvss_v2: 7.5
+references:
+    - http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20151209-java-deserialization
+    - http://www.securityfocus.com/bid/78872
+    - https://h20566.www2.hpe.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c05376917
+    - https://h20566.www2.hpe.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c05390722
+    - https://www.kb.cert.org/vuls/id/576313
+    - https://www.tenable.com/security/research/tra-2017-14
+    - https://www.tenable.com/security/research/tra-2017-23
+
+affected:
+    - groupId: commons-collections
+      artifactId: commons-collections
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:commons_collections 3.2.1 (including)
+#    - cpe:/a:apache:commons_collections:4.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.16907057 commons-collections:commons-collections
+# 0.1687434 org.apache.directory.studio:org.apache.commons.collections
+# 0.15275674 commons-collections:commons-collections-testframework
+# 0.13502006 pl.chilldev.commons:commons-collections
+# 0.121034555 org.apache.servicemix.bundles:org.apache.servicemix.bundles.commons-collections
+# 0.119350456 org.aksw.commons:aksw-commons-collections
+# 0.07833642 com.dottydingo.service.endpoint:service-endpoint
+# 0.06841873 org.apache.aries.application:org.apache.aries.application.management
+# 0.065704815 org.apache.commons:commons-collections4
+# 0.06255429 com.stratio.streaming:streaming-commons
