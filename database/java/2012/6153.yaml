@@ -31,9 +31,10 @@ affected:
     - groupId: org.apache.httpcomponents
       artifactId: httpclient
       version:
-        - "!FIXME!"
+        - "<= 4.2.2"
       fixedin:
-        - "!FIXME!"
+        - "== 4.2.3"
+        
 
 # Additional information:
 #  configurations:
