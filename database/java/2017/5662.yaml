@@ -17,9 +17,9 @@ affected:
     - groupId: org.apache.xmlgraphics
       artifactId: batik-svg-dom
       version:
-        - "!FIXME!"
+        - "<= 1.0,1.8"
       fixedin:
-        - "!FIXME!"
+        - "== 1.9"
 # Additional information:
 #  configurations:
 #    - cpe:/a:apache:batik 1.8 (including)
