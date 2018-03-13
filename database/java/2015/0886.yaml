@@ -5,30 +5,11 @@ description: >
     Integer overflow in the crypt_raw method in the key-stretching implementation in jBCrypt before 0.4 makes it easier for remote attackers to determine cleartext values of password hashes via a brute-force attack against hashes associated with the maximum exponent.
 cvss_v2: 5.0
 references:
-    - http://jvn.jp/en/jp/JVN77718330/index.html
-    - http://jvndb.jvn.jp/jvndb/JVNDB-2015-000033
-    - http://lists.fedoraproject.org/pipermail/package-announce/2015-March/151496.html
-    - http://lists.fedoraproject.org/pipermail/package-announce/2015-March/151786.html
-    - http://lists.fedoraproject.org/pipermail/package-announce/2015-March/151797.html
-    - http://www.mindrot.org/projects/jBCrypt/news/rel04.html
-    - https://bugzilla.mindrot.org/show_bug.cgi?id=2097
-
+    - https://nvd.nist.gov/vuln/detail/CVE-2015-0886
 affected:
     - groupId: org.mindrot
       artifactId: jbcrypt
       version:
-        - "!FIXME!"
+        - "<=0.3m"
       fixedin:
-        - "!FIXME!"
-# Additional information:
-#  configurations:
-#    - cpe:/o:fedoraproject:fedora:22
-#    - cpe:/o:fedoraproject:fedora:21
-#    - cpe:/o:fedoraproject:fedora:20
-#    - cpe:/a:mindrot:jbcrypt 0.3 (including)
-#
-# All available versions:
-#versions
-#
-# Other possible package names:
-# 3.3661585 org.mindrot:jbcrypt
+        - ">=0.4"
