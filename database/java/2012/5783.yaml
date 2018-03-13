@@ -28,9 +28,9 @@ affected:
     - groupId: commons-httpclient
       artifactId: commons-httpclient
       version:
-        - "!FIXME!"
+        - "== 3.x"
       fixedin:
-        - "!FIXME!"
+        - "== 4.x"
 
 # Additional information:
 #  configurations:
