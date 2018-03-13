@@ -1,0 +1,35 @@
+---
+cve: 2018-1214
+title: CVE in javax.enterprise.concurrent:javax.enterprise.concurrent-api
+description: >
+    Dell EMC SupportAssist Enterprise version 1.1 creates a local Windows user account named "OMEAdapterUser" with a default password as part of the installation process. This unnecessary user account also remains even after an upgrade from v1.1 to v1.2. Access to the management console can be achieved by someone with knowledge of the default password. If SupportAssist Enterprise is installed on a server running OpenManage Essentials (OME), the OmeAdapterUser user account is added as a member of the OmeAdministrators group for the OME. An unauthorized person with knowledge of the default password and access to the OME web console could potentially use this account to gain access to the affected installation of OME with OmeAdministrators privileges. This is fixed in version 1.2.1.
+cvss_v2: 4.4
+references:
+    - http://www.dell.com/support/article/us/en/04/sln308843/dell-emc-supportassist-enterprise-server-storage-networking-undocumented-default-account-vulnerability
+
+affected:
+    - groupId: javax.enterprise.concurrent
+      artifactId: javax.enterprise.concurrent-api
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:dell:emc_supportassist_enterprise:1.1
+#    - cpe:/o:microsoft:windows:-
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.42127967 com.github.emc-mongoose:mongoose-storage-driver-net-http-emc
+# 0.3612388 com.github.emc-mongoose:mongoose-storage-driver-emc-s3
+# 0.3612388 com.github.emc-mongoose:mongoose-storage-driver-net-http-emc-atmos
+# 0.3612388 com.github.emc-mongoose:mongoose-storage-driver-net-http-emc-s3
+# 0.34081316 javax.security.enterprise:javax.security.enterprise-api
+# 0.34081316 javax.enterprise.concurrent:javax.enterprise.concurrent-api
+# 0.34081316 javax.enterprise.deploy:javax.enterprise.deploy-api
+# 0.23840255 au.net.causal.groovysh-windows-fix:groovysh-windows-fix
+# 0.21495546 org.appverse.web.framework.modules.backend.core.enterprise.aop:appverse-web-modules-backend-core-enterprise-aop
+# 0.21495546 org.appverse.web.framework.modules.backend.core.enterprise.converters:appverse-web-modules-backend-core-enterprise-converters
