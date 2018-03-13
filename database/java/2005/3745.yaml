@@ -21,9 +21,9 @@ affected:
     - groupId: struts
       artifactId: struts
       version:
-        - "!FIXME!"
+        - "==1.2.7"
       fixedin:
-        - "!FIXME!"
+        - ">=1.2.8"
 
 # Additional information:
 #  configurations:
