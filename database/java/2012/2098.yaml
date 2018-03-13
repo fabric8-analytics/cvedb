@@ -25,9 +25,9 @@ affected:
     - groupId: org.apache.commons
       artifactId: commons-compress
       version:
-        - "!FIXME!"
+        - ">= 1.5 & <= 1.8.3"
       fixedin:
-        - "!FIXME!"
+        - ">= 1.8.4"
 
 # Additional information:
 #  configurations:
