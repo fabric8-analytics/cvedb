@@ -34,7 +34,7 @@ affected:
       version:
         - "<= 2.0 , 2.8.1"
       fixedin:
-        - "2.8.2"
+        - "== 2.8.2"
 
 # Additional information:
 #  configurations:
