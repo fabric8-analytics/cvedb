@@ -17,9 +17,9 @@ affected:
     - groupId: commons-collections
       artifactId: commons-collections
       version:
-        - "!FIXME!"
+        - "== 3.2.1 & == 4.0"
       fixedin:
-        - "!FIXME!"
+        - "== 3.2.2 & == 4.1"
 
 # Additional information:
 #  configurations:
