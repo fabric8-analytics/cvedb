@@ -32,9 +32,9 @@ affected:
     - groupId: org.apache.logging.log4j
       artifactId: log4j-api
       version:
-        - "!FIXME!"
+        - "<= 2.0-alpha1 , 2.8.1"
       fixedin:
-        - "!FIXME!"
+        - "2.8.2"
 
 # Additional information:
 #  configurations:
