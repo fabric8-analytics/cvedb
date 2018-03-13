@@ -19,11 +19,13 @@ references:
 
 affected:
     - groupId: org.apache.pdfbox
-      artifactId: pdfbox
+      artifactId: pdfbox-parent
       version:
-        - "!FIXME!"
+        - "<= 1.8.0 ,1.8.11"
+        - "== 2.0.0"
       fixedin:
-        - "!FIXME!"
+        - "== 1.8.12"
+        - "== 2.0.1"
 
 # Additional information:
 #  configurations:
