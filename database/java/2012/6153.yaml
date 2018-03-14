@@ -5,28 +5,9 @@ description: >
     http/conn/ssl/AbstractVerifier.java in Apache Commons HttpClient before 4.2.3 does not properly verify that the server hostname matches a domain name in the subject's Common Name (CN) or subjectAltName field of the X.509 certificate, which allows man-in-the-middle attackers to spoof SSL servers via a certificate with a subject that specifies a common name in a field that is not the CN field.  NOTE: this issue exists because of an incomplete fix for CVE-2012-5783.
 cvss_v2: 4.3
 references:
-    - http://rhn.redhat.com/errata/RHSA-2014-1098.html
-    - http://rhn.redhat.com/errata/RHSA-2014-1833.html
-    - http://rhn.redhat.com/errata/RHSA-2014-1834.html
-    - http://rhn.redhat.com/errata/RHSA-2014-1835.html
-    - http://rhn.redhat.com/errata/RHSA-2014-1836.html
-    - http://rhn.redhat.com/errata/RHSA-2014-1891.html
-    - http://rhn.redhat.com/errata/RHSA-2014-1892.html
-    - http://rhn.redhat.com/errata/RHSA-2015-0125.html
-    - http://rhn.redhat.com/errata/RHSA-2015-0158.html
-    - http://rhn.redhat.com/errata/RHSA-2015-0675.html
-    - http://rhn.redhat.com/errata/RHSA-2015-0720.html
-    - http://rhn.redhat.com/errata/RHSA-2015-0765.html
-    - http://rhn.redhat.com/errata/RHSA-2015-0850.html
-    - http://rhn.redhat.com/errata/RHSA-2015-0851.html
-    - http://rhn.redhat.com/errata/RHSA-2015-1888.html
     - http://svn.apache.org/viewvc?view=revision&revision=1411705
-    - http://www.securityfocus.com/bid/69257
-    - http://www.ubuntu.com/usn/USN-2769-1
-    - https://access.redhat.com/solutions/1165533
     - https://bugzilla.redhat.com/show_bug.cgi?id=1129916
-    - https://h20566.www2.hpe.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c05103564
-
+    - https://nvd.nist.gov/vuln/detail/CVE-2012-6153
 affected:
     - groupId: org.apache.httpcomponents
       artifactId: httpclient
@@ -34,23 +15,7 @@ affected:
         - "<=4.2.2"
       fixedin:
         - ">=4.2.3"
-        
-
-# Additional information:
-#  configurations:
-#    - cpe:/a:apache:commons-httpclient 4.2.2 (including)
-#
-# All available versions:
-#versions
-#
-# Other possible package names:
-# 1.1975745 commons-httpclient:commons-httpclient
-# 0.9127538 org.apache.geronimo.bundles:commons-httpclient
-# 0.8388787 org.apache.servicemix.bundles:org.apache.servicemix.bundles.commons-httpclient
-# 0.7856795 org.httpobjects.apache-httpclient-4.x:httpobjects-apache-httpclient-4.x
-# 0.5069733 HTTPClient:HTTPClient
-# 0.4796325 name.wramner.httpclient:HttpClient
-# 0.3202045 org.apache.servicemix.bundles:org.apache.servicemix.bundles.not-yet-commons-ssl
-# 0.30388314 org.apache.httpcomponents:httpclient
-# 0.30308992 org.wildfly.wildfly-http-client:wildfly-http-client-common
-# 0.2826095 org.apache.directory.studio:org.apache.httpcomponents.httpclient
+    - groupId: commons-httpclient
+      artifactId: commons-httpclient
+      version:
+        - "<=3.1"
