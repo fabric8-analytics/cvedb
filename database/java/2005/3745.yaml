@@ -1,0 +1,16 @@
+---
+cve: 2005-3745
+title: CVE in struts:struts
+description: >
+    Cross-site scripting (XSS) vulnerability in Apache Struts 1.2.7, and possibly other versions allows remote attackers to inject arbitrary web script or HTML via the query string, which is not properly quoted or filtered when the request handler generates an error message.
+cvss_v2: 4.3
+references:
+    - https://nvd.nist.gov/vuln/detail/CVE-2005-3745
+    - https://github.com/apache/struts1/commit/d75d351da0f85b8930fd47fd3c23f5351cddbcf3
+affected:
+    - groupId: struts
+      artifactId: struts
+      version:
+        - "<=1.2.7"
+      fixedin:
+        - ">=1.2.8"
