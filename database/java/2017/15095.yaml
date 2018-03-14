@@ -18,9 +18,9 @@ affected:
     - groupId: com.fasterxml.jackson.core
       artifactId: jackson-databind
       version:
-        - "!FIXME!"
+        - "<=2.8.10,==2.9.1"
       fixedin:
-        - "!FIXME!"
+        - "2.8.11.1, 2.9.4"
 # Additional information:
 #  configurations:
 #    - cpe:/a:fasterxml:jackson-databind:2.9.0
