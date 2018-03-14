@@ -12,9 +12,9 @@ affected:
     - groupId: org.apache.karaf
       artifactId: org.apache.karaf.client
       version:
-        - "!FIXME!"
+        - "<4.0.8"
       fixedin:
-        - "!FIXME!"
+        - ">=4.0.8"
 # Additional information:
 #  configurations:
 #    - cpe:/a:apache:karaf 4.0.8 (excluding)
