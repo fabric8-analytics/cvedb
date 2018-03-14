@@ -1,0 +1,18 @@
+---
+cve: 2016-8750
+title: CVE in Apache Karaf
+description: >
+    Apache Karaf prior to 4.0.8 used the LDAPLoginModule to authenticate users to a directory via LDAP. However, it did not encoding usernames properly and hence was vulnerable to LDAP injection attacks leading to a denial of service.
+cvss_v2: 4.0
+references:
+    - https://nvd.nist.gov/vuln/detail/CVE-2016-8750
+    - https://karaf.apache.org/security/cve-2016-8750.txt
+    - https://issues.apache.org/jira/browse/KARAF-4892
+    - https://github.com/apache/karaf/commit/ac07cb2440ceff94b3001728c1611fc471253d19
+affected:
+    - groupId: org.apache.karaf.jaas
+      artifactId: org.apache.karaf.jaas.modules
+      version:
+        - "<=4.0.7"
+      fixedin:
+        - ">=4.0.8"
