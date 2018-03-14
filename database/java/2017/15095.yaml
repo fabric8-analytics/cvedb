@@ -1,0 +1,44 @@
+---
+cve: 2017-15095
+title: CVE in com.fasterxml.jackson.core:jackson-databind
+description: >
+    A deserialization flaw was discovered in the jackson-databind in versions before 2.8.10 and 2.9.1, which could allow an unauthenticated user to perform code execution by sending the maliciously crafted input to the readValue method of the ObjectMapper. This issue extends the previous flaw CVE-2017-7525 by blacklisting more classes that could be used maliciously.
+cvss_v2: 7.5
+references:
+    - http://www.securitytracker.com/id/1039769
+    - https://access.redhat.com/errata/RHSA-2017:3189
+    - https://access.redhat.com/errata/RHSA-2017:3190
+    - https://access.redhat.com/errata/RHSA-2018:0342
+    - https://github.com/FasterXML/jackson-databind/issues/1680
+    - https://github.com/FasterXML/jackson-databind/issues/1737
+    - https://security.netapp.com/advisory/ntap-20171214-0003/
+    - https://www.debian.org/security/2017/dsa-4037
+
+affected:
+    - groupId: com.fasterxml.jackson.core
+      artifactId: jackson-databind
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:fasterxml:jackson-databind:2.9.0
+#    - cpe:/o:debian:debian_linux:8.0
+#    - cpe:/o:debian:debian_linux:9.0
+#    - cpe:/a:fasterxml:jackson-databind 2.8.10 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 2.0061376 com.fasterxml.jackson.core:jackson-databind
+# 1.4573605 org.jvirtanen.value:value
+# 1.4302628 com.ppiech.auto.value:auto-value-jackson
+# 1.3190666 com.fasterxml:jackson-xml-databind
+# 0.94229686 com.google.auto.value:auto-value
+# 0.94229686 com.gabrielittner.auto.value:auto-value-with
+# 0.9036269 com.fasterxml:jackson-module-scala
+# 0.9036269 com.fasterxml:jackson-module-hibernate
+# 0.9036269 com.fasterxml:jackson-module-afterburner
+# 0.9036269 com.fasterxml:jackson-module-json-org
