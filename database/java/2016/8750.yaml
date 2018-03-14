@@ -1,0 +1,35 @@
+---
+cve: 2016-8750
+title: CVE in org.apache.karaf:org.apache.karaf.client
+description: >
+    Apache Karaf prior to 4.0.8 used the LDAPLoginModule to authenticate users to a directory via LDAP. However, it did not encoding usernames properly and hence was vulnerable to LDAP injection attacks leading to a denial of service.
+cvss_v2: 4.0
+references:
+    - http://www.securityfocus.com/bid/103098
+    - https://karaf.apache.org/security/cve-2016-8750.txt
+
+affected:
+    - groupId: org.apache.karaf
+      artifactId: org.apache.karaf.client
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:karaf 4.0.8 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.3302951 org.apache.karaf:org.apache.karaf.client
+# 1.3302951 org.apache.karaf:org.apache.karaf.event
+# 1.3302951 org.apache.karaf:org.apache.karaf.main
+# 1.3302951 org.apache.karaf:org.apache.karaf.util
+# 1.3302951 org.apache.karaf:org.apache.karaf.exception
+# 1.3302951 org.apache.karaf:org.apache.karaf.management
+# 1.1520758 org.apache.karaf.audit:org.apache.karaf.audit.core
+# 1.1520758 org.apache.karaf.bundle:org.apache.karaf.bundle.blueprintstate
+# 1.1520758 org.apache.karaf.bundle:org.apache.karaf.bundle.core
+# 1.1520758 org.apache.karaf.bundle:org.apache.karaf.bundle.springstate
