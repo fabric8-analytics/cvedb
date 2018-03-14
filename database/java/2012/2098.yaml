@@ -1,0 +1,15 @@
+---
+cve: 2012-2098
+title: CVE in org.apache.commons:commons-compress
+description: >
+    Algorithmic complexity vulnerability in the sorting algorithms in bzip2 compressing stream (BZip2CompressorOutputStream) in Apache Commons Compress before 1.4.1 allows remote attackers to cause a denial of service (CPU consumption) via a file with many repeating inputs.
+cvss_v2: 5.0
+references:
+    - https://nvd.nist.gov/vuln/detail/CVE-2012-2098
+affected:
+    - groupId: org.apache.commons
+      artifactId: commons-compress
+      version:
+        - "<=1.4"
+      fixedin:
+        - ">=1.4.1"
