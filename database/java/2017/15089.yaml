@@ -13,7 +13,7 @@ affected:
     - groupId: org.infinispan
       artifactId: infinispan-client-hotrod
       version:
-        - "<=7.1.1"
+        - "<=9.2.0.CR1"
       fixedin:
         - "!FIXME!"
 # Additional information:
