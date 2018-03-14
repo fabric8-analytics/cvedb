@@ -1,45 +1,16 @@
 ---
-cve: CVE-2005-3745
+cve: 2005-3745
 title: CVE in struts:struts
 description: >
     Cross-site scripting (XSS) vulnerability in Apache Struts 1.2.7, and possibly other versions allows remote attackers to inject arbitrary web script or HTML via the query string, which is not properly quoted or filtered when the request handler generates an error message.
 cvss_v2: 4.3
 references:
-    - http://secunia.com/advisories/17677
-    - http://secunia.com/advisories/18341
-    - http://securityreason.com/securityalert/197
-    - http://securitytracker.com/id?1015257
-    - http://www.hacktics.com/AdvStrutsNov05.html
-    - http://www.osvdb.org/21021
-    - http://www.redhat.com/support/errata/RHSA-2006-0157.html
-    - http://www.redhat.com/support/errata/RHSA-2006-0161.html
-    - http://www.securityfocus.com/archive/1/archive/1/417296/30/0/threaded
-    - http://www.securityfocus.com/bid/15512
-    - http://www.vupen.com/english/advisories/2005/2525
-
+    - https://nvd.nist.gov/vuln/detail/CVE-2005-3745
+    - https://github.com/apache/struts1/commit/d75d351da0f85b8930fd47fd3c23f5351cddbcf3
 affected:
     - groupId: struts
       artifactId: struts
       version:
-        - "==1.2.7"
+        - "<=1.2.7"
       fixedin:
         - ">=1.2.8"
-
-# Additional information:
-#  configurations:
-#    - cpe:/a:apache:struts:1.2.7
-#
-# All available versions:
-#versions
-#
-# Other possible package names:
-# 0.71463615 org.apache.sling:org.apache.sling.xss
-# 0.70984256 struts:struts
-# 0.6203901 org.apache.struts:struts-annotations
-# 0.6203901 org.apache.struts:struts-core
-# 0.6203901 org.apache.struts:struts-el
-# 0.6203901 org.apache.struts:struts-extras
-# 0.6203901 org.apache.struts:struts-faces
-# 0.6203901 org.apache.struts:struts-scripting
-# 0.6203901 org.apache.struts:struts-taglib
-# 0.6203901 org.apache.struts:struts-tiles
