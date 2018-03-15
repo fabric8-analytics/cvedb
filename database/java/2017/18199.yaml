@@ -13,9 +13,9 @@ affected:
     - groupId: net.sf.gnu-hylafax
       artifactId: gnu-hylafax-core
       version:
-        - "!FIXME!"
+        - "<1.0.0"
       fixedin:
-        - "!FIXME!"
+        - ">=1.0.0"
 # Additional information:
 #  configurations:
 #    - cpe:/a:gnu:libcdio 1.0.0 (excluding)
