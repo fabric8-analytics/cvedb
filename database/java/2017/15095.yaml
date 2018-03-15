@@ -22,9 +22,10 @@ affected:
     - groupId: com.fasterxml.jackson.core
       artifactId: jackson-databind
       version:
-        - "!FIXME!"
+        - "==2.9.1"
+        - "<=2.8.10"
       fixedin:
-        - "!FIXME!"
+        - ">=2.8.11.1"
 # Additional information:
 #  configurations:
 #    - cpe:/o:debian:debian_linux:9.0
