@@ -1,0 +1,32 @@
+---
+cve: 2017-18199
+title: CVE in net.sf.gnu-hylafax:gnu-hylafax-core
+description: >
+    realloc_symlink in rock.c in GNU libcdio before 1.0.0 allows remote attackers to cause a denial of service (NULL Pointer Dereference) via a crafted iso file.
+cvss_v2: 4.3
+references:
+    - http://ftp.gnu.org/gnu/libcdio/libcdio-1.0.0.tar.gz
+    - http://www.securityfocus.com/bid/103202
+    - https://savannah.gnu.org/bugs/?52264
+
+affected:
+    - groupId: net.sf.gnu-hylafax
+      artifactId: gnu-hylafax-core
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:gnu:libcdio 1.0.0 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.1141827 org.gnu:gnu-crypto
+# 0.7127192 gnu-regexp:gnu-regexp
+# 0.6236293 net.sf.gnu-hylafax:gnu-hylafax-core
+# 0.6236293 net.sf.gnu-hylafax:gnu-hylafax-pool
+# 0.6236293 net.sf.gnu-hylafax:gnu-hylafax-utils
+# 0.5847223 net.sf.gnu-hylafax:gnu-hylafax-inet-ftp
