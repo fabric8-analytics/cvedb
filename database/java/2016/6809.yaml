@@ -13,9 +13,9 @@ affected:
     - groupId: org.apache.tika
       artifactId: tika
       version:
-        - "!FIXME!"
+        - "<1.14"
       fixedin:
-        - "!FIXME!"
+        - ">=1.14"
 
 # Additional information:
 #  configurations:
