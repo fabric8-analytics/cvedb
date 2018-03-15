@@ -1,0 +1,45 @@
+---
+cve: 2017-15089
+title: CVE in org.infinispan:infinispan-client-hotrod
+description: >
+    It was found that the Hotrod client in Infinispan before 9.2.0.CR1 would unsafely read deserialized data on information from the cache. An authenticated attacker could inject a malicious object into the data cache and attain deserialization on the client, and possibly conduct further attacks.
+cvss_v2: 6.5
+references:
+    - http://www.securitytracker.com/id/1040360
+    - https://access.redhat.com/errata/RHSA-2018:0294
+    - https://access.redhat.com/errata/RHSA-2018:0478
+    - https://access.redhat.com/errata/RHSA-2018:0479
+    - https://access.redhat.com/errata/RHSA-2018:0480
+    - https://access.redhat.com/errata/RHSA-2018:0481
+    - https://github.com/infinispan/infinispan/pull/5639
+
+affected:
+    - groupId: org.infinispan
+      artifactId: infinispan-client-hotrod
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:infinispan:infinispan:9.2.0:cr1
+#    - cpe:/a:infinispan:infinispan:9.2.0:alpha2
+#    - cpe:/a:infinispan:infinispan:9.2.0:alpha1
+#    - cpe:/a:infinispan:infinispan:9.2.0:beta2
+#    - cpe:/a:infinispan:infinispan:9.2.0:beta1
+#    - cpe:/a:infinispan:infinispan 9.1.6 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.6848832 org.infinispan:infinispan-client-hotrod
+# 1.6848832 org.infinispan:infinispan-server-hotrod
+# 1.6848832 org.infinispan:infinispan-avro-hotrod
+# 0.9744314 org.infinispan:infinispan
+# 0.7426437 org.infinispan:infinispan-checkstyle
+# 0.7426437 org.infinispan:infinispan-cli
+# 0.7426437 org.infinispan:infinispan-cloud
+# 0.7426437 org.infinispan:infinispan-commons
+# 0.7426437 org.infinispan:infinispan-core
+# 0.7426437 org.infinispan:infinispan-distribution
