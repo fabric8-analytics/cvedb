@@ -1,0 +1,39 @@
+---
+cve: 2018-5378
+title: CVE in org.tiogasolutions.notify:tioga-notify-client
+description: >
+    The Quagga BGP daemon (bgpd) prior to version 1.2.3 does not properly bounds check the data sent with a NOTIFY to a peer, if an attribute length is invalid. Arbitrary data from the bgpd process may be sent over the network to a peer and/or bgpd may crash.
+cvss_v2: 4.9
+references:
+    - http://savannah.nongnu.org/forum/forum.php?forum_id=9095
+    - http://www.kb.cert.org/vuls/id/940439
+    - https://gogs.quagga.net/Quagga/quagga/src/master/doc/security/Quagga-2018-0543.txt
+    - https://www.debian.org/security/2018/dsa-4115
+
+affected:
+    - groupId: org.tiogasolutions.notify
+      artifactId: tioga-notify-client
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/o:debian:debian_linux:9.0
+#    - cpe:/a:quagga:quagga 1.2.2 (including)
+#    - cpe:/o:debian:debian_linux:8.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.0594448 org.tiogasolutions.notify:tioga-notify-client
+# 1.0594448 org.tiogasolutions.notify:tioga-notify-engine
+# 1.0594448 org.tiogasolutions.notify:tioga-notify-jackson
+# 1.0594448 org.tiogasolutions.notify:tioga-notify-kernel
+# 1.0594448 org.tiogasolutions.notify:tioga-notify-notifier
+# 1.0594448 org.tiogasolutions.notify:tioga-notify-pub
+# 1.0594448 org.tiogasolutions.notify:tioga-notify-test
+# 0.99521995 org.tiogasolutions.notify:tioga-notify-extras-monitor
+# 0.99521995 org.tiogasolutions.notify:tioga-notify-processor-logger
+# 0.99521995 org.tiogasolutions.notify:tioga-notify-processor-push
