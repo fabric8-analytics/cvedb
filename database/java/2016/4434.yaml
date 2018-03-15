@@ -15,9 +15,9 @@ affected:
     - groupId: org.apache.tika
       artifactId: tika-xmp
       version:
-        - "!FIXME!"
+        - "<1.13"
       fixedin:
-        - "!FIXME!"
+        - ">=1.13"
 
 # Additional information:
 #  configurations:
