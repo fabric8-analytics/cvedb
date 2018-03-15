@@ -13,9 +13,9 @@ affected:
     - groupId: com.cedarsoft.couchdb
       artifactId: couchdb-parent
       version:
-        - "!FIXME!"
+        - "==2.0.0"
       fixedin:
-        - "!FIXME!"
+        - ">=2.0.0.1"
 # Additional information:
 #  configurations:
 #    - cpe:/a:apache:couchdb:2.0.0
