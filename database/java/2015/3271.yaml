@@ -1,37 +1,18 @@
 ---
 cve: 2015-3271
-title: CVE in org.apache.tika:tika
+title: CVE in Apache Tika
 description: >
     Apache Tika server (aka tika-server) in Apache Tika 1.9 might allow remote attackers to read arbitrary files via the HTTP fileUrl header.
 cvss_v2: 5.0
 references:
-    - http://www.openwall.com/lists/oss-security/2015/08/13/5
-    - http://www.securityfocus.com/bid/95020
     - https://lists.apache.org/thread.html/d2b3e7afb0251fac95fdee9817423cbc91e3d99a848c25a51d91c1e8@1439485507@%3Cdev.tika.apache.org%3E
-
+    - https://issues.apache.org/jira/browse/TIKA-1690
+    - https://github.com/apache/tika/commit/98672cdd92b6325ff78c763955a7c045b364095b
+    - https://nvd.nist.gov/vuln/detail/CVE-2015-3271
 affected:
     - groupId: org.apache.tika
-      artifactId: tika
+      artifactId: tika-server
       version:
         - "==1.9"
       fixedin:
         - ">=1.10"
-
-# Additional information:
-#  configurations:
-#    - cpe:/a:apache:tika:1.9
-#
-# All available versions:
-#versions
-#
-# Other possible package names:
-# 2.1973176 org.apache.tika:tika
-# 1.7213819 org.apache.tika:tika-app
-# 1.7213819 org.apache.tika:tika-batch
-# 1.7213819 org.apache.tika:tika-bundle
-# 1.7213819 org.apache.tika:tika-core
-# 1.7213819 org.apache.tika:tika-dl
-# 1.7213819 org.apache.tika:tika-eval
-# 1.7213819 org.apache.tika:tika-example
-# 1.7213819 org.apache.tika:tika-langdetect
-# 1.7213819 org.apache.tika:tika-nlp
