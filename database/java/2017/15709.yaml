@@ -1,42 +1,17 @@
 ---
 cve: 2017-15709
-title: CVE in org.apache.activemq:activemq-openwire-generator
+title: Information Leak in ActiveMQ
 description: >
     When using the OpenWire protocol in ActiveMQ versions 5.14.0 to 5.15.2 it was found that certain system details (such as the OS and kernel version) are exposed as plain text.
 cvss_v2: 4.3
 references:
     - https://lists.apache.org/thread.html/2b6f04a552c6ec2de6563c2df3bba813f0fe9c7e22cce27b7829db89@%3Cdev.activemq.apache.org%3E
-
+    - https://nvd.nist.gov/vuln/detail/CVE-2017-15709
+    - https://github.com/apache/activemq/commit/d2e49be3a8f21d862726c1f6bc9e1caa6ee8b581
 affected:
     - groupId: org.apache.activemq
-      artifactId: activemq-openwire-generator
+      artifactId: activemq-client
       version:
-        - "!FIXME!"
+        - "<=5.15.2,5.14.0"
       fixedin:
-        - "!FIXME!"
-# Additional information:
-#  configurations:
-#    - cpe:/a:apache:activemq:5.14.4
-#    - cpe:/a:apache:activemq:5.15.0
-#    - cpe:/a:apache:activemq:5.15.1
-#    - cpe:/a:apache:activemq:5.14.5
-#    - cpe:/a:apache:activemq:5.14.2
-#    - cpe:/a:apache:activemq:5.14.1
-#    - cpe:/a:apache:activemq:5.14.0
-#    - cpe:/a:apache:activemq:5.15.2
-#    - cpe:/a:apache:activemq:5.14.3
-#
-# All available versions:
-#versions
-#
-# Other possible package names:
-# 3.1601324 org.apache.activemq.examples.openwire:queue-openwire
-# 2.8505807 org.apache.activemq:activemq-openwire-generator
-# 2.8505807 org.apache.activemq:activemq-openwire-legacy
-# 1.5067546 org.apache.activemq:apollo-openwire
-# 1.4041812 org.apache.activemq:artemis-openwire-protocol
-# 1.4041812 org.apache.activemq:apollo-openwire-generator
-# 1.3759038 activemq:activemq
-# 1.335213 org.apache.activemq.examples.soak:openwire-perf
-# 1.1300659 org.apache.activemq.examples.jms:artemis-jms-openwire-example
-# 1.1023867 org.apache.activemq:activemq-branding
+        - ">=5.15.3"
