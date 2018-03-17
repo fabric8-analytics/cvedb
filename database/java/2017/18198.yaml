@@ -1,0 +1,32 @@
+---
+cve: 2017-18198
+title: CVE in net.sf.gnu-hylafax:gnu-hylafax-core
+description: >
+    print_iso9660_recurse in iso-info.c in GNU libcdio before 1.0.0 allows remote attackers to cause a denial of service (heap-based buffer over-read) or possibly have unspecified other impact via a crafted iso file.
+cvss_v2: 6.8
+references:
+    - http://ftp.gnu.org/gnu/libcdio/libcdio-1.0.0.tar.gz
+    - http://www.securityfocus.com/bid/103200
+    - https://savannah.gnu.org/bugs/?52265
+
+affected:
+    - groupId: net.sf.gnu-hylafax
+      artifactId: gnu-hylafax-core
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:gnu:libcdio 1.0.0 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 7.1657867 org.gnu:gnu-crypto
+# 4.2816644 gnu-regexp:gnu-regexp
+# 3.7464561 net.sf.gnu-hylafax:gnu-hylafax-core
+# 3.7464561 net.sf.gnu-hylafax:gnu-hylafax-pool
+# 3.7464561 net.sf.gnu-hylafax:gnu-hylafax-utils
+# 3.5717635 net.sf.gnu-hylafax:gnu-hylafax-inet-ftp
