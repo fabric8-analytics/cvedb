@@ -1,0 +1,35 @@
+---
+cve: 2012-3536
+title: CVE in org.apache.james.hupa:hupa
+description: >
+    Two XSS vulnerabilities were fixed in message list and view in the Hupa Webmail application from the Apache James project. An attacker could send a carefully crafted email to a user of Hupa which would trigger a XSS when the email was opened or when a list of messages were viewed. This issue was addressed in Hupa 0.0.3.
+cvss_v2: 4.3
+references:
+    - http://svn.apache.org/viewvc?view=revision&revision=1373762
+    - https://james.apache.org/hupa/index.html
+
+affected:
+    - groupId: org.apache.james.hupa
+      artifactId: hupa
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:hupa 0.0.3 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.8090706 org.apache.james.hupa:hupa
+# 1.5127217 org.apache.james.hupa:hupa-mock
+# 1.5127217 org.apache.james.hupa:hupa-server
+# 1.5127217 org.apache.james.hupa:hupa-shared
+# 1.5127217 org.apache.james.hupa:hupa-widgets
+# 0.75701106 org.apache.james:apache-james
+# 0.70414245 org.apache.james:apache-james-mailbox
+# 0.70414245 org.apache.james:apache-james-mpt
+# 0.70414245 org.apache.james:apache-james-imap
+# 0.70414245 org.apache.james:apache-james-mpt-project
