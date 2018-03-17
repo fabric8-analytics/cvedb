@@ -1,0 +1,34 @@
+---
+cve: 2017-15696
+title: CVE in org.apache.geode:geode-common
+description: >
+    When an Apache Geode cluster before v1.4.0 is operating in secure mode, the Geode configuration service does not properly authorize configuration requests. This allows an unprivileged user who gains access to the Geode locator to extract configuration data and previously deployed application code.
+cvss_v2: 5.0
+references:
+    - https://lists.apache.org/thread.html/28989e6ed0d3c29e46a489ae508302a50407a40691d5dc968f78cd3f@%3Cdev.geode.apache.org%3E
+
+affected:
+    - groupId: org.apache.geode
+      artifactId: geode-common
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:geode 1.3.0 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 5.0442944 org.apache.geode:geode-common
+# 5.0442944 org.apache.geode:geode-core
+# 5.0442944 org.apache.geode:geode-cq
+# 5.0442944 org.apache.geode:geode-json
+# 5.0442944 org.apache.geode:geode-junit
+# 5.0442944 org.apache.geode:geode-lucene
+# 5.0442944 org.apache.geode:geode-protobuf
+# 5.0442944 org.apache.geode:geode-pulse
+# 5.0442944 org.apache.geode:geode-rebalancer
+# 5.0442944 org.apache.geode:geode-wan
