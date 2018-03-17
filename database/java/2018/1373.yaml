@@ -1,0 +1,37 @@
+---
+cve: 2018-1373
+title: CVE in org.glassfish.security:security
+description: >
+    IBM Security Guardium Big Data Intelligence (SonarG) 3.1 uses an inadequate account lockout setting that could allow a remote attacker to brute force account credentials. IBM X-Force ID: 137773.
+cvss_v2: 5.0
+references:
+    - http://www.ibm.com/support/docview.wss?uid=swg22013750
+    - http://www.securityfocus.com/bid/103199
+    - http://www.securitytracker.com/id/1040453
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/137773
+
+affected:
+    - groupId: org.glassfish.security
+      artifactId: security
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:ibm:security_guardium_big_data_intelligence:3.1
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.36594844 org.springframework.security:spring-security-data
+# 0.31504148 org.codehaus.plexus.security:plexus-security-data-management
+# 0.3072867 com.coherentlogic.enterprise-data-adapter:data-model-security-core
+# 0.295114 com.ibm.websphere.appserver.api:com.ibm.websphere.appserver.api.security
+# 0.2769909 com.daioware.security:security
+# 0.2769909 org.glassfish.security:security
+# 0.26739112 org.glassfish.main.security:security
+# 0.24809013 com.ibm.websphere.appserver.api:com.ibm.websphere.appserver.api.authData
+# 0.24802674 com.ibm.websphere.appserver.api:com.ibm.websphere.appserver.api.security.authorization.saf
+# 0.24802674 com.ibm.websphere.appserver.api:com.ibm.websphere.appserver.api.security.registry.saf
