@@ -1,0 +1,35 @@
+---
+cve: 2017-9963
+title: CVE in com.sun.electric:electric-movie-jmf
+description: >
+    A cross-site request forgery vulnerability exists on the Secure Gateway component of Schneider Electric's PowerSCADA Anywhere v1.0 redistributed with PowerSCADA Expert v8.1 and PowerSCADA Expert v8.2 and Citect Anywhere version 1.0 for multiple state-changing requests. This type of attack requires some level of social engineering in order to get a legitimate user to click on or access a malicious link/site containing the CSRF attack.
+cvss_v2: 5.8
+references:
+    - http://www.schneider-electric.com/en/download/document/SEVD-2017-173-01/,
+    - https://www.citect.schneider-electric.com/safety-and-security-central/36-security-notifications/9071-security-notification-citect-anywhere
+
+affected:
+    - groupId: com.sun.electric
+      artifactId: electric-movie-jmf
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:schneider-electric:powerscada_anywhere:1.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.3830156 com.sun.electric:electric-concurrent
+# 0.3830156 com.sun.electric:electric-core
+# 0.3830156 com.sun.electric:electric-merge
+# 0.3830156 com.sun.electric:electric-utils
+# 0.3830156 com.sun.electric:electric-irsim
+# 0.3830156 com.sun.electric:electric-test
+# 0.37016338 com.sun.electric:electric-minarea-bitmapjava
+# 0.37016338 com.sun.electric:electric-minarea-bitmapscala
+# 0.37016338 com.sun.electric:electric-movie-jmf
+# 0.37016338 com.sun.electric:electric-minarea-api
