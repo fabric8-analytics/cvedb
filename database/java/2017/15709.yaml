@@ -1,0 +1,42 @@
+---
+cve: 2017-15709
+title: CVE in org.apache.activemq:activemq-openwire-generator
+description: >
+    When using the OpenWire protocol in ActiveMQ versions 5.14.0 to 5.15.2 it was found that certain system details (such as the OS and kernel version) are exposed as plain text.
+cvss_v2: 4.3
+references:
+    - https://lists.apache.org/thread.html/2b6f04a552c6ec2de6563c2df3bba813f0fe9c7e22cce27b7829db89@%3Cdev.activemq.apache.org%3E
+
+affected:
+    - groupId: org.apache.activemq
+      artifactId: activemq-openwire-generator
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:activemq:5.14.4
+#    - cpe:/a:apache:activemq:5.15.0
+#    - cpe:/a:apache:activemq:5.15.1
+#    - cpe:/a:apache:activemq:5.14.5
+#    - cpe:/a:apache:activemq:5.14.2
+#    - cpe:/a:apache:activemq:5.14.1
+#    - cpe:/a:apache:activemq:5.14.0
+#    - cpe:/a:apache:activemq:5.15.2
+#    - cpe:/a:apache:activemq:5.14.3
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 3.1601324 org.apache.activemq.examples.openwire:queue-openwire
+# 2.8505807 org.apache.activemq:activemq-openwire-generator
+# 2.8505807 org.apache.activemq:activemq-openwire-legacy
+# 1.5067546 org.apache.activemq:apollo-openwire
+# 1.4041812 org.apache.activemq:artemis-openwire-protocol
+# 1.4041812 org.apache.activemq:apollo-openwire-generator
+# 1.3759038 activemq:activemq
+# 1.335213 org.apache.activemq.examples.soak:openwire-perf
+# 1.1300659 org.apache.activemq.examples.jms:artemis-jms-openwire-example
+# 1.1023867 org.apache.activemq:activemq-branding
