@@ -1,0 +1,97 @@
+---
+cve: 2018-1287
+title: CVE in org.apache.jmeter:ApacheJMeter_junit-test
+description: >
+    In Apache JMeter 2.X and 3.X, when using Distributed Test only (RMI based), jmeter server binds RMI Registry to wildcard host. This could allow an attacker to get Access to JMeterEngine and send unauthorized code.
+cvss_v2: 7.5
+references:
+    - http://mail-archives.apache.org/mod_mbox/www-announce/201802.mbox/%3CCAH9fUpYsFx1%2Brwz1A%3Dmc7wAgbDHARyj1VrWNg41y9OySuL1mqw%40mail.gmail.com%3E
+    - http://www.securityfocus.com/bid/103068
+
+affected:
+    - groupId: org.apache.jmeter
+      artifactId: ApacheJMeter_junit-test
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:jmeter:3.2:rc3
+#    - cpe:/a:apache:jmeter:2.9:rc3
+#    - cpe:/a:apache:jmeter:2.3.3:rc2
+#    - cpe:/a:apache:jmeter:2.10:rc2
+#    - cpe:/a:apache:jmeter:3.1:rc4
+#    - cpe:/a:apache:jmeter:2.5
+#    - cpe:/a:apache:jmeter:2.5.1:rc3
+#    - cpe:/a:apache:jmeter:2.5:rc3
+#    - cpe:/a:apache:jmeter:2.3.4:rc2
+#    - cpe:/a:apache:jmeter:2.3
+#    - cpe:/a:apache:jmeter:3.1
+#    - cpe:/a:apache:jmeter:3.1:rc1
+#    - cpe:/a:apache:jmeter:2.5.1:rc2
+#    - cpe:/a:apache:jmeter:2.3.2
+#    - cpe:/a:apache:jmeter:2.13:rc1
+#    - cpe:/a:apache:jmeter:2.3.3:rc1
+#    - cpe:/a:apache:jmeter:3.3:rc1
+#    - cpe:/a:apache:jmeter:2.5.1
+#    - cpe:/a:apache:jmeter:3.0
+#    - cpe:/a:apache:jmeter:2.6
+#    - cpe:/a:apache:jmeter:2.3.4:rc1
+#    - cpe:/a:apache:jmeter:3.1:rc3
+#    - cpe:/a:apache:jmeter:2.9:rc2
+#    - cpe:/a:apache:jmeter:3.0:rc1
+#    - cpe:/a:apache:jmeter:2.11
+#    - cpe:/a:apache:jmeter:2.5.1:rc1
+#    - cpe:/a:apache:jmeter:2.2
+#    - cpe:/a:apache:jmeter:2.7:rc1
+#    - cpe:/a:apache:jmeter:2.5:rc2
+#    - cpe:/a:apache:jmeter:2.7
+#    - cpe:/a:apache:jmeter:2.12:rc1
+#    - cpe:/a:apache:jmeter:2.8:rc2
+#    - cpe:/a:apache:jmeter:2.1
+#    - cpe:/a:apache:jmeter:3.0:rc3
+#    - cpe:/a:apache:jmeter:3.0:rc2
+#    - cpe:/a:apache:jmeter:2.12:rc2
+#    - cpe:/a:apache:jmeter:2.3.1
+#    - cpe:/a:apache:jmeter:2.12
+#    - cpe:/a:apache:jmeter:2.6:rc1
+#    - cpe:/a:apache:jmeter:2.5:rc1
+#    - cpe:/a:apache:jmeter:2.11:rc1
+#    - cpe:/a:apache:jmeter:3.0:rc5
+#    - cpe:/a:apache:jmeter:2.8:rc1
+#    - cpe:/a:apache:jmeter:2.3.4
+#    - cpe:/a:apache:jmeter:2.10:rc1
+#    - cpe:/a:apache:jmeter:2.13:rc2
+#    - cpe:/a:apache:jmeter:2.9:rc1
+#    - cpe:/a:apache:jmeter:3.0:rc4
+#    - cpe:/a:apache:jmeter:2.4
+#    - cpe:/a:apache:jmeter:2.9
+#    - cpe:/a:apache:jmeter:2.3.3
+#    - cpe:/a:apache:jmeter:3.2:rc2
+#    - cpe:/a:apache:jmeter:2.11:rc2
+#    - cpe:/a:apache:jmeter:3.2:rc1
+#    - cpe:/a:apache:jmeter:3.3
+#    - cpe:/a:apache:jmeter:2.6:rc2
+#    - cpe:/a:apache:jmeter:2.13
+#    - cpe:/a:apache:jmeter:2.3.4:rc3
+#    - cpe:/a:apache:jmeter:3.1:rc2
+#    - cpe:/a:apache:jmeter:3.2
+#    - cpe:/a:apache:jmeter:2.7:rc3
+#    - cpe:/a:apache:jmeter:2.7:rc2
+#    - cpe:/a:apache:jmeter:2.8
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.0469368 org.apache.jmeter:ApacheJMeter_junit-test
+# 0.91395044 org.apache.jmeter:ApacheJMeter
+# 0.85492015 org.apache.jmeter:ApacheJMeter_components
+# 0.85492015 org.apache.jmeter:ApacheJMeter_config
+# 0.85492015 org.apache.jmeter:ApacheJMeter_core
+# 0.85492015 org.apache.jmeter:ApacheJMeter_ftp
+# 0.85492015 org.apache.jmeter:ApacheJMeter_functions
+# 0.85492015 org.apache.jmeter:ApacheJMeter_http
+# 0.85492015 org.apache.jmeter:ApacheJMeter_java
+# 0.85492015 org.apache.jmeter:ApacheJMeter_jdbc
