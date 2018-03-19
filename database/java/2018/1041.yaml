@@ -5,42 +5,13 @@ description: >
     A vulnerability was found in the way RemoteMessageChannel, introduced in jboss-remoting versions 3.3.10, reads from an empty buffer. An attacker could use this flaw to cause denial of service via high CPU caused by an infinite loop.
 cvss_v2: 5.0
 references:
-    - http://www.securitytracker.com/id/1040323
-    - https://access.redhat.com/errata/RHSA-2018:0268
-    - https://access.redhat.com/errata/RHSA-2018:0269
-    - https://access.redhat.com/errata/RHSA-2018:0270
-    - https://access.redhat.com/errata/RHSA-2018:0271
-    - https://access.redhat.com/errata/RHSA-2018:0275
     - https://bugzilla.redhat.com/show_bug.cgi?id=1530457
     - https://www.exploit-db.com/exploits/44099/
-
+    - https://nvd.nist.gov/vuln/detail/CVE-2018-1041
 affected:
     - groupId: org.jboss.remoting3
       artifactId: jboss-remoting
       version:
         - "==3.3.10.Final"
       fixedin:
-        - "!FIXME!"
-# Additional information:
-#  configurations:
-#    - cpe:/a:redhat:jboss_enterprise_application_platform:6.4.0
-#    - cpe:/o:redhat:linux:7.0
-#    - cpe:/o:redhat:linux:6.0
-#    - cpe:/o:redhat:linux:5.0
-#    - cpe:/a:redhat:jboss_enterprise_application_platform:6.0.0
-#    - cpe:/a:jboss:jboss-remoting:3.3.10
-#
-# All available versions:
-#versions
-#
-# Other possible package names:
-# 2.2846525 org.jboss.as:jboss-as-remoting
-# 2.2846525 jboss:jboss-remoting
-# 2.1517687 org.jboss.remoting:jboss-remoting
-# 2.118548 org.jboss.remoting3:jboss-remoting
-# 2.032292 org.jboss.as:jboss-as-remoting-test
-# 1.8994082 org.jboss.remoting:jboss-remoting-api
-# 1.8994082 org.jboss.remoting:jboss-remoting-core
-# 1.8994082 org.jboss.remoting:jboss-remoting-socket
-# 1.8661873 org.jboss.remoting3:jboss-remoting-metadata
-# 1.6470475 org.jboss.remoting:jboss-remoting-socket-client
+        - "FIXME"
