@@ -50,9 +50,12 @@ affected:
     - groupId: commons-fileupload
       artifactId: commons-fileupload
       version:
-        - "!FIXME!"
+        - ">=1.2.0"
+        - "<=1.2.2"
+        - ">=1.3.0"
+        - "<=1.3.1"
       fixedin:
-        - "!FIXME!"
+        - "==1.3.2"
 
 # Additional information:
 #  configurations:
