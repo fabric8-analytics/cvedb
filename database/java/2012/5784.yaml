@@ -17,9 +17,9 @@ affected:
     - groupId: activemq
       artifactId: activemq-axis
       version:
-        - "!FIXME!"
+        - "<=1.4"
       fixedin:
-        - "!FIXME!"
+        - ">1.4"
 # Additional information:
 #  configurations:
 #    - cpe:/a:apache:axis:1.2:alpha
