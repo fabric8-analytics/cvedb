@@ -13,9 +13,9 @@ affected:
     - groupId: org.apache.xmlgraphics
       artifactId: fop
       version:
-        - "!FIXME!"
+        - "<=2.1"
       fixedin:
-        - "!FIXME!"
+        - ">=2.2"
 
 # Additional information:
 #  configurations:
