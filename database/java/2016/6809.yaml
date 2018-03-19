@@ -13,7 +13,7 @@ affected:
     - groupId: org.apache.tika
       artifactId: tika
       version:
-        - "<1.14"
+        - "<=1.13"
       fixedin:
         - ">=1.14"
 
