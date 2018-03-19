@@ -12,7 +12,7 @@ affected:
     - groupId: org.commonjava.ssl
       artifactId: ssl-tools
       version:
-        - "!FIXME!"
+        - "<=1.1"
       fixedin:
         - "!FIXME!"
 # Additional information:
