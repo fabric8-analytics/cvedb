@@ -1,0 +1,35 @@
+---
+cve: 2018-2372
+title: CVE in org.commonjava.ssl:ssl-tools
+description: >
+    A plain keystore password is written to a system log file in SAP HANA Extended Application Services, 1.0, which could endanger confidentiality of SSL communication.
+cvss_v2: 4.0
+references:
+    - https://blogs.sap.com/2018/02/13/sap-security-patch-day-february-2018/
+    - https://launchpad.support.sap.com/#/notes/2589129
+
+affected:
+    - groupId: org.commonjava.ssl
+      artifactId: ssl-tools
+      version:
+        - "<=1.0"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:sap:hana_extend_application_services:1.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.7374171 com.sap.hana.cloud:spring-cloud-cloudfoundry-hana-service-connector
+# 0.5969962 com.sap.hana.cloud:spring-cloud-sap-connector
+# 0.5969962 com.sap.hana.cloud:spring-cloud-sap-core
+# 0.58708036 com.sap.cloud.s4hana:s4hana-all
+# 0.5348691 com.sap.cloud.servicesdk:hana-connectivity-cds
+# 0.47382206 com.sap.cloud.servicesdk:hana.connectivity.cds-core
+# 0.43408793 com.projectdarkstar.services:services
+# 0.38494998 org.commonjava.ssl:ssl-tools
+# 0.36900026 org.soulwing.ssl:ssl-context-tools
+# 0.35305056 org.commonjava.ssl:ssl-tools-maven-plugin
