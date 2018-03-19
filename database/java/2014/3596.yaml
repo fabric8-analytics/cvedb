@@ -18,9 +18,9 @@ affected:
     - groupId: org.apache.axis
       artifactId: axis
       version:
-        - "!FIXME!"
+        - "<=1.4"
       fixedin:
-        - "!FIXME!"
+        - ">1.4"
 # Additional information:
 #  configurations:
 #    - cpe:/a:apache:axis:1.0:rc2
