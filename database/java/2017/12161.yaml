@@ -1,0 +1,35 @@
+---
+cve: 2017-12161
+title: CVE in org.keycloak:keycloak-common
+description: >
+    It was found that keycloak before 3.4.2 final would permit misuse of a client-side /etc/hosts entry to spoof a URL in a password reset request. An attacker could use this flaw to craft a malicious password reset request and gain a valid reset token, leading to information disclosure or further attacks.
+cvss_v2: 4.3
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1484564
+    - https://github.com/keycloak/keycloak-documentation/pull/268/commits/a2b58aadee42af2c375b72e86dffc2cf23cc3770
+
+affected:
+    - groupId: org.keycloak
+      artifactId: keycloak-common
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:keycloak:keycloak 3.4.2 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 2.9646773 org.ow2.util.url:url
+# 2.6796527 org.keycloak:keycloak-common
+# 2.6796527 org.keycloak:keycloak-core
+# 2.6796527 org.keycloak:keycloak-services
+# 2.6796527 org.keycloak:keycloak-themes
+# 2.6796527 org.keycloak:keycloak-server
+# 2.6796527 org.keycloak:keycloak-subsystem
+# 2.6796527 org.keycloak:keycloak-forms
+# 2.6796527 org.keycloak:keycloak-installed
+# 2.5716424 org.keycloak:keycloak-adapter-core
