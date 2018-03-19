@@ -12,9 +12,9 @@ affected:
     - groupId: org.keycloak
       artifactId: keycloak-common
       version:
-        - "!FIXME!"
+        - "<3.4.2 final"
       fixedin:
-        - "!FIXME!"
+        - ">=3.4.2 final"
 # Additional information:
 #  configurations:
 #    - cpe:/a:keycloak:keycloak 3.4.2 (excluding)
