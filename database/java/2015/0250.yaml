@@ -21,9 +21,9 @@ affected:
     - groupId: org.apache.xmlgraphics
       artifactId: batik-svg-dom
       version:
-        - "<= 1.7"
+        - "<=1.7"
       fixedin:
-        - "== 1.8"
+        - ">=1.8"
 # Additional information:
 #  configurations:
 #    - cpe:/o:canonical:ubuntu_linux:14.04::~~lts~~~
