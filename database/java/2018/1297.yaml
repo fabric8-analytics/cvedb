@@ -12,9 +12,10 @@ affected:
     - groupId: org.apache.jmeter
       artifactId: ApacheJMeter_junit-test
       version:
-        - "!FIXME!"
+        - "<=2.13"
+        - "<=3.3"
       fixedin:
-        - "!FIXME!"
+        - ">=4.0"
 # Additional information:
 #  configurations:
 #    - cpe:/a:apache:jmeter:3.2:rc3
