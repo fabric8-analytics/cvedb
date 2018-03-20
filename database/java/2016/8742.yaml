@@ -1,0 +1,37 @@
+---
+cve: 2016-8742
+title: CVE in com.cedarsoft.couchdb:couchdb-parent
+description: >
+    The Windows installer that the Apache CouchDB team provides was vulnerable to local privilege escalation. All files in the install inherit the file permissions of the parent directory and therefore a non-privileged user can substitute any executable for the nssm.exe service launcher, or CouchDB batch or binary files. A subsequent service or server restart will then run that binary with administrator privilege. This issue affected CouchDB 2.0.0 (Windows platform only) and was addressed in CouchDB 2.0.0.1.
+cvss_v2: 7.2
+references:
+    - http://mail-archives.apache.org/mod_mbox/couchdb-dev/201612.mbox/%3C825F65E1-0E5F-4E1F-8053-CF2C6200C526%40apache.org%3E
+    - http://www.securityfocus.com/bid/94766
+    - https://www.exploit-db.com/exploits/40865/
+
+affected:
+    - groupId: com.cedarsoft.couchdb
+      artifactId: couchdb-parent
+      version:
+        - "==2.0.0"
+      fixedin:
+        - ">=2.0.0.1"
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:couchdb:2.0.0
+#    - cpe:/o:microsoft:windows:-
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.6704967 com.cedarsoft.couchdb:couchdb-parent
+# 1.5869471 org.opencredo.couchdb:couchdb-si-support
+# 1.1353239 au.net.causal.groovysh-windows-fix:groovysh-windows-fix
+# 0.7743484 org.apache.camel:camel-couchdb
+# 0.7743484 org.apache.gora:gora-couchdb
+# 0.7743484 org.apache.abdera:abdera-couchdb
+# 0.69079876 org.apache.camel:camel-couchdb-starter
+# 0.60724914 org.apache.metamodel:MetaModel-couchdb
+# 0.5009388 org.apache.nifi:nifi-windows-event-log-processors
+# 0.47072375 org.apache.logging.log4j:log4j-couchdb
