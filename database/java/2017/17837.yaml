@@ -1,5 +1,5 @@
 ---
-cve: CVE-2017-17837
+cve: 2017-17837
 title: CVE in org.apache.deltaspike.modules:deltaspike-jsf-module-impl
 description: >
     The Apache DeltaSpike-JSF 1.8.0 module has a XSS injection leak in the windowId handling. The default size of the windowId get's cut off after 10 characters (by default), so the impact might be limited. A fix got applied and released in Apache deltaspike-1.8.1.

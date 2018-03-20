@@ -1,5 +1,5 @@
 ---
-cve: CVE-2017-7957
+cve: 2017-7957
 title: CVE in com.thoughtworks.xstream:xstream
 description: >
     XStream through 1.4.9, when a certain denyTypes workaround is not used, mishandles attempts to create an instance of the primitive type 'void' during unmarshalling, leading to a remote application crash, as demonstrated by an xstream.fromXML("<void/>") call.

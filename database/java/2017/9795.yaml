@@ -1,5 +1,5 @@
 ---
-cve: CVE-2017-9795
+cve: 2017-9795
 title: CVE in org.apache.geode:geode-core
 description: >
     When an Apache Geode cluster before v1.3.0 is operating in secure mode, a user with read access to specific regions within a Geode cluster may execute OQL queries that allow read and write access to objects within unauthorized regions. In addition a user could invoke methods that allow remote code execution.

@@ -1,5 +1,5 @@
 ---
-cve: CVE-2016-3086
+cve: 2016-3086
 title: CVE in org.apache.hadoop:hadoop-yarn-server-nodemanager
 description: >
     The YARN NodeManager in Apache Hadoop 2.6.x before 2.6.5 and 2.7.x before 2.7.3 can leak the password for credential store provider used by the NodeManager to YARN Applications.

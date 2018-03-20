@@ -1,5 +1,5 @@
 ---
-cve: CVE-2016-6802
+cve: 2016-6802
 title: "CVE in org.apache.shiro:shiro-web"
 description: >
     Apache Shiro before 1.3.2 allows attackers to bypass intended servlet filters and gain access by leveraging use of a non-root servlet context path.

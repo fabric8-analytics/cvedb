@@ -1,5 +1,5 @@
 ---
-cve: CVE-2014-0120
+cve: 2014-0120
 title: CVE in io.hawt:hawtio-karaf-terminal
 description: >
     Cross-site request forgery (CSRF) vulnerability in the admin terminal in Hawt.io allows remote attackers to hijack the authentication of arbitrary users for requests that run commands on the Karaf server, as demonstrated by running "shutdown -f."

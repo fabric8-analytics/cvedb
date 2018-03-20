@@ -1,5 +1,5 @@
 ---
-cve: CVE-2017-15718
+cve: 2017-15718
 title: CVE in org.apache.hadoop:hadoop-yarn-server-nodemanager
 description: >
     The YARN NodeManager in Apache Hadoop 2.7.3 and 2.7.4 can leak the password for credential store provider used by the NodeManager to YARN Applications.

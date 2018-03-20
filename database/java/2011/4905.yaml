@@ -1,5 +1,5 @@
 ---
-cve: CVE-2011-4905
+cve: 2011-4905
 title: CVE in Apache ActiveMQ
 description: >
     Apache ActiveMQ before 5.6.0 allows remote attackers to cause a denial of service (file-descriptor exhaustion and broker crash or hang) by sending many openwire failover:tcp:// connection requests.

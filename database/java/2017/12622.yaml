@@ -1,5 +1,5 @@
 ---
-cve: CVE-2017-12622
+cve: 2017-12622
 title: CVE in org.apache.geode:geode-core
 description: >
     When an Apache Geode cluster before v1.3.0 is operating in secure mode and an authenticated user connects to a Geode cluster using the gfsh tool with HTTP, the user is able to obtain status information and control cluster members even without CLUSTER:MANAGE privileges.

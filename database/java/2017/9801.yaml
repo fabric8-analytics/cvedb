@@ -1,5 +1,5 @@
 ---
-cve: CVE-2017-9801
+cve: 2017-9801
 title: Apache Commons Email SMTP header injection vulnerabilty
 description: >
     When a call-site passes a subject for an email that contains line-breaks in Apache Commons Email 1.0 through 1.4, the caller can add arbitrary SMTP headers.

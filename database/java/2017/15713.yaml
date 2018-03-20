@@ -1,5 +1,5 @@
 ---
-cve: CVE-2017-15713
+cve: 2017-15713
 title: Apache Hadoop MapReduce job history server vulnerability
 description: >
     Vulnerability in Apache Hadoop 0.23.x, 2.x before 2.7.5, 2.8.x before 2.8.3, and 3.0.0-alpha through 3.0.0-beta1 allows a cluster user to expose private files owned by the user running the MapReduce job history server process. The malicious user can construct a configuration file containing XML directives that reference sensitive files on the MapReduce job history server host.

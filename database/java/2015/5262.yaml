@@ -1,5 +1,5 @@
 ---
-cve: CVE-2015-5262
+cve: 2015-5262
 title: CVE in org.apache.httpcomponents:httpclient
 description: >
     http/conn/ssl/SSLConnectionSocketFactory.java in Apache HttpComponents HttpClient before 4.3.6 ignores the http.socket.timeout configuration setting during an SSL handshake, which allows remote attackers to cause a denial of service (HTTPS call hang) via unspecified vectors.

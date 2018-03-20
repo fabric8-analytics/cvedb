@@ -1,5 +1,5 @@
 ---
-cve: CVE-2017-9796
+cve: 2017-9796
 title: CVE in org.apache.geode:geode-core
 description: >
     When an Apache Geode cluster before v1.3.0 is operating in secure mode, a user with read access to specific regions within a Geode cluster may execute OQL queries containing a region name as a bind parameter that allow read access to objects within unauthorized regions.

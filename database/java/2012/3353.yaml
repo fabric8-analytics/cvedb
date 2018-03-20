@@ -1,5 +1,5 @@
 ---
-cve: CVE-2012-3353
+cve: 2012-3353
 title: Apache Sling Content Loading Vulnerability
 description: >
     The Apache Sling JCR ContentLoader 2.1.4 XmlReader used in the Sling JCR content loader module makes it possible to import arbitrary files in the content repository, including local files, causing potential information leaks. Users should upgrade to version 2.1.6 of the JCR ContentLoader

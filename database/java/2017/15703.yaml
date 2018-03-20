@@ -1,5 +1,5 @@
 ---
-cve: CVE-2017-15703
+cve: 2017-15703
 title: CVE in Apache NiFi
 description: >
     Any authenticated user (valid client certificate but without ACL permissions) could upload a template which contained malicious code and caused a denial of service via Java deserialization attack. The fix to properly handle Java deserialization was applied on the Apache NiFi 1.4.0 release. Users running a prior 1.x release should upgrade to the appropriate release.

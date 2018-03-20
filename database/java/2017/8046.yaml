@@ -1,5 +1,5 @@
 ---
-cve: CVE-2017-8046
+cve: 2017-8046
 title: RCE in PATCH requests in Spring Data REST
 description: >
     Malicious PATCH requests submitted to spring-data-rest servers in Pivotal Spring Data REST versions prior to 2.5.12, 2.6.7, 3.0 RC3, Spring Boot versions prior to 2.0.0M4, and Spring Data release trains prior to Kay-RC3 can use specially crafted JSON data to run arbitrary Java code.

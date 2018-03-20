@@ -1,5 +1,5 @@
 ---
-cve: CVE-2016-2173
+cve: 2016-2173
 title: Remote Code Execution in Spring AMQP
 description: >
     org.springframework.core.serializer.DefaultDeserializer in Spring AMQP before 1.5.5 allows remote attackers to execute arbitrary code.
