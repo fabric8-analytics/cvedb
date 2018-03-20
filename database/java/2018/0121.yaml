@@ -1,0 +1,36 @@
+---
+cve: 2018-0121
+title: CVE in org.apache.cocoon.controller:cocoon-controller
+description: >
+    A vulnerability in the authentication functionality of the web-based service portal of Cisco Elastic Services Controller Software could allow an unauthenticated, remote attacker to bypass authentication and execute arbitrary actions with administrator privileges on an affected system. The vulnerability is due to improper security restrictions that are imposed by the web-based service portal of the affected software. An attacker could exploit this vulnerability by submitting an empty password value to an affected portal when prompted to enter an administrative password for the portal. A successful exploit could allow the attacker to bypass authentication and gain administrator privileges for the web-based service portal of the affected software. This vulnerability affects Cisco Elastic Services Controller Software Release 3.0.0. Cisco Bug IDs: CSCvg29809.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/103113
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180221-esc
+
+affected:
+    - groupId: org.apache.cocoon.controller
+      artifactId: cocoon-controller
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:cisco:elastic_services_controller:3.0.0
+#    - cpe:/a:cisco:virtual_managed_services:3.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.8953898 com.projectdarkstar.services:services
+# 0.58295 org.apache.cocoon.controller:cocoon-controller
+# 0.5311612 com.projectdarkstar.services:services-javadoc
+# 0.5102946 org.kohsuke.metainf-services:metainf-services
+# 0.50385547 org.apache.kalumet.controller:org.apache.kalumet.controller.core
+# 0.50385547 org.apache.kalumet.controller:org.apache.kalumet.controller.jboss
+# 0.50385547 org.apache.kalumet.controller:org.apache.kalumet.controller.weblogic
+# 0.50385547 org.apache.kalumet.controller:org.apache.kalumet.controller.websphere
+# 0.48942804 eu.freme-project.e-services:tilde-services
+# 0.4856326 org.hawkular.services:hawkular-services-itest
