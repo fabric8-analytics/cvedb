@@ -1,0 +1,76 @@
+---
+cve: 2018-1305
+title: CVE in org.apache.tomcat:tomcat-servlet-api
+description: >
+    Security constraints defined by annotations of Servlets in Apache Tomcat 9.0.0.M1 to 9.0.4, 8.5.0 to 8.5.27, 8.0.0.RC1 to 8.0.49 and 7.0.0 to 7.0.84 were only applied once a Servlet had been loaded. Because security constraints defined in this way apply to the URL pattern and any URLs below that point, it was possible - depending on the order Servlets were loaded - for some security constraints not to be applied. This could have exposed resources to users who were not authorised to access them.
+cvss_v2: 4.0
+references:
+    - http://www.securityfocus.com/bid/103144
+    - http://www.securitytracker.com/id/1040428
+    - https://access.redhat.com/errata/RHSA-2018:0465
+    - https://access.redhat.com/errata/RHSA-2018:0466
+    - https://lists.apache.org/thread.html/d3354bb0a4eda4acc0a66f3eb24a213fdb75d12c7d16060b23e65781@%3Cannounce.tomcat.apache.org%3E
+    - https://lists.debian.org/debian-lts-announce/2018/03/msg00004.html
+
+affected:
+    - groupId: org.apache.tomcat
+      artifactId: tomcat-servlet-api
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:tomcat:9.0.0:m16
+#    - cpe:/a:apache:tomcat:9.0.1
+#    - cpe:/a:apache:tomcat:9.0.0:m23
+#    - cpe:/a:apache:tomcat:9.0.0:m9
+#    - cpe:/a:apache:tomcat:9.0.0:m4
+#    - cpe:/a:apache:tomcat:9.0.0:m27
+#    - cpe:/a:apache:tomcat:8.0.0:rc10
+#    - cpe:/a:apache:tomcat:9.0.0:m15
+#    - cpe:/o:debian:debian_linux:7.0
+#    - cpe:/a:apache:tomcat:9.0.4
+#    - cpe:/a:apache:tomcat:9.0.0:m8
+#    - cpe:/a:apache:tomcat:9.0.0
+#    - cpe:/a:apache:tomcat:9.0.0:m20
+#    - cpe:/a:apache:tomcat:9.0.0:m17
+#    - cpe:/a:apache:tomcat:9.0.0:m18
+#    - cpe:/a:apache:tomcat:9.0.0:m3
+#    - cpe:/a:apache:tomcat:9.0.0:m5
+#    - cpe:/a:apache:tomcat:9.0.0:m25
+#    - cpe:/a:apache:tomcat:9.0.0:m21
+#    - cpe:/a:apache:tomcat:8.0.0:rc3
+#    - cpe:/a:apache:tomcat:9.0.0:m12
+#    - cpe:/a:apache:tomcat:9.0.3
+#    - cpe:/a:apache:tomcat:9.0.0:m24
+#    - cpe:/a:apache:tomcat:9.0.0:m13
+#    - cpe:/a:apache:tomcat:9.0.0:m26
+#    - cpe:/a:apache:tomcat:9.0.0:m14
+#    - cpe:/a:apache:tomcat:8.0.0:rc5
+#    - cpe:/a:apache:tomcat:9.0.0:m7
+#    - cpe:/a:apache:tomcat:9.0.0:m6
+#    - cpe:/a:apache:tomcat:8.0.0:rc1
+#    - cpe:/a:apache:tomcat:9.0.0:m10
+#    - cpe:/a:apache:tomcat:9.0.0:m1
+#    - cpe:/a:apache:tomcat:9.0.2
+#    - cpe:/a:apache:tomcat:9.0.0:m2
+#    - cpe:/a:apache:tomcat:9.0.0:m22
+#    - cpe:/a:apache:tomcat:9.0.0:m19
+#    - cpe:/a:apache:tomcat 8.5.27 (including)
+#    - cpe:/a:apache:tomcat:9.0.0:m11
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.49183863 org.apache.servicemix.specs:org.apache.servicemix.specs.jsr370-api-m1
+# 0.45244086 org.apache.tomcat:tomcat-servlet-api
+# 0.35313892 org.mobicents.servlet.sip.containers:sip-servlets-tomcat-8
+# 0.35313892 org.mobicents.servlet.sip.containers:sip-servlets-tomcat-7
+# 0.32038677 tomcat:tomcat
+# 0.31002492 tomcat:servlet
+# 0.3074197 tomcat:servlets-default
+# 0.3074197 tomcat:servlets-invoker
+# 0.3074197 tomcat:servlets-cgi
+# 0.3074197 tomcat:servlets-common
