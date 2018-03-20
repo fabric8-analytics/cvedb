@@ -1,0 +1,19 @@
+---
+cve: 2017-5662
+title: XXE in Apache Batik
+description: >
+    In Apache Batik before 1.9, files lying on the filesystem of the server which uses batik can be revealed to arbitrary users who send maliciously formed SVG files. The file types that can be shown depend on the user context in which the exploitable application is running. If the user is root a full compromise of the server - including confidential or sensitive files - would be possible. XXE can also be used to attack the availability of the server via denial of service as the references within a xml document can trivially trigger an amplification attack.
+cvss_v2: 7.9
+references:
+    - https://xmlgraphics.apache.org/security.html
+    - https://issues.apache.org/jira/browse/BATIK-1139
+    - https://nvd.nist.gov/vuln/detail/CVE-2017-5662
+    - https://svn.apache.org/viewvc?view=revision&revision=1743326
+    - https://svn.apache.org/viewvc?view=revision&revision=1742892
+affected:
+    - groupId: org.apache.xmlgraphics
+      artifactId: batik-dom
+      version:
+        - "<=1.8"
+      fixedin:
+        - ">=1.9"
