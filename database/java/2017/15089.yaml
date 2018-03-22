@@ -13,9 +13,9 @@ affected:
     - groupId: org.infinispan
       artifactId: infinispan-client-hotrod
       version:
-        - "<=9.2.0.CR1"
+        - "<=9.2.0.Beta"
       fixedin:
-        - "!FIXME!"
+        - ">=9.2.0.CR1"
 # Additional information:
 #  configurations:
 #    - cpe:/a:infinispan:infinispan:9.2.0:alpha1
