@@ -1,0 +1,36 @@
+---
+cve: 2015-3898
+title: CVE in org.bonitasoft.engine:bonita-client
+description: >
+    Multiple open redirect vulnerabilities in Bonita BPM Portal before 6.5.3 allow remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via vectors involving the redirectUrl parameter to (1) bonita/login.jsp or (2) bonita/loginservice.
+cvss_v2: 5.8
+references:
+    - http://packetstormsecurity.com/files/132237/Bonita-BPM-6.5.1-Directory-Traversal-Open-Redirect.html
+    - http://www.securityfocus.com/archive/1/archive/1/535733/100/0/threaded
+    - https://www.htbridge.com/advisory/HTB23259
+
+affected:
+    - groupId: org.bonitasoft.engine
+      artifactId: bonita-client
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:bonitasoft:bonita_bpm_portal 6.5.3 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.0768639 org.objectweb.bonita:bonita
+# 0.795389 org.jasig.portal:uPortal-url
+# 0.7134474 org.bonitasoft.engine:bonita-client
+# 0.7134474 org.bonitasoft.engine:bonita-common
+# 0.7134474 org.bonitasoft.engine:bonita-server
+# 0.6927636 org.sakaiproject.portal:portal
+# 0.65825653 org.bonitasoft.web:bonita-web-extensions
+# 0.65591866 de.eonas.portal.demo:portal
+# 0.6353367 org.objectweb.bonita:bonita-client
+# 0.5868843 org.ow2.bonita:bonita-client
