@@ -1,0 +1,36 @@
+---
+cve: 2018-7547
+title: CVE in org.sonatype.nexus.repository.site:nexus-site-repository-testsuite
+description: >
+    lyadmin 1.x has XSS via the config[WEB_SITE_TITLE] parameter to the /admin.php?s=/admin/config/groupsave.html URI.
+cvss_v2: 3.5
+references:
+    - https://github.com/imsebao/404team/blob/master/lyadmin/lyadmin.md
+
+affected:
+    - groupId: org.sonatype.nexus.repository.site
+      artifactId: nexus-site-repository-testsuite
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:lyadmin_project:lyadmin:1.0.0
+#    - cpe:/a:lyadmin_project:lyadmin:1.0.1
+#    - cpe:/a:lyadmin_project:lyadmin:1.1.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.52986676 com.zaubersoftware.commons.web:commons-web-uri
+# 0.3588246 com.github.dirkraft.GetURI:GetURI
+# 0.334573 org.sakaiproject.site:sakai-site-help
+# 0.334573 org.sakaiproject.site:sakai-site-tool
+# 0.334573 org.jbehave.site:jbehave-site-resources
+# 0.334573 org.jbehave.site:jbehave-site-templates
+# 0.30792055 org.andromda.maven.site:andromda-site-skin
+# 0.2812681 org.andromda.maven.plugins.site:andromda-site-plugin
+# 0.2812681 org.andromda.maven.plugins.site:andromda-site-skin
+# 0.2639319 org.sonatype.nexus.repository.site:nexus-site-repository-testsuite
