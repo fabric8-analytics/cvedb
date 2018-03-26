@@ -12,9 +12,9 @@ affected:
     - groupId: org.apache.geode
       artifactId: geode-common
       version:
-        - "!FIXME!"
+        - "<=1.3"
       fixedin:
-        - "!FIXME!"
+        - ">=1.4"
 # Additional information:
 #  configurations:
 #    - cpe:/a:apache:geode 1.4.0 (excluding)
