@@ -11,9 +11,9 @@ affected:
     - groupId: org.apache.openmeetings
       artifactId: openmeetings-db
       version:
-        - "!FIXME!"
+        - "<=3.0.0,4.0.1"
       fixedin:
-        - "!FIXME!"
+        - ">=4.0.2"
 # Additional information:
 #  configurations:
 #    - cpe:/a:apache:openmeetings 4.0.1 (including)
