@@ -1,0 +1,39 @@
+---
+cve: 2017-1625
+title: CVE in com.ibm.jbatch:com.ibm.jbatch.container
+description: >
+    IBM Pulse for QRadar 1.0.0 - 1.0.3 discloses sensitive information to unauthorized users. The information can be used to mount further attacks on the system. IBM X-Force ID: 133123.
+cvss_v2: 5.0
+references:
+    - http://www.ibm.com/support/docview.wss?uid=swg22014284
+    - http://www.securityfocus.com/bid/103398
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/133123
+
+affected:
+    - groupId: com.ibm.jbatch
+      artifactId: com.ibm.jbatch.container
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:ibm:qradar_pulse:1.0.3
+#    - cpe:/a:ibm:qradar_pulse:1.0.1
+#    - cpe:/a:ibm:qradar_pulse:1.0.0
+#    - cpe:/a:ibm:qradar_pulse:1.0.2
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.75843567 com.ibm:com.ibm.mq
+# 0.75843567 com.ibm:com.ibm.mqbind
+# 0.75843567 com.ibm:com.ibm.mqjms
+# 0.48886448 com.ibm.sbt:com.ibm.commons
+# 0.46145284 com.ibm.mq:com.ibm.mq.allclient
+# 0.46145284 com.ibm.event:ibm-event-desktop
+# 0.46145284 com.ibm.jbatch:com.ibm.jbatch.container
+# 0.46145284 com.ibm.jbatch:com.ibm.jbatch.spi
+# 0.46145284 com.ibm.wala:com.ibm.wala.cast
+# 0.46145284 com.ibm.wala:com.ibm.wala.core
