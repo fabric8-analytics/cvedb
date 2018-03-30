@@ -1,0 +1,50 @@
+---
+cve: 2017-12174
+title: CVE in org.apache.activemq:artemis-hornetq-protocol
+description: >
+    It was found that when Artemis and HornetQ before 2.4.0 are configured with UDP discovery and JGroups discovery a huge byte array is created when receiving an unexpected multicast message. This may result in a heap memory exhaustion, full GC, or OutOfMemoryError.
+cvss_v2: 7.8
+references:
+    - https://access.redhat.com/errata/RHSA-2018:0268
+    - https://access.redhat.com/errata/RHSA-2018:0269
+    - https://access.redhat.com/errata/RHSA-2018:0270
+    - https://access.redhat.com/errata/RHSA-2018:0271
+    - https://access.redhat.com/errata/RHSA-2018:0275
+    - https://access.redhat.com/errata/RHSA-2018:0478
+    - https://access.redhat.com/errata/RHSA-2018:0479
+    - https://access.redhat.com/errata/RHSA-2018:0480
+    - https://access.redhat.com/errata/RHSA-2018:0481
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2017-12174
+
+affected:
+    - groupId: org.apache.activemq
+      artifactId: artemis-hornetq-protocol
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:redhat:jboss_enterprise_application_platform:6.0.0
+#    - cpe:/o:redhat:enterprise_linux:7.0
+#    - cpe:/a:redhat:jboss_enterprise_application_platform:7.1.0
+#    - cpe:/a:redhat:hornetq:2.4.0
+#    - cpe:/a:redhat:jboss_enterprise_application_platform:6.4.0
+#    - cpe:/o:redhat:enterprise_linux:5.0
+#    - cpe:/o:redhat:enterprise_linux:6
+#    - cpe:/a:apache:activemq_artemis:2.4.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.8718475 org.apache.activemq:artemis-hornetq-protocol
+# 0.69379103 org.jgroups:jgroups
+# 0.69379103 jgroups:jgroups
+# 0.65352714 org.hornetq:hornetq-jboss-as-integration
+# 0.65352714 org.hornetq:hornetq-jboss-as-security
+# 0.5497508 org.jgroups:jgroups-raft
+# 0.5497508 org.jgroups:jgroups-azure
+# 0.5497508 jgroups:jgroups-all
+# 0.5135071 org.hornetq:hornetq-bootstrap
+# 0.5135071 org.hornetq:hornetq-commons
