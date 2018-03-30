@@ -1,0 +1,47 @@
+---
+cve: 2016-9606
+title: CVE in org.jboss.resteasy:resteasy-yaml-provider
+description: >
+    JBoss RESTEasy before version 3.1.2 could be forced into parsing a request with YamlProvider, resulting in unmarshalling of potentially untrusted data which could allow an attacker to execute arbitrary code with RESTEasy application permissions.
+cvss_v2: 6.8
+references:
+    - http://rhn.redhat.com/errata/RHSA-2017-1255.html
+    - http://rhn.redhat.com/errata/RHSA-2017-1409.html
+    - http://www.securityfocus.com/bid/94940
+    - http://www.securitytracker.com/id/1038524
+    - https://access.redhat.com/errata/RHSA-2017:1253
+    - https://access.redhat.com/errata/RHSA-2017:1254
+    - https://access.redhat.com/errata/RHSA-2017:1256
+    - https://access.redhat.com/errata/RHSA-2017:1260
+    - https://access.redhat.com/errata/RHSA-2017:1410
+    - https://access.redhat.com/errata/RHSA-2017:1411
+    - https://access.redhat.com/errata/RHSA-2017:1412
+    - https://access.redhat.com/errata/RHSA-2017:1675
+    - https://access.redhat.com/errata/RHSA-2017:1676
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1400644
+
+affected:
+    - groupId: org.jboss.resteasy
+      artifactId: resteasy-yaml-provider
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:redhat:resteasy 3.1.1 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 3.508222 org.jboss.resteasy:resteasy-yaml-provider
+# 1.6218756 org.jboss.jbossas:jboss-as-resteasy
+# 1.5120271 org.jboss.resteasy:resteasy-cdi
+# 1.5120271 org.jboss.resteasy:resteasy-client
+# 1.5120271 org.jboss.resteasy:resteasy-crypto
+# 1.5120271 org.jboss.resteasy:resteasy-guice
+# 1.5120271 org.jboss.resteasy:resteasy-html
+# 1.5120271 org.jboss.resteasy:resteasy-jaxrs
+# 1.5120271 org.jboss.resteasy:resteasy-jsapi
+# 1.5120271 org.jboss.resteasy:resteasy-legacy
