@@ -1,0 +1,34 @@
+---
+cve: 2018-1000109
+title: CVE in com.google.android:android
+description: >
+    An improper authorization vulnerability exists in Jenkins Google Play Android Publisher Plugin version 1.6 and earlier in GooglePlayBuildStepDescriptor.java that allow an attacker to obtain credential IDs.
+cvss_v2: 4.0
+references:
+    - https://jenkins.io/security/advisory/2018-02-26/#SECURITY-715
+
+affected:
+    - groupId: com.google.android
+      artifactId: android
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:jenkins:google-play-android-publisher:::~~~jenkins~~ 1.6 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.55529076 com.google.code.maven-play-plugin:play-maven-plugin
+# 0.52642334 com.google.code.maven-play-plugin:play-japid-maven-plugin
+# 0.49621224 com.google.code.maven-play-plugin.org.playframework:play
+# 0.45810068 com.android.tools.analytics-library:publisher
+# 0.44668514 com.google.code.maven-play-plugin:play-server-booter
+# 0.4333328 com.google.code.maven-play-plugin:play12-extensions
+# 0.42691216 com.google.code.play2-maven-plugin:play2-maven-plugin
+# 0.4199805 com.google.code.maven-play-plugin:play-selenium-junit4
+# 0.4199805 com.google.code.maven-play-plugin:surefire-play-junit4
+# 0.4157806 com.google.android:android
