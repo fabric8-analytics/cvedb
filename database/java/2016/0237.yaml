@@ -1,0 +1,35 @@
+---
+cve: 2016-0237
+title: CVE in org.glassfish.security:security
+description: >
+    IBM Security Guardium Database Activity Monitor 10 allows local users to obtain sensitive information by reading cached browser data. IBM X-Force ID: 110328.
+cvss_v2: 2.1
+references:
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21981631
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/110328
+
+affected:
+    - groupId: org.glassfish.security
+      artifactId: security
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:ibm:security_guardium_database_activity_monitor:10.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.5990447 com.smartmeapp.monitor:monitor
+# 0.5762 com.smartmeapp.com.smartmeapp.monitor:monitor
+# 0.44984382 com.ibm.websphere.appserver.api:com.ibm.websphere.appserver.api.monitor
+# 0.3909009 excalibur-monitor:excalibur-monitor
+# 0.37273377 com.ibm.websphere.appserver.api:com.ibm.websphere.appserver.api.security
+# 0.36488292 com.distelli.monitor:task-monitor-api
+# 0.36488292 com.distelli.monitor:task-monitor-impl
+# 0.3503886 com.daioware.security:security
+# 0.3503886 org.glassfish.security:security
+# 0.33806327 org.glassfish.main.security:security
