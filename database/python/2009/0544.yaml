@@ -1,0 +1,44 @@
+---
+cve: 2009-0544
+title: CVE in pycrypto
+description: >
+    Buffer overflow in the PyCrypto ARC2 module 2.0.1 allows remote attackers to cause a denial of service and possibly execute arbitrary code via a large ARC2 key length.
+cvss_v2: 10.0
+references:
+    - http://gitweb2.dlitz.net/?p=crypto/pycrypto-2.x.git;a=commitdiff;h=d1c4875e1f220652fe7ff8358f56dee3b2aba31b
+    - http://gitweb2.dlitz.net/?p=crypto/pycrypto-2.x.git;a=commitdiff;h=fd73731dfad451a81056fbb01e09aa78ab82eb5d
+    - http://lists.opensuse.org/opensuse-security-announce/2009-05/msg00000.html
+    - http://secunia.com/advisories/34199
+    - http://secunia.com/advisories/35065
+    - http://www.gentoo.org/security/en/glsa/glsa-200903-11.xml
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2009:049
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2009:050
+    - http://www.openwall.com/lists/oss-security/2009/02/07/1
+    - http://www.openwall.com/lists/oss-security/2009/02/12/5
+    - http://www.securityfocus.com/bid/33674
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/48617
+
+affected:
+    - name: pycrypto
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:pycrypto:arc2:2.0.1
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.5111636 pycrypto
+# 0.77256376 pycrypto-on-pypi
+# 0.6802388 py-crypto-params
+# 0.64753455 bambu-buffer
+# 0.64753455 buffer-alpaca
+# 0.64753455 buffer-api
+# 0.64753455 buffer-buda
+# 0.64753455 buffer-ops
+# 0.64753455 buffer-python
+# 0.64753455 fio-buffer
