@@ -1,0 +1,53 @@
+---
+cve: 2015-2296
+title: CVE in requests
+description: >
+    The resolve_redirects function in sessions.py in requests 2.1.0 through 2.5.3 allows remote attackers to conduct session fixation attacks via a cookie without a host value in a redirect.
+cvss_v2: 6.8
+references:
+    - http://advisories.mageia.org/MGASA-2015-0120.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2015-March/153594.html
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2015:133
+    - http://www.openwall.com/lists/oss-security/2015/03/14/4
+    - http://www.openwall.com/lists/oss-security/2015/03/15/1
+    - http://www.ubuntu.com/usn/USN-2531-1
+    - https://github.com/kennethreitz/requests/commit/3bd8afbff29e50b38f889b2f688785a669b9aafc
+    - https://warehouse.python.org/project/requests/2.6.0/
+
+affected:
+    - name: requests
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:python-requests:requests:2.4.1
+#    - cpe:/a:python-requests:requests:2.4.0
+#    - cpe:/o:mageia_project:mageia:4.0
+#    - cpe:/a:python-requests:requests:2.4.2
+#    - cpe:/a:python-requests:requests:2.5.3
+#    - cpe:/a:python-requests:requests:2.2.1
+#    - cpe:/a:python-requests:requests:2.5.0
+#    - cpe:/a:python-requests:requests:2.5.1
+#    - cpe:/a:python-requests:requests:2.1.0
+#    - cpe:/a:python-requests:requests:2.5.2
+#    - cpe:/a:python-requests:requests:2.3.0
+#    - cpe:/o:canonical:ubuntu_linux:14.04::~~lts~~~
+#    - cpe:/a:python-requests:requests:2.4.3
+#    - cpe:/o:canonical:ubuntu_linux:14.10
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 7.8958077 requests
+# 4.0112276 aiohttp-requests
+# 4.0112276 anonymous-requests
+# 4.0112276 apiclient-requests
+# 4.0112276 cache-requests
+# 4.0112276 careful-requests
+# 4.0112276 crawl-requests
+# 4.0112276 curl-to-requests
+# 4.0112276 dsb-requests
+# 4.0112276 gcloud-requests
