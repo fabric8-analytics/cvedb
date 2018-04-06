@@ -1,0 +1,41 @@
+---
+cve: 2014-1829
+title: CVE in requests
+description: >
+    Requests (aka python-requests) before 2.3.0 allows remote servers to obtain a netrc password by reading the Authorization header in a redirected request.
+cvss_v2: 5.0
+references:
+    - http://advisories.mageia.org/MGASA-2014-0409.html
+    - http://www.debian.org/security/2015/dsa-3146
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2015:133
+    - http://www.ubuntu.com/usn/USN-2382-1
+    - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=733108
+    - https://github.com/kennethreitz/requests/issues/1885
+
+affected:
+    - name: requests
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/o:debian:debian_linux:7.0
+#    - cpe:/a:python:requests 2.2.1 (including)
+#    - cpe:/o:canonical:ubuntu_linux:14.04::~~lts~~~
+#    - cpe:/o:mageia:mageia:4.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 2.3366446 requests
+# 2.3125043 datapunt-authorization
+# 2.032663 azure-mgmt-authorization
+# 2.032663 datapunt-authorization-django
+# 2.032663 datapunt-authorization-levels
+# 2.032663 flask-authorization-panda
+# 1.2052101 aiohttp-requests
+# 1.2052101 anonymous-requests
+# 1.2052101 apiclient-requests
+# 1.2052101 cache-requests
