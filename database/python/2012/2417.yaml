@@ -1,0 +1,59 @@
+---
+cve: 2012-2417
+title: CVE in pycrypto
+description: >
+    PyCrypto before 2.6 does not produce appropriate prime numbers when using an ElGamal scheme to generate a key, which reduces the signature space or public key space and makes it easier for attackers to conduct brute force attacks to obtain the private key.
+cvss_v2: 4.3
+references:
+    - http://lists.fedoraproject.org/pipermail/package-announce/2012-June/081713.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2012-June/081759.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2012-June/081789.html
+    - http://secunia.com/advisories/49263
+    - http://www.debian.org/security/2012/dsa-2502
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2012:117
+    - http://www.openwall.com/lists/oss-security/2012/05/25/1
+    - http://www.osvdb.org/82279
+    - http://www.securityfocus.com/bid/53687
+    - https://bugs.launchpad.net/pycrypto/+bug/985164
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/75871
+    - https://github.com/dlitz/pycrypto/blob/373ea760f21701b162e8c4912a66928ee30d401a/ChangeLog
+    - https://github.com/Legrandin/pycrypto/commit/9f912f13df99ad3421eff360d6a62d7dbec755c2
+    - https://hermes.opensuse.org/messages/15083589
+
+affected:
+    - name: pycrypto
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:dlitz:pycrypto:2.0.1
+#    - cpe:/a:dlitz:pycrypto:2.3
+#    - cpe:/a:dlitz:pycrypto:2.0
+#    - cpe:/a:dlitz:pycrypto 2.5 (including)
+#    - cpe:/a:dlitz:pycrypto:2.4.1
+#    - cpe:/a:dlitz:pycrypto:2.4
+#    - cpe:/a:dlitz:pycrypto:2.2
+#    - cpe:/a:dlitz:pycrypto:1.0.2
+#    - cpe:/a:dlitz:pycrypto:1.0.0
+#    - cpe:/a:dlitz:pycrypto:2.1.0:alpha1
+#    - cpe:/a:dlitz:pycrypto:1.9:alpha6
+#    - cpe:/a:dlitz:pycrypto:1.9:alpha1
+#    - cpe:/a:dlitz:pycrypto:2.1.0:beta1
+#    - cpe:/a:dlitz:pycrypto:2.1.0:alpha2
+#    - cpe:/a:dlitz:pycrypto:1.9:alpha4
+#    - cpe:/a:dlitz:pycrypto:1.9:alpha2
+#    - cpe:/a:dlitz:pycrypto:1.9:alpha5
+#    - cpe:/a:dlitz:pycrypto:1.1:alpha2
+#    - cpe:/a:dlitz:pycrypto:2.1.0
+#    - cpe:/a:dlitz:pycrypto:1.0.1
+#    - cpe:/a:dlitz:pycrypto:1.9:alpha3
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 3.8529942 pycrypto
+# 1.9555808 pycrypto-on-pypi
+# 1.7184042 py-crypto-params
