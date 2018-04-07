@@ -1,0 +1,35 @@
+---
+cve: 2018-8057
+title: CVE in de.devsurf.injection.guice:de.devsurf.injection.guice.aop
+description: >
+    A SQL Injection vulnerability exists in Western Bridge Cobub Razor 0.8.0 via the channel_name or platform parameter in a /index.php?/manage/channel/addchannel request, related to /application/controllers/manage/channel.php.
+cvss_v2: 7.5
+references:
+    - https://github.com/cobub/razor/issues/162
+    - https://github.com/Kyhvedn/CVE_Description/blob/master/Cobub_Razor_0.8.0_SQL_injection_description.md
+
+affected:
+    - groupId: de.devsurf.injection.guice
+      artifactId: de.devsurf.injection.guice.aop
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:westernbridgegroup:razor:0.8.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.3018666 com.gestalt.common.injection:common-injection-api
+# 0.28004915 com.gestalt.common.injection:common-injection-spring-impl
+# 0.23692536 de.devsurf.injection.guice:de.devsurf.injection.guice.aop
+# 0.23692536 de.devsurf.injection.guice:de.devsurf.injection.guice.commons
+# 0.23692536 de.devsurf.injection.guice:de.devsurf.injection.guice.configuration
+# 0.23692536 de.devsurf.injection.guice:de.devsurf.injection.guice.core
+# 0.23692536 de.devsurf.injection.guice:de.devsurf.injection.guice.examples
+# 0.23692536 de.devsurf.injection.guice:de.devsurf.injection.guice.tests
+# 0.2367754 com.flotype.bridge:bridge-java-core
+# 0.2367754 com.flotype.bridge:bridge-java-examples
