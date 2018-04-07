@@ -1,0 +1,33 @@
+---
+cve: 2018-1000081
+title: CVE in jmbo-post
+description: >
+    Ajenti version version 2 contains a Input Validation vulnerability in ID string on Get-values POST request that can result in Server Crashing. This attack appear to be exploitable via An attacker can freeze te server by sending a giant string to the ID parameter ..
+cvss_v2: 5.0
+references:
+    - https://medium.com/stolabs/security-issues-on-ajenti-d2b7526eaeee
+
+affected:
+    - name: jmbo-post
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:ajenti:ajenti:2
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.40558806 post
+# 0.3986481 ajenti
+# 0.36956936 validation
+# 0.22407989 server
+# 0.21849233 blog.post
+# 0.21849233 janky-post
+# 0.21849233 jmbo-post
+# 0.21849233 panya-post
+# 0.21849233 plugs-post
+# 0.21849233 post-qa
