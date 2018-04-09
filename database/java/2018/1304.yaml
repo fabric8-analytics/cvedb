@@ -16,9 +16,19 @@ affected:
     - groupId: org.apache.tomcat
       artifactId: tomcat-api
       version:
-        - "!FIXME!"
+        - ">=7.0.0"
+        - "<=7.0.84"
+        - ">=8.5.0"
+        - "<=8.5.27"
+        - ">=8.0.0.RC1"
+        - "<=8.0.49"
+        - ">=9.0.0.M1"
+        - "<=9.0.0.4"
       fixedin:
-        - "!FIXME!"
+        - "==7.0.85"
+        - "==8.0.50"
+        - "==8.5.28"
+        - "==9.0.5"
 # Additional information:
 #  configurations:
 #    - cpe:/a:apache:tomcat:9.0.0:m27
