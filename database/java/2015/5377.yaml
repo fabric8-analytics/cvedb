@@ -14,9 +14,10 @@ affected:
     - groupId: org.elasticsearch
       artifactId: elasticsearch
       version:
-        - "!FIXME!"
+        - "<1.6.1"
       fixedin:
-        - "!FIXME!"
+        - "==1.6.1"
+        - "==1.7.0"
 # Additional information:
 #  configurations:
 #    - cpe:/a:elastic:elasticsearch 1.6.1 (excluding)
