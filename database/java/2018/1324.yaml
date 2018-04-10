@@ -1,0 +1,36 @@
+---
+cve: 2018-1324
+title: CVE in org.apache.commons:commons-compress
+description: >
+    A specially crafted ZIP archive can be used to cause an infinite loop inside of Apache Commons Compress' extra field parser used by the ZipFile and ZipArchiveInputStream classes in versions 1.11 to 1.15. This can be used to mount a denial of service attack against services that use Compress' zip package.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/103490
+    - http://www.securitytracker.com/id/1040549
+    - https://lists.apache.org/thread.html/1c7b6df6d1c5c8583518a0afa017782924918e4d6acfaf23ed5b2089@%3Cdev.commons.apache.org%3E
+
+affected:
+    - groupId: org.apache.commons
+      artifactId: commons-compress
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:commons-compress 1.15 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 2.844739 commons-compress:commons-compress
+# 2.299941 org.apache.commons:commons-compress
+# 2.164171 com.alanbuttars.commons:commons-compress
+# 2.1355941 org.carrot2.forks.commons:commons-compress
+# 1.0874413 com.after_sunrise.commons:commons-ats-compress
+# 0.6360124 br.com.powerapps.image.compress:power-image-compress
+# 0.49764112 org.apache.ant:ant-compress
+# 0.48225147 org.apache.oltu.commons:org.apache.oltu.commons.encodedtoken
+# 0.48225147 org.apache.oltu.commons:org.apache.oltu.commons.json
+# 0.4610504 commons-net:commons-net
