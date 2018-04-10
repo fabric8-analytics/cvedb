@@ -1,0 +1,34 @@
+---
+cve: 2018-1000100
+title: CVE in org.nd4j:nd4j-buffer
+description: >
+    GPAC MP4Box version 0.7.1 and earlier contains a Buffer Overflow vulnerability in src/isomedia/avc_ext.c lines 2417 to 2420 that can result in Heap chunks being modified, this could lead to RCE. This attack appear to be exploitable via an attacker supplied MP4 file that when run by the victim may result in RCE.
+cvss_v2: 6.8
+references:
+    - https://github.com/gpac/gpac/issues/994
+
+affected:
+    - groupId: org.nd4j
+      artifactId: nd4j-buffer
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:gpac_project:gpac 0.7.1 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.16249073 org.nd4j:nd4j-buffer
+# 0.05350058 com.fenbi.mp4j:ytk-mp4j
+# 0.04622379 com.box:box-java-sdk
+# 0.04622379 com.box:box-android-sdk
+# 0.044158 com.box:box-android-browse-sdk
+# 0.044158 com.box:box-android-share-sdk
+# 0.044158 com.box:box-android-preview-sdk
+# 0.044158 com.box:json-patch-box-metadata
+# 0.044158 com.box:box-android-content-sdk
+# 0.028437521 edu.byu.hbll.box:box-client
