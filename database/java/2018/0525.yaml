@@ -1,0 +1,35 @@
+---
+cve: 2018-0525
+title: CVE in org.apache.directory.skins:directory-skin
+description: >
+    Directory traversal vulnerability in Jubatus 1.0.2 and earlier allows remote attackers to read arbitrary files via unspecified vectors.
+cvss_v2: 5.0
+references:
+    - https://github.com/jubatus/jubatus/blob/master/ChangeLog.rst
+    - https://jvn.jp/en/jp/JVN56132776/index.html
+
+affected:
+    - groupId: org.apache.directory.skins
+      artifactId: directory-skin
+      version:
+        - "<=1.0.2"
+      fixedin:
+        - ">=1.0.3"
+# Additional information:
+#  configurations:
+#    - cpe:/a:jubat:jubatus 1.0.2 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.99087876 org.apache.directory.skins:directory-skin
+# 0.9061488 org.apache.directory.skins:directory-api-skin
+# 0.9061488 org.apache.directory.skins:directory-studio-skin
+# 0.9061488 org.apache.directory.skins:directory-triplesec-skin
+# 0.8214189 org.apache.directory.server:apacheds-http-directory-bridge
+# 0.8214189 org.apache.directory.studio:org.apache.directory.studio.aciitemeditor
+# 0.8214189 org.apache.directory.studio:org.apache.directory.studio.combinededitor
+# 0.8214189 org.apache.directory.studio:org.apache.directory.studio.ldapservers
+# 0.8214189 org.apache.directory.studio:org.apache.directory.studio.ldifeditor
+# 0.8214189 org.apache.directory.studio:org.apache.directory.studio.ldifparser
