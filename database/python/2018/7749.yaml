@@ -1,0 +1,34 @@
+---
+cve: 2018-7749
+title: CVE in asyncssh
+description: >
+    The SSH server implementation of AsyncSSH before 1.12.1 does not properly check whether authentication is completed before processing other requests. A customized SSH client can simply skip the authentication step.
+cvss_v2: 7.5
+references:
+    - https://github.com/ronf/asyncssh/commit/c161e26cdc0d41b745b63d9f17b437f073bf7ba4
+    - https://groups.google.com/forum/#%21msg/asyncssh-announce/57_5O7kiHSA/8BXZ_hxHAQAJ
+
+affected:
+    - name: asyncssh
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:asyncssh_project:asyncssh 1.12.1 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 4.626247 asyncssh
+# 2.6375213 ssh
+# 2.3480442 asyncssh-unofficial
+# 2.0632687 aiorchestra-asyncssh-plugin
+# 1.3536811 aws-ssh
+# 1.3536811 bastion-ssh
+# 1.3536811 chef-ssh
+# 1.3536811 color-ssh
+# 1.3536811 django-ssh
+# 1.3536811 easy-ssh
