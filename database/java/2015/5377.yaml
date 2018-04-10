@@ -5,34 +5,13 @@ description: >
     ** DISPUTED ** Elasticsearch before 1.6.1 allows remote attackers to execute arbitrary code via unspecified vectors involving the transport protocol.  NOTE: ZDI appears to claim that CVE-2015-3253 and CVE-2015-5377 are the same vulnerability.
 cvss_v2: 7.5
 references:
-    - http://www.securityfocus.com/bid/75938
-    - http://www.zerodayinitiative.com/advisories/ZDI-15-365/
     - https://discuss.elastic.co/t/elasticsearch-remote-code-execution-cve-2015-5377/25736
     - https://github.com/elastic/elasticsearch/commit/bf3052d14c874aead7da8855c5fcadf5428a43f2
-
+    - https://nvd.nist.gov/vuln/detail/CVE-2015-5377
 affected:
     - groupId: org.elasticsearch
       artifactId: elasticsearch
       version:
-        - "<1.6.1"
+        - "<=1.6.0"
       fixedin:
-        - "==1.6.1"
-        - "==1.7.0"
-# Additional information:
-#  configurations:
-#    - cpe:/a:elastic:elasticsearch 1.6.1 (excluding)
-#
-# All available versions:
-#versions
-#
-# Other possible package names:
-# 1.859376 org.elasticsearch:elasticsearch
-# 1.4452715 com.strapdata.elasticsearch:elasticsearch
-# 1.3935084 org.elasticsearch.distribution.deb:elasticsearch
-# 1.3935084 org.elasticsearch.distribution.rpm:elasticsearch
-# 1.3935084 org.elasticsearch.distribution.tar:elasticsearch
-# 1.3935084 org.elasticsearch.distribution.test:elasticsearch
-# 1.3935084 org.elasticsearch.distribution.zip:elasticsearch
-# 1.3935084 org.seedstack.addons.elasticsearch:elasticsearch
-# 1.3935084 org.elasticsearch.distribution.shaded:elasticsearch
-# 1.3437924 org.elasticsearch:elasticsearch-cli
+        - ">=1.6.1"
