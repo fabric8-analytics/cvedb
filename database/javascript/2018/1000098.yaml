@@ -1,0 +1,34 @@
+---
+cve: 2018-1000098
+title: CVE in react-native-pjsip
+description: >
+    Teluu PJSIP version 2.7.1 and earlier contains a Integer Overflow vulnerability in pjmedia SDP parsing that can result in Crash. This attack appear to be exploitable via Sending a specially crafted message. This vulnerability appears to have been fixed in 2.7.2.
+cvss_v2: 5.0
+references:
+    - https://trac.pjsip.org/repos/milestone/release-2.7.2
+    - https://trac.pjsip.org/repos/ticket/2093
+
+affected:
+    - name: react-native-pjsip
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:teluu:pjsip 2.7.1 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.76091707 sdp
+# 0.6994583 crash
+# 0.6994583 on-crash
+# 0.637727 overflow
+# 0.5762822 is-integer
+# 0.5762822 is_integer
+# 0.5762822 to-integer
+# 0.5762822 integer-is
+# 0.5762822 integer
+# 0.50857204 react-native-pjsip
