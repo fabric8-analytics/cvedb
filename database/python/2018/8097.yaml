@@ -7,28 +7,10 @@ cvss_v2: 7.5
 references:
     - https://github.com/pyeve/eve/commit/f8f7019ffdf9b4e05faf95e1f04e204aa4c91f98
     - https://github.com/pyeve/eve/issues/1101
-
+    - https://nvd.nist.gov/vuln/detail/CVE-2018-8097
 affected:
     - name: eve
       version:
-        - "!FIXME!"
+        - "<=0.7.4"
       fixedin:
-        - "!FIXME!"
-# Additional information:
-#  configurations:
-#    - cpe:/a:python-eve:eve 0.7.5 (excluding)
-#
-# All available versions:
-#versions
-#
-# Other possible package names:
-# 1.8335831 eve
-# 1.3817289 dependency-injection
-# 1.3702898 code
-# 1.2162528 py-find-injection
-# 0.94575167 eve-docs
-# 0.94575167 eve-elastic
-# 0.94575167 eve-elasticsearch
-# 0.94575167 eve-glue
-# 0.94575167 eve-gnosis
-# 0.94575167 eve-healthcheck
+        - ">=0.7.5"
