@@ -6,35 +6,13 @@ description: >
 cvss_v2: 4.4
 references:
     - http://seclists.org/oss-sec/2014/q1/73
-    - http://secunia.com/advisories/56328
-    - http://secunia.com/advisories/60738
-    - http://www.gentoo.org/security/en/glsa/glsa-201408-13.xml
     - https://bugzilla.redhat.com/show_bug.cgi?id=1051421
     - https://github.com/mitsuhiko/jinja2/commit/acb672b6a179567632e032f547582f30fa2f4aa7
     - https://github.com/mitsuhiko/jinja2/pull/292
     - https://github.com/mitsuhiko/jinja2/pull/296
-
 affected:
     - name: jinja2
       version:
-        - "!FIXME!"
+        - "==2.7.2"
       fixedin:
-        - "!FIXME!"
-# Additional information:
-#  configurations:
-#    - cpe:/a:pocoo:jinja2:2.7.2
-#
-# All available versions:
-#versions
-#
-# Other possible package names:
-# 3.1463535 jinja2
-# 2.7034395 aiohttp-jinja2
-# 2.7034395 aspen-jinja2
-# 2.7034395 cherrypy-jinja2
-# 2.7034395 deform-jinja2
-# 2.7034395 django-jinja2
-# 2.7034395 formencode-jinja2
-# 2.7034395 hatak-jinja2
-# 2.7034395 impaf-jinja2
-# 2.7034395 japronto-jinja2
+        - ">=2.7.3"
