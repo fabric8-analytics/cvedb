@@ -1,0 +1,33 @@
+---
+cve: 2018-1000107
+title: CVE in jenkins-job-linter
+description: >
+    An improper authorization vulnerability exists in Jenkins Job and Node Ownership Plugin 0.11.0 and earlier in OwnershipDescription.java, JobOwnerJobProperty.java, and OwnerNodeProperty.java that allow an attacker with Job/Configure or Computer/Configure permission and without Ownership related permissions to override ownership metadata.
+cvss_v2: 4.0
+references:
+    - https://jenkins.io/security/advisory/2018-02-26/#SECURITY-498
+
+affected:
+    - name: jenkins-job-linter
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:jenkins:job_and_node_ownership:::~~~jenkins~~ 0.11.0 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.51057345 jenkins-job-builder
+# 0.51057345 jenkins-job-linter
+# 0.51057345 jenkins-job-wrecker
+# 0.4410692 jenkins-job-builder-addons
+# 0.4410692 jenkins-job-builder-ansible
+# 0.4410692 jenkins-job-builder-brakeman
+# 0.4410692 jenkins-job-builder-clamav
+# 0.4410692 jenkins-job-builder-naginator
+# 0.4410692 jenkins-job-builder-workflow
+# 0.4410692 jenkins-job-builder-xvnc
