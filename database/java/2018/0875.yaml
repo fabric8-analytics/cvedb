@@ -1,0 +1,40 @@
+---
+cve: 2018-0875
+title: CVE in me.parakh.core:core-service-appengine
+description: >
+    .NET Core 1.0, .NET Core 1.1, NET Core 2.0 and PowerShell Core 6.0.0 allow a denial of Service vulnerability due to how specially crafted requests are handled, aka ".NET Core Denial of Service Vulnerability".
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/103225
+    - http://www.securitytracker.com/id/1040505
+    - https://access.redhat.com/errata/RHSA-2018:0522
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2018-0875
+
+affected:
+    - groupId: me.parakh.core
+      artifactId: core-service-appengine
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:microsoft:asp.net_core:1.0
+#    - cpe:/a:microsoft:powershell_core:6.0.0
+#    - cpe:/a:microsoft:asp.net_core:2.0
+#    - cpe:/a:microsoft:asp.net_core:1.1
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.6714034 com.covisint.platform.service.core:service-core
+# 0.62283444 com.covisint.core.http.service:http-service-core
+# 0.41419604 com.sap.cloud.yaas.service-generator:service-generator-core
+# 0.40108186 me.parakh.core:core-service-appengine
+# 0.3953121 org.apache.karaf.service:org.apache.karaf.service.core
+# 0.33688897 com.bluecatcode.core:core
+# 0.33688897 net.awired.core:core
+# 0.32890043 com.covisint.core.http.service:http-service-client
+# 0.32816058 org.apache.deltaspike.core:core-project
+# 0.32816058 net.open-esb.core:framework-core
