@@ -1,0 +1,44 @@
+---
+cve: 2017-15719
+title: CVE in com.googlecode.wicket-jquery-ui:wicket-jquery-ui
+description: >
+    In Wicket jQuery UI 6.28.0 and earlier, 7.9.1 and earlier, and 8.0.0-M8 and earlier, a security issue has been discovered in the WYSIWYG editor that allows an attacker to submit arbitrary JS code to WYSIWYG editor.
+cvss_v2: 4.3
+references:
+    - http://openmeetings.apache.org/security.html#_toc_cve-2017-15719_-_wicket_jquery_ui_xss_in_wysiwyg_e
+    - https://github.com/sebfz1/wicket-jquery-ui/wiki#cve-2017-15719---xss-in-wysiwyg-editor
+
+affected:
+    - groupId: com.googlecode.wicket-jquery-ui
+      artifactId: wicket-jquery-ui
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:wicket-jquery-ui_project:wicket-jquery-ui:8.0.0:m3
+#    - cpe:/a:wicket-jquery-ui_project:wicket-jquery-ui:8.0.0:m1
+#    - cpe:/a:wicket-jquery-ui_project:wicket-jquery-ui:8.0.0:m7
+#    - cpe:/a:wicket-jquery-ui_project:wicket-jquery-ui:8.0.0:m5
+#    - cpe:/a:wicket-jquery-ui_project:wicket-jquery-ui:8.0.0:m4
+#    - cpe:/a:wicket-jquery-ui_project:wicket-jquery-ui 7.9.1 (including)
+#    - cpe:/a:wicket-jquery-ui_project:wicket-jquery-ui:8.0.0:m6
+#    - cpe:/a:wicket-jquery-ui_project:wicket-jquery-ui:8.0.0:m4.1
+#    - cpe:/a:wicket-jquery-ui_project:wicket-jquery-ui:8.0.0:m2
+#    - cpe:/a:wicket-jquery-ui_project:wicket-jquery-ui:8.0.0:m8
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 3.1252923 com.googlecode.wicket-jquery-ui:wicket-jquery-ui
+# 2.9117942 com.googlecode.wicket-jquery-ui:wicket-jquery-ui-calendar
+# 2.9117942 com.googlecode.wicket-jquery-ui:wicket-jquery-ui-core
+# 2.9117942 com.googlecode.wicket-jquery-ui:wicket-jquery-ui-plugins
+# 2.698296 com.googlecode.wicket-jquery-ui:wicket-jquery-ui-theme-base
+# 2.698296 com.googlecode.wicket-jquery-ui:wicket-jquery-ui-theme-blacktie
+# 2.698296 com.googlecode.wicket-jquery-ui:wicket-jquery-ui-theme-blitzer
+# 2.698296 com.googlecode.wicket-jquery-ui:wicket-jquery-ui-theme-cupertino
+# 2.698296 com.googlecode.wicket-jquery-ui:wicket-jquery-ui-theme-darkhive
+# 2.698296 com.googlecode.wicket-jquery-ui:wicket-jquery-ui-theme-dotluv
