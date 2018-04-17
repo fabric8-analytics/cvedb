@@ -7,31 +7,8 @@ cvss_v2: 5.0
 references:
     - https://github.com/dlitz/pycrypto/issues/253
     - https://github.com/TElgamal/attack-on-pycrypto-elgamal
-    - https://lists.debian.org/debian-lts-announce/2018/02/msg00018.html
-    - https://usn.ubuntu.com/3616-1/
-
+    - https://nvd.nist.gov/vuln/detail/CVE-2018-6594
 affected:
     - name: pycrypto
       version:
-        - "!FIXME!"
-      fixedin:
-        - "!FIXME!"
-# Additional information:
-#  configurations:
-#    - cpe:/o:debian:debian_linux:7.0
-#    - cpe:/a:dlitz:pycrypto 2.6.1 (including)
-#
-# All available versions:
-#versions
-#
-# Other possible package names:
-# 2.060277 py-crypto-params
-# 1.6490588 publickey
-# 1.4706326 pycrypto
-# 0.92146367 crypto
-# 0.7571878 pycrypto-on-pypi
-# 0.48260334 arroyo-crypto
-# 0.48260334 aws-crypto
-# 0.48260334 basic-crypto
-# 0.48260334 charm-crypto
-# 0.48260334 cis-crypto
+        - "<=2.6.1"
