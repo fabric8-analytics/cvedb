@@ -7,29 +7,11 @@ cvss_v2: 7.5
 references:
     - https://github.com/inversoft/prime-jwt/blob/master/CHANGES
     - https://github.com/inversoft/prime-jwt/issues/2
-
+    - https://nvd.nist.gov/vuln/detail/CVE-2018-1000125
 affected:
     - groupId: com.inversoft
       artifactId: prime-jwt
       version:
-        - "!FIXME!"
+        - "<=1.2.1"
       fixedin:
-        - "!FIXME!"
-# Additional information:
-#  configurations:
-#    - cpe:/a:inversoft:prime-jwt 1.3.0 (excluding)
-#
-# All available versions:
-#versions
-#
-# Other possible package names:
-# 5.631425 com.inversoft:prime-jwt
-# 1.5256584 com.inversoft:prime-transformer
-# 1.4671572 org.imixs.jwt:imixs-jwt
-# 1.4671572 be.nille.jwt:jwt-components
-# 1.4671572 be.nille.jwt:jwt-aspect
-# 1.3940402 com.richodemus.dropwizard-jwt:dropwizard-jwt
-# 1.3568797 com.okta.jwt:okta-jwt-verifier
-# 1.2837627 com.kumuluz.ee.jwt:kumuluzee-jwt-auth
-# 1.173485 org.eclipse.microprofile.jwt:microprofile-jwt-auth-api
-# 1.173485 org.eclipse.microprofile.jwt:microprofile-jwt-auth-tck
+        - ">=1.3.0"
