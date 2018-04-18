@@ -1,0 +1,34 @@
+---
+cve: 2018-0534
+title: CVE in org.apidesign.html:net.java.html
+description: >
+    Cross-site scripting vulnerability in ArsenoL Version 0.5 allows an attacker to inject arbitrary web script or HTML via unspecified vectors.
+cvss_v2: 4.3
+references:
+    - https://jvn.jp/en/jp/JVN30864198/index.html
+
+affected:
+    - groupId: org.apidesign.html
+      artifactId: net.java.html
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:arsenol_project:arsenol:0.5
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.37235245 org.netbeans.html:net.java.html
+# 0.37235245 org.nasdanika.html:org.nasdanika.html
+# 0.37235245 org.apidesign.html:net.java.html
+# 0.35154665 org.netbeans.html:net.java.html.boot
+# 0.35154665 org.netbeans.html:net.java.html.geo
+# 0.35154665 org.netbeans.html:net.java.html.json
+# 0.35154665 org.netbeans.html:net.java.html.sound
+# 0.35154665 org.apidesign.html:net.java.html.boot
+# 0.35154665 org.apidesign.html:net.java.html.geo
+# 0.35154665 org.apidesign.html:net.java.html.json
