@@ -1,0 +1,36 @@
+---
+cve: 2018-3626
+title: CVE in linux
+description: >
+    Edger8r tool in the Intel SGX SDK before version 2.1.2 (Linux) and 1.9.6 (Windows) may generate code that is susceptible to a side channel potentially allowing a local user to access unauthorized information.
+cvss_v2: 1.9
+references:
+    - http://www.securityfocus.com/bid/103479
+    - https://security-center.intel.com/advisory.aspx?intelid=INTEL-SA-00117&languageid=en-fr
+
+affected:
+    - name: linux
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:intel:sgx_sdk 2.1.2 (excluding)
+#    - cpe:/o:linux:linux_kernel:-
+#    - cpe:/o:microsoft:windows:-
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.6252143 sgx
+# 0.3961348 sdk
+# 0.38616902 intel
+# 0.35552123 dotnet-sdk-2.0.0-linux
+# 0.27969018 is-linux
+# 0.27969018 linux
+# 0.26094988 8part-sdk
+# 0.26094988 @8base/sdk
+# 0.2536273 drivewealth_sdk_sdk
+# 0.2211875 g8-js-sdk
