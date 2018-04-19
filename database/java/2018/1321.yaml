@@ -1,0 +1,52 @@
+---
+cve: 2018-1321
+title: CVE in org.apache.syncope:syncope-archetype
+description: >
+    An administrator with report and template entitlements in Apache Syncope 1.2.x before 1.2.11 and 2.0.x before 2.0.8 can use XSL Transformations (XSLT) to perform malicious operations, including but not limited to file read, file write, and code execution.
+cvss_v2: 6.5
+references:
+    - http://syncope.apache.org/security.html#CVE-2018-1321:_Remote_code_execution_by_administrators_with_report_and_template_entitlements
+    - http://www.securityfocus.com/bid/103508
+
+affected:
+    - groupId: org.apache.syncope
+      artifactId: syncope-archetype
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:syncope:1.0.0
+#    - cpe:/a:apache:syncope:1.1.8
+#    - cpe:/a:apache:syncope:1.0.6
+#    - cpe:/a:apache:syncope:1.0.4
+#    - cpe:/a:apache:syncope:1.0.8
+#    - cpe:/a:apache:syncope:1.1.2
+#    - cpe:/a:apache:syncope:1.0.5
+#    - cpe:/a:apache:syncope:1.1.0
+#    - cpe:/a:apache:syncope:1.1.7
+#    - cpe:/a:apache:syncope 2.0.8 (excluding)
+#    - cpe:/a:apache:syncope:1.0.7
+#    - cpe:/a:apache:syncope:1.2.0:m1
+#    - cpe:/a:apache:syncope:1.1.4
+#    - cpe:/a:apache:syncope:1.1.1
+#    - cpe:/a:apache:syncope:1.1.3
+#    - cpe:/a:apache:syncope:1.0.9
+#    - cpe:/a:apache:syncope:1.1.5
+#    - cpe:/a:apache:syncope:1.1.6
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.8200309 org.apache.syncope:syncope-archetype
+# 0.8200309 org.apache.syncope:syncope-client
+# 0.8200309 org.apache.syncope:syncope-common
+# 0.8200309 org.apache.syncope:syncope-console
+# 0.8200309 org.apache.syncope:syncope-core
+# 0.8200309 org.apache.syncope:syncope-standalone
+# 0.8200309 org.apache.syncope:syncope-quality
+# 0.78898126 org.apache.syncope:syncope-build-tools
+# 0.78898126 org.apache.syncope:syncope-core-upgrader
+# 0.78898126 org.apache.syncope:syncope-hibernate-enhancer
