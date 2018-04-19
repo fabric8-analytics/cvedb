@@ -1,0 +1,34 @@
+---
+cve: 2018-1294
+title: CVE in org.apache.commons:commons-email
+description: >
+    If a user of Commons-Email (typically an application programmer) passes unvalidated input as the so-called "Bounce Address", and that input contains line-breaks, then the email details (recipients, contents, etc.) might be manipulated. Mitigation: Users should upgrade to Commons-Email 1.5. You can mitigate this vulnerability for older versions of Commons Email by stripping line-breaks from data, that will be passed to Email.setBounceAddress(String).
+cvss_v2: 5.0
+references:
+    - http://seclists.org/oss-sec/2018/q1/107
+
+affected:
+    - groupId: org.apache.commons
+      artifactId: commons-email
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:commons_email 1.4 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 4.116194 commons-email:commons-email
+# 3.2828786 org.apache.commons:commons-email
+# 2.7605736 org.hawkular.commons:hawkular-commons-email
+# 0.77051264 io.jdev.address:address-rules
+# 0.70845866 commons-jelly:commons-jelly-tags-email
+# 0.4073293 com.commercetools.sunrise.email:email-api
+# 0.4073293 com.commercetools.sunrise.email:email-smtp
+# 0.39257875 nz.ac.auckland.email:remote-email
+# 0.3840704 org.everit.email:org.everit.email.api
+# 0.3840704 org.everit.email:org.everit.email.javamail
