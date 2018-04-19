@@ -1,0 +1,33 @@
+---
+cve: 2014-2675
+title: CVE in html
+description: >
+    Cross-site request forgery (CSRF) vulnerability in inc/AdminPage.php in the WP HTML Sitemap plugin 1.2 for WordPress allows remote attackers to hijack the authentication of administrators for requests that delete the sitemap via a request to the wp-html-sitemap page in wp-admin/options-general.php.
+cvss_v2: 5.8
+references:
+    - https://security.dxw.com/advisories/csrf-vulnerability-in-wp-html-sitemap-1-2/
+
+affected:
+    - name: html
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:wp-html-sitemap_project:wp-html-sitemap:1.2
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.74923056 sitemap
+# 0.4618891 html
+# 0.44476718 indico-wp
+# 0.44476718 oc-wp
+# 0.44476718 scopus.wp
+# 0.44476718 wp-diveintolist
+# 0.44476718 wp-download
+# 0.44476718 wp-md
+# 0.39239258 wp-version-checker
+# 0.38750052 bdt-sitemap
