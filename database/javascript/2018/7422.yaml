@@ -1,0 +1,35 @@
+---
+cve: 2018-7422
+title: CVE in site
+description: >
+    A Local File Inclusion vulnerability in the Site Editor plugin through 1.1.1 for WordPress allows remote attackers to retrieve arbitrary files via the ajax_path parameter to editor/extensions/pagebuilder/includes/ajax_shortcode_pattern.php, aka absolute path traversal.
+cvss_v2: 5.0
+references:
+    - http://seclists.org/fulldisclosure/2018/Mar/40
+    - https://wpvulndb.com/vulnerabilities/9044
+    - https://www.exploit-db.com/exploits/44340/
+
+affected:
+    - name: site
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:siteeditor:site_editor:::~~~wordpress~~ 1.1.1 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.0149934 faction-site-local
+# 0.96593523 site
+# 0.8802499 react-native-wordpress-editor
+# 0.72969145 editor
+# 0.72969145 editor-in
+# 0.72969145 editor-framework
+# 0.6587297 open-file-text-editor
+# 0.5001541 site-tree
+# 0.5001541 site-manager
+# 0.5001541 apostrophe-site
