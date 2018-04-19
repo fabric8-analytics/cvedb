@@ -1,0 +1,33 @@
+---
+cve: 2014-2674
+title: CVE in ajax
+description: >
+    Directory traversal vulnerability in the Ajax Pagination (twitter Style) plugin 1.1 for WordPress allows remote attackers to read arbitrary files via a .. (dot dot) in the loop parameter in an ajax_navigation action to wp-admin/admin-ajax.php.
+cvss_v2: 5.0
+references:
+    - https://security.dxw.com/advisories/end-user-exploitable-local-file-inclusion-vulnerability-in-ajax-pagination-twitter-style-1-1/
+
+affected:
+    - name: ajax
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:ajax-pagination_project:ajax-pagination:1.1::~~~wordpress~~
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.3399149 ajax
+# 0.7167113 api-pagination
+# 0.7167113 django-pagination
+# 0.7167113 dj-pagination
+# 0.7167113 flask-pagination
+# 0.7167113 incuna-pagination
+# 0.7167113 pyramid-pagination
+# 0.7167113 sqlalchemy-pagination
+# 0.68805516 bambu-ajax
+# 0.68805516 django-ajax
