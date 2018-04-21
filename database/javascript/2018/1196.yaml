@@ -1,0 +1,40 @@
+---
+cve: 2018-1196
+title: CVE in spring-boot-scaffold
+description: >
+    Spring Boot supports an embedded launch script that can be used to easily run the application as a systemd or init.d linux service. The script included with Spring Boot 1.5.9 and earlier and 2.0.0.M1 through 2.0.0.M7 is susceptible to a symlink attack which allows the "run_user" to overwrite and take ownership of any file on the same system. In order to instigate the attack, the application must be installed as a service and the "run_user" requires shell access to the server. Spring Boot application that are not installed as a service, or are not using the embedded launch script are not susceptible.
+cvss_v2: 4.3
+references:
+    - https://pivotal.io/security/cve-2018-1196
+
+affected:
+    - name: spring-boot-scaffold
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:pivotal_software:spring_boot 1.5.9 (including)
+#    - cpe:/a:pivotal_software:spring_boot:2.0.0:m6
+#    - cpe:/a:pivotal_software:spring_boot:2.0.0:m4
+#    - cpe:/a:pivotal_software:spring_boot:2.0.0:m3
+#    - cpe:/a:pivotal_software:spring_boot:2.0.0:m1
+#    - cpe:/a:pivotal_software:spring_boot:2.0.0:m7
+#    - cpe:/a:pivotal_software:spring_boot:2.0.0:m5
+#    - cpe:/a:pivotal_software:spring_boot:2.0.0:m2
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 10.002525 spring-boot-scaffold
+# 8.579857 spring-boot-api-scaffold
+# 8.579857 create-spring-boot-app
+# 8.579857 generator-spring-boot-microservice
+# 8.579857 slush-marklogic-spring-boot
+# 7.157189 @jwbennet/spring-boot-react-scripts
+# 5.7345204 generator-spring-boot-application-from-swagger
+# 5.7345204 @jwbennet/spring-boot-create-react-app
+# 4.010513 spring
+# 4.010513 Spring
