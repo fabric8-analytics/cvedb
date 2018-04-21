@@ -1,0 +1,43 @@
+---
+cve: 2018-5509
+title: CVE in com.v5analytics.simpleorm:simple-orm-jetty-session-manager
+description: >
+    On F5 BIG-IP versions 13.0.0 or 12.1.0 - 12.1.3.1, when a specifically configured virtual server receives traffic of an undisclosed nature, TMM will crash and take the configured failover action, potentially causing a denial of service. The configuration which exposes this issue is not common and in general does not work when enabled in previous versions of BIG-IP. Starting in 12.1.0, BIG-IP will crash if the configuration which exposes this issue is enabled and the virtual server receives non TCP traffic. With the fix of this issue, additional configuration validation logic has been added to prevent this configuration from being applied to a virtual server. There is only data plane exposure to this issue with a non-standard configuration. There is no control plane exposure.
+cvss_v2: 7.8
+references:
+    - http://www.securityfocus.com/bid/103504
+    - http://www.securitytracker.com/id/1040562
+    - https://support.f5.com/csp/article/K49440608
+
+affected:
+    - groupId: com.v5analytics.simpleorm
+      artifactId: simple-orm-jetty-session-manager
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:f5:big-ip_advanced_firewall_manager 13.1.0.4 (excluding)
+#    - cpe:/a:f5:big-ip_application_acceleration_manager 13.1.0.4 (excluding)
+#    - cpe:/a:f5:big-ip_websafe:1.0.0
+#    - cpe:/a:f5:big-ip_access_policy_manager 13.1.0.4 (excluding)
+#    - cpe:/a:f5:big-ip_local_traffic_manager 13.1.0.4 (excluding)
+#    - cpe:/a:f5:big-ip_application_security_manager 13.1.0.4 (excluding)
+#    - cpe:/a:f5:big-ip_policy_enforcement_manager 13.1.0.4 (excluding)
+#    - cpe:/a:f5:big-ip_link_controller 13.1.0.4 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.3465427 com.ip2proxy:ip2proxy-java
+# 0.26890457 org.log5f:log5f
+# 0.25043973 org.log5f:log5f-fp10.1
+# 0.06544411 com.v5analytics.simpleorm:simple-orm-jetty-session-manager
+# 0.020867541 com.github.johnaimes1a.f1x:f1x
+# 0.020207584 org.got5:tapestry5-foundation
+# 0.019823108 org.red5:red5-client
+# 0.019823108 org.red5:red5-io
+# 0.019823108 org.red5:red5-server
+# 0.019823108 org.red5:red5-service
