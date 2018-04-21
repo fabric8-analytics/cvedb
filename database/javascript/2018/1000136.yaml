@@ -1,0 +1,37 @@
+---
+cve: 2018-1000136
+title: CVE in electron
+description: >
+    Electron version 1.7 up to 1.7.12; 1.8 up to 1.8.3 and 2.0.0 up to 2.0.0-beta.3 contains an improper handling of values vulnerability in Webviews that can result in remote code execution. This attack appear to be exploitable via an app which allows execution of 3rd party code AND disallows node integration AND has not specified if webview is enabled/disabled. This vulnerability appears to have been fixed in 1.7.13, 1.8.4, 2.0.0-beta.4.
+cvss_v2: 6.8
+references:
+    - https://www.electronjs.org/blog/webview-fix
+
+affected:
+    - name: electron
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:electronjs:electron:2.0.0:beta2
+#    - cpe:/a:electronjs:electron 1.8.3 (including)
+#    - cpe:/a:electronjs:electron:2.0.0:beta3
+#    - cpe:/a:electronjs:electron:2.0.0
+#    - cpe:/a:electronjs:electron:2.0.0:beta1
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 5.7316413 webviews
+# 2.5451894 ghost-web-views
+# 2.1911392 bytesized.tv.web.views
+# 1.8493587 electron
+# 1.8493587 is-electron
+# 1.8493587 electron-is
+# 1.8493587 electron-foundation
+# 1.3272705 electron-electron
+# 1.0121624 @electron-builder/electron-download
+# 0.95809835 electron-prebuilt
