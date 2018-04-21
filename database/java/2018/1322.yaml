@@ -1,0 +1,52 @@
+---
+cve: 2018-1322
+title: CVE in org.apache.syncope:syncope-archetype
+description: >
+    An administrator with user search entitlements in Apache Syncope 1.2.x before 1.2.11, 2.0.x before 2.0.8, and unsupported releases 1.0.x and 1.1.x which may be also affected, can recover sensitive security values using the fiql and orderby parameters.
+cvss_v2: 4.0
+references:
+    - http://syncope.apache.org/security.html#CVE-2018-1322:_Information_disclosure_via_FIQL_and_ORDER_BY_sorting
+    - http://www.securityfocus.com/bid/103507
+
+affected:
+    - groupId: org.apache.syncope
+      artifactId: syncope-archetype
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:syncope:1.0.5
+#    - cpe:/a:apache:syncope:1.1.5
+#    - cpe:/a:apache:syncope:1.1.6
+#    - cpe:/a:apache:syncope:1.0.9
+#    - cpe:/a:apache:syncope 2.0.8 (excluding)
+#    - cpe:/a:apache:syncope:1.1.2
+#    - cpe:/a:apache:syncope:1.0.3
+#    - cpe:/a:apache:syncope:1.0.7
+#    - cpe:/a:apache:syncope:1.1.7
+#    - cpe:/a:apache:syncope:1.0.4
+#    - cpe:/a:apache:syncope:1.1.1
+#    - cpe:/a:apache:syncope:1.1.3
+#    - cpe:/a:apache:syncope:1.0.6
+#    - cpe:/a:apache:syncope:1.1.4
+#    - cpe:/a:apache:syncope:1.0.8
+#    - cpe:/a:apache:syncope:1.1.0
+#    - cpe:/a:apache:syncope:1.0.0
+#    - cpe:/a:apache:syncope:1.1.8
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 4.655769 org.apache.syncope:syncope-archetype
+# 4.655769 org.apache.syncope:syncope-client
+# 4.655769 org.apache.syncope:syncope-common
+# 4.655769 org.apache.syncope:syncope-console
+# 4.655769 org.apache.syncope:syncope-core
+# 4.655769 org.apache.syncope:syncope-standalone
+# 4.655769 org.apache.syncope:syncope-quality
+# 4.4794827 org.apache.syncope:syncope-build-tools
+# 4.4794827 org.apache.syncope:syncope-core-upgrader
+# 4.4794827 org.apache.syncope:syncope-hibernate-enhancer
