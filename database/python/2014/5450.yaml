@@ -1,0 +1,38 @@
+---
+cve: 2014-5450
+title: CVE in pyobjc-framework-collaboration
+description: >
+    Zarafa Collaboration Platform 4.1 uses world-readable permissions for /etc/zarafa/license, which allows local users to obtain sensitive information by reading license files.
+cvss_v2: 2.1
+references:
+    - http://lists.fedoraproject.org/pipermail/package-announce/2014-August/137158.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2014-September/137232.html
+    - http://www.openwall.com/lists/oss-security/2014/08/25/1
+    - http://www.securityfocus.com/bid/69370
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1133439
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/95454
+
+affected:
+    - name: pyobjc-framework-collaboration
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:zarafa:zarafa_collaboration_platform:4.1
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.6798531 foundation-platform
+# 1.2099938 cubicweb-collaboration
+# 1.2099938 pyobjc-framework-collaboration
+# 1.0625123 jarn.xmpp.collaboration
+# 0.8549973 clickatell-platform
+# 0.8549973 hedgehog-platform
+# 0.8549973 hydra-platform
+# 0.8549973 micropython-platform
+# 0.8549973 optimizely-platform
+# 0.8549973 peek-platform
