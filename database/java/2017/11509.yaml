@@ -1,0 +1,35 @@
+---
+cve: 2017-11509
+title: CVE in net.sf.squirrel-sql:squirrel-sql
+description: >
+    An authenticated remote attacker can execute arbitrary code in Firebird SQL Server versions 2.5.7 and 3.0.2 by executing a malformed SQL statement.
+cvss_v2: 9.0
+references:
+    - https://www.tenable.com/security/research/tra-2017-36
+
+affected:
+    - groupId: net.sf.squirrel-sql
+      artifactId: squirrel-sql
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:firebirdsql:firebird:2.5.7
+#    - cpe:/a:firebirdsql:firebird:3.0.2
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 2.0775938 net.sf.squirrel-sql.plugins:firebird
+# 0.67797315 org.awake-sql:awake-sql
+# 0.67797315 commons-sql:commons-sql
+# 0.6361767 cn.ocoop.framework.sql:sql-util
+# 0.6361767 io.dstream.sql:dstream-sql
+# 0.6361767 net.sf.squirrel-sql:squirrel-sql
+# 0.6361767 org.kuali.db.sql:kuali-sql
+# 0.59322655 org.mybatis.dynamic-sql:mybatis-dynamic-sql
+# 0.55958927 eu.agrosense.server:server
+# 0.5514301 com.github.ymonnier.sql-helper:ym-sql-helper
