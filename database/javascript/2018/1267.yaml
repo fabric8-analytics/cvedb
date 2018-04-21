@@ -1,0 +1,33 @@
+---
+cve: 2018-1267
+title: CVE in silk-companion
+description: >
+    Cloud Foundry Silk CNI plugin, versions prior to 0.2.0, contains an improper access control vulnerability. If the platform is configured with an application security group (ASG) that overlaps with the Silk overlay network, any applications can reach any other application on the network regardless of the configured routing policies.
+cvss_v2: 6.8
+references:
+    - https://www.cloudfoundry.org/blog/cve-2018-1267/
+
+affected:
+    - name: silk-companion
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:pivotal_software:silk_cni:::~~~cloud_foundry~~ 0.2.0 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 2.0949616 silk
+# 1.4112017 cni-cli
+# 1.238863 cni-transform-browserify
+# 1.2175303 cloud-foundry
+# 1.0665245 ps-react-lib-cni
+# 1.0637274 silk-msgpack
+# 1.0637274 silk-companion
+# 1.0637274 silk-scroll
+# 1.0637274 famfamfam-silk
+# 1.0637274 silk-api
