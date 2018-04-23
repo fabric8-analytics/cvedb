@@ -7,10 +7,28 @@ cvss_v2: 5.0
 references:
     - https://github.com/BT123/testcasesForMyRequest/tree/master/CVE-2017-12852
     - https://github.com/numpy/numpy/issues/9560#issuecomment-322395292
-    - https://nvd.nist.gov/vuln/detail/CVE-2017-12852
+
 affected:
     - name: numpy
       version:
-        - "<=1.13.1"
+        - "!FIXME!"
       fixedin:
-        - ">=1.13.3"
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:numpy:numpy 1.13.1 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 9.7250185 numpy
+# 4.9139223 bson-numpy
+# 4.9139223 dicom-numpy
+# 4.9139223 django-numpy
+# 4.9139223 hypothesis-numpy
+# 4.9139223 intel-numpy
+# 4.9139223 mapchete-numpy
+# 4.9139223 msgpack-numpy
+# 4.9139223 numpy-display
+# 4.9139223 numpy-groupies
