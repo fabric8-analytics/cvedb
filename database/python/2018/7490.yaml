@@ -1,0 +1,37 @@
+---
+cve: 2018-7490
+title: CVE in uwsgi
+description: >
+    uWSGI before 2.0.17 mishandles a DOCUMENT_ROOT check during use of the --php-docroot option, allowing directory traversal.
+cvss_v2: 5.0
+references:
+    - https://uwsgi-docs.readthedocs.io/en/latest/Changelog-2.0.17.html
+    - https://www.debian.org/security/2018/dsa-4142
+    - https://www.exploit-db.com/exploits/44223/
+
+affected:
+    - name: uwsgi
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/o:debian:debian_linux:9.0
+#    - cpe:/o:debian:debian_linux:8.0
+#    - cpe:/a:unbit:uwsgi 2.0.17 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.483631 root
+# 1.2598226 uwsgi
+# 1.062723 document
+# 1.062723 document-it
+# 0.76905274 root-installer
+# 0.76905274 root-numpy
+# 0.76905274 root-optimize
+# 0.76905274 root-pandas
+# 0.76905274 root-signature
+# 0.6797305 infi.run-as-root
