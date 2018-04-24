@@ -5,39 +5,11 @@ description: >
     Heap-based buffer overflow in the ALGnew function in block_templace.c in Python Cryptography Toolkit (aka pycrypto) allows remote attackers to execute arbitrary code as demonstrated by a crafted iv parameter to cryptmsg.py.
 cvss_v2: 7.5
 references:
-    - http://www.openwall.com/lists/oss-security/2016/12/27/8
-    - http://www.securityfocus.com/bid/95122
     - https://bugzilla.redhat.com/show_bug.cgi?id=1409754
     - https://github.com/dlitz/pycrypto/commit/8dbe0dc3eea5c689d4f76b37b93fe216cf1f00d4
     - https://github.com/dlitz/pycrypto/issues/176
-    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/C6BWNADPLKDBBQBUT3P75W7HAJCE7M3B/
-    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RJ37R2YLX56YZABFNAOWV4VTHTGYREAE/
-    - https://pony7.fr/ctf:public:32c3:cryptmsg
-    - https://security.gentoo.org/glsa/201702-14
-
+    - https://nvd.nist.gov/vuln/detail/CVE-2013-7459
 affected:
     - name: pycrypto
       version:
-        - "!FIXME!"
-      fixedin:
-        - "!FIXME!"
-# Additional information:
-#  configurations:
-#    - cpe:/a:dlitz:pycrypto 2.6.1 (including)
-#    - cpe:/o:fedoraproject:fedora:25
-#    - cpe:/o:fedoraproject:fedora:24
-#
-# All available versions:
-#versions
-#
-# Other possible package names:
-# 0.75688946 pycrypto
-# 0.687724 cryptography
-# 0.5413325 python-toolkit
-# 0.47782528 python-launchpadlib-toolkit
-# 0.47782528 python-xmp-toolkit
-# 0.47782528 salesforce-python-toolkit
-# 0.47782528 template-toolkit-python
-# 0.41515747 toolkit
-# 0.4143181 identity-toolkit-python-client
-# 0.3950822 pycrypto-on-pypi
+        - "<=2.6.1"
