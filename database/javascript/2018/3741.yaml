@@ -1,0 +1,33 @@
+---
+cve: 2018-3741
+title: CVE in ts-html-sanitizer
+description: >
+    There is a possible XSS vulnerability in all rails-html-sanitizer gem versions below 1.0.4 for Ruby. The gem allows non-whitelisted attributes to be present in sanitized output when input with specially-crafted HTML fragments, and these attributes can lead to an XSS attack on target applications. This issue is similar to CVE-2018-8048 in Loofah. All users running an affected release should either upgrade or use one of the workarounds immediately.
+cvss_v2: 4.3
+references:
+    - https://github.com/rails/rails-html-sanitizer/commit/f3ba1a839a35f2ba7f941c15e239a1cb379d56ae
+
+affected:
+    - name: ts-html-sanitizer
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:rubyonrails:html_sanitizer:::~~~ruby~~ 1.0.3 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 2.3275113 html-sanitizer
+# 2.1838353 xss-sanitizer
+# 2.0419962 caja-html-sanitizer
+# 2.0419962 ts-html-sanitizer
+# 1.6422229 xss
+# 1.5441148 ruby
+# 0.84280634 xss-filters
+# 0.84280634 xss-clean
+# 0.84280634 node-xss
+# 0.84280634 xss-escape
