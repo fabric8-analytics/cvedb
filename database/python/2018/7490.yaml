@@ -1,0 +1,15 @@
+---
+cve: 2018-7490
+title: CVE in uwsgi
+description: >
+    uWSGI before 2.0.17 mishandles a DOCUMENT_ROOT check during use of the --php-docroot option, allowing directory traversal.
+cvss_v2: 5.0
+references:
+    - https://uwsgi-docs.readthedocs.io/en/latest/Changelog-2.0.17.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2018-7490
+affected:
+    - name: uwsgi
+      version:
+        - "<=2.0.16"
+      fixedin:
+        - ">=2.0.17"
