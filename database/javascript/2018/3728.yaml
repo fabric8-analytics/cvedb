@@ -1,0 +1,35 @@
+---
+cve: 2018-3728
+title: CVE in hoek
+description: >
+    hoek node module before 5.0.3 suffers from a Modification of Assumed-Immutable Data (MAID) vulnerability via 'merge' and 'applyToDefaults' functions, which allows a malicious user to modify the prototype of "Object" via __proto__, causing the addition or modification of an existing property that will exist on all objects.
+cvss_v2: 4.0
+references:
+    - http://www.securityfocus.com/bid/103108
+    - https://github.com/hapijs/hoek/commit/32ed5c9413321fbc37da5ca81a7cbab693786dee
+    - https://hackerone.com/reports/310439
+
+affected:
+    - name: hoek
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:hapijs:hoek 5.0.3 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.70716155 maid
+# 0.68408203 hoek
+# 0.6655209 modification
+# 0.38358897 object-data
+# 0.38358897 data-object
+# 0.36760315 hubot-maid
+# 0.36760315 maid-irc
+# 0.3560634 hoek-boom
+# 0.3560634 transform-hoek
+# 0.3560634 @types/hoek
