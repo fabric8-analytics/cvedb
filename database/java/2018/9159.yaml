@@ -1,0 +1,38 @@
+---
+cve: 2018-9159
+title: CVE in com.sparkjava:spark-core
+description: >
+    In Spark before 2.7.2, a remote attacker can read unintended static files via various representations of absolute or relative pathnames, as demonstrated by file: URLs and directory traversal sequences. NOTE: this product is unrelated to Ignite Realtime Spark.
+cvss_v2: 5.0
+references:
+    - http://sparkjava.com/news#spark-272-released
+    - https://github.com/perwendel/spark/commit/030e9d00125cbd1ad759668f85488aba1019c668
+    - https://github.com/perwendel/spark/commit/a221a864db28eb736d36041df2fa6eb8839fc5cd
+    - https://github.com/perwendel/spark/commit/ce9e11517eca69e58ed4378d1e47a02bd06863cc
+    - https://github.com/perwendel/spark/issues/981
+
+affected:
+    - groupId: com.sparkjava
+      artifactId: spark-core
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:sparkjava:spark 2.7.2 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.9753778 com.sparkjava:spark-core
+# 1.9753778 com.sparkjava:spark-kotlin
+# 1.919538 com.sparkjava:spark-template-freemarker
+# 1.919538 com.sparkjava:spark-template-handlebars
+# 1.919538 com.sparkjava:spark-template-jade
+# 1.919538 com.sparkjava:spark-template-jetbrick
+# 1.919538 com.sparkjava:spark-template-jinjava
+# 1.919538 com.sparkjava:spark-template-jtwig
+# 1.919538 com.sparkjava:spark-template-mustache
+# 1.919538 com.sparkjava:spark-template-pebble
