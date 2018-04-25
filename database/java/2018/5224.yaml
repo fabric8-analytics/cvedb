@@ -1,0 +1,37 @@
+---
+cve: 2018-5224
+title: CVE in com.atlassian.bamboo:bamboo-specs
+description: >
+    Bamboo did not correctly check if a configured Mercurial repository URI contained values that the Windows operating system may consider argument parameters. An attacker who has permission to create a repository in Bamboo, edit an existing plan in Bamboo that has a non-linked Mercurial repository, or create a plan in Bamboo either globally or in a project using Bamboo Specs can can execute code of their choice on systems that run a vulnerable version of Bamboo on the Windows operating system. All versions of Bamboo starting with 2.7.0 before 6.3.3 (the fixed version for 6.3.x) and from version 6.4.0 before 6.4.1 (the fixed version for 6.4.x) running on the Windows operating system are affected by this vulnerability.
+cvss_v2: 9.0
+references:
+    - http://www.securityfocus.com/bid/103653
+    - https://confluence.atlassian.com/x/PS9sO
+    - https://jira.atlassian.com/browse/BAM-19743
+
+affected:
+    - groupId: com.atlassian.bamboo
+      artifactId: bamboo-specs
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:atlassian:bamboo 6.4.1 (excluding)
+#    - cpe:/o:microsoft:windows:-
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.4845694 com.atlassian.bamboo:bamboo-specs
+# 1.436153 com.atlassian.bamboo:bamboo-specs-api
+# 1.436153 com.atlassian.bamboo:bamboo-specs-archetype
+# 1.436153 com.atlassian.bamboo:bamboo-specs-runner
+# 1.3877367 com.atlassian.bamboo:bamboo-specs-runner-test
+# 0.78720725 org.sonarsource.scm.mercurial:sonar-scm-mercurial-plugin
+# 0.69408417 hudson.plugins.bamboo:bamboo-notifier
+# 0.6894896 com.saucelabs.bamboo:bamboo-sauceondemand-plugin
+# 0.6456678 com.marvelution.bamboo.plugins:bamboo-nexus-tasks
+# 0.6456678 com.marvelution.bamboo.plugins:bamboo-sonar-common
