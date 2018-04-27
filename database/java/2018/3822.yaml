@@ -1,0 +1,36 @@
+---
+cve: 2018-3822
+title: CVE in com.sksamuel.elastic4s:elastic4s-xpack-security_2.11
+description: >
+    X-Pack Security versions 6.2.0, 6.2.1, and 6.2.2 are vulnerable to a user impersonation attack via incorrect XML canonicalization and DOM traversal. An attacker might have been able to impersonate a legitimate user if the SAML Identity Provider allows for self registration with arbitrary identifiers and the attacker can register an account which an identifier that shares a suffix with a legitimate account. Both of those conditions must be true in order to exploit this flaw.
+cvss_v2: 7.5
+references:
+    - https://discuss.elastic.co/t/elastic-stack-6-2-3-security-update/124848
+
+affected:
+    - groupId: com.sksamuel.elastic4s
+      artifactId: elastic4s-xpack-security_2.11
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:elastic:x-pack:6.2.1
+#    - cpe:/a:elastic:x-pack:6.2.0
+#    - cpe:/a:elastic:x-pack:6.2.2
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.2574644 xml-security:xml-security
+# 1.1002815 com.sun.xml.security:xml-security-impl
+# 0.6923426 org.isisaddons.module.security:isis-module-security-dom
+# 0.6661805 org.sonatype.security:security-model-xml
+# 0.64562285 org.omg.dds.security:dds-security-xml
+# 0.64562285 org.sonatype.security.realms:security-xml-realm
+# 0.48771015 com.github.skjolber.xml-log-filter:xml-log-filter-w3c-dom
+# 0.4744077 com.sksamuel.elastic4s:elastic4s-xpack-security_2.11
+# 0.4744077 com.sksamuel.elastic4s:elastic4s-xpack-security_2.12
+# 0.4453054 org.dom4j:dom4j
