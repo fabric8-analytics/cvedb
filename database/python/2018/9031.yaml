@@ -1,0 +1,36 @@
+---
+cve: 2018-9031
+title: CVE in sentry
+description: >
+    The login interface on TNLSoftSolutions Sentry Vision 3.x devices provides password disclosure by reading an "if(pwd ==" line in the HTML source code. This means, in effect, that authentication occurs only on the client side.
+cvss_v2: 5.0
+references:
+    - https://gist.github.com/pabloonicarres/c2c284ca7b025d629da39087445ed15d#file-sentryvision_authentication_bypass-sh
+    - https://www.youtube.com/watch?v=pLMH9vGPRCo
+
+affected:
+    - name: sentry
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:tnlsoftsolutions:sentry_vision:3.2
+#    - cpe:/a:tnlsoftsolutions:sentry_vision:3.0
+#    - cpe:/a:tnlsoftsolutions:sentry_vision:3.1
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.8959758 vision
+# 1.5638555 html4vision
+# 1.3246459 sentry
+# 1.3246459 to-sentry
+# 0.96692824 mrrdt-vision
+# 0.96692824 pyobjc-framework-vision
+# 0.96692824 py-vision
+# 0.96692824 test-vision
+# 0.96692824 torch-vision
+# 0.85079736 client-vision-test
