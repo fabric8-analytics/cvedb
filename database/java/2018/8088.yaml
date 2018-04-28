@@ -1,0 +1,61 @@
+---
+cve: 2018-8088
+title: CVE in org.slf4j:jul-to-slf4j
+description: >
+    org.slf4j.ext.EventData in the slf4j-ext module in QOS.CH SLF4J before 1.8.0-beta2 allows remote attackers to bypass intended access restrictions via crafted data.
+cvss_v2: 7.5
+references:
+    - http://www.securitytracker.com/id/1040627
+    - https://access.redhat.com/errata/RHSA-2018:0582
+    - https://access.redhat.com/errata/RHSA-2018:0592
+    - https://access.redhat.com/errata/RHSA-2018:0627
+    - https://access.redhat.com/errata/RHSA-2018:0628
+    - https://access.redhat.com/errata/RHSA-2018:0629
+    - https://access.redhat.com/errata/RHSA-2018:0630
+    - https://access.redhat.com/errata/RHSA-2018:1247
+    - https://access.redhat.com/errata/RHSA-2018:1248
+    - https://access.redhat.com/errata/RHSA-2018:1249
+    - https://access.redhat.com/errata/RHSA-2018:1251
+    - https://github.com/qos-ch/slf4j/commit/d2b27fba88e983f921558da27fc29b5f5d269405
+    - https://jira.qos.ch/browse/SLF4J-430
+    - https://jira.qos.ch/browse/SLF4J-431
+
+affected:
+    - groupId: org.slf4j
+      artifactId: jul-to-slf4j
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:slf4j:slf4j 1.8.0 (excluding)
+#    - cpe:/a:slf4j:slf4j:1.8.0:alpha0
+#    - cpe:/a:redhat:jboss_enterprise_application_platform:6.0.0
+#    - cpe:/o:redhat:enterprise_linux:5.0
+#    - cpe:/o:redhat:enterprise_linux:6
+#    - cpe:/a:slf4j:slf4j:1.8.0:alpha2
+#    - cpe:/a:redhat:jboss_enterprise_application_platform:6.4.0
+#    - cpe:/a:slf4j:slf4j:1.8.0:alpha1
+#    - cpe:/o:redhat:enterprise_linux_workstation:7.0
+#    - cpe:/o:redhat:enterprise_linux:7.0
+#    - cpe:/o:redhat:enterprise_linux_server:7.0
+#    - cpe:/o:redhat:enterprise_linux_desktop:7.0
+#    - cpe:/a:redhat:jboss_enterprise_application_platform:7.1
+#    - cpe:/a:slf4j:slf4j:1.8.0:beta0
+#    - cpe:/a:slf4j:slf4j:1.8.0:beta1
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.1754801 org.jboss.slf4j:slf4j-jboss-logmanager
+# 1.1754801 org.jboss.slf4j:slf4j-jboss-logging
+# 1.0470167 org.slf4j:jul-to-slf4j
+# 1.0470167 org.slf4j:slf4j-api
+# 1.0470167 org.slf4j:slf4j-ext
+# 1.0470167 org.slf4j:slf4j-migrator
+# 1.0470167 org.slf4j:slf4j-nop
+# 1.0470167 org.slf4j:slf4j-simple
+# 1.0470167 org.slf4j:slf4j-site
+# 1.0470167 org.slf4j:slf4j-android
