@@ -1,0 +1,16 @@
+---
+cve: 2017-18214
+title: CVE in moment
+description: >
+    The moment module before 2.19.3 for Node.js is prone to a regular expression denial of service via a crafted date string, a different vulnerability than CVE-2016-4055.
+cvss_v2: 5.0
+references:
+    - https://github.com/moment/moment/issues/4163
+    - https://nodesecurity.io/advisories/532
+    - https://nvd.nist.gov/vuln/detail/CVE-2017-18214
+affected:
+    - name: moment
+      version:
+        - "<=2.19.2"
+      fixedin:
+        - ">=2.19.3"
