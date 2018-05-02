@@ -1,0 +1,34 @@
+---
+cve: 2015-9259
+title: CVE in root-optimize
+description: >
+    In Docker Notary before 0.1, the checkRoot function in gotuf/client/client.go does not check expiry of root.json files, despite a comment stating that it does. Even if a user creates a new root.json file after a key compromise, an attacker can produce update files referring to an old root.json file.
+cvss_v2: 7.5
+references:
+    - https://docs.docker.com/notary/changelog/
+    - https://github.com/theupdateframework/notary/blob/master/docs/resources/ncc_docker_notary_audit_2015_07_31.pdf
+
+affected:
+    - name: root-optimize
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:docker:notary 0.1 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 2.8428519 notary
+# 2.0485396 root
+# 1.1149988 docker
+# 1.0527372 root-installer
+# 1.0527372 root-numpy
+# 1.0527372 root-optimize
+# 1.0527372 root-pandas
+# 1.0527372 root-signature
+# 0.9282619 infi.run-as-root
+# 0.8037866 django-static-root-finder
