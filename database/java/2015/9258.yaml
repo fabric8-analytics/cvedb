@@ -1,0 +1,35 @@
+---
+cve: 2015-9258
+title: CVE in no.digipost.signature:signature-api-client-java
+description: >
+    In Docker Notary before 0.1, gotuf/signed/verify.go has a Signature Algorithm Not Matched to Key vulnerability. Because an attacker controls the field specifying the signature algorithm, they might (for example) be able to forge a signature by forcing a misinterpretation of an RSA-PSS key as Ed25519 elliptic-curve data.
+cvss_v2: 5.0
+references:
+    - https://docs.docker.com/notary/changelog/
+    - https://github.com/theupdateframework/notary/blob/master/docs/resources/ncc_docker_notary_audit_2015_07_31.pdf
+
+affected:
+    - groupId: no.digipost.signature
+      artifactId: signature-api-client-java
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:docker:notary 0.1 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.41153747 no.digipost.signature:signature-api-specification
+# 0.38887152 no.digipost.signature:signature-api-client-java
+# 0.38887152 no.digipost.signature:signature-api-specification-jaxb
+# 0.37992793 com.joyent.http-signature:http-signature-common
+# 0.37992793 com.joyent.http-signature:jaxrs-client-signature
+# 0.35726202 com.joyent.http-signature:apache-http-client-signature
+# 0.35726202 com.joyent.http-signature:google-http-client-signature
+# 0.3533707 org.avaje.docker:docker-commands
+# 0.33685982 com.alexecollins.docker:docker-maven-plugin
+# 0.33685982 net.wouterdanes.docker:docker-maven-plugin
