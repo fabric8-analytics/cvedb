@@ -1,0 +1,34 @@
+---
+cve: 2015-9258
+title: CVE in key
+description: >
+    In Docker Notary before 0.1, gotuf/signed/verify.go has a Signature Algorithm Not Matched to Key vulnerability. Because an attacker controls the field specifying the signature algorithm, they might (for example) be able to forge a signature by forcing a misinterpretation of an RSA-PSS key as Ed25519 elliptic-curve data.
+cvss_v2: 5.0
+references:
+    - https://docs.docker.com/notary/changelog/
+    - https://github.com/theupdateframework/notary/blob/master/docs/resources/ncc_docker_notary_audit_2015_07_31.pdf
+
+affected:
+    - name: key
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:docker:notary 0.1 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.9886425 notary
+# 0.76745594 algorithm
+# 0.63898736 key
+# 0.6243974 signature
+# 0.40313908 melange-algorithm
+# 0.40313908 yass-algorithm
+# 0.3995547 docker
+# 0.3575995 luhn-algorithm-validator
+# 0.3575995 simple-paths-algorithm
+# 0.3575995 snowland-algorithm-python
