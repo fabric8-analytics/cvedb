@@ -1,0 +1,36 @@
+---
+cve: 2018-9183
+title: CVE in org.tiogasolutions.jobs:tioga-jobs-client
+description: >
+    The Joom Sky JS Jobs extension before 1.2.1 for Joomla! has XSS.
+cvss_v2: 3.5
+references:
+    - https://vel.joomla.org/resolved/2146-js-jobs-1-2-0-xss-cross-site-scripting
+    - https://www.exploit-db.com/exploits/44401/
+    - https://www.joomsky.com/products/js-jobs.html
+
+affected:
+    - groupId: org.tiogasolutions.jobs
+      artifactId: tioga-jobs-client
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:joomsky:js_jobs:::~~~joomla%21~~ 1.2.1 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.6207049 works.lmz.jobs:periodic-jobs
+# 0.5946352 org.tiogasolutions.jobs:tioga-jobs-client
+# 0.5946352 org.tiogasolutions.jobs:tioga-jobs-kernel
+# 0.5946352 org.tiogasolutions.jobs:tioga-jobs-test
+# 0.5946352 org.tiogasolutions.jobs:tioga-jobs-jackson
+# 0.5946352 org.tiogasolutions.jobs:tioga-jobs-pub
+# 0.5946352 org.tiogasolutions.jobs:tioga-jobs-agent
+# 0.5932284 nz.ac.auckland.jobs:periodic-jobs
+# 0.5657519 se.l4.jobs:jobs-api
+# 0.5657519 se.l4.jobs:jobs-memory
