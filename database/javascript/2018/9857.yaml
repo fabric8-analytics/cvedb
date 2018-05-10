@@ -1,0 +1,34 @@
+---
+cve: 2018-9857
+title: CVE in clone
+description: >
+    PHP Scripts Mall Match Clone Script 1.0.4 has XSS via the search field to searchbyid.php (aka the "View Search By Id" screen).
+cvss_v2: 4.3
+references:
+    - https://pastebin.com/Y9uEC4nu
+    - https://www.exploit-db.com/exploits/44486/
+
+affected:
+    - name: clone
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:match_clone_script_project:match_clone_script:1.0.4
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.6781172 clone
+# 0.6781172 clone-it
+# 0.6781172 clone-into
+# 0.6781172 clone-org
+# 0.621254 is-match
+# 0.621254 match
+# 0.621254 match-it
+# 0.621254 match-at
+# 0.621254 no-match
+# 0.5405246 script
