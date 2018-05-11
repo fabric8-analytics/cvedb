@@ -1,0 +1,34 @@
+---
+cve: 2018-1295
+title: CVE in apache-beam
+description: >
+    In Apache Ignite 2.3 or earlier, the serialization mechanism does not have a list of classes allowed for serialization/deserialization, which makes it possible to run arbitrary code when 3-rd party vulnerable classes are present in Ignite classpath. The vulnerability can be exploited if the one sends a specially prepared form of a serialized object to one of the deserialization endpoints of some Ignite components - discovery SPI, Ignite persistence, Memcached endpoint, socket steamer.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/103692
+    - https://lists.apache.org/thread.html/45e7d5e2c6face85aab693f5ae0616563132ff757e5a558da80d0209@%3Cdev.ignite.apache.org%3E
+
+affected:
+    - name: apache-beam
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:ignite 2.3.0 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 4.761844 ignite
+# 1.6049494 apache-airflow
+# 1.6049494 apache-ariatosca
+# 1.6049494 apache-beam
+# 1.6049494 apache-ensite
+# 1.6049494 apache-libcloud
+# 1.6049494 apache-manager
+# 1.6049494 certbot-apache
+# 1.6049494 letsencrypt-apache
+# 1.4123313 apache-conf-parser
