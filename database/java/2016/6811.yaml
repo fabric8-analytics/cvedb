@@ -1,0 +1,34 @@
+---
+cve: 2016-6811
+title: CVE in org.apache.hadoop:hadoop-annotations
+description: >
+    In Apache Hadoop 2.x before 2.7.4, a user who can escalate to yarn user can possibly run arbitrary commands as root user.
+cvss_v2: 9.0
+references:
+    - https://lists.apache.org/thread.html/9ba3c12bbdfd5b2cae60909e48f92608e00c8d99196390b8cfeca307@%3Cgeneral.hadoop.apache.org%3E
+
+affected:
+    - groupId: org.apache.hadoop
+      artifactId: hadoop-annotations
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:hadoop 2.7.3 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 3.9441793 org.apache.hadoop:hadoop-aliyun
+# 3.9441793 org.apache.hadoop:hadoop-annotations
+# 3.9441793 org.apache.hadoop:hadoop-ant
+# 3.9441793 org.apache.hadoop:hadoop-archives
+# 3.9441793 org.apache.hadoop:hadoop-assemblies
+# 3.9441793 org.apache.hadoop:hadoop-auth
+# 3.9441793 org.apache.hadoop:hadoop-aws
+# 3.9441793 org.apache.hadoop:hadoop-azure
+# 3.9441793 org.apache.hadoop:hadoop-client
+# 3.9441793 org.apache.hadoop:hadoop-common
