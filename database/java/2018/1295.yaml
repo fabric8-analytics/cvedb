@@ -1,0 +1,35 @@
+---
+cve: 2018-1295
+title: CVE in org.apache.ignite:ignite-aop
+description: >
+    In Apache Ignite 2.3 or earlier, the serialization mechanism does not have a list of classes allowed for serialization/deserialization, which makes it possible to run arbitrary code when 3-rd party vulnerable classes are present in Ignite classpath. The vulnerability can be exploited if the one sends a specially prepared form of a serialized object to one of the deserialization endpoints of some Ignite components - discovery SPI, Ignite persistence, Memcached endpoint, socket steamer.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/103692
+    - https://lists.apache.org/thread.html/45e7d5e2c6face85aab693f5ae0616563132ff757e5a558da80d0209@%3Cdev.ignite.apache.org%3E
+
+affected:
+    - groupId: org.apache.ignite
+      artifactId: ignite-aop
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:ignite 2.3.0 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 6.102345 org.apache.ignite:ignite-apache-license-gen
+# 4.670786 org.apache.ignite:ignite-aop
+# 4.670786 org.apache.ignite:ignite-aws
+# 4.670786 org.apache.ignite:ignite-camel
+# 4.670786 org.apache.ignite:ignite-clients
+# 4.670786 org.apache.ignite:ignite-cloud
+# 4.670786 org.apache.ignite:ignite-core
+# 4.670786 org.apache.ignite:ignite-flink
+# 4.670786 org.apache.ignite:ignite-flume
+# 4.670786 org.apache.ignite:ignite-gce
