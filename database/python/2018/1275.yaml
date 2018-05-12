@@ -1,0 +1,35 @@
+---
+cve: 2018-1275
+title: CVE in spring
+description: >
+    Spring Framework, versions 5.0 prior to 5.0.5 and versions 4.3 prior to 4.3.16 and older unsupported versions, allow applications to expose STOMP over WebSocket endpoints with a simple, in-memory STOMP broker through the spring-messaging module. A malicious user (or attacker) can craft a message to the broker that can lead to a remote code execution attack. This CVE addresses the partial fix for CVE-2018-1270 in the 4.3.x branch of the Spring Framework.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/103771
+    - https://access.redhat.com/errata/RHSA-2018:1320
+    - https://pivotal.io/security/cve-2018-1275
+
+affected:
+    - name: spring
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:pivotal_software:spring_framework 5.0.5 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 5.419659 spring
+# 2.7336814 flask-spring
+# 2.7336814 pd-spring
+# 2.7336814 rapid-spring
+# 2.7336814 spring-aws
+# 2.7336814 spring-kernel
+# 2.7336814 tasbot-spring
+# 2.3979342 plaster-spring-boot
+# 1.603793 stomp
+# 1.0343059 websocket
