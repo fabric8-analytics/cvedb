@@ -1,0 +1,33 @@
+---
+cve: 2018-6870
+title: CVE in flask-script
+description: >
+    Reflected XSS exists in PHP Scripts Mall Website Seller Script 2.0.3 via the Listings Search feature.
+cvss_v2: 4.3
+references:
+    - https://0day4u.wordpress.com/2018/03/19/website-seller-script-reflected-xss/
+
+affected:
+    - name: flask-script
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:website_seller_script_project:website_seller_script:2.0.3
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.3948523 script
+# 0.31439042 website
+# 0.30789888 listings
+# 0.24902877 php
+# 0.22910807 odoo10-addon-website-sale-search-fuzzy
+# 0.2093957 buildout-script
+# 0.2093957 chatbot-script
+# 0.2093957 clue-script
+# 0.2093957 console-script
+# 0.2093957 flask-script
