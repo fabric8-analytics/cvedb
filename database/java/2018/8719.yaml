@@ -1,0 +1,34 @@
+---
+cve: 2018-8719
+title: CVE in org.glassfish.security:security
+description: >
+    An issue was discovered in the WP Security Audit Log plugin 3.1.1 for WordPress. Access to wp-content/uploads/wp-security-audit-log/* files is not restricted. For example, these files are indexed by Google and allows for attackers to possibly find sensitive information.
+cvss_v2: 5.0
+references:
+    - https://www.exploit-db.com/exploits/44371/
+
+affected:
+    - groupId: org.glassfish.security
+      artifactId: security
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:wpsecurityauditlog:wp_security_audit_log:3.1.1::~~~wordpress~~
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.7082402 uk.co.divisiblebyzero.wordpress:wordpress
+# 0.51312137 com.afrozaar.wordpress:wp-api-v2-client-java
+# 0.47590166 org.seedstack.addons.audit:audit-core
+# 0.47590166 org.seedstack.addons.audit:audit-logback
+# 0.47590166 org.seedstack.addons.audit:audit-specs
+# 0.46217954 org.everit.audit:org.everit.audit.api
+# 0.46217954 org.everit.audit:org.everit.audit.ri
+# 0.45069832 com.washingtonpost.wordpress:wordpress-rest-api-client
+# 0.44689184 com.daioware.security:security
+# 0.44689184 org.glassfish.security:security
