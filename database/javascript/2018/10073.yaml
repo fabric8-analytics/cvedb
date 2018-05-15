@@ -1,0 +1,33 @@
+---
+cve: 2018-10073
+title: CVE in cms
+description: >
+    joyplus-cms 1.6.0 has XSS in manager/admin_vod.php via the keyword parameter.
+cvss_v2: 3.5
+references:
+    - https://github.com/joyplus/joyplus-cms/issues/423
+
+affected:
+    - name: cms
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:joyplus-cms_project:joyplus-cms:1.6.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.2255893 cms
+# 0.67108023 @raketa-cms/raketa-cms
+# 0.63527143 fh-cms
+# 0.63527143 novo-cms
+# 0.63527143 duffel-cms
+# 0.63527143 knighkit-cms
+# 0.63527143 vtc-cms
+# 0.63527143 sky-cms
+# 0.63527143 ninja-cms
+# 0.63527143 oorjit-cms
