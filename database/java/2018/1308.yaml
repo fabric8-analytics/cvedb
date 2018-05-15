@@ -1,0 +1,40 @@
+---
+cve: 2018-1308
+title: CVE in org.apache.solr:solr-dataimporthandler
+description: >
+    This vulnerability in Apache Solr 1.2 to 6.6.2 and 7.0.0 to 7.2.1 relates to an XML external entity expansion (XXE) in the `&dataConfig=<inlinexml>` parameter of Solr's DataImportHandler. It can be used as XXE using file/ftp/http protocols in order to read arbitrary local files from the Solr server or the internal network.
+cvss_v2: 5.0
+references:
+    - https://issues.apache.org/jira/browse/SOLR-11971
+    - https://lists.debian.org/debian-lts-announce/2018/04/msg00025.html
+    - https://mail-archives.apache.org/mod_mbox/www-announce/201804.mbox/%3C000001d3cf68%245ac69af0%241053d0d0%24%40apache.org%3E
+    - https://www.debian.org/security/2018/dsa-4194
+
+affected:
+    - groupId: org.apache.solr
+      artifactId: solr-dataimporthandler
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:solr 7.2.1 (including)
+#    - cpe:/o:debian:debian_linux:7.0
+#    - cpe:/o:debian:debian_linux:8.0
+#    - cpe:/o:debian:debian_linux:9.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.508189 org.apache.solr.solr:solr-dataimporthandler
+# 1.4258802 org.apache.solr:solr-dataimporthandler
+# 1.3867848 org.apache.solr.solr:solr-dataimporthandler-extras
+# 1.304476 org.apache.solr:solr-dataimporthandler-extras
+# 1.0177857 org.dspace.dependencies.solr:dspace-solr-dataimporthandler
+# 0.73806834 org.hibernate.apache.lucene.solr:apache-solr-analyzer
+# 0.68801033 org.apache.solr.solr:solr-cell
+# 0.68801033 org.apache.solr.solr:solr-clustering
+# 0.68801033 org.apache.solr.solr:solr-core
+# 0.68801033 org.apache.solr.solr:solr-solrj
