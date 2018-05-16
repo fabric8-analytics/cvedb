@@ -1,0 +1,34 @@
+---
+cve: 2018-0545
+title: CVE in os-brick
+description: >
+    LXR version 1.0.0 to 2.3.0 allows remote attackers to execute arbitrary OS commands via unspecified vectors.
+cvss_v2: 10.0
+references:
+    - http://jvn.jp/en/jp/JVN72589538/index.html
+    - http://lxr.sourceforge.net/en/bugsandlimits.php
+
+affected:
+    - name: os-brick
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:lxr_project:lxr 2.3.0 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.2722967 backports.os
+# 1.2722967 coopr.os
+# 1.2722967 micropython-os
+# 1.2722967 os-brick
+# 1.2722967 os-cpu
+# 1.2722967 os-docid
+# 1.2722967 os-downpour
+# 1.2722967 os-dpm
+# 1.2722967 os-faults
+# 1.2722967 os-gobble
