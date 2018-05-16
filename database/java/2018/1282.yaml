@@ -1,0 +1,36 @@
+---
+cve: 2018-1282
+title: CVE in org.apache.hive:hive-jdbc
+description: >
+    This vulnerability in Apache Hive JDBC driver 0.7.1 to 2.3.2 allows carefully crafted arguments to be used to bypass the argument escaping/cleanup that JDBC driver does in PreparedStatement implementation.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/103751
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/141253
+    - https://lists.apache.org/thread.html/74bd2bff1827febb348dfb323986fa340d3bb97a315ab93c3ccc8299@%3Cdev.hive.apache.org%3E
+
+affected:
+    - groupId: org.apache.hive
+      artifactId: hive-jdbc
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:hive 2.3.2 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 2.0281167 com.facebook.presto.hive:hive-apache-jdbc
+# 1.8725712 org.apache.hive:hive-jdbc
+# 1.7467175 org.apache.hive:hive-jdbc-handler
+# 1.370726 org.spark-project.hive:hive-jdbc
+# 1.2417079 org.apache.karaf.jdbc:org.apache.karaf.jdbc.core
+# 1.2417079 org.apache.karaf.jdbc:org.apache.karaf.jdbc.command
+# 1.2123184 com.facebook.presto.hive:hive-apache
+# 1.1647935 org.apache.hive:hive-beeline
+# 1.1647935 org.apache.hive:hive-cli
+# 1.1647935 org.apache.hive:hive-common
