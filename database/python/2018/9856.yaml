@@ -1,0 +1,35 @@
+---
+cve: 2018-9856
+title: CVE in kotti
+description: >
+    Kotti before 1.3.2 and 2.x before 2.0.0b2 has CSRF in the local roles implementation, as demonstrated by triggering a permission change via a /admin-document/@@share request.
+cvss_v2: 6.8
+references:
+    - https://github.com/Kotti/Kotti/issues/551
+
+affected:
+    - name: kotti
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:kotti_project:kotti:2.0.0b1
+#    - cpe:/a:kotti_project:kotti:2.0.0:alpha1
+#    - cpe:/a:kotti_project:kotti 1.3.2 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 2.8382874 kotti
+# 2.8382874 kotti-software
+# 2.0118349 django-csrf
+# 2.0118349 flask-csrf
+# 2.0118349 pyramid-csrf
+# 2.0118349 simright-csrf
+# 2.0118349 tiddlywebplugins.csrf
+# 1.7697191 bottle-utils-csrf
+# 1.7697191 django-ajax-csrf
+# 1.7697191 django-csrf-session
