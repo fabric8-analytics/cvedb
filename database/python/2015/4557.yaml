@@ -1,0 +1,36 @@
+---
+cve: 2015-4557
+title: CVE in twitter
+description: >
+    Cross-site scripting (XSS) vulnerability in the new_Twitter_sign_button function in nextend-Twitter-connect.php in the Nextend Twitter Connect plugin before 1.5.2 for WordPress allows remote attackers to inject arbitrary web script or HTML via the redirect_to parameter.  NOTE: this may overlap CVE-2015-4413.
+cvss_v2: 4.3
+references:
+    - http://packetstormsecurity.com/files/132432/WordPress-Nextend-Twitter-Connect-1.5.1-Cross-Site-Scripting.html
+    - http://seclists.org/fulldisclosure/2015/Jun/71
+    - http://www.securityfocus.com/bid/75395
+    - https://plugins.trac.wordpress.org/changeset/1178744/nextend-twitter-connect
+
+affected:
+    - name: twitter
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:nextendweb:nextend_twitter_connect:::~~~wordpress~~ 1.5.2 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.0602808 connect
+# 0.74447376 twitter
+# 0.5416061 connect-client
+# 0.5416061 connect.py
+# 0.5416061 db-connect
+# 0.5416061 django-connect
+# 0.5416061 eco-connect
+# 0.5416061 isystem.connect
+# 0.5416061 jalon.connect
+# 0.5416061 oneid-connect
