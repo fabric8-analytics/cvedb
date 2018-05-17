@@ -1,0 +1,33 @@
+---
+cve: 2018-6879
+title: CVE in flask-script
+description: >
+    PHP Scripts Mall Website Seller Script 2.0.3 uses the client side to enforce validation of an e-mail address, which allows remote attackers to modify a registered e-mail address by removing the validation code.
+cvss_v2: 4.0
+references:
+    - https://0day4u.wordpress.com/2018/03/12/website-seller-script-improper-validation-of-email-address/
+
+affected:
+    - name: flask-script
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:website_seller_script_project:website_seller_script:2.0.3
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.71571505 script
+# 0.56658065 website
+# 0.44543436 php
+# 0.37197542 buildout-script
+# 0.37197542 chatbot-script
+# 0.37197542 clue-script
+# 0.37197542 console-script
+# 0.37197542 flask-script
+# 0.37197542 gmx-script
+# 0.37197542 greetings-script
