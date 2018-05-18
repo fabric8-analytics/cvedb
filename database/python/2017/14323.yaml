@@ -1,0 +1,34 @@
+---
+cve: 2017-14323
+title: CVE in django-server-side-piwik
+description: >
+    SSRF (Server Side Request Forgery) in getRemoteImage.php in Ueditor in Onethink V1.0 and V1.1 allows remote attackers to obtain sensitive information, attack intranet hosts, or possibly trigger remote command execution via the upfile parameter.
+cvss_v2: 7.5
+references:
+    - http://seclists.org/fulldisclosure/2018/Apr/16
+
+affected:
+    - name: django-server-side-piwik
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:onethink:onethink:1.0
+#    - cpe:/a:onethink:onethink:1.1
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.47524223 ssrf
+# 0.40975875 django-server-side-piwik
+# 0.39341182 repy-v1
+# 0.37843257 sdlib-v1.1
+# 0.3324188 fib-2013-v1
+# 0.3324188 gaiatest-v1.3
+# 0.3324188 gaiatest-v1.4
+# 0.3324188 nester-001-v1
+# 0.3324188 pubkeeper.protocol.v1
+# 0.3324188 python-hipchat-v1
