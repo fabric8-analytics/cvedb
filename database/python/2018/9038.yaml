@@ -1,0 +1,34 @@
+---
+cve: 2018-9038
+title: CVE in django-cms
+description: >
+    Monstra CMS 3.0.4 allows remote attackers to delete files via an admin/index.php?id=filesmanager&delete_dir=./&path=uploads/ request.
+cvss_v2: 5.5
+references:
+    - https://github.com/monstra-cms/monstra/issues/434
+    - https://www.exploit-db.com/exploits/44512/
+
+affected:
+    - name: django-cms
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:monstra:monstra:3.0.4
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.1170768 asm.cms
+# 1.1170768 bugle-cms
+# 1.1170768 castle.cms
+# 1.1170768 cms-booklet
+# 1.1170768 cms-figure
+# 1.1170768 coop-cms
+# 1.1170768 django-cms
+# 1.1170768 djedi-cms
+# 1.1170768 etianen-cms
+# 1.1170768 finch-cms
