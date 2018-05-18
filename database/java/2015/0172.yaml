@@ -1,0 +1,36 @@
+---
+cve: 2015-0172
+title: CVE in org.sonatype.security:security-system
+description: >
+    IBM Security SiteProtector System 3.0, 3.1.0 and 3.1.1 allows remote attackers to bypass intended security restrictions and consequently execute unspecified commands and obtain sensitive information via unknown vectors. IBM X-Force ID: 100927.
+cvss_v2: 5.0
+references:
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21699472
+
+affected:
+    - groupId: org.sonatype.security
+      artifactId: security-system
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:ibm:security_siteprotector_system:3.1.0.0
+#    - cpe:/a:ibm:security_siteprotector_system:3.0
+#    - cpe:/a:ibm:security_siteprotector_system:3.1.1.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.2729156 org.sonatype.security:security-system
+# 1.1138012 org.codehaus.plexus.security:plexus-security-system
+# 0.7500817 net.lecousin.framework.system:system-api
+# 0.690052 com.ibm.websphere.appserver.api:com.ibm.websphere.appserver.api.security
+# 0.6721189 com.daioware.security:security
+# 0.6721189 org.glassfish.security:security
+# 0.64861155 org.glassfish.main.security:security
+# 0.60979736 de.sonia.portal.system:sonia-portal-system
+# 0.60908556 org.apache.karaf.system:org.apache.karaf.system.core
+# 0.60908556 org.apache.karaf.system:org.apache.karaf.system.command
