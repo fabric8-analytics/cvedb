@@ -1,0 +1,35 @@
+---
+cve: 2018-6959
+title: CVE in node-vrealize
+description: >
+    VMware vRealize Automation (vRA) prior to 7.4.0 contains a vulnerability in the handling of session IDs. Exploitation of this issue may lead to the hijacking of a valid vRA user's session.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/103752
+    - http://www.securitytracker.com/id/1040676
+    - http://www.vmware.com/security/advisories/VMSA-2018-0009.html
+
+affected:
+    - name: node-vrealize
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:vmware:vrealize_automation 7.4.0 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.4797921 automation
+# 1.4579208 node-vrealize
+# 0.76243687 guide-automation
+# 0.76243687 shark-automation
+# 0.76243687 sf-automation
+# 0.76243687 browser-automation
+# 0.76243687 automation-client
+# 0.76243687 medicotree-automation
+# 0.76243687 web-automation
+# 0.76243687 automation-app
