@@ -1,0 +1,25 @@
+---
+cve: 2018-9862
+title: CVE in runv
+description: >
+    util.c in runV 1.0.0 for Docker mishandles a numeric username, which allows attackers to obtain root access by leveraging the presence of an initial numeric value on an /etc/passwd line, and then issuing a "docker exec" command with that value in the -u argument, a similar issue to CVE-2016-3697.
+cvss_v2: 7.2
+references:
+    - http://www.securityfocus.com/bid/103738
+    - https://github.com/hyperhq/hyperstart/pull/348
+
+affected:
+    - name: runv
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:hyper:runv:1.0.0::~~~docker~~
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 13.749074 runv
