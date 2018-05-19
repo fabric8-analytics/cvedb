@@ -1,0 +1,33 @@
+---
+cve: 2018-9169
+title: CVE in z-schema
+description: >
+    Z-BlogPHP 1.5.1 has XSS via the zb_users/plugin/AppCentre/plugin_edit.php app_id parameter. The component must be accessed directly by an administrator, or through CSRF.
+cvss_v2: 3.5
+references:
+    - https://xz.aliyun.com/t/2277
+
+affected:
+    - name: z-schema
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:zblogcn:z-blogphp:1.5.1
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.1540669 a-z
+# 1.1540669 z
+# 0.82928455 z..z
+# 0.82928455 z.z
+# 0.7312728 z-test-z
+# 0.59962875 z-schema
+# 0.59962875 strongcanary-z
+# 0.59962875 z-lib
+# 0.59962875 random-z
+# 0.59962875 z-core
