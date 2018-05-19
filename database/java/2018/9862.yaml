@@ -1,0 +1,35 @@
+---
+cve: 2018-9862
+title: CVE in com.alexecollins.docker:docker-maven-plugin
+description: >
+    util.c in runV 1.0.0 for Docker mishandles a numeric username, which allows attackers to obtain root access by leveraging the presence of an initial numeric value on an /etc/passwd line, and then issuing a "docker exec" command with that value in the -u argument, a similar issue to CVE-2016-3697.
+cvss_v2: 7.2
+references:
+    - http://www.securityfocus.com/bid/103738
+    - https://github.com/hyperhq/hyperstart/pull/348
+
+affected:
+    - groupId: com.alexecollins.docker
+      artifactId: docker-maven-plugin
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:hyper:runv:1.0.0::~~~docker~~
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.4255377 org.avaje.docker:docker-commands
+# 0.40565485 com.alexecollins.docker:docker-maven-plugin
+# 0.40565485 net.wouterdanes.docker:docker-maven-plugin
+# 0.40565485 com.alexecollins.docker:docker-java-orchestration
+# 0.3922283 com.github.docker-java:docker-java
+# 0.38577205 com.alexecollins.docker:docker-java-orchestration-core
+# 0.38577205 com.alexecollins.docker:docker-java-orchestration-model
+# 0.38577205 org.avaje.docker:docker-run-maven-plugin
+# 0.37894934 com.alexecollins.docker:docker-java-orchestration-plugin-boot2docker
+# 0.36588922 com.alexecollins.docker:docker-java-orchestration-plugin-api
