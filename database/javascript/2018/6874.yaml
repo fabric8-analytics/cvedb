@@ -5,30 +5,11 @@ description: >
     CSRF exists in the Auth0 authentication service through 14591 if the Legacy Lock API flag is enabled.
 cvss_v2: 6.8
 references:
-    - http://www.securityfocus.com/bid/103695
     - https://auth0.com/docs/security/bulletins/cve-2018-6874
-
+    - https://nvd.nist.gov/vuln/detail/2018-6874
 affected:
     - name: auth0-js
       version:
-        - "!FIXME!"
+        - "<=8.12.1"
       fixedin:
-        - "!FIXME!"
-# Additional information:
-#  configurations:
-#    - cpe:/a:auth0:auth0.js 8.12.1 (including)
-#
-# All available versions:
-#versions
-#
-# Other possible package names:
-# 8.427458 auth0-js
-# 7.030322 auth0-js-react
-# 7.030322 gsandf-auth0-js
-# 7.030322 @types/auth0-js
-# 7.030322 auth0-js-proxied
-# 4.939372 auth0
-# 4.513395 auth0-widget.js
-# 4.513395 auth0-guardian-js
-# 4.240125 auth0-lock
-# 4.240125 passport-auth0
+        - ">=8.12.2"
