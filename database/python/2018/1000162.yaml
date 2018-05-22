@@ -1,0 +1,34 @@
+---
+cve: 2018-1000162
+title: CVE in html
+description: >
+    Parsedown version prior to 1.7.0 contains a Cross Site Scripting (XSS) vulnerability in `setMarkupEscaped` for escaping HTML that can result in JavaScript code execution. This attack appears to be exploitable via specially crafted markdown that allows it to side step HTML escaping by breaking AST boundaries. This vulnerability appears to have been fixed in 1.7.0 and later.
+cvss_v2: 4.3
+references:
+    - https://github.com/erusev/parsedown/pull/495
+    - https://github.com/Roave/SecurityAdvisories/issues/44#issuecomment-368594409
+
+affected:
+    - name: html
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:parsedown:parsedown 1.7.0 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.54495186 scripting
+# 0.49259084 cross
+# 0.45508972 javascript
+# 0.31271106 xss-catcher
+# 0.2888125 python-scripting
+# 0.27770633 django-xss-detection
+# 0.26306206 html
+# 0.26263198 cross-doc
+# 0.26263198 mpy-cross
+# 0.25679508 yaz-scripting-plugin
