@@ -10,6 +10,6 @@ references:
 affected:
     - name: auth0-js
       version:
-        - "<=8.12.1"
+        - "<=8.12.3"
       fixedin:
-        - ">=8.12.2"
+        - ">=9.0.0-beta.1"
