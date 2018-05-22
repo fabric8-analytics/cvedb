@@ -1,0 +1,34 @@
+---
+cve: 2018-6873
+title: CVE in auth0-js
+description: >
+    The Auth0 authentication service before 2017-10-15 allows privilege escalation because the JWT audience is not validated.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/103695
+    - https://auth0.com/docs/security/bulletins/cve-2018-6873
+
+affected:
+    - name: auth0-js
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:auth0:auth0.js 8.10.1 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 8.427458 auth0-js
+# 7.030322 auth0-js-react
+# 7.030322 gsandf-auth0-js
+# 7.030322 @types/auth0-js
+# 7.030322 auth0-js-proxied
+# 4.939372 auth0
+# 4.513395 auth0-widget.js
+# 4.513395 auth0-guardian-js
+# 4.240125 auth0-lock
+# 4.240125 passport-auth0
