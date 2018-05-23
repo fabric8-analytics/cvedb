@@ -1,0 +1,37 @@
+---
+cve: 2018-1292
+title: CVE in sql
+description: >
+    Within the 'getReportType' method in Apache Fineract 1.0.0, 0.6.0-incubating, 0.5.0-incubating, 0.4.0-incubating, a hacker could inject SQL to read/update data for which he doesn't have authorization for by way of the 'reportName' parameter.
+cvss_v2: 5.5
+references:
+    - http://www.securityfocus.com/bid/104007
+    - https://lists.apache.org/thread.html/a24610817845d022d5fe89cfe21563ef83bea35ca95de867cd2c4ee9@%3Cdev.fineract.apache.org%3E
+
+affected:
+    - name: sql
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:fineract:0.4.0
+#    - cpe:/a:apache:fineract:1.0.0
+#    - cpe:/a:apache:fineract:0.5.0
+#    - cpe:/a:apache:fineract:0.6.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.53977275 name-of
+# 0.53977275 project-name
+# 0.4653604 sql
+# 0.43546945 list-within-list
+# 0.33580038 apache-airflow
+# 0.33580038 apache-ariatosca
+# 0.33580038 apache-beam
+# 0.33580038 apache-ensite
+# 0.33580038 apache-libcloud
+# 0.33580038 apache-manager
