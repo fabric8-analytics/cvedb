@@ -1,0 +1,38 @@
+---
+cve: 2018-1292
+title: CVE in org.apache.onami.converters:org.apache.onami.converters.sql
+description: >
+    Within the 'getReportType' method in Apache Fineract 1.0.0, 0.6.0-incubating, 0.5.0-incubating, 0.4.0-incubating, a hacker could inject SQL to read/update data for which he doesn't have authorization for by way of the 'reportName' parameter.
+cvss_v2: 5.5
+references:
+    - http://www.securityfocus.com/bid/104007
+    - https://lists.apache.org/thread.html/a24610817845d022d5fe89cfe21563ef83bea35ca95de867cd2c4ee9@%3Cdev.fineract.apache.org%3E
+
+affected:
+    - groupId: org.apache.onami.converters
+      artifactId: org.apache.onami.converters.sql
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:fineract:0.4.0
+#    - cpe:/a:apache:fineract:0.6.0
+#    - cpe:/a:apache:fineract:0.5.0
+#    - cpe:/a:apache:fineract:1.0.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.30211958 org.apache.polygene.libraries:org.apache.polygene.library.sql
+# 0.30211958 org.apache.onami.converters:org.apache.onami.converters.sql
+# 0.26988184 org.awake-sql:awake-sql
+# 0.26988184 commons-sql:commons-sql
+# 0.26186267 org.apache.isis.security:sql
+# 0.25625452 org.apache.polygene.libraries:org.apache.polygene.library.sql-bonecp
+# 0.25625452 org.apache.polygene.libraries:org.apache.polygene.library.sql-dbcp
+# 0.25625452 org.apache.polygene.libraries:org.apache.polygene.library.sql-liquibase
+# 0.25416857 org.apache.isis.runtimes.dflt.objectstores:sql
+# 0.25416857 org.apache.isis.runtimes.dflt.profilestores:sql
