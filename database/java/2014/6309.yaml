@@ -1,0 +1,39 @@
+---
+cve: 2014-6309
+title: CVE in org.kaazing:specification.x-kaazing-idle-timeout
+description: >
+    The HTTP and WebSocket engine components in the server in Kaazing Gateway 4.0.2, 4.0.3, and 4.0.4 and Gateway - JMS Edition 4.0.2, 4.0.3, and 4.0.4 allow remote attackers to obtain sensitive information via vectors related to HTTP request handling.
+cvss_v2: 5.0
+references:
+    - https://support.kaazing.com/hc/en-us/articles/115004550547-Advisory-for-KGS-879
+
+affected:
+    - groupId: org.kaazing
+      artifactId: specification.x-kaazing-idle-timeout
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:kaazing:kaazing_gateway:4.0.4::~~jms~~~
+#    - cpe:/a:kaazing:kaazing_gateway:4.0.4
+#    - cpe:/a:kaazing:kaazing_gateway:4.0.2
+#    - cpe:/a:kaazing:kaazing_gateway:4.0.3::~~jms~~~
+#    - cpe:/a:kaazing:kaazing_gateway:4.0.3
+#    - cpe:/a:kaazing:kaazing_gateway:4.0.2::~~jms~~~
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.82986677 io.gravitee.gateway.http:gravitee-gateway-http-client-core
+# 0.82986677 io.gravitee.gateway.http:gravitee-gateway-http-client-vertx
+# 0.81791174 org.kaazing:gateway.transport.http
+# 0.7634095 org.kaazing:specification.x-kaazing-idle-timeout
+# 0.7634095 org.kaazing:specification.x-kaazing-ping-pong
+# 0.74345684 org.kaazing:gateway.resource.address.http
+# 0.74345684 org.kaazing:gateway.service.http.balancer
+# 0.74345684 org.kaazing:gateway.service.http.directory
+# 0.74345684 org.kaazing:gateway.service.http.proxy
+# 0.74345684 org.kaazing:gateway.service.http.redirect
