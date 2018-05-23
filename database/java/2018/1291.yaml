@@ -1,0 +1,38 @@
+---
+cve: 2018-1291
+title: CVE in org.apache.activemq.rest:artemis-rest
+description: >
+    Apache Fineract 1.0.0, 0.6.0-incubating, 0.5.0-incubating, 0.4.0-incubating exposes different REST end points to query domain specific entities with a Query Parameter 'orderBy' which are appended directly with SQL statements. A hacker/user can inject/draft the 'orderBy' query parameter by way of the "order" param in such a way to read/update the data for which he doesn't have authorization.
+cvss_v2: 5.5
+references:
+    - http://www.securityfocus.com/bid/104008
+    - https://lists.apache.org/thread.html/1f7fadc93500b3fe14603b132b13c18fff3d0a35e50ebd0246f325c0@%3Cdev.fineract.apache.org%3E
+
+affected:
+    - groupId: org.apache.activemq.rest
+      artifactId: artemis-rest
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:fineract:0.4.0
+#    - cpe:/a:apache:fineract:0.6.0
+#    - cpe:/a:apache:fineract:0.5.0
+#    - cpe:/a:apache:fineract:1.0.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.45207748 org.apache.activemq.rest:artemis-rest
+# 0.45207748 org.apache.cocoon.rest:cocoon-rest
+# 0.42254266 org.apache.sling:org.apache.sling.query
+# 0.38911936 org.apache.activemq.examples.rest:mixed-jms-rest
+# 0.3610611 com.ctp.cdi.query:cdi-query
+# 0.3610611 com.googlecode.android-query:android-query
+# 0.3610611 com.googlecode.objectify-query:objectify-query
+# 0.34753603 org.apache.polygene.libraries:org.apache.polygene.library.sql
+# 0.34753603 org.apache.onami.converters:org.apache.onami.converters.sql
+# 0.34289753 com.ctp.cdi.query:cdi-query-api
