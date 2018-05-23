@@ -1,0 +1,35 @@
+---
+cve: 2018-0269
+title: CVE in dna:dna-api
+description: >
+    A vulnerability in the web framework of the Cisco Digital Network Architecture Center (DNA Center) could allow an unauthenticated, remote attacker to communicate with the Kong API server without restriction. The vulnerability is due to an overly permissive Cross Origin Resource Sharing (CORS) policy. An attacker could exploit this vulnerability by convincing a user to follow a malicious link. An exploit could allow the attacker to communicate with the API and exfiltrate sensitive information. Cisco Bug IDs: CSCvh99208.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/103950
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180418-dna1
+
+affected:
+    - groupId: dna
+      artifactId: dna-api
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:cisco:digital_network_architecture_center:1.1
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.6444087 dna:dna-api
+# 0.45922685 dna:dna-impl
+# 0.45922685 dna:dna-tools
+# 0.33900067 org.sonarsource.update-center:sonar-update-center-common
+# 0.33900067 org.sonarsource.update-center:sonar-update-center-mojo
+# 0.2990698 com.maojianwei.onos.network.troubleshoot:onos-network-troubleshoot-system-api
+# 0.26653987 io.apisense.network:android-network-measures
+# 0.25046998 com.androidzeitgeist.android-network-intents:android-network-intents
+# 0.20645551 com.maojianwei.onos.network.troubleshoot:onos-network-troubleshoot-system-cli
+# 0.20645551 com.maojianwei.onos.network.troubleshoot:onos-network-troubleshoot-system-core
