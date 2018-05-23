@@ -1,0 +1,44 @@
+---
+cve: 2017-6910
+title: CVE in kaazing-javascript-gateway-client
+description: >
+    The HTTP and WebSocket engine components in the server in Kaazing Gateway before 4.5.3 hotfix-1, Gateway - JMS Edition before 4.0.5 hotfix-15, 4.0.6 before hotfix-4, 4.0.7, 4.0.9 before hotfix-19, 4.4.x before 4.4.2 hotfix-1, 4.5.x before 4.5.3 hotfix-1, and Gateway Community and Enterprise Editions before 5.6.0 allow remote attackers to bypass intended access restrictions and obtain sensitive information via vectors related to HTTP request handling.
+cvss_v2: 5.0
+references:
+    - https://support.kaazing.com/hc/en-us/articles/115004752368
+
+affected:
+    - name: kaazing-javascript-gateway-client
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:kaazing:kaazing_gateway::hotfix1:~~jms~~~ 4.4.2 (excluding)
+#    - cpe:/a:kaazing:kaazing_gateway:::~~enterprise~~~ 5.6.0 (excluding)
+#    - cpe:/a:kaazing:kaazing_gateway:4.4.2:hotfix1:~~jms~~~
+#    - cpe:/a:kaazing:kaazing_gateway:::~~community~~~ 5.6.0 (excluding)
+#    - cpe:/a:kaazing:kaazing_gateway:4.0.6:hotfix2:~~jms~~~
+#    - cpe:/a:kaazing:kaazing_gateway:4.5.3:hotfix1:~~jms~~~
+#    - cpe:/a:kaazing:kaazing_gateway:4.0.6::~~jms~~~
+#    - cpe:/a:kaazing:kaazing_gateway:4.0.5::~~jms~~~
+#    - cpe:/a:kaazing:kaazing_gateway:::~~jms~~~ 4.5.3 (excluding)
+#    - cpe:/a:kaazing:kaazing_gateway:4.5.3
+#    - cpe:/a:kaazing:kaazing_gateway:4.0.7::~~jms~~~
+#    - cpe:/a:kaazing:kaazing_gateway:4.5.3:hotfix1
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 2.8419013 kaazing-javascript-gateway-client
+# 1.256532 gateway
+# 1.1485761 kaazing-enterprise-client
+# 0.9912729 kaazing-javascript-amqp-client
+# 0.9912729 kaazing-javascript-jms-client
+# 0.9912729 kaazing-javascript-universal-client
+# 0.65199274 react-gateway
+# 0.65199274 file-gateway
+# 0.65199274 ble-gateway
+# 0.65199274 ripple-gateway
