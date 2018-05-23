@@ -1,0 +1,38 @@
+---
+cve: 2018-1290
+title: CVE in org.apache.onami.converters:org.apache.onami.converters.sql
+description: >
+    In Apache Fineract versions 1.0.0, 0.6.0-incubating, 0.5.0-incubating, 0.4.0-incubating, Using a single quotation escape with two continuous SQL parameters can cause a SQL injection. This could be done in Methods like retrieveAuditEntries of AuditsApiResource Class and retrieveCommands of MakercheckersApiResource Class.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/103975
+    - https://lists.apache.org/thread.html/69cc2b54b32f0936f40dc9be41f41fe1566710a75edbe2eb0a948ae4@%3Cdev.fineract.apache.org%3E
+
+affected:
+    - groupId: org.apache.onami.converters
+      artifactId: org.apache.onami.converters.sql
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:fineract:0.4.0
+#    - cpe:/a:apache:fineract:0.6.0
+#    - cpe:/a:apache:fineract:0.5.0
+#    - cpe:/a:apache:fineract:1.0.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.58847874 org.apache.polygene.libraries:org.apache.polygene.library.sql
+# 0.58847874 org.apache.onami.converters:org.apache.onami.converters.sql
+# 0.52568495 org.awake-sql:awake-sql
+# 0.52568495 commons-sql:commons-sql
+# 0.5100649 org.apache.isis.security:sql
+# 0.49914122 org.apache.polygene.libraries:org.apache.polygene.library.sql-bonecp
+# 0.49914122 org.apache.polygene.libraries:org.apache.polygene.library.sql-dbcp
+# 0.49914122 org.apache.polygene.libraries:org.apache.polygene.library.sql-liquibase
+# 0.4950781 org.apache.isis.runtimes.dflt.objectstores:sql
+# 0.4950781 org.apache.isis.runtimes.dflt.profilestores:sql
