@@ -1,0 +1,34 @@
+---
+cve: 2018-1000167
+title: CVE in suricata-update
+description: >
+    OISF suricata-update version 1.0.0a1 contains an Insecure Deserialization vulnerability in the insecure yaml.load-Function as used in the following files: config.py:136, config.py:142, sources.py:99 and sources.py:131. The "list-sources"-command is affected by this bug. that can result in Remote Code Execution(even as root if suricata-update is called by root). This attack appears to be exploitable via a specially crafted yaml-file at https://www.openinfosecfoundation.org/rules/index.yaml. This vulnerability appears to have been fixed in 1.0.0b1.
+cvss_v2: 9.3
+references:
+    - https://redmine.openinfosecfoundation.org/issues/2359
+    - https://tech.feedyourhead.at/content/remote-code-execution-in-suricata-update
+
+affected:
+    - name: suricata-update
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:oisf:suricata-update:1.0.0a1
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.2461379 suricata-update
+# 0.615404 function
+# 0.615404 to-function
+# 0.48417076 insecure-package
+# 0.42776278 insecure-but-secure-enough
+# 0.32415536 first-function
+# 0.32415536 function-1
+# 0.32415536 function-log
+# 0.32415536 function-logger
+# 0.32415536 function-pipe
