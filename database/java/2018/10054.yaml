@@ -1,0 +1,38 @@
+---
+cve: 2018-10054
+title: CVE in com.h2database:h2
+description: >
+    H2 1.4.197, as used in Datomic before 0.9.5697 and other products, allows remote code execution because CREATE ALIAS can execute arbitrary Java code.
+cvss_v2: 6.5
+references:
+    - http://blog.datomic.com/2018/03/important-security-update.html
+    - https://forum.datomic.com/t/important-security-update-0-9-5697/379
+    - https://mthbernardes.github.io/rce/2018/03/14/abusing-h2-database-alias.html
+    - https://www.exploit-db.com/exploits/44422/
+
+affected:
+    - groupId: com.h2database
+      artifactId: h2
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:h2database:h2:1.4.197
+#    - cpe:/a:datomic:datomic 0.9.5697 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 2.5117946 com.h2database:h2
+# 2.4379756 com.h2database:h2-mvstore
+# 2.0385664 org.h2database:h2database
+# 1.7030734 org.h2.compress:h2-lzf
+# 1.1022098 com.rocketfuel.sdbc.h2:jdbc_java7_2.10
+# 1.1022098 com.rocketfuel.sdbc.h2:jdbc_java7_2.11
+# 1.0526785 com.rocketfuel.sdbc.h2:jdbc_2.11
+# 1.0526785 com.rocketfuel.sdbc.h2:jdbc_2.12
+# 1.0526785 com.rocketfuel.sdbc.h2:jdbc_2.10
+# 0.6260148 com.datomic:datomic-lucene-core
