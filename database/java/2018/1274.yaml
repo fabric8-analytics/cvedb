@@ -1,0 +1,36 @@
+---
+cve: 2018-1274
+title: CVE in org.springframework.data:spring-data-commons
+description: >
+    Spring Data Commons, versions 1.13 to 1.13.10, 2.0 to 2.0.5, and older unsupported versions, contain a property path parser vulnerability caused by unlimited resource allocation. An unauthenticated remote malicious user (or attacker) can issue requests against Spring Data REST endpoints or endpoints using property path parsing which can cause a denial of service (CPU and memory consumption).
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/103769
+    - https://pivotal.io/security/cve-2018-1274
+
+affected:
+    - groupId: org.springframework.data
+      artifactId: spring-data-commons
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:pivotal_software:spring_data_rest 3.0.5 (including)
+#    - cpe:/a:pivotal_software:spring_data_commons 2.0.5 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 6.847689 org.springframework.data:spring-data-commons
+# 5.90338 org.springframework.data:spring-data-commons-core
+# 5.4008408 org.beamfoundry.bundles.spring-data:org.beamfoundry.bundles.spring-data-commons
+# 4.3959312 org.springframework.data:spring-data-rest-core
+# 4.3959312 org.springframework.data:spring-data-rest-webmvc
+# 4.3959312 org.springframework.data:spring-data-rest-repository
+# 3.702864 org.springframework.data:spring-data-rest-hal-browser
+# 2.7623398 org.springframework.data:spring-data-cassandra
+# 2.7623398 org.springframework.data:spring-data-couchbase
+# 2.7623398 org.springframework.data:spring-data-elasticsearch
