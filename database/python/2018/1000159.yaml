@@ -1,0 +1,33 @@
+---
+cve: 2018-1000159
+title: CVE in tlslite-ng
+description: >
+    tlslite-ng version 0.7.3 and earlier, since commit d7b288316bca7bcdd082e6ccff5491e241305233 contains a CWE-354: Improper Validation of Integrity Check Value vulnerability in TLS implementation, tlslite/utils/constanttime.py: ct_check_cbc_mac_and_pad(); line "end_pos = data_len - 1 - mac.digest_size" that can result in an attacker manipulating the TLS ciphertext which will not be detected by receiving tlslite-ng. This attack appears to be exploitable via man in the middle on a network connection. This vulnerability appears to have been fixed after commit 3674815d1b0f7484454995e2737a352e0a6a93d8.
+cvss_v2: 4.3
+references:
+    - https://github.com/tomato42/tlslite-ng/pull/234
+
+affected:
+    - name: tlslite-ng
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:tlslite-ng_project:tlslite-ng 0.7.3 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.58456045 tlslite-ng
+# 0.5182543 check-tls-certs
+# 0.38216427 tls
+# 0.36458954 value
+# 0.30398664 validation
+# 0.23642722 integrity-to-sqlite
+# 0.23642722 subresource-integrity
+# 0.23642722 variant-integrity
+# 0.23226215 check
+# 0.23226215 check-project
