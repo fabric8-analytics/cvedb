@@ -1,0 +1,60 @@
+---
+cve: 2018-5429
+title: CVE in net.sf.jasperreports:jasperreports
+description: >
+    A vulnerability in the report scripting component of TIBCO Software Inc.'s TIBCO JasperReports Server, TIBCO JasperReports Server Community Edition, TIBCO JasperReports Server for ActiveMatrix BPM, TIBCO JasperReports Library, TIBCO JasperReports Library Community Edition, TIBCO JasperReports Library for ActiveMatrix BPM, TIBCO Jaspersoft for AWS with Multi-Tenancy, TIBCO Jaspersoft Reporting and Analytics for AWS, TIBCO Jaspersoft Studio, TIBCO Jaspersoft Studio Community Edition, and TIBCO Jaspersoft Studio for ActiveMatrix BPM may allow analytic reports that contain scripting to perform arbitrary code execution. Affected releases include TIBCO Software Inc.'s TIBCO JasperReports Server: versions up to and including 6.2.4; 6.3.0; 6.3.2;6.3.3; 6.4.0; 6.4.2, TIBCO JasperReports Server Community Edition: versions up to and including 6.4.2, TIBCO JasperReports Server for ActiveMatrix BPM: versions up to and including 6.4.2, TIBCO JasperReports Library: versions up to and including 6.2.4; 6.3.0; 6.3.2; 6.3.3; 6.4.0; 6.4.1; 6.4.2, TIBCO JasperReports Library Community Edition: versions up to and including 6.4.3, TIBCO JasperReports Library for ActiveMatrix BPM: versions up to and including 6.4.2, TIBCO Jaspersoft for AWS with Multi-Tenancy: versions up to and including 6.4.2, TIBCO Jaspersoft Reporting and Analytics for AWS: versions up to and including 6.4.2, TIBCO Jaspersoft Studio: versions up to and including 6.2.4; 6.3.0; 6.3.2; 6.3.3; 6.4.0; 6.4.2, TIBCO Jaspersoft Studio Community Edition: versions up to and including 6.4.3, TIBCO Jaspersoft Studio for ActiveMatrix BPM: versions up to and including 6.4.2.
+cvss_v2: 6.5
+references:
+    - https://www.tibco.com/support/advisories/2018/04/tibco-security-advisory-april-17-2018-tibco-jasperreports-2018-5429
+
+affected:
+    - groupId: net.sf.jasperreports
+      artifactId: jasperreports
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:tibco:jaspersoft_studio:6.3.0
+#    - cpe:/a:tibco:jasperreports_library:6.3.0
+#    - cpe:/a:tibco:jasperreports_server:::~~community~~~ 6.4.2 (including)
+#    - cpe:/a:tibco:jaspersoft_studio 6.2.4 (including)
+#    - cpe:/a:tibco:jasperreports_library:::~~~activematrix_bpm~~ 6.4.2 (including)
+#    - cpe:/a:tibco:jasperreports_library:6.4.2
+#    - cpe:/a:tibco:jasperreports_library 6.2.4 (including)
+#    - cpe:/a:tibco:jasperreports_server:::~~~activematrix_bpm~~ 6.4.2 (including)
+#    - cpe:/a:tibco:jasperreports_library:6.4.1
+#    - cpe:/a:tibco:jasperreports_library:6.3.3
+#    - cpe:/a:tibco:jaspersoft_studio:::~~~activematrix_bpm~~ 6.4.2 (including)
+#    - cpe:/a:tibco:jasperreports_library:6.3.2
+#    - cpe:/a:tibco:jaspersoft_studio:6.4.2
+#    - cpe:/a:tibco:jasperreports_server:6.3.0
+#    - cpe:/a:tibco:jaspersoft_studio:6.4.0
+#    - cpe:/a:tibco:jaspersoft:::~~~aws_with_multi-tenancy~~ 6.4.2 (including)
+#    - cpe:/a:tibco:jasperreports_server:6.4.0
+#    - cpe:/a:tibco:jaspersoft_studio:6.3.2
+#    - cpe:/a:tibco:jaspersoft_studio:::~~community~~~ 6.4.3 (including)
+#    - cpe:/a:tibco:jasperreports_server:6.3.3
+#    - cpe:/a:tibco:jasperreports_server:6.3.2
+#    - cpe:/a:tibco:jasperreports_server:6.4.2
+#    - cpe:/a:tibco:jasperreports_library:::~~community~~~ 6.4.3 (including)
+#    - cpe:/a:tibco:jasperreports_library:6.4.0
+#    - cpe:/a:tibco:jasperreports_server 6.2.4 (including)
+#    - cpe:/a:tibco:jaspersoft_studio:6.3.3
+#    - cpe:/a:tibco:jaspersoft_reporting_and_analytics:::~~~aws~~ 6.4.2 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.5479414 jasperreports:jasperreports
+# 0.47815534 net.sf.jasperreports:jasperreports
+# 0.2739707 net.sf.jasperreports:jasperreports-fonts
+# 0.15738964 org.ow2.orchestra.reporting:reporting
+# 0.13816197 com.umeng.analytics:analytics
+# 0.13477728 com.segment.analytics.android:analytics
+# 0.13477728 com.segment.analytics.java:analytics
+# 0.13477728 com.plainflow.analytics.java:analytics
+# 0.13139257 io.astronomer.analytics.android:analytics
+# 0.13139257 io.astronomer.analytics.java:analytics
