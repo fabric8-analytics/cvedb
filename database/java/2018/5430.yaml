@@ -1,0 +1,45 @@
+---
+cve: 2018-5430
+title: CVE in net.sf.jasperreports:jasperreports
+description: >
+    The Spring web flows of TIBCO Software Inc.'s TIBCO JasperReports Server, TIBCO JasperReports Server Community Edition, TIBCO JasperReports Server for ActiveMatrix BPM, TIBCO Jaspersoft for AWS with Multi-Tenancy, and TIBCO Jaspersoft Reporting and Analytics for AWS contain a vulnerability which may allow any authenticated user read-only access to the contents of the web application, including key configuration files. Affected releases include TIBCO Software Inc.'s TIBCO JasperReports Server: versions up to and including 6.2.4; 6.3.0; 6.3.2; 6.3.3;6.4.0; 6.4.2, TIBCO JasperReports Server Community Edition: versions up to and including 6.4.2, TIBCO JasperReports Server for ActiveMatrix BPM: versions up to and including 6.4.2, TIBCO Jaspersoft for AWS with Multi-Tenancy: versions up to and including 6.4.2, TIBCO Jaspersoft Reporting and Analytics for AWS: versions up to and including 6.4.2.
+cvss_v2: 4.0
+references:
+    - https://rhinosecuritylabs.com/application-security/authenticated-file-read-vulnerability-in-jasperreports/
+    - https://www.exploit-db.com/exploits/44623/
+    - https://www.tibco.com/support/advisories/2018/04/tibco-security-advisory-april-17-2018-tibco-jasperreports-2018-5430
+
+affected:
+    - groupId: net.sf.jasperreports
+      artifactId: jasperreports
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:tibco:jaspersoft:::~~~aws_with_multi-tenancy~~ 6.4.2 (including)
+#    - cpe:/a:tibco:jasperreports_server:6.4.0
+#    - cpe:/a:tibco:jasperreports_server:6.3.3
+#    - cpe:/a:tibco:jasperreports_server:::~~community~~~ 6.4.2 (including)
+#    - cpe:/a:tibco:jasperreports_server:::~~~activematrix_bpm~~ 6.4.2 (including)
+#    - cpe:/a:tibco:jasperreports_server:6.4.2
+#    - cpe:/a:tibco:jasperreports_server:6.3.2
+#    - cpe:/a:tibco:jasperreports_server 6.2.4 (including)
+#    - cpe:/a:tibco:jaspersoft_reporting_and_analytics:::~~~aws~~ 6.4.2 (including)
+#    - cpe:/a:tibco:jasperreports_server:6.3.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.45529002 jasperreports:jasperreports
+# 0.37217152 net.sf.jasperreports:jasperreports
+# 0.22764501 net.sf.jasperreports:jasperreports-fonts
+# 0.20450288 org.ow2.orchestra.reporting:reporting
+# 0.17967826 com.umeng.analytics:analytics
+# 0.1794727 org.springframework.analytics:spring-analytics
+# 0.17564692 com.segment.analytics.android:analytics
+# 0.17564692 com.segment.analytics.java:analytics
+# 0.17564692 com.plainflow.analytics.java:analytics
+# 0.17161557 io.astronomer.analytics.android:analytics
