@@ -1,0 +1,48 @@
+---
+cve: 2018-1325
+title: CVE in com.googlecode.wicket-jquery-ui:wicket-jquery-ui
+description: >
+    In Apache wicket-jquery-ui <= 6.29.0, <= 7.10.1, <= 8.0.0-M9.1, JS code created in WYSIWYG editor will be executed on display.
+cvss_v2: 4.3
+references:
+    - https://markmail.org/message/6bxjyaolehhq7jrl
+
+affected:
+    - groupId: com.googlecode.wicket-jquery-ui
+      artifactId: wicket-jquery-ui
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:wicket-jquery-ui_project:wicket-jquery-ui:8.0.0:m2
+#    - cpe:/a:wicket-jquery-ui_project:wicket-jquery-ui:8.0.0:m4.1
+#    - cpe:/a:wicket-jquery-ui_project:wicket-jquery-ui:8.0.0:m9
+#    - cpe:/a:wicket-jquery-ui_project:wicket-jquery-ui:8.0.0:m8
+#    - cpe:/a:wicket-jquery-ui_project:wicket-jquery-ui:6.29.0
+#    - cpe:/a:wicket-jquery-ui_project:wicket-jquery-ui:8.0.0:m1
+#    - cpe:/a:wicket-jquery-ui_project:wicket-jquery-ui:8.0.0:m7
+#    - cpe:/a:wicket-jquery-ui_project:wicket-jquery-ui:8.0.0:m3
+#    - cpe:/a:wicket-jquery-ui_project:wicket-jquery-ui:8.0.0:m4
+#    - cpe:/a:wicket-jquery-ui_project:wicket-jquery-ui 7.10.1 (including)
+#    - cpe:/a:wicket-jquery-ui_project:wicket-jquery-ui:8.0.0:m8.1
+#    - cpe:/a:wicket-jquery-ui_project:wicket-jquery-ui:8.0.0:m5
+#    - cpe:/a:wicket-jquery-ui_project:wicket-jquery-ui:8.0.0:m6
+#    - cpe:/a:wicket-jquery-ui_project:wicket-jquery-ui:8.0.0:m9.1
+#    - cpe:/a:wicket-jquery-ui_project:wicket-jquery-ui:8.0.0:m1.1
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.1234126 com.googlecode.wicket-jquery-ui:wicket-jquery-ui
+# 1.0448737 com.googlecode.wicket-jquery-ui:wicket-jquery-ui-calendar
+# 1.0448737 com.googlecode.wicket-jquery-ui:wicket-jquery-ui-core
+# 1.0448737 com.googlecode.wicket-jquery-ui:wicket-jquery-ui-plugins
+# 0.9663348 com.googlecode.wicket-jquery-ui:wicket-jquery-ui-theme-base
+# 0.9663348 com.googlecode.wicket-jquery-ui:wicket-jquery-ui-theme-blacktie
+# 0.9663348 com.googlecode.wicket-jquery-ui:wicket-jquery-ui-theme-blitzer
+# 0.9663348 com.googlecode.wicket-jquery-ui:wicket-jquery-ui-theme-cupertino
+# 0.9663348 com.googlecode.wicket-jquery-ui:wicket-jquery-ui-theme-darkhive
+# 0.9663348 com.googlecode.wicket-jquery-ui:wicket-jquery-ui-theme-dotluv
