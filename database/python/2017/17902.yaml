@@ -1,0 +1,33 @@
+---
+cve: 2017-17902
+title: CVE in django-cms
+description: >
+    SQL Injection exists in Kliqqi CMS 3.5.2 via the randkey parameter of a new story at the pligg/story.php?title= URI.
+cvss_v2: 7.5
+references:
+    - https://edricteo.com/kliqqi-cms-sqli-vulnerability-in-version-3.5.2/
+
+affected:
+    - name: django-cms
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:kliqqi:kliqqi_cms:3.5.2
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.63371843 uri
+# 0.49414793 asm.cms
+# 0.49414793 bugle-cms
+# 0.49414793 castle.cms
+# 0.49414793 cms-booklet
+# 0.49414793 cms-figure
+# 0.49414793 coop-cms
+# 0.49414793 django-cms
+# 0.49414793 djedi-cms
+# 0.49414793 etianen-cms
