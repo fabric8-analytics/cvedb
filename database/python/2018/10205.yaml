@@ -1,0 +1,33 @@
+---
+cve: 2018-10205
+title: CVE in hyper-sh
+description: >
+    hyperstart 1.0.0 in HyperHQ Hyper has memory leaks in the container_setup_modules and hyper_rescan_scsi functions in container.c, related to runV 1.0.0 for Docker.
+cvss_v2: 5.0
+references:
+    - https://github.com/hyperhq/hyperstart/pull/350
+
+affected:
+    - name: hyper-sh
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:hyper:hyperstart:1.0.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.0403734 hyper
+# 0.54133123 hyper-compose
+# 0.54133123 hyper-sh
+# 0.54133123 hyper-splitter
+# 0.5181351 v
+# 0.5138225 docker
+# 0.47895092 json-hyper-schema
+# 0.41657063 hyper2web
+# 0.28021201 begin-v
+# 0.28021201 font-v
