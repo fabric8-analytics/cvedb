@@ -1,0 +1,36 @@
+---
+cve: 2016-2169
+title: CVE in com.solace.labs.cloud.cloudfoundry:solace-labs-spring-cloud-connector
+description: >
+    Cloud Foundry Cloud Controller, capi-release versions prior to 1.0.0 and cf-release versions prior to v237, contain a business logic flaw. An application developer may create an application with a route that conflicts with a platform service route and receive traffic intended for the service.
+cvss_v2: 5.0
+references:
+    - https://github.com/cloudfoundry/cloud_controller_ng/issues/568
+
+affected:
+    - groupId: com.solace.labs.cloud.cloudfoundry
+      artifactId: solace-labs-spring-cloud-connector
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:cloudfoundry:cf-release 237 (excluding)
+#    - cpe:/h:cloudfoundry:cloud_controller:-
+#    - cpe:/a:cloudfoundry:capi-release 1.0.0 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.0066695 uk.co.josephearl.foundry:foundry
+# 0.72238827 com.solace.labs.cloud.cloudfoundry:solace-labs-spring-cloud-connector
+# 0.69747674 gov.sandia.foundry:cognitive-foundry
+# 0.66920495 org.cloudfoundry:cf-gradle-plugin
+# 0.66920495 org.cloudfoundry:cf-maven-plugin
+# 0.6489413 uk.co.josephearl.foundry:foundry-sample
+# 0.6489413 uk.co.josephearl.foundry:foundry-test
+# 0.48881912 org.apache.cocoon.controller:cocoon-controller
+# 0.44330776 org.apache.kalumet.controller:org.apache.kalumet.controller.core
+# 0.44330776 org.apache.kalumet.controller:org.apache.kalumet.controller.jboss
