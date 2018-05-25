@@ -1,0 +1,35 @@
+---
+cve: 2016-2169
+title: CVE in release-it
+description: >
+    Cloud Foundry Cloud Controller, capi-release versions prior to 1.0.0 and cf-release versions prior to v237, contain a business logic flaw. An application developer may create an application with a route that conflicts with a platform service route and receive traffic intended for the service.
+cvss_v2: 5.0
+references:
+    - https://github.com/cloudfoundry/cloud_controller_ng/issues/568
+
+affected:
+    - name: release-it
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:cloudfoundry:cf-release 237 (excluding)
+#    - cpe:/a:cloudfoundry:capi-release 1.0.0 (excluding)
+#    - cpe:/h:cloudfoundry:cloud_controller:-
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.0791211 chaostoolkit-cloud-foundry
+# 0.860004 foundry
+# 0.7319285 release
+# 0.7319285 release-it
+# 0.44587168 jmbo-foundry
+# 0.40048224 cloud
+# 0.40048224 no-cloud
+# 0.38183394 biomaj-release
+# 0.38183394 django-release
+# 0.38183394 docker-release
