@@ -1,0 +1,33 @@
+---
+cve: 2017-17889
+title: CVE in django-cms
+description: >
+    Kliqqi CMS 3.5.2 has XSS via a crafted group name in pligg/groups.php, a crafted Homepage string in a profile, or a crafted string in Tags or Description within pligg/submit.php.
+cvss_v2: 3.5
+references:
+    - https://edricteo.com/kliqqi-cms-xss-vulnerability-in-version-3.5.2/
+
+affected:
+    - name: django-cms
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:kliqqi:kliqqi_cms:3.5.2
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.40003747 asm.cms
+# 0.40003747 bugle-cms
+# 0.40003747 castle.cms
+# 0.40003747 cms-booklet
+# 0.40003747 cms-figure
+# 0.40003747 coop-cms
+# 0.40003747 django-cms
+# 0.40003747 djedi-cms
+# 0.40003747 etianen-cms
+# 0.40003747 finch-cms
