@@ -1,0 +1,34 @@
+---
+cve: 2018-10205
+title: CVE in com.alexecollins.docker:docker-maven-plugin
+description: >
+    hyperstart 1.0.0 in HyperHQ Hyper has memory leaks in the container_setup_modules and hyper_rescan_scsi functions in container.c, related to runV 1.0.0 for Docker.
+cvss_v2: 5.0
+references:
+    - https://github.com/hyperhq/hyperstart/pull/350
+
+affected:
+    - groupId: com.alexecollins.docker
+      artifactId: docker-maven-plugin
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:hyper:hyperstart:1.0.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.5667175 org.avaje.docker:docker-commands
+# 0.54382247 com.alexecollins.docker:docker-maven-plugin
+# 0.54382247 net.wouterdanes.docker:docker-maven-plugin
+# 0.54382247 com.alexecollins.docker:docker-java-orchestration
+# 0.5209274 com.alexecollins.docker:docker-java-orchestration-core
+# 0.5209274 com.alexecollins.docker:docker-java-orchestration-model
+# 0.5209274 org.avaje.docker:docker-run-maven-plugin
+# 0.5187729 com.github.docker-java:docker-java
+# 0.5130711 com.alexecollins.docker:docker-java-orchestration-plugin-boot2docker
+# 0.4980324 com.alexecollins.docker:docker-java-orchestration-plugin-api
