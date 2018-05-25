@@ -1,0 +1,43 @@
+---
+cve: 2018-5431
+title: CVE in net.sf.jasperreports:jasperreports
+description: >
+    The domain designer component of TIBCO Software Inc.'s TIBCO JasperReports Server, TIBCO JasperReports Server Community Edition, TIBCO JasperReports Server for ActiveMatrix BPM, TIBCO Jaspersoft for AWS with Multi-Tenancy, and TIBCO Jaspersoft Reporting and Analytics for AWS contains a vulnerability which may allow, in the context of a non-default permissions configuration, persisted cross-site scripting (XSS) attacks. Affected releases include TIBCO Software Inc.'s TIBCO JasperReports Server: versions up to and including 6.2.4; 6.3.0; 6.3.2; 6.3.3; 6.4.0; 6.4.2, TIBCO JasperReports Server Community Edition: versions up to and including 6.4.2, TIBCO JasperReports Server for ActiveMatrix BPM: versions up to and including 6.4.2, TIBCO Jaspersoft for AWS with Multi-Tenancy: versions up to and including 6.4.2, TIBCO Jaspersoft Reporting and Analytics for AWS: versions up to and including 6.4.2.
+cvss_v2: 3.5
+references:
+    - https://www.tibco.com/support/advisories/2018/04/tibco-security-advisory-april-17-2018-tibco-jasperreports-2018-5431
+
+affected:
+    - groupId: net.sf.jasperreports
+      artifactId: jasperreports
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:tibco:jasperreports_server:6.3.3
+#    - cpe:/a:tibco:jasperreports_server:::~~community~~~ 6.4.2 (including)
+#    - cpe:/a:tibco:jasperreports_server:::~~~activematrix_bpm~~ 6.4.2 (including)
+#    - cpe:/a:tibco:jasperreports_server:6.3.0
+#    - cpe:/a:tibco:jasperreports_server:6.3.2
+#    - cpe:/a:tibco:jasperreports_server:6.4.0
+#    - cpe:/a:tibco:jasperreports_server:6.4.2
+#    - cpe:/a:tibco:jasperreports_server 6.2.4 (including)
+#    - cpe:/a:tibco:jaspersoft_reporting_and_analytics:::~~~aws~~ 6.4.2 (including)
+#    - cpe:/a:tibco:jaspersoft:::~~~aws_with_multi-tenancy~~ 6.4.2 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.4439486 jasperreports:jasperreports
+# 0.3629006 net.sf.jasperreports:jasperreports
+# 0.2219743 net.sf.jasperreports:jasperreports-fonts
+# 0.19940868 org.ow2.orchestra.reporting:reporting
+# 0.17520243 com.umeng.analytics:analytics
+# 0.1712715 com.segment.analytics.android:analytics
+# 0.1712715 com.segment.analytics.java:analytics
+# 0.1712715 com.plainflow.analytics.java:analytics
+# 0.16734059 io.astronomer.analytics.android:analytics
+# 0.16734059 io.astronomer.analytics.java:analytics
