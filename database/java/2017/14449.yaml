@@ -1,0 +1,37 @@
+---
+cve: 2017-14449
+title: CVE in org.jtrim2:jtrim-image
+description: >
+    A double-Free vulnerability exists in the XCF image rendering functionality of SDL2_image-2.0.2. A specially crafted XCF image can cause a Double-Free situation to occur. An attacker can display a specially crafted image to trigger this vulnerability.
+cvss_v2: 6.8
+references:
+    - https://www.debian.org/security/2018/dsa-4177
+    - https://www.talosintelligence.com/vulnerability_reports/TALOS-2017-0498
+
+affected:
+    - groupId: org.jtrim2
+      artifactId: jtrim-image
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/o:debian:debian_linux:9.0
+#    - cpe:/a:libsdl:sdl2_image:2.0.2
+#    - cpe:/o:debian:debian_linux:8.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.05325847 org.wso2.balana:org.wso2.balana.samples.image.filtering
+# 0.04904903 com.sdl.web:context-image-proxy
+# 0.03898602 com.sdl.dxa:dxa-r2-provider
+# 0.027085071 org.jtrim2:jtrim-image
+# 0.024657864 org.jtrim2:jtrim-image-query
+# 0.024657864 org.jtrim2:jtrim-image-transform
+# 0.022467174 org.ow2.petals.flowable:flowable-image-generator
+# 0.022467174 org.ow2.petals.activiti:activiti-image-generator
+# 0.019423665 org.specs2:spring_2.9.2
+# 0.017464291 org.specs2:specs2_2.12
