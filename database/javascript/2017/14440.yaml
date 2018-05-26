@@ -1,0 +1,39 @@
+---
+cve: 2017-14440
+title: CVE in node-sdl2
+description: >
+    An exploitable code execution vulnerability exists in the ILBM image rendering functionality of SDL2_image-2.0.2. A specially crafted ILBM image can cause a stack overflow resulting in code execution. An attacker can display a specially crafted image to trigger this vulnerability.
+cvss_v2: 6.8
+references:
+    - https://lists.debian.org/debian-lts-announce/2018/04/msg00005.html
+    - https://www.debian.org/security/2018/dsa-4177
+    - https://www.debian.org/security/2018/dsa-4184
+    - https://www.talosintelligence.com/vulnerability_reports/TALOS-2017-0489
+
+affected:
+    - name: node-sdl2
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:libsdl:sdl2_image:2.0.2
+#    - cpe:/o:debian:debian_linux:7.0
+#    - cpe:/o:debian:debian_linux:9.0
+#    - cpe:/o:debian:debian_linux:8.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 8.602507 node-sdl2-image
+# 6.8892922 node-sdl2-image-prebuilt
+# 6.8892922 @flyover/node-sdl2_image
+# 6.1693945 sdl2
+# 5.2932577 node-sdl2
+# 5.2932577 sdl2-bindings
+# 5.2932577 sdl2.c
+# 5.2932577 napi_sdl2
+# 4.41712 @flyover/node-sdl2_net
+# 4.41712 node-sdl2-prebuilt
