@@ -1,0 +1,40 @@
+---
+cve: 2017-14441
+title: CVE in org.jtrim2:jtrim-image
+description: >
+    An exploitable code execution vulnerability exists in the ICO image rendering functionality of SDL2_image-2.0.2. A specially crafted ICO image can cause an integer overflow, cascading to a heap overflow resulting in code execution. An attacker can display a specially crafted image to trigger this vulnerability.
+cvss_v2: 6.8
+references:
+    - https://lists.debian.org/debian-lts-announce/2018/04/msg00005.html
+    - https://www.debian.org/security/2018/dsa-4177
+    - https://www.debian.org/security/2018/dsa-4184
+    - https://www.talosintelligence.com/vulnerability_reports/TALOS-2017-0490
+
+affected:
+    - groupId: org.jtrim2
+      artifactId: jtrim-image
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/o:debian:debian_linux:9.0
+#    - cpe:/o:debian:debian_linux:7.0
+#    - cpe:/a:libsdl:sdl2_image:2.0.2
+#    - cpe:/o:debian:debian_linux:8.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.6502775 net.sourceforge.svg2ico:svg2ico
+# 0.0747447 org.wso2.balana:org.wso2.balana.samples.image.filtering
+# 0.06883703 com.sdl.web:context-image-proxy
+# 0.054714274 com.sdl.dxa:dxa-r2-provider
+# 0.038012084 org.jtrim2:jtrim-image
+# 0.034605663 org.jtrim2:jtrim-image-query
+# 0.034605663 org.jtrim2:jtrim-image-transform
+# 0.031531174 org.ow2.petals.flowable:flowable-image-generator
+# 0.031531174 org.ow2.petals.activiti:activiti-image-generator
+# 0.027259815 org.specs2:spring_2.9.2
