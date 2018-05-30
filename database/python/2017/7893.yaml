@@ -1,0 +1,33 @@
+---
+cve: 2017-7893
+title: CVE in salt
+description: >
+    In SaltStack Salt before 2016.3.6, compromised salt-minions can impersonate the salt-master.
+cvss_v2: 7.5
+references:
+    - https://docs.saltstack.com/en/2017.7/topics/releases/2016.3.6.html
+
+affected:
+    - name: salt
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:saltstack:salt 2016.3.6 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 3.1179552 salt
+# 2.3220246 nodeconductor-saltstack
+# 2.3220246 saltstack-vulcan
+# 1.5918827 bootstrap-salt
+# 1.5918827 napalm-salt
+# 1.5918827 py-salt
+# 1.5918827 pytest-salt
+# 1.5918827 salt-broker
+# 1.5918827 salt-cloud
+# 1.5918827 salt-eventsd
