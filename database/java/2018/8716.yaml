@@ -1,0 +1,38 @@
+---
+cve: 2018-8716
+title: CVE in org.wso2.carbon.identity.framework:org.wso2.carbon.identity.application.authentication.endpoint
+description: >
+    WSO2 Identity Server before 5.5.0 has XSS via the dashboard, allowing attacks by low-privileged attackers.
+cvss_v2: 3.5
+references:
+    - http://packetstormsecurity.com/files/147330/WSO2-Identity-Server-5.3.0-Cross-Site-Scripting.html
+    - http://seclists.org/fulldisclosure/2018/Apr/45
+    - http://www.securityfocus.com/archive/1/archive/1/541954/100/0/threaded
+    - https://www.exploit-db.com/exploits/44531/
+    - https://www.sec-consult.com/en/blog/advisories/multiple-stored-xss-vulnerabilities-in-wso2-carbon-and-dashboard-server/index.html
+
+affected:
+    - groupId: org.wso2.carbon.identity.framework
+      artifactId: org.wso2.carbon.identity.application.authentication.endpoint
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:wso2:identity_server 5.5.0 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 2.833658 org.cloudfoundry.identity:cloudfoundry-identity-server
+# 2.623327 org.wso2.carbon.identity.agent.onprem.userstore:org.wso2.carbon.identity.agent.outbound.server
+# 2.0957556 org.wso2.carbon.identity.framework:org.wso2.carbon.identity.application.authentication.endpoint
+# 2.0957556 org.wso2.carbon.identity.framework:org.wso2.carbon.identity.application.authentication.framework
+# 2.0957556 org.wso2.carbon.identity.framework:org.wso2.carbon.identity.application.common
+# 2.0957556 org.wso2.carbon.identity.framework:org.wso2.carbon.identity.application.mgt
+# 2.0957556 org.wso2.carbon.identity.framework:org.wso2.carbon.identity.application.mgt.stub
+# 2.0957556 org.wso2.carbon.identity.framework:org.wso2.carbon.identity.application.mgt.ui
+# 2.0957556 org.wso2.carbon.identity.framework:org.wso2.carbon.identity.authenticator.thrift
+# 2.0957556 org.wso2.carbon.identity.framework:org.wso2.carbon.identity.base
