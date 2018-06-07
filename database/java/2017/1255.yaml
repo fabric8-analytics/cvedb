@@ -1,0 +1,40 @@
+---
+cve: 2017-1255
+title: CVE in org.glassfish.security:security
+description: >
+    IBM Security Guardium 10.0, 10.0.1, and 10.1 through 10.1.4 uses weaker than expected cryptographic algorithms that could allow an attacker to decrypt highly sensitive information. IBM X-Force ID: 124675.
+cvss_v2: 5.0
+references:
+    - http://www.ibm.com/support/docview.wss?uid=swg22014537
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/124675
+
+affected:
+    - groupId: org.glassfish.security
+      artifactId: security
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:ibm:security_guardium:10.0.1
+#    - cpe:/a:ibm:security_guardium:10.1.3
+#    - cpe:/a:ibm:security_guardium:10.1
+#    - cpe:/a:ibm:security_guardium:10.0
+#    - cpe:/a:ibm:security_guardium:10.1.4
+#    - cpe:/a:ibm:security_guardium:10.1.2
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.1009969 com.daioware.security:security
+# 1.1009969 org.glassfish.security:security
+# 1.0809658 com.ibm.websphere.appserver.api:com.ibm.websphere.appserver.api.security
+# 1.0636113 org.glassfish.main.security:security
+# 0.91125476 com.ibm.websphere.appserver.api:com.ibm.websphere.appserver.api.security.authorization.saf
+# 0.91125476 com.ibm.websphere.appserver.api:com.ibm.websphere.appserver.api.security.registry.saf
+# 0.91125476 com.ibm.websphere.appserver.api:com.ibm.websphere.appserver.api.security.spnego
+# 0.91125476 com.ibm.websphere.appserver.api:com.ibm.websphere.appserver.api.securityClient
+# 0.91125476 com.ibm.websphere.appserver.api:com.ibm.websphere.appserver.api.webcontainer.security.app
+# 0.87184626 com.ibm:com.ibm.mq
