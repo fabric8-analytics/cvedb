@@ -1,0 +1,38 @@
+---
+cve: 2013-4035
+title: CVE in connect
+description: >
+    IBM Sterling Connect:Direct for OpenVMS 3.4.00, 3.4.01, 3.5.00, 3.6.0, and 3.6.0.1 allow remote attackers to have unspecified impact by leveraging failure to reject client requests for an unencrypted session when used as the server in a TCP/IP session and configured for SSL encryption with the client. IBM X-Force ID: 86138.
+cvss_v2: 4.1
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/86138
+    - https://www.ibm.com/blogs/psirt/security-bulletin-ibm-sterling-connectdirect-for-openvms-unencrypted-data-transfers-can-occur-even-when-ssl-encryption-is-specified-in-the-security-configuration-cve-2013-4035/
+
+affected:
+    - name: connect
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:ibm:sterling_connect:3.4.0.0
+#    - cpe:/a:ibm:sterling_connect:3.4.0.1
+#    - cpe:/a:ibm:sterling_connect:3.6.0
+#    - cpe:/a:ibm:sterling_connect:3.6.0.1
+#    - cpe:/a:ibm:sterling_connect:3.5.0.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 2.6998541 sterling
+# 1.374214 sterling-css
+# 1.374214 sterling-token
+# 1.374214 sterling-session
+# 0.8833508 connect
+# 0.8833508 connect-no-www
+# 0.8833508 net-connect
+# 0.46596232 gulp-connect
+# 0.46596232 connect-livereload
+# 0.46596232 connect-redis
