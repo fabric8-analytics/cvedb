@@ -1,0 +1,38 @@
+---
+cve: 2018-0278
+title: CVE in networking-cisco
+description: >
+    A vulnerability in the management console of Cisco Firepower System Software could allow an unauthenticated, remote attacker to access sensitive data about the system. The vulnerability is due to improper cross-origin domain protections for the WebSocket protocol. An attacker could exploit this vulnerability by convincing a user to visit a malicious website designed to send requests to the affected application while the user is logged into the application with an active session cookie. A successful exploit could allow the attacker to retrieve policy or configuration information from the affected software and to perform another attack against the management console. Cisco Bug IDs: CSCvh68311.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/104122
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180502-fpwr-dos
+
+affected:
+    - name: networking-cisco
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:cisco:firepower_management_center:6.2.3
+#    - cpe:/a:cisco:firepower_management_center:6.1.0
+#    - cpe:/a:cisco:firepower_management_center:6.2.1
+#    - cpe:/a:cisco:firepower_management_center:6.2.0
+#    - cpe:/a:cisco:firepower_management_center:6.2.2
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.6673823 project-system
+# 0.6673823 system
+# 0.3966808 blockdiagcontrib-cisco
+# 0.3966808 cisco-decrypt
+# 0.3966808 cisco-deviot
+# 0.3966808 cisco-pass
+# 0.3966808 cisco-ssapi
+# 0.3966808 cisco-vpn
+# 0.3966808 cisco-zeus
+# 0.3966808 networking-cisco
