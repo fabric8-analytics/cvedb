@@ -1,0 +1,37 @@
+---
+cve: 2013-2233
+title: CVE in ansible
+description: >
+    Ansible before 1.2.1 makes it easier for remote attackers to conduct man-in-the-middle attacks by leveraging failure to cache SSH host keys.
+cvss_v2: 5.8
+references:
+    - http://www.openwall.com/lists/oss-security/2013/07/01/2
+    - http://www.openwall.com/lists/oss-security/2013/07/02/6
+    - https://bugzilla.redhat.com/show_bug.cgi?id=980821
+    - https://github.com/ansible/ansible/issues/857
+    - https://www.ansible.com/security
+
+affected:
+    - name: ansible
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:redhat:ansible 1.2.1 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 3.167281 ssh
+# 2.920113 ansible
+# 1.625575 aws-ssh
+# 1.625575 bastion-ssh
+# 1.625575 chef-ssh
+# 1.625575 color-ssh
+# 1.625575 django-ssh
+# 1.625575 easy-ssh
+# 1.625575 globus-ssh
+# 1.625575 hamachi-ssh
