@@ -1,0 +1,33 @@
+---
+cve: 2018-10740
+title: CVE in php
+description: >
+    Axublog 1.1.0 allows remote Code Execution as demonstrated by injection of PHP code (contained in the webkeywords parameter) into the cmsconfig.php file.
+cvss_v2: 7.5
+references:
+    - https://github.com/axublog/axublog/issues/1
+
+affected:
+    - name: php
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:axublog:axublog:1.1.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.2216907 php
+# 0.8801751 execution-trace
+# 0.81850517 code
+# 0.6335896 django-php
+# 0.6335896 php-in-python
+# 0.6335896 php-reference
+# 0.6335896 php-wsgi
+# 0.6335896 score.php
+# 0.6335896 sphinx-php
+# 0.56007695 django-php-bridge
