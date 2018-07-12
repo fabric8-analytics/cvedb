@@ -1,0 +1,33 @@
+---
+cve: 2016-10676
+title: CVE in aio.http
+description: >
+    rs-brightcove is a wrapper around brightcove's web api rs-brightcove downloads source file resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested resources with an attacker controlled copy if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/273
+
+affected:
+    - name: aio.http
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:rs-brightcove_project:rs-brightcove:::~~~node.js~~ 0.0.2 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.90853554 mitm6
+# 0.8864234 http
+# 0.8864234 on-http
+# 0.60562485 brightcove
+# 0.52886134 rs
+# 0.46348462 activetick-http
+# 0.46348462 agent.http
+# 0.46348462 aio.http
+# 0.46348462 async-http
+# 0.46348462 bayrell-http
