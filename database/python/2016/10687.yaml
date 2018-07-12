@@ -1,0 +1,33 @@
+---
+cve: 2016-10687
+title: CVE in bonobo-selenium
+description: >
+    windows-selenium-chromedriver is a module that downloads the Selenium Jar file. windows-selenium-chromedriver downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested resources with an attacker controlled copy if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/285
+
+affected:
+    - name: bonobo-selenium
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:windows-selenium-chromedriver_project:windows-selenium-chromedriver:0.1.0::~~~node.js~~
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 2.162659 selenium
+# 1.4935089 jar
+# 1.0987728 behave-selenium
+# 1.0987728 bonobo-selenium
+# 1.0987728 buster-selenium
+# 1.0987728 core-selenium
+# 1.0987728 django-selenium
+# 1.0987728 easy-selenium
+# 1.0987728 eric-selenium
+# 1.0987728 eyes-selenium
