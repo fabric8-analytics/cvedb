@@ -1,0 +1,33 @@
+---
+cve: 2016-10686
+title: CVE in tt-sass
+description: >
+    fis-sass-all is another libsass wrapper for node. fis-sass-all downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested resources with an attacker controlled copy if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/287
+
+affected:
+    - name: tt-sass
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:fis-sass-all_project:fis-sass-all:0.2.0::~~~node.js~~
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.82133955 sass
+# 0.53774077 fis3
+# 0.4300904 beetle-sass
+# 0.4300904 flask-sass
+# 0.4300904 gears-sass
+# 0.4300904 growler-sass
+# 0.4300904 sass-cli
+# 0.4300904 sass-styleguide
+# 0.4300904 score.sass
+# 0.4300904 tt-sass
