@@ -1,0 +1,33 @@
+---
+cve: 2016-10693
+title: CVE in pcap2http
+description: >
+    pm2-kafka is a PM2 module that installs and runs a kafka server pm2-kafka downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested resources with an attacker controlled copy if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/299
+
+affected:
+    - name: pcap2http
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:pm2-kafka_project:pm2-kafka:1.0.0::~~~node.js~~
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.58152854 http2
+# 0.50191 ftp2http
+# 0.50191 httpie-http2
+# 0.50191 pcap2http
+# 0.48212278 pm
+# 0.42229152 enigma2-http-api
+# 0.42229152 flask-http2-push
+# 0.42229152 on-http-api2-0
+# 0.42229152 shinkenplugins.plugins.http2
+# 0.41273147 mitm6
