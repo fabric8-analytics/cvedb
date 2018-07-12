@@ -1,0 +1,33 @@
+---
+cve: 2016-10690
+title: CVE in ascii-art
+description: >
+    openframe-ascii-image module is an openframe plugin which adds support for ascii images via fim. openframe-ascii-image downloads resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested resources with an attacker controlled copy if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/298
+
+affected:
+    - name: ascii-art
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:openframe:openframe-ascii-image:0.1.0::~~~node.js~~
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.2138686 asciiimage
+# 0.7754544 ascii
+# 0.50049937 image
+# 0.4077191 ascii-art
+# 0.4077191 ascii-converter
+# 0.4077191 ascii-frame
+# 0.4077191 ascii-game
+# 0.4077191 ascii-gazebo
+# 0.4077191 ascii-graph
+# 0.4077191 ascii-plotter
