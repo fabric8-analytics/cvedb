@@ -1,0 +1,33 @@
+---
+cve: 2016-10697
+title: CVE in react
+description: >
+    react-native-baidu-voice-synthesizer is a baidu voice speech synthesizer for react native. react-native-baidu-voice-synthesizer downloads resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested resources with an attacker controlled copy if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/302
+
+affected:
+    - name: react
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:react-native-baidu-voice-synthesizer_project:react-native-baidu-voice-synthesizer:1.0.0::~~~node.js~~
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.46492997 synthesizer
+# 0.42769626 baidu
+# 0.36250725 voice
+# 0.33197844 react
+# 0.22816499 aio-baidu
+# 0.22816499 baidu-aip
+# 0.22816499 baidu-tts
+# 0.21951333 django-speach-synthesizer
+# 0.19557048 aliyun-voice
+# 0.19557048 bilibili-voice
