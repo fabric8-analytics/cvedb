@@ -1,0 +1,34 @@
+---
+cve: 2017-16178
+title: CVE in batman-package
+description: >
+    intsol-package is a file server. intsol-package is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/intsol-package
+    - https://nodesecurity.io/advisories/461
+
+affected:
+    - name: batman-package
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:intsol-package_project:intsol-package:1.0.0::~~~node.js~~
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.0677145 package
+# 0.55919665 arcrest-package
+# 0.55919665 awesome-package
+# 0.55919665 batman-package
+# 0.55919665 car-package
+# 0.55919665 collective.package
+# 0.55919665 demo-package
+# 0.55919665 dummy-package
+# 0.55919665 fifth-package
+# 0.55919665 focus-package
