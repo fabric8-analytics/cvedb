@@ -1,0 +1,33 @@
+---
+cve: 2016-10669
+title: CVE in aio.http
+description: >
+    soci downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested resources with an attacker controlled copy if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/270
+
+affected:
+    - name: aio.http
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:soci_project:soci:::~~~node.js~~ 0.0.1 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.1579597 mitm6
+# 1.129777 http
+# 1.129777 on-http
+# 0.59072703 activetick-http
+# 0.59072703 agent.http
+# 0.59072703 aio.http
+# 0.59072703 async-http
+# 0.59072703 bayrell-http
+# 0.59072703 behave-http
+# 0.59072703 canonicalwebteam.http
