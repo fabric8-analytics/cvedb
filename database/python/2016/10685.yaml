@@ -1,0 +1,33 @@
+---
+cve: 2016-10685
+title: CVE in on-http
+description: >
+    pk-app-wonderbox is an integration with wonderbox pk-app-wonderbox downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested resources with an attacker controlled copy if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/289
+
+affected:
+    - name: on-http
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:pk-app-wonderbox_project:pk-app-wonderbox:1.0.0::~~~node.js~~
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.7616078 mitm6
+# 0.7493833 zope.app.http
+# 0.74307156 http
+# 0.74307156 on-http
+# 0.38853016 activetick-http
+# 0.38853016 agent.http
+# 0.38853016 aio.http
+# 0.38853016 async-http
+# 0.38853016 bayrell-http
+# 0.38853016 behave-http
