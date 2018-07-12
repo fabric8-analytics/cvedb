@@ -1,0 +1,33 @@
+---
+cve: 2016-10678
+title: CVE in docopt-rc
+description: >
+    serc.js is a Selenium RC process wrapper serc.js downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested resources with an attacker controlled copy if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/277
+
+affected:
+    - name: docopt-rc
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:serc.js_project:serc.js:0.0.1::~~~node.js~~
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.6957379 rc
+# 0.5918373 selenium
+# 0.50429875 mitm6
+# 0.4923796 http
+# 0.4923796 on-http
+# 0.3660818 anoncreds-rc
+# 0.3660818 docopt-rc
+# 0.3660818 hamster-rc
+# 0.3660818 ledger-rc
+# 0.3660818 plenum-rc
