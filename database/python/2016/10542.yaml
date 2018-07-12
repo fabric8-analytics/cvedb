@@ -1,0 +1,34 @@
+---
+cve: 2016-10542
+title: CVE in aiorest-ws
+description: >
+    ws is a "simple to use, blazing fast and thoroughly tested websocket client, server and console for node.js, up-to-date against RFC-6455". By sending an overly long websocket payload to a `ws` server, it is possible to crash the node process. This affects ws 1.1.0 and earlier.
+cvss_v2: 5.0
+references:
+    - https://github.com/nodejs/node/issues/7388
+    - https://nodesecurity.io/advisories/120
+
+affected:
+    - name: aiorest-ws
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:ws_project:ws:::~~~node.js~~ 1.1.0 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.813273 ws
+# 0.9290767 aiorest-ws
+# 0.9290767 bitmex-ws
+# 0.9290767 fei-ws
+# 0.9290767 flask-ws
+# 0.9290767 gkola-ws
+# 0.9290767 graphql-ws
+# 0.9290767 nester-ws
+# 0.9290767 rakuten-ws
+# 0.9290767 score.ws
