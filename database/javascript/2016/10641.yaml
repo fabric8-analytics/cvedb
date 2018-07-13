@@ -1,0 +1,27 @@
+---
+cve: 2016-10641
+title: CVE in node-bsdiff-android
+description: >
+    node-bsdiff-android downloads resources over HTTP, which leaves it vulnerable to MITM attacks.
+cvss_v2: 6.8
+references:
+    - https://nodesecurity.io/advisories/234
+
+affected:
+    - name: node-bsdiff-android
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 3.173757 node-bsdiff-android
+# 2.0022697 http-mitm
+# 2.0022697 mitm-http
+# 1.7565402 http-mitm-proxy
+# 1.7565402 http-proxy-mitm
+# 1.5108107 @ahfarmer/http-mitm-proxy
+# 1.5108107 http-mitm-proxy-brotli
+# 1.4865803 mitm
+# 1.2663033 node-bsdiff
+# 1.2663033 node_bsdiff
