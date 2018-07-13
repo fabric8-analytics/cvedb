@@ -1,0 +1,27 @@
+---
+cve: 2016-10618
+title: CVE in node-browser
+description: >
+    node-browser is a wrapper webdriver by nodejs. node-browser downloads resources over HTTP, which leaves it vulnerable to MITM attacks.
+cvss_v2: 6.8
+references:
+    - https://nodesecurity.io/advisories/214
+
+affected:
+    - name: node-browser
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 7.4610977 node-as-browser
+# 7.4610977 node-browser
+# 7.4610977 node-in-browser
+# 6.5368757 node-browser-environment
+# 6.5368757 node-browser-modules
+# 6.5368757 node-browser-builtins
+# 6.5368757 node-browser-history
+# 5.612653 node-browser-module-boilerplate
+# 5.612653 node-browser-async-loop
+# 1.683352 browser-to-node
