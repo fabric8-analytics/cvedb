@@ -1,0 +1,27 @@
+---
+cve: 2016-10654
+title: CVE in sfml
+description: >
+    sfml downloads resources over HTTP, which leaves it vulnerable to MITM attacks.
+cvss_v2: 6.8
+references:
+    - https://nodesecurity.io/advisories/256
+
+affected:
+    - name: sfml
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 3.416401 sfml
+# 2.9282603 http-mitm
+# 2.9282603 mitm-http
+# 2.5688884 http-mitm-proxy
+# 2.5688884 http-proxy-mitm
+# 2.209516 @ahfarmer/http-mitm-proxy
+# 2.209516 http-mitm-proxy-brotli
+# 2.17408 mitm
+# 1.1136816 unexpected-mitm
+# 1.1136816 mitm-algolia
