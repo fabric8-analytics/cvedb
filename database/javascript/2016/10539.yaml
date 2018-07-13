@@ -1,0 +1,27 @@
+---
+cve: 2016-10539
+title: CVE in negotiator
+description: >
+    negotiator is an HTTP content negotiator for Node.js and is used by many modules and frameworks including Express and Koa. The header for "Accept-Language", when parsed by negotiator 0.6.0 and earlier is vulnerable to Regular Expression Denial of Service via a specially crafted string.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/106
+
+affected:
+    - name: negotiator
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 2.180651 express-negotiator
+# 1.759621 negotiator
+# 1.004555 koa-express
+# 1.004555 express-to-koa
+# 1.004555 koa-to-express
+# 0.97653455 http-express
+# 0.95276076 koa-http-errors
+# 0.95276076 koa-http-stats
+# 0.95276076 koa-http-logger
+# 0.95276076 koa-http-proxy
