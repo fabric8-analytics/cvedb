@@ -1,0 +1,27 @@
+---
+cve: 2016-10569
+title: CVE in embedza
+description: >
+    embedza is a module to create HTML snippets/embeds from URLs using info from oEmbed, Open Graph, meta tags. embedza versions below 1.2.4 download JavaScript resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested JavaScript file with an attacker controlled JavaScript file if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/187
+
+affected:
+    - name: embedza
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 1.4105566 embedza
+# 1.0065273 html-urls
+# 0.9920409 open-graph
+# 0.8734512 open-graph-scraper
+# 0.8734512 facebook-open-graph
+# 0.8734512 open-graph-parser
+# 0.8734512 open-graph-response
+# 0.8734512 metalsmith-open-graph
+# 0.8734512 open-graph-meta
+# 0.8734512 open-graph-collector
