@@ -1,0 +1,28 @@
+---
+cve: 2017-16132
+title: CVE in simple-npm-registry
+description: >
+    simple-npm-registry is a local npm package cache. simple-npm-registry is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/simple-npm-registry
+    - https://nodesecurity.io/advisories/452
+
+affected:
+    - name: simple-npm-registry
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 8.979964 simple-npm-registry
+# 3.3713753 npm-registry
+# 3.3558936 simple-npm
+# 3.3558936 simple_npm
+# 2.9560623 npm-registry-client
+# 2.9560623 npm-registry-mock
+# 2.9560623 npm-registry-couchapp
+# 2.9560623 npm-registry-packages
+# 2.9560623 npm-registry-proxy
+# 2.9560623 npm-registry-history
