@@ -1,0 +1,27 @@
+---
+cve: 2016-10620
+title: CVE in atom-node-module-installer
+description: >
+    atom-node-module-installer installs node modules for atom-shell applications. atom-node-module-installer binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/216
+
+affected:
+    - name: atom-node-module-installer
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 9.365073 atom-node-module-installer
+# 2.2091095 atom-node
+# 2.1511567 missing-module-installer
+# 2.1511567 module-installer-loader
+# 2.1511567 git-module-installer
+# 2.1511567 haxe-module-installer
+# 1.9379895 flow-atom-node
+# 1.9379895 atom-node.sdk
+# 1.9379895 atom-node-sdk
+# 1.3100644 node_module
