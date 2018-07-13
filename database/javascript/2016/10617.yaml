@@ -1,0 +1,27 @@
+---
+cve: 2016-10617
+title: CVE in box2d-native
+description: >
+    box2d-native downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/219
+
+affected:
+    - name: box2d-native
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 2.7102365 box2d-native
+# 1.8485588 box2d
+# 1.774639 http-mitm
+# 1.774639 mitm-http
+# 1.5568458 http-mitm-proxy
+# 1.5568458 http-proxy-mitm
+# 1.5458477 pong-box2d
+# 1.5458477 box2d-events
+# 1.5458477 box2d-player
+# 1.5458477 continuous-box2d
