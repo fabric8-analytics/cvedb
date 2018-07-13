@@ -1,0 +1,28 @@
+---
+cve: 2016-10543
+title: CVE in http-call
+description: >
+    call is an HTTP router that is primarily used by the hapi framework. There exists a bug in call versions 2.0.1-3.0.1 that does not validate empty parameters, which could result in invalid input bypassing the route validation rules.
+cvss_v2: 5.0
+references:
+    - https://github.com/hapijs/hapi/issues/3228
+    - https://nodesecurity.io/advisories/121
+
+affected:
+    - name: http-call
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 5.5864162 http-call
+# 3.6706922 call
+# 3.6706922 will-call
+# 3.6706922 then-call
+# 3.6706922 call-if
+# 2.005955 http
+# 2.005955 is-http
+# 2.005955 http-framework
+# 2.005955 http-
+# 2.005955 the-http
