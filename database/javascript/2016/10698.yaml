@@ -1,0 +1,27 @@
+---
+cve: 2016-10698
+title: CVE in mystem-fix
+description: >
+    mystem-fix is a node.js wrapper for MyStem morphology text analyzer by Yandex.ru mystem-fix downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested resources with an attacker controlled copy if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/301
+
+affected:
+    - name: mystem-fix
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 4.0178094 mystem-fix
+# 2.9921384 mystem
+# 1.5133635 mystem-stream
+# 1.5133635 mystem-wrapper
+# 1.3285166 mystem3
+# 1.1543537 http-mitm
+# 1.1543537 mitm-http
+# 1.014383 http-mitm-proxy
+# 1.014383 http-proxy-mitm
+# 0.87441224 @ahfarmer/http-mitm-proxy
