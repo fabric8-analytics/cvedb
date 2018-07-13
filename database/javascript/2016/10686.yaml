@@ -1,0 +1,27 @@
+---
+cve: 2016-10686
+title: CVE in fis-sass-all
+description: >
+    fis-sass-all is another libsass wrapper for node. fis-sass-all downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested resources with an attacker controlled copy if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/287
+
+affected:
+    - name: fis-sass-all
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 9.912583 fis-sass-all
+# 4.443567 fis-parser-sass-all
+# 3.7658894 fis-sass
+# 3.3020072 gobble-sass-all
+# 2.8366127 sass-all-variable-loader
+# 0.83414054 fis-parser-sass
+# 0.83414054 fis-okoala-sass
+# 0.83414054 fis-my-sass
+# 0.7212985 fis-parser-node-sass
+# 0.7212985 fis-parser-sass-txt
