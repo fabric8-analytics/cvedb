@@ -1,0 +1,27 @@
+---
+cve: 2016-10601
+title: CVE in webdrvr
+description: >
+    webdrvr is a npm wrapper for Selenium Webdriver including Chromedriver / IEDriver / IOSDriver / Ghostdriver. webdrvr downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/193
+
+affected:
+    - name: webdrvr
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 0.97278017 selenium-chromedriver
+# 0.8908446 webdrvr
+# 0.8908446 ghostdriver
+# 0.8551524 windows-selenium-chromedriver
+# 0.8309275 selenium-webdriver
+# 0.7591454 iosdriver
+# 0.73752475 nw.js-chromedriver-selenium
+# 0.7310314 grunt-selenium-webdriver
+# 0.7310314 selenium-node-webdriver
+# 0.7310314 spun-selenium-webdriver
