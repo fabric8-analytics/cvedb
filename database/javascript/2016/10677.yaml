@@ -1,0 +1,27 @@
+---
+cve: 2016-10677
+title: CVE in google-closure-tools-latest
+description: >
+    google-closure-tools-latest is a Node.js module wrapper for downloading the latest version of the Google Closure tools google-closure-tools-latest downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested resources with an attacker controlled copy if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/274
+
+affected:
+    - name: google-closure-tools-latest
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 5.0702343 google-closure-tools-latest
+# 2.2726045 grunt-google-closure-tools-compiler
+# 1.9516455 google-closure-library-latest
+# 1.9274721 google-closure
+# 1.6903765 google-closure-compiler
+# 1.6903765 google-closure-library
+# 1.6903765 google-closure-templates
+# 1.6903765 google-closure-stylesheets
+# 1.6903765 google-closure-linter
+# 1.6903765 google-closure-externs
