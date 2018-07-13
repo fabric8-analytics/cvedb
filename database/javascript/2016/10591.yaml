@@ -1,0 +1,27 @@
+---
+cve: 2016-10591
+title: CVE in prince
+description: >
+    Prince is a Node API for executing XML/HTML to PDF renderer PrinceXML via prince(1) CLI. prince downloads zipped resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested tarball with an attacker controlled tarball if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/185
+
+affected:
+    - name: prince
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 2.4602563 prince
+# 1.248281 grunt-prince
+# 1.248281 prince_auriga
+# 1.248281 prince-promise
+# 1.0967841 @panosoft/prince-server
+# 1.0967841 prince_auriga-test
+# 0.7937902 hello_prince10r
+# 0.65707 node-api-pdf
+# 0.64229333 @prince8verma/react-native-snackbar
+# 0.6114482 pula-node-html-pdf
