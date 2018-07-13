@@ -1,0 +1,27 @@
+---
+cve: 2016-10632
+title: CVE in apk-parser2
+description: >
+    apk-parser2 is a module which extracts Android Manifest info from an APK file. apk-parser2 downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/223
+
+affected:
+    - name: apk-parser2
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 4.9944105 apk-parser2
+# 1.5225813 apk
+# 1.1620755 manifest-android
+# 1.0463355 range-parser2
+# 1.0463355 amd-parser2
+# 1.0463355 ua-parser2
+# 1.0463355 changelog-parser2
+# 1.0463355 json-parser2
+# 1.0463355 html-parser2
+# 1.0463355 markdown-parser2
