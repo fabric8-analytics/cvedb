@@ -1,0 +1,27 @@
+---
+cve: 2016-10627
+title: CVE in scala-bin
+description: >
+    scala-bin is a binary wrapper for Scala. scala-bin downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/227
+
+affected:
+    - name: scala-bin
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 11.384742 scala-bin
+# 3.8019469 scala-node
+# 3.8019469 hubot-scala
+# 3.8019469 aural-scala
+# 3.8019469 language-scala
+# 3.8019469 brush-scala
+# 3.8019469 scala-pretty
+# 3.8019469 generator-scala
+# 3.3322036 ember-cli-scala
+# 3.3322036 collection-benchmarks-scala
