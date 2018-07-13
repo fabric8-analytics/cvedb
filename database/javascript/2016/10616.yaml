@@ -1,0 +1,27 @@
+---
+cve: 2016-10616
+title: CVE in openframe-image
+description: >
+    openframe-image is an Openframe extension which adds support for images via fbi. openframe-image downloads data resources over HTTP, which leaves it vulnerable to MITM attacks.
+cvss_v2: 6.8
+references:
+    - https://nodesecurity.io/advisories/218
+
+affected:
+    - name: openframe-image
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 11.220937 openframe-image
+# 8.004585 openframe-of
+# 8.004585 openframe
+# 4.968934 openframe-ascii-image
+# 4.0246167 openframe-extension
+# 4.0246167 openframe-pubsubserver
+# 4.0246167 openframe-glslviewer
+# 4.0246167 openframe-video
+# 4.0246167 openframe-website
+# 4.0246167 openframe-gpioexample
