@@ -1,0 +1,29 @@
+---
+cve: 2014-10068
+title: CVE in inert
+description: >
+    The inert directory handler in inert node module before 1.1.1 always allows files in hidden directories to be served, even when `showHidden` is false.
+cvss_v2: 5.0
+references:
+    - https://github.com/hapijs/inert/commit/e8f99f94da4cb08e8032eda984761c3f111e3e82
+    - https://github.com/hapijs/inert/pull/15
+    - https://nodesecurity.io/advisories/14
+
+affected:
+    - name: inert
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 4.539905 inert
+# 3.6662595 is-hidden
+# 3.6662595 hidden
+# 2.3007646 wicg-inert
+# 2.3007646 inert-polyfill
+# 2.3007646 inert-2
+# 2.3007646 @types/inert
+# 2.0208719 hapi-rx-inert
+# 2.0208719 pmx-inert-elem
+# 2.0208719 ember-inert-polyfill
