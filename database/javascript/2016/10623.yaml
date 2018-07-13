@@ -1,0 +1,27 @@
+---
+cve: 2016-10623
+title: CVE in macaca-chromedriver-zxa
+description: >
+    macaca-chromedriver-zxa is a Node.js wrapper for the selenium chromedriver. macaca-chromedriver-zxa downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/221
+
+affected:
+    - name: macaca-chromedriver-zxa
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 6.116617 macaca-chromedriver-zxa
+# 2.2202969 macaca-chromedriver
+# 0.7503615 node-chrome-driver
+# 0.461792 chromedriver
+# 0.4417674 macaca
+# 0.42571467 node
+# 0.42571467 is-node
+# 0.42571467 is_node
+# 0.42571467 node-then
+# 0.42571467 node-is
