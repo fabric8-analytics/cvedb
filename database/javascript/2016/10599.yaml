@@ -1,0 +1,27 @@
+---
+cve: 2016-10599
+title: CVE in sauce-connect
+description: >
+    sauce-connect is a Node.js wrapper over the SauceLabs SauceConnect.jar program for establishing a secure tunnel for intranet testing. sauce-connect downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/186
+
+affected:
+    - name: sauce-connect
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 6.333863 node-sauce-connect
+# 4.6044245 sauce-connect
+# 4.0340405 sauce-connect-launcher
+# 4.0340405 sauce-connect-tunnel
+# 3.4636562 grunt-sauce-connect-launcher
+# 3.4636562 @mocha/sauce-connect-launcher
+# 3.4636562 @ciscospark/bin-sauce-connect
+# 2.8932722 @belym.a.2105/sauce-connect-launcher
+# 2.044706 grunt-sauceconnect
+# 2.044706 sauceconnect-runner
