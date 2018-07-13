@@ -1,0 +1,27 @@
+---
+cve: 2016-10562
+title: CVE in iedriver
+description: >
+    iedriver is an NPM wrapper for Selenium IEDriver. iedriver versions below 3.0.0 download binary resources over HTTP, which leaves the module vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/174
+
+affected:
+    - name: iedriver
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 7.458767 iedriver
+# 3.753581 windows-iedriver
+# 3.753581 iedriver-exe
+# 3.753581 iedriver-uinnova
+# 3.290433 iedriver_optional_dependency
+# 3.290433 @tobli/iedriver-install
+# 3.290433 wdio-iedriver-service
+# 1.0798719 selenium
+# 0.56413347 selenium-webdriver
+# 0.56413347 selenium-standalone
