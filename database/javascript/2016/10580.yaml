@@ -1,0 +1,27 @@
+---
+cve: 2016-10580
+title: CVE in nodewebkit
+description: >
+    nodewebkit is an installer for node-webkit. nodewebkit downloads zipped resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested zip file with an attacker controlled zip file if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/173
+
+affected:
+    - name: nodewebkit
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 10.916074 nodewebkit
+# 5.5038404 node-webkit
+# 5.5038404 slush-nodewebkit
+# 5.5038404 for-node-webkit
+# 4.8273115 node-webkit-builder
+# 4.8273115 karma-nodewebkit-launcher
+# 4.8273115 node-webkit-fdialogs
+# 4.8273115 generator-node-webkit
+# 4.8273115 grunt-node-webkit
+# 4.8273115 slush-nodewebkit-indexeddb
