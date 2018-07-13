@@ -1,0 +1,27 @@
+---
+cve: 2016-10564
+title: CVE in apk-parser
+description: >
+    apk-parser is a tool to extract Android Manifest info from an APK file. apk-parser versions below 0.1.6 download binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 6.8
+references:
+    - https://nodesecurity.io/advisories/195
+
+affected:
+    - name: apk-parser
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 4.085035 apk-parser
+# 3.5799732 node-apk-parser
+# 3.0749116 node-apk-parser-cli
+# 3.0749116 node-apk-parser-promise
+# 2.4467106 apk
+# 1.6054819 manifest-android
+# 1.4103645 android_manifest_bump
+# 1.4103645 android-pretty-manifest
+# 1.397327 apk-parser2
+# 1.397327 apk-parser3
