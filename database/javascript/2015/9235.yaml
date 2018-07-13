@@ -1,0 +1,30 @@
+---
+cve: 2015-9235
+title: CVE in jsonwebtoken
+description: >
+    In jsonwebtoken node module before 4.2.2 it is possible for an attacker to bypass verification when a token digitally signed with an asymmetric key (RS/ES family) of algorithms but instead the attacker send a token digitally signed with a symmetric algorithm (HS* family).
+cvss_v2: 7.5
+references:
+    - https://auth0.com/blog/2015/03/31/critical-vulnerabilities-in-json-web-token-libraries/
+    - https://github.com/auth0/node-jsonwebtoken/commit/1bb584bc382295eeb7ee8c4452a673a77a68b687
+    - https://nodesecurity.io/advisories/17
+    - https://www.timmclean.net/2015/02/25/jwt-alg-none.html
+
+affected:
+    - name: jsonwebtoken
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 1.7284528 jsonwebtoken
+# 1.4178196 hs
+# 1.1737772 rs
+# 0.89058673 dorongrinstein_jsonwebtoken
+# 0.89058673 @ryancavanaugh/jsonwebtoken
+# 0.89058673 jsonwebtoken-with-keyid
+# 0.89058673 sc-jsonwebtoken
+# 0.89058673 jsonwebtoken-2
+# 0.89058673 jsonwebtoken-utils
+# 0.89058673 jsonwebtoken-as-promised
