@@ -1,0 +1,27 @@
+---
+cve: 2016-10570
+title: CVE in pngcrush-installer
+description: >
+    pngcrush-installer is an installer for Pngcrush. pngcrush-installer versions below 1.8.10 download binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/189
+
+affected:
+    - name: pngcrush-installer
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 11.9840975 pngcrush-installer
+# 8.413077 pngcrush
+# 4.227436 imagemin-pngcrush
+# 4.227436 pngcrush-bin
+# 4.227436 node-pngcrush
+# 4.227436 pngcrush-fs
+# 3.704231 fis-optimizer-pngcrush
+# 2.1346154 fis3-optimizer-imagemin-pngcrush
+# 0.61074835 installer
+# 0.32627153 bower-installer
