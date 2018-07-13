@@ -1,0 +1,27 @@
+---
+cve: 2016-10635
+title: CVE in broccoli-closure
+description: >
+    broccoli-closure is a Closure compiler plugin for Broccoli. broccoli-closure before 1.3.1 downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/242
+
+affected:
+    - name: broccoli-closure
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 11.055063 broccoli-closure
+# 9.678845 broccoli-closure-compiler
+# 3.5342486 closure
+# 2.7502198 broccoli
+# 1.7897847 closure-compiler
+# 1.7897847 closure-templates
+# 1.7897847 closure-library
+# 1.7897847 closure-npc
+# 1.7897847 karma-closure
+# 1.7897847 closure-util
