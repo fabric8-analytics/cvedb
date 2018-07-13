@@ -1,0 +1,27 @@
+---
+cve: 2016-10593
+title: CVE in ibapi
+description: >
+    ibapi is an Interactive Brokers API addon for NodeJS. ibapi downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/182
+
+affected:
+    - name: ibapi
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 1.6750686 ibapi
+# 0.85261047 interactive-framework
+# 0.85261047 interactive
+# 0.77894557 pavlism-brokers
+# 0.77894557 @spectacles/brokers
+# 0.7623448 nodejs-api
+# 0.7623448 api-nodejs
+# 0.7123226 @dynamic-interactive-democracy/did-api
+# 0.68696404 node-crypto-brokers
+# 0.6724383 siot.net-nodejs-api
