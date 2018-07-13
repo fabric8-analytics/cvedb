@@ -1,0 +1,27 @@
+---
+cve: 2016-10684
+title: CVE in healthcenter
+description: >
+    healthcenter - IBM Monitoring and Diagnostic Tools health Center agent healthcenter downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested resources with an attacker controlled copy if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/288
+
+affected:
+    - name: healthcenter
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 0.86328256 healthcenter
+# 0.79259485 ibm-cloud-monitoring
+# 0.7430606 http-mitm
+# 0.7430606 mitm-http
+# 0.6545523 http-mitm-proxy
+# 0.6545523 http-proxy-mitm
+# 0.60927594 diagnostic
+# 0.56604403 @ahfarmer/http-mitm-proxy
+# 0.56604403 http-mitm-proxy-brotli
+# 0.5573166 mitm
