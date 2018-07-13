@@ -1,0 +1,27 @@
+---
+cve: 2016-10573
+title: CVE in baryton-saxophone
+description: >
+    baryton-saxophone is a module to install and launch Selenium Server for Mac, Linux and Windows. baryton-saxophone versions below 3.0.1 download binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/240
+
+affected:
+    - name: baryton-saxophone
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 1.517734 baryton-saxophone
+# 0.8536048 mac-windows
+# 0.7138936 windows-selenium-chromedriver
+# 0.7114476 selenium-server
+# 0.62674546 selenium-phantom-server
+# 0.62674546 selenium-server-standalone
+# 0.62674546 install-selenium-server
+# 0.62674546 grunt-selenium-server
+# 0.62674546 selenium-server-runner
+# 0.6048554 linux-remote-server
