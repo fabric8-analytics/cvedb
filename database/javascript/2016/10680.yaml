@@ -1,0 +1,27 @@
+---
+cve: 2016-10680
+title: CVE in adamvr-geoip-lite
+description: >
+    adamvr-geoip-lite is a light weight native JavaScript implementation of GeoIP API from MaxMind adamvr-geoip-lite downloads geoip resources over HTTP, which leaves it vulnerable to MITM attacks. This impacts the integrity and availability of this geoip data that may alter the decisions made by an application using this data.
+cvss_v2: 6.8
+references:
+    - https://nodesecurity.io/advisories/283
+
+affected:
+    - name: adamvr-geoip-lite
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 2.7380471 adamvr-geoip-lite
+# 1.448379 @userappstore/maxmind-geoip
+# 1.2457491 maxmind-geoip2
+# 1.2457491 @userappstore/dashboard-maxmind-geoip
+# 1.236137 geoip-lite
+# 1.0853662 geoip-lite-rm
+# 1.0853662 geoip-lite-ideame
+# 1.0853662 @ryancavanaugh/geoip-lite
+# 1.0853662 geoip-lite-country
+# 1.0853662 @basicer/geoip-lite
