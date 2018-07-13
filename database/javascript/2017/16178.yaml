@@ -1,0 +1,28 @@
+---
+cve: 2017-16178
+title: CVE in intsol-package
+description: >
+    intsol-package is a file server. intsol-package is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/intsol-package
+    - https://nodesecurity.io/advisories/461
+
+affected:
+    - name: intsol-package
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 10.320267 intsol-package
+# 0.7660605 package
+# 0.7660605 with-package
+# 0.7660605 is-package
+# 0.7660605 this-is-not-a-package
+# 0.7660605 Package
+# 0.55591017 package_package
+# 0.49249166 test-package-package
+# 0.4290732 @atomic-package/atomic-package
+# 0.40731147 package-preamble
