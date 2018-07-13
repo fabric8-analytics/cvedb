@@ -1,0 +1,27 @@
+---
+cve: 2016-10613
+title: CVE in bionode-sra
+description: >
+    bionode-sra is a Node.js wrapper for SRA Toolkit. bionode-sra downloads data resources over HTTP, which leaves it vulnerable to MITM attacks.
+cvss_v2: 4.3
+references:
+    - https://nodesecurity.io/advisories/211
+
+affected:
+    - name: bionode-sra
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 5.8144054 bionode-sra
+# 3.6777608 sra
+# 1.8576646 sra-dedupe
+# 1.8576646 sra-api
+# 1.8576646 nam-sra
+# 1.8576646 sra-polyglot
+# 1.6301525 sra-exlibris-request
+# 1.1751285 @0xproject/sra-report
+# 1.1751285 sra-stix2-validator
+# 0.9476165 sra-taxii2-server-model
