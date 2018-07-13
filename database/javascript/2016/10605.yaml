@@ -1,0 +1,27 @@
+---
+cve: 2016-10605
+title: CVE in dalekjs
+description: >
+    dalek-browser-ie is Internet Explorer bindings for DalekJS. dalek-browser-ie downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/209
+
+affected:
+    - name: dalekjs
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 6.937504 dalekjs
+# 3.4907835 dalekjs-canary
+# 3.4907835 generator-dalekjs
+# 3.4907835 dalekjs-early
+# 3.0599434 generator-dalekjs-canary
+# 1.9830108 internet-explorer-version
+# 1.7674232 dalekjs-canary-canary-canary-canary-canary
+# 1.4290258 @browser-logos/internet-explorer_6
+# 1.2777112 internet
+# 1.2777112 no-internet
