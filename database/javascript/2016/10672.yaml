@@ -1,0 +1,27 @@
+---
+cve: 2016-10672
+title: CVE in cloudpub-redis
+description: >
+    cloudpub-redis is a module for CloudPub: Redis Backend cloudpub-redis downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested resources with an attacker controlled copy if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/282
+
+affected:
+    - name: cloudpub-redis
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 5.356537 cloudpub-redis
+# 2.5443492 cloudpub
+# 1.3134806 configurable-http-proxy-redis-backend
+# 1.2892915 cloudpub-media
+# 1.0594548 wf-redis-backend
+# 0.97552717 pub2cloud
+# 0.9578059 http-mitm
+# 0.9578059 mitm-http
+# 0.91299474 node-workflow-redis-backend
+# 0.8642994 http-later-redis
