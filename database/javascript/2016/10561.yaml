@@ -1,0 +1,26 @@
+---
+cve: 2016-10561
+title: CVE in bitty
+description: >
+    Bitty is a development web server tool that functions similar to `python -m SimpleHTTPServer`. Version 0.2.10 has a directory traversal vulnerability that is exploitable via the URL path in GET requests.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/150
+
+affected:
+    - name: bitty
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 9.73574 bitty
+# 4.8905354 bitty-tracker
+# 4.284885 itty-bitty-torrent
+# 4.284885 itty-bitty-test
+# 4.284885 little-bitty-templater
+# 2.5382028 simplehttpserver
+# 1.2917672 simple-httpserver
+# 1.2917672 node-simplehttpserver
+# 1.2917672 simplehttpserver_unicorn
