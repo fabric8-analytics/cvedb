@@ -1,0 +1,27 @@
+---
+cve: 2016-10572
+title: CVE in mongodb-instance
+description: >
+    mongodb-instance before 0.0.3 installs mongodb locally. mongodb-instance downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/235
+
+affected:
+    - name: mongodb-instance
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 9.172727 mongodb-instance
+# 8.03297 mongodb-instance-model
+# 1.8116964 is-instance
+# 1.8116964 instance-of
+# 1.8116964 instance
+# 1.8116964 instance_of
+# 1.8116964 is-instance-of
+# 1.1259317 mongodb
+# 1.1259317 then-mongodb
+# 1.1259317 mongodb-then
