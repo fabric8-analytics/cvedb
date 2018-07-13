@@ -1,0 +1,27 @@
+---
+cve: 2016-10671
+title: CVE in mystem-wrapper
+description: >
+    mystem-wrapper is a Yandex mystem app wrapper module. mystem-wrapper downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested resources with an attacker controlled copy if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/280
+
+affected:
+    - name: mystem-wrapper
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 4.544982 mystem-wrapper
+# 1.9704067 yandex-translate-api-wrapper
+# 1.2382362 mystem
+# 1.1300099 yandex-translate
+# 1.1300099 yandex-disk
+# 1.1300099 passport-yandex
+# 1.1300099 yandex-recognizer
+# 1.1300099 yandex-speech
+# 1.1300099 yandex-speller
+# 1.1300099 yandex_translate
