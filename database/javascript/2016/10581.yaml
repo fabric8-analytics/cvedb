@@ -1,0 +1,27 @@
+---
+cve: 2016-10581
+title: CVE in steroids
+description: >
+    Steroids is PhoneGap on Steroids, providing native UI elements, multiple WebViews and enhancements for better developer productivity. steroids downloads zipped resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested tarball with an attacker controlled tarball if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/168
+
+affected:
+    - name: steroids
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 4.428325 steroids
+# 2.235875 finder-on-steroids
+# 2.235875 generator-steroids
+# 2.235875 readdir-on-steroids
+# 2.235875 rho-on-steroids
+# 2.235875 steroids-connect
+# 2.235875 steroids-simulators
+# 2.235875 steroids-data
+# 2.235875 emitter-on-steroids
+# 2.235875 knox-steroids
