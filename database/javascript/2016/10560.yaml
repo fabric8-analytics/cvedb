@@ -1,0 +1,27 @@
+---
+cve: 2016-10560
+title: CVE in galenframework-cli
+description: >
+    galenframework-cli is the node wrapper for the Galen Framework. galenframework-cli below 2.3.1 download binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/170
+
+affected:
+    - name: galenframework-cli
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 4.162205 galenframework-cli
+# 3.3747869 galen-cli
+# 3.1853228 galen
+# 1.614591 galen-jar
+# 1.614591 gulp-galen
+# 1.614591 grunt-galen
+# 1.614591 galen-node-project
+# 1.614591 galen-framework-handler
+# 1.614591 galen-download
+# 1.614591 galen-sword
