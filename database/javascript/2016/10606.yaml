@@ -1,0 +1,27 @@
+---
+cve: 2016-10606
+title: CVE in grunt-webdriver-qunit
+description: >
+    grunt-webdriver-qunit is a grunt plugin to run qunit with webdriver in grunt grunt-webdriver-qunit downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/207
+
+affected:
+    - name: grunt-webdriver-qunit
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 3.0075626 grunt-webdriver-qunit
+# 2.5833 grunt-webdriver-qunit-updated
+# 2.0731502 http-mitm
+# 2.0731502 mitm-http
+# 1.8187217 http-mitm-proxy
+# 1.8187217 http-proxy-mitm
+# 1.5642933 @ahfarmer/http-mitm-proxy
+# 1.5642933 http-mitm-proxy-brotli
+# 1.5392053 mitm
+# 1.0605447 grunt-webdriver
