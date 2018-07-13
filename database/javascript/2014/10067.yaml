@@ -1,0 +1,28 @@
+---
+cve: 2014-10067
+title: CVE in paypal-ipn
+description: >
+    paypal-ipn before 3.0.0 uses the `test_ipn` parameter (which is set by the PayPal IPN simulator) to determine if it should use the production PayPal site or the sandbox. With a bit of time, an attacker could craft a request using the simulator that would fool any application which does not explicitly check for test_ipn in production.
+cvss_v2: 4.3
+references:
+    - https://github.com/andzdroid/paypal-ipn/issues/11
+    - https://nodesecurity.io/advisories/26
+
+affected:
+    - name: paypal-ipn
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 13.142184 paypal-ipn
+# 9.866163 nodebb-plugin-paypal-ipn
+# 5.4678526 ipn
+# 3.2361746 paypal
+# 2.7529764 pp-ipn
+# 2.7529764 express-ipn
+# 1.6371377 paypal-adaptive
+# 1.6371377 paypal-express
+# 1.6371377 paypal-recurring
+# 1.6371377 environment-paypal
