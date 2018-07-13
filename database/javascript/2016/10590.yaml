@@ -1,0 +1,27 @@
+---
+cve: 2016-10590
+title: CVE in cue-sdk-node
+description: >
+    cue-sdk-node is a Corsair Cue SDK wrapper for node.js. cue-sdk-node downloads zipped resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested zip file with an attacker controlled zip file if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/190
+
+affected:
+    - name: cue-sdk-node
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 7.605957 cue-sdk-node
+# 6.524347 cue-sdk-node-2
+# 2.8564262 corsair-sdk
+# 2.7668314 cue
+# 2.7668314 cue-are
+# 1.4970986 cue-server-node
+# 1.4652114 corsair
+# 1.400758 cue-parser
+# 1.400758 cue-tips
+# 1.400758 react-cue
