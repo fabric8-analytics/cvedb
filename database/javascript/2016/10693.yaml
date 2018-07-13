@@ -1,0 +1,27 @@
+---
+cve: 2016-10693
+title: CVE in pm2-kafka
+description: >
+    pm2-kafka is a PM2 module that installs and runs a kafka server pm2-kafka downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested resources with an attacker controlled copy if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/299
+
+affected:
+    - name: pm2-kafka
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 5.4444604 pm2-kafka
+# 3.9071178 pm2
+# 3.9071178 is-pm2
+# 3.3531961 pm2-interface
+# 3.3531961 pm2-axon
+# 3.3531961 pm2-multimeter
+# 3.3531961 pm2-deploy
+# 3.3531961 pm2-logs
+# 3.3531961 pm2-panel
+# 3.3531961 pm2-monit
