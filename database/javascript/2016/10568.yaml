@@ -1,0 +1,27 @@
+---
+cve: 2016-10568
+title: CVE in geoip-lite-country
+description: >
+    geoip-lite-country is a stripped down version of geoip-lite, supporting only country lookup. geoip-lite-country before 1.1.4 downloads data resources over HTTP, which leaves it vulnerable to MITM attacks.
+cvss_v2: 6.8
+references:
+    - https://nodesecurity.io/advisories/183
+
+affected:
+    - name: geoip-lite-country
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 10.418979 geoip-lite-country
+# 8.936566 geoip-lite-country-only
+# 3.8462663 geoip-lite
+# 3.3707438 geoip-lite-rm
+# 3.3707438 geoip-lite-ideame
+# 3.3707438 adamvr-geoip-lite
+# 3.3707438 @ryancavanaugh/geoip-lite
+# 3.3707438 @basicer/geoip-lite
+# 3.3707438 thorin-geoip-lite
+# 3.3707438 @types/geoip-lite
