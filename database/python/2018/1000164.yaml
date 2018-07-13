@@ -13,26 +13,4 @@ references:
 affected:
     - name: gunicorn
       version:
-        - "!FIXME!"
-      fixedin:
-        - "!FIXME!"
-# Additional information:
-#  configurations:
-#    - cpe:/a:gunicorn:gunicorn:19.4.5
-#    - cpe:/o:debian:debian_linux:7.0
-#    - cpe:/o:debian:debian_linux:8.0
-#
-# All available versions:
-#versions
-#
-# Other possible package names:
-# 0.5267539 http-lazy-headers
-# 0.3848464 gunicorn
-# 0.24052368 http
-# 0.24052368 on-http
-# 0.23406135 cyclic-sequences
-# 0.23406135 django-sequences
-# 0.20821117 retrosheet-pitch-sequences
-# 0.20605314 check-gunicorn
-# 0.20605314 django-gunicorn
-# 0.20605314 fabric-gunicorn
+        - "==19.4.5"
