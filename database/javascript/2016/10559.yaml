@@ -1,0 +1,27 @@
+---
+cve: 2016-10559
+title: CVE in selenium-download
+description: >
+    selenium-download downloads the latest versions of the selenium standalone server and the chromedriver. selenium-download before 2.0.7 downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/164
+
+affected:
+    - name: selenium-download
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 9.335928 selenium-download
+# 1.5800803 selenium
+# 1.3253783 download
+# 0.81689554 selenium-webdriver
+# 0.81689554 selenium-standalone
+# 0.81689554 selenium-server
+# 0.81689554 selenium-launcher
+# 0.81689554 sv-selenium
+# 0.81689554 selenium-binaries
+# 0.81689554 selenium-assistant
