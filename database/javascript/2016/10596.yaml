@@ -1,0 +1,27 @@
+---
+cve: 2016-10596
+title: CVE in imageoptim
+description: >
+    imageoptim is a Node.js wrapper for some images compression algorithms. imageoptim downloads zipped resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested tarball with an attacker controlled tarball if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 6.8
+references:
+    - https://nodesecurity.io/advisories/194
+
+affected:
+    - name: imageoptim
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 5.7767725 imageoptim
+# 2.926336 grunt-imageoptim
+# 2.926336 imageoptim-cli
+# 2.926336 image-optim
+# 2.926336 pretty-imageoptim
+# 2.926336 imageoptim-api
+# 2.926336 gulp-imageoptim
+# 2.213727 gulp-imageoptim2
+# 0.924709 node
+# 0.924709 is-node
