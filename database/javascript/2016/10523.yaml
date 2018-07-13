@@ -1,0 +1,29 @@
+---
+cve: 2016-10523
+title: CVE in mqtt-packet
+description: >
+    MQTT before 3.4.6 and 4.0.x before 4.0.5 allows specifically crafted MQTT packets to crash the application, making a DoS attack feasible with very little bandwidth.
+cvss_v2: 5.0
+references:
+    - https://github.com/mcollina/mosca/issues/393
+    - https://github.com/mqttjs/mqtt-packet/pull/8
+    - https://nodesecurity.io/advisories/75
+
+affected:
+    - name: mqtt-packet
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 5.9249845 mqtt-packet
+# 5.9249845 mqtt_packet
+# 5.1897397 iopa-mqtt-packet
+# 5.1897397 mqtt-packet-for-milkcocoa
+# 2.796281 mqtt
+# 1.8945724 dos
+# 1.4196517 mqtt-connection
+# 1.4196517 mqtt-router
+# 1.4196517 mqtt-regex
+# 1.4196517 mqtt-serial
