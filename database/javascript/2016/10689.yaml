@@ -1,0 +1,27 @@
+---
+cve: 2016-10689
+title: CVE in windows-iedriver
+description: >
+    The windows-iedriver module downloads fixed version of iedriverserver.exe windows-iedriver downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested resources with an attacker controlled copy if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/293
+
+affected:
+    - name: windows-iedriver
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 2.8298972 windows-iedriver
+# 2.326629 http-mitm
+# 2.326629 mitm-http
+# 2.0410922 http-mitm-proxy
+# 2.0410922 http-proxy-mitm
+# 1.7555555 @ahfarmer/http-mitm-proxy
+# 1.7555555 http-mitm-proxy-brotli
+# 1.7274001 mitm
+# 0.88486797 unexpected-mitm
+# 0.88486797 mitm-algolia
