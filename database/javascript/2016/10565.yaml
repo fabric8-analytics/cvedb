@@ -1,0 +1,27 @@
+---
+cve: 2016-10565
+title: CVE in operadriver
+description: >
+    operadriver is a Opera Driver for Selenium. operadriver versions below 0.2.3 download binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 6.8
+references:
+    - https://nodesecurity.io/advisories/196
+
+affected:
+    - name: operadriver
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 2.2180457 operadriver
+# 1.5846728 @bowtie/selenium-driver
+# 1.5519212 is-opera
+# 1.5519212 opera
+# 1.3648461 selenium_driver_with_chrome_config
+# 1.0238837 selenium
+# 0.8265018 driver
+# 0.7989036 is-opera-mini
+# 0.7047764 karma-opera-launcher
+# 0.7047764 @browser-logos/opera
