@@ -1,0 +1,28 @@
+---
+cve: 2016-10533
+title: CVE in express-restify-mongoose
+description: >
+    express-restify-mongoose is a module to easily create a flexible REST interface for mongoose models. express-restify-mongoose 2.4.2 and earlier and 3.0.X through 3.0.1 allows a malicious user to send a request for `GET /User?distinct=password` and get all the passwords for all the users in the database, despite the field being set to private. This can be used for other private data if the malicious user knew what was set as private for specific routes.
+cvss_v2: 4.0
+references:
+    - https://github.com/florianholzapfel/express-restify-mongoose/issues/252
+    - https://nodesecurity.io/advisories/92
+
+affected:
+    - name: express-restify-mongoose
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 4.486422 express-restify-mongoose
+# 3.8518186 express-restify-mongoose-guard
+# 3.8518186 express-restify-mongoose-queryizer
+# 3.8518186 express-restify-mongoose-patch
+# 2.5826108 @peek4y/express-restify-mongoose
+# 2.0944314 express-restify-mt-mongoose
+# 1.8730038 restify-mongoose
+# 1.7667373 express-restify
+# 1.7303598 restify-microservice-mongoose-rest
+# 1.700148 express-mongoose-rest
