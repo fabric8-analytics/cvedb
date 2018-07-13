@@ -1,0 +1,27 @@
+---
+cve: 2016-10585
+title: CVE in libxl
+description: >
+    libxl provides Node bindings for the libxl library for reading and writing excel (XLS and XLSX) spreadsheets. libxl downloads zipped resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested zip file with an attacker controlled zip file if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/178
+
+affected:
+    - name: libxl
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 2.283497 libxl
+# 1.7880667 node-xls
+# 1.5079914 xls
+# 1.3374505 node-xlsx
+# 1.3374505 xlsx-node
+# 1.1765302 node-simple-xlsx
+# 1.1765302 @aftership/node-xlsx
+# 1.1765302 node-xlsx-simoneb
+# 1.1765302 node-xlsx-with-formatting
+# 1.1765302 node-xlsx-style
