@@ -1,0 +1,27 @@
+---
+cve: 2016-10579
+title: CVE in chromedriver
+description: >
+    Chromedriver is an NPM wrapper for selenium ChromeDriver. Chromedriver before 2.26.1 downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 6.8
+references:
+    - https://nodesecurity.io/advisories/160
+
+affected:
+    - name: chromedriver
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 9.797279 chromedriver
+# 8.393279 npm-chromedriver
+# 4.928532 macaca-chromedriver
+# 4.928532 electron-chromedriver
+# 4.928532 appium-chromedriver
+# 4.928532 chromedriver-manager
+# 4.928532 chromedriver-runner
+# 4.928532 selenium-chromedriver
+# 4.928532 chromedriver-device
+# 4.928532 cucumberjs-chromedriver
