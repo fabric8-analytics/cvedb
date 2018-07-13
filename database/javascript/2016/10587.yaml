@@ -1,0 +1,27 @@
+---
+cve: 2016-10587
+title: CVE in wasdk
+description: >
+    wasdk is a toolkit for creating WebAssembly modules. wasdk downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/179
+
+affected:
+    - name: wasdk
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 4.762421 wasdk
+# 4.0883756 webassembly
+# 2.409732 wasdk-idl
+# 2.409732 wasdk-utils
+# 2.0727093 web-assembly
+# 2.0727093 webassembly-interpreter
+# 2.0727093 webassembly-opcodes
+# 2.0727093 @hyperdrives/webassembly.org
+# 1.8207512 @record/web-assembly
+# 1.8207512 rollup-plugin-webassembly
