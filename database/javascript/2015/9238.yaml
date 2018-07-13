@@ -1,0 +1,28 @@
+---
+cve: 2015-9238
+title: CVE in secure-compare
+description: >
+    secure-compare 3.0.0 and below do not actually compare two strings properly. compare was actually comparing the first argument with itself, meaning the check passed for any two strings of the same length.
+cvss_v2: 5.0
+references:
+    - https://github.com/vdemedes/secure-compare/pull/1
+    - https://nodesecurity.io/advisories/50
+
+affected:
+    - name: secure-compare
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 9.396537 secure-compare
+# 1.5542668 secure
+# 1.5542668 is-secure
+# 1.4131252 compare
+# 0.80381465 secure-random
+# 0.80381465 secure-peer
+# 0.80381465 secure-keys
+# 0.80381465 secure-rnd
+# 0.80381465 secure-scuttlebutt
+# 0.80381465 couchdb-secure
