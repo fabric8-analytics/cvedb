@@ -1,0 +1,27 @@
+---
+cve: 2016-10583
+title: CVE in closure-util
+description: >
+    closure-utils is Utilities for Closure Library based projects. closure-utils downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/165
+
+affected:
+    - name: closure-util
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 4.3548465 closure-util
+# 3.8159845 win-closure-util
+# 3.8159845 @camptocamp/closure-util
+# 2.8241782 closure-library
+# 2.7352338 grunt-closure-utilities
+# 2.5814404 closure
+# 2.4766495 google-closure-library
+# 2.4766495 obvious-closure-library
+# 2.4766495 closure-library-phantomjs
+# 2.4766495 unreal-closure-library
