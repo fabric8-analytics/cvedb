@@ -1,0 +1,27 @@
+---
+cve: 2016-10588
+title: CVE in nw
+description: >
+    nw is an installer for nw.js. nw downloads zipped resources over HTTP, It may be possible to cause remote code execution (RCE) by swapping out the requested zip file with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/166
+
+affected:
+    - name: nw
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 9.463251 nw
+# 4.784461 nw-builder
+# 4.784461 nw-gyp
+# 4.784461 nw-dev
+# 4.784461 nw-shot
+# 4.784461 nw-versions
+# 4.784461 nw.utils
+# 4.784461 install-nw
+# 4.784461 vinyl-nw
+# 4.784461 steal-nw
