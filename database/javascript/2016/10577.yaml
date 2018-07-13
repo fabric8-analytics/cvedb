@@ -1,0 +1,28 @@
+---
+cve: 2016-10577
+title: CVE in ibm_db
+description: >
+    ibm_db is an asynchronous/synchronous interface for node.js to IBM DB2 and IBM Informix. ibm_db before 1.0.2 downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 6.8
+references:
+    - https://github.com/ibmdb/node-ibm_db/commit/d7e2d4b4cbeb6f067df8bba7d0b2ac5d40fcfc19#diff-315091eb1586966006e05ebc21cd2a94
+    - https://nodesecurity.io/advisories/163
+
+affected:
+    - name: ibm_db
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 6.0756955 ibm_db2
+# 4.67958 ibm_db
+# 4.0984564 dox_ibm_db
+# 4.0984564 @types/ibm_db
+# 3.61117 db2
+# 3.0996592 db2-wrapper
+# 3.0996592 sails-db2
+# 3.0996592 connect-db2
+# 2.588148 loopback-connector-db2
+# 2.076637 node-red-contrib-db2-for-i
