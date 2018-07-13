@@ -1,0 +1,27 @@
+---
+cve: 2016-10576
+title: CVE in fuseki
+description: >
+    Fuseki server wrapper and management API in fuseki before 1.0.1 downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested resources with an attacker controlled copy if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/278
+
+affected:
+    - name: fuseki
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 6.376231 fuseki
+# 1.3955673 http-mitm
+# 1.3955673 mitm-http
+# 1.2263485 http-mitm-proxy
+# 1.2263485 http-proxy-mitm
+# 1.0571296 @ahfarmer/http-mitm-proxy
+# 1.0571296 http-mitm-proxy-brotli
+# 1.0404437 mitm
+# 0.6504462 api-http
+# 0.6504462 http-api
