@@ -1,0 +1,27 @@
+---
+cve: 2016-10571
+title: CVE in bkjs-wand
+description: >
+    bkjs-wand is imagemagick wand support for node.js and backendjs bkjs-wand versions lower than 0.3.2 download binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/220
+
+affected:
+    - name: bkjs-wand
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 3.2742367 bkjs-wand
+# 2.1350698 http-mitm
+# 2.1350698 mitm-http
+# 1.8730422 http-mitm-proxy
+# 1.8730422 http-proxy-mitm
+# 1.6110147 @ahfarmer/http-mitm-proxy
+# 1.6110147 http-mitm-proxy-brotli
+# 1.5851773 mitm
+# 0.81201375 unexpected-mitm
+# 0.81201375 mitm-algolia
