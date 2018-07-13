@@ -1,0 +1,27 @@
+---
+cve: 2016-10670
+title: CVE in selenium-jar
+description: >
+    windows-seleniumjar-mirror downloads the Selenium Jar file windows-seleniumjar-mirror downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested resources with an attacker controlled copy if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/281
+
+affected:
+    - name: selenium-jar
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 2.2152889 selenium-jar
+# 1.8728353 windows-seleniumjar-mirror
+# 1.1201985 selenium-standalone-jar
+# 1.0327783 http-mitm
+# 1.0327783 mitm-http
+# 0.9645911 selenium-server-standalone-jar
+# 0.90754926 http-mitm-proxy
+# 0.90754926 http-proxy-mitm
+# 0.78232014 @ahfarmer/http-mitm-proxy
+# 0.78232014 http-mitm-proxy-brotli
