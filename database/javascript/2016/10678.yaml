@@ -1,0 +1,27 @@
+---
+cve: 2016-10678
+title: CVE in serc.js
+description: >
+    serc.js is a Selenium RC process wrapper serc.js downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested resources with an attacker controlled copy if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/277
+
+affected:
+    - name: serc.js
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 1.5384064 serc.js
+# 1.2474806 http-mitm
+# 1.2474806 mitm-http
+# 1.096218 http-mitm-proxy
+# 1.096218 http-proxy-mitm
+# 0.9449552 @ahfarmer/http-mitm-proxy
+# 0.9449552 http-mitm-proxy-brotli
+# 0.9300399 mitm
+# 0.7317011 selenium-js
+# 0.6747254 selenium
