@@ -1,0 +1,27 @@
+---
+cve: 2016-10557
+title: CVE in appium-chromedriver
+description: >
+    appium-chromedriver is a Node.js wrapper around Chromedriver. Versions below 2.9.4 download binary resources over HTTP, which leaves the module vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 6.8
+references:
+    - https://nodesecurity.io/advisories/162
+
+affected:
+    - name: appium-chromedriver
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 7.5437813 appium-chromedriver
+# 4.663555 chromedriver
+# 3.4915197 node-chrome-driver
+# 2.3530557 macaca-chromedriver
+# 2.3530557 electron-chromedriver
+# 2.3530557 chromedriver-manager
+# 2.3530557 chromedriver-runner
+# 2.3530557 selenium-chromedriver
+# 2.3530557 chromedriver-device
+# 2.3530557 cucumberjs-chromedriver
