@@ -1,0 +1,27 @@
+---
+cve: 2016-10621
+title: CVE in fibjs
+description: >
+    fibjs is a runtime for javascript applictions built on google v8 JS. fibjs downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/217
+
+affected:
+    - name: fibjs
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 5.1200566 fibjs
+# 3.1995044 @fibjs/link-fibjs
+# 2.6015084 fibjs-fibx
+# 2.6015084 @fibjs/demo
+# 2.6015084 @fibjs/pool
+# 2.6015084 @fibjs/statuses
+# 2.6015084 @fibjs/delegates
+# 2.6015084 @fibjs/testpublish
+# 2.6015084 @fibjs/negotiator
+# 2.6015084 fibjs-polyfill
