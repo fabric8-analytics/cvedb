@@ -1,0 +1,27 @@
+---
+cve: 2016-10541
+title: CVE in shell-quote
+description: >
+    The npm module "shell-quote" 1.6.0 and earlier cannot correctly escape ">" and "<" operator used for redirection in shell. Applications that depend on shell-quote may also be vulnerable. A malicious user could perform code injection.
+cvss_v2: 7.5
+references:
+    - https://nodesecurity.io/advisories/117
+
+affected:
+    - name: shell-quote
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 9.227206 shell-quote
+# 8.080599 shell-quote-word
+# 8.080599 @cronvel/shell-quote
+# 8.080599 @types/shell-quote
+# 1.8874636 quote
+# 1.3478068 shell
+# 1.3478068 in.shell
+# 0.9709055 regexp-quote
+# 0.9709055 quote-stream
+# 0.9709055 brobbot-quote
