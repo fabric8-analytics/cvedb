@@ -1,0 +1,27 @@
+---
+cve: 2016-10667
+title: CVE in selenium-portal
+description: >
+    selenium-portal is a Selenium Testing Framework selenium-portal downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested resources with an attacker controlled copy if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/260
+
+affected:
+    - name: selenium-portal
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 3.4220226 selenium-portal
+# 1.7936648 selenium
+# 1.6341363 gestionecdpd-selenium-web-testing
+# 1.2881988 http-mitm
+# 1.2881988 mitm-http
+# 1.1319989 http-mitm-proxy
+# 1.1319989 http-proxy-mitm
+# 0.9757988 @ahfarmer/http-mitm-proxy
+# 0.9757988 http-mitm-proxy-brotli
+# 0.9603966 mitm
