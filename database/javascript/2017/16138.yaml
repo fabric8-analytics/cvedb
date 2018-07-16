@@ -11,18 +11,6 @@ references:
 affected:
     - name: mime
       version:
-        - "<unable-to-determine>"
-
-
-# Additional information:
-# Package name candidates:
-# 9.677185 mime
-# 9.677185 is-mime
-# 9.677185 mime-of
-# 4.89026 mime-types
-# 4.89026 mime-db
-# 4.89026 simple-mime
-# 4.89026 mime-magic
-# 4.89026 node-mime
-# 4.89026 mime-headers
-# 4.89026 mime-match
+        - "<1.4.1"
+        - ">2.0.0"
+        - "<2.0.3"
