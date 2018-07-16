@@ -11,9 +11,4 @@ references:
 affected:
     - name: serverzyy
       version:
-        - "<unable-to-determine>"
-
-
-# Additional information:
-# Package name candidates:
-# 13.796832 serverzyy
+        - ">=0"
