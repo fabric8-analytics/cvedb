@@ -11,11 +11,4 @@ references:
 affected:
     - name: commentapp.stetsonwood
       version:
-        - "<unable-to-determine>"
-
-
-# Additional information:
-# Package name candidates:
-# 11.752275 commentapp.stetsonwood
-# 1.2556291 weatherapp.stetsonwood
-# 1.2556291 expresslab.stetsonwood
+        - ">=0"
