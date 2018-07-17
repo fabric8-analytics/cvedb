@@ -1,0 +1,28 @@
+---
+cve: 2018-1259
+title: CVE in org.springframework.data:spring-data-commons
+description: >
+    Spring Data Commons, versions 1.13 prior to 1.13.12 and 2.0 prior to 2.0.7, used in combination with XMLBeam 1.4.14 or earlier versions, contains a property binder vulnerability caused by improper restriction of XML external entity references as underlying library XMLBeam does not restrict external reference expansion. An unauthenticated remote malicious user can supply specially crafted request parameters against Spring Data's projection-based request payload binding to access arbitrary files on the system.
+cvss_v2: 5.0
+references:
+    - https://access.redhat.com/errata/RHSA-2018:1809
+    - https://pivotal.io/security/cve-2018-1259
+
+affected:
+    - groupId: org.springframework.data
+      artifactId: spring-data-commons
+      version: <unable-to-determine>
+
+
+# Additional information:
+# Package name candidates:
+# 3.0381205 org.springframework.data:spring-data-commons
+# 2.6162312 org.springframework.data:spring-data-commons-core
+# 2.3522377 org.beamfoundry.bundles.spring-data:org.beamfoundry.bundles.spring-data-commons
+# 1.9427477 org.springframework.data:spring-data-rest-core
+# 1.9427477 org.springframework.data:spring-data-rest-webmvc
+# 1.9427477 org.springframework.data:spring-data-rest-repository
+# 1.6331058 org.springframework.data:spring-data-rest-hal-browser
+# 1.2129076 org.springframework.data:spring-data-cassandra
+# 1.2129076 org.springframework.data:spring-data-couchbase
+# 1.2129076 org.springframework.data:spring-data-elasticsearch
