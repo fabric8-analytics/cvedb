@@ -1,0 +1,30 @@
+---
+cve: 2011-4356
+title: CVE in celery
+description: >
+    Celery 2.1 and 2.2 before 2.2.8, 2.3 before 2.3.4, and 2.4 before 2.4.4 changes the effective id but not the real id during processing of the --uid and --gid arguments to celerybeat, celeryd_detach, celeryd-multi, and celeryev, which allows local users to gain privileges via vectors involving crafted code that is executed by the worker process.
+cvss_v2: 6.9
+references:
+    - http://secunia.com/advisories/46973
+    - http://www.securityfocus.com/bid/50825
+    - https://github.com/ask/celery/blob/master/docs/sec/CELERYSA-0001.txt
+    - https://github.com/ask/celery/pull/544
+
+affected:
+    - name: celery
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 11.154747 celery
+# 5.622197 alauda-celery
+# 5.622197 autonomie-celery
+# 5.622197 bundle-celery
+# 5.622197 celery-aide
+# 5.622197 celery-api
+# 5.622197 celery-batches
+# 5.622197 celery-beatx
+# 5.622197 celery-bundle
+# 5.622197 celery-bungiesearch
