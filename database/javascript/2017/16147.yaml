@@ -11,18 +11,4 @@ references:
 affected:
     - name: shit-server
       version:
-        - "<unable-to-determine>"
-
-
-# Additional information:
-# Package name candidates:
-# 9.389101 shit-server
-# 2.284695 is-shit
-# 1.1690499 math_shit
-# 1.1690499 oh-shit
-# 1.1690499 shit-storm
-# 1.1690499 fill-the-shit
-# 1.1690499 shit-and-sticks
-# 1.1690499 node-shit
-# 1.1690499 get-shit
-# 1.1690499 emoji-shit
+        - ">=0"
