@@ -1,0 +1,27 @@
+---
+cve: 2016-1000001
+title: CVE in flask-oidc
+description: >
+    flask-oidc version 0.1.2 and earlier is vulnerable to an open redirect
+cvss_v2: 5.8
+references:
+    - https://github.com/puiterwijk/flask-oidc/blob/master/flask_oidc/__init__.py#L293
+
+affected:
+    - name: flask-oidc
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 8.351362 flask-oidc
+# 1.9792161 oidc
+# 1.0196509 django-oidc
+# 1.0196509 fab-oidc
+# 1.0196509 oidc-register
+# 1.0196509 trac-oidc
+# 0.8997053 autonomie-oidc-provider
+# 0.8997053 django-auth-oidc
+# 0.8997053 django-oidc-auth
+# 0.8997053 django-oidc-client
