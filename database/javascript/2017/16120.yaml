@@ -11,7 +11,7 @@ references:
 affected:
     - name: liyujing
       version:
-        - "<unable-to-determine>"
+        - ">=1.0.0"
 
 
 # Additional information:
