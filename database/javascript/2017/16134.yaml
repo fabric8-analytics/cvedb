@@ -11,7 +11,7 @@ references:
 affected:
     - name: http_static_simple
       version:
-        - "<unable-to-determine>"
+        - ">0"
 
 
 # Additional information:
