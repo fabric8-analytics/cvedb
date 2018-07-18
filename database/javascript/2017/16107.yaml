@@ -11,8 +11,10 @@ references:
 affected:
     - name: pooledwebsocket
       version:
-        - "<unable-to-determine>"
-
+        - ">=0.0.1"
+        - "<=0.0.18"
+    - fixedin:
+        - ">=0.0.19"
 
 # Additional information:
 # Package name candidates:
