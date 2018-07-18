@@ -12,7 +12,10 @@ references:
 affected:
     - name: django
       version:
-        - "<unable-to-determine>"
+        - "==1.11.8"
+        - "==1.11.9"
+        - ">=2.0.0"
+        - "<2.0.2
 
 
 # Additional information:
