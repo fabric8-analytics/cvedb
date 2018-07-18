@@ -11,8 +11,8 @@ references:
 affected:
     - name: utahcityfinder
       version:
-        - "<unable-to-determine>"
-
+        - ">0.0"
+        - "<0.0.1"
 
 # Additional information:
 # Package name candidates:
