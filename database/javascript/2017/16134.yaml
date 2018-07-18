@@ -12,6 +12,7 @@ affected:
     - name: http_static_simple
       version:
         - ">0"
+        - "<=0.1.1"
 
 
 # Additional information:
