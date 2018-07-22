@@ -11,4 +11,4 @@ references:
 affected:
     - name: mockserve
       version:
-        - ">=0"
+        - "<=2.0.6"
