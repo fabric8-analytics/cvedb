@@ -11,18 +11,4 @@ references:
 affected:
     - name: unicorn-list
       version:
-        - "<unable-to-determine>"
-
-
-# Additional information:
-# Package name candidates:
-# 9.395338 unicorn-list
-# 2.045636 unicorn
-# 1.0495026 format-unicorn
-# 1.0495026 tianma-unicorn
-# 1.0495026 express-unicorn
-# 1.0495026 purple-unicorn
-# 1.0495026 grunt-unicorn
-# 1.0495026 unicorn-ui
-# 1.0495026 generator-unicorn
-# 1.0495026 homebridge-unicorn
+        - "<=1.0.4"
