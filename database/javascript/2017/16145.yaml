@@ -11,4 +11,4 @@ references:
 affected:
     - name: sspa
       version:
-        - ">=0"
+        - "==0.1.0"
