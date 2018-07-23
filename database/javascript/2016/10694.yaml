@@ -10,7 +10,7 @@ references:
 affected:
     - name: alto-saxophone
       version:
-        - "<unable-to-determine>"
+        - "<2.25.1"
 
 
 # Additional information:
