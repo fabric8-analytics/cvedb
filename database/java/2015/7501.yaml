@@ -1,0 +1,51 @@
+---
+cve: 2015-7501
+title: CVE in com.redhat.lightblue.applications:lightblue-applications-data-mgmt-saml-auth
+description: >
+    Red Hat JBoss A-MQ 6.x; BPM Suite (BPMS) 6.x; BRMS 6.x and 5.x; Data Grid (JDG) 6.x; Data Virtualization (JDV) 6.x and 5.x; Enterprise Application Platform 6.x, 5.x, and 4.3.x; Fuse 6.x; Fuse Service Works (FSW) 6.x; Operations Network (JBoss ON) 3.x; Portal 6.x; SOA Platform (SOA-P) 5.x; Web Server (JWS) 3.x; Red Hat OpenShift/xPAAS 3.x; and Red Hat Subscription Asset Manager 1.3 allow remote attackers to execute arbitrary commands via a crafted serialized Java object, related to the Apache Commons Collections (ACC) library.
+cvss_v2: 10.0
+references:
+    - http://rhn.redhat.com/errata/RHSA-2015-2500.html
+    - http://rhn.redhat.com/errata/RHSA-2015-2501.html
+    - http://rhn.redhat.com/errata/RHSA-2015-2502.html
+    - http://rhn.redhat.com/errata/RHSA-2015-2514.html
+    - http://rhn.redhat.com/errata/RHSA-2015-2516.html
+    - http://rhn.redhat.com/errata/RHSA-2015-2517.html
+    - http://rhn.redhat.com/errata/RHSA-2015-2521.html
+    - http://rhn.redhat.com/errata/RHSA-2015-2522.html
+    - http://rhn.redhat.com/errata/RHSA-2015-2524.html
+    - http://rhn.redhat.com/errata/RHSA-2015-2670.html
+    - http://rhn.redhat.com/errata/RHSA-2015-2671.html
+    - http://rhn.redhat.com/errata/RHSA-2016-0040.html
+    - http://rhn.redhat.com/errata/RHSA-2016-1773.html
+    - http://www.oracle.com/technetwork/security-advisory/cpuapr2018-3678067.html
+    - http://www.oracle.com/technetwork/security-advisory/cpujan2018-3236628.html
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2018-4258247.html
+    - http://www.securityfocus.com/bid/78215
+    - http://www.securitytracker.com/id/1034097
+    - http://www.securitytracker.com/id/1037052
+    - http://www.securitytracker.com/id/1037053
+    - http://www.securitytracker.com/id/1037640
+    - https://access.redhat.com/security/vulnerabilities/2059393
+    - https://access.redhat.com/solutions/2045023
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1279330
+    - https://rhn.redhat.com/errata/RHSA-2015-2536.html
+
+affected:
+    - groupId: com.redhat.lightblue.applications
+      artifactId: lightblue-applications-data-mgmt-saml-auth
+      version: <unable-to-determine>
+
+
+# Additional information:
+# Package name candidates:
+# 1.1942918 com.redhat.darcy:darcy-web
+# 1.0466905 com.redhat.lightblue.applications:lightblue-applications-data-mgmt-saml-auth
+# 1.0416532 com.redhat.lightblue.generator:lightblue-java-generator-api
+# 1.0416532 com.redhat.lightblue.generator:lightblue-java-generator-bin
+# 1.0416532 com.redhat.lightblue.generator:lightblue-java-generator-lib
+# 0.25049525 jboss:jboss
+# 0.24882618 org.eclipse.jst.server.generic:jboss
+# 0.246313 org.jboss.as:jboss-as-network
+# 0.23438756 org.jboss.as:jboss-as-server-manager
+# 0.23213683 org.jboss.jbossas:jboss-server-manager
