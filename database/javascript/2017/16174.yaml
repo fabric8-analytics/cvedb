@@ -11,7 +11,7 @@ references:
 affected:
     - name: whispercast
       version:
-        - "<unable-to-determine>"
+        - "==0.1.0"
 
 
 # Additional information:
