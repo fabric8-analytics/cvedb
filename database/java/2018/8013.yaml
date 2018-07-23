@@ -1,0 +1,34 @@
+---
+cve: 2018-8013
+title: CVE in batik:batik-rasterizer
+description: >
+    In Apache Batik 1.x before 1.10, when deserializing subclass of `AbstractDocument`, the class takes a string from the inputStream as the class name which then use it to call the no-arg constructor of the class. Fix was to check the class type before calling newInstance in deserialization.
+cvss_v2: 7.5
+references:
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2018-4258247.html
+    - http://www.securityfocus.com/bid/104252
+    - http://www.securitytracker.com/id/1040995
+    - https://lists.debian.org/debian-lts-announce/2018/05/msg00016.html
+    - https://mail-archives.apache.org/mod_mbox/xmlgraphics-batik-dev/201805.mbox/%3c000701d3f28f$d01860a0$704921e0$@gmail.com%3e
+    - https://usn.ubuntu.com/3661-1/
+    - https://www.debian.org/security/2018/dsa-4215
+    - https://xmlgraphics.apache.org/security.html
+
+affected:
+    - groupId: batik
+      artifactId: batik-rasterizer
+      version: <unable-to-determine>
+
+
+# Additional information:
+# Package name candidates:
+# 2.8101416 batik:batik
+# 2.2428048 fr.avianey.apache-xmlgraphics:batik
+# 1.7637696 batik:batik-bridge
+# 1.7637696 batik:batik-css
+# 1.7637696 batik:batik-dom
+# 1.7637696 batik:batik-ext
+# 1.7637696 batik:batik-extension
+# 1.7637696 batik:batik-gvt
+# 1.7637696 batik:batik-parser
+# 1.7637696 batik:batik-rasterizer
