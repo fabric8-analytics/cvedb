@@ -10,7 +10,7 @@ references:
 affected:
     - name: xtalk
       version:
-        - "<unable-to-determine>"
+        - " >=0.0.2"
 
 
 # Additional information:
