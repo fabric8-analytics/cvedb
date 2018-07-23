@@ -5,13 +5,46 @@ description: >
     In Apache Log4j 2.x before 2.8.2, when using the TCP socket server or UDP socket server to receive serialized log events from another application, a specially crafted binary payload can be sent that, when deserialized, can execute arbitrary code.
 cvss_v2: 7.5
 references:
+    - http://www.oracle.com/technetwork/security-advisory/cpuapr2018-3678067.html
+    - http://www.oracle.com/technetwork/security-advisory/cpujan2018-3236628.html
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2018-4258247.html
+    - http://www.securityfocus.com/bid/97702
+    - http://www.securitytracker.com/id/1040200
+    - https://access.redhat.com/errata/RHSA-2017:1417
+    - https://access.redhat.com/errata/RHSA-2017:1801
+    - https://access.redhat.com/errata/RHSA-2017:1802
+    - https://access.redhat.com/errata/RHSA-2017:2423
+    - https://access.redhat.com/errata/RHSA-2017:2633
+    - https://access.redhat.com/errata/RHSA-2017:2635
+    - https://access.redhat.com/errata/RHSA-2017:2636
+    - https://access.redhat.com/errata/RHSA-2017:2637
+    - https://access.redhat.com/errata/RHSA-2017:2638
+    - https://access.redhat.com/errata/RHSA-2017:2808
+    - https://access.redhat.com/errata/RHSA-2017:2809
+    - https://access.redhat.com/errata/RHSA-2017:2810
+    - https://access.redhat.com/errata/RHSA-2017:2811
+    - https://access.redhat.com/errata/RHSA-2017:2888
+    - https://access.redhat.com/errata/RHSA-2017:2889
+    - https://access.redhat.com/errata/RHSA-2017:3244
+    - https://access.redhat.com/errata/RHSA-2017:3399
+    - https://access.redhat.com/errata/RHSA-2017:3400
     - https://issues.apache.org/jira/browse/LOG4J2-1863
-    - https://nvd.nist.gov/vuln/detail/CVE-2017-5645
-    - https://git-wip-us.apache.org/repos/asf?p=logging-log4j2.git;h=5dcc192
+
 affected:
     - groupId: org.apache.logging.log4j
-      artifactId: log4j-core
-      version:
-        - "<=2.8.1"
-      fixedin:
-        - ">=2.8.2"
+      artifactId: log4j-api
+      version: <unable-to-determine>
+
+
+# Additional information:
+# Package name candidates:
+# 3.4361563 org.apache.logging.log4j:log4j-api
+# 3.4361563 org.apache.logging.log4j:log4j-appserver
+# 3.4361563 org.apache.logging.log4j:log4j-cassandra
+# 3.4361563 org.apache.logging.log4j:log4j-core
+# 3.4361563 org.apache.logging.log4j:log4j-couchdb
+# 3.4361563 org.apache.logging.log4j:log4j-iostreams
+# 3.4361563 org.apache.logging.log4j:log4j-jcl
+# 3.4361563 org.apache.logging.log4j:log4j-jul
+# 3.4361563 org.apache.logging.log4j:log4j-liquibase
+# 3.4361563 org.apache.logging.log4j:log4j-mongodb
