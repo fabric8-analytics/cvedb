@@ -1,0 +1,32 @@
+---
+cve: 2017-15707
+title: CVE in org.apache.struts:struts2-json-plugin
+description: >
+    In Apache Struts 2.5 to 2.5.14, the REST Plugin is using an outdated JSON-lib library which is vulnerable and allow perform a DoS attack using malicious request with specially crafted JSON payload.
+cvss_v2: 5.0
+references:
+    - http://www.oracle.com/technetwork/security-advisory/cpuapr2018-3678067.html
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2018-4258247.html
+    - http://www.securityfocus.com/bid/102021
+    - http://www.securitytracker.com/id/1039946
+    - https://cwiki.apache.org/confluence/display/WW/S2-054
+    - https://security.netapp.com/advisory/ntap-20171214-0001/
+
+affected:
+    - groupId: org.apache.struts
+      artifactId: struts2-json-plugin
+      version: <unable-to-determine>
+
+
+# Additional information:
+# Package name candidates:
+# 1.7286056 net.sf.json-lib:json-lib
+# 1.5345721 net.sf.json-lib:json-lib-ext-spring
+# 1.5031633 org.apache.struts:struts2-json-plugin
+# 1.3603743 es.cenobit.struts2.json:struts2-json-plugin
+# 1.2776347 org.apache.struts:struts2-rest-plugin
+# 1.0933306 struts:struts
+# 1.026712 org.apache.struts:struts2-rest-showcase
+# 1.0118827 org.apache.struts:struts2-struts1-plugin
+# 0.9718865 org.apache.struts:struts2-cdi-plugin
+# 0.9718865 org.apache.struts:struts2-convention-plugin
