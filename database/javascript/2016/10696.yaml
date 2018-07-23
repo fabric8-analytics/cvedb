@@ -1,0 +1,27 @@
+---
+cve: 2016-10696
+title: CVE in windows-latestchromedriver
+description: >
+    windows-latestchromedriver downloads the latest version of chromedriver.exe. windows-latestchromedriver downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested resources with an attacker controlled copy if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/295
+
+affected:
+    - name: windows-latestchromedriver
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 10.419882 windows-latestchromedriver
+# 0.8911944 windows.foundation
+# 0.8911944 is-windows
+# 0.8911944 windows
+# 0.46964523 windows.storage
+# 0.46964523 node-windows
+# 0.46964523 check-if-windows
+# 0.46964523 windows.networking
+# 0.46964523 windows-cpu
+# 0.46964523 windows.media
