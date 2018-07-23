@@ -1,0 +1,60 @@
+---
+cve: 2015-5346
+title: CVE in org.apache.tomcat:tomcat-api
+description: >
+    Session fixation vulnerability in Apache Tomcat 7.x before 7.0.66, 8.x before 8.0.30, and 9.x before 9.0.0.M2, when different session settings are used for deployments of multiple versions of the same web application, might allow remote attackers to hijack web sessions by leveraging use of a requestedSessionSSL field for an unintended request, related to CoyoteAdapter.java and Request.java.
+cvss_v2: 6.8
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2016-03/msg00047.html
+    - http://lists.opensuse.org/opensuse-security-announce/2016-03/msg00069.html
+    - http://lists.opensuse.org/opensuse-security-announce/2016-03/msg00085.html
+    - http://packetstormsecurity.com/files/135890/Apache-Tomcat-Session-Fixation.html
+    - http://rhn.redhat.com/errata/RHSA-2016-1089.html
+    - http://rhn.redhat.com/errata/RHSA-2016-2046.html
+    - http://rhn.redhat.com/errata/RHSA-2016-2807.html
+    - http://rhn.redhat.com/errata/RHSA-2016-2808.html
+    - http://seclists.org/bugtraq/2016/Feb/143
+    - http://svn.apache.org/viewvc?view=revision&revision=1713184
+    - http://svn.apache.org/viewvc?view=revision&revision=1713185
+    - http://svn.apache.org/viewvc?view=revision&revision=1713187
+    - http://svn.apache.org/viewvc?view=revision&revision=1723414
+    - http://svn.apache.org/viewvc?view=revision&revision=1723506
+    - http://tomcat.apache.org/security-7.html
+    - http://tomcat.apache.org/security-8.html
+    - http://tomcat.apache.org/security-9.html
+    - http://www.debian.org/security/2016/dsa-3530
+    - http://www.debian.org/security/2016/dsa-3552
+    - http://www.debian.org/security/2016/dsa-3609
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2018-4258247.html
+    - http://www.oracle.com/technetwork/topics/security/bulletinjan2016-2867206.html
+    - http://www.oracle.com/technetwork/topics/security/linuxbulletinoct2016-3090545.html
+    - http://www.securityfocus.com/bid/83323
+    - http://www.securitytracker.com/id/1035069
+    - http://www.ubuntu.com/usn/USN-3024-1
+    - https://access.redhat.com/errata/RHSA-2016:1087
+    - https://access.redhat.com/errata/RHSA-2016:1088
+    - https://bto.bluecoat.com/security-advisory/sa118
+    - https://bz.apache.org/bugzilla/show_bug.cgi?id=58809
+    - https://h20566.www2.hpe.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c05150442
+    - https://h20566.www2.hpe.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c05158626
+    - https://security.gentoo.org/glsa/201705-09
+    - https://security.netapp.com/advisory/ntap-20180531-0001/
+
+affected:
+    - groupId: org.apache.tomcat
+      artifactId: tomcat-api
+      version: <unable-to-determine>
+
+
+# Additional information:
+# Package name candidates:
+# 0.69121766 tomcat:tomcat
+# 0.638026 org.apache.tomcat:tomcat-api
+# 0.638026 org.apache.tomcat:tomcat-catalina
+# 0.638026 org.apache.tomcat:tomcat-coyote
+# 0.638026 org.apache.tomcat:tomcat-dbcp
+# 0.638026 org.apache.tomcat:tomcat-jasper
+# 0.638026 org.apache.tomcat:tomcat-jdbc
+# 0.638026 org.apache.tomcat:tomcat-jni
+# 0.638026 org.apache.tomcat:tomcat-juli
+# 0.638026 org.apache.tomcat:tomcat-storeconfig
