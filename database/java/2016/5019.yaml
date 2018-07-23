@@ -1,0 +1,36 @@
+---
+cve: 2016-5019
+title: CVE in org.apache.myfaces.buildtools:myfaces-archetype-trinidad
+description: >
+    CoreResponseStateManager in Apache MyFaces Trinidad 1.0.0 through 1.0.13, 1.2.x before 1.2.15, 2.0.x before 2.0.2, and 2.1.x before 2.1.2 might allow attackers to conduct deserialization attacks via a crafted serialized view state string.
+cvss_v2: 7.5
+references:
+    - http://mail-archives.apache.org/mod_mbox/myfaces-users/201609.mbox/%3CCAM1yOjYM%2BEW3mLUfX0pNAVLfUFRAw-Bhvkp3UE5%3DEQzR8Yxsfw%40mail.gmail.com%3E
+    - http://packetstormsecurity.com/files/138920/Apache-MyFaces-Trinidad-Information-Disclosure.html
+    - http://www.oracle.com/technetwork/security-advisory/cpuapr2018-3678067.html
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2016-2881720.html
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2017-3236622.html
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2018-4258247.html
+    - http://www.oracle.com/technetwork/security-advisory/cpuoct2017-3236626.html
+    - http://www.securityfocus.com/bid/93236
+    - http://www.securitytracker.com/id/1037633
+    - https://issues.apache.org/jira/browse/TRINIDAD-2542
+
+affected:
+    - groupId: org.apache.myfaces.buildtools
+      artifactId: myfaces-archetype-trinidad
+      version: <unable-to-determine>
+
+
+# Additional information:
+# Package name candidates:
+# 2.9421468 org.apache.myfaces.buildtools:myfaces-archetype-trinidad
+# 2.9421468 org.apache.myfaces.trinidadbuild:myfaces-archetype-trinidad
+# 2.8905876 org.apache.myfaces.trinidad:trinidad-api
+# 2.8905876 org.apache.myfaces.trinidad:trinidad-blank
+# 2.8905876 org.apache.myfaces.trinidad:trinidad-build
+# 2.8905876 org.apache.myfaces.trinidad:trinidad-demo
+# 2.8905876 org.apache.myfaces.trinidad:trinidad-impl
+# 2.8445048 org.apache.myfaces.trinidad:trinidad-components-showcase
+# 2.8445048 org.apache.myfaces.trinidad:trinidad-partial-lifecycle
+# 2.332814 org.apache.myfaces.buildtools:myfaces-archetype-trinidad20
