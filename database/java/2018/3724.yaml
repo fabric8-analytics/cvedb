@@ -1,0 +1,27 @@
+---
+cve: 2018-3724
+title: CVE in org.wso2.extension.siddhi.io.file:siddhi-io-file
+description: >
+    general-file-server node module suffers from a Path Traversal vulnerability due to lack of validation of currpath, which allows a malicious user to read content of any file with known path.
+cvss_v2: 5.0
+references:
+    - https://hackerone.com/reports/310943
+
+affected:
+    - groupId: org.wso2.extension.siddhi.io.file
+      artifactId: siddhi-io-file
+      version: <unable-to-determine>
+
+
+# Additional information:
+# Package name candidates:
+# 0.5056564 org.awake-file:awake-file-server
+# 0.12755956 org.ow2.util.file:file
+# 0.117420405 org.awake-file:awake-file
+# 0.1124957 org.awake-file:awake-file-client
+# 0.097914726 com.github.signed.matcher.file:file-matchers
+# 0.08323717 com.github.dirkraft.dropwizard-file-assets:dropwizard-file-assets
+# 0.078312464 net.sourceforge.zip64file:zip64file
+# 0.07811524 eu.agrosense.server:server
+# 0.07348433 org.wso2.extension.siddhi.io.file:siddhi-io-file
+# 0.07348433 pl.pkk82.file-hierarchy-assert:file-hierarchy-assert
