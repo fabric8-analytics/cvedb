@@ -1,0 +1,28 @@
+---
+cve: 2018-1273
+title: CVE in org.springframework.data:spring-data-commons
+description: >
+    Spring Data Commons, versions prior to 1.13 to 1.13.10, 2.0 to 2.0.5, and older unsupported versions, contain a property binder vulnerability caused by improper neutralization of special elements. An unauthenticated remote malicious user (or attacker) can supply specially crafted request parameters against Spring Data REST backed HTTP resources or using Spring Data's projection-based request payload binding hat can lead to a remote code execution attack.
+cvss_v2: 7.5
+references:
+    - http://mail-archives.apache.org/mod_mbox/ignite-dev/201807.mbox/%3CCAK0qHnqzfzmCDFFi6c5Jok19zNkVCz5Xb4sU%3D0f2J_1i4p46zQ%40mail.gmail.com%3E
+    - https://pivotal.io/security/cve-2018-1273
+
+affected:
+    - groupId: org.springframework.data
+      artifactId: spring-data-commons
+      version: <unable-to-determine>
+
+
+# Additional information:
+# Package name candidates:
+# 6.4531674 org.springframework.data:spring-data-commons
+# 5.557047 org.springframework.data:spring-data-commons-core
+# 4.9963074 org.beamfoundry.bundles.spring-data:org.beamfoundry.bundles.spring-data-commons
+# 4.126524 org.springframework.data:spring-data-rest-core
+# 4.126524 org.springframework.data:spring-data-rest-webmvc
+# 4.126524 org.springframework.data:spring-data-rest-repository
+# 3.468824 org.springframework.data:spring-data-rest-hal-browser
+# 2.5762954 org.springframework.data:spring-data-cassandra
+# 2.5762954 org.springframework.data:spring-data-couchbase
+# 2.5762954 org.springframework.data:spring-data-elasticsearch
