@@ -1,0 +1,31 @@
+---
+cve: 2018-1327
+title: CVE in org.apache.struts:struts2-rest-plugin
+description: >
+    The Apache Struts REST Plugin is using XStream library which is vulnerable and allow perform a DoS attack when using a malicious request with specially crafted XML payload. Upgrade to the Apache Struts version 2.5.16 and switch to an optional Jackson XML handler as described here http://struts.apache.org/plugins/rest/#custom-contenttypehandlers. Another option is to implement a custom XML handler based on the Jackson XML handler from the Apache Struts 2.5.16.
+cvss_v2: 5.0
+references:
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2018-4258247.html
+    - http://www.securityfocus.com/bid/103516
+    - http://www.securitytracker.com/id/1040575
+    - https://cwiki.apache.org/confluence/display/WW/S2-056
+    - https://security.netapp.com/advisory/ntap-20180330-0001/
+
+affected:
+    - groupId: org.apache.struts
+      artifactId: struts2-rest-plugin
+      version: <unable-to-determine>
+
+
+# Additional information:
+# Package name candidates:
+# 1.4279069 org.apache.struts:struts2-rest-plugin
+# 1.2219253 struts:struts
+# 1.1474711 org.apache.struts:struts2-rest-showcase
+# 1.1308976 org.apache.struts:struts2-struts1-plugin
+# 1.0861974 org.apache.struts:struts2-cdi-plugin
+# 1.0861974 org.apache.struts:struts2-convention-plugin
+# 1.0861974 org.apache.struts:struts2-dwr-plugin
+# 1.0861974 org.apache.struts:struts2-embeddedjsp-plugin
+# 1.0861974 org.apache.struts:struts2-gxp-plugin
+# 1.0861974 org.apache.struts:struts2-jasperreports-plugin
