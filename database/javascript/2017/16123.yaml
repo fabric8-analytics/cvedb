@@ -11,4 +11,4 @@ references:
 affected:
     - name: welcomyzt
       version:
-        - ">=1.0.0"
+        - "<=1.1.0"
