@@ -1,0 +1,28 @@
+---
+cve: 2018-8008
+title: CVE in org.apache.storm:storm-cassandra
+description: >
+    Apache Storm version 1.0.6 and earlier, 1.2.1 and earlier, and version 1.1.2 and earlier expose an arbitrary file write vulnerability, that can be achieved using a specially crafted zip archive (affects other archives as well, bzip2, tar, xz, war, cpio, 7z), that holds path traversal filenames. So when the filename gets concatenated to the target extraction directory, the final path ends up outside of the target folder.
+cvss_v2: 5.8
+references:
+    - http://www.securityfocus.com/bid/104418
+    - https://lists.apache.org/thread.html/613b2fca8bcd0a3b12c0b763ea8f7cf62e422e9f79fce6cfa5b08a58@%3Cdev.storm.apache.org%3E
+
+affected:
+    - groupId: org.apache.storm
+      artifactId: storm-cassandra
+      version: <unable-to-determine>
+
+
+# Additional information:
+# Package name candidates:
+# 5.7147923 org.apache.storm:storm-cassandra
+# 5.7147923 org.apache.storm:storm-core
+# 5.7147923 org.apache.storm:storm-elasticsearch
+# 5.7147923 org.apache.storm:storm-eventhubs
+# 5.7147923 org.apache.storm:storm-hbase
+# 5.7147923 org.apache.storm:storm-hdfs
+# 5.7147923 org.apache.storm:storm-hive
+# 5.7147923 org.apache.storm:storm-jdbc
+# 5.7147923 org.apache.storm:storm-jms
+# 5.7147923 org.apache.storm:storm-kafka
