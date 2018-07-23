@@ -11,7 +11,9 @@ references:
 affected:
     - name: tinyserver2
       version:
-        - "<unable-to-determine>"
+        - "<=0.5.2"
+    - fixedin:
+        - ">=0.6.0"
 
 
 # Additional information:
