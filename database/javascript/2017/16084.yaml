@@ -11,7 +11,9 @@ references:
 affected:
     - name: list-n-stream
       version:
-        - "<unable-to-determine>"
+        - "<=0.0.10"
+    - fixedin:
+      - ">=0.0.11"
 
 
 # Additional information:
