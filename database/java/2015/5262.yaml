@@ -9,15 +9,28 @@ references:
     - http://lists.fedoraproject.org/pipermail/package-announce/2015-October/167999.html
     - http://lists.fedoraproject.org/pipermail/package-announce/2015-October/168030.html
     - http://svn.apache.org/viewvc?view=revision&revision=1626784
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2018-4258247.html
     - http://www.securitytracker.com/id/1033743
     - http://www.ubuntu.com/usn/USN-2769-1
     - https://bugzilla.redhat.com/show_bug.cgi?id=1261538
     - https://issues.apache.org/jira/browse/HTTPCLIENT-1478
-    - https://nvd.nist.gov/vuln/detail/CVE-2015-5262
+    - https://jenkins.io/security/advisory/2018-02-26/
+
 affected:
     - groupId: org.apache.httpcomponents
       artifactId: httpclient
-      version:
-        - "<=4.3.5"
-      fixedin:
-        - ">=4.3.6"
+      version: <unable-to-determine>
+
+
+# Additional information:
+# Package name candidates:
+# 1.8017199 org.apache.directory.studio:org.apache.httpcomponents.httpclient
+# 1.4986663 org.apache.httpcomponents:httpclient
+# 1.2076594 HTTPClient:HTTPClient
+# 1.0850046 org.apache.httpcomponents:httpclient-cache
+# 1.0850046 org.apache.httpcomponents:httpclient-osgi
+# 1.0850046 org.apache.httpcomponents:httpclient-win
+# 1.0850046 org.apache.httpcomponents:httpclient-android
+# 0.9968746 com.pastdev.httpcomponents:httpclient
+# 0.9550706 org.httpobjects.apache-httpclient-4.x:httpobjects-apache-httpclient-4.x
+# 0.7815433 org.apache.httpcomponents.client5:httpclient5
