@@ -1,21 +1,34 @@
 ---
 cve: 2015-6420
-title: CVE in Commons-Collections
+title: CVE in org.apache.directory.studio:org.apache.commons.collections
 description: >
     Serialized-object interfaces in certain Cisco Collaboration and Social Media; Endpoint Clients and Client Software; Network Application, Service, and Acceleration; Network and Content Security Devices; Network Management and Provisioning; Routing and Switching - Enterprise and Service Provider; Unified Computing; Voice and Unified Communications Devices; Video, Streaming, TelePresence, and Transcoding Devices; Wireless; and Cisco Hosted Services products allow remote attackers to execute arbitrary commands via a crafted serialized Java object, related to the Apache Commons Collections (ACC) library.
 cvss_v2: 7.5
 references:
-    - https://nvd.nist.gov/vuln/detail/CVE-2015-6420
+    - http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20151209-java-deserialization
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2018-4258247.html
+    - http://www.securityfocus.com/bid/78872
+    - https://h20566.www2.hpe.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c05376917
+    - https://h20566.www2.hpe.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c05390722
+    - https://www.kb.cert.org/vuls/id/576313
+    - https://www.tenable.com/security/research/tra-2017-14
+    - https://www.tenable.com/security/research/tra-2017-23
+
 affected:
-    - groupId: commons-collections
-      artifactId: commons-collections
-      version:
-        - "<=3.2.1" 
-      fixedin:
-        - ">=3.2.2"
-    - groupId: commons-collections
-      artifactId: commons-collections4
-      version:
-        - "==4.0"
-      fixedin:
-        - ">=4.1"
+    - groupId: org.apache.directory.studio
+      artifactId: org.apache.commons.collections
+      version: <unable-to-determine>
+
+
+# Additional information:
+# Package name candidates:
+# 0.17370342 org.apache.directory.studio:org.apache.commons.collections
+# 0.16791882 commons-collections:commons-collections
+# 0.1516183 commons-collections:commons-collections-testframework
+# 0.1347914 pl.chilldev.commons:commons-collections
+# 0.12603344 org.apache.servicemix.bundles:org.apache.servicemix.bundles.commons-collections
+# 0.11911765 org.aksw.commons:aksw-commons-collections
+# 0.08494717 org.apache.aries.application:org.apache.aries.application.management
+# 0.07812664 org.apache.commons:commons-collections4
+# 0.077693656 org.apache.aries.application:org.apache.aries.application.deployment.management
+# 0.077693656 org.apache.aries.application:org.apache.aries.application.runtime.framework.management
