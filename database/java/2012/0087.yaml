@@ -1,0 +1,37 @@
+---
+cve: 2012-0087
+title: CVE in mysql:mysql-connector-java
+description: >
+    Unspecified vulnerability in the MySQL Server component in Oracle MySQL 5.0.x and 5.1.x allows remote authenticated users to affect availability via unknown vectors, a different vulnerability than CVE-2012-0101 and CVE-2012-0102.
+cvss_v2: 4.0
+references:
+    - http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=659687
+    - http://lists.opensuse.org/opensuse-security-announce/2012-08/msg00007.html
+    - http://osvdb.org/78377
+    - http://secunia.com/advisories/48250
+    - http://secunia.com/advisories/53372
+    - http://security.gentoo.org/glsa/glsa-201308-06.xml
+    - http://www.debian.org/security/2012/dsa-2429
+    - http://www.oracle.com/technetwork/topics/security/cpujan2012-366304.html
+    - http://www.securityfocus.com/bid/51509
+    - http://www.ubuntu.com/usn/USN-1397-1
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/72519
+
+affected:
+    - groupId: mysql
+      artifactId: mysql-connector-java
+      version: <unable-to-determine>
+
+
+# Additional information:
+# Package name candidates:
+# 1.377958 mysql:mysql-connector-java
+# 1.377958 mysql:mysql-connector-mxj
+# 1.2451961 mysql:mysql-connector-mxj-db-files
+# 0.98769367 com.groupon.mysql:mysql-embed
+# 0.98769367 mm.mysql:mm.mysql
+# 0.98769367 mm-mysql:mm-mysql
+# 0.86423194 com.github.michaelruocco.mysql:embedded-mysql-plugin
+# 0.8549316 com.groupon.mysql:mysql-junit4
+# 0.8164516 org.ddbstoolkit.toolkit.modules.datastore.mysql:ddbstoolkit-mysql
+# 0.35826853 com.oracle.kv:oracle-nosql-client
