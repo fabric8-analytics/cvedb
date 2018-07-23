@@ -13,18 +13,4 @@ references:
 affected:
     - name: ansible
       version:
-        - "<unable-to-determine>"
-
-
-# Additional information:
-# Package name candidates:
-# 1.3228217 ansible
-# 0.68044204 ansible-alicloud
-# 0.68044204 ansible-art
-# 0.68044204 ansible-bundle
-# 0.68044204 ansible-cmdb
-# 0.68044204 ansible-conductor
-# 0.68044204 ansible-container
-# 0.68044204 ansible-discover
-# 0.68044204 ansible-docgen
-# 0.68044204 ansible-docgenerator
+        - "<1.9.2"
