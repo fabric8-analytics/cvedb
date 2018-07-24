@@ -1,0 +1,29 @@
+---
+cve: 2016-10536
+title: CVE in engine.io-client
+description: >
+    engine.io-client is the client for engine.io, the implementation of a transport-based cross-browser/cross-device bi-directional communication layer for Socket.IO. The vulnerability is related to the way that node.js handles the `rejectUnauthorized` setting. If the value is something that evaluates to false, certificate verification will be disabled. This is problematic as engine.io-client 1.6.8 and earlier passes in an object for settings that includes the rejectUnauthorized property, whether it has been set or not. If the value has not been explicitly changed, it will be passed in as `null`, resulting in certificate verification being turned off.
+cvss_v2: 4.3
+references:
+    - https://github.com/socketio/engine.io-client/commit/2c55b278a491bf45313ecc0825cf800e2f7ff5c1
+    - https://nodesecurity.io/advisories/99
+    - https://www.cigital.com/blog/node-js-socket-io/
+
+affected:
+    - name: engine.io-client
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 5.500267 engine.io-client
+# 4.721182 engine.io-client-pure
+# 4.721182 engine.io-client-private
+# 4.721182 engine.io-client-f
+# 4.721182 dual-engine.io-client
+# 4.721182 @types/engine.io-client
+# 4.372429 socket.io-client
+# 3.942096 react-native-engine.io-client
+# 3.942096 engine.io-client-no-github-dependency
+# 3.942096 engine.io-client-test-sourcemap
