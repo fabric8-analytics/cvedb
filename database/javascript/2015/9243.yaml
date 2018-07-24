@@ -1,0 +1,28 @@
+---
+cve: 2015-9243
+title: CVE in hapi
+description: >
+    When server level, connection level or route level CORS configurations in hapi node module before 11.1.4 are combined and when a higher level config included security restrictions (like origin), a higher level config that included security restrictions (like origin) would have those restrictions overridden by less restrictive defaults (e.g. origin defaults to all origins `*`).
+cvss_v2: 4.3
+references:
+    - https://github.com/hapijs/hapi/issues/2980
+    - https://nodesecurity.io/advisories/65
+
+affected:
+    - name: hapi
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 5.9479833 hapi-cors
+# 5.2150683 hapi-cors-headers
+# 5.2150683 @icehunter/hapi-cors
+# 5.2150683 hapi-router-cors
+# 3.719507 cors
+# 3.719507 cors-it
+# 2.3131406 hapi
+# 2.3131406 hapi-to
+# 1.9020858 koa-cors
+# 1.9020858 has-cors
