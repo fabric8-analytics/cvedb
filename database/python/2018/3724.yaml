@@ -1,0 +1,27 @@
+---
+cve: 2018-3724
+title: CVE in import-path
+description: >
+    general-file-server node module suffers from a Path Traversal vulnerability due to lack of validation of currpath, which allows a malicious user to read content of any file with known path.
+cvss_v2: 5.0
+references:
+    - https://hackerone.com/reports/310943
+
+affected:
+    - name: import-path
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 1.0970844 path
+# 0.77017426 aiohttp-traversal
+# 0.77017426 alchemist-traversal
+# 0.77017426 deep-traversal
+# 0.77017426 django-traversal
+# 0.77017426 khufu-traversal
+# 0.77017426 sqlalchemy-traversal
+# 0.56694543 forked-path
+# 0.56694543 import-path
+# 0.56694543 jaraco-path
