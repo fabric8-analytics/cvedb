@@ -1,0 +1,28 @@
+---
+cve: 2018-8008
+title: CVE in amqp-storm
+description: >
+    Apache Storm version 1.0.6 and earlier, 1.2.1 and earlier, and version 1.1.2 and earlier expose an arbitrary file write vulnerability, that can be achieved using a specially crafted zip archive (affects other archives as well, bzip2, tar, xz, war, cpio, 7z), that holds path traversal filenames. So when the filename gets concatenated to the target extraction directory, the final path ends up outside of the target folder.
+cvss_v2: 5.8
+references:
+    - http://www.securityfocus.com/bid/104418
+    - https://lists.apache.org/thread.html/613b2fca8bcd0a3b12c0b763ea8f7cf62e422e9f79fce6cfa5b08a58@%3Cdev.storm.apache.org%3E
+
+affected:
+    - name: amqp-storm
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 7.972714 storm
+# 4.0150456 amqp-storm
+# 4.0150456 deepin-storm
+# 4.0150456 docker-storm
+# 4.0150456 flask-storm
+# 4.0150456 ssh-storm
+# 4.0150456 storm-indicator
+# 4.0150456 storm-mssql
+# 4.0150456 storm-oracle
+# 4.0150456 tornado-storm
