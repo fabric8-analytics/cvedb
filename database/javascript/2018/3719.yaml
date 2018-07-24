@@ -1,0 +1,28 @@
+---
+cve: 2018-3719
+title: CVE in mixin-deep
+description: >
+    mixin-deep node module before 1.3.1 suffers from a Modification of Assumed-Immutable Data (MAID) vulnerability, which allows a malicious user to modify the prototype of "Object" via __proto__, causing the addition or modification of an existing property that will exist on all objects.
+cvss_v2: 6.5
+references:
+    - https://github.com/jonschlinkert/mixin-deep/commit/578b0bc5e74e14de9ef4975f504dc698796bdf9c
+    - https://hackerone.com/reports/311236
+
+affected:
+    - name: mixin-deep
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 0.84051365 maid
+# 0.7953848 mixin-deep
+# 0.79090583 modification
+# 0.45103523 object-data
+# 0.45103523 data-object
+# 0.4345224 hubot-maid
+# 0.4345224 maid-irc
+# 0.40971848 @helgoland/modification
+# 0.39822218 form-data-to-object
+# 0.39822218 validate-object-data
