@@ -1,0 +1,28 @@
+---
+cve: 2016-10530
+title: CVE in airbrake
+description: >
+    The airbrake module 0.3.8 and earlier defaults to sending environment variables over HTTP. Environment variables can often times contain secret keys and other sensitive values. A malicious user could be on the same network as a regular user and intercept all the secret keys the user is sending. This goes against common best practice, which is to use HTTPS.
+cvss_v2: 4.3
+references:
+    - https://github.com/airbrake/node-airbrake/issues/70
+    - https://nodesecurity.io/advisories/96
+
+affected:
+    - name: airbrake
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 4.8608136 airbrake
+# 2.4690804 airbrake-js
+# 2.4690804 winston-airbrake
+# 2.4690804 cluster-airbrake
+# 2.4690804 connect-airbrake
+# 2.4690804 airbrake-notice
+# 2.4690804 airbrake-johnnyhalife
+# 2.4690804 hubot-airbrake
+# 2.4690804 minilog-airbrake
+# 2.4690804 front-airbrake
