@@ -10,18 +10,4 @@ references:
 affected:
     - name: fis-sass-all
       version:
-        - "<unable-to-determine>"
-
-
-# Additional information:
-# Package name candidates:
-# 9.912583 fis-sass-all
-# 4.443567 fis-parser-sass-all
-# 3.7658894 fis-sass
-# 3.3020072 gobble-sass-all
-# 2.8366127 sass-all-variable-loader
-# 0.83414054 fis-parser-sass
-# 0.83414054 fis-okoala-sass
-# 0.83414054 fis-my-sass
-# 0.7212985 fis-parser-node-sass
-# 0.7212985 fis-parser-sass-txt
+        - "==0.2.0"
