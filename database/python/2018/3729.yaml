@@ -1,0 +1,27 @@
+---
+cve: 2018-3729
+title: CVE in import-path
+description: >
+    localhost-now node module suffers from a Path Traversal vulnerability due to lack of validation of file, which allows a malicious user to read content of any file with known path.
+cvss_v2: 5.0
+references:
+    - https://hackerone.com/reports/312889
+
+affected:
+    - name: import-path
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 1.164289 path
+# 0.81735307 aiohttp-traversal
+# 0.81735307 alchemist-traversal
+# 0.81735307 deep-traversal
+# 0.81735307 django-traversal
+# 0.81735307 khufu-traversal
+# 0.81735307 sqlalchemy-traversal
+# 0.60167503 forked-path
+# 0.60167503 import-path
+# 0.60167503 jaraco-path
