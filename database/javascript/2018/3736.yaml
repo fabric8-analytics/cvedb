@@ -1,0 +1,27 @@
+---
+cve: 2018-3736
+title: CVE in https-proxy-agent
+description: >
+    https-proxy-agent passes unsanitized options to Buffer(arg) resulting in DoS and uninitialized memory leak.
+cvss_v2: 6.4
+references:
+    - https://hackerone.com/reports/319532
+
+affected:
+    - name: https-proxy-agent
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 2.6985674 https-proxy-agent
+# 2.3185833 https-proxy-agent-2
+# 1.7032604 dos
+# 1.0808718 https-proxy
+# 1.0123856 proxy-agent
+# 0.95059764 sense-https-proxy
+# 0.95059764 grunt-https-proxy
+# 0.95059764 @tlrg/https-proxy
+# 0.95059764 bd-https-proxy
+# 0.95059764 https-proxy-server
