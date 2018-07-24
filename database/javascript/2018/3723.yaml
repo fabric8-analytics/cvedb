@@ -1,0 +1,28 @@
+---
+cve: 2018-3723
+title: CVE in maid
+description: >
+    defaults-deep node module before 0.2.4 suffers from a Modification of Assumed-Immutable Data (MAID) vulnerability, which allows a malicious user to modify the prototype of "Object" via __proto__, causing the addition or modification of an existing property that will exist on all objects.
+cvss_v2: 6.5
+references:
+    - https://github.com/jonschlinkert/defaults-deep/commit/c873f341327ad885ff4d0f23b3d3bca31b0343e5
+    - https://hackerone.com/reports/310514
+
+affected:
+    - name: maid
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 0.8441423 maid
+# 0.7943203 modification
+# 0.77365434 defaults-deep
+# 0.68052936 defaults-deep-safe
+# 0.68052936 @nodeutils/defaults-deep
+# 0.5874044 defaults-deep-preserve-arrays
+# 0.5874044 @fav/prop.defaults-deep
+# 0.45298237 object-data
+# 0.45298237 data-object
+# 0.4363983 hubot-maid
