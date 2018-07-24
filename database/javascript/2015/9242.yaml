@@ -1,0 +1,29 @@
+---
+cve: 2015-9242
+title: CVE in certain
+description: >
+    Certain input strings when passed to new Date() or Date.parse() in ecstatic node module before 1.4.0 will cause v8 to raise an exception. This leads to a crash and denial of service in ecstatic when this input is passed into the server via the If-Modified-Since header.
+cvss_v2: 5.0
+references:
+    - https://bugs.chromium.org/p/v8/issues/detail?id=4640
+    - https://github.com/jfhbrook/node-ecstatic/pull/179
+    - https://nodesecurity.io/advisories/64
+
+affected:
+    - name: certain
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 3.0626078 certain
+# 2.6925526 ecstatic
+# 1.5566344 get-certain
+# 1.3716068 elliptical-ecstatic
+# 1.3716068 ecstatic-lr
+# 1.3716068 ecstatic-enodirfix
+# 1.3716068 gemini-ecstatic
+# 1.3716068 ecstatic-htpasswd
+# 0.9595915 date
+# 0.9595915 to-date
