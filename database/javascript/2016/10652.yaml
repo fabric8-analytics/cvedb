@@ -1,0 +1,27 @@
+---
+cve: 2016-10652
+title: CVE in prebuild-lwip
+description: >
+    prebuild-lwip is a module for comprehensive, fast, and simple image processing and manipulation. prebuild-lwip downloads resources over HTTP, which leaves it vulnerable to MITM attacks.
+cvss_v2: 6.8
+references:
+    - https://nodesecurity.io/advisories/248
+
+affected:
+    - name: prebuild-lwip
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 10.534672 prebuild-lwip
+# 2.0490038 lwip
+# 2.035054 prebuild
+# 2.035054 prebuild-this
+# 1.0482868 sprity-lwip
+# 1.0482868 node-lwip
+# 1.0482868 pajk-lwip
+# 1.0482868 lwip-pixels
+# 1.0482868 lwip-promise
+# 1.0482868 lwip-encoder
