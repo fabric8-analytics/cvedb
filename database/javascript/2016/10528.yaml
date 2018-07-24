@@ -1,0 +1,27 @@
+---
+cve: 2016-10528
+title: CVE in restafary
+description: >
+    restafary is a REpresentful State Transfer API for Creating, Reading, Using, Deleting files on a server from the web. Restafary before 1.6.1 is able to set up a root path, which should only allow it to run inside of that root path it specified.
+cvss_v2: 4.0
+references:
+    - https://nodesecurity.io/advisories/89
+
+affected:
+    - name: restafary
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 0.64658505 restafary
+# 0.4433359 using-frc-api
+# 0.40366834 using
+# 0.39893216 ngx-universal-state-transfer
+# 0.39893216 @angularclass/universal-transfer-state
+# 0.39893216 @ngx-universal/state-transfer
+# 0.3943975 reading
+# 0.37961948 api-transfer-manager
+# 0.37724018 ridibooks-reading-note-api
+# 0.37724018 whooos-reading-client-api
