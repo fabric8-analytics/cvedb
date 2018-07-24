@@ -1,0 +1,27 @@
+---
+cve: 2018-3727
+title: CVE in jaraco-path
+description: >
+    626 node module suffers from a Path Traversal vulnerability due to lack of validation of file, which allows a malicious user to read content of any file with known path.
+cvss_v2: 5.0
+references:
+    - https://hackerone.com/reports/311216
+
+affected:
+    - name: jaraco-path
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 1.5436192 path
+# 1.0836501 aiohttp-traversal
+# 1.0836501 alchemist-traversal
+# 1.0836501 deep-traversal
+# 1.0836501 django-traversal
+# 1.0836501 khufu-traversal
+# 1.0836501 sqlalchemy-traversal
+# 0.7977033 forked-path
+# 0.7977033 import-path
+# 0.7977033 jaraco-path
