@@ -1,0 +1,27 @@
+---
+cve: 2018-3735
+title: CVE in bracket-template
+description: >
+    bracket-template suffers from reflected XSS possible when variable passed via GET parameter is used in template
+cvss_v2: 4.3
+references:
+    - https://hackerone.com/reports/317125
+
+affected:
+    - name: bracket-template
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 2.5878341 bracket-template
+# 2.2699158 jstransformer-bracket-template
+# 1.6801933 xss
+# 0.8623407 xss-filters
+# 0.8623407 xss-clean
+# 0.8623407 node-xss
+# 0.8623407 xss-escape
+# 0.8623407 xss-test
+# 0.8623407 lark-xss
+# 0.8623407 gulp-xss
