@@ -1,0 +1,27 @@
+---
+cve: 2015-9240
+title: CVE in keystone
+description: >
+    Due to a bug in the the default sign in functionality in the keystone node module before 0.3.16, incomplete email addresses could be matched. A correct password is still required to complete sign in.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/60
+
+affected:
+    - name: keystone
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 4.8659344 due
+# 3.0507128 keystone
+# 2.4649334 due-compiler
+# 2.1648083 due-date-calculator
+# 2.1648083 parse-due-date
+# 2.1648083 monaco-editor-due
+# 1.864683 @victorouse/due-date-calculator
+# 1.864683 monaco-editor-core-due
+# 1.864683 @gema/due-date-calculator
+# 1.5573225 keystone-utils
