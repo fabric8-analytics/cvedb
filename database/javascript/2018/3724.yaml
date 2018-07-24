@@ -1,0 +1,27 @@
+---
+cve: 2018-3724
+title: CVE in general-file-server
+description: >
+    general-file-server node module suffers from a Path Traversal vulnerability due to lack of validation of currpath, which allows a malicious user to read content of any file with known path.
+cvss_v2: 5.0
+references:
+    - https://hackerone.com/reports/310943
+
+affected:
+    - name: general-file-server
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 2.7653842 general-file-server
+# 2.1137114 object-traversal-by-path
+# 1.8124876 file-traversal
+# 1.7035149 traversal
+# 1.0095879 general-path
+# 0.8710994 dirtree-traversal
+# 0.8710994 tree-traversal
+# 0.8710994 dir-traversal
+# 0.8710994 connect-traversal
+# 0.8710994 parse-traversal
