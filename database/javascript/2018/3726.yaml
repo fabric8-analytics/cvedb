@@ -1,0 +1,28 @@
+---
+cve: 2018-3726
+title: CVE in crud-file-server
+description: >
+    crud-file-server node module before 0.8.0 suffers from a Cross-Site Scripting vulnerability to a lack of validation of file names.
+cvss_v2: 4.3
+references:
+    - https://github.com/omphalos/crud-file-server/commit/4155bfe068bf211b49a0b3ffd06e78cbaf1b40fa
+    - https://hackerone.com/reports/311101
+
+affected:
+    - name: crud-file-server
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 2.2171643 crud-file-server
+# 1.6233993 express-cross-site
+# 1.6233993 ekit-cross-site
+# 0.7808416 open-scripting
+# 0.7808416 scripting_utils
+# 0.7808416 complex-scripting
+# 0.7808416 monkeydo-scripting
+# 0.7808416 metaverse-scripting
+# 0.7808416 dcl-scripting
+# 0.6873476 ps-scripting-tools
