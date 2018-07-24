@@ -1,0 +1,28 @@
+---
+cve: 2017-16082
+title: CVE in pg
+description: >
+    A remote code execution vulnerability was found within the pg module when the remote database or query specifies a specially crafted column name. There are 2 likely scenarios in which one would likely be vulnerable. 1) Executing unsafe, user-supplied sql which contains a malicious column name. 2) Connecting to an untrusted database and executing a query which returns results where any of the column names are malicious.
+cvss_v2: 7.5
+references:
+    - https://node-postgres.com/announcements#2017-08-12-code-execution-vulnerability
+    - https://nodesecurity.io/advisories/521
+
+affected:
+    - name: pg
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 8.12024 pg
+# 8.12024 pg-then
+# 4.3642473 pg2pg
+# 4.1216946 pg-hstore
+# 4.1216946 pg-native
+# 4.1216946 pg-promise
+# 4.1216946 pg.js
+# 4.1216946 pg-escape
+# 4.1216946 pg-format
+# 4.1216946 pg-query
