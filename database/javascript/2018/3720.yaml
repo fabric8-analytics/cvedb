@@ -1,0 +1,28 @@
+---
+cve: 2018-3720
+title: CVE in assign-deep
+description: >
+    assign-deep node module before 0.4.7 suffers from a Modification of Assumed-Immutable Data (MAID) vulnerability, which allows a malicious user to modify the prototype of "Object" via __proto__, causing the addition or modification of an existing property that will exist on all objects.
+cvss_v2: 6.5
+references:
+    - https://github.com/jonschlinkert/assign-deep/commit/19953a8c089b0328c470acaaaf6accdfcb34da11
+    - https://hackerone.com/reports/310707
+
+affected:
+    - name: assign-deep
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 1.5167423 object-assign-deep
+# 1.3041636 @cartok/object-assign-deep
+# 1.3041636 @kyleshockey/object-assign-deep
+# 0.84520185 maid
+# 0.7953173 modification
+# 0.7673291 assign-deep
+# 0.67499924 assign-deep-all
+# 0.64949304 deep-object-assign
+# 0.5826694 @fav/prop.assign-deep
+# 0.5608069 @alexbinary/object-deep-assign
