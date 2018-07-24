@@ -1,0 +1,27 @@
+---
+cve: 2018-3736
+title: CVE in bambu-buffer
+description: >
+    https-proxy-agent passes unsanitized options to Buffer(arg) resulting in DoS and uninitialized memory leak.
+cvss_v2: 6.4
+references:
+    - https://hackerone.com/reports/319532
+
+affected:
+    - name: bambu-buffer
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 0.8206826 nhs-dos
+# 0.6777798 bambu-buffer
+# 0.6777798 buffer-alpaca
+# 0.6777798 buffer-api
+# 0.6777798 buffer-buda
+# 0.6777798 buffer-ops
+# 0.6777798 buffer-python
+# 0.6777798 fio-buffer
+# 0.6777798 mezzanine-buffer
+# 0.6777798 ring-buffer
