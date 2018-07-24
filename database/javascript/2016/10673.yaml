@@ -1,0 +1,27 @@
+---
+cve: 2016-10673
+title: CVE in ipip-coffee
+description: >
+    ipip-coffee queries geolocation information from IP ipip-coffee downloads geolocation resources over HTTP, which leaves it vulnerable to MITM attacks. This could impact the integrity and availability of the data being used to make geolocation decisions by an application.
+cvss_v2: 6.8
+references:
+    - https://nodesecurity.io/advisories/279
+
+affected:
+    - name: ipip-coffee
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 2.034173 ipip-coffee
+# 1.6432488 http-mitm
+# 1.6432488 mitm-http
+# 1.4427961 http-mitm-proxy
+# 1.4427961 http-proxy-mitm
+# 1.2423434 @ahfarmer/http-mitm-proxy
+# 1.2423434 http-mitm-proxy-brotli
+# 1.2225777 mitm
+# 1.0255613 ip-proxy-http
+# 0.7457379 ip
