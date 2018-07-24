@@ -1,0 +1,27 @@
+---
+cve: 2017-16035
+title: CVE in hubl-server
+description: >
+    The hubl-server module is a wrapper for the HubL Development Server. During installation hubl-server downloads a set of dependencies from api.hubapi.com. It appears in the code that these files are downloaded over HTTPS however the api.hubapi.com endpoint redirects to a HTTP url. Because of this behavior an attacker with the ability to man-in-the-middle a developer or system performing a package installation could compromise the integrity of the installation.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/334
+
+affected:
+    - name: hubl-server
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 8.828414 hubl-server
+# 1.8215772 squirrel-development-server
+# 1.8215772 development-mock-server
+# 1.311627 @actra-development-oss/http-server
+# 0.968773 is-development
+# 0.968773 development
+# 0.8924435 server
+# 0.8924435 is-server
+# 0.8924435 server-framework
+# 0.8924435 Server
