@@ -10,18 +10,4 @@ references:
 affected:
     - name: pk-app-wonderbox
       version:
-        - "<unable-to-determine>"
-
-
-# Additional information:
-# Package name candidates:
-# 3.4197855 pk-app-wonderbox
-# 1.9044737 http-mitm
-# 1.9044737 mitm-http
-# 1.6707462 http-mitm-proxy
-# 1.6707462 http-proxy-mitm
-# 1.4370188 @ahfarmer/http-mitm-proxy
-# 1.4370188 http-mitm-proxy-brotli
-# 1.4139719 mitm
-# 0.9174032 pk-app-sample
-# 0.9174032 pk-app-mopidy
+        - "==1.0.0"
