@@ -1,0 +1,28 @@
+---
+cve: 2017-16005
+title: CVE in http-signature
+description: >
+    Http-signature is a "Reference implementation of Joyent's HTTP Signature Scheme". In versions <=0.9.11, http-signature signs only the header values, but not the header names. This makes http-signature vulnerable to header forgery. Thus, if an attacker can intercept a request, he can swap header names and change the meaning of the request without changing the signature.
+cvss_v2: 5.0
+references:
+    - https://github.com/joyent/node-http-signature/issues/10
+    - https://nodesecurity.io/advisories/318
+
+affected:
+    - name: http-signature
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 6.039492 http-signature
+# 5.288528 upyun-http-signature
+# 5.288528 superagent-http-signature
+# 5.288528 stompjs-http-signature
+# 5.288528 connect-http-signature
+# 5.288528 passport-http-signature
+# 5.288528 @leisurelink/http-signature
+# 5.288528 http-signature-helpers
+# 5.288528 oraclize-http-signature
+# 5.288528 http-signature-crypto
