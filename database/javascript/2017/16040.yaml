@@ -10,7 +10,7 @@ references:
 affected:
     - name: gfe-sass
       version:
-        - "<unable-to-determine>"
+        - "<=1.0.19"
 
 
 # Additional information:
