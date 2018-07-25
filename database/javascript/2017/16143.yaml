@@ -11,4 +11,4 @@ references:
 affected:
     - name: commentapp.stetsonwood
       version:
-        - ">=0"
+        - "==0.0.1"
