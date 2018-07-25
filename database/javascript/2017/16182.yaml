@@ -1,0 +1,13 @@
+---
+cve: 2017-16182
+title: CVE in serverxxx
+description: >
+    serverxxx is a static file server. serverxxx is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/serverxxx
+    - https://nodesecurity.io/advisories/455
+affected:
+    - name: serverxxx
+      version:
+        - "==1.0.0"
