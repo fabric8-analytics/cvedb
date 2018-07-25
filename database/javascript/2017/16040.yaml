@@ -6,22 +6,7 @@ description: >
 cvss_v2: 9.3
 references:
     - https://nodesecurity.io/advisories/291
-
 affected:
     - name: gfe-sass
       version:
         - "<=1.0.19"
-
-
-# Additional information:
-# Package name candidates:
-# 1.1364276 gfe-sass
-# 1.0224617 http-mitm
-# 1.0224617 mitm-http
-# 0.89922196 http-mitm-proxy
-# 0.89922196 http-proxy-mitm
-# 0.7824463 http-promises
-# 0.7759824 @ahfarmer/http-mitm-proxy
-# 0.7759824 http-mitm-proxy-brotli
-# 0.76383024 mitm
-# 0.68920857 http-promises-async
