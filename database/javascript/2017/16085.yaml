@@ -1,0 +1,30 @@
+---
+cve: 2017-16085
+title: CVE in tinyserver2
+description: >
+    tinyserver2 is a webserver for static files. tinyserver2 is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the URL.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/tinyserver2
+    - https://nodesecurity.io/advisories/371
+
+affected:
+    - name: tinyserver2
+      version:
+        - "<=0.5.2"
+    - fixedin:
+        - ">=0.6.0"
+
+
+# Additional information:
+# Package name candidates:
+# 12.012157 tinyserver2
+# 1.2063323 tinyserver
+# 0.621408 tiny_server
+# 0.621408 tiny-server
+# 0.621408 meri-tinyserver
+# 0.19625151 2-
+# 0.19625151 project_2
+# 0.19625151 2----
+# 0.15755129 2.2.2
+# 0.14025593 node-2-2-2
