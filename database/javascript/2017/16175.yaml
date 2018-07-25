@@ -7,22 +7,7 @@ cvss_v2: 5.0
 references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/ewgaddis.lab6
     - https://nodesecurity.io/advisories/465
-
 affected:
     - name: ewgaddis.lab6
       version:
         - "==0.1.1"
-
-
-# Additional information:
-# Package name candidates:
-# 11.344348 ewgaddis.lab6
-# 4.8507905 lyndsaystaley.lab6
-# 4.8507905 norkish.lab6
-# 4.8507905 lab6_weather
-# 4.8507905 lab6-rest
-# 4.8507905 lab6_agolotin
-# 4.8507905 dmmcquay.lab6
-# 4.8507905 lab6.1
-# 4.047845 jordon_ritchie_lab6
-# 4.047845 lab6_node.adglink
