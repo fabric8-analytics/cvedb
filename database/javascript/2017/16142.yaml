@@ -1,0 +1,13 @@
+---
+cve: 2017-16142
+title: CVE in infraserver
+description: >
+    infraserver is a RESTful server. infraserver is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/infraserver
+    - https://nodesecurity.io/advisories/471
+affected:
+    - name: infraserver
+      version:
+        - "==0.0.1"
