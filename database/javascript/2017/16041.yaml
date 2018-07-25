@@ -1,6 +1,6 @@
 ---
 cve: 2017-16041
-title: CVE in unexpected-mitm
+title: CVE in ikst
 description: >
     ikst versions before 1.1.2 download resources over HTTP, which leaves it vulnerable to MITM attacks.
 cvss_v2: 4.3
@@ -8,9 +8,9 @@ references:
     - https://nodesecurity.io/advisories/249
 
 affected:
-    - name: unexpected-mitm
+    - name: ikst
       version:
-        - "<unable-to-determine>"
+        - "<1.1.2"
 
 
 # Additional information:
