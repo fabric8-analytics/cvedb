@@ -7,13 +7,7 @@ cvss_v2: 5.0
 references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/whispercast
     - https://nodesecurity.io/advisories/466
-
 affected:
     - name: whispercast
       version:
         - "==0.1.0"
-
-
-# Additional information:
-# Package name candidates:
-# 13.796832 whispercast
