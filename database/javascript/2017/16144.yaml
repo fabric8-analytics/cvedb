@@ -7,8 +7,7 @@ cvss_v2: 5.0
 references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/myserver.alexcthomas18
     - https://nodesecurity.io/advisories/469
-
 affected:
     - name: myserver.alexcthomas18
       version:
-        - ">=0"
+        - "==0.0.1"
