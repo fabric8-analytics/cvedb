@@ -7,13 +7,7 @@ cvss_v2: 5.0
 references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/serverxxx
     - https://nodesecurity.io/advisories/455
-
 affected:
     - name: serverxxx
       version:
         - "==1.0.0"
-
-
-# Additional information:
-# Package name candidates:
-# 13.796832 serverxxx
