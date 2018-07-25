@@ -7,8 +7,7 @@ cvss_v2: 5.0
 references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/lab6drewfusbyu
     - https://nodesecurity.io/advisories/474
-
 affected:
     - name: lab6drewfusbyu
       version:
-        - ">=0"
+        - "==0.1.1"
