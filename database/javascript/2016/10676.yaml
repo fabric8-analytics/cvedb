@@ -10,7 +10,7 @@ references:
 affected:
     - name: rs-brightcove
       version:
-        - "<unable-to-determine>"
+        - ">=0.0.1"
 
 
 # Additional information:
