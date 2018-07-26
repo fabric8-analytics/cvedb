@@ -10,7 +10,7 @@ references:
 affected:
     - name: libsbmlsim
       version:
-        - "<unable-to-determine>"
+        - ">=0.0.1"
 
 
 # Additional information:
