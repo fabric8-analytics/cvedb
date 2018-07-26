@@ -10,7 +10,7 @@ references:
 affected:
     - name: node-bsdiff-android
       version:
-        - "<unable-to-determine>"
+        - "<=0.1.5"
 
 
 # Additional information:
