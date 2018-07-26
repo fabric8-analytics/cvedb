@@ -10,7 +10,7 @@ references:
 affected:
     - name: sfml
       version:
-        - "<unable-to-determine>"
+        - "==0.0.3"
 
 
 # Additional information:
