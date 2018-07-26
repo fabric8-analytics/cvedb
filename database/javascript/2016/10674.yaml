@@ -10,7 +10,9 @@ references:
 affected:
     - name: limbus-buildgen
       version:
-        - "<unable-to-determine>"
+        - "<=0.1.0"
+    - fixedin:
+        - ">=0.1.1"
 
 
 # Additional information:
