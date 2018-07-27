@@ -11,18 +11,5 @@ references:
 affected:
     - name: restify
       version:
-        - "<unable-to-determine>"
-
-
-# Additional information:
-# Package name candidates:
-# 4.4333925 restify
-# 3.8990498 restify-rest-client
-# 3.3502448 restify-microservice-mongoose-rest
-# 2.2454042 restify-errors
-# 2.2454042 restify-clients
-# 2.2454042 restify-cookies
-# 2.2454042 restify-jwt
-# 2.2454042 passport-restify
-# 2.2454042 restify-validator
-# 2.2454042 restify-mongoose
+        - ">=2.0.0"
+        - "<=4.0.4"
