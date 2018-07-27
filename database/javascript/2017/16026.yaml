@@ -12,18 +12,6 @@ references:
 affected:
     - name: request
       version:
-        - "<unable-to-determine>"
-
-
-# Additional information:
-# Package name candidates:
-# 10.148484 request
-# 10.148484 then-request
-# 10.148484 request-then
-# 10.148484 on-request
-# 10.148484 request-it
-# 5.1235104 request-promise
-# 5.1235104 sync-request
-# 5.1235104 browser-request
-# 5.1235104 co-request
-# 5.1235104 request-progress
+        - "<=2.46.0,2.2.6"
+        - "<=2.67.0,2.52.0"
+        
