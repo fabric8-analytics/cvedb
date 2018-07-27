@@ -11,18 +11,4 @@ references:
 affected:
     - name: remarkable
       version:
-        - "<unable-to-determine>"
-
-
-# Additional information:
-# Package name candidates:
-# 15.187701 remarkable
-# 7.626772 react-remarkable
-# 7.626772 gulp-remarkable
-# 7.626772 remarkable-loader
-# 7.626772 remarkable-meta
-# 7.626772 ember-remarkable
-# 7.626772 pretty-remarkable
-# 7.626772 meta-remarkable
-# 7.626772 remarkable-dev
-# 7.626772 remarkable-emoji
+        - "<=1.6.2"
