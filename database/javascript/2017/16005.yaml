@@ -11,18 +11,4 @@ references:
 affected:
     - name: http-signature
       version:
-        - "<unable-to-determine>"
-
-
-# Additional information:
-# Package name candidates:
-# 6.039492 http-signature
-# 5.288528 upyun-http-signature
-# 5.288528 superagent-http-signature
-# 5.288528 stompjs-http-signature
-# 5.288528 connect-http-signature
-# 5.288528 passport-http-signature
-# 5.288528 @leisurelink/http-signature
-# 5.288528 http-signature-helpers
-# 5.288528 oraclize-http-signature
-# 5.288528 http-signature-crypto
+        - "<=0.9.11"
