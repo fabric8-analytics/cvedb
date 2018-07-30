@@ -7,14 +7,9 @@ cvss_v2: 5.0
 references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/pooledwebsocket
     - https://nodesecurity.io/advisories/341
-
 affected:
     - name: pooledwebsocket
       version:
         - "<=0.0.18,0.0.1"
-    - fixedin:
+      fixedin:
         - ">=0.0.19"
-
-# Additional information:
-# Package name candidates:
-# 13.796832 pooledwebsocket
