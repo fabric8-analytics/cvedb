@@ -19,7 +19,7 @@ load_jenkins_vars() {
 prep() {
     yum -y update
     yum -y install epel-release
-    yum -y install git python34-pip
+    yum -y install git gcc python34-pip python34-devel
 
     pip3 install -r ${here}/requirements.txt
 }
