@@ -1,0 +1,35 @@
+---
+cve: 2018-9183
+title: CVE in aldryn-jobs
+description: >
+    The Joom Sky JS Jobs extension before 1.2.1 for Joomla! has XSS.
+cvss_v2: 3.5
+references:
+    - https://vel.joomla.org/resolved/2146-js-jobs-1-2-0-xss-cross-site-scripting
+    - https://www.exploit-db.com/exploits/44401/
+    - https://www.joomsky.com/products/js-jobs.html
+
+affected:
+    - name: aldryn-jobs
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:joomsky:js_jobs:::~~~joomla%21~~ 1.2.1 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.36324 jobs
+# 0.76595527 js
+# 0.76595527 js.foundation
+# 0.76595527 js-project
+# 0.6986338 aldryn-jobs
+# 0.6986338 create-jobs
+# 0.6986338 digimat.jobs
+# 0.6986338 django-jobs
+# 0.6986338 feincms-jobs
+# 0.6986338 prisms-jobs
