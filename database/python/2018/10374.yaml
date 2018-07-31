@@ -1,0 +1,33 @@
+---
+cve: 2018-10374
+title: CVE in post-qa
+description: >
+    EasyCMS 1.3 has XSS via the s POST parameter (aka a search box value) in an index.php?s=/index/search/index.html request.
+cvss_v2: 4.3
+references:
+    - https://github.com/teameasy/EasyCMS/issues/1
+
+affected:
+    - name: post-qa
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:easycms:easycms:1.3
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.6441218 post
+# 1.1964439 xss-catcher
+# 1.0531577 django-xss-detection
+# 0.8471375 blog.post
+# 0.8471375 janky-post
+# 0.8471375 jmbo-post
+# 0.8471375 panya-post
+# 0.8471375 plugs-post
+# 0.8471375 post-qa
+# 0.8471375 post-review
