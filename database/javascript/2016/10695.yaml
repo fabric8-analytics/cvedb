@@ -1,27 +1,13 @@
 ---
 cve: 2016-10695
-title: CVE in sqlite3
+title: CVE in npm-test-sqlite3-trunk
 description: >
     The npm-test-sqlite3-trunk module provides asynchronous, non-blocking SQLite3 bindings. npm-test-sqlite3-trunk downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested resources with an attacker controlled copy if the attacker is on the network or positioned in between the user and the remote server.
 cvss_v2: 9.3
 references:
     - https://nodesecurity.io/advisories/297
-
+    - https://nvd.nist.gov/vuln/detail/CVE-2016-10695
 affected:
-    - name: sqlite3
+    - name: npm-test-sqlite3-trunk
       version:
-        - "<unable-to-determine>"
-
-
-# Additional information:
-# Package name candidates:
-# 9.658625 npm-test-sqlite3-trunk
-# 8.75835 sqlite3-trunk
-# 7.078772 sqlite3
-# 6.0712237 waterline-sqlite3
-# 6.0712237 jugglingdb-sqlite3
-# 6.0712237 connect-sqlite3
-# 6.0712237 q-sqlite3
-# 6.0712237 sqlite3-transactions
-# 6.0712237 sqlite3-mozporter
-# 6.0712237 sqlite3-orm
+        - "<=2.2.2"
