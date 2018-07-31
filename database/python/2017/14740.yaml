@@ -1,0 +1,33 @@
+---
+cve: 2017-14740
+title: CVE in menu
+description: >
+    Cross-site scripting (XSS) vulnerability in GeniXCMS 1.1.0 allows remote authenticated users to inject arbitrary web script or HTML via the Menu ID when adding a menu.
+cvss_v2: 3.5
+references:
+    - https://github.com/faizzaidi/GeniXCMS-Version-1.1.0-Cross-Site-Scripting-XSS
+
+affected:
+    - name: menu
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:genixcms:genixcms:1.1.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.45938993 menu
+# 0.423822 xss-catcher
+# 0.37510705 django-xss-detection
+# 0.35472712 html
+# 0.25336212 cual-id
+# 0.25336212 descriptive-id
+# 0.25336212 flask-id
+# 0.25336212 fluffy-id
+# 0.25336212 id-phonenumbers
+# 0.25336212 request-id
