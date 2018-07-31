@@ -7,22 +7,8 @@ cvss_v2: 5.0
 references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/node-simple-router
     - https://nodesecurity.io/advisories/352
-
+    - https://nvd.nist.gov/vuln/detail/CVE-2017-16083
 affected:
     - name: node-simple-router
       version:
-        - "<unable-to-determine>"
-
-
-# Additional information:
-# Package name candidates:
-# 8.416477 node-simple-router
-# 8.416477 node_simple_router
-# 2.9683638 node-simple-logger
-# 2.9683638 node-simple-log
-# 2.9683638 node-simple-xlsx
-# 2.9683638 node-simple-server
-# 2.9683638 node-simple-extend
-# 2.9683638 node-simple-cache
-# 2.9683638 gulp-node-simple
-# 2.9683638 unwrap-node-simple
+        - "<=0.10.0"
