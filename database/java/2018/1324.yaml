@@ -5,25 +5,12 @@ description: >
     A specially crafted ZIP archive can be used to cause an infinite loop inside of Apache Commons Compress' extra field parser used by the ZipFile and ZipArchiveInputStream classes in versions 1.11 to 1.15. This can be used to mount a denial of service attack against services that use Compress' zip package.
 cvss_v2: 4.3
 references:
-    - http://www.securityfocus.com/bid/103490
-    - http://www.securitytracker.com/id/1040549
     - https://lists.apache.org/thread.html/1c7b6df6d1c5c8583518a0afa017782924918e4d6acfaf23ed5b2089@%3Cdev.commons.apache.org%3E
-
+    - https://nvd.nist.gov/vuln/detail/CVE-2018-1324
 affected:
     - groupId: org.apache.commons
       artifactId: commons-compress
-      version: <unable-to-determine>
-
-
-# Additional information:
-# Package name candidates:
-# 2.7238736 commons-compress:commons-compress
-# 2.4257302 org.apache.commons:commons-compress
-# 2.1432486 com.alanbuttars.commons:commons-compress
-# 2.1188684 org.carrot2.forks.commons:commons-compress
-# 1.0728917 com.after_sunrise.commons:commons-ats-compress
-# 0.6008223 br.com.powerapps.image.compress:power-image-compress
-# 0.5994489 org.apache.oltu.commons:org.apache.oltu.commons.encodedtoken
-# 0.5994489 org.apache.oltu.commons:org.apache.oltu.commons.json
-# 0.5673135 org.apache.ant:ant-compress
-# 0.5560119 com.liferay.org.apache.commons.fileupload:com.liferay.org.apache.commons.fileupload
+      version:
+        - "<=1.15,1.11"
+      fixedin:
+        - ">=1.16"
