@@ -1,0 +1,35 @@
+---
+cve: 2018-9235
+title: CVE in com.sun.grizzly.scripting:grizzly-scripting-common
+description: >
+    iScripts SonicBB 1.0 has Reflected Cross-Site Scripting via the query parameter to search.php.
+cvss_v2: 4.3
+references:
+    - https://pastebin.com/caQW37fY
+    - https://www.exploit-db.com/exploits/44434/
+
+affected:
+    - groupId: com.sun.grizzly.scripting
+      artifactId: grizzly-scripting-common
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:iscripts:sonicbb:1.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.29645225 com.sun.grizzly.scripting:grizzly-scripting-common
+# 0.1714383 com.minlia.cross:minlia-cross
+# 0.0985218 org.sakaiproject.site:sakai-site-help
+# 0.0985218 org.sakaiproject.site:sakai-site-tool
+# 0.0985218 org.jbehave.site:jbehave-site-resources
+# 0.0985218 org.jbehave.site:jbehave-site-templates
+# 0.09120427 org.andromda.maven.site:andromda-site-skin
+# 0.08388674 org.andromda.maven.plugins.site:andromda-site-plugin
+# 0.08388674 org.andromda.maven.plugins.site:andromda-site-skin
+# 0.07817509 org.sonatype.nexus.repository.site:nexus-site-repository-testsuite
