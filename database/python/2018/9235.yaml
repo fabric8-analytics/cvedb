@@ -1,0 +1,34 @@
+---
+cve: 2018-9235
+title: CVE in scripts
+description: >
+    iScripts SonicBB 1.0 has Reflected Cross-Site Scripting via the query parameter to search.php.
+cvss_v2: 4.3
+references:
+    - https://pastebin.com/caQW37fY
+    - https://www.exploit-db.com/exploits/44434/
+
+affected:
+    - name: scripts
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:iscripts:sonicbb:1.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.8793292 scripting
+# 0.5476891 scripts
+# 0.45651886 python-scripting
+# 0.40366757 yaz-scripting-plugin
+# 0.35081628 h5scripting
+# 0.29069883 admin-scripts
+# 0.29069883 astro-scripts
+# 0.29069883 bacula-scripts
+# 0.29069883 boto-scripts
+# 0.29069883 continuous-scripts
