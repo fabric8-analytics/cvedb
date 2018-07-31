@@ -1,0 +1,36 @@
+---
+cve: 2017-14449
+title: CVE in node-sdl2
+description: >
+    A double-Free vulnerability exists in the XCF image rendering functionality of SDL2_image-2.0.2. A specially crafted XCF image can cause a Double-Free situation to occur. An attacker can display a specially crafted image to trigger this vulnerability.
+cvss_v2: 6.8
+references:
+    - https://www.debian.org/security/2018/dsa-4177
+    - https://www.talosintelligence.com/vulnerability_reports/TALOS-2017-0498
+
+affected:
+    - name: node-sdl2
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:libsdl:sdl2_image:2.0.2
+#    - cpe:/o:debian:debian_linux:9.0
+#    - cpe:/o:debian:debian_linux:8.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 8.602507 node-sdl2-image
+# 6.8892922 node-sdl2-image-prebuilt
+# 6.8892922 @flyover/node-sdl2_image
+# 6.1693945 sdl2
+# 5.2932577 node-sdl2
+# 5.2932577 sdl2-bindings
+# 5.2932577 sdl2.c
+# 5.2932577 napi_sdl2
+# 4.41712 @flyover/node-sdl2_net
+# 4.41712 node-sdl2-prebuilt
