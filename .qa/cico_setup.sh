@@ -1,5 +1,7 @@
 #!/bin/bash -ex
 
+here="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+
 load_jenkins_vars() {
     if [ -e "jenkins-env.json" ]; then
         eval "$(./env-toolkit load -f jenkins-env.json \
@@ -19,7 +21,7 @@ prep() {
     yum -y install epel-release
     yum -y install git python34-pip
 
-    pip3 install -r requirements.txt
+    pip3 install -r ${here}/requirements.txt
 }
 
 load_jenkins_vars
