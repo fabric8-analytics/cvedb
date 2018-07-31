@@ -6,22 +6,8 @@ description: >
 cvss_v2: 4.3
 references:
     - https://nodesecurity.io/advisories/249
-
+    - https://nvd.nist.gov/vuln/detail/CVE-2017-16041
 affected:
     - name: ikst
       version:
         - "<=0.1.2"
-
-
-# Additional information:
-# Package name candidates:
-# 2.8502026 http-mitm
-# 2.8502026 mitm-http
-# 2.50041 http-mitm-proxy
-# 2.50041 http-proxy-mitm
-# 2.1506176 @ahfarmer/http-mitm-proxy
-# 2.1506176 http-mitm-proxy-brotli
-# 2.116126 mitm
-# 1.0839945 unexpected-mitm
-# 1.0839945 mitm-algolia
-# 1.0839945 mitm-papandreou
