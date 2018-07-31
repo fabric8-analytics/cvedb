@@ -1,0 +1,40 @@
+---
+cve: 2017-14450
+title: CVE in org.jtrim2:jtrim-image
+description: >
+    A buffer overflow vulnerability exists in the GIF image parsing functionality of SDL2_image-2.0.2. A specially crafted GIF image can lead to a buffer overflow on a global section. An attacker can display an image to trigger this vulnerability.
+cvss_v2: 5.8
+references:
+    - https://lists.debian.org/debian-lts-announce/2018/04/msg00005.html
+    - https://www.debian.org/security/2018/dsa-4177
+    - https://www.debian.org/security/2018/dsa-4184
+    - https://www.talosintelligence.com/vulnerability_reports/TALOS-2017-0499
+
+affected:
+    - groupId: org.jtrim2
+      artifactId: jtrim-image
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/o:debian:debian_linux:9.0
+#    - cpe:/o:debian:debian_linux:7.0
+#    - cpe:/a:libsdl:sdl2_image:2.0.2
+#    - cpe:/o:debian:debian_linux:8.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.79725087 pl.droidsonroids.gif:android-gif-drawable
+# 0.0748747 org.wso2.balana:org.wso2.balana.samples.image.filtering
+# 0.06895676 com.sdl.web:context-image-proxy
+# 0.054809432 com.sdl.dxa:dxa-r2-provider
+# 0.038078196 org.jtrim2:jtrim-image
+# 0.034665853 org.jtrim2:jtrim-image-query
+# 0.034665853 org.jtrim2:jtrim-image-transform
+# 0.031586014 org.ow2.petals.flowable:flowable-image-generator
+# 0.031586014 org.ow2.petals.activiti:activiti-image-generator
+# 0.027307224 org.specs2:spring_2.9.2
