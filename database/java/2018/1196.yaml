@@ -6,22 +6,15 @@ description: >
 cvss_v2: 4.3
 references:
     - https://pivotal.io/security/cve-2018-1196
-
+    - https://nvd.nist.gov/vuln/detail/CVE-2018-1196
+    - https://github.com/spring-projects/spring-boot/issues/11397
+    - https://github.com/spring-projects/spring-boot/commit/9b8cb9a4639af3b47b5eeec4f5a04261dcd2a058
 affected:
     - groupId: org.springframework.boot
-      artifactId: spring-boot
-      version: <unable-to-determine>
-
-
-# Additional information:
-# Package name candidates:
-# 5.2945495 org.oxerr.spring.boot:spring-boot-daemon
-# 4.805419 com.github.pjagielski.spring-boot-swagger:spring-boot-swagger
-# 4.78275 org.singledog.spring.boot:mybatis-spring-boot-autoconfigure
-# 4.78275 org.singledog.spring.boot:mybatis-spring-boot-starter
-# 4.78275 net.rakugakibox.spring.boot:orika-spring-boot-starter
-# 4.78275 org.mybatis.spring.boot:mybatis-spring-boot-autoconfigure
-# 4.78275 org.mybatis.spring.boot:mybatis-spring-boot-starter
-# 4.78275 org.devefx.spring.boot:druid-spring-boot-starter
-# 4.626045 org.springframework.boot:spring-boot
-# 4.5595884 io.kwy.boot:spring-boot
+      artifactId: spring-boot-loader-tools
+      version:
+        - "<=1.5.9.RELEASE"
+        - "<=2.0.0.M7,2.0.0.M1"
+      fixedin:
+        - ">=1.5.10.RELEASE"
+        - ">=2.0.0.RC1"
