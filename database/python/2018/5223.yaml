@@ -1,0 +1,38 @@
+---
+cve: 2018-5223
+title: CVE in mercurial
+description: >
+    Fisheye and Crucible did not correctly check if a configured Mercurial repository URI contained values that the Windows operating system may consider argument parameters. An attacker who has permission to add a repository in Fisheye or Crucible can execute code of their choice on systems that run a vulnerable version of Fisheye or Crucible on the Windows operating system. All versions of Fisheye and Crucible before 4.4.6 (the fixed version for 4.4.x) and from 4.5.0 before 4.5.3 (the fixed version for 4.5.x) are affected by this vulnerability.
+cvss_v2: 6.5
+references:
+    - http://www.securityfocus.com/bid/103665
+    - https://confluence.atlassian.com/x/aS5sO
+    - https://confluence.atlassian.com/x/Zi5sO
+    - https://jira.atlassian.com/browse/CRUC-8181
+    - https://jira.atlassian.com/browse/FE-7014
+
+affected:
+    - name: mercurial
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:atlassian:fisheye 4.5.3 (excluding)
+#    - cpe:/a:atlassian:crucible 4.5.3 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.1603991 crucible
+# 0.94201964 uri
+# 0.84400386 mercurial
+# 0.7686206 windows
+# 0.6006098 git-crucible
+# 0.4914201 data-uri
+# 0.4914201 django-uri
+# 0.4914201 helper-uri
+# 0.4914201 lazr.uri
+# 0.4914201 yelp-uri
