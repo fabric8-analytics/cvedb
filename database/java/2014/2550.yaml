@@ -1,0 +1,36 @@
+---
+cve: 2014-2550
+title: CVE in com.minlia.cross:minlia-cross
+description: >
+    Cross-site request forgery (CSRF) vulnerability in the Disable Comments plugin before 1.0.4 for WordPress allows remote attackers to hijack the authentication of administrators for requests that enable comments via a request to the disable_comments_settings page to wp-admin/options-general.php.
+cvss_v2: 6.8
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/92219
+    - https://security.dxw.com/advisories/csrf-in-disable-comments-1-0-3/
+    - https://wordpress.org/plugins/disable-comments/#developers
+
+affected:
+    - groupId: com.minlia.cross
+      artifactId: minlia-cross
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:disable_comments:disable_comments_project:::~~~wordpress~~ 1.0.4 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.55369145 uk.co.divisiblebyzero.wordpress:wordpress
+# 0.3523491 com.washingtonpost.wordpress:wordpress-rest-api-client
+# 0.13491082 com.minlia.cross:minlia-cross
+# 0.07809123 org.sakaiproject.site:sakai-site-help
+# 0.07809123 org.sakaiproject.site:sakai-site-tool
+# 0.07809123 org.jbehave.site:jbehave-site-resources
+# 0.07809123 org.jbehave.site:jbehave-site-templates
+# 0.07187039 org.andromda.maven.site:andromda-site-skin
+# 0.065649554 org.andromda.maven.plugins.site:andromda-site-plugin
+# 0.065649554 org.andromda.maven.plugins.site:andromda-site-skin
