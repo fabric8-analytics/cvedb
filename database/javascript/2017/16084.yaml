@@ -7,24 +7,10 @@ cvss_v2: 5.0
 references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/list-n-stream
     - https://nodesecurity.io/advisories/344
-
+    - https://nvd.nist.gov/vuln/detail/CVE-2017-16084
 affected:
     - name: list-n-stream
       version:
         - "<=0.0.10"
-    - fixedin:
-      - ">=0.0.11"
-
-
-# Additional information:
-# Package name candidates:
-# 9.879788 list-n-stream
-# 3.1709456 first-n-stream
-# 0.8482017 list-stream
-# 0.7477258 json-list-stream
-# 0.7430897 stream-n-way
-# 0.6472499 azure-blob-list-stream
-# 0.6472499 pui-react-stream-list
-# 0.6472499 @petitchevalroux/redis-stream-list
-# 0.58208555 i18n-list
-# 0.546774 @npmcorp/pui-react-stream-list
+      fixedin:
+        - ">=0.0.11"
