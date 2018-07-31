@@ -7,7 +7,6 @@ cvss_v2: 4.3
 references:
     - https://github.com/restify/node-restify/issues/1018
     - https://nodesecurity.io/advisories/314
-
 affected:
     - name: restify
       version:
