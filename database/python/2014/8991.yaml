@@ -1,0 +1,49 @@
+---
+cve: 2014-8991
+title: CVE in pip
+description: >
+    pip 1.3 through 1.5.6 allows local users to cause a denial of service (prevention of package installation) by creating a /tmp/pip-build-* file for another user.
+cvss_v2: 2.1
+references:
+    - http://www.openwall.com/lists/oss-security/2014/11/19/17
+    - http://www.openwall.com/lists/oss-security/2014/11/20/6
+    - http://www.oracle.com/technetwork/topics/security/bulletinjul2015-2511963.html
+    - http://www.securityfocus.com/bid/71209
+    - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=725847
+    - https://github.com/pypa/pip/pull/2122
+
+affected:
+    - name: pip
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:python:pip:1.5.2
+#    - cpe:/a:python:pip:1.5.3
+#    - cpe:/a:python:pip:1.5.6
+#    - cpe:/a:python:pip:1.5.5
+#    - cpe:/o:oracle:solaris:11.2
+#    - cpe:/a:python:pip:1.5.4
+#    - cpe:/a:python:pip:1.5
+#    - cpe:/a:python:pip:1.3.1
+#    - cpe:/a:python:pip:1.4
+#    - cpe:/a:python:pip:1.4.1
+#    - cpe:/a:python:pip:1.3
+#    - cpe:/a:python:pip:1.5.1
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 8.15203 pip
+# 4.137348 callable-pip
+# 4.137348 generate-pip
+# 4.137348 gen-pip
+# 4.137348 hello-pip
+# 4.137348 hub-pip
+# 4.137348 import-or-pip
+# 4.137348 ipython-pip
+# 4.137348 jupyter-pip
+# 4.137348 lib.com.pip
