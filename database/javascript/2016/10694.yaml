@@ -6,22 +6,8 @@ description: >
 cvss_v2: 9.3
 references:
     - https://nodesecurity.io/advisories/172
-
+    - https://nvd.nist.gov/vuln/detail/CVE-2016-10694
 affected:
     - name: alto-saxophone
       version:
-        - "<2.25.1"
-
-
-# Additional information:
-# Package name candidates:
-# 1.7435107 alto-saxophone
-# 1.0853168 windows-selenium-chromedriver
-# 1.0336856 mac-windows
-# 0.87399614 chromedriver
-# 0.67222923 mac
-# 0.67222923 is-mac
-# 0.58985245 is-linux
-# 0.58985245 linux
-# 0.45418134 macaca-chromedriver
-# 0.45418134 electron-chromedriver
+        - "<=2.25.0"
