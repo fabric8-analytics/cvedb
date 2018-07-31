@@ -1,0 +1,34 @@
+---
+cve: 2018-7035
+title: CVE in django-cms-site
+description: >
+    Cross-site scripting (XSS) vulnerability in Gleez CMS 1.2.0 and 2.0 might allow remote attackers (users) to inject JavaScript via HTML content in an editor, which will result in Stored XSS when an Administrator tries to edit the same content, as demonstrated by use of the source editor for HTML mode in an Add Blog action.
+cvss_v2: 3.5
+references:
+    - https://github.com/gleez/cms/issues/794
+
+affected:
+    - name: django-cms-site
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:gleezcms:gleez_cms:2.0
+#    - cpe:/a:gleezcms:gleez_cms:1.2.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.33861855 django-cms-site
+# 0.28369132 stored
+# 0.25163138 javascript
+# 0.2202246 add
+# 0.21056293 asm.cms
+# 0.21056293 bugle-cms
+# 0.21056293 castle.cms
+# 0.21056293 cms-booklet
+# 0.21056293 cms-figure
+# 0.21056293 coop-cms
