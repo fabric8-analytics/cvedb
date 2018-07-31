@@ -1,0 +1,39 @@
+---
+cve: 2018-1064
+title: CVE in libvirt-python
+description: >
+    libvirt version before 4.2.0-rc1 is vulnerable to a resource exhaustion as a result of an incomplete fix for CVE-2018-5748 that affects QEMU monitor but now also triggered via QEMU guest agent.
+cvss_v2: 5.0
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1550672
+    - https://libvirt.org/git/?p=libvirt.git;a=commit;h=fbf31e1a4cd19d6f6e33e0937a009775cd7d9513
+    - https://lists.debian.org/debian-lts-announce/2018/03/msg00018.html
+    - https://www.debian.org/security/2018/dsa-4137
+
+affected:
+    - name: libvirt-python
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/o:debian:debian_linux:9.0
+#    - cpe:/o:debian:debian_linux:8.0
+#    - cpe:/a:redhat:libvirt 4.1.0 (including)
+#    - cpe:/o:debian:debian_linux:7.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.6457089 devstack-libvirt-qemu-plugin-drivers
+# 0.69706255 libvirt-python
+# 0.69706255 sentinella-libvirt
+# 0.69706255 snarf-libvirt
+# 0.6576907 avocado-qemu
+# 0.6576907 fc.qemu
+# 0.6576907 qemu-affinity
+# 0.6576907 quick-qemu
+# 0.6576907 shellphish-qemu
+# 0.16486992 cve-search
