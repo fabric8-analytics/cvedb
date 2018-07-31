@@ -1,0 +1,39 @@
+---
+cve: 2018-0787
+title: CVE in com.microsoft.azure:azure-keyvault-core
+description: >
+    ASP.NET Core 1.0. 1.1, and 2.0 allow an elevation of privilege vulnerability due to how web applications that are created from templates validate web requests, aka "ASP.NET Core Elevation Of Privilege Vulnerability".
+cvss_v2: 6.8
+references:
+    - http://www.securityfocus.com/bid/103282
+    - http://www.securitytracker.com/id/1040525
+    - https://github.com/aspnet/Announcements/issues/295
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2018-0787
+
+affected:
+    - groupId: com.microsoft.azure
+      artifactId: azure-keyvault-core
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:microsoft:asp.net_core:1.0
+#    - cpe:/a:microsoft:asp.net_core:2.0
+#    - cpe:/a:microsoft:asp.net_core:1.1
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.74129677 com.bluecatcode.core:core
+# 0.74129677 net.awired.core:core
+# 0.71388006 org.apache.deltaspike.core:core-project
+# 0.71388006 net.open-esb.core:framework-core
+# 0.71388006 fr.norad.core:core
+# 0.61098576 com.microsoft.azure:applicationinsights-core
+# 0.61098576 com.microsoft.alm:auth-core
+# 0.61098576 com.microsoft.azure:azure-core
+# 0.57836306 com.microsoft.azure:azure-keyvault-core
+# 0.54574037 com.microsoft.java:com.microsoft.java.debug.core
