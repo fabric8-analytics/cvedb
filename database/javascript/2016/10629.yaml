@@ -10,18 +10,4 @@ references:
 affected:
     - name: nw-with-arm
       version:
-        - "<unable-to-determine>"
-
-
-# Additional information:
-# Package name candidates:
-# 6.062933 nw-with-arm
-# 2.2569623 dm-nw-installer
-# 2.2569623 nw-chromedriver-installer
-# 2.0362544 nw
-# 1.5330092 gulp-nw-build
-# 1.5330092 nw-global-build
-# 1.3188531 node-barc-nw-build
-# 1.3188531 node-printer-nw-build
-# 1.3188531 node-canvas-nw-build
-# 1.0350859 nw-builder
+        - ">=0.12.2"
