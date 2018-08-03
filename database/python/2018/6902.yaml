@@ -1,0 +1,33 @@
+---
+cve: 2018-6902
+title: CVE in image
+description: >
+    PHP Scripts Mall Image Sharing Script 1.3.3 has XSS via the Full Name field in an Edit Profile action.
+cvss_v2: 3.5
+references:
+    - https://0day4u.wordpress.com/2018/03/12/image-sharing-script-stored-xss/
+
+affected:
+    - name: image
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:image_sharing_script_project:image_sharing_script:1.3.3
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.5069134 image-script-sam
+# 0.5069134 sam-image-script
+# 0.37243676 script
+# 0.33177677 django-sharing
+# 0.33177677 wagtail-sharing
+# 0.30665278 image
+# 0.29336688 atreal.override.sharing
+# 0.29336688 django-file-sharing
+# 0.23564544 php
+# 0.19846728 buildout-script
