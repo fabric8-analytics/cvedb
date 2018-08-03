@@ -1,0 +1,33 @@
+---
+cve: 2018-10219
+title: CVE in infrared-v3
+description: >
+    baijiacms V3 has physical path leakage via an index.php?mod=mobile&name=member&do=index request.
+cvss_v2: 5.0
+references:
+    - https://github.com/L3tter/bugs/blob/master/baijiacmsV3_bug
+
+affected:
+    - name: infrared-v3
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:baijiacms_project:baijiacms:3.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 3.066042 infrared-v3
+# 3.066042 loadimpact-v3
+# 3.066042 mailgun-v3
+# 2.5622098 dexcell-api-v3
+# 2.5622098 qcloud-cos-v3
+# 2.5622098 requests-ssl-v3
+# 2.0583777 aliyun-python-sdk-core-v3
+# 2.0583777 gapic-google-cloud-monitoring-v3
+# 2.0583777 gapic-google-monitoring-v3
+# 2.0583777 grpc-google-cloud-monitoring-v3
