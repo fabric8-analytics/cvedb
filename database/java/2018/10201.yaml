@@ -1,0 +1,38 @@
+---
+cve: 2018-10201
+title: CVE in de.pro-vision.maven:de.pro-vision.maven.build-tools.global-build-tools
+description: >
+    An issue was discovered in NcMonitorServer.exe in NC Monitor Server in NComputing vSpace Pro 10 and 11. It is possible to read arbitrary files outside the root directory of the web server. This vulnerability could be exploited remotely by a crafted URL without credentials, with .../ or ...\ or ..../ or ....\ as a directory-traversal pattern to TCP port 8667.
+cvss_v2: 5.0
+references:
+    - http://www.kwell.net/kwell_blog/?p=5199
+    - https://support.ncomputing.com/portal/kb/articles/ncomputing-health-monitor-server-vulnerability-patch
+    - https://www.exploit-db.com/exploits/44497/
+    - https://www.kwell.net/kwell/index.php?option=com_newsfeeds&view=newsfeed&id=15&Itemid=173&lang=es
+
+affected:
+    - groupId: de.pro-vision.maven
+      artifactId: de.pro-vision.maven.build-tools.global-build-tools
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:ncomputing:vspace_pro:10
+#    - cpe:/a:ncomputing:vspace_pro:11
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.48867506 net.sourceforge.pro-grade:pro-grade
+# 0.4256145 com.googlecode.protobuf-rpc-pro:protobuf-streamer-pro
+# 0.37836337 com.googlecode.protobuf-rpc-pro:protobuf-rpc-pro-demo
+# 0.37836337 com.googlecode.protobuf-rpc-pro:protobuf-rpc-pro-duplex
+# 0.33152044 com.smartmeapp.monitor:monitor
+# 0.31126994 com.smartmeapp.com.smartmeapp.monitor:monitor
+# 0.26023546 de.pro-vision.maven:de.pro-vision.maven.build-tools.global-build-tools
+# 0.26023546 de.pro-vision.maven:de.pro-vision.maven.build-tools.global-build-tools-mixin
+# 0.24676219 excalibur-monitor:excalibur-monitor
+# 0.2461666 c10n:c10n-core
