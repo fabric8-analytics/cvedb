@@ -1,0 +1,37 @@
+---
+cve: 2018-1289
+title: CVE in sql-query-dict
+description: >
+    In Apache Fineract versions 1.0.0, 0.6.0-incubating, 0.5.0-incubating, 0.4.0-incubating, the system exposes different REST end points to query domain specific entities with a Query Parameter 'orderBy' and 'sortOrder' which are appended directly with SQL statements. A hacker/user can inject/draft the 'orderBy' and 'sortOrder' query parameter in such a way to read/update the data for which he doesn't have authorization.
+cvss_v2: 6.5
+references:
+    - http://www.securityfocus.com/bid/104005
+    - https://lists.apache.org/thread.html/4a1312b18ed2979fba9e2df07839e6a940eeeea12ed9154db1a49a5a@%3Cdev.fineract.apache.org%3E
+
+affected:
+    - name: sql-query-dict
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:apache:fineract:0.4.0
+#    - cpe:/a:apache:fineract:1.0.0
+#    - cpe:/a:apache:fineract:0.5.0
+#    - cpe:/a:apache:fineract:0.6.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.75068307 sql-query-dict
+# 0.75008094 rest-query
+# 0.6613063 arcgis-rest-query
+# 0.6613063 django-rest-query
+# 0.6613063 peewee-rest-query
+# 0.6574745 parameter
+# 0.48375714 django-rest-query-params-filter
+# 0.4588356 query
+# 0.43327433 sql
+# 0.41120952 order
