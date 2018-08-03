@@ -1,0 +1,39 @@
+---
+cve: 2018-1217
+title: CVE in idigbio-media-appliance
+description: >
+    Avamar Installation Manager in Dell EMC Avamar Server 7.3.1, 7.4.1, and 7.5.0, and Dell EMC Integrated Data Protection Appliance 2.0 and 2.1, is affected by a missing access control check vulnerability which could potentially allow a remote unauthenticated attacker to read or change the Local Download Service (LDLS) credentials. The LDLS credentials are used to connect to Dell EMC Online Support. If the LDLS configuration was changed to an invalid configuration, then Avamar Installation Manager may not be able to connect to Dell EMC Online Support web site successfully. The remote unauthenticated attacker can also read and use the credentials to login to Dell EMC Online Support, impersonating the AVI service actions using those credentials.
+cvss_v2: 5.0
+references:
+    - http://seclists.org/fulldisclosure/2018/Apr/14
+    - http://www.securitytracker.com/id/1040641
+    - https://www.exploit-db.com/exploits/44441/
+
+affected:
+    - name: idigbio-media-appliance
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:dell:emc_avamar:7.4.1
+#    - cpe:/a:dell:emc_integrated_data_protection_appliance:2.0
+#    - cpe:/a:dell:emc_avamar:7.3.1
+#    - cpe:/a:dell:emc_avamar:7.5.0
+#    - cpe:/a:dell:emc_integrated_data_protection_appliance:2.1
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.70610213 emc
+# 0.3312846 appliance
+# 0.21976383 seaborn-local-data
+# 0.21397963 download-water-data
+# 0.18231133 rm-protection
+# 0.16168799 schematic-protection-model
+# 0.15468213 idigbio-media-appliance
+# 0.14852166 data
+# 0.14647132 service-manager
+# 0.14332041 webshare-download-manager
