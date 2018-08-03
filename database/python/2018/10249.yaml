@@ -1,0 +1,33 @@
+---
+cve: 2018-10249
+title: CVE in infrared-v3
+description: >
+    baijiacms V3 has CSRF via index.php?mod=site&op=edituser&name=manager&do=user to add an administrator account.
+cvss_v2: 6.8
+references:
+    - https://crayon-xin.github.io/2018/04/20/baijiacmsV3-CSRF-add-admin/
+
+affected:
+    - name: infrared-v3
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:baijiacms_project:baijiacms:3.0
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.8855805 infrared-v3
+# 1.8855805 loadimpact-v3
+# 1.8855805 mailgun-v3
+# 1.5778898 dexcell-api-v3
+# 1.5778898 qcloud-cos-v3
+# 1.5778898 requests-ssl-v3
+# 1.270199 aliyun-python-sdk-core-v3
+# 1.270199 gapic-google-cloud-monitoring-v3
+# 1.270199 gapic-google-monitoring-v3
+# 1.270199 grpc-google-cloud-monitoring-v3
