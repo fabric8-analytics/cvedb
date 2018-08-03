@@ -1,0 +1,37 @@
+---
+cve: 2018-11358
+title: CVE in q
+description: >
+    In Wireshark 2.6.0, 2.4.0 to 2.4.6, and 2.2.0 to 2.2.14, the Q.931 dissector could crash. This was addressed in epan/dissectors/packet-q931.c by avoiding a use-after-free after a malformed packet prevented certain cleanup.
+cvss_v2: 5.0
+references:
+    - https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=14689
+    - https://code.wireshark.org/review/gitweb?p=wireshark.git;a=commit;h=ccb1ac3c8cec47fbbbf2e80ced80644005c65252
+    - https://lists.debian.org/debian-lts-announce/2018/05/msg00019.html
+    - https://www.wireshark.org/security/wnpa-sec-2018-31.html
+
+affected:
+    - name: q
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:wireshark:wireshark:2.6.0
+#    - cpe:/a:wireshark:wireshark 2.4.6 (including)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 3.1458933 q
+# 2.4129248 steelscript.wireshark
+# 1.6049494 django-q
+# 1.6049494 js.q
+# 1.6049494 pygments-q
+# 1.6049494 q-a-dependencies
+# 1.6049494 q-ctrl
+# 1.6049494 q-stdev
+# 1.6049494 util-q
+# 1.4123313 django-q-email
