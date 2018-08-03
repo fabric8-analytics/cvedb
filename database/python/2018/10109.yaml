@@ -1,0 +1,34 @@
+---
+cve: 2018-10109
+title: CVE in django-cms
+description: >
+    Monstra CMS 3.0.4 has a stored XSS vulnerability when an attacker has access to the editor role, and enters the payload in the content section of a new page in the blog catalog.
+cvss_v2: 3.5
+references:
+    - https://github.com/monstra-cms/monstra/issues/435
+    - https://www.exploit-db.com/exploits/44502/
+
+affected:
+    - name: django-cms
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:monstra:monstra:3.0.4
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.2473398 xss-catcher
+# 1.0979582 django-xss-detection
+# 0.6062184 asm.cms
+# 0.6062184 bugle-cms
+# 0.6062184 castle.cms
+# 0.6062184 cms-booklet
+# 0.6062184 cms-figure
+# 0.6062184 coop-cms
+# 0.6062184 django-cms
+# 0.6062184 djedi-cms
