@@ -1,0 +1,34 @@
+---
+cve: 2018-10259
+title: CVE in trustpilot-authenticated-encryption
+description: >
+    An Authenticated Stored XSS vulnerability was found in HRSALE The Ultimate HRM v1.0.2, exploitable by a low privileged user.
+cvss_v2: 3.5
+references:
+    - http://packetstormsecurity.com/files/147383/HRSALE-The-Ultimate-HRM-1.0.2-Cross-Site-Scripting.html
+    - https://www.exploit-db.com/exploits/44538/
+
+affected:
+    - name: trustpilot-authenticated-encryption
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:hrsale_project:hrsale:1.0.2
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.88415295 hrm
+# 0.71757334 stored
+# 0.4314847 xss-catcher
+# 0.39762458 ultimate-ttt
+# 0.38188902 django-always-authenticated
+# 0.38188902 django-xss-detection
+# 0.38188902 trustpilot-authenticated-encryption
+# 0.3522614 python-ultimate-guitar
+# 0.3522614 ultimate-smash-friends
+# 0.33346784 django-stored-filters
