@@ -1,0 +1,37 @@
+---
+cve: 2016-9899
+title: CVE in firefox-puppeteer
+description: >
+    Use-after-free while manipulating DOM events and removing audio elements due to errors in the handling of node adoption. This vulnerability affects Firefox < 50.1, Firefox ESR < 45.6, and Thunderbird < 45.6.
+cvss_v2: 7.5
+references:
+    - http://rhn.redhat.com/errata/RHSA-2016-2946.html
+    - http://rhn.redhat.com/errata/RHSA-2016-2973.html
+    - http://www.securityfocus.com/bid/94885
+    - http://www.securitytracker.com/id/1037461
+    - https://bugzilla.mozilla.org/show_bug.cgi?id=1317409
+    - https://security.gentoo.org/glsa/201701-15
+    - https://www.debian.org/security/2017/dsa-3757
+    - https://www.exploit-db.com/exploits/41042/
+    - https://www.mozilla.org/security/advisories/mfsa2016-94/
+    - https://www.mozilla.org/security/advisories/mfsa2016-95/
+    - https://www.mozilla.org/security/advisories/mfsa2016-96/
+
+affected:
+    - name: firefox-puppeteer
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 0.8283305 firefox-jar
+# 0.8283305 firefox-puppeteer
+# 0.8283305 firefox-shm
+# 0.8283305 firefox-tabs
+# 0.8283305 pytest-firefox
+# 0.72801423 firefox-cert-override
+# 0.72801423 firefox-ui-harness
+# 0.60308325 dom
+# 0.36106947 openerp-plugin-thunderbird
+# 0.31444153 ais-dom
