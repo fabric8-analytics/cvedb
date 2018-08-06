@@ -1,0 +1,30 @@
+---
+cve: 2018-1460
+title: CVE in system
+description: >
+    IBM Netezza Platform Software (IBM PureData System for Analytics 1.0.0) could allow a local user to modify a world writable file, which could be used to execute commands as root. IBM X-Force ID: 140211.
+cvss_v2: 7.2
+references:
+    - http://www.ibm.com/support/docview.wss?uid=swg22015701
+    - http://www.securityfocus.com/bid/104486
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/140211
+    - https://www.tenable.com/security/research/tra-2018-13
+
+affected:
+    - name: system
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 0.6437225 angulartics-chrome-platform-analytics
+# 0.6437225 @platform-os/google-analytics
+# 0.6315783 analytics
+# 0.5918924 system
+# 0.5918924 then-system
+# 0.3607091 ibm
+# 0.3288646 universal-analytics
+# 0.3288646 analytics-node
+# 0.3288646 nuclide-analytics
+# 0.3288646 webmaker-analytics
