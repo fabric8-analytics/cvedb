@@ -1,0 +1,45 @@
+---
+cve: 2015-7940
+title: CVE in bouncy
+description: >
+    The Bouncy Castle Java library before 1.51 does not validate a point is withing the elliptic curve, which makes it easier for remote attackers to obtain private keys via a series of crafted elliptic curve Diffie Hellman (ECDH) key exchanges, aka an "invalid curve attack."
+cvss_v2: 5.0
+references:
+    - http://lists.fedoraproject.org/pipermail/package-announce/2016-January/174915.html
+    - http://lists.opensuse.org/opensuse-security-announce/2015-11/msg00012.html
+    - http://rhn.redhat.com/errata/RHSA-2016-2035.html
+    - http://rhn.redhat.com/errata/RHSA-2016-2036.html
+    - http://web-in-security.blogspot.ca/2015/09/practical-invalid-curve-attacks.html
+    - http://www.debian.org/security/2015/dsa-3417
+    - http://www.openwall.com/lists/oss-security/2015/10/22/7
+    - http://www.openwall.com/lists/oss-security/2015/10/22/9
+    - http://www.oracle.com/technetwork/security-advisory/cpuapr2018-3678067.html
+    - http://www.oracle.com/technetwork/security-advisory/cpujan2018-3236628.html
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2017-3236622.html
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2018-4258247.html
+    - http://www.oracle.com/technetwork/security-advisory/cpuoct2016-2881722.html
+    - http://www.oracle.com/technetwork/security-advisory/cpuoct2017-3236626.html
+    - http://www.securityfocus.com/bid/79091
+    - http://www.securitytracker.com/id/1037036
+    - http://www.securitytracker.com/id/1037046
+    - http://www.securitytracker.com/id/1037053
+    - https://usn.ubuntu.com/3727-1/
+
+affected:
+    - name: bouncy
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 0.43808532 bouncy
+# 0.37937284 castle
+# 0.22638303 django-bouncy
+# 0.19702679 castle-cms
+# 0.19702679 castle-flask
+# 0.19702679 castle-theme
+# 0.19702679 collective-castle
+# 0.19702679 django-castle
+# 0.13924444 java
+# 0.07696259 buildsystem-java
