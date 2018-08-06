@@ -1,0 +1,37 @@
+---
+cve: 2017-7786
+title: CVE in firefox-puppeteer
+description: >
+    A buffer overflow can occur when the image renderer attempts to paint non-displayable SVG elements. This results in a potentially exploitable crash. This vulnerability affects Thunderbird < 52.3, Firefox ESR < 52.3, and Firefox < 55.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/100206
+    - http://www.securitytracker.com/id/1039124
+    - https://access.redhat.com/errata/RHSA-2017:2456
+    - https://access.redhat.com/errata/RHSA-2017:2534
+    - https://bugzilla.mozilla.org/show_bug.cgi?id=1365189
+    - https://security.gentoo.org/glsa/201803-14
+    - https://www.debian.org/security/2017/dsa-3928
+    - https://www.debian.org/security/2017/dsa-3968
+    - https://www.mozilla.org/security/advisories/mfsa2017-18/
+    - https://www.mozilla.org/security/advisories/mfsa2017-19/
+    - https://www.mozilla.org/security/advisories/mfsa2017-20/
+
+affected:
+    - name: firefox-puppeteer
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 1.4184563 firefox-jar
+# 1.4184563 firefox-puppeteer
+# 1.4184563 firefox-shm
+# 1.4184563 firefox-tabs
+# 1.4184563 pytest-firefox
+# 1.245595 firefox-cert-override
+# 1.245595 firefox-ui-harness
+# 0.6132898 openerp-plugin-thunderbird
+# 0.45050004 cmsplugin-svg
+# 0.45050004 django-svg
