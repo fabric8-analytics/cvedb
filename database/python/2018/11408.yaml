@@ -1,0 +1,30 @@
+---
+cve: 2018-11408
+title: CVE in open-cli
+description: >
+    The security handlers in the Security component in Symfony in 2.7.x before 2.7.48, 2.8.x before 2.8.41, 3.3.x before 3.3.17, 3.4.x before 3.4.11, and 4.0.x before 4.0.11 have an Open redirect vulnerability when security.http_utils is inlined by a container.  NOTE: this issue exists because of an incomplete fix for CVE-2017-16652.
+cvss_v2: 5.8
+references:
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/G4XNBMFW33H47O5TZGA7JYCVLDBCXAJV/
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UBQK7JDXIELADIPGZIOUCZKMAJM5LSBW/
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/WU5N2TZFNGXDGMXMPP7LZCWTFLENF6WH/
+    - https://symfony.com/blog/cve-2018-11408-open-redirect-vulnerability-on-security-handlers
+
+affected:
+    - name: open-cli
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 0.8903101 open
+# 0.8797266 security
+# 0.46797955 aws-open
+# 0.46797955 bom-open
+# 0.46797955 fake-open
+# 0.46797955 jit-open
+# 0.46797955 mock-open
+# 0.46797955 open-browser
+# 0.46797955 open-cli
+# 0.46797955 open-cnl
