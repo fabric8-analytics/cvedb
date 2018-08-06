@@ -1,0 +1,49 @@
+---
+cve: 2018-2796
+title: CVE in oslo-concurrency
+description: >
+    Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: Concurrency). Supported versions that are affected are Java SE: 7u171, 8u162 and 10; Java SE Embedded: 8u161; JRockit: R28.3.17. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Java SE Embedded, JRockit. Note: Applies to client and server deployment of Java. This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service. CVSS 3.0 Base Score 5.3 (Availability impacts). CVSS Vector: (CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L).
+cvss_v2: 5.0
+references:
+    - http://www.oracle.com/technetwork/security-advisory/cpuapr2018-3678067.html
+    - http://www.securityfocus.com/bid/103868
+    - http://www.securitytracker.com/id/1040697
+    - https://access.redhat.com/errata/RHSA-2018:1188
+    - https://access.redhat.com/errata/RHSA-2018:1191
+    - https://access.redhat.com/errata/RHSA-2018:1201
+    - https://access.redhat.com/errata/RHSA-2018:1202
+    - https://access.redhat.com/errata/RHSA-2018:1204
+    - https://access.redhat.com/errata/RHSA-2018:1206
+    - https://access.redhat.com/errata/RHSA-2018:1270
+    - https://access.redhat.com/errata/RHSA-2018:1278
+    - https://access.redhat.com/errata/RHSA-2018:1721
+    - https://access.redhat.com/errata/RHSA-2018:1722
+    - https://access.redhat.com/errata/RHSA-2018:1723
+    - https://access.redhat.com/errata/RHSA-2018:1724
+    - https://access.redhat.com/errata/RHSA-2018:1974
+    - https://access.redhat.com/errata/RHSA-2018:1975
+    - https://security.netapp.com/advisory/ntap-20180419-0001/
+    - https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbst03857en_us
+    - https://usn.ubuntu.com/3644-1/
+    - https://usn.ubuntu.com/3691-1/
+    - https://www.debian.org/security/2018/dsa-4185
+    - https://www.debian.org/security/2018/dsa-4225
+
+affected:
+    - name: oslo-concurrency
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 0.37026447 concurrency
+# 0.31900996 se
+# 0.2937643 oracle
+# 0.27923167 java
+# 0.19864348 django-concurrency
+# 0.19864348 oslo-concurrency
+# 0.17818251 embedded-jubatus
+# 0.17818251 mongoengine-embedded
+# 0.17301622 botpy-se
+# 0.17301622 pysnmp-se
