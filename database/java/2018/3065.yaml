@@ -1,0 +1,31 @@
+---
+cve: 2018-3065
+title: CVE in mysql:mysql-connector-java
+description: >
+    Vulnerability in the MySQL Server component of Oracle MySQL (subcomponent: Server: DML). Supported versions that are affected are 5.7.22 and prior and 8.0.11 and prior. Easily exploitable vulnerability allows low privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.0 Base Score 6.5 (Availability impacts). CVSS Vector: (CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H).
+cvss_v2: 4.0
+references:
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2018-4258247.html
+    - http://www.securityfocus.com/bid/104769
+    - http://www.securitytracker.com/id/1041294
+    - https://security.netapp.com/advisory/ntap-20180726-0002/
+    - https://usn.ubuntu.com/3725-1/
+
+affected:
+    - groupId: mysql
+      artifactId: mysql-connector-java
+      version: <unable-to-determine>
+
+
+# Additional information:
+# Package name candidates:
+# 0.8704759 mysql:mysql-connector-java
+# 0.8704759 mysql:mysql-connector-mxj
+# 0.75742435 eu.agrosense.server:server
+# 0.7523576 mysql:mysql-connector-mxj-db-files
+# 0.7171903 com.oracle.kv:oracle-nosql-client
+# 0.7171903 com.oracle.tools:oracle-tools-all
+# 0.7171903 com.oracle.tools:oracle-tools-coherence
+# 0.7171903 com.oracle.tools:oracle-tools-core
+# 0.7171903 com.oracle.tools:oracle-tools-runtime
+# 0.70776105 uk.org.retep.xmpp.server:server
