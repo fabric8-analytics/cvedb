@@ -1,0 +1,27 @@
+---
+cve: 2018-6515
+title: CVE in com.newrelic.agent.android:android-agent
+description: >
+    Puppet Agent 1.10.x prior to 1.10.13, Puppet Agent 5.3.x prior to 5.3.7, and Puppet Agent 5.5.x prior to 5.5.2 on Windows only, with a specially crafted configuration file an attacker could get pxp-agent to load arbitrary code with privilege escalation.
+cvss_v2: 6.8
+references:
+    - https://puppet.com/security/cve/CVE-2018-6515
+
+affected:
+    - groupId: com.newrelic.agent.android
+      artifactId: android-agent
+      version: <unable-to-determine>
+
+
+# Additional information:
+# Package name candidates:
+# 4.385351 com.aestasit.infrastructure.puppet:puppet-unit
+# 0.61562955 au.net.causal.groovysh-windows-fix:groovysh-windows-fix
+# 0.507024 org.jmxtrans.agent:jmxtrans-agent
+# 0.48128492 org.ctoolkit.agent:ctoolkit-agent-import
+# 0.48128492 org.hawkular.agent:hawkular-swarm-agent
+# 0.48128492 org.hawkular.agent:hawkular-wildfly-agent
+# 0.48128492 org.hawkular.agent:hawkular-agent-core
+# 0.48128492 org.hawkular.agent:hawkular-agent-itest
+# 0.4693851 com.apmvista.agent.android:tracing-agent
+# 0.4693851 com.newrelic.agent.android:android-agent
