@@ -1,0 +1,27 @@
+---
+cve: 2018-9246
+title: CVE in com.pelzer.util:pelzer-util
+description: >
+    The PGObject::Util::DBAdmin module before 0.120.0 for Perl, as used in LedgerSMB through 1.5.x, insufficiently sanitizes or escapes variable values used as part of shell command execution, resulting in shell code injection via the create(), run_file(), backup(), or restore() function. The vulnerability allows unauthorized users to execute code with the same privileges as the running application.
+cvss_v2: 7.5
+references:
+    - https://archive.ledgersmb.org/ledger-smb-announce/msg00280.html
+
+affected:
+    - groupId: com.pelzer.util
+      artifactId: pelzer-util
+      version: <unable-to-determine>
+
+
+# Additional information:
+# Package name candidates:
+# 0.32295972 org.opentelecoms.util:util
+# 0.22921005 com.sargeraswang.util:excel-util
+# 0.22921005 com.danavalerie.util:dana-util
+# 0.22921005 com.pelzer.util:pelzer-util
+# 0.22921005 org.jvirtanen.util:util-extras
+# 0.22921005 org.ferris.util:ferris-util
+# 0.22921005 org.dmonix.util:io-util
+# 0.22921005 consulting.omnia.util:util-cast
+# 0.22921005 consulting.omnia.util:util-config
+# 0.22921005 consulting.omnia.util:util-context
