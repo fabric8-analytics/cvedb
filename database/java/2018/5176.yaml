@@ -1,0 +1,31 @@
+---
+cve: 2018-5176
+title: CVE in org.json:org.json
+description: >
+    The JSON Viewer displays clickable hyperlinks for strings that are parseable as URLs, including "javascript:" links. If a JSON file contains malicious JavaScript script embedded as "javascript:" links, users may be tricked into clicking and running this code in the context of the JSON Viewer. This can allow for the theft of cookies and authorization tokens which are accessible to that context. This vulnerability affects Firefox < 60.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/104139
+    - http://www.securitytracker.com/id/1040896
+    - https://bugzilla.mozilla.org/show_bug.cgi?id=1442840
+    - https://usn.ubuntu.com/3645-1/
+    - https://www.mozilla.org/security/advisories/mfsa2018-11/
+
+affected:
+    - groupId: org.json
+      artifactId: org.json
+      version: <unable-to-determine>
+
+
+# Additional information:
+# Package name candidates:
+# 1.2451682 org.apache.isis.viewer:json-viewer
+# 0.7450224 org.json:json
+# 0.7450224 org.json:org.json
+# 0.6625923 org.appspy.viewer:org.appspy.viewer.service
+# 0.6625923 org.appspy.viewer:org.appspy.viewer.webapp
+# 0.6539714 org.apache.isis.viewer:wicket-viewer
+# 0.6539714 org.apache.isis.viewer:xhtml-viewer
+# 0.6230173 org.appspy.viewer:org.appspy.viewer.birt.webapp
+# 0.6230173 org.appspy.viewer:org.appspy.viewer.service.impl
+# 0.6143964 org.apache.isis.viewer:isis-viewer-wicket
