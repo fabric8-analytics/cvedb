@@ -1,0 +1,44 @@
+---
+cve: 2016-5388
+title: CVE in org.apache.tomcat:tomcat-servlet-api
+description: >
+    Apache Tomcat 7.x through 7.0.70 and 8.x through 8.5.4, when the CGI Servlet is enabled, follows RFC 3875 section 4.1.18 and therefore does not protect applications from the presence of untrusted client data in the HTTP_PROXY environment variable, which might allow remote attackers to redirect an application's outbound HTTP traffic to an arbitrary proxy server via a crafted Proxy header in an HTTP request, aka an "httpoxy" issue. NOTE: the vendor states "A mitigation is planned for future releases of Tomcat, tracked as CVE-2016-5388"; in other words, this is not a CVE ID for a vulnerability.
+cvss_v2: 5.1
+references:
+    - http://lists.opensuse.org/opensuse-updates/2016-09/msg00025.html
+    - http://rhn.redhat.com/errata/RHSA-2016-1624.html
+    - http://rhn.redhat.com/errata/RHSA-2016-2045.html
+    - http://rhn.redhat.com/errata/RHSA-2016-2046.html
+    - http://www.kb.cert.org/vuls/id/797896
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2017-3236622.html
+    - http://www.oracle.com/technetwork/topics/security/linuxbulletinoct2016-3090545.html
+    - http://www.securityfocus.com/bid/91818
+    - http://www.securitytracker.com/id/1036331
+    - https://access.redhat.com/errata/RHSA-2016:1635
+    - https://access.redhat.com/errata/RHSA-2016:1636
+    - https://h20566.www2.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbhf03770en_us
+    - https://h20566.www2.hpe.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c05320149
+    - https://h20566.www2.hpe.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c05324759
+    - https://h20566.www2.hpe.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c05390722
+    - https://httpoxy.org/
+    - https://tomcat.apache.org/tomcat-7.0-doc/changelog.html
+    - https://www.apache.org/security/asf-httpoxy-response.txt
+
+affected:
+    - groupId: org.apache.tomcat
+      artifactId: tomcat-servlet-api
+      version: <unable-to-determine>
+
+
+# Additional information:
+# Package name candidates:
+# 0.83188546 org.apache.tomcat:tomcat-servlet-api
+# 0.6641766 org.apache.aries.proxy:org.apache.aries.proxy
+# 0.6617261 tomcat:tomcat-http
+# 0.6579502 tomcat:tomcat
+# 0.6578518 org.realityforge.proxy-servlet:proxy-servlet
+# 0.63524055 org.apache.aries.proxy:org.apache.aries.proxy.api
+# 0.63524055 org.apache.aries.proxy:org.apache.aries.proxy.impl
+# 0.63524055 org.apache.aries.proxy:org.apache.aries.proxy.itests
+# 0.60731864 org.apache.tomcat:tomcat-api
+# 0.60731864 org.apache.tomcat:tomcat-catalina
