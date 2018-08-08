@@ -1,0 +1,30 @@
+---
+cve: 2017-5381
+title: CVE in com.liumapp.certificate:certificate-generator
+description: >
+    The "export" function in the Certificate Viewer can force local filesystem navigation when the "common name" in a certificate contains slashes, allowing certificate content to be saved in unsafe locations with an arbitrary filename. This vulnerability affects Firefox < 51.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/95763
+    - http://www.securitytracker.com/id/1037693
+    - https://bugzilla.mozilla.org/show_bug.cgi?id=1017616
+    - https://www.mozilla.org/security/advisories/mfsa2017-01/
+
+affected:
+    - groupId: com.liumapp.certificate
+      artifactId: certificate-generator
+      version: <unable-to-determine>
+
+
+# Additional information:
+# Package name candidates:
+# 1.4590701 com.liumapp.certificate:certificate-generator
+# 1.3569187 am.ik.certificate:certificate-importer
+# 1.0943025 io.gravitee.am.certificate:gravitee-am-certificate-api
+# 1.0943025 io.gravitee.am.certificate:gravitee-am-certificate-javakeystore
+# 0.9921512 io.gravitee.am.gateway.certificate:gravitee-am-gateway-certificate
+# 0.9761505 org.appspy.viewer:org.appspy.viewer.service
+# 0.9761505 org.appspy.viewer:org.appspy.viewer.webapp
+# 0.96344995 org.apache.isis.viewer:json-viewer
+# 0.96344995 org.apache.isis.viewer:wicket-viewer
+# 0.96344995 org.apache.isis.viewer:xhtml-viewer
