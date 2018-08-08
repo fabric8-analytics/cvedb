@@ -1,0 +1,31 @@
+---
+cve: 2018-1000180
+title: CVE in io.castle:castle-java
+description: >
+    Bouncy Castle BC 1.54 - 1.59, BC-FJA 1.0.0, BC-FJA 1.0.1 and earlier have a flaw in the Low-level interface to RSA key pair generator, specifically RSA Key Pairs generated in low-level API with added certainty may have less M-R tests than expected. This appears to be fixed in versions BC 1.60 beta 4 and later, BC-FJA 1.0.2 and later.
+cvss_v2: 5.0
+references:
+    - https://github.com/bcgit/bc-java/commit/22467b6e8fe19717ecdf201c0cf91bacf04a55ad
+    - https://github.com/bcgit/bc-java/commit/73780ac522b7795fc165630aba8d5f5729acc839
+    - https://www.bouncycastle.org/jira/browse/BJA-694
+    - https://www.bountysource.com/issues/58293083-rsa-key-generation-computation-of-iterations-for-mr-primality-test
+    - https://www.debian.org/security/2018/dsa-4233
+
+affected:
+    - groupId: io.castle
+      artifactId: castle-java
+      version: <unable-to-determine>
+
+
+# Additional information:
+# Package name candidates:
+# 0.43378937 io.castle:castle-java
+# 0.37542993 bouncycastle:bouncycastle-jce-jdk13
+# 0.17817007 io.split.api:java-api
+# 0.17817007 travel.izi.api:java-api
+# 0.17496905 org.apache.aries.rsa.examples.echotcp:org.apache.aries.rsa.examples.echotcp.api
+# 0.16115706 com.lotaris.api:java-api-test
+# 0.16115706 com.facebook.api:facebook-java-api
+# 0.15835266 travel.izi.api:java-api-extended
+# 0.15554826 com.microsoft.ews-java-api:ews-java-api
+# 0.15274388 com.google.code.facebook-java-api:facebook-java-api
