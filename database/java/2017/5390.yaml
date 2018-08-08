@@ -1,0 +1,38 @@
+---
+cve: 2017-5390
+title: CVE in org.json:org.json
+description: >
+    The JSON viewer in the Developer Tools uses insecure methods to create a communication channel for copying and viewing JSON or HTTP headers data, allowing for potential privilege escalation. This vulnerability affects Thunderbird < 45.7, Firefox ESR < 45.7, and Firefox < 51.
+cvss_v2: 7.5
+references:
+    - http://rhn.redhat.com/errata/RHSA-2017-0190.html
+    - http://rhn.redhat.com/errata/RHSA-2017-0238.html
+    - http://www.securityfocus.com/bid/95769
+    - http://www.securitytracker.com/id/1037693
+    - https://bugzilla.mozilla.org/show_bug.cgi?id=1297361
+    - https://security.gentoo.org/glsa/201702-13
+    - https://security.gentoo.org/glsa/201702-22
+    - https://www.debian.org/security/2017/dsa-3771
+    - https://www.debian.org/security/2017/dsa-3832
+    - https://www.mozilla.org/security/advisories/mfsa2017-01/
+    - https://www.mozilla.org/security/advisories/mfsa2017-02/
+    - https://www.mozilla.org/security/advisories/mfsa2017-03/
+
+affected:
+    - groupId: org.json
+      artifactId: org.json
+      version: <unable-to-determine>
+
+
+# Additional information:
+# Package name candidates:
+# 0.3199393 merlin-developer:merlin-developer-core
+# 0.30695844 com.wizzardo.tools:tools-http
+# 0.30580455 com.wizzardo.tools:tools-json
+# 0.29627523 org.json:json
+# 0.29627523 org.json:org.json
+# 0.28905106 com.github.java-json-tools:json-schema-core
+# 0.28905106 com.github.java-json-tools:json-schema-validator
+# 0.27998146 io.vilt.minium.developer:minium-developer-bundle
+# 0.27998146 io.vilt.minium.developer:minium-developer-docs
+# 0.27998146 io.vilt.minium.developer:minium-developer-fs
