@@ -1,0 +1,34 @@
+---
+cve: 2014-2675
+title: CVE in org.netbeans.html:net.java.html
+description: >
+    Cross-site request forgery (CSRF) vulnerability in inc/AdminPage.php in the WP HTML Sitemap plugin 1.2 for WordPress allows remote attackers to hijack the authentication of administrators for requests that delete the sitemap via a request to the wp-html-sitemap page in wp-admin/options-general.php.
+cvss_v2: 5.8
+references:
+    - https://security.dxw.com/advisories/csrf-vulnerability-in-wp-html-sitemap-1-2/
+
+affected:
+    - groupId: org.netbeans.html
+      artifactId: net.java.html
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:wp-html-sitemap_project:wp-html-sitemap:1.2
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 0.5799878 org.apache.cocoon.sitemap:cocoon-sitemap
+# 0.3657698 uk.co.divisiblebyzero.wordpress:wordpress
+# 0.33643138 org.netbeans.html:net.java.html
+# 0.33643138 org.nasdanika.html:org.nasdanika.html
+# 0.33643138 org.apidesign.html:net.java.html
+# 0.31991595 org.netbeans.html:net.java.html.boot
+# 0.31991595 org.netbeans.html:net.java.html.geo
+# 0.31991595 org.netbeans.html:net.java.html.json
+# 0.31991595 org.netbeans.html:net.java.html.sound
+# 0.31991595 org.apidesign.html:net.java.html.boot
