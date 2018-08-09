@@ -6,29 +6,16 @@ description: >
 cvss_v2: 5.0
 references:
     - http://seclists.org/oss-sec/2018/q1/107
-
+    - https://nvd.nist.gov/vuln/detail/CVE-2018-1294
 affected:
     - groupId: org.apache.commons
       artifactId: commons-email
       version:
-        - "!FIXME!"
+        - "<=1.4"
       fixedin:
-        - "!FIXME!"
-# Additional information:
-#  configurations:
-#    - cpe:/a:apache:commons_email 1.4 (including)
-#
-# All available versions:
-#versions
-#
-# Other possible package names:
-# 4.116194 commons-email:commons-email
-# 3.2828786 org.apache.commons:commons-email
-# 2.7605736 org.hawkular.commons:hawkular-commons-email
-# 0.77051264 io.jdev.address:address-rules
-# 0.70845866 commons-jelly:commons-jelly-tags-email
-# 0.4073293 com.commercetools.sunrise.email:email-api
-# 0.4073293 com.commercetools.sunrise.email:email-smtp
-# 0.39257875 nz.ac.auckland.email:remote-email
-# 0.3840704 org.everit.email:org.everit.email.api
-# 0.3840704 org.everit.email:org.everit.email.javamail
+        - ">=1.5"
+    - groupId: commons-email
+      artifactId: commons-email
+      version:
+        - "<=1.1"
+        - "==20030310.165926"
