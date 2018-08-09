@@ -1,0 +1,34 @@
+---
+cve: 2014-2674
+title: CVE in uk.co.divisiblebyzero.wordpress:wordpress
+description: >
+    Directory traversal vulnerability in the Ajax Pagination (twitter Style) plugin 1.1 for WordPress allows remote attackers to read arbitrary files via a .. (dot dot) in the loop parameter in an ajax_navigation action to wp-admin/admin-ajax.php.
+cvss_v2: 5.0
+references:
+    - https://security.dxw.com/advisories/end-user-exploitable-local-file-inclusion-vulnerability-in-ajax-pagination-twitter-style-1-1/
+
+affected:
+    - groupId: uk.co.divisiblebyzero.wordpress
+      artifactId: wordpress
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:ajax-pagination_project:ajax-pagination:1.1::~~~wordpress~~
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 1.1698173 com.sksamuel.pagination:pagination_2.10
+# 1.1698173 com.sksamuel.pagination:pagination_2.11
+# 0.8608564 org.ajax4jsf:ajax4jsf
+# 0.80504704 org.ajax4jsf:ajax4jsf-trinidad
+# 0.68552303 net.java.dev.ajax4jsf:ajax4jsf
+# 0.6741954 uk.co.divisiblebyzero.wordpress:wordpress
+# 0.42903346 com.washingtonpost.wordpress:wordpress-rest-api-client
+# 0.22129434 org.apache.directory.skins:directory-skin
+# 0.2049528 org.apache.directory.skins:directory-api-skin
+# 0.2049528 org.apache.directory.skins:directory-studio-skin
