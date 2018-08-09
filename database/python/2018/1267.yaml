@@ -1,0 +1,33 @@
+---
+cve: 2018-1267
+title: CVE in chaostoolkit-cloud-foundry
+description: >
+    Cloud Foundry Silk CNI plugin, versions prior to 0.2.0, contains an improper access control vulnerability. If the platform is configured with an application security group (ASG) that overlaps with the Silk overlay network, any applications can reach any other application on the network regardless of the configured routing policies.
+cvss_v2: 6.8
+references:
+    - https://www.cloudfoundry.org/blog/cve-2018-1267/
+
+affected:
+    - name: chaostoolkit-cloud-foundry
+      version:
+        - "!FIXME!"
+      fixedin:
+        - "!FIXME!"
+# Additional information:
+#  configurations:
+#    - cpe:/a:pivotal_software:silk_cni:::~~~cloud_foundry~~ 0.2.0 (excluding)
+#
+# All available versions:
+#versions
+#
+# Other possible package names:
+# 2.2034798 silk
+# 1.1396626 chaostoolkit-cloud-foundry
+# 1.1184999 django-silk
+# 1.1184999 flask-silk
+# 1.1184999 silk-config
+# 1.1184999 silk-deployment
+# 1.017634 ni2c
+# 0.9082526 foundry
+# 0.4708863 jmbo-foundry
+# 0.4229504 cloud
