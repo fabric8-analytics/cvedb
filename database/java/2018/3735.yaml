@@ -1,0 +1,27 @@
+---
+cve: 2018-3735
+title: CVE in com.squarespace.template:template-cli
+description: >
+    bracket-template suffers from reflected XSS possible when variable passed via GET parameter is used in template
+cvss_v2: 4.3
+references:
+    - https://hackerone.com/reports/317125
+
+affected:
+    - groupId: com.squarespace.template
+      artifactId: template-cli
+      version: <unable-to-determine>
+
+
+# Additional information:
+# Package name candidates:
+# 0.53411055 com.github.dirkraft.GetURI:GetURI
+# 0.3779158 asia.redact.bracket.properties:bracket-properties
+# 0.2462534 com.squarespace.template:template-cli
+# 0.2462534 com.squarespace.template:template-core
+# 0.23582163 com.squarespace.template:template-plugins-squarespace
+# 0.23582163 com.thoughtworks.template:template_2.11
+# 0.23582163 com.thoughtworks.template:template_2.12
+# 0.23582163 org.beangle.template:beangle-template-freemarker
+# 0.23582163 com.hbakkum.template:template-engine-manager
+# 0.22590348 org.sonatype.plexus.template:plexus-template
