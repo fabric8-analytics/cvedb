@@ -1,0 +1,17 @@
+---
+cve: 2014-1830
+title: CVE in requests
+description: >
+    Requests (aka python-requests) before 2.3.0 allows remote servers to obtain sensitive information by reading the Proxy-Authorization header in a redirected request.
+cvss_v2: 5.0
+references:
+    - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=733108
+    - https://github.com/kennethreitz/requests/issues/1885
+    - https://github.com/requests/requests/commit/7ba5a534ae9fc24e40b3ae6c480c9075d684727e
+    - https://nvd.nist.gov/vuln/detail/CVE-2014-1830
+affected:
+    - name: requests
+      version:
+        - "<=2.2.1"
+      fixedin:
+        - ">=2.3.0"
