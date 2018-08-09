@@ -6,22 +6,10 @@ description: >
 cvss_v2: 4.3
 references:
     - https://github.com/tomato42/tlslite-ng/pull/234
-
+    - https://nvd.nist.gov/vuln/detail/CVE-2018-1000159
 affected:
     - name: tlslite-ng
       version:
-        - "<unable-to-determine>"
-
-
-# Additional information:
-# Package name candidates:
-# 0.5896447 tlslite-ng
-# 0.5133846 check-tls-certs
-# 0.37945276 tls
-# 0.35461742 value
-# 0.30073598 validation
-# 0.23838602 integrity-to-sqlite
-# 0.23838602 subresource-integrity
-# 0.23838602 variant-integrity
-# 0.22934724 check
-# 0.22934724 check-in
+        - "<=0.7.3"
+      fixedin:
+        - ">=0.7.4"
