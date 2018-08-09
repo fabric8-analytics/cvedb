@@ -5,35 +5,13 @@ description: >
     Requests (aka python-requests) before 2.3.0 allows remote servers to obtain sensitive information by reading the Proxy-Authorization header in a redirected request.
 cvss_v2: 5.0
 references:
-    - http://advisories.mageia.org/MGASA-2014-0409.html
-    - http://lists.opensuse.org/opensuse-updates/2016-01/msg00095.html
-    - http://www.debian.org/security/2015/dsa-3146
-    - http://www.mandriva.com/security/advisories?name=MDVSA-2015:133
     - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=733108
     - https://github.com/kennethreitz/requests/issues/1885
-
+    - https://github.com/requests/requests/commit/7ba5a534ae9fc24e40b3ae6c480c9075d684727e
+    - https://nvd.nist.gov/vuln/detail/CVE-2014-1830
 affected:
     - name: requests
       version:
-        - "!FIXME!"
+        - "<=2.2.1"
       fixedin:
-        - "!FIXME!"
-# Additional information:
-#  configurations:
-#    - cpe:/a:python:requests 2.2.1 (including)
-#    - cpe:/o:novell:opensuse:13.1
-#
-# All available versions:
-#versions
-#
-# Other possible package names:
-# 2.0938392 requests-proxy
-# 1.8382592 requests-proxy-adapter
-# 1.5582756 requests
-# 0.80373776 aiohttp-requests
-# 0.80373776 anonymous-requests
-# 0.80373776 apiclient-requests
-# 0.80373776 cache-requests
-# 0.80373776 careful-requests
-# 0.80373776 crawl-requests
-# 0.80373776 curl-to-requests
+        - ">=2.3.0"
