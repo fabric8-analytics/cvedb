@@ -1,46 +1,16 @@
 ---
 cve: 2013-1445
-title: CVE in py-crypto-params
+title: CVE in pycrypto
 description: >
     The Crypto.Random.atfork function in PyCrypto before 2.6.1 does not properly reseed the pseudo-random number generator (PRNG) before allowing a child process to access it, which makes it easier for context-dependent attackers to obtain sensitive information by leveraging a race condition in which a child process is created and accesses the PRNG within the same rate-limit period as another process.
 cvss_v2: 4.3
 references:
-    - http://www.debian.org/security/2013/dsa-2781
     - http://www.openwall.com/lists/oss-security/2013/10/17/3
     - https://github.com/dlitz/pycrypto/commit/19dcf7b15d61b7dc1a125a367151de40df6ef175
-
+    - https://nvd.nist.gov/vuln/detail/CVE-2013-1445
 affected:
-    - name: py-crypto-params
+    - name: pycrypto
       version:
-        - "!FIXME!"
+        - "<=2.6"
       fixedin:
-        - "!FIXME!"
-# Additional information:
-#  configurations:
-#    - cpe:/a:dlitz:pycrypto:2.0.1
-#    - cpe:/a:dlitz:pycrypto:2.1.0
-#    - cpe:/a:dlitz:pycrypto:1.0.2
-#    - cpe:/a:dlitz:pycrypto:2.2
-#    - cpe:/a:dlitz:pycrypto:1.0.1
-#    - cpe:/a:dlitz:pycrypto:1.0.0
-#    - cpe:/a:dlitz:pycrypto:2.4.1
-#    - cpe:/a:dlitz:pycrypto:2.0
-#    - cpe:/a:dlitz:pycrypto:2.5
-#    - cpe:/a:dlitz:pycrypto 2.6 (including)
-#    - cpe:/a:dlitz:pycrypto:2.3
-#    - cpe:/a:dlitz:pycrypto:2.4
-#
-# All available versions:
-#versions
-#
-# Other possible package names:
-# 2.24215 py-crypto-params
-# 1.6004541 pycrypto
-# 1.0028068 crypto
-# 0.9211179 fast-prng
-# 0.8240293 pycrypto-on-pypi
-# 0.53987855 codeviking.random
-# 0.53987855 get-random
-# 0.53987855 java-random
-# 0.53987855 micropython-random
-# 0.53987855 mkl-random
+        - ">=2.6.1"
