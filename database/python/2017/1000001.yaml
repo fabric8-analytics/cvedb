@@ -1,0 +1,27 @@
+---
+cve: 2017-1000001
+title: CVE in fedmsg
+description: >
+    FedMsg 0.18.1 and older is vulnerable to a message validation flaw resulting in message validation not being enabled if configured to be on.
+cvss_v2: 5.0
+references:
+    - https://github.com/fedora-infra/fedmsg/blob/0.18.2/CHANGELOG.rst
+
+affected:
+    - name: fedmsg
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 14.2430525 fedmsg
+# 7.1566305 askbot-fedmsg
+# 7.1566305 fedmsg-fasclient
+# 7.1566305 fedmsg-genacls
+# 7.1566305 fedmsg-middleware
+# 7.1566305 supybot-fedmsg
+# 6.270828 fedmsg-atomic-composer
+# 6.270828 fedmsg-meta-debian
+# 6.270828 fedmsg-migration-tools
+# 6.270828 trac-fedmsg-plugin
