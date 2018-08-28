@@ -1,0 +1,28 @@
+---
+cve: 2017-16113
+title: CVE in parsejson
+description: >
+    The parsejson module is vulnerable to regular expression denial of service when untrusted user input is passed into it to be parsed.
+cvss_v2: 5.0
+references:
+    - https://github.com/get/parsejson/issues/4
+    - https://nodesecurity.io/advisories/528
+
+affected:
+    - name: parsejson
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 11.663426 parsejson
+# 5.874582 parse-json
+# 5.874582 then-parse-json
+# 5.874582 parse-json-or
+# 5.150976 parse-json-response
+# 5.150976 koa-parse-json
+# 5.150976 try-parse-json
+# 5.150976 request-parse-json
+# 5.150976 parse-json-pretty
+# 5.150976 ian-parse-json
