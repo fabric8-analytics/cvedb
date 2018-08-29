@@ -10,7 +10,7 @@ references:
 affected:
     - name: cloudpub-redis
       version:
-        - "<unable-to-determine>"
+        - "<=2.4.5"
 
 
 # Additional information:
