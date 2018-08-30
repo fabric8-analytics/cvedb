@@ -1,0 +1,24 @@
+---
+cve: 2018-10237
+title: CVE in com.google.guava:guava
+description: >
+    Unbounded memory allocation in Google Guava 11.0 through 24.x before 24.1.1 allows remote attackers to conduct denial of service attacks against servers that depend on this library and deserialize attacker-provided data, because the AtomicDoubleArray class (when serialized with Java serialization) and the CompoundOrdering class (when serialized with GWT serialization) perform eager allocation without appropriate checks on what a client has sent and whether the data size is reasonable.
+cvss_v2: 4.3
+references:
+    - https://groups.google.com/d/topic/guava-announce/xqWALw4W1vs/discussion
+    - https://nvd.nist.gov/vuln/detail/CVE-2018-10237
+    - https://github.com/google/guava/wiki/CVE-2018-10237
+    - https://github.com/google/guava/commit/7ec8718f1e6e2814dabaa4b9f96b6b33a813101c
+affected:
+    - groupId: com.google.guava
+      artifactId: guava
+      version:
+        - "<=24.1,11.0"
+      fixedin:
+        - ">=24.1.1"
+    - groupId: com.google.guava
+      artifactId: guava-gwt
+      version:
+        - "<=24.1,11.0"
+      fixedin:
+        - ">=24.1.1"
