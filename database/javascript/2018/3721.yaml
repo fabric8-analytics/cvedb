@@ -1,0 +1,28 @@
+---
+cve: 2018-3721
+title: CVE in lodash-object
+description: >
+    lodash node module before 4.17.5 suffers from a Modification of Assumed-Immutable Data (MAID) vulnerability via defaultsDeep, merge, and mergeWith functions, which allows a malicious user to modify the prototype of "Object" via __proto__, causing the addition or modification of an existing property that will exist on all objects.
+cvss_v2: 4.0
+references:
+    - https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+    - https://hackerone.com/reports/310443
+
+affected:
+    - name: lodash-object
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 0.7918711 maid
+# 0.74539703 modification
+# 0.57663137 lodash-deep
+# 0.53564346 object-deep
+# 0.53564346 deep-object
+# 0.5152911 deep-data
+# 0.5084504 omit-deep-lodash
+# 0.5084504 lodash-deep-mixins
+# 0.48833722 lodash-object
+# 0.47258598 object-assign-deep
