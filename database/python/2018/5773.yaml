@@ -1,0 +1,27 @@
+---
+cve: 2018-5773
+title: CVE in markdown2
+description: >
+    An issue was discovered in markdown2 (aka python-markdown2) through 2.3.5. The safe_mode feature, which is supposed to sanitize user input against XSS, is flawed and does not escape the input properly. With a crafted payload, XSS can be triggered, as demonstrated by omitting the final '>' character from an IMG tag.
+cvss_v2: 4.3
+references:
+    - https://github.com/trentm/python-markdown2/issues/285
+
+affected:
+    - name: markdown2
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 5.649248 markdown2
+# 4.8478327 django-markdown2
+# 4.8478327 flask-markdown2
+# 1.2540278 apidoc2markdown
+# 1.2540278 flickr2markdown
+# 1.2540278 html2markdown
+# 1.2540278 latex2markdown
+# 1.2540278 ohhtml2markdown
+# 1.2540278 swagger2markdown
+# 1.2540278 wordpress2markdown
