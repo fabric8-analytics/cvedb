@@ -6,22 +6,11 @@ description: >
 cvss_v2: 5.0
 references:
     - https://github.com/aaugustin/websockets/pull/407
-
+    - https://github.com/aaugustin/websockets/commit/b6a25ceb3555d0ba69e5961b8d7616e4c1aecb2b
+    - https://nvd.nist.gov/vuln/detail/CVE-2018-1000518
 affected:
     - name: websockets
       version:
-        - "<unable-to-determine>"
-
-
-# Additional information:
-# Package name candidates:
-# 0.27045 none
-# 0.2532657 websockets
-# 0.21533139 zebe-data-service
-# 0.18778718 legrand-eliot-data-service
-# 0.15276924 compressed-deque
-# 0.15276924 compressed-rtf
-# 0.14648588 servers-py
-# 0.14254692 service
-# 0.13789374 score-websockets
-# 0.13099036 client-of-redundant-servers
+        - "<=4.0.1"
+      fixedin:
+        - ">=5.0"
