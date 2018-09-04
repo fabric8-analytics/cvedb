@@ -1,0 +1,40 @@
+---
+cve: 2014-3146
+title: CVE in lxml
+description: >
+    Incomplete blacklist vulnerability in the lxml.html.clean module in lxml before 3.3.5 allows remote attackers to conduct cross-site scripting (XSS) attacks via control characters in the link scheme to the clean_html function.
+cvss_v2: 4.3
+references:
+    - http://advisories.mageia.org/MGASA-2014-0218.html
+    - http://lists.opensuse.org/opensuse-updates/2014-05/msg00083.html
+    - http://lxml.de/3.3/changes-3.3.5.html
+    - http://seclists.org/fulldisclosure/2014/Apr/210
+    - http://seclists.org/fulldisclosure/2014/Apr/319
+    - http://secunia.com/advisories/58013
+    - http://secunia.com/advisories/58744
+    - http://secunia.com/advisories/59008
+    - http://www.debian.org/security/2014/dsa-2941
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2015:112
+    - http://www.openwall.com/lists/oss-security/2014/05/09/7
+    - http://www.securityfocus.com/bid/67159
+    - http://www.ubuntu.com/usn/USN-2217-1
+    - https://mailman-mail5.webfaction.com/pipermail/lxml/2014-April/007128.html
+
+affected:
+    - name: lxml
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 1.7356496 lxml
+# 1.1949725 xss-catcher
+# 1.0517906 django-xss-detection
+# 0.89258313 gocept-lxml
+# 0.89258313 json-lxml
+# 0.89258313 lxml-asserts
+# 0.89258313 lxml-cffi
+# 0.89258313 lxml-mate
+# 0.89258313 lxml-wrapper
+# 0.89258313 medialog-lxml
