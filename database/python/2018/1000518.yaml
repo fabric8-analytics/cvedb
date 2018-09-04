@@ -1,0 +1,27 @@
+---
+cve: 2018-1000518
+title: CVE in websockets
+description: >
+    aaugustin websockets version 4 contains a CWE-409: Improper Handling of Highly Compressed Data (Data Amplification) vulnerability in Servers and clients, unless configured with compression=None that can result in Denial of Service by memory exhaustion. This attack appear to be exploitable via Sending a specially crafted frame on an established connection. This vulnerability appears to have been fixed in 5.
+cvss_v2: 5.0
+references:
+    - https://github.com/aaugustin/websockets/pull/407
+
+affected:
+    - name: websockets
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 0.27045 none
+# 0.2532657 websockets
+# 0.21533139 zebe-data-service
+# 0.18778718 legrand-eliot-data-service
+# 0.15276924 compressed-deque
+# 0.15276924 compressed-rtf
+# 0.14648588 servers-py
+# 0.14254692 service
+# 0.13789374 score-websockets
+# 0.13099036 client-of-redundant-servers
