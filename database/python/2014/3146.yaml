@@ -1,0 +1,16 @@
+---
+cve: 2014-3146
+title: CVE in lxml
+description: >
+    Incomplete blacklist vulnerability in the lxml.html.clean module in lxml before 3.3.5 allows remote attackers to conduct cross-site scripting (XSS) attacks via control characters in the link scheme to the clean_html function.
+cvss_v2: 4.3
+references:
+    - https://lxml.de/3.3/changes-3.3.5.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2014-3146
+    - https://github.com/lxml/lxml/commit/e86b294f1f81b899a59925123560ff924a72f1cc
+affected:
+    - name: lxml
+      version:
+        - "<=3.3.4"
+      fixedin:
+        - ">=3.3.5"
