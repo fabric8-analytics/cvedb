@@ -1,0 +1,32 @@
+---
+cve: 2016-9243
+title: CVE in cryptography
+description: >
+    HKDF in cryptography before 1.5.2 returns an empty byte-string if used with a length less than algorithm.digest_size.
+cvss_v2: 5.0
+references:
+    - http://www.openwall.com/lists/oss-security/2016/11/09/2
+    - http://www.securityfocus.com/bid/94216
+    - http://www.ubuntu.com/usn/USN-3138-1
+    - https://cryptography.io/en/latest/changelog
+    - https://github.com/pyca/cryptography/commit/b924696b2e8731f39696584d12cceeb3aeb2d874
+    - https://github.com/pyca/cryptography/issues/3211
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5R2ZOBMPWDFFHUZ6QOZZY36A6H5CGJXL/
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/U23KDR2M2N7W2ZSREG63BVW7D4VC6CIZ/
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/WQ5G7KHKZC4SI23JE7277KZXM57GEQKT/
+
+affected:
+    - name: cryptography
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 4.587937 hkdf
+# 3.7050426 cryptography
+# 1.883003 cryptography-vectors
+# 1.883003 cryptography-with-deps
+# 1.883003 django-cryptography
+# 1.883003 sdc-cryptography
+# 1.655248 django-field-cryptography
