@@ -1,0 +1,28 @@
+---
+cve: 2017-1002150
+title: CVE in python-fedora
+description: >
+    python-fedora 0.8.0 and lower is vulnerable to an open redirect resulting in loss of CSRF protection
+cvss_v2: 5.8
+references:
+    - https://github.com/fedora-infra/python-fedora/commit/b27f38a67573f4c989710c9bfb726dd4c1eeb929
+    - https://github.com/fedora-infra/python-fedora/commit/b27f38a67573f4c989710c9bfb726dd4c1eeb929.patch
+
+affected:
+    - name: python-fedora
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 3.616946 python-fedora
+# 2.6910918 csrf
+# 1.3710625 django-csrf
+# 1.3710625 flask-csrf
+# 1.3710625 pyramid-csrf
+# 1.3710625 simright-csrf
+# 1.3710625 tiddlywebplugins-csrf
+# 1.2060589 bottle-utils-csrf
+# 1.2060589 django-ajax-csrf
+# 1.2060589 django-csrf-session
