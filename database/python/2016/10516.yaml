@@ -1,0 +1,29 @@
+---
+cve: 2016-10516
+title: CVE in werkzeug
+description: >
+    Cross-site scripting (XSS) vulnerability in the render_full function in debug/tbtools.py in the debugger in Pallets Werkzeug before 0.11.11 (as used in Pallets Flask and other products) allows remote attackers to inject arbitrary web script or HTML via a field that contains an exception message.
+cvss_v2: 4.3
+references:
+    - http://blog.neargle.com/2016/09/21/flask-src-review-get-a-xss-from-debuger/
+    - https://github.com/pallets/werkzeug/pull/1001
+    - https://lists.debian.org/debian-lts-announce/2017/11/msg00037.html
+
+affected:
+    - name: werkzeug
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 2.0417037 werkzeug
+# 1.0371217 bottle-werkzeug
+# 1.0371217 django-werkzeug
+# 1.0371217 fspot-werkzeug
+# 1.0371217 pylint-werkzeug
+# 1.0371217 werkzeug-asgi
+# 1.0371217 werkzeug-encryptedcookie
+# 1.0371217 werkzeug-raw
+# 1.0371217 yafowil-werkzeug
+# 0.7859761 django-werkzeug-debugger-runserver
