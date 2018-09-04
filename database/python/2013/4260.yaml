@@ -1,0 +1,30 @@
+---
+cve: 2013-4260
+title: CVE in ansible
+description: >
+    lib/ansible/playbook/__init__.py in Ansible 1.2.x before 1.2.3, when playbook does not run due to an error, allows local users to overwrite arbitrary files via a symlink attack on a retry file with a predictable name in /var/tmp/ansible/.
+cvss_v2: 3.3
+references:
+    - http://www.ansible.com/security
+    - https://bugzilla.redhat.com/show_bug.cgi?id=998227
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/86898
+    - https://groups.google.com/forum/#!topic/ansible-project/UVDYW0HGcNg
+
+affected:
+    - name: ansible
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 11.662526 ansible
+# 5.8741345 ansible-alicloud
+# 5.8741345 ansible-art
+# 5.8741345 ansible-bundle
+# 5.8741345 ansible-cmdb
+# 5.8741345 ansible-conductor
+# 5.8741345 ansible-container
+# 5.8741345 ansible-discover
+# 5.8741345 ansible-docgen
+# 5.8741345 ansible-docgenerator
