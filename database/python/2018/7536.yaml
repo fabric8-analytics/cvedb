@@ -1,0 +1,31 @@
+---
+cve: 2018-7536
+title: CVE in django
+description: >
+    An issue was discovered in Django 2.0 before 2.0.3, 1.11 before 1.11.11, and 1.8 before 1.8.19. The django.utils.html.urlize() function was extremely slow to evaluate certain inputs due to catastrophic backtracking vulnerabilities in two regular expressions (only one regular expression for Django 1.8.x). The urlize() function is used to implement the urlize and urlizetrunc template filters, which were thus vulnerable.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/103361
+    - https://lists.debian.org/debian-lts-announce/2018/03/msg00006.html
+    - https://usn.ubuntu.com/3591-1/
+    - https://www.debian.org/security/2018/dsa-4161
+    - https://www.djangoproject.com/weblog/2018/mar/06/security-releases/
+
+affected:
+    - name: django
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 5.320775 django
+# 5.320775 django-foundation
+# 5.320775 django-framework
+# 5.320775 django-inc
+# 5.320775 django-project
+# 2.9100366 django-django-csv-exports
+# 2.7543573 agape-django
+# 2.7543573 aldryn-django
+# 2.7543573 algoliasearch-django
+# 2.7543573 aloe-django
