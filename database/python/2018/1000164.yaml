@@ -7,24 +7,11 @@ cvss_v2: 5.0
 references:
     - https://epadillas.github.io/2018/04/02/http-header-splitting-in-gunicorn-19.4.5
     - https://github.com/benoitc/gunicorn/issues/1227
-    - https://lists.debian.org/debian-lts-announce/2018/04/msg00022.html
-    - https://www.debian.org/security/2018/dsa-4186
-
+    - https://github.com/benoitc/gunicorn/commit/1e10a02e73c87dfadc394b361af33864d0e59e24
+    - https://nvd.nist.gov/vuln/detail/CVE-2018-1000164
 affected:
     - name: gunicorn
       version:
-        - "<unable-to-determine>"
-
-
-# Additional information:
-# Package name candidates:
-# 0.52475184 http-lazy-headers
-# 0.38286123 gunicorn
-# 0.38286123 headers
-# 0.24011442 http
-# 0.24011442 on-http
-# 0.23564833 cyclic-sequences
-# 0.23564833 django-sequences
-# 0.20958427 retrosheet-pitch-sequences
-# 0.20499852 check-gunicorn
-# 0.20499852 django-gunicorn
+        - "==19.4.5"
+      fixedin:
+        - ">=19.5.0"
