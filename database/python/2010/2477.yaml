@@ -1,0 +1,35 @@
+---
+cve: 2010-2477
+title: CVE in paste
+description: >
+    Multiple cross-site scripting (XSS) vulnerabilities in the paste.httpexceptions implementation in Paste before 1.7.4 allow remote attackers to inject arbitrary web script or HTML via vectors involving a 404 status code, related to (1) paste.urlparser.StaticURLParser, (2) paste.urlparser.PkgResourcesParser, (3) paste.urlmap.URLMap, and (4) HTTPNotFound.
+cvss_v2: 4.3
+references:
+    - http://bitbucket.org/ianb/paste/changeset/fcae59df8b56
+    - http://groups.google.com/group/paste-users/browse_thread/thread/3b3fff3dadd0b1e5?pli=1
+    - http://groups.google.com/group/pylons-discuss/msg/8c256dc076a408d8?dmode=source&output=gplain
+    - http://marc.info/?l=oss-security&m=127785414818815&w=2
+    - http://marc.info/?l=oss-security&m=127792576822169&w=2
+    - http://pylonshq.com/articles/archives/2010/6/paste_174_released_addresses_xss_security_hole
+    - http://secunia.com/advisories/42500
+    - http://www.securityfocus.com/bid/41160
+    - http://www.ubuntu.com/usn/USN-1026-1
+
+affected:
+    - name: paste
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 1.3086778 paste
+# 0.6692129 botocore-paste
+# 0.6692129 circuits-paste
+# 0.6692129 cluereleasemanager-paste
+# 0.6692129 dj-paste
+# 0.6692129 input-paste
+# 0.6692129 jmbo-paste
+# 0.6692129 minitage-paste
+# 0.6692129 panya-paste
+# 0.6692129 tooth-paste
