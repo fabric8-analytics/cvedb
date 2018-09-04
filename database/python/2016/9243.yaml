@@ -1,0 +1,17 @@
+---
+cve: 2016-9243
+title: CVE in cryptography
+description: >
+    HKDF in cryptography before 1.5.2 returns an empty byte-string if used with a length less than algorithm.digest_size.
+cvss_v2: 5.0
+references:
+    - https://cryptography.io/en/latest/changelog
+    - https://github.com/pyca/cryptography/commit/b924696b2e8731f39696584d12cceeb3aeb2d874
+    - https://github.com/pyca/cryptography/issues/3211
+    - https://nvd.nist.gov/vuln/detail/CVE-2016-9243
+affected:
+    - name: cryptography
+      version:
+        - "<=1.5.1"
+      fixedin:
+        - ">=1.5.2"
