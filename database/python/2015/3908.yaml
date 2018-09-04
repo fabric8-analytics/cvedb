@@ -1,0 +1,30 @@
+---
+cve: 2015-3908
+title: CVE in ansible
+description: >
+    Ansible before 1.9.2 does not verify that the server hostname matches a domain name in the subject's Common Name (CN) or subjectAltName field of the X.509 certificate, which allows man-in-the-middle attackers to spoof SSL servers via an arbitrary valid certificate.
+cvss_v2: 4.3
+references:
+    - http://lists.opensuse.org/opensuse-updates/2015-07/msg00051.html
+    - http://lists.opensuse.org/opensuse-updates/2015-08/msg00029.html
+    - http://www.ansible.com/security
+    - http://www.openwall.com/lists/oss-security/2015/07/14/4
+
+affected:
+    - name: ansible
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 1.3228216 ansible
+# 0.680442 ansible-alicloud
+# 0.680442 ansible-art
+# 0.680442 ansible-bundle
+# 0.680442 ansible-cmdb
+# 0.680442 ansible-conductor
+# 0.680442 ansible-container
+# 0.680442 ansible-discover
+# 0.680442 ansible-docgen
+# 0.680442 ansible-docgenerator
