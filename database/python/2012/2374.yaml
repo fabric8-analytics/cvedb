@@ -6,26 +6,13 @@ description: >
 cvss_v2: 5.0
 references:
     - http://openwall.com/lists/oss-security/2012/05/18/12
-    - http://secunia.com/advisories/49185
     - http://www.openwall.com/lists/oss-security/2012/05/18/6
-    - http://www.securityfocus.com/bid/53612
-    - http://www.tornadoweb.org/documentation/releases/v2.2.1.html
-
+    - http://www.tornadoweb.org/en/stable/releases/v2.2.1.html
+    - https://github.com/tornadoweb/tornado/commit/1ae91f6d58e6257e0ab49d295d8741ce1727bdb7
+    - https://nvd.nist.gov/vuln/detail/CVE-2012-2374
 affected:
     - name: tornado
       version:
-        - "<unable-to-determine>"
-
-
-# Additional information:
-# Package name candidates:
-# 2.230069 tornado
-# 2.2156441 thrift-http-tornado
-# 2.2156441 tornado-http-auth
-# 1.1373858 airbrake-tornado
-# 1.1373858 aspen-tornado
-# 1.1373858 authbox-tornado
-# 1.1373858 botocore-tornado
-# 1.1373858 divak-tornado
-# 1.1373858 django-tornado
-# 1.1373858 dj-tornado
+        - "<=2.2"
+      fixedin:
+        - ">=2.2.1"
