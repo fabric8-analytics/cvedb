@@ -1,0 +1,32 @@
+---
+cve: 2012-3458
+title: CVE in beaker
+description: >
+    Beaker before 1.6.4, when using PyCrypto to encrypt sessions, uses AES in ECB cipher mode, which might allow remote attackers to obtain portions of sensitive session data via unspecified vectors.
+cvss_v2: 4.3
+references:
+    - http://secunia.com/advisories/50226
+    - http://secunia.com/advisories/50520
+    - http://www.debian.org/security/2012/dsa-2541
+    - http://www.openwall.com/lists/oss-security/2012/08/13/10
+    - https://bugzilla.redhat.com/show_bug.cgi?id=809267
+    - https://github.com/bbangert/beaker/commit/91becae76101cf87ce8cbfabe3af2622fc328fe5
+
+affected:
+    - name: beaker
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 3.049237 beaker
+# 1.5455396 beaker-client
+# 1.5455396 beaker-common
+# 1.5455396 beaker-extensions
+# 1.5455396 beaker-mongo
+# 1.5455396 beaker-mongodb
+# 1.5455396 beaker-redis
+# 1.5455396 bottle-beaker
+# 1.5455396 chembl-beaker
+# 1.5455396 collective-beaker
