@@ -1,0 +1,16 @@
+---
+cve: 2017-1000001
+title: CVE in fedmsg
+description: >
+    FedMsg 0.18.1 and older is vulnerable to a message validation flaw resulting in message validation not being enabled if configured to be on.
+cvss_v2: 5.0
+references:
+    - https://github.com/fedora-infra/fedmsg/blob/0.18.2/CHANGELOG.rst
+    - https://nvd.nist.gov/vuln/detail/CVE-2017-1000001
+    - https://github.com/fedora-infra/fedmsg/commit/5c21cf88a
+affected:
+    - name: fedmsg
+      version:
+        - "<=0.18.1"
+      fixedin:
+        - ">=0.18.2"
