@@ -1,0 +1,27 @@
+---
+cve: 2018-3767
+title: CVE in memjs
+description: >
+    `memjs` versions <= 1.1.0 allocates and stores buffers on typed input, resulting in DoS and uninitialized memory usage.
+cvss_v2: 6.4
+references:
+    - https://hackerone.com/reports/319809
+
+affected:
+    - name: memjs
+      version:
+        - "<unable-to-determine>"
+
+
+# Additional information:
+# Package name candidates:
+# 4.545788 memjs
+# 3.9153428 dos
+# 2.302757 memjs-concurrent
+# 2.302757 catbox-memjs
+# 2.302757 mem.js
+# 2.302757 connect-memjs
+# 2.302757 egg-memjs
+# 2.0223782 prerender-memjs-cache
+# 1.9875344 dos-clock
+# 1.9875344 dos_math
