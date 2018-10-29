@@ -11,6 +11,6 @@ references:
 affected:
     - name: cryptography
       version:
-        - <=2.2.2,1.9
+        - "<=2.2.2,1.9"
       fixedin:
-        - >=2.3
+        - ">=2.3"
