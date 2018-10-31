@@ -1,0 +1,14 @@
+---
+cve: 2018-3739
+title: CVE in https-proxy-agent
+description: >
+    https-proxy-agent before 2.1.1 passes auth option to the Buffer constructor without proper sanitization, resulting in DoS and uninitialized memory leak in setups where an attacker could submit typed input to the 'auth' parameter (e.g. JSON).
+cvss_v2: 6.4
+references:
+    - https://hackerone.com/reports/319532
+affected:
+    - name: https-proxy-agent
+      version:
+        - "<=2.1.0"
+      fixedin:
+        - ">=2.1.1"
