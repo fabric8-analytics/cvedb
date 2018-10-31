@@ -1,0 +1,15 @@
+---
+cve: 2018-13863
+title: CVE in js-expression
+description: >
+    The MongoDB bson JavaScript module (also known as js-bson) versions 0.5.0 to 1.0.x before 1.0.5 is vulnerable to a Regular Expression Denial of Service (ReDoS) in lib/bson/decimal128.js. The flaw is triggered when the Decimal128.fromString() function is called to parse a long untrusted string.
+cvss_v2: 5.0
+references:
+    - https://github.com/mongodb/js-bson/commit/bd61c45157c53a1698ff23770160cf4783e9ea4a
+    - https://snyk.io/vuln/npm:bson:20180225
+affected:
+    - name: js-expression
+      version:
+        - "<=1.0.3,0.5.0"
+      fixedin:
+        - ">=1.0.5"
