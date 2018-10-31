@@ -1,0 +1,15 @@
+---
+cve: 2018-11647
+title: CVE in oauth2orize-fprm
+description: >
+    index.js in oauth2orize-fprm before 0.2.1 has XSS via a crafted URL.
+cvss_v2: 4.3
+references:
+    - https://github.com/jaredhanson/oauth2orize-fprm/blob/master/SECURITY-NOTICE.md
+    - https://github.com/jaredhanson/oauth2orize-fprm/commit/2bf9faee787eb004abbdfb6f4cc2fb06653defd5
+affected:
+    - name: oauth2orize-fprm
+      version:
+        - "<=0.2.0"
+      fixedin:
+        - ">=0.2.1"
