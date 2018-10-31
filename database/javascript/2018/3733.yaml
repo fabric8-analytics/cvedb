@@ -1,0 +1,15 @@
+---
+cve: 2018-3733
+title: CVE in crud-file-server
+description: >
+    crud-file-server node module before 0.9.0 suffers from a Path Traversal vulnerability due to incorrect validation of url, which allows a malicious user to read content of any file with known path.
+cvss_v2: 5.0
+references:
+    - https://github.com/omphalos/crud-file-server/commit/4fc3b404f718abb789f4ce4272c39c7a138c7a82
+    - https://hackerone.com/reports/310690
+affected:
+    - name: crud-file-server
+      version:
+        - "<=0.8.0"
+      fixedin:
+        - ">=0.9.0"
