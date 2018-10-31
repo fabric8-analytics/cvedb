@@ -1,0 +1,14 @@
+---
+cve: 2018-3773
+title: CVE in metascraper
+description: >
+    There is a stored Cross-Site Scripting vulnerability in Open Graph meta properties read by the `metascrape` npm module <= 3.9.2.
+cvss_v2: 4.3
+references:
+    - https://hackerone.com/reports/309367
+affected:
+    - name: metascraper
+      version:
+        - "<=3.9.2"
+      fixedin:
+        - ">=3.9.3"
