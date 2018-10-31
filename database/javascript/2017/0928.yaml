@@ -1,0 +1,15 @@
+---
+cve: 2017-0928
+title: CVE in html-janitor
+description: >
+    html-janitor node module suffers from an External Control of Critical State Data vulnerability via user-control of the '_sanitized' variable causing sanitization to be bypassed.
+cvss_v2: 4.3
+references:
+    - https://github.com/guardian/html-janitor/issues/35
+    - https://hackerone.com/reports/308158
+affected:
+    - name: html-janitor
+      version:
+        - "==2.0.2"
+      fixedin:
+        - ">=2.0.4"
