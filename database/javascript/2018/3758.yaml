@@ -1,0 +1,14 @@
+---
+cve: 2018-3758
+title: CVE in express-cart
+description: >
+    Unrestricted file upload (RCE) in express-cart module before 1.1.7 allows a privileged user to gain access in the hosting machine.
+cvss_v2: 9.0
+references:
+    - https://hackerone.com/reports/343726
+affected:
+    - name: express-cart
+      version:
+        - "<=1.1.6"
+      fixedin:
+        - ">=1.1.7"
