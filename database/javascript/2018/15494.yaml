@@ -1,0 +1,16 @@
+---
+cve: 2018-15494
+title: CVE in dojo
+description: >
+    In Dojo Toolkit before 1.14, there is unescaped string injection in dojox/Grid/DataGrid.
+cvss_v2: 7.5
+references:
+    - https://dojotoolkit.org/blog/dojo-1-14-released
+    - https://github.com/dojo/dojox/pull/283
+    - https://lists.debian.org/debian-lts-announce/2018/09/msg00002.html
+affected:
+    - name: dojo
+      version:
+        - "<=1.13.3"
+      fixedin:
+        - ">=1.14.0-pre"
