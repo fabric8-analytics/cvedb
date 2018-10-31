@@ -1,0 +1,18 @@
+---
+cve: 2018-1002203
+title: CVE in unzipper
+description: >
+    unzipper npm library before 0.8.13 is vulnerable to directory traversal, allowing attackers to write to arbitrary files via a ../ (dot dot slash) in a Zip archive entry that is mishandled during extraction. This vulnerability is also known as 'Zip-Slip'.
+cvss_v2: 4.3
+references:
+    - https://github.com/snyk/zip-slip-vulnerability
+    - https://github.com/ZJONSSON/node-unzipper/commit/2220ddd5b58f6252069a4f99f9475441ad0b50cd
+    - https://github.com/ZJONSSON/node-unzipper/pull/59
+    - https://snyk.io/research/zip-slip-vulnerability
+    - https://snyk.io/vuln/npm:unzipper:20180415
+affected:
+    - name: unzipper
+      version:
+        - "<=0.8.12"
+      fixedin:
+        - ">=0.8.13"
