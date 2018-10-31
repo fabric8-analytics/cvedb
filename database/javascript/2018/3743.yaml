@@ -1,0 +1,14 @@
+---
+cve: 2018-3743
+title: CVE in hekto
+description: >
+    Open redirect in hekto <=0.2.3 when target domain name is used as html filename on server.
+cvss_v2: 5.8
+references:
+    - https://hackerone.com/reports/320693
+affected:
+    - name: hekto
+      version:
+        - "<=0.2.3"
+      fixedin:
+        - ">=0.2.4"
