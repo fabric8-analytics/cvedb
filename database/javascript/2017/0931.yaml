@@ -1,0 +1,15 @@
+---
+cve: 2017-0931
+title: CVE in html-janitor
+description: >
+    html-janitor node module suffers from a Cross-Site Scripting (XSS) vulnerability via clean() accepting user-controlled values.
+cvss_v2: 4.3
+references:
+    - https://github.com/guardian/html-janitor/issues/34
+    - https://hackerone.com/reports/308155
+affected:
+    - name: html-janitor
+      version:
+        - "==2.0.2"
+      fixedin:
+        - ">=2.0.4"
