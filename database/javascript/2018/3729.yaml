@@ -1,0 +1,14 @@
+---
+cve: 2018-3729
+title: CVE in localhost-now
+description: >
+    localhost-now node module suffers from a Path Traversal vulnerability due to lack of validation of file, which allows a malicious user to read content of any file with known path.
+cvss_v2: 5.0
+references:
+    - https://hackerone.com/reports/312889
+affected:
+    - name: localhost-now
+      version:
+        - "==1.0.1"
+      fixedin:
+        - ">=1.0.2"
