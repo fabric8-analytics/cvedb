@@ -1,0 +1,14 @@
+---
+cve: 2018-3745
+title: CVE in atob
+description: >
+    atob 2.0.3 and earlier allocates uninitialized Buffers when number is passed in input on Node.js 4.x and below.
+cvss_v2: 6.4
+references:
+    - https://hackerone.com/reports/321686
+affected:
+    - name: atob
+      version:
+        - "<=2.0.3"
+      fixedin:
+        - ">=2.1.0"
