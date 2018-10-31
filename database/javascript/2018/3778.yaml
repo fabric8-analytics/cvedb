@@ -1,0 +1,16 @@
+---
+cve: 2018-3778
+title: CVE in aedes
+description: >
+    Improper authorization in aedes version <0.35.0 will publish a LWT in a channel when a client is not authorized.
+cvss_v2: 5.0
+references:
+    - https://github.com/mcollina/aedes/issues/211
+    - https://github.com/mcollina/aedes/issues/212
+    - https://github.com/nodejs/security-wg/blob/master/vuln/npm/457.json
+affected:
+    - name: aedes
+      version:
+        - "<=0.34.1"
+      fixedin:
+        - ">=0.35.0"
