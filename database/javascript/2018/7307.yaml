@@ -1,0 +1,14 @@
+---
+cve: 2018-7307
+title: CVE in auth0-js
+description: >
+    The Auth0 Auth0.js library before 9.3 has CSRF because it mishandles the case where the authorization response lacks the state parameter.
+cvss_v2: 6.8
+references:
+    - https://auth0.com/docs/security/bulletins/cve-2018-7307
+affected:
+    - name: auth0-js
+      version:
+        - "<=9.2.3"
+      fixedin:
+        - ">=9.3.0"
