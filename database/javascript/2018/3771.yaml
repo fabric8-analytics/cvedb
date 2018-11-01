@@ -10,5 +10,3 @@ affected:
     - name: statics-server
       version:
         - "<=0.0.9"
-      fixedin:
-        - "<unknown>"
