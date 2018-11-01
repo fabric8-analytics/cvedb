@@ -10,6 +10,6 @@ references:
 affected:
     - name: crud-file-server
       version:
-        - "==0.7.0"
+        - "<=0.7.0"
       fixedin:
         - ">=0.8.0"
