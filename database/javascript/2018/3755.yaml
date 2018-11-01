@@ -1,0 +1,12 @@
+---
+cve: 2018-3755
+title: CVE in sexstatic
+description: >
+    XSS in sexstatic <=0.6.2 causes HTML injection in directory name(s) leads to Stored XSS when malicious file is embed with <iframe> element used in directory name.
+cvss_v2: 4.3
+references:
+    - https://hackerone.com/reports/328210
+affected:
+    - name: sexstatic
+      version:
+        - "<=0.6.2"
