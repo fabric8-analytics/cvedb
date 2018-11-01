@@ -1,0 +1,12 @@
+---
+cve: 2017-0930
+title: CVE in augustine
+description: >
+    augustine node module suffers from a Path Traversal vulnerability due to lack of validation of url, which allows a malicious user to read content of any file with known path.
+cvss_v2: 4.0
+references:
+    - https://hackerone.com/reports/296282
+affected:
+    - name: augustine
+      version:
+        - "<=0.2.3"
