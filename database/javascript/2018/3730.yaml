@@ -9,6 +9,4 @@ references:
 affected:
     - name: mcstatic
       version:
-        - ">=0.0.20"
-      fixedin:
-        - "<unknown>"
+        - "<=0.0.20"
