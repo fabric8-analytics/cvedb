@@ -1,0 +1,12 @@
+---
+cve: 2018-3766
+title: CVE in buttle
+description: >
+    Path traversal in buttle module versions <= 0.2.0 allows to read any file in the server.
+cvss_v2: 5.0
+references:
+    - https://hackerone.com/reports/358112
+affected:
+    - name: buttle
+      version:
+        - "<=0.2.0"
