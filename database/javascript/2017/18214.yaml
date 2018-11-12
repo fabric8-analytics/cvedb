@@ -7,7 +7,6 @@ cvss_v2: 5.0
 references:
     - https://github.com/moment/moment/issues/4163
     - https://nodesecurity.io/advisories/532
-    - https://nvd.nist.gov/vuln/detail/CVE-2017-18214
 affected:
     - name: moment
       version:
