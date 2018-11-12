@@ -1,0 +1,15 @@
+---
+cve: 2017-18197
+title: CVE in mxgraph
+description: >
+    In mxGraphViewImageReader.java in mxGraph before 3.7.6, the SAXParserFactory instance in convert() is missing flags to prevent XML External Entity (XXE) attacks, as demonstrated by /ServerView.
+cvss_v2: 7.5
+references:
+    - https://github.com/jgraph/mxgraph/issues/124
+    - https://lists.debian.org/debian-lts-announce/2018/03/msg00002.html
+affected:
+    - name: mxgraph
+      version:
+        - "<=3.7.5"
+      fixedin:
+        - ">=3.7.6"
