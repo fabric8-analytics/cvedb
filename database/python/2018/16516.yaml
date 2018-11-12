@@ -1,0 +1,14 @@
+---
+cve: 2018-16516
+title: CVE in flask-admin
+description: >
+    helpers.py in Flask-Admin 1.5.2 has Reflected XSS via a crafted URL.
+cvss_v2: 4.3
+references:
+    - https://github.com/flask-admin/flask-admin/pull/1699
+affected:
+    - name: flask-admin
+      version:
+        - "<=1.5.2"
+      fixedin:
+        []
