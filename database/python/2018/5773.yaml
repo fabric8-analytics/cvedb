@@ -11,3 +11,5 @@ affected:
     - name: markdown2
       version:
         - "<=2.3.5"
+      fixedin:
+        - ">=2.3.6"
