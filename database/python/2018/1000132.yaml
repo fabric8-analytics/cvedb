@@ -11,6 +11,6 @@ references:
 affected:
     - name: mercurial
       version:
-        - "<=4.5"
+        - "<=4.5rc0"
       fixedin:
         - ">=4.5.1"
