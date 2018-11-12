@@ -18,4 +18,4 @@ affected:
       version:
         - "<=3.2.6"
       fixedin:
-        []
+        - ">=3.3"
