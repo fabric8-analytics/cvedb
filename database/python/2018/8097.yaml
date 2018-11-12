@@ -7,7 +7,6 @@ cvss_v2: 7.5
 references:
     - https://github.com/pyeve/eve/commit/f8f7019ffdf9b4e05faf95e1f04e204aa4c91f98
     - https://github.com/pyeve/eve/issues/1101
-    - https://nvd.nist.gov/vuln/detail/CVE-2018-8097
 affected:
     - name: eve
       version:
