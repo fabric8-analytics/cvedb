@@ -10,3 +10,5 @@ affected:
     - name: merge-object
       version:
         - "<=1.0.0"
+      fixedin:
+        []
