@@ -9,6 +9,6 @@ references:
 affected:
     - name: flask-admin
       version:
-        - ">=1.5.2"
+        - "<=1.5.2"
       fixedin:
         []
