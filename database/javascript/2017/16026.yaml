@@ -8,10 +8,10 @@ references:
     - https://github.com/request/request/issues/1904
     - https://github.com/request/request/pull/2018
     - https://nodesecurity.io/advisories/309
-
 affected:
     - name: request
       version:
         - "<=2.46.0,2.2.6"
         - "<=2.67.0,2.52.0"
-        
+      fixedin:
+        - ">=2.68.0"
