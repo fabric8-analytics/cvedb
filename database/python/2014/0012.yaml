@@ -6,6 +6,9 @@ description: >
 cvss_v2: 4.4
 references:
     - http://seclists.org/oss-sec/2014/q1/73
+    - http://secunia.com/advisories/56328
+    - http://secunia.com/advisories/60738
+    - http://www.gentoo.org/security/en/glsa/glsa-201408-13.xml
     - https://bugzilla.redhat.com/show_bug.cgi?id=1051421
     - https://github.com/mitsuhiko/jinja2/commit/acb672b6a179567632e032f547582f30fa2f4aa7
     - https://github.com/mitsuhiko/jinja2/pull/292
