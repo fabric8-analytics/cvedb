@@ -11,6 +11,6 @@ references:
 affected:
     - name: jquery
       version:
-        - "<=3.0.0-alpha1,3.0.0-rc1"
+        - "==3.0.0-rc1"
       fixedin:
-        - ">=3.1.0"
+        - ">=3.0.0"
