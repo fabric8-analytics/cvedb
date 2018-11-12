@@ -7,7 +7,6 @@ cvss_v2: 4.3
 references:
     - https://github.com/anymail/django-anymail/commit/1a6086f2b58478d71f89bf27eb034ed81aefe5ef
     - https://github.com/anymail/django-anymail/releases/tag/v1.4
-    - https://nvd.nist.gov/vuln/detail/CVE-2018-1000089
 affected:
     - name: django-anymail
       version:
