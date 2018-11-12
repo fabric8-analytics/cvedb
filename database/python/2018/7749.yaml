@@ -6,8 +6,7 @@ description: >
 cvss_v2: 7.5
 references:
     - https://github.com/ronf/asyncssh/commit/c161e26cdc0d41b745b63d9f17b437f073bf7ba4
-    - https://groups.google.com/forum/#%21msg/asyncssh-announce/57_5O7kiHSA/8BXZ_hxHAQAJ
-    - https://nvd.nist.gov/vuln/detail/CVE-2018-7749
+    - https://groups.google.com/forum/#!msg/asyncssh-announce/57_5O7kiHSA/8BXZ_hxHAQAJ
 affected:
     - name: asyncssh
       version:
