@@ -12,4 +12,4 @@ affected:
       version:
         - "<=3.13"
       fixedin:
-        - ">=4.2b4"
+        - ">=4.2b1"
