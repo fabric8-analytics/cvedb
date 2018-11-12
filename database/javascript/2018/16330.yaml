@@ -9,6 +9,4 @@ references:
 affected:
     - name: editor.md
       version:
-        - ">=1.5.0"
-      fixedin:
-        []
+        - "<=1.5.0"
