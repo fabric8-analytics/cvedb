@@ -1,0 +1,14 @@
+---
+cve: 2018-3787
+title: CVE in simplehttpserver
+description: >
+    Path traversal in simplehttpserver <v0.2.1 allows listing any file on the server.
+cvss_v2: 5.0
+references:
+    - https://hackerone.com/reports/357109
+affected:
+    - name: simplehttpserver
+      version:
+        - "<=0.2.0"
+      fixedin:
+        - ">=0.2.1"
