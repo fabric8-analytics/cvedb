@@ -1,0 +1,22 @@
+---
+cve: 2015-9251
+title: CVE in jquery
+description: >
+    jQuery before 3.0.0 is vulnerable to Cross-site Scripting (XSS) attacks when a cross-domain Ajax request is performed without the dataType option, causing text/javascript responses to be executed.
+cvss_v2: 4.3
+references:
+    - http://www.oracle.com/technetwork/security-advisory/cpuoct2018-4428296.html
+    - http://www.securityfocus.com/bid/105658
+    - https://github.com/jquery/jquery/commit/f60729f3903d17917dc351f3ac87794de379b0cc
+    - https://github.com/jquery/jquery/issues/2432
+    - https://github.com/jquery/jquery/pull/2588
+    - https://github.com/jquery/jquery/pull/2588/commits/c254d308a7d3f1eac4d0b42837804cfffcba4bb2
+    - https://ics-cert.us-cert.gov/advisories/ICSA-18-212-04
+    - https://snyk.io/vuln/npm:jquery:20150627
+    - https://sw.aveva.com/hubfs/assets-2018/pdf/security-bulletin/SecurityBulletin_LFSec126.pdf
+affected:
+    - name: jquery
+      version:
+        - "<=2.2.4"
+      fixedin:
+        - ">=3.0.0"
