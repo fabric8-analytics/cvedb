@@ -1,0 +1,18 @@
+---
+cve: 2018-14040
+title: CVE in bootstrap
+description: >
+    In Bootstrap before 4.1.2, XSS is possible in the collapse data-parent attribute.
+cvss_v2: 4.3
+references:
+    - https://blog.getbootstrap.com/2018/07/12/bootstrap-4-1-2/
+    - https://github.com/twbs/bootstrap/issues/26423
+    - https://github.com/twbs/bootstrap/issues/26625
+    - https://github.com/twbs/bootstrap/pull/26630
+    - https://lists.debian.org/debian-lts-announce/2018/08/msg00027.html
+affected:
+    - name: bootstrap
+      version:
+        - "<=4.1.1"
+      fixedin:
+        - ">=4.1.2"
