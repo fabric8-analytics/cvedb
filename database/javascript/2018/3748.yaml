@@ -10,3 +10,5 @@ affected:
     - name: glance
       version:
         - ">=3.0.5"
+      fixedin:
+        []
