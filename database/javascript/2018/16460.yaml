@@ -1,0 +1,14 @@
+---
+cve: 2018-16460
+title: CVE in ps
+description: >
+    A command Injection in ps package versions <1.0.0 for Node.js allowed arbitrary commands to be executed when attacker controls the PID.
+cvss_v2: 7.5
+references:
+    - https://hackerone.com/reports/390848
+affected:
+    - name: ps
+      version:
+        - "<=0.0.2"
+      fixedin:
+        - ">=1.0.0"
