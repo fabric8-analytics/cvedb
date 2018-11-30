@@ -1,0 +1,16 @@
+---
+cve: 2017-1000433
+title: CVE in pysaml2
+description: >
+    pysaml2 version 4.4.0 and older accept any password when run with python optimizations enabled. This allows attackers to log in as any user without knowing their password.
+cvss_v2: 6.8
+references:
+    - https://github.com/rohe/pysaml2/issues/451
+    - https://lists.debian.org/debian-lts-announce/2018/07/msg00000.html
+    - https://security.gentoo.org/glsa/201801-11
+affected:
+    - name: pysaml2
+      version:
+        - "<=4.4.0"
+      fixedin:
+        - ">=4.5.0"
