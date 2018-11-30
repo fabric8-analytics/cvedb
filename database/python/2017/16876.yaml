@@ -1,0 +1,17 @@
+---
+cve: 2017-16876
+title: CVE in mistune
+description: >
+    Cross-site scripting (XSS) vulnerability in the _keyify function in mistune.py in Mistune before 0.8.1 allows remote attackers to inject arbitrary web script or HTML by leveraging failure to escape the "key" argument.
+cvss_v2: 4.3
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1524596
+    - https://github.com/lepture/mistune/blob/master/CHANGES.rst
+    - https://github.com/lepture/mistune/commit/5f06d724bc05580e7f203db2d4a4905fc1127f98
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NUR3GMHQBMA3UC4PFMCK6GCLOQC4LQQC/
+affected:
+    - name: mistune
+      version:
+        - "<=0.8"
+      fixedin:
+        - ">=0.8.1"
