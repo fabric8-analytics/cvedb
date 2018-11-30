@@ -11,8 +11,8 @@ references:
 affected:
     - name: django
       version:
-        - "<=1.9b1,1.9a1"
+        - "==1.9a1",
+        - "==1.9b1",
         - "==1.9.1"
       fixedin:
-        - "==1.9rc2"
         - ">=1.9.2"
