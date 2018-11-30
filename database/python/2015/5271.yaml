@@ -1,0 +1,17 @@
+---
+cve: 2015-5271
+title: CVE in tripleo-heat-templates
+description: >
+    The TripleO Heat templates (tripleo-heat-templates) do not properly order the Identity Service (keystone) before the OpenStack Object Storage (Swift) staticweb middleware in the swiftproxy pipeline when the staticweb middleware is enabled, which might allow remote attackers to obtain sensitive information from private containers via unspecified vectors.
+cvss_v2: 5.0
+references:
+    - https://access.redhat.com/errata/RHSA-2015:1862
+    - https://bugs.launchpad.net/tripleo/+bug/1494896
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1261697
+    - https://launchpadlibrarian.net/217268516/CVE-2015-5271_puppet-swift.patch
+affected:
+    - name: tripleo-heat-templates
+      version:
+        - "<=7.0.0.0rc2,7.0.0.0rc1"
+      fixedin:
+        - ">=7.0.0.0rc1"
