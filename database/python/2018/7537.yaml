@@ -6,6 +6,7 @@ description: >
 cvss_v2: 5.0
 references:
     - http://www.securityfocus.com/bid/103357
+    - https://access.redhat.com/errata/RHSA-2018:2927
     - https://lists.debian.org/debian-lts-announce/2018/03/msg00006.html
     - https://usn.ubuntu.com/3591-1/
     - https://www.debian.org/security/2018/dsa-4161
@@ -13,10 +14,10 @@ references:
 affected:
     - name: django
       version:
-        - "<=1.8.18,1.8a1"
+        - "<=1.8.18,1.8b1"
         - "<=1.11.10,1.11a1"
         - "<=2.0.2,2.0a1"
       fixedin:
-        - ">=1.8.19"
-        - ">=1.11.11"
+        - "<=1.11,1.8.19"
+        - "<=1.11.16,1.11.11"
         - ">=2.0.3"
