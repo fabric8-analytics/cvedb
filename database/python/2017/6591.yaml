@@ -10,6 +10,4 @@ references:
 affected:
     - name: django-epiceditor
       version:
-        - ">=0.2.3"
-      fixedin:
-        []
+        - "==0.2.3"
