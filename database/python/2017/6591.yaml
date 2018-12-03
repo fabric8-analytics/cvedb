@@ -1,0 +1,13 @@
+---
+cve: 2017-6591
+title: CVE in django-epiceditor
+description: >
+    There is a cross-site scripting vulnerability in django-epiceditor 0.2.3 via crafted content in a form field.
+cvss_v2: 4.3
+references:
+    - http://morningchen.com/2017/03/09/Cross-site-scripting-vulnerability-in-django-epiceditor/
+    - http://www.securityfocus.com/bid/96946
+affected:
+    - name: django-epiceditor
+      version:
+        - "==0.2.3"
