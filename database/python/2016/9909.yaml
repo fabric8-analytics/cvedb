@@ -1,0 +1,20 @@
+---
+cve: 2016-9909
+title: CVE in html5lib
+description: >
+    The serializer in html5lib before 0.99999999 might allow remote attackers to conduct cross-site scripting (XSS) attacks by leveraging mishandling of the < (less than) character in attribute values.
+cvss_v2: 4.3
+references:
+    - http://www.openwall.com/lists/oss-security/2016/12/06/5
+    - http://www.openwall.com/lists/oss-security/2016/12/08/8
+    - http://www.securityfocus.com/bid/95132
+    - https://github.com/html5lib/html5lib-python/commit/9b8d8eb5afbc066b7fac9390f5ec75e5e8a7cab7
+    - https://github.com/html5lib/html5lib-python/issues/11
+    - https://github.com/html5lib/html5lib-python/issues/12
+    - https://html5lib.readthedocs.io/en/latest/changes.html#b9
+affected:
+    - name: html5lib
+      version:
+        - "<=0.9999999"
+      fixedin:
+        - ">=0.99999999"
