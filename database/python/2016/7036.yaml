@@ -1,0 +1,16 @@
+---
+cve: 2016-7036
+title: CVE in python-jose
+description: >
+    python-jose before 1.3.2 allows attackers to have unspecified impact by leveraging failure to use a constant time comparison for HMAC keys.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/95845
+    - https://github.com/mpdavis/python-jose/pull/35/commits/89b46353b9f611e9da38de3d2fedf52331167b93
+    - https://github.com/mpdavis/python-jose/releases/tag/1.3.2
+affected:
+    - name: python-jose
+      version:
+        - "<=1.3.1"
+      fixedin:
+        - ">=1.3.2"
