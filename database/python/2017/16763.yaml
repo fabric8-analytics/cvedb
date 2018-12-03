@@ -11,6 +11,4 @@ references:
 affected:
     - name: confire
       version:
-        - ">=0.2.0"
-      fixedin:
-        []
+        - "==0.2.0"
