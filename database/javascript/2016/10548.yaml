@@ -1,0 +1,15 @@
+---
+cve: 2016-10548
+title: CVE in reduce-css-calc
+description: >
+    Arbitrary code execution is possible in reduce-css-calc node module <=1.2.4 through crafted css. This makes cross sites scripting (XSS) possible on the client and arbitrary code injection possible on the server and user input is passed to the `calc` function.
+cvss_v2: 4.3
+references:
+    - https://gist.github.com/ChALkeR/415a41b561ebea9b341efbb40b802fc9
+    - https://nodesecurity.io/advisories/144
+affected:
+    - name: reduce-css-calc
+      version:
+        - "<=1.2.4"
+      fixedin:
+        - ">=1.2.5"

@@ -1,0 +1,15 @@
+---
+cve: 2016-10553
+title: CVE in sequelize
+description: >
+    sequelize is an Object-relational mapping, or a middleman to convert things from Postgres, MySQL, MariaDB, SQLite and Microsoft SQL Server into usable data for NodeJS. A fix was pushed out that fixed potential SQL injection in sequelize 2.1.3 and earlier.
+cvss_v2: 7.5
+references:
+    - https://github.com/sequelize/sequelize/blob/master/changelog.md#300
+    - https://nodesecurity.io/advisories/109
+affected:
+    - name: sequelize
+      version:
+        - "<=2.1.3"
+      fixedin:
+        - ">=3.0.0"

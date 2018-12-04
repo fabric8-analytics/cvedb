@@ -1,0 +1,14 @@
+---
+cve: 2016-10610
+title: CVE in unicode-json
+description: >
+    unicode-json is a unicode lookup table. unicode-json before 2.0.0 downloads data resources over HTTP, which leaves it vulnerable to MITM attacks.
+cvss_v2: 6.8
+references:
+    - https://nodesecurity.io/advisories/206
+affected:
+    - name: unicode-json
+      version:
+        - "<=1.0.3"
+      fixedin:
+        - ">=2.0.0"

@@ -1,0 +1,12 @@
+---
+cve: 2016-10630
+title: CVE in install-g-test
+description: >
+    install-g-test downloads resources over HTTP, which leaves it vulnerable to MITM attacks.
+cvss_v2: 4.3
+references:
+    - https://nodesecurity.io/advisories/228
+affected:
+    - name: install-g-test
+      version:
+        - "<=2.0.12"

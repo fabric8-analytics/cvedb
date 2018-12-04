@@ -1,0 +1,14 @@
+---
+cve: 2016-10674
+title: CVE in limbus-buildgen
+description: >
+    limbus-buildgen is a "build anywhere" build system. limbus-buildgen versions below 0.1.1 download binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested resources with an attacker controlled copy if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/276
+affected:
+    - name: limbus-buildgen
+      version:
+        - "<=0.1.0"
+      fixedin:
+        - ">=0.1.1"

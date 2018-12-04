@@ -1,0 +1,15 @@
+---
+cve: 2016-10519
+title: CVE in bittorrent-dht
+description: >
+    A security issue was found in bittorrent-dht before 5.1.3 that allows someone to send a specific series of messages to a listening peer and get it to reveal internal memory.
+cvss_v2: 5.0
+references:
+    - https://github.com/feross/bittorrent-dht/issues/87
+    - https://nodesecurity.io/advisories/68
+affected:
+    - name: bittorrent-dht
+      version:
+        - "<=5.1.2"
+      fixedin:
+        - ">=5.1.3"

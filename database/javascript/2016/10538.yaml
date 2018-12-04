@@ -1,0 +1,16 @@
+---
+cve: 2016-10538
+title: CVE in cli
+description: >
+    The package `node-cli` before 1.0.0 insecurely uses the lock_file and log_file. Both of these are temporary, but it allows the starting user to overwrite any file they have access to.
+cvss_v2: 4.9
+references:
+    - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=809252
+    - https://github.com/node-js-libs/cli/issues/81
+    - https://nodesecurity.io/advisories/95
+affected:
+    - name: cli
+      version:
+        - "<=0.11.3"
+      fixedin:
+        - ">=1.0.0"
