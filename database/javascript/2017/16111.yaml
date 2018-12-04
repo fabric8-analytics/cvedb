@@ -1,0 +1,14 @@
+---
+cve: 2017-16111
+title: CVE in content
+description: >
+    The content module is a module to parse HTTP Content-* headers. It is used by the hapijs framework to provide this functionality. The module is vulnerable to regular expression denial of service when passed a specifically crafted Content-Type or Content-Disposition header.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/530
+affected:
+    - name: content
+      version:
+        - "<=3.0.5"
+      fixedin:
+        - ">=3.0.6"

@@ -1,0 +1,13 @@
+---
+cve: 2017-16186
+title: CVE in 360class.jansenhm
+description: >
+    360class.jansenhm is a static file server. 360class.jansenhm is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/360class.jansenhm
+    - https://nodesecurity.io/advisories/448
+affected:
+    - name: 360class.jansenhm
+      version:
+        - "<=0.1.1"

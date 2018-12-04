@@ -1,0 +1,15 @@
+---
+cve: 2017-16117
+title: CVE in slug
+description: >
+    slug is a module to slugify strings, even if they contain unicode. slug is vulnerable to regular expression denial of service is specially crafted untrusted input is passed as input. About 50k characters can block the event loop for 2 seconds.
+cvss_v2: 5.0
+references:
+    - https://github.com/dodo/node-slug/issues/82
+    - https://nodesecurity.io/advisories/537
+affected:
+    - name: slug
+      version:
+        - "<=0.9.1"
+      fixedin:
+        - ">=0.9.2"

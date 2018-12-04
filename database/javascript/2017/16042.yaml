@@ -1,0 +1,16 @@
+---
+cve: 2017-16042
+title: CVE in growl
+description: >
+    Growl adds growl notification support to nodejs. Growl before 1.10.2 does not properly sanitize input before passing it to exec, allowing for arbitrary command execution.
+cvss_v2: 7.5
+references:
+    - https://github.com/tj/node-growl/issues/60
+    - https://github.com/tj/node-growl/pull/61
+    - https://nodesecurity.io/advisories/146
+affected:
+    - name: growl
+      version:
+        - "<=1.10.1"
+      fixedin:
+        - ">=1.10.2"

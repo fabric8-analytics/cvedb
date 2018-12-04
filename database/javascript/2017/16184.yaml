@@ -1,0 +1,13 @@
+---
+cve: 2017-16184
+title: CVE in scott-blanch-weather-app
+description: >
+    scott-blanch-weather-app is a sample Node.js app using Express 4. scott-blanch-weather-app is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/scott-blanch-weather-app
+    - https://nodesecurity.io/advisories/453
+affected:
+    - name: scott-blanch-weather-app
+      version:
+        - "<=1.0.0"

@@ -1,0 +1,16 @@
+---
+cve: 2017-16025
+title: CVE in nes
+description: >
+    Nes is a websocket extension library for hapi. Hapi is a webserver framework. Versions below and including 6.4.0 have a denial of service vulnerability via an invalid Cookie header. This is only present when websocket authentication is set to `cookie`. Submitting an invalid cookie on the websocket upgrade request will cause the node process to error out.
+cvss_v2: 4.3
+references:
+    - https://github.com/hapijs/nes/commit/249ba1755ed6977fbc208463c87364bf884ad655
+    - https://github.com/hapijs/nes/issues/171
+    - https://nodesecurity.io/advisories/331
+affected:
+    - name: nes
+      version:
+        - "<=6.4.0"
+      fixedin:
+        - ">=6.4.1"

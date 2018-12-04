@@ -1,0 +1,15 @@
+---
+cve: 2017-16015
+title: CVE in forms
+description: >
+    Forms is a library for easily creating HTML forms. Versions before 1.3.0 did not have proper html escaping. This means that if the application did not sanitize html on behalf of forms, use of forms may be vulnerable to cross site scripting
+cvss_v2: 4.3
+references:
+    - https://github.com/caolan/forms/commit/bc01e534a0ff863dedb2026a50bd03153bbc6a5d
+    - https://nodesecurity.io/advisories/158
+affected:
+    - name: forms
+      version:
+        - "<=1.2.0"
+      fixedin:
+        - ">=1.3.0"

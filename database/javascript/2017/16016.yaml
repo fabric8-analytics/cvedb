@@ -1,0 +1,16 @@
+---
+cve: 2017-16016
+title: CVE in sanitize-html
+description: >
+    Sanitize-html is a library for scrubbing html input of malicious values. Versions 1.11.1 and below are vulnerable to cross site scripting (XSS) in certain scenarios: If allowed at least one nonTextTags, the result is a potential XSS vulnerability.
+cvss_v2: 4.3
+references:
+    - https://github.com/punkave/sanitize-html/commit/5d205a1005ba0df80e21d8c64a15bb3accdb2403
+    - https://github.com/punkave/sanitize-html/issues/100
+    - https://nodesecurity.io/advisories/154
+affected:
+    - name: sanitize-html
+      version:
+        - "<=1.11.1"
+      fixedin:
+        - ">=1.11.2"

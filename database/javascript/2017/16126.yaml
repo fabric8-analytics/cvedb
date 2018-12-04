@@ -1,0 +1,12 @@
+---
+cve: 2017-16126
+title: CVE in botbait
+description: >
+    The module botbait is a tool to be used to track bot and automated tools usage with-in the npm ecosystem. botbait is known to record and track user information. The module tracks the following information. Source IP process.versions process.platform How the module was invoked (test, require, pre-install)
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/483
+affected:
+    - name: botbait
+      version:
+        - "<=2.0.0"

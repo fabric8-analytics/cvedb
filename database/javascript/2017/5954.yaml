@@ -1,0 +1,16 @@
+---
+cve: 2017-5954
+title: CVE in serialize-to-js
+description: >
+    An issue was discovered in the serialize-to-js package 0.5.0 for Node.js. Untrusted data passed into the deserialize() function can be exploited to achieve arbitrary code execution by passing a JavaScript Object with an Immediately Invoked Function Expression (IIFE).
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/96223
+    - https://github.com/commenthol/serialize-to-js/issues/1
+    - https://opsecx.com/index.php/2017/02/08/exploiting-node-js-deserialization-bug-for-remote-code-execution/
+affected:
+    - name: serialize-to-js
+      version:
+        - "==0.5.0"
+      fixedin:
+        - ">=1.0.0"

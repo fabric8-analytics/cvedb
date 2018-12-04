@@ -1,0 +1,13 @@
+---
+cve: 2017-16166
+title: CVE in byucslabsix
+description: >
+    byucslabsix is an http server. byucslabsix is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/byucslabsix
+    - https://nodesecurity.io/advisories/399
+affected:
+    - name: byucslabsix
+      version:
+        - "<=0.0.5"

@@ -1,0 +1,16 @@
+---
+cve: 2017-16038
+title: CVE in f2e-server
+description: >
+    `f2e-server` 1.12.11 and earlier is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url. This is compounded by `f2e-server` requiring elevated privileges to run.
+cvss_v2: 5.0
+references:
+    - https://github.com/shy2850/node-server/issues/10
+    - https://github.com/shy2850/node-server/pull/12/files
+    - https://nodesecurity.io/advisories/346
+affected:
+    - name: f2e-server
+      version:
+        - "<=1.12.11"
+      fixedin:
+        - ">=1.12.12"

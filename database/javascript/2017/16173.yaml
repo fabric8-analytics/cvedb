@@ -1,0 +1,13 @@
+---
+cve: 2017-16173
+title: CVE in utahcityfinder
+description: >
+    utahcityfinder constructs lists of Utah cities with a certain prefix. utahcityfinder is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/utahcityfinder
+    - https://nodesecurity.io/advisories/467
+affected:
+    - name: utahcityfinder
+      version:
+        - "<=0.0.1"

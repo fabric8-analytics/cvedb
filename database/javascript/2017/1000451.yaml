@@ -1,0 +1,14 @@
+---
+cve: 2017-1000451
+title: CVE in fs-git
+description: >
+    fs-git is a file system like api for git repository. The fs-git version 1.0.1 module relies on child_process.exec, however, the buildCommand method used to construct exec strings does not properly sanitize data and is vulnerable to command injection across all methods that use it and call exec.
+cvss_v2: 4.6
+references:
+    - https://nodesecurity.io/advisories/360
+affected:
+    - name: fs-git
+      version:
+        - "<=1.0.1"
+      fixedin:
+        - ">=1.0.2"

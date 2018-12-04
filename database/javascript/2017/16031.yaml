@@ -1,0 +1,17 @@
+---
+cve: 2017-16031
+title: CVE in socket.io
+description: >
+    Socket.io is a realtime application framework that provides communication via websockets. Because socket.io 0.9.6 and earlier depends on `Math.random()` to create socket IDs, the IDs are predictable. An attacker is able to guess the socket ID and gain access to socket.io servers, potentially obtaining sensitive information.
+cvss_v2: 5.0
+references:
+    - https://github.com/socketio/socket.io/commit/67b4eb9abdf111dfa9be4176d1709374a2b4ded8
+    - https://github.com/socketio/socket.io/issues/856
+    - https://github.com/socketio/socket.io/pull/857
+    - https://nodesecurity.io/advisories/321
+affected:
+    - name: socket.io
+      version:
+        - "<=0.9.6"
+      fixedin:
+        - ">=0.9.7"

@@ -1,0 +1,13 @@
+---
+cve: 2017-16154
+title: CVE in earlybird
+description: >
+    earlybird is a web server module for early development. earlybird is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/earlybird
+    - https://nodesecurity.io/advisories/380
+affected:
+    - name: earlybird
+      version:
+        - "<=0.1.7"

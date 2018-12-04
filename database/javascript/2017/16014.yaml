@@ -1,0 +1,15 @@
+---
+cve: 2017-16014
+title: CVE in http-proxy
+description: >
+    Http-proxy is a proxying library. Because of the way errors are handled in versions before 0.7.0, an attacker that forces an error can crash the server, causing a denial of service.
+cvss_v2: 5.0
+references:
+    - https://github.com/nodejitsu/node-http-proxy/pull/101
+    - https://nodesecurity.io/advisories/323
+affected:
+    - name: http-proxy
+      version:
+        - "<=0.6.6"
+      fixedin:
+        - ">=0.7.0"

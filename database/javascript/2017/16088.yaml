@@ -1,0 +1,16 @@
+---
+cve: 2017-16088
+title: CVE in safe-eval
+description: >
+    The safe-eval module describes itself as a safer version of eval. By accessing the object constructors, un-sanitized user input can access the entire standard library and effectively break out of the sandbox.
+cvss_v2: 10.0
+references:
+    - https://github.com/hacksparrow/safe-eval/issues/5
+    - https://github.com/patriksimek/vm2/issues/59
+    - https://nodesecurity.io/advisories/337
+affected:
+    - name: safe-eval
+      version:
+        - "<=0.3.0"
+      fixedin:
+        - ">=0.4.0"

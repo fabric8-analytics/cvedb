@@ -1,0 +1,13 @@
+---
+cve: 2017-16152
+title: CVE in static-html-server
+description: >
+    static-html-server is a static file server. static-html-server is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/static-html-server
+    - https://nodesecurity.io/advisories/376
+affected:
+    - name: static-html-server
+      version:
+        - "<=0.1.2"

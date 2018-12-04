@@ -1,0 +1,12 @@
+---
+cve: 2017-16202
+title: CVE in cofeescript
+description: >
+    The cofeescript module exfiltrates sensitive data such as a user's private SSH key and bash history to a third party server during installation.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/541
+affected:
+    - name: cofeescript
+      version:
+        - "<=0.0.1-security"
