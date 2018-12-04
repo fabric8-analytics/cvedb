@@ -1,0 +1,15 @@
+---
+cve: 2016-10534
+title: CVE in electron-packager
+description: >
+    electron-packager is a command line tool that packages Electron source code into `.app` and `.exe` packages. along with Electron. The `--strict-ssl` command line option in electron-packager >= 5.2.1 <= 6.0.0 || >=6.0.0 <= 6.0.2 defaults to false if not explicitly set to true. This could allow an attacker to perform a man in the middle attack.
+cvss_v2: 4.3
+references:
+    - https://github.com/electron-userland/electron-packager/issues/333
+    - https://nodesecurity.io/advisories/104
+affected:
+    - name: electron-packager
+      version:
+        - "<=6.0.2,5.2.1"
+      fixedin:
+        - ">=7.0.0"

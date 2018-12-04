@@ -1,0 +1,12 @@
+---
+cve: 2016-10595
+title: CVE in jdf-sass
+description: >
+    jdf-sass is a fork from node-sass, jdf use only. jdf-sass downloads executable resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested file with an attacker controlled file if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/198
+affected:
+    - name: jdf-sass
+      version:
+        - "<=1.0.18"

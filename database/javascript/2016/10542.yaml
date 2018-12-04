@@ -1,0 +1,15 @@
+---
+cve: 2016-10542
+title: CVE in ws
+description: >
+    ws is a "simple to use, blazing fast and thoroughly tested websocket client, server and console for node.js, up-to-date against RFC-6455". By sending an overly long websocket payload to a `ws` server, it is possible to crash the node process. This affects ws 1.1.0 and earlier.
+cvss_v2: 5.0
+references:
+    - https://github.com/nodejs/node/issues/7388
+    - https://nodesecurity.io/advisories/120
+affected:
+    - name: ws
+      version:
+        - "<=1.1.0"
+      fixedin:
+        - ">=1.1.1"

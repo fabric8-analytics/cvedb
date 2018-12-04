@@ -1,0 +1,13 @@
+---
+cve: 2016-10592
+title: CVE in jser-stat
+description: >
+    jser-stat is a JSer.info stat library. jser-stat downloads data resources over HTTP, which leaves it vulnerable to MITM attacks.
+cvss_v2: 6.8
+references:
+    - https://github.com/jser/stat-js/blob/master/data/url-mapping.js
+    - https://nodesecurity.io/advisories/188
+affected:
+    - name: jser-stat
+      version:
+        - "<=4.0.3"

@@ -1,0 +1,12 @@
+---
+cve: 2016-10602
+title: CVE in haxe
+description: >
+    haxe is a cross-platform toolkit haxe downloads zipped resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested zip file with an attacker controlled zip file if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/177
+affected:
+    - name: haxe
+      version:
+        - "<=5.0.10"

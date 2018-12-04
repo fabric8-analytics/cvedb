@@ -1,0 +1,14 @@
+---
+cve: 2016-10597
+title: CVE in cobalt-cli
+description: >
+    cobalt-cli downloads resources over HTTP, which leaves it vulnerable to MITM attacks.
+cvss_v2: 4.3
+references:
+    - https://nodesecurity.io/advisories/197
+affected:
+    - name: cobalt-cli
+      version:
+        - "<=2.2.0"
+      fixedin:
+        - ">=2.2.1"
