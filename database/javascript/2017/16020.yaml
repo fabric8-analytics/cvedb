@@ -1,0 +1,13 @@
+---
+cve: 2017-16020
+title: CVE in summit
+description: >
+    Summit is a node web framework. When using the PouchDB driver in the module, Summit 0.1.0 and later allows an attacker to execute arbitrary commands via the collection name.
+cvss_v2: 7.5
+references:
+    - https://github.com/notduncansmith/summit/issues/23
+    - https://nodesecurity.io/advisories/315
+affected:
+    - name: summit
+      version:
+        - "<=0.1.22,0.1.0"

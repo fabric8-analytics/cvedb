@@ -1,0 +1,15 @@
+---
+cve: 2017-1001003
+title: CVE in mathjs
+description: >
+    math.js before 3.17.0 had an issue where private properties such as a constructor could be replaced by using unicode characters when creating an object.
+cvss_v2: 7.5
+references:
+    - https://github.com/josdejong/mathjs/blob/master/HISTORY.md#2017-11-18-version-3170
+    - https://github.com/josdejong/mathjs/commit/a60f3c8d9dd714244aed7a5569c3dccaa3a4e761
+affected:
+    - name: mathjs
+      version:
+        - "<=3.16.5"
+      fixedin:
+        - ">=3.17.0"

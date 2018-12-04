@@ -1,0 +1,16 @@
+---
+cve: 2017-16226
+title: CVE in static-eval
+description: >
+    The static-eval module is intended to evaluate statically-analyzable expressions. In affected versions, untrusted user input is able to access the global function constructor, effectively allowing arbitrary code execution.
+cvss_v2: 7.5
+references:
+    - https://github.com/substack/static-eval/pull/18
+    - https://maustin.net/articles/2017-10/static_eval
+    - https://nodesecurity.io/advisories/548
+affected:
+    - name: static-eval
+      version:
+        - "<=1.1.1"
+      fixedin:
+        - ">=2.0.0"

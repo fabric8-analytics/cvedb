@@ -1,0 +1,13 @@
+---
+cve: 2017-16172
+title: CVE in section2.madisonjbrooks12
+description: >
+    section2.madisonjbrooks12 is a simple web server. section2.madisonjbrooks12 is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/section2.madisonjbrooks12
+    - https://nodesecurity.io/advisories/468
+affected:
+    - name: section2.madisonjbrooks12
+      version:
+        - "<=0.1.1"

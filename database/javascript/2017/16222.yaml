@@ -1,0 +1,13 @@
+---
+cve: 2017-16222
+title: CVE in elding
+description: >
+    elding is a simple web server. elding is vulnerable to a directory traversal issue, allowing an attacker to access the filesystem by placing "../" in the url. The files accessible, however, are limited to files with a file extension. Sending a GET request to /../../../etc/passwd, for example, will return a 404 on etc/passwd/index.js.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/elding
+    - https://nodesecurity.io/advisories/415
+affected:
+    - name: elding
+      version:
+        - "<=1.0.0"

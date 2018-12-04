@@ -1,0 +1,13 @@
+---
+cve: 2017-16109
+title: CVE in easyquick
+description: >
+    easyquick is a simple web server. easyquick is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url. Access is constrained, however, to supported file types. Requesting a file such as /etc/passwd returns a "not supported" error.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/easyquick
+    - https://nodesecurity.io/advisories/373
+affected:
+    - name: easyquick
+      version:
+        - "<=0.1.1"

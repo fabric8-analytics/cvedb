@@ -1,0 +1,13 @@
+---
+cve: 2017-16022
+title: CVE in morris.js
+description: >
+    Morris.js creates an svg graph, with labels that appear when hovering over a point. The hovering label names are not escaped in versions 0.5.0 and earlier. If control over the labels is obtained, script can be injected. The script will run on the client side whenever that specific graph is loaded.
+cvss_v2: 4.3
+references:
+    - https://github.com/morrisjs/morris.js/pull/464
+    - https://nodesecurity.io/advisories/307
+affected:
+    - name: morris.js
+      version:
+        - "<=0.5.0"

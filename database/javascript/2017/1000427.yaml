@@ -1,0 +1,14 @@
+---
+cve: 2017-1000427
+title: CVE in marked
+description: >
+    "marked version 0.3.6 and earlier is vulnerable to an XSS attack in the data: URI parser."
+cvss_v2: 4.3
+references:
+    - https://snyk.io/vuln/npm:marked:20170112
+affected:
+    - name: marked
+      version:
+        - "<=0.3.6"
+      fixedin:
+        - ">=0.3.7"

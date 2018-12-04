@@ -1,0 +1,17 @@
+---
+cve: 2017-18077
+title: CVE in brace-expansion
+description: >
+    index.js in brace-expansion before 1.1.7 is vulnerable to Regular Expression Denial of Service (ReDoS) attacks, as demonstrated by an expand argument containing many comma characters.
+cvss_v2: 5.0
+references:
+    - https://bugs.debian.org/862712
+    - https://github.com/juliangruber/brace-expansion/issues/33
+    - https://github.com/juliangruber/brace-expansion/pull/35/commits/b13381281cead487cbdbfd6a69fb097ea5e456c3
+    - https://nodesecurity.io/advisories/338
+affected:
+    - name: brace-expansion
+      version:
+        - "<=1.1.6"
+      fixedin:
+        - ">=1.1.7"

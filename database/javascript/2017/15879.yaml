@@ -1,0 +1,14 @@
+---
+cve: 2017-15879
+title: CVE in keystone
+description: >
+    CSV Injection (aka Excel Macro Injection or Formula Injection) exists in admin/server/api/download.js and lib/list/getCSVData.js in KeystoneJS before 4.0.0-beta.7 via a value that is mishandled in a CSV export.
+cvss_v2: 6.8
+references:
+    - https://github.com/keystonejs/keystone/pull/4478
+    - https://packetstormsecurity.com/files/144755/KeystoneJS-4.0.0-beta.5-Unauthenticated-CSV-Injection.html
+    - https://www.exploit-db.com/exploits/43053/
+affected:
+    - name: keystone
+      version:
+        - "<=4.0.0-beta.5"

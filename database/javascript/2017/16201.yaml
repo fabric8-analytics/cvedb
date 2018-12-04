@@ -1,0 +1,13 @@
+---
+cve: 2017-16201
+title: CVE in zjjserver
+description: >
+    zjjserver is a static file server. zjjserver is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/zjjserver
+    - https://nodesecurity.io/advisories/427
+affected:
+    - name: zjjserver
+      version:
+        - "<=1.0.0"
