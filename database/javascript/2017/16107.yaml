@@ -10,6 +10,6 @@ references:
 affected:
     - name: pooledwebsocket
       version:
-        - "<=0.0.18,0.0.1"
+        - "<=0.0.18"
       fixedin:
         - ">=0.0.19"

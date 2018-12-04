@@ -6,14 +6,8 @@ description: >
 cvss_v2: 5.0
 references:
     - https://nodesecurity.io/advisories/339
-
 affected:
     - name: xtalk
       version:
-        - " >=0.0.2"
+        - "<=0.0.7,0.0.2"
 
-
-# Additional information:
-# Package name candidates:
-# 13.392467 xtalk
-# 6.733567 xtalk-demo

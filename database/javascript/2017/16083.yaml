@@ -12,3 +12,5 @@ affected:
     - name: node-simple-router
       version:
         - "<=0.10.0"
+      fixedin:
+        - ">=0.10.1"

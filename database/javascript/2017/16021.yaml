@@ -7,8 +7,9 @@ cvss_v2: 6.8
 references:
     - https://github.com/garycourt/uri-js/issues/12
     - https://nodesecurity.io/advisories/100
-
 affected:
     - name: uri-js
       version:
         - "<=2.1.1"
+      fixedin:
+        - ">=3.0.0"

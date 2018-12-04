@@ -7,8 +7,9 @@ cvss_v2: 5.0
 references:
     - https://github.com/joyent/node-http-signature/issues/10
     - https://nodesecurity.io/advisories/318
-
 affected:
     - name: http-signature
       version:
         - "<=0.9.11"
+      fixedin:
+        - ">=0.10.0"
