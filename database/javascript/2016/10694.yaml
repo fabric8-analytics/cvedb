@@ -11,3 +11,5 @@ affected:
     - name: alto-saxophone
       version:
         - "<=2.25.0"
+      fixedin:
+        - ">=2.25.1"
