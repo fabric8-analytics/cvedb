@@ -11,3 +11,5 @@ affected:
     - name: restify
       version:
         - "<=4.0.4,2.0.0"
+      fixedin:
+        - ">=4.1.0"

@@ -7,8 +7,8 @@ cvss_v2: 5.0
 references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/serve46
     - https://nodesecurity.io/advisories/456
-
 affected:
     - name: serve46
       version:
-        - "==1.0.0"
+        - ">=1.0.0"
+

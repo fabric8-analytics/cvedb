@@ -7,8 +7,9 @@ cvss_v2: 4.3
 references:
     - https://github.com/jonschlinkert/remarkable/issues/227
     - https://nodesecurity.io/advisories/319
-
 affected:
     - name: remarkable
       version:
         - "<=1.6.2"
+      fixedin:
+        - ">=1.7.0"

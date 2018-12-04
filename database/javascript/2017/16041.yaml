@@ -11,3 +11,5 @@ affected:
     - name: ikst
       version:
         - "<=0.1.2"
+      fixedin:
+        - ">=1.1.2"
