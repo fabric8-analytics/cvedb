@@ -1,0 +1,15 @@
+---
+cve: 2016-6581
+title: CVE in hpack
+description: >
+    A HTTP/2 implementation built using any version of the Python HPACK library between v1.0.0 and v2.2.0 could be targeted for a denial of service attack, specifically a so-called "HPACK Bomb" attack. This attack occurs when an attacker inserts a header field that is exactly the size of the HPACK dynamic header table into the dynamic header table. The attacker can then send a header block that is simply repeated requests to expand that field in the dynamic table. This can lead to a gigantic compression ratio of 4,096 or better, meaning that 16kB of data can decompress to 64MB of data on the target machine.
+cvss_v2: 7.8
+references:
+    - http://www.securityfocus.com/bid/92315
+    - https://python-hyper.org/hpack/en/latest/security/CVE-2016-6581.html
+affected:
+    - name: hpack
+      version:
+        - "<=2.2.0"
+      fixedin:
+        - ">=2.3.0"

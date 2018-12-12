@@ -1,0 +1,17 @@
+---
+cve: 2014-1934
+title: CVE in eyed3
+description: >
+    tag.py in eyeD3 (aka python-eyed3) 7.0.3, 0.6.18, and earlier for Python allows local users to modify arbitrary files via a symlink attack on a temporary file.
+cvss_v2: 3.3
+references:
+    - http://lists.opensuse.org/opensuse-updates/2014-05/msg00027.html
+    - http://lists.opensuse.org/opensuse-updates/2014-05/msg00028.html
+    - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=737062
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1063671
+affected:
+    - name: eyed3
+      version:
+        - "<=0.6.18"
+      fixedin:
+        - ">=0.7.11"

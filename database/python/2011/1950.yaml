@@ -1,0 +1,20 @@
+---
+cve: 2011-1950
+title: CVE in plone
+description: >
+    plone.app.users in Plone 4.0 and 4.1 allows remote authenticated users to modify the properties of arbitrary accounts via unspecified vectors, as exploited in the wild in June 2011.
+cvss_v2: 5.5
+references:
+    - http://osvdb.org/72729
+    - http://plone.org/products/plone/security/advisories/CVE-2011-1950
+    - http://secunia.com/advisories/44775
+    - http://securityreason.com/securityalert/8269
+    - http://www.securityfocus.com/archive/1/518155/100/0/threaded
+    - http://www.securityfocus.com/bid/48005
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/67695
+affected:
+    - name: plone
+      version:
+        - "<=4.1,4.0"
+      fixedin:
+        - ">=4.1.1"

@@ -1,0 +1,18 @@
+---
+cve: 2011-4104
+title: CVE in django-tastypie
+description: >
+    The from_yaml method in serializers.py in Django Tastypie before 0.9.10 does not properly deserialize YAML data, which allows remote attackers to execute arbitrary Python code via vectors related to the yaml.load method.
+cvss_v2: 7.5
+references:
+    - http://www.openwall.com/lists/oss-security/2011/11/02/1
+    - http://www.openwall.com/lists/oss-security/2011/11/02/7
+    - https://github.com/toastdriven/django-tastypie/commit/e8af315211b07c8f48f32a063233cc3f76dd5bc2
+    - https://groups.google.com/forum/#!topic/django-tastypie/i2aNGDHTUBI
+    - https://www.djangoproject.com/weblog/2011/nov/01/piston-and-tastypie-security-releases/
+affected:
+    - name: django-tastypie
+      version:
+        - "<=0.9.9"
+      fixedin:
+        - ">=0.9.10"

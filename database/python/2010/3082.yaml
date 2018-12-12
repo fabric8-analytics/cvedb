@@ -1,0 +1,19 @@
+---
+cve: 2010-3082
+title: CVE in django
+description: >
+    Cross-site scripting (XSS) vulnerability in Django 1.2.x before 1.2.2 allows remote attackers to inject arbitrary web script or HTML via a csrfmiddlewaretoken (aka csrf_token) cookie.
+cvss_v2: 4.3
+references:
+    - http://marc.info/?l=oss-security&m=128403961700444&w=2
+    - http://www.djangoproject.com/weblog/2010/sep/08/security-release/
+    - http://www.securityfocus.com/bid/43116
+    - http://www.ubuntu.com/usn/USN-1004-1
+    - https://bugzilla.redhat.com/show_bug.cgi?id=632239
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/61729
+affected:
+    - name: django
+      version:
+        - "<=1.2.1,1.2"
+      fixedin:
+        - ">=1.2.2"

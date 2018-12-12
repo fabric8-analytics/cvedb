@@ -1,0 +1,15 @@
+---
+cve: 2015-5159
+title: CVE in kdcproxy
+description: >
+    python-kdcproxy before 0.3.2 allows remote attackers to cause a denial of service via a large POST request.
+cvss_v2: 5.0
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1245200
+    - https://github.com/latchset/kdcproxy/commit/f274aa6787cb8b3ec1cc12c440a56665b7231882
+affected:
+    - name: kdcproxy
+      version:
+        - "<=0.3.1"
+      fixedin:
+        - ">=0.4"

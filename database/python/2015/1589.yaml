@@ -1,0 +1,17 @@
+---
+cve: 2015-1589
+title: CVE in archmage
+description: >
+    Directory traversal vulnerability in arCHMage 0.2.4 allows remote attackers to write to arbitrary files via a .. (dot dot) in a CHM file.
+cvss_v2: 5.0
+references:
+    - http://www.openwall.com/lists/oss-security/2015/02/12/16
+    - http://www.openwall.com/lists/oss-security/2015/02/12/9
+    - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=776164
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/100879
+affected:
+    - name: archmage
+      version:
+        - "==0.2.4"
+      fixedin:
+        - ">=0.3"
