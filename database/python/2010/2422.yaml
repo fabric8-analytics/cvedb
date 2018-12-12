@@ -1,0 +1,16 @@
+---
+cve: 2010-2422
+title: CVE in plone
+description: >
+    Cross-site scripting (XSS) vulnerability in PortalTransforms in Plone 2.1 through 3.3.4 before hotfix 20100612 allows remote attackers to inject arbitrary web script or HTML via the safe_html transform.
+cvss_v2: 4.3
+references:
+    - http://plone.org/products/plone/security/advisories/cve-2010-unassigned-html-injection-in-safe_html
+    - http://secunia.com/advisories/40270
+    - http://www.securityfocus.com/bid/40999
+affected:
+    - name: plone
+      version:
+        - "<=3.3.5"
+      fixedin:
+        - ">=3.3.6"

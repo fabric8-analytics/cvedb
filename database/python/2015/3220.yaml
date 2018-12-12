@@ -1,0 +1,16 @@
+---
+cve: 2015-3220
+title: CVE in tlslite
+description: >
+    The tlslite library before 0.4.9 for Python allows remote attackers to trigger a denial of service (runtime exception and process crash).
+cvss_v2: 5.0
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1254215
+    - https://github.com/trevp/tlslite/commit/aca8d4f898b436ff6754e1a9ab96cae976c8a853
+    - https://groups.google.com/forum/#!topic/tlslite-dev/MoWE7B0A4iU
+affected:
+    - name: tlslite
+      version:
+        - "<=0.4.8"
+      fixedin:
+        - ">=0.4.9"

@@ -1,0 +1,18 @@
+---
+cve: 2014-1929
+title: CVE in python-gnupg
+description: >
+    python-gnupg 0.3.5 and 0.3.6 allows context-dependent attackers to have an unspecified impact via vectors related to "option injection through positional arguments." NOTE: this vulnerability exists because of an incomplete fix for CVE-2013-7323.
+cvss_v2: 4.4
+references:
+    - http://seclists.org/oss-sec/2014/q1/245
+    - http://seclists.org/oss-sec/2014/q1/335
+    - http://secunia.com/advisories/59031
+    - http://www.debian.org/security/2014/dsa-2946
+affected:
+    - name: python-gnupg
+      version:
+        - "==0.3.5"
+        - "==0.3.6"
+      fixedin:
+        - ">=0.3.7"
