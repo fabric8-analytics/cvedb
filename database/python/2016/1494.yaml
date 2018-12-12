@@ -16,6 +16,6 @@ references:
 affected:
     - name: rsa
       version:
-        - "<=3.2.6"
+        - "<=3.2.3"
       fixedin:
         - ">=3.3"
