@@ -1,6 +1,6 @@
 ---
 cve: 2015-7337
-title: CVE in ipython
+title: CVE in notebook and ipython
 description: >
     The editor in IPython Notebook before 3.2.2 and Jupyter Notebook 4.0.x before 4.0.5 allows remote attackers to execute arbitrary JavaScript code via a crafted file, which triggers a redirect to files/, related to MIME types.
 cvss_v2: 6.8
@@ -13,6 +13,11 @@ references:
     - https://github.com/jupyter/notebook/commit/9e63dd89b603dfbe3a7e774d8a962ee0fa30c0b5
     - https://security.gentoo.org/glsa/201512-02
 affected:
+    - name: notebook
+      version:
+        - "<=4.0.4"
+      fixedin:
+        - ">=4.0.5"
     - name: ipython
       version:
         - "<=3.2.1"
