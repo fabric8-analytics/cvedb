@@ -1,0 +1,12 @@
+---
+cve: 2018-3784
+title: CVE in cryo
+description: >
+    A code injection in cryo 0.0.6 allows an attacker to arbitrarily execute code due to insecure implementation of deserialization.
+cvss_v2: 7.5
+references:
+    - https://hackerone.com/reports/350418
+affected:
+    - name: cryo
+      version:
+        - "<=0.0.6"

@@ -1,0 +1,17 @@
+---
+cve: 2014-7192
+title: CVE in syntax-error
+description: >
+    Eval injection vulnerability in index.js in the syntax-error package before 1.1.1 for Node.js 0.10.x, as used in IBM Rational Application Developer and other products, allows remote attackers to execute arbitrary code via a crafted file.
+cvss_v2: 10.0
+references:
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21690815
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/96728
+    - https://github.com/substack/node-syntax-error/commit/9aa4e66eb90ec595d2dba55e6f9c2dd9a668b309
+    - https://nodesecurity.io/advisories/syntax-error-potential-script-injection
+affected:
+    - name: syntax-error
+      version:
+        - "<=1.1.0"
+      fixedin:
+        - ">=1.1.1"

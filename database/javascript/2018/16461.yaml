@@ -1,0 +1,14 @@
+---
+cve: 2018-16461
+title: CVE in libnmap
+description: >
+    A command injection vulnerability in libnmapp package for versions <0.4.16 allows arbitrary commands to be executed via arguments to the range options.
+cvss_v2: 10.0
+references:
+    - https://hackerone.com/reports/390865
+affected:
+    - name: libnmap
+      version:
+        - "<=0.4.15"
+      fixedin:
+        - ">=0.4.16"

@@ -1,0 +1,19 @@
+---
+cve: 2014-7205
+title: CVE in bassmaster
+description: >
+    Eval injection vulnerability in the internals.batch function in lib/batch.js in the bassmaster plugin before 1.5.2 for the hapi server framework for Node.js allows remote attackers to execute arbitrary Javascript code via unspecified vectors.
+cvss_v2: 10.0
+references:
+    - http://www.openwall.com/lists/oss-security/2014/09/30/10
+    - http://www.securityfocus.com/bid/70180
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/96730
+    - https://github.com/hapijs/bassmaster/commit/b751602d8cb7194ee62a61e085069679525138c4
+    - https://nodesecurity.io/advisories/bassmaster_js_injection
+    - https://www.exploit-db.com/exploits/40689/
+affected:
+    - name: bassmaster
+      version:
+        - "<=1.5.1"
+      fixedin:
+        - ">=1.5.2"

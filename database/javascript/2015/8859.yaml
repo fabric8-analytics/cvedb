@@ -1,0 +1,16 @@
+---
+cve: 2015-8859
+title: CVE in send
+description: >
+    The send package before 0.11.1 for Node.js allows attackers to obtain the root path via unspecified vectors.
+cvss_v2: 5.0
+references:
+    - http://www.openwall.com/lists/oss-security/2016/04/20/11
+    - http://www.securityfocus.com/bid/96435
+    - https://nodesecurity.io/advisories/56
+affected:
+    - name: send
+      version:
+        - "<=0.11.0"
+      fixedin:
+        - ">=0.11.1"

@@ -1,0 +1,18 @@
+---
+cve: 2014-3744
+title: CVE in st
+description: >
+    Directory traversal vulnerability in the st module before 0.2.5 for Node.js allows remote attackers to read arbitrary files via a %2e%2e (encoded dot dot) in an unspecified path.
+cvss_v2: 5.0
+references:
+    - http://www.openwall.com/lists/oss-security/2014/05/13/1
+    - http://www.openwall.com/lists/oss-security/2014/05/15/2
+    - http://www.securityfocus.com/bid/67389
+    - https://github.com/isaacs/st
+    - https://nodesecurity.io/advisories/st_directory_traversal
+affected:
+    - name: st
+      version:
+        - "<=0.2.4"
+      fixedin:
+        - ">=0.2.5"

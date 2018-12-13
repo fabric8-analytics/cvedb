@@ -1,0 +1,23 @@
+---
+cve: 2016-7103
+title: CVE in jquery-ui
+description: >
+    Cross-site scripting (XSS) vulnerability in jQuery UI before 1.12.0 might allow remote attackers to inject arbitrary web script or HTML via the closeText parameter of the dialog function.
+cvss_v2: 4.3
+references:
+    - http://rhn.redhat.com/errata/RHSA-2016-2932.html
+    - http://rhn.redhat.com/errata/RHSA-2016-2933.html
+    - http://rhn.redhat.com/errata/RHSA-2017-0161.html
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2018-4258247.html
+    - http://www.securityfocus.com/bid/104823
+    - https://github.com/jquery/api.jqueryui.com/issues/281
+    - https://github.com/jquery/jquery-ui/commit/9644e7bae9116edaf8d37c5b38cb32b892f10ff6
+    - https://jqueryui.com/changelog/1.12.0/
+    - https://nodesecurity.io/advisories/127
+    - https://www.tenable.com/security/tns-2016-19
+affected:
+    - name: jquery-ui
+      version:
+        - "<=1.10.5"
+      fixedin:
+        - ">=1.12.0"

@@ -1,0 +1,15 @@
+---
+cve: 2015-8860
+title: CVE in tar
+description: >
+    The tar package before 2.0.0 for Node.js allows remote attackers to write to arbitrary files via a symlink attack in an archive.
+cvss_v2: 5.0
+references:
+    - http://www.openwall.com/lists/oss-security/2016/04/20/11
+    - https://nodesecurity.io/advisories/57
+affected:
+    - name: tar
+      version:
+        - "<=1.0.3"
+      fixedin:
+        - ">=2.0.0"

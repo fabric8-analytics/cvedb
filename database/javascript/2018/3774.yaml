@@ -1,0 +1,16 @@
+---
+cve: 2018-3774
+title: CVE in url-parse
+description: >
+    Incorrect parsing in url-parse <1.4.3 returns wrong hostname which leads to multiple vulnerabilities such as SSRF, Open Redirect, Bypass Authentication Protocol.
+cvss_v2: 7.5
+references:
+    - https://github.com/unshiftio/url-parse/commit/53b1794e54d0711ceb52505e0f74145270570d5a
+    - https://github.com/unshiftio/url-parse/commit/d7b582ec1243e8024e60ac0b62d2569c939ef5de
+    - https://hackerone.com/reports/384029
+affected:
+    - name: url-parse
+      version:
+        - "<=1.4.1"
+      fixedin:
+        - ">=1.4.3"

@@ -1,0 +1,17 @@
+---
+cve: 2015-8861
+title: CVE in handlebars
+description: >
+    The handlebars package before 4.0.0 for Node.js allows remote attackers to conduct cross-site scripting (XSS) attacks by leveraging a template with an attribute that is not quoted.
+cvss_v2: 4.3
+references:
+    - http://www.openwall.com/lists/oss-security/2016/04/20/11
+    - http://www.securityfocus.com/bid/96434
+    - https://www.sourceclear.com/blog/handlebars_vulnerability_research_findings/
+    - https://www.tenable.com/security/tns-2016-18
+affected:
+    - name: handlebars
+      version:
+        - "<=3.0.3"
+      fixedin:
+        - ">=4.0.0"
