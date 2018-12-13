@@ -1,0 +1,15 @@
+---
+cve: 2018-18282
+title: CVE in next
+description: >
+    Next.js 7.0.0 and 7.0.1 has XSS via the 404 or 500 /_error page.
+cvss_v2: 4.3
+references:
+    - https://github.com/zeit/next.js/releases/tag/7.0.2
+affected:
+    - name: next
+      version:
+        - "==7.0.0"
+        - "==7.0.1"
+      fixedin:
+        - ">=7.0.2"

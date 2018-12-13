@@ -1,0 +1,12 @@
+---
+cve: 2018-16473
+title: CVE in takeapeek
+description: >
+    A path traversal in takeapeek module versions <=0.2.2 allows an attacker to list directory and files.
+cvss_v2: 5.0
+references:
+    - https://hackerone.com/reports/403736
+affected:
+    - name: takeapeek
+      version:
+        - "<=0.2.2"

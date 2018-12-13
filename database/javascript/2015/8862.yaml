@@ -1,0 +1,17 @@
+---
+cve: 2015-8862
+title: CVE in mustache
+description: >
+    mustache package before 2.2.1 for Node.js allows remote attackers to conduct cross-site scripting (XSS) attacks by leveraging a template with an attribute that is not quoted.
+cvss_v2: 4.3
+references:
+    - http://www.openwall.com/lists/oss-security/2016/04/20/11
+    - http://www.securityfocus.com/bid/96436
+    - https://nodesecurity.io/advisories/62
+    - https://www.tenable.com/security/tns-2016-18
+affected:
+    - name: mustache
+      version:
+        - "<=2.2.0"
+      fixedin:
+        - ">=2.2.1"

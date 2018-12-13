@@ -1,0 +1,18 @@
+---
+cve: 2015-5688
+title: CVE in geddy
+description: >
+    Directory traversal vulnerability in lib/app/index.js in Geddy before 13.0.8 for Node.js allows remote attackers to read arbitrary files via a ..%2f (dot dot encoded slash) in the PATH_INFO to the default URI.
+cvss_v2: 5.0
+references:
+    - https://github.com/geddy/geddy/commit/2de63b68b3aa6c08848f261ace550a37959ef231
+    - https://github.com/geddy/geddy/issues/697
+    - https://github.com/geddy/geddy/pull/699
+    - https://github.com/geddy/geddy/releases/tag/v13.0.8
+    - https://nodesecurity.io/advisories/geddy-directory-traversal
+affected:
+    - name: geddy
+      version:
+        - "==13.0.7"
+      fixedin:
+        - ">=13.0.8"

@@ -1,0 +1,16 @@
+---
+cve: 2015-8855
+title: CVE in semver
+description: >
+    The semver package before 4.3.2 for Node.js allows attackers to cause a denial of service (CPU consumption) via a long version string, aka a "regular expression denial of service (ReDoS)."
+cvss_v2: 7.8
+references:
+    - http://www.openwall.com/lists/oss-security/2016/04/20/11
+    - http://www.securityfocus.com/bid/86957
+    - https://nodesecurity.io/advisories/31
+affected:
+    - name: semver
+      version:
+        - "<=4.3.1"
+      fixedin:
+        - ">=4.3.2"

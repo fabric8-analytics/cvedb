@@ -1,0 +1,17 @@
+---
+cve: 2015-6584
+title: CVE in datatables
+description: >
+    Cross-site scripting (XSS) vulnerability in the DataTables plugin 1.10.8 and earlier for jQuery allows remote attackers to inject arbitrary web script or HTML via the scripts parameter to media/unit_testing/templates/6776.php.
+cvss_v2: 4.3
+references:
+    - http://packetstormsecurity.com/files/133555/DataTables-1.10.8-Cross-Site-Scripting.html
+    - http://seclists.org/fulldisclosure/2015/Sep/37
+    - http://www.securityfocus.com/archive/1/536437/100/0/threaded
+    - https://www.netsparker.com/cve-2015-6384-xss-vulnerability-identified-in-datatables/
+affected:
+    - name: datatables
+      version:
+        - "<=1.10.8"
+      fixedin:
+        - ">=1.10.9"

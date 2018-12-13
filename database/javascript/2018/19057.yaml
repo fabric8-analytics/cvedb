@@ -1,0 +1,12 @@
+---
+cve: 2018-19057
+title: CVE in simplemde
+description: >
+    SimpleMDE 1.11.2 has XSS via an onerror attribute of a crafted IMG element, or via certain input with [ and ( characters, which is mishandled during construction of an A element.
+cvss_v2: 4.3
+references:
+    - https://github.com/sparksuite/simplemde-markdown-editor/issues/721
+affected:
+    - name: simplemde
+      version:
+        - "<=1.11.2"

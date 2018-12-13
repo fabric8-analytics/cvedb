@@ -1,0 +1,12 @@
+---
+cve: 2018-19056
+title: CVE in editor.md
+description: >
+    pandao Editor.md 1.5.0 has DOM XSS via input starting with a "<<" substring, which is mishandled during construction of an A element.
+cvss_v2: 4.3
+references:
+    - https://github.com/pandao/editor.md/issues/634
+affected:
+    - name: editor.md
+      version:
+        - "<=1.5.0"
