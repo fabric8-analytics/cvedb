@@ -1,0 +1,15 @@
+---
+cve: 2018-15560
+title: CVE in pycryptodome
+description: >
+    PyCryptodome before 3.6.6 has an integer overflow in the data_len variable in AESNI.c, related to the AESNI_encrypt and AESNI_decrypt functions, leading to the mishandling of messages shorter than 16 bytes.
+cvss_v2: 5.0
+references:
+    - https://github.com/Legrandin/pycryptodome/issues/198
+    - https://whitehatck01.blogspot.com/2018/08/integer-overflow-vulnerability-in.html
+affected:
+    - name: pycryptodome
+      version:
+        - "<=3.6.5"
+      fixedin:
+        - ">=3.6.6"

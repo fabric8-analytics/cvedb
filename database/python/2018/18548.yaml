@@ -1,0 +1,14 @@
+---
+cve: 2018-18548
+title: CVE in ajenti
+description: >
+    ajenticp (aka Ajenti Docker control panel) for Ajenti through v1.2.23.13 has XSS via a filename that is mishandled in File Manager.
+cvss_v2: 4.3
+references:
+    - http://packetstormsecurity.com/files/149898/AjentiCP-1.2.23.13-Cross-Site-Scripting.html
+    - https://numanozdemir.com/ajenti-xss.txt
+    - https://www.exploit-db.com/exploits/45691/
+affected:
+    - name: ajenti
+      version:
+        - "<=1.2.23.13"
