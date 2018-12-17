@@ -1,0 +1,29 @@
+---
+cve: 2018-1257
+title: CVE in org.springframework:spring-messaging and org.springframework:spring-websocket
+description: >
+    Spring Framework, versions 5.0.x prior to 5.0.6, versions 4.3.x prior to 4.3.17, and older unsupported versions allows applications to expose STOMP over WebSocket endpoints with a simple, in-memory STOMP broker through the spring-messaging module. A malicious user (or attacker) can craft a message to the broker that can lead to a regular expression, denial of service attack.
+cvss_v2: 4.0
+references:
+    - http://www.oracle.com/technetwork/security-advisory/cpuoct2018-4428296.html
+    - http://www.securityfocus.com/bid/104260
+    - https://access.redhat.com/errata/RHSA-2018:1809
+    - https://access.redhat.com/errata/RHSA-2018:3768
+    - https://pivotal.io/security/cve-2018-1257
+affected:
+    - groupId: org.springframework
+      artifactId: spring-messaging
+      version:
+        - "<=4.3.16.RELEASE"
+        - "<=5.0.5.RELEASE,5.0.0.RELEASE"
+      fixedin:
+        - ">=4.3.17.RELEASE"
+        - ">=5.0.6.RELEASE"
+    - groupId: org.springframework
+      artifactId: spring-websocket
+      version:
+        - "<=4.3.16.RELEASE"
+        - "<=5.0.5.RELEASE,5.0.0.RELEASE"
+      fixedin:
+        - ">=4.3.17.RELEASE"
+        - ">=5.0.6.RELEASE"
