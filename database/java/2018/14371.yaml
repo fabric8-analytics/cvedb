@@ -1,0 +1,16 @@
+---
+cve: 2018-14371
+title: CVE in org.glassfish:javax.faces
+description: >
+    The getLocalePrefix function in ResourceManager.java in Eclipse Mojarra before 2.3.7 is affected by Directory Traversal via the loc parameter. A remote attacker can download configuration files or Java bytecodes from applications.
+cvss_v2: 5.0
+references:
+    - https://github.com/eclipse-ee4j/mojarra/commit/1b434748d9239f42eae8aa7d37d7a0930c061e24
+    - https://github.com/javaserverfaces/mojarra/issues/4364
+affected:
+    - groupId: org.glassfish
+      artifactId: javax.faces
+      version:
+        - "<=2.3.6"
+      fixedin:
+        - ">=2.3.7"
