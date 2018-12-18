@@ -1,0 +1,47 @@
+---
+cve: 2017-12617
+title: Remote Code Execution in Apache Tomcat
+description: >
+    When running Apache Tomcat versions 9.0.0.M1 to 9.0.0, 8.5.0 to 8.5.22, 8.0.0.RC1 to 8.0.46 and 7.0.0 to 7.0.81 with HTTP PUTs enabled (e.g. via setting the readonly initialisation parameter of the Default servlet to false) it was possible to upload a JSP file to the server via a specially crafted request. This JSP could then be requested and any code it contained would be executed by the server.
+cvss_v2: 6.8
+references:
+    - http://www.oracle.com/technetwork/security-advisory/cpuapr2018-3678067.html
+    - http://www.oracle.com/technetwork/security-advisory/cpujan2018-3236628.html
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2018-4258247.html
+    - http://www.securityfocus.com/bid/100954
+    - http://www.securitytracker.com/id/1039552
+    - https://access.redhat.com/errata/RHSA-2017:3080
+    - https://access.redhat.com/errata/RHSA-2017:3081
+    - https://access.redhat.com/errata/RHSA-2017:3113
+    - https://access.redhat.com/errata/RHSA-2017:3114
+    - https://access.redhat.com/errata/RHSA-2018:0268
+    - https://access.redhat.com/errata/RHSA-2018:0269
+    - https://access.redhat.com/errata/RHSA-2018:0270
+    - https://access.redhat.com/errata/RHSA-2018:0271
+    - https://access.redhat.com/errata/RHSA-2018:0275
+    - https://access.redhat.com/errata/RHSA-2018:0465
+    - https://access.redhat.com/errata/RHSA-2018:0466
+    - https://access.redhat.com/errata/RHSA-2018:2939
+    - https://lists.apache.org/thread.html/3fd341a604c4e9eab39e7eaabbbac39c30101a022acc11dd09d7ebcb@%3Cannounce.tomcat.apache.org%3E
+    - https://lists.debian.org/debian-lts-announce/2017/11/msg00009.html
+    - https://security.netapp.com/advisory/ntap-20171018-0002/
+    - https://security.netapp.com/advisory/ntap-20180117-0002/
+    - https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbhf03812en_us
+    - https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbux03828en_us
+    - https://usn.ubuntu.com/3665-1/
+    - https://www.exploit-db.com/exploits/42966/
+    - https://www.exploit-db.com/exploits/43008/
+    - http://svn.apache.org/viewvc?view=revision&revision=1809669
+    - http://svn.apache.org/viewvc?view=revision&revision=1809674
+    - http://svn.apache.org/viewvc?view=revision&revision=1809684
+    - http://svn.apache.org/viewvc?view=revision&revision=1809711
+affected:
+    - groupId: org.apache.tomcat
+      artifactId: tomcat-catalina
+      version:
+        - "<=7.0.81,7.0.0"
+        - "<=8.0.46,8.0.0"
+        - "<=8.5.22,8.5.0"
+        - "<=9.0.0,9.0.0.M1"
+      fixedin:
+        - ">=9.0.1"

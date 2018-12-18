@@ -1,0 +1,34 @@
+---
+cve: 2018-1305
+title: Security constraint annotations applied too late in Apache Tomcat
+description: >
+    Security constraints defined by annotations of Servlets in Apache Tomcat 9.0.0.M1 to 9.0.4, 8.5.0 to 8.5.27, 8.0.0.RC1 to 8.0.49 and 7.0.0 to 7.0.84 were only applied once a Servlet had been loaded. Because security constraints defined in this way apply to the URL pattern and any URLs below that point, it was possible - depending on the order Servlets were loaded - for some security constraints not to be applied. This could have exposed resources to users who were not authorised to access them.
+cvss_v2: 4.0
+references:
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2018-4258247.html
+    - http://www.oracle.com/technetwork/security-advisory/cpuoct2018-4428296.html
+    - http://www.securityfocus.com/bid/103144
+    - http://www.securitytracker.com/id/1040428
+    - https://access.redhat.com/errata/RHSA-2018:0465
+    - https://access.redhat.com/errata/RHSA-2018:0466
+    - https://access.redhat.com/errata/RHSA-2018:1320
+    - https://access.redhat.com/errata/RHSA-2018:2939
+    - https://lists.apache.org/thread.html/d3354bb0a4eda4acc0a66f3eb24a213fdb75d12c7d16060b23e65781@%3Cannounce.tomcat.apache.org%3E
+    - https://lists.debian.org/debian-lts-announce/2018/03/msg00004.html
+    - https://lists.debian.org/debian-lts-announce/2018/06/msg00008.html
+    - https://lists.debian.org/debian-lts-announce/2018/07/msg00044.html
+    - https://security.netapp.com/advisory/ntap-20180706-0001/
+    - https://usn.ubuntu.com/3665-1/
+    - https://www.debian.org/security/2018/dsa-4281
+    - http://svn.apache.org/viewvc?view=revision&revision=1823310
+    - http://svn.apache.org/viewvc?view=revision&revision=1824323
+affected:
+    - groupId: org.apache.tomcat
+      artifactId: tomcat-catalina
+      version:
+        - "<=9.0.4,9.0.0.M1"
+        - "<=8.5.27,8.5.0"
+        - "<=8.0.49,8.0.0.RC1"
+        - "<=7.0.84,7.0.0"
+      fixedin:
+        - ">=9.0.5"
