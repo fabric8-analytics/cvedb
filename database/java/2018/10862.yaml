@@ -1,0 +1,24 @@
+---
+cve: 2018-10862
+title: CVE in org.wildfly.core:wildfly-deployment-repository
+description: >
+    WildFly Core before version 6.0.0.Alpha3 does not properly validate file paths in .war archives, allowing for the extraction of crafted .war archives to overwrite arbitrary files. This is an instance of the 'Zip Slip' vulnerability.
+cvss_v2: 4.9
+references:
+    - https://access.redhat.com/errata/RHSA-2018:2276
+    - https://access.redhat.com/errata/RHSA-2018:2277
+    - https://access.redhat.com/errata/RHSA-2018:2279
+    - https://access.redhat.com/errata/RHSA-2018:2423
+    - https://access.redhat.com/errata/RHSA-2018:2424
+    - https://access.redhat.com/errata/RHSA-2018:2425
+    - https://access.redhat.com/errata/RHSA-2018:2428
+    - https://access.redhat.com/errata/RHSA-2018:2643
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-10862
+    - https://snyk.io/research/zip-slip-vulnerability
+affected:
+    - groupId: org.wildfly.core
+      artifactId: wildfly-deployment-repository
+      version:
+        - "<=4.0.0.Alpha6,4.0.0.Alpha8"
+      fixedin:
+        - ">=4.0.0.Alpha1"
