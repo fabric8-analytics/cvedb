@@ -1,0 +1,15 @@
+---
+cve: 2016-6811
+title: CVE in org.apache.hadoop:hadoop-yarn-server-common
+description: >
+    In Apache Hadoop 2.x before 2.7.4, a user who can escalate to yarn user can possibly run arbitrary commands as root user.
+cvss_v2: 9.0
+references:
+    - https://lists.apache.org/thread.html/9ba3c12bbdfd5b2cae60909e48f92608e00c8d99196390b8cfeca307@%3Cgeneral.hadoop.apache.org%3E
+affected:
+    - groupId: org.apache.hadoop
+      artifactId: hadoop-yarn-server-common
+      version:
+        - "<=2.7.3,2.2.0"
+      fixedin:
+        - ">=2.7.4"
