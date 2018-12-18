@@ -1,0 +1,24 @@
+---
+cve: 2018-12544
+title: CVE in io.vertx:vertx-web-api-contract
+description: >
+    In version from 3.5.Beta1 to 3.5.3 of Eclipse Vert.x, the OpenAPI XML type validator creates XML parsers without taking appropriate defense against XML attacks. This mechanism is exclusively when the developer uses the Eclipse Vert.x OpenAPI XML type validator to validate a provided schema.
+cvss_v2: 5.0
+references:
+    - https://github.com/vert-x3/vertx-web/issues/1021
+    - https://bugs.eclipse.org/bugs/show_bug.cgi?id=539568
+    - https://access.redhat.com/errata/RHSA-2018:2946
+affected:
+    - groupId: io.vertx
+      artifactId: vertx-web-api-contract
+      version:
+        - "==3.5.3"
+        - "==3.5.2"
+        - "==3.5.1"
+        - "==3.5.0"
+        - "==3.5.0.Beta1"
+        - "==3.5.2.CR1"
+        - "==3.5.2.CR2"
+        - "==3.5.2.CR3"
+      fixedin:
+        - ">=3.5.4"

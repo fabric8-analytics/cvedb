@@ -1,0 +1,17 @@
+---
+cve: 2018-12542
+title: CVE in io.vertx:vertx-web
+description: >
+    In version from 3.0.0 to 3.5.3 of Eclipse Vert.x, the StaticHandler uses external input to construct a pathname that should be within a restricted directory, but it does not properly neutralize '\' (forward slashes) sequences that can resolve to a location that is outside of that directory when running on Windows Operating Systems.
+cvss_v2: 5.0
+references:
+    - https://bugs.eclipse.org/bugs/show_bug.cgi?id=539171
+    - https://github.com/vert-x3/vertx-web/issues/1025
+    - https://github.com/vert-x3/vertx-web/commit/57a65dce6f4c5aa5e3ce7288685e7f3447eb8f3b
+affected:
+    - groupId: io.vertx
+      artifactId: vertx-web
+      version:
+        - "<=3.5.3,3.0.0"
+      fixedin:
+        - ">=3.5.4"
