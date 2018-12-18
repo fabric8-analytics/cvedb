@@ -1,0 +1,16 @@
+---
+cve: 2018-11087
+title: CVE in org.springframework.amqp:spring-rabbit
+description: >
+    Pivotal Spring AMQP, 1.x versions prior to 1.7.10 and 2.x versions prior to 2.0.6, expose a man-in-the-middle vulnerability due to lack of hostname validation. A malicious user that has the ability to intercept traffic would be able to view data in transit.
+cvss_v2: 7.5
+references:
+    - https://nvd.nist.gov/vuln/detail/CVE-2018-11087
+affected:
+    - groupId: org.springframework.amqp
+      artifactId: spring-rabbit
+      version:
+        - "<=1.7.9.RELEASE"
+        - "<=2.0.5.RELEASE"
+      fixedin:
+        - ">=2.0.6.RELEASE"

@@ -1,0 +1,43 @@
+---
+cve: 2018-11775
+title: CVE in ActiveMQ Client
+description: >
+    TLS hostname verification when using the Apache ActiveMQ Client before 5.15.6 was missing which could make the client vulnerable to a MITM attack between a Java application using the ActiveMQ client and the ActiveMQ server. This is now enabled by default.
+cvss_v2: 5.8
+references:
+    - http://activemq.apache.org/security-advisories.data/CVE-2018-11775-announcement.txt
+    - http://www.securityfocus.com/bid/105335
+    - http://www.securitytracker.com/id/1041618
+    - https://github.com/apache/activemq/commit/02971a40e281713a8397d3a1809c164b594abfbb
+    - https://github.com/apache/activemq/commit/bde7097fb8173cf871827df7811b3865679b963d
+affected:
+    - groupId: org.apache.activemq
+      artifactId: activemq-amqp
+      version:
+        - "<=5.15.5"
+      fixedin:
+        - ">=5.15.6"
+    - groupId: org.apache.activemq
+      artifactId: activemq-client
+      version:
+        - "<=5.15.5"
+      fixedin:
+        - ">=5.15.6"
+    - groupId: org.apache.activemq
+      artifactId: activemq-mqtt
+      version:
+        - "<=5.15.5"
+      fixedin:
+        - ">=5.15.6"
+    - groupId: org.apache.activemq
+      artifactId: activemq-stomp
+      version:
+        - "<=5.15.5"
+      fixedin:
+        - ">=5.15.6"
+    - groupId: org.apache.activemq
+      artifactId: activemq-broker
+      version:
+        - "<=5.15.5"
+      fixedin:
+        - ">=5.15.6"

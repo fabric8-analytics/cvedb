@@ -1,0 +1,21 @@
+---
+cve: 2013-7315
+title: CVE in org.springframework:spring-oxm
+description: >
+    "The Spring MVC in Spring Framework before 3.2.4 and 4.0.0.M1 through 4.0.0.M2 does not disable external entity resolution for the StAX XMLInputFactory, which allows context-dependent attackers to read arbitrary files, cause a denial of service, and conduct CSRF attacks via crafted XML with JAXB, aka an XML External Entity (XXE) issue, and a different vulnerability than CVE-2013-4152.  NOTE: this issue was SPLIT from CVE-2013-4152 due to different affected versions."
+cvss_v2: 6.8
+references:
+    - http://seclists.org/bugtraq/2013/Aug/154
+    - http://seclists.org/fulldisclosure/2013/Nov/14
+    - http://www.debian.org/security/2014/dsa-2842
+    - http://www.gopivotal.com/security/cve-2013-4152
+    - http://www.securityfocus.com/bid/77998
+    - https://jira.springsource.org/browse/SPR-10806
+affected:
+    - groupId: org.springframework
+      artifactId: spring-oxm
+      version:
+        - "<=3.2.3.RELEASE,3.0.0.RELEASE"
+      fixedin:
+        - ">=3.2.4.RELEASE"
+        - ">=4.0.0.RELEASE"
