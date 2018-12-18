@@ -1,0 +1,16 @@
+---
+cve: 2018-8017
+title: CVE in org.apache.tika:tika-parsers
+description: >
+    In Apache Tika 1.2 to 1.18, a carefully crafted file can trigger an infinite loop in the IptcAnpaParser.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/105513
+    - https://lists.apache.org/thread.html/72df7a3f0dda49a912143a1404b489837a11f374dfd1961061873a91@%3Cdev.tika.apache.org%3E
+affected:
+    - groupId: org.apache.tika
+      artifactId: tika-parsers
+      version:
+        - "<=1.18,1.2"
+      fixedin:
+        - ">=1.19"
