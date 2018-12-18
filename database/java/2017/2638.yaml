@@ -1,0 +1,19 @@
+---
+cve: 2017-2638
+title: CVE in org.infinispan:infinispan-compatibility-mode-it
+description: >
+    It was found that the REST API in Infinispan before version 9.0.0 did not properly enforce auth constraints. An attacker could use this vulnerability to read or modify data in the default cache or a known cache name.
+cvss_v2: 6.4
+references:
+    - http://rhn.redhat.com/errata/RHSA-2017-1097.html
+    - http://www.securityfocus.com/bid/97964
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2017-2638
+    - https://github.com/infinispan/infinispan/pull/4936/commits
+    - https://issues.jboss.org/browse/ISPN-7485
+affected:
+    - groupId: org.infinispan
+      artifactId: infinispan-compatibility-mode-it
+      version:
+        - "<=8.2.11.Final,5.3.0.Beta2"
+      fixedin:
+        - ">=9.0.0.CR1"
