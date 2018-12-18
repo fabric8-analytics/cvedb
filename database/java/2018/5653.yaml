@@ -1,0 +1,16 @@
+---
+cve: 2018-5653
+title: CVE in org.apache.cayenne.modeler:cayenne-modeler
+description: >
+    An issue was discovered in the weblizar-pinterest-feeds plugin 1.1.1 for WordPress. XSS exists via the wp-admin/admin-ajax.php weblizar_pffree_settings_save_get-users parameter.
+cvss_v2: 4.3
+references:
+    - https://github.com/d4wner/Vulnerabilities-Report/blob/master/weblizar-pinterest-feeds.md
+    - https://wpvulndb.com/vulnerabilities/9009
+affected:
+    - groupId: org.apache.cayenne.modeler
+      artifactId: cayenne-modeler
+      version:
+        []
+      fixedin:
+        - ">=4.0"
