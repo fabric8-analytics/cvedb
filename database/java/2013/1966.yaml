@@ -1,0 +1,18 @@
+---
+cve: 2013-1966
+title: CVE in org.apache.struts.xwork:xwork-core
+description: >
+    Apache Struts 2 before 2.3.14.1 allows remote attackers to execute arbitrary OGNL code via a crafted request that is not properly handled when using the includeParams attribute in the (1) URL or (2) A tag.
+cvss_v2: 9.3
+references:
+    - http://struts.apache.org/development/2.x/docs/s2-013.html
+    - http://www.securityfocus.com/bid/60166
+    - https://bugzilla.redhat.com/show_bug.cgi?id=967656
+    - https://cwiki.apache.org/confluence/display/WW/S2-013
+affected:
+    - groupId: org.apache.struts.xwork
+      artifactId: xwork-core
+      version:
+        - "<=2.3.14"
+      fixedin:
+        - ">=2.3.14.1"

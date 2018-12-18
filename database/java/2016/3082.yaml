@@ -1,0 +1,22 @@
+---
+cve: 2016-3082
+title: CVE in org.apache.struts:struts2-core
+description: >
+    XSLTResult in Apache Struts 2.x before 2.3.20.2, 2.3.24.x before 2.3.24.2, and 2.3.28.x before 2.3.28.1 allows remote attackers to execute arbitrary code via the stylesheet location parameter.
+cvss_v2: 10.0
+references:
+    - http://struts.apache.org/docs/s2-031.html
+    - http://www.securityfocus.com/bid/88826
+    - http://www.securitytracker.com/id/1035664
+affected:
+    - groupId: org.apache.struts
+      artifactId: struts2-core
+      version:
+        - "<=2.3.20.1,2.3"
+        - "==2.3.24"
+        - "==2.3.24.1"
+        - "==2.3.28"
+      fixedin:
+        - "==2.3.20.3"
+        - "==2.3.24.3"
+        - ">=2.3.28.1"

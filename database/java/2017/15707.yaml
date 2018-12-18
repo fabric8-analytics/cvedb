@@ -1,0 +1,20 @@
+---
+cve: 2017-15707
+title: CVE in org.apache.struts:struts2-rest-plugin
+description: >
+    In Apache Struts 2.5 to 2.5.14, the REST Plugin is using an outdated JSON-lib library which is vulnerable and allow perform a DoS attack using malicious request with specially crafted JSON payload.
+cvss_v2: 5.0
+references:
+    - http://www.oracle.com/technetwork/security-advisory/cpuapr2018-3678067.html
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2018-4258247.html
+    - http://www.securityfocus.com/bid/102021
+    - http://www.securitytracker.com/id/1039946
+    - https://cwiki.apache.org/confluence/display/WW/S2-054
+    - https://security.netapp.com/advisory/ntap-20171214-0001/
+affected:
+    - groupId: org.apache.struts
+      artifactId: struts2-rest-plugin
+      version:
+        - "<=2.5.14,2.5"
+      fixedin:
+        - ">=2.5.14.1"

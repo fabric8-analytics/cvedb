@@ -1,0 +1,19 @@
+---
+cve: 2013-4316
+title: CVE in org.apache.struts:struts2-core
+description: >
+    Apache Struts 2.0.0 through 2.3.15.1 enables Dynamic Method Invocation by default, which has unknown impact and attack vectors.
+cvss_v2: 10.0
+references:
+    - http://archives.neohapsis.com/archives/bugtraq/2013-09/0107.html
+    - http://struts.apache.org/release/2.3.x/docs/s2-019.html
+    - http://www.oracle.com/technetwork/topics/security/cpujan2014-1972949.html
+    - http://www.securityfocus.com/bid/64758
+    - http://www.securitytracker.com/id/1029078
+affected:
+    - groupId: org.apache.struts
+      artifactId: struts2-core
+      version:
+        - "<=2.3.15.1,2.3"
+      fixedin:
+        - ">=2.3.15.2"
