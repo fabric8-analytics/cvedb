@@ -1,0 +1,18 @@
+---
+cve: 2018-12540
+title: CVE in io.vertx:vertx-web
+description: >
+    In version from 3.0.0 to 3.5.2 of Eclipse Vert.x, the CSRFHandler do not assert that the XSRF Cookie matches the returned XSRF header/form parameter. This allows replay attacks with previously issued tokens which are not expired yet.
+cvss_v2: 5.0
+references:
+    - https://access.redhat.com/errata/RHSA-2018:2371
+    - https://bugs.eclipse.org/bugs/show_bug.cgi?id=536948
+    - https://github.com/vert-x3/vertx-web/issues/970
+    - https://github.com/vert-x3/vertx-web/commit/f42b193b15a29b772fc576b2d0f2497e7474a7e9
+affected:
+    - groupId: io.vertx
+      artifactId: vertx-web-api-contract
+      version:
+        - "<=3.5.2,3.0.0"
+      fixedin:
+        - ">=3.5.3"
