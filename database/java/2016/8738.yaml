@@ -1,0 +1,17 @@
+---
+cve: 2016-8738
+title: CVE in org.apache.struts:struts2-core
+description: >
+    In Apache Struts 2.5 through 2.5.5, if an application allows entering a URL in a form field and the built-in URLValidator is used, it is possible to prepare a special URL which will be used to overload server process when performing validation of the URL.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/94657
+    - https://security.netapp.com/advisory/ntap-20180629-0003/
+    - https://struts.apache.org/docs/s2-044.html
+affected:
+    - groupId: org.apache.struts
+      artifactId: struts2-core
+      version:
+        - "<=2.5.5,2.5"
+      fixedin:
+        - ">=2.5.8"
