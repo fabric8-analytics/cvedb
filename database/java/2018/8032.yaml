@@ -1,0 +1,16 @@
+---
+cve: 2018-8032
+title: CVE in org.apache.axis:axis
+description: >
+    Apache Axis 1.x up to and including 1.4 is vulnerable to a cross-site scripting (XSS) attack in the default servlet/services.
+cvss_v2: 4.3
+references:
+    - http://mail-archives.apache.org/mod_mbox/axis-java-dev/201807.mbox/%3CJIRA.13170716.1531060536000.93536.1531060560060@Atlassian.JIRA%3E
+    - https://issues.apache.org/jira/browse/AXIS-2924
+affected:
+    - groupId: org.apache.axis
+      artifactId: axis
+      version:
+        - ">=1.4"
+      fixedin:
+        []
