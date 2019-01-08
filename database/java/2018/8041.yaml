@@ -1,0 +1,22 @@
+---
+cve: 2018-8041
+title: CVE in org.apache.camel:camel-mail
+description: >
+    Apache Camel's Mail 2.20.0 through 2.20.3, 2.21.0 through 2.21.1 and 2.22.0 is vulnerable to path traversal.
+cvss_v2: 5.0
+references:
+    - http://camel.apache.org/security-advisories.data/CVE-2018-8041.txt.asc?version=1&modificationDate=1536746339000&api=v2
+    - http://www.securityfocus.com/bid/105352
+    - https://access.redhat.com/errata/RHSA-2018:3768
+    - https://issues.apache.org/jira/browse/CAMEL-12630
+affected:
+    - groupId: org.apache.camel
+      artifactId: camel-mail
+      version:
+        - "<=2.20.3,2.20.0"
+        - "<=2.21.1,2.21.0"
+        - "==2.22.0"
+      fixedin:
+        - "==2.20.4"
+        - "<=2.21.3,2.21.2"
+        - ">=2.22.1"
