@@ -1,0 +1,17 @@
+---
+cve: 2018-19351
+title: CVE in notebook
+description: >
+    Jupyter Notebook before 5.7.1 allows XSS via an untrusted notebook because nbconvert responses are considered to have the same origin as the notebook server. In other words, nbconvert endpoints can execute JavaScript with access to the server API. In notebook/nbconvert/handlers.py, NbconvertFileHandler and NbconvertPostHandler do not set a Content Security Policy to prevent this.
+cvss_v2: 4.3
+references:
+    - https://github.com/jupyter/notebook/blob/master/docs/source/changelog.rst
+    - https://github.com/jupyter/notebook/commit/107a89fce5f413fb5728c1c5d2c7788e1fb17491
+    - https://groups.google.com/forum/#!topic/jupyter/hWzu2BSsplY
+    - https://pypi.org/project/notebook/#history
+affected:
+    - name: notebook
+      version:
+        - "<=5.7.0"
+      fixedin:
+        - ">=5.7.1"
