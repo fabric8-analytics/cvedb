@@ -1,0 +1,14 @@
+---
+cve: 2018-19289
+title: CVE in valine
+description: >
+    An issue was discovered in Valine v1.3.3. It allows HTML injection, which can be exploited for JavaScript execution via an EMBED element in conjunction with a .pdf file.
+cvss_v2: 4.3
+references:
+    - https://github.com/xCss/Valine/issues/127
+affected:
+    - name: valine
+      version:
+        - "==1.3.3"
+      fixedin:
+        - ">=1.3.4"

@@ -1,0 +1,18 @@
+---
+cve: 2018-20676
+title: CVE in bootstrap
+description: >
+    In Bootstrap before 3.4.0, XSS is possible in the tooltip data-viewport attribute.
+cvss_v2: 4.3
+references:
+    - https://blog.getbootstrap.com/2018/12/13/bootstrap-3-4-0/
+    - https://github.com/twbs/bootstrap/issues/27044
+    - https://github.com/twbs/bootstrap/issues/27915#issuecomment-452140906
+    - https://github.com/twbs/bootstrap/issues/27915#issuecomment-452196628
+    - https://github.com/twbs/bootstrap/pull/27047
+affected:
+    - name: bootstrap
+      version:
+        - "<=3.3.7"
+      fixedin:
+        - ">=3.4.0"
