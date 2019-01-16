@@ -16,6 +16,7 @@ references:
     - https://access.redhat.com/errata/RHSA-2017:3458
     - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2017-2670
     - https://www.debian.org/security/2017/dsa-3906
+    - https://github.com/undertow-io/undertow/commit/9bfe9fbbb595d51157b61693f072895f7dbadd1d
 affected:
     - groupId: io.undertow
       artifactId: undertow-core
