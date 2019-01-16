@@ -6,6 +6,7 @@ description: >
 cvss_v2: 6.4
 references:
     - https://github.com/looly/hutool/issues/162
+    - https://github.com/looly/hutool/commit/fed1a1f747a9308e2f65f8dbbff05ce62478ecc0
 affected:
     - groupId: cn.hutool
       artifactId: hutool-core
