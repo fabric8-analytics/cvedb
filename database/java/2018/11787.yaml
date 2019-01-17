@@ -17,7 +17,8 @@ affected:
         - "<=4.0.8,4.0.1"
         - "==4.1.0"
       fixedin:
-        - "==4.0.9,3.0.9"
+        - "==4.0.9"
+        - "==3.0.9"
         - ">=4.1.1"
    - groupId: org.apache.karaf.webconsole
       artifactId: org.apache.karaf.webconsole.features
@@ -27,7 +28,8 @@ affected:
         - "<=4.0.8,4.0.1"
         - "==4.1.0"
       fixedin:
-        - "==4.0.9,3.0.9"
+        - "==4.0.9"
+        - "==3.0.9"
         - ">=4.1.1"
     - groupId: org.apache.karaf.webconsole
       artifactId: org.apache.karaf.webconsole.instance
@@ -37,5 +39,6 @@ affected:
         - "<=4.0.8,4.0.1"
         - "==4.1.0"
       fixedin:
-        - "==4.0.9,3.0.9"
+        - "==4.0.9"
+        - "==3.0.9"
         - ">=4.1.1"
