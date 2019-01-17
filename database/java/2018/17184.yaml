@@ -1,0 +1,17 @@
+---
+cve: 2018-17184
+title: CVE in org.apache.syncope:syncope
+description: >
+    A malicious user with enough administration entitlements can inject html-like elements containing JavaScript statements into Connector names, Report names, AnyTypeClass keys and Policy descriptions. When another user with enough administration entitlements edits one of the Entities above via Admin Console, the injected JavaScript code is executed.
+cvss_v2: 3.5
+references:
+    - https://syncope.apache.org/security#CVE-2018-17184:_Stored_XSS
+affected:
+    - groupId: org.apache.syncope
+      artifactId: syncope
+      version:
+        - "<=2.0.10,2.0.0.M5"
+        - "<=2.1.1,2.1.0"
+      fixedin:
+        - "==2.0.11"
+        - ">=2.1.2"
