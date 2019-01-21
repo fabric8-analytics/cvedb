@@ -8,6 +8,7 @@ references:
     - http://karaf.apache.org/security/cve-2018-11787.txt
     - https://issues.apache.org/jira/browse/KARAF-4993
     - https://lists.apache.org/thread.html/d9ba4c3104ba32225646879a057b75b54430f349c246c85469037d3c@%3Cdev.karaf.apache.org%3E
+    - https://github.com/apache/karaf/commit/cfa213ad680ded70b70bf0c648891a06386ef632
 affected:
     - groupId: org.apache.karaf.webconsole
       artifactId: org.apache.karaf.webconsole.gogo
