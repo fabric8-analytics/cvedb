@@ -1,6 +1,6 @@
 ---
 cve: 2018-11761
-title: CVE in org.apache.tika:tika-parsers
+title: CVE in Apache Tika
 description: >
     In Apache Tika 0.1 to 1.18, the XML parsers were not configured to limit entity expansion. They were therefore vulnerable to an entity expansion vulnerability which can lead to a denial of service attack.
 cvss_v2: 5.0
@@ -9,7 +9,7 @@ references:
     - https://lists.apache.org/thread.html/5553e10bba5604117967466618f219c0cae710075819c70cfb3fb421@%3Cdev.tika.apache.org%3E
 affected:
     - groupId: org.apache.tika
-      artifactId: tika-parsers
+      artifactId: tika-core
       version:
         - "<=1.18"
       fixedin:
