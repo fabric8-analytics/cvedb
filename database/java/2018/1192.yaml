@@ -1,0 +1,20 @@
+---
+cve: 2018-1192
+title: CVE in org.cloudfoundry.identity:cloudfoundry-identity-server
+description: >
+    In Cloud Foundry Foundation cf-release versions prior to v285; cf-deployment versions prior to v1.7; UAA 4.5.x versions prior to 4.5.5, 4.8.x versions prior to 4.8.3, and 4.7.x versions prior to 4.7.4; and UAA-release 45.7.x versions prior to 45.7, 52.7.x versions prior to 52.7, and 53.3.x versions prior to 53.3, the SessionID is logged in audit event logs. An attacker can use the SessionID to impersonate a logged-in user.
+cvss_v2: 6.5
+references:
+    - https://www.cloudfoundry.org/blog/cve-2018-1192/
+    - https://github.com/cloudfoundry/uaa/commit/599391fe5d564c7e4860b8a6ec17cda872a822a3
+affected:
+    - groupId: org.cloudfoundry.identity
+      artifactId: cloudfoundry-identity-server
+      version:
+        - "<=4.5.4,4.5.0"
+        - "<=4.7.3,4.7.0"
+        - "<=4.8.2,4.8.0"
+      fixedin:
+        - ">=4.5.5"
+        - ">=4.7.4"
+        - ">=4.8.3"

@@ -1,0 +1,20 @@
+---
+cve: 2018-11777
+title: CVE in org.apache.hive:hive-exec
+description: >
+    In Apache Hive 2.3.3, 3.1.0 and earlier, local resources on HiveServer2 machines are not properly protected against malicious user if ranger, sentry or sql standard authorizer is not in use.
+cvss_v2: 5.5
+references:
+    - http://www.securityfocus.com/bid/105886
+    - https://lists.apache.org/thread.html/963c8e2516405c9b532b4add16c03b2c5db621e0c83e80f45049cbbb@%3Cdev.hive.apache.org%3E
+    - https://github.com/apache/hive/commit/00c0ee7bc4b8492476b377a6edafcc33411f14b6
+    - https://github.com/apache/hive/commit/12d2b2dbf56d9a41d954487a70e99e9cdbcd8884
+affected:
+    - groupId: org.apache.hive
+      artifactId: hive-exec
+      version:
+        - "<=2.3.3"
+        - "<=3.1.0,3.0.0"
+      fixedin:
+        - ">=2.3.4"
+        - ">=3.1.1"

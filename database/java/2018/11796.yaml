@@ -1,0 +1,24 @@
+---
+cve: 2018-11796
+title: CVE in org.apache.tika:tika-core
+description: >
+    "In Apache Tika 1.19 (CVE-2018-11761), we added an entity expansion limit for XML parsing. However, Tika reuses SAXParsers and calls reset() after each parse, which, for Xerces2 parsers, as per the documentation, removes the user-specified SecurityManager and thus removes entity expansion limits after the first parse. Apache Tika versions from 0.1 to 1.19 are therefore still vulnerable to entity expansions which can lead to a denial of service attack. Users should upgrade to 1.19.1 or later."
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/105585
+    - https://lists.apache.org/thread.html/88de8350cda9b184888ec294c813c5bd8a2081de8fd3666f8904bc05@%3Cdev.tika.apache.org%3E
+    - https://issues.apache.org/jira/browse/TIKA-2727
+    - https://github.com/apache/tika/commit/a1f48b0a6f9cdf65ea01f7f3108e1590e96a086c
+affected:
+    - groupId: org.apache.tika
+      artifactId: tika-core
+      version:
+        - "<=1.19"
+      fixedin:
+        - ">=1.19.1"
+    - groupId: org.apache.tika
+      artifactId: tika-parsers
+      version:
+        - "<=1.19"
+      fixedin:
+        - ">=1.19.1"
