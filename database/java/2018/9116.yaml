@@ -1,0 +1,15 @@
+---
+cve: 2018-9116
+title: CVE in com.github.tomakehurst:wiremock
+description: >
+    An XXE vulnerability within WireMock before 2.16.0 allows a remote unauthenticated attacker to access local files and internal resources and potentially cause a Denial of Service.
+cvss_v2: 6.4
+references:
+    - https://groups.google.com/forum/#!topic/wiremock-user/PQ1UQzKZVl0
+affected:
+    - groupId: com.github.tomakehurst
+      artifactId: wiremock
+      version:
+        - "<=2.15.0"
+      fixedin:
+        - ">=2.16.0"
