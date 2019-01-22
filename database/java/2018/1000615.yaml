@@ -1,0 +1,15 @@
+---
+cve: 2018-1000615
+title: CVE in org.onosproject:onos-ovsdb-rfc
+description: >
+    ONOS ONOS Controller version 1.13.1 and earlier contains a Denial of Service (Service crash) vulnerability in OVSDB component in ONOS that can result in An adversary can remotely crash OVSDB service ONOS controller via a normal switch.. This attack appear to be exploitable via the attacker should be able to control or forge a switch in the network..
+cvss_v2: 5.0
+references:
+    - http://gms.cl0udz.com/OVSDB_DOS.pdf
+    - https://gerrit.onosproject.org/#/c/18926/
+    - https://github.com/opennetworkinglab/onos/commit/8166890edce25ceaaee7d3fcbfa7abedfa08c8a7
+affected:
+    - groupId: org.onosproject
+      artifactId: onos-ovsdb-rfc
+      version:
+        - "<=1.13.1"

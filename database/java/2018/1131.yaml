@@ -1,0 +1,21 @@
+---
+cve: 2018-1131
+title: CVE in Infinispan
+description: >
+    Infinispan permits improper deserialization of trusted data via XML and JSON transcoders under certain server configurations. A user with authenticated access to the server could send a malicious object to a cache configured to accept certain types of objects, achieving code execution and possible further attacks. Versions 9.0.3.Final, 9.1.7.Final, 8.2.10.Final, 9.2.2.Final, 9.3.0.Alpha1 are believed to be affected.
+cvss_v2: 6.5
+references:
+    - http://www.securityfocus.com/bid/104218
+    - https://access.redhat.com/errata/RHSA-2018:1833
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1576492
+    - https://issues.jboss.org/browse/ISPN-9336
+    - https://github.com/infinispan/infinispan/pull/6137
+    - https://github.com/infinispan/infinispan/pull/6140
+    - https://github.com/infinispan/infinispan/commit/5f1637585f54d18b0f09d875421128cd1d2ef2b9
+affected:
+    - groupId: org.infinispan
+      artifactId: infinispan-server-core
+      version:
+        - "<=9.3.0.Final"
+      fixedin:
+        - ">=9.3.1.Final"

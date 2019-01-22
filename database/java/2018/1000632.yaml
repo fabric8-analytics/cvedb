@@ -9,6 +9,7 @@ references:
     - https://github.com/dom4j/dom4j/issues/48
     - https://ihacktoprotect.com/post/dom4j-xml-injection/
     - https://lists.debian.org/debian-lts-announce/2018/09/msg00028.html
+    - https://www.oracle.com/technetwork/security-advisory/cpujan2019-5072801.html
 affected:
     - groupId: org.dom4j
       artifactId: dom4j

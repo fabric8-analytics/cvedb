@@ -1,0 +1,16 @@
+---
+cve: 2018-11248
+title: CVE in com.liulishuo.filedownloader:library
+description: >
+    util/FileDownloadUtils.java in FileDownloader 1.7.3 does not check an attachment's name. If an attacker places "../" in the file name, the file can be stored in an unintended directory because of Directory Traversal.
+cvss_v2: 7.5
+references:
+    - https://github.com/lingochamp/FileDownloader/issues/1028
+    - https://github.com/lingochamp/FileDownloader/commit/b023cc081bbecdd2a9f3549a3ae5c12a9647ed7f
+affected:
+    - groupId: com.liulishuo.filedownloader
+      artifactId: library
+      version:
+        - "==1.7.3"
+      fixedin:
+        - ">=1.7.4"
