@@ -1,0 +1,16 @@
+---
+cve: 2018-20227
+title: CVE in org.eclipse.rdf4j:rdf4j-util
+description: >
+    RDF4J 2.4.2 allows Directory Traversal via ../ in an entry in a ZIP archive.
+cvss_v2: 6.4
+references:
+    - https://github.com/eclipse/rdf4j/issues/1210
+    - https://github.com/eclipse/rdf4j/pull/1211/commits/df15a4d7a8f2789c043b27c9eafe1b30316cfa79
+affected:
+    - groupId: org.eclipse.rdf4j
+      artifactId: rdf4j-util
+      version:
+        - "==2.4.2"
+      fixedin:
+        - ">=2.4.3"
