@@ -1,0 +1,16 @@
+---
+cve: 2018-1338
+title: CVE in org.apache.tika:tika-core
+description: >
+    A carefully crafted (or fuzzed) file can trigger an infinite loop in Apache Tika's BPGParser in versions of Apache Tika before 1.18.
+cvss_v2: 4.3
+references:
+    - https://access.redhat.com/errata/RHSA-2018:2669
+    - https://lists.apache.org/thread.html/4d20c5748fb9f836653bc78a1bad991ba8485d82a1e821f70b641932@%3Cdev.tika.apache.org%3E
+affected:
+    - groupId: org.apache.tika
+      artifactId: tika-core
+      version:
+        - "<=1.17"
+      fixedin:
+        - ">=1.18"
