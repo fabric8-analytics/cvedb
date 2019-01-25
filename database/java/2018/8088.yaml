@@ -1,6 +1,6 @@
 ---
 cve: 2018-8088
-title: CVE in org.slf4j:slf4j-ext
+title: CVE in slf4j-ext
 description: >
     org.slf4j.ext.EventData in the slf4j-ext module in QOS.CH SLF4J before 1.8.0-beta2 allows remote attackers to bypass intended access restrictions via crafted data.
 cvss_v2: 7.5
@@ -37,7 +37,6 @@ affected:
     - groupId: org.slf4j
       artifactId: slf4j-ext
       version:
-        - "<=1.7.25"
-        - "<=1.8.0-alpha1,1.8.0-beta0"
+        - "<= 1.8.0-beta1"
       fixedin:
-        - "<=1.8.0-beta1,1.8.0-alpha0"
+        - "1.8.0-beta2"
