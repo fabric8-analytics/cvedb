@@ -1,6 +1,6 @@
 ---
 cve: 2018-8039
-title: CVE in org.apache.cxf:cxf-rt-transports-http
+title: CVE in Apache CXF Runtime HTTP Transport
 description: >
     It is possible to configure Apache CXF to use the com.sun.net.ssl implementation via 'System.setProperty("java.protocol.handler.pkgs", "com.sun.net.ssl.internal.www.protocol");'. When this system property is set, CXF uses some reflection to try to make the HostnameVerifier work with the old com.sun.net.ssl.HostnameVerifier interface. However, the default HostnameVerifier implementation in CXF does not implement the method in this interface, and an exception is thrown. However, in Apache CXF prior to 3.2.5 and 3.1.16 the exception is caught in the reflection code and not properly propagated. What this means is that if you are using the com.sun.net.ssl stack with CXF, an error with TLS hostname verification will not be thrown, leaving a CXF client subject to man-in-the-middle attacks.
 cvss_v2: 6.8
@@ -24,7 +24,7 @@ affected:
       artifactId: cxf-rt-transports-http
       version:
         - "<=3.1.15"
-        - "<=3.2.4,3.2.0"
+        - ">=3.2.0 < 3.2.5"
       fixedin:
-        - "<=3.1.17,3.1.16"
+        - ">=3.1.16 <= 3.1.17"
         - ">=3.2.5"
