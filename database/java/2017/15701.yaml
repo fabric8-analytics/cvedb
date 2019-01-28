@@ -1,0 +1,18 @@
+---
+cve: 2017-15701
+title: CVE in Apache Qpid Broker-J
+description: >
+    In Apache Qpid Broker-J versions 6.1.0 through 6.1.4 (inclusive) the broker does not properly enforce a maximum frame size in AMQP 1.0 frames. A remote unauthenticated attacker could exploit this to cause the broker to exhaust all available memory and eventually terminate.  Older AMQP protocols are not affected.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/102041
+    - https://issues.apache.org/jira/browse/QPID-7947
+    - https://lists.apache.org/thread.html/4054e1c90993f337eeea24a312841c0661653e673c0ff8e2cd9520fe@%3Cdev.qpid.apache.org%3E
+    - https://qpid.apache.org/cves/CVE-2017-15701.html
+affected:
+    - groupId: org.apache.qpid
+      artifactId: qpid-broker-plugins-amqp-1-0-protocol
+      version:
+        - "<=6.1.4,6.1.0"
+      fixedin:
+        - ">=6.1.5"

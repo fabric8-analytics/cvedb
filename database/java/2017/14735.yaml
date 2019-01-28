@@ -1,0 +1,19 @@
+---
+cve: 2017-14735
+title: CVE in org.owasp.antisamy:antisamy
+description: >
+    "OWASP AntiSamy before 1.5.7 allows XSS via HTML5 entities, as demonstrated by use of &colon; to construct a javascript: URL."
+cvss_v2: 4.3
+references:
+    - http://www.oracle.com/technetwork/security-advisory/cpuoct2018-4428296.html
+    - http://www.securityfocus.com/bid/105656
+    - https://github.com/nahsra/antisamy/issues/10
+    - https://github.com/nahsra/antisamy/pull/16
+    - https://www.oracle.com/technetwork/security-advisory/cpujan2019-5072801.html
+affected:
+    - groupId: org.owasp.antisamy
+      artifactId: antisamy
+      version:
+        - "<=1.5.6"
+      fixedin:
+        - ">=1.5.7"

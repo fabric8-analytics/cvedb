@@ -1,0 +1,18 @@
+---
+cve: 2017-5657
+title: CVE in Apache Archiva
+description: >
+    Several REST service endpoints of Apache Archiva are not protected against Cross Site Request Forgery (CSRF) attacks. A malicious site opened in the same browser as the archiva site, may send an HTML response that performs arbitrary actions on archiva services, with the same rights as the active archiva session (e.g. administrator rights).
+cvss_v2: 6.0
+references:
+    - http://archiva.apache.org/security.html#CVE-2017-5657
+    - http://www.securityfocus.com/bid/98570
+    - http://www.securitytracker.com/id/1038528
+    - https://github.com/apache/archiva/commit/b2ce531fa25df5ca4f92619acf63ab986c49c392
+affected:
+    - groupId: org.apache.archiva
+      artifactId: archiva-webapp
+      version:
+        - "<=2.2.1"
+      fixedin:
+        - ">=2.2.3"

@@ -1,0 +1,41 @@
+---
+cve: 2017-12624
+title: CVE in Apache CXF
+description: >
+    'Apache CXF supports sending and receiving attachments via either the JAX-WS or JAX-RS specifications. It is possible to craft a message attachment header that could lead to a Denial of Service (DoS) attack on a CXF web service provider. Both JAX-WS and JAX-RS services are vulnerable to this attack. From Apache CXF 3.2.1 and 3.1.14, message attachment headers that are greater than 300 characters will be rejected by default. This value is configurable via the property "attachment-max-header-size".'
+cvss_v2: 4.3
+references:
+    - http://cxf.apache.org/security-advisories.data/CVE-2017-12624.txt.asc
+    - http://www.securityfocus.com/bid/101859
+    - http://www.securitytracker.com/id/1040486
+    - https://access.redhat.com/errata/RHSA-2018:2423
+    - https://access.redhat.com/errata/RHSA-2018:2424
+    - https://access.redhat.com/errata/RHSA-2018:2425
+    - https://access.redhat.com/errata/RHSA-2018:2428
+    - https://issues.apache.org/jira/browse/CXF-7507
+    - https://github.com/apache/cxf/commit/8bd915bfd7735c248ad660059c6b6ad26cdbcdf6
+affected:
+    - groupId: org.apache.cxf
+      artifactId: cxf-core
+      version:
+        - "<=3.1.13"
+        - "==3.2.0"
+      fixedin:
+        - ">=3.1.14"
+        - ">=3.2.1"
+    - groupId: org.apache.cxf
+      artifactId: cxf-rt-frontend-jaxrs
+      version:
+        - "<=3.1.13"
+        - "==3.2.0"
+      fixedin:
+        - ">=3.1.14"
+        - ">=3.2.1"
+    - groupId: org.apache.cxf.systests
+      artifactId: cxf-systests-jaxrs
+      version:
+        - "<=3.1.13"
+        - "==3.2.0"
+      fixedin:
+        - ">=3.1.14"
+        - ">=3.2.1"

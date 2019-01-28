@@ -1,0 +1,16 @@
+---
+cve: 2017-9797
+title: CVE in org.apache.geode:geode-core
+description: >
+    When an Apache Geode cluster before v1.2.1 is operating in secure mode, an unauthenticated client can enter multi-user authentication mode and send metadata messages. These metadata operations could leak information about application data types. In addition, an attacker could perform a denial of service attack on the cluster.
+cvss_v2: 5.8
+references:
+    - http://mail-archives.apache.org/mod_mbox/geode-user/201709.mbox/%3cCAEwge-Hrbb7JS8Nygrh7geyFvW4bMZ3AdCmPOzMfvbniipz0bA@mail.gmail.com%3e
+    - https://issues.apache.org/jira/browse/GEODE-3249
+affected:
+    - groupId: org.apache.geode
+      artifactId: geode-core
+      version:
+        - "<=1.2.0"
+      fixedin:
+        - ">=1.2.1"

@@ -1,0 +1,16 @@
+---
+cve: 2017-3152
+title: CVE in org.apache.atlas:atlas-dashboardv2
+description: >
+    Apache Atlas versions 0.6.0-incubating and 0.7.0-incubating were found vulnerable to DOM XSS in the edit-tag functionality.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/100577
+    - https://lists.apache.org/thread.html/4a4fef91e067fd0d9da569e30867c1fa65e2a0520acde71ddefee0ea@%3Cdev.atlas.apache.org%3E
+affected:
+    - groupId: org.apache.atlas
+      artifactId: atlas-dashboardv2
+      version:
+        - "<=0.7-incubating"
+      fixedin:
+        - ">=0.7.1-incubating"

@@ -1,0 +1,17 @@
+---
+cve: 2017-7556
+title: CVE in Hawtio
+description: >
+    Hawtio versions up to and including 1.5.3 are vulnerable to CSRF vulnerability allowing remote attackers to trick the user to visit their website containing a malicious script which can be submitted to hawtio server on behalf of the user.
+cvss_v2: 6.8
+references:
+    - http://www.securityfocus.com/bid/100411
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1480060
+    - https://github.com/hawtio/hawtio/commit/7790c85b1750e0dc01e70fe9dc8e6fa70ac4be15
+affected:
+    - groupId: io.hawt
+      artifactId: hawtio-system
+      version:
+        - "<=1.5.3"
+      fixedin:
+        - ">=1.5.4"

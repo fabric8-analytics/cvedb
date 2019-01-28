@@ -1,0 +1,34 @@
+---
+cve: 2017-15695
+title: CVE in org.apache.geode:geode-core
+description: >
+    When an Apache Geode server versions 1.0.0 to 1.4.0 is configured with a security manager, a user with DATA:WRITE privileges is allowed to deploy code by invoking an internal Geode function. This allows remote code execution. Code deployment should be restricted to users with DATA:MANAGE privilege.
+cvss_v2: 6.5
+references:
+    - http://www.securityfocus.com/bid/104465
+    - https://lists.apache.org/thread.html/dc8875c0b924885a884eba6d5bd7dc3f123411b2d33cffd00e351c99@%3Cuser.geode.apache.org%3E
+    - https://issues.apache.org/jira/browse/GEODE-3974
+    - https://github.com/apache/geode/pull/1258
+    - https://github.com/apache/geode/pull/1262
+    - https://github.com/apache/geode/pull/1265
+    - https://github.com/apache/geode/pull/1287
+    - https://github.com/apache/geode/pull/1310
+affected:
+    - groupId: org.apache.geode
+      artifactId: geode-core
+      version:
+        - "<=1.4.0"
+      fixedin:
+        - ">=1.5.0"
+    - groupId: org.apache.geode
+      artifactId: geode-lucene
+      version:
+        - "<=1.4.0"
+      fixedin:
+        - ">=1.5.0"
+    - groupId: org.apache.geode
+      artifactId: geode-connectors
+      version:
+        - "<=1.4.0"
+      fixedin:
+        - ">=1.5.0"

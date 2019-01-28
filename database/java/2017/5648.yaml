@@ -1,0 +1,32 @@
+---
+cve: 2017-5648
+title: CVE in org.apache.tomcat:tomcat-catalina
+description: >
+    While investigating bug 60718, it was noticed that some calls to application listeners in Apache Tomcat 9.0.0.M1 to 9.0.0.M17, 8.5.0 to 8.5.11, 8.0.0.RC1 to 8.0.41, and 7.0.0 to 7.0.75 did not use the appropriate facade object. When running an untrusted application under a SecurityManager, it was therefore possible for that untrusted application to retain a reference to the request or response object and thereby access and/or modify information associated with another web application.
+cvss_v2: 6.4
+references:
+    - http://www.debian.org/security/2017/dsa-3842
+    - http://www.debian.org/security/2017/dsa-3843
+    - http://www.securityfocus.com/bid/97530
+    - http://www.securitytracker.com/id/1038220
+    - https://access.redhat.com/errata/RHSA-2017:1801
+    - https://access.redhat.com/errata/RHSA-2017:1802
+    - https://access.redhat.com/errata/RHSA-2017:1809
+    - https://lists.apache.org/thread.html/d0e00f2e147a9e9b13a6829133092f349b2882bf6860397368a52600@%3Cannounce.tomcat.apache.org%3E
+    - https://security.gentoo.org/glsa/201705-09
+    - https://security.netapp.com/advisory/ntap-20180614-0001/
+    - https://bz.apache.org/bugzilla/show_bug.cgi?id=60718
+    - http://svn.apache.org/viewvc?view=revision&revision=1785774
+affected:
+    - groupId: org.apache.tomcat
+      artifactId: tomcat-catalina
+      version:
+        - "<=9.0.0.M17,9.0.0.M1"
+        - "<=8.5.11,8.5.0"
+        - "<=8.0.41,8.0.0"
+        - "<=7.0.75,7.0.0"
+      fixedin:
+        - ">=9.0.0.M18"
+        - ">=8.5.12"
+        - ">=8.0.42"
+        - ">=7.0.76"
