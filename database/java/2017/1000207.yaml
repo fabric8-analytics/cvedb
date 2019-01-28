@@ -1,0 +1,18 @@
+---
+cve: 2017-1000207
+title: CVE in io.swagger:swagger-parser
+description: >
+    "A vulnerability in Swagger-Parser's version <= 1.0.30 and Swagger codegen version <= 2.2.2 yaml parsing functionality results in arbitrary code being executed when a maliciously crafted yaml Open-API specification is parsed. This in particular, affects the 'generate' and 'validate' command in swagger-codegen (<= 2.2.2) and can lead to arbitrary code being executed when these commands are used on a well-crafted yaml specification."
+cvss_v2: 6.8
+references:
+    - https://github.com/swagger-api/swagger-parser/pull/481
+    - https://github.com/swagger-api/swagger-parser/commit/4c6584306b40de9b2dfa9065c3a438cd918534af
+    - https://lgtm.com/blog/swagger_snakeyaml_CVE-2017-1000207_CVE-2017-1000208
+affected:
+    - groupId: io.swagger
+      artifactId: swagger-parser
+      version:
+        - "<=1.0.30"
+        - "<=2.0.0-rc1,2.0.0-rc0"
+      fixedin:
+        - ">=1.0.31"

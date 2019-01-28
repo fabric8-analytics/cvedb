@@ -1,0 +1,24 @@
+---
+cve: 2017-12620
+title: CVE in Apache OpenNLP
+description: >
+    When loading models or dictionaries that contain XML it is possible to perform an XXE attack, since Apache OpenNLP is a library, this only affects applications that load models or dictionaries from untrusted sources. The versions 1.5.0 to 1.5.3, 1.6.0, 1.7.0 to 1.7.2, 1.8.0 to 1.8.1 of Apache OpenNLP are affected.
+cvss_v2: 7.5
+references:
+    - http://opennlp.apache.org/news/cve-2017-12620.html
+    - https://github.com/apache/opennlp/commit/c2c14e9af7a519aacfde5173f641c86e17ce50ed
+affected:
+    - groupId: org.apache.opennlp
+      artifactId: opennlp-tools
+      version:
+        - "<=1.5.1-incubating"
+        - "==1.5.2-incubating"
+        - "==1.5.3"
+        - "==1.6.0"
+        - "==1.7.0"
+        - "==1.7.1"
+        - "==1.7.2"
+        - "==1.8.0"
+        - "==1.8.1"
+      fixedin:
+        - ">=1.8.2"

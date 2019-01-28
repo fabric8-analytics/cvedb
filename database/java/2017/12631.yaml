@@ -1,0 +1,21 @@
+---
+cve: 2017-12631
+title: CVE in org.apache.cxf.fediz:fediz-spring
+description: >
+    Apache CXF Fediz ships with a number of container-specific plugins to enable WS-Federation for applications. A CSRF (Cross Style Request Forgery) style vulnerability has been found in the Spring 2, Spring 3 and Spring 4 plugins in versions before 1.4.3 and 1.3.3. The vulnerability can result in a security context that is set up using a malicious client's roles for the given enduser.
+cvss_v2: 6.8
+references:
+    - http://cxf.547215.n5.nabble.com/Apache-CXF-Fediz-1-4-3-and-1-3-3-released-with-a-new-security-advisory-CVE-2017-12631-td5785868.html
+    - http://www.securityfocus.com/bid/102127
+    - http://www.securitytracker.com/id/1040487
+affected:
+    - groupId: org.apache.cxf.fediz
+      artifactId: fediz-spring
+      version:
+        - "<=1.3.2"
+        - "==1.4.0"
+        - "==1.4.1"
+        - "==1.4.2"
+      fixedin:
+        - ">=1.3.3"
+        - ">=1.4.3"

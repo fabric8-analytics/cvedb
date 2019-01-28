@@ -1,0 +1,82 @@
+---
+cve: 2017-5635
+title: CVE in Apache NiFi
+description: >
+    In Apache NiFi before 0.7.2 and 1.x before 1.1.2 in a cluster environment, if an anonymous user request is replicated to another node, the originating node identity is used rather than the "anonymous" user.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/96730
+    - https://nifi.apache.org/security.html#CVE-2017-5635
+affected:
+    - groupId: org.apache.nifi
+      artifactId: nifi-framework-authorization
+      version:
+        - "<=0.7.1"
+        - "==1.1.0"
+        - "==1.1.1"
+      fixedin:
+        - ">=0.7.2"
+        - ">=1.1.2"
+    - groupId: org.apache.nifi
+      artifactId: nifi-framework-cluster
+      version:
+        - "<=0.7.1"
+        - "==1.1.0"
+        - "==1.1.1"
+      fixedin:
+        - ">=0.7.2"
+        - ">=1.1.2"
+    - groupId: org.apache.nifi
+      artifactId: nifi-custom-ui-utilities
+      version:
+        - "<=0.7.1"
+        - "==1.1.0"
+        - "==1.1.1"
+      fixedin:
+        - ">=0.7.2"
+        - ">=1.1.2"
+    - groupId: org.apache.nifi
+      artifactId: nifi-web-api
+      version:
+        - "<=0.7.1"
+        - "==1.1.0"
+        - "==1.1.1"
+      fixedin:
+        - ">=0.7.2"
+        - ">=1.1.2"
+    - groupId: org.apache.nifi
+      artifactId: nifi-web-content-access
+      version:
+        - "<=0.7.1"
+        - "==1.1.0"
+        - "==1.1.1"
+      fixedin:
+        - ">=0.7.2"
+        - ">=1.1.2"
+    - groupId: org.apache.nifi
+      artifactId: nifi-web-content-viewer
+      version:
+        - "<=0.7.1"
+        - "==1.1.0"
+        - "==1.1.1"
+      fixedin:
+        - ">=0.7.2"
+        - ">=1.1.2"
+    - groupId: org.apache.nifi
+      artifactId: nifi-web-content-viewer
+      version:
+        - "<=0.7.1"
+        - "==1.1.0"
+        - "==1.1.1"
+      fixedin:
+        - ">=0.7.2"
+        - ">=1.1.2"
+    - groupId: org.apache.nifi
+      artifactId: nifi-web-security
+      version:
+        - "<=0.7.1"
+        - "==1.1.0"
+        - "==1.1.1"
+      fixedin:
+        - ">=0.7.2"
+        - ">=1.1.2"

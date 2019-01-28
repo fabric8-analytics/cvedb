@@ -1,0 +1,24 @@
+---
+cve: 2017-9804
+title: CVE in org.apache.struts:struts2-core
+description: >
+    "In Apache Struts 2.3.7 through 2.3.33 and 2.5 through 2.5.12, if an application allows entering a URL in a form field and built-in URLValidator is used, it is possible to prepare a special URL which will be used to overload server process when performing validation of the URL.  NOTE: this vulnerability exists because of an incomplete fix for S2-047 / CVE-2017-7672."
+cvss_v2: 5.0
+references:
+    - http://www.arubanetworks.com/assets/alert/ARUBA-PSA-2017-003.txt
+    - http://www.oracle.com/technetwork/security-advisory/alert-cve-2017-9805-3889403.html
+    - http://www.securityfocus.com/bid/100612
+    - http://www.securitytracker.com/id/1039261
+    - https://security.netapp.com/advisory/ntap-20180629-0001/
+    - https://struts.apache.org/docs/s2-050.html
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20170907-struts2
+    - https://github.com/apache/struts/commit/418a20c0594f23764fe29ced400c1219239899a8
+affected:
+    - groupId: org.apache.struts
+      artifactId: struts2-core
+      version:
+        - "<=2.3.33,2.3.7"
+        - "<=2.5.12,2.5"
+      fixedin:
+        - ">=2.3.34"
+        - ">=2.5.13"

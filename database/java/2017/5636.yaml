@@ -1,0 +1,83 @@
+---
+cve: 2017-5636
+title: CVE in Apache NiFi
+description: >
+    In Apache NiFi before 0.7.2 and 1.x before 1.1.2 in a cluster environment, the proxy chain serialization/deserialization is vulnerable to an injection attack where a carefully crafted username could impersonate another user and gain their permissions on a replicated request to another node.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/96731
+    - https://nifi.apache.org/security.html#CVE-2017-5636
+    - https://github.com/apache/nifi/commit/bd88e4335ad151592f1310996e9a0513b7f0829a
+affected:
+    - groupId: org.apache.nifi
+      artifactId: nifi-framework-authorization
+      version:
+        - "<=0.7.1"
+        - "==1.1.0"
+        - "==1.1.1"
+      fixedin:
+        - ">=0.7.2"
+        - ">=1.1.2"
+    - groupId: org.apache.nifi
+      artifactId: nifi-framework-cluster
+      version:
+        - "<=0.7.1"
+        - "==1.1.0"
+        - "==1.1.1"
+      fixedin:
+        - ">=0.7.2"
+        - ">=1.1.2"
+    - groupId: org.apache.nifi
+      artifactId: nifi-custom-ui-utilities
+      version:
+        - "<=0.7.1"
+        - "==1.1.0"
+        - "==1.1.1"
+      fixedin:
+        - ">=0.7.2"
+        - ">=1.1.2"
+    - groupId: org.apache.nifi
+      artifactId: nifi-web-api
+      version:
+        - "<=0.7.1"
+        - "==1.1.0"
+        - "==1.1.1"
+      fixedin:
+        - ">=0.7.2"
+        - ">=1.1.2"
+    - groupId: org.apache.nifi
+      artifactId: nifi-web-content-access
+      version:
+        - "<=0.7.1"
+        - "==1.1.0"
+        - "==1.1.1"
+      fixedin:
+        - ">=0.7.2"
+        - ">=1.1.2"
+    - groupId: org.apache.nifi
+      artifactId: nifi-web-content-viewer
+      version:
+        - "<=0.7.1"
+        - "==1.1.0"
+        - "==1.1.1"
+      fixedin:
+        - ">=0.7.2"
+        - ">=1.1.2"
+    - groupId: org.apache.nifi
+      artifactId: nifi-web-content-viewer
+      version:
+        - "<=0.7.1"
+        - "==1.1.0"
+        - "==1.1.1"
+      fixedin:
+        - ">=0.7.2"
+        - ">=1.1.2"
+    - groupId: org.apache.nifi
+      artifactId: nifi-web-security
+      version:
+        - "<=0.7.1"
+        - "==1.1.0"
+        - "==1.1.1"
+      fixedin:
+        - ">=0.7.2"
+        - ">=1.1.2"

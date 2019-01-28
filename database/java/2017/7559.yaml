@@ -1,0 +1,40 @@
+---
+cve: 2017-7559
+title: CVE in io.undertow:undertow-core
+description: >
+    In Undertow 2.x before 2.0.0.Alpha2, 1.4.x before 1.4.17.Final, and 1.3.x before 1.3.31.Final, it was found that the fix for CVE-2017-2666 was incomplete and invalid characters are still allowed in the query string and path parameters. This could be exploited, in conjunction with a proxy that also permitted the invalid characters but with a different interpretation, to inject data into the HTTP response. By manipulating the HTTP response the attacker could poison a web-cache, perform an XSS attack, or obtain sensitive information from requests other than their own.
+cvss_v2: 5.8
+references:
+    - https://access.redhat.com/errata/RHSA-2017:3454
+    - https://access.redhat.com/errata/RHSA-2017:3455
+    - https://access.redhat.com/errata/RHSA-2017:3456
+    - https://access.redhat.com/errata/RHSA-2017:3458
+    - https://access.redhat.com/errata/RHSA-2018:0002
+    - https://access.redhat.com/errata/RHSA-2018:0003
+    - https://access.redhat.com/errata/RHSA-2018:0004
+    - https://access.redhat.com/errata/RHSA-2018:0005
+    - https://access.redhat.com/errata/RHSA-2018:1322
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2017-7559
+    - https://issues.jboss.org/browse/UNDERTOW-1251
+    - https://github.com/undertow-io/undertow/commit/3436b03eda8b0b62c1855698c4d7c358add836c2
+affected:
+    - groupId: io.undertow
+      artifactId: undertow-core
+      version:
+        - "<=1.3.30.Final,1.3.0.Final"
+        - "<=1.4.16.Final,1.4.0.Final"
+        - "==2.0.0.Alpha1"
+      fixedin:
+        - ">=1.3.31.Final"
+        - ">=1.4.17.Final"
+        - ">=2.0.0.Final"
+    - groupId: io.undertow
+      artifactId: undertow-parser-generator
+      version:
+        - "<=1.3.30.Final,1.3.0.Final"
+        - "<=1.4.16.Final,1.4.0.Final"
+        - "==2.0.0.Alpha1"
+      fixedin:
+        - ">=1.3.31.Final"
+        - ">=1.4.17.Final"
+        - ">=2.0.0.Final"

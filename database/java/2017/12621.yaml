@@ -1,0 +1,18 @@
+---
+cve: 2017-12621
+title: CVE in commons-jelly:commons-jelly
+description: >
+    During Jelly (xml) file parsing with Apache Xerces, if a custom doctype entity is declared with a "SYSTEM" entity with a URL and that entity is used in the body of the Jelly file, during parser instantiation the parser will attempt to connect to said URL. This could lead to XML External Entity (XXE) attacks in Apache Commons Jelly before 1.0.1.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/101052
+    - http://www.securitytracker.com/id/1039444
+    - https://issues.apache.org/jira/browse/JELLY-293
+    - https://lists.apache.org/thread.html/f1fc3f2c45264af44ce782d54b5908ac95f02bf7ad88bb57bfb04b73@%3Cdev.commons.apache.org%3E
+affected:
+    - groupId: commons-jelly
+      artifactId: commons-jelly
+      version:
+        - "<=1.0"
+      fixedin:
+        - ">=1.0.1"

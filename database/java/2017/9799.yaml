@@ -1,0 +1,22 @@
+---
+cve: 2017-9799
+title: CVE in Apache Storm
+description: >
+    It was found that under some situations and configurations of Apache Storm 1.x before 1.0.4 and 1.1.x before 1.1.1, it is theoretically possible for the owner of a topology to trick the supervisor to launch a worker as a different, non-root, user. In the worst case this could lead to secure credentials of the other user being compromised.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/100235
+    - http://www.securitytracker.com/id/1039116
+    - https://lists.apache.org/thread.html/b9125bf507ed6f2ca6e85ba1a4b44e232aa70eeddfba2a9d8a954127@%3Cdev.storm.apache.org%3E
+affected:
+    - groupId: org.apache.storm
+      artifactId: storm-core
+      version:
+        - "==1.0.0"
+        - "==1.0.1"
+        - "==1.0.2"
+        - "==1.0.3"
+        - "==1.1.0"
+      fixedin:
+        - ">=1.0.4"
+        - ">=1.1.1"
