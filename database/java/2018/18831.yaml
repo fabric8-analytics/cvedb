@@ -10,6 +10,6 @@ affected:
     - groupId: net.mingsoft
       artifactId: ms-mcms
       version:
-        - ">=4.6.5"
+        - "<=4.6.5"
       fixedin:
         []
