@@ -1,6 +1,6 @@
 ---
 cve: 2018-19531
-title: CVE in com.github.httl:httl
+title: CVE in HTTL
 description: >
     HTTL (aka Hyper-Text Template Language) through 1.0.11 allows remote command execution because the decodeXml function uses java.beans.XMLEncoder unsafely when configured without an xml.codec= setting.
 cvss_v2: 7.5
@@ -12,4 +12,4 @@ affected:
       version:
         - "<=1.0.11"
       fixedin:
-        []
+        - ">=1.0.12"
