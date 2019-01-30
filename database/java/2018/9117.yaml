@@ -1,0 +1,15 @@
+---
+cve: 2018-9117
+title: CVE in com.github.tomakehurst:wiremock
+description: >
+    WireMock before 2.16.0 contains a vulnerability that allows a remote unauthenticated attacker to access local files beyond the application directory via a specially crafted XML request, aka Directory Traversal.
+cvss_v2: 5.0
+references:
+    - https://groups.google.com/forum/#!topic/wiremock-user/PQ1UQzKZVl0
+affected:
+    - groupId: com.github.tomakehurst
+      artifactId: wiremock
+      version:
+        - "<=2.15.0"
+      fixedin:
+        - ">=2.16.0"
