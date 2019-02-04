@@ -37,6 +37,6 @@ affected:
     - groupId: org.slf4j
       artifactId: slf4j-ext
       version:
-        - "<= 1.8.0-beta1"
+        - "<=1.8.0-beta1"
       fixedin:
-        - "1.8.0-beta2"
+        - ">=1.8.0-beta2"
