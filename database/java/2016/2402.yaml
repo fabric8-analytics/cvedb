@@ -1,0 +1,24 @@
+---
+cve: 2016-2402
+title: CVE in com.squareup.okhttp:okhttp
+description: >
+    OkHttp before 2.7.4 and 3.x before 3.1.2 allows man-in-the-middle attackers to bypass certificate pinning by sending a certificate chain with a certificate from a non-pinned trusted CA and the pinned certificate.
+cvss_v2: 4.3
+references:
+    - http://www.openwall.com/lists/oss-security/2016/02/10/8
+    - http://www.openwall.com/lists/oss-security/2016/02/18/7
+    - https://koz.io/pinning-cve-2016-2402/
+    - https://publicobject.com/2016/02/11/okhttp-certificate-pinning-vulnerability/
+affected:
+    - groupId: com.squareup.okhttp
+      artifactId: okhttp
+      version:
+        - "<=2.7.3"
+      fixedin:
+        - ">=2.7.4"
+    - groupId: com.squareup.okhttp3
+      artifactId: okhttp
+      version:
+        - "<=3.1.1"
+      fixedin:
+        - ">=3.1.2"

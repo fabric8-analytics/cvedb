@@ -1,0 +1,17 @@
+---
+cve: 2016-6809
+title: CVE in org.apache.tika:tika-parsers
+description: >
+    Apache Tika before 1.14 allows Java code execution for serialized objects embedded in MATLAB files. The issue exists because Tika invokes JMatIO to do native deserialization.
+cvss_v2: 7.5
+references:
+    - http://seclists.org/bugtraq/2016/Nov/40
+    - http://www.securityfocus.com/bid/94247
+    - https://dist.apache.org/repos/dist/release/tika/CHANGES-1.14.txt
+affected:
+    - groupId: org.apache.tika
+      artifactId: tika-parsers
+      version:
+        - "<=1.13"
+      fixedin:
+        - ">=1.14"

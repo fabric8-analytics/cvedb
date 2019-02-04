@@ -1,0 +1,14 @@
+---
+cve: 2016-6659
+title: CVE in org.cloudfoundry.identity:cloudfoundry-identity-server
+description: >
+    Cloud Foundry before 248; UAA 2.x before 2.7.4.12, 3.x before 3.6.5, and 3.7.x through 3.9.x before 3.9.3; and UAA bosh release (aka uaa-release) before 13.9 for UAA 3.6.5 and before 24 for UAA 3.9.3 allow attackers to gain privileges by accessing UAA logs and subsequently running a specially crafted application that interacts with a configured SAML provider.
+cvss_v2: 2.6
+references:
+    - http://www.securityfocus.com/bid/95085
+    - https://www.cloudfoundry.org/cve-2016-6659/
+affected:
+    - groupId: org.cloudfoundry.identity
+      artifactId: cloudfoundry-identity-server
+      version:
+        - "<=3.9.1"

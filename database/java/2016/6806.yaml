@@ -1,0 +1,15 @@
+---
+cve: 2016-6806
+title: CVE in org.apache.wicket:wicket-core
+description: >
+    Apache Wicket 6.x before 6.25.0, 7.x before 7.5.0, and 8.0.0-M1 provide a CSRF prevention measure that fails to discover some cross origin requests. The mitigation is to not only check the Origin HTTP header, but also take the Referer HTTP header into account when no Origin was provided. Furthermore, not all Wicket server side targets were subjected to the CSRF check. This was also fixed.
+cvss_v2: 6.8
+references:
+    - https://lists.apache.org/thread.html/074b72585f4b7c6adda1af52aecbfe1be23c6d6f5bb9382270f059cd@%3Cannounce.apache.org%3E
+affected:
+    - groupId: org.apache.wicket
+      artifactId: wicket-core
+      version:
+        - "<=6.24.0,6.20.0"
+        - "<=7.4.0,7.0.0-M1"
+        - "<=8.0.0-M1"

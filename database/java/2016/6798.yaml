@@ -1,0 +1,18 @@
+---
+cve: 2016-6798
+title: CVE in Apache Sling
+description: >
+    In the XSS Protection API module before 1.0.12 in Apache Sling, the method XSS.getValidXML() uses an insecure SAX parser to validate the input string, which allows for XXE attacks in all scripts which use this method to validate user input, potentially allowing an attacker to read sensitive data on the filesystem, perform same-site-request-forgery (SSRF), port-scanning behind the firewall or DoS the application.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/99873
+    - https://lists.apache.org/thread.html/b72c3a511592ec70729b3ec2d29302b6ce87bbeab62d4745617a6bd0@%3Cdev.sling.apache.org%3E
+    - https://jira.apache.org/jira/browse/SLING-5954
+    - https://github.com/apache/sling-org-apache-sling-xss/commit/ff79a088b04bee828ee264dce7c05c171e4ddf5a
+affected:
+    - groupId: org.apache.sling
+      artifactId: org.apache.sling.xss
+      version:
+        - "<=1.0.8"
+      fixedin:
+        - ">=1.0.12"

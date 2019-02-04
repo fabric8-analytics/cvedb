@@ -1,0 +1,21 @@
+---
+cve: 2016-4437
+title: CVE in org.apache.shiro:shiro-core
+description: >
+    Apache Shiro before 1.2.5, when a cipher key has not been configured for the "remember me" feature, allows remote attackers to execute arbitrary code or bypass intended access restrictions via an unspecified request parameter.
+cvss_v2: 6.8
+references:
+    - http://packetstormsecurity.com/files/137310/Apache-Shiro-1.2.4-Information-Disclosure.html
+    - http://rhn.redhat.com/errata/RHSA-2016-2035.html
+    - http://rhn.redhat.com/errata/RHSA-2016-2036.html
+    - http://www.securityfocus.com/archive/1/538570/100/0/threaded
+    - http://www.securityfocus.com/bid/91024
+    - https://lists.apache.org/thread.html/ef3a800c7d727a00e04b78e2f06c5cd8960f09ca28c9b69d94c3c4c4@%3Cannouncements.aurora.apache.org%3E
+    - https://github.com/apache/shiro/commit/4d5bb000a7f3c02d8960b32e694a565c95976848
+affected:
+    - groupId: org.apache.shiro
+      artifactId: shiro-core
+      version:
+        - "<=1.2.4"
+      fixedin:
+        - ">=1.2.5"

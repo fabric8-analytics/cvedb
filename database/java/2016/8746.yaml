@@ -1,0 +1,18 @@
+---
+cve: 2016-8746
+title: CVE in Apache Ranger
+description: >
+    Apache Ranger before 0.6.3 policy engine incorrectly matches paths in certain conditions when policy does not contain wildcards and has recursion flag set to true.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/95998
+    - https://cwiki.apache.org/confluence/display/RANGER/Vulnerabilities+found+in+Ranger
+    - https://issues.apache.org/jira/browse/RANGER-1261
+    - https://github.com/apache/ranger/commit/9dfde6de92799d7d923cf8eb11bbdc8788d6664c
+affected:
+    - groupId: org.apache.ranger
+      artifactId: ranger-plugins-common
+      version:
+        - "<=0.6.2"
+      fixedin:
+        - ">=0.6.3"

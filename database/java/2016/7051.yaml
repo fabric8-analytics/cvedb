@@ -1,0 +1,19 @@
+---
+cve: 2016-7051
+title: CVE in com.fasterxml.jackson.dataformat:jackson-dataformat-xml
+description: >
+    XmlMapper in the Jackson XML dataformat component (aka jackson-dataformat-xml) before 2.7.8 and 2.8.x before 2.8.4 allows remote attackers to conduct server-side request forgery (SSRF) attacks via vectors related to a DTD.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/97688
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1378673
+    - https://github.com/FasterXML/jackson-dataformat-xml/issues/211
+affected:
+    - groupId: com.fasterxml.jackson.dataformat
+      artifactId: jackson-dataformat-xml
+      version:
+        - "<=2.7.7"
+        - "<=2.8.3,2.8.0"
+      fixedin:
+        - ">=2.7.8"
+        - ">=2.8.4"
