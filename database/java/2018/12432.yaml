@@ -6,6 +6,7 @@ description: >
 cvss_v2: 4.3
 references:
     - https://github.com/Hurdano/JavaMelody-XSS/wiki/Attack-Vector---JavaMelody
+    - https://github.com/javamelody/javamelody/commit/e0497c1980acebd257d3da78dfde29ae9bdffdf6
 affected:
     - groupId: net.bull.javamelody
       artifactId: javamelody-core
