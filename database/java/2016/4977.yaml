@@ -1,0 +1,18 @@
+---
+cve: 2016-4977
+title: CVE in org.springframework.security.oauth:spring-security-oauth2
+description: >
+    When processing authorization requests using the whitelabel views in Spring Security OAuth 2.0.0 to 2.0.9 and 1.0.0 to 1.0.5, the response_type parameter value was executed as Spring SpEL which enabled a malicious user to trigger remote code execution via the crafting of the value for response_type.
+cvss_v2: 6.5
+references:
+    - https://pivotal.io/security/cve-2016-4977
+    - https://github.com/spring-projects/spring-security-oauth/commit/fff77d3fea477b566bcacfbfc95f85821a2bdc2d
+affected:
+    - groupId: org.springframework.security.oauth
+      artifactId: spring-security-oauth2
+      version:
+        - "<=1.0.5.RELEASE"
+        - "<=2.0.9.RELEASE,2.0.0.RELEASE"
+      fixedin:
+        - ">=1.0.6.RELEASE"
+        - ">=2.0.10.RELEASE"

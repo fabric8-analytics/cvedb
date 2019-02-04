@@ -1,0 +1,56 @@
+---
+cve: 2016-8749
+title: CVE in Apache Camel
+description: >
+    Apache Camel's Jackson and JacksonXML unmarshalling operation are vulnerable to Remote Code Execution attacks.
+cvss_v2: 7.5
+references:
+    - http://camel.apache.org/security-advisories.data/CVE-2016-8749.txt.asc?version=2&modificationDate=1486565034000&api=v2
+    - http://www.openwall.com/lists/oss-security/2017/05/22/2
+    - http://www.securityfocus.com/bid/97179
+    - https://access.redhat.com/errata/RHSA-2017:1832
+    - https://www.github.com/mbechler/marshalsec/blob/master/marshalsec.pdf?raw=true
+    - https://issues.apache.org/jira/browse/CAMEL-10567
+    - https://issues.apache.org/jira/browse/CAMEL-10604
+    - https://github.com/apache/camel/commit/ccf149c76bf37adc5977dc626e141a14e60b5aee
+    - https://github.com/apache/camel/commit/57d01e2fc8923263df896e9810329ee5b7f9b69e
+    - https://github.com/apache/camel/commit/235036d2396ae45b6809b72a1983dee33b5ba326
+affected:
+    - groupId: org.apache.camel
+      artifactId: camel-jackson
+      version:
+        - "<=2.16.0"
+        - "==2.16.1"
+        - "==2.16.2"
+        - "==2.16.3"
+        - "==2.16.4"
+        - "==2.17.0"
+        - "==2.17.1"
+        - "==2.17.2"
+        - "==2.17.3"
+        - "==2.17.4"
+        - "==2.18.0"
+        - "==2.18.1"
+      fixedin:
+        - ">=2.16.5"
+        - ">=2.17.5"
+        - ">=2.18.2"
+    - groupId: org.apache.camel
+      artifactId: camel-jacksonxml
+      version:
+        - "<=2.16.0"
+        - "==2.16.1"
+        - "==2.16.2"
+        - "==2.16.3"
+        - "==2.16.4"
+        - "==2.17.0"
+        - "==2.17.1"
+        - "==2.17.2"
+        - "==2.17.3"
+        - "==2.17.4"
+        - "==2.18.0"
+        - "==2.18.1"
+      fixedin:
+        - ">=2.16.5"
+        - ">=2.17.5"
+        - ">=2.18.2"

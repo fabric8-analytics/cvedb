@@ -1,0 +1,35 @@
+---
+cve: 2016-8735
+title: CVE in Apache Tomcat
+description: >
+    Remote code execution is possible with Apache Tomcat before 6.0.48, 7.x before 7.0.73, 8.x before 8.0.39, 8.5.x before 8.5.7, and 9.x before 9.0.0.M12 if JmxRemoteLifecycleListener is used and an attacker can reach JMX ports. The issue exists because this listener wasn't updated for consistency with the CVE-2016-3427 Oracle patch that affected credential types.
+cvss_v2: 7.5
+references:
+    - http://rhn.redhat.com/errata/RHSA-2017-0457.html
+    - http://seclists.org/oss-sec/2016/q4/502
+    - http://svn.apache.org/viewvc?view=revision&revision=1767644
+    - http://svn.apache.org/viewvc?view=revision&revision=1767656
+    - http://svn.apache.org/viewvc?view=revision&revision=1767676
+    - http://svn.apache.org/viewvc?view=revision&revision=1767684
+    - http://tomcat.apache.org/security-6.html
+    - http://tomcat.apache.org/security-7.html
+    - http://tomcat.apache.org/security-8.html
+    - http://tomcat.apache.org/security-9.html
+    - http://www.debian.org/security/2016/dsa-3738
+    - http://www.oracle.com/technetwork/security-advisory/cpujan2018-3236628.html
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2018-4258247.html
+    - http://www.oracle.com/technetwork/security-advisory/cpuoct2017-3236626.html
+    - http://www.securityfocus.com/bid/94463
+    - http://www.securitytracker.com/id/1037331
+    - https://access.redhat.com/errata/RHSA-2017:0455
+    - https://access.redhat.com/errata/RHSA-2017:0456
+    - https://security.netapp.com/advisory/ntap-20180607-0001/
+affected:
+    - groupId: org.apache.tomcat
+      artifactId: tomcat-catalina-jmx-remote
+      version:
+        - "<=6.0.47"
+        - "<=7.0.72,7.0.0"
+        - "<=8.0.38,8.0.0"
+        - "<=8.5.6,8.5.0"
+        - "<=9.0.0.M11,9.0.0.M1"

@@ -1,0 +1,17 @@
+---
+cve: 2016-2171
+title: CVE in Apache Jetspeed
+description: >
+    The User Manager service in Apache Jetspeed before 2.3.1 does not properly restrict access using Jetspeed Security, which allows remote attackers to (1) add, (2) edit, or (3) delete users via the REST API.
+cvss_v2: 6.4
+references:
+    - http://haxx.ml/post/140552592371/remote-code-execution-in-apache-jetspeed-230-and
+    - http://mail-archives.apache.org/mod_mbox/portals-jetspeed-user/201603.mbox/%3CB9165E38-F3D8-496D-8642-8A53FCAC736A%40gmail.com%3E
+    - https://portals.apache.org/jetspeed-2/security-reports.html#CVE-2016-2171
+affected:
+    - groupId: org.apache.portals.jetspeed-2
+      artifactId: jetspeed-security
+      version:
+        - "<=2.3.0"
+      fixedin:
+        - ">=2.3.1"

@@ -1,0 +1,21 @@
+---
+cve: 2016-0779
+title: CVE in org.apache.tomee:openejb-client
+description: >
+    The EjbObjectInputStream class in Apache TomEE before 1.7.4 and 7.x before 7.0.0-M3 allows remote attackers to execute arbitrary code via a crafted serialized object.
+cvss_v2: 7.5
+references:
+    - http://packetstormsecurity.com/files/136256/Apache-TomEE-Patched.html
+    - http://tomee-openejb.979440.n4.nabble.com/Document-resolved-vulnerability-CVE-2015-8581-td4678073.html
+    - http://tomee.apache.org/security/tomee.html
+    - http://www.securityfocus.com/archive/1/537806/100/0/threaded
+    - http://www.securityfocus.com/bid/79204
+    - http://www.zerodayinitiative.com/advisories/ZDI-15-638
+affected:
+    - groupId: org.apache.tomee
+      artifactId: openejb-client
+      version:
+        - "<=7.0.0-M2"
+        - "<=7.0.0-M1"
+      fixedin:
+        - ">=7.0.0-M3"

@@ -1,0 +1,16 @@
+---
+cve: 2016-5394
+title: CVE in org.apache.sling:org.apache.sling.xss
+description: >
+    In the XSS Protection API module before 1.0.12 in Apache Sling, the encoding done by the XSSAPI.encodeForJSString() method is not restrictive enough and for some input patterns allows script tags to pass through unencoded, leading to potential XSS vulnerabilities.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/99870
+    - https://lists.apache.org/thread.html/332166037a54b97cf41e2b616aaed38439de94b19b204841478e4525@%3Cdev.sling.apache.org%3E
+affected:
+    - groupId: org.apache.sling
+      artifactId: org.apache.sling.xss
+      version:
+        - "<=1.0.8"
+      fixedin:
+        - ">=1.0.12"

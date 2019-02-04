@@ -1,0 +1,22 @@
+---
+cve: 2016-8747
+title: CVE in Apache Tomcat
+description: >
+    An information disclosure issue was discovered in Apache Tomcat 8.5.7 to 8.5.9 and 9.0.0.M11 to 9.0.0.M15 in reverse-proxy configurations. Http11InputBuffer.java allows remote attackers to read data that was intended to be associated with a different request.
+cvss_v2: 5.0
+references:
+    - http://svn.apache.org/viewvc?view=revision&revision=1774161
+    - http://svn.apache.org/viewvc?view=revision&revision=1774166
+    - http://tomcat.apache.org/security-8.html
+    - http://tomcat.apache.org/security-9.html
+    - http://www.securityfocus.com/bid/96895
+    - https://security.netapp.com/advisory/ntap-20180614-0002/
+affected:
+    - groupId: org.apache.tomcat
+      artifactId: tomcat-coyote
+      version:
+        - "<=8.5.9,8.5.7"
+        - "<=9.0.0.M15,9.0.0.M11"
+      fixedin:
+        - ">=8.5.11"
+        - ">=9.0.0.M16"

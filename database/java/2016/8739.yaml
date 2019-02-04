@@ -1,0 +1,29 @@
+---
+cve: 2016-8739
+title: CVE in Apache CXF
+description: >
+    The JAX-RS module in Apache CXF prior to 3.0.12 and 3.1.x prior to 3.1.9 provides a number of Atom JAX-RS MessageBodyReaders. These readers use Apache Abdera Parser which expands XML entities by default which represents a major XXE risk.
+cvss_v2: 7.8
+references:
+    - http://cxf.apache.org/security-advisories.data/CVE-2016-8739.txt.asc
+    - http://www.securityfocus.com/bid/97579
+    - http://www.securitytracker.com/id/1037544
+    - https://access.redhat.com/errata/RHSA-2017:0868
+    - https://github.com/apache/cxf/commit/d9e2a6e7260ea12efa5355ffdfbf0b2415bccd14
+affected:
+    - groupId: org.apache.cxf
+      artifactId: cxf-rt-rs-extension-providers
+      version:
+        - "<=3.0.11"
+        - "==3.1.0"
+        - "==3.1.1"
+        - "==3.1.2"
+        - "==3.1.3"
+        - "==3.1.4"
+        - "==3.1.5"
+        - "==3.1.6"
+        - "==3.1.7"
+        - "==3.1.8"
+      fixedin:
+        - ">=3.0.12"
+        - ">=3.1.9"

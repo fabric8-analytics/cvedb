@@ -1,0 +1,31 @@
+---
+cve: 2016-6814
+title: CVE in Groovy
+description: >
+    When an application with unsupported Codehaus versions of Groovy from 1.7.0 to 2.4.3, Apache Groovy 2.4.4 to 2.4.7 on classpath uses standard Java serialization mechanisms, e.g. to communicate between servers or to store local data, it was possible for an attacker to bake a special serialized object that will execute code directly when deserialized. All applications which rely on serialization and do not isolate the code which deserializes objects were subject to this vulnerability.
+cvss_v2: 7.5
+references:
+    - http://mail-archives.apache.org/mod_mbox/www-announce/201701.mbox/%3CCADRx3PMZ2hBCGDTY35zYXFGaDnjAs0tc5-upaVs6QN2sYUejyA%40mail.gmail.com%3E
+    - http://rhn.redhat.com/errata/RHSA-2017-0272.html
+    - http://www.oracle.com/technetwork/security-advisory/cpuapr2018-3678067.html
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2018-4258247.html
+    - http://www.oracle.com/technetwork/security-advisory/cpuoct2018-4428296.html
+    - http://www.securityfocus.com/bid/95429
+    - http://www.securitytracker.com/id/1039600
+    - https://access.redhat.com/errata/RHSA-2017:0868
+    - https://access.redhat.com/errata/RHSA-2017:2486
+    - https://access.redhat.com/errata/RHSA-2017:2596
+    - https://www.oracle.com/technetwork/security-advisory/cpujan2019-5072801.html
+affected:
+    - groupId: org.codehaus.groovy
+      artifactId: groovy-all
+      version:
+        - "<=2.4.7,1.7.0"
+      fixedin:
+        - ">=2.4.8"
+    - groupId: org.codehaus.groovy
+      artifactId: groovy
+      version:
+        - "<=2.4.7,1.7.0"
+      fixedin:
+        - ">=2.4.8"

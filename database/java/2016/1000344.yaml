@@ -1,0 +1,18 @@
+---
+cve: 2016-1000344
+title: CVE in Bouncy Castle
+description: >
+    "In the Bouncy Castle JCE Provider version 1.55 and earlier the DHIES implementation allowed the use of ECB mode. This mode is regarded as unsafe and support for it has been removed from the provider."
+cvss_v2: 5.8
+references:
+    - https://access.redhat.com/errata/RHSA-2018:2669
+    - https://access.redhat.com/errata/RHSA-2018:2927
+    - https://github.com/bcgit/bc-java/commit/9385b0ebd277724b167fe1d1456e3c112112be1f
+    - https://security.netapp.com/advisory/ntap-20181127-0004/
+affected:
+    - groupId: org.bouncycastle
+      artifactId: bcprov-jdk15on
+      version:
+        - "<=1.55"
+      fixedin:
+        - ">=1.56"
