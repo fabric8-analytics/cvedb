@@ -1,0 +1,15 @@
+---
+cve: 2018-1315
+title: CVE in org.apache.hive:hive-common
+description: >
+    In Apache Hive 2.1.0 to 2.3.2, when 'COPY FROM FTP' statement is run using HPL/SQL extension to Hive, a compromised/malicious FTP server can cause the file to be written to an arbitrary location on the cluster where the command is run from. This is because FTP client code in HPL/SQL does not verify the destination location of the downloaded file. This does not affect hive cli user and hiveserver2 user as hplsql is a separate command line script and needs to be invoked differently.
+cvss_v2: 4.3
+references:
+    - https://lists.apache.org/thread.html/d5da94ef60312c01a8d2348466680d1b5fb70702c71a3e84e94f7933@%3Cdev.hive.apache.org%3E
+affected:
+    - groupId: org.apache.hive
+      artifactId: hive-common
+      version:
+        - "<=2.3.2,2.1.0"
+      fixedin:
+        - ">=2.3.3"
