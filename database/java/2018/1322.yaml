@@ -1,0 +1,28 @@
+---
+cve: 2018-1322
+title: CVE in Apache Syncope
+description: >
+    An administrator with user search entitlements in Apache Syncope 1.2.x before 1.2.11, 2.0.x before 2.0.8, and unsupported releases 1.0.x and 1.1.x which may be also affected, can recover sensitive security values using the fiql and orderby parameters.
+cvss_v2: 4.0
+references:
+    - http://syncope.apache.org/security.html#CVE-2018-1322:_Information_disclosure_via_FIQL_and_ORDER_BY_sorting
+    - http://www.securityfocus.com/bid/103507
+    - https://www.exploit-db.com/exploits/45400/
+    - https://github.com/apache/syncope/commit/44a5ca0fbd357b8b5d81aa9313fb01cca30d8ad3
+affected:
+    - groupId: org.apache.syncope
+      artifactId: syncope-core
+      version:
+        - "<=1.2.10"
+        - "<=2.0.7,2.0.0"
+      fixedin:
+        - ">=1.2.11"
+        - ">=2.0.8"
+    - groupId: org.apache.syncope
+      artifactId: syncope-common
+      version:
+        - "<=1.2.10"
+        - "<=2.0.7,2.0.0"
+      fixedin:
+        - ">=1.2.11"
+        - ">=2.0.8"
