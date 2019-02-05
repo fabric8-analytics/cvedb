@@ -1,0 +1,20 @@
+---
+cve: 2018-9206
+title: CVE in blueimp-file-upload
+description: >
+    Unauthenticated arbitrary file upload vulnerability in Blueimp jQuery-File-Upload <= v9.22.0
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/105679
+    - http://www.securityfocus.com/bid/106629
+    - http://www.vapidlabs.com/advisory.php?v=204
+    - https://wpvulndb.com/vulnerabilities/9136
+    - https://www.exploit-db.com/exploits/45790/
+    - https://www.exploit-db.com/exploits/46182/
+    - https://www.oracle.com/technetwork/security-advisory/cpujan2019-5072801.html
+affected:
+    - name: blueimp-file-upload
+      version:
+        - "<=9.22.0"
+      fixedin:
+        - ">=9.22.1"

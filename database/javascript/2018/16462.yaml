@@ -1,0 +1,14 @@
+---
+cve: 2018-16462
+title: CVE in apex-publish-static-files
+description: >
+    A command injection vulnerability in the apex-publish-static-files npm module version <2.0.1 which allows arbitrary shell command execution through a maliciously crafted argument.
+cvss_v2: 10.0
+references:
+    - https://hackerone.com/reports/405694
+affected:
+    - name: apex-publish-static-files
+      version:
+        - "<=2.0.0"
+      fixedin:
+        - ">=2.0.1"
