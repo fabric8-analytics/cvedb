@@ -9,7 +9,7 @@ references:
     - http://www.securityfocus.com/bid/105156
     - https://gitbox.apache.org/repos/asf?p=activemq.git;a=commit;h=d8c80a9
     - https://gitbox.apache.org/repos/asf?p=activemq.git;a=commitdiff;h=d8c80a9
-    https://gitbox.apache.org/repos/asf?p=activemq.git;a=commit;h=d25de5d
+    - https://gitbox.apache.org/repos/asf?p=activemq.git;a=commit;h=d25de5d
     - https://gitbox.apache.org/repos/asf?p=activemq.git;a=commitdiff;h=d25de5d
 affected:
     - groupId: org.apache.activemq
