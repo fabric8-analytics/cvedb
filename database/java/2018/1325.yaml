@@ -10,8 +10,10 @@ affected:
     - groupId: com.googlecode.wicket-jquery-ui
       artifactId: wicket-jquery-ui-plugins
       version:
-        - "==6.29.0"
-        - "<=7.10.1,7.0.0-M4"
+        - "<=6.29.0"
+        - "<=7.10.1,7.0.0-M3"
+        - "<=8.0.0-M9.1,8.0.0-M1"
       fixedin:
-        - "<=7.0.0-M3,6.29.1"
+        - ">=6.29.1"
         - ">=7.10.2"
+        - ">=8.0.0-M9.2"
