@@ -1,0 +1,15 @@
+---
+cve: 2018-8028
+title: CVE in Apache Sentry
+description: >
+    An authenticated user can execute ALTER TABLE EXCHANGE PARTITIONS without being authorized by Apache Sentry before 2.0.1. This can allow an attacker unauthorized access to the partitioned data of a Sentry protected table and can allow an attacker to remove data from a Sentry protected table.
+cvss_v2: 6.5
+references:
+    - https://cwiki.apache.org/confluence/display/SENTRY/Vulnerabilities+found+in+Apache+Sentry
+affected:
+    - groupId: org.apache.sentry
+      artifactId: sentry-binding-hive
+      version:
+        - "<=2.0.0"
+      fixedin:
+        - ">=2.0.1"
