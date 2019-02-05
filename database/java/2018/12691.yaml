@@ -1,6 +1,6 @@
 ---
 cve: 2018-12691
-title: CVE in org.onosproject:onos-apps-acl
+title: CVE in ONOS
 description: >
     Time-of-check to time-of-use (TOCTOU) race condition in org.onosproject.acl (aka the access control application) in ONOS v1.13 and earlier allows attackers to bypass network access control via data plane packet injection.
 cvss_v2: 4.3
@@ -9,8 +9,8 @@ references:
     - https://wiki.onosproject.org/display/ONOS/Security+advisories
 affected:
     - groupId: org.onosproject
-      artifactId: onos-apps-acl
+      artifactId: onos-app-acl
       version:
-        - "<=1.8.9"
+        - "<=1.13.0"
       fixedin:
-        []
+        - ">=1.13.1"
