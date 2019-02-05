@@ -12,5 +12,3 @@ affected:
       artifactId: h2
       version:
         - "<=1.4.197"
-      fixedin:
-        []
