@@ -1,0 +1,15 @@
+---
+cve: 2018-13003
+title: CVE in net.opentsdb:opentsdb
+description: >
+    An issue was discovered in OpenTSDB 2.3.0. There is XSS in parameter 'type' to the /suggest URI.
+cvss_v2: 4.3
+references:
+    - https://github.com/OpenTSDB/opentsdb/issues/1241
+affected:
+    - groupId: net.opentsdb
+      artifactId: opentsdb
+      version:
+        - "<=2.3.0,2.3.0-RC1"
+      fixedin:
+        - ">=2.3.1"
