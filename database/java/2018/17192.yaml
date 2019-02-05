@@ -6,10 +6,13 @@ description: >
 cvss_v2: 4.3
 references:
     - https://nifi.apache.org/security.html#CVE-2018-17192
+    - https://github.com/apache/nifi/pull/2759
+    - https://github.com/apache/nifi/pull/2791
+    - https://github.com/apache/nifi/pull/2812
 affected:
     - groupId: org.apache.nifi
       artifactId: nifi-jetty
       version:
-        - "<=1.6.0,1.0.0-BETA"
+        - "<=1.6.0"
       fixedin:
-        - ">=1.7.0"
+        - ">=1.8.0"
