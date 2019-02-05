@@ -1,6 +1,6 @@
 ---
 cve: 2018-8038
-title: CVE in org.apache.cxf.fediz:fediz-core
+title: CVE in Apache CXF Fediz
 description: >
     Versions of Apache CXF Fediz prior to 1.4.4 do not fully disable Document Type Declarations (DTDs) when either parsing the Identity Provider response in the application plugins, or in the Identity Provider itself when parsing certain XML-based parameters.
 cvss_v2: 5.0
