@@ -6,6 +6,8 @@ description: >
 cvss_v2: 5.8
 references:
     - https://pivotal.io/security/cve-2018-15801
+    - https://github.com/spring-projects/spring-security/issues/6073
+    - https://github.com/spring-projects/spring-security/commit/5478b74116a91421bd24e5e5f3d9be5f603d0f9e
 affected:
     - groupId: org.springframework.security
       artifactId: spring-security-oauth2-jose
