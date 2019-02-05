@@ -11,4 +11,4 @@ affected:
     - groupId: com.h2database
       artifactId: h2
       version:
-        - "<=1.4.197"
+        - "==1.4.197"
