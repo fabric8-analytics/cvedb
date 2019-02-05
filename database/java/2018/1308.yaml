@@ -1,6 +1,6 @@
 ---
 cve: 2018-1308
-title: CVE in org.apache.solr:solr-dataimporthandler
+title: CVE in Apache Solr
 description: >
     This vulnerability in Apache Solr 1.2 to 6.6.2 and 7.0.0 to 7.2.1 relates to an XML external entity expansion (XXE) in the `&dataConfig=<inlinexml>` parameter of Solr's DataImportHandler. It can be used as XXE using file/ftp/http protocols in order to read arbitrary local files from the Solr server or the internal network.
 cvss_v2: 5.0
@@ -13,8 +13,9 @@ affected:
     - groupId: org.apache.solr
       artifactId: solr-dataimporthandler
       version:
-        - "<=6.6.2"
+        - "<=6.6.2,1.2"
         - "<=7.2.1,7.0.0"
       fixedin:
         - "<=6.6.5,6.6.3"
         - ">=7.3.0"
+        - "<=6.5.1"
