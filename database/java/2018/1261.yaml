@@ -11,6 +11,6 @@ affected:
     - groupId: org.springframework.integration
       artifactId: spring-integration-zip
       version:
-        - "<=1.0.0.RELEASE"
+        - "==1.0.0.RELEASE"
       fixedin:
         - ">=1.0.1.RELEASE"
