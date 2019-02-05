@@ -7,6 +7,8 @@ cvss_v2: 5.0
 references:
     - http://www.securityfocus.com/bid/104215
     - https://orc.apache.org/security/CVE-2018-8015/
+    - https://github.com/apache/orc/pull/266
+    - https://jira.apache.org/jira/browse/ORC-360
 affected:
     - groupId: org.apache.orc
       artifactId: orc-core
