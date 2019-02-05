@@ -1,0 +1,22 @@
+---
+cve: 2018-18240
+title: CVE in Pippo
+description: >
+    Pippo through 1.11.0 allows remote code execution via a command to java.lang.ProcessBuilder because the XstreamEngine component does not use XStream's available protection mechanisms to restrict unmarshalling.
+cvss_v2: 7.5
+references:
+    - https://github.com/pippo-java/pippo/issues/454
+    - https://github.com/pippo-java/pippo/commit/c6b26551a82d2dd32097fcb17c13c3b830916296
+affected:
+    - groupId: ro.pippo
+      artifactId: pippo-core
+      version:
+        - "<=1.11.0"
+      fixedin:
+        - ">=1.12.0"
+    - groupId: ro.pippo
+      artifactId: pippo-session
+      version:
+        - "<=1.11.0"
+      fixedin:
+        - ">=1.12.0"
