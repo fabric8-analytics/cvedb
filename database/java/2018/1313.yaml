@@ -8,6 +8,7 @@ references:
     - http://www.securityfocus.com/bid/104140
     - https://markmail.org/message/akkappppxcdqrgxk
     - https://www.oracle.com/technetwork/security-advisory/cpujan2019-5072801.html
+    - https://github.com/apache/derby/commit/a2027c64e185a9ce46929f352e2db03371c1f95b
 affected:
     - groupId: org.apache.derby
       artifactId: derby
