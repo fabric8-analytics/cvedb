@@ -9,18 +9,9 @@ references:
 affected:
     - groupId: org.cloudfoundry.identity
       artifactId: cloudfoundry-identity-uaa
-      version:        
-        - "<=4.12.2,4.12.0"
-        - "<=4.13.4,4.13.0"        
+      version:
+        - "<=4.12.1"
+        - "<=4.13.3,4.13.0"        
       fixedin:
-        - "<=4.12.4,4.12.3"
-        - ">=4.14.0"
-        
-    - groupId: org.cloudfoundry.identity
-      artifactId: <cf-dependency>
-      version:        
-        - "<=v1.31.0,v1.27.0"        
-      fixedin:
-        - ">=v1.32.0"
-
-
+        - ">=4.12.2"
+        - ">=4.13.4"
