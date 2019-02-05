@@ -7,6 +7,8 @@ cvss_v2: 5.8
 references:
     - http://www.securityfocus.com/bid/104418
     - https://lists.apache.org/thread.html/613b2fca8bcd0a3b12c0b763ea8f7cf62e422e9f79fce6cfa5b08a58@%3Cdev.storm.apache.org%3E
+    - https://jira.apache.org/jira/browse/STORM-3052
+    - https://github.com/apache/storm/commit/0fc6b522487c061f89e8cdacf09f722d3f20589a
 affected:
     - groupId: org.apache.storm
       artifactId: storm-core
