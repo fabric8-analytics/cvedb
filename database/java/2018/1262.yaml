@@ -1,6 +1,6 @@
 ---
 cve: 2018-1262
-title: CVE in org.cloudfoundry.identity:cloudfoundry-identity-uaa
+title: CVE in Cloud Foundry Foundation UAA
 description: >
     Cloud Foundry Foundation UAA, versions 4.12.X and 4.13.X, introduced a feature which could allow privilege escalation across identity zones for clients performing offline validation. A zone administrator could configure their zone to issue tokens which impersonate another zone, granting up to admin privileges in the impersonated zone for clients performing offline token validation.
 cvss_v2: 6.5
@@ -9,14 +9,18 @@ references:
 affected:
     - groupId: org.cloudfoundry.identity
       artifactId: cloudfoundry-identity-uaa
-      version:
-        - "==4.12.0"
-        - "==4.12.1"
-        - "==4.12.2"
-        - "==4.13.0"
-        - "==4.13.1"
-        - "==4.13.3"
-        - "==4.13.4"
+      version:        
+        - "<=4.12.2,4.12.0"
+        - "<=4.13.4,4.13.0"        
       fixedin:
         - "<=4.12.4,4.12.3"
         - ">=4.14.0"
+        
+    - groupId: org.cloudfoundry.identity
+      artifactId: <cf-dependency>
+      version:        
+        - "<=v1.31.0,v1.27.0"        
+      fixedin:
+        - ">=v1.32.0"
+
+
