@@ -9,6 +9,7 @@ references:
     - https://lists.debian.org/debian-lts-announce/2018/04/msg00025.html
     - https://mail-archives.apache.org/mod_mbox/www-announce/201804.mbox/%3C000001d3cf68%245ac69af0%241053d0d0%24%40apache.org%3E
     - https://www.debian.org/security/2018/dsa-4194
+    - https://github.com/apache/lucene-solr/commit/02c693f3713add1b4891cbaa87127de3a55c10f7
 affected:
     - groupId: org.apache.solr
       artifactId: solr-dataimporthandler
@@ -16,6 +17,5 @@ affected:
         - "<=6.6.2,1.2"
         - "<=7.2.1,7.0.0"
       fixedin:
-        - "<=6.6.5,6.6.3"
-        - ">=7.3.0"
-        - "<=6.5.1"
+        - ">=6.6.3"
+        - ">=7.2.2"
