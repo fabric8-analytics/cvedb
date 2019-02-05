@@ -1,0 +1,19 @@
+---
+cve: 2018-1325
+title: CVE in com.googlecode.wicket-jquery-ui:wicket-jquery-ui-plugins
+description: >
+    In Apache wicket-jquery-ui <= 6.29.0, <= 7.10.1, <= 8.0.0-M9.1, JS code created in WYSIWYG editor will be executed on display.
+cvss_v2: 4.3
+references:
+    - https://markmail.org/message/6bxjyaolehhq7jrl
+affected:
+    - groupId: com.googlecode.wicket-jquery-ui
+      artifactId: wicket-jquery-ui-plugins
+      version:
+        - "<=6.29.0"
+        - "<=7.10.1,7.0.0-M3"
+        - "<=8.0.0-M9.1,8.0.0-M1"
+      fixedin:
+        - ">=6.29.1"
+        - ">=7.10.2"
+        - ">=8.0.0-M9.2"
