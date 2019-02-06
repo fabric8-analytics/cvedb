@@ -12,6 +12,6 @@ affected:
     - groupId: org.springframework.security
       artifactId: spring-security-oauth2-jose
       version:
-        - "<5.1.2.RELEASE,5.1.0.RELEASE"
+        - "<=5.1.1.RELEASE,5.1.0.RELEASE"
       fixedin:
         - ">=5.1.2.RELEASE"
