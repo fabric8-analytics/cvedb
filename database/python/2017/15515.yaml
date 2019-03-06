@@ -1,0 +1,15 @@
+---
+cve: 2017-15515
+title: CVE in alerta-server
+description: >
+    NetApp SnapCenter Server prior to 4.0 is susceptible to cross site scripting vulnerability that could allow a privileged user to inject arbitrary scripts into the custom secondary policy label field.
+cvss_v2: 3.5
+references:
+    - http://www.securityfocus.com/bid/107272
+    - https://security.netapp.com/advisory/ntap-20190304-0002/
+affected:
+    - name: alerta-server
+      version:
+        - "<=3.3.7"
+      fixedin:
+        - ">=4.0.0"
