@@ -1,0 +1,15 @@
+---
+cve: 2018-20235
+title: CVE in mercurial-bitbucketize
+description: >
+    There was an argument injection vulnerability in Atlassian Sourcetree for Windows from version 0.5a before version 3.0.15 via filenames in Mercurial repositories. A remote attacker with permission to commit to a Mercurial repository linked in Sourcetree for Windows is able to exploit this issue to gain code execution on the system.
+cvss_v2: 9.0
+references:
+    - http://www.securityfocus.com/bid/107407
+    - https://jira.atlassian.com/browse/SRCTREEWIN-11289
+affected:
+    - name: mercurial-bitbucketize
+      version:
+        - "<=0.9.2"
+      fixedin:
+        []
