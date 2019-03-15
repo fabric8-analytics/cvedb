@@ -1,0 +1,14 @@
+---
+cve: 2019-0129
+title: CVE in bx-utility
+description: >
+    Improper permissions for Intel(R) USB 3.0 Creator Utility all versions may allow an authenticated user to potentially enable escalation of privilege via local access.
+cvss_v2: 4.6
+references:
+    - https://www.intel.com/content/www/us/en/security-center/advisory/INTEL-SA-00229.html
+affected:
+    - name: bx-utility
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
