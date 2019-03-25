@@ -1,0 +1,17 @@
+---
+cve: 2019-0244
+title: CVE in gp-crm-ui
+description: >
+    SAP CRM WebClient UI (fixed in SAPSCORE 1.12; S4FND 1.02; WEBCUIF 7.31, 7.46, 7.47, 7.48, 8.0, 8.01) does not sufficiently encode user-controlled inputs, resulting in Cross-Site Scripting (XSS) vulnerability.
+cvss_v2: 3.5
+references:
+    - http://www.securityfocus.com/bid/106473
+    - https://launchpad.support.sap.com/#/notes/2588763
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=509151985
+affected:
+    - name: gp-crm-ui
+      version:
+        - "<=1.2.0,1.2.0"
+      fixedin:
+        - ">=1.3.0"
+        - "<=1.1.0,1.0.0"

@@ -1,0 +1,17 @@
+---
+cve: 2019-0243
+title: CVE in hana-ui
+description: >
+    Under some circumstances, masterdata maintenance in SAP BW/4HANA (fixed in DW4CORE version 1.0 (SP08)) does not perform necessary authorization checks for an authenticated user, resulting in escalation of privileges.
+cvss_v2: 6.5
+references:
+    - http://www.securityfocus.com/bid/106467
+    - https://launchpad.support.sap.com/#/notes/2727623
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=509151985
+affected:
+    - name: hana-ui
+      version:
+        - "<=1.0.0,1.0.0"
+      fixedin:
+        - ">=1.0.1"
+        - "<=0.0.1,0.0.1"
