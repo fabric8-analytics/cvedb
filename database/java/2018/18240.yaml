@@ -6,7 +6,7 @@ description: >
 cvss_v2: 7.5
 references:
     - https://github.com/pippo-java/pippo/issues/454
-    - https://github.com/pippo-java/pippo/commit/c6b26551a82d2dd32097fcb17c13c3b830916296
+    - https://github.com/pippo-java/pippo/commit/0b889ecc532fd273acd91b15ebb5d1c3851099eb
 affected:
     - groupId: ro.pippo
       artifactId: pippo-core
@@ -15,7 +15,7 @@ affected:
       fixedin:
         - ">=1.12.0"
     - groupId: ro.pippo
-      artifactId: pippo-session
+      artifactId: pippo-xstream
       version:
         - "<=1.11.0"
       fixedin:
