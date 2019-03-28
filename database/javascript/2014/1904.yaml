@@ -1,0 +1,23 @@
+---
+cve: 2014-1904
+title: CVE in css-spring
+description: >
+    Cross-site scripting (XSS) vulnerability in web/servlet/tags/form/FormTag.java in Spring MVC in Spring Framework 3.0.0 before 3.2.8 and 4.0.0 before 4.0.2 allows remote attackers to inject arbitrary web script or HTML via the requested URI in a default action.
+cvss_v2: 4.3
+references:
+    - http://docs.spring.io/spring/docs/3.2.8.RELEASE/changelog.txt
+    - http://rhn.redhat.com/errata/RHSA-2014-0400.html
+    - http://seclists.org/fulldisclosure/2014/Mar/101
+    - http://secunia.com/advisories/57915
+    - http://www.gopivotal.com/security/cve-2014-1904
+    - http://www.securityfocus.com/archive/1/531422/100/0/threaded
+    - http://www.securityfocus.com/bid/66137
+    - https://github.com/spring-projects/spring-framework/commit/741b4b229ae032bd17175b46f98673ce0bd2d485
+    - https://jira.springsource.org/browse/SPR-11426
+affected:
+    - name: css-spring
+      version:
+        - "<=4.0.0,3.0.0"
+      fixedin:
+        - ">=4.1.0"
+        - "<=2.1.1,2.0.0"
