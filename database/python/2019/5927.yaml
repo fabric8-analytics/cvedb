@@ -1,0 +1,15 @@
+---
+cve: 2019-5927
+title: CVE in directory-components
+description: >
+    Directory traversal vulnerability in 'an' App for iOS Version 3.2.0 and earlier allows remote attackers to read arbitrary files via unspecified vectors.
+cvss_v2: 5.0
+references:
+    - https://jvn.jp/en/jp/JVN60497148/index.html
+    - https://weban.jp/contents/c/smartphone_apri/
+affected:
+    - name: directory-components
+      version:
+        - "<=3.2.0"
+      fixedin:
+        - ">=3.3.0"
