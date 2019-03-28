@@ -1,6 +1,6 @@
 ---
 cve: 2016-3088
-title: CVE in Apache ActiveMQ Fileserver
+title: CVE in org.apache.activemq:activemq-http
 description: >
     The Fileserver web application in Apache ActiveMQ 5.x before 5.14.0 allows remote attackers to upload and execute arbitrary files via an HTTP PUT followed by an HTTP MOVE request.
 cvss_v2: 7.5
@@ -10,9 +10,12 @@ references:
     - http://www.securitytracker.com/id/1035951
     - http://www.zerodayinitiative.com/advisories/ZDI-16-356
     - http://www.zerodayinitiative.com/advisories/ZDI-16-357
+    - https://lists.apache.org/thread.html/a859563f05fbe7c31916b3178c2697165bd9bbf5a65d1cf62aef27d2@%3Ccommits.activemq.apache.org%3E
     - https://www.exploit-db.com/exploits/42283/
 affected:
     - groupId: org.apache.activemq
-      artifactId: activemq-fileserver
+      artifactId: activemq-http
       version:
         - "<=5.13.3"
+      fixedin:
+        - ">=5.13.4"
