@@ -1,0 +1,21 @@
+---
+cve: 2018-10928
+title: CVE in rpc-engine
+description: >
+    A flaw was found in RPC request using gfs3_symlink_req in glusterfs server which allows symlink destinations to point to file paths outside of the gluster volume. An authenticated attacker could use this flaw to create arbitrary symlinks pointing anywhere on the server and execute arbitrary code on glusterfs server nodes.
+cvss_v2: 6.5
+references:
+    - https://access.redhat.com/errata/RHSA-2018:2607
+    - https://access.redhat.com/errata/RHSA-2018:2608
+    - https://access.redhat.com/errata/RHSA-2018:3470
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-10928
+    - https://lists.debian.org/debian-lts-announce/2018/09/msg00021.html
+affected:
+    - name: rpc-engine
+      version:
+        - "<=3.0.0,3.0.0"
+        - "<=4.1.2,4.1.0"
+      fixedin:
+        - ">=5.0.0"
+        - "<=4.0.2,3.1.0"
+        - "<=2.1.1,2.0.0"
