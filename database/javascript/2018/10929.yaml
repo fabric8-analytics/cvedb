@@ -1,0 +1,20 @@
+---
+cve: 2018-10929
+title: CVE in rpc-engine
+description: >
+    A flaw was found in RPC request using gfs2_create_req in glusterfs server. An authenticated attacker could use this flaw to create arbitrary files and execute arbitrary code on glusterfs server nodes.
+cvss_v2: 6.5
+references:
+    - http://www.securityfocus.com/bid/107577
+    - https://access.redhat.com/errata/RHSA-2018:2607
+    - https://access.redhat.com/errata/RHSA-2018:2608
+    - https://access.redhat.com/errata/RHSA-2018:3470
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-10929
+    - https://lists.debian.org/debian-lts-announce/2018/09/msg00021.html
+affected:
+    - name: rpc-engine
+      version:
+        - "<=4.1.2,4.1.0"
+      fixedin:
+        - ">=5.0.0"
+        - "<=4.0.2,2.0.0"
