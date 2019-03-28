@@ -1,0 +1,16 @@
+---
+cve: 2016-10744
+title: CVE in select2
+description: >
+    In Select2 through 4.0.5, as used in Snipe-IT and other products, rich selectlists allow XSS. This affects use cases with Ajax remote data loading when HTML templates are used to display listbox data.
+cvss_v2: 4.3
+references:
+    - https://github.com/select2/select2/issues/4587
+    - https://github.com/snipe/snipe-it/pull/6831
+    - https://github.com/snipe/snipe-it/pull/6831/commits/5848d9a10c7d62c73ff6a3858edfae96a429402a
+affected:
+    - name: select2
+      version:
+        - "<=4.0.5"
+      fixedin:
+        - ">=4.0.6-rc.0"
