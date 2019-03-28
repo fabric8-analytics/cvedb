@@ -9,9 +9,10 @@ references:
     - http://www.oracle.com/technetwork/security-advisory/cpujul2018-4258247.html
     - http://www.securityfocus.com/bid/95849
     - https://nodesecurity.io/advisories/55
+    - https://www.tenable.com/security/tns-2019-02
 affected:
     - name: moment
       version:
-        - "<=2.11.1"
+        - "<=2.24.0"
       fixedin:
-        - ">=2.11.2"
+        []
