@@ -1,6 +1,6 @@
 ---
 cve: 2016-0782
-title: CVE in Apache ActiveMQ
+title: CVE in org.apache.activemq:activemq-all
 description: >
     The administration web console in Apache ActiveMQ 5.x before 5.11.4, 5.12.x before 5.12.3, and 5.13.x before 5.13.2 allows remote authenticated users to conduct cross-site scripting (XSS) attacks and consequently obtain sensitive information from a Java memory dump via vectors related to creating a queue.
 cvss_v2: 3.5
@@ -11,14 +11,16 @@ references:
     - http://www.securitytracker.com/id/1035328
     - https://access.redhat.com/errata/RHSA-2016:1424
     - https://bugzilla.redhat.com/show_bug.cgi?id=1317516
+    - https://lists.apache.org/thread.html/a859563f05fbe7c31916b3178c2697165bd9bbf5a65d1cf62aef27d2@%3Ccommits.activemq.apache.org%3E
 affected:
     - groupId: org.apache.activemq
-      artifactId: activemq-web-console
+      artifactId: activemq-all
       version:
-        - "<=5.11.3,5.0.0"
+        - "<=5.11.3,5.1.0"
         - "<=5.12.2,5.12.0"
         - "<=5.13.1,5.13.0"
       fixedin:
-        - ">=5.11.4"
-        - ">=5.12.3"
         - ">=5.13.2"
+        - "<=5.12.3,5.12.3"
+        - "<=5.11.4,5.11.4"
+        - "<=5.0.0,4.1.2"
