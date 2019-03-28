@@ -8,6 +8,7 @@ references:
     - http://seclists.org/bugtraq/2016/Nov/40
     - http://www.securityfocus.com/bid/94247
     - https://dist.apache.org/repos/dist/release/tika/CHANGES-1.14.txt
+    - https://lists.apache.org/thread.html/e414754a6c57ce7194b731e211cd6b2cbb41f2c7000e3fb9c6b6ec78@%3Cdev.lucene.apache.org%3E
 affected:
     - groupId: org.apache.tika
       artifactId: tika-parsers
