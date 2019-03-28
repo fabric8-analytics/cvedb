@@ -1,0 +1,27 @@
+---
+cve: 2016-0734
+title: CVE in org.apache.servicemix.activemq:org.apache.servicemix.activemq.camel
+description: >
+    The web-based administration console in Apache ActiveMQ 5.x before 5.13.2 does not send an X-Frame-Options HTTP header, which makes it easier for remote attackers to conduct clickjacking attacks via a crafted web page that contains a (1) FRAME or (2) IFRAME element.
+cvss_v2: 4.3
+references:
+    - http://activemq.apache.org/security-advisories.data/CVE-2016-0734-announcement.txt
+    - http://www.openwall.com/lists/oss-security/2016/03/10/11
+    - http://www.securityfocus.com/bid/84321
+    - http://www.securitytracker.com/id/1035327
+    - https://access.redhat.com/errata/RHSA-2016:1424
+    - https://lists.apache.org/thread.html/a859563f05fbe7c31916b3178c2697165bd9bbf5a65d1cf62aef27d2@%3Ccommits.activemq.apache.org%3E
+affected:
+    - groupId: org.apache.servicemix.activemq
+      artifactId: org.apache.servicemix.activemq.camel
+      version:
+        - "<=5.1.0,5.1.0"
+        - "<=5.2.0,5.2.0"
+        - "<=5.5.1,5.3.0"
+        - "<=5.6.0,5.6.0"
+      fixedin:
+        - ">=5.6.1"
+        - "<=5.5.4,5.5.2"
+        - "<=5.2.2,5.2.1"
+        - "<=5.1.6,5.1.1"
+        - "<=5.0.6,5.0.1"
