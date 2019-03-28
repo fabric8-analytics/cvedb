@@ -1,0 +1,19 @@
+---
+cve: 2018-1323
+title: CVE in tomcat-watcher
+description: >
+    The IIS/ISAPI specific code in the Apache Tomcat JK ISAPI Connector 1.2.0 to 1.2.42 that normalised the requested path before matching it to the URI-worker map did not handle some edge cases correctly. If only a sub-set of the URLs supported by Tomcat were exposed via IIS, then it was possible for a specially constructed request to expose application functionality through the reverse proxy that was not intended for clients accessing Tomcat via the reverse proxy.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/103389
+    - https://access.redhat.com/errata/RHSA-2018:1843
+    - https://lists.apache.org/thread.html/6e146bce83578bd870893250ba8354e28f9d8e86c674c30dbeee529f@%3Cannounce.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/8d2a579bbd977c225c70cb23b0ec54865fb0dab5da3eff1e060c9935@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/ba661b0edd913b39ff129a32d855620dd861883ade05fd88a8ce517d@%3Cdev.tomcat.apache.org%3E
+affected:
+    - name: tomcat-watcher
+      version:
+        - "<=1.2.1,1.2.0"
+      fixedin:
+        - ">=2.0.0"
+        - "<=1.1.0,0.0.1"
