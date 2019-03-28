@@ -1,0 +1,14 @@
+---
+cve: 2016-9166
+title: CVE in directory-constants
+description: >
+    NetIQ eDirectory versions prior to 9.0.2, under some circumstances, could be susceptible to downgrade of communication security.
+cvss_v2: 5.0
+references:
+    - https://www.netiq.com/documentation/edirectory-9/edirectory902_releasenotes/data/edirectory902_releasenotes.html
+affected:
+    - name: directory-constants
+      version:
+        - "<=9.0.0"
+      fixedin:
+        - ">=9.1.0"
