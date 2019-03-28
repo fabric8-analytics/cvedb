@@ -22,7 +22,6 @@ affected:
     - groupId: com.openshift
       artifactId: openshift-restclient-java
       version:
-        - "<=5.9.1.Final,5.0.0-RC1"
+        - "<=5.12.9"
       fixedin:
-        - ">=5.9.2.Final"
-        - "<=4.0.5.Final,3.0.0.Final"
+        - ">=5.13.0"
