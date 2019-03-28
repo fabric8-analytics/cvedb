@@ -1,0 +1,16 @@
+---
+cve: 2017-16084
+title: CVE in list-n-stream
+description: >
+    list-n-stream is a server for static files to list and stream local videos. list-n-stream v0.0.10 or lower is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/list-n-stream
+    - https://nodesecurity.io/advisories/344
+    - https://nvd.nist.gov/vuln/detail/CVE-2017-16084
+affected:
+    - name: list-n-stream
+      version:
+        - "<=0.0.10"
+      fixedin:
+        - ">=0.0.11"

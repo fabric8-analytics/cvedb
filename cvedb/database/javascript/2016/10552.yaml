@@ -1,0 +1,12 @@
+---
+cve: 2016-10552
+title: CVE in igniteui
+description: >
+    igniteui 0.0.5 and earlier downloads JavaScript and CSS resources over insecure protocol.
+cvss_v2: 5.8
+references:
+    - https://nodesecurity.io/advisories/116
+affected:
+    - name: igniteui
+      version:
+        - "<=0.0.5"

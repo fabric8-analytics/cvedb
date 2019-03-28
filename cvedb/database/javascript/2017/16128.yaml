@@ -1,0 +1,12 @@
+---
+cve: 2017-16128
+title: CVE in npm-script-demo
+description: >
+    The module npm-script-demo opened a connection to a command and control server. It has been removed from the npm registry.
+cvss_v2: 10.0
+references:
+    - https://nodesecurity.io/advisories/481
+affected:
+    - name: npm-script-demo
+      version:
+        - "<=0.0.1-security"

@@ -1,0 +1,31 @@
+---
+cve: 2018-8014
+title: CORS filter has insecure defaults in Apache Tomcat
+description: >
+    The defaults settings for the CORS filter provided in Apache Tomcat 9.0.0.M1 to 9.0.8, 8.5.0 to 8.5.31, 8.0.0.RC1 to 8.0.52, 7.0.41 to 7.0.88 are insecure and enable 'supportsCredentials' for all origins. It is expected that users of the CORS filter will have configured it appropriately for their environment rather than using it in the default configuration. Therefore, it is expected that most users will not be impacted by this issue.
+cvss_v2: 7.5
+references:
+    - http://tomcat.apache.org/security-7.html
+    - http://tomcat.apache.org/security-8.html
+    - http://tomcat.apache.org/security-9.html
+    - http://www.oracle.com/technetwork/security-advisory/cpuoct2018-4428296.html
+    - http://www.securityfocus.com/bid/104203
+    - http://www.securitytracker.com/id/1040998
+    - http://www.securitytracker.com/id/1041888
+    - https://access.redhat.com/errata/RHSA-2018:2469
+    - https://access.redhat.com/errata/RHSA-2018:2470
+    - https://access.redhat.com/errata/RHSA-2018:3768
+    - https://lists.apache.org/thread.html/fbfb713e4f8a4c0f81089b89450828011343593800cae3fb629192b1@%3Cannounce.tomcat.apache.org%3E
+    - https://lists.debian.org/debian-lts-announce/2018/06/msg00008.html
+    - https://security.netapp.com/advisory/ntap-20181018-0002/
+    - https://usn.ubuntu.com/3665-1/
+affected:
+    - groupId: org.apache.tomcat
+      artifactId: tomcat-catalina
+      version:
+        - "<=7.0.88,7.0.41"
+        - "<=8.0.52,8.0.0-RC1"
+        - "<=8.5.31,8.5.0"
+        - "<=9.0.8,9.0.0.M1"
+      fixedin:
+        - ">=9.0.9"

@@ -1,0 +1,19 @@
+---
+cve: 2017-1000486
+title: CVE in org.primefaces:primefaces
+description: >
+    Primetek Primefaces 5.x is vulnerable to a weak encryption flaw resulting in remote code execution
+cvss_v2: 7.5
+references:
+    - http://blog.mindedsecurity.com/2016/02/rce-in-oracle-netbeans-opensource.html
+    - https://cryptosense.com/weak-encryption-flaw-in-primefaces/
+    - https://github.com/primefaces/primefaces/issues/1152
+    - https://github.com/primefaces/primefaces/commit/26e44eb7962cbdb6aa2f47eca0f230f3274358f0
+    - https://www.exploit-db.com/exploits/43733/
+affected:
+    - groupId: org.primefaces
+      artifactId: primefaces
+      version:
+        - "<=5.3"
+      fixedin:
+        - ">=6.0"

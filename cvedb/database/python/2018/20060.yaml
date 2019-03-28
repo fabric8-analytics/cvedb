@@ -1,0 +1,17 @@
+---
+cve: 2018-20060
+title: CVE in urllib3
+description: >
+    urllib3 before version 1.23 does not remove the Authorization HTTP header when following a cross-origin redirect (i.e., a redirect that differs in host, port, or scheme). This can allow for credentials in the Authorization header to be exposed to unintended hosts or transmitted in cleartext.
+cvss_v2: 5.0
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1649153
+    - https://github.com/urllib3/urllib3/blob/master/CHANGES.rst
+    - https://github.com/urllib3/urllib3/issues/1316
+    - https://github.com/urllib3/urllib3/pull/1346
+affected:
+    - name: urllib3
+      version:
+        - "<=1.22"
+      fixedin:
+        - ">=1.23"

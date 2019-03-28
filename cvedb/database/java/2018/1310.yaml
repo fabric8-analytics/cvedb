@@ -1,0 +1,15 @@
+---
+cve: 2018-1310
+title: CVE in Apache NiFi
+description: >
+    Apache NiFi JMS Deserialization issue because of ActiveMQ client vulnerability. Malicious JMS content could cause denial of service. See ActiveMQ CVE-2015-5254 announcement for more information. The fix to upgrade the activemq-client library to 5.15.3 was applied on the Apache NiFi 1.6.0 release. Users running a prior 1.x release should upgrade to the appropriate release.
+cvss_v2: 5.0
+references:
+    - https://nifi.apache.org/security.html#CVE-2018-1310
+affected:
+    - groupId: org.apache.nifi
+      artifactId: nifi-jms-processors
+      version:
+        - "<=1.5.0"
+      fixedin:
+        - ">=1.6.0"

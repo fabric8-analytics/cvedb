@@ -1,0 +1,14 @@
+---
+cve: 2018-14335
+title: CVE in com.h2database:h2
+description: >
+    An issue was discovered in H2 1.4.197. Insecure handling of permissions in the backup function allows attackers to read sensitive files (outside of their permissions) via a symlink to a fake database file.
+cvss_v2: 4.0
+references:
+    - https://gist.github.com/owodelta/9714faf9a86435cef5a99d4930eaee20
+    - https://www.exploit-db.com/exploits/45105/
+affected:
+    - groupId: com.h2database
+      artifactId: h2
+      version:
+        - "==1.4.197"

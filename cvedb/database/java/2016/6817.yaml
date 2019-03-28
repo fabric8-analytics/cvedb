@@ -1,0 +1,20 @@
+---
+cve: 2016-6817
+title: CVE in Apache Tomcat
+description: >
+    The HTTP/2 header parser in Apache Tomcat 9.0.0.M1 to 9.0.0.M11 and 8.5.0 to 8.5.6 entered an infinite loop if a header was received that was larger than the available buffer. This made a denial of service attack possible.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/94462
+    - http://www.securitytracker.com/id/1037330
+    - https://lists.apache.org/thread.html/a9f24571460af003071475b75f18cad81ebcc36fa7c876965a75e32a@%3Cannounce.tomcat.apache.org%3E
+    - https://security.netapp.com/advisory/ntap-20180607-0001/
+affected:
+    - groupId: org.apache.tomcat
+      artifactId: tomcat-coyote
+      version:
+        - "<=8.5.6,8.5.0"
+        - "<=9.0.0.M11,9.0.0.M1"
+      fixedin:
+        - ">=8.5.8"
+        - ">=9.0.0.M12"

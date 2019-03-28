@@ -1,0 +1,17 @@
+---
+cve: 2016-6805
+title: CVE in org.apache.ignite:ignite-core
+description: >
+    Apache Ignite before 1.9 allows man-in-the-middle attackers to read arbitrary files via XXE in modified update-notifier documents.
+cvss_v2: 4.3
+references:
+    - http://seclists.org/oss-sec/2017/q2/31
+    - http://www.securityfocus.com/bid/97509
+    - https://github.com/apache/ignite/commit/9c401b0dcfc6edb5cc83f6b35bc0d24db6f10347
+affected:
+    - groupId: org.apache.ignite
+      artifactId: ignite-core
+      version:
+        - "<=1.8.0,1.0.0"
+      fixedin:
+        - ">=1.9.0"

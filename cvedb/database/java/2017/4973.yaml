@@ -1,0 +1,13 @@
+---
+cve: 2017-4973
+title: CVE in org.cloudfoundry.identity:cloudfoundry-identity-uaa
+description: >
+    An issue was discovered in Cloud Foundry Foundation cf-release versions prior to v257; UAA release 2.x versions prior to v2.7.4.14, 3.6.x versions prior to v3.6.8, 3.9.x versions prior to v3.9.10, and other versions prior to v3.15.0; and UAA bosh release (uaa-release) 13.x versions prior to v13.12, 24.x versions prior to v24.7, and other versions prior to v30. A vulnerability has been identified with the groups endpoint in UAA allowing users to elevate their privileges.
+cvss_v2: 6.5
+references:
+    - https://www.cloudfoundry.org/cve-2017-4973/
+affected:
+    - groupId: org.cloudfoundry.identity
+      artifactId: cloudfoundry-identity-uaa
+      version:
+        - "<=3.15.0"

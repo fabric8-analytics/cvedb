@@ -1,0 +1,21 @@
+---
+cve: 2016-1494
+title: CVE in rsa
+description: >
+    The verify function in the RSA package for Python (Python-RSA) before 3.3 allows attackers to spoof signatures with a small public exponent via crafted signature padding, aka a BERserk attack.
+cvss_v2: 5.0
+references:
+    - http://lists.fedoraproject.org/pipermail/package-announce/2016-January/175897.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2016-January/175942.html
+    - http://lists.opensuse.org/opensuse-updates/2016-01/msg00032.html
+    - http://www.openwall.com/lists/oss-security/2016/01/05/1
+    - http://www.openwall.com/lists/oss-security/2016/01/05/3
+    - http://www.securityfocus.com/bid/79829
+    - https://bitbucket.org/sybren/python-rsa/pull-requests/14/security-fix-bb06-attack-in-verify-by/diff
+    - https://blog.filippo.io/bleichenbacher-06-signature-forgery-in-python-rsa/
+affected:
+    - name: rsa
+      version:
+        - "<=3.2.3"
+      fixedin:
+        - ">=3.3"

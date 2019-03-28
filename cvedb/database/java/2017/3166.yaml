@@ -1,0 +1,25 @@
+---
+cve: 2017-3166
+title: CVE in Apache Hadoop
+description: >
+    In Apache Hadoop versions 2.6.1 to 2.6.5, 2.7.0 to 2.7.3, and 3.0.0-alpha1, if a file in an encryption zone with access permissions that make it world readable is localized via YARN's localization mechanism, that file will be stored in a world-readable location and can be shared freely with any application that requests to localize that file.
+cvss_v2: 4.6
+references:
+    - https://lists.apache.org/thread.html/2e16689b44bdd1976b6368c143a4017fc7159d1f2d02a5d54fe9310f@%3Cgeneral.hadoop.apache.org%3E
+    - https://github.com/apache/hadoop/commit/f01a69f84f4cc7d925d078a7ce32e5800da4e429
+affected:
+    - groupId: org.apache.hadoop
+      artifactId: hadoop-mapreduce-client-core
+      version:
+        - "==2.6.1"
+        - "==2.6.2"
+        - "==2.6.3"
+        - "==2.6.4"
+        - "==2.6.5"
+        - "==2.7.0"
+        - "==2.7.1"
+        - "==2.7.2"
+        - "==2.7.3"
+        - "<=3.0.0-alpha3"
+      fixedin:
+        - ">=3.0.0"

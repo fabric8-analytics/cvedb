@@ -1,0 +1,15 @@
+---
+cve: 2017-16029
+title: CVE in hostr
+description: >
+    hostr is a simple web server that serves up the contents of the current directory. There is a directory traversal vulnerability in hostr 2.3.5 and earlier that allows an attacker to read files outside the current directory by sending `../` in the url path for GET requests.
+cvss_v2: 5.0
+references:
+    - https://github.com/henrytseng/hostr/issues/8
+    - https://nodesecurity.io/advisories/303
+affected:
+    - name: hostr
+      version:
+        - "<=2.3.5"
+      fixedin:
+        - ">=2.3.6"

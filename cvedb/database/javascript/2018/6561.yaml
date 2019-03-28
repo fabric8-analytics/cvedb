@@ -1,0 +1,14 @@
+---
+cve: 2018-6561
+title: CVE in dojo
+description: >
+    dijit.Editor in Dojo Toolkit 1.13 allows XSS via the onload attribute of an SVG element.
+cvss_v2: 4.3
+references:
+    - https://github.com/imsebao/404team/blob/master/dijit_editor_xss.md
+affected:
+    - name: dojo
+      version:
+        - "==1.13.0"
+      fixedin:
+        - ">=1.13.1"

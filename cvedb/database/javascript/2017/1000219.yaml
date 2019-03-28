@@ -1,0 +1,15 @@
+---
+cve: 2017-1000219
+title: CVE in windows-cpu
+description: >
+    npm/KyleRoss windows-cpu all versions vulnerable to command injection resulting in code execution as Node.js user
+cvss_v2: 7.5
+references:
+    - https://nodesecurity.io/advisories/336
+affected:
+    - name: windows-cpu
+      version:
+        - "==0.1.1"
+        - "==0.1.2"
+      fixedin:
+        - ">=0.1.3"

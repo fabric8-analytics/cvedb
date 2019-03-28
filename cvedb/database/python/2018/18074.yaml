@@ -1,0 +1,20 @@
+---
+cve: 2018-18074
+title: CVE in requests
+description: >
+    The Requests package before 2.20.0 for Python sends an HTTP Authorization header to an http URI upon receiving a same-hostname https-to-http redirect, which makes it easier for remote attackers to discover credentials by sniffing the network.
+cvss_v2: 5.0
+references:
+    - http://docs.python-requests.org/en/master/community/updates/#release-and-version-history
+    - https://bugs.debian.org/910766
+    - https://github.com/requests/requests/commit/c45d7c49ea75133e52ab22a8e9e13173938e36ff
+    - https://github.com/requests/requests/issues/4716
+    - https://github.com/requests/requests/pull/4718
+    - https://usn.ubuntu.com/3790-1/
+    - https://usn.ubuntu.com/3790-2/
+affected:
+    - name: requests
+      version:
+        - "<=2.19.1"
+      fixedin:
+        - ">=2.20.0"

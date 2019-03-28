@@ -1,0 +1,15 @@
+---
+cve: 2013-1633
+title: CVE in setuptools
+description: >
+    easy_install in setuptools before 0.7 uses HTTP to retrieve packages from the PyPI repository, and does not perform integrity checks on package contents, which allows man-in-the-middle attackers to execute arbitrary code via a crafted response to the default use of the product.
+cvss_v2: 6.8
+references:
+    - http://www.reddit.com/r/Python/comments/17rfh7/warning_dont_use_pip_in_an_untrusted_network_a/
+    - https://pypi.python.org/pypi/setuptools/0.9.8#changes
+affected:
+    - name: setuptools
+      version:
+        - "<=0.6.49"
+      fixedin:
+        - ">=7.0"

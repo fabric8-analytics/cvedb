@@ -1,0 +1,18 @@
+---
+cve: 2018-17192
+title: CVE in org.apache.nifi:nifi-jetty
+description: >
+    The X-Frame-Options headers were applied inconsistently on some HTTP responses, resulting in duplicate or missing security headers. Some browsers would interpret these results incorrectly, allowing clickjacking attacks. Mitigation: The fix to consistently apply the security headers was applied on the Apache NiFi 1.8.0 release. Users running a prior 1.x release should upgrade to the appropriate release.
+cvss_v2: 4.3
+references:
+    - https://nifi.apache.org/security.html#CVE-2018-17192
+    - https://github.com/apache/nifi/pull/2759
+    - https://github.com/apache/nifi/pull/2791
+    - https://github.com/apache/nifi/pull/2812
+affected:
+    - groupId: org.apache.nifi
+      artifactId: nifi-jetty
+      version:
+        - "<=1.6.0"
+      fixedin:
+        - ">=1.8.0"

@@ -1,0 +1,18 @@
+---
+cve: 2016-8752
+title: CVE in Apache Atlas
+description: >
+    Apache Atlas versions 0.6.0 (incubating), 0.7.0 (incubating), and 0.7.1 (incubating) allow access to the webapp directory contents by pointing to URIs like /js and /img.
+cvss_v2: 5.0
+references:
+    - https://lists.apache.org/thread.html/f7435d66b840daa2a38ad1329d639b70f5a9476e7580ae885d422e86@%3Cdev.atlas.apache.org%3E
+    - https://github.com/apache/incubator-atlas/commit/2ea3a455ecc9ba7add35b76c15b7d3089e52f070
+affected:
+    - groupId: org.apache.atlas
+      artifactId: atlas-webapp
+      version:
+        - "<=0.6-incubating"
+        - "==0.7-incubating"
+        - "==0.7.1-incubating"
+      fixedin:
+        - ">=0.8-incubating"

@@ -1,0 +1,18 @@
+---
+cve: 2010-1666
+title: CVE in python-cjson
+description: >
+    Buffer overflow in Dan Pascu python-cjson 1.0.5, when UCS-4 encoding is enabled, allows context-dependent attackers to cause a denial of service (application crash) or possibly have unspecified other impact via vectors involving crafted Unicode input to the cjson.encode function.
+cvss_v2: 6.8
+references:
+    - http://secunia.com/advisories/40335
+    - http://secunia.com/advisories/40500
+    - http://www.debian.org/security/2010/dsa-2068
+    - http://www.vupen.com/english/advisories/2010/1774
+    - https://bugs.launchpad.net/ubuntu/+source/python-cjson/+bug/585274
+affected:
+    - name: python-cjson
+      version:
+        - "==1.0.5"
+      fixedin:
+        - ">=1.1.0"

@@ -1,0 +1,31 @@
+---
+cve: 2016-4434
+title: XXE in Apache Tika
+description: >
+    Apache Tika before 1.13 does not properly initialize the XML parser or choose handlers, which might allow remote attackers to conduct XML External Entity (XXE) attacks via vectors involving (1) spreadsheets in OOXML files and (2) XMP metadata in PDF and other file formats, a related issue to CVE-2016-2175.
+cvss_v2: 6.8
+references:
+    - https://mail-archives.apache.org/mod_mbox/tika-dev/201605.mbox/%3C1705136517.1175366.1464278135251.JavaMail.yahoo%40mail.yahoo.com%3E
+    - https://nvd.nist.gov/vuln/detail/CVE-2016-4434
+    - https://github.com/apache/tika/commit/3d491317c8c67ce9f159b531ea476e547e0dff83
+    - https://github.com/apache/tika/commit/172c58443550d256a94994aba24c6600a2397256
+    - https://github.com/apache/tika/commit/ab7c3253b8450c2d483edab60e4365fef0c4ae38
+affected:
+    - groupId: org.apache.tika
+      artifactId: tika-parsers
+      version:
+        - "<=1.12,0.10"
+      fixedin:
+        - ">=1.13"
+    - groupId: org.apache.tika
+      artifactId: tika-batch
+      version:
+        - "<=1.12,0.10"
+      fixedin:
+        - ">=1.13"
+    - groupId: org.apache.tika
+      artifactId: tika-core
+      version:
+        - "<=1.12,0.10"
+      fixedin:
+        - ">=1.13"

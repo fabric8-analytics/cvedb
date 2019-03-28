@@ -1,0 +1,14 @@
+---
+cve: 2017-16897
+title: CVE in passport-wsfed-saml2
+description: >
+    A vulnerability has been discovered in the Auth0 passport-wsfed-saml2 library affecting versions < 3.0.5. This vulnerability allows an attacker to impersonate another user and potentially elevate their privileges if the SAML identity provider does not sign the full SAML response (e.g., only signs the assertion within the response).
+cvss_v2: 9.3
+references:
+    - https://auth0.com/docs/security/bulletins/cve-2017-16897
+affected:
+    - name: passport-wsfed-saml2
+      version:
+        - "<=3.0.4"
+      fixedin:
+        - ">=3.0.5"

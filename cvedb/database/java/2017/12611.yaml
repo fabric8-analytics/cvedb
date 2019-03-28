@@ -1,0 +1,21 @@
+---
+cve: 2017-12611
+title: CVE in org.apache.struts:struts2-core
+description: >
+    In Apache Struts 2.0.1 through 2.3.33 and 2.5 through 2.5.10, using an unintentional expression in a Freemarker tag instead of string literals can lead to a RCE attack.
+cvss_v2: 7.5
+references:
+    - http://www.arubanetworks.com/assets/alert/ARUBA-PSA-2017-003.txt
+    - http://www.oracle.com/technetwork/security-advisory/alert-cve-2017-9805-3889403.html
+    - http://www.securityfocus.com/bid/100829
+    - https://kb.netapp.com/support/s/article/ka51A000000CgttQAC/NTAP-20170911-0001
+    - https://struts.apache.org/docs/s2-053.html
+affected:
+    - groupId: org.apache.struts
+      artifactId: struts2-core
+      version:
+        - "<=2.3.33,2.0.1"
+        - "<=2.5.10,2.5"
+      fixedin:
+        - ">=2.3.34"
+        - ">=2.5.12"

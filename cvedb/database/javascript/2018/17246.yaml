@@ -1,0 +1,14 @@
+---
+cve: 2018-17246
+title: CVE in kibana
+description: >
+    Kibana versions before 6.4.3 and 5.6.13 contain an arbitrary file inclusion flaw in the Console plugin. An attacker with access to the Kibana Console API could send a request that will attempt to execute javascript code. This could possibly lead to an attacker executing arbitrary commands with permissions of the Kibana process on the host system.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/106285
+    - https://discuss.elastic.co/t/elastic-stack-6-4-3-and-5-6-13-security-update/155594
+    - https://www.elastic.co/community/security
+affected:
+    - name: kibana
+      version:
+        - "<=5.1.1"

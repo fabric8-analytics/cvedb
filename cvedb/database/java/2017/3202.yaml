@@ -1,0 +1,16 @@
+---
+cve: 2017-3202
+title: CVE in Exadel amf-serializer
+description: >
+    The Java implementation of AMF3 deserializers used in Flamingo amf-serializer by Exadel, version 2.2.0, may allow instantiation of arbitrary classes via their public parameter-less constructor and subsequently call arbitrary Java Beans setter methods. The ability to exploit this vulnerability depends on the availability of classes in the class path that make use of deserialization. A remote attacker with the ability to spoof or control information may be able to send serialized Java objects with pre-set properties that result in arbitrary code execution when deserialized.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/97380
+    - http://www.securityweek.com/flaws-java-amf-libraries-allow-remote-code-execution
+    - https://codewhitesec.blogspot.com/2017/04/amf.html
+    - https://www.kb.cert.org/vuls/id/307983
+affected:
+    - groupId: com.exadel.flamingo.flex
+      artifactId: amf-serializer
+      version:
+        - "==2.2.0"

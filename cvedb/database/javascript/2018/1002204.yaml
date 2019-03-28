@@ -1,0 +1,18 @@
+---
+cve: 2018-1002204
+title: CVE in adm-zip
+description: >
+    adm-zip npm library before 0.4.9 is vulnerable to directory traversal, allowing attackers to write to arbitrary files via a ../ (dot dot slash) in a Zip archive entry that is mishandled during extraction. This vulnerability is also known as 'Zip-Slip'.
+cvss_v2: 4.3
+references:
+    - https://github.com/cthackers/adm-zip/commit/62f64004fefb894c523a7143e8a88ebe6c84df25
+    - https://github.com/cthackers/adm-zip/pull/212
+    - https://github.com/snyk/zip-slip-vulnerability
+    - https://snyk.io/research/zip-slip-vulnerability
+    - https://snyk.io/vuln/npm:adm-zip:20180415
+affected:
+    - name: adm-zip
+      version:
+        - "<=0.4.8"
+      fixedin:
+        - ">=0.4.9"

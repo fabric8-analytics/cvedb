@@ -1,0 +1,15 @@
+---
+cve: 2016-10550
+title: CVE in sequelize
+description: >
+    sequelize is an Object-relational mapping, or a middleman to convert things from Postgres, MySQL, MariaDB, SQLite and Microsoft SQL Server into usable data for NodeJS If user input goes into the `limit` or `order` parameters, a malicious user can put in their own SQL statements. This affects sequelize 3.16.0 and earlier.
+cvss_v2: 7.5
+references:
+    - https://github.com/sequelize/sequelize/pull/5167/commits/f282d85e60e3df5e57ecdb82adccb4eaef404f03
+    - https://nodesecurity.io/advisories/112
+affected:
+    - name: sequelize
+      version:
+        - "<=3.16.0"
+      fixedin:
+        - ">=3.17.0"

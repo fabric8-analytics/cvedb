@@ -1,0 +1,14 @@
+---
+cve: 2018-3750
+title: CVE in deep-extend
+description: >
+    The utilities function in all versions <= 0.5.0 of the deep-extend node module can be tricked into modifying the prototype of Object when the attacker can control part of the structure passed to this function. This can let an attacker add or modify existing properties that will exist on all objects.
+cvss_v2: 7.5
+references:
+    - https://hackerone.com/reports/311333
+affected:
+    - name: deep-extend
+      version:
+        - "<=0.5.0"
+      fixedin:
+        - ">=0.5.1"

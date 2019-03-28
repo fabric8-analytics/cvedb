@@ -1,0 +1,15 @@
+---
+cve: 2018-3722
+title: CVE in merge-deep
+description: >
+    merge-deep node module before 3.0.1 suffers from a Modification of Assumed-Immutable Data (MAID) vulnerability, which allows a malicious user to modify the prototype of "Object" via __proto__, causing the addition or modification of an existing property that will exist on all objects.
+cvss_v2: 6.5
+references:
+    - https://github.com/jonschlinkert/merge-deep/commit/2c33634da7129a5aefcc262d2fec2e72224404e5
+    - https://hackerone.com/reports/310708
+affected:
+    - name: merge-deep
+      version:
+        - "<=3.0.0"
+      fixedin:
+        - ">=3.0.1"

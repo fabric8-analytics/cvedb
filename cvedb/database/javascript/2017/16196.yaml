@@ -1,0 +1,13 @@
+---
+cve: 2017-16196
+title: CVE in quickserver
+description: >
+    quickserver is a simple static file server. quickserver is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/quickserver
+    - https://nodesecurity.io/advisories/433
+affected:
+    - name: quickserver
+      version:
+        - "<=1.1.0"

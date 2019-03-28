@@ -1,0 +1,27 @@
+---
+cve: 2018-8034
+title: CVE in Apache Tomcat - Security Constraint Bypass
+description: >
+    "The host name verification when using TLS with the WebSocket client was missing. It is now enabled by default. Versions Affected: Apache Tomcat 9.0.0.M1 to 9.0.9, 8.5.0 to 8.5.31, 8.0.0.RC1 to 8.0.52, and 7.0.35 to 7.0.88."
+cvss_v2: 5.0
+references:
+    - http://mail-archives.us.apache.org/mod_mbox/www-announce/201807.mbox/%3C20180722091057.GA70283@minotaur.apache.org%3E
+    - http://www.oracle.com/technetwork/security-advisory/cpuoct2018-4428296.html
+    - http://www.securityfocus.com/bid/104895
+    - http://www.securitytracker.com/id/1041374
+    - https://lists.debian.org/debian-lts-announce/2018/07/msg00047.html
+    - https://lists.debian.org/debian-lts-announce/2018/09/msg00001.html
+    - https://security.netapp.com/advisory/ntap-20180817-0001/
+    - https://usn.ubuntu.com/3723-1/
+    - https://www.debian.org/security/2018/dsa-4281
+    - http://svn.apache.org/viewvc?view=revision&revision=1833757
+affected:
+    - groupId: org.apache.tomcat
+      artifactId: tomcat-websocket
+      version:
+        - "<=7.0.88,7.0.35"
+        - "<=8.0.52,8.0.0-RC1"
+        - "<=8.5.31,8.5.0"
+        - "<=9.0.9,9.0.0.M1"
+      fixedin:
+        - ">=9.0.10"

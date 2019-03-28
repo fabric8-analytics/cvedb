@@ -1,0 +1,16 @@
+---
+cve: 2018-16406
+title: CVE in mayan-edms
+description: >
+    An issue was discovered in Mayan EDMS before 3.0.2. The Cabinets app has XSS via a crafted cabinet label.
+cvss_v2: 4.3
+references:
+    - https://gitlab.com/mayan-edms/mayan-edms/blob/master/HISTORY.rst
+    - https://gitlab.com/mayan-edms/mayan-edms/commit/48dfc06e49c7f773749e063f8cc69c95509d1c32
+    - https://gitlab.com/mayan-edms/mayan-edms/issues/495
+affected:
+    - name: mayan-edms
+      version:
+        - "<=3.0.1"
+      fixedin:
+        - ">=3.0.2"

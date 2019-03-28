@@ -1,0 +1,19 @@
+---
+cve: 2013-6480
+title: CVE in apache-libcloud
+description: >
+    Libcloud 0.12.3 through 0.13.2 does not set the scrub_data parameter for the destroy DigitalOcean API, which allows local users to obtain sensitive information by leveraging a new VM.
+cvss_v2: 2.1
+references:
+    - http://libcloud.apache.org/security.html
+    - http://lists.opensuse.org/opensuse-updates/2014-02/msg00015.html
+    - http://www.securityfocus.com/archive/1/530624/100/0/threaded
+    - http://www.securityfocus.com/bid/64617
+    - https://digitalocean.com/blog_posts/transparency-regarding-data-security
+    - https://github.com/fog/fog/issues/2525
+affected:
+    - name: apache-libcloud
+      version:
+        - "<=0.13.2,0.12.3"
+      fixedin:
+        - ">=0.13.3"

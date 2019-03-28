@@ -1,0 +1,17 @@
+---
+cve: 2017-1000424
+title: CVE in electron
+description: >
+    Github Electron version 1.6.4 - 1.6.11 and 1.7.0 - 1.7.5 is vulnerable to a URL Spoofing problem when opening PDFs in PDFium resulting loading arbitrary PDFs that a hacker can control.
+cvss_v2: 4.3
+references:
+    - https://github.com/electron/electron/pull/10008
+    - https://github.com/electron/electron/pull/10008/files
+affected:
+    - name: electron
+      version:
+        - "<=1.6.11,1.6.4"
+        - "<=1.7.5,1.7.0"
+      fixedin:
+        - ">=1.6.18"
+        - ">=1.7.6"

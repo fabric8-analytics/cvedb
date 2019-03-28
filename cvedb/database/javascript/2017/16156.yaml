@@ -1,0 +1,13 @@
+---
+cve: 2017-16156
+title: CVE in myprolyz
+description: >
+    myprolyz is a static file server. myprolyz is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/myprolyz
+    - https://nodesecurity.io/advisories/386
+affected:
+    - name: myprolyz
+      version:
+        - "<=1.1.0"

@@ -1,0 +1,16 @@
+---
+cve: 2018-12418
+title: CVE in com.github.junrar:junrar
+description: >
+    Archive.java in Junrar before 1.0.1, as used in Apache Tika and other products, is affected by a denial of service vulnerability due to an infinite loop when handling corrupt RAR files.
+cvss_v2: 4.3
+references:
+    - https://github.com/junrar/junrar/commit/ad8d0ba8e155630da8a1215cee3f253e0af45817
+    - https://github.com/junrar/junrar/pull/8
+affected:
+    - groupId: com.github.junrar
+      artifactId: junrar
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"

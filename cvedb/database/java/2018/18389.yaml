@@ -1,0 +1,15 @@
+---
+cve: 2018-18389
+title: CVE in org.neo4j:neo4j-security-enterprise
+description: >
+    Due to incorrect access control in Neo4j Enterprise Database Server 3.4.x before 3.4.9, the setting of LDAP for authentication with STARTTLS, and System Account for authorization, allows an attacker to log into the server by sending any valid username with an arbitrary password.
+cvss_v2: 7.5
+references:
+    - https://github.com/neo4j/neo4j/issues/12047
+affected:
+    - groupId: org.neo4j
+      artifactId: neo4j-security-enterprise
+      version:
+        - "<=3.4.8,3.4.0-alpha01"
+      fixedin:
+        - ">=3.4.9"

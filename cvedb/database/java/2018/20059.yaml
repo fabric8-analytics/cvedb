@@ -1,0 +1,15 @@
+---
+cve: 2018-20059
+title: CVE in ro.pippo:pippo-jaxb
+description: >
+    jaxb/JaxbEngine.java in Pippo 1.11.0 allows XXE.
+cvss_v2: 7.5
+references:
+    - https://github.com/pippo-java/pippo/issues/486
+affected:
+    - groupId: ro.pippo
+      artifactId: pippo-jaxb
+      version:
+        - "==1.11.0"
+      fixedin:
+        - ">=1.12.0"

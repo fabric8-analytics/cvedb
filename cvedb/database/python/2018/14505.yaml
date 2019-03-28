@@ -1,0 +1,15 @@
+---
+cve: 2018-14505
+title: CVE in mitmproxy
+description: >
+    mitmweb in mitmproxy v4.0.3 allows DNS Rebinding attacks, related to tools/web/app.py.
+cvss_v2: 6.8
+references:
+    - https://github.com/mitmproxy/mitmproxy/issues/3234
+    - https://github.com/mitmproxy/mitmproxy/pull/3243
+affected:
+    - name: mitmproxy
+      version:
+        - "==4.0.3"
+      fixedin:
+        - ">=4.0.4"

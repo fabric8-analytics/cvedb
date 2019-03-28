@@ -1,0 +1,15 @@
+---
+cve: 2018-3744
+title: CVE in html-pages
+description: >
+    The html-pages node module contains a path traversal vulnerabilities that allows an attacker to read any file from the server with cURL.
+cvss_v2: 5.0
+references:
+    - https://github.com/danielcardoso/html-pages/issues/2
+    - https://hackerone.com/reports/306607
+affected:
+    - name: html-pages
+      version:
+        - "==2.0.7"
+      fixedin:
+        - ">=2.0.8"

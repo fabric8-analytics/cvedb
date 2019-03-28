@@ -1,0 +1,16 @@
+---
+cve: 2015-1369
+title: CVE in sequelize
+description: >
+    SQL injection vulnerability in Sequelize before 2.0.0-rc7 for Node.js allows remote attackers to execute arbitrary SQL commands via the order parameter.
+cvss_v2: 7.5
+references:
+    - http://www.openwall.com/lists/oss-security/2015/01/23/2
+    - https://github.com/sequelize/sequelize/pull/2919
+    - https://nodesecurity.io/advisories/sequelize-sql-injection-order
+affected:
+    - name: sequelize
+      version:
+        - "<=2.0.0-rc6"
+      fixedin:
+        - ">=2.0.1-rc7"

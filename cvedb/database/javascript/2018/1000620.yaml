@@ -1,0 +1,14 @@
+---
+cve: 2018-1000620
+title: CVE in cryptiles
+description: >
+    Eran Hammer cryptiles version 4.1.1 earlier contains a CWE-331: Insufficient Entropy vulnerability in randomDigits() method that can result in An attacker is more likely to be able to brute force something that was supposed to be random.. This attack appear to be exploitable via Depends upon the calling application.. This vulnerability appears to have been fixed in 4.1.2.
+cvss_v2: 5.0
+references:
+    - https://github.com/hapijs/cryptiles/issues/34
+affected:
+    - name: cryptiles
+      version:
+        - "<=4.1.1"
+      fixedin:
+        - ">=4.1.2"

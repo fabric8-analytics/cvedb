@@ -1,0 +1,15 @@
+---
+cve: 2018-18831
+title: CVE in net.mingsoft:ms-mcms
+description: >
+    An issue was discovered in com\mingsoft\cms\action\GeneraterAction.java in MCMS 4.6.5. An attacker can write a .jsp file (in the position parameter) to an arbitrary directory via a ../ Directory Traversal in the url parameter.
+cvss_v2: 5.0
+references:
+    - https://gitee.com/mingSoft/MCMS/issues/IO0K0
+affected:
+    - groupId: net.mingsoft
+      artifactId: ms-mcms
+      version:
+        - "<=4.6.5"
+      fixedin:
+        []

@@ -1,0 +1,18 @@
+---
+cve: 2015-3271
+title: CVE in Apache Tika
+description: >
+    Apache Tika server (aka tika-server) in Apache Tika 1.9 might allow remote attackers to read arbitrary files via the HTTP fileUrl header.
+cvss_v2: 5.0
+references:
+    - https://lists.apache.org/thread.html/d2b3e7afb0251fac95fdee9817423cbc91e3d99a848c25a51d91c1e8@1439485507@%3Cdev.tika.apache.org%3E
+    - https://issues.apache.org/jira/browse/TIKA-1690
+    - https://github.com/apache/tika/commit/98672cdd92b6325ff78c763955a7c045b364095b
+    - https://nvd.nist.gov/vuln/detail/CVE-2015-3271
+affected:
+    - groupId: org.apache.tika
+      artifactId: tika-server
+      version:
+        - "==1.9"
+      fixedin:
+        - ">=1.10"

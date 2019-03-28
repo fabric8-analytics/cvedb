@@ -1,0 +1,16 @@
+---
+cve: 2016-10707
+title: CVE in jquery
+description: >
+    jQuery 3.0.0-rc.1 is vulnerable to Denial of Service (DoS) due to removing a logic that lowercased attribute names. Any attribute getter using a mixed-cased name for boolean attributes goes into an infinite recursion, exceeding the stack call limit.
+cvss_v2: 5.0
+references:
+    - https://github.com/jquery/jquery/issues/3133
+    - https://github.com/jquery/jquery/pull/3134
+    - https://snyk.io/vuln/npm:jquery:20160529
+affected:
+    - name: jquery
+      version:
+        - "==3.0.0-rc1"
+      fixedin:
+        - ">=3.0.0"

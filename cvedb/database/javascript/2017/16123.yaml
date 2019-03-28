@@ -1,0 +1,14 @@
+---
+cve: 2017-16123
+title: CVE in welcomyzt
+description: >
+    welcomyzt is a simple file server. welcomyzt is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/pooledwebsocket
+    - https://nodesecurity.io/advisories/388
+
+affected:
+    - name: welcomyzt
+      version:
+        - "<=1.1.0"

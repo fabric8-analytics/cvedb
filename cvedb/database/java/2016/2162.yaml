@@ -1,0 +1,17 @@
+---
+cve: 2016-2162
+title: CVE in Apache Struts
+description: >
+    Apache Struts 2.x before 2.3.25 does not sanitize text in the Locale object constructed by I18NInterceptor, which might allow remote attackers to conduct cross-site scripting (XSS) attacks via unspecified vectors involving language display.
+cvss_v2: 4.3
+references:
+    - http://struts.apache.org/docs/s2-030.html
+    - http://www.securityfocus.com/bid/85070
+    - http://www.securitytracker.com/id/1035272
+affected:
+    - groupId: org.apache.struts.xwork
+      artifactId: xwork-core
+      version:
+        - "<=2.3.24.1"
+      fixedin:
+        - ">=2.3.28"

@@ -1,0 +1,24 @@
+---
+cve: 2016-8741
+title: CVE in Apache Qpid Broker
+description: >
+    The Apache Qpid Broker for Java can be configured to use different so called AuthenticationProviders to handle user authentication. Among the choices are the SCRAM-SHA-1 and SCRAM-SHA-256 AuthenticationProvider types. It was discovered that these AuthenticationProviders in Apache Qpid Broker for Java 6.0.x before 6.0.6 and 6.1.x before 6.1.1 prematurely terminate the SCRAM SASL negotiation if the provided user name does not exist thus allowing remote attacker to determine the existence of user accounts. The Vulnerability does not apply to AuthenticationProviders other than SCRAM-SHA-1 and SCRAM-SHA-256.
+cvss_v2: 5.0
+references:
+    - http://qpid.2158936.n2.nabble.com/CVE-2016-8741-Apache-Qpid-Broker-for-Java-Information-Leakage-td7657025.html
+    - http://www.securityfocus.com/bid/95136
+    - http://www.securitytracker.com/id/1037537
+    - https://issues.apache.org/jira/browse/QPID-7599
+affected:
+    - groupId: org.apache.qpid
+      artifactId: qpid-broker-core
+      version:
+        - "==6.0.1"
+        - "==6.0.2"
+        - "==6.0.3"
+        - "==6.0.4"
+        - "==6.0.5"
+        - "==6.1.0"
+      fixedin:
+        - ">=6.0.6"
+        - ">=6.1.1"

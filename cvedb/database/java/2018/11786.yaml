@@ -1,0 +1,18 @@
+---
+cve: 2018-11786
+title: CVE in Apache Karaf
+description: >
+    In Apache Karaf prior to 4.2.0 release, if the sshd service in Karaf is left on so an administrator can manage the running instance, any user with rights to the Karaf console can pivot and read/write any file on the file system to which the Karaf process user has access. This can be locked down a bit by using chroot to change the root directory to protect files outside of the Karaf install directory; it can be further locked down by defining a security manager policy that limits file system access to those directories beneath the Karaf home that are necessary for the system to run. However, this still allows anyone with ssh access to the Karaf process to read and write a large number of files as the Karaf process user.
+cvss_v2: 9.0
+references:
+    - http://karaf.apache.org/security/cve-2018-11786.txt
+    - https://issues.apache.org/jira/browse/KARAF-5427
+    - https://lists.apache.org/thread.html/5b7ac762c6bbe77ac5d9389f093fc6dbf196c36d788e3d7629e6c1d9@%3Cdev.karaf.apache.org%3E
+    - https://github.com/apache/karaf/commit/103f33105a58c899706a0687bb334678e2fa1ee7
+affected:
+    - groupId: org.apache.karaf.shell
+      artifactId: org.apache.karaf.shell.core
+      version:
+        - "<=4.1.7"
+      fixedin:
+        - ">=4.2.0"

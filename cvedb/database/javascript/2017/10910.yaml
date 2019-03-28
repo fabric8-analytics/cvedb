@@ -1,0 +1,16 @@
+---
+cve: 2017-10910
+title: CVE in mqtt
+description: >
+    MQTT.js 2.x.x prior to 2.15.0 issue in handling PUBLISH tickets may lead to an attacker causing a denial-of-service condition.
+cvss_v2: 4.0
+references:
+    - https://github.com/mqttjs/MQTT.js/commit/403ba53b838f2d319a0c0505a045fe00239e9923
+    - https://github.com/mqttjs/MQTT.js/releases/tag/v2.15.0
+    - https://jvn.jp/en/jp/JVN45494523/index.html
+affected:
+    - name: mqtt
+      version:
+        - "<=2.14.0,2.0.0"
+      fixedin:
+        - ">=2.15.0"

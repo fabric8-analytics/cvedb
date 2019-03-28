@@ -1,0 +1,17 @@
+---
+cve: 2014-0107
+title: XXE in Apache Xalan-Java
+description: >
+    The TransformerFactory in Apache Xalan-Java before 2.7.2 does not properly restrict access to certain properties when FEATURE_SECURE_PROCESSING is enabled, which allows remote attackers to bypass expected restrictions and load arbitrary classes or access external resources via a crafted (1) xalan:content-header, (2) xalan:entities, (3) xslt:content-header, or (4) xslt:entities property, or a Java property that is bound to the XSLT 1.0 system-property function.
+cvss_v2: 7.5
+references:
+    - http://svn.apache.org/viewvc?view=revision&revision=1581058
+    - https://issues.apache.org/jira/browse/XALANJ-2435
+    - https://nvd.nist.gov/vuln/detail/CVE-2014-0107
+affected:
+    - groupId: xalan
+      artifactId: xalan
+      version:
+        - "<=2.7.1"
+      fixedin:
+        - ">=2.7.2"

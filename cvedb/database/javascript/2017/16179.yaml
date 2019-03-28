@@ -1,0 +1,13 @@
+---
+cve: 2017-16179
+title: CVE in dasafio
+description: >
+    dasafio is a web server. dasafio is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url. File access is restricted to only .html files.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/dasafio
+    - https://nodesecurity.io/advisories/460
+affected:
+    - name: dasafio
+      version:
+        - "<=1.2.0"

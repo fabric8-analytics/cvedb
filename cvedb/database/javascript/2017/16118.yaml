@@ -1,0 +1,15 @@
+---
+cve: 2017-16118
+title: CVE in forwarded
+description: >
+    The forwarded module is used by the Express.js framework to handle the X-Forwarded-For header. It is vulnerable to a regular expression denial of service when it's passed specially crafted input to parse. This causes the event loop to be blocked causing a denial of service condition.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/104427
+    - https://nodesecurity.io/advisories/527
+affected:
+    - name: forwarded
+      version:
+        - "<=0.1.1"
+      fixedin:
+        - ">=0.1.2"

@@ -1,0 +1,18 @@
+---
+cve: 2018-11041
+title: CVE in org.cloudfoundry.identity:cloudfoundry-identity-uaa
+description: >
+    Cloud Foundry UAA, versions later than 4.6.0 and prior to 4.19.0 except 4.10.1 and 4.7.5 and uaa-release versions later than v48 and prior to v60 except v55.1 and v52.9, does not validate redirect URL values on a form parameter used for internal UAA redirects on the login page, allowing open redirects. A remote attacker can craft a malicious link that, when clicked, will redirect users to arbitrary websites after a successful login attempt.
+cvss_v2: 5.8
+references:
+    - https://www.cloudfoundry.org/blog/cve-2018-11041/
+    - https://github.com/cloudfoundry/uaa/commit/7a8f157f7e2feed2d0ebb63b163ff735b6340b96
+affected:
+    - groupId: org.cloudfoundry.identity
+      artifactId: cloudfoundry-identity-server
+      version:
+        - "<=4.18.0,4.10.2"
+        - "<=4.10.0,4.7.6"
+        - "<=4.7.4,4.6.1"
+      fixedin:
+        - ">=4.19.0"

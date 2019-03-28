@@ -1,0 +1,12 @@
+---
+cve: 2016-10603
+title: CVE in air-sdk
+description: >
+    air-sdk is a NPM wrapper for the Adobe AIR SDK. air-sdk downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/200
+affected:
+    - name: air-sdk
+      version:
+        - "<=16.0.0-272-16"

@@ -1,0 +1,16 @@
+---
+cve: 2018-3826
+title: CVE in org.elasticsearch:elasticsearch
+description: >
+    In Elasticsearch versions 6.0.0-beta1 to 6.2.4 a disclosure flaw was found in the _snapshot API. When the access_key and security_key parameters are set using the _snapshot API they can be exposed as plain text by users able to query the _snapshot API.
+cvss_v2: 4.0
+references:
+    - https://discuss.elastic.co/t/elastic-stack-6-3-0-and-5-6-10-security-update/135777
+    - https://www.elastic.co/community/security
+affected:
+    - groupId: org.elasticsearch
+      artifactId: elasticsearch
+      version:
+        - "<=6.2.4,6.0.0-beta1"
+      fixedin:
+        - ">=6.3.0"

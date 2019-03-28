@@ -1,0 +1,14 @@
+---
+cve: 2018-3734
+title: CVE in stattic
+description: >
+    stattic node module suffers from a Path Traversal vulnerability due to lack of validation of path, which allows a malicious user to read content of any file with known path.
+cvss_v2: 5.0
+references:
+    - https://hackerone.com/reports/319003
+affected:
+    - name: stattic
+      version:
+        - "==0.2.3"
+      fixedin:
+        - ">=0.3.0"

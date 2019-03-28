@@ -1,0 +1,16 @@
+---
+cve: 2018-1307
+title: CVE in org.apache.juddi:juddi-client
+description: >
+    In Apache jUDDI 3.2 through 3.3.4, if using the WADL2Java or WSDL2Java classes, which parse a local or remote XML document and then mediates the data structures into UDDI data structures, there are little protections present against entity expansion and DTD type of attacks. Mitigation is to use 3.3.5.
+cvss_v2: 6.8
+references:
+    - http://juddi.apache.org/security.html
+    - https://issues.apache.org/jira/browse/JUDDI-987
+affected:
+    - groupId: org.apache.juddi
+      artifactId: juddi-client
+      version:
+        - "<=3.3.4,3.2.0"
+      fixedin:
+        - ">=3.3.5"

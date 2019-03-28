@@ -1,0 +1,15 @@
+---
+cve: 2017-4963
+title: CVE in org.cloudfoundry.identity:cloudfoundry-identity-uaa
+description: >
+    An issue was discovered in Cloud Foundry Foundation Cloud Foundry release v252 and earlier versions, UAA stand-alone release v2.0.0 - v2.7.4.12 & v3.0.0 - v3.11.0, and UAA bosh release v26 & earlier versions. UAA is vulnerable to session fixation when configured to authenticate against external SAML or OpenID Connect based identity providers.
+cvss_v2: 6.8
+references:
+    - https://www.cloudfoundry.org/cve-2017-4963/
+affected:
+    - groupId: org.cloudfoundry.identity
+      artifactId: cloudfoundry-identity-uaa
+      version:
+        - "<=3.10.0"
+      fixedin:
+        - ">=3.12.0"

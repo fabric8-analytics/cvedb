@@ -1,0 +1,16 @@
+---
+cve: 2018-1339
+title: CVE in org.apache.tika:tika-core
+description: >
+    A carefully crafted (or fuzzed) file can trigger an infinite loop in Apache Tika's ChmParser in versions of Apache Tika before 1.18.
+cvss_v2: 4.3
+references:
+    - https://access.redhat.com/errata/RHSA-2018:2669
+    - https://lists.apache.org/thread.html/4d2cb5c819401bb075e2a1130e0d14f0404a136541a6f91da0225828@%3Cdev.tika.apache.org%3E
+affected:
+    - groupId: org.apache.tika
+      artifactId: tika-core
+      version:
+        - "<=1.17"
+      fixedin:
+        - ">=1.18"

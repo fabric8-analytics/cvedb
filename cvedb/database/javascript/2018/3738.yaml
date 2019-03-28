@@ -1,0 +1,14 @@
+---
+cve: 2018-3738
+title: CVE in protobufjs
+description: >
+    protobufjs is vulnerable to ReDoS when parsing crafted invalid .proto files.
+cvss_v2: 4.3
+references:
+    - https://hackerone.com/reports/319576
+affected:
+    - name: protobufjs
+      version:
+        - "==6.8.5"
+      fixedin:
+        - ">=6.8.6"

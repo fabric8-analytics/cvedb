@@ -1,0 +1,14 @@
+---
+cve: 2018-3772
+title: CVE in whereis
+description: >
+    Concatenating unsanitized user input in the `whereis` npm module < 0.4.1 allowed an attacker to execute arbitrary commands. The `whereis` module is deprecated and it is recommended to use the `which` npm module instead.
+cvss_v2: 7.5
+references:
+    - https://hackerone.com/reports/319476
+affected:
+    - name: whereis
+      version:
+        - "<=0.4.0"
+      fixedin:
+        - ">=0.4.1"

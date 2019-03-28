@@ -1,0 +1,14 @@
+---
+cve: 2016-10575
+title: CVE in kindlegen
+description: >
+    Kindlegen is a simple Node.js wrapper of the official kindlegen program. Kindlegen versions before 1.1.0 download binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/251
+affected:
+    - name: kindlegen
+      version:
+        - "<=1.0.1"
+      fixedin:
+        - ">=1.1.0"

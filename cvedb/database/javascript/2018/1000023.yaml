@@ -1,0 +1,12 @@
+---
+cve: 2018-1000023
+title: CVE in insight-api
+description: >
+    Bitpay/insight-api Insight-api version 5.0.0 and earlier contains a CWE-20: input validation vulnerability in transaction broadcast endpoint that can result in Full Path Disclosure. This attack appear to be exploitable via Web request.
+cvss_v2: 5.0
+references:
+    - https://github.com/bitpay/insight-api/issues/542
+affected:
+    - name: insight-api
+      version:
+        - "<=5.0.0"

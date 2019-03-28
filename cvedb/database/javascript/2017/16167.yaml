@@ -1,0 +1,13 @@
+---
+cve: 2017-16167
+title: CVE in yyooopack
+description: >
+    yyooopack is a simple file server. yyooopack is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/yyooopack
+    - https://nodesecurity.io/advisories/400
+affected:
+    - name: yyooopack
+      version:
+        - "<=3.0.0"

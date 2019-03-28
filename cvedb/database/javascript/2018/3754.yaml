@@ -1,0 +1,14 @@
+---
+cve: 2018-3754
+title: CVE in query-mysql
+description: >
+    Node.js third-party module query-mysql versions 0.0.0, 0.0.1, and 0.0.2 are vulnerable to an SQL injection vulnerability due to lack of user input sanitization. This may allow an attacker to run arbitrary SQL queries when fetching data from database.
+cvss_v2: 6.5
+references:
+    - https://hackerone.com/reports/311244
+affected:
+    - name: query-mysql
+      version:
+        - "<=0.0.0"
+        - "==0.0.1"
+        - ">=0.0.2"

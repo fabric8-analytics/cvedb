@@ -1,0 +1,15 @@
+---
+cve: 2016-10551
+title: CVE in waterline-sequel
+description: >
+    waterline-sequel is a module that helps generate SQL statements for Waterline apps Any user input that goes into Waterline's `like`, `contains`, `startsWith`, or `endsWith` will end up in waterline-sequel with the potential for malicious code. A malicious user can input their own SQL statements in waterline-sequel 0.50 that will get executed and have full access to the database.
+cvss_v2: 7.5
+references:
+    - https://github.com/balderdashy/waterline/issues/1219#issuecomment-157294530
+    - https://nodesecurity.io/advisories/115
+affected:
+    - name: waterline-sequel
+      version:
+        - "==0.5.0"
+      fixedin:
+        - ">=0.5.1"

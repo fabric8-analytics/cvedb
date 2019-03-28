@@ -1,0 +1,17 @@
+---
+cve: 2015-1370
+title: CVE in marked
+description: >
+    Incomplete blacklist vulnerability in marked 0.3.2 and earlier for Node.js allows remote attackers to conduct cross-site scripting (XSS) attacks via a vbscript tag in a link.
+cvss_v2: 4.3
+references:
+    - http://www.openwall.com/lists/oss-security/2015/01/23/2
+    - https://github.com/chjj/marked/issues/492
+    - https://github.com/evilpacket/marked/commit/3c191144939107c45a7fa11ab6cb88be6694a1ba
+    - https://nodesecurity.io/advisories/marked_vbscript_injection
+affected:
+    - name: marked
+      version:
+        - "<=0.3.2"
+      fixedin:
+        - ">=0.3.3"

@@ -1,0 +1,15 @@
+---
+cve: 2018-17960
+title: CVE in ckeditor
+description: >
+    CKEditor 4.x before 4.11.0 allows user-assisted XSS involving a source-mode paste.
+cvss_v2: 4.3
+references:
+    - https://ckeditor.com/blog/CKEditor-4.11-with-emoji-dropdown-and-auto-link-on-typing-released/
+    - https://ckeditor.com/cke4/release/CKEditor-4.11.0
+affected:
+    - name: ckeditor
+      version:
+        - "<=4.10.1"
+      fixedin:
+        - ">=4.11.0"

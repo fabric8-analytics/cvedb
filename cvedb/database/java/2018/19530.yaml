@@ -1,0 +1,15 @@
+---
+cve: 2018-19530
+title: CVE in com.github.httl:httl
+description: >
+    HTTL (aka Hyper-Text Template Language) through 1.0.11 allows remote command execution because the decodeXml function uses XStream unsafely when configured with an xml.codec=httl.spi.codecs.XstreamCodec setting.
+cvss_v2: 7.5
+references:
+    - https://github.com/httl/httl/issues/225
+affected:
+    - groupId: com.github.httl
+      artifactId: httl
+      version:
+        - "<=1.0.11"
+      fixedin:
+        []

@@ -1,0 +1,17 @@
+---
+cve: 2013-7379
+title: CVE in tomato
+description: >
+    The admin API in the tomato module before 0.0.6 for Node.js does not properly check the access key when it is set to a string, which allows remote attackers to bypass authentication via a string in the access-key header that partially matches config.master.api.access_key.
+cvss_v2: 6.8
+references:
+    - http://www.openwall.com/lists/oss-security/2014/05/13/1
+    - http://www.openwall.com/lists/oss-security/2014/05/15/2
+    - https://github.com/leizongmin/tomato/commit/9e427d524e04a905312a3294c85e939ed7d57b8c
+    - https://nodesecurity.io/advisories/Tomato_API_Admin_Auth_Weakness
+affected:
+    - name: tomato
+      version:
+        - "<=0.0.5"
+      fixedin:
+        - ">=0.0.6"

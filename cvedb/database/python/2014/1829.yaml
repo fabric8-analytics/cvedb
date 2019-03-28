@@ -1,0 +1,19 @@
+---
+cve: 2014-1829
+title: CVE in requests
+description: >
+    Requests (aka python-requests) before 2.3.0 allows remote servers to obtain a netrc password by reading the Authorization header in a redirected request.
+cvss_v2: 5.0
+references:
+    - http://advisories.mageia.org/MGASA-2014-0409.html
+    - http://www.debian.org/security/2015/dsa-3146
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2015:133
+    - http://www.ubuntu.com/usn/USN-2382-1
+    - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=733108
+    - https://github.com/kennethreitz/requests/issues/1885
+affected:
+    - name: requests
+      version:
+        - "<=2.2.1"
+      fixedin:
+        - ">=2.3.0"

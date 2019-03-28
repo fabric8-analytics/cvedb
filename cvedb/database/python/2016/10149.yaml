@@ -1,0 +1,23 @@
+---
+cve: 2016-10149
+title: CVE in pysaml2
+description: >
+    XML External Entity (XXE) vulnerability in PySAML2 4.4.0 and earlier allows remote attackers to read arbitrary files via a crafted SAML XML request or response.
+cvss_v2: 5.0
+references:
+    - http://www.debian.org/security/2017/dsa-3759
+    - http://www.openwall.com/lists/oss-security/2017/01/19/5
+    - http://www.securityfocus.com/bid/97692
+    - https://access.redhat.com/errata/RHSA-2017:0936
+    - https://access.redhat.com/errata/RHSA-2017:0937
+    - https://access.redhat.com/errata/RHSA-2017:0938
+    - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=850716
+    - https://github.com/rohe/pysaml2/commit/6e09a25d9b4b7aa7a506853210a9a14100b8bc9b
+    - https://github.com/rohe/pysaml2/issues/366
+    - https://github.com/rohe/pysaml2/pull/379
+affected:
+    - name: pysaml2
+      version:
+        - "<=4.4.0"
+      fixedin:
+        - ">=4.5.0"

@@ -1,0 +1,16 @@
+---
+cve: 2018-16202
+title: CVE in cordova-plugin-ionic-webview
+description: >
+    Directory traversal vulnerability in cordova-plugin-ionic-webview versions prior to 2.2.0 (not including 2.0.0-beta.0, 2.0.0-beta.1, 2.0.0-beta.2, and 2.1.0-0) allows remote attackers to access arbitrary files via unspecified vectors.
+cvss_v2: 5.0
+references:
+    - https://github.com/ionic-team/cordova-plugin-ionic-webview
+    - https://jvn.jp/en/jp/JVN69812763/index.html
+    - https://www.npmjs.com/advisories/746
+affected:
+    - name: cordova-plugin-ionic-webview
+      version:
+        - "<=2.1.4"
+      fixedin:
+        - ">=2.2.0"

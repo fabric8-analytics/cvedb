@@ -1,0 +1,17 @@
+---
+cve: 2018-1297
+title: CVE in Apache JMeter 
+description: >
+    When using Distributed Test only (RMI based), Apache JMeter 2.x and 3.x uses an unsecured RMI connection. This could allow an attacker to get Access to JMeterEngine and send unauthorized code.
+cvss_v2: 7.5
+references:
+    - http://mail-archives.apache.org/mod_mbox/www-announce/201802.mbox/%3CCAH9fUpaNzk5am8oFe07RQ-kynCsQv54yB-uYs9bEnz7tbX-O7g%40mail.gmail.com%3E
+    - https://bz.apache.org/bugzilla/show_bug.cgi?id=62039
+    - https://nvd.nist.gov/vuln/detail/CVE-2018-1297
+affected:
+    - groupId: org.apache.jmeter
+      artifactId: ApacheJMeter_core
+      version:
+        - "<=3.3"
+      fixedin:
+        - ">=4.0"

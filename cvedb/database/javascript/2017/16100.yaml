@@ -1,0 +1,15 @@
+---
+cve: 2017-16100
+title: CVE in dns-sync
+description: >
+    dns-sync is a sync/blocking dns resolver. If untrusted user input is allowed into the resolve() method then command injection is possible.
+cvss_v2: 10.0
+references:
+    - https://github.com/skoranga/node-dns-sync/issues/5
+    - https://nodesecurity.io/advisories/523
+affected:
+    - name: dns-sync
+      version:
+        - "<=0.1.1"
+      fixedin:
+        - ">=0.1.2"

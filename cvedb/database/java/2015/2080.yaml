@@ -1,0 +1,33 @@
+---
+cve: 2015-2080
+title: CVE in org.eclipse.jetty:jetty-http
+description: >
+    The exception handling code in Eclipse Jetty before 9.2.9.v20150224 allows remote attackers to obtain sensitive information from process memory via illegal characters in an HTTP header, aka JetLeak.
+cvss_v2: 5.0
+references:
+    - http://dev.eclipse.org/mhonarc/lists/jetty-announce/msg00074.html
+    - http://dev.eclipse.org/mhonarc/lists/jetty-announce/msg00075.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2015-March/151804.html
+    - http://packetstormsecurity.com/files/130567/Jetty-9.2.8-Shared-Buffer-Leakage.html
+    - http://seclists.org/fulldisclosure/2015/Mar/12
+    - http://www.securityfocus.com/archive/1/534755/100/1600/threaded
+    - http://www.securityfocus.com/bid/72768
+    - http://www.securitytracker.com/id/1031800
+    - https://blog.gdssecurity.com/labs/2015/2/25/jetleak-vulnerability-remote-leakage-of-shared-buffers-in-je.html
+    - https://github.com/eclipse/jetty.project/blob/jetty-9.2.x/advisories/2015-02-24-httpparser-error-buffer-bleed.md
+    - https://github.com/eclipse/jetty.project/commit/4df5647f6dfdc5fa7abb812afe9290d60b17c098
+affected:
+    - groupId: org.eclipse.jetty
+      artifactId: jetty-http
+      version:
+        - "==9.2.3.v20140905"
+        - "==9.2.4.v20141103"
+        - "==9.2.5.v20141112"
+        - "==9.2.6.v20141205"
+        - "==9.2.7.v20150116"
+        - "==9.2.8.v20150217"
+        - "==9.3.0.M0"
+        - "==9.3.0.M1"
+      fixedin:
+        - ">=9.2.9.v20150224"
+        - ">=9.3.0.M2"

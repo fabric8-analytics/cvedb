@@ -1,0 +1,16 @@
+---
+cve: 2018-1306
+title: CVE in org.apache.portals.pluto:pluto-container
+description: >
+    The PortletV3AnnotatedDemo Multipart Portlet war file code provided in Pluto version 3.0.0 could allow a remote attacker to obtain sensitive information, caused by the failure to restrict path information provided during a file upload. An attacker could exploit this vulnerability to obtain configuration data and other sensitive information.
+cvss_v2: 5.0
+references:
+    - http://portals.apache.org/pluto/security.html
+    - https://www.exploit-db.com/exploits/45396/
+affected:
+    - groupId: org.apache.portals.pluto
+      artifactId: pluto-container
+      version:
+        - "==3.0.0"
+      fixedin:
+        - ">=3.0.1"

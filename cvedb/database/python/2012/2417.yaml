@@ -1,0 +1,16 @@
+---
+cve: 2012-2417
+title: CVE in pycrypto
+description: >
+    PyCrypto before 2.6 does not produce appropriate prime numbers when using an ElGamal scheme to generate a key, which reduces the signature space or public key space and makes it easier for attackers to conduct brute force attacks to obtain the private key.
+cvss_v2: 4.3
+references:
+    - https://github.com/dlitz/pycrypto/blob/373ea760f21701b162e8c4912a66928ee30d401a/ChangeLog
+    - https://github.com/Legrandin/pycrypto/commit/9f912f13df99ad3421eff360d6a62d7dbec755c2
+    - https://nvd.nist.gov/vuln/detail/CVE-2012-2417
+affected:
+    - name: pycrypto
+      version:
+        - "<=2.5"
+      fixedin:
+        - ">=2.6"

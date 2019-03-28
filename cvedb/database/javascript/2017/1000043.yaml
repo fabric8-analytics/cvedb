@@ -1,0 +1,17 @@
+---
+cve: 2017-1000043
+title: CVE in mapbox.js
+description: >
+    Mapbox.js versions 1.x prior to 1.6.6 and 2.x prior to 2.2.4 are vulnerable to a cross-site-scripting attack in certain uncommon usage scenarios via TileJSON name and map share control
+cvss_v2: 4.3
+references:
+    - https://hackerone.com/reports/99245
+    - https://nodesecurity.io/advisories/74
+affected:
+    - name: mapbox.js
+      version:
+        - "<=1.6.5"
+        - "<=2.2.3,2.2.0"
+      fixedin:
+        - ">=1.6.6"
+        - ">=2.2.4"

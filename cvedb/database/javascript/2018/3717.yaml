@@ -1,0 +1,16 @@
+---
+cve: 2018-3717
+title: CVE in connect
+description: >
+    connect node module before 2.14.0 suffers from a Cross-Site Scripting (XSS) vulnerability due to a lack of validation of file in directory.js middleware.
+cvss_v2: 3.5
+references:
+    - https://github.com/senchalabs/connect/commit/6d5dd30075d2bc4ee97afdbbe3d9d98d8d52d74b
+    - https://hackerone.com/reports/309394
+    - https://hackerone.com/reports/309641
+affected:
+    - name: connect
+      version:
+        - "<=2.13.1"
+      fixedin:
+        - ">=2.14.0"

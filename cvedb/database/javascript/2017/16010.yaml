@@ -1,0 +1,15 @@
+---
+cve: 2017-16010
+title: CVE in i18next
+description: >
+    i18next is a language translation framework. When using the .init method, passing interpolation options without passing an escapeValue will default to undefined rather than the assumed true. This can result in a cross-site scripting vulnerability because user input is assumed to be escaped, but is not. This vulnerability affects i18next 2.0.0 and later.
+cvss_v2: 4.3
+references:
+    - https://github.com/i18next/i18next/pull/826
+    - https://nodesecurity.io/advisories/326
+affected:
+    - name: i18next
+      version:
+        - "<=3.4.3,2.0.0"
+      fixedin:
+        - ">=3.4.4"

@@ -1,0 +1,13 @@
+---
+cve: 2017-16185
+title: CVE in uekw1511server
+description: >
+    uekw1511server is a static file server. uekw1511server is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/uekw1511server
+    - https://nodesecurity.io/advisories/450
+affected:
+    - name: uekw1511server
+      version:
+        - "<=1.0.1"

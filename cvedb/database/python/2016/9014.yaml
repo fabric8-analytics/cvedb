@@ -1,0 +1,24 @@
+---
+cve: 2016-9014
+title: CVE in django
+description: >
+    Django before 1.8.x before 1.8.16, 1.9.x before 1.9.11, and 1.10.x before 1.10.3, when settings.DEBUG is True, allow remote attackers to conduct DNS rebinding attacks by leveraging failure to validate the HTTP Host header against settings.ALLOWED_HOSTS.
+cvss_v2: 6.8
+references:
+    - http://www.debian.org/security/2017/dsa-3835
+    - http://www.securityfocus.com/bid/94068
+    - http://www.securitytracker.com/id/1037159
+    - http://www.ubuntu.com/usn/USN-3115-1
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OG5ROMUPS6C7BXELD3TAUUH7OBYV56WQ/
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QXDKJYHN74BWY3P7AR2UZDVJREQMRE6S/
+    - https://www.djangoproject.com/weblog/2016/nov/01/security-releases/
+affected:
+    - name: django
+      version:
+        - "<=1.8.15,1.8"
+        - "<=1.9.10,1.9"
+        - "<=1.10.2,1.10"
+      fixedin:
+        - ">=1.8.16"
+        - ">=1.9.11"
+        - ">=1.10.3"

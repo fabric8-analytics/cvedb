@@ -1,0 +1,15 @@
+---
+cve: 2017-16006
+title: CVE in remarkable
+description: >
+    Remarkable is a markdown parser. In versions 1.6.2 and lower, remarkable allows the use of `data:` URIs in links and can therefore execute javascript.
+cvss_v2: 4.3
+references:
+    - https://github.com/jonschlinkert/remarkable/issues/227
+    - https://nodesecurity.io/advisories/319
+affected:
+    - name: remarkable
+      version:
+        - "<=1.6.2"
+      fixedin:
+        - ">=1.7.0"

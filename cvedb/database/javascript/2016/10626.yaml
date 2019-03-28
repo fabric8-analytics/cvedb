@@ -1,0 +1,14 @@
+---
+cve: 2016-10626
+title: CVE in mystem3
+description: >
+    mystem3 is a NodeJS wrapper for the Yandex MyStem 3. mystem3 downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/229
+affected:
+    - name: mystem3
+      version:
+        - "<=1.0.7"
+      fixedin:
+        - ">=1.0.8"

@@ -1,0 +1,31 @@
+---
+cve: 2016-5007
+title: CVE in Spring Security and Spring Framework
+description: >
+    Both Spring Security 3.2.x, 4.0.x, 4.1.0 and the Spring Framework 3.2.x, 4.0.x, 4.1.x, 4.2.x rely on URL pattern mappings for authorization and for mapping requests to controllers respectively. Differences in the strictness of the pattern matching mechanisms, for example with regards to space trimming in path segments, can lead Spring Security to not recognize certain paths as not protected that are in fact mapped to Spring MVC controllers that should be protected. The problem is compounded by the fact that the Spring Framework provides richer features with regards to pattern matching as well as by the fact that pattern matching in each Spring Security and the Spring Framework can easily be customized creating additional differences.
+cvss_v2: 5.0
+references:
+    - http://www.oracle.com/technetwork/security-advisory/cpuapr2018-3678067.html
+    - http://www.securityfocus.com/bid/91687
+    - https://pivotal.io/security/cve-2016-5007
+    - https://jira.spring.io/browse/SEC-2534
+    - https://github.com/spring-projects/spring-security/commit/e4c13e3c0ee7f06f59d3b43ca6734215ad7d8974
+affected:
+    - groupId: org.springframework
+      artifactId: spring-webmvc
+      version:
+        - "<=4.2.9.RELEASE"
+      fixedin:
+        - ">=4.3.0.RELEASE"
+    - groupId: org.springframework.security
+      artifactId: spring-security-config
+      version:
+        - "<=4.1.0.RELEASE"
+      fixedin:
+        - ">=4.1.1.RELEASE"
+    - groupId: org.springframework.security
+      artifactId: spring-security-web
+      version:
+        - "<=4.1.0.RELEASE"
+      fixedin:
+        - ">=4.1.1.RELEASE"

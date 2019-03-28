@@ -1,0 +1,14 @@
+---
+cve: 2018-3718
+title: CVE in serve
+description: >
+    serve node module suffers from Improper Handling of URL Encoding by permitting access to ignored files if a filename is URL encoded.
+cvss_v2: 5.0
+references:
+    - https://hackerone.com/reports/308721
+affected:
+    - name: serve
+      version:
+        - "<=6.5.1"
+      fixedin:
+        - ">=6.5.2"

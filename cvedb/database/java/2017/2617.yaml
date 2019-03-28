@@ -1,0 +1,18 @@
+---
+cve: 2017-2617
+title: CVE in io.hawt:hawtio-system
+description: >
+    hawtio before version 1.5.5 is vulnerable to remote code execution via file upload. An attacker could use this vulnerability to upload a crafted file which could be executed on a target machine where hawtio is deployed.
+cvss_v2: 6.8
+references:
+    - http://www.securityfocus.com/bid/96036
+    - https://access.redhat.com/errata/RHSA-2018:0319
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2017-2617
+    - https://github.com/hawtio/hawtio/commit/8cf6848f4d4d4917a4551c9aa49dc00f699eb569
+affected:
+    - groupId: io.hawt
+      artifactId: hawtio-system
+      version:
+        - "<=1.5.4"
+      fixedin:
+        - ">=1.5.5"

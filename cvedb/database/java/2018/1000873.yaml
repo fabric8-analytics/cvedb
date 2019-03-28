@@ -1,0 +1,17 @@
+---
+cve: 2018-1000873
+title: CVE in com.fasterxml.jackson.core:jackson-core
+description: >
+    "Fasterxml Jackson version Before 2.9.8 contains a CWE-20: Improper Input Validation vulnerability in Jackson-Databind that can result in Causes a denial-of-service (DoS). This attack appear to be exploitable via The victim deserializes malicious input, specifically very large values in the nanoseconds field of a time value. This vulnerability appears to have been fixed in 2.9.8."
+cvss_v2: 5.0
+references:
+    - https://github.com/FasterXML/jackson-modules-java8/issues/90
+    - https://github.com/FasterXML/jackson-modules-java8/pull/87
+    - https://github.com/FasterXML/jackson-modules-java8/commit/ba27ce5909dfb49bcaf753ad3e04ecb980010b0b
+affected:
+    - groupId: com.fasterxml.jackson.datatype
+      artifactId: jackson-datatype-jsr310
+      version:
+        - "<=2.9.7"
+      fixedin:
+        - ">=2.9.8"

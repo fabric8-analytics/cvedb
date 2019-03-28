@@ -1,0 +1,15 @@
+---
+cve: 2017-16138
+title: CVE in mime
+description: >
+    The mime module is vulnerable to regular expression denial of service when a mime lookup is performed on untrusted user input.
+cvss_v2: 5.0
+references:
+    - https://github.com/broofa/node-mime/issues/167
+    - https://nodesecurity.io/advisories/535
+affected:
+    - name: mime
+      version:
+        - "<=2.0.2"
+      fixedin:
+        - ">=2.0.3"

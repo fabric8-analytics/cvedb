@@ -1,0 +1,12 @@
+---
+cve: 2017-16040
+title: CVE in gfe-sass
+description: >
+    gfe-sass is a library for promises (CommonJS/Promises/A,B,D) gfe-sass downloads resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested resources with an attacker controlled copy if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/291
+affected:
+    - name: gfe-sass
+      version:
+        - "<=1.0.19"

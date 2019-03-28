@@ -1,0 +1,12 @@
+---
+cve: 2016-10633
+title: CVE in dwebp-bin
+description: >
+    dwebp-bin is a dwebp node.js wrapper that convert WebP into PNG. dwebp-bin downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/232
+affected:
+    - name: dwebp-bin
+      version:
+        - "<=0.1.6"

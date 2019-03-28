@@ -1,0 +1,4 @@
+pytest
+pyyaml
+git+https://git@github.com/fabric8-analytics/victimsdb-lib.git@3e2e72b#egg=victimsdb-lib
+git+https://git@github.com/fabric8-analytics/fabric8-analytics-version-comparator.git@c3f3b3e#egg=f8a_version_comparator

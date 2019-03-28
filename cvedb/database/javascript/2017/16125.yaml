@@ -1,0 +1,13 @@
+---
+cve: 2017-16125
+title: CVE in rtcmulticonnection-client
+description: >
+    rtcmulticonnection-client is a signaling implementation for RTCMultiConnection.js, a multi-session manager. rtcmulticonnection-client is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/rtcmulticonnection-client
+    - https://nodesecurity.io/advisories/385
+affected:
+    - name: rtcmulticonnection-client
+      version:
+        - "<=1.0.5"

@@ -1,0 +1,15 @@
+---
+cve: 2017-16043
+title: CVE in shout
+description: >
+    Shout is an IRC client. Because the `/topic` command in messages is unescaped, attackers have the ability to inject HTML scripts that will run in the victim's browser. Affects shout >=0.44.0 <=0.49.3.
+cvss_v2: 4.3
+references:
+    - https://github.com/erming/shout/pull/344
+    - https://nodesecurity.io/advisories/322
+affected:
+    - name: shout
+      version:
+        - "<=0.49.3"
+      fixedin:
+        - ">=0.50.0"

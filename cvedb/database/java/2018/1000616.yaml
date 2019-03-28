@@ -1,0 +1,16 @@
+---
+cve: 2018-1000616
+title: CVE in org.onosproject:onos-drivers-utilities
+description: >
+    ONOS ONOS controller version 1.13.1 and earlier contains a XML External Entity (XXE) vulnerability in onos\drivers\utilities\src\main\java\org\onosproject\drivers\utilities\XmlConfigParser.java loadxml() that can result in An adversary can remotely launch XXE attacks on ONOS controller via an OpenConfig Terminal Device.. This attack appear to be exploitable via network connectivity.
+cvss_v2: 7.5
+references:
+    - http://gms.cl0udz.com/Openconfig_xxe.pdf
+    - https://gerrit.onosproject.org/#/c/18894/
+affected:
+    - groupId: org.onosproject
+      artifactId: onos-drivers-utilities
+      version:
+        - "<=1.13.1"
+      fixedin:
+        - ">=1.13.2"

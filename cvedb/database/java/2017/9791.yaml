@@ -1,0 +1,19 @@
+---
+cve: 2017-9791
+title: CVE in org.apache.struts:struts2-struts1-plugin
+description: >
+    "The Struts 1 plugin in Apache Struts 2.3.x might allow remote code execution via a malicious field value passed in a raw message to the ActionMessage."
+cvss_v2: 7.5
+references:
+    - http://struts.apache.org/docs/s2-048.html
+    - http://www.oracle.com/technetwork/security-advisory/alert-cve-2017-9805-3889403.html
+    - http://www.securityfocus.com/bid/99484
+    - http://www.securitytracker.com/id/1038838
+    - https://security.netapp.com/advisory/ntap-20180706-0002/
+    - https://www.exploit-db.com/exploits/42324/
+    - https://www.exploit-db.com/exploits/44643/
+affected:
+    - groupId: org.apache.struts
+      artifactId: struts2-struts1-plugin
+      version:
+        - "<=2.4.0"

@@ -1,0 +1,12 @@
+---
+cve: 2018-16475
+title: CVE in knightjs
+description: >
+    A Path Traversal in Knightjs versions <= 0.0.1 allows an attacker to read content of arbitrary files on a remote server.
+cvss_v2: 5.0
+references:
+    - https://hackerone.com/reports/403707
+affected:
+    - name: knightjs
+      version:
+        - "<=0.0.1"

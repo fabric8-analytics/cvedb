@@ -1,0 +1,15 @@
+---
+cve: 2016-10526
+title: CVE in grunt-gh-pages
+description: >
+    A common setup to deploy to gh-pages on every commit via a CI system is to expose a github token to ENV and to use it directly in the auth part of the url. In module versions < 0.9.1 the auth portion of the url is outputted as part of the grunt tasks logging function. If this output is publicly available then the credentials should be considered compromised.
+cvss_v2: 5.0
+references:
+    - https://github.com/tschaub/grunt-gh-pages/pull/41
+    - https://nodesecurity.io/advisories/85
+affected:
+    - name: grunt-gh-pages
+      version:
+        - "<=0.9.0"
+      fixedin:
+        - ">=0.9.1"

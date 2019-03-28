@@ -1,0 +1,26 @@
+---
+cve: 2010-3700
+title: CVE in Spring Security
+description: >
+    VMware SpringSource Spring Security 2.x before 2.0.6 and 3.x before 3.0.4, and Acegi Security 1.0.0 through 1.0.7, as used in IBM WebSphere Application Server (WAS) 6.1 and 7.0, allows remote attackers to bypass security constraints via a path parameter.
+cvss_v2: 5.0
+references:
+    - https://nvd.nist.gov/vuln/detail/CVE-2010-3700
+    - https://jira.spring.io/browse/SEC-1584
+affected:
+    - groupId: org.acegisecurity
+      artifactId: acegi-security
+      version:
+        - "<=1.0.7,1.0.0"
+    - groupId: org.springframework.security
+      artifactId: spring-security-core
+      version:
+        - "<=2.0.5.RELEASE,2.0.0"
+      fixedin:
+        - ">=2.0.6.RELEASE"
+    - groupId: org.springframework.security
+      artifactId: spring-security-web
+      version:
+        - "<=3.0.3.RELEASE,3.0.0.RELEASE"
+      fixedin:
+        - ">=3.0.4.RELEASE"

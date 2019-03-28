@@ -1,0 +1,14 @@
+---
+cve: 2018-19787
+title: CVE in lxml
+description: >
+    'An issue was discovered in lxml before 4.2.5. lxml/html/clean.py in the lxml.html.clean module does not remove javascript: URLs that use escaping, allowing a remote attacker to conduct XSS attacks, as demonstrated by "j a v a s c r i p t:" in Internet Explorer. This is a similar issue to CVE-2014-3146.'
+cvss_v2: 4.3
+references:
+    - https://github.com/lxml/lxml/commit/6be1d081b49c97cfd7b3fbd934a193b668629109
+affected:
+    - name: lxml
+      version:
+        - "<=4.2.4"
+      fixedin:
+        - ">=4.2.5"

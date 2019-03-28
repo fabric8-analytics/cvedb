@@ -1,0 +1,27 @@
+---
+cve: 2016-8629
+title: CVE in Keycloak
+description: >
+    Red Hat Keycloak before version 2.4.0 did not correctly check permissions when handling service account user deletion requests sent to the rest server. An attacker with service account authentication could use this flaw to bypass normal permissions and delete users in a separate realm.
+cvss_v2: 5.5
+references:
+    - http://rhn.redhat.com/errata/RHSA-2017-0876.html
+    - http://www.securityfocus.com/bid/97392
+    - http://www.securitytracker.com/id/1038180
+    - https://access.redhat.com/errata/RHSA-2017:0872
+    - https://access.redhat.com/errata/RHSA-2017:0873
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1388988
+    - https://github.com/keycloak/keycloak/commit/3d46b4c425d39b004566cc78164e1ffbe37d647c
+affected:
+    - groupId: org.keycloak
+      artifactId: keycloak-model-infinispan
+      version:
+        - "<=2.3.0.Final"
+      fixedin:
+        - ">=2.4.0.Final"
+    - groupId: org.keycloak
+      artifactId: keycloak-services
+      version:
+        - "<=2.3.0.Final"
+      fixedin:
+        - ">=2.4.0.Final"

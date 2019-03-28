@@ -1,0 +1,29 @@
+---
+cve: 2016-6812
+title: CVE in Apache CXF
+description: >
+    The HTTP transport module in Apache CXF prior to 3.0.12 and 3.1.x prior to 3.1.9 uses FormattedServiceListWriter to provide an HTML page which lists the names and absolute URL addresses of the available service endpoints. The module calculates the base URL using the current HttpServletRequest. The calculated base URL is used by FormattedServiceListWriter to build the service endpoint absolute URLs. If the unexpected matrix parameters have been injected into the request URL then these matrix parameters will find their way back to the client in the services list page which represents an XSS risk to the client.
+cvss_v2: 4.3
+references:
+    - http://cxf.apache.org/security-advisories.data/CVE-2016-6812.txt.asc
+    - http://www.securityfocus.com/bid/97582
+    - http://www.securitytracker.com/id/1037543
+    - https://access.redhat.com/errata/RHSA-2017:0868
+    - https://issues.apache.org/jira/browse/CXF-6216
+affected:
+    - groupId: org.apache.cxf
+      artifactId: cxf-rt-transports-http
+      version:
+        - "<=3.0.11"
+        - "==3.1.0"
+        - "==3.1.1"
+        - "==3.1.2"
+        - "==3.1.3"
+        - "==3.1.4"
+        - "==3.1.5"
+        - "==3.1.6"
+        - "==3.1.7"
+        - "==3.1.8"
+      fixedin:
+        - ">=3.0.12"
+        - ">=3.1.9"

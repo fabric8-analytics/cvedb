@@ -1,0 +1,17 @@
+---
+cve: 2016-5851
+title: CVE in python-docx
+description: >
+    python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.
+cvss_v2: 6.8
+references:
+    - http://www.openwall.com/lists/oss-security/2016/06/28/7
+    - http://www.openwall.com/lists/oss-security/2016/06/28/8
+    - http://www.securityfocus.com/bid/91485
+    - https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst
+affected:
+    - name: python-docx
+      version:
+        - "<=0.8.5"
+      fixedin:
+        - ">=0.8.6"

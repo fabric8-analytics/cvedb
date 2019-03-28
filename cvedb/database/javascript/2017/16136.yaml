@@ -1,0 +1,14 @@
+---
+cve: 2017-16136
+title: CVE in method-override
+description: >
+    method-override is a module used by the Express.js framework to let you use HTTP verbs such as PUT or DELETE in places where the client doesn't support it. method-override is vulnerable to a regular expression denial of service vulnerability when specially crafted input is passed in to be parsed via the X-HTTP-Method-Override header.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/538
+affected:
+    - name: method-override
+      version:
+        - "<=2.3.9"
+      fixedin:
+        - ">=2.3.10"

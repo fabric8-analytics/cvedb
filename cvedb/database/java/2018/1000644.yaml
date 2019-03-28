@@ -1,0 +1,16 @@
+---
+cve: 2018-1000644
+title: CVE in org.eclipse.rdf4j:rdf4j
+description: >
+    "Eclipse RDF4j version < 2.4.0 Milestone 2 contains a XML External Entity (XXE) vulnerability in RDF4j XML parser parsing RDF files that can result in the disclosure of confidential data, denial of service, server side request forgery, port scanning. This attack appear to be exploitable via Specially crafted RDF file."
+cvss_v2: 7.5
+references:
+    - https://0dd.zone/2018/08/05/rdf4j-XXE/
+    - https://github.com/eclipse/rdf4j/issues/1056
+affected:
+    - groupId: org.eclipse.rdf4j
+      artifactId: rdf4j-rio-api
+      version:
+        - "<=2.4.0-M1"
+      fixedin:
+        - ">=2.4.0-M2"

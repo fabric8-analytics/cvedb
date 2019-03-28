@@ -1,0 +1,22 @@
+---
+cve: 2018-8008
+title: CVE in Apache Storm
+description: >
+    Apache Storm version 1.0.6 and earlier, 1.2.1 and earlier, and version 1.1.2 and earlier expose an arbitrary file write vulnerability, that can be achieved using a specially crafted zip archive (affects other archives as well, bzip2, tar, xz, war, cpio, 7z), that holds path traversal filenames. So when the filename gets concatenated to the target extraction directory, the final path ends up outside of the target folder.
+cvss_v2: 5.8
+references:
+    - http://www.securityfocus.com/bid/104418
+    - https://lists.apache.org/thread.html/613b2fca8bcd0a3b12c0b763ea8f7cf62e422e9f79fce6cfa5b08a58@%3Cdev.storm.apache.org%3E
+    - https://jira.apache.org/jira/browse/STORM-3052
+    - https://github.com/apache/storm/commit/0fc6b522487c061f89e8cdacf09f722d3f20589a
+affected:
+    - groupId: org.apache.storm
+      artifactId: storm-core
+      version:
+        - "<=1.0.6"
+        - "<=1.1.2"
+        - "<=1.2.1"
+      fixedin:
+        - ">=1.0.7"
+        - ">=1.1.3"
+        - ">=1.2.2"

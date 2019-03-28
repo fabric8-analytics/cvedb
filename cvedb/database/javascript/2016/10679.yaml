@@ -1,0 +1,12 @@
+---
+cve: 2016-10679
+title: CVE in selenium-standalone-painful
+description: >
+    selenium-standalone-painful installs a start-selenium command line to start a standalone selenium server with chrome-driver. selenium-standalone-painful downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested resources with an attacker controlled copy if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/284
+affected:
+    - name: selenium-standalone-painful
+      version:
+        - "<=2.39.0-2.7.0"

@@ -1,0 +1,15 @@
+---
+cve: 2017-16099
+title: CVE in no-case
+description: >
+    The no-case module is vulnerable to regular expression denial of service. When malicious untrusted user input is passed into no-case it can block the event loop causing a denial of service condition.
+cvss_v2: 5.0
+references:
+    - https://github.com/blakeembrey/no-case/issues/17
+    - https://nodesecurity.io/advisories/529
+affected:
+    - name: no-case
+      version:
+        - "<=2.3.1"
+      fixedin:
+        - ">=2.3.2"
