@@ -1,6 +1,6 @@
 ---
 cve: 2016-6810
-title: CVE in org.apache.activemq:activemq-web-console
+title: CVE in org.apache.activemq:activemq-all
 description: >
     In Apache ActiveMQ 5.x before 5.14.2, an instance of a cross-site scripting vulnerability was identified to be present in the web based administration console. The root cause of this issue is improper user data output validation.
 cvss_v2: 4.3
@@ -9,13 +9,12 @@ references:
     - http://www.securityfocus.com/bid/94882
     - http://www.securitytracker.com/id/1037475
     - https://lists.apache.org/thread.html/924a3a27fad192d711436421e02977ff90d9fc0f298e1efe6757cfbc@%3Cusers.activemq.apache.org%3E
-    - https://github.com/apache/activemq/commit/77b827f46e5198f7db1b5885bda71cb2af84e04d
-    - https://issues.apache.org/jira/browse/AMQ-6468
-    - https://nvd.nist.gov/vuln/detail/CVE-2016-6810
+    - https://lists.apache.org/thread.html/a859563f05fbe7c31916b3178c2697165bd9bbf5a65d1cf62aef27d2@%3Ccommits.activemq.apache.org%3E
 affected:
     - groupId: org.apache.activemq
-      artifactId: activemq-web-console
+      artifactId: activemq-all
       version:
         - "<=5.14.1,5.0.0"
       fixedin:
         - ">=5.14.2"
+        - "<=4.1.2,4.1.2"
