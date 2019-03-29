@@ -1,0 +1,20 @@
+---
+cve: 2019-3828
+title: CVE in ansible
+description: >
+    Ansible fetch module before versions 2.5.15, 2.6.14, 2.7.8 has a path traversal vulnerability which allows copying and overwriting files outside of the specified destination in the local ansible controller host, by not restricting an absolute path.
+cvss_v2: 7.5
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-3828
+    - https://github.com/ansible/ansible/pull/52133
+affected:
+    - name: ansible
+      version:
+        - "<=2.5.14,2.5.0a1"
+        - "<=2.6.13,2.6.0a1"
+        - "<=2.7.7,2.7.0a1"
+      fixedin:
+        - ">=2.7.8"
+        - "<=2.6.15,2.6.14"
+        - "<=2.5.15,2.5.15"
+        - "<=2.4.6.0,1.0"
