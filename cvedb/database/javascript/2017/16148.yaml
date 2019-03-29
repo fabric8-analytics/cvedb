@@ -1,0 +1,14 @@
+---
+cve: 2017-16148
+title: CVE in serve46
+description: >
+    serve46 is a static file server. serve46 is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/serve46
+    - https://nodesecurity.io/advisories/456
+affected:
+    - name: serve46
+      version:
+        - ">=1.0.0"
+

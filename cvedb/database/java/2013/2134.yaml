@@ -1,0 +1,21 @@
+---
+cve: 2013-2134
+title: CVE in org.apache.struts:struts2-core
+description: >
+    Apache Struts 2 before 2.3.14.3 allows remote attackers to execute arbitrary OGNL code via a request with a crafted action name that is not properly handled during wildcard matching, a different vulnerability than CVE-2013-2135.
+cvss_v2: 9.3
+references:
+    - http://security.gentoo.org/glsa/glsa-201409-04.xml
+    - http://struts.apache.org/development/2.x/docs/s2-015.html
+    - http://www.oracle.com/technetwork/topics/security/cpujan2014-1972949.html
+    - http://www.oracle.com/technetwork/topics/security/cpuoct2013-1899837.html
+    - http://www.securityfocus.com/bid/60346
+    - http://www.securityfocus.com/bid/64758
+    - https://cwiki.apache.org/confluence/display/WW/S2-015
+affected:
+    - groupId: org.apache.struts
+      artifactId: struts2-core
+      version:
+        - "<=2.3.14.2"
+      fixedin:
+        - ">=2.3.14.3"

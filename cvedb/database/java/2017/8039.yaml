@@ -1,0 +1,16 @@
+---
+cve: 2017-8039
+title: CVE in org.springframework.webflow:spring-webflow
+description: >
+    "An issue was discovered in Pivotal Spring Web Flow through 2.4.5. Applications that do not change the value of the MvcViewFactoryCreator useSpringBinding property which is disabled by default (i.e., set to 'false') can be vulnerable to malicious EL expressions in view states that process form submissions but do not have a sub-element to declare explicit data binding property mappings. NOTE: this issue exists because of an incomplete fix for CVE-2017-4971."
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/100849
+    - https://pivotal.io/security/cve-2017-8039
+affected:
+    - groupId: org.springframework.webflow
+      artifactId: spring-webflow
+      version:
+        - "<=2.4.5.RELEASE"
+      fixedin:
+        - ">=2.4.6.RELEASE"

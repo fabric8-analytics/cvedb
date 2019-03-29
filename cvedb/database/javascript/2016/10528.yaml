@@ -1,0 +1,14 @@
+---
+cve: 2016-10528
+title: CVE in restafary
+description: >
+    restafary is a REpresentful State Transfer API for Creating, Reading, Using, Deleting files on a server from the web. Restafary before 1.6.1 is able to set up a root path, which should only allow it to run inside of that root path it specified.
+cvss_v2: 4.0
+references:
+    - https://nodesecurity.io/advisories/89
+affected:
+    - name: restafary
+      version:
+        - "<=1.6.0"
+      fixedin:
+        - ">=1.6.1"

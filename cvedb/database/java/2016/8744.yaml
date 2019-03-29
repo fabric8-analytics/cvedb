@@ -1,0 +1,18 @@
+---
+cve: 2016-8744
+title: CVE in org.apache.brooklyn:brooklyn-utils-common
+description: >
+    Apache Brooklyn uses the SnakeYAML library for parsing YAML inputs. SnakeYAML allows the use of YAML tags to indicate that SnakeYAML should unmarshal data to a Java type. In the default configuration in Brooklyn before 0.10.0, SnakeYAML will allow unmarshalling to any Java type available on the classpath. This could provide an authenticated user with a means to cause the JVM running Brooklyn to load and run Java code without detection by Brooklyn. Such code would have the privileges of the Java process running Brooklyn, including the ability to open files and network connections, and execute system commands. There is known to be a proof-of-concept exploit using this vulnerability.
+cvss_v2: 9.0
+references:
+    - https://brooklyn.apache.org/community/security/CVE-2016-8744.html
+    - https://lists.apache.org/thread.html/3f4d09c1c1a3cdfd1da0a05c8362769b917c078eed5b6c2f8e37a761@%3Cdev.brooklyn.apache.org%3E
+    - https://nvd.nist.gov/vuln/detail/CVE-2016-8744
+    - https://github.com/apache/brooklyn-server/commit/ad34129fd19b4b4c6d65a6e906c6f04e4185ef31
+affected:
+    - groupId: org.apache.brooklyn
+      artifactId: brooklyn-utils-common
+      version:
+        - "<=0.9.0"
+      fixedin:
+        - ">=0.10.0"

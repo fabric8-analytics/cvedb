@@ -1,0 +1,17 @@
+---
+cve: 2014-3741
+title: CVE in printer
+description: >
+    The printDirect function in lib/printer.js in the node-printer module 0.0.1 and earlier for Node.js allows remote attackers to execute arbitrary commands via unspecified characters in the lpr command.
+cvss_v2: 7.5
+references:
+    - http://www.openwall.com/lists/oss-security/2014/05/13/1
+    - http://www.openwall.com/lists/oss-security/2014/05/15/2
+    - https://github.com/tojocky/node-printer/commit/e001e38738c17219a1d9dd8c31f7d82b9c0013c7
+    - https://nodesecurity.io/advisories/printer_potential_command_injection
+affected:
+    - name: printer
+      version:
+        - "<=0.0.1"
+      fixedin:
+        - ">=0.0.2"

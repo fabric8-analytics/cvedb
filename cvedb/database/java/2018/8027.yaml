@@ -1,0 +1,20 @@
+---
+cve: 2018-8027
+title: CVE in org.apache.camel:camel-core
+description: >
+    Apache Camel 2.20.0 to 2.20.3 and 2.21.0 Core is vulnerable to XXE in XSD validation processor.
+cvss_v2: 7.5
+references:
+    - http://camel.apache.org/security-advisories.data/CVE-2018-8027.txt.asc
+    - http://www.securityfocus.com/bid/104933
+    - https://lists.apache.org/thread.html/77f596fc63e63c2e9adcff3c34759b32c225cf0b582aedb755adaade@%3Cdev.camel.apache.org%3E
+    - https://github.com/apache/camel/pull/1493
+affected:
+    - groupId: org.apache.camel
+      artifactId: camel-core
+      version:
+        - "<=2.20.3,2.20.0"
+        - "==2.21.0"
+      fixedin:
+        - "==2.20.4"
+        - ">=2.21.1"

@@ -1,0 +1,14 @@
+---
+cve: 2018-16459
+title: CVE in exceljs
+description: >
+    An unescaped payload in exceljs <v1.6 allows a possible XSS via cell value when worksheet is displayed in browser.
+cvss_v2: 4.3
+references:
+    - https://hackerone.com/reports/356809
+affected:
+    - name: exceljs
+      version:
+        - "<=1.5.1"
+      fixedin:
+        - ">=1.6.0"

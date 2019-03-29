@@ -1,0 +1,19 @@
+---
+cve: 2016-1000338
+title: CVE in Bouncy Castle
+description: >
+    In Bouncy Castle JCE Provider version 1.55 and earlier the DSA does not fully validate ASN.1 encoding of signature on verification. It is possible to inject extra elements in the sequence making up the signature and still have it validate, which in some cases may allow the introduction of 'invisible' data into a signed structure.
+cvss_v2: 5.0
+references:
+    - https://access.redhat.com/errata/RHSA-2018:2669
+    - https://access.redhat.com/errata/RHSA-2018:2927
+    - https://github.com/bcgit/bc-java/commit/b0c3ce99d43d73a096268831d0d120ffc89eac7f#diff-3679f5a9d2b939d0d3ee1601a7774fb0
+    - https://lists.debian.org/debian-lts-announce/2018/07/msg00009.html
+    - https://usn.ubuntu.com/3727-1/
+affected:
+    - groupId: org.bouncycastle
+      artifactId: bcprov-jdk15on
+      version:
+        - "<=1.55"
+      fixedin:
+        - ">=1.56"

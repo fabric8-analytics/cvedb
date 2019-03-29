@@ -1,0 +1,16 @@
+---
+cve: 2017-7677
+title: CVE in Apache Ranger
+description: >
+    In environments that use external location for hive tables, Hive Authorizer in Apache Ranger before 0.7.1 should be checking RWX permission for create table.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/98961
+    - https://cwiki.apache.org/confluence/display/RANGER/Vulnerabilities+found+in+Ranger
+affected:
+    - groupId: org.apache.ranger
+      artifactId: ranger-hive-plugin
+      version:
+        - "<=0.7.0"
+      fixedin:
+        - ">=0.7.1"

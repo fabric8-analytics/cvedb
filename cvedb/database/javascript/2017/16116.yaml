@@ -1,0 +1,13 @@
+---
+cve: 2017-16116
+title: CVE in string
+description: >
+    The string module is a module that provides extra string operations. The string module is vulnerable to regular expression denial of service when specifically crafted untrusted user input is passed into the underscore or unescapeHTML methods.
+cvss_v2: 5.0
+references:
+    - https://github.com/jprichardson/string.js/issues/212
+    - https://nodesecurity.io/advisories/536
+affected:
+    - name: string
+      version:
+        - "<=3.3.3"

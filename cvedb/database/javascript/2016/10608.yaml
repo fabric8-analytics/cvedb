@@ -1,0 +1,12 @@
+---
+cve: 2016-10608
+title: CVE in robot-js
+description: >
+    robot-js is a module for native system automation for node.js. robot-js downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/201
+affected:
+    - name: robot-js
+      version:
+        - "<=2.0.0"

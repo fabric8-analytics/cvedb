@@ -1,0 +1,16 @@
+---
+cve: 2016-5395
+title: CVE in org.apache.ranger:ranger
+description: >
+    Cross-site scripting (XSS) vulnerability in the create user functionality in the policy admin tool in Apache Ranger before 0.6.1 allows remote authenticated administrators to inject arbitrary web script or HTML via vectors related to policies.
+cvss_v2: 3.5
+references:
+    - http://www.securityfocus.com/bid/92577
+    - https://cwiki.apache.org/confluence/display/RANGER/Vulnerabilities+found+in+Ranger
+affected:
+    - groupId: org.apache.ranger
+      artifactId: ranger
+      version:
+        - "<=0.6.0"
+      fixedin:
+        - ">=0.6.1"

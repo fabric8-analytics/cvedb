@@ -1,0 +1,29 @@
+---
+cve: 2018-16131
+title: CVE in Akka HTTP
+description: >
+    The decodeRequest and decodeRequestWith directives in Lightbend Akka HTTP 10.1.x through 10.1.4 and 10.0.x through 10.0.13 allow remote attackers to cause a denial of service (memory consumption and daemon crash) via a ZIP bomb.
+cvss_v2: 7.8
+references:
+    - https://akka.io/blog/news/2018/08/30/akka-http-dos-vulnerability-found
+    - https://doc.akka.io/docs/akka-http/current/security/2018-09-05-denial-of-service-via-decodeRequest.html
+    - https://github.com/akka/akka-http/issues/2137
+    - https://groups.google.com/forum/#!topic/akka-security/Dj7INsYWdjg
+    - https://github.com/akka/akka-http/pull/2185
+affected:
+    - groupId: com.typesafe.akka
+      artifactId: akka-http-core
+      version:
+        - "<=10.1.4,10.1.0"
+        - "<=10.0.13,10.0.0"
+      fixedin:
+        - ">=10.1.5"
+        - ">=10.0.14"
+    - groupId: com.typesafe.akka
+      artifactId: akka-http
+      version:
+        - "<=10.1.4,10.1.0"
+        - "<=10.0.13,10.0.0"
+      fixedin:
+        - ">=10.1.5"
+        - ">=10.0.14"

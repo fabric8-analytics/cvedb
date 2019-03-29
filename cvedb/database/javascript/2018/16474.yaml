@@ -1,0 +1,12 @@
+---
+cve: 2018-16474
+title: CVE in tianma-static
+description: >
+    A stored xss in tianma-static module versions <=1.0.4 allows an attacker to execute arbitrary javascript.
+cvss_v2: 4.3
+references:
+    - https://hackerone.com/reports/403692
+affected:
+    - name: tianma-static
+      version:
+        - "<=1.0.4"

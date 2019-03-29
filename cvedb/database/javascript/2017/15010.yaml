@@ -1,0 +1,21 @@
+---
+cve: 2017-15010
+title: CVE in tough-cookie
+description: >
+    A ReDoS (regular expression denial of service) flaw was found in the tough-cookie module before 2.3.3 for Node.js. An attacker that is able to make an HTTP request using a specially crafted cookie may cause the application to consume an excessive amount of CPU.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/101185
+    - https://access.redhat.com/errata/RHSA-2017:2912
+    - https://access.redhat.com/errata/RHSA-2017:2913
+    - https://access.redhat.com/errata/RHSA-2018:1263
+    - https://access.redhat.com/errata/RHSA-2018:1264
+    - https://github.com/salesforce/tough-cookie/issues/92
+    - https://nodesecurity.io/advisories/525
+    - https://snyk.io/vuln/npm:tough-cookie:20170905
+affected:
+    - name: tough-cookie
+      version:
+        - "<=2.3.2"
+      fixedin:
+        - ">=2.3.3"

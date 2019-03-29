@@ -1,0 +1,13 @@
+---
+cve: 2017-16141
+title: CVE in lab6drewfusbyu
+description: >
+    lab6drewfusbyu is an http server. lab6drewfusbyu is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/lab6drewfusbyu
+    - https://nodesecurity.io/advisories/474
+affected:
+    - name: lab6drewfusbyu
+      version:
+        - "==0.1.1"

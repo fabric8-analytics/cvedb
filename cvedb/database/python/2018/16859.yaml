@@ -1,0 +1,19 @@
+---
+cve: 2018-16859
+title: CVE in ansible
+description: >
+    Execution of Ansible playbooks on Windows platforms with PowerShell ScriptBlock logging and Module logging enabled can allow for 'become' passwords to appear in EventLogs in plaintext. A local user with administrator privileges on the machine can view these logs and discover the plaintext password. Ansible Engine 2.8 and older are believed to be vulnerable.
+cvss_v2: 2.1
+references:
+    - http://www.securityfocus.com/bid/106004
+    - https://access.redhat.com/errata/RHSA-2018:3770
+    - https://access.redhat.com/errata/RHSA-2018:3771
+    - https://access.redhat.com/errata/RHSA-2018:3772
+    - https://access.redhat.com/errata/RHSA-2018:3773
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-16859
+    - https://github.com/ansible/ansible/pull/49142
+    - https://github.com/ansible/ansible/commit/8c1f701e6e9df29fe991f98265e2dd76acca4b8c
+affected:
+    - name: ansible
+      version:
+        - "<=2.7.6"

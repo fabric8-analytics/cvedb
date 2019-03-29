@@ -1,0 +1,20 @@
+---
+cve: 2018-11040
+title: CVE in org.springframework:spring-webmvc
+description: >
+    Spring Framework, versions 5.0.x prior to 5.0.7 and 4.3.x prior to 4.3.18 and older unsupported versions, allows web applications to enable cross-domain requests via JSONP (JSON with Padding) through AbstractJsonpResponseBodyAdvice for REST controllers and MappingJackson2JsonView for browser requests. Both are not enabled by default in Spring Framework nor Spring Boot, however, when MappingJackson2JsonView is configured in an application, JSONP support is automatically ready to use through the "jsonp" and "callback" JSONP parameters, enabling cross-domain requests.
+cvss_v2: 4.3
+references:
+    - http://www.oracle.com/technetwork/security-advisory/cpuoct2018-4428296.html
+    - https://pivotal.io/security/cve-2018-11040
+    - https://jira.spring.io/browse/SPR-16798
+    - https://github.com/spring-projects/spring-framework/commit/874859493bbda59739c38c7e52eb3625f247b93a
+affected:
+    - groupId: org.springframework
+      artifactId: spring-webmvc
+      version:
+        - "<=4.3.17.RELEASE"
+        - "<=5.0.6.RELEASE,5.0.0.RELEASE"
+      fixedin:
+        - ">=4.3.18.RELEASE"
+        - ">=5.0.7.RELEASE"

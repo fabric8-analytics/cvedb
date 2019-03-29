@@ -1,0 +1,16 @@
+---
+cve: 2018-18830
+title: CVE in net.mingsoft:ms-mcms
+description: >
+    An issue was discovered in com\mingsoft\basic\action\web\FileAction.java in MCMS 4.6.5. Since the upload interface does not verify the user login status, you can use this interface to upload files without setting a cookie. First, start an upload of JSP code with a .png filename, and then intercept the data packet. In the name parameter, change the suffix to jsp. In the response, the server returns the storage path of the file, which can be accessed to execute arbitrary JSP code.
+cvss_v2: 7.5
+references:
+    - https://gitee.com/mingSoft/MCMS/issues/IO0IQ
+    - https://nvd.nist.gov/vuln/detail/CVE-2018-18830
+affected:
+    - groupId: net.mingsoft
+      artifactId: ms-mcms
+      version:
+        - ">=4.6.5"
+      fixedin:
+        []

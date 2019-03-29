@@ -1,0 +1,23 @@
+---
+cve: 2017-5646
+title: CVE in Apache Knox
+description: >
+    For versions of Apache Knox from 0.2.0 to 0.11.0 - an authenticated user may use a specially crafted URL to impersonate another user while accessing WebHDFS through Apache Knox. This may result in escalated privileges and unauthorized data access. While this activity is audit logged and can be easily associated with the authenticated user, this is still a serious security issue. All users are recommended to upgrade to the Apache Knox 0.12.0 release.
+cvss_v2: 4.9
+references:
+    - http://mail-archives.apache.org/mod_mbox/knox-user/201705.mbox/%3CCACRbFyjtT7QQGHUzTRdbJoySbJb7tt4BDk5-r-VRn0GB0Kgvag%40mail.gmail.com%3E
+    - http://www.securityfocus.com/bid/98739
+    - https://github.com/apache/knox/commit/998dcd257dc839c9651485760da4d614c16e2ca2
+affected:
+    - groupId: org.apache.knox
+      artifactId: gateway-provider-identity-assertion-common
+      version:
+        - "<=0.11.0"
+      fixedin:
+        - ">=0.12.0"
+    - groupId: org.apache.knox
+      artifactId: gateway-spi
+      version:
+        - "<=0.11.0"
+      fixedin:
+        - ">=0.12.0"

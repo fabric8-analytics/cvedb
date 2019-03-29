@@ -1,0 +1,22 @@
+---
+cve: 2018-1273
+title: CVE in org.springframework.data:spring-data-commons
+description: >
+    Spring Data Commons, versions prior to 1.13 to 1.13.10, 2.0 to 2.0.5, and older unsupported versions, contain a property binder vulnerability caused by improper neutralization of special elements. An unauthenticated remote malicious user (or attacker) can supply specially crafted request parameters against Spring Data REST backed HTTP resources or using Spring Data's projection-based request payload binding hat can lead to a remote code execution attack.
+cvss_v2: 7.5
+references:
+    - http://mail-archives.apache.org/mod_mbox/ignite-dev/201807.mbox/%3CCAK0qHnqzfzmCDFFi6c5Jok19zNkVCz5Xb4sU%3D0f2J_1i4p46zQ%40mail.gmail.com%3E
+    - https://pivotal.io/security/cve-2018-1273
+    - https://github.com/spring-projects/spring-data-commons/commit/b1a20ae1e82a63f99b3afc6f2aaedb3bf4dc432a
+    - https://github.com/spring-projects/spring-data-commons/commit/ae1dd2741ce06d44a0966ecbd6f47beabde2b653
+    - https://jira.spring.io/browse/DATACMNS-1282
+affected:
+    - groupId: org.springframework.data
+      artifactId: spring-data-commons
+      version:
+        - "<=1.12.11.RELEASE"
+        - "<=1.13.10.RELEASE,1.13.0.RELEASE"
+        - "<=2.0.5.RELEASE,2.0.0.RELEASE"
+      fixedin:
+        - "<=1.13.18.RELEASE,1.13.11.RELEASE"
+        - ">=2.0.6.RELEASE"

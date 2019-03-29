@@ -1,0 +1,13 @@
+---
+cve: 2017-16164
+title: CVE in desafio
+description: >
+    desafio is a simple web server. desafio is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url, but is limited to accessing only .html files.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/desafio
+    - https://nodesecurity.io/advisories/397
+affected:
+    - name: desafio
+      version:
+        - "<=1.1.0"

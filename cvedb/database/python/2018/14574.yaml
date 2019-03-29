@@ -1,0 +1,20 @@
+---
+cve: 2018-14574
+title: CVE in django
+description: >
+    django.middleware.common.CommonMiddleware in Django 1.11.x before 1.11.15 and 2.0.x before 2.0.8 has an Open Redirect.
+cvss_v2: 5.8
+references:
+    - http://www.securityfocus.com/bid/104970
+    - http://www.securitytracker.com/id/1041403
+    - https://usn.ubuntu.com/3726-1/
+    - https://www.debian.org/security/2018/dsa-4264
+    - https://www.djangoproject.com/weblog/2018/aug/01/security-releases/
+affected:
+    - name: django
+      version:
+        - "<=1.11.14,1.11"
+        - "<=2.0.7,2.0"
+      fixedin:
+        - ">=1.11.15"
+        - ">=2.0.8"

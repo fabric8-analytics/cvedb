@@ -1,0 +1,14 @@
+---
+cve: 2018-1295
+title: CVE in org.apache.ignite:ignite-core
+description: >
+    In Apache Ignite 2.3 or earlier, the serialization mechanism does not have a list of classes allowed for serialization/deserialization, which makes it possible to run arbitrary code when 3-rd party vulnerable classes are present in Ignite classpath. The vulnerability can be exploited if the one sends a specially prepared form of a serialized object to one of the deserialization endpoints of some Ignite components - discovery SPI, Ignite persistence, Memcached endpoint, socket steamer.
+cvss_v2: 7.5
+references:
+    - https://github.com/apache/ignite/commit/d268eb2573ad46efce8b6d9480b7c9c317b792cd
+    - https://lists.apache.org/thread.html/45e7d5e2c6face85aab693f5ae0616563132ff757e5a558da80d0209@%3Cdev.ignite.apache.org%3E
+affected:
+    - groupId: org.apache.ignite
+      artifactId: ignite-core
+      version:
+        - "<=2.3.0"

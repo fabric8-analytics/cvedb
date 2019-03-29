@@ -1,0 +1,20 @@
+---
+cve: 2017-9802
+title: CVE in org.apache.sling:org.apache.sling.servlets.post
+description: >
+    "The Javascript method Sling.evalString() in Apache Sling Servlets Post before 2.3.22 uses the javascript 'eval' function to parse input strings, which allows for XSS attacks by passing specially crafted input strings."
+cvss_v2: 4.3
+references:
+    - http://packetstormsecurity.com/files/143758/Apache-Sling-Servlets-Post-2.3.20-Cross-Site-Scripting.html
+    - http://www.securityfocus.com/archive/1/541024/100/0/threaded
+    - http://www.securityfocus.com/bid/100284
+    - https://issues.apache.org/jira/browse/SLING-7041
+    - https://lists.apache.org/thread.html/2f4b8333e44c6e7e0b00933bd4204ce64829952f60dbb6814f2cdf91@%3Cdev.sling.apache.org%3E
+    - https://svn.apache.org/viewvc?view=revision&revision=1804546
+affected:
+    - groupId: org.apache.sling
+      artifactId: org.apache.sling.servlets.post
+      version:
+        - "<=2.3.20"
+      fixedin:
+        - ">=2.3.22"

@@ -1,0 +1,14 @@
+---
+cve: 2017-1000220
+title: CVE in pidusage
+description: >
+    soyuka/pidusage <=1.1.4 is vulnerable to command injection in the module resulting in arbitrary command execution
+cvss_v2: 7.5
+references:
+    - https://nodesecurity.io/advisories/356
+affected:
+    - name: pidusage
+      version:
+        - "<=1.1.4"
+      fixedin:
+        - ">=1.1.5"

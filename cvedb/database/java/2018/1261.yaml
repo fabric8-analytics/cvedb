@@ -1,0 +1,16 @@
+---
+cve: 2018-1261
+title: CVE in org.springframework.integration:spring-integration-zip
+description: >
+    Spring-integration-zip versions prior to 1.0.1 exposes an arbitrary file write vulnerability, which can be achieved using a specially crafted zip archive (affects other archives as well, bzip2, tar, xz, war, cpio, 7z) that holds path traversal filenames. So when the filename gets concatenated to the target extraction directory, the final path ends up outside of the target folder.
+cvss_v2: 4.0
+references:
+    - http://www.securityfocus.com/bid/104178
+    - https://pivotal.io/security/cve-2018-1261
+affected:
+    - groupId: org.springframework.integration
+      artifactId: spring-integration-zip
+      version:
+        - "==1.0.0.RELEASE"
+      fixedin:
+        - ">=1.0.1.RELEASE"

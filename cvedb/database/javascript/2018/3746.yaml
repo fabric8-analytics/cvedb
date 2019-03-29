@@ -1,0 +1,14 @@
+---
+cve: 2018-3746
+title: CVE in pdfinfojs
+description: >
+    The pdfinfojs NPM module versions <= 0.3.6 has a command injection vulnerability that allows an attacker to execute arbitrary commands on the victim's machine.
+cvss_v2: 10.0
+references:
+    - https://hackerone.com/reports/330957
+affected:
+    - name: pdfinfojs
+      version:
+        - "<=0.3.6"
+      fixedin:
+        - ">=0.4.0"

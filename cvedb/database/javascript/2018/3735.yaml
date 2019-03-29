@@ -1,0 +1,12 @@
+---
+cve: 2018-3735
+title: CVE in bracket-template
+description: >
+    bracket-template suffers from reflected XSS possible when variable passed via GET parameter is used in template
+cvss_v2: 4.3
+references:
+    - https://hackerone.com/reports/317125
+affected:
+    - name: bracket-template
+      version:
+        - ">=1.1.5"

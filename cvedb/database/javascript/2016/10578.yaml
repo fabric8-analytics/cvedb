@@ -1,0 +1,14 @@
+---
+cve: 2016-10578
+title: CVE in unicode
+description: >
+    unicode loads unicode data downloaded from unicode.org into nodejs. Unicode before 9.0.0 downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks.
+cvss_v2: 6.8
+references:
+    - https://nodesecurity.io/advisories/161
+affected:
+    - name: unicode
+      version:
+        - "<=0.6.1"
+      fixedin:
+        - ">=9.0.0"

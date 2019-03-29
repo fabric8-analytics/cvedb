@@ -1,0 +1,14 @@
+---
+cve: 2017-16119
+title: CVE in fresh
+description: >
+    Fresh is a module used by the Express.js framework for HTTP response freshness testing. It is vulnerable to a regular expression denial of service when it is passed specially crafted input to parse. This causes the event loop to be blocked causing a denial of service condition.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/526
+affected:
+    - name: fresh
+      version:
+        - "<=0.5.1"
+      fixedin:
+        - ">=0.5.2"

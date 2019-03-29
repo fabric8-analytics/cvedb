@@ -1,0 +1,17 @@
+---
+cve: 2018-1000164
+title: CVE in gunicorn
+description: >
+    gunicorn version 19.4.5 contains a CWE-113: Improper Neutralization of CRLF Sequences in HTTP Headers vulnerability in "process_headers" function in "gunicorn/http/wsgi.py" that can result in an attacker causing the server to return arbitrary HTTP headers. This vulnerability appears to have been fixed in 19.5.0.
+cvss_v2: 5.0
+references:
+    - https://epadillas.github.io/2018/04/02/http-header-splitting-in-gunicorn-19.4.5
+    - https://github.com/benoitc/gunicorn/issues/1227
+    - https://github.com/benoitc/gunicorn/commit/1e10a02e73c87dfadc394b361af33864d0e59e24
+    - https://nvd.nist.gov/vuln/detail/CVE-2018-1000164
+affected:
+    - name: gunicorn
+      version:
+        - "==19.4.5"
+      fixedin:
+        - ">=19.5.0"

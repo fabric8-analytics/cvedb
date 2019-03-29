@@ -1,0 +1,15 @@
+---
+cve: 2017-1000228
+title: CVE in ejs
+description: >
+    nodejs ejs versions older than 2.5.3 is vulnerable to remote code execution due to weak input validation in ejs.renderFile() function
+cvss_v2: 10.0
+references:
+    - http://www.securityfocus.com/bid/101897
+    - https://snyk.io/vuln/npm:ejs:20161128
+affected:
+    - name: ejs
+      version:
+        - "<=2.5.2"
+      fixedin:
+        - ">=2.5.3"

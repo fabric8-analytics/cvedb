@@ -1,0 +1,17 @@
+---
+cve: 2018-15801
+title: CVE in Spring Security
+description: >
+    Spring Security versions 5.1.x prior to 5.1.2 contain an authorization bypass vulnerability during JWT issuer validation. In order to be impacted, the same private key for an honest issuer and a malicious user must be used when signing JWTs. In that case, a malicious user could fashion signed JWTs with the malicious issuer URL that may be granted for the honest issuer.
+cvss_v2: 5.8
+references:
+    - https://pivotal.io/security/cve-2018-15801
+    - https://github.com/spring-projects/spring-security/issues/6073
+    - https://github.com/spring-projects/spring-security/commit/5478b74116a91421bd24e5e5f3d9be5f603d0f9e
+affected:
+    - groupId: org.springframework.security
+      artifactId: spring-security-oauth2-jose
+      version:
+        - "<=5.1.1.RELEASE,5.1.0.RELEASE"
+      fixedin:
+        - ">=5.1.2.RELEASE"

@@ -1,0 +1,17 @@
+---
+cve: 2017-16026
+title: CVE in request
+description: >
+    Request is an http client. If a request is made using ```multipart```, and the body type is a ```number```, then the specified number of non-zero memory is passed in the body. This affects Request >=2.2.6 <2.47.0 || >2.51.0 <=2.67.0.
+cvss_v2: 7.1
+references:
+    - https://github.com/request/request/issues/1904
+    - https://github.com/request/request/pull/2018
+    - https://nodesecurity.io/advisories/309
+affected:
+    - name: request
+      version:
+        - "<=2.46.0,2.2.6"
+        - "<=2.67.0,2.52.0"
+      fixedin:
+        - ">=2.68.0"

@@ -1,0 +1,19 @@
+---
+cve: 2016-5016
+title: CVE in org.cloudfoundry.identity:cloudfoundry-identity-server
+description: >
+    Pivotal Cloud Foundry 239 and earlier, UAA (aka User Account and Authentication Server) 3.4.1 and earlier, UAA release 12.2 and earlier, PCF (aka Pivotal Cloud Foundry) Elastic Runtime 1.6.x before 1.6.35, and PCF Elastic Runtime 1.7.x before 1.7.13 does not validate if a certificate is expired.
+cvss_v2: 4.3
+references:
+    - https://github.com/cloudfoundry/cf-release/releases/tag/v240
+    - https://github.com/cloudfoundry/uaa-release/releases/tag/v11.3
+    - https://github.com/cloudfoundry/uaa-release/releases/tag/v12.3
+    - https://github.com/cloudfoundry/uaa/releases/tag/2.7.4.6
+    - https://github.com/cloudfoundry/uaa/releases/tag/3.3.0.3
+    - https://github.com/cloudfoundry/uaa/releases/tag/3.4.2
+    - https://pivotal.io/security/cve-2016-5016
+affected:
+    - groupId: org.cloudfoundry.identity
+      artifactId: cloudfoundry-identity-server
+      version:
+        - "<=3.4.1"

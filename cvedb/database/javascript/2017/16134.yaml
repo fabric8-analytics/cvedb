@@ -1,0 +1,13 @@
+---
+cve: 2017-16134
+title: CVE in http_static_simple
+description: >
+    http_static_simple is an http server. http_static_simple is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/http_static_simple
+    - https://nodesecurity.io/advisories/472
+affected:
+    - name: http_static_simple
+      version:
+        - "<=0.1.1"

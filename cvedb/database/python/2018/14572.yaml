@@ -1,0 +1,12 @@
+---
+cve: 2018-14572
+title: CVE in conference-scheduler-cli
+description: >
+    In conference-scheduler-cli, a pickle.load call on imported data allows remote attackers to execute arbitrary code via a crafted .pickle file, as demonstrated by Python code that contains an os.system call.
+cvss_v2: 6.8
+references:
+    - https://github.com/PyconUK/ConferenceScheduler-cli/issues/19
+affected:
+    - name: conference-scheduler-cli
+      version:
+        - "<=0.10.1"

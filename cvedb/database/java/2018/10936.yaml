@@ -1,0 +1,18 @@
+---
+cve: 2018-10936
+title: CVE in org.postgresql:postgresql
+description: >
+    A weakness was found in postgresql-jdbc before version 42.2.5. It was possible to provide an SSL Factory and not check the host name if a host name verifier was not provided to the driver. This could lead to a condition where a man-in-the-middle attacker could masquerade as a trusted server by providing a certificate for the wrong host, as long as it was signed by a trusted CA.
+cvss_v2: 6.8
+references:
+    - http://www.securityfocus.com/bid/105220
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-10936
+    - https://www.postgresql.org/about/news/1883/
+    - https://github.com/pgjdbc/pgjdbc/commit/cdeeaca47dc3bc6f727c79a582c9e4123099526e
+affected:
+    - groupId: org.postgresql
+      artifactId: postgresql
+      version:
+        - "<=42.2.4"
+      fixedin:
+        - ">=42.2.5"

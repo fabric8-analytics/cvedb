@@ -1,0 +1,28 @@
+---
+cve: 2016-9878
+title: CVE in org.springframework:spring-core
+description: >
+    An issue was discovered in Pivotal Spring Framework before 3.2.18, 4.2.x before 4.2.9, and 4.3.x before 4.3.5. Paths provided to the ResourceServlet were not properly sanitized and as a result exposed to directory traversal attacks.
+cvss_v2: 5.0
+references:
+    - http://www.oracle.com/technetwork/security-advisory/cpuapr2018-3678067.html
+    - http://www.oracle.com/technetwork/security-advisory/cpujan2018-3236628.html
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2018-4258247.html
+    - http://www.securityfocus.com/bid/95072
+    - http://www.securitytracker.com/id/1040698
+    - https://access.redhat.com/errata/RHSA-2017:3115
+    - https://pivotal.io/security/cve-2016-9878
+    - https://security.netapp.com/advisory/ntap-20180419-0002/
+    - https://jira.spring.io/browse/SPR-14946
+    - https://github.com/spring-projects/spring-framework/commit/e2d6e709c3c65a4951eb096843ee75d5200cfcad
+affected:
+    - groupId: org.springframework
+      artifactId: spring-webmvc
+      version:
+        - "<=3.2.17.RELEASE"
+        - "<=4.2.8.RELEASE,4.2.0.RELEASE"
+        - "<=4.3.4.RELEASE,4.3.0.RELEASE"
+      fixedin:
+        - ">=3.2.18.RELEASE"
+        - ">=4.2.9.RELEASE"
+        - ">=4.3.5.RELEASE"

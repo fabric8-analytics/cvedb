@@ -1,0 +1,18 @@
+---
+cve: 2014-1624
+title: CVE in pyxdg
+description: >
+    Race condition in the xdg.BaseDirectory.get_runtime_dir function in python-xdg 0.25 allows local users to overwrite arbitrary files by pre-creating /tmp/pyxdg-runtime-dir-fallback-victim to point to a victim-owned location, then replacing it with a symlink to an attacker-controlled location once the get_runtime_dir function is called.
+cvss_v2: 3.3
+references:
+    - http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=736247
+    - http://www.openwall.com/lists/oss-security/2014/01/21/3
+    - http://www.openwall.com/lists/oss-security/2014/01/21/4
+    - http://www.securityfocus.com/bid/65042
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/90618
+affected:
+    - name: pyxdg
+      version:
+        - "==0.25"
+      fixedin:
+        - ">=0.26"

@@ -1,0 +1,25 @@
+---
+cve: 2016-3087
+title: CVE in org.apache.struts:struts2-core
+description: >
+    Apache Struts 2.3.20.x before 2.3.20.3, 2.3.24.x before 2.3.24.3, and 2.3.28.x before 2.3.28.1, when Dynamic Method Invocation is enabled, allow remote attackers to execute arbitrary code via vectors related to an ! (exclamation mark) operator to the REST Plugin.
+cvss_v2: 7.5
+references:
+    - http://struts.apache.org/docs/s2-033.html
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21987854
+    - http://www.securityfocus.com/bid/90960
+    - http://www.securitytracker.com/id/1036017
+    - https://www.exploit-db.com/exploits/39919/
+affected:
+    - groupId: org.apache.struts
+      artifactId: struts2-core
+      version:
+        - "==2.3.20"
+        - "==2.3.20.1"
+        - "==2.3.24"
+        - "==2.3.24.1"
+        - "==2.3.28"
+      fixedin:
+        - "==2.3.20.3"
+        - "==2.3.24.3"
+        - ">=2.3.28.1"

@@ -1,0 +1,15 @@
+---
+cve: 2015-0838
+title: CVE in dulwich
+description: >
+    Buffer overflow in the C implementation of the apply_delta function in _pack.c in Dulwich before 0.9.9 allows remote attackers to execute arbitrary code via a crafted pack file.
+cvss_v2: 7.5
+references:
+    - http://www.debian.org/security/2015/dsa-3206
+    - https://lists.launchpad.net/dulwich-users/msg00829.html
+affected:
+    - name: dulwich
+      version:
+        - "<=0.9.8"
+      fixedin:
+        - ">=0.9.9"

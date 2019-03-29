@@ -1,0 +1,15 @@
+---
+cve: 2013-7459
+title: CVE in pycrypto
+description: >
+    Heap-based buffer overflow in the ALGnew function in block_templace.c in Python Cryptography Toolkit (aka pycrypto) allows remote attackers to execute arbitrary code as demonstrated by a crafted iv parameter to cryptmsg.py.
+cvss_v2: 7.5
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1409754
+    - https://github.com/dlitz/pycrypto/commit/8dbe0dc3eea5c689d4f76b37b93fe216cf1f00d4
+    - https://github.com/dlitz/pycrypto/issues/176
+    - https://nvd.nist.gov/vuln/detail/CVE-2013-7459
+affected:
+    - name: pycrypto
+      version:
+        - "<=2.6.1"

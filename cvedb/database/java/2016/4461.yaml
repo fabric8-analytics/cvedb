@@ -1,0 +1,18 @@
+---
+cve: 2016-4461
+title: CVE in org.apache.struts.xwork:xwork-core
+description: >
+    Apache Struts 2.x before 2.3.29 allows remote attackers to execute arbitrary code via a "%{}" sequence in a tag attribute, aka forced double OGNL evaluation.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2016-0785.
+cvss_v2: 9.0
+references:
+    - http://www.securityfocus.com/bid/91277
+    - https://security.netapp.com/advisory/ntap-20180629-0004/
+    - https://struts.apache.org/docs/s2-036.html
+    - https://github.com/apache/struts/commit/b28b78c062f0bf3c79793a25aab8c9b6c12bce6e
+affected:
+    - groupId: org.apache.struts.xwork
+      artifactId: xwork-core
+      version:
+        - "<=2.3.28.1,2.3"
+      fixedin:
+        - ">=2.3.29"

@@ -1,0 +1,14 @@
+---
+cve: 2017-16120
+title: CVE in liyujing
+description: >
+    liyujing is a static file server. liyujing is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/liyujing
+    - https://nodesecurity.io/advisories/387
+
+affected:
+    - name: liyujing
+      version:
+        - "<=1.1.0"

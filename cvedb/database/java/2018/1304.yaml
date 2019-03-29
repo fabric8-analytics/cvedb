@@ -1,0 +1,38 @@
+---
+cve: 2018-1304
+title: Security constraints mapped to context root are ignored in Apache Tomcat
+description: >
+    The URL pattern of "" (the empty string) which exactly maps to the context root was not correctly handled in Apache Tomcat 9.0.0.M1 to 9.0.4, 8.5.0 to 8.5.27, 8.0.0.RC1 to 8.0.49 and 7.0.0 to 7.0.84 when used as part of a security constraint definition. This caused the constraint to be ignored. It was, therefore, possible for unauthorised users to gain access to web application resources that should have been protected. Only security constraints with a URL pattern of the empty string were affected.
+cvss_v2: 4.3
+references:
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2018-4258247.html
+    - http://www.oracle.com/technetwork/security-advisory/cpuoct2018-4428296.html
+    - http://www.securityfocus.com/bid/103170
+    - http://www.securitytracker.com/id/1040427
+    - https://access.redhat.com/errata/RHSA-2018:0465
+    - https://access.redhat.com/errata/RHSA-2018:0466
+    - https://access.redhat.com/errata/RHSA-2018:1320
+    - https://access.redhat.com/errata/RHSA-2018:1447
+    - https://access.redhat.com/errata/RHSA-2018:1448
+    - https://access.redhat.com/errata/RHSA-2018:1449
+    - https://access.redhat.com/errata/RHSA-2018:1450
+    - https://access.redhat.com/errata/RHSA-2018:1451
+    - https://access.redhat.com/errata/RHSA-2018:2939
+    - https://lists.apache.org/thread.html/b1d7e2425d6fd2cebed40d318f9365b44546077e10949b01b1f8a0fb@%3Cannounce.tomcat.apache.org%3E
+    - https://lists.debian.org/debian-lts-announce/2018/03/msg00004.html
+    - https://lists.debian.org/debian-lts-announce/2018/06/msg00008.html
+    - https://lists.debian.org/debian-lts-announce/2018/07/msg00044.html
+    - https://security.netapp.com/advisory/ntap-20180706-0001/
+    - https://usn.ubuntu.com/3665-1/
+    - https://www.debian.org/security/2018/dsa-4281
+    - http://svn.apache.org/viewvc?view=revision&revision=1823306
+affected:
+    - groupId: org.apache.tomcat
+      artifactId: tomcat-catalina
+      version:
+        - "<=7.0.84,7.0.0"
+        - "<=8.0.49,8.0.0-RC1"
+        - "<=8.5.27,8.5.0"
+        - "<=9.0.4,9.0.0.M1"
+      fixedin:
+        - ">=9.0.5"

@@ -1,0 +1,15 @@
+---
+cve: 2018-3732
+title: CVE in resolve-path
+description: >
+    resolve-path node module before 1.4.0 suffers from a Path Traversal vulnerability due to lack of validation of paths with certain special characters, which allows a malicious user to read content of any file with known path.
+cvss_v2: 5.0
+references:
+    - https://github.com/pillarjs/resolve-path/commit/fe5b8052cafd35fcdafe9210e100e9050b37d2a0
+    - https://hackerone.com/reports/315760
+affected:
+    - name: resolve-path
+      version:
+        - "<=1.3.3"
+      fixedin:
+        - ">=1.4.0"

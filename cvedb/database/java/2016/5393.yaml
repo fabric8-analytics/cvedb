@@ -1,0 +1,18 @@
+---
+cve: 2016-5393
+title: CVE in Apache Hadoop
+description: >
+    In Apache Hadoop 2.6.x before 2.6.5 and 2.7.x before 2.7.3, a remote user who can authenticate with the HDFS NameNode can possibly run arbitrary commands with the same privileges as the HDFS service.
+cvss_v2: 6.5
+references:
+    - http://mail-archives.apache.org/mod_mbox/hadoop-general/201611.mbox/%3CCAA0W1bTbUmUUSF1rjRpX-2DvWutcrPt7TJSWUcSLg1F0gyHG1Q%40mail.gmail.com%3E
+    - http://www.securityfocus.com/bid/94574
+affected:
+    - groupId: org.apache.hadoop
+      artifactId: hadoop-common
+      version:
+        - "<=2.6.4,2.6.0"
+        - "<=2.7.2,2.7.0"
+      fixedin:
+        - ">=2.6.5"
+        - ">=2.7.3"

@@ -1,0 +1,16 @@
+---
+cve: 2018-16491
+title: CVE in node.extend
+description: >
+    A prototype pollution vulnerability was found in node.extend <1.1.7, ~<2.0.1 that allows an attacker to inject arbitrary properties onto Object.prototype.
+cvss_v2: 7.5
+references:
+    - https://hackerone.com/reports/430831
+affected:
+    - name: node.extend
+      version:
+        - "<=1.1.6"
+        - "==2.0.0"
+      fixedin:
+        - ">=1.1.7"
+        - ">=2.0.1"

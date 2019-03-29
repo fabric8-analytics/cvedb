@@ -1,0 +1,23 @@
+---
+cve: 2017-5651
+title: CVE in Apache Tomcat
+description: >
+    In Apache Tomcat 9.0.0.M1 to 9.0.0.M18 and 8.5.0 to 8.5.12, the refactoring of the HTTP connectors introduced a regression in the send file processing. If the send file processing completed quickly, it was possible for the Processor to be added to the processor cache twice. This could result in the same Processor being used for multiple requests which in turn could lead to unexpected errors and/or response mix-up.
+cvss_v2: 7.5
+references:
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2017-3236622.html
+    - http://www.securityfocus.com/bid/97544
+    - http://www.securitytracker.com/id/1038219
+    - https://bz.apache.org/bugzilla/show_bug.cgi?id=60918
+    - https://lists.apache.org/thread.html/6694538826b87522fb723d2dcedd537e14ebe0a381d92e5525a531d8@%3Cannounce.tomcat.apache.org%3E
+    - https://security.gentoo.org/glsa/201705-09
+    - https://security.netapp.com/advisory/ntap-20180614-0001/
+affected:
+    - groupId: org.apache.tomcat
+      artifactId: tomcat-coyote
+      version:
+        - "<=8.5.12,8.5.0"
+        - "<=9.0.0.M18,9.0.0.M1"
+      fixedin:
+        - ">=8.5.13"
+        - ">=9.0.0.M19"

@@ -1,0 +1,13 @@
+---
+cve: 2017-1000190
+title: CVE in org.simpleframework:simple-xml
+description: >
+    SimpleXML (latest version 2.7.1) is vulnerable to an XXE vulnerability resulting SSRF, information disclosure, DoS and so on.
+cvss_v2: 6.4
+references:
+    - https://github.com/ngallagher/simplexml/issues/18
+affected:
+    - groupId: org.simpleframework
+      artifactId: simple-xml
+      version:
+        - "<=2.7.1"

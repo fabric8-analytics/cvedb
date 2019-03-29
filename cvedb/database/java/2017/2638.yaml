@@ -1,0 +1,45 @@
+---
+cve: 2017-2638
+title: CVE in Infinispan
+description: >
+    It was found that the REST API in Infinispan before version 9.0.0 did not properly enforce auth constraints. An attacker could use this vulnerability to read or modify data in the default cache or a known cache name.
+cvss_v2: 6.4
+references:
+    - http://rhn.redhat.com/errata/RHSA-2017-1097.html
+    - http://www.securityfocus.com/bid/97964
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2017-2638
+    - https://github.com/infinispan/infinispan/pull/4936/commits
+    - https://github.com/infinispan/infinispan/commit/f2d54c4ecb75c7264d4160ca7c461135712201a9
+    - https://github.com/infinispan/infinispan/commit/f727ba69f26e068801b7811cab3a307f9578d9bc
+    - https://issues.jboss.org/browse/ISPN-7485
+affected:
+    - groupId: org.infinispan
+      artifactId: infinispan-server-rest
+      version:
+        - "<=8.2.11.Final"
+      fixedin:
+        - ">=9.0.0"
+    - groupId: org.infinispan
+      artifactId: infinispan-server-router
+      version:
+        - "<=8.2.11.Final"
+      fixedin:
+        - ">=9.0.0"
+    - groupId: org.infinispan
+      artifactId: infinispan-server-endpoints
+      version:
+        - "<=8.2.11.Final"
+      fixedin:
+        - ">=9.0.0"
+    - groupId: org.infinispan
+      artifactId: infinispan-server-core
+      version:
+        - "<=8.2.11.Final"
+      fixedin:
+        - ">=9.0.0"
+    - groupId: org.infinispan
+      artifactId: infinispan-server-testsuite
+      version:
+        - "<=8.2.11.Final"
+      fixedin:
+        - ">=9.0.0"

@@ -1,0 +1,13 @@
+---
+cve: 2017-16139
+title: CVE in jikes
+description: >
+    jikes is a file server. jikes is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url. Accessible files are restricted to files with .htm and .js extensions.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/jikes
+    - https://nodesecurity.io/advisories/476
+affected:
+    - name: jikes
+      version:
+        - "==0.0.1"

@@ -1,0 +1,15 @@
+---
+cve: 2017-1000188
+title: CVE in ejs
+description: >
+    nodejs ejs version older than 2.5.5 is vulnerable to a Cross-site-scripting in the ejs.renderFile() resulting in code injection
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/101889
+    - https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+affected:
+    - name: ejs
+      version:
+        - "<=2.5.4"
+      fixedin:
+        - ">=2.5.5"

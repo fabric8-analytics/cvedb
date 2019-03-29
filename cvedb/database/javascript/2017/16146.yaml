@@ -1,0 +1,14 @@
+---
+cve: 2017-16146
+title: CVE in mockserve
+description: >
+    mockserve is a file server. mockserve is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/mockserve
+    - https://nodesecurity.io/advisories/445
+
+affected:
+    - name: mockserve
+      version:
+        - "<=2.0.6"

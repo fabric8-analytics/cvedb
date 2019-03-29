@@ -1,0 +1,18 @@
+---
+cve: 2018-15531
+title: CVE in net.bull.javamelody:javamelody-core
+description: >
+    JavaMelody before 1.74.0 has XXE via parseSoapMethodName in bull/javamelody/PayloadNameRequestWrapper.java.
+cvss_v2: 7.5
+references:
+    - http://www.openwall.com/lists/oss-security/2018/09/25/3
+    - https://github.com/javamelody/javamelody/commit/ef111822562d0b9365bd3e671a75b65bd0613353
+    - https://github.com/javamelody/javamelody/wiki/ReleaseNotes
+    - https://jenkins.io/security/advisory/2018-09-25/
+affected:
+    - groupId: net.bull.javamelody
+      artifactId: javamelody-core
+      version:
+        - "<=1.73.1"
+      fixedin:
+        - ">=1.74.0"

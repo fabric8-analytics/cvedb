@@ -1,0 +1,17 @@
+---
+cve: 2018-12036
+title: CVE in OWASP Dependency-Check
+description: >
+    OWASP Dependency-Check before 3.2.0 allows attackers to write to arbitrary files via a crafted archive that holds directory traversal filenames.
+cvss_v2: 6.8
+references:
+    - https://github.com/jeremylong/DependencyCheck/blob/master/RELEASE_NOTES.md#version-320-2018-05-21
+    - https://github.com/snyk/zip-slip-vulnerability
+    - https://github.com/jeremylong/DependencyCheck/commit/4df51f39043c80b98aefdb2ae592f052d3c26acc
+affected:
+    - groupId: org.owasp
+      artifactId: dependency-check-core
+      version:
+        - "<=3.1.2"
+      fixedin:
+        - ">=3.2.0"

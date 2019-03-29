@@ -1,0 +1,39 @@
+---
+cve: 2018-7489
+title: CVE in com.fasterxml.jackson.core:jackson-databind
+description: >
+    FasterXML jackson-databind before 2.7.9.3, 2.8.x before 2.8.11.1 and 2.9.x before 2.9.5 allows unauthenticated remote code execution because of an incomplete fix for the CVE-2017-7525 deserialization flaw. This is exploitable by sending maliciously crafted JSON input to the readValue method of the ObjectMapper, bypassing a blacklist that is ineffective if the c3p0 libraries are available in the classpath.
+cvss_v2: 7.5
+references:
+    - http://www.oracle.com/technetwork/security-advisory/cpuapr2018-3678067.html
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2018-4258247.html
+    - http://www.oracle.com/technetwork/security-advisory/cpuoct2018-4428296.html
+    - http://www.securityfocus.com/bid/103203
+    - http://www.securitytracker.com/id/1040693
+    - http://www.securitytracker.com/id/1041890
+    - https://access.redhat.com/errata/RHSA-2018:1447
+    - https://access.redhat.com/errata/RHSA-2018:1448
+    - https://access.redhat.com/errata/RHSA-2018:1449
+    - https://access.redhat.com/errata/RHSA-2018:1450
+    - https://access.redhat.com/errata/RHSA-2018:1451
+    - https://access.redhat.com/errata/RHSA-2018:1786
+    - https://access.redhat.com/errata/RHSA-2018:2088
+    - https://access.redhat.com/errata/RHSA-2018:2089
+    - https://access.redhat.com/errata/RHSA-2018:2090
+    - https://access.redhat.com/errata/RHSA-2018:2938
+    - https://access.redhat.com/errata/RHSA-2018:2939
+    - https://github.com/FasterXML/jackson-databind/issues/1931
+    - https://security.netapp.com/advisory/ntap-20180328-0001/
+    - https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbhf03902en_us
+    - https://www.debian.org/security/2018/dsa-4190
+    - https://www.oracle.com/technetwork/security-advisory/cpujan2019-5072801.html
+affected:
+    - groupId: com.fasterxml.jackson.core
+      artifactId: jackson-databind
+      version:
+        - "<=2.7.9.2,2.0.0-RC1"
+        - "<=2.8.11,2.8.0.rc1"
+        - "<=2.9.4,2.9.0.pr1"
+      fixedin:
+        - "<=2.8.11.3,2.8.11.1"
+        - ">=2.9.5"

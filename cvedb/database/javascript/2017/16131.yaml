@@ -1,0 +1,14 @@
+---
+cve: 2017-16131
+title: CVE in unicorn-list
+description: >
+    unicorn-list is a web framework. unicorn-list is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/unicorn-list
+    - https://nodesecurity.io/advisories/477
+
+affected:
+    - name: unicorn-list
+      version:
+        - "<=1.0.4"

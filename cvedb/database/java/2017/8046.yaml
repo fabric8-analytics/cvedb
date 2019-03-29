@@ -1,0 +1,29 @@
+---
+cve: 2017-8046
+title: CVE in org.springframework.boot:spring-boot-starter-data-rest
+description: >
+    Malicious PATCH requests submitted to servers using Spring Data REST versions prior to 2.6.9 (Ingalls SR9), versions prior to 3.0.1 (Kay SR1) and Spring Boot versions prior to 1.5.9, 2.0 M6 can use specially crafted JSON data to run arbitrary Java code.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/100948
+    - https://access.redhat.com/errata/RHSA-2018:2405
+    - https://pivotal.io/security/cve-2017-8046
+    - https://www.exploit-db.com/exploits/44289/
+    - https://github.com/spring-projects/spring-data-rest/commit/f7af5be44d80218a01f5584e8d0313f4ba216583
+    - https://jira.spring.io/browse/DATAREST-1152
+affected:
+    - groupId: org.springframework.boot
+      artifactId: spring-boot-starter-data-rest
+      version:
+        - "<=1.5.8.RELEASE"
+      fixedin:
+        - ">=1.5.9.RELEASE"
+        - ">=2.0.0.RELEASE"
+    - groupId: org.springframework.data
+      artifactId: spring-data-rest-webmvc
+      version:
+        - "<=2.6.8.RELEASE"
+        - "==3.0.0.RELEASE"
+      fixedin:
+        - ">=2.6.9.RELEASE"
+        - ">=3.0.1.RELEASE"

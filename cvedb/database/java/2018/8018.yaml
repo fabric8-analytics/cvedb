@@ -1,0 +1,24 @@
+---
+cve: 2018-8018
+title: CVE in org.apache.ignite:ignite-core and ignite-hadoop
+description: >
+    In Apache Ignite before 2.4.8 and 2.5.x before 2.5.3, the serialization  mechanism does not have a list of classes allowed for  serialization/deserialization, which makes it possible to run arbitrary  code when 3-rd party vulnerable classes are present in Ignite classpath.  The vulnerability can be exploited if the one sends a specially prepared  form of a serialized object to GridClientJdkMarshaller deserialization  endpoint.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/104911
+    - https://access.redhat.com/errata/RHSA-2018:3768
+    - https://lists.apache.org/thread.html/e0fdf53114a321142ecfa5cfa17658090f0b4e1677de431e329b37ab@%3Cdev.ignite.apache.org%3E
+    - https://github.com/apache/ignite/commit/bc374f85ca4a5e69572902d2167fe6bedebd40a2
+affected:
+    - groupId: org.apache.ignite
+      artifactId: ignite-core
+      version:
+        - "<=2.5.0"
+      fixedin:
+        - ">=2.6.0"
+    - groupId: org.apache.ignite
+      artifactId: ignite-hadoop
+      version:
+        - "<=2.5.0"
+      fixedin:
+        - ">=2.6.0"

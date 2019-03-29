@@ -1,0 +1,21 @@
+---
+cve: 2016-3094
+title: CVE in Apache Qpid
+description: >
+    PlainSaslServer.java in Apache Qpid Java before 6.0.3, when the broker is configured to allow plaintext passwords, allows remote attackers to cause a denial of service (broker termination) via a crafted authentication attempt, which triggers an uncaught exception.
+cvss_v2: 4.3
+references:
+    - http://mail-archives.apache.org/mod_mbox/qpid-users/201605.mbox/%3C5748641A.2050701%40gmail.com%3E
+    - http://packetstormsecurity.com/files/137215/Apache-Qpid-Java-Broker-6.0.2-Denial-Of-Service.html
+    - http://qpid.apache.org/releases/qpid-java-6.0.3/release-notes.html
+    - http://www.securityfocus.com/archive/1/538507/100/0/threaded
+    - http://www.securitytracker.com/id/1035982
+    - https://issues.apache.org/jira/browse/QPID-7271
+    - https://svn.apache.org/viewvc?view=revision&revision=1744403
+affected:
+    - groupId: org.apache.qpid
+      artifactId: qpid-broker-core
+      version:
+        - "<=6.0.2"
+      fixedin:
+        - ">=6.0.3"

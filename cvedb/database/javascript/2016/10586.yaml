@@ -1,0 +1,14 @@
+---
+cve: 2016-10586
+title: CVE in macaca-chromedriver
+description: >
+    macaca-chromedriver is a Node.js wrapper for the selenium chromedriver. macaca-chromedriver before 1.0.29 downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/180
+affected:
+    - name: macaca-chromedriver
+      version:
+        - "<=1.0.28"
+      fixedin:
+        - ">=1.0.29"

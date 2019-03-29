@@ -1,0 +1,27 @@
+---
+cve: 2016-10027
+title: CVE in Smack
+description: >
+    Race condition in the XMPP library in Smack before 4.1.9, when the SecurityMode.required TLS setting has been set, allows man-in-the-middle attackers to bypass TLS protections and trigger use of cleartext for client authentication by stripping the "starttls" feature from a server response.
+cvss_v2: 2.6
+references:
+    - http://www.openwall.com/lists/oss-security/2016/12/22/12
+    - http://www.securityfocus.com/bid/95129
+    - https://community.igniterealtime.org/blogs/ignite/2016/11/22/smack-security-advisory-2016-11-22
+    - https://github.com/igniterealtime/Smack/commit/059ee99ba0d5ff7758829acf5a9aeede09ec820b
+    - https://github.com/igniterealtime/Smack/commit/a9d5cd4a611f47123f9561bc5a81a4555fe7cb04
+    - https://issues.igniterealtime.org/projects/SMACK/issues/SMACK-739
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/J4WXAZ4JVJXHMEDDXJVWJHPVBF5QCTZF/
+affected:
+    - groupId: org.igniterealtime.smack
+      artifactId: smack-tcp
+      version:
+        - "<=4.1.8"
+      fixedin:
+        - ">=4.1.9"
+    - groupId: org.igniterealtime.smack
+      artifactId: smack-core
+      version:
+        - "<=4.1.8"
+      fixedin:
+        - ">=4.1.9"

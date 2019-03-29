@@ -1,0 +1,40 @@
+---
+cve: 2015-5211
+title: CVE in org.springframework:spring-core
+description: >
+    Under some situations, the Spring Framework 4.2.0 to 4.2.1, 4.0.0 to 4.1.7, 3.2.0 to 3.2.14 and older unsupported versions is vulnerable to a Reflected File Download (RFD) attack. The attack involves a malicious user crafting a URL with a batch script extension that results in the response being downloaded rather than rendered and also includes some input reflected in the response.
+cvss_v2: 9.3
+references:
+    - https://pivotal.io/security/cve-2015-5211
+    - https://www.trustwave.com/Resources/SpiderLabs-Blog/Reflected-File-Download---A-New-Web-Attack-Vector/
+    - https://jira.spring.io/browse/SPR-13548
+    - https://github.com/spring-projects/spring-framework/commit/2bd1daa75ee0b8ec33608ca6ab065ef3e1815543
+affected:
+    - groupId: org.springframework
+      artifactId: spring-web
+      version:
+        - "<=3.2.14.RELEASE"
+        - "<=4.1.7.RELEASE,4.0.0.RELEASE"
+        - "<=4.2.1.RELEASE,4.2.0.RELEASE"
+      fixedin:
+        - ">=3.2.15.RELEASE"
+        - ">=4.1.8.RELEASE"
+        - ">=4.2.2.RELEASE"
+    - groupId: org.springframework
+      artifactId: spring-webmvc
+      version:
+        - "<=3.2.14.RELEASE"
+        - "<=4.1.7.RELEASE,4.0.0.RELEASE"
+        - "<=4.2.1.RELEASE,4.2.0.RELEASE"
+      fixedin:
+        - ">=3.2.15.RELEASE"
+        - ">=4.1.8.RELEASE"
+        - ">=4.2.2.RELEASE"
+    - groupId: org.springframework
+      artifactId: spring-websocket
+      version:
+        - "<=4.1.7.RELEASE,4.0.0.RELEASE"
+        - "<=4.2.1.RELEASE,4.2.0.RELEASE"
+      fixedin:
+        - ">=4.1.8.RELEASE"
+        - ">=4.2.2.RELEASE"

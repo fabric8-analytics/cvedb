@@ -1,0 +1,18 @@
+---
+cve: 2018-12541
+title: CVE in io.vertx:vertx-core
+description: >
+    In version from 3.0.0 to 3.5.3 of Eclipse Vert.x, the WebSocket HTTP upgrade implementation buffers the full http request before doing the handshake, holding the entire request body in memory. There should be a reasonnable limit (8192 bytes) above which the WebSocket gets an HTTP response with the 413 status code and the connection gets closed.
+cvss_v2: 5.0
+references:
+    - https://access.redhat.com/errata/RHSA-2018:2946
+    - https://bugs.eclipse.org/bugs/show_bug.cgi?id=539170
+    - https://github.com/eclipse-vertx/vert.x/issues/2648
+    - https://github.com/eclipse-vertx/vert.x/commit/269a583330695d1418a4f5578f7169350b2e1332
+affected:
+    - groupId: io.vertx
+      artifactId: vertx-core
+      version:
+        - "<=3.5.3,3.0.0"
+      fixedin:
+        - ">=3.5.4"

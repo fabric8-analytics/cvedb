@@ -1,0 +1,30 @@
+---
+cve: 2018-8039
+title: CVE in Apache CXF Runtime HTTP Transport
+description: >
+    It is possible to configure Apache CXF to use the com.sun.net.ssl implementation via 'System.setProperty("java.protocol.handler.pkgs", "com.sun.net.ssl.internal.www.protocol");'. When this system property is set, CXF uses some reflection to try to make the HostnameVerifier work with the old com.sun.net.ssl.HostnameVerifier interface. However, the default HostnameVerifier implementation in CXF does not implement the method in this interface, and an exception is thrown. However, in Apache CXF prior to 3.2.5 and 3.1.16 the exception is caught in the reflection code and not properly propagated. What this means is that if you are using the com.sun.net.ssl stack with CXF, an error with TLS hostname verification will not be thrown, leaving a CXF client subject to man-in-the-middle attacks.
+cvss_v2: 6.8
+references:
+    - http://cxf.apache.org/security-advisories.data/CVE-2018-8039.txt.asc?version=1&modificationDate=1530184663000&api=v2
+    - http://www.securitytracker.com/id/1041199
+    - https://access.redhat.com/errata/RHSA-2018:2276
+    - https://access.redhat.com/errata/RHSA-2018:2277
+    - https://access.redhat.com/errata/RHSA-2018:2279
+    - https://access.redhat.com/errata/RHSA-2018:2423
+    - https://access.redhat.com/errata/RHSA-2018:2424
+    - https://access.redhat.com/errata/RHSA-2018:2425
+    - https://access.redhat.com/errata/RHSA-2018:2428
+    - https://access.redhat.com/errata/RHSA-2018:2643
+    - https://access.redhat.com/errata/RHSA-2018:3768
+    - https://access.redhat.com/errata/RHSA-2018:3817
+    - https://github.com/apache/cxf/commit/fae6fabf9bd7647f5e9cb68897a7d72b545b741b
+    - https://lists.apache.org/thread.html/1f8ff31df204ad0374ab26ad333169e0387a5e7ec92422f337431866@%3Cdev.cxf.apache.org%3E
+affected:
+    - groupId: org.apache.cxf
+      artifactId: cxf-rt-transports-http
+      version:
+        - "<=3.1.15"
+        - "<=3.2.4,3.2.0"
+      fixedin:
+        - ">=3.1.16"
+        - ">=3.2.5"

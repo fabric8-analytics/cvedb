@@ -1,0 +1,13 @@
+---
+cve: 2017-16091
+title: CVE in xtalk
+description: >
+    xtalk helps your browser talk to nodex, a simple web framework. xtalk is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the URL.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/339
+affected:
+    - name: xtalk
+      version:
+        - "<=0.0.7,0.0.2"
+

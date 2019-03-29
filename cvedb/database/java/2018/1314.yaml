@@ -1,0 +1,18 @@
+---
+cve: 2018-1314
+title: CVE in org.apache.hive:hive-exec
+description: >
+    In Apache Hive 2.3.3, 3.1.0 and earlier, Hive "EXPLAIN" operation does not check for necessary authorization of involved entities in a query. An unauthorized user can do "EXPLAIN" on arbitrary table or view and expose table metadata and statistics.
+cvss_v2: 4.0
+references:
+    - http://www.securityfocus.com/bid/105884
+    - https://lists.apache.org/thread.html/3da47dbcbf09697387f29d2f1aed970523b6b334d93afd3cced23727@%3Cdev.hive.apache.org%3E
+affected:
+    - groupId: org.apache.hive
+      artifactId: hive-exec
+      version:
+        - "<=2.3.3,2.3.0"
+        - "<=3.1.0,3.0.0"
+      fixedin:
+        - "==2.3.4"
+        - ">=3.1.1"

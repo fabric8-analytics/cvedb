@@ -1,0 +1,15 @@
+---
+cve: 2017-16008
+title: CVE in i18next
+description: >
+    i18next is a language translation framework. Because of how the interpolation is implemented, making replacements from the dictionary one at a time, untrusted user input can use the name of one of the dictionary keys to inject script into the browser. This affects i18next <=1.10.2.
+cvss_v2: 4.3
+references:
+    - https://github.com/i18next/i18next/pull/443
+    - https://nodesecurity.io/advisories/325
+affected:
+    - name: i18next
+      version:
+        - "<=1.10.2"
+      fixedin:
+        - ">=1.10.3"

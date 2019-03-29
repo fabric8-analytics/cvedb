@@ -1,0 +1,19 @@
+---
+cve: 2017-12197
+title: CVE in libpam4j
+description: >
+    It was found that libpam4j up to and including 1.8 did not properly validate user accounts when authenticating. A user with a valid password for a disabled account would be able to bypass security restrictions and possibly access sensitive information.
+cvss_v2: 4.0
+references:
+    - https://nvd.nist.gov/vuln/detail/CVE-2017-12197
+    - https://access.redhat.com/security/cve/cve-2017-12197
+    - https://github.com/kohsuke/libpam4j/issues/18
+affected:
+    - groupId: org.jvnet.libpam4j
+      artifactId: libpam4j
+      version:
+        - "<=1.4"
+    - groupId: org.kohsuke
+      artifactId: libpam4j
+      version:
+        - "<=1.8"

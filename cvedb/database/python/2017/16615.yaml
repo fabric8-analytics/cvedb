@@ -1,0 +1,16 @@
+---
+cve: 2017-16615
+title: CVE in mlalchemy
+description: >
+    An exploitable vulnerability exists in the YAML parsing functionality in the parse_yaml_query method in parser.py in MLAlchemy before 0.2.2. When processing YAML-Based queries for data, a YAML parser can execute arbitrary Python commands resulting in command execution because load is used where safe_load should have been used. An attacker can insert Python into loaded YAML to trigger this vulnerability.
+cvss_v2: 7.5
+references:
+    - https://github.com/thanethomson/MLAlchemy/commit/bc795757febdcce430d89f9d08f75c32d6989d3c
+    - https://github.com/thanethomson/MLAlchemy/issues/1
+    - https://joel-malwarebenchmark.github.io/blog/2017/11/08/cve-2017-16615-critical-restful-web-applications-vulnerability/
+affected:
+    - name: mlalchemy
+      version:
+        - "<=0.2.1"
+      fixedin:
+        - ">=0.2.2"

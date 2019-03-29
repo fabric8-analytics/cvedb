@@ -1,0 +1,15 @@
+---
+cve: 2017-1001002
+title: CVE in mathjs
+description: >
+    math.js before 3.17.0 had an arbitrary code execution in the JavaScript engine. Creating a typed function with JavaScript code in the name could result arbitrary execution.
+cvss_v2: 7.5
+references:
+    - https://github.com/josdejong/mathjs/blob/master/HISTORY.md#2017-11-18-version-3170
+    - https://github.com/josdejong/mathjs/commit/8d2d48d81b3c233fb64eb2ec1d7a9e1cf6a55a90
+affected:
+    - name: mathjs
+      version:
+        - "<=3.17.0"
+      fixedin:
+        - ">=3.18.0"

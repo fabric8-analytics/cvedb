@@ -1,0 +1,12 @@
+---
+cve: 2016-10600
+title: CVE in webrtc-native
+description: >
+    webrtc-native uses WebRTC from chromium project. webrtc-native downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/176
+affected:
+    - name: webrtc-native
+      version:
+        - "<=1.4.0"

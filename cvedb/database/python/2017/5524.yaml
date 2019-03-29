@@ -1,0 +1,18 @@
+---
+cve: 2017-5524
+title: CVE in plone
+description: >
+    Plone 4.x through 4.3.11 and 5.x through 5.0.6 allow remote attackers to bypass a sandbox protection mechanism and obtain sensitive information by leveraging the Python string format method.
+cvss_v2: 4.0
+references:
+    - http://www.openwall.com/lists/oss-security/2017/01/18/6
+    - http://www.securityfocus.com/bid/95679
+    - https://plone.org/security/hotfix/20170117/sandbox-escape
+affected:
+    - name: plone
+      version:
+        - "<=4.3.11,4.0"
+        - "<=5.0.6,5.0"
+      fixedin:
+        - ">=4.3.12"
+        - ">=5.0.7"

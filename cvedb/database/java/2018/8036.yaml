@@ -1,0 +1,19 @@
+---
+cve: 2018-8036
+title: CVE in org.apache.pdfbox:fontbox
+description: >
+    In Apache PDFBox 1.8.0 to 1.8.14 and 2.0.0RC1 to 2.0.10, a carefully crafted (or fuzzed) file can trigger an infinite loop which leads to an out of memory exception in Apache PDFBox's AFMParser.
+cvss_v2: 4.3
+references:
+    - https://access.redhat.com/errata/RHSA-2018:2669
+    - https://lists.apache.org/thread.html/9f62f742fd4fcd81654a9533b8a71349b064250840592bcd502dcfb6@%3Cusers.pdfbox.apache.org%3E
+affected:
+    - groupId: org.apache.pdfbox
+      artifactId: fontbox
+      version:
+        - "<=1.8.14,1.8.1"
+        - "<=2.0.10,2.0.0-RC1"
+      fixedin:
+        - "==1.8.15"
+        - "==1.8.16"
+        - ">=2.0.11"

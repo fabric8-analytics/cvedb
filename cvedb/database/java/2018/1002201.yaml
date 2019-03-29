@@ -1,0 +1,19 @@
+---
+cve: 2018-1002201
+title: CVE in org.zeroturnaround:zt-zip
+description: >
+    "zt-zip before 1.13 is vulnerable to directory traversal, allowing attackers to write to arbitrary files via a ../ (dot dot slash) in a Zip archive entry that is mishandled during extraction. This vulnerability is also known as 'Zip-Slip'."
+cvss_v2: 4.3
+references:
+    - https://github.com/snyk/zip-slip-vulnerability
+    - https://github.com/zeroturnaround/zt-zip/blob/zt-zip-1.13/Changelog.txt
+    - https://github.com/zeroturnaround/zt-zip/commit/759b72f33bc8f4d69f84f09fcb7f010ad45d6fff
+    - https://snyk.io/research/zip-slip-vulnerability
+    - https://snyk.io/vuln/SNYK-JAVA-ORGZEROTURNAROUND-31681
+affected:
+    - groupId: org.zeroturnaround
+      artifactId: zt-zip
+      version:
+        - "<=1.12"
+      fixedin:
+        - ">=1.13"

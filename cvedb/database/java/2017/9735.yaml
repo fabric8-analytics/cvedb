@@ -1,0 +1,18 @@
+---
+cve: 2017-9735
+title: CVE in org.eclipse.jetty:jetty-util
+description: >
+    Jetty through 9.4.x is prone to a timing channel in util/security/Password.java, which makes it easier for remote attackers to obtain access by observing elapsed times before rejection of incorrect passwords.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/99104
+    - https://bugs.debian.org/864631
+    - https://github.com/eclipse/jetty.project/issues/1556
+    - https://github.com/eclipse/jetty.project/commit/f3751d70787fd8ab93932a51c60514c2eb37cb58
+affected:
+    - groupId: org.eclipse.jetty
+      artifactId: jetty-util
+      version:
+        - "<=9.4.9.v20180320"
+      fixedin:
+        - ">=9.4.10.v20180503"

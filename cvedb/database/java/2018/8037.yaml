@@ -1,0 +1,28 @@
+---
+cve: 2018-8037
+title: Information Disclosure in Apache Tomcat
+description: >
+    "If an async request was completed by the application at the same time as the container triggered the async timeout, a race condition existed that could result in a user seeing a response intended for a different user. An additional issue was present in the NIO and NIO2 connectors that did not correctly track the closure of the connection when an async request was completed by the application and timed out by the container at the same time. This could also result in a user seeing a response intended for another user. Versions Affected: Apache Tomcat 9.0.0.M9 to 9.0.9 and 8.5.5 to 8.5.31."
+cvss_v2: 4.3
+references:
+    - http://mail-archives.us.apache.org/mod_mbox/www-announce/201807.mbox/%3C20180722090623.GA92700%40minotaur.apache.org%3E
+    - http://mail-archives.us.apache.org/mod_mbox/www-announce/201808.mbox/%3C0c616b4d-4e81-e7f8-b81d-1bb4c575aa33%40apache.org%3E
+    - http://www.oracle.com/technetwork/security-advisory/cpuoct2018-4428296.html
+    - http://www.securityfocus.com/bid/104894
+    - http://www.securitytracker.com/id/1041376
+    - https://access.redhat.com/errata/RHSA-2018:2867
+    - https://access.redhat.com/errata/RHSA-2018:2868
+    - https://security.netapp.com/advisory/ntap-20180817-0001/
+    - https://www.debian.org/security/2018/dsa-4281
+    - http://svn.apache.org/viewvc?view=revision&revision=1833825
+    - http://svn.apache.org/viewvc?view=revision&revision=1833831
+    - http://svn.apache.org/viewvc?view=revision&revision=1837530
+    - http://svn.apache.org/viewvc?view=revision&revision=1833906
+affected:
+    - groupId: org.apache.tomcat
+      artifactId: tomcat-coyote
+      version:
+        - "<=9.0.9,9.0.0.M9"
+        - "<=8.5.31,8.5.5"
+      fixedin:
+        - ">=9.0.10"

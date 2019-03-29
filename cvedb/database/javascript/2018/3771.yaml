@@ -1,0 +1,12 @@
+---
+cve: 2018-3771
+title: CVE in statics-server
+description: >
+    An XSS in statics-server <= 0.0.9 can be used via injected iframe in the filename when statics-server displays directory index in the browser.
+cvss_v2: 4.3
+references:
+    - https://hackerone.com/reports/355458
+affected:
+    - name: statics-server
+      version:
+        - "<=0.0.9"

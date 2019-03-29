@@ -1,0 +1,13 @@
+---
+cve: 2017-16194
+title: CVE in picard
+description: >
+    picard is a micro framework. picard is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/picard
+    - https://nodesecurity.io/advisories/436
+affected:
+    - name: picard
+      version:
+        - "<=0.3.1"

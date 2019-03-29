@@ -1,0 +1,14 @@
+---
+cve: 2018-7560
+title: CVE in aws-lambda-multipart-parser
+description: >
+    index.js in the Anton Myshenin aws-lambda-multipart-parser NPM package before 0.1.2 has a Regular Expression Denial of Service (ReDoS) issue via a crafted multipart/form-data boundary string.
+cvss_v2: 5.0
+references:
+    - https://github.com/myshenin/aws-lambda-multipart-parser/commit/56ccb03af4dddebc2b2defb348b6558783d5757e
+affected:
+    - name: aws-lambda-multipart-parser
+      version:
+        - "<=0.1.1"
+      fixedin:
+        - ">=0.1.2"

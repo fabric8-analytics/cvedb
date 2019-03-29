@@ -1,0 +1,14 @@
+---
+cve: 2019-5729
+title: CVE in splunk-sdk
+description: >
+    Splunk-SDK-Python before 1.6.6 does not properly verify untrusted TLS server certificates, which could result in man-in-the-middle attacks.
+cvss_v2: 6.8
+references:
+    - https://www.splunk.com/view/SP-CAAAQAD
+affected:
+    - name: splunk-sdk
+      version:
+        - "<=1.6.5"
+      fixedin:
+        - ">=1.6.6"

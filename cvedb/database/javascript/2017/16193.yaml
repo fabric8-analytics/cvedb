@@ -1,0 +1,13 @@
+---
+cve: 2017-16193
+title: CVE in mfrs
+description: >
+    mfrs is a static file server. mfrs is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/mfrs
+    - https://nodesecurity.io/advisories/437
+affected:
+    - name: mfrs
+      version:
+        - "<=1.0.0"

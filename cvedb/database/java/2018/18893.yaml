@@ -1,0 +1,16 @@
+---
+cve: 2018-18893
+title: CVE in com.hubspot.jinjava:jinjava
+description: >
+    Jinjava before 2.4.6 does not block the getClass method, related to com/hubspot/jinjava/el/ext/JinjavaBeanELResolver.java.
+cvss_v2: 5.0
+references:
+    - https://github.com/HubSpot/jinjava/blob/master/CHANGES.md
+    - https://github.com/HubSpot/jinjava/pull/230
+affected:
+    - groupId: com.hubspot.jinjava
+      artifactId: jinjava
+      version:
+        - "<=2.4.5"
+      fixedin:
+        - ">=2.4.6"

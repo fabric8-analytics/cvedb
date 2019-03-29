@@ -1,0 +1,28 @@
+---
+cve: 2018-11784
+title: CVE in Tomcat
+description: >
+    When the default servlet in Apache Tomcat versions 9.0.0.M1 to 9.0.11, 8.5.0 to 8.5.33 and 7.0.23 to 7.0.90 returned a redirect to a directory (e.g. redirecting to '/foo/' when the user requested '/foo') a specially crafted URL could be used to cause the redirect to be generated to any URI of the attackers choice.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/105524
+    - https://lists.apache.org/thread.html/23134c9b5a23892a205dc140cdd8c9c0add233600f76b313dda6bd75@%3Cannounce.tomcat.apache.org%3E
+    - https://lists.debian.org/debian-lts-announce/2018/10/msg00005.html
+    - https://lists.debian.org/debian-lts-announce/2018/10/msg00006.html
+    - https://security.netapp.com/advisory/ntap-20181014-0002/
+    - https://usn.ubuntu.com/3787-1/
+    - https://www.oracle.com/technetwork/security-advisory/cpujan2019-5072801.html
+    - https://github.com/apache/tomcat/commit/efb860b3ff8ebcf606199b8d0d432f76898040da
+affected:
+    - groupId: org.apache.tomcat
+      artifactId: tomcat-catalina
+      version:
+        - "<=9.0.11,9.0.0.M1"
+        - "<=8.5.33,8.0.0-RC1"
+        - "<=7.0.90,7.0.23"
+      fixedin:
+        - ">=9.0.12"
+    - groupId: org.apache.tomcat
+      artifactId: catalina
+      version:
+        - "<=6.0.53"

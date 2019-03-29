@@ -1,0 +1,23 @@
+---
+cve: 2013-7377
+title: CVE in codem-transcode
+description: >
+    The codem-transcode module before 0.5.0 for Node.js, when ffprobe is enabled, allows remote attackers to execute arbitrary commands via a POST request to /probe.
+cvss_v2: 6.8
+references:
+    - http://www.openwall.com/lists/oss-security/2014/05/13/1
+    - http://www.openwall.com/lists/oss-security/2014/05/15/2
+    - https://nodesecurity.io/advisories/codem-transcode_command_injection
+affected:
+    - name: codem-transcode
+      version:
+        - "==0.4.1"
+        - "==0.4.2"
+        - "==0.4.3"
+        - "==0.4.4"
+        - "==0.5.0-beta.1"
+        - "==0.5.0-beta.2"
+        - "==0.5.0-beta.3"
+        - "==0.5.0-beta.4"
+      fixedin:
+        - ">=0.5.0"

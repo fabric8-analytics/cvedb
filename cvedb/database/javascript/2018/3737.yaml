@@ -1,0 +1,14 @@
+---
+cve: 2018-3737
+title: CVE in sshpk
+description: >
+    sshpk is vulnerable to ReDoS when parsing crafted invalid public keys.
+cvss_v2: 5.0
+references:
+    - https://hackerone.com/reports/319593
+affected:
+    - name: sshpk
+      version:
+        - "==1.13.1"
+      fixedin:
+        - ">=1.13.2"

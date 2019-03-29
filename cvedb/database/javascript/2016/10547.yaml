@@ -1,0 +1,16 @@
+---
+cve: 2016-10547
+title: CVE in nunjucks
+description: >
+    Nunjucks is a full featured templating engine for JavaScript. Versions 2.4.2 and lower have a cross site scripting (XSS) vulnerability in autoescape mode. In autoescape mode, all template vars should automatically be escaped. By using an array for the keys, such as `name[]=<script>alert(1)</script>`, it is possible to bypass autoescaping and inject content into the DOM.
+cvss_v2: 4.3
+references:
+    - https://github.com/matt-/nunjucks_test
+    - https://github.com/mozilla/nunjucks/issues/835
+    - https://nodesecurity.io/advisories/147
+affected:
+    - name: nunjucks
+      version:
+        - "<=2.4.2"
+      fixedin:
+        - ">=2.4.3"

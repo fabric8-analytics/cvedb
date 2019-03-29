@@ -1,0 +1,18 @@
+---
+cve: 2018-11771
+title: CVE in org.apache.commons:commons-compress
+description: >
+    When reading a specially crafted ZIP archive, the read method of Apache Commons Compress 1.7 to 1.17's ZipArchiveInputStream can fail to return the correct EOF indication after the end of the stream has been reached. When combined with a java.io.InputStreamReader this can lead to an infinite stream, which can be used to mount a denial of service attack against services that use Compress' zip package.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/105139
+    - http://www.securitytracker.com/id/1041503
+    - https://lists.apache.org/thread.html/b8da751fc0ca949534cdf2744111da6bb0349d2798fac94b0a50f330@%3Cannounce.apache.org%3E
+    - https://github.com/apache/commons-compress/commit/a41ce6892cb0590b2e658704434ac0dbcb6834c8
+affected:
+    - groupId: org.apache.commons
+      artifactId: commons-compress
+      version:
+        - "<=1.17,1.7"
+      fixedin:
+        - ">=1.18"

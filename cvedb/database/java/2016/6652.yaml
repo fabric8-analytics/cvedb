@@ -1,0 +1,21 @@
+---
+cve: 2016-6652
+title: CVE in Pivotal Spring Data JPA
+description: >
+    SQL injection vulnerability in Pivotal Spring Data JPA before 1.9.6 (Gosling SR6) and 1.10.x before 1.10.4 (Hopper SR4), when used with a repository that defines a String query using the @Query annotation, allows attackers to execute arbitrary JPQL commands via a sort instance with a function call.
+cvss_v2: 6.8
+references:
+    - http://www.securityfocus.com/bid/93276
+    - https://github.com/spring-projects/spring-data-jpa/commit/b8e7fe
+    - https://jira.spring.io/browse/DATAJPA-965
+    - https://pivotal.io/security/cve-2016-6652
+    - https://security.gentoo.org/glsa/201701-01
+affected:
+    - groupId: org.springframework.data
+      artifactId: spring-data-jpa
+      version:
+        - "<=1.9.4.RELEASE"
+        - "==1.10.2.RELEASE"
+      fixedin:
+        - ">=1.9.5.RELEASE"
+        - ">=1.10.3.RELEASE"

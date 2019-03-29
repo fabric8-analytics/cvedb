@@ -1,0 +1,21 @@
+---
+cve: 2017-6910
+title: CVE in Kaazing Gateway
+description: >
+    The HTTP and WebSocket engine components in the server in Kaazing Gateway before 4.5.3 hotfix-1, Gateway - JMS Edition before 4.0.5 hotfix-15, 4.0.6 before hotfix-4, 4.0.7, 4.0.9 before hotfix-19, 4.4.x before 4.4.2 hotfix-1, 4.5.x before 4.5.3 hotfix-1, and Gateway Community and Enterprise Editions before 5.6.0 allow remote attackers to bypass intended access restrictions and obtain sensitive information via vectors related to HTTP request handling.
+cvss_v2: 5.0
+references:
+    - https://support.kaazing.com/hc/en-us/articles/115004752368
+affected:
+    - groupId: org.kaazing
+      artifactId: gateway.transport.ws
+      version:
+        - "<=5.5.0"
+      fixedin:
+        - ">=5.6.0"
+    - groupId: org.kaazing
+      artifactId: gateway.transport.http
+      version:
+        - "<=5.5.0"
+      fixedin:
+        - ">=5.6.0"

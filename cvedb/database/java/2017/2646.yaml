@@ -1,0 +1,18 @@
+---
+cve: 2017-2646
+title: CVE in org.keycloak:keycloak-saml-core
+description: >
+    It was found that when Keycloak before 2.5.5 receives a Logout request with a Extensions in the middle of the request, the SAMLSloRequestParser.parse() method ends in a infinite loop. An attacker could use this flaw to conduct denial of service attacks.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/96882
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2017-2646
+    - https://issues.jboss.org/browse/KEYCLOAK-4552
+    - https://github.com/keycloak/keycloak/commit/d0d0ab0051aa1a052df4b5f8038f525b2d642a03
+affected:
+    - groupId: org.keycloak
+      artifactId: keycloak-saml-core
+      version:
+        - "<=2.5.4.Final"
+      fixedin:
+        - ">=2.5.5.Final"

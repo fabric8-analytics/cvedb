@@ -1,0 +1,13 @@
+---
+cve: 2017-16764
+title: CVE in django-make-app
+description: >
+    An exploitable vulnerability exists in the YAML parsing functionality in the read_yaml_file method in io_utils.py in django_make_app 0.1.3. A YAML parser can execute arbitrary Python commands resulting in command execution. An attacker can insert Python into loaded YAML to trigger this vulnerability.
+cvss_v2: 7.5
+references:
+    - https://github.com/illagrenan/django-make-app/issues/5
+    - https://joel-malwarebenchmark.github.io/blog/2017/11/12/cve-2017-16764-vulnerability-in-django-make-app/
+affected:
+    - name: django-make-app
+      version:
+        - "==0.1.3"

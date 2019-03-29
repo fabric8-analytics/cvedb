@@ -1,0 +1,18 @@
+---
+cve: 2014-0012
+title: CVE in jinja2
+description: >
+    FileSystemBytecodeCache in Jinja2 2.7.2 does not properly create temporary directories, which allows local users to gain privileges by pre-creating a temporary directory with a user's uid.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2014-1402.
+cvss_v2: 4.4
+references:
+    - http://seclists.org/oss-sec/2014/q1/73
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1051421
+    - https://github.com/mitsuhiko/jinja2/commit/acb672b6a179567632e032f547582f30fa2f4aa7
+    - https://github.com/mitsuhiko/jinja2/pull/292
+    - https://github.com/mitsuhiko/jinja2/pull/296
+affected:
+    - name: jinja2
+      version:
+        - "==2.7.2"
+      fixedin:
+        - ">=2.7.3"

@@ -1,0 +1,15 @@
+---
+cve: 2018-1000643
+title: CVE in org.owasp.antisamy:antisamy
+description: >
+    OWASP OWASP ANTISAMY version 1.5.7 and earlier contains a Cross Site Scripting (XSS) vulnerability in AntiSamy.scan() - for both SAX & DOM that can result in Cross Site Scripting.
+cvss_v2: 4.3
+references:
+    - https://github.com/nahsra/antisamy/issues/32
+affected:
+    - groupId: org.owasp.antisamy
+      artifactId: antisamy
+      version:
+        - "<=1.5.7"
+      fixedin:
+        []

@@ -1,0 +1,13 @@
+---
+cve: 2017-16221
+title: CVE in yzt
+description: >
+    yzt is a simple file server. yzt is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/yzt
+    - https://nodesecurity.io/advisories/416
+affected:
+    - name: yzt
+      version:
+        - "<=1.4.0"

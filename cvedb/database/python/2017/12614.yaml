@@ -1,0 +1,14 @@
+---
+cve: 2017-12614
+title: CVE in apache-airflow
+description: >
+    "It was noticed an XSS in certain 404 pages that could be exploited to perform an XSS attack. Chrome will detect this as a reflected XSS attempt and prevent the page from loading. Firefox and other browsers don't, and are vulnerable to this attack. Mitigation: The fix for this is to upgrade to Apache Airflow 1.9.0 or above."
+cvss_v2: 4.3
+references:
+    - https://lists.apache.org/thread.html/2c72480c76619c5e7793f0d213c34082f0598eaa4d212172f068940f@%3Cdev.airflow.apache.org%3E
+affected:
+    - name: apache-airflow
+      version:
+        - "<=1.8.2"
+      fixedin:
+        - ">=1.9.0"

@@ -1,0 +1,17 @@
+---
+cve: 2013-4366
+title: CVE in org.apache.httpcomponents:httpclient
+description: >
+    http/impl/client/HttpClientBuilder.java in Apache HttpClient 4.3.x before 4.3.1 does not ensure that X509HostnameVerifier is not null, which allows attackers to have unspecified impact via vectors involving hostname verification.
+cvss_v2: 7.5
+references:
+    - http://svn.apache.org/r1528614
+    - http://www.apache.org/dist/httpcomponents/httpclient/RELEASE_NOTES-4.3.x.txt
+    - https://nvd.nist.gov/vuln/detail/CVE-2013-4366
+affected:
+    - groupId: org.apache.httpcomponents
+      artifactId: httpclient
+      version:
+        - "<=4.3"
+      fixedin:
+        - ">=4.3.1"

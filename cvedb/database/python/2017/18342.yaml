@@ -1,0 +1,15 @@
+---
+cve: 2017-18342
+title: CVE in pyyaml
+description: >
+    In PyYAML before 4.1, the yaml.load() API could execute arbitrary code. In other words, yaml.safe_load is not used.
+cvss_v2: 7.5
+references:
+    - https://github.com/yaml/pyyaml/blob/master/CHANGES
+    - https://github.com/yaml/pyyaml/pull/74
+affected:
+    - name: pyyaml
+      version:
+        - "<=3.13"
+      fixedin:
+        - ">=4.2b1"

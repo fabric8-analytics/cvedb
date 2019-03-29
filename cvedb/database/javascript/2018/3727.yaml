@@ -1,0 +1,12 @@
+---
+cve: 2018-3727
+title: CVE in 626
+description: >
+    626 node module suffers from a Path Traversal vulnerability due to lack of validation of file, which allows a malicious user to read content of any file with known path.
+cvss_v2: 5.0
+references:
+    - https://hackerone.com/reports/311216
+affected:
+    - name: "626"
+      version:
+        - "<=1.1.1"

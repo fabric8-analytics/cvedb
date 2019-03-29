@@ -1,0 +1,17 @@
+---
+cve: 2017-18349
+title: CVE in Fastjson
+description: >
+    parseObject in Fastjson before 1.2.25, as used in FastjsonEngine in Pippo 1.11.0 and other products, allows remote attackers to execute arbitrary code via a crafted JSON request, as demonstrated by a crafted rmi:// URI in the dataSourceName field of HTTP POST data to the Pippo /json URI, which is mishandled in AjaxApplication.java.
+cvss_v2: 10.0
+references:
+    - https://fortiguard.com/encyclopedia/ips/44059
+    - https://github.com/alibaba/fastjson/wiki/security_update_20170315
+    - https://github.com/pippo-java/pippo/issues/466
+affected:
+    - groupId: com.alibaba
+      artifactId: fastjson
+      version:
+        - "<=1.2.24"
+      fixedin:
+        - ">=1.2.25"

@@ -1,0 +1,18 @@
+---
+cve: 2017-16137
+title: CVE in debug
+description: >
+    The debug module is vulnerable to regular expression denial of service when untrusted user input is passed into the o formatter. It takes around 50k characters to block for 2 seconds making this a low severity issue.
+cvss_v2: 5.0
+references:
+    - https://github.com/visionmedia/debug/issues/501
+    - https://github.com/visionmedia/debug/pull/504
+    - https://nodesecurity.io/advisories/534
+affected:
+    - name: debug
+      version:
+        - "<=2.6.8,2.0.0"
+        - "<=3.0.1,3.0.0"
+      fixedin:
+        - ">=2.6.9"
+        - ">=3.1.0"

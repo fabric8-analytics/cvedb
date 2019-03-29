@@ -1,0 +1,18 @@
+---
+cve: 2017-15878
+title: CVE in keystone
+description: >
+    A cross-site scripting (XSS) vulnerability exists in fields/types/markdown/MarkdownType.js in KeystoneJS before 4.0.0-beta.7 via the Contact Us feature.
+cvss_v2: 4.3
+references:
+    - http://blog.securelayer7.net/keystonejs-open-source-penetration-testing-report/
+    - http://www.securityfocus.com/bid/101541
+    - https://github.com/keystonejs/keystone/pull/4478
+    - https://packetstormsecurity.com/files/144756/KeystoneJS-4.0.0-beta.5-Unauthenticated-Stored-Cross-Site-Scripting.html
+    - https://www.exploit-db.com/exploits/43054/
+affected:
+    - name: keystone
+      version:
+        - "<=0.3.22"
+      fixedin:
+        - ">=4.0.0-beta.7"

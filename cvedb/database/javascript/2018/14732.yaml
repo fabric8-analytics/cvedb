@@ -1,0 +1,16 @@
+---
+cve: 2018-14732
+title: CVE in webpack-dev-server
+description: >
+    An issue was discovered in lib/Server.js in webpack-dev-server before 3.1.6. Attackers are able to steal developer's code because the origin of requests is not checked by the WebSocket server, which is used for HMR (Hot Module Replacement). Anyone can receive the HMR message sent by the WebSocket server via a ws://127.0.0.1:8080/ connection from any origin.
+cvss_v2: 5.0
+references:
+    - https://blog.cal1.cn/post/Sniffing%20Codes%20in%20Hot%20Module%20Reloading%20Messages
+    - https://github.com/webpack/webpack-dev-server/commit/f18e5adf123221a1015be63e1ca2491ca45b8d10
+    - https://github.com/webpack/webpack-dev-server/issues/1445
+affected:
+    - name: webpack-dev-server
+      version:
+        - "<=3.1.5"
+      fixedin:
+        - ">=3.1.6"

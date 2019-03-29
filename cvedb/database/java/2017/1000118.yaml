@@ -1,0 +1,23 @@
+---
+cve: 2017-1000118
+title: CVE in Akka HTTP
+description: >
+    Akka HTTP versions <= 10.0.5 Illegal Media Range in Accept Header Causes StackOverflowError Leading to Denial of Service
+cvss_v2: 5.0
+references:
+    - https://doc.akka.io/docs/akka-http/10.0.6/security/2017-05-03-illegal-media-range-in-accept-header-causes-stackoverflowerror.html
+    - https://github.com/akka/akka-http/issues/1072
+    - https://github.com/akka/akka-http/commit/18a67a45bf4c6844a02629cd67301bd07991be5c
+affected:
+    - groupId: com.typesafe.akka
+      artifactId: akka-http-core
+      version:
+        - "<=10.0.5"
+      fixedin:
+        - ">=10.0.6"
+    - groupId: com.typesafe.akka
+      artifactId: akka-http
+      version:
+        - "<=10.0.5"
+      fixedin:
+        - ">=10.0.6"

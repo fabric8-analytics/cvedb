@@ -1,0 +1,16 @@
+---
+cve: 2017-2810
+title: CVE in tablib
+description: >
+    An exploitable vulnerability exists in the Databook loading functionality of Tablib 0.11.4. A yaml loaded Databook can execute arbitrary python commands resulting in command execution. An attacker can insert python into loaded yaml to trigger this vulnerability.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/99076
+    - https://security.gentoo.org/glsa/201811-18
+    - https://talosintelligence.com/vulnerability_reports/TALOS-2017-0307
+affected:
+    - name: tablib
+      version:
+        - "==0.11.4"
+      fixedin:
+        - ">=0.11.5"

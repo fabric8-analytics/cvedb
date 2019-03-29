@@ -1,0 +1,14 @@
+---
+cve: 2018-9207
+title: CVE in jquery-file-upload
+description: >
+    Arbitrary file upload in jQuery Upload File <= 4.0.2
+cvss_v2: 7.5
+references:
+    - http://www.vapidlabs.com/advisory.php?v=206
+affected:
+    - name: jquery-file-upload
+      version:
+        - "<=4.0.2"
+      fixedin:
+        - ">=4.0.5"

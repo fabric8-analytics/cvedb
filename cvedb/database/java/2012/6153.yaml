@@ -1,0 +1,21 @@
+---
+cve: 2012-6153
+title: CVE in org.apache.httpcomponents:httpclient
+description: >
+    http/conn/ssl/AbstractVerifier.java in Apache Commons HttpClient before 4.2.3 does not properly verify that the server hostname matches a domain name in the subject's Common Name (CN) or subjectAltName field of the X.509 certificate, which allows man-in-the-middle attackers to spoof SSL servers via a certificate with a subject that specifies a common name in a field that is not the CN field.  NOTE: this issue exists because of an incomplete fix for CVE-2012-5783.
+cvss_v2: 4.3
+references:
+    - http://svn.apache.org/viewvc?view=revision&revision=1411705
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1129916
+    - https://nvd.nist.gov/vuln/detail/CVE-2012-6153
+affected:
+    - groupId: org.apache.httpcomponents
+      artifactId: httpclient
+      version:
+        - "<=4.2.2"
+      fixedin:
+        - ">=4.2.3"
+    - groupId: commons-httpclient
+      artifactId: commons-httpclient
+      version:
+        - "<=3.1"

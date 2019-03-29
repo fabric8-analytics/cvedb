@@ -1,0 +1,24 @@
+---
+cve: 2018-1000129
+title: CVE in org.jolokia:jolokia-core
+description: >
+    An XSS vulnerability exists in the Jolokia agent version 1.3.7 in the HTTP servlet that allows an attacker to execute malicious javascript in the victim's browser.
+cvss_v2: 4.3
+references:
+    - https://access.redhat.com/errata/RHSA-2018:2669
+    - https://access.redhat.com/errata/RHSA-2018:3817
+    - https://github.com/rhuss/jolokia/commit/5895d5c137c335e6b473e9dcb9baf748851bbc5f#diff-f19898247eddb55de6400489bff748ad
+    - https://jolokia.org/#Security_fixes_with_1.5.0
+affected:
+    - groupId: org.jolokia
+      artifactId: jolokia-core
+      version:
+        - "==1.3.7"
+      fixedin:
+        - ">=1.4.0"
+    - groupId: org.jolokia
+      artifactId: jolokia-jvm
+      version:
+        - "==1.3.7"
+      fixedin:
+        - ">=1.4.0"

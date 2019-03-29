@@ -1,0 +1,47 @@
+---
+cve: 2016-6794
+title: CVE in Apache Tomcat
+description: >
+    When a SecurityManager is configured, a web application's ability to read system properties should be controlled by the SecurityManager. In Apache Tomcat 9.0.0.M1 to 9.0.0.M9, 8.5.0 to 8.5.4, 8.0.0.RC1 to 8.0.36, 7.0.0 to 7.0.70, 6.0.0 to 6.0.45 the system property replacement feature for configuration files could be used by a malicious web application to bypass the SecurityManager and read system properties that should not be visible.
+cvss_v2: 5.0
+references:
+    - http://rhn.redhat.com/errata/RHSA-2017-0457.html
+    - http://www.debian.org/security/2016/dsa-3720
+    - http://www.securityfocus.com/bid/93943
+    - http://www.securitytracker.com/id/1037143
+    - https://access.redhat.com/errata/RHSA-2017:0455
+    - https://access.redhat.com/errata/RHSA-2017:0456
+    - https://access.redhat.com/errata/RHSA-2017:2247
+    - https://lists.apache.org/thread.html/09d2f2c65ac4ff5da42f15dc2b0f78b655e50f1a42e8a9784134a9eb@%3Cannounce.tomcat.apache.org%3E
+    - https://security.netapp.com/advisory/ntap-20180605-0001/
+affected:
+    - groupId: org.apache.tomcat
+      artifactId: tomcat-catalina
+      version:
+        - "<=9.0.0.M9,9.0.0.M1"
+        - "<=8.5.4,8.5.0"
+        - "<=8.0.36,8.0.0.RC1"
+        - "<=7.0.70,7.0.0"
+      fixedin:
+        - ">=9.0.0.M10"
+        - ">=8.5.5"
+        - ">=8.0.37"
+        - ">=7.0.71"
+    - groupId: org.apache.tomcat
+      artifactId: tomcat-util
+      version:
+        - "<=9.0.0.M9,9.0.0.M1"
+        - "<=8.5.4,8.5.0"
+        - "<=8.0.36,8.0.0.RC1"
+        - "<=7.0.70,7.0.0"
+      fixedin:
+        - ">=9.0.0.M10"
+        - ">=8.5.5"
+        - ">=8.0.37"
+        - ">=7.0.71"
+    - groupId: org.apache.tomcat
+      artifactId: catalina
+      version:
+        - "<=6.0.45"
+      fixedin:
+        - ">=6.0.46"

@@ -1,0 +1,28 @@
+---
+cve: 2017-9805
+title: CVE in org.apache.struts:struts2-rest-plugin
+description: >
+    The REST Plugin in Apache Struts 2.1.2 through 2.3.x before 2.3.34 and 2.5.x before 2.5.13 uses an XStreamHandler with an instance of XStream for deserialization without any type filtering, which can lead to Remote Code Execution when deserializing XML payloads.
+cvss_v2: 6.8
+references:
+    - http://www.oracle.com/technetwork/security-advisory/alert-cve-2017-9805-3889403.html
+    - http://www.securityfocus.com/bid/100609
+    - http://www.securitytracker.com/id/1039263
+    - https://blogs.apache.org/foundation/entry/apache-struts-statement-on-equifax
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1488482
+    - https://cwiki.apache.org/confluence/display/WW/S2-052
+    - https://lgtm.com/blog/apache_struts_CVE-2017-9805
+    - https://security.netapp.com/advisory/ntap-20170907-0001/
+    - https://struts.apache.org/docs/s2-052.html
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20170907-struts2
+    - https://www.exploit-db.com/exploits/42627/
+    - https://www.kb.cert.org/vuls/id/112992
+affected:
+    - groupId: org.apache.struts
+      artifactId: struts2-rest-plugin
+      version:
+        - "<=2.3.33,2.1.2"
+        - "<=2.5.12,2.5"
+      fixedin:
+        - ">=2.3.34"
+        - ">=2.5.13"

@@ -1,0 +1,16 @@
+---
+cve: 2018-17297
+title: CVE in cn.hutool:hutool-core
+description: >
+    The unzip function in ZipUtil.java in Hutool before 4.1.12 allows remote attackers to overwrite arbitrary files via directory traversal sequences in a filename within a ZIP archive.
+cvss_v2: 6.4
+references:
+    - https://github.com/looly/hutool/issues/162
+    - https://github.com/looly/hutool/commit/fed1a1f747a9308e2f65f8dbbff05ce62478ecc0
+affected:
+    - groupId: cn.hutool
+      artifactId: hutool-core
+      version:
+        - "<=4.1.11"
+      fixedin:
+        - ">=4.1.12"

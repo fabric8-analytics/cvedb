@@ -1,0 +1,19 @@
+---
+cve: 2017-15095
+title: CVE in com.fasterxml.jackson.core:jackson-databind
+description: >
+    A deserialization flaw was discovered in the jackson-databind in versions before 2.8.10 and 2.9.1, which could allow an unauthenticated user to perform code execution by sending the maliciously crafted input to the readValue method of the ObjectMapper. This issue extends the previous flaw CVE-2017-7525 by blacklisting more classes that could be used maliciously.
+cvss_v2: 7.5
+references:
+    - https://github.com/FasterXML/jackson-databind/issues/1680
+    - https://github.com/FasterXML/jackson-databind/issues/1737
+    - https://nvd.nist.gov/vuln/detail/CVE-2017-15095
+affected:
+    - groupId: com.fasterxml.jackson.core
+      artifactId: jackson-databind
+      version:
+        - "<=2.9.0,2.9.0.pr1"
+        - "<=2.8.9"
+      fixedin:
+        - ">=2.9.1"
+        - ">=2.8.10"

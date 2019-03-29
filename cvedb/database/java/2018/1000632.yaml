@@ -1,0 +1,19 @@
+---
+cve: 2018-1000632
+title: CVE in org.dom4j:dom4j
+description: >
+    "dom4j version prior to version 2.1.1 contains a CWE-91: XML Injection vulnerability in Class: Element. Methods: addElement, addAttribute that can result in an attacker tampering with XML documents through XML injection. This attack appear to be exploitable via an attacker specifying attributes or elements in the XML document. This vulnerability appears to have been fixed in 2.1.1 or later."
+cvss_v2: 6.4
+references:
+    - https://github.com/dom4j/dom4j/commit/e598eb43d418744c4dbf62f647dd2381c9ce9387
+    - https://github.com/dom4j/dom4j/issues/48
+    - https://ihacktoprotect.com/post/dom4j-xml-injection/
+    - https://lists.debian.org/debian-lts-announce/2018/09/msg00028.html
+    - https://www.oracle.com/technetwork/security-advisory/cpujan2019-5072801.html
+affected:
+    - groupId: org.dom4j
+      artifactId: dom4j
+      version:
+        - "<=2.1.0"
+      fixedin:
+        - ">=2.1.1"

@@ -1,0 +1,18 @@
+---
+cve: 2015-1164
+title: Open redirect vulnerability in serve-static
+description: >
+    Open redirect vulnerability in the serve-static plugin before 1.7.2 for Node.js, when mounted at the root, allows remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via a // (slash slash) followed by a domain in the PATH_INFO to the default URI.
+cvss_v2: 4.3
+references:
+    - http://nodesecurity.io/advisories/serve-static-open-redirect
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1181917
+    - https://github.com/expressjs/serve-static/issues/26
+    - https://nvd.nist.gov/vuln/detail/CVE-2015-1164
+    - https://github.com/expressjs/serve-static/blob/master/HISTORY.md#165--2015-02-04
+affected:
+    - name: serve-static
+      version:
+        - "<=1.7.1"
+      fixedin:
+        - ">=1.7.2"

@@ -1,0 +1,14 @@
+---
+cve: 2017-16030
+title: CVE in useragent
+description: >
+    Useragent is used to parse useragent headers. It uses several regular expressions to accomplish this. An attacker could edit their own headers, creating an arbitrarily long useragent string, causing the event loop and server to block. This affects Useragent 2.1.12 and earlier.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/312
+affected:
+    - name: useragent
+      version:
+        - "<=2.1.12"
+      fixedin:
+        - ">=2.1.13"

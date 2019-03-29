@@ -1,0 +1,16 @@
+---
+cve: 2017-1000209
+title: CVE in com.neovisionaries:nv-websocket-client
+description: >
+    The Java WebSocket client nv-websocket-client does not verify that the server hostname matches a domain name in the subject's Common Name (CN) or subjectAltName field of the X.509 certificate, which allows man-in-the-middle attackers to spoof SSL/TLS servers via an arbitrary valid certificate.
+cvss_v2: 4.3
+references:
+    - https://github.com/TakahikoKawasaki/nv-websocket-client/pull/107
+    - https://github.com/TakahikoKawasaki/nv-websocket-client/commit/feb9c8302757fd279f4cfc99cbcdfb6ee709402d
+affected:
+    - groupId: com.neovisionaries
+      artifactId: nv-websocket-client
+      version:
+        - "<=2.2"
+      fixedin:
+        - ">=2.3"

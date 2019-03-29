@@ -1,0 +1,15 @@
+---
+cve: 2015-0846
+title: CVE in django-markupfield
+description: >
+    django-markupfield before 1.3.2 uses the default docutils RESTRUCTUREDTEXT_FILTER_SETTINGS settings, which allows remote attackers to include and read arbitrary files via unspecified vectors.
+cvss_v2: 5.0
+references:
+    - http://www.debian.org/security/2015/dsa-3230
+    - https://github.com/jamesturk/django-markupfield/blob/master/CHANGELOG
+affected:
+    - name: django-markupfield
+      version:
+        - "<=1.3.1"
+      fixedin:
+        - ">=1.3.2"

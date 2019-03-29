@@ -1,0 +1,19 @@
+---
+cve: 2017-5934
+title: CVE in moin
+description: >
+    Cross-site scripting (XSS) vulnerability in the link dialogue in GUI editor in MoinMoin before 1.9.10 allows remote attackers to inject arbitrary web script or HTML via unspecified vectors.
+cvss_v2: 4.3
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2018-10/msg00024.html
+    - http://moinmo.in/SecurityFixes
+    - https://github.com/moinwiki/moin-1.9/commit/70955a8eae091cc88fd9a6e510177e70289ec024
+    - https://lists.debian.org/debian-lts-announce/2018/10/msg00007.html
+    - https://usn.ubuntu.com/3794-1/
+    - https://www.debian.org/security/2018/dsa-4318
+affected:
+    - name: moin
+      version:
+        - "<=1.9.9"
+      fixedin:
+        - ">=1.9.10"

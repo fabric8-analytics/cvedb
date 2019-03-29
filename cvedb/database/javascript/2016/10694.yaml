@@ -1,0 +1,15 @@
+---
+cve: 2016-10694
+title: CVE in alto-saxophone
+description: >
+    alto-saxophone is a module to install and launch Chromedriver for Mac, Linux or Windows. alto-saxophone versions below 2.25.1 download binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/172
+    - https://nvd.nist.gov/vuln/detail/CVE-2016-10694
+affected:
+    - name: alto-saxophone
+      version:
+        - "<=2.25.0"
+      fixedin:
+        - ">=2.25.1"

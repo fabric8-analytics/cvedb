@@ -1,0 +1,21 @@
+---
+cve: 2016-5598
+title: CVE in mysql-connector-python and mysql-connector
+description: >
+    Unspecified vulnerability in the MySQL Connector component 2.1.3 and earlier and 2.0.4 and earlier in Oracle MySQL allows remote attackers to affect confidentiality, integrity, and availability via vectors related to Connector/Python.
+cvss_v2: 6.8
+references:
+    - http://www.oracle.com/technetwork/security-advisory/cpuoct2016-2881722.html
+    - http://www.securityfocus.com/bid/93653
+    - http://www.securitytracker.com/id/1037050
+affected:
+    - name: mysql-connector-python
+      version:
+        - "<=2.0.4"
+      fixedin:
+        - ">=8.0.5"
+    - name: mysql-connector
+      version:
+        - "<=2.1.3"
+      fixedin:
+        - ">=2.1.4"

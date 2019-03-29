@@ -1,0 +1,13 @@
+---
+cve: 2017-16157
+title: CVE in censorify.tanisjr
+description: >
+    censorify.tanisjr is a simple web server and API RESTful service. censorify.tanisjr is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/censorify.tanisjr
+    - https://nodesecurity.io/advisories/392
+affected:
+    - name: censorify.tanisjr
+      version:
+        - "<=0.1.4"

@@ -1,0 +1,19 @@
+---
+cve: 2018-6188
+title: CVE in django
+description: >
+    django.contrib.auth.forms.AuthenticationForm in Django 2.0 before 2.0.2, and 1.11.8 and 1.11.9, allows remote attackers to obtain potentially sensitive information by leveraging data exposure from the confirm_login_allowed() method, as demonstrated by discovering whether a user account is inactive.
+cvss_v2: 5.0
+references:
+    - http://www.securitytracker.com/id/1040422
+    - https://usn.ubuntu.com/3559-1/
+    - https://www.djangoproject.com/weblog/2018/feb/01/security-releases/
+affected:
+    - name: django
+      version:
+        - "==1.11.8"
+        - "==1.11.9"
+        - "<=2.0.1,2.0"
+      fixedin:
+        - ">=1.11.10"
+        - ">=2.0.2"

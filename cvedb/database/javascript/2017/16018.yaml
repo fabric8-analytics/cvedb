@@ -1,0 +1,15 @@
+---
+cve: 2017-16018
+title: CVE in restify
+description: >
+    Restify is a framework for building REST APIs. Restify >=2.0.0 <=4.0.4 using URL encoded script tags in a non-existent URL, an attacker can get script to run in some browsers.
+cvss_v2: 4.3
+references:
+    - https://github.com/restify/node-restify/issues/1018
+    - https://nodesecurity.io/advisories/314
+affected:
+    - name: restify
+      version:
+        - "<=4.0.4,2.0.0"
+      fixedin:
+        - ">=4.1.0"

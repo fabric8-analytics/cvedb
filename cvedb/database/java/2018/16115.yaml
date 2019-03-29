@@ -1,0 +1,22 @@
+---
+cve: 2018-16115
+title: CVE in Lightbend Akka
+description: >
+    Lightbend Akka 2.5.x before 2.5.16 allows message disclosure and modification because of an RNG error. A random number generator is used in Akka Remoting for TLS (both classic and Artery Remoting). Akka allows configuration of custom random number generators. For historical reasons, Akka included the AES128CounterSecureRNG and AES256CounterSecureRNG random number generators. The implementations had a bug that caused the generated numbers to be repeated after only a few bytes. The custom RNG implementations were not configured by default but examples in the documentation showed (and therefore implicitly recommended) using the custom ones. This can be used by an attacker to compromise the communication if these random number generators are enabled in configuration. It would be possible to eavesdrop, replay, or modify the messages sent with Akka Remoting/Cluster.
+cvss_v2: 6.4
+references:
+    - https://doc.akka.io/docs/akka/current/security/2018-08-29-aes-rng.html
+    - https://github.com/akka/akka/commit/b75bb8fc46972666e542ddfad40b52f9a8029de9
+affected:
+    - groupId: com.typesafe.akka
+      artifactId: akka-remote_2.12
+      version:
+        - "<=2.5.15"
+      fixedin:
+        - ">=2.5.16"
+    - groupId: com.typesafe.akka
+      artifactId: akka-remote_2.11
+      version:
+        - "<=2.5.15"
+      fixedin:
+        - ">=2.5.16"

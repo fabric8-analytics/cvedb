@@ -1,0 +1,15 @@
+---
+cve: 2017-1000452
+title: CVE in samlify
+description: >
+    An XML Signature Wrapping vulnerability exists in Samlify 2.2.0 and earlier, and in predecessor Express-saml2 which could allow attackers to impersonate arbitrary users.
+cvss_v2: 6.0
+references:
+    - https://github.com/tngan/samlify/releases/tag/v2.3.0
+    - https://www.whitehats.nl/blog/xml-signature-wrapping-samlify
+affected:
+    - name: samlify
+      version:
+        - "<=2.2.0"
+      fixedin:
+        - ">=2.3.0"

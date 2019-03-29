@@ -1,0 +1,17 @@
+---
+cve: 2018-1287
+title: CVE in org.apache.jmeter:ApacheJMeter_junit-test
+description: >
+    In Apache JMeter 2.X and 3.X, when using Distributed Test only (RMI based), jmeter server binds RMI Registry to wildcard host. This could allow an attacker to get Access to JMeterEngine and send unauthorized code.
+cvss_v2: 7.5
+references:
+    - http://mail-archives.apache.org/mod_mbox/www-announce/201802.mbox/%3CCAH9fUpYsFx1%2Brwz1A%3Dmc7wAgbDHARyj1VrWNg41y9OySuL1mqw%40mail.gmail.com%3E
+    - https://bz.apache.org/bugzilla/show_bug.cgi?id=62039
+    - https://nvd.nist.gov/vuln/detail/CVE-2018-1287
+affected:
+    - groupId: org.apache.jmeter
+      artifactId: ApacheJMeter_core
+      version:
+        - "<=3.3"
+      fixedin:
+        - ">=4.0"

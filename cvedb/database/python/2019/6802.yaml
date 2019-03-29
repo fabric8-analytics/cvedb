@@ -1,0 +1,14 @@
+---
+cve: 2019-6802
+title: CVE in pypiserver
+description: >
+    CRLF Injection in pypiserver 1.2.5 and below allows attackers to set arbitrary HTTP headers and possibly conduct XSS attacks via a %0d%0a in a URI.
+cvss_v2: 4.3
+references:
+    - https://github.com/pypiserver/pypiserver/issues/237
+affected:
+    - name: pypiserver
+      version:
+        - "<=1.2.5"
+      fixedin:
+        - ">=1.2.6"

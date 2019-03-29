@@ -1,0 +1,19 @@
+---
+cve: 2018-11797
+title: CVE in org.apache.pdfbox:pdfbox
+description: >
+    In Apache PDFBox 1.8.0 to 1.8.15 and 2.0.0RC1 to 2.0.11, a carefully crafted PDF file can trigger an extremely long running computation when parsing the page tree.
+cvss_v2: 4.3
+references:
+    - https://lists.apache.org/thread.html/645574bc50b886d39c20b4065d51ccb1cd5d3a6b4750a22edbb565eb@%3Cannounce.apache.org%3E
+    - https://lists.apache.org/thread.html/a9760973a873522f4d4c0a99916ceb74f361d91006b663a0a418d34a@%3Cannounce.apache.org%3E
+    - https://lists.debian.org/debian-lts-announce/2018/10/msg00008.html
+affected:
+    - groupId: org.apache.pdfbox
+      artifactId: pdfbox
+      version:
+        - "<=1.8.15,1.8.0"
+        - "<=2.0.11,2.0.0-RC1"
+      fixedin:
+        - ">=1.8.16"
+        - ">=2.0.12"
