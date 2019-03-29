@@ -1,0 +1,23 @@
+---
+cve: 2019-0204
+title: CVE in org.apache.mesos:mesos
+description: >
+    A specifically crafted Docker image running under the root user can overwrite the init helper binary of the container runtime and/or the command executor in Apache Mesos versions pre-1.4.x, 1.4.0 to 1.4.2, 1.5.0 to 1.5.2, 1.6.0 to 1.6.1, and 1.7.0 to 1.7.1. A malicious actor can therefore gain root-level code execution on the host.
+cvss_v2: 9.3
+references:
+    - http://www.securityfocus.com/bid/107605
+    - https://lists.apache.org/thread.html/b162dd624dc088cd634292f0402282a1d1d0ce853baeae8205bc033c@%3Cdev.mesos.apache.org%3E
+affected:
+    - groupId: org.apache.mesos
+      artifactId: mesos
+      version:
+        - "<=1.4.2,1.4.0-rc1"
+        - "<=1.5.2,1.5.0"
+        - "<=1.6.1,1.6.0"
+        - "<=1.7.1,1.7.0"
+      fixedin:
+        - ">=1.7.2"
+        - "<=1.6.2,1.6.2"
+        - "<=1.5.3,1.5.3"
+        - "<=1.4.3,1.4.3"
+        - "<=1.3.3-rc1,0.9.0-incubating"
