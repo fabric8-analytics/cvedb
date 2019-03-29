@@ -1,0 +1,22 @@
+---
+cve: 2014-8110
+title: CVE in org.apache.activemq
+description: >
+    Multiple cross-site scripting (XSS) vulnerabilities in the web based administration console in Apache ActiveMQ 5.x before 5.10.1 allow remote attackers to inject arbitrary web script or HTML via unspecified vectors.
+cvss_v2: 4.3
+references:
+    - http://activemq.apache.org/security-advisories.data/CVE-2014-8110-announcement.txt
+    - http://seclists.org/oss-sec/2015/q1/427
+    - http://secunia.com/advisories/62649
+    - http://www.securityfocus.com/bid/72511
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/100724
+    - https://lists.apache.org/thread.html/a859563f05fbe7c31916b3178c2697165bd9bbf5a65d1cf62aef27d2@%3Ccommits.activemq.apache.org%3E
+    - https://github.com/apache/activemq/commit/f8b3de86d8154db5680433e46734b2bd9ced852b
+affected:
+    - groupId: org.apache.activemq
+      artifactId: activemq-web-console
+      version:
+        - "<=5.10.0,5.0.0"
+      fixedin:
+        - ">=5.10.1"
+
