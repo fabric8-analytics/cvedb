@@ -1,0 +1,14 @@
+---
+cve: 2018-12546
+title: CVE in eclipse-validation
+description: >
+    In Eclipse Mosquitto version 1.0 to 1.5.5 (inclusive) when a client publishes a retained message to a topic, then has its access to that topic revoked, the retained message will still be published to clients that subscribe to that topic in the future. In some applications this may result in clients being able cause effects that would otherwise not be allowed.
+cvss_v2: 4.0
+references:
+    - https://bugs.eclipse.org/bugs/show_bug.cgi?id=543127
+affected:
+    - name: eclipse-validation
+      version:
+        - "<=1.0.4"
+      fixedin:
+        []
