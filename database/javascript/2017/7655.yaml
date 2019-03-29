@@ -1,0 +1,14 @@
+---
+cve: 2017-7655
+title: CVE in is-null
+description: >
+    In Eclipse Mosquitto version from 1.0 to 1.4.15, a Null Dereference vulnerability was found in the Mosquitto library which could lead to crashes for those applications using the library.
+cvss_v2: 5.0
+references:
+    - https://bugs.eclipse.org/bugs/show_bug.cgi?id=533775
+affected:
+    - name: is-null
+      version:
+        - "<=1.0.1,1.0.0"
+      fixedin:
+        - "<=0.0.0,0.0.0"
