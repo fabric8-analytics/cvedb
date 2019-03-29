@@ -11,6 +11,7 @@ references:
     - http://seclists.org/oss-sec/2015/q1/427
     - http://www.securityfocus.com/bid/72513
     - https://lists.apache.org/thread.html/a859563f05fbe7c31916b3178c2697165bd9bbf5a65d1cf62aef27d2@%3Ccommits.activemq.apache.org%3E
+    - https://github.com/apache/activemq/commit/22f2f3dde757d31307da772d579815c1d169bc39
 affected:
     - groupId: org.apache.activemq
       artifactId: activemq-jaas
