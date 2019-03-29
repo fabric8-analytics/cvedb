@@ -1,0 +1,18 @@
+---
+cve: 2019-10255
+title: CVE in notebook
+description: >
+    An Open Redirect vulnerability for all browsers in Jupyter Notebook before 5.7.7 and some browsers (Chrome, Firefox) in JupyterHub before 0.9.5 allows crafted links to the login page, which will redirect to a malicious site after successful login. Servers running on a base_url prefix are not affected.
+cvss_v2: 5.8
+references:
+    - https://blog.jupyter.org/open-redirect-vulnerability-in-jupyter-jupyterhub-adf43583f1e4
+    - https://github.com/jupyter/notebook/commit/08c4c898182edbe97aadef1815cce50448f975cb
+    - https://github.com/jupyter/notebook/commit/70fe9f0ddb3023162ece21fbb77d5564306b913b
+    - https://github.com/jupyter/notebook/commit/d65328d4841892b412aef9015165db1eb029a8ed
+    - https://github.com/jupyter/notebook/compare/05aa4b2...16cf97c
+affected:
+    - name: notebook
+      version:
+        - "<=5.7.6"
+      fixedin:
+        - ">=5.7.7"
