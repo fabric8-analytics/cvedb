@@ -1,0 +1,18 @@
+---
+cve: 2018-3837
+title: CVE in node-sdl2
+description: >
+    An exploitable information disclosure vulnerability exists in the PCX image rendering functionality of Simple DirectMedia Layer SDL2_image-2.0.2. A specially crafted PCX image can cause an out-of-bounds read on the heap, resulting in information disclosure . An attacker can display a specially crafted image to trigger this vulnerability.
+cvss_v2: 4.3
+references:
+    - https://security.gentoo.org/glsa/201903-17
+    - https://www.debian.org/security/2018/dsa-4177
+    - https://www.debian.org/security/2018/dsa-4184
+    - https://www.talosintelligence.com/vulnerability_reports/TALOS-2018-0519
+affected:
+    - name: node-sdl2
+      version:
+        - "<=2.0.2,2.0.2"
+      fixedin:
+        - ">=2.0.3"
+        - "<=2.0.1,1.0.1"
