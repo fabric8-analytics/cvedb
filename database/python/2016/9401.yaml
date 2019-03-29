@@ -1,0 +1,20 @@
+---
+cve: 2016-9401
+title: CVE in bash-completion
+description: >
+    popd in bash might allow local users to bypass the restricted shell and cause a use-after-free via a crafted address.
+cvss_v2: 2.1
+references:
+    - http://rhn.redhat.com/errata/RHSA-2017-0725.html
+    - http://www.openwall.com/lists/oss-security/2016/11/17/5
+    - http://www.openwall.com/lists/oss-security/2016/11/17/9
+    - http://www.securityfocus.com/bid/94398
+    - https://access.redhat.com/errata/RHSA-2017:1931
+    - https://lists.debian.org/debian-lts-announce/2019/03/msg00028.html
+    - https://security.gentoo.org/glsa/201701-02
+affected:
+    - name: bash-completion
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
