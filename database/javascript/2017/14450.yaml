@@ -1,0 +1,19 @@
+---
+cve: 2017-14450
+title: CVE in node-sdl2
+description: >
+    A buffer overflow vulnerability exists in the GIF image parsing functionality of SDL2_image-2.0.2. A specially crafted GIF image can lead to a buffer overflow on a global section. An attacker can display an image to trigger this vulnerability.
+cvss_v2: 5.8
+references:
+    - https://lists.debian.org/debian-lts-announce/2018/04/msg00005.html
+    - https://security.gentoo.org/glsa/201903-17
+    - https://www.debian.org/security/2018/dsa-4177
+    - https://www.debian.org/security/2018/dsa-4184
+    - https://www.talosintelligence.com/vulnerability_reports/TALOS-2017-0499
+affected:
+    - name: node-sdl2
+      version:
+        - "<=2.0.2,2.0.2"
+      fixedin:
+        - ">=2.0.3"
+        - "<=2.0.1,1.0.1"
