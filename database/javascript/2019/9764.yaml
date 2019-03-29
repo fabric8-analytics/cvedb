@@ -1,0 +1,15 @@
+---
+cve: 2019-9764
+title: CVE in @hashicorp/consul-api-double
+description: >
+    HashiCorp Consul 1.4.3 lacks server hostname verification for agent-to-agent TLS communication. In other words, the product behaves as if verify_server_hostname were set to false, even when it is actually set to true. This is fixed in 1.4.4.
+cvss_v2: 5.8
+references:
+    - https://github.com/hashicorp/consul/issues/5519
+affected:
+    - name: @hashicorp/consul-api-double
+      version:
+        - "<=1.4.3,1.4.3"
+      fixedin:
+        - ">=1.5.0"
+        - "<=1.4.2,1.0.0"
