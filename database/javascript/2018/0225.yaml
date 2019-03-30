@@ -1,0 +1,14 @@
+---
+cve: 2018-0225
+title: CVE in appdynamics
+description: >
+    The Enterprise Console in Cisco AppDynamics App iQ Platform before 4.4.3.10598 (HF4) allows SQL injection, aka the Security Advisory 2089 issue.
+cvss_v2: 7.5
+references:
+    - https://docs.appdynamics.com/display/PRO44/Release+Notes#ReleaseNotes-4.4.3.10598(HF4)Updates
+affected:
+    - name: appdynamics
+      version:
+        - "<=4.4.3"
+      fixedin:
+        - ">=4.4.4"
