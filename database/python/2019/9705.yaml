@@ -1,0 +1,17 @@
+---
+cve: 2019-9705
+title: CVE in bambu-cron
+description: >
+    Vixie Cron before the 3.0pl1-133 Debian package allows local users to cause a denial of service (memory consumption) via a large crontab file because an unlimited number of lines is accepted.
+cvss_v2: 2.1
+references:
+    - http://www.securityfocus.com/bid/107378
+    - https://lists.debian.org/debian-lts-announce/2019/03/msg00025.html
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6DU7HAUAQR4E4AEBPYLUV6FZ4PHKH6A2/
+    - https://salsa.debian.org/debian/cron/commit/26814a26
+affected:
+    - name: bambu-cron
+      version:
+        - "<=2.0"
+      fixedin:
+        - ">=3.0"
