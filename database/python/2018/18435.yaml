@@ -1,0 +1,19 @@
+---
+cve: 2018-18435
+title: CVE in alerta-server
+description: >
+    KioWare Server 4.9.6 allows local users to gain privileges by replacing \kioware_com\KWSS.exe with a Trojan horse program, because \kioware_com has "Everyone: (F)" permissions.
+cvss_v2: 7.2
+references:
+    - http://packetstormsecurity.com/files/151031/KioWare-Server-4.9.6-Privilege-Escalation.html
+    - https://github.com/active-labs/Advisories/blob/master/ACTIVE-2019-002.md
+    - https://m.kioware.com/news/kioware-press-releases/kioware_server_security_patch_update
+    - https://www.exploit-db.com/exploits/46093/
+    - https://www.kioware.com/patch.aspx
+affected:
+    - name: alerta-server
+      version:
+        - "<=4.9.6,4.9.6"
+      fixedin:
+        - ">=4.10.0"
+        - "<=4.9.5,3.1.2"
