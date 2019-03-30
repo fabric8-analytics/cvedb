@@ -1,0 +1,17 @@
+---
+cve: 2019-9210
+title: CVE in png
+description: >
+    In AdvanceCOMP 2.1, png_compress in pngex.cc in advpng has an integer overflow upon encountering an invalid PNG size, which results in an attempted memcpy to write into a buffer that is too small. (There is also a heap-based buffer over-read.)
+cvss_v2: 4.3
+references:
+    - https://lists.debian.org/debian-lts-announce/2019/03/msg00004.html
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/R56LVWC7KUNXFRKQB3Y5NX2YHFJKYZB4/
+    - https://sourceforge.net/p/advancemame/bugs/277/
+affected:
+    - name: png
+      version:
+        - "<=2.1.0,2.1.0"
+      fixedin:
+        - ">=2.1.1"
+        - "<=2.0.1,1.0.0"
