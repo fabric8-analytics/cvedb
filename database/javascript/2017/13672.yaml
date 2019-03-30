@@ -1,0 +1,24 @@
+---
+cve: 2017-13672
+title: CVE in quick-it
+description: >
+    QEMU (aka Quick Emulator), when built with the VGA display emulator support, allows local guest OS privileged users to cause a denial of service (out-of-bounds read and QEMU process crash) via vectors involving display update.
+cvss_v2: 2.1
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2019-03/msg00042.html
+    - http://www.debian.org/security/2017/dsa-3991
+    - http://www.openwall.com/lists/oss-security/2017/08/30/3
+    - http://www.securityfocus.com/bid/100540
+    - https://access.redhat.com/errata/RHSA-2018:0816
+    - https://access.redhat.com/errata/RHSA-2018:1104
+    - https://access.redhat.com/errata/RHSA-2018:1113
+    - https://access.redhat.com/errata/RHSA-2018:2162
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1486560
+    - https://lists.gnu.org/archive/html/qemu-devel/2017-08/msg04684.html
+    - https://usn.ubuntu.com/3575-1/
+affected:
+    - name: quick-it
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
