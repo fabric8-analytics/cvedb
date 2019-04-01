@@ -1,6 +1,6 @@
 ---
 cve: 2014-3600
-title: CVE in org.apache.activemq:activemq-all
+title: CVE in org.apache.activemq:activemq-broker
 description: >
     XML external entity (XXE) vulnerability in Apache ActiveMQ 5.x before 5.10.1 allows remote consumers to have unspecified impact via vectors involving an XPath based selector when dequeuing XML messages.
 cvss_v2: 7.5
@@ -13,9 +13,9 @@ references:
     - https://lists.apache.org/thread.html/a859563f05fbe7c31916b3178c2697165bd9bbf5a65d1cf62aef27d2@%3Ccommits.activemq.apache.org%3E
 affected:
     - groupId: org.apache.activemq
-      artifactId: activemq-all
+      artifactId: activemq-broker
       version:
         - "<=5.10.0,5.0.0"
       fixedin:
         - ">=5.10.1"
-        - "<=4.1.2,4.1.2"
+        - "<=4.1.2"
