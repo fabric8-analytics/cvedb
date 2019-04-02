@@ -1,0 +1,15 @@
+---
+cve: 2018-12183
+title: CVE in ii-store
+description: >
+    Stack overflow in DxeCore for EDK II may allow an unauthenticated user to potentially enable escalation of privilege, information disclosure and/or denial of service via local access.
+cvss_v2: 4.6
+references:
+    - http://www.securityfocus.com/bid/107643
+    - https://edk2-docs.gitbooks.io/security-advisory/content/unlimited-fv-recursion.html
+affected:
+    - name: ii-store
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
