@@ -1,0 +1,15 @@
+---
+cve: 2019-9605
+title: CVE in zooniverse-readymade
+description: >
+    PHP Scripts Mall Online Lottery PHP Readymade Script 1.7.0 has Reflected Cross-site Scripting (XSS) via the err value in a .ico picture upload.
+cvss_v2: 3.5
+references:
+    - https://hackingvila.wordpress.com/2019/03/06/php-scripts-mall-online-lottery-php-readymade-script-1-7-0-has-reflected-cross-site-scripting-xss-via-the-err-value-in-a-ico-picture-uploadcve-2019-9605/
+affected:
+    - name: zooniverse-readymade
+      version:
+        - "<=1.7.0,1.7.0"
+      fixedin:
+        - ">=1.7.1"
+        - "<=1.6.3,0.0.2"
