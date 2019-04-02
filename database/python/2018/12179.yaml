@@ -1,0 +1,14 @@
+---
+cve: 2018-12179
+title: CVE in ftdi-vinculum-ii-ate
+description: >
+    Improper configuration in system firmware for EDK II may allow unauthenticated user to potentially enable escalation of privilege, information disclosure and/or denial of service via local access.
+cvss_v2: 4.6
+references:
+    - https://edk2-docs.gitbooks.io/security-advisory/content/opal-blocksid-setting-disabled-after-s3.html
+affected:
+    - name: ftdi-vinculum-ii-ate
+      version:
+        []
+      fixedin:
+        - ">=1.3.0"
