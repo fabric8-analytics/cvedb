@@ -1,0 +1,15 @@
+---
+cve: 2019-9604
+title: CVE in zooniverse-readymade
+description: >
+    PHP Scripts Mall Online Lottery PHP Readymade Script 1.7.0 has Cross-Site Request Forgery (CSRF) for Edit Profile actions.
+cvss_v2: 6.8
+references:
+    - https://hackingvila.wordpress.com/2019/03/06/php-scripts-mall-online-lottery-php-readymade-script-1-7-0-has-cross-site-request-forgery-csrf-for-edit-profile-actionscve-2019-9604/
+affected:
+    - name: zooniverse-readymade
+      version:
+        - "<=1.7.0,1.7.0"
+      fixedin:
+        - ">=1.7.1"
+        - "<=1.6.3,0.0.2"
