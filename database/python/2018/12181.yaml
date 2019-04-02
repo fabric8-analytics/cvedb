@@ -1,0 +1,14 @@
+---
+cve: 2018-12181
+title: CVE in alchemist-stack
+description: >
+    Stack overflow in corrupted bmp for EDK II may allow unprivileged user to potentially enable denial of service or elevation of privilege via local access.
+cvss_v2: 3.6
+references:
+    - https://edk2-docs.gitbooks.io/security-advisory/content/stack-overflow-on-corrupted-bmp.html
+affected:
+    - name: alchemist-stack
+      version:
+        []
+      fixedin:
+        - ">=0.1.0.dev1"
