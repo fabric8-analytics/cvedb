@@ -1,0 +1,16 @@
+---
+cve: 2018-20025
+title: CVE in infrared-v3
+description: >
+    Use of Insufficiently Random Values exists in CODESYS V3 products versions prior V3.5.14.0.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/106251
+    - https://ics-cert.kaspersky.com/advisories/klcert-advisories/2018/12/19/klcert-18-037-codesys-control-v3-use-of-insufficiently-random-values/
+    - https://ics-cert.us-cert.gov/advisories/ICSA-18-352-04
+affected:
+    - name: infrared-v3
+      version:
+        - "<=3.0.1"
+      fixedin:
+        []
