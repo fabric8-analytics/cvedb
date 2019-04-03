@@ -1,0 +1,17 @@
+---
+cve: 2019-6716
+title: CVE in object-access
+description: >
+    An unauthenticated Insecure Direct Object Reference (IDOR) in Wicket Core in LogonBox Nervepoint Access Manager 2013 through 2017 allows a remote attacker to enumerate internal Active Directory usernames and group names, and alter back-end server jobs (backup and synchronization jobs), which could allow for the possibility of a Denial of Service attack via a modified jobId parameter in a runJob.html GET request.
+cvss_v2: 7.5
+references:
+    - http://packetstormsecurity.com/files/151373/LongBox-Limited-Access-Manager-Insecure-Direct-Object-Reference.html
+    - https://www.exploit-db.com/exploits/46254/
+    - https://www.logonbox.com/en/
+affected:
+    - name: object-access
+      version:
+        - "<=1.2.0,1.2.0"
+      fixedin:
+        - ">=1.2.1"
+        - "<=1.1.5,1.0.0"
