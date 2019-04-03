@@ -1,0 +1,19 @@
+---
+cve: 2018-18815
+title: CVE in net.sf.jasperreports:jasperreports
+description: >
+    The REST API component of TIBCO Software Inc.'s TIBCO JasperReports Server, TIBCO JasperReports Server Community Edition, TIBCO JasperReports Server for ActiveMatrix BPM, TIBCO Jaspersoft for AWS with Multi-Tenancy, and TIBCO Jaspersoft Reporting and Analytics for AWS contains a vulnerability that theoretically allows unauthenticated users to bypass authorization checks for portions of the HTTP interface to the JasperReports Server. Affected releases are TIBCO Software Inc.'s TIBCO JasperReports Server: 6.4.0; 6.4.1; 6.4.2; 6.4.3; 7.1.0, TIBCO JasperReports Server Community Edition: versions up to and including 7.1.0, TIBCO JasperReports Server for ActiveMatrix BPM: versions up to and including 6.4.3, TIBCO Jaspersoft for AWS with Multi-Tenancy: versions up to and including 7.1.0, and TIBCO Jaspersoft Reporting and Analytics for AWS: versions up to and including 7.1.0.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/107346
+    - http://www.tibco.com/services/support/advisories
+    - https://www.tibco.com/support/advisories/2019/03/tibco-security-advisory-march-6-2019-tibco-jasperreports-library-2018-18809
+    - https://www.tibco.com/support/advisories/2019/03/tibco-security-advisory-march-6-2019-tibco-jasperreports-server-2018-18815
+    - https://www.zerodayinitiative.com/advisories/ZDI-19-305/
+affected:
+    - groupId: net.sf.jasperreports
+      artifactId: jasperreports
+      version:
+        - "<=6.8.0"
+      fixedin:
+        []
