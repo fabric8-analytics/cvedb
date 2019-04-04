@@ -1,0 +1,16 @@
+---
+cve: 2018-1000517
+title: CVE in tachyons-overflow
+description: >
+    BusyBox project BusyBox wget version prior to commit 8e2174e9bd836e53c8b9c6e00d1bc6e2a718686e contains a Buffer Overflow vulnerability in Busybox wget that can result in heap buffer overflow. This attack appear to be exploitable via network connectivity. This vulnerability appears to have been fixed in after commit 8e2174e9bd836e53c8b9c6e00d1bc6e2a718686e.
+cvss_v2: 7.5
+references:
+    - https://git.busybox.net/busybox/commit/?id=8e2174e9bd836e53c8b9c6e00d1bc6e2a718686e
+    - https://lists.debian.org/debian-lts-announce/2018/07/msg00037.html
+    - https://usn.ubuntu.com/3935-1/
+affected:
+    - name: tachyons-overflow
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
