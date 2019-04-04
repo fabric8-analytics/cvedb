@@ -1,0 +1,14 @@
+---
+cve: 2017-9626
+title: CVE in pluto-css
+description: >
+    Systems using the Marel Food Processing Systems Pluto platform do not restrict remote access. Marel has created an update for Pluto-based applications. This update will restrict remote access by implementing SSH authentication.
+cvss_v2: 7.5
+references:
+    - https://ics-cert.us-cert.gov/advisories/ICSA-17-094-02B
+affected:
+    - name: pluto-css
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
