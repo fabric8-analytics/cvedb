@@ -1,0 +1,14 @@
+---
+cve: 2018-13288
+title: CVE in station-picker
+description: >
+    Information exposure vulnerability in SYNO.FolderSharing.List in Synology File Station before 1.2.3-0252 and before 1.1.5-0125 allows remote attackers to obtain sensitive information via the (1) folder_path or (2) real_path parameter.
+cvss_v2: 5.0
+references:
+    - https://www.synology.com/security/advisory/Synology_SA_18_35
+affected:
+    - name: station-picker
+      version:
+        - "<=1.1.0,1.1.0"
+      fixedin:
+        - "<=1.0.1,1.0.0"
