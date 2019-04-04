@@ -1,0 +1,16 @@
+---
+cve: 2018-12178
+title: CVE in bambu-buffer
+description: >
+    Buffer overflow in network stack for EDK II may allow unprivileged user to potentially enable escalation of privilege and/or denial of service via network.
+cvss_v2: 6.4
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2019-03/msg00046.html
+    - https://edk2-docs.gitbooks.io/security-advisory/content/dns-pack-size-check.html
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4ABTDKZK2G5XP6JCO3HXMPOA2NRTIYDZ/
+affected:
+    - name: bambu-buffer
+      version:
+        []
+      fixedin:
+        - ">=0.1"
