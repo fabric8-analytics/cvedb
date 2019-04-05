@@ -1,0 +1,16 @@
+---
+cve: 2019-1003045
+title: CVE in confluence-publisher
+description: >
+    A vulnerability in Jenkins ECS Publisher Plugin 1.0.0 and earlier allows attackers with Item/Extended Read permission, or local file system access to the Jenkins home directory to obtain the API token configured in this plugin's configuration.
+cvss_v2: 4.0
+references:
+    - http://www.openwall.com/lists/oss-security/2019/03/28/2
+    - http://www.securityfocus.com/bid/107628
+    - https://jenkins.io/security/advisory/2019-03-25/#SECURITY-846
+affected:
+    - name: confluence-publisher
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.1.0"
