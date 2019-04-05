@@ -9,6 +9,6 @@ references:
 affected:
     - name: django-serialize
       version:
-        - "<=1.0.1.dev0"
+        - "<=1.0.1"
       fixedin:
-        - ">=1.0.2.dev0"
+        - []
