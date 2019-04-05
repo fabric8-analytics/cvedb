@@ -1,0 +1,15 @@
+---
+cve: 2019-5423
+title: CVE in http-live-simulator
+description: >
+    Path traversal vulnerability in http-live-simulator npm package version 1.0.5 allows arbitrary path to be accessed on the file system by a remote attacker.
+cvss_v2: 5.0
+references:
+    - https://hackerone.com/reports/384939
+affected:
+    - name: http-live-simulator
+      version:
+        - "<=1.0.5,1.0.5"
+      fixedin:
+        - ">=1.0.6"
+        - "<=1.0.4,1.0.0"
