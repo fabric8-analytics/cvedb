@@ -1,0 +1,17 @@
+---
+cve: 2018-1000808
+title: CVE in pyopenssl
+description: >
+    Python Cryptographic Authority pyopenssl version Before 17.5.0 contains a CWE - 401 : Failure to Release Memory Before Removing Last Reference vulnerability in PKCS #12 Store that can result in Denial of service if memory runs low or is exhausted. This attack appear to be exploitable via Depends upon calling application, however it could be as simple as initiating a TLS connection. Anything that would cause the calling application to reload certificates from a PKCS #12 store.. This vulnerability appears to have been fixed in 17.5.0.
+cvss_v2: 4.3
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2019-04/msg00014.html
+    - https://access.redhat.com/errata/RHSA-2019:0085
+    - https://github.com/pyca/pyopenssl/pull/723
+    - https://usn.ubuntu.com/3813-1/
+affected:
+    - name: pyopenssl
+      version:
+        - "<=17.4.0"
+      fixedin:
+        - ">=17.5.0"
