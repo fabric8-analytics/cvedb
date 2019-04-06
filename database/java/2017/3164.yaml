@@ -1,0 +1,21 @@
+---
+cve: 2017-3164
+title: CVE in org.apache.solr:solr-test-framework
+description: >
+    Server Side Request Forgery in Apache Solr, versions 1.3 until 7.6 (inclusive). Since the "shards" parameter does not have a corresponding whitelist mechanism, a remote attacker with access to the server could make Solr perform an HTTP GET request to any reachable URL.
+cvss_v2: 5.0
+references:
+    - http://mail-archives.apache.org/mod_mbox/www-announce/201902.mbox/%3CCAECwjAVjBN%3DwO5rYs6ktAX-5%3D-f5JDFwbbTSM2TTjEbGO5jKKA%40mail.gmail.com%3E
+    - http://www.securityfocus.com/bid/107026
+    - https://lists.apache.org/thread.html/43026507844ada1ac658ccf7bc939378c13e492fd6538416ce65df39@%3Cdev.lucene.apache.org%3E
+    - https://lists.apache.org/thread.html/75dc651478f9d04505b46d44fe3ac739e7aaf3d7bf1257973685f8f7@%3Cdev.lucene.apache.org%3E
+    - https://lists.apache.org/thread.html/ca3105b6934ccd28e843dffe39724f6963ff49825e9b709837203649@%3Cdev.lucene.apache.org%3E
+    - https://lists.apache.org/thread.html/e0f9c652b57a91fdcc287efcead620af9f4d8e46b88f0b761aa265de@%3Cdev.lucene.apache.org%3E
+    - https://security.netapp.com/advisory/ntap-20190327-0003/
+affected:
+    - groupId: org.apache.solr
+      artifactId: solr-test-framework
+      version:
+        - "<=7.6.0"
+      fixedin:
+        - ">=7.7.0"
