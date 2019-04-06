@@ -1,0 +1,14 @@
+---
+cve: 2017-17836
+title: CVE in apache-airflow
+description: >
+    In Apache Airflow 1.8.2 and earlier, an experimental Airflow feature displayed authenticated cookies, as well as passwords to databases used by Airflow. An attacker who has limited access to airflow, whether it be via XSS or by leaving a machine unlocked can exfiltrate all credentials from the system.
+cvss_v2: 5.0
+references:
+    - https://lists.apache.org/thread.html/ade4d54ebf614f68dc81a08891755e60ea58ba88e0209233eeea5f57@%3Cdev.airflow.apache.org%3E
+affected:
+    - name: apache-airflow
+      version:
+        - "<=1.8.2"
+      fixedin:
+        - ">=1.9.0"
