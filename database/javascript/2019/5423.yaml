@@ -9,7 +9,7 @@ references:
 affected:
     - name: http-live-simulator
       version:
-        - "<=1.0.5,1.0.5"
+        - "=1.0.5"
       fixedin:
         - ">=1.0.6"
-        - "<=1.0.4,1.0.0"
+        - "<=1.0.4"
