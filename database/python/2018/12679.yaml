@@ -1,0 +1,14 @@
+---
+cve: 2018-12679
+title: CVE in django-serialize
+description: >
+    The Serialize.deserialize() method in CoAPthon3 1.0 and 1.0.1 mishandles certain exceptions, leading to a denial of service in applications that use this library (e.g., the standard CoAP server, CoAP client, example collect CoAP server and client) when they receive crafted CoAP messages.
+cvss_v2: 5.0
+references:
+    - https://github.com/Tanganelli/CoAPthon3/issues/16
+affected:
+    - name: django-serialize
+      version:
+        - "<=1.0.1"
+      fixedin:
+        - []
