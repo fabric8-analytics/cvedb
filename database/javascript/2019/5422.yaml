@@ -1,0 +1,14 @@
+---
+cve: 2019-5422
+title: CVE in buttle
+description: >
+    XSS in buttle npm package version 0.2.0 causes execution of attacker-provided code in the victim's browser when an attacker creates an arbitrary file on the server.
+cvss_v2: 4.3
+references:
+    - https://hackerone.com/reports/331110
+affected:
+    - name: buttle
+      version:
+        - "<=0.2.0"
+      fixedin:
+        - []
