@@ -1,0 +1,26 @@
+---
+cve: 2019-10868
+title: CVE in tryton
+description: >
+    In trytond/model/modelstorage.py in Tryton 4.2 before 4.2.21, 4.4 before 4.4.19, 4.6 before 4.6.14, 4.8 before 4.8.10, and 5.0 before 5.0.6, an authenticated user can order records based on a field for which he has no access right. This may allow the user to guess values.
+cvss_v2: 4.0
+references:
+    - https://discuss.tryton.org/t/security-release-for-issue8189/1262
+    - https://hg.tryton.org/trytond/rev/f58bbfe0aefb
+    - https://seclists.org/bugtraq/2019/Apr/14
+    - https://www.debian.org/security/2019/dsa-4426
+affected:
+    - name: tryton
+      version:
+        - "<=4.2.20,4.2.0"
+        - "<=4.4.18,4.4.0"
+        - "<=4.6.13,4.6.0"
+        - "<=4.8.9,4.8.0"
+        - "<=5.0.5,5.0.0"
+      fixedin:
+        - ">=5.0.6"
+        - "<=4.8.13,4.8.10"
+        - "<=4.6.18,4.6.14"
+        - "<=4.4.20,4.4.19"
+        - "<=4.2.24,4.2.21"
+        - "<=4.0.22,1.0.0"
