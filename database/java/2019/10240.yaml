@@ -1,0 +1,15 @@
+---
+cve: 2019-10240
+title: CVE in org.eclipse.hawkbit:hawkbit-repository-test
+description: >
+    Eclipse hawkBit versions prior to 0.3.0M2 resolved Maven build artifacts for the Vaadin based UI over HTTP instead of HTTPS. Any of these dependent artifacts could have been maliciously compromised by a MITM attack. Hence produced build artifacts of hawkBit might be infected.
+cvss_v2: 6.8
+references:
+    - https://bugs.eclipse.org/bugs/show_bug.cgi?id=546053
+affected:
+    - groupId: org.eclipse.hawkbit
+      artifactId: hawkbit-repository-test
+      version:
+        - "<=0.3.0M2"
+      fixedin:
+        []
