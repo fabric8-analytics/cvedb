@@ -1,0 +1,14 @@
+---
+cve: 2019-10240
+title: CVE in django-maven
+description: >
+    Eclipse hawkBit versions prior to 0.3.0M2 resolved Maven build artifacts for the Vaadin based UI over HTTP instead of HTTPS. Any of these dependent artifacts could have been maliciously compromised by a MITM attack. Hence produced build artifacts of hawkBit might be infected.
+cvss_v2: 6.8
+references:
+    - https://bugs.eclipse.org/bugs/show_bug.cgi?id=546053
+affected:
+    - name: django-maven
+      version:
+        - "<=0.3"
+      fixedin:
+        []
