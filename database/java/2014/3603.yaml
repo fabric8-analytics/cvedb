@@ -1,0 +1,17 @@
+---
+cve: 2014-3603
+title: CVE in org.cloudfoundry.identity:cloudfoundry-identity-common
+description: >
+    The (1) HttpResource and (2) FileBackedHttpResource implementations in Shibboleth Identity Provider (IdP) before 2.4.1 and OpenSAML Java 2.6.2 do not verify that the server hostname matches a domain name in the subject's Common Name (CN) or subjectAltName field of the X.509 certificate, which allows man-in-the-middle attackers to spoof SSL servers via an arbitrary valid certificate.
+cvss_v2: 4.3
+references:
+    - http://secunia.com/advisories/60816
+    - http://shibboleth.net/community/advisories/secadv_20140813.txt
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1131823
+affected:
+    - groupId: org.cloudfoundry.identity
+      artifactId: cloudfoundry-identity-common
+      version:
+        - "<=2.6.1"
+      fixedin:
+        - ">=2.7.0"
