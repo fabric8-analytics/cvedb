@@ -1,0 +1,15 @@
+---
+cve: 2019-10044
+title: CVE in digimat-telegram
+description: >
+    Telegram Desktop before 1.5.12 on Windows, and the Telegram applications for Android, iOS, and Linux, is vulnerable to an IDN homograph attack when displaying messages containing URLs. This occurs because the application produces a clickable link even if (for example) Latin and Cyrillic characters exist in the same domain name, and the available font has an identical representation of characters from different alphabets.
+cvss_v2: 6.8
+references:
+    - http://www.securityfocus.com/bid/107610
+    - https://github.com/blazeinfosec/advisories/blob/master/telegram-advisory.txt
+affected:
+    - name: digimat-telegram
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
