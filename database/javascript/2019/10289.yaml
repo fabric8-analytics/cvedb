@@ -1,0 +1,15 @@
+---
+cve: 2019-10289
+title: CVE in cordova-plugin-scan
+description: >
+    A cross-site request forgery vulnerability in Jenkins Netsparker Cloud Scan Plugin 1.1.5 and older in the NCScanBuilder.DescriptorImpl#doValidateAPI form validation method allowed attackers to initiate a connection to an attacker-specified server.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/107790
+    - https://jenkins.io/security/advisory/2019-04-03/#SECURITY-1032
+affected:
+    - name: cordova-plugin-scan
+      version:
+        - "<=1.1.5"
+      fixedin:
+        - ">=1.1.6"
