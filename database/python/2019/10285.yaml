@@ -1,0 +1,15 @@
+---
+cve: 2019-10285
+title: CVE in minio-py3
+description: >
+    Jenkins Minio Storage Plugin stores credentials unencrypted in its global configuration file on the Jenkins master where they can be viewed by users with access to the master file system.
+cvss_v2: 4.0
+references:
+    - http://www.securityfocus.com/bid/107790
+    - https://jenkins.io/security/advisory/2019-04-03/#SECURITY-955
+affected:
+    - name: minio-py3
+      version:
+        []
+      fixedin:
+        - ">=1.0.1.1"
