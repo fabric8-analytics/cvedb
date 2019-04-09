@@ -1,0 +1,16 @@
+---
+cve: 2019-10297
+title: CVE in com.github.danielpacak.jenkins.ci:jenkins.ci.test
+description: >
+    Jenkins Sametime Plugin stores credentials unencrypted in its global configuration file on the Jenkins master where they can be viewed by users with access to the master file system.
+cvss_v2: 4.0
+references:
+    - http://www.securityfocus.com/bid/107790
+    - https://jenkins.io/security/advisory/2019-04-03/#SECURITY-1090
+affected:
+    - groupId: com.github.danielpacak.jenkins.ci
+      artifactId: jenkins.ci.test
+      version:
+        []
+      fixedin:
+        - ">=1.0.0-rc2"
