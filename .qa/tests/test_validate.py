@@ -1,17 +1,18 @@
 import os
+from pathlib import Path
 from victimsdb_lib.model import Record
 
 
 def iter_records():
     for yaml_path, ecosystem in iter_yaml_paths():
-
-        with open(yaml_path, 'r') as f:
-            record = Record.from_file(yaml_path, ecosystem=ecosystem)
-            yield yaml_path, record, ecosystem
+        print(yaml_path)
+        record = Record.from_file(yaml_path, ecosystem=ecosystem)
+        yield yaml_path, record, ecosystem
 
 
 def iter_yaml_paths():
-    for dirpath, dirnames, filenames in os.walk('../database/', followlinks=False):
+    db_path = Path(__file__).parent.parent.parent / Path('database/')
+    for dirpath, dirnames, filenames in os.walk(str(db_path), followlinks=False):
         for filename in filenames:
             if filename.endswith('.yaml'):
                 ecosystem = os.path.split(os.path.split(dirpath)[0])[1]
