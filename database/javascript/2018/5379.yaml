@@ -1,0 +1,23 @@
+---
+cve: 2018-5379
+title: CVE in on-update
+description: >
+    The Quagga BGP daemon (bgpd) prior to version 1.2.3 can double-free memory when processing certain forms of UPDATE message, containing cluster-list and/or unknown attributes. A successful attack could cause a denial of service or potentially allow an attacker to execute arbitrary code.
+cvss_v2: 7.5
+references:
+    - http://savannah.nongnu.org/forum/forum.php?forum_id=9095
+    - http://www.kb.cert.org/vuls/id/940439
+    - http://www.securityfocus.com/bid/103105
+    - https://access.redhat.com/errata/RHSA-2018:0377
+    - https://cert-portal.siemens.com/productcert/pdf/ssa-451142.pdf
+    - https://gogs.quagga.net/Quagga/quagga/src/master/doc/security/Quagga-2018-1114.txt
+    - https://lists.debian.org/debian-lts-announce/2018/02/msg00021.html
+    - https://security.gentoo.org/glsa/201804-17
+    - https://usn.ubuntu.com/3573-1/
+    - https://www.debian.org/security/2018/dsa-4115
+affected:
+    - name: on-update
+      version:
+        - "<=1.2.2"
+      fixedin:
+        - ">=1.3.0"
