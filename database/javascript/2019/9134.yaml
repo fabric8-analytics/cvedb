@@ -1,0 +1,14 @@
+---
+cve: 2019-9134
+title: CVE in property-information
+description: >
+    Architectural Information System 1.0 and earlier versions have a Stack-based buffer overflow, allows remote attackers to execute arbitrary code.
+cvss_v2: 7.5
+references:
+    - https://www.boho.or.kr/krcert/secNoticeView.do?bulletin_writing_sequence=34993
+affected:
+    - name: property-information
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=2.0.0"
