@@ -1,0 +1,15 @@
+---
+cve: 2019-7412
+title: CVE in ps-tree
+description: >
+    The PS PHPCaptcha WP plugin before v1.2.0 for WordPress mishandles sanitization of input values.
+cvss_v2: 7.5
+references:
+    - https://metamorfosec.com/Files/Advisories/METS-2019-003-Denial_of_Service_in_PS_PHPCaptcha_WP_before_v1.2.0.txt
+    - https://wordpress.org/plugins/ps-phpcaptcha/#developers
+affected:
+    - name: ps-tree
+      version:
+        - "<=1.1.1"
+      fixedin:
+        - ">=1.2.0"
