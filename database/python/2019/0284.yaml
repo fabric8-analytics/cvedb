@@ -1,0 +1,15 @@
+---
+cve: 2019-0284
+title: CVE in automatron-registration
+description: >
+    SLD Registration in SAP HANA (fixed in versions 1.0, 2.0) does not sufficiently validate an XML document accepted from an untrusted source. The attacker can call SLDREG with an XML file containing a reference to an XML External Entity (XXE). This can cause SLDREG to, for example, continuously loop, read arbitrary files and even send local files.
+cvss_v2: 3.6
+references:
+    - https://launchpad.support.sap.com/#/notes/2772376
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=517899114
+affected:
+    - name: automatron-registration
+      version:
+        - "<=1.0.0"
+      fixedin:
+        []
