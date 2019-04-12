@@ -1,0 +1,14 @@
+---
+cve: 2019-10945
+title: CVE in joomla-cli
+description: >
+    An issue was discovered in Joomla! before 3.9.5. The Media Manager component does not properly sanitize the folder parameter, allowing attackers to act outside the media manager root directory.
+cvss_v2: 7.5
+references:
+    - https://developer.joomla.org/security-centre/777-20190401-core-directory-traversal-in-com-media
+affected:
+    - name: joomla-cli
+      version:
+        - "<=1.9.0,1.5.0"
+      fixedin:
+        - "<=1.4.2,1.0.3"
