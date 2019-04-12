@@ -1,0 +1,17 @@
+---
+cve: 2018-12180
+title: CVE in ii-store
+description: >
+    Buffer overflow in BlockIo service for EDK II may allow an unauthenticated user to potentially enable escalation of privilege, information disclosure and/or denial of service via network access.
+cvss_v2: 6.8
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2019-03/msg00046.html
+    - https://edk2-docs.gitbooks.io/security-advisory/content/buffer-overflow-in-blockio-service-for-ram-disk.html
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4ABTDKZK2G5XP6JCO3HXMPOA2NRTIYDZ/
+    - https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbhf03912en_us
+affected:
+    - name: ii-store
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
