@@ -1,0 +1,15 @@
+---
+cve: 2018-12179
+title: CVE in ii-store
+description: >
+    Improper configuration in system firmware for EDK II may allow unauthenticated user to potentially enable escalation of privilege, information disclosure and/or denial of service via local access.
+cvss_v2: 4.6
+references:
+    - https://edk2-docs.gitbooks.io/security-advisory/content/opal-blocksid-setting-disabled-after-s3.html
+    - https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbhf03912en_us
+affected:
+    - name: ii-store
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
