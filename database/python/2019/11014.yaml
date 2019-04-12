@@ -1,0 +1,15 @@
+---
+cve: 2019-11014
+title: CVE in ai-eye
+description: >
+    The VStarCam vstc.vscam.client library and vstc.vscam shared object, as used in the Eye4 application (for Android, iOS, and Windows), do not prevent spoofing of the camera server. An attacker can create a fake camera server that listens for the client looking for a camera on the local network. When the camera responds to the client, it responds via the broadcast address, giving all information necessary to impersonate the camera. The attacker then floods the client with responses, causing the original camera to be denied service from the client, and thus causing the client to then communicate exclusively with the attacker's fake camera server. When connecting to the fake camera server, the client sends all details necessary to login to the camera (username and password).
+cvss_v2: 10.0
+references:
+    - http://blog.0x42424242.in/2019/03/vstarcam-investigational-security.html
+    - http://blog.0x42424242.in/2019/03/vstarcam-investigational-security_22.html
+affected:
+    - name: ai-eye
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
