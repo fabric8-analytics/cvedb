@@ -1,0 +1,16 @@
+---
+cve: 2019-5425
+title: CVE in io.xream.x7:x7-repository
+description: >
+    In Ubiquiti Networks EdgeSwitch X v1.1.0 and prior, an authenticated user can execute arbitrary shell commands over the SSH interface bypassing the CLI interface, which allow them to escalate privileges to root.
+cvss_v2: 9.0
+references:
+    - https://community.ubnt.com/t5/EdgeMAX-Updates-Blog/EdgeMAX-EdgeSwitch-X-software-release-v1-1-1/ba-p/2731137
+    - https://hackerone.com/reports/511025
+affected:
+    - groupId: io.xream.x7
+      artifactId: x7-repository
+      version:
+        - "<=1.1.0.RELEASE"
+      fixedin:
+        - ">=1.2.0.RELEASE"
