@@ -1,0 +1,19 @@
+---
+cve: 2013-6024
+title: CVE in f5-openstack-lbaasv2-driver
+description: >
+    The Edge Client components in F5 BIG-IP APM 10.x through 10.2.4 and 11.x before 11.5.0, BIG-IP Edge Gateway 10.1.x and 10.2.x through 10.2.4 and 11.x before 11.5.0, and FirePass 6.0.0 through 6.1.0 and 7.0.0 allow attackers to obtain sensitive information from process memory via unspecified vectors.
+cvss_v2: 4.4
+references:
+    - http://support.f5.com/kb/en-us/solutions/public/14000/900/sol14969.html
+    - http://www.kb.cert.org/vuls/id/146430
+    - http://www.securityfocus.com/bid/65422
+affected:
+    - name: f5-openstack-lbaasv2-driver
+      version:
+        - "<=10.1.0,10.1.0"
+        - "<=11.0.0,11.0.0"
+      fixedin:
+        - ">=12.0.0"
+        - "<=10.3.2,10.3.0"
+        - "<=10.0.0,8.0.5"
