@@ -1,0 +1,17 @@
+---
+cve: 2019-5715
+title: CVE in io.github.openfeign.form:feign-form-spring
+description: >
+    All versions of SilverStripe 3 prior to 3.6.7 and 3.7.3, and all versions of SilverStripe 4 prior to 4.0.7, 4.1.5, 4.2.4, and 4.3.1 allows Reflected SQL Injection through Form and DataObject.
+cvss_v2: 7.5
+references:
+    - https://www.silverstripe.org/download/security-releases/
+    - https://www.silverstripe.org/download/security-releases/ss-2018-021
+affected:
+    - groupId: io.github.openfeign.form
+      artifactId: feign-form-spring
+      version:
+        - "<=3.7.0,3.0.0"
+      fixedin:
+        - ">=3.8.0"
+        - "<=2.2.1,2.0.2"
