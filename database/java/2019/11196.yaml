@@ -1,0 +1,15 @@
+---
+cve: 2019-11196
+title: CVE in org.apache.karaf.management.mbeans:org.apache.karaf.management.mbeans.web
+description: >
+    An authentication bypass vulnerability in all versions of ValuePLUS Integrated University Management System (IUMS) allows unauthenticated, remote attackers to gain administrator privileges via the Teachers Web Panel (TWP) User ID or Password field. If exploited, the attackers could perform any actions with administrator privileges (e.g., enumerate/delete all the students' personal information or modify various settings).
+cvss_v2: 10.0
+references:
+    - https://blog.ziaurrashid.com/sql-injection-auth-bypass-on-iums/
+affected:
+    - groupId: org.apache.karaf.management.mbeans
+      artifactId: org.apache.karaf.management.mbeans.web
+      version:
+        []
+      fixedin:
+        - ">=2.2.4"
