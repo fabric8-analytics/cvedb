@@ -1,0 +1,21 @@
+---
+cve: 2019-6690
+title: CVE in python-gnupg
+description: >
+    python-gnupg 0.4.3 allows context-dependent attackers to trick gnupg to decrypt other ciphertext than intended. To perform the attack, the passphrase to gnupg must be controlled by the adversary and the ciphertext should be trusted. Related to a "CWE-20: Improper Input Validation" issue affecting the affect functionality component.
+cvss_v2: 5.0
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2019-02/msg00008.html
+    - http://lists.opensuse.org/opensuse-security-announce/2019-02/msg00058.html
+    - http://packetstormsecurity.com/files/151341/Python-GnuPG-0.4.3-Improper-Input-Validation.html
+    - http://www.securityfocus.com/bid/106756
+    - https://lists.debian.org/debian-lts-announce/2019/02/msg00021.html
+    - https://pypi.org/project/python-gnupg/#history
+    - https://seclists.org/bugtraq/2019/Jan/41
+affected:
+    - name: python-gnupg
+      version:
+        - "<=0.4.3"
+      fixedin:
+        - ">=0.4.4"
+        - "<=0.4.2,0.2.3"
