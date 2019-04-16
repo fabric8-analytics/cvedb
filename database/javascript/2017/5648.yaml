@@ -1,0 +1,31 @@
+---
+cve: 2017-5648
+title: CVE in daojia-m1
+description: >
+    While investigating bug 60718, it was noticed that some calls to application listeners in Apache Tomcat 9.0.0.M1 to 9.0.0.M17, 8.5.0 to 8.5.11, 8.0.0.RC1 to 8.0.41, and 7.0.0 to 7.0.75 did not use the appropriate facade object. When running an untrusted application under a SecurityManager, it was therefore possible for that untrusted application to retain a reference to the request or response object and thereby access and/or modify information associated with another web application.
+cvss_v2: 6.4
+references:
+    - http://www.debian.org/security/2017/dsa-3842
+    - http://www.debian.org/security/2017/dsa-3843
+    - http://www.securityfocus.com/bid/97530
+    - http://www.securitytracker.com/id/1038220
+    - https://access.redhat.com/errata/RHSA-2017:1801
+    - https://access.redhat.com/errata/RHSA-2017:1802
+    - https://access.redhat.com/errata/RHSA-2017:1809
+    - https://lists.apache.org/thread.html/343558d982879bf88ec20dbf707f8c11255f8e219e81d45c4f8d0551@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/388a323769f1dff84c9ec905455aa73fbcb20338e3c7eb131457f708@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/3d19773b4cf0377db62d1e9328bf9160bf1819f04f988315086931d7@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/6af47120905aa7d8fe12f42e8ff2284fb338ba141d3b77b8c7cb61b3@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/845312a10aabbe2c499fca94003881d2c79fc993d85f34c1f5c77424@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/88855876c33f2f9c532ffb75bfee570ccf0b17ffa77493745af9a17a@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/b5e3f51d28cd5d9b1809f56594f2cf63dcd6a90429e16ea9f83bbedc@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/d0e00f2e147a9e9b13a6829133092f349b2882bf6860397368a52600@%3Cannounce.tomcat.apache.org%3E
+    - https://security.gentoo.org/glsa/201705-09
+    - https://security.netapp.com/advisory/ntap-20180614-0001/
+affected:
+    - name: daojia-m1
+      version:
+        - "<=8.5.7,8.5.0"
+      fixedin:
+        - ">=9.2.3"
+        - "<=7.2.0,0.0.1"
