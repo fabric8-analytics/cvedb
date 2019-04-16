@@ -1,6 +1,6 @@
 ---
 cve: 2016-0706
-title: CVE in Apache Tomcat
+title: CVE in org.apache.tomcat:tomcat-jasper
 description: >
     Apache Tomcat 6.x before 6.0.45, 7.x before 7.0.68, 8.x before 8.0.31, and 9.x before 9.0.0.M2 does not place org.apache.catalina.manager.StatusManagerServlet on the org/apache/catalina/core/RestrictedServlets.properties list, which allows remote authenticated users to bypass intended SecurityManager restrictions and read arbitrary HTTP requests, and consequently discover session ID values, via a crafted web application.
 cvss_v2: 4.0
@@ -41,22 +41,24 @@ references:
     - https://h20566.www2.hpe.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c05054964
     - https://h20566.www2.hpe.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c05150442
     - https://h20566.www2.hpe.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c05158626
+    - https://lists.apache.org/thread.html/37220405a377c0182d2afdbc36461c4783b2930fbeae3a17f1333113@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/39ae1f0bd5867c15755a6f959b271ade1aea04ccdc3b2e639dcd903b@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/b84ad1258a89de5c9c853c7f2d3ad77e5b8b2930be9e132d5cef6b95@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/b8a1bf18155b552dcf9a928ba808cbadad84c236d85eab3033662cfb@%3Cdev.tomcat.apache.org%3E
     - https://security.gentoo.org/glsa/201705-09
     - https://security.netapp.com/advisory/ntap-20180531-0001/
 affected:
     - groupId: org.apache.tomcat
-      artifactId: tomcat-catalina
+      artifactId: tomcat-jasper
       version:
-        - "<=7.0.67"
-        - "<=8.0.30,8.0.0"
-        - "==9.0.0.M1"
+        - "<=7.0.6"
+        - "<=7.0.67,7.0.11"
+        - "<=8.0.3,8.0.0-RC1"
+        - "<=8.0.30,8.0.11"
+        - "<=9.0.0.M27,9.0.0.M1"
       fixedin:
-        - ">=7.0.68"
-        - ">=8.0.31"
-        - ">=9.0.0.M2"
-    - groupId: org.apache.tomcat
-      artifactId: catalina
-      version:
-        - "<=6.0.44"
-      fixedin:
-        - ">=6.0.45"
+        - ">=9.0.1"
+        - "<=8.5.40,8.0.32"
+        - "<=8.0.9,8.0.5"
+        - "<=7.0.94,7.0.68"
+        - "<=7.0.8,7.0.8"
