@@ -1,8 +1,8 @@
 ---
 cve: 2018-8037
-title: Information Disclosure in Apache Tomcat
+title: CVE in org.apache.tomcat:tomcat-jasper
 description: >
-    "If an async request was completed by the application at the same time as the container triggered the async timeout, a race condition existed that could result in a user seeing a response intended for a different user. An additional issue was present in the NIO and NIO2 connectors that did not correctly track the closure of the connection when an async request was completed by the application and timed out by the container at the same time. This could also result in a user seeing a response intended for another user. Versions Affected: Apache Tomcat 9.0.0.M9 to 9.0.9 and 8.5.5 to 8.5.31."
+    If an async request was completed by the application at the same time as the container triggered the async timeout, a race condition existed that could result in a user seeing a response intended for a different user. An additional issue was present in the NIO and NIO2 connectors that did not correctly track the closure of the connection when an async request was completed by the application and timed out by the container at the same time. This could also result in a user seeing a response intended for another user. Versions Affected: Apache Tomcat 9.0.0.M9 to 9.0.9 and 8.5.5 to 8.5.31.
 cvss_v2: 4.3
 references:
     - http://mail-archives.us.apache.org/mod_mbox/www-announce/201807.mbox/%3C20180722090623.GA92700%40minotaur.apache.org%3E
@@ -12,17 +12,23 @@ references:
     - http://www.securitytracker.com/id/1041376
     - https://access.redhat.com/errata/RHSA-2018:2867
     - https://access.redhat.com/errata/RHSA-2018:2868
+    - https://lists.apache.org/thread.html/1dd0a59c1295cc08ce4c9e7edae5ad2268acc9ba55adcefa0532e5ba@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/343558d982879bf88ec20dbf707f8c11255f8e219e81d45c4f8d0551@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/5c0e00fd31efc11e147bf99d0f03c00a734447d3b131ab0818644cdb@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/6af47120905aa7d8fe12f42e8ff2284fb338ba141d3b77b8c7cb61b3@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/88855876c33f2f9c532ffb75bfee570ccf0b17ffa77493745af9a17a@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/b5e3f51d28cd5d9b1809f56594f2cf63dcd6a90429e16ea9f83bbedc@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/e85e83e9954f169bbb77b44baae5a33d8de878df557bb32b7f793661@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/eb6efa8d59c45a7a9eff94c4b925467d3b3fec8ba7697f3daa314b04@%3Cdev.tomcat.apache.org%3E
     - https://security.netapp.com/advisory/ntap-20180817-0001/
     - https://www.debian.org/security/2018/dsa-4281
-    - http://svn.apache.org/viewvc?view=revision&revision=1833825
-    - http://svn.apache.org/viewvc?view=revision&revision=1833831
-    - http://svn.apache.org/viewvc?view=revision&revision=1837530
-    - http://svn.apache.org/viewvc?view=revision&revision=1833906
 affected:
     - groupId: org.apache.tomcat
-      artifactId: tomcat-coyote
+      artifactId: tomcat-jasper
       version:
-        - "<=9.0.9,9.0.0.M9"
         - "<=8.5.31,8.5.5"
+        - "<=9.0.8,9.0.0.M1"
       fixedin:
         - ">=9.0.10"
+        - "<=8.5.40,8.5.32"
+        - "<=8.5.4,7.0.0"
