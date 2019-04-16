@@ -1,0 +1,64 @@
+---
+cve: 2014-0119
+title: CVE in org.apache.tomcat:tomcat-jasper
+description: >
+    Apache Tomcat before 6.0.40, 7.x before 7.0.54, and 8.x before 8.0.6 does not properly constrain the class loader that accesses the XML parser used with an XSLT stylesheet, which allows remote attackers to (1) read arbitrary files via a crafted web application that provides an XML external entity declaration in conjunction with an entity reference, related to an XML External Entity (XXE) issue, or (2) read files associated with different web applications on a single Tomcat instance via a crafted web application.
+cvss_v2: 4.3
+references:
+    - http://advisories.mageia.org/MGASA-2014-0268.html
+    - http://marc.info/?l=bugtraq&m=141017844705317&w=2
+    - http://marc.info/?l=bugtraq&m=144498216801440&w=2
+    - http://rhn.redhat.com/errata/RHSA-2015-0675.html
+    - http://rhn.redhat.com/errata/RHSA-2015-0720.html
+    - http://rhn.redhat.com/errata/RHSA-2015-0765.html
+    - http://seclists.org/fulldisclosure/2014/Dec/23
+    - http://seclists.org/fulldisclosure/2014/May/141
+    - http://secunia.com/advisories/59732
+    - http://secunia.com/advisories/59873
+    - http://secunia.com/advisories/60729
+    - http://svn.apache.org/viewvc?view=revision&revision=1588193
+    - http://svn.apache.org/viewvc?view=revision&revision=1588199
+    - http://svn.apache.org/viewvc?view=revision&revision=1589640
+    - http://svn.apache.org/viewvc?view=revision&revision=1589837
+    - http://svn.apache.org/viewvc?view=revision&revision=1589980
+    - http://svn.apache.org/viewvc?view=revision&revision=1589983
+    - http://svn.apache.org/viewvc?view=revision&revision=1589985
+    - http://svn.apache.org/viewvc?view=revision&revision=1589990
+    - http://svn.apache.org/viewvc?view=revision&revision=1589992
+    - http://svn.apache.org/viewvc?view=revision&revision=1589997
+    - http://svn.apache.org/viewvc?view=revision&revision=1590028
+    - http://svn.apache.org/viewvc?view=revision&revision=1590036
+    - http://svn.apache.org/viewvc?view=revision&revision=1593815
+    - http://svn.apache.org/viewvc?view=revision&revision=1593821
+    - http://tomcat.apache.org/security-6.html
+    - http://tomcat.apache.org/security-7.html
+    - http://tomcat.apache.org/security-8.html
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21678231
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21681528
+    - http://www.debian.org/security/2016/dsa-3530
+    - http://www.debian.org/security/2016/dsa-3552
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2015:052
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2015:053
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2015:084
+    - http://www.oracle.com/technetwork/security-advisory/cpuoct2016-2881722.html
+    - http://www.oracle.com/technetwork/topics/security/cpujul2014-1972956.html
+    - http://www.oracle.com/technetwork/topics/security/cpuoct2014-1972960.html
+    - http://www.securityfocus.com/archive/1/534161/100/0/threaded
+    - http://www.securityfocus.com/bid/67669
+    - http://www.securitytracker.com/id/1030298
+    - http://www.ubuntu.com/usn/USN-2654-1
+    - http://www.vmware.com/security/advisories/VMSA-2014-0012.html
+    - https://h20564.www2.hpe.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c04851013
+    - https://lists.apache.org/thread.html/37220405a377c0182d2afdbc36461c4783b2930fbeae3a17f1333113@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/39ae1f0bd5867c15755a6f959b271ade1aea04ccdc3b2e639dcd903b@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/b84ad1258a89de5c9c853c7f2d3ad77e5b8b2930be9e132d5cef6b95@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/b8a1bf18155b552dcf9a928ba808cbadad84c236d85eab3033662cfb@%3Cdev.tomcat.apache.org%3E
+affected:
+    - groupId: org.apache.tomcat
+      artifactId: tomcat-jasper
+      version:
+        - "<=7.0.53"
+        - "<=8.0.5,8.0.0-RC1"
+      fixedin:
+        - ">=8.0.8"
+        - "<=7.0.94,7.0.54"
