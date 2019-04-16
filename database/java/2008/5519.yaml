@@ -1,0 +1,38 @@
+---
+cve: 2008-5519
+title: CVE in tomcat:tomcat-ajp
+description: >
+    The JK Connector (aka mod_jk) 1.2.0 through 1.2.26 in Apache Tomcat allows remote attackers to obtain sensitive information via an arbitrary request from an HTTP client, in opportunistic circumstances involving (1) a request from a different client that included a Content-Length header but no POST data or (2) a rapid series of requests, related to noncompliance with the AJP protocol's requirements for requests containing Content-Length headers.
+cvss_v2: 2.6
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2009-11/msg00004.html
+    - http://mail-archives.apache.org/mod_mbox/www-announce/200904.mbox/%3C49DBBAC0.2080400@apache.org%3E
+    - http://marc.info/?l=tomcat-dev&m=123913700700879
+    - http://secunia.com/advisories/29283
+    - http://secunia.com/advisories/34621
+    - http://secunia.com/advisories/35537
+    - http://securitytracker.com/id?1022001
+    - http://sunsolve.sun.com/search/document.do?assetkey=1-26-262468-1
+    - http://svn.eu.apache.org/viewvc/tomcat/connectors/trunk/jk/native/common/jk_ajp_common.c?r1=702387&r2=702540&pathrev=702540&diff_format=h
+    - http://svn.eu.apache.org/viewvc/tomcat/connectors/trunk/jk/xdocs/miscellaneous/changelog.xml?view=markup&pathrev=702540
+    - http://svn.eu.apache.org/viewvc?view=rev&revision=702540
+    - http://tomcat.apache.org/connectors-doc/miscellaneous/changelog.html
+    - http://tomcat.apache.org/security-jk.html
+    - http://www.debian.org/security/2009/dsa-1810
+    - http://www.openwall.com/lists/oss-security/2009/04/08/10
+    - http://www.redhat.com/support/errata/RHSA-2009-0446.html
+    - http://www.securityfocus.com/archive/1/502530/100/0/threaded
+    - http://www.securityfocus.com/bid/34412
+    - http://www.vupen.com/english/advisories/2009/0973
+    - https://bugzilla.redhat.com/show_bug.cgi?id=490201
+    - https://lists.apache.org/thread.html/277d42b48b6e9aef50949c0dcc79ce21693091d73da246b3c1981925@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/5b7a23e245c93235c503900da854a143596d901bf1a1f67e851a5de4@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/8d2a579bbd977c225c70cb23b0ec54865fb0dab5da3eff1e060c9935@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/ba661b0edd913b39ff129a32d855620dd861883ade05fd88a8ce517d@%3Cdev.tomcat.apache.org%3E
+affected:
+    - groupId: tomcat
+      artifactId: tomcat-ajp
+      version:
+        - "<=5.5.15"
+      fixedin:
+        []
