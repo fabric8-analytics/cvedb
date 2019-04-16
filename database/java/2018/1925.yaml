@@ -1,0 +1,19 @@
+---
+cve: 2018-1925
+title: CVE in com.ibm.mq:com.ibm.mq.allclient
+description: >
+    IBM WebShere MQ 9.1.0.0, 9.1.0.1, 9.1.1 uses weaker than expected cryptographic algorithms that could allow an attacker to decrypt highly sensitive information. IBM X-Force ID: 152925.
+cvss_v2: 4.3
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/152925
+    - https://www.ibm.com/support/docview.wss?uid=ibm10744713
+affected:
+    - groupId: com.ibm.mq
+      artifactId: com.ibm.mq.allclient
+      version:
+        - "<=9.1.0.1,9.1.0.0"
+        - "<=9.1.1.0,9.1.1.0"
+      fixedin:
+        - ">=9.1.2.0"
+        - "<=9.1.0.2,9.1.0.2"
+        - "<=9.0.5.0,0.0.0.2"
