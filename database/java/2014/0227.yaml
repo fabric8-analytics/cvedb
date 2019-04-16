@@ -1,0 +1,48 @@
+---
+cve: 2014-0227
+title: CVE in org.apache.tomcat:tomcat-jasper
+description: >
+    java/org/apache/coyote/http11/filters/ChunkedInputFilter.java in Apache Tomcat 6.x before 6.0.42, 7.x before 7.0.55, and 8.x before 8.0.9 does not properly handle attempts to continue reading data after an error has occurred, which allows remote attackers to conduct HTTP request smuggling attacks or cause a denial of service (resource consumption) by streaming data with malformed chunked transfer coding.
+cvss_v2: 6.4
+references:
+    - http://advisories.mageia.org/MGASA-2015-0081.html
+    - http://archives.neohapsis.com/archives/bugtraq/2015-02/0067.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2015-February/150282.html
+    - http://marc.info/?l=bugtraq&m=143393515412274&w=2
+    - http://marc.info/?l=bugtraq&m=143403519711434&w=2
+    - http://rhn.redhat.com/errata/RHSA-2015-0675.html
+    - http://rhn.redhat.com/errata/RHSA-2015-0720.html
+    - http://rhn.redhat.com/errata/RHSA-2015-0765.html
+    - http://rhn.redhat.com/errata/RHSA-2015-0983.html
+    - http://rhn.redhat.com/errata/RHSA-2015-0991.html
+    - http://svn.apache.org/viewvc?view=revision&revision=1600984
+    - http://tomcat.apache.org/security-6.html
+    - http://tomcat.apache.org/security-7.html
+    - http://tomcat.apache.org/security-8.html
+    - http://www.debian.org/security/2016/dsa-3447
+    - http://www.debian.org/security/2016/dsa-3530
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2015:052
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2015:053
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2015:084
+    - http://www.oracle.com/technetwork/security-advisory/cpuoct2016-2881722.html
+    - http://www.oracle.com/technetwork/topics/security/bulletinapr2015-2511959.html
+    - http://www.oracle.com/technetwork/topics/security/cpujul2015-2367936.html
+    - http://www.securityfocus.com/bid/72717
+    - http://www.securitytracker.com/id/1032791
+    - http://www.ubuntu.com/usn/USN-2654-1
+    - http://www.ubuntu.com/usn/USN-2655-1
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1109196
+    - https://lists.apache.org/thread.html/37220405a377c0182d2afdbc36461c4783b2930fbeae3a17f1333113@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/39ae1f0bd5867c15755a6f959b271ade1aea04ccdc3b2e639dcd903b@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/b84ad1258a89de5c9c853c7f2d3ad77e5b8b2930be9e132d5cef6b95@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/b8a1bf18155b552dcf9a928ba808cbadad84c236d85eab3033662cfb@%3Cdev.tomcat.apache.org%3E
+    - https://source.jboss.org/changelog/JBossWeb?cs=2455
+affected:
+    - groupId: org.apache.tomcat
+      artifactId: tomcat-jasper
+      version:
+        - "<=7.0.54"
+        - "<=8.0.8,8.0.0-RC1"
+      fixedin:
+        - ">=8.0.9"
+        - "<=7.0.94,7.0.55"
