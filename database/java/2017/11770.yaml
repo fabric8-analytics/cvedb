@@ -1,0 +1,19 @@
+---
+cve: 2017-11770
+title: CVE in com.microsoft.azure:azure-keyvault-core
+description: >
+    .NET Core 1.0, 1.1, and 2.0 allow an unauthenticated attacker to remotely cause a denial of service attack against a .NET Core web application by improperly parsing certificate data. A denial of service vulnerability exists when .NET Core improperly handles parsing certificate data, aka ".NET CORE Denial Of Service Vulnerability".
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/101710
+    - http://www.securitytracker.com/id/1039787
+    - https://access.redhat.com/errata/RHSA-2017:3248
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2017-11770
+affected:
+    - groupId: com.microsoft.azure
+      artifactId: azure-keyvault-core
+      version:
+        - "<=1.1,1.0.0-beta3"
+      fixedin:
+        - ">=1.1.1"
+        - "<=0.9.7,0.8.0"
