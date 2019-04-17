@@ -1,0 +1,15 @@
+---
+cve: 2019-7644
+title: CVE in com.auth0:mvc-auth-commons
+description: >
+    Auth0 Auth0-WCF-Service-JWT before 1.0.4 leaks the expected JWT signature in an error message when it cannot successfully validate the JWT signature. If this error message is presented to an attacker, they can forge an arbitrary JWT token that will be accepted by the vulnerable application.
+cvss_v2: 7.5
+references:
+    - https://auth0.com/docs/security/bulletins/cve-2019-7644
+affected:
+    - groupId: com.auth0
+      artifactId: mvc-auth-commons
+      version:
+        - "<=1.0.3"
+      fixedin:
+        - ">=1.0.4"
