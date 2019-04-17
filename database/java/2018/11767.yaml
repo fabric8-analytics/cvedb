@@ -1,0 +1,23 @@
+---
+cve: 2018-11767
+title: CVE in org.apache.hadoop:hadoop-extras
+description: >
+    In Apache Hadoop 2.9.0 to 2.9.1, 2.8.3 to 2.8.4, 2.7.5 to 2.7.6, KMS blocking users or granting access to users incorrectly, if the system uses non-default groups mapping mechanisms.
+cvss_v2: 5.8
+references:
+    - https://lists.apache.org/thread.html/246cf223e7dc0c1dff90b78dccb6c3fe94e1a044dbf98e2333393302@%3Ccommon-issues.hadoop.apache.org%3E
+    - https://lists.apache.org/thread.html/5a44590b4eedc5e25f5bd3081d1631b52c174b5b99157f7950ddc270@%3Ccommon-dev.hadoop.apache.org%3E
+    - https://lists.apache.org/thread.html/5fb771f66946dd5c99a8a5713347c24873846f555d716f9ac17bccca@%3Cgeneral.hadoop.apache.org%3E
+    - https://security.netapp.com/advisory/ntap-20190416-0009/
+affected:
+    - groupId: org.apache.hadoop
+      artifactId: hadoop-extras
+      version:
+        - "<=2.7.6,2.7.5"
+        - "<=2.8.4,2.8.3"
+        - "<=2.9.1,2.9.0"
+      fixedin:
+        - ">=2.9.2"
+        - "<=2.8.5,2.8.5"
+        - "<=2.8.2,2.7.7"
+        - "<=2.7.4,0.23.1"
