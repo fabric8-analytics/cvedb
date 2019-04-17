@@ -1,0 +1,16 @@
+---
+cve: 2018-11208
+title: CVE in z-schema
+description: >
+    ** DISPUTED ** An issue was discovered in Z-BlogPHP 2.0.0. There is a persistent XSS that allows remote attackers to inject arbitrary web script or HTML into background web site settings via the "copyright information office" field. NOTE: the vendor indicates that the product was not intended to block this type of XSS by a user with the admin privilege.
+cvss_v2: 3.5
+references:
+    - https://github.com/zblogcn/zblogphp/issues/187
+    - https://github.com/zblogcn/zblogphp/issues/205
+affected:
+    - name: z-schema
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - ">=2.0.1"
+        - "<=1.5.1,1.0.0"
