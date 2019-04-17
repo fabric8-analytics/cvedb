@@ -1,0 +1,27 @@
+---
+cve: 2011-4969
+title: CVE in jQuery
+description: >
+    Cross-site scripting (XSS) vulnerability in jQuery before 1.6.3, when using location.hash to select elements, allows remote attackers to inject arbitrary web script or HTML via a crafted tag.
+cvss_v2: 4.3
+references:
+    - http://blog.jquery.com/2011/09/01/jquery-1-6-3-released/
+    - http://blog.mindedsecurity.com/2011/07/jquery-is-sink.html
+    - http://bugs.jquery.com/ticket/9521
+    - http://www.openwall.com/lists/oss-security/2013/01/31/3
+    - http://www.osvdb.org/80056
+    - http://www.securityfocus.com/bid/58458
+    - http://www.securitytracker.com/id/1036620
+    - http://www.ubuntu.com/usn/USN-1722-1
+    - https://github.com/jquery/jquery/commit/db9e023e62c1ff5d8f21ed9868ab6878da2005e9
+    - https://h20566.www2.hpe.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c05111017
+    - https://h20566.www2.hpe.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c05158380
+    - https://h20566.www2.hpe.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c05232730
+    - https://lists.apache.org/thread.html/ff8dcfe29377088ab655fda9d585dccd5b1f07fabd94ae84fd60a7f8@%3Ccommits.pulsar.apache.org%3E
+    - https://security.netapp.com/advisory/ntap-20190416-0007/
+affected:
+    - name: jQuery
+      version:
+        - "<=1.6.2"
+      fixedin:
+        - ">=1.6.3"
