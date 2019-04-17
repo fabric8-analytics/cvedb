@@ -1,0 +1,16 @@
+---
+cve: 2019-5426
+title: CVE in io.xream.x7:spring-boot-starter-x7
+description: >
+    In Ubiquiti Networks EdgeSwitch X v1.1.0 and prior, an unauthenticated user can use the "local port forwarding" and "dynamic port forwarding" (SOCKS proxy) functionalities. Remote attackers without credentials can exploit this bug to access local services or forward traffic through the device if SSH is enabled in the system settings.
+cvss_v2: 5.8
+references:
+    - https://community.ubnt.com/t5/EdgeMAX-Updates-Blog/EdgeMAX-EdgeSwitch-X-software-release-v1-1-1/ba-p/2731137
+    - https://hackerone.com/reports/512958
+affected:
+    - groupId: io.xream.x7
+      artifactId: spring-boot-starter-x7
+      version:
+        - "<=1.1.0.RELEASE"
+      fixedin:
+        - ">=1.2.0.RELEASE"
