@@ -1,0 +1,17 @@
+---
+cve: 2019-3772
+title: CVE in spring
+description: >
+    Spring Integration (spring-integration-xml and spring-integration-ws modules), versions 4.3.18, 5.0.10, 5.1.1, and older unsupported versions, were susceptible to XML External Entity Injection (XXE) when receiving XML data from untrusted sources.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/106749
+    - https://pivotal.io/security/cve-2019-3772
+affected:
+    - name: spring
+      version:
+        - "<=4.3.10"
+        - "<=5.1.1,5.0.0"
+      fixedin:
+        - ">=5.2.0"
+        - "<=4.4.7,4.4.0"
