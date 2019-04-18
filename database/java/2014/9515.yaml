@@ -1,0 +1,18 @@
+---
+cve: 2014-9515
+title: CVE in net.sf.dozer:dozer-spring
+description: >
+    Dozer improperly uses a reflection-based approach to type conversion, which might allow remote attackers to execute arbitrary code via a crafted serialized object.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/107970
+    - https://github.com/DozerMapper/dozer/issues/217
+    - https://github.com/pentestingforfunandprofit/research/tree/master/dozer-rce
+    - https://infocon.org/cons/SyScan/SyScan%202015%20Singapore/SyScan%202015%20Singapore%20presentations/SyScan15%20David%20Jorm%20-%20Finding%20and%20exploiting%20novel%20flaws%20in%20Java%20software.pdf
+affected:
+    - groupId: net.sf.dozer
+      artifactId: dozer-spring
+      version:
+        - "<=5.5.1"
+      fixedin:
+        []
