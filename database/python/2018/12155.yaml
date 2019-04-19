@@ -1,0 +1,15 @@
+---
+cve: 2018-12155
+title: CVE in ipp-include
+description: >
+    Data leakage in cryptographic libraries for Intel IPP before 2019 update1 release may allow an authenticated user to potentially enable information disclosure via local access.
+cvss_v2: 2.1
+references:
+    - http://support.lenovo.com/us/en/solutions/LEN-25662
+    - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00202.html
+affected:
+    - name: ipp-include
+      version:
+        - "<=2019.0"
+      fixedin:
+        []
