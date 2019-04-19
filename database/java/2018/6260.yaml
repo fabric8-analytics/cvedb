@@ -1,0 +1,18 @@
+---
+cve: 2018-6260
+title: CVE in com.nummulus.amqp.driver:amqp-driver-blackbox_2.10
+description: >
+    NVIDIA graphics driver contains a vulnerability that may allow access to application data processed on the GPU through a side channel exposed by the GPU performance counters. Local user access is required. This is not a network or remote attack vector.
+cvss_v2: 2.1
+references:
+    - http://support.lenovo.com/us/en/solutions/LEN-26250
+    - https://nvidia.custhelp.com/app/answers/detail/a_id/4738
+    - https://nvidia.custhelp.com/app/answers/detail/a_id/4772
+    - https://usn.ubuntu.com/3904-1/
+affected:
+    - groupId: com.nummulus.amqp.driver
+      artifactId: amqp-driver-blackbox_2.10
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
