@@ -1,0 +1,15 @@
+---
+cve: 2017-11429
+title: CVE in saml2-js
+description: >
+    Clever saml2-js 2.0 and earlier may incorrectly utilize the results of XML DOM traversal and canonicalization APIs in such a way that an attacker may be able to manipulate the SAML data without invalidating the cryptographic signature, allowing the attack to potentially bypass authentication to SAML service providers.
+cvss_v2: 7.5
+references:
+    - https://duo.com/blog/duo-finds-saml-vulnerabilities-affecting-multiple-implementations
+    - https://www.kb.cert.org/vuls/id/475445
+affected:
+    - name: saml2-js
+      version:
+        - "<=2.0.0"
+      fixedin:
+        - ">=2.0.1"
