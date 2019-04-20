@@ -1,0 +1,18 @@
+---
+cve: 2018-20200
+title: CVE in com.squareup.okhttp3:okhttp
+description: >
+    CertificatePinner.java in OkHttp 3.x through 3.12.0 allows man-in-the-middle attackers to bypass certificate pinning by changing SSLContext and the boolean values while hooking the application.
+cvss_v2: 4.3
+references:
+    - https://cxsecurity.com/issue/WLB-2018120252
+    - https://github.com/square/okhttp/commits/master
+    - https://github.com/square/okhttp/releases
+    - https://square.github.io/okhttp/3.x/okhttp/
+affected:
+    - groupId: com.squareup.okhttp3
+      artifactId: okhttp
+      version:
+        - "<=3.12.0"
+      fixedin:
+        - ">=3.12.1"
