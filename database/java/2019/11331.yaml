@@ -1,0 +1,16 @@
+---
+cve: 2019-11331
+title: CVE in com.androidzeitgeist.android-network-intents:android-network-intents
+description: >
+    Network Time Protocol (NTP), as specified in RFC 5905, uses port 123 even for modes where a fixed port number is not required, which makes it easier for remote attackers to conduct off-path attacks.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/108010
+    - https://tools.ietf.org/html/draft-gont-ntp-port-randomization-00
+affected:
+    - groupId: com.androidzeitgeist.android-network-intents
+      artifactId: android-network-intents
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
