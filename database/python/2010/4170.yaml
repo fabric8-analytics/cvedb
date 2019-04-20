@@ -1,0 +1,33 @@
+---
+cve: 2010-4170
+title: CVE in ucf-options-base
+description: >
+    The staprun runtime tool in SystemTap 1.3 does not properly clear the environment before executing modprobe, which allows local users to gain privileges by setting the MODPROBE_OPTIONS environment variable to specify a malicious configuration file.
+cvss_v2: 7.2
+references:
+    - http://lists.fedoraproject.org/pipermail/package-announce/2010-November/051115.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2010-November/051122.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2010-November/051127.html
+    - http://packetstormsecurity.com/files/152569/SystemTap-1.3-MODPROBE_OPTIONS-Privilege-Escalation.html
+    - http://secunia.com/advisories/42256
+    - http://secunia.com/advisories/42263
+    - http://secunia.com/advisories/42306
+    - http://secunia.com/advisories/42318
+    - http://secunia.com/advisories/46920
+    - http://sources.redhat.com/git/gitweb.cgi?p=systemtap.git;a=commit;h=b7565b41228bea196cefa3a7d43ab67f8f9152e2
+    - http://sources.redhat.com/ml/systemtap/2010-q4/msg00230.html
+    - http://www.debian.org/security/2011/dsa-2348
+    - http://www.exploit-db.com/exploits/15620
+    - http://www.redhat.com/support/errata/RHSA-2010-0894.html
+    - http://www.redhat.com/support/errata/RHSA-2010-0895.html
+    - http://www.securityfocus.com/bid/44914
+    - http://www.securitytracker.com/id?1024754
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/63344
+    - https://www.exploit-db.com/exploits/46730/
+affected:
+    - name: ucf-options-base
+      version:
+        - "<=1.3,1.3"
+      fixedin:
+        - ">=1.4"
+        - "<=1.0,1.0"
