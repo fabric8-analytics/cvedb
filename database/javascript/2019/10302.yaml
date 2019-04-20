@@ -1,0 +1,14 @@
+---
+cve: 2019-10302
+title: CVE in jenkins
+description: >
+    Jenkins jira-ext Plugin 0.8 and earlier stored credentials unencrypted in its global configuration file on the Jenkins master where they could be viewed by users with access to the master file system.
+cvss_v2: 4.0
+references:
+    - https://jenkins.io/security/advisory/2019-04-17/#SECURITY-836
+affected:
+    - name: jenkins
+      version:
+        - "<=0.8.0"
+      fixedin:
+        - ">=0.9.0"
