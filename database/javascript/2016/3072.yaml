@@ -1,0 +1,16 @@
+---
+cve: 2016-3072
+title: CVE in multiple-contains
+description: >
+    Multiple SQL injection vulnerabilities in the scoped_search function in app/controllers/katello/api/v2/api_controller.rb in Katello allow remote authenticated users to execute arbitrary SQL commands via the (1) sort_by or (2) sort_order parameter.
+cvss_v2: 6.5
+references:
+    - https://access.redhat.com/errata/RHSA-2016:1083
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1322050
+    - https://github.com/Katello/katello/pull/6051
+affected:
+    - name: multiple-contains
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
