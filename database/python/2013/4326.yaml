@@ -1,0 +1,19 @@
+---
+cve: 2013-4326
+title: CVE in dbus-deviation
+description: >
+    RealtimeKit (aka rtkit) 0.5 does not properly use D-Bus for communication with a polkit authority, which allows local users to bypass intended access restrictions by leveraging a PolkitUnixProcess PolkitSubject race condition via a (1) setuid process or (2) pkexec process, a related issue to CVE-2013-4288.
+cvss_v2: 4.6
+references:
+    - http://lists.opensuse.org/opensuse-updates/2013-10/msg00022.html
+    - http://lists.opensuse.org/opensuse-updates/2013-10/msg00051.html
+    - http://rhn.redhat.com/errata/RHSA-2013-1282.html
+    - http://www.openwall.com/lists/oss-security/2013/09/18/6
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1006677
+affected:
+    - name: dbus-deviation
+      version:
+        - "<=0.5.0,0.5.0"
+      fixedin:
+        - ">=0.6.0"
+        - "<=0.4.0,0.1.0.post3"
