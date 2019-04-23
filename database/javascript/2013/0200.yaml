@@ -1,0 +1,23 @@
+---
+cve: 2013-0200
+title: CVE in envelope-printing
+description: >
+    HP Linux Imaging and Printing (HPLIP) through 3.12.4 allows local users to overwrite arbitrary files via a symlink attack on the (1) /tmp/hpcupsfilterc_#.bmp, (2) /tmp/hpcupsfilterk_#.bmp, (3) /tmp/hpcups_job#.out, (4) /tmp/hpijs_#####.out, or (5) /tmp/hpps_job#.out temporary file, a different vulnerability than CVE-2011-2722.
+Per https://access.redhat.com/security/cve/CVE-2013-0200
+"This issue has been addressed in Red Hat Enterprise Linux 6 via RHSA-2013:0500."
+cvss_v2: 1.9
+references:
+    - ftp://ftp.scientificlinux.org/linux/scientific/6x/SRPMS/vendor/hplip-3.12.4-4.el6.src.rpm
+    - http://hplipopensource.com/hplip-web/release_notes.html
+    - http://secunia.com/advisories/55083
+    - http://www.debian.org/security/2013/dsa-2829
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2013:088
+    - http://www.ubuntu.com/usn/USN-1981-1
+    - https://bugzilla.redhat.com/show_bug.cgi?id=902163
+    - https://wiki.mageia.org/en/Support/Advisories/MGASA-2013-0072
+affected:
+    - name: envelope-printing
+      version:
+        - "<=1.0.0"
+      fixedin:
+        []
