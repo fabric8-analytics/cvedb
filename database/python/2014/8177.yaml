@@ -1,0 +1,17 @@
+---
+cve: 2014-8177
+title: CVE in azure-storage
+description: >
+    The Red Hat gluster-swift package, as used in Red Hat Gluster Storage (formerly Red Hat Storage Server), allows remote authenticated users to bypass the max_meta_count constraint via multiple crafted requests which exceed the limit when combined.
+cvss_v2: 4.0
+references:
+    - http://rhn.redhat.com/errata/RHSA-2015-1845.html
+    - http://rhn.redhat.com/errata/RHSA-2015-1846.html
+    - http://www.openwall.com/lists/oss-security/2015/08/27/5
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1257525
+affected:
+    - name: azure-storage
+      version:
+        []
+      fixedin:
+        - ">=0.20.0rc1"
