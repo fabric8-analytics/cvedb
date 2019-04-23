@@ -1,0 +1,25 @@
+---
+cve: 2017-12174
+title: CVE in org.apache.activemq:artemis-hornetq-protocol
+description: >
+    It was found that when Artemis and HornetQ before 2.4.0 are configured with UDP discovery and JGroups discovery a huge byte array is created when receiving an unexpected multicast message. This may result in a heap memory exhaustion, full GC, or OutOfMemoryError.
+cvss_v2: 7.8
+references:
+    - https://access.redhat.com/errata/RHSA-2018:0268
+    - https://access.redhat.com/errata/RHSA-2018:0269
+    - https://access.redhat.com/errata/RHSA-2018:0270
+    - https://access.redhat.com/errata/RHSA-2018:0271
+    - https://access.redhat.com/errata/RHSA-2018:0275
+    - https://access.redhat.com/errata/RHSA-2018:0478
+    - https://access.redhat.com/errata/RHSA-2018:0479
+    - https://access.redhat.com/errata/RHSA-2018:0480
+    - https://access.redhat.com/errata/RHSA-2018:0481
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2017-12174
+affected:
+    - groupId: org.apache.activemq
+      artifactId: artemis-hornetq-protocol
+      version:
+        - "<=2.4.0,2.4.0"
+      fixedin:
+        - ">=2.5.0"
+        - "<=2.3.0,1.0.0"
