@@ -1,0 +1,20 @@
+---
+cve: 2013-1976
+title: CVE in edx-enterprise
+description: >
+    The (1) tomcat5, (2) tomcat6, and (3) tomcat7 init scripts, as used in the RPM distribution of Tomcat for JBoss Enterprise Web Server 1.0.2 and 2.0.0, and Red Hat Enterprise Linux 5 and 6, allow local users to change the ownership of arbitrary files via a symlink attack on (a) tomcat5-initd.log, (b) tomcat6-initd.log, (c) catalina.out, or (d) tomcat7-initd.log.
+cvss_v2: 6.9
+references:
+    - http://lists.opensuse.org/opensuse-updates/2013-08/msg00013.html
+    - http://rhn.redhat.com/errata/RHSA-2013-0869.html
+    - http://rhn.redhat.com/errata/RHSA-2013-0870.html
+    - http://rhn.redhat.com/errata/RHSA-2013-0871.html
+    - http://rhn.redhat.com/errata/RHSA-2013-0872.html
+    - https://bugzilla.redhat.com/show_bug.cgi?id=927622
+affected:
+    - name: edx-enterprise
+      version:
+        - "<=1.0.2,1.0.2"
+      fixedin:
+        - ">=1.0.3"
+        - "<=1.0.1,0.1.0"
