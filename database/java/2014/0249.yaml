@@ -1,0 +1,17 @@
+---
+cve: 2014-0249
+title: CVE in org.glassfish.main.security:security-services
+description: >
+    The System Security Services Daemon (SSSD) 1.11.6 does not properly identify group membership when a non-POSIX group is in a group membership chain, which allows local users to bypass access restrictions via unspecified vectors.
+cvss_v2: 3.3
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1101751
+    - https://lists.fedorahosted.org/pipermail/sssd-devel/2014-May/019495.html
+affected:
+    - groupId: org.glassfish.main.security
+      artifactId: security-services
+      version:
+        - "<=5.0,5.0"
+      fixedin:
+        - ">=5.0.1"
+        - "<=4.1.2,4.0-b72"
