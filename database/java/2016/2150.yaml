@@ -1,0 +1,23 @@
+---
+cve: 2016-2150
+title: CVE in spice:spice-netserve
+description: >
+    SPICE allows local guest OS users to read from or write to arbitrary host memory locations via crafted primary surface parameters, a similar issue to CVE-2015-5261.
+cvss_v2: 3.6
+references:
+    - http://lists.opensuse.org/opensuse-updates/2016-07/msg00003.html
+    - http://lists.opensuse.org/opensuse-updates/2016-07/msg00004.html
+    - http://www.debian.org/security/2016/dsa-3596
+    - http://www.oracle.com/technetwork/topics/security/linuxbulletinapr2016-2952096.html
+    - http://www.ubuntu.com/usn/USN-3014-1
+    - https://access.redhat.com/errata/RHSA-2016:1204
+    - https://access.redhat.com/errata/RHSA-2016:1205
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1313496
+    - https://security.gentoo.org/glsa/201606-05
+affected:
+    - groupId: spice
+      artifactId: spice-netserve
+      version:
+        []
+      fixedin:
+        - ">=1.0-b1"
