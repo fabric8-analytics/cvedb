@@ -1,0 +1,17 @@
+---
+cve: 2014-3562
+title: CVE in directory-tree
+description: >
+    Red Hat Directory Server 8 and 389 Directory Server, when debugging is enabled, allows remote attackers to obtain sensitive replicated metadata by searching the directory.
+cvss_v2: 5.0
+references:
+    - http://rhn.redhat.com/errata/RHSA-2014-1031.html
+    - http://rhn.redhat.com/errata/RHSA-2014-1032.html
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1123477
+affected:
+    - name: directory-tree
+      version:
+        - "<=1.2.1,1.2.1"
+      fixedin:
+        - ">=2.0.0"
+        - "<=1.2.0,0.1.0"
