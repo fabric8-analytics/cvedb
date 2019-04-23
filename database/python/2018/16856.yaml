@@ -1,0 +1,16 @@
+---
+cve: 2018-16856
+title: CVE in octavia-dashboard
+description: >
+    In a default Red Hat Openstack Platform Director installation, openstack-octavia before versions openstack-octavia 2.0.2-5 and openstack-octavia-3.0.1-0.20181009115732 creates log files that are readable by all users. Sensitive information such as private keys can appear in these log files allowing for information exposure.
+cvss_v2: 5.0
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-16856
+affected:
+    - name: octavia
+      version:
+        - "<=2.0.4"
+        - "<=3.0.2,3.0.0.0b1"
+      fixedin:
+        - ">=2.1.0"
+        - ">=3.1.0"
