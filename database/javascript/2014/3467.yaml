@@ -1,0 +1,37 @@
+---
+cve: 2014-3467
+title: CVE in asn1.js
+description: >
+    Multiple unspecified vulnerabilities in the DER decoder in GNU Libtasn1 before 3.6, as used in GnuTLS, allow remote attackers to cause a denial of service (out-of-bounds read) via crafted ASN.1 data.
+cvss_v2: 4.3
+references:
+    - http://advisories.mageia.org/MGASA-2014-0247.html
+    - http://linux.oracle.com/errata/ELSA-2014-0594.html
+    - http://linux.oracle.com/errata/ELSA-2014-0596.html
+    - http://lists.gnu.org/archive/html/help-libtasn1/2014-05/msg00006.html
+    - http://lists.opensuse.org/opensuse-security-announce/2014-06/msg00002.html
+    - http://lists.opensuse.org/opensuse-security-announce/2014-06/msg00015.html
+    - http://rhn.redhat.com/errata/RHSA-2014-0594.html
+    - http://rhn.redhat.com/errata/RHSA-2014-0596.html
+    - http://rhn.redhat.com/errata/RHSA-2014-0687.html
+    - http://rhn.redhat.com/errata/RHSA-2014-0815.html
+    - http://secunia.com/advisories/58591
+    - http://secunia.com/advisories/58614
+    - http://secunia.com/advisories/59021
+    - http://secunia.com/advisories/59057
+    - http://secunia.com/advisories/59408
+    - http://secunia.com/advisories/60320
+    - http://secunia.com/advisories/60415
+    - http://secunia.com/advisories/61888
+    - http://support.f5.com/kb/en-us/solutions/public/15000/400/sol15423.html
+    - http://www.debian.org/security/2014/dsa-3056
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2015:116
+    - http://www.novell.com/support/kb/doc.php?id=7015302
+    - http://www.novell.com/support/kb/doc.php?id=7015303
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1102022
+affected:
+    - name: asn1.js
+      version:
+        - "<=3.0.0"
+      fixedin:
+        - ">=4.0.0"
