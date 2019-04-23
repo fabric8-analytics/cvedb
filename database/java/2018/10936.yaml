@@ -8,11 +8,10 @@ references:
     - http://www.securityfocus.com/bid/105220
     - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-10936
     - https://www.postgresql.org/about/news/1883/
-    - https://github.com/pgjdbc/pgjdbc/commit/cdeeaca47dc3bc6f727c79a582c9e4123099526e
 affected:
     - groupId: org.postgresql
       artifactId: postgresql
       version:
-        - "<=42.2.4"
+        - "<=42.2.4.jre7"
       fixedin:
         - ">=42.2.5"
