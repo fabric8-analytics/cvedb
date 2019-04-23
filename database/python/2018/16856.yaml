@@ -7,8 +7,10 @@ cvss_v2: 5.0
 references:
     - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-16856
 affected:
-    - name: octavia-dashboard
+    - name: octavia
       version:
-        - "<=3.0.0.0rc1,2.0.0.0b1"
+        - "<=2.0.4"
+        - "<=3.0.2,3.0.0.0b1"
       fixedin:
-        - "<=1.0.1,0.0.1"
+        - ">=2.1.0"
+        - ">=3.1.0"
