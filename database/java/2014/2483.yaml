@@ -1,0 +1,32 @@
+---
+cve: 2014-2483
+title: CVE in org.openjdk.jmh:jmh-java-benchmark-archetype
+description: >
+    Unspecified vulnerability in the Java SE component in Oracle Java SE Java SE 7u60 and OpenJDK 7 allows remote attackers to affect confidentiality, integrity, and availability via unknown vectors related to Libraries, a different vulnerability than CVE-2014-4223. NOTE: the previous information is from the July 2014 CPU. Oracle has not commented on another vendor's claim that the issue is related to improper restriction of the "use of privileged annotations."
+Per: http://www.oracle.com/technetwork/topics/security/cpujul2014-1972956.html
+
+"Applies to client deployment of Java only. This vulnerability can be exploited only through sandboxed Java Web Start applications and sandboxed Java applets."
+cvss_v2: 9.3
+references:
+    - http://hg.openjdk.java.net/jdk7u/jdk7u/hotspot/rev/848481af9003
+    - http://marc.info/?l=bugtraq&m=140852886808946&w=2
+    - http://seclists.org/fulldisclosure/2014/Dec/23
+    - http://secunia.com/advisories/60485
+    - http://secunia.com/advisories/60812
+    - http://security.gentoo.org/glsa/glsa-201502-12.xml
+    - http://www.debian.org/security/2014/dsa-2987
+    - http://www.oracle.com/technetwork/topics/security/cpujul2014-1972956.html
+    - http://www.securityfocus.com/archive/1/534161/100/0/threaded
+    - http://www.securityfocus.com/bid/68608
+    - http://www.securitytracker.com/id/1030577
+    - http://www.vmware.com/security/advisories/VMSA-2014-0012.html
+    - https://access.redhat.com/errata/RHSA-2014:0902
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1119626
+affected:
+    - groupId: org.openjdk.jmh
+      artifactId: jmh-java-benchmark-archetype
+      version:
+        - "<=1.7,1.7"
+      fixedin:
+        - ">=1.7.1"
+        - "<=1.6.3,0.5"
