@@ -1,0 +1,38 @@
+---
+cve: 2013-1861
+title: CVE in mysql:mysql-connector-java
+description: >
+    MariaDB 5.5.x before 5.5.30, 5.3.x before 5.3.13, 5.2.x before 5.2.15, and 5.1.x before 5.1.68, and Oracle MySQL 5.1.69 and earlier, 5.5.31 and earlier, and 5.6.11 and earlier allows remote attackers to cause a denial of service (crash) via a crafted geometry feature that specifies a large number of points, which is not properly handled when processing the binary representation of this feature, related to a numeric calculation error.
+Per https://access.redhat.com/security/cve/CVE-2013-1861
+"This issue affects the version of mysql as shipped with Red Hat Enterprise Linux 5 and 6. The Red Hat Security Response Team has rated this issue as having low security impact, a future update may address this flaw."
+cvss_v2: 5.0
+references:
+    - http://lists.askmonty.org/pipermail/commits/2013-March/004371.html
+    - http://lists.opensuse.org/opensuse-security-announce/2013-08/msg00022.html
+    - http://lists.opensuse.org/opensuse-security-announce/2013-10/msg00001.html
+    - http://lists.opensuse.org/opensuse-updates/2013-08/msg00024.html
+    - http://lists.opensuse.org/opensuse-updates/2013-09/msg00008.html
+    - http://seclists.org/oss-sec/2013/q1/671
+    - http://secunia.com/advisories/52639
+    - http://secunia.com/advisories/54300
+    - http://security.gentoo.org/glsa/glsa-201409-04.xml
+    - http://www.debian.org/security/2013/dsa-2818
+    - http://www.oracle.com/technetwork/topics/security/cpujuly2013-1899826.html
+    - http://www.osvdb.org/91415
+    - http://www.securityfocus.com/bid/58511
+    - http://www.ubuntu.com/usn/USN-1909-1
+    - https://bugzilla.redhat.com/show_bug.cgi?id=919247
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/82895
+    - https://mariadb.atlassian.net/browse/MDEV-4252
+affected:
+    - groupId: mysql
+      artifactId: mysql-connector-java
+      version:
+        - "<=5.1.42,5.1.41"
+        - "<=5.1.44,5.1.44"
+        - "<=5.1.47,5.1.47"
+      fixedin:
+        - ">=6.0.2"
+        - "<=5.1.46,5.1.45"
+        - "<=5.1.43,5.1.43"
+        - "<=5.1.40,2.0.14"
