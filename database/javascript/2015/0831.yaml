@@ -1,0 +1,36 @@
+---
+cve: 2015-0831
+title: CVE in fake-indexeddb
+description: >
+    Use-after-free vulnerability in the mozilla::dom::IndexedDB::IDBObjectStore::CreateIndex function in Mozilla Firefox before 36.0, Firefox ESR 31.x before 31.5, and Thunderbird before 31.5 allows remote attackers to execute arbitrary code or cause a denial of service (heap memory corruption) via crafted content that is improperly handled during IndexedDB index creation.
+<a href="http://cwe.mitre.org/data/definitions/416.html">CWE-416: Use After Free</a>
+cvss_v2: 6.8
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2015-03/msg00000.html
+    - http://lists.opensuse.org/opensuse-security-announce/2015-03/msg00001.html
+    - http://lists.opensuse.org/opensuse-security-announce/2015-03/msg00006.html
+    - http://lists.opensuse.org/opensuse-security-announce/2015-03/msg00007.html
+    - http://lists.opensuse.org/opensuse-security-announce/2015-03/msg00008.html
+    - http://lists.opensuse.org/opensuse-security-announce/2015-03/msg00026.html
+    - http://lists.opensuse.org/opensuse-security-announce/2015-07/msg00031.html
+    - http://lists.opensuse.org/opensuse-updates/2015-03/msg00067.html
+    - http://rhn.redhat.com/errata/RHSA-2015-0265.html
+    - http://rhn.redhat.com/errata/RHSA-2015-0266.html
+    - http://rhn.redhat.com/errata/RHSA-2015-0642.html
+    - http://www.debian.org/security/2015/dsa-3174
+    - http://www.debian.org/security/2015/dsa-3179
+    - http://www.mozilla.org/security/announce/2015/mfsa2015-16.html
+    - http://www.oracle.com/technetwork/topics/security/bulletinapr2015-2511959.html
+    - http://www.securityfocus.com/bid/72746
+    - http://www.securitytracker.com/id/1031791
+    - http://www.securitytracker.com/id/1031792
+    - http://www.ubuntu.com/usn/USN-2505-1
+    - http://www.ubuntu.com/usn/USN-2506-1
+    - https://bugzilla.mozilla.org/show_bug.cgi?id=1130541
+    - https://security.gentoo.org/glsa/201504-01
+affected:
+    - name: fake-indexeddb
+      version:
+        - "<=2.1.0"
+      fixedin:
+        []
