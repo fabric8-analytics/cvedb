@@ -1,0 +1,23 @@
+---
+cve: 2016-0610
+title: CVE in mariadb-bin
+description: >
+    Unspecified vulnerability in Oracle MySQL 5.6.27 and earlier and MariaDB before 10.0.22 and 10.1.x before 10.1.9 allows remote authenticated users to affect availability via unknown vectors related to InnoDB.
+cvss_v2: 3.5
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2016-02/msg00015.html
+    - http://lists.opensuse.org/opensuse-security-announce/2016-02/msg00016.html
+    - http://rhn.redhat.com/errata/RHSA-2016-0705.html
+    - http://www.oracle.com/technetwork/topics/security/cpujan2016-2367955.html
+    - http://www.securityfocus.com/bid/81198
+    - http://www.securitytracker.com/id/1034708
+    - http://www.ubuntu.com/usn/USN-2881-1
+    - https://access.redhat.com/errata/RHSA-2016:1132
+    - https://mariadb.com/kb/en/mariadb/mariadb-10022-release-notes/
+    - https://mariadb.com/kb/en/mariadb/mariadb-1019-release-notes/
+affected:
+    - name: mariadb-bin
+      version:
+        - "<=10.0.15-rc.2"
+      fixedin:
+        []
