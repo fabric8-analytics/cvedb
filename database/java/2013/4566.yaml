@@ -1,0 +1,17 @@
+---
+cve: 2013-4566
+title: CVE in org.mod4j:mod4j-buildtools
+description: >
+    mod_nss 1.0.8 and earlier, when NSSVerifyClient is set to none for the server/vhost context, does not enforce the NSSVerifyClient setting in the directory context, which allows remote attackers to bypass intended access restrictions.
+cvss_v2: 4.0
+references:
+    - http://lists.opensuse.org/opensuse-updates/2013-12/msg00118.html
+    - http://rhn.redhat.com/errata/RHSA-2013-1779.html
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1016832
+affected:
+    - groupId: org.mod4j
+      artifactId: mod4j-buildtools
+      version:
+        - "<=1.0.1"
+      fixedin:
+        []
