@@ -1,0 +1,21 @@
+---
+cve: 2014-3562
+title: CVE in directory-components
+description: >
+    Red Hat Directory Server 8 and 389 Directory Server, when debugging is enabled, allows remote attackers to obtain sensitive replicated metadata by searching the directory.
+cvss_v2: 5.0
+references:
+    - http://rhn.redhat.com/errata/RHSA-2014-1031.html
+    - http://rhn.redhat.com/errata/RHSA-2014-1032.html
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1123477
+affected:
+    - name: directory-components
+      version:
+        - "<=6.0.0,6.0.0"
+        - "<=7.0.0,7.0.0"
+        - "<=8.0.0,8.0.0"
+      fixedin:
+        - ">=8.1.0"
+        - "<=7.3.0,7.0.1"
+        - "<=6.1.0,6.1.0"
+        - "<=5.0.1,1.0.5"
