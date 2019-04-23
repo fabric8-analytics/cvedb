@@ -1,0 +1,31 @@
+---
+cve: 2017-7980
+title: CVE in qemu
+description: >
+    Heap-based buffer overflow in Cirrus CLGD 54xx VGA Emulator in Quick Emulator (Qemu) 2.8 and earlier allows local guest OS users to execute arbitrary code or cause a denial of service (crash) via vectors related to a VNC client updating its display after a VGA operation.
+cvss_v2: 4.6
+references:
+    - http://ubuntu.com/usn/usn-3289-1
+    - http://www.openwall.com/lists/oss-security/2017/04/21/1
+    - http://www.securityfocus.com/bid/102129
+    - http://www.securityfocus.com/bid/97955
+    - https://access.redhat.com/errata/RHSA-2017:0980
+    - https://access.redhat.com/errata/RHSA-2017:0981
+    - https://access.redhat.com/errata/RHSA-2017:0982
+    - https://access.redhat.com/errata/RHSA-2017:0983
+    - https://access.redhat.com/errata/RHSA-2017:0984
+    - https://access.redhat.com/errata/RHSA-2017:0988
+    - https://access.redhat.com/errata/RHSA-2017:1205
+    - https://access.redhat.com/errata/RHSA-2017:1206
+    - https://access.redhat.com/errata/RHSA-2017:1430
+    - https://access.redhat.com/errata/RHSA-2017:1441
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1430056
+    - https://lists.debian.org/debian-lts-announce/2018/09/msg00007.html
+    - https://security.gentoo.org/glsa/201706-03
+    - https://support.citrix.com/article/CTX230138
+affected:
+    - name: qemu
+      version:
+        - "<=2.8.0"
+      fixedin:
+        - ">=2.9.0"
