@@ -1,0 +1,34 @@
+---
+cve: 2014-7923
+title: CVE in com.ibm.icu:icu4j
+description: >
+    The Regular Expressions package in International Components for Unicode (ICU) 52 before SVN revision 292944, as used in Google Chrome before 40.0.2214.91, allows remote attackers to cause a denial of service (memory corruption) or possibly have unspecified other impact via vectors related to a look-behind expression.
+cvss_v2: 7.5
+references:
+    - http://advisories.mageia.org/MGASA-2015-0047.html
+    - http://bugs.icu-project.org/trac/ticket/11370
+    - http://googlechromereleases.blogspot.com/2015/01/stable-update.html
+    - http://lists.opensuse.org/opensuse-security-announce/2015-03/msg00005.html
+    - http://rhn.redhat.com/errata/RHSA-2015-0093.html
+    - http://secunia.com/advisories/62383
+    - http://secunia.com/advisories/62575
+    - http://secunia.com/advisories/62665
+    - http://security.gentoo.org/glsa/glsa-201502-13.xml
+    - http://www.oracle.com/technetwork/topics/security/bulletinapr2015-2511959.html
+    - http://www.oracle.com/technetwork/topics/security/cpuoct2015-2367953.html
+    - http://www.securityfocus.com/bid/72288
+    - http://www.securitytracker.com/id/1031623
+    - http://www.ubuntu.com/usn/USN-2476-1
+    - https://chromium.googlesource.com/chromium/deps/icu52/+/3af4ce5982311035e5f36803d547c0befa576c8c
+    - https://chromium.googlesource.com/chromium/deps/icu52/+/6242e2fbb36f486f2c0addd1c3cef67fc4ed33fb
+    - https://code.google.com/p/chromium/issues/detail?id=430353
+    - https://codereview.chromium.org/726973003
+    - https://security.gentoo.org/glsa/201503-06
+    - https://www.oracle.com/technetwork/security-advisory/cpuapr2019-5072813.html
+affected:
+    - groupId: com.ibm.icu
+      artifactId: icu4j
+      version:
+        - "<=54.2"
+      fixedin:
+        - ">=55.1"
