@@ -9,6 +9,7 @@ references:
     - https://github.com/urllib3/urllib3/blob/master/CHANGES.rst
     - https://github.com/urllib3/urllib3/issues/1316
     - https://github.com/urllib3/urllib3/pull/1346
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5SJERZEJDSUYQP7BNBXMBHRHGY26HRZD/
 affected:
     - name: urllib3
       version:
