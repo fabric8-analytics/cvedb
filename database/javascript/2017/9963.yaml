@@ -1,0 +1,16 @@
+---
+cve: 2017-9963
+title: CVE in graphql-anywhere
+description: >
+    A cross-site request forgery vulnerability exists on the Secure Gateway component of Schneider Electric's PowerSCADA Anywhere v1.0 redistributed with PowerSCADA Expert v8.1 and PowerSCADA Expert v8.2 and Citect Anywhere version 1.0 for multiple state-changing requests. This type of attack requires some level of social engineering in order to get a legitimate user to click on or access a malicious link/site containing the CSRF attack.
+cvss_v2: 5.8
+references:
+    - http://www.schneider-electric.com/en/download/document/SEVD-2017-173-01/
+    - https://www.citect.schneider-electric.com/safety-and-security-central/36-security-notifications/9071-security-notification-citect-anywhere
+affected:
+    - name: graphql-anywhere
+      version:
+        - "<=1.0.0,1.0.0"
+      fixedin:
+        - ">=1.1.0"
+        - "<=0.3.0,0.1.0"
