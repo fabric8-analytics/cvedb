@@ -1,0 +1,21 @@
+---
+cve: 2015-5922
+title: CVE in com.ibm.icu:icu4j
+description: >
+    Unspecified vulnerability in International Components for Unicode (ICU) before 53.1.0, as used in Apple OS X before 10.11 and watchOS before 2, has unknown impact and attack vectors.
+cvss_v2: 10.0
+references:
+    - http://lists.apple.com/archives/security-announce/2015/Sep/msg00005.html
+    - http://lists.apple.com/archives/security-announce/2015/Sep/msg00008.html
+    - http://www.securityfocus.com/bid/76911
+    - http://www.securitytracker.com/id/1033703
+    - https://support.apple.com/HT205213
+    - https://support.apple.com/HT205267
+    - https://www.oracle.com/technetwork/security-advisory/cpuapr2019-5072813.html
+affected:
+    - groupId: com.ibm.icu
+      artifactId: icu4j
+      version:
+        - "<=52.2"
+      fixedin:
+        - ">=53.1"
