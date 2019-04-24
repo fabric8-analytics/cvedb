@@ -1,0 +1,46 @@
+---
+cve: 2014-0107
+title: CVE in java-home
+description: >
+    The TransformerFactory in Apache Xalan-Java before 2.7.2 does not properly restrict access to certain properties when FEATURE_SECURE_PROCESSING is enabled, which allows remote attackers to bypass expected restrictions and load arbitrary classes or access external resources via a crafted (1) xalan:content-header, (2) xalan:entities, (3) xslt:content-header, or (4) xslt:entities property, or a Java property that is bound to the XSLT 1.0 system-property function.
+cvss_v2: 7.5
+references:
+    - http://rhn.redhat.com/errata/RHSA-2014-0348.html
+    - http://rhn.redhat.com/errata/RHSA-2014-1351.html
+    - http://rhn.redhat.com/errata/RHSA-2015-1888.html
+    - http://secunia.com/advisories/57563
+    - http://secunia.com/advisories/59036
+    - http://secunia.com/advisories/59151
+    - http://secunia.com/advisories/59247
+    - http://secunia.com/advisories/59290
+    - http://secunia.com/advisories/59291
+    - http://secunia.com/advisories/59369
+    - http://secunia.com/advisories/59515
+    - http://secunia.com/advisories/59711
+    - http://secunia.com/advisories/60502
+    - http://svn.apache.org/viewvc?view=revision&revision=1581058
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21674334
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21676093
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21677145
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21680703
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21681933
+    - http://www.debian.org/security/2014/dsa-2886
+    - http://www.ibm.com/support/docview.wss?uid=swg21677967
+    - http://www.ocert.org/advisories/ocert-2014-002.html
+    - http://www.oracle.com/technetwork/security-advisory/cpuoct2017-3236626.html
+    - http://www.oracle.com/technetwork/topics/security/cpujan2016-2367955.html
+    - http://www.securityfocus.com/bid/66397
+    - http://www.securitytracker.com/id/1034711
+    - http://www.securitytracker.com/id/1034716
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/92023
+    - https://h20566.www2.hpe.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c05324755
+    - https://issues.apache.org/jira/browse/XALANJ-2435
+    - https://security.gentoo.org/glsa/201604-02
+    - https://www.oracle.com/technetwork/security-advisory/cpuapr2019-5072813.html
+    - https://www.tenable.com/security/tns-2018-15
+affected:
+    - name: java-home
+      version:
+        - "<=1.0.7"
+      fixedin:
+        []
