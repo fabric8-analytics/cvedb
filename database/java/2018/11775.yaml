@@ -1,6 +1,6 @@
 ---
 cve: 2018-11775
-title: CVE in ActiveMQ Client
+title: CVE in org.apache.activemq:activemq-client
 description: >
     TLS hostname verification when using the Apache ActiveMQ Client before 5.15.6 was missing which could make the client vulnerable to a MITM attack between a Java application using the ActiveMQ client and the ActiveMQ server. This is now enabled by default.
 cvss_v2: 5.8
@@ -8,35 +8,15 @@ references:
     - http://activemq.apache.org/security-advisories.data/CVE-2018-11775-announcement.txt
     - http://www.securityfocus.com/bid/105335
     - http://www.securitytracker.com/id/1041618
-    - https://github.com/apache/activemq/commit/02971a40e281713a8397d3a1809c164b594abfbb
-    - https://github.com/apache/activemq/commit/bde7097fb8173cf871827df7811b3865679b963d
+    - https://lists.apache.org/thread.html/03f91b1fb85686a848cee6b90112cf6059bd1b21b23bacaa11a962e1@%3Cdev.activemq.apache.org%3E
+    - https://lists.apache.org/thread.html/2b5c0039197a4949f29e1e2c9441ab38d242946b966f61c110808bcc@%3Ccommits.activemq.apache.org%3E
+    - https://lists.apache.org/thread.html/a859563f05fbe7c31916b3178c2697165bd9bbf5a65d1cf62aef27d2@%3Ccommits.activemq.apache.org%3E
+    - https://lists.apache.org/thread.html/fcbe6ad00f1de142148c20d813fae3765dc4274955e3e2f3ca19ff7b@%3Cdev.activemq.apache.org%3E
+    - https://www.oracle.com/technetwork/security-advisory/cpuapr2019-5072813.html
+    - https://www.oracle.com/technetwork/security-advisory/cpujan2019-5072801.html
 affected:
     - groupId: org.apache.activemq
-      artifactId: activemq-amqp
-      version:
-        - "<=5.15.5"
-      fixedin:
-        - ">=5.15.6"
-    - groupId: org.apache.activemq
       artifactId: activemq-client
-      version:
-        - "<=5.15.5"
-      fixedin:
-        - ">=5.15.6"
-    - groupId: org.apache.activemq
-      artifactId: activemq-mqtt
-      version:
-        - "<=5.15.5"
-      fixedin:
-        - ">=5.15.6"
-    - groupId: org.apache.activemq
-      artifactId: activemq-stomp
-      version:
-        - "<=5.15.5"
-      fixedin:
-        - ">=5.15.6"
-    - groupId: org.apache.activemq
-      artifactId: activemq-broker
       version:
         - "<=5.15.5"
       fixedin:
