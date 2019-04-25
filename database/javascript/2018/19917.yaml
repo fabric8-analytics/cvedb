@@ -1,0 +1,18 @@
+---
+cve: 2018-19917
+title: CVE in llllllll-xss
+description: >
+    Microweber 1.0.8 has reflected cross-site scripting (XSS) vulnerabilities.
+cvss_v2: 4.3
+references:
+    - http://packetstormsecurity.com/files/151005/Microweber-1.0.8-Cross-Site-Scripting.html
+    - http://seclists.org/fulldisclosure/2019/Jan/12
+    - http://seclists.org/fulldisclosure/2019/Jan/25
+    - https://github.com/microweber/microweber/commits/master
+    - https://www.netsparker.com/web-applications-advisories/ns-18-038-reflected-cross-site-scripting-in-microweber/
+affected:
+    - name: llllllll-xss
+      version:
+        - "<=1.0.8,1.0.8"
+      fixedin:
+        - "<=1.0.7,1.0.0"
