@@ -1,0 +1,17 @@
+---
+cve: 2018-10959
+title: CVE in sr_
+description: >
+    Avecto Defendpoint 4 prior to 4.4 SR6 and 5 prior to 5.1 SR1 has an Untrusted Search Path vulnerability, exploitable by modifying environment variables to trigger automatic elevation of an attacker's process launch.
+cvss_v2: 5.0
+references:
+    - https://www.linkedin.com/feed/update/urn:li:activity:6514328006666833920
+    - https://www.linkedin.com/feed/update/urn:li:activity:6524111541913075712
+    - https://www.linkedin.com/pulse/cve-2018-10959-patrick-murphy
+affected:
+    - name: sr_
+      version:
+        - "<=4.4.1,4.0.0"
+      fixedin:
+        - ">=4.5.0"
+        - "<=3.5.0,1.2.2"
