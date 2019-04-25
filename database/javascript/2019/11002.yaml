@@ -1,0 +1,14 @@
+---
+cve: 2019-11002
+title: CVE in materialize-css
+description: >
+    In Materialize through 1.0.0, XSS is possible via the Tooltip feature.
+cvss_v2: 4.3
+references:
+    - https://github.com/Dogfalo/materialize/issues/6286
+affected:
+    - name: materialize-css
+      version:
+        - "<=1.0.0"
+      fixedin:
+        []
