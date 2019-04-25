@@ -1,0 +1,17 @@
+---
+cve: 2018-10912
+title: CVE in org.keycloak:keycloak-services
+description: >
+    keycloak before version 4.0.0.final is vulnerable to a infinite loop in session replacement. A Keycloak cluster with multiple nodes could mishandle an expired session replacement and lead to an infinite loop. A malicious authenticated user could use this flaw to achieve Denial of Service on the server.
+cvss_v2: 4.0
+references:
+    - https://access.redhat.com/errata/RHSA-2018:2428
+    - https://access.redhat.com/errata/RHSA-2019:0877
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-10912
+affected:
+    - groupId: org.keycloak
+      artifactId: keycloak-services
+      version:
+        - "<=3.4.3.Final"
+      fixedin:
+        - ">=4.0.0.Beta1"
