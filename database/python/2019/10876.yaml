@@ -1,0 +1,19 @@
+---
+cve: 2019-10876
+title: CVE in neutron
+description: >
+    An issue was discovered in OpenStack Neutron 11.x before 11.0.7, 12.x before 12.0.6, and 13.x before 13.0.3. By creating two security groups with separate/overlapping port ranges, an authenticated user may prevent Neutron from being able to configure networks on any compute nodes where those security groups are present, because of an Open vSwitch (OVS) firewall KeyError. All Neutron deployments utilizing neutron-openvswitch-agent are affected.
+cvss_v2: 4.0
+references:
+    - http://www.openwall.com/lists/oss-security/2019/04/09/2
+    - https://bugs.launchpad.net/ossa/+bug/1813007
+    - https://review.openstack.org/#/q/topic:bug/1813007
+    - https://security.openstack.org/ossa/OSSA-2019-002.html
+affected:
+    - name: neutron
+      version:
+        - "<=13.0.2,13.0.0b1"
+        - "<=12.0.5,12.0.0b3"
+        - "<=11.0.6,11.0.3"
+      fixedin:
+        - ">=13.0.3"
