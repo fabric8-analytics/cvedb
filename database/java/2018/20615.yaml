@@ -1,0 +1,21 @@
+---
+cve: 2018-20615
+title: CVE in com.redhat.lightblue.client:lightblue-client-http
+description: >
+    An out-of-bounds read issue was discovered in the HTTP/2 protocol decoder in HAProxy 1.8.x and 1.9.x through 1.9.0 which can result in a crash. The processing of the PRIORITY flag in a HEADERS frame requires 5 extra bytes, and while these bytes are skipped, the total frame length was not re-checked to make sure they were present in the frame.
+cvss_v2: 5.0
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2019-02/msg00018.html
+    - http://www.securityfocus.com/bid/106645
+    - https://access.redhat.com/errata/RHBA-2019:0327
+    - https://access.redhat.com/errata/RHSA-2019:0275
+    - https://usn.ubuntu.com/3858-1/
+    - https://www.mail-archive.com/haproxy@formilux.org/msg32304.html
+affected:
+    - groupId: com.redhat.lightblue.client
+      artifactId: lightblue-client-http
+      version:
+        - "<=1.9.0,1.8.1"
+      fixedin:
+        - ">=2.0.0"
+        - "<=1.7.0,1.2.0"
