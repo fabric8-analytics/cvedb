@@ -1,0 +1,14 @@
+---
+cve: 2018-8825
+title: CVE in tensorflow
+description: >
+    Google TensorFlow 1.7 and below is affected by: Buffer Overflow. The impact is: execute arbitrary code (local).
+cvss_v2: 6.8
+references:
+    - https://github.com/tensorflow/tensorflow/blob/master/tensorflow/security/advisory/tfsa-2018-003.md
+affected:
+    - name: tensorflow
+      version:
+        - "<=1.7.0"
+      fixedin:
+        - ">=1.7.1"
