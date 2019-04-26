@@ -1,0 +1,20 @@
+---
+cve: 2018-10894
+title: CVE in org.keycloak:keycloak-saml-tomcat-adapter-core
+description: >
+    It was found that SAML authentication in Keycloak 3.4.3.Final incorrectly authenticated expired certificates. A malicious user could use this to access unauthorized data or possibly conduct further attacks.
+cvss_v2: 5.5
+references:
+    - https://access.redhat.com/errata/RHSA-2018:3592
+    - https://access.redhat.com/errata/RHSA-2018:3593
+    - https://access.redhat.com/errata/RHSA-2018:3595
+    - https://access.redhat.com/errata/RHSA-2019:0877
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-10894
+affected:
+    - groupId: org.keycloak
+      artifactId: keycloak-saml-tomcat-adapter-core
+      version:
+        - "<=3.4.3.Final,3.4.3.Final"
+      fixedin:
+        - ">=4.0.0.Beta1"
+        - "<=3.4.2.Final,1.6.0.Final"
