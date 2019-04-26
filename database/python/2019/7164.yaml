@@ -1,0 +1,17 @@
+---
+cve: 2019-7164
+title: CVE in sqlalchemy
+description: >
+    SQLAlchemy through 1.2.17 and 1.3.x through 1.3.0b2 allows SQL Injection via the order_by parameter.
+cvss_v2: 7.5
+references:
+    - https://github.com/sqlalchemy/sqlalchemy/issues/4481
+    - https://lists.debian.org/debian-lts-announce/2019/03/msg00020.html
+affected:
+    - name: sqlalchemy
+      version:
+        - "<=1.2.17"
+        - "<=1.3.0b2,1.3.0b1"
+      fixedin:
+        - ">=1.3.1"
+        - "<=1.2.19,1.2.18"
