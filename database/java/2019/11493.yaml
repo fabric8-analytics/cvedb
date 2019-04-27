@@ -1,0 +1,16 @@
+---
+cve: 2019-11493
+title: CVE in org.wso2.extension.siddhi.execution.reorder:siddhi-execution-reorder
+description: >
+    VeryPDF 4.1 has a Memory Overflow leading to Code Execution because pdfocx!CxImageTIF::operator in pdfocx.ocx (used by pdfeditor.exe and pdfcmd.exe) is mishandled.
+cvss_v2: 6.8
+references:
+    - https://www.vdalabs.com/2019/04/25/microsoft-security-risk-detection-0day-in-verypdf-reader-part-1/
+affected:
+    - groupId: org.wso2.extension.siddhi.execution.reorder
+      artifactId: siddhi-execution-reorder
+      version:
+        - "<=4.1.0,4.1.0"
+      fixedin:
+        - ">=4.1.1"
+        - "<=4.0.23,4.0.0"
