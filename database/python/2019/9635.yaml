@@ -1,0 +1,14 @@
+---
+cve: 2019-9635
+title: CVE in tensorflow
+description: >
+    NULL pointer dereference in Google TensorFlow before 1.12.2 could cause a denial of service via an invalid GIF file.
+cvss_v2: 4.3
+references:
+    - https://github.com/tensorflow/tensorflow/blob/master/tensorflow/security/advisory/tfsa-2019-001.md
+affected:
+    - name: tensorflow
+      version:
+        - "<=1.12.0"
+      fixedin:
+        - ">=1.12.2"
