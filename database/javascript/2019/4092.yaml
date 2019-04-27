@@ -1,0 +1,16 @@
+---
+cve: 2019-4092
+title: CVE in nuke-navigator
+description: >
+    IBM Content Navigator 2.0.3 and 3.0CD could allow a remote attacker to conduct phishing attacks, using an open redirect attack. By persuading a victim to visit a specially-crafted Web site, a remote attacker could exploit this vulnerability to spoof the URL displayed to redirect a user to a malicious Web site that would appear to be trusted. This could allow the attacker to obtain highly sensitive information or conduct further attacks against the victim. IBM X-Force ID: 157654.
+cvss_v2: 5.8
+references:
+    - http://www.ibm.com/support/docview.wss?uid=ibm10874754
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/157654
+affected:
+    - name: nuke-navigator
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - ">=2.1.1-1"
+        - "<=1.0.4,0.0.2"
