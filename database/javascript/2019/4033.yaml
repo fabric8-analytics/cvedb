@@ -1,0 +1,16 @@
+---
+cve: 2019-4033
+title: CVE in chanjet-navigator
+description: >
+    IBM Content Navigator 2.0.3 and 3.0CD is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 155999.
+cvss_v2: 3.5
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/155999
+    - https://www.ibm.com/support/docview.wss?uid=ibm10869046
+affected:
+    - name: chanjet-navigator
+      version:
+        - "<=2.0.3,2.0.3"
+      fixedin:
+        - ">=2.0.4"
+        - "<=2.0.2,0.0.9"
