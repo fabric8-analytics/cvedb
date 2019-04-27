@@ -15,6 +15,7 @@ affected:
     - groupId: org.apache.struts
       artifactId: struts2-rest-plugin
       version:
-        - "<=2.5.14,2.5"
+        - "<=2.5.14,2.5-BETA1"
       fixedin:
         - ">=2.5.14.1"
+        - "<=2.3.37,2.1.2"
