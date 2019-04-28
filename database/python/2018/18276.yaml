@@ -1,0 +1,15 @@
+---
+cve: 2018-18276
+title: CVE in molo-profiles
+description: >
+    XSS exists in the ProFiles 1.5 component for Joomla! via the name or path parameter when creating a new folder in the administrative panel.
+cvss_v2: 3.5
+references:
+    - http://www.cinquino.eu/ProFiles%201.5%20Free%20Version%20Component%20Xss.htm
+affected:
+    - name: molo-profiles
+      version:
+        - "<=1.5.0,1.5.0"
+      fixedin:
+        - ">=1.5.1"
+        - "<=1.4.0,0.1.0"
