@@ -1,0 +1,14 @@
+---
+cve: 2015-1326
+title: CVE in python-dbusmock
+description: >
+    python-dbusmock before version 0.15.1 AddTemplate() D-Bus method call or DBusTestCase.spawn_server_template() method could be tricked into executing malicious code if an attacker supplies a .pyc file.
+cvss_v2: 9.3
+references:
+    - https://github.com/martinpitt/python-dbusmock/commit/4e7d0df9093
+affected:
+    - name: python-dbusmock
+      version:
+        - "<=0.15"
+      fixedin:
+        - ">=0.15.1"
