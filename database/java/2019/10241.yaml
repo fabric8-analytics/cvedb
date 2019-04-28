@@ -1,0 +1,19 @@
+---
+cve: 2019-10241
+title: CVE in org.eclipse.jetty:jetty-jmx
+description: >
+    In Eclipse Jetty version 9.2.26 and older, 9.3.25 and older, and 9.4.15 and older, the server is vulnerable to XSS conditions if a remote client USES a specially formatted URL against the DefaultServlet or ResourceHandler that is configured for showing a Listing of directory contents.
+cvss_v2: 4.3
+references:
+    - https://bugs.eclipse.org/bugs/show_bug.cgi?id=546121
+affected:
+    - groupId: org.eclipse.jetty
+      artifactId: jetty-jmx
+      version:
+        - "<=9.2.26.v20180806"
+        - "<=9.3.25.v20180904,9.3.0.M0"
+        - "<=9.4.15.v20190215,9.4.0.M0"
+      fixedin:
+        - ">=9.4.16.v20190411"
+        - "<=9.3.27.v20190418,9.3.26.v20190403"
+        - "<=9.2.28.v20190418,9.2.27.v20190403"
