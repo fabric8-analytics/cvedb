@@ -1,0 +1,15 @@
+---
+cve: 2019-1003037
+title: CVE in market-agents
+description: >
+    An information exposure vulnerability exists in Jenkins Azure VM Agents Plugin 0.8.0 and earlier in src/main/java/com/microsoft/azure/vmagent/AzureVMCloud.java that allows attackers with Overall/Read permission to enumerate credentials IDs of credentials stored in Jenkins.
+cvss_v2: 4.0
+references:
+    - http://www.securityfocus.com/bid/107476
+    - https://jenkins.io/security/advisory/2019-03-06/#SECURITY-1332
+affected:
+    - name: market-agents
+      version:
+        - "<=0.8.0"
+      fixedin:
+        - ">=0.8.1"
