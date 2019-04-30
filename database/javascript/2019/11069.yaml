@@ -10,6 +10,6 @@ references:
 affected:
     - name: sequelize-cli
       version:
-        - "<=5.2.0"
+        - "<=5.2.15"
       fixedin:
         - ">=5.3.0"
