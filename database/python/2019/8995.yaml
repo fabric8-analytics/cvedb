@@ -1,0 +1,16 @@
+---
+cve: 2019-8995
+title: CVE in fabric
+description: >
+    The workspace client, openspace client, and app development client of TIBCO Software Inc.'s TIBCO ActiveMatrix BPM, TIBCO ActiveMatrix BPM Distribution for TIBCO Silver Fabric, and TIBCO Silver Fabric Enabler for ActiveMatrix BPM contain a vulnerability wherein a malicious URL could trick a user into visiting a website of the attacker's choice. Affected releases are TIBCO Software Inc.'s TIBCO ActiveMatrix BPM: versions up to and including 4.2.0, TIBCO ActiveMatrix BPM Distribution for TIBCO Silver Fabric: versions up to and including 4.2.0, and TIBCO Silver Fabric Enabler for ActiveMatrix BPM: versions up to and including 1.4.1.
+cvss_v2: 5.8
+references:
+    - http://www.securityfocus.com/bid/108062
+    - http://www.tibco.com/services/support/advisories
+    - https://www.tibco.com/support/advisories/2019/04/tibco-security-advisory-april-24-2019-tibco-activematrix-bpm-2019-8995
+affected:
+    - name: fabric
+      version:
+        - "<=2.4.0"
+      fixedin:
+        []
