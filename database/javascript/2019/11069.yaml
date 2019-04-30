@@ -2,7 +2,7 @@
 cve: 2019-11069
 title: CVE in sequelize-cli
 description: >
-    Sequelize before 5.3.0 does not properly ensure that standard conforming strings are used.
+    Sequelize version 5 before 5.3.0 does not properly ensure that standard conforming strings are used.
 cvss_v2: 5.0
 references:
     - https://github.com/sequelize/sequelize/pull/10746/files
@@ -10,6 +10,6 @@ references:
 affected:
     - name: sequelize-cli
       version:
-        - "<=5.2.15"
+        - "<=5.2.15,5.0.0-0"
       fixedin:
         - ">=5.3.0"
