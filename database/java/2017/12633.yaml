@@ -1,6 +1,6 @@
 ---
 cve: 2017-12633
-title: CVE in org.apache.camel:camel-hessian
+title: CVE in org.apache.camel:camel-linkedin
 description: >
     The camel-hessian component in Apache Camel 2.x before 2.19.4 and 2.20.x before 2.20.1 is vulnerable to Java object de-serialisation vulnerability. De-serializing untrusted data can lead to security flaws.
 cvss_v2: 7.5
@@ -11,10 +11,10 @@ references:
     - https://issues.apache.org/jira/browse/CAMEL-11923
 affected:
     - groupId: org.apache.camel
-      artifactId: camel-hessian
+      artifactId: camel-linkedin
       version:
         - "<=2.19.3"
-        - "==2.20.0"
+        - "<=2.20.0,2.20.0"
       fixedin:
-        - ">=2.19.4"
         - ">=2.20.1"
+        - "<=2.19.5,2.19.4"
