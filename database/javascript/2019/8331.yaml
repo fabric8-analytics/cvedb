@@ -14,7 +14,7 @@ references:
 affected:
     - name: bootstrap
       version:
-        - "<=4.3.0,4.0.0-alpha.2"
+        - "==4.3.0"
         - "<=3.4.0"
       fixedin:
         - ">=4.3.1"
