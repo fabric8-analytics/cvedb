@@ -1,0 +1,16 @@
+---
+cve: 2017-18042
+title: CVE in com.atlassian.bamboo:bamboo-specs-runner-test
+description: >
+    The update user administration resource in Atlassian Bamboo before version 6.3.1 allows remote attackers to modify user data including passwords via a Cross-site request forgery (CSRF) vulnerability.
+cvss_v2: 6.8
+references:
+    - http://www.securityfocus.com/bid/103110
+    - https://jira.atlassian.com/browse/BAM-19663
+affected:
+    - groupId: com.atlassian.bamboo
+      artifactId: bamboo-specs-runner-test
+      version:
+        - "<=6.3.0"
+      fixedin:
+        - ">=6.3.1"
