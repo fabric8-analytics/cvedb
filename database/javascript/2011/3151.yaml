@@ -1,0 +1,14 @@
+---
+cve: 2011-3151
+title: CVE in ubuntu
+description: >
+    The Ubuntu SELinux initscript before version 1:0.10 used touch to create a lockfile in a world-writable directory. If the OS kernel does not have symlink protections then an attacker can cause a zero byte file to be allocated on any writable filesystem.
+cvss_v2: 5.8
+references:
+    - https://launchpadlibrarian.net/88098106/selinux_0.10~10.04.1.debdiff
+affected:
+    - name: ubuntu
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
