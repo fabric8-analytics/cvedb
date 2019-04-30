@@ -1,0 +1,22 @@
+---
+cve: 2019-0186
+title: CVE in org.apache.portals.pluto:pluto-site-skin
+description: >
+    The input fields of the Apache Pluto "Chat Room" demo portlet 3.0.0 and 3.0.1 are vulnerable to Cross-Site Scripting (XSS) attacks. Mitigation: * Uninstall the ChatRoomDemo war file - or - * migrate to version 3.1.0 of the chat-room-demo war file
+cvss_v2: 4.3
+references:
+    - http://mail-archives.apache.org/mod_mbox/portals-pluto-user/201904.mbox/%3CCAAqbB_ev=0KNgZmmNAq2=q11i1GYLGN6J-xCKx8Q8dbxZ4tZYg@mail.gmail.com%3E
+    - http://packetstormsecurity.com/files/152642/Apache-Pluto-3.0.0-3.0.1-Cross-Site-Scripting.html
+    - http://www.securityfocus.com/bid/108091
+    - https://lists.apache.org/thread.html/d093e6b0e5f9b3b50928255451afefd8f8fbdcd5bf28a726769a919a@%3Cpluto-user.portals.apache.org%3E
+    - https://portals.apache.org/pluto/security.html
+    - https://www.exploit-db.com/exploits/46759/
+    - https://www.openwall.com/lists/oss-security/2019/04/25/8
+affected:
+    - groupId: org.apache.portals.pluto
+      artifactId: pluto-site-skin
+      version:
+        - "<=3.0.1,3.0.0"
+      fixedin:
+        - ">=3.1.0"
+        - "<=2.1.0-M3,2.0.2"
