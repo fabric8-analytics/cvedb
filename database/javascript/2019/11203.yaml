@@ -1,0 +1,16 @@
+---
+cve: 2019-11203
+title: CVE in fabric-contract-api
+description: >
+    The workspace client, openspace client, app development client, and REST API of TIBCO Software Inc.'s TIBCO ActiveMatrix BPM, TIBCO ActiveMatrix BPM Distribution for TIBCO Silver Fabric, and TIBCO Silver Fabric Enabler for ActiveMatrix BPM contain cross site scripting (XSS) and cross-site request forgery vulnerabilities. Affected releases are TIBCO Software Inc.'s TIBCO ActiveMatrix BPM: versions up to and including 4.2.0, TIBCO ActiveMatrix BPM Distribution for TIBCO Silver Fabric: versions up to and including 4.2.0, and TIBCO Silver Fabric Enabler for ActiveMatrix BPM: versions up to and including 1.4.1.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/108057
+    - http://www.tibco.com/services/support/advisories
+    - https://www.tibco.com/support/advisories/2019/04/tibco-security-advisory-april-24-2019-tibco-activematrix-bpm-2019-11203
+affected:
+    - name: fabric-contract-api
+      version:
+        - "<=2.0.0-snapshot.89"
+      fixedin:
+        []
