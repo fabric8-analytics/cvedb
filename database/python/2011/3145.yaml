@@ -1,0 +1,14 @@
+---
+cve: 2011-3145
+title: CVE in infi-mount-utils
+description: >
+    When mount.ecrpytfs_private before version 87-0ubuntu1.2 calls setreuid() it doesn't also set the effective group id. So when it creates the new version, mtab.tmp, it's created with the group id of the user running mount.ecryptfs_private.
+cvss_v2: 7.5
+references:
+    - http://bazaar.launchpad.net/~ecryptfs/ecryptfs/trunk/revision/558
+affected:
+    - name: infi-mount-utils
+      version:
+        []
+      fixedin:
+        - ">=0.0.2"
