@@ -1,0 +1,20 @@
+---
+cve: 2017-16921
+title: CVE in ovh-angular-otrs
+description: >
+    In OTRS 6.0.x up to and including 6.0.1, OTRS 5.0.x up to and including 5.0.24, and OTRS 4.0.x up to and including 4.0.26, an attacker who is logged into OTRS as an agent can manipulate form parameters (related to PGP) and execute arbitrary shell commands with the permissions of the OTRS or web server user.
+cvss_v2: 9.0
+references:
+    - https://lists.debian.org/debian-lts-announce/2017/12/msg00015.html
+    - https://www.debian.org/security/2017/dsa-4066
+    - https://www.exploit-db.com/exploits/43853/
+    - https://www.otrs.com/security-advisory-2017-09-security-update-otrs-framework/
+affected:
+    - name: ovh-angular-otrs
+      version:
+        - "<=4.0.1,4.0.1"
+        - "<=6.0.1,5.0.0"
+      fixedin:
+        - ">=6.1.0"
+        - "<=4.1.2,4.1.0"
+        - "<=4.0.0,1.1.0"
