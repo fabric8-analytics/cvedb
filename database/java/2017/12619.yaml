@@ -1,0 +1,18 @@
+---
+cve: 2017-12619
+title: CVE in org.apache.zeppelin:zeppelin-angular
+description: >
+    Apache Zeppelin prior to 0.7.3 was vulnerable to session fixation which allowed an attacker to hijack a valid user session. Issue was reported by "stone lone".
+cvss_v2: 5.8
+references:
+    - http://www.openwall.com/lists/oss-security/2019/04/23/1
+    - http://www.securityfocus.com/bid/108050
+    - https://lists.apache.org/thread.html/ff6b995a5a3ba8db4d6b14b4d9dd487e7bf2e3bdd5b375b64a25fd06@%3Cusers.zeppelin.apache.org%3E
+    - https://zeppelin.apache.org/releases/zeppelin-release-0.7.3.html
+affected:
+    - groupId: org.apache.zeppelin
+      artifactId: zeppelin-angular
+      version:
+        - "<=0.7.2"
+      fixedin:
+        - ">=0.7.3"
