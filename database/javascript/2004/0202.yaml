@@ -1,0 +1,27 @@
+---
+cve: 2004-0202
+title: CVE in @microsoft/api-extractor
+description: >
+    IDirectPlay4 Application Programming Interface (API) of Microsoft DirectPlay 7.0a thru 9.0b, as used in Windows Server 2003 and earlier allows remote attackers to cause a denial of service (application crash) via a malformed packet.
+cvss_v2: 5.0
+references:
+    - http://secunia.com/advisories/11802
+    - http://www.osvdb.org/6742
+    - http://www.securityfocus.com/bid/10487
+    - https://docs.microsoft.com/en-us/security-updates/securitybulletins/2004/ms04-016
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/16306
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A1027
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A2190
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A2413
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A2516
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A2705
+affected:
+    - name: @microsoft/api-extractor
+      version:
+        - "<=7.0.0,7.0.0"
+        - "<=7.1.0,7.1.0"
+        - "<=8.0.0,8.0.0"
+      fixedin:
+        - "<=7.1.1,7.1.1"
+        - "<=7.0.42,7.0.1"
+        - "<=6.3.0,0.0.0"
