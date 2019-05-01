@@ -1,0 +1,16 @@
+---
+cve: 2017-14523
+title: CVE in docker-host
+description: >
+    ** DISPUTED **  WonderCMS 2.3.1 is vulnerable to an HTTP Host header injection attack. It uses user-entered values to redirect pages. NOTE: the vendor reports that exploitation is unlikely because the attack can only come from a local machine or from the administrator as a self attack.
+cvss_v2: 5.0
+references:
+    - https://securitywarrior9.blogspot.in/2018/01/host-header-injection-in-wonder-cms.html
+    - https://www.exploit-db.com/exploits/43964/
+affected:
+    - name: docker-host
+      version:
+        - "<=2.3.1,2.3.1"
+      fixedin:
+        - ">=3.0.0"
+        - "<=2.3.0,1.0.0"
