@@ -1,0 +1,17 @@
+---
+cve: 2000-0885
+title: CVE in parsing
+description: >
+    Buffer overflows in Microsoft Network Monitor (Netmon) allow remote attackers to execute arbitrary commands via a long Browser Name in a CIFS Browse Frame, a long SNMP community name, or a long username or filename in an SMB session, aka the "Netmon Protocol Parsing" vulnerability.  NOTE: It is highly likely that this candidate will be split into multiple candidates.
+cvss_v2: 7.5
+references:
+    - https://docs.microsoft.com/en-us/security-updates/securitybulletins/2000/ms00-083
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/5399
+affected:
+    - name: parsing
+      version:
+        - "<=1.2.0,1.2.0"
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - "<=1.6.1,1.3.0"
+        - "<=1.1.0,1.0.0"
