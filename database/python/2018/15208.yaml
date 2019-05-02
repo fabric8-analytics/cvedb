@@ -1,0 +1,15 @@
+---
+cve: 2018-15208
+title: CVE in aiohttp-session
+description: >
+    BPC SmartVista 2 has Session Fixation via the JSESSIONID parameter.
+cvss_v2: 5.1
+references:
+    - https://neetech18.blogspot.com/2019/03/session-fixation-smart-vista-svfe-2.html
+affected:
+    - name: aiohttp-session
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - ">=2.0.1"
+        - "<=1.2.1,0.0.1"
