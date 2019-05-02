@@ -1,0 +1,15 @@
+---
+cve: 2019-10316
+title: CVE in hyper-aqua
+description: >
+    Jenkins Aqua MicroScanner Plugin 1.0.5 and earlier stored credentials unencrypted in its global configuration file on the Jenkins master where they could be viewed by users with access to the master file system.
+cvss_v2: 4.0
+references:
+    - http://www.openwall.com/lists/oss-security/2019/04/30/5
+    - https://jenkins.io/security/advisory/2019-04-30/#SECURITY-1380
+affected:
+    - name: hyper-aqua
+      version:
+        - "<=1.0.5"
+      fixedin:
+        - ">=1.0.6"
