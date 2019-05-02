@@ -1,0 +1,15 @@
+---
+cve: 2018-15208
+title: CVE in org.springframework.session:spring-session-data-mongodb
+description: >
+    BPC SmartVista 2 has Session Fixation via the JSESSIONID parameter.
+cvss_v2: 5.1
+references:
+    - https://neetech18.blogspot.com/2019/03/session-fixation-smart-vista-svfe-2.html
+affected:
+    - groupId: org.springframework.session
+      artifactId: spring-session-data-mongodb
+      version:
+        - "<=2.0.0.RELEASE"
+      fixedin:
+        - ">=2.0.1.RELEASE"
