@@ -1,0 +1,15 @@
+---
+cve: 2018-15206
+title: CVE in koa-csrf
+description: >
+    BPC SmartVista 2 has CSRF via SVFE2/pages/admpages/roles/createrole.jsf.
+cvss_v2: 6.8
+references:
+    - https://neetech18.blogspot.com/2019/03/cross-site-request-forgery-smartvista.html
+affected:
+    - name: koa-csrf
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - ">=2.1.0"
+        - "<=1.1.1,0.0.1"
