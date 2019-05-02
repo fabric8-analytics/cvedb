@@ -1,0 +1,14 @@
+---
+cve: 2018-15207
+title: CVE in express-access-control
+description: >
+    BPC SmartVista 2 has Improper Access Control in the SVFE module, where it fails to appropriately restrict access: a normal user is able to access the SVFE2/pages/finadmin/currconvrate/currconvrate.jsf functionality that should be only accessible to an admin.
+cvss_v2: 6.5
+references:
+    - https://neetech18.blogspot.com/2019/03/incorrect-access-control-smart-vista.html
+affected:
+    - name: express-access-control
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - "<=1.0.0,1.0.0"
