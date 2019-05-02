@@ -1,0 +1,15 @@
+---
+cve: 2016-8748
+title: CVE in apache-libcloud
+description: >
+    In Apache NiFi before 1.0.1 and 1.1.x before 1.1.1, there is a cross-site scripting vulnerability in connection details dialog when accessed by an authorized user. The user supplied text was not being properly handled when added to the DOM.
+cvss_v2: 3.5
+references:
+    - http://www.securityfocus.com/bid/95621
+    - https://nifi.apache.org/security.html#CVE-2016-8748
+affected:
+    - name: apache-libcloud
+      version:
+        - "<=1.1.0"
+      fixedin:
+        - ">=1.2.1"
