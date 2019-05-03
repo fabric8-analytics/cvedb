@@ -1,0 +1,15 @@
+---
+cve: 2019-11220
+title: CVE in org.sonatype.p2.bridge:p2-bridge-model
+description: >
+    An authentication flaw in Shenzhen Yunni Technology iLnkP2P allows remote attackers to actively intercept user-to-device traffic in cleartext, including video streams and device credentials.
+cvss_v2: 4.3
+references:
+    - https://hacked.camera/
+affected:
+    - groupId: org.sonatype.p2.bridge
+      artifactId: p2-bridge-model
+      version:
+        []
+      fixedin:
+        - ">=1.0.2"
