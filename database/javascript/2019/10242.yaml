@@ -1,0 +1,15 @@
+---
+cve: 2019-10242
+title: CVE in theme-eclipse
+description: >
+    In Eclipse Kura versions up to 4.0.0, the SkinServlet did not checked the path passed during servlet call, potentially allowing path traversal in get requests for a limited number of file types.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/107844
+    - https://bugs.eclipse.org/bugs/show_bug.cgi?id=545835
+affected:
+    - name: theme-eclipse
+      version:
+        - "<=4.0.0"
+      fixedin:
+        []
