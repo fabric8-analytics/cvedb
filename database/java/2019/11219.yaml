@@ -1,0 +1,15 @@
+---
+cve: 2019-11219
+title: CVE in org.sonatype.p2.bridge:p2-bridge-model
+description: >
+    The algorithm used to generate device IDs (UIDs) for devices that utilize Shenzhen Yunni Technology iLnkP2P suffers from a predictability flaw that allows remote attackers to establish direct connections to arbitrary devices.
+cvss_v2: 6.4
+references:
+    - https://hacked.camera/
+affected:
+    - groupId: org.sonatype.p2.bridge
+      artifactId: p2-bridge-model
+      version:
+        []
+      fixedin:
+        - ">=1.0.2"
