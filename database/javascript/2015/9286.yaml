@@ -1,0 +1,17 @@
+---
+cve: 2015-9286
+title: CVE in nodebb
+description: >
+    Controllers.outgoing in controllers/index.js in NodeBB before 0.7.3 has outgoing XSS.
+cvss_v2: 4.3
+references:
+    - https://github.com/NodeBB/NodeBB/compare/56b79a9...4de7529
+    - https://github.com/NodeBB/NodeBB/pull/3371
+    - https://vulners.com/securityvulns/SECURITYVULNS:DOC:32625
+    - https://www.vulnerability-lab.com/get_content.php?id=1608
+affected:
+    - name: nodebb
+      version:
+        - "<=0.7.2"
+      fixedin:
+        - ">=0.7.3"
