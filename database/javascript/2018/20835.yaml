@@ -1,0 +1,16 @@
+---
+cve: 2018-20835
+title: CVE in tar-fs
+description: >
+    A vulnerability was found in tar-fs before 1.16.2. An Arbitrary File Overwrite issue exists when extracting a tarball containing a hardlink to a file that already exists on the system, in conjunction with a later plain file with the same name as the hardlink. This plain file content replaces the existing file content.
+cvss_v2: 6.4
+references:
+    - https://github.com/mafintosh/tar-fs/commit/06672828e6fa29ac8551b1b6f36c852a9a3c58a2
+    - https://github.com/mafintosh/tar-fs/compare/d590fc7...a35ce2f
+    - https://hackerone.com/reports/344595
+affected:
+    - name: tar-fs
+      version:
+        - "<=1.16.1"
+      fixedin:
+        - ">=1.16.2"
