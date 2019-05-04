@@ -1,0 +1,18 @@
+---
+cve: 2017-1000028
+title: CVE in org.glassfish.main.distributions:glassfish
+description: >
+    Oracle, GlassFish Server Open Source Edition 4.1 is vulnerable to both authenticated and unauthenticated Directory Traversal vulnerability, that can be exploited by issuing a specially crafted HTTP GET request.
+cvss_v2: 5.0
+references:
+    - https://www.exploit-db.com/exploits/45196/
+    - https://www.exploit-db.com/exploits/45198/
+    - https://www.trustwave.com/Resources/Security-Advisories/Advisories/TWSL2015-016/?fid=6904
+affected:
+    - groupId: org.glassfish.main.distributions
+      artifactId: glassfish
+      version:
+        - "<=4.1,4.1"
+      fixedin:
+        - ">=4.1.1"
+        - "<=4.0,3.1.2"
