@@ -1,0 +1,16 @@
+---
+cve: 2019-10272
+title: CVE in weaver-sdk
+description: >
+    An issue was discovered in Weaver e-cology 9.0. There is a CRLF Injection vulnerability via the /workflow/request/ViewRequestForwardSPA.jsp isintervenor parameter, as demonstrated by the %0aSet-cookie: substring.
+cvss_v2: 4.3
+references:
+    - https://expzh.com/Weaver-e-cology9.0-CRLF-Injection.pdf
+    - https://www.weaver.com.cn/cs/securityDownload.asp
+affected:
+    - name: weaver-sdk
+      version:
+        - "<=9.0.0,9.0.0"
+      fixedin:
+        - ">=9.0.1"
+        - "<=8.11.1-beta.0,0.0.3"
