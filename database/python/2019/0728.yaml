@@ -1,0 +1,17 @@
+---
+cve: 2019-0728
+title: CVE in dxl-visual
+description: >
+    A remote code execution vulnerability exists in Visual Studio Code when it process environment variables after opening a project, aka 'Visual Studio Code Remote Code Execution Vulnerability'.
+cvss_v2: 9.3
+references:
+    - http://seclists.org/fulldisclosure/2019/Apr/38
+    - http://www.openwall.com/lists/oss-security/2019/04/30/4
+    - http://www.securityfocus.com/bid/106913
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0728
+affected:
+    - name: dxl-visual
+      version:
+        []
+      fixedin:
+        - ">=0.0.2"
