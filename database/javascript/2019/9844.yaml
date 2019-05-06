@@ -1,0 +1,16 @@
+---
+cve: 2019-9844
+title: CVE in simple-markdown
+description: >
+    simple-markdown.js in Khan Academy simple-markdown before 0.4.4 allows XSS via a data: or vbscript: URI.
+cvss_v2: 4.3
+references:
+    - https://github.com/Khan/simple-markdown/pull/63
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KZG2I7VH7WLSEUQ77KYP5CRAVFT2RK2U/
+    - https://www.npmjs.com/package/simple-markdown/v/0.4.4
+affected:
+    - name: simple-markdown
+      version:
+        - "<=0.4.3"
+      fixedin:
+        - ">=0.4.4"

@@ -1,0 +1,26 @@
+---
+cve: 2019-6975
+title: CVE in django
+description: >
+    Django 1.11.x before 1.11.19, 2.0.x before 2.0.11, and 2.1.x before 2.1.6 allows Uncontrolled Memory Consumption via a malicious attacker-supplied value to the django.utils.numberformat.format() function.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/106964
+    - https://docs.djangoproject.com/en/dev/releases/security/
+    - https://groups.google.com/forum/#!topic/django-announce/WTwEAprR0IQ
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/66WMXHGBXD7GSM3PEXVCMCAGLMQYHZCU/
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/HVXDOVCXLD74SHR2BENGCE2OOYYYWJHZ/
+    - https://usn.ubuntu.com/3890-1/
+    - https://www.djangoproject.com/weblog/2019/feb/11/security-releases/
+    - https://www.openwall.com/lists/oss-security/2019/02/11/1
+affected:
+    - name: django
+      version:
+        - "<=1.11.18,1.11a1"
+        - "<=2.0.10,2.0a1"
+        - "<=2.1.5,2.1a1"
+      fixedin:
+        - ">=2.1.7"
+        - "<=2.0.13,2.0.12"
+        - "<=1.11.20,1.11.20"
+        - "<=1.10.8,1.0.1"
