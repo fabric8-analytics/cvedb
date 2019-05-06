@@ -7,6 +7,7 @@ cvss_v2: 4.3
 references:
     - https://github.com/jupyter/notebook/compare/f3f00df...05aa4b2
     - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UP5RLEES2JBBNSNLBR65XM6PCD4EMF7D/
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VMDPJBVXOVO6LYGAT46VZNHH6JKSCURO/
 affected:
     - name: notebook
       version:
