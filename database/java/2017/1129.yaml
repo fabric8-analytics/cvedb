@@ -1,0 +1,18 @@
+---
+cve: 2017-1129
+title: CVE in com.ibm.sbt:com.ibm.commons
+description: >
+    IBM Notes 8.5 and 9.0 is vulnerable to a denial of service. If a user is persuaded to click on a malicious link, it could cause the Notes client to hang and have to be restarted. IBM X-Force ID: 121370.
+cvss_v2: 4.3
+references:
+    - http://www.ibm.com/support/docview.wss?uid=swg21999385
+    - http://www.ibm.com/support/docview.wss?uid=swg22002103
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/121370
+    - https://www.exploit-db.com/exploits/42602/
+affected:
+    - groupId: com.ibm.sbt
+      artifactId: com.ibm.commons
+      version:
+        - "<=9.0.0,9.0.0"
+      fixedin:
+        - "<=1.1.12.20161007-1200,1.1.6.20150817-1200"
