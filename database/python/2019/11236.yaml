@@ -11,4 +11,4 @@ affected:
       version:
         - "<=1.24.1"
       fixedin:
-        []
+        - ">=1.24.2"
