@@ -1,0 +1,14 @@
+---
+cve: 2019-11236
+title: CVE in urllib3
+description: >
+    In the urllib3 library through 1.24.1 for Python, CRLF injection is possible if the attacker controls the request parameter.
+cvss_v2: 4.3
+references:
+    - https://github.com/urllib3/urllib3/issues/1553
+affected:
+    - name: urllib3
+      version:
+        - "<=1.24.1"
+      fixedin:
+        - ">=1.24.2"
