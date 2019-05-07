@@ -1,0 +1,18 @@
+---
+cve: 2019-10309
+title: CVE in org.wildfly.swarm:wildfly-swarm-remoting-modules
+description: >
+    Jenkins Self-Organizing Swarm Plug-in Modules Plugin clients that use UDP broadcasts to discover Jenkins masters do not prevent XML External Entity processing when processing the responses, allowing unauthorized attackers on the same network to read arbitrary files from Swarm clients.
+cvss_v2: 4.8
+references:
+    - http://www.openwall.com/lists/oss-security/2019/04/30/5
+    - http://www.securityfocus.com/bid/108159
+    - https://jenkins.io/security/advisory/2019-04-30/#SECURITY-1252
+    - https://www.talosintelligence.com/vulnerability_reports/TALOS-2019-0783
+affected:
+    - groupId: org.wildfly.swarm
+      artifactId: wildfly-swarm-remoting-modules
+      version:
+        []
+      fixedin:
+        - ">=1.0.0.Alpha5"
