@@ -5,11 +5,15 @@ description: >
     SQLAlchemy 1.2.17 has SQL Injection when the group_by parameter can be controlled.
 cvss_v2: 6.8
 references:
+    - https://access.redhat.com/errata/RHSA-2019:0981
+    - https://access.redhat.com/errata/RHSA-2019:0984
     - https://github.com/no-security/sqlalchemy_test
     - https://github.com/sqlalchemy/sqlalchemy/issues/4481#issuecomment-461204518
+    - https://lists.debian.org/debian-lts-announce/2019/03/msg00020.html
 affected:
     - name: sqlalchemy
       version:
-        - "==1.2.17"
+        - "<=1.2.17,1.2.17"
       fixedin:
         - ">=1.2.18"
+        - "<=1.2.16,0.1.0"
