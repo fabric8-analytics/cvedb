@@ -9,6 +9,6 @@ references:
 affected:
     - name: urllib3
       version:
-        - "<=1.24.2"
+        - "<=1.24.1"
       fixedin:
-        - ">=1.25"
+        - ">=1.24.2"
