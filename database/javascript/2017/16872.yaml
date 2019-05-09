@@ -1,0 +1,16 @@
+---
+cve: 2017-16872
+title: CVE in react-native-pjsip
+description: >
+    An issue was discovered in Teluu pjproject (pjlib and pjlib-util) in PJSIP before 2.7.1. Parsing the numeric header fields in a SIP message (like cseq, ttl, port, etc.) all had the potential to overflow, either causing unintended values to be captured or, if the values were subsequently converted back to strings, a buffer overrun. This will lead to a potential exploit using carefully crafted invalid values.
+cvss_v2: 7.5
+references:
+    - https://trac.pjsip.org/repos/milestone/release-2.7.1
+    - https://trac.pjsip.org/repos/ticket/2056
+    - https://www.debian.org/security/2018/dsa-4170
+affected:
+    - name: react-native-pjsip
+      version:
+        - "<=2.7.0"
+      fixedin:
+        - ">=2.7.1"
