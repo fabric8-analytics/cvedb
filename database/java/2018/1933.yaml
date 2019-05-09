@@ -1,0 +1,17 @@
+---
+cve: 2018-1933
+title: CVE in io.astronomer.analytics.java:analytics
+description: >
+    IBM Planning Analytics 2.0 through 2.0.6 is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 153177.
+cvss_v2: 3.5
+references:
+    - http://www.ibm.com/support/docview.wss?uid=ibm10879407
+    - http://www.securityfocus.com/bid/108191
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/153177
+affected:
+    - groupId: io.astronomer.analytics.java
+      artifactId: analytics
+      version:
+        - "<=2.0.0-RC5"
+      fixedin:
+        []
