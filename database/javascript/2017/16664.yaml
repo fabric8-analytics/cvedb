@@ -1,0 +1,19 @@
+---
+cve: 2017-16664
+title: CVE in ovh-angular-otrs
+description: >
+    Code injection exists in Kernel/System/Spelling.pm in Open Ticket Request System (OTRS) 5 before 5.0.24, 4 before 4.0.26, and 3.3 before 3.3.20. In the agent interface, an authenticated remote attacker can execute shell commands as the webserver user via URL manipulation.
+cvss_v2: 6.5
+references:
+    - https://lists.debian.org/debian-lts-announce/2017/12/msg00015.html
+    - https://www.debian.org/security/2017/dsa-4047
+    - https://www.otrs.com/security-advisory-2017-07-security-update-otrs-framework/
+affected:
+    - name: ovh-angular-otrs
+      version:
+        - "<=4.0.1,4.0.0"
+        - "<=5.0.0,5.0.0"
+      fixedin:
+        - ">=6.0.0"
+        - "<=4.1.2,4.1.0"
+        - "<=3.0.1,1.1.0"
