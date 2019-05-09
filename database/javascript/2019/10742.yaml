@@ -1,0 +1,16 @@
+---
+cve: 2019-10742
+title: CVE in axios
+description: >
+    Axios up to and including 0.18.0 allows attackers to cause a denial of service (application crash) by continuing to accepting content after maxContentLength is exceeded.
+cvss_v2: 5.0
+references:
+    - https://app.snyk.io/vuln/SNYK-JS-AXIOS-174505
+    - https://github.com/axios/axios/issues/1098
+    - https://github.com/axios/axios/pull/1485
+affected:
+    - name: axios
+      version:
+        - "<=0.18.0"
+      fixedin:
+        - ">=0.19.0-beta.1"
