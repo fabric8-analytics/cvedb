@@ -1,0 +1,16 @@
+---
+cve: 2019-11818
+title: CVE in org.opencms:opencms-core
+description: >
+    Alkacon OpenCMS v10.5.4 and before is affected by stored cross site scripting (XSS) in the module New User (/opencms/system/workplace/admin/accounts/user_new.jsp). This allows an attacker to insert arbitrary JavaScript as user input (First Name or Last Name), which will be executed whenever the affected snippet is loaded.
+cvss_v2: 4.3
+references:
+    - https://github.com/alkacon/opencms-core/issues/635
+    - https://www.openwall.com/lists/oss-security/2019/04/30/3
+affected:
+    - groupId: org.opencms
+      artifactId: opencms-core
+      version:
+        - "<=10.5.4"
+      fixedin:
+        []
