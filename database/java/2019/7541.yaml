@@ -1,0 +1,17 @@
+---
+cve: 2019-7541
+title: CVE in org.ops4j.pax.url:pax-url-cache
+description: >
+    Rukovoditel through 2.4.1 allows XSS via a URL that lacks a module=users%2flogin substring.
+cvss_v2: 4.3
+references:
+    - http://packetstormsecurity.com/files/151657/Rukovoditel-Project-Management-CRM-2.4.1-Cross-Site-Scripting.html
+    - https://blog.rukovoditel.net/releases/
+    - https://www.exploit-db.com/exploits/46366/
+affected:
+    - groupId: org.ops4j.pax.url
+      artifactId: pax-url-cache
+      version:
+        - "<=2.4.1"
+      fixedin:
+        - ">=2.4.2"
