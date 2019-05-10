@@ -1,6 +1,6 @@
 ---
 cve: 2018-14041
-title: CVE in bootstrap
+title: CVE in @ng-bootstrap/ng-bootstrap
 description: >
     In Bootstrap before 4.1.2, XSS is possible in the data-target property of scrollspy.
 cvss_v2: 4.3
@@ -9,9 +9,11 @@ references:
     - https://github.com/twbs/bootstrap/issues/26423
     - https://github.com/twbs/bootstrap/issues/26627
     - https://github.com/twbs/bootstrap/pull/26630
+    - https://seclists.org/bugtraq/2019/May/18
 affected:
-    - name: bootstrap
+    - name: @ng-bootstrap/ng-bootstrap
       version:
-        - "<=4.1.1"
+        - "<=4.1.1,4.0.0"
       fixedin:
         - ">=4.1.2"
+        - "<=3.3.1,1.0.0-alpha.0"
