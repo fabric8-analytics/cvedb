@@ -1,0 +1,17 @@
+---
+cve: 2019-4071
+title: CVE in org.randombits.storage:storage-servlet
+description: >
+    IBM Tivoli Storage Productivity Center (IBM Spectrum Control Standard Edition 5.2.1 through 5.2.17) could allow a remote attacker to execute arbitrary commands on the system, caused by improper validation of csv file contents. IBM X-Force ID: 157063.
+cvss_v2: 9.3
+references:
+    - http://www.ibm.com/support/docview.wss?uid=ibm10872900
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/157063
+affected:
+    - groupId: org.randombits.storage
+      artifactId: storage-servlet
+      version:
+        - "<=5.3.1,5.2.0"
+      fixedin:
+        - ">=5.3.2"
+        - "<=5.0.0,5.0.0"
