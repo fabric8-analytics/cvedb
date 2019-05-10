@@ -1,0 +1,16 @@
+---
+cve: 2017-12758
+title: CVE in component-injector
+description: >
+    https://www.joomlaextensions.co.in/ Joomla! Component Appointment 1.1 is affected by: SQL Injection. The impact is: Code execution (remote). The component is: com_appointment component.
+cvss_v2: 7.5
+references:
+    - http://joomlaextension.biz/appointment/
+    - https://www.exploit-db.com/exploits/42492
+affected:
+    - name: component-injector
+      version:
+        - "<=1.1.0,1.1.0"
+      fixedin:
+        - ">=1.1.1"
+        - "<=1.0.2,1.0.0"
