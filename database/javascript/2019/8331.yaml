@@ -1,21 +1,23 @@
 ---
 cve: 2019-8331
-title: CVE in bootstrap
+title: CVE in bootstrap-sass
 description: >
     In Bootstrap before 3.4.1 and 4.3.x before 4.3.1, XSS is possible in the tooltip or popover data-template attribute.
 cvss_v2: 4.3
 references:
+    - http://seclists.org/fulldisclosure/2019/May/10
+    - http://seclists.org/fulldisclosure/2019/May/11
+    - http://seclists.org/fulldisclosure/2019/May/13
     - http://www.securityfocus.com/bid/107375
     - https://blog.getbootstrap.com/2019/02/13/bootstrap-4-3-1-and-3-4-1/
     - https://github.com/twbs/bootstrap/pull/28236
     - https://github.com/twbs/bootstrap/releases/tag/v3.4.1
     - https://github.com/twbs/bootstrap/releases/tag/v4.3.1
+    - https://seclists.org/bugtraq/2019/May/18
     - https://support.f5.com/csp/article/K24383845
 affected:
-    - name: bootstrap
+    - name: bootstrap-sass
       version:
-        - "==4.3.0"
         - "<=3.4.0"
       fixedin:
-        - ">=4.3.1"
-        - "==3.4.1"
+        - ">=3.4.1"
