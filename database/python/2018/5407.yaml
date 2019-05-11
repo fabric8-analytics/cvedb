@@ -1,0 +1,31 @@
+---
+cve: 2018-5407
+title: CVE in continuous-threading
+description: >
+    Simultaneous Multi-threading (SMT) in processors can enable local users to exploit software vulnerable to timing attacks via a side-channel timing attack on 'port contention'.
+cvss_v2: 1.9
+references:
+    - http://www.securityfocus.com/bid/105897
+    - https://access.redhat.com/errata/RHSA-2019:0483
+    - https://access.redhat.com/errata/RHSA-2019:0651
+    - https://access.redhat.com/errata/RHSA-2019:0652
+    - https://eprint.iacr.org/2018/1060.pdf
+    - https://github.com/bbbrumley/portsmash
+    - https://lists.debian.org/debian-lts-announce/2018/11/msg00024.html
+    - https://nodejs.org/en/blog/vulnerability/november-2018-security-releases/
+    - https://security.gentoo.org/glsa/201903-10
+    - https://security.netapp.com/advisory/ntap-20181126-0001/
+    - https://usn.ubuntu.com/3840-1/
+    - https://www.debian.org/security/2018/dsa-4348
+    - https://www.debian.org/security/2018/dsa-4355
+    - https://www.exploit-db.com/exploits/45785/
+    - https://www.oracle.com/technetwork/security-advisory/cpuapr2019-5072813.html
+    - https://www.oracle.com/technetwork/security-advisory/cpujan2019-5072801.html
+    - https://www.tenable.com/security/tns-2018-16
+    - https://www.tenable.com/security/tns-2018-17
+affected:
+    - name: continuous-threading
+      version:
+        - "<=1.0.7"
+      fixedin:
+        []
