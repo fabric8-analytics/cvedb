@@ -1,0 +1,16 @@
+---
+cve: 2019-1003081
+title: CVE in openshift-uptimer
+description: >
+    A missing permission check in Jenkins OpenShift Deployer Plugin in the DeployApplication.DeployApplicationDescriptor#doCheckLogin form validation method allows attackers with Overall/Read permission to initiate a connection to an attacker-specified server.
+cvss_v2: 4.0
+references:
+    - http://www.openwall.com/lists/oss-security/2019/04/12/2
+    - http://www.securityfocus.com/bid/107790
+    - https://jenkins.io/security/advisory/2019-04-03/#SECURITY-981
+affected:
+    - name: openshift-uptimer
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
