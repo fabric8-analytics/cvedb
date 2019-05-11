@@ -1,0 +1,15 @@
+---
+cve: 2019-11082
+title: CVE in org.dkpro.core:dkpro-core-io-pubannotation-asl
+description: >
+    core/api/datasets/internal/actions/Explode.java in the Dataset API in DKPro Core through 1.10.0 allows Directory Traversal, resulting in the overwrite of local files with the contents of an archive.
+cvss_v2: 6.4
+references:
+    - https://github.com/dkpro/dkpro-core/issues/1325
+affected:
+    - groupId: org.dkpro.core
+      artifactId: dkpro-core-io-pubannotation-asl
+      version:
+        - "<=1.10.0"
+      fixedin:
+        []
