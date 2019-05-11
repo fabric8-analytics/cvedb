@@ -1,0 +1,14 @@
+---
+cve: 2016-1600
+title: CVE in identity
+description: >
+    The ServiceNow driver in NetIQ Identity Manager versions prior to 4.6 are susceptible to an information disclosure vulnerability.
+cvss_v2: 5.0
+references:
+    - https://www.netiq.com/documentation/identity-manager-46/releasenotes_idm46/data/releasenotes_idm46.html#t433o7au0niu
+affected:
+    - name: identity
+      version:
+        - "<=4.5.3"
+      fixedin:
+        - ">=4.6.0"
