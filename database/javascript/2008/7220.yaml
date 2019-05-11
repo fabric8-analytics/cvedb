@@ -1,0 +1,28 @@
+---
+cve: 2008-7220
+title: CVE in sa-prototype
+description: >
+    Unspecified vulnerability in Prototype JavaScript framework (prototypejs) before 1.6.0.2 allows attackers to make "cross-site ajax requests" via unknown vectors.
+cvss_v2: 7.5
+references:
+    - http://github.com/sstephenson/prototype/blob/master/CHANGELOG
+    - http://osvdb.org/46312
+    - http://packetstormsecurity.com/files/152787/dotCMS-5.1.1-Vulnerable-Dependencies.html
+    - http://seclists.org/fulldisclosure/2019/May/10
+    - http://seclists.org/fulldisclosure/2019/May/11
+    - http://seclists.org/fulldisclosure/2019/May/13
+    - http://secunia.com/advisories/37479
+    - http://secunia.com/advisories/37677
+    - http://www.debian.org/security/2009/dsa-1952
+    - http://www.openwall.com/lists/oss-security/2009/11/07/2
+    - https://bugzilla.redhat.com/show_bug.cgi?id=523277
+    - https://bugzilla.redhat.com/show_bug.cgi?id=533137
+    - https://seclists.org/bugtraq/2019/May/18
+    - https://www.redhat.com/archives/fedora-package-announce/2009-November/msg00789.html
+    - https://www.redhat.com/archives/fedora-package-announce/2009-November/msg00838.html
+affected:
+    - name: sa-prototype
+      version:
+        - "<=1.6.0"
+      fixedin:
+        - ">=1.7.0"
