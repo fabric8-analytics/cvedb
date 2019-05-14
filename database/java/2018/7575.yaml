@@ -1,0 +1,15 @@
+---
+cve: 2018-7575
+title: CVE in org.tensorflow:tensorflow
+description: >
+    Google TensorFlow 1.7.x and earlier is affected by a Buffer Overflow vulnerability. The type of exploitation is context-dependent.
+cvss_v2: 7.5
+references:
+    - https://github.com/tensorflow/tensorflow/blob/master/tensorflow/security/advisory/tfsa-2018-004.md
+affected:
+    - groupId: org.tensorflow
+      artifactId: tensorflow
+      version:
+        - "<=1.7.0"
+      fixedin:
+        - ">=1.8.0-rc0"
