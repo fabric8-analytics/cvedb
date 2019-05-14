@@ -1,0 +1,19 @@
+---
+cve: 2017-12636
+title: CVE in couchdb-bootstrap
+description: >
+    CouchDB administrative users can configure the database server via HTTP(S). Some of the configuration options include paths for operating system-level binaries that are subsequently launched by CouchDB. This allows an admin user in Apache CouchDB before 1.7.0 and 2.x before 2.1.1 to execute arbitrary shell commands as the CouchDB user, including downloading and executing scripts from the public internet.
+cvss_v2: 9.0
+references:
+    - https://lists.apache.org/thread.html/6c405bf3f8358e6314076be9f48c89a2e0ddf00539906291ebdf0c67@%3Cdev.couchdb.apache.org%3E
+    - https://lists.debian.org/debian-lts-announce/2018/01/msg00026.html
+    - https://security.gentoo.org/glsa/201711-16
+    - https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbmu03935en_us
+    - https://www.exploit-db.com/exploits/44913/
+    - https://www.exploit-db.com/exploits/45019/
+affected:
+    - name: couchdb-bootstrap
+      version:
+        - "<=1.6.0"
+      fixedin:
+        - ">=1.7.0"
