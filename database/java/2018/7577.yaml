@@ -1,0 +1,15 @@
+---
+cve: 2018-7577
+title: CVE in org.xerial.snappy:snappy-java
+description: >
+    Memcpy parameter overlap in Google Snappy library 1.1.4, as used in Google TensorFlow before 1.7.1, could result in a crash or read from other parts of process memory.
+cvss_v2: 5.8
+references:
+    - https://github.com/tensorflow/tensorflow/blob/master/tensorflow/security/advisory/tfsa-2018-005.md
+affected:
+    - groupId: org.xerial.snappy
+      artifactId: snappy-java
+      version:
+        - "<=1.1.7.3"
+      fixedin:
+        []
