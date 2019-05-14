@@ -1,0 +1,25 @@
+---
+cve: 2005-0356
+title: CVE in com.io7m.mutable.numbers:com.io7m.mutable.numbers.documentation
+description: >
+    Multiple TCP implementations with Protection Against Wrapped Sequence Numbers (PAWS) with the timestamps option enabled allow remote attackers to cause a denial of service (connection loss) via a spoofed packet with a large timer value, which causes the host to discard later packets because they appear to be too old.
+cvss_v2: 5.0
+references:
+    - ftp://ftp.freebsd.org/pub/FreeBSD/CERT/advisories/FreeBSD-SA-05:15.tcp.asc
+    - ftp://ftp.sco.com/pub/updates/UnixWare/SCOSA-2005.64/SCOSA-2005.64.txt
+    - http://secunia.com/advisories/15393
+    - http://secunia.com/advisories/15417/
+    - http://secunia.com/advisories/18222
+    - http://secunia.com/advisories/18662
+    - http://support.avaya.com/elmodocs2/security/ASA-2006-032.htm
+    - http://www.cisco.com/warp/public/707/cisco-sn-20050518-tcpts.shtml
+    - http://www.kb.cert.org/vuls/id/637934
+    - http://www.securityfocus.com/bid/13676
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/20635
+affected:
+    - groupId: com.io7m.mutable.numbers
+      artifactId: com.io7m.mutable.numbers.documentation
+      version:
+        - "<=2.0.0,1.0.0"
+      fixedin:
+        - "<=0.0.2,0.0.1"
