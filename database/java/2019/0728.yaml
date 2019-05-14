@@ -1,0 +1,18 @@
+---
+cve: 2019-0728
+title: CVE in org.apache.directory.studio:org.apache.directory.studio.valueeditors
+description: >
+    A remote code execution vulnerability exists in Visual Studio Code when it process environment variables after opening a project, aka 'Visual Studio Code Remote Code Execution Vulnerability'.
+cvss_v2: 9.3
+references:
+    - http://seclists.org/fulldisclosure/2019/Apr/38
+    - http://www.openwall.com/lists/oss-security/2019/04/30/4
+    - http://www.securityfocus.com/bid/106913
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0728
+affected:
+    - groupId: org.apache.directory.studio
+      artifactId: org.apache.directory.studio.valueeditors
+      version:
+        []
+      fixedin:
+        - ">=2.0.0.v20150606-M9"
