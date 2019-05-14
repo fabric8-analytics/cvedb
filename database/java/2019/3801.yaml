@@ -1,0 +1,16 @@
+---
+cve: 2019-3801
+title: CVE in com.solace.cloud.cloudfoundry:solace-spring-cloud-connector
+description: >
+    Cloud Foundry cf-deployment, versions prior to 7.9.0, contain java components that are using an insecure protocol to fetch dependencies when building. A remote unauthenticated malicious attacker could hijack the DNS entry for the dependency, and inject malicious code into the component.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/108104
+    - https://www.cloudfoundry.org/blog/cve-2019-3801
+affected:
+    - groupId: com.solace.cloud.cloudfoundry
+      artifactId: solace-spring-cloud-connector
+      version:
+        - "<=3.1.0"
+      fixedin:
+        []
