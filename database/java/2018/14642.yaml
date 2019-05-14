@@ -1,0 +1,23 @@
+---
+cve: 2018-14642
+title: CVE in io.undertow.js:undertow-js-mustache
+description: >
+    An information leak vulnerability was found in Undertow. If all headers are not written out in the first write() call then the code that handles flushing the buffer will always write out the full contents of the writevBuffer buffer, which may contain data from previous requests.
+cvss_v2: 5.0
+references:
+    - https://access.redhat.com/errata/RHSA-2019:0362
+    - https://access.redhat.com/errata/RHSA-2019:0364
+    - https://access.redhat.com/errata/RHSA-2019:0365
+    - https://access.redhat.com/errata/RHSA-2019:0380
+    - https://access.redhat.com/errata/RHSA-2019:1106
+    - https://access.redhat.com/errata/RHSA-2019:1107
+    - https://access.redhat.com/errata/RHSA-2019:1108
+    - https://access.redhat.com/errata/RHSA-2019:1140
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-14642
+affected:
+    - groupId: io.undertow.js
+      artifactId: undertow-js-mustache
+      version:
+        []
+      fixedin:
+        - ">=1.1.0.Beta1"
