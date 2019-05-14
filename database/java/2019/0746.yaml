@@ -1,0 +1,15 @@
+---
+cve: 2019-0746
+title: CVE in com.microsoft.windowsazure:microsoft-azure-api-servicebus
+description: >
+    An information disclosure vulnerability exists when the scripting engine does not properly handle objects in memory in Microsoft Edge, aka 'Scripting Engine Information Disclosure Vulnerability'.
+cvss_v2: 4.3
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0746
+affected:
+    - groupId: com.microsoft.windowsazure
+      artifactId: microsoft-azure-api-servicebus
+      version:
+        []
+      fixedin:
+        - ">=0.5.0"
