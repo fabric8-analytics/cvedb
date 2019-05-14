@@ -1,0 +1,24 @@
+---
+cve: 2018-1128
+title: CVE in ceph-deploy
+description: >
+    It was found that cephx authentication protocol did not verify ceph clients correctly and was vulnerable to replay attack. Any attacker having access to ceph cluster network who is able to sniff packets on network can use this vulnerability to authenticate with ceph service and perform actions allowed by ceph service. Ceph branches master, mimic, luminous and jewel are believed to be vulnerable.
+cvss_v2: 5.4
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2019-04/msg00100.html
+    - http://tracker.ceph.com/issues/24836
+    - https://access.redhat.com/errata/RHSA-2018:2177
+    - https://access.redhat.com/errata/RHSA-2018:2179
+    - https://access.redhat.com/errata/RHSA-2018:2261
+    - https://access.redhat.com/errata/RHSA-2018:2274
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1575866
+    - https://github.com/ceph/ceph/commit/5ead97120e07054d80623dada90a5cc764c28468
+    - https://lists.debian.org/debian-lts-announce/2019/03/msg00017.html
+    - https://www.debian.org/security/2018/dsa-4339
+affected:
+    - name: ceph-deploy
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - ">=2.0.1"
+        - "<=1.5.39,1.1"
