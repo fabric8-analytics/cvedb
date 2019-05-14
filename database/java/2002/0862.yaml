@@ -1,0 +1,22 @@
+---
+cve: 2002-0862
+title: CVE in net.xp-forge.maven.plugins:xp-maven-plugin
+description: >
+    The (1) CertGetCertificateChain, (2) CertVerifyCertificateChainPolicy, and (3) WinVerifyTrust APIs within the CryptoAPI for Microsoft products including Microsoft Windows 98 through XP, Office for Mac, Internet Explorer for Mac, and Outlook Express for Mac, do not properly verify the Basic Constraints of intermediate CA-signed X.509 certificates, which allows remote attackers to spoof the certificates of trusted sites via a man-in-the-middle attack for SSL sessions, as originally reported for Internet Explorer and IIS.
+cvss_v2: 7.5
+references:
+    - http://marc.info/?l=bugtraq&m=102866120821995&w=2
+    - http://marc.info/?l=bugtraq&m=102918200405308&w=2
+    - http://marc.info/?l=bugtraq&m=102976967730450&w=2
+    - https://docs.microsoft.com/en-us/security-updates/securitybulletins/2002/ms02-050
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/9776
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A1056
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A1332
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A2671
+affected:
+    - groupId: net.xp-forge.maven.plugins
+      artifactId: xp-maven-plugin
+      version:
+        - "<=3.0.0"
+      fixedin:
+        - ">=3.1.0"
