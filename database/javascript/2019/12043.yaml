@@ -9,6 +9,6 @@ references:
 affected:
     - name: remarkable
       version:
-        - "<=1.7.1,1.7.1"
+        - "==1.7.1"
       fixedin:
         - "<=1.7.0,0.1.0"
