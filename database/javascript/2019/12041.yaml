@@ -1,0 +1,14 @@
+---
+cve: 2019-12041
+title: CVE in remarkable
+description: >
+    lib/common/html_re.js in remarkable 1.7.1 allows Regular Expression Denial of Service (ReDoS) via a CDATA section.
+cvss_v2: 5.0
+references:
+    - https://github.com/jonschlinkert/remarkable/issues/331
+affected:
+    - name: remarkable
+      version:
+        - "==1.7.1"
+      fixedin:
+        - "<=1.7.0,0.1.0"
