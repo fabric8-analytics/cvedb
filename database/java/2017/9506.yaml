@@ -1,0 +1,20 @@
+---
+cve: 2017-9506
+title: CVE in com.sun.jersey.contribs.jersey-oauth:oauth-server
+description: >
+    The IconUriServlet of the Atlassian OAuth Plugin from version 1.3.0 before version 1.9.12 and from version 2.0.0 before version 2.0.4 allows remote attackers to access the content of internal network resources and/or perform an XSS attack via Server Side Request Forgery (SSRF).
+cvss_v2: 4.3
+references:
+    - http://dontpanic.42.nl/2017/12/there-is-proxy-in-your-atlassian.html
+    - https://ecosystem.atlassian.net/browse/OAUTH-344
+    - https://medium.com/bugbountywriteup/piercing-the-veil-server-side-request-forgery-to-niprnet-access-171018bca2c3
+    - https://twitter.com/ankit_anubhav/status/973566620676382721
+    - https://twitter.com/Zer0Security/status/983529439433777152
+affected:
+    - groupId: com.sun.jersey.contribs.jersey-oauth
+      artifactId: oauth-server
+      version:
+        - "<=1.9.1,1.9"
+      fixedin:
+        - ">=1.10-b01"
+        - "<=1.1.5.2,1.1.5.2"
