@@ -1,0 +1,18 @@
+---
+cve: 2017-1000115
+title: CVE in mercurial
+description: >
+    Mercurial prior to version 4.3 is vulnerable to a missing symlink check that can malicious repositories to modify files outside the repository
+cvss_v2: 5.0
+references:
+    - http://www.debian.org/security/2017/dsa-3963
+    - http://www.securityfocus.com/bid/100290
+    - https://access.redhat.com/errata/RHSA-2017:2489
+    - https://security.gentoo.org/glsa/201709-18
+    - https://www.mercurial-scm.org/wiki/WhatsNew#Mercurial_4.3_.2F_4.3.1_.282017-08-10.29
+affected:
+    - name: mercurial
+      version:
+        - "<=4.2.3"
+      fixedin:
+        - ">=4.3-rc"
