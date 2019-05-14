@@ -1,0 +1,29 @@
+---
+cve: 2017-15288
+title: CVE in org.scala-lang:scala-dist
+description: >
+    The compilation daemon in Scala before 2.10.7, 2.11.x before 2.11.12, and 2.12.x before 2.12.4 uses weak permissions for private files in /tmp/scala-devel/${USER:shared}/scalac-compile-server-port, which allows local users to write to arbitrary class files and consequently gain privileges.
+cvss_v2: 7.2
+references:
+    - http://scala-lang.org/news/security-update-nov17.html
+    - https://github.com/scala/scala/pull/6108
+    - https://github.com/scala/scala/pull/6120
+    - https://github.com/scala/scala/pull/6128
+    - https://security.gentoo.org/glsa/201812-08
+affected:
+    - groupId: org.scala-lang
+      artifactId: scala-dist
+      version:
+        - "<=2.11.8"
+        - "<=2.11.11,2.11.9"
+        - "<=2.12.0-M3,2.12.0-M1"
+        - "<=2.12.0-M4,2.12.0-M4"
+        - "<=2.12.0-RC1,2.12.0-M5"
+        - "<=2.12.3,2.12.0-RC2"
+      fixedin:
+        - ">=2.12.4"
+        - "<=2.12.0-RC1-1e81a09,2.12.0-RC1-be43eb5"
+        - "<=2.12.0-M4-9901daf,2.12.0-M4-9901daf"
+        - "<=2.12.0-M3-dc9effe,2.12.0-M3-dc9effe"
+        - "<=2.11.12,2.11.12"
+        - "<=2.11.8-18269ea,2.11.8-18269ea"
