@@ -1,0 +1,18 @@
+---
+cve: 2018-1317
+title: CVE in org.apache.zeppelin:zeppelin-angular
+description: >
+    In Apache Zeppelin prior to 0.8.0 the cron scheduler was enabled by default and could allow users to run paragraphs as other users without authentication.
+cvss_v2: 6.5
+references:
+    - http://www.openwall.com/lists/oss-security/2019/04/23/1
+    - http://www.securityfocus.com/bid/108047
+    - https://lists.apache.org/thread.html/ff6b995a5a3ba8db4d6b14b4d9dd487e7bf2e3bdd5b375b64a25fd06@%3Cusers.zeppelin.apache.org%3E
+    - https://zeppelin.apache.org/releases/zeppelin-release-0.8.0.html
+affected:
+    - groupId: org.apache.zeppelin
+      artifactId: zeppelin-angular
+      version:
+        - "<=0.7.3"
+      fixedin:
+        - ">=0.8.0"
