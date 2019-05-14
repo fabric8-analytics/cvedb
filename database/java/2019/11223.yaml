@@ -1,0 +1,17 @@
+---
+cve: 2019-11223
+title: CVE in org.ow2.util.file:file
+description: >
+    An Unrestricted File Upload Vulnerability in the SupportCandy plugin through 2.0.0 for WordPress allows remote attackers to execute arbitrary code by uploading a file with an executable extension.
+cvss_v2: 7.5
+references:
+    - https://cert.kalasag.com.ph/news/research/vulnerable-wordpress-plugin-lets-you-take-over-websites/
+    - https://wordpress.org/plugins/supportcandy/#developers
+    - https://www.pluginvulnerabilities.com/2019/04/05/arbitrary-file-upload-vulnerability-in-supportcandy/
+affected:
+    - groupId: org.ow2.util.file
+      artifactId: file
+      version:
+        - "<=2.0.0"
+      fixedin:
+        - ">=2.1.0"
