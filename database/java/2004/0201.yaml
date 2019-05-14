@@ -1,0 +1,23 @@
+---
+cve: 2004-0201
+title: CVE in com.microsoft.bingads:microsoft.bingads
+description: >
+    Heap-based buffer overflow in the HtmlHelp program (hh.exe) in HTML Help for Microsoft Windows 98, Me, NT 4.0, 2000, XP, and Server 2003 allows remote attackers to execute arbitrary commands via a .CHM file with a large length field, a different vulnerability than CVE-2003-1041.
+cvss_v2: 10.0
+references:
+    - http://lists.grok.org.uk/pipermail/full-disclosure/2004-July/023919.html
+    - http://www.kb.cert.org/vuls/id/920060
+    - http://www.us-cert.gov/cas/techalerts/TA04-196A.html
+    - https://docs.microsoft.com/en-us/security-updates/securitybulletins/2004/ms04-023
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/16586
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A1503
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A1530
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A2155
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A3179
+affected:
+    - groupId: com.microsoft.bingads
+      artifactId: microsoft.bingads
+      version:
+        []
+      fixedin:
+        - ">=9.3.0-beta-1"
