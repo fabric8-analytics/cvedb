@@ -1,0 +1,34 @@
+---
+cve: 2019-7222
+title: CVE in easyshop-information
+description: >
+    The KVM implementation in the Linux kernel through 4.20.5 has an Information Leak.
+cvss_v2: 2.1
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2019-02/msg00042.html
+    - http://packetstormsecurity.com/files/151712/KVM-kvm_inject_page_fault-Uninitialized-Memory-Leak.html
+    - http://www.openwall.com/lists/oss-security/2019/02/18/2
+    - http://www.securityfocus.com/bid/106963
+    - https://bugs.chromium.org/p/project-zero/issues/detail?id=1759
+    - https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=353c0956a618a07ba4bbe7ad00ff29fe70e8412a
+    - https://github.com/torvalds/linux/commits/master/arch/x86/kvm
+    - https://lists.debian.org/debian-lts-announce/2019/03/msg00034.html
+    - https://lists.debian.org/debian-lts-announce/2019/04/msg00004.html
+    - https://lists.debian.org/debian-lts-announce/2019/05/msg00002.html
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KDOXCX3QFVWYXH5CQMGDDE7H6MUG5XGG/
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Y2HMABEMJDPA6LPCBE5WIEZXUKY7DLTN/
+    - https://security.netapp.com/advisory/ntap-20190404-0002/
+    - https://usn.ubuntu.com/3930-1/
+    - https://usn.ubuntu.com/3930-2/
+    - https://usn.ubuntu.com/3931-1/
+    - https://usn.ubuntu.com/3931-2/
+    - https://usn.ubuntu.com/3932-1/
+    - https://usn.ubuntu.com/3932-2/
+    - https://usn.ubuntu.com/3933-1/
+    - https://usn.ubuntu.com/3933-2/
+affected:
+    - name: easyshop-information
+      version:
+        []
+      fixedin:
+        - ">=0.1a1"
