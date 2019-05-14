@@ -1,0 +1,22 @@
+---
+cve: 2017-5643
+title: CVE in org.apache.camel:camel-linkedin
+description: >
+    Apache Camel's Validation Component is vulnerable against SSRF via remote DTDs and XXE.
+cvss_v2: 5.8
+references:
+    - http://camel.apache.org/security-advisories.data/CVE-2017-5643.txt.asc?version=1&modificationDate=1489652454000&api=v2
+    - http://www.securityfocus.com/bid/97226
+    - https://access.redhat.com/errata/RHSA-2017:1832
+    - https://lists.apache.org/thread.html/b4014ea7c5830ca1fc28edd5cafedfe93ad4af2d9e69c961c5def31d@%3Ccommits.camel.apache.org%3E
+affected:
+    - groupId: org.apache.camel
+      artifactId: camel-linkedin
+      version:
+        - "<=2.16.0"
+        - "<=2.17.5,2.17.0"
+        - "<=2.18.2,2.18.0"
+      fixedin:
+        - ">=2.18.3"
+        - "<=2.17.7,2.17.6"
+        - "<=2.16.5,2.16.1"
