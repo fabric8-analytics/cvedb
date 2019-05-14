@@ -1,0 +1,19 @@
+---
+cve: 2019-0190
+title: CVE in jakarta.enterprise.concurrent:jakarta.enterprise.concurrent-api
+description: >
+    A bug exists in the way mod_ssl handled client renegotiations. A remote attacker could send a carefully crafted request that would cause mod_ssl to enter a loop leading to a denial of service. This bug can be only triggered with Apache HTTP Server version 2.4.37 when using OpenSSL version 1.1.1 or later, due to an interaction in changes to handling of renegotiation attempts.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/106743
+    - https://httpd.apache.org/security/vulnerabilities_24.html
+    - https://security.gentoo.org/glsa/201903-21
+    - https://security.netapp.com/advisory/ntap-20190125-0001/
+    - https://www.oracle.com/technetwork/security-advisory/cpuapr2019-5072813.html
+affected:
+    - groupId: jakarta.enterprise.concurrent
+      artifactId: jakarta.enterprise.concurrent-api
+      version:
+        - "<=1.1.1"
+      fixedin:
+        []
