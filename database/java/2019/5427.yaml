@@ -1,0 +1,15 @@
+---
+cve: 2019-5427
+title: CVE in com.mchange:c3p0
+description: >
+    c3p0 version < 0.9.5.4 may be exploited by a billion laughs attack when loading XML configuration due to missing protections against recursive entity expansion when loading configuration.
+cvss_v2: 5.0
+references:
+    - https://hackerone.com/reports/509315
+affected:
+    - groupId: com.mchange
+      artifactId: c3p0
+      version:
+        - "<=0.9.5-pre10"
+      fixedin:
+        - ">=0.9.5.2"
