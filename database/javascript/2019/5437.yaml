@@ -1,0 +1,14 @@
+---
+cve: 2019-5437
+title: CVE in harp
+description: >
+    Information exposure through the directory listing in npm's harp module allows to access files that are supposed to be ignored according to the harp server rules.Vulnerable versions are <= 0.29.0 and no fix was applied to our knowledge.
+cvss_v2: 5.0
+references:
+    - https://hackerone.com/reports/453820
+affected:
+    - name: harp
+      version:
+        - "<=0.29.0"
+      fixedin:
+        - ">=0.30.0"
