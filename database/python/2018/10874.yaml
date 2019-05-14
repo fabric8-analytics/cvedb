@@ -1,0 +1,30 @@
+---
+cve: 2018-10874
+title: CVE in ansible
+description: >
+    In ansible it was found that inventory variables are loaded from current working directory when running ad-hoc command which are under attacker's control, allowing to run arbitrary code as a result.
+cvss_v2: 4.6
+references:
+    - http://www.securitytracker.com/id/1041396
+    - https://access.redhat.com/errata/RHBA-2018:3788
+    - https://access.redhat.com/errata/RHSA-2018:2150
+    - https://access.redhat.com/errata/RHSA-2018:2151
+    - https://access.redhat.com/errata/RHSA-2018:2152
+    - https://access.redhat.com/errata/RHSA-2018:2166
+    - https://access.redhat.com/errata/RHSA-2018:2321
+    - https://access.redhat.com/errata/RHSA-2018:2585
+    - https://access.redhat.com/errata/RHSA-2019:0054
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-10874
+affected:
+    - name: ansible
+      version:
+        - "<=2.0.0.0,2.0.0"
+        - "<=2.4.0.0,2.4.0.0"
+        - "<=2.5.0,2.5.0a1"
+        - "<=2.6.0,2.6.0a1"
+      fixedin:
+        - ">=2.6.1"
+        - "<=2.5.15,2.5.1"
+        - "<=2.4.6.0,2.4.1.0"
+        - "<=2.3.3.0,2.0.0.1"
+        - "<=1.9.6,1.0"
