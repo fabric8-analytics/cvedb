@@ -1,0 +1,30 @@
+---
+cve: 2006-0034
+title: CVE in org.softus.cdi.transaction:transaction-cdi
+description: >
+    Heap-based buffer overflow in the CRpcIoManagerServer::BuildContext function in msdtcprx.dll for Microsoft Distributed Transaction Coordinator (MSDTC) for Windows NT 4.0 and Windows 2000 SP2 and SP3 allows remote attackers to execute arbitrary code via a long fifth argument to the BuildContextW or BuildContext opcode, which triggers a bug in the NdrAllocate function, aka the MSDTC Invalid Memory Access Vulnerability.
+cvss_v2: 7.5
+references:
+    - http://archives.neohapsis.com/archives/fulldisclosure/2006-05/0238.html
+    - http://archives.neohapsis.com/archives/fulldisclosure/2006-05/0269.html
+    - http://secunia.com/advisories/20000
+    - http://securityreason.com/securityalert/863
+    - http://securitytracker.com/id?1016047
+    - http://www.eeye.com/html/research/advisories/AD20060509a.html
+    - http://www.osvdb.org/25335
+    - http://www.securityfocus.com/archive/1/433430/100/0/threaded
+    - http://www.securityfocus.com/archive/1/433677/100/0/threaded
+    - http://www.securityfocus.com/bid/17906
+    - http://www.vupen.com/english/advisories/2006/1742
+    - https://docs.microsoft.com/en-us/security-updates/securitybulletins/2006/ms06-018
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/25559
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A1222
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A1477
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A1908
+affected:
+    - groupId: org.softus.cdi.transaction
+      artifactId: transaction-cdi
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
