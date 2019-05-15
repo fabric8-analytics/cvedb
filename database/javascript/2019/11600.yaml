@@ -1,0 +1,18 @@
+---
+cve: 2019-11600
+title: CVE in mongo-sql
+description: >
+    A SQL injection vulnerability in the activities API in OpenProject before 8.3.2 allows a remote attacker to execute arbitrary SQL commands via the id parameter. The attack can be performed unauthenticated if OpenProject is configured not to require authentication for API access.
+cvss_v2: 6.8
+references:
+    - http://packetstormsecurity.com/files/152806/OpenProject-8.3.1-SQL-Injection.html
+    - http://seclists.org/fulldisclosure/2019/May/7
+    - https://groups.google.com/forum/#!msg/openproject-security/XlucAJMxmzM/hESpOaFVAwAJ
+    - https://seclists.org/bugtraq/2019/May/22
+    - https://www.openproject.org/release-notes/openproject-8-3-2/
+affected:
+    - name: mongo-sql
+      version:
+        - "<=6.2.0,5.0.0"
+      fixedin:
+        - "<=4.0.3,0.0.3"
