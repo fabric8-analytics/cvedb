@@ -1,0 +1,29 @@
+---
+cve: 2016-6346
+title: CVE in org.jboss.resteasy:resteasy-jsapi
+description: >
+    RESTEasy enables GZIPInterceptor, which allows remote attackers to cause a denial of service via unspecified vectors.
+cvss_v2: 5.0
+references:
+    - http://rhn.redhat.com/errata/RHSA-2017-0517.html
+    - http://rhn.redhat.com/errata/RHSA-2017-0826.html
+    - http://rhn.redhat.com/errata/RHSA-2017-0827.html
+    - http://rhn.redhat.com/errata/RHSA-2017-0828.html
+    - http://rhn.redhat.com/errata/RHSA-2017-0829.html
+    - http://www.securityfocus.com/bid/92744
+    - https://access.redhat.com/errata/RHSA-2017:1675
+    - https://access.redhat.com/errata/RHSA-2017:1676
+    - https://access.redhat.com/errata/RHSA-2018:0002
+    - https://access.redhat.com/errata/RHSA-2018:0003
+    - https://access.redhat.com/errata/RHSA-2018:0004
+    - https://access.redhat.com/errata/RHSA-2018:0005
+    - https://access.redhat.com/errata/RHSA-2018:2143
+    - https://access.redhat.com/errata/RHSA-2019:1222
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1372120
+affected:
+    - groupId: org.jboss.resteasy
+      artifactId: resteasy-jsapi
+      version:
+        []
+      fixedin:
+        - ">=2.0-beta-1"
