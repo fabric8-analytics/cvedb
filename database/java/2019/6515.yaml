@@ -1,0 +1,16 @@
+---
+cve: 2019-6515
+title: CVE in org.wso2.am:org.wso2.carbon.apimgt.clients.store.api
+description: >
+    An issue was discovered in WSO2 API Manager 2.6.0. Uploaded documents for API documentation are available to an unauthenticated user.
+cvss_v2: 5.0
+references:
+    - https://wso2.com/security-patch-releases/api-manager
+    - https://www.excellium-services.com/cert-xlm-advisory
+affected:
+    - groupId: org.wso2.am
+      artifactId: org.wso2.carbon.apimgt.clients.store.api
+      version:
+        - "<=2.6.0,2.6.0-alpha"
+      fixedin:
+        - "<=2.5.0,2.1.0-update4"
