@@ -1,0 +1,14 @@
+---
+cve: 2018-15128
+title: CVE in series-renamer
+description: >
+    An issue was discovered in Polycom Group Series 6.1.6.1 and earlier, HDX 3.1.12 and earlier, and Pano 1.1.1 and earlier. A remote code execution vulnerability exists in the content sharing functionality because of a Buffer Overflow via crafted packets.
+cvss_v2: 10.0
+references:
+    - https://support.polycom.com/content/dam/polycom-support/global/documentation/remote-code-exectuion-vulnerability-group-series.pdf
+affected:
+    - name: series-renamer
+      version:
+        - "<=1.1.2"
+      fixedin:
+        []
