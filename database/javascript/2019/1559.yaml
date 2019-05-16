@@ -1,0 +1,32 @@
+---
+cve: 2019-1559
+title: CVE in openssl.js
+description: >
+    If an application encounters a fatal protocol error and then calls SSL_shutdown() twice (once to send a close_notify, and once to receive one) then OpenSSL can respond differently to the calling application if a 0 byte record is received with invalid padding compared to if a 0 byte record is received with an invalid MAC. If the application then behaves differently based on that in a way that is detectable to the remote peer, then this amounts to a padding oracle that could be used to decrypt data. In order for this to be exploitable "non-stitched" ciphersuites must be in use. Stitched ciphersuites are optimised implementations of certain commonly used ciphersuites. Also the application must call SSL_shutdown() twice even if a protocol error has occurred (applications should not do this but some do anyway). Fixed in OpenSSL 1.0.2r (Affected 1.0.2-1.0.2q).
+cvss_v2: 4.3
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2019-03/msg00041.html
+    - http://lists.opensuse.org/opensuse-security-announce/2019-04/msg00019.html
+    - http://lists.opensuse.org/opensuse-security-announce/2019-04/msg00046.html
+    - http://lists.opensuse.org/opensuse-security-announce/2019-04/msg00047.html
+    - http://www.securityfocus.com/bid/107174
+    - https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=e9bbefbf0f24c57645e7ad6a5a71ae649d18ac8e
+    - https://kc.mcafee.com/corporate/index?page=content&id=SB10282
+    - https://lists.debian.org/debian-lts-announce/2019/03/msg00003.html
+    - https://security.gentoo.org/glsa/201903-10
+    - https://security.netapp.com/advisory/ntap-20190301-0001/
+    - https://security.netapp.com/advisory/ntap-20190301-0002/
+    - https://security.netapp.com/advisory/ntap-20190423-0002/
+    - https://support.f5.com/csp/article/K18549143
+    - https://usn.ubuntu.com/3899-1/
+    - https://www.debian.org/security/2019/dsa-4400
+    - https://www.openssl.org/news/secadv/20190226.txt
+    - https://www.oracle.com/technetwork/security-advisory/cpuapr2019-5072813.html
+    - https://www.tenable.com/security/tns-2019-02
+    - https://www.tenable.com/security/tns-2019-03
+affected:
+    - name: openssl.js
+      version:
+        - "<=1.0.2"
+      fixedin:
+        []
