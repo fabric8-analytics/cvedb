@@ -1,0 +1,17 @@
+---
+cve: 2018-12545
+title: CVE in org.eclipse.jetty:jetty-server
+description: >
+    In Eclipse Jetty version 9.3.x and 9.4.x, the server is vulnerable to Denial of Service conditions if a remote client sends either large SETTINGs frames container containing many settings, or many small SETTINGs frames. The vulnerability is due to the additional CPU and memory allocations required to handle changed settings.
+cvss_v2: 5.0
+references:
+    - https://bugs.eclipse.org/bugs/show_bug.cgi?id=538096
+affected:
+    - groupId: org.eclipse.jetty
+      artifactId: jetty-server
+      version:
+        - "<=9.3.24.v20180605,9.3.0.M0"
+        - "<=9.4.12.RC2,9.4.0.RC0"
+      fixedin:
+        - ">=9.4.12.v20180830"
+        - ">=9.3.25.v20180904"
