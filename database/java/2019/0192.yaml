@@ -1,6 +1,6 @@
 ---
 cve: 2019-0192
-title: CVE in org.apache.solr:solr-test-framework
+title: CVE in org.apache.solr:solr-core
 description: >
     In Apache Solr versions 5.0.0 to 5.5.5 and 6.0.0 to 6.6.5, the Config API allows to configure the JMX server via an HTTP POST request. By pointing it to a malicious RMI server, an attacker could take advantage of Solr's unsafe deserialization to trigger remote code execution on the Solr side.
 cvss_v2: 7.5
@@ -15,9 +15,10 @@ references:
     - https://security.netapp.com/advisory/ntap-20190327-0003/
 affected:
     - groupId: org.apache.solr
-      artifactId: solr-test-framework
+      artifactId: solr-core
       version:
         - "<=6.6.5,5.0.0"
       fixedin:
+        - ">=6.6.6"
         - ">=7.0.0"
         - "<=4.10.4,3.2.0"
