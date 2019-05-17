@@ -1,0 +1,15 @@
+---
+cve: 2019-0301
+title: CVE in hearthsim-identity
+description: >
+    Under certain conditions, it is possible to request the modification of role or privilege assignments through SAP Identity Management REST Interface Version 2, which would otherwise be restricted only for viewing.
+cvss_v2: 6.5
+references:
+    - https://launchpad.support.sap.com/#/notes/2784307
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=520259032
+affected:
+    - name: hearthsim-identity
+      version:
+        - "<=2.0.0.post1"
+      fixedin:
+        - ">=2.1.0"
