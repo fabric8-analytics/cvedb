@@ -1,0 +1,16 @@
+---
+cve: 2019-0280
+title: CVE in nevolution-risk
+description: >
+    SAP Treasury and Risk Management (EA-FINSERV 6.0, 6.03, 6.04, 6.05, 6.06, 6.16, 6.17, 6.18 and 8.0; S4CORE 1.01, 1.02 and 1.03), does not perform necessary authorization checks for authorization objects T_DEAL_DP and T_DEAL_PD , resulting in escalation of privileges.
+cvss_v2: 6.5
+references:
+    - https://launchpad.support.sap.com/#/notes/2744937
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=520259032
+affected:
+    - name: nevolution-risk
+      version:
+        - "<=8,8"
+      fixedin:
+        - ">=10"
+        - "<=1.38,1.18"
