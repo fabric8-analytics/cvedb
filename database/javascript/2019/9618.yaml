@@ -1,0 +1,16 @@
+---
+cve: 2019-9618
+title: CVE in crossfading-media-player
+description: >
+    The GraceMedia Media Player plugin 1.0 for WordPress allows Local File Inclusion via the "cfg" parameter.
+cvss_v2: 7.5
+references:
+    - http://seclists.org/fulldisclosure/2019/Mar/26
+    - http://seclists.org/fulldisclosure/2019/Mar/32
+    - https://wordpress.org/plugins/gracemedia-media-player/#developers
+affected:
+    - name: crossfading-media-player
+      version:
+        - "<=1.0.0"
+      fixedin:
+        []
