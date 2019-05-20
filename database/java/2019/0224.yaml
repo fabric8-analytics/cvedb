@@ -1,0 +1,19 @@
+---
+cve: 2019-0224
+title: CVE in org.apache.jspwiki.wikipages:jspwiki-wikipages-it
+description: >
+    In Apache JSPWiki 2.9.0 to 2.11.0.M2, a carefully crafted URL could execute javascript on another user's session. No information could be saved on the server or jspwiki database, nor would an attacker be able to execute js on someone else's browser; only on its own browser.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/107631
+    - https://jspwiki-wiki.apache.org/Wiki.jsp?page=CVE-2019-0224
+    - https://lists.apache.org/thread.html/aac253cfc33c0429b528e2fcbe82d3a42d742083c528f58d192dfd16@%3Ccommits.jspwiki.apache.org%3E
+    - https://lists.apache.org/thread.html/b4b4992a93d899050c1117a07c3c7fc9a175ec0672ab97065228de67@%3Cdev.jspwiki.apache.org%3E
+    - https://lists.apache.org/thread.html/e42d6e93384d4a33e939989cd00ea2a06ccf1e7bb1e6bdd3bf5187c1@%3Ccommits.jspwiki.apache.org%3E
+affected:
+    - groupId: org.apache.jspwiki.wikipages
+      artifactId: jspwiki-wikipages-it
+      version:
+        - "<=2.11.0.M4"
+      fixedin:
+        []
