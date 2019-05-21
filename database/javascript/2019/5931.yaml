@@ -1,0 +1,15 @@
+---
+cve: 2019-5931
+title: CVE in @cybozu/eslint-config
+description: >
+    Cybozu Garoon 4.0.0 to 4.6.3 allows authenticated attackers to alter the information with privileges invoking the installer via unspecified vectors.
+cvss_v2: 5.5
+references:
+    - http://jvn.jp/en/jp/JVN58849431/index.html
+    - https://kb.cybozu.support/article/34283/
+affected:
+    - name: @cybozu/eslint-config
+      version:
+        - "<=4.0.1,4.0.0"
+      fixedin:
+        - "<=3.2.1,1.0.0"
