@@ -1,0 +1,17 @@
+---
+cve: 2018-14324
+title: CVE in org.glassfish.main.persistence:glassfish-oracle-jdbc-driver-packages
+description: >
+    The demo feature in Oracle GlassFish Open Source Edition 5.0 has TCP port 7676 open by default with a password of admin for the admin account. This allows remote attackers to obtain potentially sensitive information, perform database operations, or manipulate the demo via a JMX RMI session, aka a "jmx_rmi remote monitoring and control problem." NOTE: this is not an Oracle supported product.
+cvss_v2: 10.0
+references:
+    - http://www.securitytracker.com/id/1041292
+    - https://github.com/eclipse-ee4j/glassfish/issues/22500
+affected:
+    - groupId: org.glassfish.main.persistence
+      artifactId: glassfish-oracle-jdbc-driver-packages
+      version:
+        - "<=5.0,5.0"
+      fixedin:
+        - ">=5.0.1"
+        - "<=4.1.2,3.1.2"
