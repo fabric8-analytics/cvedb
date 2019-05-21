@@ -1,0 +1,15 @@
+---
+cve: 2019-1825
+title: CVE in pi-pin-manager
+description: >
+    A vulnerability in the web-based management interface of Cisco Prime Infrastructure (PI) and Cisco Evolved Programmable Network (EPN) Manager could allow an authenticated, remote attacker to execute arbitrary SQL queries. This vulnerability exist because the software improperly validates user-supplied input in SQL queries. An attacker could exploit this vulnerability by sending a crafted HTTP request that contains malicious SQL statements to the affected application. A successful exploit could allow the attacker to view or modify entries in some database tables, affecting the integrity of the data.
+cvss_v2: 5.5
+references:
+    - http://www.securityfocus.com/bid/108337
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20190515-pi-sqlinject
+affected:
+    - name: pi-pin-manager
+      version:
+        - "<=3.1.0"
+      fixedin:
+        []
