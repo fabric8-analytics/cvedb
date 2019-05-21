@@ -1,0 +1,14 @@
+---
+cve: 2019-11809
+title: CVE in joomla-cli
+description: >
+    An issue was discovered in Joomla! before 3.9.6. The debug views of com_users do not properly escape user supplied data, which leads to a potential XSS attack vector.
+cvss_v2: 4.3
+references:
+    - https://developer.joomla.org/security-centre/780-20190501-core-xss-in-com-users-acl-debug-view
+affected:
+    - name: joomla-cli
+      version:
+        - "<=1.9.0,1.7.0"
+      fixedin:
+        - "<=1.6.2,1.0.3"
