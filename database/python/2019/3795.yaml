@@ -1,0 +1,19 @@
+---
+cve: 2019-3795
+title: CVE in spring
+description: >
+    Spring Security versions 4.2.x prior to 4.2.12, 5.0.x prior to 5.0.12, and 5.1.x prior to 5.1.5 contain an insecure randomness vulnerability when using SecureRandomFactoryBean#setSeed to configure a SecureRandom instance. In order to be impacted, an honest application must provide a seed and make the resulting random material available to an attacker for inspection.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/107802
+    - https://lists.debian.org/debian-lts-announce/2019/05/msg00026.html
+    - https://pivotal.io/security/cve-2019-3795
+affected:
+    - name: spring
+      version:
+        - "<=4.2.6,4.2.0"
+        - "<=5.1.1,5.0.0"
+      fixedin:
+        - ">=5.2.0"
+        - "<=4.4.7,4.3.0"
+        - "<=4.1.0,3.3.0"
