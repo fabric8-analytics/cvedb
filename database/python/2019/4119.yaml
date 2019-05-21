@@ -1,0 +1,16 @@
+---
+cve: 2019-4119
+title: CVE in cloud
+description: >
+    IBM Cloud Private Kubernetes API server 2.1.0, 3.1.0, 3.1.1, and 3.1.2 can be used as an HTTP proxy to not only cluster internal but also external target IP addresses. IBM X-Force ID: 158145.
+cvss_v2: 5.0
+references:
+    - http://www.ibm.com/support/docview.wss?uid=ibm10878460
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/158145
+affected:
+    - name: cloud
+      version:
+        - "<=2.1.0,2.1.0"
+      fixedin:
+        - ">=2.1.1"
+        - "<=1.9.8,1.9.7"
