@@ -1,0 +1,15 @@
+---
+cve: 2019-5955
+title: CVE in create-react-app
+description: >
+    CREATE SD official App for Android version 1.0.2 and earlier allows remote attackers to bypass access restriction to lead a user to access an arbitrary website via vulnerable application and conduct phishing attacks.
+cvss_v2: 5.8
+references:
+    - http://jvn.jp/en/jp/JVN87655507/index.html
+    - https://www.create-sd.co.jp/Portals/0/pdf/appsec_en.pdf
+affected:
+    - name: create-react-app
+      version:
+        - "<=1.0.2"
+      fixedin:
+        - ">=1.0.3"
