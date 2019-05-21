@@ -1,0 +1,15 @@
+---
+cve: 2019-5943
+title: CVE in @cybozu/eslint-config
+description: >
+    Cybozu Garoon 4.0.0 to 4.10.1 allows remote authenticated attackers to bypass access restriction to view the information without view privileges via the application 'Bulletin' and the application 'Cabinet'.
+cvss_v2: 4.0
+references:
+    - http://jvn.jp/en/jp/JVN58849431/index.html
+    - https://kb.cybozu.support/article/35486/
+affected:
+    - name: @cybozu/eslint-config
+      version:
+        - "<=4.0.1,4.0.0"
+      fixedin:
+        - "<=3.2.1,1.0.0"
