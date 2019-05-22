@@ -1,0 +1,15 @@
+---
+cve: 2019-10139
+title: CVE in git-cockpit
+description: >
+    During HE deployment via cockpit-ovirt, cockpit-ovirt generates an ansible variable file `/var/lib/ovirt-hosted-engine-setup/cockpit/ansibleVarFileXXXXXX.var` which contains the admin and the appliance passwords as plain-text. At the of the deployment procedure, these files are deleted.
+cvss_v2: 2.1
+references:
+    - http://www.securityfocus.com/bid/108396
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-10139
+affected:
+    - name: git-cockpit
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
