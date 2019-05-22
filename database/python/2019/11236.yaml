@@ -6,9 +6,10 @@ description: >
 cvss_v2: 4.3
 references:
     - https://github.com/urllib3/urllib3/issues/1553
+    - https://usn.ubuntu.com/3990-1/
 affected:
     - name: urllib3
       version:
-        - "<=1.24.1"
+        - "<=1.24.2"
       fixedin:
-        - ">=1.24.2"
+        - ">=1.24.3"
