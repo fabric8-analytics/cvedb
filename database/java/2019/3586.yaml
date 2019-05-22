@@ -1,0 +1,15 @@
+---
+cve: 2019-3586
+title: CVE in org.glassfish.security:security
+description: >
+    Protection Mechanism Failure in the Firewall in McAfee Endpoint Security (ENS) 10.x prior to 10.6.1 May 2019 update allows context-dependent attackers to circumvent ENS protection where GTI flagged IP addresses are not blocked by the ENS Firewall via specially crafted malicious sites where the GTI reputation is carefully manipulated and does not correctly trigger the ENS Firewall to block the connection.
+cvss_v2: 5.1
+references:
+    - https://kc.mcafee.com/corporate/index?page=content&id=SB10280
+affected:
+    - groupId: org.glassfish.security
+      artifactId: security
+      version:
+        - "<=10.0-b28,10.0-b28"
+      fixedin:
+        - "<=3.2-b06,3.0-b29"
