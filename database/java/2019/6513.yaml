@@ -1,0 +1,17 @@
+---
+cve: 2019-6513
+title: CVE in org.wso2.am:org.wso2.carbon.apimgt.clients.store.api
+description: >
+    An issue was discovered in WSO2 API Manager 2.6.0. It is possible for a logged-in user to upload, as API documentation, any type of file by changing the extension to an allowed one.
+cvss_v2: 5.5
+references:
+    - https://www.excellium-services.com/cert-xlm-advisory
+    - https://www.excellium-services.com/cert-xlm-advisory/cve-2019-6513/
+affected:
+    - groupId: org.wso2.am
+      artifactId: org.wso2.carbon.apimgt.clients.store.api
+      version:
+        - "<=2.6.0,2.6.0-alpha"
+      fixedin:
+        - ">=3.0.0-m32"
+        - "<=2.5.0,2.1.0-update4"
