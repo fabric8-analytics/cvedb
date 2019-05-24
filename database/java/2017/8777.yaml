@@ -1,0 +1,17 @@
+---
+cve: 2017-8777
+title: CVE in io.apiman.plugins:apiman-plugins-soap-authorization-policy
+description: >
+    Open-Xchange GmbH OX Cloud Plugins 1.4.0 and earlier is affected by: Missing Authorization.
+cvss_v2: 6.5
+references:
+    - http://open-xchange.com
+    - http://ox.com
+    - https://software.open-xchange.com/products/appsuite/doc/Release_Notes_for_Patch_Release_4137_1.2.2_2017-05-12.pdf
+affected:
+    - groupId: io.apiman.plugins
+      artifactId: apiman-plugins-soap-authorization-policy
+      version:
+        - "<=1.4.0.Final"
+      fixedin:
+        - ">=1.4.1.Final"
