@@ -1,0 +1,15 @@
+---
+cve: 2018-7823
+title: CVE in com.github.j5ik2o:reactive-kinesis-v1_2.12
+description: >
+    A Environment (CWE-2) vulnerability exists in SoMachine Basic, all versions, and Modicon M221(all references, all versions prior to firmware V1.10.0.0) which could cause remote launch of SoMachine Basic when sending crafted ethernet message.
+cvss_v2: 5.0
+references:
+    - https://www.schneider-electric.com/en/download/document/SEVD-2019-045-01/
+affected:
+    - groupId: com.github.j5ik2o
+      artifactId: reactive-kinesis-v1_2.12
+      version:
+        []
+      fixedin:
+        - ">=1.0.7"
