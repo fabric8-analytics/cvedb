@@ -1,0 +1,19 @@
+---
+cve: 2019-4078
+title: CVE in com.ibm.mq:com.ibm.mq.allclient
+description: >
+    IBM WebSphere MQ 8.0.0.0 through 8.0.0.9 and 9.0.0.0 through 9.1.1 could allow a local non privileged user to execute code as an administrator due to incorrect permissions set on MQ installation directories. IBM X-Force ID: 157190.
+cvss_v2: 7.2
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/157190
+    - https://www.ibm.com/support/docview.wss?uid=ibm10872876
+affected:
+    - groupId: com.ibm.mq
+      artifactId: com.ibm.mq.allclient
+      version:
+        - "<=9.1.0.1,9.1.0.0"
+        - "<=9.1.1.0,9.1.1.0"
+      fixedin:
+        - ">=9.1.2.0"
+        - "<=9.1.0.2,9.1.0.2"
+        - "<=9.0.5.0,0.0.0.2"
