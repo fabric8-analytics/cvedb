@@ -1,0 +1,14 @@
+---
+cve: 2018-7821
+title: CVE in nsepy-v1
+description: >
+    An Environment (CWE-2) vulnerability exists in SoMachine Basic, all versions, and Modicon M221(all references, all versions prior to firmware V1.10.0.0) which could cause cycle time impact when flooding the M221 ethernet interface while the Ethernet/IP adapter is activated.
+cvss_v2: 5.0
+references:
+    - https://www.schneider-electric.com/en/download/document/SEVD-2019-045-01/
+affected:
+    - name: nsepy-v1
+      version:
+        []
+      fixedin:
+        - ">=0.1"
