@@ -1,0 +1,17 @@
+---
+cve: 2019-4039
+title: CVE in com.ibm.mq:com.ibm.mq.allclient
+description: >
+    IBM WebSphere MQ 8.0.0.0 through 8.0.0.9 and 9.0.0.0 through 9.1.1 could allow a local attacker to cause a denial of service within the error log reporting system. IBM X-Force ID: 156163.
+cvss_v2: 2.1
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/156163
+    - https://www.ibm.com/support/docview.wss?uid=ibm10870492
+affected:
+    - groupId: com.ibm.mq
+      artifactId: com.ibm.mq.allclient
+      version:
+        - "<=9.1.1.0,9.1.0.0"
+      fixedin:
+        - ">=9.1.2.0"
+        - "<=9.0.5.0,0.0.0.2"
