@@ -1,0 +1,14 @@
+---
+cve: 2018-7823
+title: CVE in customelements-v1
+description: >
+    A Environment (CWE-2) vulnerability exists in SoMachine Basic, all versions, and Modicon M221(all references, all versions prior to firmware V1.10.0.0) which could cause remote launch of SoMachine Basic when sending crafted ethernet message.
+cvss_v2: 5.0
+references:
+    - https://www.schneider-electric.com/en/download/document/SEVD-2019-045-01/
+affected:
+    - name: customelements-v1
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
