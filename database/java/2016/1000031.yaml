@@ -1,15 +1,28 @@
 ---
 cve: 2016-1000031
-title: RCE in Apache Commons FileUpload
+title: CVE in org.apache.commons:commons-email
 description: >
     Apache Commons FileUpload before 1.3.3 DiskFileItem File Manipulation Remote Code Execution
+Per Apache: "Having reviewed your report we have concluded that it does not represent a valid vulnerability in Apache Commons File Upload. If an application deserializes data from an untrusted source without filtering and/or validation that is an application vulnerability not a vulnerability in the library a potential attacker might leverage."
 cvss_v2: 7.5
 references:
+    - http://lists.opensuse.org/opensuse-security-announce/2019-05/msg00036.html
+    - http://www.oracle.com/technetwork/security-advisory/cpuoct2018-4428296.html
+    - http://www.securityfocus.com/bid/93604
+    - http://www.zerodayinitiative.com/advisories/ZDI-16-570/
     - https://issues.apache.org/jira/browse/FILEUPLOAD-279
-    - https://nvd.nist.gov/vuln/detail/CVE-2016-1000031
+    - https://issues.apache.org/jira/browse/WW-4812
+    - https://lists.apache.org/thread.html/d66657323fd25e437face5e84899c8ca404ccd187e81c3f2fa8b6080@%3Cannounce.apache.org%3E
+    - https://security.netapp.com/advisory/ntap-20190212-0001/
+    - https://www.oracle.com/technetwork/security-advisory/cpuapr2019-5072813.html
+    - https://www.oracle.com/technetwork/security-advisory/cpujan2019-5072801.html
+    - https://www.oracle.com/technetwork/security-advisory/cpuoct2016-2881722.html
+    - https://www.tenable.com/security/research/tra-2016-12
+    - https://www.tenable.com/security/research/tra-2016-23
+    - https://www.tenable.com/security/research/tra-2016-30
 affected:
-    - groupId: commons-fileupload
-      artifactId: commons-fileupload
+    - groupId: org.apache.commons
+      artifactId: commons-email
       version:
         - "<=1.3.2"
       fixedin:
