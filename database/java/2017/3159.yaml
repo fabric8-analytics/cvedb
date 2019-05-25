@@ -1,0 +1,24 @@
+---
+cve: 2017-3159
+title: CVE in org.apache.camel:camel-linkedin
+description: >
+    Apache Camel's camel-snakeyaml component is vulnerable to Java object de-serialization vulnerability. De-serializing untrusted data can lead to security flaws.
+cvss_v2: 7.5
+references:
+    - http://camel.apache.org/security-advisories.data/CVE-2017-3159.txt.asc?version=1&modificationDate=1486565167000&api=v2
+    - http://www.openwall.com/lists/oss-security/2017/05/22/2
+    - http://www.securityfocus.com/bid/96321
+    - https://access.redhat.com/errata/RHSA-2017:0868
+    - https://lists.apache.org/thread.html/2318d7f7d87724d8716cd650c21b31cb06e4d34f6d0f5ee42f28fdaf@%3Ccommits.camel.apache.org%3E
+    - https://lists.apache.org/thread.html/b4014ea7c5830ca1fc28edd5cafedfe93ad4af2d9e69c961c5def31d@%3Ccommits.camel.apache.org%3E
+    - https://www.github.com/mbechler/marshalsec/blob/master/marshalsec.pdf?raw=true
+affected:
+    - groupId: org.apache.camel
+      artifactId: camel-linkedin
+      version:
+        - "<=2.17.4,2.17.0"
+        - "<=2.18.1,2.18.0"
+      fixedin:
+        - ">=2.18.2"
+        - "<=2.17.7,2.17.5"
+        - "<=2.16.5,2.16.0"
