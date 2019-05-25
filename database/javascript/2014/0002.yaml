@@ -1,0 +1,22 @@
+---
+cve: 2014-0002
+title: CVE in camel-case
+description: >
+    The XSLT component in Apache Camel before 2.11.4 and 2.12.x before 2.12.3 allows remote attackers to read arbitrary files and possibly have other unspecified impact via an XML document containing an external entity declaration in conjunction with an entity reference, related to an XML External Entity (XXE) issue.
+cvss_v2: 7.5
+references:
+    - http://camel.apache.org/security-advisories.data/CVE-2014-0002.txt.asc
+    - http://rhn.redhat.com/errata/RHSA-2014-0371.html
+    - http://rhn.redhat.com/errata/RHSA-2014-0372.html
+    - http://secunia.com/advisories/57125
+    - http://secunia.com/advisories/57716
+    - http://secunia.com/advisories/57719
+    - http://www.securityfocus.com/bid/65901
+    - https://lists.apache.org/thread.html/2318d7f7d87724d8716cd650c21b31cb06e4d34f6d0f5ee42f28fdaf@%3Ccommits.camel.apache.org%3E
+    - https://lists.apache.org/thread.html/b4014ea7c5830ca1fc28edd5cafedfe93ad4af2d9e69c961c5def31d@%3Ccommits.camel.apache.org%3E
+affected:
+    - name: camel-case
+      version:
+        - "<=2.1.0"
+      fixedin:
+        - ">=3.0.0"
