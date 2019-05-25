@@ -1,0 +1,22 @@
+---
+cve: 2016-7041
+title: CVE in org.drools:drools-jboss-integration
+description: >
+    Drools Workbench contains a path traversal vulnerability. The vulnerability allows a remote, authenticated attacker to bypass the directory restrictions and retrieve arbitrary files from the affected host.
+cvss_v2: 6.8
+references:
+    - http://rhn.redhat.com/errata/RHSA-2016-2822.html
+    - http://rhn.redhat.com/errata/RHSA-2016-2823.html
+    - http://rhn.redhat.com/errata/RHSA-2016-2937.html
+    - http://rhn.redhat.com/errata/RHSA-2016-2938.html
+    - http://www.securityfocus.com/bid/94566
+    - http://www.securitytracker.com/id/1037406
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2016-7041
+affected:
+    - groupId: org.drools
+      artifactId: drools-jboss-integration
+      version:
+        - "<=6.3.0.Final,6.3.0.Beta1"
+      fixedin:
+        - ">=6.4.0.Beta1"
+        - "<=6.2.0.Final,6.0.0.Beta3"
