@@ -1,0 +1,20 @@
+---
+cve: 2019-5515
+title: CVE in vmware-nsx
+description: >
+    VMware Workstation (15.x before 15.0.3, 14.x before 14.1.6) and Fusion (11.x before 11.0.3, 10.x before 10.1.6) updates address an out-of-bounds write vulnerability in the e1000 and e1000e virtual network adapters. Exploitation of this issue may lead to code execution on the host from the guest but it is more likely to result in a denial of service of the guest.
+cvss_v2: 9.0
+references:
+    - https://packetstormsecurity.com/files/152290/VMware-Security-Advisory-2019-0005.html
+    - https://www.securityfocus.com/bid/107634
+    - https://www.vmware.com/security/advisories/VMSA-2019-0005.html
+    - https://www.zerodayinitiative.com/advisories/ZDI-19-306/
+    - https://www.zerodayinitiative.com/advisories/ZDI-19-516/
+affected:
+    - name: vmware-nsx
+      version:
+        - "<=11.0.2,10.0.0"
+        - "<=14.0.0,14.0.0"
+      fixedin:
+        - "<=13.0.0,12.0.0"
+        - "<=9.2.0,0.1.0"
