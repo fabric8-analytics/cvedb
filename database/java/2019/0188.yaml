@@ -1,0 +1,19 @@
+---
+cve: 2019-0188
+title: CVE in org.apache.camel:camel-json-validator-starter
+description: >
+    Apache Camel prior to 2.24.0 contains an XML external entity injection (XXE) vulnerability (CWE-611) due to using an outdated vulnerable JSON-lib library. This affects only the camel-xmljson component, which was removed.
+cvss_v2: 5.0
+references:
+    - http://jvn.jp/en/jp/JVN71498764/index.html
+    - http://www.openwall.com/lists/oss-security/2019/05/24/2
+    - http://www.securityfocus.com/bid/108422
+    - https://github.com/apache/camel/blob/master/docs/user-manual/en/security-advisories/CVE-2019-0188.txt.asc
+    - https://lists.apache.org/thread.html/00118387610522b107cbdcec5369ddd512b576ff0236a02bfca12f44@%3Cusers.camel.apache.org%3E
+affected:
+    - groupId: org.apache.camel
+      artifactId: camel-json-validator-starter
+      version:
+        - "<=2.23.2"
+      fixedin:
+        - ">=2.24.0"
