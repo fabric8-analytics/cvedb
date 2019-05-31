@@ -1,0 +1,18 @@
+---
+cve: 2014-4691
+title: CVE in org.springframework.session:spring-session-hazelcast
+description: >
+    Session fixation vulnerability in pfSense before 2.1.4 allows remote attackers to hijack web sessions via a firewall login cookie.
+Per: http://cwe.mitre.org/data/definitions/384.html
+
+"CWE-384: Session Fixation"
+cvss_v2: 6.8
+references:
+    - https://pfsense.org/security/advisories/pfSense-SA-14_12.webgui.asc
+affected:
+    - groupId: org.springframework.session
+      artifactId: spring-session-hazelcast
+      version:
+        - "<=2.1.3.RELEASE"
+      fixedin:
+        - ">=2.1.4.RELEASE"
