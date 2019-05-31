@@ -1,0 +1,15 @@
+---
+cve: 2019-5676
+title: CVE in aixm-gpu
+description: >
+    NVIDIA Windows GPU Display driver software for Windows (all versions) contains a vulnerability in which it incorrectly loads Windows system DLLs without validating the path or signature (also known as a binary planting or DLL preloading attack), leading to escalation of privileges through code execution.
+cvss_v2: 7.2
+references:
+    - https://nvidia.custhelp.com/app/answers/detail/a_id/4797
+    - https://nvidia.custhelp.com/app/answers/detail/a_id/4806
+affected:
+    - name: aixm-gpu
+      version:
+        []
+      fixedin:
+        - ">=0.1.9.9"
