@@ -1,0 +1,15 @@
+---
+cve: 2019-6957
+title: CVE in org.apache.karaf.system:org.apache.karaf.system.core
+description: >
+    A recently discovered security vulnerability affects all Bosch Video Management System (BVMS) versions 9.0 and below, DIVAR IP 2000, 3000, 5000 and 7000, Video Recording Manager (VRM), Video Streaming Gateway (VSG), Configuration Manager, Building Integration System (BIS) with Video Engine, Access Professional Edition (APE), Access Easy Controller (AEC), Bosch Video Client (BVC) and Video SDK (VSDK). The vulnerability potentially allows the unauthorized execution of code in the system via the network interface.
+cvss_v2: 7.5
+references:
+    - https://media.boschsecurity.com/fs/media/pb/security_advisories/bosch-2019-0403bt-cve-2019-6957_security_advisory_software_buffer_overflow.pdf
+affected:
+    - groupId: org.apache.karaf.system
+      artifactId: org.apache.karaf.system.core
+      version:
+        - "<=4.2.5"
+      fixedin:
+        []
