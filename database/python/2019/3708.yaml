@@ -1,0 +1,15 @@
+---
+cve: 2019-3708
+title: CVE in contentful-management
+description: >
+    IsilonSD Management Server 1.1.0 contains a cross-site scripting vulnerability while uploading an OVA file. A remote attacker can trick an admin user to potentially exploit this vulnerability to execute malicious HTML or JavaScript code in the context of the admin user.
+cvss_v2: 9.3
+references:
+    - https://seclists.org/fulldisclosure/2019/Apr/16
+affected:
+    - name: contentful-management
+      version:
+        - "<=1.1.0,1.1.0"
+      fixedin:
+        - ">=1.2.0"
+        - "<=1.0.2,1.0.0"
