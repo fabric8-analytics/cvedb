@@ -1,0 +1,19 @@
+---
+cve: 2019-7394
+title: CVE in strong-globalize
+description: >
+    A privilege escalation vulnerability in the administrative user interface of CA Technologies CA Strong Authentication 9.0.x, 8.2.x, 8.1.x, 8.0.x, 7.1.x and CA Risk Authentication 9.0.x, 8.2.x, 8.1.x, 8.0.x, 3.1.x allows an authenticated attacker to gain additional privileges in some cases where an account has customized and limited privileges.
+cvss_v2: 6.5
+references:
+    - http://packetstormsecurity.com/files/153089/CA-Risk-Strong-Authentication-Privilege-Escalation.html
+    - http://seclists.org/fulldisclosure/2019/May/43
+    - http://www.securityfocus.com/bid/108483
+    - https://seclists.org/bugtraq/2019/May/66
+    - https://support.ca.com/us/product-content/recommended-reading/security-notices/CA20190523-01--security-notice-for-ca-risk-authentication-and-ca-strong-authentication.html
+affected:
+    - name: strong-globalize
+      version:
+        - "<=3.1.0,3.1.0"
+      fixedin:
+        - ">=3.2.0"
+        - "<=3.0.0,1.0.0"
