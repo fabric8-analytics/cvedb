@@ -1,0 +1,20 @@
+---
+cve: 2018-8787
+title: CVE in bambu-buffer
+description: >
+    FreeRDP prior to version 2.0.0-rc4 contains an Integer Overflow that leads to a Heap-Based Buffer Overflow in function gdi_Bitmap_Decompress() and results in a memory corruption and probably even a remote code execution.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/106938
+    - https://access.redhat.com/errata/RHSA-2019:0697
+    - https://github.com/FreeRDP/FreeRDP/commit/09b9d4f1994a674c4ec85b4947aa656eda1aed8a
+    - https://lists.debian.org/debian-lts-announce/2019/02/msg00015.html
+    - https://research.checkpoint.com/reverse-rdp-attack-code-execution-on-rdp-clients/
+    - https://usn.ubuntu.com/3845-1/
+    - https://usn.ubuntu.com/3845-2/
+affected:
+    - name: bambu-buffer
+      version:
+        - "<=2.0"
+      fixedin:
+        - ">=2.0.1"
