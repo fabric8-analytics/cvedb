@@ -1,0 +1,17 @@
+---
+cve: 2019-10328
+title: CVE in io.jenkins.archetypes:scripted-pipeline
+description: >
+    Jenkins Pipeline Remote Loader Plugin 1.4 and earlier provided a custom whitelist for script security that allowed attackers to invoke arbitrary methods, bypassing typical sandbox protection.
+cvss_v2: 6.5
+references:
+    - http://www.openwall.com/lists/oss-security/2019/05/31/2
+    - http://www.securityfocus.com/bid/108540
+    - https://jenkins.io/security/advisory/2019-05-31/#SECURITY-921
+affected:
+    - groupId: io.jenkins.archetypes
+      artifactId: scripted-pipeline
+      version:
+        - "<=1.4"
+      fixedin:
+        []
