@@ -7,6 +7,7 @@ cvss_v2: 5.0
 references:
     - http://www.openwall.com/lists/oss-security/2019/04/19/1
     - https://github.com/urllib3/urllib3/compare/a6ec68a...1efadf4
+    - https://usn.ubuntu.com/3990-1/
 affected:
     - name: urllib3
       version:
