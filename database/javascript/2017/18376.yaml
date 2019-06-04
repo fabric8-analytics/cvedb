@@ -1,0 +1,15 @@
+---
+cve: 2017-18376
+title: CVE in @monsenso/user-api
+description: >
+    An improper authorization check in the User API in TheHive before 2.13.4 and 3.x before 3.3.1 allows users with read-only or read/write access to escalate their privileges to the administrator's privileges. This affects app/controllers/UserCtrl.scala.
+cvss_v2: 6.5
+references:
+    - https://github.com/TheHive-Project/TheHive/issues/408
+    - https://github.com/TheHive-Project/TheHive/releases/tag/3.3.1
+affected:
+    - name: @monsenso/user-api
+      version:
+        - "<=3.3.0-prerelease.67"
+      fixedin:
+        - ">=3.3.1-prerelease.9"
