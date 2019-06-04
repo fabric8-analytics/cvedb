@@ -1,0 +1,15 @@
+---
+cve: 2019-3802
+title: CVE in com.cosium.spring.data:spring-data-jpa-entity-graph
+description: >
+    This affects Spring Data JPA in versions up to and including 2.1.6, 2.0.14 and 1.11.20. ExampleMatcher using ExampleMatcher.StringMatcher.STARTING, ExampleMatcher.StringMatcher.ENDING or ExampleMatcher.StringMatcher.CONTAINING could return more results than anticipated when a maliciously crafted example value is supplied.
+cvss_v2: 5.0
+references:
+    - https://pivotal.io/security/cve-2019-3802
+affected:
+    - groupId: com.cosium.spring.data
+      artifactId: spring-data-jpa-entity-graph
+      version:
+        - "<=2.1.0,1.11.00"
+      fixedin:
+        - "<=1.10.15,1.10.04"
