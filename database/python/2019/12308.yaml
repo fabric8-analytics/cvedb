@@ -1,0 +1,26 @@
+---
+cve: 2019-12308
+title: CVE in django
+description: >
+    An issue was discovered in Django 1.11 before 1.11.21, 2.1 before 2.1.9, and 2.2 before 2.2.2. The clickable Current URL value displayed by the AdminURLFieldWidget displays the provided value without validating it as a safe URL. Thus, an unvalidated value stored in the database, or a value provided as a URL query parameter payload, could result in an clickable JavaScript link.
+cvss_v2: 4.3
+references:
+    - http://www.openwall.com/lists/oss-security/2019/06/03/2
+    - http://www.securityfocus.com/bid/108559
+    - https://docs.djangoproject.com/en/dev/releases/1.11.21/
+    - https://docs.djangoproject.com/en/dev/releases/2.1.9/
+    - https://docs.djangoproject.com/en/dev/releases/2.2.2/
+    - https://docs.djangoproject.com/en/dev/releases/security/
+    - https://groups.google.com/forum/#!topic/django-announce/GEbHU7YoVz8
+    - https://www.djangoproject.com/weblog/2019/jun/03/security-releases/
+affected:
+    - name: django
+      version:
+        - "<=1.11.20,1.11a1"
+        - "<=2.1.8,2.1a1"
+        - "<=2.2.1,2.2a1"
+      fixedin:
+        - ">=2.2.2"
+        - "<=2.1.9,2.1.9"
+        - "<=2.0.13,1.11.21"
+        - "<=1.10.8,1.0.1"
