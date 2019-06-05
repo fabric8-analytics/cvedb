@@ -1,0 +1,14 @@
+---
+cve: 2019-9753
+title: CVE in @ovh-ux/ng-ovh-otrs
+description: >
+    An issue was discovered in Open Ticket Request System (OTRS) 7.x before 7.0.5. An attacker who is logged into OTRS as an agent or a customer user can use the search result screens to disclose information from invalid system entities. Following is the list of affected entities: Custom Pages, FAQ Articles, Service Catalogue Items, ITSM Configuration Items.
+cvss_v2: 4.0
+references:
+    - https://community.otrs.com/security-advisory-2019-03-security-update-for-otrs-framework
+affected:
+    - name: @ovh-ux/ng-ovh-otrs
+      version:
+        - "<=7.0.2"
+      fixedin:
+        []
