@@ -1,0 +1,14 @@
+---
+cve: 2019-9891
+title: CVE in monkeydo-scripting
+description: >
+    The function getopt_simple as described in Advanced Bash Scripting Guide (ISBN 978-1435752184) allows privilege escalation and execution of commands when used in a shell script called, for example, via sudo.
+cvss_v2: 10.0
+references:
+    - https://www.redteam-pentesting.de/advisories/rt-sa-2019-007
+affected:
+    - name: monkeydo-scripting
+      version:
+        []
+      fixedin:
+        - ">=0.0.3"
