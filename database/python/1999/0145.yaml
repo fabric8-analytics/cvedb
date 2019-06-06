@@ -1,0 +1,18 @@
+---
+cve: 1999-0145
+title: CVE in flask-send-mail-util
+description: >
+    Sendmail WIZ command enabled, allowing root access.
+cvss_v2: 7.2
+references:
+    - http://www.alw.nih.gov/Security/Docs/admin-guide-to-cracking.101.html
+    - http://www.cert.org/advisories/CA-1990-11.html
+    - http://www.cert.org/advisories/CA-1993-14.html
+    - http://www.openwall.com/lists/oss-security/2019/06/05/4
+    - http://www2.dataguard.no/bugtraq/1995_1/0332.html
+affected:
+    - name: flask-send-mail-util
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
