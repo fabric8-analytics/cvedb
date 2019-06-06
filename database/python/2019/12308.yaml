@@ -12,6 +12,7 @@ references:
     - https://docs.djangoproject.com/en/dev/releases/2.2.2/
     - https://docs.djangoproject.com/en/dev/releases/security/
     - https://groups.google.com/forum/#!topic/django-announce/GEbHU7YoVz8
+    - https://lists.debian.org/debian-lts-announce/2019/06/msg00001.html
     - https://www.djangoproject.com/weblog/2019/jun/03/security-releases/
 affected:
     - name: django
