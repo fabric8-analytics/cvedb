@@ -1,0 +1,16 @@
+---
+cve: 2019-12243
+title: CVE in node-access-control
+description: >
+    Istio 1.1.x through 1.1.6 has Incorrect Access Control.
+cvss_v2: 5.4
+references:
+    - https://istio.io/about/notes/
+    - https://istio.io/blog/2019/cve-2019-12243/
+affected:
+    - name: node-access-control
+      version:
+        - "<=1.1.0,1.1.0"
+      fixedin:
+        - ">=1.2.0"
+        - "<=1.0.0,0.0.1"
