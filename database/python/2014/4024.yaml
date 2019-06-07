@@ -1,0 +1,15 @@
+---
+cve: 2014-4024
+title: CVE in f5-openstack-agent
+description: >
+    SSL virtual servers in F5 BIG-IP systems 10.x before 10.2.4 HF9, 11.x before 11.2.1 HF12, 11.3.0 before HF10, 11.4.0 before HF8, 11.4.1 before HF5, 11.5.0 before HF5, and 11.5.1 before HF5, when used with third-party Secure Sockets Layer (SSL) accelerator cards, might allow remote attackers to have unspecified impact via a timing side-channel attack.
+cvss_v2: 4.3
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/95834
+    - https://support.f5.com/csp/article/K15500
+affected:
+    - name: f5-openstack-agent
+      version:
+        - "<=10.1.0,10.0.0b1"
+      fixedin:
+        - "<=9.6.0,8.0.5"
