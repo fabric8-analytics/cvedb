@@ -1,0 +1,21 @@
+---
+cve: 2009-4420
+title: CVE in f5-openstack-agent
+description: >
+    Buffer overflow in the bd daemon in F5 Networks BIG-IP Application Security Manager (ASM) 9.4.4 through 9.4.7 and 10.0.0 through 10.0.1, and Protocol Security Manager (PSM) 9.4.5 through 9.4.7 and 10.0.0 through 10.0.1, allows remote attackers to cause a denial of service (crash) via unknown vectors.  NOTE: some of these details are obtained from third party information.
+cvss_v2: 7.8
+references:
+    - http://osvdb.org/61297
+    - http://secunia.com/advisories/37805
+    - http://www.securityfocus.com/bid/37452
+    - http://www.securitytracker.com/id?1023386
+    - http://www.vupen.com/english/advisories/2009/3627
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/55005
+    - https://support.f5.com/kb/en-us/solutions/public/10000/400/sol10417.html
+affected:
+    - name: f5-openstack-agent
+      version:
+        - "<=10.0.0,10.0.0b1"
+      fixedin:
+        - ">=10.1.0"
+        - "<=9.6.0,8.0.5"
