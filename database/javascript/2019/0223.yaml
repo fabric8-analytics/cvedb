@@ -1,0 +1,25 @@
+---
+cve: 2019-0223
+title: CVE in qpid-proton-messenger
+description: >
+    While investigating bug PROTON-2014, we discovered that under some circumstances Apache Qpid Proton versions 0.9 to 0.27.0 (C library and its language bindings) can connect to a peer anonymously using TLS *even when configured to verify the peer certificate* while used with OpenSSL versions before 1.1.0. This means that an undetected man in the middle attack could be constructed if an attacker can arrange to intercept TLS traffic.
+cvss_v2: 4.0
+references:
+    - http://www.openwall.com/lists/oss-security/2019/04/23/4
+    - http://www.securityfocus.com/bid/108044
+    - https://access.redhat.com/errata/RHSA-2019:0886
+    - https://access.redhat.com/errata/RHSA-2019:1398
+    - https://access.redhat.com/errata/RHSA-2019:1399
+    - https://access.redhat.com/errata/RHSA-2019:1400
+    - https://issues.apache.org/jira/browse/PROTON-2014?page=com.atlassian.jira.plugin.system.issuetabpanels%3Aall-tabpanel
+    - https://lists.apache.org/thread.html/008ee5e78e5a090e1fcc5f6617f425e4e51d59f03d3eda2dd006df9f@%3Cusers.qpid.apache.org%3E
+    - https://lists.apache.org/thread.html/3adb2f020f705b4fd453982992a68cd10f9d5ac728b699efdb73c1f5@%3Cdev.qpid.apache.org%3E
+    - https://lists.apache.org/thread.html/49c83f0acce5ceaeffca51714ec2ba0f0199bcb8f99167181bba441b@%3Cdev.qpid.apache.org%3E
+    - https://lists.apache.org/thread.html/914424e4d798a340f523b6169aaf39b626971d9bb00fcdeb1d5d6c0d@%3Ccommits.qpid.apache.org%3E
+    - https://lists.apache.org/thread.html/d9c9a882a292e2defaed1f954528c916fb64497ce57db652727e39b0@%3Cannounce.apache.org%3E
+affected:
+    - name: qpid-proton-messenger
+      version:
+        - "<=0.9.0"
+      fixedin:
+        []
