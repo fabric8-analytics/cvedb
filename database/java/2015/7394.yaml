@@ -1,0 +1,18 @@
+---
+cve: 2015-7394
+title: CVE in asm:asm
+description: >
+    The datastor kernel module in F5 BIG-IP Analytics, APM, ASM, Link Controller, and LTM 11.1.0 before 12.0.0, BIG-IP AAM 11.4.0 before 12.0.0, BIG-IP AFM, PEM 11.3.0 before 12.0.0, BIG-IP Edge Gateway, WebAccelerator, and WOM 11.1.0 through 11.3.0, BIG-IP GTM 11.1.0 through 11.6.0, BIG-IP PSM 11.1.0 through 11.4.1, BIG-IQ Cloud and Security 4.0.0 through 4.5.0, BIG-IQ Device 4.2.0 through 4.5.0, BIG-IQ ADC 4.5.0, and Enterprise Manager 3.0.0 through 3.1.1 allows remote authenticated users to cause a denial of service or gain privileges by leveraging permission to upload and execute code.
+cvss_v2: 9.0
+references:
+    - http://www.securitytracker.com/id/1034025
+    - http://www.securitytracker.com/id/1034026
+    - https://support.f5.com/kb/en-us/solutions/public/17000/400/sol17407.html
+affected:
+    - groupId: asm
+      artifactId: asm
+      version:
+        - "<=3.1,3.0"
+      fixedin:
+        - ">=3.2"
+        - "<=2.2.1,1.3.3"
