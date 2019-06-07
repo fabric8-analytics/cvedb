@@ -1,0 +1,16 @@
+---
+cve: 2016-1497
+title: CVE in f5-openstack-lbaasv2-driver
+description: >
+    The Configuration utility in F5 BIG-IP systems 11.0.x, 11.1.x, 11.2.x before 11.2.1 HF16, 11.3.x, 11.4.x before 11.4.1 HF10, 11.5.x before 11.5.4 HF2, 1.6.x before 11.6.1, and 12.0.0 before HF1 allows remote administrators to read Access Policy Manager (APM) access logs via unspecified vectors.
+cvss_v2: 4.0
+references:
+    - http://www.securityfocus.com/bid/92671
+    - http://www.securitytracker.com/id/1036631
+    - https://support.f5.com/kb/en-us/solutions/public/k/31/sol31925518.html
+affected:
+    - name: f5-openstack-lbaasv2-driver
+      version:
+        - "<=12.0.0,11.0.0"
+      fixedin:
+        - "<=10.3.2,8.0.5"
