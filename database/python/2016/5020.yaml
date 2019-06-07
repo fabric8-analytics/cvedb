@@ -1,0 +1,16 @@
+---
+cve: 2016-5020
+title: CVE in f5-openstack-lbaasv2-driver
+description: >
+    F5 BIG-IP before 12.0.0 HF3 allows remote authenticated users to modify the account configuration of users with the Resource Administration role and gain privilege via a crafted external Extended Application Verification (EAV) monitor script.
+cvss_v2: 9.0
+references:
+    - http://www.securityfocus.com/bid/91532
+    - http://www.securitytracker.com/id/1036131
+    - https://support.f5.com/kb/en-us/solutions/public/k/00/sol00265182.html
+affected:
+    - name: f5-openstack-lbaasv2-driver
+      version:
+        - "<=12.0.0,12.0.0"
+      fixedin:
+        - "<=11.0.0,8.0.5"
