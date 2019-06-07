@@ -1,0 +1,14 @@
+---
+cve: 2016-9250
+title: CVE in f5-openstack-lbaasv2-driver
+description: >
+    In F5 BIG-IP 11.2.1, 11.4.0 through 11.6.1, and 12.0.0 through 12.1.2, an unauthenticated user with access to the control plane may be able to delete arbitrary files through an undisclosed mechanism.
+cvss_v2: 5.0
+references:
+    - https://support.f5.com/csp/article/K55792317
+affected:
+    - name: f5-openstack-lbaasv2-driver
+      version:
+        - "<=12.0.0,12.0.0"
+      fixedin:
+        - "<=11.0.0,8.0.5"
