@@ -1,0 +1,16 @@
+---
+cve: 2019-9157
+title: CVE in org.awake-file:awake-file-server
+description: >
+    Gemalto DS3 Authentication Server 2.6.1-SP01 allows Local File Disclosure.
+cvss_v2: 2.7
+references:
+    - http://seclists.org/fulldisclosure/2019/May/6
+    - https://www.sec-consult.com/en/vulnerability-lab/advisories/index.html
+affected:
+    - groupId: org.awake-file
+      artifactId: awake-file-server
+      version:
+        []
+      fixedin:
+        - ">=3.1"
