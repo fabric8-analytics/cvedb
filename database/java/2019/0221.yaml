@@ -1,0 +1,24 @@
+---
+cve: 2019-0221
+title: CVE in org.apache.tomcat:tomcat-jasper
+description: >
+    The SSI printenv command in Apache Tomcat 9.0.0.M1 to 9.0.0.17, 8.5.0 to 8.5.39 and 7.0.0 to 7.0.93 echoes user provided data without escaping and is, therefore, vulnerable to XSS. SSI is disabled by default. The printenv command is intended for debugging and is unlikely to be present in a production website.
+cvss_v2: 4.3
+references:
+    - http://seclists.org/fulldisclosure/2019/May/50
+    - http://www.securityfocus.com/bid/108545
+    - https://lists.apache.org/thread.html/6e6e9eacf7b28fd63d249711e9d3ccd4e0a83f556e324aee37be5a8c@%3Cannounce.tomcat.apache.org%3E
+    - https://lists.debian.org/debian-lts-announce/2019/05/msg00044.html
+    - https://security.netapp.com/advisory/ntap-20190606-0001/
+    - https://wwws.nightwatchcybersecurity.com/2019/05/27/xss-in-ssi-printenv-command-apache-tomcat-cve-2019-0221/
+affected:
+    - groupId: org.apache.tomcat
+      artifactId: tomcat-jasper
+      version:
+        - "<=7.0.93"
+        - "<=8.5.39,8.5.0"
+        - "<=9.0.17,9.0.0.M1"
+      fixedin:
+        - ">=9.0.19"
+        - "<=8.5.42,8.5.40"
+        - "<=8.0.53,7.0.94"
