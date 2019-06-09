@@ -1,0 +1,16 @@
+---
+cve: 2019-12728
+title: CVE in org.grails:grails-docs
+description: >
+    Grails before 3.3.10 used cleartext HTTP to resolve the SDKMan notification service. NOTE: users' apps were not resolving dependencies over cleartext HTTP.
+cvss_v2: 6.8
+references:
+    - https://github.com/grails/grails-core/issues/11250
+    - https://objectcomputing.com/news/2019/05/30/possible-grails-mitm-vulnerability
+affected:
+    - groupId: org.grails
+      artifactId: grails-docs
+      version:
+        - "<=3.3.3"
+      fixedin:
+        - ">=3.3.10"
