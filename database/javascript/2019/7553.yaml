@@ -1,0 +1,15 @@
+---
+cve: 2019-7553
+title: CVE in sv-auditor
+description: >
+    PHP Scripts Mall Chartered Accountant : Auditor Website 2.0.1 has Stored XSS in the Profile Update page via the My Name field.
+cvss_v2: 3.5
+references:
+    - http://74.124.215.220/~projclient/client/auditor/profile.php
+    - https://securityhitlist.blogspot.com/2019/02/cve-2019-7553-stores-xss-in-php-scripts.html
+affected:
+    - name: sv-auditor
+      version:
+        - "<=2.0.1,2.0.1"
+      fixedin:
+        - "<=2.0.0,2.0.0"
