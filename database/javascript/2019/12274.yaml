@@ -1,0 +1,15 @@
+---
+cve: 2019-12274
+title: CVE in rancher-for-ci
+description: >
+    In Rancher 1 and 2 through 2.2.3, unprivileged users (if allowed to deploy nodes) can gain admin access to the Rancher management plane because node driver options intentionally allow posting certain data to the cloud. The problem is that a user could choose to post a sensitive file such as /root/.kube/config or /var/lib/rancher/management-state/cred/kubeconfig-system.yaml.
+cvss_v2: 4.0
+references:
+    - https://forums.rancher.com/c/announcements
+    - https://forums.rancher.com/t/rancher-release-v2-2-4-addresses-rancher-cve-2019-12274-and-cve-2019-12303/14466
+affected:
+    - name: rancher-for-ci
+      version:
+        - "<=1.2.1"
+      fixedin:
+        []
