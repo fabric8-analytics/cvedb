@@ -1,0 +1,16 @@
+---
+cve: 2019-12387
+title: CVE in twisted
+description: >
+    In Twisted before 19.2.1, twisted.web did not validate or sanitize URIs or HTTP methods, allowing an attacker to inject invalid characters such as CRLF.
+cvss_v2: 4.3
+references:
+    - https://github.com/twisted/twisted/commit/6c61fc4503ae39ab8ecee52d10f10ee2c371d7e2
+    - https://labs.twistedmatrix.com/2019/06/twisted-1921-released.html
+    - https://twistedmatrix.com/pipermail/twisted-python/2019-June/032352.html
+affected:
+    - name: twisted
+      version:
+        - "<=19.2.0"
+      fixedin:
+        - ">=19.2.1"
