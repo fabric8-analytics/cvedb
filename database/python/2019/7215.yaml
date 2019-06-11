@@ -1,0 +1,15 @@
+---
+cve: 2019-7215
+title: CVE in progress-bar
+description: >
+    Progress Sitefinity 10.1.6536 does not invalidate session cookies upon logouts. It instead tries to overwrite the cookie in the browser, but it remains valid on the server side. This means the cookie can be reused to maintain access to the account, even if the account credentials and permissions are changed.
+cvss_v2: 6.4
+references:
+    - https://knowledgebase.progress.com/#sort=relevancy&f:@objecttypelabel=[Product%20Alert]
+    - https://knowledgebase.progress.com/articles/Article/Security-Advisory-For-Resolving-Security-Vulnerabilities-May-2019
+affected:
+    - name: progress-bar
+      version:
+        - "<=8,7"
+      fixedin:
+        - "<=6.0,1"
