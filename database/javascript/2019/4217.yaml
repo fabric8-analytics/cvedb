@@ -1,0 +1,15 @@
+---
+cve: 2019-4217
+title: CVE in property-information
+description: >
+    IBM Security Information Queue (ISIQ) 1.0.0, 1.0.1, and 1.0.2 could allow a remote attacker to hijack the clicking action of the victim. By persuading a victim to visit a malicious Web site, a remote attacker could exploit this vulnerability to hijack the victim's click actions and possibly launch further attacks against the victim. IBM X-Force ID: 159226.
+cvss_v2: 4.3
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/159226
+    - https://www.ibm.com/support/docview.wss?uid=ibm10886051
+affected:
+    - name: property-information
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=2.0.0"
