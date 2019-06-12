@@ -1,0 +1,27 @@
+---
+cve: 2018-11763
+title: CVE in org.apache.karaf.http:org.apache.karaf.http.core
+description: >
+    In Apache HTTP Server 2.4.17 to 2.4.34, by sending continuous, large SETTINGS frames a client can occupy a connection, server thread and CPU time without any connection timeout coming to effect. This affects only HTTP/2 connections. A possible mitigation is to not enable the h2 protocol.
+cvss_v2: 4.3
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2019-06/msg00030.html
+    - http://www.securityfocus.com/bid/105414
+    - http://www.securitytracker.com/id/1041713
+    - https://access.redhat.com/errata/RHSA-2018:3558
+    - https://access.redhat.com/errata/RHSA-2019:0366
+    - https://access.redhat.com/errata/RHSA-2019:0367
+    - https://httpd.apache.org/security/vulnerabilities_24.html
+    - https://security.netapp.com/advisory/ntap-20190204-0004/
+    - https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbux03909en_us
+    - https://usn.ubuntu.com/3783-1/
+    - https://www.oracle.com/technetwork/security-advisory/cpuapr2019-5072813.html
+    - https://www.oracle.com/technetwork/security-advisory/cpujan2019-5072801.html
+affected:
+    - groupId: org.apache.karaf.http
+      artifactId: org.apache.karaf.http.core
+      version:
+        - "<=4.2.1,4.2.0.M1"
+      fixedin:
+        - ">=4.2.2"
+        - "<=4.1.7,3.0.0.RC1"
