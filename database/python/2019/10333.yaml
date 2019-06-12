@@ -1,0 +1,15 @@
+---
+cve: 2019-10333
+title: CVE in pip-missing-reqs
+description: >
+    Missing permission checks in Jenkins ElectricFlow Plugin 1.1.5 and earlier in various HTTP endpoints allowed users with Overall/Read access to obtain information about the Jenkins ElectricFlow Plugin configuration and configuration of connected ElectricFlow instances.
+cvss_v2: 4.0
+references:
+    - http://www.openwall.com/lists/oss-security/2019/06/11/1
+    - https://jenkins.io/security/advisory/2019-06-11/#SECURITY-1410%20(2)
+affected:
+    - name: pip-missing-reqs
+      version:
+        - "<=1.1.5"
+      fixedin:
+        - ">=1.1.6"
