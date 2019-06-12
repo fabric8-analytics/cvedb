@@ -1,0 +1,16 @@
+---
+cve: 2012-5786
+title: CVE in org.apache.cxf:cxf-bundle
+description: >
+    ** DISPUTED ** The wsdl_first_https sample code in distribution/src/main/release/samples/wsdl_first_https/src/main/ in Apache CXF before 2.7.0 does not verify that the server hostname matches a domain name in the subject's Common Name (CN) or subjectAltName field of the X.509 certificate, which allows man-in-the-middle attackers to spoof SSL servers via an arbitrary valid certificate. NOTE: The vendor states that the sample had specifically used a flag to bypass the DN check.
+cvss_v2: 5.8
+references:
+    - http://www.cs.utexas.edu/~shmat/shmat_ccs12.pdf
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/79983
+affected:
+    - groupId: org.apache.cxf
+      artifactId: cxf-bundle
+      version:
+        - "<=2.6.17"
+      fixedin:
+        - ">=2.7.0"
