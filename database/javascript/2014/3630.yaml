@@ -1,0 +1,17 @@
+---
+cve: 2014-3630
+title: CVE in audio-play
+description: >
+    XML external entity (XXE) vulnerability in the Java XML processing functionality in Play before 2.2.6 and 2.3.x before 2.3.5 might allow remote attackers to read arbitrary files, cause a denial of service, or have unspecified other impact via crafted XML data.
+cvss_v2: 7.5
+references:
+    - https://groups.google.com/forum/#!msg/play-framework/7uNX_ImTW08/AogWSjsTAyQJ
+    - https://groups.google.com/forum/#!topic/play-framework/WdbFvemsFDQ
+    - https://infocon.org/cons/SyScan/SyScan%202015%20Singapore/SyScan%202015%20Singapore%20presentations/SyScan15%20David%20Jorm%20-%20Finding%20and%20exploiting%20novel%20flaws%20in%20Java%20software.pdf
+    - https://playframework.com/security/vulnerability/CVE-2014-3630-XmlExternalEntity
+affected:
+    - name: audio-play
+      version:
+        - "<=2.2.1,2.2.0"
+      fixedin:
+        - "<=2.1.1,1.0.0"
