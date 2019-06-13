@@ -1,0 +1,19 @@
+---
+cve: 2014-3526
+title: CVE in org.apache.wicket:wicket-core
+description: >
+    Apache Wicket before 1.5.12, 6.x before 6.17.0, and 7.x before 7.0.0-M3 might allow remote attackers to obtain sensitive information via vectors involving identifiers for storing page markup for temporary user sessions.
+cvss_v2: 5.0
+references:
+    - https://wicket.apache.org/news/2014/09/22/cve-2014-3526.html
+affected:
+    - groupId: org.apache.wicket
+      artifactId: wicket-core
+      version:
+        - "<=1.5.11"
+        - "<=6.16.0,6.0.0-beta1"
+        - "<=7.0.0,7.0.0-M1"
+      fixedin:
+        - ">=7.1.0"
+        - "<=6.30.0,6.17.0"
+        - "<=1.5.17,1.5.12"
