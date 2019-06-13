@@ -11,6 +11,7 @@ references:
     - https://access.redhat.com/errata/RHSA-2018:1263
     - https://access.redhat.com/errata/RHSA-2018:1264
     - https://github.com/salesforce/tough-cookie/issues/92
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6VEBDTGNHVM677SLZDEHMWOP3ISMZSFT/
     - https://nodesecurity.io/advisories/525
     - https://snyk.io/vuln/npm:tough-cookie:20170905
 affected:
