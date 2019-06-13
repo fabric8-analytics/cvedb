@@ -1,0 +1,17 @@
+---
+cve: 2019-12149
+title: CVE in mongo-sql
+description: >
+    SQL injection vulnerability in silverstripe/restfulserver module 1.0.x before 1.0.9, 2.0.x before 2.0.4, and 2.1.x before 2.1.2 and silverstripe/registry module 2.1.x before 2.1.1 and 2.2.x before 2.2.1 allows attackers to execute arbitrary SQL commands.
+cvss_v2: 7.5
+references:
+    - https://www.silverstripe.org/download/security-releases/cve-2019-12149
+affected:
+    - name: mongo-sql
+      version:
+        - "<=2.0.3,2.0.0"
+        - "<=2.2.0,2.2.0"
+      fixedin:
+        - ">=2.2.1"
+        - "<=2.1.20,2.0.4"
+        - "<=1.1.0,0.0.3"
