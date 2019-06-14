@@ -1,0 +1,20 @@
+---
+cve: 2011-0509
+title: CVE in com.vaadin:vaadin
+description: >
+    Cross-site scripting (XSS) vulnerability in Vaadin before 6.4.9 allows remote attackers to inject arbitrary web script or HTML via unknown vectors related to the index page.
+cvss_v2: 4.3
+references:
+    - http://dev.vaadin.com/ticket/6257
+    - http://osvdb.org/70398
+    - http://secunia.com/advisories/42879
+    - http://vaadin.com/download/release/6.4/6.4.9/release-notes.html
+    - http://www.securityfocus.com/bid/45779
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/64626
+affected:
+    - groupId: com.vaadin
+      artifactId: vaadin
+      version:
+        - "<=6.4.8"
+      fixedin:
+        - ">=6.4.9"
