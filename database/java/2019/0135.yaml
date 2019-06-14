@@ -1,0 +1,15 @@
+---
+cve: 2019-0135
+title: CVE in org.randombits.storage:storage-servlet
+description: >
+    Improper permissions in the installer for Intel(R) Accelerated Storage Manager in Intel(R) RSTe before version 5.5.0.2015 may allow an authenticated user to potentially enable escalation of privilege via local access. L-SA-00206
+cvss_v2: 4.6
+references:
+    - https://www.intel.com/content/www/us/en/security-center/advisory/in
+affected:
+    - groupId: org.randombits.storage
+      artifactId: storage-servlet
+      version:
+        - "<=5.5.0"
+      fixedin:
+        []
