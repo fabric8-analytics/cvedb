@@ -1,0 +1,16 @@
+---
+cve: 2019-0306
+title: CVE in org.apache.aries.application:org.apache.aries.application.default.local.platform
+description: >
+    SAP HANA Extended Application Services (advanced model), version 1, allows authenticated low privileged XS Advanced Platform users such as SpaceAuditors to execute requests to obtain a complete list of SAP HANA user IDs and names.
+cvss_v2: 4.0
+references:
+    - https://launchpad.support.sap.com/#/notes/2771128
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=521864242
+affected:
+    - groupId: org.apache.aries.application
+      artifactId: org.apache.aries.application.default.local.platform
+      version:
+        - "<=1.0.0,1.0.0"
+      fixedin:
+        - "<=0.3,0.3"
