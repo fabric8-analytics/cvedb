@@ -1,0 +1,15 @@
+---
+cve: 2019-4239
+title: CVE in base-private
+description: >
+    IBM MQ Advanced Cloud Pak (IBM Cloud Private 1.0.0 through 3.0.1) stores user credentials in plain in clear text which can be read by a local user. IBM X-Force ID: 159465.
+cvss_v2: 2.1
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/159465
+    - https://www.ibm.com/support/docview.wss?uid=ibm10886591
+affected:
+    - name: base-private
+      version:
+        - "<=1.0,1.0"
+      fixedin:
+        - "<=0.5,0.1"
