@@ -1,0 +1,16 @@
+---
+cve: 2019-0303
+title: CVE in phishme-intelligence
+description: >
+    SAP BusinessObjects Business Intelligence Platform (Administration Console), versions 4.2, 4.3, module BILogon/appService.jsp is reflecting requested parameter errMsg into response content without sanitation. This could be used by an attacker to build a special url that execute custom JavaScript code when the url is accessed.
+cvss_v2: 4.3
+references:
+    - https://launchpad.support.sap.com/#/notes/2637997
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=521864242
+affected:
+    - name: phishme-intelligence
+      version:
+        - "<=4.3.0,4.2.0"
+      fixedin:
+        - ">=4.3.1"
+        - "<=4.1.9,4.1.1"
