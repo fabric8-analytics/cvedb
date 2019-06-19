@@ -1,0 +1,16 @@
+---
+cve: 2018-20472
+title: CVE in de.pro-vision.maven:de.pro-vision.maven.build-tools.global-build-tools
+description: >
+    An issue was discovered in Tyto Sahi Pro through 7.x.x and 8.0.0. The logs web interface is vulnerable to stored XSS.
+cvss_v2: 4.3
+references:
+    - http://packetstormsecurity.com/files/153332/Sahi-Pro-8.x-Cross-Site-Scripting.html
+    - https://barriersec.com/2019/06/cve-2018-20472-sahi-pro/
+affected:
+    - groupId: de.pro-vision.maven
+      artifactId: de.pro-vision.maven.build-tools.global-build-tools
+      version:
+        - "<=8"
+      fixedin:
+        - ">=9"
