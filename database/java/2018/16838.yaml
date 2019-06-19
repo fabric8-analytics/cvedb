@@ -1,0 +1,16 @@
+---
+cve: 2018-16838
+title: CVE in com.covisint.platform.group.core:group-core
+description: >
+    A flaw was found in sssd Group Policy Objects implementation. When the GPO is not readable by SSSD due to a too strict permission settings on the server side, SSSD will allow all authenticated users to login instead of denying access.
+cvss_v2: 5.5
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2019-06/msg00042.html
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-16838
+affected:
+    - groupId: com.covisint.platform.group.core
+      artifactId: group-core
+      version:
+        []
+      fixedin:
+        - ">=1.0.0.RELEASE"
