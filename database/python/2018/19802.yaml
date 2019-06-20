@@ -1,0 +1,14 @@
+---
+cve: 2018-19802
+title: CVE in aubio
+description: >
+    aubio v0.4.0 to v0.4.8 has a Buffer Overflow (issue 2 of 3).
+cvss_v2: 5.0
+references:
+    - https://github.com/aubio/aubio/blob/0.4.9/ChangeLog
+affected:
+    - name: aubio
+      version:
+        - "<=0.4.8"
+      fixedin:
+        - ">=0.4.9"
