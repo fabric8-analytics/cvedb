@@ -7,11 +7,13 @@ cvss_v2: 5.0
 references:
     - https://epadillas.github.io/2018/04/02/http-header-splitting-in-gunicorn-19.4.5
     - https://github.com/benoitc/gunicorn/issues/1227
-    - https://github.com/benoitc/gunicorn/commit/1e10a02e73c87dfadc394b361af33864d0e59e24
-    - https://nvd.nist.gov/vuln/detail/CVE-2018-1000164
+    - https://lists.debian.org/debian-lts-announce/2018/04/msg00022.html
+    - https://usn.ubuntu.com/4022-1/
+    - https://www.debian.org/security/2018/dsa-4186
 affected:
     - name: gunicorn
       version:
-        - "==19.4.5"
+        - "<=19.4.5,19.4.5"
       fixedin:
         - ">=19.5.0"
+        - "<=19.4.4,0.1"
