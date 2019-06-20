@@ -1,0 +1,15 @@
+---
+cve: 2019-10157
+title: CVE in keycloak-js
+description: >
+    It was found that Keycloak's Node.js adapter before version 4.8.3 did not properly verify the web token received from the server in its backchannel logout . An attacker with local access could use this to construct a malicious web token setting an NBF parameter that could prevent user access indefinitely.
+cvss_v2: 2.1
+references:
+    - http://www.securityfocus.com/bid/108734
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-10157
+affected:
+    - name: keycloak-js
+      version:
+        - "<=4.8.2"
+      fixedin:
+        - ">=4.8.3"
