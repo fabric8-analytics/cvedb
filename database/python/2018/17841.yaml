@@ -1,0 +1,15 @@
+---
+cve: 2018-17841
+title: CVE in backuppc-clone
+description: >
+    SQL injection exists in Scriptzee Flippa Marketplace Clone 1.0 via the site-search sortBy or sortDir parameter.
+cvss_v2: 7.5
+references:
+    - https://www.exploit-db.com/author/?a=8844
+    - https://www.exploit-db.com/exploits/41674
+affected:
+    - name: backuppc-clone
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
