@@ -1,0 +1,16 @@
+---
+cve: 2018-17840
+title: CVE in commons-sql:commons-sql
+description: >
+    SQL injection exists in Scriptzee Education Website 1.0 via the college_list.html subject, city, or country parameter.
+cvss_v2: 7.5
+references:
+    - https://www.exploit-db.com/author/?a=8844
+    - https://www.exploit-db.com/exploits/45510
+affected:
+    - groupId: commons-sql
+      artifactId: commons-sql
+      version:
+        - "<=1.0-dev.20021014.094724"
+      fixedin:
+        - ">=20030714.162948"
