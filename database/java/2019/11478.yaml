@@ -1,0 +1,22 @@
+---
+cve: 2019-11478
+title: CVE in com.ip2proxy:ip2proxy-java
+description: >
+    Jonathan Looney discovered that the TCP retransmission queue implementation in tcp_fragment in the Linux kernel could be fragmented when handling certain TCP Selective Acknowledgment (SACK) sequences. A remote attacker could use this to cause a denial of service. This has been fixed in stable kernel releases 4.4.182, 4.9.182, 4.14.127, 4.19.52, 5.1.11, and is fixed in commit f070ef2ac66716357066b683fb0baf55f8191a2e.
+cvss_v2: 5.0
+references:
+    - http://packetstormsecurity.com/files/153346/Kernel-Live-Patch-Security-Notice-LSN-0052-1.html
+    - https://access.redhat.com/security/vulnerabilities/tcpsack
+    - https://git.kernel.org/pub/scm/linux/kernel/git/davem/net.git/commit/?id=f070ef2ac66716357066b683fb0baf55f8191a2e
+    - https://github.com/Netflix/security-bulletins/blob/master/advisories/third-party/2019-001.md
+    - https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44193
+    - https://support.f5.com/csp/article/K26618426
+    - https://wiki.ubuntu.com/SecurityTeam/KnowledgeBase/SACKPanic
+    - https://www.kb.cert.org/vuls/id/905115
+affected:
+    - groupId: com.ip2proxy
+      artifactId: ip2proxy-java
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - "<=1.0.1,1.0.1"
