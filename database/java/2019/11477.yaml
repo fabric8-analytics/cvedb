@@ -1,0 +1,24 @@
+---
+cve: 2019-11477
+title: CVE in org.wso2.extension.siddhi.io.tcp:siddhi-io-tcp
+description: >
+    Jonathan Looney discovered that the TCP_SKB_CB(skb)->tcp_gso_segs value was subject to an integer overflow in the Linux kernel when handling TCP Selective Acknowledgments (SACKs). A remote attacker could use this to cause a denial of service. This has been fixed in stable kernel releases 4.4.182, 4.9.182, 4.14.127, 4.19.52, 5.1.11, and is fixed in commit 3b4929f65b0d8249f19a50245cd88ed1a2f78cff.
+cvss_v2: 7.8
+references:
+    - http://packetstormsecurity.com/files/153346/Kernel-Live-Patch-Security-Notice-LSN-0052-1.html
+    - http://www.openwall.com/lists/oss-security/2019/06/20/3
+    - https://access.redhat.com/security/vulnerabilities/tcpsack
+    - https://git.kernel.org/pub/scm/linux/kernel/git/davem/net.git/commit/?id=3b4929f65b0d8249f19a50245cd88ed1a2f78cff
+    - https://github.com/Netflix/security-bulletins/blob/master/advisories/third-party/2019-001.md
+    - https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44193
+    - https://support.f5.com/csp/article/K78234183
+    - https://wiki.ubuntu.com/SecurityTeam/KnowledgeBase/SACKPanic
+    - https://www.kb.cert.org/vuls/id/905115
+affected:
+    - groupId: org.wso2.extension.siddhi.io.tcp
+      artifactId: siddhi-io-tcp
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - ">=2.0.1"
+        - "<=1.0.0,1.0.0"
