@@ -1,0 +1,16 @@
+---
+cve: 2018-20092
+title: CVE in org.bonitasoft.platform:platform-setup
+description: >
+    PTC ThingWorx Platform through 8.3.0 is vulnerable to a directory traversal attack on ZIP files via a POST request.
+cvss_v2: 5.0
+references:
+    - https://www.doyler.net/security-not-included/ptc-thingworx-vulnerability
+    - https://www.ptc.com/en/documents/security/coordinated-vulnerability-disclosure/security-vulnerabilities
+affected:
+    - groupId: org.bonitasoft.platform
+      artifactId: platform-setup
+      version:
+        - "<=7.4.3"
+      fixedin:
+        - ">=7.5.0.beta-02"
