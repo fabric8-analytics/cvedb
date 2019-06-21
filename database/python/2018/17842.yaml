@@ -1,0 +1,16 @@
+---
+cve: 2018-17842
+title: CVE in xm-booking
+description: >
+    SQL injection exists in Scriptzee Hotel Booking Engine 1.0 via the hotels h_room_type parameter.
+cvss_v2: 7.5
+references:
+    - https://www.exploit-db.com/author/?a=8844
+    - https://www.exploit-db.com/exploits/45509
+affected:
+    - name: xm-booking
+      version:
+        - "<=1.0,1.0"
+      fixedin:
+        - ">=1.1"
+        - "<=0.9,0.1"
