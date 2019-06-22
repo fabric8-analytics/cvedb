@@ -1,0 +1,14 @@
+---
+cve: 2017-14394
+title: CVE in @forgerock/openam-agent
+description: >
+    OAuth 2.0 Authorization Server of ForgeRock Access Management (OpenAM) 13.5.0-13.5.1 and Access Management (AM) 5.0.0-5.1.1 does not correctly validate redirect_uri for some invalid requests, which allows attackers to perform phishing via an unvalidated redirect.
+cvss_v2: 5.8
+references:
+    - https://backstage.forgerock.com/knowledge/kb/article/a45958025
+affected:
+    - name: @forgerock/openam-agent
+      version:
+        - "<=5.0.0,5.0.0-beta.1"
+      fixedin:
+        - "<=4.0.5,4.0.0"
