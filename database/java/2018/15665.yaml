@@ -1,0 +1,17 @@
+---
+cve: 2018-15665
+title: CVE in org.springframework.data:spring-data-couchbase
+description: >
+    An issue was discovered in Cloudera Data Science Workbench (CDSW) 1.2.x through 1.4.0. Unauthenticated users can get a list of user accounts.
+cvss_v2: 5.0
+references:
+    - https://www.cloudera.com
+    - https://www.cloudera.com/documentation/other/security-bulletins/topics/Security-Bulletin.html
+affected:
+    - groupId: org.springframework.data
+      artifactId: spring-data-couchbase
+      version:
+        - "<=1.4.0.RELEASE,1.2.0.RELEASE"
+      fixedin:
+        - ">=1.4.1.RELEASE"
+        - "<=1.1.6.RELEASE,1.0.0.RELEASE"
