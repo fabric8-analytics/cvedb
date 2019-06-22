@@ -1,0 +1,15 @@
+---
+cve: 2019-12899
+title: CVE in builder
+description: >
+    Delta Electronics DeviceNet Builder 2.04 has a User Mode Write AV starting at ntdll!RtlQueueWorkItem+0x00000000000005e3.
+cvss_v2: 7.5
+references:
+    - https://code610.blogspot.com/2019/05/crashing-devicenet-builder.html
+affected:
+    - name: builder
+      version:
+        - "<=2.4.0,2.4.0"
+      fixedin:
+        - ">=2.5.0"
+        - "<=2.3.3,0.0.1"
