@@ -1,0 +1,14 @@
+---
+cve: 2017-17944
+title: CVE in pip-missing-reqs
+description: >
+    The ASUS Vivobaby application before 1.1.09 for Android has Missing SSL Certificate Validation.
+cvss_v2: 6.4
+references:
+    - http://firstsight.me/2017/12/lack-of-binary-protection-at-asus-vivo-baby-and-hivivo-for-android-that-could-result-of-several-security-issues
+affected:
+    - name: pip-missing-reqs
+      version:
+        - "<=1.2.1"
+      fixedin:
+        []
