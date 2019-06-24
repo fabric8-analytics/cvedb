@@ -1,0 +1,16 @@
+---
+cve: 2018-15913
+title: CVE in webdriver-manager
+description: >
+    An issue was discovered in Cloudera Manager 5.x through 5.15.0. One type of page in Cloudera Manager uses a 'returnUrl' parameter to redirect the user to another page in Cloudera Manager once a wizard is completed. The validity of this parameter was not checked. As a result, the user could be automatically redirected to an attacker's external site or perform a malicious JavaScript function that results in cross-site scripting (XSS). This was fixed by not allowing any value in the returnUrl parameter with patterns such as http://, https://, //, or javascript. The only exceptions to this rule are the SAML Login/Logout URLs, which remain supported since they are explicitly configured and they are not passed via the returnUrl parameter.
+cvss_v2: 4.3
+references:
+    - https://www.cloudera.com/documentation/other/security-bulletins/topics/Security-Bulletin.html
+    - https://www.cloudera.com/documentation/other/security-bulletins/topics/Security-Bulletin.html#cloudera_manager
+affected:
+    - name: webdriver-manager
+      version:
+        - "<=5.2.0,5.0.0"
+      fixedin:
+        - ">=6.0.0"
+        - "<=4.0.0,0.0.1"
