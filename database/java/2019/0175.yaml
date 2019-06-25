@@ -1,0 +1,15 @@
+---
+cve: 2019-0175
+title: CVE in com.revolsys.open:com.revolsys.open.doclet
+description: >
+    Insufficient password protection in the attestation database for Open CIT may allow an authenticated user to potentially enable information disclosure via local access.
+cvss_v2: 3.6
+references:
+    - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00248.html
+affected:
+    - groupId: com.revolsys.open
+      artifactId: com.revolsys.open.doclet
+      version:
+        []
+      fixedin:
+        - ">=0.20160922.121113-CPF_5_0_0-RELEASE"
