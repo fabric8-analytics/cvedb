@@ -1,0 +1,14 @@
+---
+cve: 2019-0182
+title: CVE in aws-open
+description: >
+    Insufficient password protection in the attestation database for Open CIT may allow an authenticated user to potentially enable information disclosure via local access.
+cvss_v2: 2.1
+references:
+    - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00248.html
+affected:
+    - name: aws-open
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
