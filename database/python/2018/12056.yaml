@@ -1,0 +1,15 @@
+---
+cve: 2018-12056
+title: CVE in highlander-one
+description: >
+    The maxRandom function of a smart contract implementation for All For One, an Ethereum gambling game, generates a random value with publicly readable variables because the _seed value can be retrieved with a getStorageAt call. Therefore, it allows attackers to always win and get rewards.
+cvss_v2: 5.0
+references:
+    - https://lists.apache.org/thread.html/a62aa2706105d68f1c02023fe24aaa3c13b4d8a1826181fed07d9682@%3Cnotifications.zookeeper.apache.org%3E
+    - https://medium.com/@jonghyk.song/to-be-a-winner-of-ethereum-gambling-game-all-for-one-by-breaking-prng-1ab011163d40
+affected:
+    - name: highlander-one
+      version:
+        []
+      fixedin:
+        - ">=0.1.0b1"
