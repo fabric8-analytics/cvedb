@@ -6,6 +6,7 @@ description: >
 cvss_v2: 2.1
 references:
     - http://lists.opensuse.org/opensuse-security-announce/2019-04/msg00021.html
+    - http://lists.opensuse.org/opensuse-security-announce/2019-06/msg00077.html
     - http://www.securityfocus.com/bid/105700
     - https://access.redhat.com/errata/RHSA-2018:3460
     - https://access.redhat.com/errata/RHSA-2018:3461
@@ -19,10 +20,13 @@ references:
 affected:
     - name: ansible
       version:
-        - "<=2.7.0,2.7.0.dev0"
-        - "<=2.6.6,2.6.0a1"
-        - "<=2.5.10"
+        - "<=2.0.0.0,2.0.0"
+        - "<=2.5.0,2.5.0a1"
+        - "<=2.6.0,2.6.0a1"
+        - "<=2.7.0.dev0,2.7.0a1"
       fixedin:
         - ">=2.7.1"
-        - ">=2.6.7"
-        - ">=2.5.11"
+        - "<=2.6.17,2.6.1"
+        - "<=2.5.15,2.5.1"
+        - "<=2.4.6.0,2.0.0.1"
+        - "<=1.9.6,1.0"
