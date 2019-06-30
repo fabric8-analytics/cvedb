@@ -1,0 +1,59 @@
+---
+cve: 2015-5174
+title: CVE in org.apache.tomcat:tomcat-jasper
+description: >
+    Directory traversal vulnerability in RequestUtil.java in Apache Tomcat 6.x before 6.0.45, 7.x before 7.0.65, and 8.x before 8.0.27 allows remote authenticated users to bypass intended SecurityManager restrictions and list a parent directory via a /.. (slash dot dot) in a pathname used by a web application in a getResource, getResourceAsStream, or getResourcePaths call, as demonstrated by the $CATALINA_BASE/webapps directory.
+cvss_v2: 4.0
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2016-03/msg00047.html
+    - http://lists.opensuse.org/opensuse-security-announce/2016-03/msg00069.html
+    - http://lists.opensuse.org/opensuse-security-announce/2016-03/msg00082.html
+    - http://lists.opensuse.org/opensuse-security-announce/2016-03/msg00085.html
+    - http://marc.info/?l=bugtraq&m=145974991225029&w=2
+    - http://packetstormsecurity.com/files/135883/Apache-Tomcat-Limited-Directory-Traversal.html
+    - http://rhn.redhat.com/errata/RHSA-2016-1435.html
+    - http://rhn.redhat.com/errata/RHSA-2016-2045.html
+    - http://rhn.redhat.com/errata/RHSA-2016-2599.html
+    - http://seclists.org/bugtraq/2016/Feb/149
+    - http://svn.apache.org/viewvc?view=revision&revision=1696281
+    - http://svn.apache.org/viewvc?view=revision&revision=1696284
+    - http://svn.apache.org/viewvc?view=revision&revision=1700897
+    - http://svn.apache.org/viewvc?view=revision&revision=1700898
+    - http://svn.apache.org/viewvc?view=revision&revision=1700900
+    - http://tomcat.apache.org/security-6.html
+    - http://tomcat.apache.org/security-7.html
+    - http://tomcat.apache.org/security-8.html
+    - http://www.debian.org/security/2016/dsa-3530
+    - http://www.debian.org/security/2016/dsa-3552
+    - http://www.debian.org/security/2016/dsa-3609
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2018-4258247.html
+    - http://www.oracle.com/technetwork/topics/security/linuxbulletinoct2016-3090545.html
+    - http://www.securityfocus.com/bid/83329
+    - http://www.securitytracker.com/id/1035070
+    - http://www.ubuntu.com/usn/USN-3024-1
+    - https://access.redhat.com/errata/RHSA-2016:1432
+    - https://access.redhat.com/errata/RHSA-2016:1433
+    - https://access.redhat.com/errata/RHSA-2016:1434
+    - https://bto.bluecoat.com/security-advisory/sa118
+    - https://h20566.www2.hpe.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c05054964
+    - https://h20566.www2.hpe.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c05150442
+    - https://h20566.www2.hpe.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c05158626
+    - https://lists.apache.org/thread.html/37220405a377c0182d2afdbc36461c4783b2930fbeae3a17f1333113@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/39ae1f0bd5867c15755a6f959b271ade1aea04ccdc3b2e639dcd903b@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/b84ad1258a89de5c9c853c7f2d3ad77e5b8b2930be9e132d5cef6b95@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/b8a1bf18155b552dcf9a928ba808cbadad84c236d85eab3033662cfb@%3Cdev.tomcat.apache.org%3E
+    - https://security.gentoo.org/glsa/201705-09
+    - https://security.netapp.com/advisory/ntap-20180531-0001/
+affected:
+    - groupId: org.apache.tomcat
+      artifactId: tomcat-jasper
+      version:
+        - "<=7.0.6"
+        - "<=7.0.64,7.0.11"
+        - "<=8.0.1,8.0.0-RC1"
+        - "<=8.0.26,8.0.11"
+      fixedin:
+        - ">=8.0.27"
+        - "<=8.0.9,8.0.3"
+        - "<=7.0.94,7.0.65"
+        - "<=7.0.8,7.0.8"
