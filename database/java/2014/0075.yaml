@@ -1,0 +1,61 @@
+---
+cve: 2014-0075
+title: CVE in org.apache.tomcat:tomcat-jasper
+description: >
+    Integer overflow in the parseChunkHeader function in java/org/apache/coyote/http11/filters/ChunkedInputFilter.java in Apache Tomcat before 6.0.40, 7.x before 7.0.53, and 8.x before 8.0.4 allows remote attackers to cause a denial of service (resource consumption) via a malformed chunk size in chunked transfer coding of a request during the streaming of data.
+cvss_v2: 5.0
+references:
+    - http://advisories.mageia.org/MGASA-2014-0268.html
+    - http://linux.oracle.com/errata/ELSA-2014-0865.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2015-February/150282.html
+    - http://marc.info/?l=bugtraq&m=141017844705317&w=2
+    - http://marc.info/?l=bugtraq&m=141390017113542&w=2
+    - http://marc.info/?l=bugtraq&m=144498216801440&w=2
+    - http://rhn.redhat.com/errata/RHSA-2015-0675.html
+    - http://rhn.redhat.com/errata/RHSA-2015-0720.html
+    - http://rhn.redhat.com/errata/RHSA-2015-0765.html
+    - http://seclists.org/fulldisclosure/2014/Dec/23
+    - http://secunia.com/advisories/59121
+    - http://secunia.com/advisories/59616
+    - http://secunia.com/advisories/59678
+    - http://secunia.com/advisories/59732
+    - http://secunia.com/advisories/59835
+    - http://secunia.com/advisories/59849
+    - http://secunia.com/advisories/59873
+    - http://secunia.com/advisories/60729
+    - http://secunia.com/advisories/60793
+    - http://svn.apache.org/viewvc?view=revision&revision=1578337
+    - http://svn.apache.org/viewvc?view=revision&revision=1578341
+    - http://svn.apache.org/viewvc?view=revision&revision=1579262
+    - http://tomcat.apache.org/security-6.html
+    - http://tomcat.apache.org/security-7.html
+    - http://tomcat.apache.org/security-8.html
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21678231
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21680603
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21681528
+    - http://www.debian.org/security/2016/dsa-3447
+    - http://www.debian.org/security/2016/dsa-3530
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2015:052
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2015:053
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2015:084
+    - http://www.novell.com/support/kb/doc.php?id=7010166
+    - http://www.oracle.com/technetwork/security-advisory/cpuoct2016-2881722.html
+    - http://www.oracle.com/technetwork/topics/security/cpujul2014-1972956.html
+    - http://www.oracle.com/technetwork/topics/security/cpuoct2014-1972960.html
+    - http://www.securityfocus.com/archive/1/534161/100/0/threaded
+    - http://www.securityfocus.com/bid/67671
+    - http://www.vmware.com/security/advisories/VMSA-2014-0012.html
+    - https://h20564.www2.hpe.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c04851013
+    - https://lists.apache.org/thread.html/37220405a377c0182d2afdbc36461c4783b2930fbeae3a17f1333113@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/39ae1f0bd5867c15755a6f959b271ade1aea04ccdc3b2e639dcd903b@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/b84ad1258a89de5c9c853c7f2d3ad77e5b8b2930be9e132d5cef6b95@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/b8a1bf18155b552dcf9a928ba808cbadad84c236d85eab3033662cfb@%3Cdev.tomcat.apache.org%3E
+affected:
+    - groupId: org.apache.tomcat
+      artifactId: tomcat-jasper
+      version:
+        - "<=7.0.52"
+        - "<=8.0.3,8.0.0-RC1"
+      fixedin:
+        - ">=8.0.5"
+        - "<=7.0.94,7.0.53"
