@@ -1,0 +1,49 @@
+---
+cve: 2013-4590
+title: CVE in org.apache.tomcat:tomcat-jasper
+description: >
+    Apache Tomcat before 6.0.39, 7.x before 7.0.50, and 8.x before 8.0.0-RC10 allows attackers to obtain "Tomcat internals" information by leveraging the presence of an untrusted web application with a context.xml, web.xml, *.jspx, *.tagx, or *.tld XML document containing an external entity declaration in conjunction with an entity reference, related to an XML External Entity (XXE) issue.
+cvss_v2: 4.3
+references:
+    - http://advisories.mageia.org/MGASA-2014-0148.html
+    - http://marc.info/?l=bugtraq&m=144498216801440&w=2
+    - http://secunia.com/advisories/59036
+    - http://secunia.com/advisories/59722
+    - http://secunia.com/advisories/59724
+    - http://secunia.com/advisories/59873
+    - http://svn.apache.org/viewvc?view=revision&revision=1549528
+    - http://svn.apache.org/viewvc?view=revision&revision=1549529
+    - http://svn.apache.org/viewvc?view=revision&revision=1558828
+    - http://tomcat.apache.org/security-6.html
+    - http://tomcat.apache.org/security-7.html
+    - http://tomcat.apache.org/security-8.html
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21667883
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21675886
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21677147
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21678231
+    - http://www.debian.org/security/2016/dsa-3530
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2015:052
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2015:084
+    - http://www.oracle.com/technetwork/security-advisory/cpuoct2016-2881722.html
+    - http://www.oracle.com/technetwork/topics/security/cpuoct2014-1972960.html
+    - http://www.securityfocus.com/bid/65768
+    - http://www.vmware.com/security/advisories/VMSA-2014-0008.html
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1069911
+    - https://h20564.www2.hpe.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c04851013
+    - https://lists.apache.org/thread.html/37220405a377c0182d2afdbc36461c4783b2930fbeae3a17f1333113@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/39ae1f0bd5867c15755a6f959b271ade1aea04ccdc3b2e639dcd903b@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/b84ad1258a89de5c9c853c7f2d3ad77e5b8b2930be9e132d5cef6b95@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/b8a1bf18155b552dcf9a928ba808cbadad84c236d85eab3033662cfb@%3Cdev.tomcat.apache.org%3E
+affected:
+    - groupId: org.apache.tomcat
+      artifactId: tomcat-jasper
+      version:
+        - "<=7.0.4"
+        - "<=7.0.42,7.0.11"
+        - "<=7.0.50,7.0.50"
+        - "<=8.0.0-RC10,8.0.0-RC1"
+      fixedin:
+        - ">=8.0.1"
+        - "<=7.0.94,7.0.52"
+        - "<=7.0.47,7.0.47"
+        - "<=7.0.8,7.0.5"
