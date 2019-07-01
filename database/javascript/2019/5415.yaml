@@ -1,0 +1,15 @@
+---
+cve: 2019-5415
+title: CVE in serve
+description: >
+  A bug in handling the ignore files and directories feature in serve 6.5.3 allows an attacker to read a file or list the directory that the victim has not allowed access to.
+cvss_v2: 5.0
+references:
+  - https://hackerone.com/reports/330724
+affected:
+  - name: serve
+    version:
+      - "==6.5.3"
+    fixedin:
+      - ">=6.5.4"
+      - "<=6.5.2,0.0.1"
