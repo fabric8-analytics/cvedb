@@ -1,0 +1,15 @@
+---
+cve: 2019-8903
+title: CVE in total.js
+description: >
+    index.js in Total.js Platform before 3.2.3 allows path traversal.
+cvss_v2: 5.0
+references:
+    - https://github.com/totaljs/framework/commit/c37cafbf3e379a98db71c1125533d1e8d5b5aef7
+    - https://github.com/totaljs/framework/commit/de16238d13848149f5d1dae51f54e397a525932b
+affected:
+    - name: total.js
+      version:
+        - "<=3.2.2"
+      fixedin:
+        - ">=3.2.3"
