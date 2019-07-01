@@ -1,6 +1,6 @@
 ---
 cve: 2019-5432
-title: CVE in mqtt-connection
+title: CVE in mqtt-mqtt-packet
 description: >
     A specifically malformed MQTT Subscribe packet crashes MQTT Brokers using the mqtt-packet module versions < 3.5.1, 4.0.0 - 4.1.3, 5.0.0 - 5.6.1, 6.0.0 - 6.1.2 for decoding.
 cvss_v2: 5.0
@@ -9,6 +9,9 @@ references:
 affected:
     - name: mqtt-connection
       version:
-        - "<=4.0.0"
+        - "<=6.0.0,6.1.2"
+        - "<=5.0.0,5.6.1"
+        - "<=4.0.0,4.1.3"
+        - "<3.5.1"
       fixedin:
-        []
+        - "==3.5.1"
