@@ -1,0 +1,14 @@
+---
+cve: 2018-3713
+title: CVE in angular-http-server
+description: >
+    angular-http-server node module suffers from a Path Traversal vulnerability due to lack of validation of possibleFilename, which allows a malicious user to read content of any file with known path.
+cvss_v2: 4.0
+references:
+    - https://hackerone.com/reports/309120
+affected:
+    - name: angular-http-server
+      version:
+        - "<=1.4.2"
+      fixedin:
+        - ">=1.4.3"
