@@ -1,0 +1,14 @@
+---
+cve: 2018-16479
+title: CVE in http-live-simulator
+description: >
+    Path traversal vulnerability in http-live-simulator <1.0.7 causes unauthorized access to arbitrary files on disk by appending extra slashes after the URL.
+cvss_v2: 5.0
+references:
+    - https://hackerone.com/reports/411405
+affected:
+    - name: http-live-simulator
+      version:
+        - "<=1.0.6"
+      fixedin:
+        - ">=1.0.7"
