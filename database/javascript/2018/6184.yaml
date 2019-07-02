@@ -1,0 +1,14 @@
+---
+cve: 2018-6184
+title: CVE in next
+description: >
+    ZEIT Next.js 4 before 4.2.3 has Directory Traversal under the /_next request namespace.
+cvss_v2: 5.0
+references:
+    - https://github.com/zeit/next.js/releases/tag/4.2.3
+affected:
+    - name: next
+      version:
+        - "<=4.2.2"
+      fixedin:
+        - ">=4.2.3"
