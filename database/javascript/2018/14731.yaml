@@ -13,4 +13,4 @@ affected:
       version:
         []
       fixedin:
-        - ">=1.0.0-alpha.1"
+        []
