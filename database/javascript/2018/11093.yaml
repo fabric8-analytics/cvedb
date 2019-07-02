@@ -1,0 +1,15 @@
+---
+cve: 2018-11093
+title: CVE in ckeditor5
+description: >
+    Cross-site scripting (XSS) vulnerability in the Link package for CKEditor 5 before 10.0.1 allows remote attackers to inject arbitrary web script through a crafted href attribute of a link (A) element.
+cvss_v2: 4.3
+references:
+    - https://ckeditor.com/blog/CKEditor-5-v10.0.1-released/
+    - https://github.com/ckeditor/ckeditor5-link/blob/master/CHANGELOG.md#1001-2018-05-22
+affected:
+    - name: ckeditor5
+      version:
+        - "<=10.0.0"
+      fixedin:
+        - ">=10.0.1"
