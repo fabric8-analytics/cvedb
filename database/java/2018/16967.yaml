@@ -1,0 +1,16 @@
+---
+cve: 2018-16967
+title: CVE in org.awake-file:awake-file
+description: >
+    There is an XSS vulnerability in the mndpsingh287 File Manager plugin 3.0 for WordPress via the page=wp_file_manager_root public_path parameter.
+cvss_v2: 4.3
+references:
+    - https://ansawaf.blogspot.com/2019/04/file-manager-plugin-wordpress-plugin.html
+    - https://wordpress.org/plugins/wp-file-manager/#developers
+affected:
+    - groupId: org.awake-file
+      artifactId: awake-file
+      version:
+        - "<=3.0,3.0"
+      fixedin:
+        - "<=2.0.2,1.0"
