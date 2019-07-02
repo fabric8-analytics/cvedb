@@ -1,0 +1,15 @@
+---
+cve: 2018-1999024
+title: CVE in mathjax
+description: >
+    MathJax version prior to version 2.7.4 contains a Cross Site Scripting (XSS) vulnerability in the \unicode{} macro that can result in Potentially untrusted Javascript running within a web browser. This attack appear to be exploitable via The victim must view a page where untrusted content is processed using Mathjax. This vulnerability appears to have been fixed in 2.7.4 and later.
+cvss_v2: 4.3
+references:
+    - https://blog.bentkowski.info/2018/06/xss-in-google-colaboratory-csp-bypass.html
+    - https://github.com/mathjax/MathJax/commit/a55da396c18cafb767a26aa9ad96f6f4199852f1
+affected:
+    - name: mathjax
+      version:
+        - "<=2.7.3"
+      fixedin:
+        - ">=2.7.4"
