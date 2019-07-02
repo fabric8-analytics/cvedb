@@ -1,0 +1,15 @@
+---
+cve: 2018-14730
+title: CVE in browserify-hmr
+description: >
+    An issue was discovered in Browserify-HMR. Attackers are able to steal developer's code because the origin of requests is not checked by the WebSocket server, which is used for HMR (Hot Module Replacement). Anyone can receive the HMR message sent by the WebSocket server via a ws://127.0.0.1:3123/ connection from any origin.
+cvss_v2: 5.0
+references:
+    - https://blog.cal1.cn/post/Sniffing%20Codes%20in%20Hot%20Module%20Reloading%20Messages
+    - https://github.com/AgentME/browserify-hmr/issues/41
+affected:
+    - name: browserify-hmr
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
