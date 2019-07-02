@@ -1,0 +1,14 @@
+---
+cve: 2018-16486
+title: CVE in defaults-deep
+description: >
+    A prototype pollution vulnerability was found in defaults-deep <=0.2.4 that would allow a malicious user to inject properties onto Object.prototype.
+cvss_v2: 7.5
+references:
+    - https://hackerone.com/reports/380878
+affected:
+    - name: defaults-deep
+      version:
+        - "<=0.2.4"
+      fixedin:
+        []
