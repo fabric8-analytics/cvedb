@@ -1,0 +1,16 @@
+---
+cve: 2018-1000160
+title: CVE in @risingstack/protect
+description: >
+    RisingStack protect version 1.2.0 and earlier contains a Cross Site Scripting (XSS) vulnerability in isXss() function in lib/rules/xss.js that can result in dangerous XSS strings being validated as safe. This attack appears to be exploitable via A number of XSS strings(26) detailed in the GitHub issue #16.
+cvss_v2: 4.3
+references:
+    - http://embed.plnkr.co/xHbhB29JWWyMUMeHsLrm
+    - https://github.com/RisingStack/protect/blob/60b0c91e86686d34e5202419ce9ae7e8dc08edcd/lib/rules/xss.js#L4-L13
+    - https://github.com/RisingStack/protect/issues/16
+affected:
+    - name: @risingstack/protect
+      version:
+        - "<=1.2.0"
+      fixedin:
+        - ">=1.3.0"
