@@ -1,0 +1,15 @@
+---
+cve: 2018-9208
+title: CVE in jquery
+description: >
+    Unauthenticated arbitrary file upload vulnerability in jQuery Picture Cut <= v1.1Beta
+cvss_v2: 7.5
+references:
+    - http://www.vapidlabs.com/advisory.php?v=207
+affected:
+    - name: jquery
+      version:
+        - "==1.1.0"
+      fixedin:
+        - ">=1.1.1"
+        - "<=1.0.8,1.0.0"
