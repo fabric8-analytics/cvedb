@@ -1,0 +1,14 @@
+---
+cve: 2018-16485
+title: CVE in m-server
+description: >
+    Path Traversal vulnerability in module m-server <1.4.1 allows malicious user to access unauthorized content of any file in the directory tree e.g. /etc/passwd by appending slashes to the URL request.
+cvss_v2: 4.0
+references:
+    - https://hackerone.com/reports/319795
+affected:
+    - name: m-server
+      version:
+        - "<=1.4.0"
+      fixedin:
+        - ">=1.4.1"
