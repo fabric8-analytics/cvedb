@@ -10,7 +10,6 @@ references:
 affected:
     - name: react
       version:
-        - "<=16.4.1,16.0.0-alpha"
+        - "<=16.4.1"
       fixedin:
         - ">=16.4.2"
-        - "<=15.6.2,0.0.0-a9eff329c"
