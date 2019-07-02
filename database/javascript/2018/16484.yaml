@@ -1,0 +1,14 @@
+---
+cve: 2018-16484
+title: CVE in m-server
+description: >
+    A XSS vulnerability was found in module m-server <1.4.2 that allows malicious Javascript code or HTML to be executed, due to the lack of escaping for special characters in folder names.
+cvss_v2: 3.5
+references:
+    - https://hackerone.com/reports/319794
+affected:
+    - name: m-server
+      version:
+        - "<=1.4.1"
+      fixedin:
+        - ">=1.4.2"
