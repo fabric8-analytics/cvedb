@@ -1,0 +1,15 @@
+---
+cve: 2016-5235
+title: CVE in org.rhq.server:alert-email
+description: >
+    A Cross Site Scripting (XSS) vulnerability in versions of F5 WebSafe Dashboard 3.9.x and earlier, aka F5 WebSafe Alert Server, allows an unauthenticated user to inject HTML via a crafted alert.
+cvss_v2: 4.3
+references:
+    - https://support.f5.com/csp/article/K48572812
+affected:
+    - groupId: org.rhq.server
+      artifactId: alert-email
+      version:
+        - "<=3.0.1.GA"
+      fixedin:
+        - ">=4.0.0.Beta1"
