@@ -1,0 +1,16 @@
+---
+cve: 2019-12995
+title: CVE in nomad-envoy-cli
+description: >
+    Istio before 1.2.2 mishandles certain access tokens, leading to "Epoch 0 terminated with an error" in Envoy. This is related to a jwt_authenticator.cc segmentation fault.
+cvss_v2: 5.0
+references:
+    - https://github.com/istio/istio.io/pull/4555
+    - https://github.com/istio/istio/issues/15084
+    - https://istio.io/about/notes/
+affected:
+    - name: nomad-envoy-cli
+      version:
+        - "<=1.2.1"
+      fixedin:
+        - ">=1.2.2"
