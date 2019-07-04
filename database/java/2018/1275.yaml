@@ -1,6 +1,6 @@
 ---
 cve: 2018-1275
-title: CVE in org.springframework:spring-messaging
+title: CVE in io.pivotal.spring.cloud:spring-cloud-services-connector-core
 description: >
     Spring Framework, versions 5.0 prior to 5.0.5 and versions 4.3 prior to 4.3.16 and older unsupported versions, allow applications to expose STOMP over WebSocket endpoints with a simple, in-memory STOMP broker through the spring-messaging module. A malicious user (or attacker) can craft a message to the broker that can lead to a remote code execution attack. This CVE addresses the partial fix for CVE-2018-1270 in the 4.3.x branch of the Spring Framework.
 cvss_v2: 7.5
@@ -11,11 +11,14 @@ references:
     - http://www.securitytracker.com/id/1041301
     - https://access.redhat.com/errata/RHSA-2018:1320
     - https://access.redhat.com/errata/RHSA-2018:2939
+    - https://lists.apache.org/thread.html/4ed49b103f64a0cecb38064f26cbf1389afc12124653da2d35166dbe@%3Cissues.activemq.apache.org%3E
+    - https://lists.apache.org/thread.html/ab825fcade0b49becfa30235b3d54f4a51bb74ea96b6c9adb5d1378c@%3Cissues.activemq.apache.org%3E
     - https://pivotal.io/security/cve-2018-1275
+    - https://www.oracle.com/technetwork/security-advisory/cpujan2019-5072801.html
 affected:
-    - groupId: org.springframework
-      artifactId: spring-messaging
+    - groupId: io.pivotal.spring.cloud
+      artifactId: spring-cloud-services-connector-core
       version:
-        - "<=4.3.15.RELEASE"
+        - "<=2.1.4.RELEASE"
       fixedin:
-        - ">=4.3.16.RELEASE"
+        []
