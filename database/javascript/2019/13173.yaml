@@ -1,0 +1,15 @@
+---
+cve: 2019-13173
+title: CVE in fstream
+description: >
+    fstream before 1.0.12 is vulnerable to Arbitrary File Overwrite. Extracting tarballs containing a hardlink to a file that already exists in the system, and a file that matches the hardlink, will overwrite the system's file with the contents of the extracted file. The fstream.DirWriter() function is vulnerable.
+cvss_v2: 6.4
+references:
+    - https://github.com/npm/fstream/commit/6a77d2fa6e1462693cf8e46f930da96ec1b0bb22
+    - https://www.npmjs.com/advisories/886
+affected:
+    - name: fstream
+      version:
+        - "<=1.0.11"
+      fixedin:
+        - ">=1.0.12"
