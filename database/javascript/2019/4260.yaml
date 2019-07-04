@@ -1,0 +1,16 @@
+---
+cve: 2019-4260
+title: CVE in standard
+description: >
+    IBM Daeja ViewONE Professional, Standard & Virtual 5.0 through 5.0.5 could allow an unauthorized user to download server files resulting in sensitive information disclosure. IBM X-Force ID: 160012.
+cvss_v2: 5.0
+references:
+    - http://www.ibm.com/support/docview.wss?uid=ibm10884382
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/160012
+affected:
+    - name: standard
+      version:
+        - "<=5.0.2,5.0.0-0"
+      fixedin:
+        - ">=5.1.0"
+        - "<=4.5.4,1.0.0"
