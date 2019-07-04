@@ -1,0 +1,17 @@
+---
+cve: 2019-6621
+title: CVE in org.talend.esb.locator.service.rest:locator-rest-service
+description: >
+    On BIG-IP 14.1.0-14.1.0.5, 14.0.0-14.0.0.5, 13.0.0-13.1.1.4, 12.1.0-12.1.4.1, 11.6.1-11.6.3.4, and 11.5.1-11.5.8 and BIG-IQ 6.0.0-6.1.0 and 5.1.0-5.4.0, an undisclosed iControl REST worker is vulnerable to command injection by an admin/resource admin user. This issue impacts both iControl REST and tmsh implementations.
+cvss_v2: 6.5
+references:
+    - https://support.f5.com/csp/article/K20541896
+affected:
+    - groupId: org.talend.esb.locator.service.rest
+      artifactId: locator-rest-service
+      version:
+        - "<=5.4.0"
+        - "<=6.1.0,6.0.0"
+      fixedin:
+        - ">=6.1.1"
+        - "<=5.6.3,5.4.1"
