@@ -1,0 +1,18 @@
+---
+cve: 2018-7054
+title: CVE in irssi-icon
+description: >
+    An issue was discovered in Irssi before 1.0.7 and 1.1.x before 1.1.1. There is a use-after-free when a server is disconnected during netsplits. NOTE: this issue exists because of an incomplete fix for CVE-2017-7191.
+cvss_v2: 7.5
+references:
+    - http://openwall.com/lists/oss-security/2018/02/15/1
+    - https://irssi.org/security/irssi_sa_2018_02.txt
+    - https://usn.ubuntu.com/3590-1/
+    - https://usn.ubuntu.com/4046-1/
+    - https://www.debian.org/security/2018/dsa-4162
+affected:
+    - name: irssi-icon
+      version:
+        - "<=1.1"
+      fixedin:
+        - ">=1.2"
