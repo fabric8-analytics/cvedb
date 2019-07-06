@@ -1,0 +1,18 @@
+---
+cve: 2019-9843
+title: CVE in com.diffplug.spotless:spotless-lib-extra
+description: >
+    In DiffPlug Spotless before 1.20.0 (library and Maven plugin) and before 3.20.0 (Gradle plugin), the XML parser would resolve external entities over both HTTP and HTTPS and didn't respect the resolveExternalEntities setting. For example, this allows disclosure of file contents to a MITM attacker if a victim performs a spotlessApply operation on an untrusted XML file.
+cvss_v2: 5.1
+references:
+    - https://github.com/diffplug/spotless/blob/master/plugin-gradle/CHANGES.md#version-3200---march-11th-2018-javadoc-jcenter
+    - https://github.com/diffplug/spotless/blob/master/plugin-maven/CHANGES.md#version-1200---march-14th-2018-javadoc-jcenter
+    - https://github.com/diffplug/spotless/issues/358
+    - https://github.com/diffplug/spotless/pull/369
+affected:
+    - groupId: com.diffplug.spotless
+      artifactId: spotless-lib-extra
+      version:
+        - "<=3.0.0.RC2"
+      fixedin:
+        []
