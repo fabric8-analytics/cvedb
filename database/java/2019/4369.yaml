@@ -1,0 +1,17 @@
+---
+cve: 2019-4369
+title: CVE in com.ibm.sbt:com.ibm.commons
+description: >
+    IBM BigFix Inventory v9 (SUA v9 / ILMT v9) discloses sensitive information to unauthorized users. The information can be used to mount further attacks on the system. IBM X-Force ID: 161807.
+cvss_v2: 5.0
+references:
+    - http://www.ibm.com/support/docview.wss?uid=ibm10957265
+    - http://www.securityfocus.com/bid/109017
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/161807
+affected:
+    - groupId: com.ibm.sbt
+      artifactId: com.ibm.commons
+      version:
+        - "<=9.0.0,9.0.0"
+      fixedin:
+        - "<=1.1.12.20161007-1200,1.1.6.20150817-1200"
