@@ -1,0 +1,15 @@
+---
+cve: 2019-5984
+title: CVE in h21-custom-css
+description: >
+    Cross-site request forgery (CSRF) vulnerability in Custom CSS Pro 1.0.3 and earlier allows remote attackers to hijack the authentication of administrators via unspecified vectors.
+cvss_v2: 6.8
+references:
+    - https://jvn.jp/en/jp/JVN29933378/index.html
+    - https://wordpress.org/plugins/custom-css-pro/
+affected:
+    - name: h21-custom-css
+      version:
+        - "<=1.0.3"
+      fixedin:
+        - ">=1.0.453"
