@@ -1,0 +1,14 @@
+---
+cve: 2018-11215
+title: CVE in ceph-workbench
+description: >
+    Remote code execution is possible in Cloudera Data Science Workbench version 1.3.0 and prior releases via unspecified attack vectors.
+cvss_v2: 7.5
+references:
+    - https://www.cloudera.com/documentation/other/security-bulletins/topics/Security-Bulletin.html
+affected:
+    - name: ceph-workbench
+      version:
+        - "<=1.3.0"
+      fixedin:
+        - ">=1.3.1"
