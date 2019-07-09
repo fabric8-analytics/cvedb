@@ -1,0 +1,16 @@
+---
+cve: 2019-5963
+title: CVE in com.minlia.cross:minlia-cross
+description: >
+    Cross-site request forgery (CSRF) vulnerability in Zoho SalesIQ 1.0.8 and earlier allows remote attackers to hijack the authentication of administrators via unspecified vectors.
+cvss_v2: 6.8
+references:
+    - https://jvn.jp/en/jp/JVN88962935/index.html
+    - https://wordpress.org/plugins/zoho-salesiq/
+affected:
+    - groupId: com.minlia.cross
+      artifactId: minlia-cross
+      version:
+        - "<=1.0.8.RELEASE"
+      fixedin:
+        - ">=1.0.9.RELEASE"
