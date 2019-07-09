@@ -1,0 +1,17 @@
+---
+cve: 2019-0228
+title: CVE in org.apache.pdfbox:pdfbox-examples
+description: >
+    Apache PDFBox 2.0.14 does not properly initialize the XML parser, which allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted XFDF.
+cvss_v2: 7.5
+references:
+    - https://lists.apache.org/thread.html/1a3756557f8cb02790b7183ccf7665ae23f608a421c4f723113bca79@%3Cusers.pdfbox.apache.org%3E
+    - https://lists.apache.org/thread.html/bc8db1bf459f1ad909da47350ed554ee745abe9f25f2b50cad4e06dd@%3Cserver-dev.james.apache.org%3E
+affected:
+    - groupId: org.apache.pdfbox
+      artifactId: pdfbox-examples
+      version:
+        - "<=2.0.14,2.0.14"
+      fixedin:
+        - ">=2.0.15"
+        - "<=2.0.13,1.7.0"
