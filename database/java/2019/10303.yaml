@@ -1,0 +1,15 @@
+---
+cve: 2019-10303
+title: CVE in com.rei.jenkins.systemdsl:jenkins-system-config-dsl
+description: >
+    Jenkins Azure PublisherSettings Credentials Plugin 1.2 and earlier stored credentials unencrypted in the credentials.xml file on the Jenkins master where they could be viewed by users with access to the master file system.
+cvss_v2: 4.0
+references:
+    - https://jenkins.io/security/advisory/2019-04-17/#SECURITY-844
+affected:
+    - groupId: com.rei.jenkins.systemdsl
+      artifactId: jenkins-system-config-dsl
+      version:
+        - "<=1.2.0"
+      fixedin:
+        []
