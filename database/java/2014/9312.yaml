@@ -1,0 +1,18 @@
+---
+cve: 2014-9312
+title: CVE in org.awake-file:awake-file
+description: >
+    Unrestricted File Upload vulnerability in Photo Gallery 1.2.5.
+cvss_v2: 6.5
+references:
+    - http://packetstormsecurity.com/files/130104/Photo-Gallery-1.2.5-Shell-Upload.html
+    - http://packetstormsecurity.com/files/130384/WordPress-Photo-Gallery-1.2.5-Unrestricted-File-Upload.html
+    - http://www.securityfocus.com/bid/72620
+affected:
+    - groupId: org.awake-file
+      artifactId: awake-file
+      version:
+        - "<=1.2.5,1.2.5"
+      fixedin:
+        - ">=1.3"
+        - "<=1.2.4,1.0"
