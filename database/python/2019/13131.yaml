@@ -1,0 +1,14 @@
+---
+cve: 2019-13131
+title: CVE in django-micro
+description: >
+    Super Micro SuperDoctor 5, when restrictions are not implemented in agent.cfg, allows remote attackers to execute arbitrary commands via NRPE.
+cvss_v2: 7.5
+references:
+    - https://www.exploit-db.com/exploits/47030
+affected:
+    - name: django-micro
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
