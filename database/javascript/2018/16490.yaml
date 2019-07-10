@@ -1,0 +1,14 @@
+---
+cve: 2018-16490
+title: CVE in mpath
+description: >
+    A prototype pollution vulnerability was found in module mpath <0.5.1 that allows an attacker to inject arbitrary properties onto Object.prototype.
+cvss_v2: 5.0
+references:
+    - https://hackerone.com/reports/390860
+affected:
+    - name: mpath
+      version:
+        - "<=0.5.0"
+      fixedin:
+        - ">=0.5.1"
