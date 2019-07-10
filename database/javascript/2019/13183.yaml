@@ -1,0 +1,16 @@
+---
+cve: 2019-13183
+title: CVE in flarum-webpack-config
+description: >
+    Flarum before 0.1.0-beta.9 allows CSRF against all POST endpoints, as demonstrated by changing admin settings.
+cvss_v2: 6.8
+references:
+    - https://discuss.flarum.org/d/20606-flarum-0-1-0-beta-9-released
+    - https://github.com/flarum/core/blob/master/CHANGELOG.md
+    - https://github.com/flarum/core/security/advisories/GHSA-3wjh-93gr-chh6
+affected:
+    - name: flarum-webpack-config
+      version:
+        - "<=0.1.0-beta.10"
+      fixedin:
+        []
