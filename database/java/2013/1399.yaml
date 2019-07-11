@@ -1,0 +1,15 @@
+---
+cve: 2013-1399
+title: CVE in org.appverse.web.framework.modules.backend.core.enterprise.log:appverse-web-modules-backend-core-enterprise-log
+description: >
+    Multiple cross-site request forgery (CSRF) vulnerabilities in the (1) node request management, (2) live management, and (3) user administration components in the console in Puppet Enterprise (PE) before 2.7.1 allow remote attackers to hijack the authentication of unspecified victims via unknown vectors.
+cvss_v2: 6.8
+references:
+    - https://puppetlabs.com/security/cve/cve-2013-1399
+affected:
+    - groupId: org.appverse.web.framework.modules.backend.core.enterprise.log
+      artifactId: appverse-web-modules-backend-core-enterprise-log
+      version:
+        - "<=2.0.0-RC10"
+      fixedin:
+        []
