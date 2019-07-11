@@ -1,0 +1,16 @@
+---
+cve: 2018-10895
+title: CVE in qutebrowser
+description: >
+    qutebrowser before version 1.4.1 is vulnerable to a cross-site request forgery flaw that allows websites to access 'qute://*' URLs. A malicious website could exploit this to load a 'qute://settings/set' URL, which then sets 'editor.command' to a bash script, resulting in arbitrary code execution.
+cvss_v2: 6.8
+references:
+    - http://www.openwall.com/lists/oss-security/2018/07/11/7
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-10895
+    - https://github.com/qutebrowser/qutebrowser/commit/43e58ac865ff862c2008c510fc5f7627e10b4660
+affected:
+    - name: qutebrowser
+      version:
+        - "<=1.4.0"
+      fixedin:
+        - ">=1.4.1"
