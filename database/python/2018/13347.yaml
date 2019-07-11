@@ -1,0 +1,16 @@
+---
+cve: 2018-13347
+title: CVE in mercurial
+description: >
+    mpatch.c in Mercurial before 4.6.1 mishandles integer addition and subtraction, aka OVE-20180430-0002.
+cvss_v2: 7.5
+references:
+    - https://www.mercurial-scm.org/repo/hg/rev/1acfc35d478c
+    - https://www.mercurial-scm.org/repo/hg-committed/log?rev=modifies%28%22mercurial%2Fmpatch.c%22%29+and+4.5%3A%3A
+    - https://www.mercurial-scm.org/wiki/WhatsNew#Mercurial_4.6.1_.282018-06-06.29
+affected:
+    - name: mercurial
+      version:
+        - "<=4.6"
+      fixedin:
+        - ">=4.6.1"
