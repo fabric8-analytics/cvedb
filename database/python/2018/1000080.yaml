@@ -1,0 +1,14 @@
+---
+cve: 2018-1000080
+title: CVE in ajenti-plugin.plugins
+description: >
+  Ajenti version version 2 contains a Insecure Permissions vulnerability in Plugins download that can result in The download of any plugins as being a normal user. This attack appear to be exploitable via By knowing how the requisition is made, and sending it as a normal user, the server, in response, downloads the plugin.
+cvss_v2: 4.0
+references:
+  - https://medium.com/stolabs/security-issues-on-ajenti-d2b7526eaeee
+affected:
+  - name: ajenti-plugin.plugins
+    version:
+      - "<=0.41"
+    fixedin:
+      - ">=0.42"
