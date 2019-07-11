@@ -1,0 +1,18 @@
+---
+cve: 2013-4969
+title: CVE in collectd-puppet
+description: >
+    Puppet before 3.3.3 and 3.4 before 3.4.1 and Puppet Enterprise (PE) before 2.8.4 and 3.1 before 3.1.1 allows local users to overwrite arbitrary files via a symlink attack on unspecified files.
+cvss_v2: 2.1
+references:
+    - http://puppetlabs.com/security/cve/cve-2013-4969
+    - http://secunia.com/advisories/56253
+    - http://secunia.com/advisories/56254
+    - http://www.debian.org/security/2013/dsa-2831
+    - http://www.ubuntu.com/usn/USN-2077-1
+affected:
+    - name: collectd-puppet
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - "<=1.6.0,1.4.2"
