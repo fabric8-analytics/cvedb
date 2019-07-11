@@ -1,0 +1,14 @@
+---
+cve: 2013-4955
+title: CVE in puppet-strings-open-app
+description: >
+    Open redirect vulnerability in the login page in Puppet Enterprise before 3.0.1 allows remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via a URL in the service parameter.
+cvss_v2: 5.8
+references:
+    - http://puppetlabs.com/security/cve/cve-2013-4955/
+affected:
+    - name: puppet-strings-open-app
+      version:
+        - "<=3.0.0"
+      fixedin:
+        - ">=3.0.1"
