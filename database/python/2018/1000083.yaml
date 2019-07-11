@@ -1,0 +1,14 @@
+---
+cve: 2018-1000083
+title: CVE in ajenti-panel
+description: >
+  Ajenti version version 2 contains a Improper Error Handling vulnerability in Login JSON request that can result in The requisition leaks a path of the server. This attack appear to be exploitable via By sending a malformed JSON, the tool responds with a traceback error that leaks a path of the server.
+cvss_v2: 5.0
+references:
+  - https://medium.com/stolabs/security-issues-on-ajenti-d2b7526eaeee
+affected:
+  - name: ajenti-panel
+    version:
+      - "<=2.1.25"
+    fixedin:
+      - ">=2.1.26"
