@@ -1,0 +1,16 @@
+---
+cve: 2018-17793
+title: CVE in virtualenv
+description: >
+    ** DISPUTED ** Virtualenv 16.0.0 allows a sandbox escape via "python $(bash >&2)" and "python $(rbash >&2)" commands. NOTE: the software maintainer disputes this because the Python interpreter in a virtualenv is supposed to be able to execute arbitrary code.
+cvss_v2: 10.0
+references:
+    - https://github.com/pypa/virtualenv/issues/1207
+    - https://www.exploit-db.com/exploits/45528/
+affected:
+    - name: virtualenv
+      version:
+        - "==16.0.0"
+      fixedin:
+        - ">=16.1.0"
+        - "<=15.2.0,0.8"
