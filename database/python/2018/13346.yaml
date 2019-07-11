@@ -1,0 +1,15 @@
+---
+cve: 2018-13346
+title: CVE in mercurial
+description: >
+    The mpatch_apply function in mpatch.c in Mercurial before 4.6.1 incorrectly proceeds in cases where the fragment start is past the end of the original data, aka OVE-20180430-0004.
+cvss_v2: 5.0
+references:
+    - https://www.mercurial-scm.org/repo/hg/rev/faa924469635
+    - https://www.mercurial-scm.org/wiki/WhatsNew#Mercurial_4.6.1_.282018-06-06.29
+affected:
+    - name: mercurial
+      version:
+        - "<=4.6"
+      fixedin:
+        - ">=4.6.1"
