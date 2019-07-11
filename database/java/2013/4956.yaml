@@ -1,0 +1,18 @@
+---
+cve: 2013-4956
+title: CVE in com.speedment.tool:tool-core
+description: >
+    Puppet Module Tool (PMT), as used in Puppet 2.7.x before 2.7.23 and 3.2.x before 3.2.4, and Puppet Enterprise 2.8.x before 2.8.3 and 3.0.x before 3.0.1, installs modules with weak permissions if those permissions were used when the modules were originally built, which might allow local users to read or modify those modules depending on the original permissions.
+cvss_v2: 3.6
+references:
+    - http://puppetlabs.com/security/cve/cve-2013-4956/
+    - http://rhn.redhat.com/errata/RHSA-2013-1283.html
+    - http://rhn.redhat.com/errata/RHSA-2013-1284.html
+    - http://www.debian.org/security/2013/dsa-2761
+affected:
+    - groupId: com.speedment.tool
+      artifactId: tool-core
+      version:
+        - "<=3.0.0-EA2"
+      fixedin:
+        - ">=3.0.1"
