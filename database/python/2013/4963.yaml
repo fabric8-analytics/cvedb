@@ -1,0 +1,14 @@
+---
+cve: 2013-4963
+title: CVE in collectd-puppet
+description: >
+    Multiple cross-site request forgery (CSRF) vulnerabilities in Puppet Enterprise (PE) before 3.0.1 allow remote attackers to hijack the authentication of users for requests that deleting a (1) report, (2) group, or (3) class or possibly have other unspecified impact.
+cvss_v2: 6.8
+references:
+    - http://puppetlabs.com/security/cve/cve-2013-4963
+affected:
+    - name: collectd-puppet
+      version:
+        - "<=2.0.0"
+      fixedin:
+        []
