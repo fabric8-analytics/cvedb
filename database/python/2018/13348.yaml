@@ -1,0 +1,15 @@
+---
+cve: 2018-13348
+title: CVE in mercurial
+description: >
+    The mpatch_decode function in mpatch.c in Mercurial before 4.6.1 mishandles certain situations where there should be at least 12 bytes remaining after the current position in the patch data, but actually are not, aka OVE-20180430-0001.
+cvss_v2: 5.0
+references:
+    - https://www.mercurial-scm.org/repo/hg/rev/90a274965de7
+    - https://www.mercurial-scm.org/wiki/WhatsNew#Mercurial_4.6.1_.282018-06-06.29
+affected:
+    - name: mercurial
+      version:
+        - "<=4.6"
+      fixedin:
+        - ">=4.6.1"
