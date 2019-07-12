@@ -1,0 +1,15 @@
+---
+cve: 2014-7170
+title: CVE in invocare-puppet
+description: >
+    Race condition in Puppet Server 0.2.0 allows local users to obtain sensitive information by accessing it in between package installation or upgrade and the start of the service.
+cvss_v2: 1.9
+references:
+    - http://puppetlabs.com/security/cve/cve-2014-7170
+affected:
+    - name: invocare-puppet
+      version:
+        - "<=0.2.0,0.2.0"
+      fixedin:
+        - ">=0.2.1"
+        - "<=0.1.0,0.1.0"
