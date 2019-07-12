@@ -1,0 +1,14 @@
+---
+cve: 2019-9148
+title: CVE in koa-pgp
+description: >
+    Mailvelope prior to 3.3.0 accepts or operates with invalid PGP public keys: Mailvelope allows importing keys that contain users without a valid self-certification. Keys that are obviously invalid are not rejected during import. An attacker that is able to get a victim to import a manipulated key could claim to have signed a message that originates from another person.
+cvss_v2: 4.3
+references:
+    - https://github.com/mailvelope/mailvelope/blob/master/Changelog.md#v330
+affected:
+    - name: koa-pgp
+      version:
+        - "<=3.2.0"
+      fixedin:
+        - ">=3.3.0"
