@@ -1,0 +1,15 @@
+---
+cve: 2019-13564
+title: CVE in com.blackducksoftware.integration:integration-bdio
+description: >
+    XSS exists in Ping Identity Agentless Integration Kit before 1.5.
+cvss_v2: 4.3
+references:
+    - https://support.pingidentity.com/s/document-item?bundleId=integrations&topicId=Integration_Kits%2FAgentless%2FagentlessIK_c_changelog.html
+affected:
+    - groupId: com.blackducksoftware.integration
+      artifactId: integration-bdio
+      version:
+        - "<=1.4.0"
+      fixedin:
+        - ">=1.5.0"
