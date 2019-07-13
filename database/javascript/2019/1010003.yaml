@@ -1,0 +1,14 @@
+---
+cve: 2019-1010003
+title: CVE in site
+description: >
+    Leanote prior to version 2.6 is affected by: Cross Site Scripting (XSS).
+cvss_v2: 3.5
+references:
+    - https://github.com/leanote/leanote/issues/719
+affected:
+    - name: site
+      version:
+        - "<=2.5.0"
+      fixedin:
+        - ">=2.6.0"
