@@ -1,0 +1,19 @@
+---
+cve: 2014-3625
+title: CVE in spring
+description: >
+    Directory traversal vulnerability in Pivotal Spring Framework 3.0.4 through 3.2.x before 3.2.12, 4.0.x before 4.0.8, and 4.1.x before 4.1.2 allows remote attackers to read arbitrary files via unspecified vectors, related to static resource handling.
+cvss_v2: 5.0
+references:
+    - http://rhn.redhat.com/errata/RHSA-2015-0236.html
+    - http://rhn.redhat.com/errata/RHSA-2015-0720.html
+    - http://www.pivotal.io/security/cve-2014-3625
+    - https://jira.spring.io/browse/SPR-12354
+    - https://lists.debian.org/debian-lts-announce/2019/07/msg00012.html
+affected:
+    - name: spring
+      version:
+        - "<=4.1.0,4.0.0"
+      fixedin:
+        - ">=4.2.0"
+        - "<=3.4.2,3.3.0"
