@@ -1,0 +1,23 @@
+---
+cve: 2014-3578
+title: CVE in spring
+description: >
+    Directory traversal vulnerability in Pivotal Spring Framework 3.x before 3.2.9 and 4.0 before 4.0.5 allows remote attackers to read arbitrary files via a crafted URL.
+cvss_v2: 5.0
+references:
+    - http://jvn.jp/en/jp/JVN49154900/index.html
+    - http://jvndb.jvn.jp/jvndb/JVNDB-2014-000054
+    - http://pivotal.io/security/cve-2014-3578
+    - http://rhn.redhat.com/errata/RHSA-2015-0720.html
+    - http://www.securityfocus.com/bid/68042
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1131882
+    - https://lists.debian.org/debian-lts-announce/2019/07/msg00012.html
+    - https://rhn.redhat.com/errata/RHSA-2015-0234.html
+    - https://rhn.redhat.com/errata/RHSA-2015-0235.html
+affected:
+    - name: spring
+      version:
+        - "<=4.0.1,4.0.0"
+      fixedin:
+        - ">=4.1.0"
+        - "<=3.4.2,3.3.0"
