@@ -1,0 +1,17 @@
+---
+cve: 2019-0329
+title: CVE in property-information
+description: >
+    SAP Information Steward, version 4.2, does not sufficiently encode user-controlled inputs, resulting in Cross-Site Scripting (XSS) vulnerability.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/109070
+    - https://launchpad.support.sap.com/#/notes/2804833
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=523994575
+affected:
+    - name: property-information
+      version:
+        - "<=4.2.0,4.2.0"
+      fixedin:
+        - ">=5.0.0"
+        - "<=4.1.0,1.0.0"
