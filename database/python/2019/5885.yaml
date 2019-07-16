@@ -1,0 +1,17 @@
+---
+cve: 2019-5885
+title: CVE in matrix-synapse
+description: >
+    Matrix Synapse before 0.34.0.1, when the macaroon_secret_key authentication parameter is not set, uses a predictable value to derive a secret key and other secrets which could allow remote attackers to impersonate users.
+cvss_v2: 5.0
+references:
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/32Y6KD3OAHCG5P33HC2QEX3NUZOSXCGZ/
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VMCLO5PUPBA756UKY72PKUWL4RRM4W6K/
+    - https://matrix.org/blog/2019/01/10/critical-security-update-synapse-0-34-0-1-synapse-0-34-1-1/
+    - https://matrix.org/blog/2019/01/15/further-details-on-critical-security-update-in-synapse-affecting-all-versions-prior-to-0-34-1-cve-2019-5885/
+affected:
+    - name: matrix-synapse
+      version:
+        - "<=0.34.0"
+      fixedin:
+        - ">=0.34.0.1"
