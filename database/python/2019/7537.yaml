@@ -10,7 +10,7 @@ references:
 affected:
     - name: donfig
       version:
-        - "<=0.3.0,0.3.0"
+        - "==0.3.0"
       fixedin:
         - ">=0.4.0"
         - "<=0.2.0,0.1.0"
