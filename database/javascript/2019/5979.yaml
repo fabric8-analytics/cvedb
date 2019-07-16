@@ -1,0 +1,15 @@
+---
+cve: 2019-5979
+title: CVE in woocommerce
+description: >
+    Cross-site request forgery (CSRF) vulnerability in Personalized WooCommerce Cart Page 2.4 and earlier allows remote attackers to hijack the authentication of administrators via unspecified vectors.
+cvss_v2: 6.8
+references:
+    - https://jvn.jp/en/jp/JVN88804335/index.html
+    - https://wordpress.org/plugins/personalize-woocommerce-cart-page/
+affected:
+    - name: woocommerce
+      version:
+        - "<=2.4.0"
+      fixedin:
+        []
