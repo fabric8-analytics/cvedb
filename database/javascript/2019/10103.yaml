@@ -1,0 +1,14 @@
+---
+cve: 2019-10103
+title: CVE in kotlin
+description: >
+    JetBrains IntelliJ IDEA projects created using the Kotlin (JS Client/JVM Server) IDE Template were resolving Gradle artifacts using an http connection, potentially allowing an MITM attack. This issue, which was fixed in Kotlin plugin version 1.3.30, is similar to CVE-2019-10101.
+cvss_v2: 6.8
+references:
+    - https://blog.jetbrains.com/blog/2019/06/19/jetbrains-security-bulletin-q1-2019/
+affected:
+    - name: kotlin
+      version:
+        - "<=1.3.21"
+      fixedin:
+        - ">=1.3.30"
