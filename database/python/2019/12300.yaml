@@ -1,0 +1,18 @@
+---
+cve: 2019-12300
+title: CVE in buildbot
+description: >
+    Buildbot before 1.8.2 and 2.x before 2.3.1 accepts a user-submitted authorization token from OAuth and uses it to authenticate a user. If an attacker has a token allowing them to read the user details of a victim, they can login as the victim.
+cvss_v2: 5.0
+references:
+    - https://github.com/buildbot/buildbot/wiki/OAuth-vulnerability-in-using-submitted-authorization-token-for-authentication
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4XLOM2K4M4723BCLHZJEX52KJXZSEVRL/
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7GXKO7OYLKBTXXXKF4VPHWT7GVYWFVYA/
+affected:
+    - name: buildbot
+      version:
+        - "<=1.8.1"
+        - "<=2.3.0,2.0.1"
+      fixedin:
+        - ">=2.3.1"
+        - "<=1.8.2,1.8.2"
