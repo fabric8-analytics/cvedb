@@ -1,0 +1,15 @@
+---
+cve: 2018-16639
+title: CVE in org.glassfish.main.admin:admin-core
+description: >
+    Typesetter 5.1 allows XSS via the index.php/Admin LABEL parameter during new page creation.
+cvss_v2: 3.5
+references:
+    - https://github.com/security-provensec/CVE-2018-16639
+affected:
+    - groupId: org.glassfish.main.admin
+      artifactId: admin-core
+      version:
+        - "<=5.1.0,5.1.0-RC1"
+      fixedin:
+        - "<=5.0.1,3.1.2"
