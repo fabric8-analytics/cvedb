@@ -1,0 +1,15 @@
+---
+cve: 2018-8021
+title: CVE in superset
+description: >
+    Versions of Superset prior to 0.23 used an unsafe load method from the pickle library to deserialize data leading to possible remote code execution. Note Superset 0.23 was released prior to any Superset release under the Apache Software Foundation.
+cvss_v2: 7.5
+references:
+    - https://github.com/apache/incubator-superset/pull/4243
+    - https://www.exploit-db.com/exploits/45933/
+affected:
+    - name: superset
+      version:
+        - "<=0.22.1"
+      fixedin:
+        - ">=0.23.0"

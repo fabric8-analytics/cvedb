@@ -1,0 +1,15 @@
+---
+cve: 2018-1000523
+title: CVE in topydo
+description: >
+    topydo contains a CWE-20: Improper Input Validation vulnerability in ListFormatParser::parse, file topydo/lib/ListFormat.py line 292 as of d4f843dac71308b2f29a7c2cdc76f055c3841523 that can result in Injection of arbitrary bytes to the terminal, including terminal escape code sequences. This attack appear to be exploitable via The victim must open a todo.txt with at least one specially crafted line..
+cvss_v2: 5.8
+references:
+    - https://github.com/bram85/topydo/blob/master/topydo/lib/ListFormat.py#L292
+    - https://github.com/bram85/topydo/issues/240
+affected:
+    - name: topydo
+      version:
+        []
+      fixedin:
+        - ">=0.13"

@@ -1,0 +1,16 @@
+---
+cve: 2019-3902
+title: CVE in mercurial
+description: >
+    A flaw was found in Mercurial before 4.9. It was possible to use symlinks and subrepositories to defeat Mercurial's path-checking logic and write files outside a repository.
+cvss_v2: 5.8
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-3902
+    - https://lists.debian.org/debian-lts-announce/2019/04/msg00024.html
+    - https://www.mercurial-scm.org/wiki/WhatsNew#Mercurial_4.9_.282019-02-01.29
+affected:
+    - name: mercurial
+      version:
+        - "<=4.9rc0"
+      fixedin:
+        - ">=4.9"

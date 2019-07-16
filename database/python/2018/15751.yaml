@@ -1,0 +1,19 @@
+---
+cve: 2018-15751
+title: CVE in salt
+description: >
+    SaltStack Salt before 2017.7.8 and 2018.3.x before 2018.3.3 allow remote attackers to bypass authentication and execute arbitrary commands via salt-api(netapi).
+cvss_v2: 7.5
+references:
+    - https://docs.saltstack.com/en/2017.7/topics/releases/2017.7.8.html
+    - https://docs.saltstack.com/en/latest/topics/releases/2018.3.3.html
+    - https://groups.google.com/d/msg/salt-users/dimVF7rpphY/jn3Xv3MbBQAJ
+    - https://groups.google.com/d/msg/salt-users/L9xqcJ0UXxs/qgDj42obBQAJ
+affected:
+    - name: salt
+      version:
+        - "<=2017.7.7"
+        - "<=2018.3.2,2018.3.0rc1"
+      fixedin:
+        - ">=2018.3.3"
+        - "<=2017.7.8,2017.7.8"

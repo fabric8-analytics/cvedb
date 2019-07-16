@@ -1,0 +1,16 @@
+---
+cve: 2018-20801
+title: CVE in highcharts
+description: >
+    In js/parts/SvgRenderer.js in Highcharts JS before 6.1.0, the use of backtracking regular expressions permitted an attacker to conduct a denial of service attack against the SVGRenderer component, aka ReDoS.
+cvss_v2: 5.0
+references:
+    - https://github.com/highcharts/highcharts/commit/7c547e1e0f5e4379f94396efd559a566668c0dfa
+    - https://security.netapp.com/advisory/ntap-20190715-0001/
+    - https://snyk.io/vuln/npm:highcharts:20180225
+affected:
+    - name: highcharts
+      version:
+        - "<=6.0.7"
+      fixedin:
+        - ">=6.1.0"

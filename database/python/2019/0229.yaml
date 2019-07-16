@@ -1,0 +1,16 @@
+---
+cve: 2019-0229
+title: CVE in apache-airflow
+description: >
+    A number of HTTP endpoints in the Airflow webserver (both RBAC and classic) did not have adequate protection and were vulnerable to cross-site request forgery attacks.
+cvss_v2: 6.8
+references:
+    - http://www.openwall.com/lists/oss-security/2019/04/10/6
+    - http://www.securityfocus.com/bid/107869
+    - https://lists.apache.org/thread.html/2de387213d45bc626d27554a1bde7b8c67d08720901f82a50b6f4231@%3Cdev.airflow.apache.org%3E
+affected:
+    - name: apache-airflow
+      version:
+        - "<=1.10.2"
+      fixedin:
+        - ">=1.10.3b1"
