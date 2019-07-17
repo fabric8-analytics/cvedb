@@ -1,0 +1,20 @@
+---
+cve: 2019-13122
+title: CVE in django-patchwork
+description: >
+    A Cross Site Scripting (XSS) vulnerability exists in the template tag used to render message ids in Patchwork v1.1 through v2.1.x. This allows an attacker to insert JavaScript or HTML into the patch detail page via an email sent to a mailing list consumed by Patchwork. This affects the function msgid in templatetags/patch.py. Patchwork versions v2.1.4 and v2.0.4 will contain the fix.
+cvss_v2: 4.3
+references:
+    - http://jk.ozlabs.org/projects/patchwork/
+    - http://www.openwall.com/lists/oss-security/2019/07/05/1
+    - https://github.com/getpatchwork/patchwork/commits/master
+    - https://github.com/getpatchwork/patchwork/releases
+    - https://lists.ozlabs.org/pipermail/patchwork/2019-July/005870.html
+    - https://lists.ozlabs.org/pipermail/patchwork/2019-July/005878.html
+    - https://lists.ozlabs.org/pipermail/patchwork/2019-July/date.html
+affected:
+    - name: django-patchwork
+      version:
+        - "<=1.1.0"
+      fixedin:
+        []
