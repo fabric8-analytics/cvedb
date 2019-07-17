@@ -1,0 +1,33 @@
+---
+cve: 2007-0061
+title: CVE in org.infinispan.server:infinispan-server-build
+description: >
+    The DHCP server in EMC VMware Workstation before 5.5.5 Build 56455 and 6.x before 6.0.1 Build 55017, Player before 1.0.5 Build 56455 and Player 2 before 2.0.1 Build 55017, ACE before 1.0.3 Build 54075 and ACE 2 before 2.0.1 Build 55017, and Server before 1.0.4 Build 56528 allows remote attackers to execute arbitrary code via a malformed packet that triggers "corrupt stack memory."
+cvss_v2: 10.0
+references:
+    - http://lists.grok.org.uk/pipermail/full-disclosure/2007-September/065902.html
+    - http://secunia.com/advisories/26890
+    - http://secunia.com/advisories/27694
+    - http://secunia.com/advisories/27706
+    - http://security.gentoo.org/glsa/glsa-200711-23.xml
+    - http://www.iss.net/threats/275.html
+    - http://www.securityfocus.com/bid/25729
+    - http://www.securitytracker.com/id?1018717
+    - http://www.ubuntu.com/usn/usn-543-1
+    - http://www.vmware.com/support/ace/doc/releasenotes_ace.html
+    - http://www.vmware.com/support/ace2/doc/releasenotes_ace2.html
+    - http://www.vmware.com/support/player/doc/releasenotes_player.html
+    - http://www.vmware.com/support/player2/doc/releasenotes_player2.html
+    - http://www.vmware.com/support/server/doc/releasenotes_server.html
+    - http://www.vmware.com/support/ws55/doc/releasenotes_ws55.html
+    - http://www.vmware.com/support/ws6/doc/releasenotes_ws6.html
+    - http://www.vupen.com/english/advisories/2007/3229
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/33101
+affected:
+    - groupId: org.infinispan.server
+      artifactId: infinispan-server-build
+      version:
+        - "<=6.0.0.Final,6.0.0.Alpha1"
+      fixedin:
+        - ">=6.0.1.Final"
+        - "<=5.3.0.Final,5.3.0.Alpha1"
