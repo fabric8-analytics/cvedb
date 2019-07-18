@@ -1,0 +1,16 @@
+---
+cve: 2018-10531
+title: CVE in com.sos-berlin.jobscheduler.engine:engine-job-api
+description: >
+    An issue was discovered in the America's Army Proving Grounds platform for the Unreal Engine. With a false packet sent via UDP, the application server responds with several bytes, giving the possibility of DoS amplification, even being able to be used in DDoS attacks.
+cvss_v2: 5.0
+references:
+    - https://www.xlabs.com.br/blog/author/mauricio-correa/
+    - https://www.xlabs.com.br/blog/cve-2018-10531-americas-army-proving-grounds-ddos-amplification/
+affected:
+    - groupId: com.sos-berlin.jobscheduler.engine
+      artifactId: engine-job-api
+      version:
+        []
+      fixedin:
+        - ">=1.9.8"
