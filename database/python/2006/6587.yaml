@@ -1,0 +1,18 @@
+---
+cve: 2006-6587
+title: CVE in apache-airflow
+description: >
+    Cross-site scripting (XSS) vulnerability in the forum implementation in the ecommerce component in the Apache Open For Business Project (OFBiz) allows remote attackers to inject arbitrary web script or HTML by posting a message.
+cvss_v2: 6.8
+references:
+    - http://archives.neohapsis.com/archives/fulldisclosure/2006-12/0177.html
+    - http://securitytracker.com/id?1017360
+    - http://www.securityfocus.com/bid/21529
+    - https://issues.apache.org/jira/browse/OFBIZ-178
+    - https://issues.apache.org/jira/browse/OFBIZ-260
+affected:
+    - name: apache-airflow
+      version:
+        []
+      fixedin:
+        - ">=1.8.1"
