@@ -1,0 +1,14 @@
+---
+cve: 2019-1010017
+title: CVE in python-libnmap
+description: >
+    libnmap < v0.6.3 is affected by: XML Injection. The impact is: Denial of service (DoS) by consuming resources. The component is: XML Parsing. The attack vector is: Specially crafted XML payload.
+cvss_v2: 5.0
+references:
+    - https://github.com/savon-noir/python-libnmap/issues/87
+affected:
+    - name: python-libnmap
+      version:
+        - "<=0.6.2"
+      fixedin:
+        - ">=0.6.3"
