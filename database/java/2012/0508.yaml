@@ -1,0 +1,21 @@
+---
+cve: 2012-0508
+title: CVE in com.oracle.tools:oracle-tools-all
+description: >
+    Unspecified vulnerability in the JavaFX component in Oracle Java SE JavaFX, 1.3.0 and earlier, and 1.2.2 and earlier allows remote attackers to affect confidentiality, integrity, and availability via unknown vectors.
+Per: http://www.oracle.com/technetwork/topics/security/javacpufeb2012-366318.html
+
+'Applies to client deployments of Java.'
+cvss_v2: 10.0
+references:
+    - http://marc.info/?l=bugtraq&m=134254866602253&w=2
+    - http://marc.info/?l=bugtraq&m=134254957702612&w=2
+    - http://marc.info/?l=bugtraq&m=134496371727681&w=2
+    - http://www.oracle.com/technetwork/topics/security/javacpufeb2012-366318.html
+affected:
+    - groupId: com.oracle.tools
+      artifactId: oracle-tools-all
+      version:
+        - "<=1.2.2"
+      fixedin:
+        - ">=2.0.0-RC1"
