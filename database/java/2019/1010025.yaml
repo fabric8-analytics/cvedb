@@ -1,0 +1,15 @@
+---
+cve: 2019-1010025
+title: CVE in net.sf.gnu-hylafax:gnu-hylafax-inet-ftp
+description: >
+    GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may guess the heap addresses of pthread_created thread. The component is: glibc.
+cvss_v2: 5.0
+references:
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=22853
+affected:
+    - groupId: net.sf.gnu-hylafax
+      artifactId: gnu-hylafax-inet-ftp
+      version:
+        []
+      fixedin:
+        - ">=1.0.0-b1"
