@@ -1,0 +1,16 @@
+---
+cve: 2019-6512
+title: CVE in org.wso2.am:org.wso2.carbon.apimgt.clients.store.api
+description: >
+    An issue was discovered in WSO2 API Manager 2.6.0. It is possible to force the application to perform requests to the internal workstation (SSRF port-scanning), other adjacent workstations (SSRF network scanning), or to enumerate files because of the existence of the file:// wrapper.
+cvss_v2: 4.0
+references:
+    - https://wso2.com/security-patch-releases/api-manager
+    - https://www.excellium-services.com/cert-xlm-advisory
+affected:
+    - groupId: org.wso2.am
+      artifactId: org.wso2.carbon.apimgt.clients.store.api
+      version:
+        - "<=2.6.0,2.6.0-alpha"
+      fixedin:
+        - "<=2.5.0,2.1.0-update4"
