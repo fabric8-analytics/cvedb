@@ -1,0 +1,15 @@
+---
+cve: 2019-1010022
+title: CVE in net.sf.gnu-hylafax:gnu-hylafax-inet-ftp
+description: >
+    GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may bypass stack guard protection. The component is: nptl. The attack vector is: Exploit stack buffer overflow vulnerability and use this bypass vulnerability to bypass stack guard.
+cvss_v2: 7.5
+references:
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=22850
+affected:
+    - groupId: net.sf.gnu-hylafax
+      artifactId: gnu-hylafax-inet-ftp
+      version:
+        []
+      fixedin:
+        - ">=1.0.0-b1"
