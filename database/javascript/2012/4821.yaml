@@ -1,0 +1,30 @@
+---
+cve: 2012-4821
+title: CVE in dictionary-sr
+description: >
+    Multiple unspecified vulnerabilities in the JRE component in IBM Java 7 SR2 and earlier, Java 6.0.1 SR3 and earlier, Java 6 SR11 and earlier, Java 5 SR14 and earlier, and Java 142 SR13 FP13 and earlier; as used in IBM Rational Host On-Demand, Rational Change, Tivoli Monitoring, Smart Analytics System 5600, Tivoli Remote Control 5.1.2, WebSphere Real Time, Lotus Notes & Domino, Tivoli Storage Productivity Center, and Service Deliver Manager; and other products from other vendors such as Red Hat, allow remote attackers to execute arbitrary code via "insecure use" of the (1) java.lang.Class getDeclaredMethods or nd (2) java.lang.reflect.AccessibleObject setAccessible() methods.
+cvss_v2: 9.3
+references:
+    - http://rhn.redhat.com/errata/RHSA-2012-1467.html
+    - http://seclists.org/bugtraq/2012/Sep/38
+    - http://secunia.com/advisories/51326
+    - http://secunia.com/advisories/51634
+    - http://www.securityfocus.com/bid/55495
+    - http://www-01.ibm.com/support/docview.wss?uid=swg1IV29659
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21615705
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21615800
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21616490
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21616594
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21616616
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21616617
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21616652
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21616708
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21621154
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/78765
+    - https://www-304.ibm.com/support/docview.wss?uid=swg21616546
+affected:
+    - name: dictionary-sr
+      version:
+        - "<=2.0.0"
+      fixedin:
+        - ">=2.0.2"
