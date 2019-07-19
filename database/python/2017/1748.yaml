@@ -1,0 +1,16 @@
+---
+cve: 2017-1748
+title: CVE in pyats-connections
+description: >
+    IBM Connections 5.0, 5.5, and 6.0 could allow a remote attacker to conduct phishing attacks, using an open redirect attack. By persuading a victim to visit a specially-crafted Web site, a remote attacker could exploit this vulnerability to spoof the URL displayed to redirect a user to a malicious Web site that would appear to be trusted. This could allow the attacker to obtain highly sensitive information or conduct further attacks against the victim. IBM X-Force ID: 135521.
+cvss_v2: 5.8
+references:
+    - http://www.ibm.com/support/docview.wss?uid=swg22016698
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/135521
+affected:
+    - name: pyats-connections
+      version:
+        - "<=5.0.0,5.0.0"
+      fixedin:
+        - ">=5.1.0"
+        - "<=4.1.0,4.0.0"
