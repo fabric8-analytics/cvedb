@@ -1,0 +1,15 @@
+---
+cve: 2018-11744
+title: CVE in cloudera-director-python-client
+description: >
+    Cloudera Manager through 5.15 has Incorrect Access Control.
+cvss_v2: 6.8
+references:
+    - https://www.cloudera.com/documentation/other/security-bulletins/topics/Security-Bulletin.html
+    - https://www.cloudera.com/documentation/other/security-bulletins/topics/Security-Bulletin.html#cloudera_manager
+affected:
+    - name: cloudera-director-python-client
+      version:
+        - "<=6.1.0"
+      fixedin:
+        - ">=6.2.0.1"
