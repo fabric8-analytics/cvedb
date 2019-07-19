@@ -1,0 +1,16 @@
+---
+cve: 2016-10763
+title: CVE in com.proofpoint.event:event-collector
+description: >
+    The CampTix Event Ticketing plugin before 1.5 for WordPress allows XSS in the admin section via a ticket title or body.
+cvss_v2: 3.5
+references:
+    - https://hackerone.com/reports/152958
+    - https://wordpress.org/plugins/camptix/#developers
+affected:
+    - groupId: com.proofpoint.event
+      artifactId: event-collector
+      version:
+        []
+      fixedin:
+        - ">=1.5"
