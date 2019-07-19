@@ -1,0 +1,15 @@
+---
+cve: 2018-17196
+title: CVE in confluent-kafka
+description: >
+    In Apache Kafka versions between 0.11.0.0 and 2.1.0, it is possible to manually craft a Produce request which bypasses transaction/idempotent ACL validation. Only authenticated clients with Write permission on the respective topics are able to exploit this vulnerability. Users should upgrade to 2.1.1 or later where this vulnerability has been fixed.
+cvss_v2: 6.5
+references:
+    - http://www.securityfocus.com/bid/109139
+    - https://www.mail-archive.com/dev@kafka.apache.org/msg99277.html
+affected:
+    - name: confluent-kafka
+      version:
+        - "<=1.1.0,0.11.0"
+      fixedin:
+        - "<=0.9.4,0.9.1"
