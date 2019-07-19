@@ -1,0 +1,17 @@
+---
+cve: 2019-6516
+title: CVE in org.wso2.carbon.dashboards:org.wso2.carbon.dashboard.deployment
+description: >
+    An issue was discovered in WSO2 Dashboard Server 2.0.0. It is possible to force the application to perform requests to the internal workstation (port-scanning) and to perform requests to adjacent workstations (network-scanning), aka SSRF.
+cvss_v2: 5.0
+references:
+    - https://wso2.com/security-patch-releases/dashboard-server
+    - https://www.excellium-services.com/cert-xlm-advisory
+affected:
+    - groupId: org.wso2.carbon.dashboards
+      artifactId: org.wso2.carbon.dashboard.deployment
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - ">=2.0.1"
+        - "<=1.0.19,1.0.1"
