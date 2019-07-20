@@ -1,0 +1,16 @@
+---
+cve: 2019-1075
+title: CVE in org.srcdeps.core:srcdeps-core
+description: >
+    A spoofing vulnerability exists in ASP.NET Core that could lead to an open redirect, aka 'ASP.NET Core Spoofing Vulnerability'.
+cvss_v2: 5.8
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1075
+affected:
+    - groupId: org.srcdeps.core
+      artifactId: srcdeps-core
+      version:
+        - "<=2.1.0,2.1.0"
+      fixedin:
+        - ">=3.0.0"
+        - "<=2.0.5,2.0.0"
