@@ -1,0 +1,15 @@
+---
+cve: 2019-0962
+title: CVE in com.microsoft.azure:azure-documentdb
+description: >
+    An elevation of privilege vulnerability exists in Azure Automation "RunAs account" runbooks for users with contributor role, aka 'Azure Automation Elevation of Privilege Vulnerability'.
+cvss_v2: 4.0
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0962
+affected:
+    - groupId: com.microsoft.azure
+      artifactId: azure-documentdb
+      version:
+        []
+      fixedin:
+        - ">=0.9.0"
