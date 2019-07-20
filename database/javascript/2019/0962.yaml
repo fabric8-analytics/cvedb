@@ -1,0 +1,14 @@
+---
+cve: 2019-0962
+title: CVE in @datafire/azure_automation_linkedworkspace
+description: >
+    An elevation of privilege vulnerability exists in Azure Automation "RunAs account" runbooks for users with contributor role, aka 'Azure Automation Elevation of Privilege Vulnerability'.
+cvss_v2: 4.0
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0962
+affected:
+    - name: @datafire/azure_automation_linkedworkspace
+      version:
+        []
+      fixedin:
+        - ">=3.0.0"
