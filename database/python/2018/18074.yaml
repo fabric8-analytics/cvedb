@@ -6,6 +6,7 @@ description: >
 cvss_v2: 5.0
 references:
     - http://docs.python-requests.org/en/master/community/updates/#release-and-version-history
+    - http://lists.opensuse.org/opensuse-security-announce/2019-07/msg00024.html
     - https://bugs.debian.org/910766
     - https://github.com/requests/requests/commit/c45d7c49ea75133e52ab22a8e9e13173938e36ff
     - https://github.com/requests/requests/issues/4716
