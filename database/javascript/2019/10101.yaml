@@ -6,6 +6,7 @@ description: >
 cvss_v2: 6.8
 references:
     - https://blog.jetbrains.com/blog/2019/06/19/jetbrains-security-bulletin-q1-2019/
+    - https://medium.com/bugbountywriteup/want-to-take-over-the-java-ecosystem-all-you-need-is-a-mitm-1fc329d898fb
 affected:
     - name: kotlin
       version:
