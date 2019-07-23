@@ -1,0 +1,20 @@
+---
+cve: 2017-5858
+title: CVE in converse.js
+description: >
+    An incorrect implementation of "XEP-0280: Message Carbons" in multiple XMPP clients allows a remote attacker to impersonate any user, including contacts, in the vulnerable application's display. This allows for various kinds of social engineering attacks. This CVE is for Converse.js (0.8.0 - 1.0.6, 2.0.0 - 2.0.4).
+cvss_v2: 4.3
+references:
+    - http://openwall.com/lists/oss-security/2017/02/09/29
+    - http://www.securityfocus.com/bid/96183
+    - https://github.com/jcbrand/converse.js/commit/42f249cabbbf5c026398e6d3b350f6f9536ea572
+    - https://rt-solutions.de/en/2017/02/CVE-2017-5589_xmpp_carbons/
+    - https://rt-solutions.de/wp-content/uploads/2017/02/CVE-2017-5589_xmpp_carbons.pdf
+affected:
+    - name: converse.js
+      version:
+        - "<=1.0.6"
+        - "<=2.0.4,2.0.0"
+      fixedin:
+        - ">=2.0.5"
+        - "<=1.0.7,1.0.7"
