@@ -1,16 +1,17 @@
 ---
 cve: 2018-20834
-title: CVE in tar
+title: CVE in tar-pack
 description: >
     A vulnerability was found in node-tar before version 4.4.2. An Arbitrary File Overwrite issue exists when extracting a tarball containing a hardlink to a file that already exists on the system, in conjunction with a later plain file with the same name as the hardlink. This plain file content replaces the existing file content.
 cvss_v2: 6.4
 references:
+    - https://access.redhat.com/errata/RHSA-2019:1821
     - https://github.com/npm/node-tar/commit/b0c58433c22f5e7fe8b1c76373f27e3f81dcd4c8
     - https://github.com/npm/node-tar/compare/58a8d43...a5f7779
     - https://hackerone.com/reports/344595
 affected:
-    - name: tar
+    - name: tar-pack
       version:
-        - "<=4.4.1"
+        - "<=3.4.1"
       fixedin:
-        - ">=4.4.2"
+        []
