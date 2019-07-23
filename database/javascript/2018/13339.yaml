@@ -10,6 +10,6 @@ references:
 affected:
     - name: angular-redactor
       version:
-        []
+        - "==1.1.6"
       fixedin:
-        - ">=1.1.5"
+        - ">=1.1.7"
