@@ -9,6 +9,6 @@ references:
 affected:
     - name: node-openssl
       version:
-        []
+        - "<=0.0.2-security"
       fixedin:
-        - ">=0.0.1-security"
+        []
