@@ -1,0 +1,15 @@
+---
+cve: 2017-16216
+title: CVE in tencent-server
+description: >
+    tencent-server is a simple web server. tencent-server is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/tencent-server
+    - https://nodesecurity.io/advisories/418
+affected:
+    - name: tencent-server
+      version:
+        - "<=0.0.2"
+      fixedin:
+        []
