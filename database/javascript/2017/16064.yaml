@@ -1,0 +1,14 @@
+---
+cve: 2017-16064
+title: CVE in node-openssl
+description: >
+    node-openssl was a malicious module published with the intent to hijack environment variables. It has been unpublished by npm.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/503
+affected:
+    - name: node-openssl
+      version:
+        - "<=0.0.2-security"
+      fixedin:
+        []
