@@ -1,0 +1,24 @@
+---
+cve: 2018-11307
+title: CVE in com.fasterxml.jackson.core:jackson-databind
+description: >
+    An issue was discovered in FasterXML jackson-databind 2.0.0 through 2.9.5. Use of Jackson default typing along with a gadget class from iBatis allows exfiltration of content. Fixed in 2.7.9.4, 2.8.11.2, and 2.9.6.
+cvss_v2: 7.5
+references:
+    - https://access.redhat.com/errata/RHSA-2019:0782
+    - https://access.redhat.com/errata/RHSA-2019:1822
+    - https://access.redhat.com/errata/RHSA-2019:1823
+    - https://github.com/FasterXML/jackson-databind/issues/2032
+    - https://medium.com/@cowtowncoder/on-jackson-cves-dont-panic-here-is-what-you-need-to-know-54cd0d6e8062
+    - https://nvd.nist.gov/vuln/detail/CVE-2017-7525
+affected:
+    - groupId: com.fasterxml.jackson.core
+      artifactId: jackson-databind
+      version:
+        - "<=2.7.9.3"
+        - "<=2.8.11.1,2.8.0.rc1"
+        - "<=2.9.5,2.9.0"
+      fixedin:
+        - ">=2.9.6"
+        - "<=2.8.11.3,2.8.11.2"
+        - "<=2.7.9.5,2.7.9.4"
