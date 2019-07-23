@@ -1,0 +1,15 @@
+---
+cve: 2017-16089
+title: CVE in serverlyr
+description: >
+  serverlyr is a simple http server. serverlyr is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the URL.
+cvss_v2: 5.0
+references:
+  - https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/serverlyr
+  - https://nodesecurity.io/advisories/365
+affected:
+  - name: serverlyr
+    version:
+      - "<=1.1.0"
+    fixedin: 
+      []
