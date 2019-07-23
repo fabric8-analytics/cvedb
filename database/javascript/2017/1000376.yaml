@@ -1,0 +1,16 @@
+---
+cve: 2017-1000376
+title: CVE in libffi
+description: >
+  libffi requests an executable stack allowing attackers to more easily trigger arbitrary code execution by overwriting the stack. Please note that libffi is used by a number of other libraries. It was previously stated that this affects libffi version 3.2.1 but this appears to be incorrect. libffi prior to version 3.1 on 32 bit x86 systems was vulnerable, and upstream is believed to have fixed this issue in version 3.1.
+cvss_v2: 6.9
+references:
+  - http://www.debian.org/security/2017/dsa-3889
+  - https://access.redhat.com/security/cve/CVE-2017-1000376
+  - https://www.qualys.com/2017/06/19/stack-clash/stack-clash.txt
+affected:
+  - name: libffi
+    version:
+      - "<=3.1"
+    fixedin:
+      - ">=3.2.1"
