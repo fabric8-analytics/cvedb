@@ -1,0 +1,15 @@
+---
+cve: 2019-1010091
+title: CVE in tinymce
+description: >
+    tinymce 4.7.11, 4.7.12 is affected by: CWE-79: Improper Neutralization of Input During Web Page Generation. The impact is: JavaScript code execution. The component is: Media element. The attack vector is: The victim must paste malicious content to media element's embed tab.
+cvss_v2: 4.3
+references:
+    - https://github.com/tinymce/tinymce/issues/4394
+affected:
+    - name: tinymce
+      version:
+        - "<=4.7.12,4.7.11"
+      fixedin:
+        - ">=4.7.13"
+        - "<=4.7.10,4.0.25"
