@@ -1,0 +1,14 @@
+---
+cve: 2018-16482
+title: CVE in mcstatic
+description: >
+    A server directory traversal vulnerability was found on node module mcstatic <=0.0.20 that would allow an attack to access sensitive information in the file system by appending slashes in the URL path.
+cvss_v2: 5.0
+references:
+    - https://hackerone.com/reports/330285
+affected:
+    - name: mcstatic
+      version:
+        - "<=0.0.20"
+      fixedin:
+        []
