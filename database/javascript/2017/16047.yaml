@@ -1,0 +1,13 @@
+---
+cve: 2017-16047
+title: CVE in mysqljs
+description: mysqljs was a malicious module published with the intent to hijack environment variables. It has been unpublished by npm.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/494
+affected:
+    - name: mysqljs
+      version:
+        - "<=0.0.2-security"
+      fixedin:
+        []
