@@ -1,0 +1,14 @@
+---
+cve: 2018-11537
+title: CVE in angular-jwt
+description: >
+    Auth0 angular-jwt before 0.1.10 treats whiteListedDomains entries as regular expressions, which allows remote attackers with knowledge of the jwtInterceptorProvider.whiteListedDomains setting to bypass the domain whitelist filter via a crafted domain.
+cvss_v2: 4.3
+references:
+    - https://auth0.com/docs/security/bulletins/cve-2018-11537
+affected:
+    - name: angular-jwt
+      version:
+        - "<=0.1.9"
+      fixedin:
+        - ">=0.1.10"
