@@ -9,7 +9,7 @@ references:
 affected:
     - name: ethereumjs-vm
       version:
-        - "<=2.4.0,2.4.0"
+        - "==2.4.0"
       fixedin:
         - ">=2.5.0"
         - "<=2.3.5,0.0.0"
