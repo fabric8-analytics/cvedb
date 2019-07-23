@@ -1,0 +1,14 @@
+---
+cve: 2017-1000170
+title: CVE in jqueryFileTree
+description: >
+    jqueryFileTree 2.1.5 and older Directory Traversal
+cvss_v2: 5.0
+references:
+    - https://github.com/jqueryfiletree/jqueryfiletree/issues/66
+affected:
+    - name: jqueryFileTree
+      version:
+        - "<=2.1.4"
+      fixedin:
+        []
