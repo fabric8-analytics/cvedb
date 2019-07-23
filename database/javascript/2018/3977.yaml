@@ -1,0 +1,17 @@
+---
+cve: 2018-3977
+title: CVE in node-sdl2
+description: >
+    An exploitable code execution vulnerability exists in the XCF image rendering functionality of SDL2_image-2.0.3. A specially crafted XCF image can cause a heap overflow, resulting in code execution. An attacker can display a specially crafted image to trigger this vulnerability.
+cvss_v2: 6.8
+references:
+    - https://lists.debian.org/debian-lts-announce/2019/07/msg00021.html
+    - https://security.gentoo.org/glsa/201903-17
+    - https://talosintelligence.com/vulnerability_reports/TALOS-2018-0645
+affected:
+    - name: node-sdl2
+      version:
+        - "<=2.0.3,2.0.3"
+      fixedin:
+        - ">=2.0.5"
+        - "<=2.0.2,1.0.1"
