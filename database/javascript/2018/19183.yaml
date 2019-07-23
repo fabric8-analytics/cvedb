@@ -1,0 +1,15 @@
+---
+cve: 2018-19183
+title: CVE in ethereumjs-vm
+description: >
+    ethereumjs-vm 2.4.0 allows attackers to cause a denial of service (vm.runCode failure and REVERT) via a "code: Buffer.from(my_code, 'hex')" attribute.
+cvss_v2: 5.0
+references:
+    - https://github.com/ethereumjs/ethereumjs-vm/issues/386
+affected:
+    - name: ethereumjs-vm
+      version:
+        - "==2.4.0"
+      fixedin:
+        - ">=2.5.0"
+        - "<=2.3.5,0.0.0"
