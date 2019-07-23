@@ -1,0 +1,17 @@
+---
+cve: 2018-19048
+title: CVE in simditor
+description: >
+    Simditor through 2.3.21 allows DOM XSS via an onload attribute within a malformed SVG element.
+cvss_v2: 4.3
+references:
+    - https://github.com/hkglue/simditor_demo.git
+    - https://github.com/hkglue/simditor_dom_xss/blob/master/README.md
+    - https://github.com/mycolorway/simditor/commit/ef01a643cbb7f8163535d6bfb71135f80ec6a6fd
+    - https://github.com/mycolorway/simditor/releases/tag/v2.3.22
+affected:
+    - name: simditor
+      version:
+        - "<=2.3.21"
+      fixedin:
+        - ">=2.3.22"
