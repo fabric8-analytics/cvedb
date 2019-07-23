@@ -1,0 +1,15 @@
+---
+cve: 2017-16208
+title: CVE in dmmcquay.lab6
+description: >
+    dmmcquay.lab6 is a REST server. dmmcquay.lab6 is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/dmmcquay.lab6
+    - https://nodesecurity.io/advisories/426
+affected:
+    - name: dmmcquay.lab6
+      version:
+        - "<=0.1.1"
+      fixedin:
+	[]
