@@ -1,0 +1,20 @@
+---
+cve: 2018-1000006
+title: CVE in electron
+description: >
+  GitHub Electron versions 1.8.2-beta.3 and earlier, 1.7.10 and earlier, 1.6.15 and earlier has a vulnerability in the protocol handler, specifically Electron apps running on Windows 10, 7 or 2008 that register custom protocol handlers can be tricked in arbitrary command execution if the user clicks on a specially crafted URL. This has been fixed in versions 1.8.2-beta.4, 1.7.11, and 1.6.16.
+cvss_v2: 9.3
+references:
+  - http://www.securityfocus.com/bid/102796
+  - https://electronjs.org/blog/protocol-handler-fix
+  - https://github.com/electron/electron/releases/tag/v1.8.2-beta.4
+  - https://medium.com/@Wflki/exploiting-electron-rce-in-exodus-wallet-d9e6db13c374
+  - https://www.exploit-db.com/exploits/43899/
+  - https://www.exploit-db.com/exploits/44357/
+affected:
+  - name: electron
+    version:
+      - "<=1.8.2-beta.3"
+      - "<=1.7.10"
+    fixedin:
+      - ">=1.8.2-beta.4"
