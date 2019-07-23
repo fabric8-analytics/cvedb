@@ -1,0 +1,15 @@
+---
+cve: 2017-17068
+title: CVE in auth0.js
+description: >
+  A cross-origin vulnerability has been discovered in the Auth0 auth0.js library affecting versions < 8.12. This vulnerability allows an attacker to acquire authenticated users' tokens and invoke services on a user's behalf if the target site or application uses a popup callback page with auth0.popup.callback().
+cvss_v2: 5.0
+references:
+  - https://appcheck-ng.com/appcheck-discovers-vulnerability-auth0-library-cve-2017-17068/
+  - https://auth0.com/docs/security/bulletins/cve-2017-17068
+affected:
+  - name: auth0.js
+    version:
+      - "<=8.12.1"
+    fixedin:
+      - ">=9.0.0"
