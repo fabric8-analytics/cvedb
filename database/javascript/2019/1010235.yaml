@@ -1,0 +1,15 @@
+---
+cve: 2019-1010235
+title: CVE in cms
+description: >
+    Frog CMS 1.1 is affected by: Cross Site Scripting (XSS). The impact is: Cookie stealing, Alert pop-up on page, Redirecting to another phishing site, Executing browser exploits. The component is: Snippets.
+cvss_v2: 3.5
+references:
+    - https://somerandomshitwbu.blogspot.com/2019/01/stored-xss-in-frog-cms-open-source.html
+affected:
+    - name: cms
+      version:
+        - "<=1.1.0,1.1.0"
+      fixedin:
+        - ">=1.2.0"
+        - "<=1.0.0,0.0.1-1"
