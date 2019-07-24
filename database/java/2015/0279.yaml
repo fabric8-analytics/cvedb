@@ -1,0 +1,19 @@
+---
+cve: 2015-0279
+title: CVE in org.richfaces.ui:richfaces-components-api
+description: >
+    JBoss RichFaces before 4.5.4 allows remote attackers to inject expression language (EL) expressions and execute arbitrary Java code via the do parameter.
+cvss_v2: 6.8
+references:
+    - http://jvn.jp/en/jp/JVN56297719/index.html
+    - http://jvndb.jvn.jp/en/contents/2015/JVNDB-2015-001959.html
+    - http://rhn.redhat.com/errata/RHSA-2015-0719.html
+    - http://seclists.org/fulldisclosure/2019/Jul/21
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1192140
+affected:
+    - groupId: org.richfaces.ui
+      artifactId: richfaces-components-api
+      version:
+        - "<=4.3.7.Final"
+      fixedin:
+        []
