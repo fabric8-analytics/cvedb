@@ -1,0 +1,17 @@
+---
+cve: 2018-15769
+title: CVE in rsa
+description: >
+    RSA BSAFE Micro Edition Suite versions prior to 4.0.11 (in 4.0.x series) and versions prior to 4.1.6.2 (in 4.1.x series) contain a key management error issue. A malicious TLS server could potentially cause a Denial Of Service (DoS) on TLS clients during the handshake when a very large prime value is sent to the TLS client, and an Ephemeral or Anonymous Diffie-Hellman cipher suite (DHE or ADH) is used.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/105929
+    - http://www.securitytracker.com/id/1042057
+    - https://seclists.org/fulldisclosure/2018/Nov/37
+    - https://www.oracle.com/technetwork/security-advisory/cpujul2019-5072835.html
+affected:
+    - name: rsa
+      version:
+        - "<=4.0,4.0"
+      fixedin:
+        - "<=3.4.2,1.1"
