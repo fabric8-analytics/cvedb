@@ -1,0 +1,18 @@
+---
+cve: 2019-1010142
+title: CVE in scapy
+description: >
+    scapy 2.4.0 is affected by: Denial of Service. The impact is: infinite loop, resource consumption and program unresponsive. The component is: _RADIUSAttrPacketListField.getfield(self..). The attack vector is: over the network or in a pcap. both work.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/106674
+    - https://github.com/secdev/scapy/pull/1409
+    - https://github.com/secdev/scapy/pull/1409/files#diff-441eff981e466959968111fc6314fe93L1058
+    - https://www.imperva.com/blog/scapy-sploit-python-network-tool-is-vulnerable-to-denial-of-service-dos-attack-cve-pending/
+affected:
+    - name: scapy
+      version:
+        - "<=2.4.0,2.4rc2"
+      fixedin:
+        - ">=2.4.1"
+        - "<=2.3.3,2.2.0-dev"
