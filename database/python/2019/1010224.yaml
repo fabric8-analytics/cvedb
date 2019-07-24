@@ -1,0 +1,15 @@
+---
+cve: 2019-1010224
+title: CVE in aubio
+description: >
+    aubio 0.4.8 and earlier is affected by: null pointer. The impact is: crash (DoS). The component is: onset. The fixed version is: after commit e4e0861cffbc8d3a53dcd18f9ae85797690d67c7.
+cvss_v2: 5.0
+references:
+    - https://github.com/aubio/aubio/blob/0.4.8/src/onset/onset.c#L59
+    - https://github.com/aubio/aubio/commit/e4e0861cffbc8d3a53dcd18f9ae85797690d67c7
+affected:
+    - name: aubio
+      version:
+        - "<=0.4.8"
+      fixedin:
+        - ">=0.4.9"
