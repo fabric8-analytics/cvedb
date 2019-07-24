@@ -1,0 +1,15 @@
+---
+cve: 2019-1010222
+title: CVE in aubio
+description: >
+    aubio 0.4.8 and earlier is affected by: null pointer. The impact is: crash. The component is: filterbank. The attack vector is: pass invalid arguments to new_aubio_filterbank. The fixed version is: after commit eda95c9c22b4f0b466ae94c4708765eaae6e709e.
+cvss_v2: 5.0
+references:
+    - https://github.com/aubio/aubio/blob/0.4.8/src/spectral/mfcc.c#L79
+    - https://github.com/aubio/aubio/commit/eda95c9c22b4f0b466ae94c4708765eaae6e709e
+affected:
+    - name: aubio
+      version:
+        - "<=0.4.8"
+      fixedin:
+        - ">=0.4.9"
