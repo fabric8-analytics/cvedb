@@ -1,0 +1,16 @@
+---
+cve: 2019-11331
+title: CVE in ntp-client
+description: >
+    Network Time Protocol (NTP), as specified in RFC 5905, uses port 123 even for modes where a fixed port number is not required, which makes it easier for remote attackers to conduct off-path attacks.
+cvss_v2: 6.8
+references:
+    - http://www.securityfocus.com/bid/108010
+    - https://support.f5.com/csp/article/K09940637
+    - https://tools.ietf.org/html/draft-gont-ntp-port-randomization-00
+affected:
+    - name: ntp-client
+      version:
+        []
+      fixedin:
+        - ">=0.5.0"
