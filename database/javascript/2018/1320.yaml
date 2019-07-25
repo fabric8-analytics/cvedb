@@ -1,0 +1,24 @@
+---
+cve: 2018-1320
+title: CVE in java
+description: >
+    Apache Thrift Java client library versions 0.5.0 through 0.11.0 can bypass SASL negotiation isComplete validation in the org.apache.thrift.transport.TSaslTransport class. An assert used to determine if the SASL handshake had successfully completed could be disabled in production settings making the validation incomplete.
+cvss_v2: 5.0
+references:
+    - http://www.openwall.com/lists/oss-security/2019/07/24/3
+    - http://www.securityfocus.com/bid/106551
+    - https://lists.apache.org/thread.html/187684ac8b94d55256253f5220cb55e8bd568afdf9a8a86e9bbb66c9@%3Cdevnull.infra.apache.org%3E
+    - https://lists.apache.org/thread.html/da5234b5e78f1c99190407f791dfe1bf6c58de8d30d15974a9669be3@%3Cuser.thrift.apache.org%3E
+    - https://lists.apache.org/thread.html/dbe3a39b48900318ad44494e8721f786901ba4520cd412c7698f534f@%3Cdev.storm.apache.org%3E
+    - https://lists.apache.org/thread.html/dfee89880c84874058c6a584d8128468f8d3c2ac25068ded91073adc@%3Cuser.storm.apache.org%3E
+    - https://lists.apache.org/thread.html/e825ff2f4e129c0ecdb6a19030b53c1ccdf810a8980667628d0c6a80@%3Cannounce.apache.org%3E
+    - https://lists.debian.org/debian-lts-announce/2019/02/msg00008.html
+    - https://support.f5.com/csp/article/K36361684
+affected:
+    - name: java
+      version:
+        - "<=0.11.0,0.5.1"
+        - "<=5.0.1,5.0.0"
+      fixedin:
+        - "<=0.11.1,0.11.1"
+        - "<=0.4.7,0.0.1"
