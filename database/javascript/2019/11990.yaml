@@ -1,0 +1,14 @@
+---
+cve: 2019-11990
+title: CVE in grommet-css-hpe
+description: >
+    Security vulnerabilities in HPE UIoT versions 1.6, 1.5, 1.4.2, 1.4.1, 1.4.0, and 1.2.4.2 could allow unauthorized remote access and access to sensitive data. HPE has addressed this issue in HPE UIoT: * For customers with release UIoT 1.6, fixes are made available with 1.6 RP603 * For customers with release UIoT 1.5, fixes are made available with 1.5 RP503 HF3 * For customers with release older than 1.5, such as 1.4.0, 1.4.1, 1.4.2 and 1.2.4.2, the resolution will be to upgrade to 1.5 RP503 HF3 or 1.6 RP603 Customers are requested to upgrade to the updated versions or contact HPE support for further assistance.
+cvss_v2: 9.0
+references:
+    - https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbhf03937en_us
+affected:
+    - name: grommet-css-hpe
+      version:
+        - "<=1.6.0"
+      fixedin:
+        []
