@@ -1,0 +1,16 @@
+---
+cve: 2019-10078
+title: CVE in org.apache.jspwiki.wikipages:jspwiki-wikipages-it
+description: >
+    A carefully crafted plugin link invocation could trigger an XSS vulnerability on Apache JSPWiki 2.9.0 to 2.11.0.M3, which could lead to session hijacking. Initial reporting indicated ReferredPagesPlugin, but further analysis showed that multiple plugins were vulnerable.
+cvss_v2: 4.3
+references:
+    - https://jspwiki-wiki.apache.org/Wiki.jsp?page=CVE-2019-10078
+    - https://lists.apache.org/thread.html/959811b776e1a332a1a4295405b683fd64190d079a7c3028f1c314d7@%3Cdev.jspwiki.apache.org%3E
+affected:
+    - groupId: org.apache.jspwiki.wikipages
+      artifactId: jspwiki-wikipages-it
+      version:
+        - "<=2.11.0.M4"
+      fixedin:
+        []
