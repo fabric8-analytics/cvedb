@@ -15,10 +15,11 @@ references:
     - https://access.redhat.com/errata/RHSA-2018:2585
     - https://access.redhat.com/errata/RHSA-2019:0054
     - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-10874
+    - https://usn.ubuntu.com/4072-1/
 affected:
     - name: ansible
       version:
-        - "<=2.0.0.0,2.0.0"
+        - "<=2.0.0,2.0.0.0"
         - "<=2.4.0.0,2.4.0.0"
         - "<=2.5.0,2.5.0a1"
         - "<=2.6.0,2.6.0a1"
