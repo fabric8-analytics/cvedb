@@ -1,0 +1,16 @@
+---
+cve: 2019-1940
+title: CVE in io.gravitee.management.services:gravitee-management-api-services-dynamic-properties
+description: >
+    A vulnerability in the Web Services Management Agent (WSMA) feature of Cisco Industrial Network Director (IND) could allow an unauthenticated, remote attacker to gain unauthorized read access to sensitive data using an invalid X.509 certificate. The vulnerability is due to insufficient X.509 certificate validation when establishing a WSMA connection. An attacker could exploit this vulnerability by supplying a crafted X.509 certificate during the WSMA connection setup phase. A successful exploit could allow the attacker to conduct man-in-the-middle attacks to decrypt confidential information on WSMA connections to the affected software. At the time of publication, this vulnerability affected Cisco IND Software releases prior to 1.7.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/109296
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20190717-wsma-info
+affected:
+    - groupId: io.gravitee.management.services
+      artifactId: gravitee-management-api-services-dynamic-properties
+      version:
+        - "<=1.6.1"
+      fixedin:
+        - ">=1.7.0"
