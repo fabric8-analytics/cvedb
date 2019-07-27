@@ -2,9 +2,11 @@
 cve: 2018-19802
 title: CVE in aubio
 description: >
-    aubio v0.4.0 to v0.4.8 has a Buffer Overflow (issue 2 of 3).
+    aubio v0.4.0 to v0.4.8 has a new_aubio_onset NULL pointer dereference.
 cvss_v2: 5.0
 references:
+    - http://lists.opensuse.org/opensuse-security-announce/2019-06/msg00063.html
+    - http://lists.opensuse.org/opensuse-security-announce/2019-06/msg00067.html
     - https://github.com/aubio/aubio/blob/0.4.9/ChangeLog
 affected:
     - name: aubio
