@@ -2,9 +2,11 @@
 cve: 2018-19801
 title: CVE in aubio
 description: >
-    aubio v0.4.0 to v0.4.8 has a NULL pointer dereference (issue 1 of 6).
+    aubio v0.4.0 to v0.4.8 has a NULL pointer dereference in new_aubio_filterbank via invalid n_filters.
 cvss_v2: 5.0
 references:
+    - http://lists.opensuse.org/opensuse-security-announce/2019-06/msg00063.html
+    - http://lists.opensuse.org/opensuse-security-announce/2019-06/msg00067.html
     - https://github.com/aubio/aubio/blob/0.4.9/ChangeLog
 affected:
     - name: aubio
