@@ -1,0 +1,17 @@
+---
+cve: 2016-1291
+title: CVE in ng-infrastructure
+description: >
+    Cisco Prime Infrastructure 1.2.0 through 2.2(2) and Cisco Evolved Programmable Network Manager (EPNM) 1.2 allow remote attackers to execute arbitrary code via crafted deserialized data in an HTTP POST request, aka Bug ID CSCuw03192.
+cvss_v2: 9.3
+references:
+    - http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160406-remcode
+    - http://www.securitytracker.com/id/1035497
+    - https://blogs.securiteam.com/index.php/archives/2727
+affected:
+    - name: ng-infrastructure
+      version:
+        - "<=1.3.0,1.2.0"
+      fixedin:
+        - ">=1.3.1"
+        - "<=1.1.3,1.0.0"
