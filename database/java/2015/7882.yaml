@@ -1,0 +1,15 @@
+---
+cve: 2015-7882
+title: CVE in org.mongodb:mongodb-driver-async
+description: >
+    Improper handling of LDAP authentication in MongoDB Server versions 3.0.0 to 3.0.6 allows an unauthenticated client to gain unauthorized access.
+cvss_v2: 6.8
+references:
+    - https://jira.mongodb.org/browse/SERVER-20691
+affected:
+    - groupId: org.mongodb
+      artifactId: mongodb-driver-async
+      version:
+        - "<=3.0.4"
+      fixedin:
+        - ">=3.1.0-rc0"
