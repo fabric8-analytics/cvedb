@@ -1,0 +1,16 @@
+---
+cve: 2015-6262
+title: CVE in laxar-infrastructure
+description: >
+    Cross-site request forgery (CSRF) vulnerability in Cisco Prime Infrastructure 1.2(0.103) and 2.0(0.0) allows remote attackers to hijack the authentication of arbitrary users, aka Bug IDs CSCum49054 and CSCum49059.
+cvss_v2: 6.8
+references:
+    - http://tools.cisco.com/security/center/viewAlert.x?alertId=40652
+    - http://www.securitytracker.com/id/1033364
+affected:
+    - name: laxar-infrastructure
+      version:
+        - "<=2.0.0,2.0.0-rc.0"
+      fixedin:
+        - ">=2.0.1"
+        - "<=0.1.0-alpha.6,0.1.0-alpha.0"
