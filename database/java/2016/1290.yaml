@@ -1,0 +1,17 @@
+---
+cve: 2016-1290
+title: CVE in com.cisco.oss.foundation:http-client-apache
+description: >
+    The web API in Cisco Prime Infrastructure 1.2.0 through 2.2(2) and Cisco Evolved Programmable Network Manager (EPNM) 1.2 allows remote authenticated users to bypass intended RBAC restrictions and gain privileges via an HTTP request that is inconsistent with a pattern filter, aka Bug ID CSCuy10227.
+cvss_v2: 5.5
+references:
+    - http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160406-privauth
+    - http://www.securitytracker.com/id/1035498
+affected:
+    - groupId: com.cisco.oss.foundation
+      artifactId: http-client-apache
+      version:
+        - "<=1.2.1-0,1.2.1-0"
+      fixedin:
+        - ">=1.2.1-1"
+        - "<=1.1.1-1,0.0.0-5"
