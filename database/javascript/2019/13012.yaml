@@ -1,0 +1,20 @@
+---
+cve: 2019-13012
+title: CVE in is-gnome
+description: >
+    The keyfile settings backend in GNOME GLib (aka glib2.0) before 2.60.0 creates directories using g_file_make_directory_with_parents (kfsb->dir, NULL, NULL) and files using g_file_replace_contents (kfsb->file, contents, length, NULL, FALSE, G_FILE_CREATE_REPLACE_DESTINATION, NULL, NULL, NULL). Consequently, it does not properly restrict directory (and file) permissions. Instead, for directories, 0777 permissions are used; for files, default file permissions are used. This is similar to CVE-2019-12450.
+cvss_v2: 5.0
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2019-07/msg00022.html
+    - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=931234#12
+    - https://gitlab.gnome.org/GNOME/glib/commit/5e4da714f00f6bfb2ccd6d73d61329c6f3a08429
+    - https://gitlab.gnome.org/GNOME/glib/issues/1658
+    - https://gitlab.gnome.org/GNOME/glib/merge_requests/450
+    - https://usn.ubuntu.com/4049-1/
+    - https://usn.ubuntu.com/4049-2/
+affected:
+    - name: is-gnome
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - "<=1.0.3,0.1.1"
