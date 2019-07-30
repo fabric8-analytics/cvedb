@@ -1,0 +1,17 @@
+---
+cve: 2016-1289
+title: CVE in bug-crowd-api-client
+description: >
+    The API in Cisco Prime Infrastructure 1.2 through 3.0 and Evolved Programmable Network Manager (EPNM) 1.2 allows remote attackers to execute arbitrary code or obtain sensitive management information via a crafted HTTP request, as demonstrated by discovering managed-device credentials, aka Bug ID CSCuy10231.
+cvss_v2: 10.0
+references:
+    - http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160629-piauthbypass
+    - http://www.securityfocus.com/bid/91504
+    - http://www.securitytracker.com/id/1036195
+affected:
+    - name: bug-crowd-api-client
+      version:
+        - "<=2.1.0,2.0.0"
+      fixedin:
+        - ">=2.1.1"
+        - "<=1.0.0,0.0.1.dev1"
