@@ -1,0 +1,14 @@
+---
+cve: 2015-7882
+title: CVE in asphalt-mongodb
+description: >
+    Improper handling of LDAP authentication in MongoDB Server versions 3.0.0 to 3.0.6 allows an unauthenticated client to gain unauthorized access.
+cvss_v2: 6.8
+references:
+    - https://jira.mongodb.org/browse/SERVER-20691
+affected:
+    - name: asphalt-mongodb
+      version:
+        - "<=3.0.1,3.0.0"
+      fixedin:
+        - "<=2.0.0,1.0.0"
