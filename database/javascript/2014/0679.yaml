@@ -1,0 +1,15 @@
+---
+cve: 2014-0679
+title: CVE in ng-infrastructure
+description: >
+    Cisco Prime Infrastructure 1.2 and 1.3 before 1.3.0.20-2, 1.4 before 1.4.0.45-2, and 2.0 before 2.0.0.0.294-2 allows remote authenticated users to execute arbitrary commands with root privileges via an unspecified URL, aka Bug ID CSCum71308.
+cvss_v2: 9.0
+references:
+    - http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140226-pi
+affected:
+    - name: ng-infrastructure
+      version:
+        - "<=1.3.0,1.2.0"
+      fixedin:
+        - ">=1.3.1"
+        - "<=1.1.3,1.0.0"
