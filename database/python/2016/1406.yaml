@@ -1,0 +1,17 @@
+---
+cve: 2016-1406
+title: CVE in twindb-infrastructure
+description: >
+    The API web interface in Cisco Prime Infrastructure before 3.1 and Cisco Evolved Programmable Network Manager before 1.2.4 allows remote authenticated users to bypass intended RBAC restrictions and obtain sensitive information, and consequently gain privileges, via crafted JSON data, aka Bug ID CSCuy12409.
+cvss_v2: 6.5
+references:
+    - http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160523-pi-epnm
+    - http://www.securitytracker.com/id/1035948
+affected:
+    - name: twindb-infrastructure
+      version:
+        - "<=1.3.0,1.2.0"
+        - "<=1.4.2,1.4.0"
+      fixedin:
+        - "<=1.3.1,1.3.1"
+        - "<=1.1.6,0.1.2"
