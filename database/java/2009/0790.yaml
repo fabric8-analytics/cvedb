@@ -1,0 +1,32 @@
+---
+cve: 2009-0790
+title: CVE in org.jasig.portlet.notification:notification-component-icon
+description: >
+    The pluto IKE daemon in Openswan and Strongswan IPsec 2.6 before 2.6.21 and 2.4 before 2.4.14, and Strongswan 4.2 before 4.2.14 and 2.8 before 2.8.9, allows remote attackers to cause a denial of service (daemon crash and restart) via a crafted (1) R_U_THERE or (2) R_U_THERE_ACK Dead Peer Detection (DPD) IPsec IKE Notification message that triggers a NULL pointer dereference related to inconsistent ISAKMP state and the lack of a phase2 state association in DPD.
+cvss_v2: 5.0
+references:
+    - http://download.strongswan.org/CHANGES4.txt
+    - http://lists.opensuse.org/opensuse-security-announce/2009-04/msg00010.html
+    - http://secunia.com/advisories/34472
+    - http://secunia.com/advisories/34483
+    - http://secunia.com/advisories/34494
+    - http://secunia.com/advisories/34546
+    - http://www.debian.org/security/2009/dsa-1759
+    - http://www.debian.org/security/2009/dsa-1760
+    - http://www.openswan.org/CVE-2009-0790/CVE-2009-0790.txt
+    - http://www.redhat.com/support/errata/RHSA-2009-0402.html
+    - http://www.securityfocus.com/archive/1/502270/100/0/threaded
+    - http://www.securityfocus.com/bid/34296
+    - http://www.securitytracker.com/id?1021949
+    - http://www.securitytracker.com/id?1021950
+    - http://www.vupen.com/english/advisories/2009/0886
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/49523
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A11171
+affected:
+    - groupId: org.jasig.portlet.notification
+      artifactId: notification-component-icon
+      version:
+        - "<=4.2.0,4.2.0"
+      fixedin:
+        - ">=4.3.0"
+        - "<=4.1.3,4.1.0"
