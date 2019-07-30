@@ -1,0 +1,15 @@
+---
+cve: 2019-1010100
+title: CVE in org.openengsb.tooling.wsdl2dll:wsdl2dll-maven-plugin
+description: >
+    Akeo Consulting Rufus 3.0 and earlier is affected by: DLL search order hijacking. The impact is: Arbitrary code execution WITH escalation of privilege. The component is: Executable installers, portable executables (ALL executables on the web site). The attack vector is: CAPEC-471, CWE-426, CWE-427.
+cvss_v2: 6.8
+references:
+    - http://seclists.org/oss-sec/2018/q2/146
+affected:
+    - groupId: org.openengsb.tooling.wsdl2dll
+      artifactId: wsdl2dll-maven-plugin
+      version:
+        - "<=3.0.0.M2"
+      fixedin:
+        []
