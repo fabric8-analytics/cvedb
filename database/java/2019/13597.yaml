@@ -1,0 +1,16 @@
+---
+cve: 2019-13597
+title: CVE in de.pro-vision.maven:de.pro-vision.maven.build-tools.global-build-tools
+description: >
+    _s_/sprm/_s_/dyn/Player_setScriptFile in Sahi Pro 8.0.0 allows command execution. It allows one to run ".sah" scripts via Sahi Launcher. Also, one can create a new script with an editor. It is possible to execute commands on the server using the _execute() function.
+cvss_v2: 7.5
+references:
+    - https://pentest.com.tr/exploits/Sahi-Pro-v8-x-Unauthenticated-RCE-Exploit-Python.html
+    - https://www.exploit-db.com/exploits/47110
+affected:
+    - groupId: de.pro-vision.maven
+      artifactId: de.pro-vision.maven.build-tools.global-build-tools
+      version:
+        - "<=8"
+      fixedin:
+        - ">=9"
