@@ -1,0 +1,14 @@
+---
+cve: 2019-1010304
+title: CVE in issue-extract
+description: >
+    Saleor Issue was introduced by merge commit: e1b01bad0703afd08d297ed3f1f472248312cc9c. This commit was released as part of 2.0.0 release is affected by: Incorrect Access Control. The impact is: Important. The component is: ProductVariant type in GraphQL API. The attack vector is: Unauthenticated user can access the GraphQL API (which is by default publicly exposed under `/graphql/` URL) and fetch products data which may include admin-restricted shop's revenue data. The fixed version is: 2.3.1.
+cvss_v2: 5.0
+references:
+    - https://github.com/mirumee/saleor/issues/3768
+affected:
+    - name: issue-extract
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - "<=1.0.12,1.0.0"
