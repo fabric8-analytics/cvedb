@@ -1,0 +1,15 @@
+---
+cve: 2019-13956
+title: CVE in org.web4thejob:org.web4thejob.orm.h4
+description: >
+    Discuz!ML 3.2 through 3.4 allows remote attackers to execute arbitrary PHP code via a modified language cookie, as demonstrated by changing 4gH4_0df5_language=en to 4gH4_0df5_language=en'.phpinfo().'; (if the random prefix 4gH4_0df5_ were used).
+cvss_v2: 7.5
+references:
+    - http://esoln.net/esoln/blog/2019/06/14/discuzml-v-3-x-code-injection-vulnerability/
+affected:
+    - groupId: org.web4thejob
+      artifactId: org.web4thejob.orm.h4
+      version:
+        - "<=3.3.1"
+      fixedin:
+        - ">=3.4.1"
