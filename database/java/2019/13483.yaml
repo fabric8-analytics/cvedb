@@ -1,0 +1,15 @@
+---
+cve: 2019-13483
+title: CVE in com.auth0:java-jwt
+description: >
+    Auth0 Passport-SharePoint before 0.4.0 does not validate the JWT signature of an Access Token before processing. This allows attackers to forge tokens and bypass authentication and authorization mechanisms.
+cvss_v2: 7.5
+references:
+    - https://auth0.com/docs/security/bulletins/cve-2019-13483
+affected:
+    - groupId: com.auth0
+      artifactId: java-jwt
+      version:
+        - "<=0.3"
+      fixedin:
+        - ">=0.4"
