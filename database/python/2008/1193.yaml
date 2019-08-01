@@ -1,0 +1,50 @@
+---
+cve: 2008-1193
+title: CVE in parsing
+description: >
+    Unspecified vulnerability in Java Runtime Environment Image Parsing Library in Sun JDK and JRE 6 Update 4 and earlier, and 5.0 Update 14 and earlier, allows remote attackers to gain privileges via an untrusted application.
+cvss_v2: 9.3
+references:
+    - http://dev2dev.bea.com/pub/advisory/277
+    - http://lists.apple.com/archives/security-announce//2008/Sep/msg00008.html
+    - http://lists.opensuse.org/opensuse-security-announce/2008-04/msg00000.html
+    - http://lists.opensuse.org/opensuse-security-announce/2008-04/msg00010.html
+    - http://secunia.com/advisories/29239
+    - http://secunia.com/advisories/29273
+    - http://secunia.com/advisories/29498
+    - http://secunia.com/advisories/29582
+    - http://secunia.com/advisories/29841
+    - http://secunia.com/advisories/29858
+    - http://secunia.com/advisories/29897
+    - http://secunia.com/advisories/30003
+    - http://secunia.com/advisories/30676
+    - http://secunia.com/advisories/30780
+    - http://secunia.com/advisories/31497
+    - http://secunia.com/advisories/32018
+    - http://security.gentoo.org/glsa/glsa-200804-28.xml
+    - http://sunsolve.sun.com/search/document.do?assetkey=1-26-233325-1
+    - http://support.apple.com/kb/HT3178
+    - http://support.apple.com/kb/HT3179
+    - http://www.gentoo.org/security/en/glsa/glsa-200804-20.xml
+    - http://www.gentoo.org/security/en/glsa/glsa-200806-11.xml
+    - http://www.redhat.com/support/errata/RHSA-2008-0186.html
+    - http://www.redhat.com/support/errata/RHSA-2008-0210.html
+    - http://www.redhat.com/support/errata/RHSA-2008-0244.html
+    - http://www.redhat.com/support/errata/RHSA-2008-0245.html
+    - http://www.redhat.com/support/errata/RHSA-2008-0267.html
+    - http://www.securityfocus.com/bid/28125
+    - http://www.securitytracker.com/id?1019551
+    - http://www.us-cert.gov/cas/techalerts/TA08-066A.html
+    - http://www.vmware.com/security/advisories/VMSA-2008-0010.html
+    - http://www.vupen.com/english/advisories/2008/0770/references
+    - http://www.vupen.com/english/advisories/2008/1252
+    - http://www.vupen.com/english/advisories/2008/1856/references
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/41028
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A11409
+affected:
+    - name: parsing
+      version:
+        - "<=1.6.0,1.5.0"
+      fixedin:
+        - ">=1.6.1"
+        - "<=1.4.1,1.4"
