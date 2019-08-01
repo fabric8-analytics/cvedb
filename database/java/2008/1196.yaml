@@ -1,0 +1,51 @@
+---
+cve: 2008-1196
+title: CVE in org.hyperledger.fabric-sdk-java:fabric-sdk-java
+description: >
+    Stack-based buffer overflow in Java Web Start (javaws.exe) in Sun JDK and JRE 6 Update 4 and earlier and 5.0 Update 14 and earlier; and SDK and JRE 1.4.2_16 and earlier; allows remote attackers to execute arbitrary code via a crafted JNLP file.
+cvss_v2: 6.8
+references:
+    - http://download.novell.com/Download?buildid=q5exhSqeBjA~
+    - http://lists.apple.com/archives/security-announce//2008/Sep/msg00008.html
+    - http://lists.opensuse.org/opensuse-security-announce/2008-04/msg00000.html
+    - http://lists.opensuse.org/opensuse-security-announce/2008-04/msg00010.html
+    - http://secunia.com/advisories/29239
+    - http://secunia.com/advisories/29273
+    - http://secunia.com/advisories/29498
+    - http://secunia.com/advisories/29582
+    - http://secunia.com/advisories/29858
+    - http://secunia.com/advisories/29897
+    - http://secunia.com/advisories/30676
+    - http://secunia.com/advisories/30780
+    - http://secunia.com/advisories/31067
+    - http://secunia.com/advisories/31497
+    - http://secunia.com/advisories/31580
+    - http://secunia.com/advisories/31586
+    - http://secunia.com/advisories/32018
+    - http://security.gentoo.org/glsa/glsa-200804-28.xml
+    - http://sunsolve.sun.com/search/document.do?assetkey=1-26-233327-1
+    - http://support.apple.com/kb/HT3178
+    - http://support.apple.com/kb/HT3179
+    - http://support.novell.com/docs/Readmes/InfoDocument/patchbuilder/readme_5033642.html
+    - http://www.gentoo.org/security/en/glsa/glsa-200804-20.xml
+    - http://www.gentoo.org/security/en/glsa/glsa-200806-11.xml
+    - http://www.kb.cert.org/vuls/id/223028
+    - http://www.redhat.com/support/errata/RHSA-2008-0186.html
+    - http://www.redhat.com/support/errata/RHSA-2008-0210.html
+    - http://www.redhat.com/support/errata/RHSA-2008-0267.html
+    - http://www.redhat.com/support/errata/RHSA-2008-0555.html
+    - http://www.securitytracker.com/id?1019552
+    - http://www.us-cert.gov/cas/techalerts/TA08-066A.html
+    - http://www.vmware.com/security/advisories/VMSA-2008-0010.html
+    - http://www.vupen.com/english/advisories/2008/0770/references
+    - http://www.vupen.com/english/advisories/2008/1856/references
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/41026
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A10412
+affected:
+    - groupId: org.hyperledger.fabric-sdk-java
+      artifactId: fabric-sdk-java
+      version:
+        - "<=1.4.2,1.4.2"
+      fixedin:
+        - ">=1.4.3"
+        - "<=1.4.1,0.6"
