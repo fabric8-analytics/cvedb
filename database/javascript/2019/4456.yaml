@@ -1,0 +1,16 @@
+---
+cve: 2019-4456
+title: CVE in standard
+description: >
+    IBM Daeja ViewONE Professional, Standard & Virtual 5.0.5 and 5.0.6 is vulnerable to an XML External Entity Injection (XXE) attack when processing XML data. A remote attacker could exploit this vulnerability to expose sensitive information or consume memory resources. IBM X-Force ID: 163620.
+cvss_v2: 5.5
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/163620
+    - https://www.ibm.com/support/docview.wss?uid=ibm10959177
+affected:
+    - name: standard
+      version:
+        - "<=5.0.2,5.0.0-0"
+      fixedin:
+        - ">=5.1.0"
+        - "<=4.5.4,1.0.0"
