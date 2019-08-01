@@ -1,0 +1,14 @@
+---
+cve: 2019-1020008
+title: CVE in stacktable.js
+description: >
+    stacktable.js before 1.0.4 allows XSS.
+cvss_v2: 4.3
+references:
+    - https://github.com/WebFirst/stacktable.js/security/advisories/GHSA-r9j3-hgxr-75xg
+affected:
+    - name: stacktable.js
+      version:
+        - "<=1.0.3"
+      fixedin:
+        []
