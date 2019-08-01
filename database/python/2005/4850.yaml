@@ -1,0 +1,16 @@
+---
+cve: 2005-4850
+title: CVE in ez
+description: >
+    eZ publish 3.5 through 3.7 before 20050608 requires both edit and create permissions in order to submit data, which allows remote attackers to edit data submitted by arbitrary anonymous users.
+cvss_v2: 5.0
+references:
+    - http://ez.no/download/ez_publish/changelogs/ez_publish_3_8/changelog_3_6_x_3_7_x_to_3_8_0
+    - http://issues.ez.no/6680
+affected:
+    - name: ez
+      version:
+        - "<=3.7.0,3.5.0"
+      fixedin:
+        - ">=3.7.1"
+        - "<=3.4.9,1.1.1"
