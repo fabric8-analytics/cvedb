@@ -1,0 +1,26 @@
+---
+cve: 2006-0615
+title: CVE in org.hyperledger.fabric-sdk-java:fabric-sdk-java
+description: >
+    Multiple unspecified vulnerabilities in Sun Java JDK and JRE 5.0 Update 4 and earlier, SDK and JRE 1.4.x through 1.4.2_09 allow remote attackers to bypass Java sandbox security and obtain privileges via unspecified vectors involving the reflection APIs, aka the "second and third issues."
+cvss_v2: 4.0
+references:
+    - http://docs.info.apple.com/article.html?artnum=303658
+    - http://secunia.com/advisories/18760
+    - http://secunia.com/advisories/18884
+    - http://securitytracker.com/id?1015596
+    - http://sunsolve.sun.com/search/document.do?assetkey=1-26-102171-1
+    - http://www.gentoo.org/security/en/glsa/glsa-200602-07.xml
+    - http://www.kb.cert.org/vuls/id/759996
+    - http://www.vupen.com/english/advisories/2006/0467
+    - http://www.vupen.com/english/advisories/2006/0828
+    - http://www.vupen.com/english/advisories/2006/1398
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/24561
+affected:
+    - groupId: org.hyperledger.fabric-sdk-java
+      artifactId: fabric-sdk-java
+      version:
+        - "<=1.4.2,1.4.2"
+      fixedin:
+        - ">=1.4.3"
+        - "<=1.4.1,0.6"
