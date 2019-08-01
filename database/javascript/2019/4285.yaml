@@ -1,0 +1,15 @@
+---
+cve: 2019-4285
+title: CVE in @kmikodev/call-center-server
+description: >
+    IBM WebSphere Application Server - Liberty Admin Center could allow a remote attacker to hijack the clicking action of the victim. By persuading a victim to visit a malicious Web site, a remote attacker could send a specially-crafted HTTP request to hijack the victim's click actions or launch other client-side browser attacks. IBM X-Force ID: 160513.
+cvss_v2: 3.5
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/160513
+    - https://www.ibm.com/support/docview.wss?uid=ibm10884064
+affected:
+    - name: @kmikodev/call-center-server
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
