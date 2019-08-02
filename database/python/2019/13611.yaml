@@ -1,0 +1,14 @@
+---
+cve: 2019-13611
+title: CVE in python-engineio
+description: >
+    An issue was discovered in python-engineio through 3.8.2. There is a Cross-Site WebSocket Hijacking (CSWSH) vulnerability that allows attackers to make WebSocket connections to a server by using a victim's credentials, because the Origin header is not restricted.
+cvss_v2: 6.8
+references:
+    - https://github.com/miguelgrinberg/python-engineio/issues/128
+affected:
+    - name: python-engineio
+      version:
+        - "<=3.8.2.post1"
+      fixedin:
+        - ">=3.9.0"
