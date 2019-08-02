@@ -1,0 +1,18 @@
+---
+cve: 2008-1981
+title: CVE in com.tozny.e3db:e3db-client-plain
+description: >
+    Cross-site request forgery (CSRF) vulnerability in E-Publish 5.x before 5.x-1.1 and 6.x before 6.x-1.0 beta1, a Drupal module, allows remote attackers to perform unauthorized actions as other users via unspecified vectors.
+cvss_v2: 6.8
+references:
+    - http://drupal.org/node/250408
+    - http://secunia.com/advisories/29960
+    - http://www.vupen.com/english/advisories/2008/1353/references
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/41978
+affected:
+    - groupId: com.tozny.e3db
+      artifactId: e3db-client-plain
+      version:
+        - "<=5.0.0"
+      fixedin:
+        - ">=5.0.1"
