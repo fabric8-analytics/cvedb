@@ -1,0 +1,14 @@
+---
+cve: 2019-1020003
+title: CVE in invenio-records
+description: >
+    invenio-records before 1.2.2 allows XSS.
+cvss_v2: 3.5
+references:
+    - https://github.com/inveniosoftware/invenio-records/security/advisories/GHSA-vxh3-mvv7-265j
+affected:
+    - name: invenio-records
+      version:
+        - "<=1.2.1"
+      fixedin:
+        - ">=1.2.2"
