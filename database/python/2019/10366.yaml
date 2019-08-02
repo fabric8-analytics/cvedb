@@ -1,0 +1,15 @@
+---
+cve: 2019-10366
+title: CVE in cloud
+description: >
+    Jenkins Skytap Cloud CI Plugin 2.06 and earlier stored credentials unencrypted in job config.xml files on the Jenkins master where they could be viewed by users with Extended Read permission, or access to the master file system.
+cvss_v2: 4.0
+references:
+    - http://www.openwall.com/lists/oss-security/2019/07/31/1
+    - https://jenkins.io/security/advisory/2019-07-31/#SECURITY-1429
+affected:
+    - name: cloud
+      version:
+        - "<=2.6.0"
+      fixedin:
+        - ">=2.6.3"
