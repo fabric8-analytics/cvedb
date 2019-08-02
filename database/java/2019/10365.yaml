@@ -1,0 +1,16 @@
+---
+cve: 2019-10365
+title: CVE in com.bladecoder.engine:blade-engine
+description: >
+    Jenkins Google Kubernetes Engine Plugin 0.6.2 and earlier created a temporary file containing a temporary access token in the project workspace, where it could be accessed by users with Job/Read permission.
+cvss_v2: 4.0
+references:
+    - http://www.openwall.com/lists/oss-security/2019/07/31/1
+    - https://jenkins.io/security/advisory/2019-07-31/#SECURITY-1345
+affected:
+    - groupId: com.bladecoder.engine
+      artifactId: blade-engine
+      version:
+        - "<=0.6.2"
+      fixedin:
+        - ">=0.6.3"
