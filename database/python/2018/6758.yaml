@@ -1,0 +1,16 @@
+---
+cve: 2018-6758
+title: CVE in uWSGI
+description: >
+    The uwsgi_expand_path function in core/utils.c in Unbit uWSGI through 2.0.15 has a stack-based buffer overflow via a large directory length.
+cvss_v2: 7.5
+references:
+    - http://lists.unbit.it/pipermail/uwsgi/2018-February/008835.html
+    - https://github.com/unbit/uwsgi/commit/cb4636f7c0af2e97a4eef7a3cdcbd85a71247bfe
+    - https://lists.debian.org/debian-lts-announce/2018/02/msg00010.html
+affected:
+    - name: uWSGI
+      version:
+        - "<=2.0.15"
+      fixedin:
+        - ">=2.0.16"
