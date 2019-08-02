@@ -1,0 +1,17 @@
+---
+cve: 2019-5457
+title: CVE in http-server-base
+description: >
+    Cross-site scripting (XSS) vulnerability in min-http-server (all versions) allows an attacker with access to the server file system to execute arbitrary JavaScript code in victim's browser.
+cvss_v2: 3.5
+references:
+    - https://hackerone.com/reports/570568
+affected:
+    - name: http-server-base
+      version:
+        - "<=1.0,1.0"
+        - "<=1.0.2,1.0.2"
+      fixedin:
+        - ">=1.1"
+        - "<=1.0.1,1.0.1"
+        - "<=0.3a,0.1a"
