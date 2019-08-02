@@ -1,0 +1,21 @@
+---
+cve: 2007-5023
+title: CVE in oslo-vmware
+description: >
+    Unquoted Windows search path vulnerability in EMC VMware Workstation before 5.5.5 Build 56455 and 6.x before 6.0.1 Build 55017, Player before 1.0.5 Build 56455 and Player 2 before 2.0.1 Build 55017, ACE before 1.0.3 Build 54075, and Server before 1.0.4 Build 56528 allows local users to gain privileges via unspecified vectors, possibly involving a malicious "program.exe" file in the C: folder.
+cvss_v2: 6.9
+references:
+    - http://www.securityfocus.com/bid/25732
+    - http://www.vmware.com/support/ace/doc/releasenotes_ace.html
+    - http://www.vmware.com/support/player/doc/releasenotes_player.html
+    - http://www.vmware.com/support/player2/doc/releasenotes_player2.html
+    - http://www.vmware.com/support/server/doc/releasenotes_server.html
+    - http://www.vmware.com/support/ws55/doc/releasenotes_ws55.html
+    - http://www.vmware.com/support/ws6/doc/releasenotes_ws6.html
+affected:
+    - name: oslo-vmware
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - ">=2.1.0"
+        - "<=1.23.0,0"
