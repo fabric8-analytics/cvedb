@@ -1,0 +1,14 @@
+---
+cve: 2018-16489
+title: CVE in just-extend
+description: >
+    A prototype pollution vulnerability was found in just-extend <4.0.0 that allows attack to inject properties onto Object.prototype through its functions.
+cvss_v2: 7.5
+references:
+    - https://hackerone.com/reports/430291
+affected:
+    - name: just-extend
+      version:
+        - "<=3.0.0"
+      fixedin:
+        - ">=4.0.0"

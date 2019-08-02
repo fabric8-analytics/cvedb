@@ -1,0 +1,15 @@
+---
+cve: 2018-16480
+title: CVE in public
+description: >
+    A XSS vulnerability was found in module public <0.1.4 that allows malicious Javascript code to run in the browser, due to the absence of sanitization of the file/folder names before rendering.
+cvss_v2: 4.3
+references:
+    - https://hackerone.com/reports/329950
+    - https://www.npmjs.com/package/public
+affected:
+    - name: public
+      version:
+        - "<=0.1.3"
+      fixedin:
+        - ">=0.1.4"

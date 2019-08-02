@@ -1,0 +1,14 @@
+---
+cve: 2018-6464
+title: CVE in simditor
+description: >
+    Simditor v2.3.11 allows XSS via crafted use of svg/onload=alert in a TEXTAREA element, as demonstrated by Firefox 54.0.1.
+cvss_v2: 4.3
+references:
+    - https://github.com/Heartway/simditor/blob/master/simditor.docx
+affected:
+    - name: simditor
+      version:
+        - ">=2.3.18"
+      fixedin:
+        - ">=2.3.6"

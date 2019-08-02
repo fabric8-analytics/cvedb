@@ -1,0 +1,14 @@
+---
+cve: 2019-5447
+title: CVE in http-file-server
+description: >
+    A path traversal vulnerability in <= v0.2.6 of http-file-server npm module allows attackers to list files in arbitrary folders.
+cvss_v2: 5.0
+references:
+    - https://hackerone.com/reports/570133
+affected:
+    - name: http-file-server
+      version:
+        - "<=0.2.6"
+      fixedin:
+        []

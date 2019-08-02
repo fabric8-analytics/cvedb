@@ -1,0 +1,14 @@
+---
+cve: 2017-16063
+title: CVE in node-opensl
+description: >
+    node-opensl was a malicious module published with the intent to hijack environment variables. It has been unpublished by npm.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/502
+affected:
+    - name: node-opensl
+      version:
+        - "<=0.0.2-security"
+      fixedin:
+        []

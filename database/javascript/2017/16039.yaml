@@ -1,0 +1,15 @@
+---
+cve: 2017-16039
+title: CVE in hftp
+description: >
+    `hftp` is a static http or ftp server `hftp` is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/hftp
+    - https://nodesecurity.io/advisories/384
+affected:
+    - name: hftp
+      version:
+        - "<=0.0.6"
+      fixedin:
+        []

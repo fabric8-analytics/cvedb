@@ -1,0 +1,15 @@
+---
+cve: 2017-1001004
+title: CVE in typed-function
+description: >
+  typed-function before 0.10.6 had an arbitrary code execution in the JavaScript engine. Creating a typed function with JavaScript code in the name could result arbitrary execution.
+cvss_v2: 6.8
+references:
+  - https://github.com/josdejong/typed-function/blob/master/HISTORY.md#2017-11-18-version-0106
+  - https://github.com/josdejong/typed-function/commit/6478ef4f2c3f3c2d9f2c820e2db4b4ba3425e6fe
+affected:
+  - name: typed-function
+    version:
+      - "<=0.10.5"
+    fixedin:
+      - ">=0.10.6"

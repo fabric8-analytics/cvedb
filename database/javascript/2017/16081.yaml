@@ -1,0 +1,14 @@
+---
+cve: 2017-16081
+title: CVE in cross-env.js
+description: >
+  cross-env.js was a malicious module published with the intent to hijack environment variables. It has been unpublished by npm.
+cvss_v2: 5.0
+references:
+  - https://nodesecurity.io/advisories/520
+affected:
+  - name: cross-env.js
+    version:
+      - ">=0.0.2-security"
+    fixedin: 
+      []

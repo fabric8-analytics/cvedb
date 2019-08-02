@@ -1,0 +1,15 @@
+---
+cve: 2017-16096
+title: CVE in serveryaozeyan
+description: >
+    serveryaozeyan is a simple HTTP server. serveryaozeyan is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the URL.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/serveryaozeyan
+    - https://nodesecurity.io/advisories/355
+affected:
+    - name: serveryaozeyan
+      version:
+        - "<=1.0.4"
+      fixedin:
+        []

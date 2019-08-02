@@ -1,0 +1,19 @@
+---
+cve: 2019-13506
+title: CVE in nuxt
+description: >
+    @nuxt/devalue before 1.2.3, as used in Nuxt.js before 2.6.2, mishandles object keys, leading to XSS.
+cvss_v2: 4.3
+references:
+    - https://github.com/nuxt/devalue/pull/8
+    - https://github.com/nuxt/devalue/releases/tag/v1.2.3
+    - https://github.com/nuxt/nuxt.js/commit/0d5dfe71917191c5b07f373896311f2d8f6b75be
+    - https://github.com/nuxt/nuxt.js/compare/c0776eb...8d14cd4
+    - https://github.com/nuxt/nuxt.js/releases/tag/v2.6.2
+    - https://www.npmjs.com/advisories/814
+affected:
+    - name: nuxt
+      version:
+        - "<=2.6.1"
+      fixedin:
+        - ">=2.6.2"

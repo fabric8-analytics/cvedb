@@ -1,0 +1,14 @@
+---
+cve: 2017-16076
+title: CVE in proxy.js
+description: >
+    proxy.js was a malicious module published with the intent to hijack environment variables. It has been unpublished by npm.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/515
+affected:
+    - name: proxy.js
+      version:
+        - "<=0.0.2-security"
+      fixedin:
+        []

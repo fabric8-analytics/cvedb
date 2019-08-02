@@ -1,0 +1,15 @@
+---
+cve: 2019-1010262
+title: CVE in scapy
+description: >
+    scapy 2.4.0 and earlier is affected by: Denial of Services. The impact is: busy loop forever. The component is: _RADIUSAttrPacketListField class. The attack vector is: a packet sent over the network or in a pcap. The fixed version is: after commit 0d7ae2b039f650a40e511d09eb961c782da025d9.
+cvss_v2: 5.0
+references:
+    - https://github.com/secdev/scapy/pull/1409/files#diff-441eff981e466959968111fc6314fe93L1058
+    - https://www.imperva.com/blog/scapy-sploit-python-network-tool-is-vulnerable-to-denial-of-service-dos-attack-cve-pending/
+affected:
+    - name: scapy
+      version:
+        - "<=2.4.0"
+      fixedin:
+        - ">=2.4.1"

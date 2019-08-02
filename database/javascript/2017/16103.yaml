@@ -1,0 +1,15 @@
+---
+cve: 2017-16103
+title: CVE in serveryztyzt
+description: >
+  serveryztyzt is a simple http server. serveryztyzt is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the URL.
+cvss_v2: 5.0
+references:
+  - https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/serveryztyzt
+  - https://nodesecurity.io/advisories/354
+affected:
+  - name: serveryztyzt
+    version:
+      - "<=1.4.0"
+    fixedin: 
+      []

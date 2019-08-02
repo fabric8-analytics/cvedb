@@ -1,0 +1,15 @@
+---
+cve: 2018-13339
+title: CVE in angular-redactor
+description: >
+    Imperavi Redactor 3 in Angular Redactor 1.1.6, when HTML content mode is used, allows stored XSS, as demonstrated by an onerror attribute of an IMG element, a related issue to CVE-2018-7035.
+cvss_v2: 4.3
+references:
+    - https://github.com/gleez/cms/issues/796
+    - https://github.com/TylerGarlick/angular-redactor/issues/77
+affected:
+    - name: angular-redactor
+      version:
+        - "==1.1.6"
+      fixedin:
+        - ">=1.1.7"
