@@ -1,0 +1,14 @@
+---
+cve: 2019-1020006
+title: CVE in invenio-app
+description: >
+    invenio-app before 1.1.1 allows host header injection.
+cvss_v2: 5.8
+references:
+    - https://github.com/inveniosoftware/invenio-app/security/advisories/GHSA-94mf-xfg5-r247
+affected:
+    - name: invenio-app
+      version:
+        - "<=1.1.0"
+      fixedin:
+        - ">=1.1.1"
