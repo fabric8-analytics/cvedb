@@ -1,0 +1,14 @@
+---
+cve: 2018-10055
+title: CVE in tensorflow
+description: >
+    Invalid memory access and/or a heap buffer overflow in the TensorFlow XLA compiler in Google TensorFlow before 1.7.1 could cause a crash or read from other parts of process memory via a crafted configuration file.
+cvss_v2: 5.8
+references:
+    - https://github.com/tensorflow/tensorflow/blob/master/tensorflow/security/advisory/tfsa-2018-006.md
+affected:
+    - name: tensorflow
+      version:
+        - "<=1.7.0"
+      fixedin:
+        - ">=1.7.1"
