@@ -1,0 +1,14 @@
+---
+cve: 2019-1020005
+title: CVE in invenio-communities
+description: >
+    invenio-communities before 1.0.0a20 allows XSS.
+cvss_v2: 3.5
+references:
+    - https://github.com/inveniosoftware/invenio-communities/security/advisories/GHSA-mfv8-q39f-mgfg
+affected:
+    - name: invenio-communities
+      version:
+        - "<=1.0.0a19"
+      fixedin:
+        - ">=1.0.0a20"
