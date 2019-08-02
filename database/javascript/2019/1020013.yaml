@@ -1,0 +1,14 @@
+---
+cve: 2019-1020013
+title: CVE in parse-server
+description: >
+    parse-server before 3.6.0 allows account enumeration.
+cvss_v2: 5.0
+references:
+    - https://github.com/parse-community/parse-server/security/advisories/GHSA-8w3j-g983-8jh5
+affected:
+    - name: parse-server
+      version:
+        - "<=3.5.0"
+      fixedin:
+        - ">=3.6.0"
