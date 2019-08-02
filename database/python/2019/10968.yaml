@@ -1,0 +1,14 @@
+---
+cve: 2019-10968
+title: CVE in argparse-plus
+description: >
+    Philips Holter 2010 Plus, all versions. A vulnerability has been identified that may allow system options that were not purchased to be enabled.
+cvss_v2: 2.1
+references:
+    - https://www.us-cert.gov/ics/advisories/icsma-19-192-01
+affected:
+    - name: argparse-plus
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
