@@ -1,0 +1,67 @@
+---
+cve: 2007-2789
+title: CVE in com.sun.jersey.test.osgi.runtime-delegate-tests:runtime-delegate-test
+description: >
+    The BMP image parser in Sun Java Development Kit (JDK) before 1.5.0_11-b03 and 1.6.x before 1.6.0_01-b06, and Sun Java Runtime Environment in JDK and JRE 6, JDK and JRE 5.0 Update 10 and earlier, SDK and JRE 1.4.2_14 and earlier, and SDK and JRE 1.3.1_19 and earlier, when running on Unix/Linux systems, allows remote attackers to cause a denial of service (JVM hang) via untrusted applets or applications that open arbitrary local files via a crafted BMP file, such as /dev/tty.
+cvss_v2: 4.3
+references:
+    - http://dev2dev.bea.com/pub/advisory/248
+    - http://docs.info.apple.com/article.html?artnum=307177
+    - http://lists.apple.com/archives/Security-announce/2007/Dec/msg00001.html
+    - http://scary.beasts.org/security/CESA-2006-004.html
+    - http://secunia.com/advisories/25295
+    - http://secunia.com/advisories/25474
+    - http://secunia.com/advisories/25832
+    - http://secunia.com/advisories/26049
+    - http://secunia.com/advisories/26119
+    - http://secunia.com/advisories/26311
+    - http://secunia.com/advisories/26369
+    - http://secunia.com/advisories/26631
+    - http://secunia.com/advisories/26645
+    - http://secunia.com/advisories/26933
+    - http://secunia.com/advisories/27203
+    - http://secunia.com/advisories/27266
+    - http://secunia.com/advisories/28056
+    - http://secunia.com/advisories/28115
+    - http://secunia.com/advisories/29340
+    - http://secunia.com/advisories/29858
+    - http://secunia.com/advisories/30780
+    - http://secunia.com/advisories/30805
+    - http://security.gentoo.org/glsa/glsa-200706-08.xml
+    - http://security.gentoo.org/glsa/glsa-200804-28.xml
+    - http://sunsolve.sun.com/search/document.do?assetkey=1-26-102934-1
+    - http://sunsolve.sun.com/search/document.do?assetkey=1-66-200856-1
+    - http://support.novell.com/techcenter/psdb/4f850d1e2b871db609de64ec70f0089c.html
+    - http://support.novell.com/techcenter/psdb/d2f549cc040cd81ae4a268bb5edfe918.html
+    - http://www.attrition.org/pipermail/vim/2007-December/001862.html
+    - http://www.attrition.org/pipermail/vim/2007-July/001696.html
+    - http://www.attrition.org/pipermail/vim/2007-July/001697.html
+    - http://www.attrition.org/pipermail/vim/2007-July/001708.html
+    - http://www.gentoo.org/security/en/glsa/glsa-200705-23.xml
+    - http://www.gentoo.org/security/en/glsa/glsa-200709-15.xml
+    - http://www.gentoo.org/security/en/glsa/glsa-200804-20.xml
+    - http://www.gentoo.org/security/en/glsa/glsa-200806-11.xml
+    - http://www.novell.com/linux/security/advisories/2007_45_java.html
+    - http://www.novell.com/linux/security/advisories/2007_56_ibmjava.html
+    - http://www.redhat.com/support/errata/RHSA-2007-0817.html
+    - http://www.redhat.com/support/errata/RHSA-2007-0829.html
+    - http://www.redhat.com/support/errata/RHSA-2007-0956.html
+    - http://www.redhat.com/support/errata/RHSA-2007-1086.html
+    - http://www.redhat.com/support/errata/RHSA-2008-0100.html
+    - http://www.redhat.com/support/errata/RHSA-2008-0133.html
+    - http://www.redhat.com/support/errata/RHSA-2008-0261.html
+    - http://www.securityfocus.com/bid/24004
+    - http://www.securitytracker.com/id?1018182
+    - http://www.vupen.com/english/advisories/2007/1836
+    - http://www.vupen.com/english/advisories/2007/3009
+    - http://www.vupen.com/english/advisories/2007/4224
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/34320
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/34654
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A10800
+affected:
+    - groupId: com.sun.jersey.test.osgi.runtime-delegate-tests
+      artifactId: runtime-delegate-test
+      version:
+        - "<=1.5-ea09,1.5"
+      fixedin:
+        - "<=1.4-ea06,1.3"
