@@ -1,0 +1,15 @@
+---
+cve: 2018-14800
+title: CVE in delta
+description: >
+    Delta Electronics ISPSoft version 3.0.5 and prior allow an attacker, by opening a crafted file, to cause the application to read past the boundary allocated to a stack object, which could allow execution of code under the context of the application.
+cvss_v2: 6.8
+references:
+    - http://www.securityfocus.com/bid/105485
+    - https://ics-cert.us-cert.gov/advisories/ICSA-18-275-01
+affected:
+    - name: delta
+      version:
+        - "<=3.0.5"
+      fixedin:
+        []
