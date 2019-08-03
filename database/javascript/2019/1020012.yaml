@@ -1,0 +1,14 @@
+---
+cve: 2019-1020012
+title: CVE in parse-server
+description: >
+    parse-server before 3.4.1 allows DoS after any POST to a volatile class.
+cvss_v2: 5.0
+references:
+    - https://github.com/parse-community/parse-server/security/advisories/GHSA-2479-qvv7-47qq
+affected:
+    - name: parse-server
+      version:
+        - "<=3.4.0"
+      fixedin:
+        - ">=3.4.1"
