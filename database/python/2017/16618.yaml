@@ -11,6 +11,6 @@ references:
 affected:
     - name: owlmixin
       version:
-        - "<=2.0.0a11"
+        - "<=2.0.0"
       fixedin:
-        - ">=2.0.0a12"
+        - ">=2.1.0"
