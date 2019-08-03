@@ -1,0 +1,14 @@
+---
+cve: 2019-14380
+title: CVE in m2x
+description: >
+    libopenmpt before 0.4.5 allows a crash during playback due to an out-of-bounds read in XM and MT2 files.
+cvss_v2: 4.3
+references:
+    - https://lib.openmpt.org/libopenmpt/2019/05/27/security-update-0.4.5/
+affected:
+    - name: m2x
+      version:
+        - "<=0.4.4"
+      fixedin:
+        - ">=0.4.5"
