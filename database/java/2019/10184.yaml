@@ -1,0 +1,16 @@
+---
+cve: 2019-10184
+title: CVE in org.jboss.spec.javax.enterprise.concurrent:jboss-concurrency-api_1.0_spec
+description: >
+    undertow before version 2.0.23.Final is vulnerable to an information leak issue. Web apps may have their directory structures predicted through requests without trailing slashes via the api.
+cvss_v2: 5.0
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-10184
+    - https://github.com/undertow-io/undertow/pull/794
+affected:
+    - groupId: org.jboss.spec.javax.enterprise.concurrent
+      artifactId: jboss-concurrency-api_1.0_spec
+      version:
+        - "<=1.0.2.Final"
+      fixedin:
+        []
