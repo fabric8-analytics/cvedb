@@ -1,0 +1,22 @@
+---
+cve: 2017-9265
+title: CVE in ovs
+description: >
+    In Open vSwitch (OvS) v2.7.0, there is a buffer over-read while parsing the group mod OpenFlow message sent from the controller in `lib/ofp-util.c` in the function `ofputil_pull_ofp15_group_mod`.
+cvss_v2: 7.5
+references:
+    - https://access.redhat.com/errata/RHSA-2017:2418
+    - https://access.redhat.com/errata/RHSA-2017:2553
+    - https://access.redhat.com/errata/RHSA-2017:2648
+    - https://access.redhat.com/errata/RHSA-2017:2665
+    - https://access.redhat.com/errata/RHSA-2017:2692
+    - https://access.redhat.com/errata/RHSA-2017:2698
+    - https://access.redhat.com/errata/RHSA-2017:2727
+    - https://mail.openvswitch.org/pipermail/ovs-dev/2017-May/332965.html
+affected:
+    - name: ovs
+      version:
+        - "==2.7.0"
+      fixedin:
+        - ">=2.7.2"
+        - "<=2.6.1,2.4.0"
