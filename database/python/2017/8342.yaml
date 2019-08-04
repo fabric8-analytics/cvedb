@@ -1,0 +1,19 @@
+---
+cve: 2017-8342
+title: CVE in radicale
+description: >
+    Radicale before 1.1.2 and 2.x before 2.0.0rc2 is prone to timing oracles and simple brute-force attacks when using the htpasswd authentication method.
+cvss_v2: 4.3
+references:
+    - https://bugs.debian.org/861514
+    - https://github.com/Kozea/Radicale/blob/1.1.2/NEWS.rst
+    - https://github.com/Kozea/Radicale/commit/059ba8dec1f22ccbeab837e288b3833a099cee2d
+    - https://github.com/Kozea/Radicale/commit/190b1dd795f0c552a4992445a231da760211183b
+affected:
+    - name: radicale
+      version:
+        - "<=1.1.1"
+        - "<=2.0.0,2.0.0rc1"
+      fixedin:
+        - ">=2.1.0"
+        - "<=1.1.6,1.1.2"
