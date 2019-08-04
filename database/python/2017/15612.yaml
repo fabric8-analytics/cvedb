@@ -1,0 +1,15 @@
+---
+cve: 2017-15612
+title: CVE in mistune
+description: >
+    mistune.py in Mistune 0.7.4 allows XSS via an unexpected newline (such as in java\nscript:) or a crafted email address, related to the escape and autolink functions.
+cvss_v2: 4.3
+references:
+    - https://github.com/lepture/mistune/pull/140
+affected:
+    - name: mistune
+      version:
+        - "<=0.7.4,0.7.4"
+      fixedin:
+        - ">=0.8"
+        - "<=0.7.3,0.1.0"
