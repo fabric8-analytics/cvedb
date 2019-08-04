@@ -1,0 +1,14 @@
+---
+cve: 2017-1000426
+title: CVE in mapproxy
+description: >
+    MapProxy version 1.10.3 and older is vulnerable to a Cross Site Scripting attack in the demo service resulting in possible information disclosure.
+cvss_v2: 4.3
+references:
+    - https://github.com/mapproxy/mapproxy/issues/322
+affected:
+    - name: mapproxy
+      version:
+        - "<=1.10.3"
+      fixedin:
+        - ">=1.10.4"
