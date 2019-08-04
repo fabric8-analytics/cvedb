@@ -1,0 +1,21 @@
+---
+cve: 2017-12791
+title: CVE in salt
+description: >
+    Directory traversal vulnerability in minion id validation in SaltStack Salt before 2016.11.7 and 2017.7.x before 2017.7.1 allows remote minions with incorrect credentials to authenticate to a master via a crafted minion ID.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/100384
+    - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=872399
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1482006
+    - https://docs.saltstack.com/en/2016.11/topics/releases/2016.11.7.html
+    - https://docs.saltstack.com/en/latest/topics/releases/2017.7.1.html
+    - https://github.com/saltstack/salt/pull/42944
+affected:
+    - name: salt
+      version:
+        - "<=2016.11.6"
+        - "<=2017.7.0,2017.7.0rc1"
+      fixedin:
+        - ">=2017.7.1"
+        - "<=2016.11.10,2016.11.7"
