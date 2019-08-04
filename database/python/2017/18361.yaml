@@ -1,0 +1,15 @@
+---
+cve: 2017-18361
+title: CVE in colander
+description: >
+    In Pylons Colander through 1.6, the URL validator allows an attacker to potentially cause an infinite loop thereby causing a denial of service via an unclosed parenthesis.
+cvss_v2: 5.0
+references:
+    - https://github.com/Pylons/colander/issues/290
+    - https://github.com/Pylons/colander/pull/323
+affected:
+    - name: colander
+      version:
+        - "<=1.6.0"
+      fixedin:
+        - ">=1.7.0"
