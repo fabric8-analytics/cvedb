@@ -1,0 +1,19 @@
+---
+cve: 2017-5537
+title: CVE in weblate
+description: >
+    The password reset form in Weblate before 2.10.1 provides different error messages depending on whether the email address is associated with an account, which allows remote attackers to enumerate user accounts via a series of requests.
+cvss_v2: 5.0
+references:
+    - http://www.openwall.com/lists/oss-security/2017/01/18/11
+    - http://www.openwall.com/lists/oss-security/2017/01/20/1
+    - http://www.securityfocus.com/bid/95676
+    - https://github.com/WeblateOrg/weblate/blob/weblate-2.10.1/docs/changes.rst
+    - https://github.com/WeblateOrg/weblate/commit/abe0d2a29a1d8e896bfe829c8461bf8b391f1079
+    - https://github.com/WeblateOrg/weblate/issues/1317
+affected:
+    - name: weblate
+      version:
+        - "<=2.10"
+      fixedin:
+        - ">=2.10.1"
