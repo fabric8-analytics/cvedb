@@ -1,0 +1,30 @@
+---
+cve: 2017-1000481
+title: CVE in Products.CMFPlone
+description: >
+    When you visit a page where you need to login, Plone 2.5-5.1rc1 sends you to the login form with a 'came_from' parameter set to the previous url. After you login, you get redirected to the page you tried to view before. An attacker might try to abuse this by letting you click on a specially crafted link. You would login, and get redirected to the site of the attacker, letting you think that you are still on the original Plone site. Or some javascript of the attacker could be executed. Most of these types of attacks are already blocked by Plone, using the `isURLInPortal` check to make sure we only redirect to a page on the same Plone site. But a few more ways of tricking Plone into accepting a malicious link were discovered, and fixed with this hotfix.
+cvss_v2: 5.8
+references:
+    - https://plone.org/security/hotfix/20171128/open-redirection-on-login-form
+affected:
+    - name: Products.CMFPlone
+      version:
+        - "<=4.2"
+        - "<=4.2.1,4.2.1"
+        - "<=4.3.4,4.2.2"
+        - "<=4.3.12,4.3.5"
+        - "<=4.3.15,4.3.14"
+        - "<=5.0b1,5.0a1"
+        - "<=5.0.3,5.0b2"
+        - "<=5.0.9,5.0.4rc1"
+        - "<=5.1.0,5.1a1"
+      fixedin:
+        - ">=5.1.0.1"
+        - "<=5.0.10,5.0.10rc1"
+        - "<=5.0.3.1,5.0.3.1"
+        - "<=5.0b1.post1,5.0b1.post1"
+        - "<=4.3.18,4.3.16"
+        - "<=4.3.13,4.3.13"
+        - "<=4.3.4.1,4.3.4.1"
+        - "<=4.2.1.1,4.2.1.1"
+        - "<=4.2.0.1,4.2.0.1"
