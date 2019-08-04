@@ -1,0 +1,18 @@
+---
+cve: 2017-16613
+title: CVE in swauth
+description: >
+    An issue was discovered in middleware.py in OpenStack Swauth through 1.2.0 when used with OpenStack Swift through 2.15.1. The Swift object store and proxy server are saving (unhashed) tokens retrieved from the Swauth middleware authentication mechanism to a log file as part of a GET URI. This allows attackers to bypass authentication by inserting a token into an X-Auth-Token header of a new request. NOTE: github.com/openstack/swauth URLs do not mean that Swauth is maintained by an official OpenStack project team.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/101926
+    - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=882314
+    - https://bugs.launchpad.net/swift/+bug/1655781
+    - https://github.com/openstack/swauth/commit/70af7986265a3defea054c46efc82d0698917298
+    - https://www.debian.org/security/2017/dsa-4044
+affected:
+    - name: swauth
+      version:
+        - "<=1.2.0"
+      fixedin:
+        - ">=1.3.0"
