@@ -1,0 +1,19 @@
+---
+cve: 2017-7550
+title: CVE in ansible
+description: >
+    A flaw was found in the way Ansible (2.3.x before 2.3.3, and 2.4.x before 2.4.1) passed certain parameters to the jenkins_plugin module. Remote attackers could use this flaw to expose sensitive information from a remote host's logs. This flaw was fixed by not allowing passwords to be specified in the "params" argument, and noting this in the module documentation.
+cvss_v2: 5.0
+references:
+    - https://access.redhat.com/errata/RHSA-2017:2966
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1473645
+    - https://github.com/ansible/ansible/issues/30874
+affected:
+    - name: ansible
+      version:
+        - "<=2.3.2.0,2.3.0.0"
+        - "<=2.4.0.0,2.4.0.0"
+      fixedin:
+        - ">=2.4.1.0"
+        - "<=2.3.3.0,2.3.3.0"
+        - "<=2.2.3.0,1.0"
