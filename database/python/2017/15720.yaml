@@ -1,0 +1,14 @@
+---
+cve: 2017-15720
+title: CVE in apache-airflow
+description: >
+    In Apache Airflow 1.8.2 and earlier, an authenticated user can execute code remotely on the Airflow webserver by creating a special object.
+cvss_v2: 6.5
+references:
+    - https://lists.apache.org/thread.html/ade4d54ebf614f68dc81a08891755e60ea58ba88e0209233eeea5f57@%3Cdev.airflow.apache.org%3E
+affected:
+    - name: apache-airflow
+      version:
+        - "<=1.8.2"
+      fixedin:
+        - ">=1.9.0"
