@@ -1,0 +1,22 @@
+---
+cve: 2017-9214
+title: CVE in ovs
+description: >
+    In Open vSwitch (OvS) 2.7.0, while parsing an OFPT_QUEUE_GET_CONFIG_REPLY type OFP 1.0 message, there is a buffer over-read that is caused by an unsigned integer underflow in the function `ofputil_pull_queue_get_config_reply10` in `lib/ofp-util.c`.
+cvss_v2: 7.5
+references:
+    - https://access.redhat.com/errata/RHSA-2017:2418
+    - https://access.redhat.com/errata/RHSA-2017:2553
+    - https://access.redhat.com/errata/RHSA-2017:2648
+    - https://access.redhat.com/errata/RHSA-2017:2665
+    - https://access.redhat.com/errata/RHSA-2017:2692
+    - https://access.redhat.com/errata/RHSA-2017:2698
+    - https://access.redhat.com/errata/RHSA-2017:2727
+    - https://mail.openvswitch.org/pipermail/ovs-dev/2017-May/332711.html
+affected:
+    - name: ovs
+      version:
+        - "==2.7.0"
+      fixedin:
+        - ">=2.7.2"
+        - "<=2.6.1,2.4.0"
