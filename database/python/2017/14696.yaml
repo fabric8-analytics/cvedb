@@ -1,0 +1,24 @@
+---
+cve: 2017-14696
+title: CVE in salt
+description: >
+    SaltStack Salt before 2016.3.8, 2016.11.x before 2016.11.8, and 2017.7.x before 2017.7.2 allows remote attackers to cause a denial of service via a crafted authentication request.
+cvss_v2: 5.0
+references:
+    - http://lists.opensuse.org/opensuse-updates/2017-10/msg00073.html
+    - http://lists.opensuse.org/opensuse-updates/2017-10/msg00075.html
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1500742
+    - https://docs.saltstack.com/en/latest/topics/releases/2016.11.8.html
+    - https://docs.saltstack.com/en/latest/topics/releases/2016.3.8.html
+    - https://docs.saltstack.com/en/latest/topics/releases/2017.7.2.html
+    - https://github.com/saltstack/salt/commit/5f8b5e1a0f23fe0f2be5b3c3e04199b57a53db5b
+affected:
+    - name: salt
+      version:
+        - "<=2016.3.7"
+        - "<=2016.11.7,2016.11.0rc1"
+        - "<=2017.7.1,2017.7.0rc1"
+      fixedin:
+        - ">=2017.7.2"
+        - "<=2016.11.10,2016.11.8"
+        - "<=2016.3.8,2016.3.8"
