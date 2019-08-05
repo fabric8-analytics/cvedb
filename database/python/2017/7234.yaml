@@ -1,0 +1,22 @@
+---
+cve: 2017-7234
+title: CVE in django
+description: >
+    A maliciously crafted URL to a Django (1.10 before 1.10.7, 1.9 before 1.9.13, and 1.8 before 1.8.18) site using the ``django.views.static.serve()`` view could redirect to any other domain, aka an open redirect vulnerability.
+cvss_v2: 5.8
+references:
+    - http://www.debian.org/security/2017/dsa-3835
+    - http://www.securityfocus.com/bid/97401
+    - http://www.securitytracker.com/id/1038177
+    - https://www.djangoproject.com/weblog/2017/apr/04/security-releases/
+affected:
+    - name: django
+      version:
+        - "<=1.8.17,1.8a1"
+        - "<=1.9.12,1.9a1"
+        - "<=1.10.6,1.10a1"
+      fixedin:
+        - ">=1.10.7"
+        - "<=1.9.13,1.9.13"
+        - "<=1.8.19,1.8.18"
+        - "<=1.7.11,1.0.1"
