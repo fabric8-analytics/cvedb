@@ -1,0 +1,18 @@
+---
+cve: 2017-5591
+title: CVE in sleekxmpp
+description: >
+    An incorrect implementation of "XEP-0280: Message Carbons" in multiple XMPP clients allows a remote attacker to impersonate any user, including contacts, in the vulnerable application's display. This allows for various kinds of social engineering attacks. This CVE is for SleekXMPP up to 1.3.1 and Slixmpp all versions up to 1.2.3, as bundled in poezio (0.8 - 0.10) and other products.
+cvss_v2: 4.3
+references:
+    - http://openwall.com/lists/oss-security/2017/02/09/29
+    - http://www.securityfocus.com/bid/96166
+    - https://github.com/poezio/slixmpp/commit/22664ee7b86c8e010f312b66d12590fb47160ad8
+    - https://rt-solutions.de/en/2017/02/CVE-2017-5589_xmpp_carbons/
+    - https://rt-solutions.de/wp-content/uploads/2017/02/CVE-2017-5589_xmpp_carbons.pdf
+affected:
+    - name: sleekxmpp
+      version:
+        - "<=1.3.1"
+      fixedin:
+        - ">=1.3.2"
