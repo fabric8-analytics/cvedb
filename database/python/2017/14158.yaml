@@ -10,7 +10,7 @@ references:
 affected:
     - name: scrapy
       version:
-        - "<=1.4.0,1.4.0"
+        - "==1.4.0"
       fixedin:
         - ">=1.5.0"
         - "<=1.3.3,0.7"
