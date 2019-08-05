@@ -1,0 +1,15 @@
+---
+cve: 2017-0359
+title: CVE in diffoscope
+description: >
+    diffoscope before 77 writes to arbitrary locations on disk based on the contents of an untrusted archive.
+cvss_v2: 10.0
+references:
+    - https://bugs.debian.org/854723
+    - https://security-tracker.debian.org/tracker/CVE-2017-0359
+affected:
+    - name: diffoscope
+      version:
+        - "<=77"
+      fixedin:
+        - ">=78"
