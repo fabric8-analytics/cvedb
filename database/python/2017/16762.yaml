@@ -1,0 +1,15 @@
+---
+cve: 2017-16762
+title: CVE in sanic
+description: >
+    Sanic before 0.5.1 allows reading arbitrary files with directory traversal, as demonstrated by the /static/..%2f substring.
+cvss_v2: 5.0
+references:
+    - https://github.com/channelcat/sanic/issues/633
+    - https://github.com/channelcat/sanic/releases/tag/0.5.1
+affected:
+    - name: sanic
+      version:
+        - "<=0.5.0"
+      fixedin:
+        - ">=0.5.1"
