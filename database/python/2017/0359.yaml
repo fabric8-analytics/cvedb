@@ -10,7 +10,6 @@ references:
 affected:
     - name: diffoscope
       version:
-        - "<=77,77"
+        - "<=77"
       fixedin:
         - ">=78"
-        - "<=76,39"
