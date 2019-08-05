@@ -1,0 +1,14 @@
+---
+cve: 2017-1002152
+title: CVE in bodhi-server
+description: >
+    Bodhi 2.9.0 and lower is vulnerable to cross-site scripting resulting in code injection caused by incorrect validation of bug titles.
+cvss_v2: 4.3
+references:
+    - https://github.com/fedora-infra/bodhi/issues/1740
+affected:
+    - name: bodhi-server
+      version:
+        - "<=2.9.0"
+      fixedin:
+        - ">=3.3.0"
