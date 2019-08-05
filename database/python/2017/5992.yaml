@@ -1,0 +1,18 @@
+---
+cve: 2017-5992
+title: CVE in openpyxl
+description: >
+    Openpyxl 2.4.1 resolves external entities by default, which allows remote attackers to conduct XXE attacks via a crafted .xlsx document.
+cvss_v2: 5.8
+references:
+    - http://www.openwall.com/lists/oss-security/2017/02/07/5
+    - https://bitbucket.org/openpyxl/openpyxl/commits/3b4905f428e1
+    - https://bitbucket.org/openpyxl/openpyxl/issues/749
+    - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=854442
+affected:
+    - name: openpyxl
+      version:
+        - "==2.4.1"
+      fixedin:
+        - ">=2.4.2"
+        - "<=2.4.0,1.1.0"
