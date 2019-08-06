@@ -1,0 +1,15 @@
+---
+cve: 2019-13990
+title: CVE in org.quartz-scheduler:quartz-jobs
+description: >
+    initDocumentParser in xml/XMLSchedulingDataProcessor.java in Terracotta Quartz Scheduler through 2.3.0 allows XXE attacks via a job description.
+cvss_v2: 7.5
+references:
+    - https://github.com/quartz-scheduler/quartz/issues/467
+affected:
+    - groupId: org.quartz-scheduler
+      artifactId: quartz-jobs
+      version:
+        - "<=2.3.0"
+      fixedin:
+        - ">=2.3.1"
