@@ -1,0 +1,17 @@
+---
+cve: 2018-14037
+title: CVE in kendo-ui-core
+description: >
+    Cross-site scripting (XSS) vulnerability in Progress Kendo UI Editor v2018.1.221 allows remote attackers to inject arbitrary JavaScript into the DOM of the WYSIWYG editor because of the editorNS.Serializer toEditableHtml function in kendo.all.min.js. If the victim accesses the editor, the payload gets executed. Furthermore, if the payload is reflected at any other resource that does rely on the sanitisation of the editor itself, the JavaScript payload will be executed in the context of the application. This allows attackers (in the worst case) to take over user sessions.
+cvss_v2: 4.3
+references:
+    - http://seclists.org/fulldisclosure/2018/Sep/49
+    - http://seclists.org/fulldisclosure/2018/Sep/50
+    - https://www.sec-consult.com/en/blog/advisories/stored-cross-site-scripting-in-kendo-ui-editor-cve-2018-14037/
+affected:
+    - name: kendo-ui-core
+      version:
+        - "==2018.1.221"
+      fixedin:
+        - ">=2018.1.226"
+        - "<=2018.1.131,1.0.0"
