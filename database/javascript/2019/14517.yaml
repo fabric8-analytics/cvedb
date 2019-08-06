@@ -1,0 +1,14 @@
+---
+cve: 2019-14517
+title: CVE in editor.md.webpack
+description: >
+    pandao Editor.md 1.5.0 allows XSS via the Javas&#99;ript: string.
+cvss_v2: 4.3
+references:
+    - https://github.com/pandao/editor.md/issues/709
+affected:
+    - name: editor.md.webpack
+      version:
+        - "<=1.5.0"
+      fixedin:
+        []
