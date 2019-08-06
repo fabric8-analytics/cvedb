@@ -1,0 +1,15 @@
+---
+cve: 2019-1020015
+title: CVE in io.micronaut.graphql:micronaut-graphql
+description: >
+    graphql-engine (aka Hasura GraphQL Engine) before 1.0.0-beta.3 mishandles the audience check while verifying JWT.
+cvss_v2: 5.0
+references:
+    - https://github.com/hasura/graphql-engine/commit/f2f14e727b051e3003ba44b9b63eab8186b291ac
+affected:
+    - groupId: io.micronaut.graphql
+      artifactId: micronaut-graphql
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
