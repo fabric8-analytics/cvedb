@@ -1,0 +1,14 @@
+---
+cve: 2019-14381
+title: CVE in opl3
+description: >
+    libopenmpt before 0.4.3 allows a crash due to a NULL pointer dereference when doing a portamento from an OPL instrument to an empty instrument note map slot.
+cvss_v2: 5.0
+references:
+    - https://lib.openmpt.org/libopenmpt/2019/02/11/security-update-0.4.3/
+affected:
+    - name: opl3
+      version:
+        - "<=0.4.2"
+      fixedin:
+        - ">=0.4.3"
