@@ -1,0 +1,14 @@
+---
+cve: 2019-14517
+title: CVE in editor.md
+description: >
+    pandao Editor.md 1.5.0 allows XSS via the Javascript: string.
+cvss_v2: 4.3
+references:
+    - https://github.com/pandao/editor.md/issues/709
+affected:
+    - name: editor.md
+      version:
+        - "<=1.5.0"
+      fixedin:
+        []
