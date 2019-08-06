@@ -11,7 +11,7 @@ references:
 affected:
     - name: kendo-ui-core
       version:
-        - "<=2018.1.221,2018.1.221"
+        - "==2018.1.221"
       fixedin:
         - ">=2018.1.226"
         - "<=2018.1.131,1.0.0"
