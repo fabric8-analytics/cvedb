@@ -1,0 +1,14 @@
+---
+cve: 2019-10744
+title: CVE in lodash
+description: >
+    Versions of lodash lower than 4.17.12 are vulnerable to Prototype Pollution. The function defaultsDeep could be tricked into adding or modifying properties of Object.prototype using a constructor payload.
+cvss_v2: 7.5
+references:
+    - https://snyk.io/vuln/SNYK-JS-LODASH-450202
+affected:
+    - name: lodash
+      version:
+        - "<=4.17.11"
+      fixedin:
+        - ">=4.17.12"
