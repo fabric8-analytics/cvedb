@@ -1,0 +1,17 @@
+---
+cve: 2019-7614
+title: CVE in org.elasticsearch:elasticsearch
+description: >
+    A race condition flaw was found in the response headers Elasticsearch versions before 7.2.1 and 6.8.2 returns to a request. On a system with multiple users submitting requests, it could be possible for an attacker to gain access to response header containing sensitive data from another user.
+cvss_v2: 4.3
+references:
+    - https://www.elastic.co/community/security/
+affected:
+    - groupId: org.elasticsearch
+      artifactId: elasticsearch
+      version:
+        - "<=6.8.1"
+        - "<=7.2.0,7.0.0-alpha1"
+      fixedin:
+        - ">=7.2.1"
+        - "<=6.8.2,6.8.2"
