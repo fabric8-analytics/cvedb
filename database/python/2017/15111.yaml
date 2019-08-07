@@ -1,0 +1,15 @@
+---
+cve: 2017-15111
+title: CVE in robotframework-httpd
+description: >
+    keycloak-httpd-client-install versions before 0.8 insecurely creates temporary file allowing local attackers to overwrite other files via symbolic link.
+cvss_v2: 3.6
+references:
+    - https://access.redhat.com/errata/RHSA-2019:2137
+    - https://github.com/jdennis/keycloak-httpd-client-install/commit/07f26e213196936fb328ea0c1d5a66a09d8b5440
+affected:
+    - name: robotframework-httpd
+      version:
+        - "<=0.7.7"
+      fixedin:
+        - ">=0.8.0"
