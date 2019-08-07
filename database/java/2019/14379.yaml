@@ -1,0 +1,16 @@
+---
+cve: 2019-14379
+title: CVE in com.fasterxml.jackson.core:jackson-databind
+description: >
+    SubTypeValidator.java in FasterXML jackson-databind before 2.9.9.2 mishandles default typing when ehcache is used, leading to remote code execution.
+cvss_v2: 7.5
+references:
+    - https://github.com/FasterXML/jackson-databind/compare/jackson-databind-2.9.9.1...jackson-databind-2.9.9.2
+    - https://github.com/FasterXML/jackson-databind/issues/2387
+affected:
+    - groupId: com.fasterxml.jackson.core
+      artifactId: jackson-databind
+      version:
+        - "<=2.9.9.1"
+      fixedin:
+        - ">=2.9.9.2"
