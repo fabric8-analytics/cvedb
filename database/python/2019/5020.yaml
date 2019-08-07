@@ -1,0 +1,15 @@
+---
+cve: 2019-5020
+title: CVE in yara-python
+description: >
+    An exploitable denial of service vulnerability exists in the object lookup functionality of Yara 3.8.1. A specially crafted binary file can cause a negative value to be read to satisfy an assert, resulting in Denial of Service. An attacker can create a malicious binary to trigger this vulnerability.
+cvss_v2: 4.3
+references:
+    - https://talosintelligence.com/vulnerability_reports/TALOS-2019-0781
+affected:
+    - name: yara-python
+      version:
+        - "<=3.8.1,3.8.1"
+      fixedin:
+        - ">=3.9.0"
+        - "<=3.8.0,3.5.0"
