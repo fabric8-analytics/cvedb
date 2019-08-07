@@ -1,0 +1,17 @@
+---
+cve: 2019-7139
+title: CVE in magento
+description: >
+    An unauthenticated user can execute SQL statements that allow arbitrary read access to the underlying database, which causes sensitive data leakage. This issue is fixed in Magento 2.1 prior to 2.1.18, Magento 2.2 prior to 2.2.9, Magento 2.3 prior to 2.3.2.
+cvss_v2: 7.5
+references:
+    - https://magento.com/security/patches/magento-2.3.2-2.2.9-and-2.1.18-security-update-13
+    - https://www.ambionics.io/blog/magento-sqli
+affected:
+    - name: magento
+      version:
+        - "<=1.3"
+        - "<=2.2,2.1"
+      fixedin:
+        - ">=3.0"
+        - "<=2.0,2.0"
