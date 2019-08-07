@@ -1,0 +1,15 @@
+---
+cve: 2018-16871
+title: CVE in com.redhat.rhevm.api:build-tools
+description: >
+    A flaw was found in the Linux kernel's NFS implementation, all versions 3.x and all versions 4.x up to 4.20. An attacker, who is able to mount an exported NFS filesystem, is able to trigger a null pointer dereference by using an invalid NFS sequence. This can panic the machine and deny access to the NFS server. Any outstanding disk writes to the NFS server will be lost.
+cvss_v2: 5.0
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-16871
+affected:
+    - groupId: com.redhat.rhevm.api
+      artifactId: build-tools
+      version:
+        - "<=1.0-rc1.21,1.0-rc1.1"
+      fixedin:
+        - "<=0.9-milestone9.7,0.9-milestone8"
