@@ -1,0 +1,15 @@
+---
+cve: 2017-15112
+title: CVE in robotframework-httpd
+description: >
+    keycloak-httpd-client-install versions before 0.8 allow users to insecurely pass password through command line, leaking it via command history and process info to other local users.
+cvss_v2: 2.1
+references:
+    - https://access.redhat.com/errata/RHSA-2019:2137
+    - https://github.com/jdennis/keycloak-httpd-client-install/commit/c3121b271abaaa1a76de2b9ae89dacde0105cd75
+affected:
+    - name: robotframework-httpd
+      version:
+        - "<=0.7.7"
+      fixedin:
+        - ">=0.8.0"
