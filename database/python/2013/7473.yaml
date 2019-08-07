@@ -1,0 +1,15 @@
+---
+cve: 2013-7473
+title: CVE in castle-cms
+description: >
+    Windu CMS 2.2 allows CSRF via admin/users/?mn=admin.message.error to add an admin account.
+cvss_v2: 6.8
+references:
+    - http://zeroscience.mk/blog/07/2013/windu-cms-2-2-multiple-stored-xss-and-csrf-vulnerabilities/
+affected:
+    - name: castle-cms
+      version:
+        - "<=2.2.0,2.2.0"
+      fixedin:
+        - ">=2.2.1"
+        - "<=2.1.1,2.0.0"
