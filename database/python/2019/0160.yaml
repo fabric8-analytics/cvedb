@@ -1,0 +1,16 @@
+---
+cve: 2019-0160
+title: CVE in bambu-buffer
+description: >
+    Buffer overflow in system firmware for EDK II may allow unauthenticated user to potentially enable escalation of privilege and/or denial of service via network access.
+cvss_v2: 7.5
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2019-04/msg00048.html
+    - https://access.redhat.com/errata/RHSA-2019:2125
+    - https://edk2-docs.gitbooks.io/security-advisory/content/partitiondxe-and-udf-buffer-overflow.html
+affected:
+    - name: bambu-buffer
+      version:
+        []
+      fixedin:
+        - ">=0.1"
