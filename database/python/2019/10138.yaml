@@ -1,0 +1,15 @@
+---
+cve: 2019-10138
+title: CVE in novajoin
+description: >
+    A flaw was discovered in the python-novajoin plugin, all versions up to, excluding 1.1.1, for Red Hat OpenStack Platform. The novajoin API lacked sufficient access control, allowing any keystone authenticated user to generate FreeIPA tokens.
+cvss_v2: 6.5
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-10138
+    - https://review.opendev.org/#/c/631240/
+affected:
+    - name: novajoin
+      version:
+        - "<=1.1.0"
+      fixedin:
+        - ">=1.1.1"
