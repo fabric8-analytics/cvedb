@@ -9,7 +9,7 @@ references:
     - https://github.com/RisingStack/protect/blob/60b0c91e86686d34e5202419ce9ae7e8dc08edcd/lib/rules/xss.js#L4-L13
     - https://github.com/RisingStack/protect/issues/16
 affected:
-    - name: @risingstack/protect
+    - name: risingstack/protect
       version:
         - "<=1.2.0"
       fixedin:
