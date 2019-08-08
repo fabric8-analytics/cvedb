@@ -1,0 +1,15 @@
+---
+cve: 2018-11772
+title: CVE in nodejs-with-apache
+description: >
+    Apache VCL versions 2.1 through 2.5 do not properly validate cookie input when determining what node (if any) was previously selected in the privilege tree. The cookie data is then used in an SQL statement. This allows for an SQL injection attack. Access to this portion of a VCL system requires admin level rights. Other layers of security seem to protect against malicious attack. However, all VCL systems running versions earlier than 2.5.1 should be upgraded or patched. This vulnerability was found and reported to the Apache VCL project by ADLab of Venustech.
+cvss_v2: 6.5
+references:
+    - https://lists.apache.org/thread.html/a468c473b4c418307b9866fe4c613630a2efc46bed53438b6af1f55c@%3Cdev.vcl.apache.org%3E
+    - https://lists.apache.org/thread.html/ffde9f87d0730ba6d4e1242eda56c1f1d6d0802ee4eda36fc1be3aaa@%3Cannounce.apache.org%3E
+affected:
+    - name: nodejs-with-apache
+      version:
+        - "<=2.1.0,2.1.0"
+      fixedin:
+        - "<=2.0.0,1.0.0"
