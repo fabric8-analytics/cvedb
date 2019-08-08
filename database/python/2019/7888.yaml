@@ -1,0 +1,15 @@
+---
+cve: 2019-7888
+title: CVE in magento
+description: >
+    An information disclosure vulnerability exists in Magento 2.1 prior to 2.1.18, Magento 2.2 prior to 2.2.9, Magento 2.3 prior to 2.3.2. An authenticated user with privileges to create email templates could leak sensitive data via a malicious email template.
+cvss_v2: 4.0
+references:
+    - https://magento.com/security/patches/magento-2.3.2-2.2.9-and-2.1.18-security-update-33
+affected:
+    - name: magento
+      version:
+        - "<=2.2,2.1"
+      fixedin:
+        - ">=3.0"
+        - "<=2.0,0.1.0"
