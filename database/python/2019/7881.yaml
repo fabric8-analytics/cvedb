@@ -1,0 +1,15 @@
+---
+cve: 2019-7881
+title: CVE in magento
+description: >
+    A cross-site scripting mitigation bypass exists in Magento 2.1 prior to 2.1.18, Magento 2.2 prior to 2.2.9, Magento 2.3 prior to 2.3.2. This could be exploited by an authenticated user to escalate privileges (admin vs. admin XSS attack).
+cvss_v2: 3.5
+references:
+    - https://magento.com/security/patches/magento-2.3.2-2.2.9-and-2.1.18-security-update-23
+affected:
+    - name: magento
+      version:
+        - "<=2.2,2.1"
+      fixedin:
+        - ">=3.0"
+        - "<=2.0,0.1.0"
