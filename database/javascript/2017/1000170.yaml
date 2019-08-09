@@ -7,7 +7,7 @@ cvss_v2: 5.0
 references:
     - https://github.com/jqueryfiletree/jqueryfiletree/issues/66
 affected:
-    - name: jqueryFileTree
+    - name: jqueryfiletree
       version:
         - "<=2.1.4"
       fixedin:
