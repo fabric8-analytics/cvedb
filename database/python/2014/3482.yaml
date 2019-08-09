@@ -1,0 +1,22 @@
+---
+cve: 2014-3482
+title: CVE in record
+description: >
+    SQL injection vulnerability in activerecord/lib/active_record/connection_adapters/postgresql_adapter.rb in the PostgreSQL adapter for Active Record in Ruby on Rails 2.x and 3.x before 3.2.19 allows remote attackers to execute arbitrary SQL commands by leveraging improper bitstring quoting.
+cvss_v2: 7.5
+references:
+    - http://openwall.com/lists/oss-security/2014/07/02/5
+    - http://rhn.redhat.com/errata/RHSA-2014-0876.html
+    - http://secunia.com/advisories/59973
+    - http://secunia.com/advisories/60214
+    - http://secunia.com/advisories/60763
+    - http://www.debian.org/security/2014/dsa-2982
+    - http://www.securityfocus.com/bid/68343
+    - https://groups.google.com/forum/message/raw?msg=rubyonrails-security/wDxePLJGZdI/WP7EasCJTA4J
+affected:
+    - name: record
+      version:
+        - "<=3.2,3.0"
+      fixedin:
+        - ">=3.3"
+        - "<=2.13.0,2.13.0"
