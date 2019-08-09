@@ -1,0 +1,17 @@
+---
+cve: 2012-6497
+title: CVE in rails-delegate
+description: >
+    The Authlogic gem for Ruby on Rails, when used with certain versions before 3.2.10, makes potentially unsafe find_by_id method calls, which might allow remote attackers to conduct CVE-2012-6496 SQL injection attacks via a crafted parameter in environments that have a known secret_token value, as demonstrated by a value contained in secret_token.rb in an open-source product.
+cvss_v2: 5.0
+references:
+    - http://blog.phusion.nl/2013/01/03/rails-sql-injection-vulnerability-hold-your-horses-here-are-the-facts/
+    - http://openwall.com/lists/oss-security/2013/01/03/12
+    - http://phenoelit.org/blog/archives/2012/12/21/let_me_github_that_for_you/index.html
+    - http://www.securityfocus.com/bid/57084
+affected:
+    - name: rails-delegate
+      version:
+        - "<=0.6.2"
+      fixedin:
+        []
