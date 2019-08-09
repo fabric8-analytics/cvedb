@@ -1,0 +1,18 @@
+---
+cve: 2008-5189
+title: CVE in crlf
+description: >
+    CRLF injection vulnerability in Ruby on Rails before 2.0.5 allows remote attackers to inject arbitrary HTTP headers and conduct HTTP response splitting attacks via a crafted URL to the redirect_to function.
+cvss_v2: 5.0
+references:
+    - http://github.com/rails/rails/commit/7282ed863ca7e6f928bae9162c9a63a98775a19d
+    - http://lists.opensuse.org/opensuse-security-announce/2008-12/msg00002.html
+    - http://weblog.rubyonrails.org/2008/10/19/rails-2-0-5-redirect_to-and-offset-limit-sanitizing
+    - http://weblog.rubyonrails.org/2008/10/19/response-splitting-risk
+    - http://www.securityfocus.com/bid/32359
+affected:
+    - name: crlf
+      version:
+        - "<=1.1.1"
+      fixedin:
+        []
