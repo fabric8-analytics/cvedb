@@ -1,0 +1,18 @@
+---
+cve: 2015-7559
+title: CVE in org.apache.activemq:activemq-all
+description: >
+    It was found that the Apache ActiveMQ client before 5.15.5 exposed a remote shutdown command in the ActiveMQConnection class. An attacker logged into a compromised broker could use this flaw to achieve denial of service on a connected client.
+cvss_v2: 4.0
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2015-7559
+    - https://issues.apache.org/jira/browse/AMQ-6470
+affected:
+    - groupId: org.apache.activemq
+      artifactId: activemq-all
+      version:
+        - "<=5.14.4"
+        - "<=5.15.4,5.15.0"
+      fixedin:
+        - ">=5.15.5"
+        - "<=5.14.5,5.14.5"
