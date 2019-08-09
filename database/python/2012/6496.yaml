@@ -1,0 +1,22 @@
+---
+cve: 2012-6496
+title: CVE in record
+description: >
+    SQL injection vulnerability in the Active Record component in Ruby on Rails before 3.0.18, 3.1.x before 3.1.9, and 3.2.x before 3.2.10 allows remote attackers to execute arbitrary SQL commands via a crafted request that leverages incorrect behavior of dynamic finders in applications that can use unexpected data types in certain find_by_ method calls.
+cvss_v2: 7.5
+references:
+    - http://blog.phusion.nl/2013/01/03/rails-sql-injection-vulnerability-hold-your-horses-here-are-the-facts/
+    - http://rhn.redhat.com/errata/RHSA-2013-0154.html
+    - http://rhn.redhat.com/errata/RHSA-2013-0155.html
+    - http://rhn.redhat.com/errata/RHSA-2013-0220.html
+    - http://rhn.redhat.com/errata/RHSA-2013-0544.html
+    - http://security.gentoo.org/glsa/glsa-201401-22.xml
+    - http://www.securityfocus.com/bid/57084
+    - https://bugzilla.redhat.com/show_bug.cgi?id=889649
+    - https://groups.google.com/group/rubyonrails-security/msg/23daa048baf28b64?dmode=source&output=gplain
+affected:
+    - name: record
+      version:
+        - "<=3.2"
+      fixedin:
+        - ">=3.3"
