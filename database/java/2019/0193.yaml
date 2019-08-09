@@ -1,0 +1,15 @@
+---
+cve: 2019-0193
+title: CVE in org.apache.solr:solr-dataimporthandler-extras
+description: >
+    In Apache Solr, the DataImportHandler, an optional but popular module to pull in data from databases and other sources, has a feature in which the whole DIH configuration can come from a request's "dataConfig" parameter. The debug mode of the DIH admin screen uses this to allow convenient debugging / development of a DIH config. Since a DIH config can contain scripts, this parameter is a security risk. Starting with version 8.2.0 of Solr, use of this parameter requires setting the Java System property "enable.dih.dataConfigParam" to true.
+cvss_v2: 9.0
+references:
+    - https://issues.apache.org/jira/browse/SOLR-13669
+affected:
+    - groupId: org.apache.solr
+      artifactId: solr-dataimporthandler-extras
+      version:
+        - "<=8.1.1"
+      fixedin:
+        - ">=8.2.0"
