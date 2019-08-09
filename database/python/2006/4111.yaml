@@ -1,0 +1,24 @@
+---
+cve: 2006-4111
+title: CVE in django-xmpp-http-upload
+description: >
+    Ruby on Rails before 1.1.5 allows remote attackers to execute Ruby code with "severe" or "serious" impact via a File Upload request with an HTTP header that modifies the LOAD_PATH variable, a different vulnerability than CVE-2006-4112.
+This vulnerability is fully addressed in the following product release:
+Ruby on Rails, Ruby on Rails, 1.1.6
+cvss_v2: 7.5
+references:
+    - http://blog.koehntopp.de/archives/1367-Ruby-On-Rails-Mandatory-Mystery-Patch.html
+    - http://secunia.com/advisories/21466
+    - http://secunia.com/advisories/21749
+    - http://securitytracker.com/id?1016673
+    - http://weblog.rubyonrails.org/2006/8/9/rails-1-1-5-mandatory-security-patch-and-other-tidbits
+    - http://www.gentoo.org/security/en/glsa/glsa-200608-20.xml
+    - http://www.novell.com/linux/security/advisories/2006_21_sr.html
+    - http://www.securityfocus.com/bid/19454
+    - http://www.vupen.com/english/advisories/2006/3237
+affected:
+    - name: django-xmpp-http-upload
+      version:
+        - "<=0.5.1"
+      fixedin:
+        []
