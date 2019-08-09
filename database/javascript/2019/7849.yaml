@@ -1,0 +1,14 @@
+---
+cve: 2019-7849
+title: CVE in magento-cli
+description: >
+    A defense-in-depth check was added to mitigate inadequate session validation handling by 3rd party checkout modules. This impacts Magento 1.x prior to 1.9.4.2, Magento Commerce prior to 1.14.4.2, Magento 2.1 prior to 2.1.18, Magento 2.2 prior to 2.2.9 and Magento 2.3 prior to 2.3.2.
+cvss_v2: 5.0
+references:
+    - https://magento.com/security/patches/magento-2.3.2-2.2.9-and-2.1.18-security-update-33
+affected:
+    - name: magento-cli
+      version:
+        - "<=1.0.10"
+      fixedin:
+        []
