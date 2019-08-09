@@ -1,0 +1,18 @@
+---
+cve: 2015-3226
+title: CVE in rails
+description: >
+    Cross-site scripting (XSS) vulnerability in json/encoding.rb in Active Support in Ruby on Rails 3.x and 4.1.x before 4.1.11 and 4.2.x before 4.2.2 allows remote attackers to inject arbitrary web script or HTML via a crafted Hash that is mishandled during JSON encoding.
+cvss_v2: 4.3
+references:
+    - http://openwall.com/lists/oss-security/2015/06/16/17
+    - http://www.debian.org/security/2016/dsa-3464
+    - http://www.securityfocus.com/bid/75231
+    - http://www.securitytracker.com/id/1033755
+    - https://groups.google.com/forum/message/raw?msg=rubyonrails-security/7VlB_pck3hU/3QZrGIaQW6cJ
+affected:
+    - name: rails
+      version:
+        - "<=4.1.0-beta"
+      fixedin:
+        []
