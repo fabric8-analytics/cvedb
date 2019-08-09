@@ -1,0 +1,20 @@
+---
+cve: 2011-0448
+title: CVE in net.sf.squirrel-sql:squirrel-sql
+description: >
+    Ruby on Rails 3.0.x before 3.0.4 does not ensure that arguments to the limit function specify integer values, which makes it easier for remote attackers to conduct SQL injection attacks via a non-numeric argument.
+cvss_v2: 7.5
+references:
+    - http://groups.google.com/group/rubyonrails-security/msg/4e19864cf6ad40ad?dmode=source&output=gplain
+    - http://lists.fedoraproject.org/pipermail/package-announce/2011-April/057650.html
+    - http://secunia.com/advisories/43278
+    - http://securitytracker.com/id?1025063
+    - http://weblog.rubyonrails.org/2011/2/8/new-releases-2-3-11-and-3-0-4
+    - http://www.vupen.com/english/advisories/2011/0877
+affected:
+    - groupId: net.sf.squirrel-sql
+      artifactId: squirrel-sql
+      version:
+        - "<=3.0.2"
+      fixedin:
+        - ">=3.2.0-RC1"
