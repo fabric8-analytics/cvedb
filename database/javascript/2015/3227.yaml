@@ -1,0 +1,19 @@
+---
+cve: 2015-3227
+title: CVE in rails
+description: >
+    The (1) jdom.rb and (2) rexml.rb components in Active Support in Ruby on Rails before 4.1.11 and 4.2.x before 4.2.2, when JDOM or REXML is enabled, allow remote attackers to cause a denial of service (SystemStackError) via a large XML document depth.
+cvss_v2: 5.0
+references:
+    - http://lists.opensuse.org/opensuse-updates/2015-07/msg00050.html
+    - http://openwall.com/lists/oss-security/2015/06/16/16
+    - http://www.debian.org/security/2016/dsa-3464
+    - http://www.securityfocus.com/bid/75234
+    - http://www.securitytracker.com/id/1033755
+    - https://groups.google.com/forum/message/raw?msg=rubyonrails-security/bahr2JLnxvk/x4EocXnHPp8J
+affected:
+    - name: rails
+      version:
+        - "<=4.1.0-beta"
+      fixedin:
+        []
