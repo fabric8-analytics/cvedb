@@ -1,0 +1,25 @@
+---
+cve: 2016-0752
+title: CVE in rails
+description: >
+    Directory traversal vulnerability in Action View in Ruby on Rails before 3.2.22.1, 4.0.x and 4.1.x before 4.1.14.1, 4.2.x before 4.2.5.1, and 5.x before 5.0.0.beta1.1 allows remote attackers to read arbitrary files by leveraging an application's unrestricted use of the render method and providing a .. (dot dot) in a pathname.
+cvss_v2: 5.0
+references:
+    - http://lists.fedoraproject.org/pipermail/package-announce/2016-February/178044.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2016-February/178069.html
+    - http://lists.opensuse.org/opensuse-security-announce/2016-04/msg00053.html
+    - http://lists.opensuse.org/opensuse-updates/2016-02/msg00034.html
+    - http://lists.opensuse.org/opensuse-updates/2016-02/msg00043.html
+    - http://rhn.redhat.com/errata/RHSA-2016-0296.html
+    - http://www.debian.org/security/2016/dsa-3464
+    - http://www.openwall.com/lists/oss-security/2016/01/25/13
+    - http://www.securityfocus.com/bid/81801
+    - http://www.securitytracker.com/id/1034816
+    - https://groups.google.com/forum/message/raw?msg=ruby-security-ann/335P1DcLG00/JXcBnTtZEgAJ
+    - https://www.exploit-db.com/exploits/40561/
+affected:
+    - name: rails
+      version:
+        - "<=4.1.0-beta"
+      fixedin:
+        []
