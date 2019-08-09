@@ -1,0 +1,25 @@
+---
+cve: 2016-2098
+title: CVE in rails
+description: >
+    Action Pack in Ruby on Rails before 3.2.22.2, 4.x before 4.1.14.2, and 4.2.x before 4.2.5.2 allows remote attackers to execute arbitrary Ruby code by leveraging an application's unrestricted use of the render method.
+cvss_v2: 7.5
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2016-03/msg00057.html
+    - http://lists.opensuse.org/opensuse-security-announce/2016-03/msg00080.html
+    - http://lists.opensuse.org/opensuse-security-announce/2016-03/msg00083.html
+    - http://lists.opensuse.org/opensuse-security-announce/2016-03/msg00086.html
+    - http://lists.opensuse.org/opensuse-security-announce/2016-04/msg00006.html
+    - http://lists.opensuse.org/opensuse-security-announce/2016-04/msg00053.html
+    - http://weblog.rubyonrails.org/2016/2/29/Rails-4-2-5-2-4-1-14-2-3-2-22-2-have-been-released/
+    - http://www.debian.org/security/2016/dsa-3509
+    - http://www.securityfocus.com/bid/83725
+    - http://www.securitytracker.com/id/1035122
+    - https://groups.google.com/forum/message/raw?msg=rubyonrails-security/ly-IH-fxr_Q/WLoOhcMZIAAJ
+    - https://www.exploit-db.com/exploits/40086/
+affected:
+    - name: rails
+      version:
+        - "<=4.1.0-beta"
+      fixedin:
+        []
