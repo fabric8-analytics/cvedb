@@ -1,0 +1,18 @@
+---
+cve: 2019-14418
+title: CVE in org.jasig.ssp.platform:platform-war
+description: >
+    An issue was discovered in Veritas Resiliency Platform (VRP) before 3.4 HF1. When uploading an application bundle, a directory traversal vulnerability allows a VRP user with sufficient privileges to overwrite any file in the VRP virtual machine. A malicious VRP user could use this to replace existing files to take control of the VRP virtual machine.
+cvss_v2: 6.5
+references:
+    - http://packetstormsecurity.com/files/153842/Veritas-Resiliency-Platform-VRP-Traversal-Command-Execution.html
+    - http://seclists.org/fulldisclosure/2019/Jul/39
+    - https://www.veritas.com/content/support/en_US/security/VTS19-002.html#Issue1
+affected:
+    - groupId: org.jasig.ssp.platform
+      artifactId: platform-war
+      version:
+        - "<=1.2.0,1.2.0-b1"
+      fixedin:
+        - ">=1.2.1"
+        - "<=1.1.1,1.0.0"
