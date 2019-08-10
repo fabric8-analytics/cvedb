@@ -1,0 +1,16 @@
+---
+cve: 2019-4284
+title: CVE in cloud
+description: >
+    IBM Cloud Private 2.1.0 , 3.1.0, 3.1.1, and 3.1.2 could allow a local privileged user to obtain sensitive OIDC token that is printed to log files, which could be used to log in to the system as another user. IBM X-Force ID: 160512.
+cvss_v2: 2.1
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/160512
+    - https://www.ibm.com/support/docview.wss?uid=ibm10885454
+affected:
+    - name: cloud
+      version:
+        - "<=2.1.0,2.1.0"
+      fixedin:
+        - ">=2.1.1"
+        - "<=1.9.8,1.9.7"
