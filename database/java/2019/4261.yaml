@@ -1,0 +1,17 @@
+---
+cve: 2019-4261
+title: CVE in com.ibm.mq:com.ibm.mq.allclient
+description: >
+    IBM WebSphere MQ V7.1, 7.5, IBM MQ V8, IBM MQ V9.0LTS, IBM MQ V9.1 LTS, and IBM MQ V9.1 CD are vulnerable to a denial of service attack caused by specially crafted messages. IBM X-Force ID: 160013.
+cvss_v2: 4.0
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/160013
+    - https://www.ibm.com/support/docview.wss?uid=ibm10886887
+affected:
+    - groupId: com.ibm.mq
+      artifactId: com.ibm.mq.allclient
+      version:
+        - "<=9.1.2.0,9.1.0.0"
+      fixedin:
+        - ">=9.1.3.0"
+        - "<=9.0.5.0,0.0.0.2"
