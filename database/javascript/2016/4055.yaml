@@ -8,10 +8,13 @@ references:
     - http://www.openwall.com/lists/oss-security/2016/04/20/11
     - http://www.oracle.com/technetwork/security-advisory/cpujul2018-4258247.html
     - http://www.securityfocus.com/bid/95849
+    - https://lists.apache.org/thread.html/10f0f3aefd51444d1198c65f44ffdf2d78ca3359423dbc1c168c9731@%3Cdev.flink.apache.org%3E
+    - https://lists.apache.org/thread.html/54df3aeb4239b64b50b356f0ca6f986e3c4ca5b84c515dce077c7854@%3Cuser.flink.apache.org%3E
     - https://nodesecurity.io/advisories/55
+    - https://www.tenable.com/security/tns-2019-02
 affected:
     - name: moment
       version:
-        - "<=2.11.1"
+        - "<=2.24.0"
       fixedin:
-        - ">=2.11.2"
+        []
