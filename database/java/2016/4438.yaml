@@ -1,8 +1,8 @@
 ---
 cve: 2016-4438
-title: CVE in org.apache.struts:struts2-rest-plugin
+title: CVE in org.apache.struts:struts2-rest-showcase
 description: >
-    The REST plugin in Apache Struts 2 2.3.20 through 2.3.28.1 allows remote attackers to execute arbitrary code via a crafted expression.
+    The REST plugin in Apache Struts 2 2.3.19 through 2.3.28.1 allows remote attackers to execute arbitrary code via a crafted expression.
 cvss_v2: 7.5
 references:
     - http://jvn.jp/en/jp/JVN07710476/index.html
@@ -13,8 +13,9 @@ references:
     - https://struts.apache.org/docs/s2-037.html
 affected:
     - groupId: org.apache.struts
-      artifactId: struts2-rest-plugin
+      artifactId: struts2-rest-showcase
       version:
-        - "<=2.3.28.1,2.3.20"
+        - "<=2.3.28,2.3.20"
       fixedin:
-        - ">=2.3.29"
+        - ">=2.3.28.1"
+        - "<=2.3.16.3,2.1.2"
