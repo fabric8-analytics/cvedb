@@ -1,0 +1,16 @@
+---
+cve: 2013-1965
+title: CVE in nightingale-showcase-app
+description: >
+    Apache Struts Showcase App 2.0.0 through 2.3.13, as used in Struts 2 before 2.3.14.3, allows remote attackers to execute arbitrary OGNL code via a crafted parameter name that is not properly handled when invoking a redirect.
+cvss_v2: 9.3
+references:
+    - http://struts.apache.org/development/2.x/docs/s2-012.html
+    - http://www.securityfocus.com/bid/60082
+    - https://bugzilla.redhat.com/show_bug.cgi?id=967655
+affected:
+    - name: nightingale-showcase-app
+      version:
+        - "<=2.1.16,2.0.0"
+      fixedin:
+        - "<=1.0.8-alpha.0,1.0.0-beta.1"
