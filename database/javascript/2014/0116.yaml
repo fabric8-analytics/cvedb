@@ -1,0 +1,18 @@
+---
+cve: 2014-0116
+title: CVE in to-class-name
+description: >
+    CookieInterceptor in Apache Struts 2.x before 2.3.20, when a wildcard cookiesName value is used, does not properly restrict access to the getClass method, which allows remote attackers to "manipulate" the ClassLoader and modify session state via a crafted request. NOTE: this vulnerability exists because of an incomplete fix for CVE-2014-0113.
+cvss_v2: 5.8
+references:
+    - http://secunia.com/advisories/59816
+    - http://struts.apache.org/release/2.3.x/docs/s2-022.html
+    - http://www.huawei.com/en/security/psirt/security-bulletins/security-advisories/hw-350733.htm
+    - http://www.oracle.com/technetwork/topics/security/cpuapr2015-2365600.html
+    - http://www.securityfocus.com/bid/67218
+affected:
+    - name: to-class-name
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - "<=0.0.1-security,0.0.0"
