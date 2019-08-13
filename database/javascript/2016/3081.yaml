@@ -1,0 +1,24 @@
+---
+cve: 2016-3081
+title: CVE in method
+description: >
+    Apache Struts 2.3.19 to 2.3.20.2, 2.3.21 to 2.3.24.1, and 2.3.25 to 2.3.28, when Dynamic Method Invocation is enabled, allow remote attackers to execute arbitrary code via method: prefix, related to chained expressions.
+cvss_v2: 9.3
+references:
+    - http://packetstormsecurity.com/files/136856/Apache-Struts-2.3.28-Dynamic-Method-Invocation-Remote-Code-Execution.html
+    - http://www.huawei.com/en/psirt/security-advisories/huawei-sa-20160527-01-struts2-en
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2016-2881720.html
+    - http://www.oracle.com/technetwork/security-advisory/cpuoct2016-2881722.html
+    - http://www.rapid7.com/db/modules/exploit/linux/http/struts_dmi_exec
+    - http://www.rapid7.com/db/modules/exploit/multi/http/struts_dmi_exec
+    - http://www.securityfocus.com/bid/87327
+    - http://www.securityfocus.com/bid/91787
+    - http://www.securitytracker.com/id/1035665
+    - https://struts.apache.org/docs/s2-032.html
+    - https://www.exploit-db.com/exploits/39756/
+affected:
+    - name: method
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - "<=1.0.2,0.0.1"
