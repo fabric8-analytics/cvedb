@@ -1,0 +1,18 @@
+---
+cve: 2019-10093
+title: CVE in org.apache.tika:tika-parsers
+description: >
+    In Apache Tika 1.19 to 1.21, a carefully crafted 2003ml or 2006ml file could consume all available SAXParsers in the pool and lead to very long hangs. Apache Tika users should upgrade to 1.22 or later.
+cvss_v2: 4.3
+references:
+    - https://lists.apache.org/thread.html/a5a44eff1b9eda3bc69d22943a1030c43d376380c75d3ab04d0c1a21@%3Cdev.tika.apache.org%3E
+    - https://lists.apache.org/thread.html/da9ee189d1756f8508d0f2386d8e25aca5a6df541739829232be8a94@%3Cdev.tika.apache.org%3E
+    - https://lists.apache.org/thread.html/fb6c84fd387de997e5e366d50b0ca331a328c466432c80f8c5eed33d@%3Cdev.tika.apache.org%3E
+affected:
+    - groupId: org.apache.tika
+      artifactId: tika-parsers
+      version:
+        - "<=1.21,1.19"
+      fixedin:
+        - ">=1.22"
+        - "<=1.18,0.4"
