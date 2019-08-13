@@ -1,0 +1,16 @@
+---
+cve: 2019-10088
+title: CVE in @conscia/tika
+description: >
+    A carefully crafted or corrupt zip file can cause an OOM in Apache Tika's RecursiveParserWrapper in versions 1.7-1.21. Users should upgrade to 1.22 or later.
+cvss_v2: 6.8
+references:
+    - https://lists.apache.org/thread.html/1c63555609b737c20d1bbfa4a3e73ec488e3408a84e2f5e47e1b7e08@%3Cdev.tika.apache.org%3E
+    - https://lists.apache.org/thread.html/da9ee189d1756f8508d0f2386d8e25aca5a6df541739829232be8a94@%3Cdev.tika.apache.org%3E
+    - https://lists.apache.org/thread.html/fb6c84fd387de997e5e366d50b0ca331a328c466432c80f8c5eed33d@%3Cdev.tika.apache.org%3E
+affected:
+    - name: @conscia/tika
+      version:
+        - "<=1.14.1"
+      fixedin:
+        []
