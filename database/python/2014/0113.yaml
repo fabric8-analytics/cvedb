@@ -1,0 +1,19 @@
+---
+cve: 2014-0113
+title: CVE in apache-beam
+description: >
+    CookieInterceptor in Apache Struts before 2.3.20, when a wildcard cookiesName value is used, does not properly restrict access to the getClass method, which allows remote attackers to "manipulate" the ClassLoader and execute arbitrary code via a crafted request. NOTE: this vulnerability exists because of an incomplete fix for CVE-2014-0094.
+cvss_v2: 7.5
+references:
+    - http://secunia.com/advisories/59178
+    - http://www.oracle.com/technetwork/topics/security/cpuapr2015-2365600.html
+    - http://www.securityfocus.com/archive/1/531952/100/0/threaded
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21676706
+    - https://cwiki.apache.org/confluence/display/WW/S2-021
+affected:
+    - name: apache-beam
+      version:
+        - "<=2.3.0,2.0.0"
+      fixedin:
+        - ">=2.4.0"
+        - "<=0.6.0,0.6.0"
