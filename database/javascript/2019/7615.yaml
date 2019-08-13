@@ -1,0 +1,14 @@
+---
+cve: 2019-7615
+title: CVE in elastic-apm-node
+description: >
+    A TLS certificate validation flaw was found in Elastic APM agent for Ruby versions before 2.9.0. When specifying a trusted server CA certificate via the 'server_ca_cert' setting, the Ruby agent would not properly verify the certificate returned by the APM server. This could result in a man in the middle style attack against the Ruby agent.
+cvss_v2: 5.8
+references:
+    - https://www.elastic.co/community/security/
+affected:
+    - name: elastic-apm-node
+      version:
+        - "<=2.8.0"
+      fixedin:
+        - ">=2.9.0"
