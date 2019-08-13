@@ -1,0 +1,16 @@
+---
+cve: 2019-10168
+title: CVE in libvirt-python
+description: >
+    The virConnectBaselineHypervisorCPU() and virConnectCompareHypervisorCPU() libvirt APIs, 4.x.x before 4.10.1 and 5.x.x before 5.4.1, accept an "emulator" argument to specify the program providing emulation for a domain. Since v1.2.19, libvirt will execute that program to probe the domain's capabilities. Read-only clients could specify an arbitrary path for this argument, causing libvirtd to execute a crafted executable with its own privileges.
+cvss_v2: 4.6
+references:
+    - https://access.redhat.com/libvirt-privesc-vulnerabilities
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-10168
+affected:
+    - name: libvirt-python
+      version:
+        - "<=5.3.0,4.0.0"
+      fixedin:
+        - ">=5.5.0"
+        - "<=3.10.0,1.2.0"
