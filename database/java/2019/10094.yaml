@@ -1,0 +1,18 @@
+---
+cve: 2019-10094
+title: CVE in org.apache.tika:tika-parsers
+description: >
+    A carefully crafted package/compressed file that, when unzipped/uncompressed yields the same file (a quine), causes a StackOverflowError in Apache Tika's RecursiveParserWrapper in versions 1.7-1.21. Apache Tika users should upgrade to 1.22 or later.
+cvss_v2: 6.8
+references:
+    - https://lists.apache.org/thread.html/da9ee189d1756f8508d0f2386d8e25aca5a6df541739829232be8a94@%3Cdev.tika.apache.org%3E
+    - https://lists.apache.org/thread.html/fb6c84fd387de997e5e366d50b0ca331a328c466432c80f8c5eed33d@%3Cdev.tika.apache.org%3E
+    - https://lists.apache.org/thread.html/fe876a649d9d36525dd097fe87ff4dcb3b82bb0fbb3a3d71fb72ef61@%3Cdev.tika.apache.org%3E
+affected:
+    - groupId: org.apache.tika
+      artifactId: tika-parsers
+      version:
+        - "<=1.21,1.7"
+      fixedin:
+        - ">=1.22"
+        - "<=1.6,0.4"
