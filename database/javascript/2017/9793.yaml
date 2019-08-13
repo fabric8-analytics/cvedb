@@ -1,0 +1,21 @@
+---
+cve: 2017-9793
+title: CVE in xstream
+description: >
+    The REST Plugin in Apache Struts 2.1.x, 2.3.7 through 2.3.33 and 2.5 through 2.5.12 is using an outdated XStream library which is vulnerable and allow perform a DoS attack using malicious request with specially crafted XML payload.
+cvss_v2: 5.0
+references:
+    - http://www.brocade.com/content/dam/common/documents/content-types/security-bulletin/brocade-security-advisory-2017-429.htm
+    - http://www.oracle.com/technetwork/security-advisory/alert-cve-2017-9805-3889403.html
+    - http://www.securityfocus.com/bid/100611
+    - http://www.securitytracker.com/id/1039262
+    - https://security.netapp.com/advisory/ntap-20180629-0001/
+    - https://struts.apache.org/docs/s2-051.html
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20170907-struts2
+affected:
+    - name: xstream
+      version:
+        - "<=2.5.0,2.5.0"
+      fixedin:
+        - ">=2.6.0"
+        - "<=2.4.3,0.0.1"
