@@ -1,0 +1,18 @@
+---
+cve: 2019-14439
+title: CVE in com.fasterxml.jackson.core:jackson-databind
+description: >
+    A Polymorphic Typing issue was discovered in FasterXML jackson-databind 2.x before 2.9.9.2. This occurs when Default Typing is enabled (either globally or for a specific property) for an externally exposed JSON endpoint and the service has the logback jar in the classpath.
+cvss_v2: 5.0
+references:
+    - https://github.com/FasterXML/jackson-databind/commit/ad418eeb974e357f2797aef64aa0e3ffaaa6125b
+    - https://github.com/FasterXML/jackson-databind/compare/jackson-databind-2.9.9.1...jackson-databind-2.9.9.2
+    - https://github.com/FasterXML/jackson-databind/issues/2389
+    - https://lists.debian.org/debian-lts-announce/2019/08/msg00011.html
+affected:
+    - groupId: com.fasterxml.jackson.core
+      artifactId: jackson-databind
+      version:
+        - "<=2.9.9.1"
+      fixedin:
+        - ">=2.9.9.2"
