@@ -1,0 +1,23 @@
+---
+cve: 2004-1884
+title: CVE in org.springframework.ws:spring-ws
+description: >
+    Ipswitch WS_FTP Server 4.0.2 has a backdoor XXSESS_MGRYY username with a default password, which allows remote attackers to gain access.
+cvss_v2: 7.5
+references:
+    - http://marc.info/?l=bugtraq&m=108006581418116&w=2
+    - http://secunia.com/advisories/11206
+    - http://www.securityfocus.com/bid/9953
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/15558
+affected:
+    - groupId: org.springframework.ws
+      artifactId: spring-ws
+      version:
+        - "<=1.0.4,1.0.1"
+        - "<=2.0.4.RELEASE,2.0.0-M1"
+        - "<=3.0.1.RELEASE,3.0.0.RELEASE"
+      fixedin:
+        - ">=3.0.2.RELEASE"
+        - "<=2.4.5.RELEASE,2.0.5.RELEASE"
+        - "<=1.5.10,1.5.0"
+        - "<=1.0.0,1.0-m2"
