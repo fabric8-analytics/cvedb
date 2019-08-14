@@ -1,0 +1,20 @@
+---
+cve: 2003-0772
+title: CVE in ws
+description: >
+    Multiple buffer overflows in WS_FTP 3 and 4 allow remote authenticated users to cause a denial of service and possibly execute arbitrary code via long (1) APPE (append) or (2) STAT (status) arguments.
+cvss_v2: 7.5
+references:
+    - http://marc.info/?l=bugtraq&m=106288825902868&w=2
+    - http://secunia.com/advisories/9671
+    - http://www.kb.cert.org/vuls/id/219140
+    - http://www.kb.cert.org/vuls/id/792284
+    - http://www.securityfocus.com/bid/8542
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/13119
+affected:
+    - name: ws
+      version:
+        - "<=4.1.0,4.1.0"
+      fixedin:
+        - ">=5.0.0"
+        - "<=4.0.0,0.2.6"
