@@ -1,0 +1,14 @@
+---
+cve: 2019-5476
+title: CVE in agate-lookup
+description: >
+    An SQL Injection in the Nextcloud Lookup-Server < v0.3.0 (running on https://lookup.nextcloud.com) caused unauthenticated users to be able to execute arbitrary SQL commands.
+cvss_v2: 7.5
+references:
+    - https://hackerone.com/reports/508487
+affected:
+    - name: agate-lookup
+      version:
+        - "<=0.2.1"
+      fixedin:
+        - ">=0.3.0"
