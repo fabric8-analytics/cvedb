@@ -1,0 +1,15 @@
+---
+cve: 2019-10372
+title: CVE in gitlab
+description: >
+    An open redirect vulnerability in Jenkins Gitlab Authentication Plugin 1.4 and earlier in GitLabSecurityRealm.java allows attackers to redirect users to a URL outside Jenkins after successful login.
+cvss_v2: 5.8
+references:
+    - http://www.openwall.com/lists/oss-security/2019/08/07/1
+    - https://jenkins.io/security/advisory/2019-08-07/#SECURITY-796
+affected:
+    - name: gitlab
+      version:
+        - "<=1.4.0"
+      fixedin:
+        - ">=1.4.1"
