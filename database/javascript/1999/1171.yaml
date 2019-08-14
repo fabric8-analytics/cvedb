@@ -1,0 +1,16 @@
+---
+cve: 1999-1171
+title: CVE in gulp-ftp
+description: >
+    IPswitch WS_FTP allows local users to gain additional privileges and modify or add mail accounts by setting the "flags" registry key to 1920.
+cvss_v2: 4.6
+references:
+    - http://marc.info/?l=ntbugtraq&m=91816507920544&w=2
+    - http://www.securityfocus.com/bid/218
+affected:
+    - name: gulp-ftp
+      version:
+        - "<=1.0.2,1.0.1"
+      fixedin:
+        - ">=1.0.3"
+        - "<=1.0.0,0.1.0"
