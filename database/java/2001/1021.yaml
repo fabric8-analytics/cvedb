@@ -1,0 +1,18 @@
+---
+cve: 2001-1021
+title: CVE in org.springframework.ws:spring-ws
+description: >
+    Buffer overflows in WS_FTP 2.02 allow remote attackers to execute arbitrary code via long arguments to (1) DELE, (2) MDTM, (3) MLST, (4) MKD, (5) RMD, (6) RNFR, (7) RNTO, (8) SIZE, (9) STAT, (10) XMKD, or (11) XRMD.
+cvss_v2: 7.5
+references:
+    - http://archives.neohapsis.com/archives/bugtraq/2001-07/0610.html
+    - http://www.ipswitch.com/Support/WS_FTP-Server/patch-upgrades.html
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/6911
+affected:
+    - groupId: org.springframework.ws
+      artifactId: spring-ws
+      version:
+        - "<=2.0.2.RELEASE,2.0.2.RELEASE"
+      fixedin:
+        - ">=2.0.3.RELEASE"
+        - "<=2.0.1.RELEASE,1.0-m2"
