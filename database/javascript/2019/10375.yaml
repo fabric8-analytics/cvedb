@@ -1,0 +1,15 @@
+---
+cve: 2019-10375
+title: CVE in file-system
+description: >
+    An arbitrary file read vulnerability in Jenkins File System SCM Plugin 2.1 and earlier allows attackers able to configure jobs in Jenkins to obtain the contents of any file on the Jenkins master.
+cvss_v2: 4.0
+references:
+    - http://www.openwall.com/lists/oss-security/2019/08/07/1
+    - https://jenkins.io/security/advisory/2019-08-07/#SECURITY-569
+affected:
+    - name: file-system
+      version:
+        - "<=2.1.0"
+      fixedin:
+        - ">=2.1.1"
