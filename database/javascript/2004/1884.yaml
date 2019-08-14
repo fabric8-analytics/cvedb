@@ -1,0 +1,17 @@
+---
+cve: 2004-1884
+title: CVE in pull-ws-server
+description: >
+    Ipswitch WS_FTP Server 4.0.2 has a backdoor XXSESS_MGRYY username with a default password, which allows remote attackers to gain access.
+cvss_v2: 7.5
+references:
+    - http://marc.info/?l=bugtraq&m=108006581418116&w=2
+    - http://secunia.com/advisories/11206
+    - http://www.securityfocus.com/bid/9953
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/15558
+affected:
+    - name: pull-ws-server
+      version:
+        - "<=1.0.2"
+      fixedin:
+        - ">=1.1.0"
