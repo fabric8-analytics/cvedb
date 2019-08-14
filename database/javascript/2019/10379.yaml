@@ -1,0 +1,15 @@
+---
+cve: 2019-10379
+title: CVE in good-google-cloud
+description: >
+    Jenkins Google Cloud Messaging Notification Plugin 1.0 and earlier stores credentials unencrypted in its global configuration file on the Jenkins master where they can be viewed by users with access to the master file system.
+cvss_v2: 4.0
+references:
+    - http://www.openwall.com/lists/oss-security/2019/08/07/1
+    - https://jenkins.io/security/advisory/2019-08-07/#SECURITY-591
+affected:
+    - name: good-google-cloud
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
