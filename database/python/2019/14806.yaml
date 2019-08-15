@@ -1,0 +1,16 @@
+---
+cve: 2019-14806
+title: CVE in werkzeug
+description: >
+    Pallets Werkzeug before 0.15.3, when used with Docker, has insufficient debugger PIN randomness because Docker containers share the same machine id.
+cvss_v2: 5.0
+references:
+    - https://github.com/pallets/werkzeug/blob/7fef41b120327d3912fbe12fb64f1951496fcf3e/src/werkzeug/debug/__init__.py#L168
+    - https://github.com/pallets/werkzeug/commit/00bc43b1672e662e5e3b8cecd79e67fc968fa246
+    - https://palletsprojects.com/blog/werkzeug-0-15-3-released/
+affected:
+    - name: werkzeug
+      version:
+        - "<=0.15.2"
+      fixedin:
+        - ">=0.15.3"
