@@ -1,0 +1,15 @@
+---
+cve: 2019-11776
+title: CVE in org.appspy.viewer:org.appspy.viewer.birt.webapp
+description: >
+    In Eclipse BIRT versions 1.0 to 4.7, the Report Viewer allows Reflected XSS in URL parameter. Attacker can execute the payload in victim's browser context.
+cvss_v2: 4.3
+references:
+    - https://bugs.eclipse.org/bugs/show_bug.cgi?id=546816
+affected:
+    - groupId: org.appspy.viewer
+      artifactId: org.appspy.viewer.birt.webapp
+      version:
+        - "<=1.1"
+      fixedin:
+        []
