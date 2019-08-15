@@ -1,0 +1,17 @@
+---
+cve: 2019-10173
+title: CVE in com.thoughtworks.xstream:xstream-hibernate
+description: >
+    It was found that xstream API version 1.4.10 before 1.4.11 introduced a regression for a previous deserialization flaw. If the security framework has not been initialized, it may allow a remote attacker to run arbitrary shell commands when unmarshalling XML or any supported format. e.g. JSON. (regression of CVE-2013-7285)
+cvss_v2: 7.5
+references:
+    - http://x-stream.github.io/changes.html#1.4.11
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-10173
+affected:
+    - groupId: com.thoughtworks.xstream
+      artifactId: xstream-hibernate
+      version:
+        - "<=1.4.10,1.4.10"
+      fixedin:
+        - ">=1.4.11"
+        - "<=1.4.9,1.4"
