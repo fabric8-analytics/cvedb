@@ -1,0 +1,19 @@
+---
+cve: 2019-2386
+title: CVE in org.mongodb:mongodb-driver-async
+description: >
+    After user deletion in MongoDB Server the improper invalidation of authorization sessions allows an authenticated user's session to persist and become conflated with new accounts, if those accounts reuse the names of deleted ones. This issue affects: MongoDB Inc. MongoDB Server v4.0 versions prior to 4.0.9; v3.6 versions prior to 3.6.13; v3.4 versions prior to 3.4.22.
+cvss_v2: 6.0
+references:
+    - https://jira.mongodb.org/browse/SERVER-38984
+    - https://www.talosintelligence.com/vulnerability_reports/TALOS-2019-0829
+affected:
+    - groupId: org.mongodb
+      artifactId: mongodb-driver-async
+      version:
+        - "<=3.4.3,3.4.0-beta1"
+        - "<=3.6.4,3.6.0-beta1"
+      fixedin:
+        - ">=3.7.0-rc0"
+        - "<=3.5.0,3.5.0-alpha1"
+        - "<=3.3.0,3.0.0-beta1"
