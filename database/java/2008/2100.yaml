@@ -1,0 +1,25 @@
+---
+cve: 2008-2100
+title: CVE in com.vmware.card-connectors:bitbucket-server-connector
+description: >
+    Multiple buffer overflows in VIX API 1.1.x before 1.1.4 build 93057 on VMware Workstation 5.x and 6.x, VMware Player 1.x and 2.x, VMware ACE 2.x, VMware Server 1.x, VMware Fusion 1.x, VMware ESXi 3.5, and VMware ESX 3.0.1 through 3.5 allow guest OS users to execute arbitrary code on the host OS via unspecified vectors.
+cvss_v2: 7.2
+references:
+    - http://secunia.com/advisories/30556
+    - http://security.gentoo.org/glsa/glsa-201209-25.xml
+    - http://securityreason.com/securityalert/3922
+    - http://securitytracker.com/id?1020200
+    - http://www.securityfocus.com/archive/1/493080/100/0/threaded
+    - http://www.securityfocus.com/bid/29552
+    - http://www.vmware.com/security/advisories/VMSA-2008-0009.html
+    - http://www.vupen.com/english/advisories/2008/1744
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/42872
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A5081
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A5647
+affected:
+    - groupId: com.vmware.card-connectors
+      artifactId: bitbucket-server-connector
+      version:
+        - "<=2.0"
+      fixedin:
+        - ">=2.1"
