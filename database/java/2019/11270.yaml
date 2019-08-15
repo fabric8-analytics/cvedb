@@ -1,0 +1,16 @@
+---
+cve: 2019-11270
+title: CVE in org.cloudfoundry.identity:cloudfoundry-identity-uaa
+description: >
+    Cloud Foundry UAA versions prior to v73.4.0 contain a vulnerability where a malicious client possessing the ?clients.write? authority or scope can bypass the restrictions imposed on clients created via ?clients.write? and create clients with arbitrary scopes that he does not possess.
+cvss_v2: 5.0
+references:
+    - https://pivotal.io/security/cve-2019-11270
+    - https://www.cloudfoundry.org/blog/cve-2019-11270
+affected:
+    - groupId: org.cloudfoundry.identity
+      artifactId: cloudfoundry-identity-uaa
+      version:
+        - "<=4.30.0"
+      fixedin:
+        []
