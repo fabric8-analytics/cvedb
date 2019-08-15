@@ -1,0 +1,18 @@
+---
+cve: 2019-2539
+title: CVE in org.kie.server:kie-server-wars
+description: >
+    Vulnerability in the MySQL Server component of Oracle MySQL (subcomponent: Server: Connection). Supported versions that are affected are 8.0.13 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.0 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H).
+cvss_v2: 4.0
+references:
+    - http://www.oracle.com/technetwork/security-advisory/cpujan2019-5072801.html
+    - http://www.securityfocus.com/bid/106625
+    - https://access.redhat.com/errata/RHSA-2019:2484
+    - https://security.netapp.com/advisory/ntap-20190118-0002/
+affected:
+    - groupId: org.kie.server
+      artifactId: kie-server-wars
+      version:
+        - "<=7.25.0.Final"
+      fixedin:
+        []
