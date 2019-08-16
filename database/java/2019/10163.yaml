@@ -1,0 +1,19 @@
+---
+cve: 2019-10163
+title: CVE in org.tiogasolutions.notify:tioga-notify-jackson
+description: >
+    A Vulnerability has been found in PowerDNS Authoritative Server before versions 4.1.9, 4.0.8 allowing a remote, authorized master server to cause a high CPU load or even prevent any further updates to any slave zone by sending a large number of NOTIFY messages. Note that only servers configured as slaves are affected by this issue.
+cvss_v2: 4.0
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2019-08/msg00036.html
+    - http://lists.opensuse.org/opensuse-security-announce/2019-08/msg00054.html
+    - https://blog.powerdns.com/2019/06/21/powerdns-authoritative-server-4-0-8-and-4-1-10-released/
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-10163
+    - https://doc.powerdns.com/authoritative/security-advisories/powerdns-advisory-2019-05.html
+affected:
+    - groupId: org.tiogasolutions.notify
+      artifactId: tioga-notify-jackson
+      version:
+        - "<=4.1.1"
+      fixedin:
+        - ">=4.2.0"
