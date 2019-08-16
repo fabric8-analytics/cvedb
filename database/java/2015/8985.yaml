@@ -1,0 +1,18 @@
+---
+cve: 2015-8985
+title: CVE in it.sephiroth.android.library.subtlerater:library
+description: >
+    The pop_fail_stack function in the GNU C Library (aka glibc or libc6) allows context-dependent attackers to cause a denial of service (assertion failure and application crash) via vectors related to extended regular expression processing.
+cvss_v2: 4.3
+references:
+    - http://www.openwall.com/lists/oss-security/2017/02/14/9
+    - http://www.securityfocus.com/bid/76916
+    - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=779392
+    - https://security.gentoo.org/glsa/201908-06
+affected:
+    - groupId: it.sephiroth.android.library.subtlerater
+      artifactId: library
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
