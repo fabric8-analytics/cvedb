@@ -1,0 +1,15 @@
+---
+cve: 2018-20858
+title: CVE in product-recommender
+description: >
+    Recommender before 2018-07-18 allows XSS.
+cvss_v2: 4.3
+references:
+    - https://github.com/edx/RecommenderXBlock/pull/2
+    - https://groups.google.com/forum/#!topic/openedx-announce/SF8Sn6MuUTg
+affected:
+    - name: product-recommender
+      version:
+        - "<=1.3.0"
+      fixedin:
+        - ">=1.3.1"
