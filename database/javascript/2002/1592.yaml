@@ -1,0 +1,21 @@
+---
+cve: 2002-1592
+title: CVE in grunt-http-server
+description: >
+    The ap_log_rerror function in Apache 2.0 through 2.035, when a CGI application encounters an error, sends error messages to the client that include the full path for the server, which allows remote attackers to obtain sensitive information.
+Upgrade to newest Apache version.
+cvss_v2: 5.0
+references:
+    - http://www.apache.org/dist/httpd/CHANGES_2.0
+    - http://www.iss.net/security_center/static/9623.php
+    - http://www.kb.cert.org/vuls/id/165803
+    - http://www.securityfocus.com/bid/5256
+    - https://lists.apache.org/thread.html/54a42d4b01968df1117cea77fc53d6beb931c0e05936ad02af93e9ac@%3Ccvs.httpd.apache.org%3E
+    - https://lists.apache.org/thread.html/5df9bfb86a3b054bb985a45ff9250b0332c9ecc181eec232489e7f79@%3Ccvs.httpd.apache.org%3E
+affected:
+    - name: grunt-http-server
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - ">=2.1.0"
+        - "<=1.16.0,0.0.1"
