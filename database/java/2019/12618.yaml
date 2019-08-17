@@ -1,0 +1,18 @@
+---
+cve: 2019-12618
+title: CVE in io.github.zanella.nomad:nomad-api
+description: >
+    HashiCorp Nomad 0.9.0 through 0.9.1 has Incorrect Access Control via the exec driver.
+cvss_v2: 10.0
+references:
+    - https://github.com/hashicorp/nomad/issues/5783
+    - https://www.hashicorp.com/blog/category/nomad
+    - https://www.hashicorp.com/blog/hashicorp-nomad-0-9-2
+affected:
+    - groupId: io.github.zanella.nomad
+      artifactId: nomad-api
+      version:
+        - "<=0.9,0.9"
+      fixedin:
+        - ">=0.10"
+        - "<=0.8,0.1"
