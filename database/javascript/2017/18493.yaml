@@ -1,0 +1,14 @@
+---
+cve: 2017-18493
+title: CVE in wordpress-query-page-children
+description: >
+    The custom-admin-page plugin before 0.1.2 for WordPress has multiple XSS issues.
+cvss_v2: 4.3
+references:
+    - https://wordpress.org/plugins/custom-admin-page/#developers
+affected:
+    - name: wordpress-query-page-children
+      version:
+        - "<=0.1.1"
+      fixedin:
+        - ">=0.1.2"
