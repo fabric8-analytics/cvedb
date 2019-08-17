@@ -1,0 +1,14 @@
+---
+cve: 2015-9312
+title: CVE in xss-filters
+description: >
+    The newstatpress plugin before 1.0.5 for WordPress has XSS related to an IMG element.
+cvss_v2: 4.3
+references:
+    - https://wordpress.org/plugins/newstatpress/#developers
+affected:
+    - name: xss-filters
+      version:
+        - "<=1.0.4"
+      fixedin:
+        - ">=1.0.5"
