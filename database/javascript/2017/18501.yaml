@@ -1,0 +1,14 @@
+---
+cve: 2017-18501
+title: CVE in xss
+description: >
+    The social-login-bws plugin before 0.2 for WordPress has multiple XSS issues.
+cvss_v2: 4.3
+references:
+    - https://wordpress.org/plugins/social-login-bws/#developers
+affected:
+    - name: xss
+      version:
+        - "<=0.1.21"
+      fixedin:
+        - ">=0.2.0"
