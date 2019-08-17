@@ -1,0 +1,16 @@
+---
+cve: 2018-20954
+title: CVE in aws-encryption
+description: >
+    The "Security and Privacy" Encryption feature in Mailpile before 1.0.0rc4 does not exclude disabled, revoked, and expired keys.
+cvss_v2: 5.0
+references:
+    - https://github.com/mailpile/Mailpile/commit/49b64f62ade9ade3dff9337c7bbc1171eab3d59e
+    - https://github.com/mailpile/Mailpile/compare/1.0.0rc3...1.0.0rc4
+    - https://github.com/mailpile/Mailpile/pull/2145
+affected:
+    - name: aws-encryption
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
