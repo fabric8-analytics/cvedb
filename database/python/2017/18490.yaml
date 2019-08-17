@@ -1,0 +1,14 @@
+---
+cve: 2017-18490
+title: CVE in bitmazk-contact-form
+description: >
+    The contact-form-multi plugin before 1.2.1 for WordPress has multiple XSS issues.
+cvss_v2: 4.3
+references:
+    - https://wordpress.org/plugins/contact-form-multi/#developers
+affected:
+    - name: bitmazk-contact-form
+      version:
+        - "<=1.2"
+      fixedin:
+        - ">=1.2.1"
