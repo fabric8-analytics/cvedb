@@ -1,0 +1,14 @@
+---
+cve: 2016-10869
+title: CVE in bloggify-contact-form
+description: >
+    The contact-form-plugin plugin before 4.0.2 for WordPress has XSS.
+cvss_v2: 4.3
+references:
+    - https://wordpress.org/plugins/contact-form-plugin/#developers
+affected:
+    - name: bloggify-contact-form
+      version:
+        - "<=4.0.1"
+      fixedin:
+        - ">=4.0.2"
