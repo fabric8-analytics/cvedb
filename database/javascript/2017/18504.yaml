@@ -1,0 +1,14 @@
+---
+cve: 2017-18504
+title: CVE in koa-csrf
+description: >
+    The twitter-cards-meta plugin before 2.5.0 for WordPress has CSRF.
+cvss_v2: 6.8
+references:
+    - https://wordpress.org/plugins/twitter-cards-meta/#developers
+affected:
+    - name: koa-csrf
+      version:
+        - "<=2.4.0"
+      fixedin:
+        - ">=2.5.0"
