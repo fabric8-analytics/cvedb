@@ -1,0 +1,14 @@
+---
+cve: 2015-9313
+title: CVE in generator-wordpress
+description: >
+    The newstatpress plugin before 1.0.5 for WordPress has SQL injection related to an IMG element.
+cvss_v2: 7.5
+references:
+    - https://wordpress.org/plugins/newstatpress/#developers
+affected:
+    - name: generator-wordpress
+      version:
+        - "<=1.0.4"
+      fixedin:
+        - ">=1.0.5"
