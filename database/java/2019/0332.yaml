@@ -1,0 +1,18 @@
+---
+cve: 2019-0332
+title: CVE in org.seedstack.business:business-migrate
+description: >
+    SAP BusinessObjects Business Intelligence Platform (Info View), versions 4.1, 4.2, 4.3, allows an attacker to give some payload for keyword in the search and it will be executed while search performs its action, resulting in Cross-Site Scripting (XSS) vulnerability.
+cvss_v2: 4.3
+references:
+    - https://launchpad.support.sap.com/#/notes/2742468
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=523998017
+affected:
+    - groupId: org.seedstack.business
+      artifactId: business-migrate
+      version:
+        - "<=4.1.0"
+        - "<=4.2.0,4.2.0"
+      fixedin:
+        - ">=4.2.1"
+        - "<=4.1.1,4.1.1"
