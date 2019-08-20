@@ -1,0 +1,15 @@
+---
+cve: 2019-14432
+title: CVE in loom-data
+description: >
+    Incorrect authentication of application WebSocket connections in Loom Desktop for Mac up to 0.16.0 allows remote code execution from either malicious JavaScript in a browser or hosts on the same network, during periods in which a user is recording a video with the application. The same attack vector can be used to crash the application at any time.
+cvss_v2: 6.8
+references:
+    - https://thomask.sdf.org/blog/2019/08/07/cve-2019-14432-loom-desktop-rce-vulnerability.html
+    - https://www.loom.com/blog/loom-desktop-application-security-fix/
+affected:
+    - name: loom-data
+      version:
+        - "<=0.16.0"
+      fixedin:
+        - ">=0.16.1"
