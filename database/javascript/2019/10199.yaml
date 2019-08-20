@@ -1,0 +1,14 @@
+---
+cve: 2019-10199
+title: CVE in keycloak-js
+description: >
+    It was found that Keycloak's account console, up to 6.0.1, did not perform adequate header checks in some requests. An attacker could use this flaw to trick an authenticated user into performing operations via request from an untrusted domain.
+cvss_v2: 6.8
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-10199
+affected:
+    - name: keycloak-js
+      version:
+        - "<=6.0.1"
+      fixedin:
+        []
