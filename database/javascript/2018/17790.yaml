@@ -1,0 +1,15 @@
+---
+cve: 2018-17790
+title: CVE in is-online
+description: >
+    Prospecta Master Data Online (MDO) 2.0 has Stored XSS.
+cvss_v2: 4.3
+references:
+    - http://packetstormsecurity.com/files/154001/Master-Data-Online-2.0-Cross-Site-Scripting.html
+affected:
+    - name: is-online
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - ">=2.0.1"
+        - "<=1.0.0,1.0.0"
