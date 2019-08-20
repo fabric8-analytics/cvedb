@@ -1,0 +1,16 @@
+---
+cve: 2019-14433
+title: CVE in nova-lxd
+description: >
+    An issue was discovered in OpenStack Nova before 17.0.12, 18.x before 18.2.2, and 19.x before 19.0.2. If an API request from an authenticated user ends in a fault condition due to an external exception, details of the underlying environment may be leaked in the response, and could include sensitive configuration or other data.
+cvss_v2: 4.0
+references:
+    - http://www.openwall.com/lists/oss-security/2019/08/06/6
+    - https://launchpad.net/bugs/1837877
+    - https://security.openstack.org/ossa/OSSA-2019-003.html
+affected:
+    - name: nova-lxd
+      version:
+        - "<=19.0.0"
+      fixedin:
+        []
