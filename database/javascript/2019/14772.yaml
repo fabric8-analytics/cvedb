@@ -1,0 +1,14 @@
+---
+cve: 2019-14772
+title: CVE in verdaccio
+description: >
+    verdaccio before 3.12.0 allows XSS.
+cvss_v2: 4.3
+references:
+    - https://github.com/verdaccio/verdaccio/security/advisories/GHSA-78j5-gcmf-vqc8
+affected:
+    - name: verdaccio
+      version:
+        - "<=3.11.7"
+      fixedin:
+        - ">=3.12.0"
