@@ -1,0 +1,15 @@
+---
+cve: 2019-11270
+title: CVE in cloud
+description: >
+    Cloud Foundry UAA versions prior to v73.4.0 contain a vulnerability where a malicious client possessing the 'clients.write' authority or scope can bypass the restrictions imposed on clients created via 'clients.write' and create clients with arbitrary scopes that the creator does not possess.
+cvss_v2: 5.0
+references:
+    - https://pivotal.io/security/cve-2019-11270
+    - https://www.cloudfoundry.org/blog/cve-2019-11270
+affected:
+    - name: cloud
+      version:
+        - "<=2.8.5"
+      fixedin:
+        []
