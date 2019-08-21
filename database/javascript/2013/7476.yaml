@@ -1,0 +1,14 @@
+---
+cve: 2013-7476
+title: CVE in wordpress
+description: >
+    The simple-fields plugin before 1.2 for WordPress has CSRF in the admin interface.
+cvss_v2: 6.8
+references:
+    - https://wordpress.org/plugins/simple-fields/#developers
+affected:
+    - name: wordpress
+      version:
+        - "<=1.1.3"
+      fixedin:
+        - ">=1.2.0"
