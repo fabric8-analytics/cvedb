@@ -1,0 +1,15 @@
+---
+cve: 2019-15053
+title: CVE in mdx-include
+description: >
+    The "HTML Include and replace macro" plugin before 1.5.0 for Confluence Server allows a bypass of the includeScripts=false XSS protection mechanism via vectors involving an IFRAME element.
+cvss_v2: 6.0
+references:
+    - https://github.com/l0nax/CVE-2019-15053
+    - https://marketplace.atlassian.com/apps/4885/html-include-and-replace-macro?hosting=server&tab=versions
+affected:
+    - name: mdx-include
+      version:
+        - "<=1.3.3,1.1.0"
+      fixedin:
+        - "<=1.0.9,1.0.0"
