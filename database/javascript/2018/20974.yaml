@@ -1,0 +1,14 @@
+---
+cve: 2018-20974
+title: CVE in cron-job-manager
+description: >
+    The js-jobs plugin before 1.0.7 for WordPress has CSRF.
+cvss_v2: 6.8
+references:
+    - https://wordpress.org/plugins/js-jobs/#developers
+affected:
+    - name: cron-job-manager
+      version:
+        - "<=1.0.6"
+      fixedin:
+        - ">=1.0.7"
