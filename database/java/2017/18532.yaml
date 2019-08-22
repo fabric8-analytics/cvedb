@@ -1,0 +1,15 @@
+---
+cve: 2017-18532
+title: CVE in uk.co.divisiblebyzero.wordpress:wordpress
+description: >
+    The realty plugin before 1.1.0 for WordPress has multiple XSS issues.
+cvss_v2: 4.3
+references:
+    - https://wordpress.org/plugins/realty/#developers
+affected:
+    - groupId: uk.co.divisiblebyzero.wordpress
+      artifactId: wordpress
+      version:
+        []
+      fixedin:
+        - ">=1.1"
