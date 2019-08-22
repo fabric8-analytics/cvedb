@@ -1,0 +1,23 @@
+---
+cve: 2019-9517
+title: CVE in node-http-server
+description: >
+    Some HTTP/2 implementations are vulnerable to unconstrained interal data buffering, potentially leading to a denial of service. The attacker opens the HTTP/2 window so the peer can send without constraint; however, they leave the TCP window closed so the peer cannot actually write (many of) the bytes on the wire. The attacker then sends a stream of requests for a large response object. Depending on how the servers queue the responses, this can consume excess memory, CPU, or both.
+cvss_v2: 7.8
+references:
+    - http://www.openwall.com/lists/oss-security/2019/08/15/7
+    - https://github.com/Netflix/security-bulletins/blob/master/advisories/third-party/2019-002.md
+    - https://kb.cert.org/vuls/id/605641/
+    - https://lists.apache.org/thread.html/4610762456644181b267c846423b3a990bd4aaea1886ecc7d51febdb@%3Cannounce.httpd.apache.org%3E
+    - https://lists.apache.org/thread.html/56c2e7cc9deb1c12a843d0dc251ea7fd3e7e80293cde02fcd65286ba@%3Ccvs.httpd.apache.org%3E
+    - https://lists.apache.org/thread.html/d89f999e26dfb1d50f247ead1fe8538014eb412b2dbe5be4b1a9ef50@%3Cdev.httpd.apache.org%3E
+    - https://lists.apache.org/thread.html/ec97fdfc1a859266e56fef084353a34e0a0b08901b3c1aa317a43c8c@%3Cdev.httpd.apache.org%3E
+    - https://support.f5.com/csp/article/K02591030
+    - https://www.synology.com/security/advisory/Synology_SA_19_33
+affected:
+    - name: node-http-server
+      version:
+        - "<=8.0.0,6.0.0"
+      fixedin:
+        - ">=8.1.0"
+        - "<=5.1.0,1.0.0"
