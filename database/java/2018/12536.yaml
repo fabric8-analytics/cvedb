@@ -1,21 +1,24 @@
 ---
 cve: 2018-12536
-title: CVE in org.eclipse.jetty:jetty-server
+title: CVE in org.eclipse.jetty:jetty-jmx
 description: >
     In Eclipse Jetty Server, all 9.x versions, on webapps deployed using default Error Handling, when an intentionally bad query arrives that doesn't match a dynamic url-pattern, and is eventually handled by the DefaultServlet's static file serving, the bad characters can trigger a java.nio.file.InvalidPathException which includes the full path to the base resource directory that the DefaultServlet and/or webapp is using. If this InvalidPathException is then handled by the default Error Handler, the InvalidPathException message is included in the error response, revealing the full server path to the requesting system.
 cvss_v2: 5.0
 references:
     - http://www.securitytracker.com/id/1041194
     - https://bugs.eclipse.org/bugs/show_bug.cgi?id=535670
+    - https://lists.apache.org/thread.html/053d9ce4d579b02203db18545fee5e33f35f2932885459b74d1e4272@%3Cissues.activemq.apache.org%3E
     - https://security.netapp.com/advisory/ntap-20181014-0001/
-    - https://github.com/eclipse/jetty.project/issues/2560
-    - https://github.com/eclipse/jetty.project/commit/ad4dceb1c08679baa2a6a64356fcde5309e13fd8
+    - https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbst03953en_us
 affected:
     - groupId: org.eclipse.jetty
-      artifactId: jetty-server
+      artifactId: jetty-jmx
       version:
-        - "<=9.3.23.v20180228,9.0.0.M0"
+        - "<=9.2.26.v20180806,9.0.0.M0"
+        - "<=9.3.23.v20180228,9.3.0.M0"
         - "<=9.4.10.v20180503,9.4.0.M0"
       fixedin:
-        - ">=9.3.24.v20180605"
         - ">=9.4.11.v20180605"
+        - "<=9.3.27.v20190418,9.3.24.v20180605"
+        - "<=9.2.28.v20190418,9.2.27.v20190403"
+        - "<=8.2.0.v20160908,7.0.0.M0"
