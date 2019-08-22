@@ -1,0 +1,14 @@
+---
+cve: 2019-15110
+title: CVE in xss
+description: >
+    The wp-front-end-profile plugin before 0.2.2 for WordPress has XSS.
+cvss_v2: 4.3
+references:
+    - https://wordpress.org/plugins/wp-front-end-profile/#developers
+affected:
+    - name: xss
+      version:
+        - "<=0.2.1"
+      fixedin:
+        - ">=0.2.2"
