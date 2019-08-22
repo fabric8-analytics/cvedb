@@ -1,0 +1,15 @@
+---
+cve: 2015-9321
+title: CVE in org.ow2.frascati.factory:frascati-factory-tools
+description: >
+    The shortcode-factory plugin before 1.1.1 for WordPress has XSS via add_query_arg.
+cvss_v2: 4.3
+references:
+    - https://wordpress.org/plugins/shortcode-factory/#developers
+affected:
+    - groupId: org.ow2.frascati.factory
+      artifactId: frascati-factory-tools
+      version:
+        - "<=1.1"
+      fixedin:
+        - ">=1.1.1"
