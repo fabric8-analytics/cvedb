@@ -1,0 +1,15 @@
+---
+cve: 2019-14951
+title: CVE in gps-helper
+description: >
+    The Telenav Scout GPS Link app 1.x for iOS, as used with Toyota and Lexus vehicles, has an incorrect protection mechanism against brute-force attacks on the authentication process, which makes it easier for attackers to obtain multimedia-screen access via port 7050 on the cellular network, as demonstrated by a DrivingRestriction method call to uma/jsonrpc/mobile.
+cvss_v2: 5.0
+references:
+    - https://sites.google.com/site/iosappnss/more-vulnerable-apps-and-libraries
+affected:
+    - name: gps-helper
+      version:
+        - "<=1.0.4,1.0.4"
+      fixedin:
+        - ">=1.1.0"
+        - "<=1.0.3,0.0.1"
