@@ -1,0 +1,14 @@
+---
+cve: 2015-9325
+title: CVE in sql
+description: >
+    The visitors-online plugin before 0.4 for WordPress has SQL injection.
+cvss_v2: 7.5
+references:
+    - https://wordpress.org/plugins/visitors-online/#developers
+affected:
+    - name: sql
+      version:
+        - "<=0.3.0"
+      fixedin:
+        - ">=0.4.0"
