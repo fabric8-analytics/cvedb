@@ -1,22 +1,61 @@
 ---
 cve: 2017-7525
-title: CVE in com.fasterxml.jackson.core:jackson-databind
+title: CVE in com.gabrielittner.auto.value:auto-value-cursor
 description: >
     A deserialization flaw was discovered in the jackson-databind, versions before 2.6.7.1, 2.7.9.1 and 2.8.9, which could allow an unauthenticated user to perform code execution by sending the maliciously crafted input to the readValue method of the ObjectMapper.
 cvss_v2: 7.5
 references:
+    - http://www.oracle.com/technetwork/security-advisory/cpuapr2018-3678067.html
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2018-4258247.html
+    - http://www.oracle.com/technetwork/security-advisory/cpuoct2018-4428296.html
+    - http://www.securityfocus.com/bid/99623
+    - http://www.securitytracker.com/id/1039744
+    - http://www.securitytracker.com/id/1039947
+    - http://www.securitytracker.com/id/1040360
+    - https://access.redhat.com/errata/RHSA-2017:1834
+    - https://access.redhat.com/errata/RHSA-2017:1835
+    - https://access.redhat.com/errata/RHSA-2017:1836
+    - https://access.redhat.com/errata/RHSA-2017:1837
+    - https://access.redhat.com/errata/RHSA-2017:1839
+    - https://access.redhat.com/errata/RHSA-2017:1840
+    - https://access.redhat.com/errata/RHSA-2017:2477
+    - https://access.redhat.com/errata/RHSA-2017:2546
+    - https://access.redhat.com/errata/RHSA-2017:2547
+    - https://access.redhat.com/errata/RHSA-2017:2633
+    - https://access.redhat.com/errata/RHSA-2017:2635
+    - https://access.redhat.com/errata/RHSA-2017:2636
+    - https://access.redhat.com/errata/RHSA-2017:2637
+    - https://access.redhat.com/errata/RHSA-2017:2638
+    - https://access.redhat.com/errata/RHSA-2017:3141
+    - https://access.redhat.com/errata/RHSA-2017:3454
+    - https://access.redhat.com/errata/RHSA-2017:3455
+    - https://access.redhat.com/errata/RHSA-2017:3456
+    - https://access.redhat.com/errata/RHSA-2017:3458
+    - https://access.redhat.com/errata/RHSA-2018:0294
+    - https://access.redhat.com/errata/RHSA-2018:0342
+    - https://access.redhat.com/errata/RHSA-2018:1449
+    - https://access.redhat.com/errata/RHSA-2018:1450
+    - https://access.redhat.com/errata/RHSA-2019:0910
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1462702
     - https://cwiki.apache.org/confluence/display/WW/S2-055
     - https://github.com/FasterXML/jackson-databind/issues/1599
     - https://github.com/FasterXML/jackson-databind/issues/1723
-    - https://nvd.nist.gov/vuln/detail/CVE-2017-7525
+    - https://lists.apache.org/thread.html/3c87dc8bca99a2b3b4743713b33d1de05b1d6b761fdf316224e9c81f@%3Cdev.lucene.apache.org%3E
+    - https://lists.apache.org/thread.html/b1f33fe5ade396bb903fdcabe9f243f7692c7dfce5418d3743c2d346@%3Cdev.lucene.apache.org%3E
+    - https://lists.apache.org/thread.html/c10a2bf0fdc3d25faf17bd191d6ec46b29a353fa9c97bebd7c4e5913@%3Cdev.lucene.apache.org%3E
+    - https://lists.apache.org/thread.html/c2ed4c0126b43e324cf740012a0edd371fd36096fd777be7bfe7a2a6@%3Cdev.lucene.apache.org%3E
+    - https://lists.apache.org/thread.html/f60afd3c7e9ebaaf70fad4a4beb75cf8740ac959017a31e7006c7486@%3Cdev.lucene.apache.org%3E
+    - https://security.netapp.com/advisory/ntap-20171214-0002/
+    - https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbhf03902en_us
+    - https://www.debian.org/security/2017/dsa-4004
+    - https://www.oracle.com/technetwork/security-advisory/cpuapr2019-5072813.html
+    - https://www.oracle.com/technetwork/security-advisory/cpujan2019-5072801.html
+    - https://www.oracle.com/technetwork/security-advisory/cpujul2019-5072835.html
 affected:
-    - groupId: com.fasterxml.jackson.core
-      artifactId: jackson-databind
+    - groupId: com.gabrielittner.auto.value
+      artifactId: auto-value-cursor
       version:
-        - "<=2.6.7"
-        - "<=2.7.9"
-        - "<=2.8.8.1"
+        - "<=1.1.0,1.0.0-rc1"
       fixedin:
-        - ">=2.6.7.1"
-        - ">=2.7.9.1"
-        - ">=2.8.9"
+        - ">=2.0.0-rc1"
+        - "<=0.5.0,0.2.0"
