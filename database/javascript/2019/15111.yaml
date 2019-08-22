@@ -1,0 +1,14 @@
+---
+cve: 2019-15111
+title: CVE in front-end
+description: >
+    The wp-front-end-profile plugin before 0.2.2 for WordPress has a privilege escalation issue.
+cvss_v2: 7.5
+references:
+    - https://wordpress.org/plugins/wp-front-end-profile/#developers
+affected:
+    - name: front-end
+      version:
+        - "<=0.2.1"
+      fixedin:
+        - ">=0.2.2"
