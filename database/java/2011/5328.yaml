@@ -1,0 +1,15 @@
+---
+cve: 2011-5328
+title: CVE in org.antframework.manager:manager-biz
+description: >
+    The user-access-manager plugin before 1.2 for WordPress has CSRF.
+cvss_v2: 6.8
+references:
+    - https://wordpress.org/plugins/user-access-manager/#developers
+affected:
+    - groupId: org.antframework.manager
+      artifactId: manager-biz
+      version:
+        - "<=1.1.0.RELEASE"
+      fixedin:
+        - ">=1.2.0.RELEASE"
