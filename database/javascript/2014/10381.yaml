@@ -1,0 +1,14 @@
+---
+cve: 2014-10381
+title: CVE in ptz-user-domain
+description: >
+    The user-domain-whitelist plugin before 1.5 for WordPress has CSRF.
+cvss_v2: 6.8
+references:
+    - https://wordpress.org/plugins/user-domain-whitelist/#developers
+affected:
+    - name: ptz-user-domain
+      version:
+        - "<=1.4.1"
+      fixedin:
+        - ">=1.5.0"
