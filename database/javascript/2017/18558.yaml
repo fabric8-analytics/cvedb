@@ -1,0 +1,14 @@
+---
+cve: 2017-18558
+title: CVE in xss
+description: >
+    The bws-testimonials plugin before 0.1.9 for WordPress has multiple XSS issues.
+cvss_v2: 4.3
+references:
+    - https://wordpress.org/plugins/bws-testimonials/#developers
+affected:
+    - name: xss
+      version:
+        - "<=0.1.8"
+      fixedin:
+        - ">=0.1.9"
