@@ -1,0 +1,15 @@
+---
+cve: 2015-5182
+title: CVE in org.apache.activemq:activemq-all
+description: >
+    Cross-site request forgery (CSRF) vulnerability in the jolokia API in A-MQ.
+cvss_v2: 6.8
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1248809
+affected:
+    - groupId: org.apache.activemq
+      artifactId: activemq-all
+      version:
+        []
+      fixedin:
+        - ">=4.1.2"
