@@ -1,0 +1,23 @@
+---
+cve: 2019-9518
+title: CVE in node-http-server
+description: >
+    Some HTTP/2 implementations are vulnerable to a flood of empty frames, potentially leading to a denial of service. The attacker sends a stream of frames with an empty payload and without the end-of-stream flag. These frames can be DATA, HEADERS, CONTINUATION and/or PUSH_PROMISE. The peer spends time processing each frame disproportionate to attack bandwidth. This can consume excess CPU.
+cvss_v2: 7.8
+references:
+    - http://seclists.org/fulldisclosure/2019/Aug/16
+    - https://github.com/Netflix/security-bulletins/blob/master/advisories/third-party/2019-002.md
+    - https://kb.cert.org/vuls/id/605641/
+    - https://lists.apache.org/thread.html/091b518265bce56a16af87b77c8cfacda902a02079e866f9fdf13b61@%3Cusers.trafficserver.apache.org%3E
+    - https://lists.apache.org/thread.html/2653c56545573b528f3f6352a29eccaf498bd6fb2a6a59568d81a61d@%3Cannounce.trafficserver.apache.org%3E
+    - https://lists.apache.org/thread.html/ff5b0821a6985159a832ff6d1a4bd311ac07ecc7db1e2d8bab619107@%3Cdev.trafficserver.apache.org%3E
+    - https://seclists.org/bugtraq/2019/Aug/24
+    - https://support.f5.com/csp/article/K46011592
+    - https://www.synology.com/security/advisory/Synology_SA_19_33
+affected:
+    - name: node-http-server
+      version:
+        - "<=8.0.0,6.0.0"
+      fixedin:
+        - ">=8.1.0"
+        - "<=5.1.0,1.0.0"
