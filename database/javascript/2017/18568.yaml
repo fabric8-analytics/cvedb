@@ -1,0 +1,14 @@
+---
+cve: 2017-18568
+title: CVE in xss-filters
+description: >
+    The my-wp-translate plugin before 1.0.4 for WordPress has XSS.
+cvss_v2: 4.3
+references:
+    - https://wordpress.org/plugins/my-wp-translate/#developers
+affected:
+    - name: xss-filters
+      version:
+        - "<=1.0.3"
+      fixedin:
+        - ">=1.0.4"
