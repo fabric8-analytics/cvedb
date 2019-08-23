@@ -1,0 +1,37 @@
+---
+cve: 2018-12023
+title: CVE in org.jboss.as:jboss-as-platform-mbean
+description: >
+    An issue was discovered in FasterXML jackson-databind prior to 2.7.9.4, 2.8.11.2, and 2.9.6. When Default Typing is enabled (either globally or for a specific property), the service has the Oracle JDBC jar in the classpath, and an attacker can provide an LDAP service to access, it is possible to make the service execute a malicious payload.
+cvss_v2: 5.1
+references:
+    - http://www.securityfocus.com/bid/105659
+    - https://access.redhat.com/errata/RHBA-2019:0959
+    - https://access.redhat.com/errata/RHSA-2019:0782
+    - https://access.redhat.com/errata/RHSA-2019:0877
+    - https://access.redhat.com/errata/RHSA-2019:1106
+    - https://access.redhat.com/errata/RHSA-2019:1107
+    - https://access.redhat.com/errata/RHSA-2019:1108
+    - https://access.redhat.com/errata/RHSA-2019:1140
+    - https://access.redhat.com/errata/RHSA-2019:1782
+    - https://access.redhat.com/errata/RHSA-2019:1797
+    - https://access.redhat.com/errata/RHSA-2019:1822
+    - https://access.redhat.com/errata/RHSA-2019:1823
+    - https://github.com/FasterXML/jackson-databind/commit/28badf7ef60ac3e7ef151cd8e8ec010b8479226a
+    - https://github.com/FasterXML/jackson-databind/issues/2058
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZEDLDUYBSTDY4GWDBUXGJNS2RFYTFVRC/
+    - https://seclists.org/bugtraq/2019/May/68
+    - https://security.netapp.com/advisory/ntap-20190530-0003/
+    - https://www.blackhat.com/docs/us-16/materials/us-16-Munoz-A-Journey-From-JNDI-LDAP-Manipulation-To-RCE.pdf
+    - https://www.debian.org/security/2019/dsa-4452
+    - https://www.oracle.com/technetwork/security-advisory/cpuapr2019-5072813.html
+    - https://www.oracle.com/technetwork/security-advisory/cpujan2019-5072801.html
+    - https://www.oracle.com/technetwork/security-advisory/cpujul2019-5072835.html
+    - https://www.oracle.com/technetwork/security-advisory/cpuoct2018-4428296.html
+affected:
+    - groupId: org.jboss.as
+      artifactId: jboss-as-platform-mbean
+      version:
+        - "<=7.2.0.Final,7.2.0.Final"
+      fixedin:
+        - "<=7.1.3.Final,7.0.2.Final"
