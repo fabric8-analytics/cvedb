@@ -1,6 +1,6 @@
 ---
 cve: 2018-7489
-title: CVE in com.fasterxml.jackson.core:jackson-databind
+title: CVE in org.jboss.as:jboss-as-platform-mbean
 description: >
     FasterXML jackson-databind before 2.7.9.3, 2.8.x before 2.8.11.1 and 2.9.x before 2.9.5 allows unauthenticated remote code execution because of an incomplete fix for the CVE-2017-7525 deserialization flaw. This is exploitable by sending maliciously crafted JSON input to the readValue method of the ObjectMapper, bypassing a blacklist that is ineffective if the c3p0 libraries are available in the classpath.
 cvss_v2: 7.5
@@ -26,14 +26,14 @@ references:
     - https://security.netapp.com/advisory/ntap-20180328-0001/
     - https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbhf03902en_us
     - https://www.debian.org/security/2018/dsa-4190
+    - https://www.oracle.com/technetwork/security-advisory/cpuapr2019-5072813.html
     - https://www.oracle.com/technetwork/security-advisory/cpujan2019-5072801.html
+    - https://www.oracle.com/technetwork/security-advisory/cpujul2019-5072835.html
 affected:
-    - groupId: com.fasterxml.jackson.core
-      artifactId: jackson-databind
+    - groupId: org.jboss.as
+      artifactId: jboss-as-platform-mbean
       version:
-        - "<=2.7.9.2,2.0.0-RC1"
-        - "<=2.8.11,2.8.0.rc1"
-        - "<=2.9.4,2.9.0.pr1"
+        - "<=7.1.2.Final,7.1.2.Final"
       fixedin:
-        - "<=2.8.11.3,2.8.11.1"
-        - ">=2.9.5"
+        - ">=7.1.3.Final"
+        - "<=7.1.1.Final,7.0.2.Final"
