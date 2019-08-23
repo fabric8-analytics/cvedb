@@ -1,0 +1,14 @@
+---
+cve: 2017-18562
+title: CVE in online_log_viewer
+description: >
+    The error-log-viewer plugin before 1.0.6 for WordPress has multiple XSS issues.
+cvss_v2: 4.3
+references:
+    - https://wordpress.org/plugins/error-log-viewer/#developers
+affected:
+    - name: online_log_viewer
+      version:
+        - "<=1.0.5"
+      fixedin:
+        - ">=1.0.6"
