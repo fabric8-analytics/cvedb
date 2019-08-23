@@ -1,0 +1,18 @@
+---
+cve: 2019-0348
+title: CVE in org.seedstack.business:business-migrate
+description: >
+    SAP BusinessObjects Business Intelligence Platform (Web Intelligence), versions 4.1, 4.2, can access database with unencrypted connection, even if the quality of protection should be encrypted.
+cvss_v2: 4.0
+references:
+    - https://launchpad.support.sap.com/#/notes/2751470
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=523998017
+affected:
+    - groupId: org.seedstack.business
+      artifactId: business-migrate
+      version:
+        - "<=4.1.0"
+        - "<=4.2.0,4.2.0"
+      fixedin:
+        - ">=4.2.1"
+        - "<=4.1.1,4.1.1"
