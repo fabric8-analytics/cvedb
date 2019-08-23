@@ -1,0 +1,15 @@
+---
+cve: 2018-20970
+title: CVE in com.planbase.pdf:PdfLayoutMgr2
+description: >
+    The pdf-print plugin before 2.0.3 for WordPress has multiple XSS issues.
+cvss_v2: 4.3
+references:
+    - https://wordpress.org/plugins/pdf-print/#developers
+affected:
+    - groupId: com.planbase.pdf
+      artifactId: PdfLayoutMgr2
+      version:
+        - "<=2.0.2"
+      fixedin:
+        - ">=2.0.3"
