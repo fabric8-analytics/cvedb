@@ -1,0 +1,16 @@
+---
+cve: 2019-0334
+title: CVE in phishme-intelligence
+description: >
+    When creating a module in SAP BusinessObjects Business Intelligence Platform (BI Workspace), versions 4.1, 4.2, 4.3, it is possible to store a malicious script which when executed later could potentially allow a user to escalate privileges via session hijacking. The attacker could also access other sensitive information, leading to Stored Cross Site Scripting.
+cvss_v2: 4.9
+references:
+    - https://launchpad.support.sap.com/#/notes/2771221
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=523998017
+affected:
+    - name: phishme-intelligence
+      version:
+        - "<=4.3.0,4.2.0"
+      fixedin:
+        - ">=4.3.1"
+        - "<=4.1.9,4.1.1"
