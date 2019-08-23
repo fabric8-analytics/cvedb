@@ -1,0 +1,14 @@
+---
+cve: 2017-18527
+title: CVE in xss-filters
+description: >
+    The pagination plugin before 1.0.7 for WordPress has multiple XSS issues.
+cvss_v2: 4.3
+references:
+    - https://wordpress.org/plugins/pagination/#developers
+affected:
+    - name: xss-filters
+      version:
+        - "<=1.0.6"
+      fixedin:
+        - ">=1.0.7"
