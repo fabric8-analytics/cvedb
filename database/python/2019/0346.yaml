@@ -1,0 +1,16 @@
+---
+cve: 2019-0346
+title: CVE in phishme-intelligence
+description: >
+    Unencrypted communication error in SAP Business Objects Business Intelligence Platform (Central Management Console), version 4.2, leads to disclosure of list of user names and roles imported from SAP NetWeaver BI systems, resulting in Information Disclosure.
+cvss_v2: 4.0
+references:
+    - https://launchpad.support.sap.com/#/notes/2764513
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=523998017
+affected:
+    - name: phishme-intelligence
+      version:
+        - "<=4.2.0,4.2.0"
+      fixedin:
+        - ">=4.3.0"
+        - "<=4.1.9,4.1.1"
