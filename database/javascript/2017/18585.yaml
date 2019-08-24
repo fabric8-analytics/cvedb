@@ -1,0 +1,15 @@
+---
+cve: 2017-18585
+title: CVE in wordpress
+description: >
+    The posts-in-page plugin before 1.3.0 for WordPress has ic_add_posts template='../ directory traversal.
+cvss_v2: 5.5
+references:
+    - https://wordpress.org/plugins/posts-in-page/#developers
+    - https://www.pluginvulnerabilities.com/2017/02/13/authenticated-local-file-inclusion-lfi-vulnerability-in-posts-in-page/
+affected:
+    - name: wordpress
+      version:
+        - "<=1.2.2"
+      fixedin:
+        - ">=1.3.0"
