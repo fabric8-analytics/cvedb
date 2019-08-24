@@ -1,0 +1,14 @@
+---
+cve: 2016-10924
+title: CVE in wordpress-api
+description: >
+    The ebook-download plugin before 1.2 for WordPress has directory traversal.
+cvss_v2: 5.0
+references:
+    - https://wordpress.org/plugins/ebook-download/#developers
+affected:
+    - name: wordpress-api
+      version:
+        []
+      fixedin:
+        - ">=1.2.0"
