@@ -1,0 +1,16 @@
+---
+cve: 2019-4310
+title: CVE in org.springframework.security:spring-security-data
+description: >
+    IBM Security Guardium Big Data Intelligence 4.0 (SonarG) uses an inadequate account lockout setting that could allow a remote attacker to brute force account credentials. IBM X-Force ID: 161036.
+cvss_v2: 5.0
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/161036
+    - https://www.ibm.com/support/docview.wss?uid=ibm10960298
+affected:
+    - groupId: org.springframework.security
+      artifactId: spring-security-data
+      version:
+        - "<=4.0.0.RELEASE"
+      fixedin:
+        - ">=4.0.1.RELEASE"
