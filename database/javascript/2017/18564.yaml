@@ -1,0 +1,14 @@
+---
+cve: 2017-18564
+title: CVE in wordpress
+description: >
+    The sender plugin before 1.2.1 for WordPress has multiple XSS issues.
+cvss_v2: 4.3
+references:
+    - https://wordpress.org/plugins/sender/#developers
+affected:
+    - name: wordpress
+      version:
+        - "<=1.2.0"
+      fixedin:
+        - ">=1.2.1"
