@@ -1,0 +1,15 @@
+---
+cve: 2016-10924
+title: CVE in com.googlecode.maven-download-plugin:download-maven-plugin
+description: >
+    The ebook-download plugin before 1.2 for WordPress has directory traversal.
+cvss_v2: 5.0
+references:
+    - https://wordpress.org/plugins/ebook-download/#developers
+affected:
+    - groupId: com.googlecode.maven-download-plugin
+      artifactId: download-maven-plugin
+      version:
+        []
+      fixedin:
+        - ">=1.2.0"
