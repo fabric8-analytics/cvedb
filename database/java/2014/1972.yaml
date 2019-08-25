@@ -1,0 +1,19 @@
+---
+cve: 2014-1972
+title: CVE in org.apache.tapestry:tapestry-javadoc
+description: >
+    Apache Tapestry before 5.3.6 relies on client-side object storage without checking whether a client has modified an object, which allows remote attackers to cause a denial of service (resource consumption) or execute arbitrary code via crafted serialized data.
+cvss_v2: 7.8
+references:
+    - http://jvn.jp/en/jp/JVN17611367/index.html
+    - http://jvndb.jvn.jp/jvndb/JVNDB-2015-000118
+    - http://www.openwall.com/lists/oss-security/2019/08/23/5
+    - https://issues.apache.org/jira/browse/TAP5-2008
+    - https://tapestry.apache.org/release-notes-536.html
+affected:
+    - groupId: org.apache.tapestry
+      artifactId: tapestry-javadoc
+      version:
+        - "<=5.3.5"
+      fixedin:
+        - ">=5.3.6"
