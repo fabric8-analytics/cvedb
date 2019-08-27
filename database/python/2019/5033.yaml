@@ -1,0 +1,15 @@
+---
+cve: 2019-5033
+title: CVE in aspose-email-for-python-via-net
+description: >
+    An exploitable out-of-bounds read vulnerability exists in the Number record parser of Aspose Aspose.Cells 19.1.0 library. A specially crafted XLS file can cause an out-of-bounds read, resulting in remote code execution. An attacker needs to provide a malformed file to the victim to trigger the vulnerability.
+cvss_v2: 6.8
+references:
+    - https://www.talosintelligence.com/vulnerability_reports/TALOS-2019-0795
+affected:
+    - name: aspose-email-for-python-via-net
+      version:
+        - "<=19.1,19.1"
+      fixedin:
+        - ">=19.5"
+        - "<=18.12,18.7"
