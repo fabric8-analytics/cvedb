@@ -1,0 +1,15 @@
+---
+cve: 2014-10384
+title: CVE in org.awake-file:awake-file
+description: >
+    The memphis-documents-library plugin before 3.0 for WordPress has Local File Inclusion.
+cvss_v2: 7.5
+references:
+    - https://wordpress.org/plugins/memphis-documents-library/#developers
+affected:
+    - groupId: org.awake-file
+      artifactId: awake-file
+      version:
+        - "<=2.0.2"
+      fixedin:
+        - ">=3.0"
