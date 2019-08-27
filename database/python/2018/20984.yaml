@@ -1,0 +1,14 @@
+---
+cve: 2018-20984
+title: CVE in wordpress-api
+description: >
+    The patreon-connect plugin before 1.2.2 for WordPress has Object Injection.
+cvss_v2: 7.5
+references:
+    - https://wordpress.org/plugins/patreon-connect/#developers
+affected:
+    - name: wordpress-api
+      version:
+        - "<=1.2.1"
+      fixedin:
+        - ">=1.2.2"
