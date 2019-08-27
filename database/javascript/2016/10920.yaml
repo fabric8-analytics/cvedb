@@ -1,0 +1,14 @@
+---
+cve: 2016-10920
+title: CVE in xss-clean
+description: >
+    The gnucommerce plugin before 0.5.7-BETA for WordPress has XSS.
+cvss_v2: 4.3
+references:
+    - https://wordpress.org/plugins/gnucommerce/#developers
+affected:
+    - name: xss-clean
+      version:
+        - "<=0.1.0"
+      fixedin:
+        - ">=0.1.1"
