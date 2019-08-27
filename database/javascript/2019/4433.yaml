@@ -1,0 +1,16 @@
+---
+cve: 2019-4433
+title: CVE in identity
+description: >
+    IBM InfoSphere Global Name Management 5.0 and 6.0 and IBM InfoSphere Identity Insight 8.1 and 9.0 is vulnerable to an XML External Entity Injection (XXE) attack when processing XML data. A remote attacker could exploit this vulnerability to expose sensitive information or consume memory resources. IBM X-Force ID: 162890.
+cvss_v2: 6.4
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/162890
+    - https://www.ibm.com/support/docview.wss?uid=ibm10958079
+    - https://www.ibm.com/support/docview.wss?uid=ibm10958081
+affected:
+    - name: identity
+      version:
+        - "<=5.0.0-beta2,5.0.0-beta1"
+      fixedin:
+        - "<=4.11.6-node0.10,0.1.0"
