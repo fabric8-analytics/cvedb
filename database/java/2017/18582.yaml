@@ -1,0 +1,15 @@
+---
+cve: 2017-18582
+title: CVE in joda-time:joda-time
+description: >
+    The time-sheets plugin before 1.5.2 for WordPress has multiple XSS issues.
+cvss_v2: 4.3
+references:
+    - https://wordpress.org/plugins/time-sheets/#developers
+affected:
+    - groupId: joda-time
+      artifactId: joda-time
+      version:
+        - "<=1.5.1"
+      fixedin:
+        - ">=1.5.2"
