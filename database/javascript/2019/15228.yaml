@@ -1,0 +1,15 @@
+---
+cve: 2019-15228
+title: CVE in grommet-cms-content-blocks
+description: >
+    FUEL CMS 1.4.4 has XSS in the Create Blocks section of the Admin console. This could lead to cookie stealing and other malicious actions. This vulnerability can be exploited with an authenticated account but can also impact unauthenticated visitors.
+cvss_v2: 3.5
+references:
+    - https://github.com/daylightstudio/FUEL-CMS/issues/536
+    - https://www.sevenlayers.com/index.php/237-fuelcms-1-4-4-xss
+affected:
+    - name: grommet-cms-content-blocks
+      version:
+        - "<=1.4.4"
+      fixedin:
+        - ">=1.4.5"
