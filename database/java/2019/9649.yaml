@@ -1,0 +1,20 @@
+---
+cve: 2019-9649
+title: CVE in com.cerner.ftp:ftp-util
+description: >
+    An issue was discovered in the SFTP Server component in Core FTP 2.0 Build 674. Using the MDTM FTP command, a remote attacker can use a directory traversal technique (..\..\) to browse outside the root directory to determine the existence of a file on the operating system, and its last modified date.
+cvss_v2: 5.0
+references:
+    - http://packetstormsecurity.com/files/154205/CoreFTP-Server-MDTM-Directory-Traversal.html
+    - http://seclists.org/fulldisclosure/2019/Aug/22
+    - http://www.coreftp.com/forums/viewtopic.php?f=15&t=4022509
+    - http://www.securityfocus.com/bid/107449
+    - https://seclists.org/fulldisclosure/2019/Mar/25
+    - https://www.exploit-db.com/exploits/46534
+affected:
+    - groupId: com.cerner.ftp
+      artifactId: ftp-util
+      version:
+        - "<=2.0"
+      fixedin:
+        []
