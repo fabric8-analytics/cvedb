@@ -1,0 +1,20 @@
+---
+cve: 2019-9648
+title: CVE in com.cerner.ftp:ftp-util
+description: >
+    An issue was discovered in the SFTP Server component in Core FTP 2.0 Build 674. A directory traversal vulnerability exists using the SIZE command along with a \..\..\ substring, allowing an attacker to enumerate file existence based on the returned information.
+cvss_v2: 5.0
+references:
+    - http://packetstormsecurity.com/files/154204/CoreFTP-Server-SIZE-Directory-Traversal.html
+    - http://seclists.org/fulldisclosure/2019/Aug/21
+    - http://www.coreftp.com/forums/viewtopic.php?f=15&t=4022509
+    - http://www.securityfocus.com/bid/107446
+    - https://seclists.org/fulldisclosure/2019/Mar/23
+    - https://www.exploit-db.com/exploits/46535
+affected:
+    - groupId: com.cerner.ftp
+      artifactId: ftp-util
+      version:
+        - "<=2.0"
+      fixedin:
+        []
