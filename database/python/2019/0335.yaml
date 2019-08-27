@@ -1,0 +1,16 @@
+---
+cve: 2019-0335
+title: CVE in phishme-intelligence
+description: >
+    Under certain conditions SAP BusinessObjects Business Intelligence Platform (Central Management Console), versions 4.1, 4.2, 4.3, allows an attacker to store a malicious payload within the description field of a user account. The payload is triggered when the mouse cursor is moved over the description field in the list, when generating the little yellow informational pop up box, resulting in Stored Cross Site Scripting Attack.
+cvss_v2: 4.3
+references:
+    - https://launchpad.support.sap.com/#/notes/2742468
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=523998017
+affected:
+    - name: phishme-intelligence
+      version:
+        - "<=4.3.0,4.2.0"
+      fixedin:
+        - ">=4.3.1"
+        - "<=4.1.9,4.1.1"
