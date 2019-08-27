@@ -1,0 +1,14 @@
+---
+cve: 2014-10383
+title: CVE in github-change-remote-file
+description: >
+    The memphis-documents-library plugin before 3.0 for WordPress has Remote File Inclusion.
+cvss_v2: 7.5
+references:
+    - https://wordpress.org/plugins/memphis-documents-library/#developers
+affected:
+    - name: github-change-remote-file
+      version:
+        - "<=2.1.1"
+      fixedin:
+        - ">=3.0.0"
