@@ -1,0 +1,15 @@
+---
+cve: 2019-15477
+title: CVE in org.jooby:jooby-netty
+description: >
+    Jooby before 1.6.4 has XSS via the default error handler.
+cvss_v2: 4.3
+references:
+    - https://github.com/jooby-project/jooby/pull/1368
+affected:
+    - groupId: org.jooby
+      artifactId: jooby-netty
+      version:
+        - "<=1.6.3"
+      fixedin:
+        - ">=1.6.4"
