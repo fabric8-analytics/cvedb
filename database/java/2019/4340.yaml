@@ -1,0 +1,16 @@
+---
+cve: 2019-4340
+title: CVE in org.springframework.security:spring-security-data
+description: >
+    IBM Security Guardium Big Data Intelligence 4.0 (SonarG) is vulnerable to an XML External Entity Injection (XXE) attack when processing XML data. A remote attacker could exploit this vulnerability to expose sensitive information or consume memory resources. IBM X-Force ID: 161419.
+cvss_v2: 6.4
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/161419
+    - https://www.ibm.com/support/docview.wss?uid=ibm10960856
+affected:
+    - groupId: org.springframework.security
+      artifactId: spring-security-data
+      version:
+        - "<=4.0.0.RELEASE"
+      fixedin:
+        - ">=4.0.1.RELEASE"
