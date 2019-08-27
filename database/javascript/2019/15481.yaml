@@ -1,0 +1,15 @@
+---
+cve: 2019-15481
+title: CVE in xss-filters
+description: >
+    Kimai v2 before 1.1 has XSS via a timesheet description.
+cvss_v2: 4.3
+references:
+    - https://github.com/kevinpapst/kimai2/pull/962
+    - https://github.com/kevinpapst/kimai2/releases/tag/1.1
+affected:
+    - name: xss-filters
+      version:
+        - "<=1.0.7"
+      fixedin:
+        - ">=1.1.0"
