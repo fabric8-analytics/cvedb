@@ -1,0 +1,15 @@
+---
+cve: 2016-10921
+title: CVE in org.kuali.db.sql:kuali-sql
+description: >
+    The gallery-photo-gallery plugin before 1.0.1 for WordPress has SQL injection.
+cvss_v2: 7.5
+references:
+    - https://wordpress.org/plugins/gallery-photo-gallery/#developers
+affected:
+    - groupId: org.kuali.db.sql
+      artifactId: kuali-sql
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
