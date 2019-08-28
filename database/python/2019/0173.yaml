@@ -1,0 +1,14 @@
+---
+cve: 2019-0173
+title: CVE in annasys-console
+description: >
+    Authentication bypass in the web console for Intel(R) Raid Web Console 2 all versions may allow an unauthenticated attacker to potentially enable disclosure of information via network access.
+cvss_v2: 5.8
+references:
+    - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00246.html
+affected:
+    - name: annasys-console
+      version:
+        []
+      fixedin:
+        - ">=1.0.5"
