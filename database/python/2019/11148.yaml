@@ -1,0 +1,15 @@
+---
+cve: 2019-11148
+title: CVE in aliyun-python-sdk-r-kvstore
+description: >
+    Improper permissions in the installer for Intel(R) Remote Displays SDK before version 2.0.1 R2 may allow an authenticated user to potentially enable escalation of privilege via local access.
+cvss_v2: 4.6
+references:
+    - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00277.html
+affected:
+    - name: aliyun-python-sdk-r-kvstore
+      version:
+        - "<=1.0.0,1.0.0"
+      fixedin:
+        - ">=2.0.2"
+        - "<=0.0.2,0.0.1"
