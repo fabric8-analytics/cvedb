@@ -1,0 +1,15 @@
+---
+cve: 2019-15084
+title: CVE in waves-core
+description: >
+    Realtek Waves MaxxAudio driver 1.6.2.0, as used on Dell laptops, installs with incorrect file permissions. As a result, a local attacker can escalate to SYSTEM.
+cvss_v2: 7.2
+references:
+    - https://www.exploit-db.com/exploits/46416
+affected:
+    - name: waves-core
+      version:
+        - "<=1.6.2,1.6.2"
+      fixedin:
+        - ">=1.6.3"
+        - "<=1.6.1,1.1.2"
