@@ -1,0 +1,14 @@
+---
+cve: 2019-15028
+title: CVE in joomla-cli
+description: >
+    In Joomla! before 3.9.11, inadequate checks in com_contact could allow mail submission in disabled forms.
+cvss_v2: 5.0
+references:
+    - https://developer.joomla.org/security-centre/789-20190801-core-hardening-com-contact-contact-form
+affected:
+    - name: joomla-cli
+      version:
+        - "<=1.9.0,1.6.2"
+      fixedin:
+        - "<=1.6.1,1.0.3"
