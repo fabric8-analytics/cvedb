@@ -1,0 +1,19 @@
+---
+cve: 2014-8871
+title: CVE in com.liferay.commerce:com.liferay.commerce.api
+description: >
+    Directory traversal vulnerability in hybris Commerce software suite 5.0.3.3 and earlier, 5.0.0.3 and earlier, 5.0.4.4 and earlier, 5.1.0.1 and earlier, 5.1.1.2 and earlier, 5.2.0.3 and earlier, and 5.3.0.1 and earlier.
+cvss_v2: 5.0
+references:
+    - http://packetstormsecurity.com/files/130444/Hybris-Commerce-Software-Suite-5.x-File-Disclosure-Traversal.html
+    - http://seclists.org/fulldisclosure/2015/Feb/63
+    - http://www.securityfocus.com/archive/1/534722/100/1600/threaded
+    - http://www.securityfocus.com/bid/72681
+affected:
+    - groupId: com.liferay.commerce
+      artifactId: com.liferay.commerce.api
+      version:
+        - "<=5.0.0,5.0.0"
+      fixedin:
+        - ">=6.0.0"
+        - "<=4.0.1,1.0.0"
