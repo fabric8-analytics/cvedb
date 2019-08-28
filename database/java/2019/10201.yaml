@@ -1,0 +1,15 @@
+---
+cve: 2019-10201
+title: CVE in org.keycloak:keycloak-saml-tomcat-adapter-core
+description: >
+    It was found that Keycloak's SAML broker, versions up to 6.0.1, did not verify missing message signatures. If an attacker modifies the SAML Response and removes the <Signature> sections, the message is still accepted, and the message can be modified. An attacker could use this flaw to impersonate other users and gain access to sensitive information.
+cvss_v2: 5.5
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-10201
+affected:
+    - groupId: org.keycloak
+      artifactId: keycloak-saml-tomcat-adapter-core
+      version:
+        - "<=7.0.0"
+      fixedin:
+        []
