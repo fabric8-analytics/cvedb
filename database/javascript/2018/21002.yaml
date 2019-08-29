@@ -1,0 +1,14 @@
+---
+cve: 2018-21002
+title: CVE in csrf
+description: >
+    The js-support-ticket plugin before 2.0.6 for WordPress has CSRF.
+cvss_v2: 6.8
+references:
+    - https://wordpress.org/plugins/js-support-ticket/#developers
+affected:
+    - name: csrf
+      version:
+        - "<=2.0.5"
+      fixedin:
+        - ">=2.0.6"
