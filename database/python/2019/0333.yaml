@@ -1,0 +1,16 @@
+---
+cve: 2019-0333
+title: CVE in phishme-intelligence
+description: >
+    In some situations, when a client cancels a query in SAP BusinessObjects Business Intelligence Platform (Web Intelligence), versions 4.2, 4.3, the attacker can then query and receive the whole data set instead of just what is part of their authorized security profile, resulting in Information Disclosure.
+cvss_v2: 4.0
+references:
+    - https://launchpad.support.sap.com/#/notes/2764513
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=523998017
+affected:
+    - name: phishme-intelligence
+      version:
+        - "<=4.2.0,4.2.0"
+      fixedin:
+        - ">=4.3.0"
+        - "<=4.1.9,4.1.1"
