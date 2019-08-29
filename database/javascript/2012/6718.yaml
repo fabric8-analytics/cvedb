@@ -1,0 +1,14 @@
+---
+cve: 2012-6718
+title: CVE in xss-filters
+description: >
+    The sharebar plugin before 1.2.2 for WordPress has XSS, a different issue than CVE-2013-3491.
+cvss_v2: 4.3
+references:
+    - https://wordpress.org/plugins/sharebar/#developers
+affected:
+    - name: xss-filters
+      version:
+        - "<=1.2.0"
+      fixedin:
+        - ">=1.2.2"
