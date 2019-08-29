@@ -1,0 +1,14 @@
+---
+cve: 2015-9345
+title: CVE in http-log
+description: >
+    The link-log plugin before 2.0 for WordPress has HTTP Response Splitting.
+cvss_v2: 5.0
+references:
+    - https://wordpress.org/plugins/link-log/#developers
+affected:
+    - name: http-log
+      version:
+        - "<=1.20"
+      fixedin:
+        - ">=2.0"
