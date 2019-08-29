@@ -1,0 +1,14 @@
+---
+cve: 2014-10395
+title: CVE in xss-filters
+description: >
+    The cp-polls plugin before 1.0.1 for WordPress has XSS in the votes list.
+cvss_v2: 4.3
+references:
+    - https://wordpress.org/plugins/cp-polls/#developers
+affected:
+    - name: xss-filters
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
