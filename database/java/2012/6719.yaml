@@ -1,0 +1,15 @@
+---
+cve: 2012-6719
+title: CVE in org.awake-sql:awake-sql
+description: >
+    The sharebar plugin before 1.2.2 for WordPress has SQL injection.
+cvss_v2: 7.5
+references:
+    - https://wordpress.org/plugins/sharebar/#developers
+affected:
+    - groupId: org.awake-sql
+      artifactId: awake-sql
+      version:
+        - "<=1.2.1"
+      fixedin:
+        - ">=1.2.2"
