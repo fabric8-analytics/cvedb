@@ -1,0 +1,15 @@
+---
+cve: 2015-9345
+title: CVE in com.jsunsoft.http:http-request
+description: >
+    The link-log plugin before 2.0 for WordPress has HTTP Response Splitting.
+cvss_v2: 5.0
+references:
+    - https://wordpress.org/plugins/link-log/#developers
+affected:
+    - groupId: com.jsunsoft.http
+      artifactId: http-request
+      version:
+        - "<=1.0.4"
+      fixedin:
+        - ">=2.0.0-alpha"
