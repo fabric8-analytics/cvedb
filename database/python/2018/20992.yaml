@@ -1,0 +1,15 @@
+---
+cve: 2018-20992
+title: CVE in setuptools-rust
+description: >
+    An issue was discovered in the claxon crate before 0.4.1 for Rust. Uninitialized memory can be exposed because certain decode buffer sizes are mishandled.
+cvss_v2: 4.3
+references:
+    - https://rustsec.org/advisories/RUSTSEC-2018-0004.html
+affected:
+    - name: setuptools-rust
+      version:
+        - "<=0.4,0.2"
+      fixedin:
+        - ">=0.4.1"
+        - "<=0.1,0.1"
