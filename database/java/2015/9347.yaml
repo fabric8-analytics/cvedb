@@ -1,0 +1,15 @@
+---
+cve: 2015-9347
+title: CVE in com.washingtonpost.wordpress:wordpress-rest-api-client
+description: >
+    The wp-plotly plugin before 1.0.3 for WordPress has XSS by authors.
+cvss_v2: 4.3
+references:
+    - https://wordpress.org/plugins/wp-plotly/#developers
+affected:
+    - groupId: com.washingtonpost.wordpress
+      artifactId: wordpress-rest-api-client
+      version:
+        - "<=1.0.2"
+      fixedin:
+        - ">=1.0.3"
