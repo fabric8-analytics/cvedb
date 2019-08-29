@@ -1,0 +1,14 @@
+---
+cve: 2012-6719
+title: CVE in @economist/component-sharebar
+description: >
+    The sharebar plugin before 1.2.2 for WordPress has SQL injection.
+cvss_v2: 7.5
+references:
+    - https://wordpress.org/plugins/sharebar/#developers
+affected:
+    - name: @economist/component-sharebar
+      version:
+        - "<=1.2.1"
+      fixedin:
+        - ">=1.2.2"
