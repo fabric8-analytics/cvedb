@@ -1,0 +1,14 @@
+---
+cve: 2015-9342
+title: CVE in xss-filters
+description: >
+    The wp-rollback plugin before 1.2.3 for WordPress has XSS.
+cvss_v2: 4.3
+references:
+    - https://wordpress.org/plugins/wp-rollback/#developers
+affected:
+    - name: xss-filters
+      version:
+        - "<=1.2.2"
+      fixedin:
+        - ">=1.2.3"
