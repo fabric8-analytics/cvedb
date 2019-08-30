@@ -1,0 +1,14 @@
+---
+cve: 2019-15545
+title: CVE in setuptools-rust
+description: >
+    An issue was discovered in the libp2p-core crate before 0.8.1 for Rust. Attackers can spoof ed25519 signatures.
+cvss_v2: 5.0
+references:
+    - https://rustsec.org/advisories/RUSTSEC-2019-0004.html
+affected:
+    - name: setuptools-rust
+      version:
+        - "<=0.8.0"
+      fixedin:
+        - ">=0.8.1"
