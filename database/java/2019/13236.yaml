@@ -1,0 +1,18 @@
+---
+cve: 2019-13236
+title: CVE in org.opencms:opencms-core
+description: >
+    In system/workplace/ in Alkacon OpenCms 10.5.4 and 10.5.5, there are multiple Reflected and Stored XSS issues in the management interface.
+cvss_v2: 4.3
+references:
+    - https://aetsu.github.io/OpenCms
+    - https://github.com/alkacon/opencms-core/commits/branch_10_5_x
+    - https://twitter.com/aetsu/status/1152096227938459648
+affected:
+    - groupId: org.opencms
+      artifactId: opencms-core
+      version:
+        - "<=10.5.4,10.5.4"
+      fixedin:
+        - ">=11.0.0"
+        - "<=10.5.3,8.0.1"
