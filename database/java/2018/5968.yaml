@@ -5,15 +5,23 @@ description: >
     FasterXML jackson-databind through 2.8.11 and 2.9.x through 2.9.3 allows unauthenticated remote code execution because of an incomplete fix for the CVE-2017-7525 and CVE-2017-17485 deserialization flaws. This is exploitable via two different gadgets that bypass a blacklist.
 cvss_v2: 5.1
 references:
+    - https://access.redhat.com/errata/RHSA-2018:0478
+    - https://access.redhat.com/errata/RHSA-2018:0479
+    - https://access.redhat.com/errata/RHSA-2018:0480
+    - https://access.redhat.com/errata/RHSA-2018:0481
+    - https://access.redhat.com/errata/RHSA-2018:1525
     - https://github.com/FasterXML/jackson-databind/issues/1899
-    - https://nvd.nist.gov/vuln/detail/CVE-2018-5968
-    - https://github.com/FasterXML/jackson-databind/commit/038b471e2efde2e8f96b4e0be958d3e5a1ff1d05
+    - https://security.netapp.com/advisory/ntap-20180423-0002/
+    - https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbhf03902en_us
+    - https://www.debian.org/security/2018/dsa-4114
 affected:
     - groupId: com.fasterxml.jackson.core
       artifactId: jackson-databind
       version:
-        - "<=2.8.11"
+        - "<=2.7.9.4"
+        - "<=2.8.11,2.8.0.rc1"
         - "<=2.9.3,2.9.0"
       fixedin:
-        - ">=2.8.11.1"
         - ">=2.9.4"
+        - "<=2.8.11.4,2.8.11.1"
+        - "<=2.7.9.6,2.7.9.5"
