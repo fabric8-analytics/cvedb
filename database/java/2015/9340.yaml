@@ -1,0 +1,15 @@
+---
+cve: 2015-9340
+title: CVE in org.awake-file:awake-file
+description: >
+    The wp-file-upload plugin before 3.0.0 for WordPress has insufficient restrictions on upload of php, js, pht, php3, php4, php5, phtml, htm, html, and htaccess files.
+cvss_v2: 5.0
+references:
+    - https://wordpress.org/plugins/wp-file-upload/#developers
+affected:
+    - groupId: org.awake-file
+      artifactId: awake-file
+      version:
+        - "<=2.0.2"
+      fixedin:
+        - ">=3.0"
