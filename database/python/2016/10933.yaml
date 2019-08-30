@@ -1,0 +1,14 @@
+---
+cve: 2016-10933
+title: CVE in setuptools-rust
+description: >
+    An issue was discovered in the portaudio crate through 0.7.0 for Rust. There is a man-in-the-middle issue because the source code is downloaded over cleartext HTTP.
+cvss_v2: 4.3
+references:
+    - https://rustsec.org/advisories/RUSTSEC-2016-0003.html
+affected:
+    - name: setuptools-rust
+      version:
+        - "<=0.7.0"
+      fixedin:
+        - ">=0.7.1"
