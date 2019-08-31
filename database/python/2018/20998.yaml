@@ -1,0 +1,14 @@
+---
+cve: 2018-20998
+title: CVE in arrayfire
+description: >
+    An issue was discovered in the arrayfire crate before 3.6.0 for Rust. Addition of the repr() attribute to an enum is mishandled, leading to memory corruption.
+cvss_v2: 7.5
+references:
+    - https://rustsec.org/advisories/RUSTSEC-2018-0011.html
+affected:
+    - name: arrayfire
+      version:
+        - "<=3.5.20170817"
+      fixedin:
+        - ">=3.6.0"
