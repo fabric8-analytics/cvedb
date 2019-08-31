@@ -1,0 +1,14 @@
+---
+cve: 2015-9362
+title: CVE in level-post
+description: >
+    The Post Connector plugin before 1.0.4 for WordPress has XSS via add_query_arg() and remove_query_arg().
+cvss_v2: 4.3
+references:
+    - https://www.barrykooij.com/several-security-updates-released/
+affected:
+    - name: level-post
+      version:
+        - "<=1.0.3"
+      fixedin:
+        - ">=1.0.4"
