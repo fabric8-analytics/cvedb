@@ -1,0 +1,15 @@
+---
+cve: 2015-9365
+title: CVE in py-authorize
+description: >
+    Authorize.net Add-on for iThemes Exchange before 1.1.0 for WordPress has XSS via add_query_arg() and remove_query_arg().
+cvss_v2: 4.3
+references:
+    - https://blog.sucuri.net/2015/04/security-advisory-xss-vulnerability-affecting-multiple-wordpress-plugins.html
+    - https://ithemes.com/coordinated-wordpress-plugin-security-update/
+affected:
+    - name: py-authorize
+      version:
+        - "<=1.0.2.8"
+      fixedin:
+        - ">=1.1.0.0"
