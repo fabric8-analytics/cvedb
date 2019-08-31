@@ -1,0 +1,15 @@
+---
+cve: 2018-20991
+title: CVE in setuptools-rust
+description: >
+    An issue was discovered in the smallvec crate before 0.6.3 for Rust. The Iterator implementation mishandles destructors, leading to a double free.
+cvss_v2: 7.5
+references:
+    - https://rustsec.org/advisories/RUSTSEC-2018-0003.html
+affected:
+    - name: setuptools-rust
+      version:
+        - "<=0.6.2,0.4"
+      fixedin:
+        - ">=0.6.3"
+        - "<=0.3.1,0.1"
