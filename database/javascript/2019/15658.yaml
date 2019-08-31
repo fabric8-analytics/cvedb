@@ -1,0 +1,14 @@
+---
+cve: 2019-15658
+title: CVE in connect-pg-simple
+description: >
+    connect-pg-simple before 6.0.1 allows SQL injection if tableName or schemaName is untrusted data.
+cvss_v2: 7.5
+references:
+    - https://github.com/voxpelli/node-connect-pg-simple/security/advisories/GHSA-xqh8-5j36-4556
+affected:
+    - name: connect-pg-simple
+      version:
+        - "<=6.0.0"
+      fixedin:
+        - ">=6.0.1"
