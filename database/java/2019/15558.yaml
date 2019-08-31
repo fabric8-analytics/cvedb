@@ -1,0 +1,16 @@
+---
+cve: 2019-15558
+title: CVE in com.icthh.xm.commons:xm-commons-config
+description: >
+    XM^online 2 Common Utils and Endpoints 0.2.1 allows SQL injection, related to Constants.java, DropSchemaResolver.java, and SchemaChangeResolver.java.
+cvss_v2: 7.5
+references:
+    - https://github.com/xm-online/xm-commons/pull/62
+affected:
+    - groupId: com.icthh.xm.commons
+      artifactId: xm-commons-config
+      version:
+        - "<=0.2.1,0.2.1"
+      fixedin:
+        - ">=0.2.3"
+        - "<=0.2.0,0.2.0"
