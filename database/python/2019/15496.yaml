@@ -1,0 +1,15 @@
+---
+cve: 2019-15496
+title: CVE in contentful-management
+description: >
+    MyT Project Management 1.5.1 lacks CSRF protection and, for example, allows a user/create CSRF attack. This could lead to an attacker tricking the administrator into executing arbitrary code via a specially crafted HTML page.
+cvss_v2: 6.8
+references:
+    - https://www.sevenlayers.com/index.php/240-myt-project-management-1-5-1-csrf
+affected:
+    - name: contentful-management
+      version:
+        - "<=1.5.1,1.5.1"
+      fixedin:
+        - ">=1.5.2"
+        - "<=1.5.0,1.0.0"
