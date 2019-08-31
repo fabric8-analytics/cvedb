@@ -1,0 +1,15 @@
+---
+cve: 2019-14978
+title: CVE in payment
+description: >
+    /payu/icpcheckout/ in the WooCommerce PayU India Payment Gateway plugin 2.1.1 for WordPress allows Parameter Tampering in the purchaseQuantity=1 parameter, as demonstrated by purchasing an item for lower than the intended price.
+cvss_v2: 5.0
+references:
+    - https://gkaim.com/cve-2019-14978-vikas-chaudhary/
+affected:
+    - name: payment
+      version:
+        - "<=2.1.1,2.1.1"
+      fixedin:
+        - ">=2.1.2"
+        - "<=2.1.0,0.0.1"
