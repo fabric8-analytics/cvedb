@@ -1,0 +1,14 @@
+---
+cve: 2019-10750
+title: CVE in deeply
+description: >
+    deeply is vulnerable to Prototype Pollution in versions before 3.1.0. The function assign-deep could be tricked into adding or modifying properties of Object.prototype using using a _proto_ payload.
+cvss_v2: 7.5
+references:
+    - https://snyk.io/vuln/SNYK-JS-DEEPLY-451026
+affected:
+    - name: deeply
+      version:
+        - "<=3.0.0"
+      fixedin:
+        - ">=3.1.0"
