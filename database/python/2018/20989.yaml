@@ -1,0 +1,14 @@
+---
+cve: 2018-20989
+title: CVE in setuptools-rust
+description: >
+    An issue was discovered in the untrusted crate before 0.6.2 for Rust. Error handling can trigger an integer underflow and panic.
+cvss_v2: 5.0
+references:
+    - https://rustsec.org/advisories/RUSTSEC-2018-0001.html
+affected:
+    - name: setuptools-rust
+      version:
+        - "<=0.6.1"
+      fixedin:
+        - ">=0.6.2"
