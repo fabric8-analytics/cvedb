@@ -1,0 +1,18 @@
+---
+cve: 2019-13237
+title: CVE in org.opencms:opencms-core
+description: >
+    In Alkacon OpenCms 10.5.4 and 10.5.5, there are multiple resources vulnerable to Local File Inclusion that allow an attacker to access server resources: clearhistory.jsp, convertxml.jsp, group_new.jsp, loginmessage.jsp, xmlcontentrepair.jsp, and /system/workplace/admin/history/settings/index.jsp.
+cvss_v2: 4.0
+references:
+    - http://packetstormsecurity.com/files/154281/Alkacon-OpenCMS-10.5.x-Local-File-Inclusion.html
+    - https://aetsu.github.io/OpenCms
+    - https://github.com/alkacon/opencms-core/commits/branch_10_5_x
+affected:
+    - groupId: org.opencms
+      artifactId: opencms-core
+      version:
+        - "<=10.5.4,10.5.4"
+      fixedin:
+        - ">=11.0.0"
+        - "<=10.5.3,8.0.1"
