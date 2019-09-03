@@ -1,0 +1,16 @@
+---
+cve: 2019-14280
+title: CVE in phaser-craft
+description: >
+    In some circumstances, Craft 2 before 2.7.10 and 3 before 3.2.6 wasn't stripping EXIF data from user-uploaded images when it was configured to do so, potentially exposing personal/geolocation data to the public.
+cvss_v2: 5.0
+references:
+    - http://packetstormsecurity.com/files/154276/Craft-CMS-2.7.9-3.2.5-Information-Disclosure.html
+    - https://github.com/craftcms/cms/blob/develop/CHANGELOG-v3.md#326---2019-07-23
+    - https://github.com/craftcms/cms/blob/develop-v2/CHANGELOG-v2.md#2710---2019-07-24
+affected:
+    - name: phaser-craft
+      version:
+        - "<=3.0.1,2.1.0"
+      fixedin:
+        - "<=2.0.2,2.0.0"
