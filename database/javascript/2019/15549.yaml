@@ -1,0 +1,14 @@
+---
+cve: 2019-15549
+title: CVE in asn1.js
+description: >
+    An issue was discovered in the asn1_der crate before 0.6.2 for Rust. Attackers can trigger memory exhaustion by supplying a large value in a length field.
+cvss_v2: 5.0
+references:
+    - https://rustsec.org/advisories/RUSTSEC-2019-0007.html
+affected:
+    - name: asn1.js
+      version:
+        - "<=0.6.1"
+      fixedin:
+        - ">=0.6.2"
