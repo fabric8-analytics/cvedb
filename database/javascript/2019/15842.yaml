@@ -1,0 +1,14 @@
+---
+cve: 2019-15842
+title: CVE in xss-filters
+description: >
+    The easy-pdf-restaurant-menu-upload plugin before 1.1.2 for WordPress has XSS.
+cvss_v2: 4.3
+references:
+    - https://wordpress.org/plugins/easy-pdf-restaurant-menu-upload/#developers
+affected:
+    - name: xss-filters
+      version:
+        - "<=1.1.1"
+      fixedin:
+        - ">=1.1.2"
