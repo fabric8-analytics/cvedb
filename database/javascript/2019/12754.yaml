@@ -1,0 +1,14 @@
+---
+cve: 2019-12754
+title: CVE in vip-resp
+description: >
+    Symantec My VIP portal, previous version which has already been auto updated, was susceptible to a cross-site scripting (XSS) exploit, which is a type of issue that can enable attackers to inject client-side scripts into web pages viewed by other users or potentially bypass access controls such as the same-origin policy.
+cvss_v2: 3.5
+references:
+    - https://support.symantec.com/us/en/article.SYMSA1491.html
+affected:
+    - name: vip-resp
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
