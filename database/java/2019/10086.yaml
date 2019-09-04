@@ -1,0 +1,18 @@
+---
+cve: 2019-10086
+title: CVE in commons-beanutils:commons-beanutils
+description: >
+    In Apache Commons Beanutils 1.9.2, a special BeanIntrospector class was added which allows suppressing the ability for an attacker to access the classloader via the class property available on all Java objects. We, however were not using this by default characteristic of the PropertyUtilsBean.
+cvss_v2: 7.5
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2019-09/msg00007.html
+    - http://mail-archives.apache.org/mod_mbox/www-announce/201908.mbox/%3cC628798F-315D-4428-8CB1-4ED1ECC958E4@apache.org%3e
+    - https://lists.apache.org/thread.html/3d1ed1a1596c08c4d5fea97b36c651ce167b773f1afc75251ce7a125@%3Ccommits.tinkerpop.apache.org%3E
+    - https://lists.debian.org/debian-lts-announce/2019/08/msg00030.html
+affected:
+    - groupId: commons-beanutils
+      artifactId: commons-beanutils
+      version:
+        - "<=1.9.3"
+      fixedin:
+        - ">=1.9.4"
