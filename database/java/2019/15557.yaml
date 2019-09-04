@@ -1,0 +1,16 @@
+---
+cve: 2019-15557
+title: CVE in com.icthh.xm.commons:xm-commons-config
+description: >
+    XM^online 2 User Account and Authentication server 1.0.0 allows SQL injection via a tenant key.
+cvss_v2: 7.5
+references:
+    - https://github.com/xm-online/xm-uaa/pull/61
+affected:
+    - groupId: com.icthh.xm.commons
+      artifactId: xm-commons-config
+      version:
+        - "<=1.0.0,1.0.0"
+      fixedin:
+        - ">=1.1.0"
+        - "<=0.3.3,0.2.0"
