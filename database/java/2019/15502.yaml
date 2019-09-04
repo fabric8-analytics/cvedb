@@ -1,0 +1,17 @@
+---
+cve: 2019-15502
+title: CVE in org.apache.servicemix.samples.cxf-wsdl-first:wsdl-first-cxfse-su
+description: >
+    The TeamSpeak client before 3.3.2 allows remote servers to trigger a crash via the 0xe2 0x81 0xa8 0xe2 0x81 0xa7 byte sequence, aka Unicode characters U+2068 (FIRST STRONG ISOLATE) and U+2067 (RIGHT-TO-LEFT ISOLATE).
+cvss_v2: 5.0
+references:
+    - https://forum.teamspeak.com/threads/141134-Release-TeamSpeak-Client-3-3-2
+    - https://r4p3.net/threads/teamkilled-new-teamspeak-crash.8144/
+    - https://www.youtube.com/watch?v=PlVbPIs75D4
+affected:
+    - groupId: org.apache.servicemix.samples.cxf-wsdl-first
+      artifactId: wsdl-first-cxfse-su
+      version:
+        - "<=3.3.1"
+      fixedin:
+        - ">=3.3.2"
