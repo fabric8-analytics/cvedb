@@ -1,0 +1,16 @@
+---
+cve: 2015-9368
+title: CVE in com.ccheptea.auto.value:auto-value-variant
+description: >
+    Easy EU Value Added (VAT) Taxes Add-on for iThemes Exchange before 1.2.0 for WordPress has XSS via add_query_arg() and remove_query_arg().
+cvss_v2: 4.3
+references:
+    - https://blog.sucuri.net/2015/04/security-advisory-xss-vulnerability-affecting-multiple-wordpress-plugins.html
+    - https://ithemes.com/coordinated-wordpress-plugin-security-update/
+affected:
+    - groupId: com.ccheptea.auto.value
+      artifactId: auto-value-variant
+      version:
+        - "<=1.1.0"
+      fixedin:
+        - ">=1.2.0"
