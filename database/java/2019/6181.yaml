@@ -1,0 +1,15 @@
+---
+cve: 2019-6181
+title: CVE in org.cometd.javascript:cometd-javascript-dojo
+description: >
+    A reflected cross-site scripting (XSS) vulnerability was reported in Lenovo XClarity Administrator (LXCA) versions prior to 2.5.0 that could allow a crafted URL, if visited, to cause JavaScript code to be executed in the user's web browser. The JavaScript code is not executed on LXCA itself.
+cvss_v2: 4.3
+references:
+    - https://support.lenovo.com/solutions/LEN-27805
+affected:
+    - groupId: org.cometd.javascript
+      artifactId: cometd-javascript-dojo
+      version:
+        - "<=2.4.3"
+      fixedin:
+        - ">=2.5.0-beta1"
