@@ -1,0 +1,14 @@
+---
+cve: 2019-15543
+title: CVE in setuptools-rust
+description: >
+    An issue was discovered in the slice-deque crate before 0.2.0 for Rust. There is memory corruption in certain allocation cases.
+cvss_v2: 7.5
+references:
+    - https://rustsec.org/advisories/RUSTSEC-2019-0002.html
+affected:
+    - name: setuptools-rust
+      version:
+        - "<=0.1"
+      fixedin:
+        - ">=0.2"
