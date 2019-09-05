@@ -1,0 +1,14 @@
+---
+cve: 2019-13156
+title: CVE in loopback-explorer
+description: >
+    NDrive(1.2.2).sys in Naver Cloud Explorer has a stack-based buffer overflow, which allows attackers to cause a denial of service when reading data from IOCTL handle.
+cvss_v2: 5.0
+references:
+    - https://cve.naver.com/detail/cve-2019-13156
+affected:
+    - name: loopback-explorer
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
