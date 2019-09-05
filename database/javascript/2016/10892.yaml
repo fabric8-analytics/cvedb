@@ -1,0 +1,14 @@
+---
+cve: 2016-10892
+title: CVE in xss-filters
+description: >
+    The chained-quiz plugin before 1.0 for WordPress has multiple XSS issues.
+cvss_v2: 4.3
+references:
+    - https://wordpress.org/plugins/chained-quiz/#developers
+affected:
+    - name: xss-filters
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
