@@ -1,0 +1,14 @@
+---
+cve: 2019-5480
+title: CVE in statichttpserver
+description: >
+    A path traversal vulnerability in <= v0.9.7 of statichttpserver npm module allows attackers to list files in arbitrary folders.
+cvss_v2: 5.0
+references:
+    - https://hackerone.com/reports/570035
+affected:
+    - name: statichttpserver
+      version:
+        - "<=0.9.7"
+      fixedin:
+        []
