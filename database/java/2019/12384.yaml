@@ -1,0 +1,30 @@
+---
+cve: 2019-12384
+title: CVE in com.fasterxml.jackson.core:jackson-databind
+description: >
+    FasterXML jackson-databind 2.x before 2.9.9.1 might allow attackers to have a variety of impacts by leveraging failure to block the logback-core class from polymorphic deserialization. Depending on the classpath content, remote code execution may be possible.
+cvss_v2: 4.3
+references:
+    - https://access.redhat.com/errata/RHSA-2019:1820
+    - https://blog.doyensec.com/2019/07/22/jackson-gadgets.html
+    - https://doyensec.com/research.html
+    - https://github.com/FasterXML/jackson-databind/compare/74b90a4...a977aad
+    - https://lists.apache.org/thread.html/0d4b630d9ee724aee50703397d9d1afa2b2befc9395ba7797d0ccea9@%3Cdev.tomee.apache.org%3E
+    - https://lists.apache.org/thread.html/2d2a76440becb610b9a9cb49b15eac3934b02c2dbcaacde1000353e4@%3Cdev.tomee.apache.org%3E
+    - https://lists.apache.org/thread.html/34717424b4d08b74f65c09a083d6dd1cb0763f37a15d6de135998c1d@%3Cdev.tomee.apache.org%3E
+    - https://lists.apache.org/thread.html/56c8042873595b8c863054c7bfccab4bf2c01c6f5abedae249d914b9@%3Cdev.tomee.apache.org%3E
+    - https://lists.apache.org/thread.html/ee0a051428d2c719acfa297d0854a189ea5e284ef3ed491fa672f4be@%3Cdev.tomee.apache.org%3E
+    - https://lists.debian.org/debian-lts-announce/2019/06/msg00019.html
+    - https://security.netapp.com/advisory/ntap-20190703-0002/
+affected:
+    - groupId: com.fasterxml.jackson.core
+      artifactId: jackson-databind
+      version:
+        - "<=2.7.9.5,2.7.0-rc1"
+        - "<=2.8.11.3,2.8.0.rc1"
+        - "<=2.9.9,2.9.0"
+      fixedin:
+        - ">=2.9.9.1"
+        - "<=2.8.11.4,2.8.11.4"
+        - "<=2.7.9.6,2.7.9.6"
+        - "<=2.6.7.2,2.0.0-RC1"
