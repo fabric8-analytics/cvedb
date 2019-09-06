@@ -1,0 +1,14 @@
+---
+cve: 2019-3751
+title: CVE in thanh-enterprise-data
+description: >
+    Dell EMC Enterprise Copy Data Management (eCDM) versions 1.0, 1.1, 2.0, 2.1, and 3.0 contain a certificate validation vulnerability. An unauthenticated remote attacker may potentially exploit this vulnerability to carry out a man-in-the-middle attack by supplying a crafted certificate and intercepting the victim's traffic to view or modify a victim?s data in transit.
+cvss_v2: 5.8
+references:
+    - https://www.dell.com/support/security/en-us/details/536848/DSA-2019-118-Dell-EMC-Enterprise-Copy-Data-Management-eCDM-Improper-Certificate-Validation-Vuln
+affected:
+    - name: thanh-enterprise-data
+      version:
+        - "<=3.0.0"
+      fixedin:
+        - ">=3.0.1"
