@@ -1,0 +1,14 @@
+---
+cve: 2019-13518
+title: CVE in ez
+description: >
+    An attacker could use a specially crafted project file to overflow the buffer and execute code under the privileges of the EZ Touch Editor Versions 2.1.0 and prior.
+cvss_v2: 6.8
+references:
+    - https://www.us-cert.gov/ics/advisories/icsa-19-246-01
+affected:
+    - name: ez
+      version:
+        - "<=2.1.0"
+      fixedin:
+        - ">=2.1.1"
