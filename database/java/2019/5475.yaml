@@ -1,0 +1,15 @@
+---
+cve: 2019-5475
+title: CVE in org.sonatype.nexus.plugins:nexus-yum-repository-client
+description: >
+    The Nexus Yum Repository Plugin in v2 is vulnerable to Remote Code Execution when instances using CommandLineExecutor.java are supplied vulnerable data, such as the Yum Configuration Capability.
+cvss_v2: 9.0
+references:
+    - https://hackerone.com/reports/654888
+affected:
+    - groupId: org.sonatype.nexus.plugins
+      artifactId: nexus-yum-repository-client
+      version:
+        - "<=2.14.9-01"
+      fixedin:
+        - ">=2.14.10-01"
