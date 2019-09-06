@@ -1,0 +1,18 @@
+---
+cve: 2019-2389
+title: CVE in org.mongodb:mongodb-driver-async
+description: >
+    Incorrect scoping of kill operations in MongoDB Server's packaged SysV init scripts allow users with write access to the PID file to insert arbitrary PIDs to be killed when the root user stops the MongoDB process via SysV init. This issue affects: MongoDB Inc. MongoDB Server v4.0 versions prior to 4.0.11; v3.6 versions prior to 3.6.14; v3.4 versions prior to 3.4.22.
+cvss_v2: 3.3
+references:
+    - https://jira.mongodb.org/browse/SERVER-40563
+affected:
+    - groupId: org.mongodb
+      artifactId: mongodb-driver-async
+      version:
+        - "<=3.4.3,3.4.0-beta1"
+        - "<=3.6.4,3.6.0-beta1"
+      fixedin:
+        - ">=3.7.0-rc0"
+        - "<=3.5.0,3.5.0-alpha1"
+        - "<=3.3.0,3.0.0-beta1"
