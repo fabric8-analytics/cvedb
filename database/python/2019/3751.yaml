@@ -9,9 +9,6 @@ references:
 affected:
     - name: edx-enterprise
       version:
-        - "<=1.0.0,1.0.0"
-        - "<=1.1.0,1.1.0"
+        - "<=3.0"
       fixedin:
-        - ">=1.1.1"
-        - "<=1.0.6,1.0.1"
-        - "<=0.74.0,0.1.0"
+       []
