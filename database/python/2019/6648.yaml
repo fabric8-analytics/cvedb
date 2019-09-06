@@ -1,0 +1,14 @@
+---
+cve: 2019-6648
+title: CVE in monupco-openshift-python
+description: >
+    On version 1.9.0, If DEBUG logging is enable, F5 Container Ingress Service (CIS) for Kubernetes and Red Hat OpenShift (k8s-bigip-ctlr) log files may contain BIG-IP secrets such as SSL Private Keys and Private key Passphrases as provided as inputs by an AS3 Declaration.
+cvss_v2: 1.9
+references:
+    - https://support.f5.com/csp/article/K74327432
+affected:
+    - name: monupco-openshift-python
+      version:
+        - "<=1.9"
+      fixedin:
+        []
