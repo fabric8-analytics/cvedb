@@ -1,0 +1,15 @@
+---
+cve: 2019-15544
+title: CVE in com.google.protobuf:protobuf-java
+description: >
+    An issue was discovered in the protobuf crate before 2.6.0 for Rust. Attackers can exhaust all memory via Vec::reserve calls.
+cvss_v2: 5.0
+references:
+    - https://rustsec.org/advisories/RUSTSEC-2019-0003.html
+affected:
+    - groupId: com.google.protobuf
+      artifactId: protobuf-java
+      version:
+        - "<=2.5.0"
+      fixedin:
+        - ">=2.6.0"
