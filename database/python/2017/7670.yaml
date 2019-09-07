@@ -1,0 +1,15 @@
+---
+cve: 2017-7670
+title: CVE in cloudshell-traffic
+description: >
+    The Traffic Router component of the incubating Apache Traffic Control project is vulnerable to a Slowloris style Denial of Service attack. TCP connections made on the configured DNS port will remain in the ESTABLISHED state until the client explicitly closes the connection or Traffic Router is restarted. If connections remain in the ESTABLISHED state indefinitely and accumulate in number to match the size of the thread pool dedicated to processing DNS requests, the thread pool becomes exhausted. Once the thread pool is exhausted, Traffic Router is unable to service any DNS request, regardless of transport protocol.
+cvss_v2: 5.0
+references:
+    - https://lists.apache.org/thread.html/42b207e9f526353b504591684bd02a5e9fcb4b8f28534253d07740a0@%3Cusers.trafficcontrol.apache.org%3E
+    - https://lists.apache.org/thread.html/bb09fc29e9c2ee85b118a3d5748a8a523d30cf691ff8b606c6a1748c@%3Ccommits.trafficcontrol.apache.org%3E
+affected:
+    - name: cloudshell-traffic
+      version:
+        - "<=2.0.0"
+      fixedin:
+        - ">=2.0.1"
