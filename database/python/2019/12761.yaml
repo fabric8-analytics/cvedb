@@ -1,0 +1,16 @@
+---
+cve: 2019-12761
+title: CVE in pyxdg
+description: >
+    A code injection issue was discovered in PyXDG before 0.26 via crafted Python code in a Category element of a Menu XML document in a .menu file. XDG_CONFIG_DIRS must be set up to trigger xdg.Menu.parse parsing within the directory containing this file. This is due to a lack of sanitization in xdg/Menu.py before an eval call.
+cvss_v2: 5.1
+references:
+    - https://gist.github.com/dhondta/b45cd41f4186110a354dc7272916feba
+    - https://lists.debian.org/debian-lts-announce/2019/06/msg00006.html
+    - https://snyk.io/vuln/SNYK-PYTHON-PYXDG-174562
+affected:
+    - name: pyxdg
+      version:
+        - "<=0.25"
+      fixedin:
+        - ">=0.26"
