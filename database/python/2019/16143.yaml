@@ -1,0 +1,14 @@
+---
+cve: 2019-16143
+title: CVE in setuptools-rust
+description: >
+    An issue was discovered in the blake2 crate before 0.8.1 for Rust. The BLAKE2b and BLAKE2s algorithms, when used with HMAC, produce incorrect results because the block sizes are half of the required sizes.
+cvss_v2: 7.5
+references:
+    - https://rustsec.org/advisories/RUSTSEC-2019-0019.html
+affected:
+    - name: setuptools-rust
+      version:
+        - "<=0.8.0"
+      fixedin:
+        - ">=0.8.1"
