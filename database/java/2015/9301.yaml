@@ -1,0 +1,15 @@
+---
+cve: 2015-9301
+title: CVE in net.sf.squirrel-sql:squirrel-sql
+description: >
+    The liveforms plugin before 3.2.0 for WordPress has SQL injection.
+cvss_v2: 7.5
+references:
+    - https://wordpress.org/plugins/liveforms/#developers
+affected:
+    - groupId: net.sf.squirrel-sql
+      artifactId: squirrel-sql
+      version:
+        - "<=3.0.2"
+      fixedin:
+        - ">=3.2.0-RC1"
