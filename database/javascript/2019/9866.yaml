@@ -1,0 +1,15 @@
+---
+cve: 2019-9866
+title: CVE in gitlab
+description: >
+    An issue was discovered in GitLab Community and Enterprise Edition 11.x before 11.7.7 and 11.8.x before 11.8.3. It allows Information Disclosure.
+cvss_v2: 4.0
+references:
+    - https://about.gitlab.com/2019/03/20/critical-security-release-gitlab-11-dot-8-dot-3-released/
+    - https://gitlab.com/gitlab-org/gitlab-ce/issues/59003
+affected:
+    - name: gitlab
+      version:
+        - "<=11.1.1,11.0.0"
+      fixedin:
+        - "<=10.2.1,0.0.1"
