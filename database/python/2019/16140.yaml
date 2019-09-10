@@ -1,0 +1,14 @@
+---
+cve: 2019-16140
+title: CVE in rust-fst
+description: >
+    An issue was discovered in the chttp crate before 0.1.3 for Rust. There is a use-after-free during buffer conversion.
+cvss_v2: 7.5
+references:
+    - https://rustsec.org/advisories/RUSTSEC-2019-0016.html
+affected:
+    - name: rust-fst
+      version:
+        - "<=0.1.2,0.1.2"
+      fixedin:
+        - "<=0.1,0.1"
