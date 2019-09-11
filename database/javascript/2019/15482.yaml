@@ -1,0 +1,15 @@
+---
+cve: 2019-15482
+title: CVE in selectize-plugin-a11y
+description: >
+    selectize-plugin-a11y before 1.1.0 has XSS via the msg field.
+cvss_v2: 4.3
+references:
+    - https://github.com/SLMNBJ/selectize-plugin-a11y/pull/9
+    - https://www.npmjs.com/package/selectize-plugin-a11y/v/1.1.0
+affected:
+    - name: selectize-plugin-a11y
+      version:
+        - "<=1.0.4"
+      fixedin:
+        - ">=1.1.0"
