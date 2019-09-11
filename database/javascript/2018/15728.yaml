@@ -1,0 +1,16 @@
+---
+cve: 2018-15728
+title: CVE in server
+description: >
+    An issue was discovered in Couchbase Server. Authenticated users can send arbitrary Erlang code to the 'diag/eval' endpoint of the REST API (available by default on TCP/8091 and/or TCP/18091). The executed code in the underlying operating system will run with the privileges of the user running Couchbase server.
+cvss_v2: 9.0
+references:
+    - http://seclists.org/bugtraq/2018/Aug/49
+    - http://www.securityfocus.com/bid/105157
+    - https://www.couchbase.com/resources/security#SecurityAlerts
+affected:
+    - name: server
+      version:
+        []
+      fixedin:
+        - ">=0.0.0"
