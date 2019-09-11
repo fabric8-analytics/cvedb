@@ -1,0 +1,14 @@
+---
+cve: 2019-5479
+title: CVE in larvitbase-api
+description: >
+    An unintended require vulnerability in <v0.5.5 larvitbase-api may allow an attacker to load arbitrary non-production code (JavaScript file).
+cvss_v2: 5.0
+references:
+    - https://hackerone.com/reports/566056
+affected:
+    - name: larvitbase-api
+      version:
+        - "<=0.5.4"
+      fixedin:
+        - ">=0.5.5"
