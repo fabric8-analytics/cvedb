@@ -1,6 +1,6 @@
 ---
 cve: 2019-9153
-title: CVE in @tripod/openpgp
+title: CVE in openpgp
 description: >
     Improper Verification of a Cryptographic Signature in OpenPGP.js <=4.1.2 allows an attacker to forge signed messages by replacing its signatures with a "standalone" or "timestamp" signature.
 cvss_v2: 5.0
@@ -12,8 +12,8 @@ references:
     - https://sec-consult.com/en/blog/advisories/multiple-vulnerabilities-in-openpgp-js/
     - https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/Studies/Mailvelope_Extensions/Mailvelope_Extensions_pdf.html#download=1
 affected:
-    - name: @tripod/openpgp
+    - name: openpgp
       version:
-        - "<=4.1.2-node8-6"
+        - "<=4.1.2"
       fixedin:
-        []
+        - ">=4.2.0"
