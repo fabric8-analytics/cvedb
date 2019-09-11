@@ -1,0 +1,15 @@
+---
+cve: 2019-15782
+title: CVE in webtorrent
+description: >
+    WebTorrent before 0.107.6 allows XSS in the HTTP server via a title or file name.
+cvss_v2: 4.3
+references:
+    - https://github.com/webtorrent/webtorrent/compare/v0.107.5...v0.107.6
+    - https://github.com/webtorrent/webtorrent/pull/1714
+affected:
+    - name: webtorrent
+      version:
+        - "<=0.107.5"
+      fixedin:
+        - ">=0.107.6"

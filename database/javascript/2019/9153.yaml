@@ -1,0 +1,19 @@
+---
+cve: 2019-9153
+title: CVE in openpgp
+description: >
+    Improper Verification of a Cryptographic Signature in OpenPGP.js <=4.1.2 allows an attacker to forge signed messages by replacing its signatures with a "standalone" or "timestamp" signature.
+cvss_v2: 5.0
+references:
+    - http://packetstormsecurity.com/files/154191/OpenPGP.js-4.2.0-Signature-Bypass-Invalid-Curve-Attack.html
+    - https://github.com/openpgpjs/openpgpjs/pull/797/commits/327d3e5392a6f59a4270569d200c7f7a2bfc4cbc
+    - https://github.com/openpgpjs/openpgpjs/pull/816
+    - https://github.com/openpgpjs/openpgpjs/releases/tag/v4.2.0
+    - https://sec-consult.com/en/blog/advisories/multiple-vulnerabilities-in-openpgp-js/
+    - https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/Studies/Mailvelope_Extensions/Mailvelope_Extensions_pdf.html#download=1
+affected:
+    - name: openpgp
+      version:
+        - "<=4.1.2"
+      fixedin:
+        - ">=4.2.0"
