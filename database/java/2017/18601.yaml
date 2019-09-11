@@ -1,0 +1,15 @@
+---
+cve: 2017-18601
+title: CVE in org.ops4j.pax.exam:pax-exam
+description: >
+    The examapp plugin 1.0 for WordPress has XSS via exam input text fields.
+cvss_v2: 3.5
+references:
+    - https://www.exploit-db.com/exploits/42351
+affected:
+    - groupId: org.ops4j.pax.exam
+      artifactId: pax-exam
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.1.0"
