@@ -1,0 +1,14 @@
+---
+cve: 2019-1010083
+title: CVE in flask
+description: >
+    The Pallets Project Flask before 1.0 is affected by: unexpected memory usage. The impact is: denial of service. The attack vector is: crafted encoded JSON data. The fixed version is: 1. NOTE: this may overlap CVE-2018-1000656.
+cvss_v2: 5.0
+references:
+    - https://www.palletsprojects.com/blog/flask-1-0-released/
+affected:
+    - name: flask
+      version:
+        - "<=0.12.4"
+      fixedin:
+        - ">=1.0"

@@ -1,0 +1,14 @@
+---
+cve: 2019-1020019
+title: CVE in invenio-previewer
+description: >
+    invenio-previewer before 1.0.0a12 allows XSS.
+cvss_v2: 4.3
+references:
+    - https://github.com/inveniosoftware/invenio-previewer/security/advisories/GHSA-j9m2-6hq2-4r3c
+affected:
+    - name: invenio-previewer
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
