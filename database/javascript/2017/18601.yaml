@@ -1,0 +1,14 @@
+---
+cve: 2017-18601
+title: CVE in xss-filters
+description: >
+    The examapp plugin 1.0 for WordPress has XSS via exam input text fields.
+cvss_v2: 3.5
+references:
+    - https://www.exploit-db.com/exploits/42351
+affected:
+    - name: xss-filters
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
