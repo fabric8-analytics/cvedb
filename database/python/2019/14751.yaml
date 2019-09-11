@@ -1,0 +1,17 @@
+---
+cve: 2019-14751
+title: CVE in nltk
+description: >
+    NLTK Downloader before 3.4.5 is vulnerable to a directory traversal, allowing attackers to write arbitrary files via a ../ (dot dot slash) in an NLTK package (ZIP archive) that is mishandled during extraction.
+cvss_v2: 5.0
+references:
+    - https://github.com/mssalvatore/CVE-2019-14751_PoC
+    - https://github.com/nltk/nltk/blob/3.4.5/ChangeLog
+    - https://github.com/nltk/nltk/commit/f59d7ed8df2e0e957f7f247fe218032abdbe9a10
+    - https://salvatoresecurity.com/zip-slip-in-nltk-cve-2019-14751/
+affected:
+    - name: nltk
+      version:
+        - "<=3.4.4"
+      fixedin:
+        - ">=3.4.5"
