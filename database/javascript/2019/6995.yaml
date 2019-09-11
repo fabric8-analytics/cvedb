@@ -1,0 +1,15 @@
+---
+cve: 2019-6995
+title: CVE in gitlab
+description: >
+    An issue was discovered in GitLab Community and Enterprise Edition 8.x, 9.x, 10.x, and 11.x before 11.5.8, 11.6.x before 11.6.6, and 11.7.x before 11.7.1. It has Incorrect Access Control. Users are able to comment on locked project issues.
+cvss_v2: 4.0
+references:
+    - https://about.gitlab.com/2019/01/31/security-release-gitlab-11-dot-7-dot-3-released/
+    - https://gitlab.com/gitlab-org/gitlab-ce/issues/55537
+affected:
+    - name: gitlab
+      version:
+        - "<=11.1.2,9.0.0"
+      fixedin:
+        - "<=8.0.0,0.0.1"
