@@ -1,0 +1,15 @@
+---
+cve: 2019-14223
+title: CVE in com.gradecak.alfresco-mvc:alfresco-mvc-aop
+description: >
+    An issue was discovered in Alfresco Community Edition versions below 5.2.6, 6.0.N and 6.1.N. The Alfresco Share application is vulnerable to an Open Redirect attack via a crafted POST request. By manipulating the POST parameters, an attacker can redirect a victim to a malicious website over any protocol the attacker desires (e.g.,http, https, ftp, smb, etc.).
+cvss_v2: 5.8
+references:
+    - https://community.alfresco.com/content?filterID=all~objecttype~thread%5Bquestions%5D
+affected:
+    - groupId: com.gradecak.alfresco-mvc
+      artifactId: alfresco-mvc-aop
+      version:
+        - "<=6.0.0-RELEASE"
+      fixedin:
+        - ">=7.0.0-RELEASE"
