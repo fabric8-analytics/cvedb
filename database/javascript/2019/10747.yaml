@@ -9,8 +9,6 @@ references:
 affected:
     - name: set-value
       version:
-        - "<=2.0.0"
-        - "<=3.0.0,3.0.0"
+        - "<=3.0.0"
       fixedin:
         - ">=3.0.1"
-        - "<=2.0.1,2.0.1"
