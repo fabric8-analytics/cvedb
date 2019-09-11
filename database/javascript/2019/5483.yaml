@@ -1,0 +1,14 @@
+---
+cve: 2019-5483
+title: CVE in seneca
+description: >
+    Seneca < 3.9.0 contains a vulnerability that could lead to exposing environment variables to unauthorized users.
+cvss_v2: 5.0
+references:
+    - https://hackerone.com/reports/526258
+affected:
+    - name: seneca
+      version:
+        - "<=3.8.4"
+      fixedin:
+        - ">=3.9.0"
