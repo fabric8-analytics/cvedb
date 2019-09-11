@@ -1,0 +1,15 @@
+---
+cve: 2019-10745
+title: CVE in assign-deep
+description: >
+    assign-deep is vulnerable to Prototype Pollution in versions before 0.4.8 and version 1.0.0. The function assign-deep could be tricked into adding or modifying properties of Object.prototype using either a constructor or a _proto_ payload.
+cvss_v2: 5.0
+references:
+    - https://snyk.io/vuln/SNYK-JS-ASSIGNDEEP-450211
+affected:
+    - name: assign-deep
+      version:
+        - "<=0.4.7"
+        - "==1.0.0"
+      fixedin:
+        - ">=1.0.1"
