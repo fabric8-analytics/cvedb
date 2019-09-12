@@ -1,0 +1,15 @@
+---
+cve: 2019-11467
+title: CVE in alerta-server
+description: >
+    An issue was discovered in Couchbase Server 4.6.3 and 5.5.0. A JSON document to be stored with more than 3000 '\t' characters can crash the indexing system.
+cvss_v2: 7.8
+references:
+    - https://www.couchbase.com/resources/security#SecurityAlerts
+affected:
+    - name: alerta-server
+      version:
+        - "<=4.6.3,4.6.3"
+      fixedin:
+        - ">=4.6.4"
+        - "<=4.6.2,3.1.2"
