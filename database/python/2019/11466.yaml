@@ -1,0 +1,15 @@
+---
+cve: 2019-11466
+title: CVE in alerta-server
+description: >
+    An issue was discovered in Couchbase Server 5.5.0 and 6.0.0. The Eventing debug endpoint mishandles authentication and audit.
+cvss_v2: 5.0
+references:
+    - https://www.couchbase.com/resources/security#SecurityAlerts
+affected:
+    - name: alerta-server
+      version:
+        - "<=6.0.0,6.0.0"
+      fixedin:
+        - ">=6.0.1"
+        - "<=5.2.9,3.1.2"
