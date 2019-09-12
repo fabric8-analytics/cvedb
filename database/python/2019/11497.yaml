@@ -1,0 +1,15 @@
+---
+cve: 2019-11497
+title: CVE in alerta-server
+description: >
+    An issue was discovered in Couchbase Server 5.0.0. When creating a new remote cluster reference in Couchbase for XDCR, an invalid certificate is accepted. (The correct behavior is to validate the certificate against the remote cluster.)
+cvss_v2: 5.0
+references:
+    - https://www.couchbase.com/resources/security#SecurityAlerts
+affected:
+    - name: alerta-server
+      version:
+        - "<=5.0.0,5.0.0rc1"
+      fixedin:
+        - ">=5.0.1"
+        - "<=4.10.5,3.1.2"
