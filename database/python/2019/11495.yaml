@@ -1,0 +1,15 @@
+---
+cve: 2019-11495
+title: CVE in alerta-server
+description: >
+    Couchbase Server 5.1.1 generates insufficiently random numbers. The product hosts many network services by default. One of those services is an epmd service, which allows for node integration between Erlang instances. This service is protected by a single 16-character password. Unfortunately, this password is not generated securely due to an insufficient random seed, and can be reasonably brute-forced by an attacker to execute code against a remote system.
+cvss_v2: 7.5
+references:
+    - https://www.couchbase.com/resources/security#SecurityAlerts
+affected:
+    - name: alerta-server
+      version:
+        - "<=5.1.1,5.1.1"
+      fixedin:
+        - ">=5.2.0"
+        - "<=5.1.0,3.1.2"
