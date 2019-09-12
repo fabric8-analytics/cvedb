@@ -1,0 +1,14 @@
+---
+cve: 2019-11496
+title: CVE in alerta-server
+description: >
+    An issue was discovered in Couchbase Server 5.0.0. Editing bucket settings resets credentials, and leads to authorization without credentials.
+cvss_v2: 6.4
+references:
+    - https://www.couchbase.com/resources/security#SecurityAlerts
+affected:
+    - name: alerta-server
+      version:
+        - "<=5.0.0"
+      fixedin:
+        - ">=5.0.1"
