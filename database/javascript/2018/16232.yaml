@@ -1,0 +1,16 @@
+---
+cve: 2018-16232
+title: CVE in light-firewall
+description: >
+    An authenticated command injection vulnerability exists in IPFire Firewall before 2.21 Core Update 124 in backup.cgi. This allows an authenticated user with privileges for the affected page to execute arbitrary commands.
+cvss_v2: 6.5
+references:
+    - https://doddsecurity.com/213/command-injection-on-ipfire-firewalls/
+    - https://www.ipfire.org/news/ipfire-2-21-core-update-124-released
+affected:
+    - name: light-firewall
+      version:
+        - "<=2.1.0,2.1.0"
+      fixedin:
+        - ">=2.1.1"
+        - "<=2.0.0,1.2.0"
