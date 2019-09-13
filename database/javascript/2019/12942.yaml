@@ -1,0 +1,14 @@
+---
+cve: 2019-12942
+title: CVE in react-native-ttlock
+description: >
+    TTLock devices do not properly block guest access in certain situations where the network connection to the cloud is unavailable.
+cvss_v2: 3.3
+references:
+    - https://www.kth.se/polopoly_fs/1.923565.1568098364!/Vulnerability_Report_TTLock_State_Consistency.pdf
+affected:
+    - name: react-native-ttlock
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
