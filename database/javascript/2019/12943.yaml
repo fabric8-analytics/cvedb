@@ -1,0 +1,14 @@
+---
+cve: 2019-12943
+title: CVE in react-native-ttlock
+description: >
+    TTLock devices do not properly restrict password-reset attempts, leading to incorrect access control and disclosure of sensitive information about valid account names.
+cvss_v2: 2.6
+references:
+    - https://www.kth.se/polopoly_fs/1.923564.1568098316!/Vulnerability_Report_TTLock_Password_Reset.pdf
+affected:
+    - name: react-native-ttlock
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
