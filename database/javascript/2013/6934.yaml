@@ -1,0 +1,16 @@
+---
+cve: 2013-6934
+title: CVE in cordova-plugin-streaming-media-xtreme
+description: >
+    The parseRTSPRequestString function in Live Networks Live555 Streaming Media 2013.11.26, as used in VideoLAN VLC Media Player, allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via a space character at the beginning of an RTSP message, which triggers an integer underflow, infinite loop, and buffer overflow.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2013-6933.
+cvss_v2: 7.5
+references:
+    - http://isecpartners.github.io/fuzzing/vulnerabilities/2013/12/30/vlc-vulnerability.html
+    - http://www.live555.com/liveMedia/public/changelog.txt
+    - http://www.securityfocus.com/bid/65139
+affected:
+    - name: cordova-plugin-streaming-media-xtreme
+      version:
+        - "<=2.0.0"
+      fixedin:
+        - ">=2.1.0"
