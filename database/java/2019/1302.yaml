@@ -1,0 +1,16 @@
+---
+cve: 2019-1302
+title: CVE in org.srcdeps.core:srcdeps-core
+description: >
+    An elevation of privilege vulnerability exists when a ASP.NET Core web application, created using vulnerable project templates, fails to properly sanitize web requests, aka 'ASP.NET Core Elevation Of Privilege Vulnerability'.
+cvss_v2: 6.8
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1302
+affected:
+    - groupId: org.srcdeps.core
+      artifactId: srcdeps-core
+      version:
+        - "<=3.0.0,2.1.0"
+      fixedin:
+        - ">=3.0.1"
+        - "<=2.0.5,2.0.0"
