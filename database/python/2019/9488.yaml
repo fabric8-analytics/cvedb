@@ -1,0 +1,15 @@
+---
+cve: 2019-9488
+title: CVE in micro
+description: >
+    Trend Micro Deep Security Manager (10.x, 11.x) and Vulnerability Protection (2.0) are vulnerable to a XML External Entity Attack. However, for the attack to be possible, the attacker must have root/admin access to a protected host which is authorized to communicate with the Deep Security Manager (DSM).
+cvss_v2: 4.0
+references:
+    - https://success.trendmicro.com/solution/1122900
+affected:
+    - name: micro
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - ">=3.0.0"
+        - "<=1.0.2,1.0.0"
