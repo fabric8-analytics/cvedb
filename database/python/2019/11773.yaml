@@ -1,0 +1,14 @@
+---
+cve: 2019-11773
+title: CVE in scribes-edit-complete-like-eclipse
+description: >
+    Prior to 0.1, AIX builds of Eclipse OMR contain unused RPATHs which may facilitate code injection and privilege elevation by local users.
+cvss_v2: 4.6
+references:
+    - https://bugs.eclipse.org/bugs/show_bug.cgi?id=549191
+affected:
+    - name: scribes-edit-complete-like-eclipse
+      version:
+        []
+      fixedin:
+        - ">=0.1dev"
