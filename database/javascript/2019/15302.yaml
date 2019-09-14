@@ -1,0 +1,15 @@
+---
+cve: 2019-15302
+title: CVE in convert-rich-text
+description: >
+    The pad management logic in XWiki labs CryptPad before 3.0.0 allows a remote attacker (who has access to a Rich Text pad with editing rights for the URL) to corrupt it (i.e., cause data loss) via a trivial URL modification.
+cvss_v2: 5.5
+references:
+    - https://github.com/xwiki-labs/cryptpad/commits/staging
+    - https://github.com/xwiki-labs/cryptpad/releases/tag/3.0.0
+affected:
+    - name: convert-rich-text
+      version:
+        - "<=2.0.3"
+      fixedin:
+        - ">=3.0.0"
