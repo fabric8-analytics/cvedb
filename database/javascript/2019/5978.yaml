@@ -1,0 +1,16 @@
+---
+cve: 2019-5978
+title: CVE in @cybozu/eslint-config
+description: >
+    Open redirect vulnerability in Cybozu Garoon 4.0.0 to 4.10.2 allows remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via the application 'Scheduler'.
+cvss_v2: 5.8
+references:
+    - http://jvn.jp/en/jp/JVN62618482/index.html
+    - https://kb.cybozu.support/article/35916
+affected:
+    - name: @cybozu/eslint-config
+      version:
+        - "<=4.0.1,4.0.0"
+      fixedin:
+        - ">=5.0.0"
+        - "<=3.2.1,1.0.0"
