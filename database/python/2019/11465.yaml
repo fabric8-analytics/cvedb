@@ -1,0 +1,15 @@
+---
+cve: 2019-11465
+title: CVE in alerta-server
+description: >
+    An issue was discovered in Couchbase Server 5.5.x through 5.5.3 and 6.0.0. The Memcached "connections" stat block command emits a non-redacted username. The system information submitted to Couchbase as part of a bug report included the usernames for all users currently logged into the system even if the log was redacted for privacy. This has been fixed (in 5.5.4 and 6.0.1) so that usernames are tagged properly in the logs and are hashed out when the logs are redacted.
+cvss_v2: 5.0
+references:
+    - https://www.couchbase.com/resources/security#SecurityAlerts
+affected:
+    - name: alerta-server
+      version:
+        - "<=6.0.0,6.0.0"
+      fixedin:
+        - ">=6.0.1"
+        - "<=5.2.9,3.1.2"
