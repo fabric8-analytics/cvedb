@@ -1,0 +1,14 @@
+---
+cve: 2019-5956
+title: CVE in directory-components
+description: >
+    Directory traversal vulnerability in WonderCMS 2.6.0 and earlier allows remote attackers to delete arbitrary files via unspecified vectors.
+cvss_v2: 7.5
+references:
+    - http://jvn.jp/en/vu/JVNVU93628467/index.html
+affected:
+    - name: directory-components
+      version:
+        - "<=2.6.0"
+      fixedin:
+        - ">=2.6.1"
