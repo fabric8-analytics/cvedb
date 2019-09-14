@@ -1,0 +1,16 @@
+---
+cve: 2016-10940
+title: CVE in generator-wordpress
+description: >
+    The zm-gallery plugin 1.0 for WordPress has SQL injection via the order parameter.
+cvss_v2: 6.5
+references:
+    - http://lenonleite.com.br/en/2016/12/16/zm-gallery-1-plugin-wordpress-blind-injection/
+    - https://wordpress.org/plugins/zm-gallery/#developers
+affected:
+    - name: generator-wordpress
+      version:
+        - "<=1.0.0,1.0.0"
+      fixedin:
+        - ">=1.0.1"
+        - "<=0.2.7,0.1.0"
