@@ -1,0 +1,16 @@
+---
+cve: 2016-10939
+title: CVE in generator-wordpress
+description: >
+    The xtremelocator plugin 1.5 for WordPress has SQL injection via the id parameter.
+cvss_v2: 6.5
+references:
+    - http://lenonleite.com.br/en/blog/2016/12/16/xtreme-locator-dealer-locator-plugin-wordpress-sql-injection/
+    - https://wordpress.org/plugins/xtremelocator/#developers
+affected:
+    - name: generator-wordpress
+      version:
+        - "<=1.5.0,1.5.0"
+      fixedin:
+        - ">=2.0.0"
+        - "<=1.4.4,0.1.0"
