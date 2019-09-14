@@ -1,0 +1,14 @@
+---
+cve: 2019-10747
+title: CVE in value-objects
+description: >
+    set-value is vulnerable to Prototype Pollution in versions lower than 3.0.1. The function mixin-deep could be tricked into adding or modifying properties of Object.prototype using any of the constructor, prototype and _proto_ payloads.
+cvss_v2: 7.5
+references:
+    - https://snyk.io/vuln/SNYK-JS-SETVALUE-450213
+affected:
+    - name: value-objects
+      version:
+        - "<=2.0.0"
+      fixedin:
+        - ">=2.0.1"
