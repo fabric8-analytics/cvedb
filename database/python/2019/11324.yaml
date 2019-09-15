@@ -5,8 +5,10 @@ description: >
     The urllib3 library before 1.24.2 for Python mishandles certain cases where the desired set of CA certificates is different from the OS store of CA certificates, which results in SSL connections succeeding in situations where a verification failure is the correct outcome. This is related to use of the ssl_context, ca_certs, or ca_certs_dir argument.
 cvss_v2: 5.0
 references:
+    - http://lists.opensuse.org/opensuse-security-announce/2019-09/msg00039.html
     - http://www.openwall.com/lists/oss-security/2019/04/19/1
     - https://github.com/urllib3/urllib3/compare/a6ec68a...1efadf4
+    - https://usn.ubuntu.com/3990-1/
 affected:
     - name: urllib3
       version:
