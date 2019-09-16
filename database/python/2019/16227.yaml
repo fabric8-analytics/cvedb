@@ -1,0 +1,14 @@
+---
+cve: 2019-16227
+title: CVE in lmdb
+description: >
+    An issue was discovered in py_lmdb 0.97. For certain values of mn_flags, mdb_cursor_set triggers a memcpy with an invalid write operation within mdb_xcursor_init1.
+cvss_v2: 7.5
+references:
+    - https://github.com/TeamSeri0us/pocs/tree/master/lmdb/lmdb%20memcpy%20illegal%20dst
+affected:
+    - name: lmdb
+      version:
+        - "==0.97"
+      fixedin:
+        - "<=0.96,0.58"
