@@ -9,6 +9,6 @@ references:
 affected:
     - name: lmdb
       version:
-        - "<=0.97,0.97"
+        - "==0.97"
       fixedin:
         - "<=0.96,0.58"
