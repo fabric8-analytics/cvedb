@@ -1,0 +1,15 @@
+---
+cve: 2019-5993
+title: CVE in se.vgregion.rss-client:rss-client-bc-core-module-portlet
+description: >
+    Cross-site request forgery (CSRF) vulnerability in Category Specific RSS feed Subscription version v2.0 and earlier allows remote attackers to hijack the authentication of administrators via unspecified vectors.
+cvss_v2: 6.8
+references:
+    - http://jvn.jp/en/jp/JVN92510087/index.html
+affected:
+    - groupId: se.vgregion.rss-client
+      artifactId: rss-client-bc-core-module-portlet
+      version:
+        - "<=2.0"
+      fixedin:
+        - ">=2.1"
