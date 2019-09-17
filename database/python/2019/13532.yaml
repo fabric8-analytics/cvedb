@@ -1,0 +1,14 @@
+---
+cve: 2019-13532
+title: CVE in infrared-v3
+description: >
+    CODESYS V3 web server, all versions prior to 3.5.14.10, allows an attacker to send specially crafted http or https requests which may allow access to files outside the restricted working directory of the controller.
+cvss_v2: 5.0
+references:
+    - https://www.us-cert.gov/ics/advisories/icsa-19-255-01
+affected:
+    - name: infrared-v3
+      version:
+        - "<=3.0.1"
+      fixedin:
+        []
