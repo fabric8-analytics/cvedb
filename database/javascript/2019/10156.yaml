@@ -1,0 +1,16 @@
+---
+cve: 2019-10156
+title: CVE in npme-ansible
+description: >
+    A flaw was discovered in the way Ansible templating was implemented in versions before 2.6.18, 2.7.12 and 2.8.2, causing the possibility of information disclosure through unexpected variable substitution. By taking advantage of unintended variable substitution the content of any variable may be disclosed.
+cvss_v2: 5.5
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-10156
+    - https://github.com/ansible/ansible/pull/57188
+    - https://lists.debian.org/debian-lts-announce/2019/09/msg00016.html
+affected:
+    - name: npme-ansible
+      version:
+        - "<=2.0.13"
+      fixedin:
+        []
