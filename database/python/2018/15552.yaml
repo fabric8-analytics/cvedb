@@ -1,0 +1,14 @@
+---
+cve: 2018-15552
+title: CVE in django-ethereum
+description: >
+    The "PayWinner" function of a simplelottery smart contract implementation for The Ethereum Lottery, an Ethereum gambling game, generates a random value with publicly readable variable "maxTickets" (which is private, yet predictable and readable by the eth.getStorageAt function). Therefore, it allows attackers to always win and get rewards.
+cvss_v2: 5.0
+references:
+    - https://github.com/TEAM-C4B/CVE-LIST/tree/master/CVE-2018-15552
+affected:
+    - name: django-ethereum
+      version:
+        []
+      fixedin:
+        - ">=0.0.4"
