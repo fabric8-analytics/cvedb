@@ -1,0 +1,15 @@
+---
+cve: 2018-15552
+title: CVE in com.isotrol.impe3.tickets:impe3-tickets-jersey
+description: >
+    The "PayWinner" function of a simplelottery smart contract implementation for The Ethereum Lottery, an Ethereum gambling game, generates a random value with publicly readable variable "maxTickets" (which is private, yet predictable and readable by the eth.getStorageAt function). Therefore, it allows attackers to always win and get rewards.
+cvss_v2: 5.0
+references:
+    - https://github.com/TEAM-C4B/CVE-LIST/tree/master/CVE-2018-15552
+affected:
+    - groupId: com.isotrol.impe3.tickets
+      artifactId: impe3-tickets-jersey
+      version:
+        []
+      fixedin:
+        - ">=3.0.0"
