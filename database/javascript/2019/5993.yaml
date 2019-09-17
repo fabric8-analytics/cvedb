@@ -1,0 +1,14 @@
+---
+cve: 2019-5993
+title: CVE in rss-feed-emitter
+description: >
+    Cross-site request forgery (CSRF) vulnerability in Category Specific RSS feed Subscription version v2.0 and earlier allows remote attackers to hijack the authentication of administrators via unspecified vectors.
+cvss_v2: 6.8
+references:
+    - http://jvn.jp/en/jp/JVN92510087/index.html
+affected:
+    - name: rss-feed-emitter
+      version:
+        - "<=2.0.0"
+      fixedin:
+        - ">=2.0.1"
