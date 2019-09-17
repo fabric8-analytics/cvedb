@@ -1,0 +1,15 @@
+---
+cve: 2019-10398
+title: CVE in beaker
+description: >
+    Jenkins Beaker Builder Plugin 1.9 and earlier stored credentials unencrypted in its global configuration file on the Jenkins master where they could be viewed by users with access to the master file system.
+cvss_v2: 2.1
+references:
+    - http://www.openwall.com/lists/oss-security/2019/09/12/2
+    - https://jenkins.io/security/advisory/2019-09-12/#SECURITY-1545
+affected:
+    - name: beaker
+      version:
+        - "<=1.9.0"
+      fixedin:
+        - ">=1.9.1"
