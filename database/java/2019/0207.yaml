@@ -1,0 +1,16 @@
+---
+cve: 2019-0207
+title: CVE in org.apache.tapestry:tapestry-javadoc
+description: >
+    Tapestry processes assets `/assets/ctx` using classes chain `StaticFilesFilter -> AssetDispatcher -> ContextResource`, which doesn't filter the character `\`, so attacker can perform a path traversal attack to read any files on Windows platform.
+cvss_v2: 5.0
+references:
+    - https://lists.apache.org/thread.html/765be3606d865de513f6df9288842c3cf58b09a987c617a535f2b99d@%3Cusers.tapestry.apache.org%3E
+affected:
+    - groupId: org.apache.tapestry
+      artifactId: tapestry-javadoc
+      version:
+        - "<=5.4.4,5.4-beta-3"
+      fixedin:
+        - ">=5.4.5"
+        - "<=5.3.8,5.3.0"
