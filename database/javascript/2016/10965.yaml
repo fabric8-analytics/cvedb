@@ -1,0 +1,16 @@
+---
+cve: 2016-10965
+title: CVE in wordpress
+description: >
+    The real3d-flipbook-lite plugin 1.0 for WordPress has deleteBook=../ directory traversal for file deletion.
+cvss_v2: 6.4
+references:
+    - https://mukarramkhalid.com/wordpress-real-3d-flipbook-plugin-exploit/
+    - https://wordpress.org/plugins/real3d-flipbook-lite/#developers
+affected:
+    - name: wordpress
+      version:
+        - "<=1.0.0,1.0.0"
+      fixedin:
+        - ">=1.1.0"
+        - "<=0.1.3,0.0.1"
