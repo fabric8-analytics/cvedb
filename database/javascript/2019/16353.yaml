@@ -1,0 +1,15 @@
+---
+cve: 2019-16353
+title: CVE in machine
+description: >
+    Emerson GE Automation Proficy Machine Edition 8.0 allows an access violation and application crash via crafted traffic from a remote device, as demonstrated by an RX7i device.
+cvss_v2: 5.0
+references:
+    - https://github.com/boofish/GE_Proficy_Machine_Edition_Vuln/blob/master/README.md
+affected:
+    - name: machine
+      version:
+        - "<=8.0.0,8.0.0"
+      fixedin:
+        - ">=8.1.0"
+        - "<=7.1.0,0.0.0"
