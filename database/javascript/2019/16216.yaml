@@ -1,0 +1,16 @@
+---
+cve: 2019-16216
+title: CVE in mime
+description: >
+    Zulip server before 2.0.5 incompletely validated the MIME types of uploaded files. A user who is logged into the server could upload files of certain types to mount a stored cross-site scripting attack on other logged-in users. On a Zulip server using the default local uploads backend, the attack is only effective against browsers lacking support for Content-Security-Policy such as Internet Explorer 11. On a Zulip server using the S3 uploads backend, the attack is confined to the origin of the configured S3 uploads hostname and cannot reach the Zulip server itself.
+cvss_v2: 3.5
+references:
+    - https://blog.zulip.org/2019/09/11/zulip-server-2-0-5-security-release/
+    - https://github.com/zulip/zulip/commit/1195841dfb9aa26b3b0dabc6f05d72e4af25be3e
+affected:
+    - name: mime
+      version:
+        - "<=2.0.3,2.0.0"
+      fixedin:
+        - ">=2.0.5"
+        - "<=1.6.0,1.0.0"
