@@ -1,0 +1,19 @@
+---
+cve: 2019-7441
+title: CVE in com.paypal.sdk:paypal-core
+description: >
+    ** DISPUTED ** cgi-bin/webscr?cmd=_cart in the WooCommerce PayPal Checkout Payment Gateway plugin 1.6.8 for WordPress allows Parameter Tampering in an amount parameter (such as amount_1), as demonstrated by purchasing an item for lower than the intended price. NOTE: The plugin author states it is true that the amount can be manipulated in the PayPal payment flow. However, the amount is validated against the WooCommerce order total before completing the order, and if it doesn?t match then the order will be left in an ?On Hold? state.
+cvss_v2: 4.0
+references:
+    - http://packetstormsecurity.com/files/152362/WordPress-PayPal-Checkout-Payment-Gateway-1.6.8-Parameter-Tampering.html
+    - https://gkaim.com/cve-2019-7441-vikas-chaudhary/
+    - https://wordpress.org/support/topic/vulnerabilty-in-plugin/#post-11899173
+    - https://www.exploit-db.com/exploits/46632/
+affected:
+    - groupId: com.paypal.sdk
+      artifactId: paypal-core
+      version:
+        - "<=1.6.8,1.6.8"
+      fixedin:
+        - ">=1.7.0"
+        - "<=1.6.7,1.1"
