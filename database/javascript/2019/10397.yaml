@@ -1,0 +1,15 @@
+---
+cve: 2019-10397
+title: CVE in net-scanner
+description: >
+    Jenkins Aqua Security Serverless Scanner Plugin 1.0.4 and earlier transmitted configured passwords in plain text as part of job configuration forms, potentially resulting in their exposure.
+cvss_v2: 2.6
+references:
+    - http://www.openwall.com/lists/oss-security/2019/09/12/2
+    - https://jenkins.io/security/advisory/2019-09-12/#SECURTY-1509
+affected:
+    - name: net-scanner
+      version:
+        - "<=1.0.4"
+      fixedin:
+        []
