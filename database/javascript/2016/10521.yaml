@@ -1,0 +1,14 @@
+---
+cve: 2016-10521
+title: CVE in jshamcrest
+description: >
+    jshamcrest is vulnerable to regular expression denial of service (ReDoS) when certain types of user input is passed in to the emailAddress validator.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/53
+affected:
+    - name: jshamcrest
+      version:
+        - "<=0.7.1"
+      fixedin:
+        []
