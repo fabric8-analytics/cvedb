@@ -1,0 +1,14 @@
+---
+cve: 2016-10520
+title: CVE in jadedown
+description: >
+    jadedown is vulnerable to regular expression denial of service (ReDoS) when certain types of user input is passed in.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/52
+affected:
+    - name: jadedown
+      version:
+        - "<=0.0.3"
+      fixedin:
+        []
