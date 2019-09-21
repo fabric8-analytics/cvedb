@@ -1,0 +1,15 @@
+---
+cve: 2016-11003
+title: CVE in wordpress
+description: >
+    The Elegant Themes Bloom plugin before 1.1.1 for WordPress has privilege escalation.
+cvss_v2: 6.5
+references:
+    - http://www.pritect.net/blog/elegant-themes-security-vulnerability
+    - https://wptavern.com/critical-security-vulnerability-discovered-in-elegant-themes-products
+affected:
+    - name: wordpress
+      version:
+        - "<=1.1.0"
+      fixedin:
+        - ">=1.1.1"
