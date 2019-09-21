@@ -1,0 +1,40 @@
+---
+cve: 2016-4448
+title: CVE in local-web-server
+description: >
+    Format string vulnerability in libxml2 before 2.9.4 allows attackers to have unspecified impact via format string specifiers in unknown vectors.
+cvss_v2: 10.0
+references:
+    - http://lists.apple.com/archives/security-announce/2016/Jul/msg00000.html
+    - http://lists.apple.com/archives/security-announce/2016/Jul/msg00001.html
+    - http://lists.apple.com/archives/security-announce/2016/Jul/msg00002.html
+    - http://lists.apple.com/archives/security-announce/2016/Jul/msg00003.html
+    - http://lists.apple.com/archives/security-announce/2016/Jul/msg00005.html
+    - http://rhn.redhat.com/errata/RHSA-2016-2957.html
+    - http://www.openwall.com/lists/oss-security/2016/05/25/2
+    - http://www.oracle.com/technetwork/topics/security/bulletinjul2016-3090568.html
+    - http://www.oracle.com/technetwork/topics/security/linuxbulletinjul2016-3090544.html
+    - http://www.oracle.com/technetwork/topics/security/ovmbulletinjul2016-3090546.html
+    - http://www.securityfocus.com/bid/90856
+    - http://www.securitytracker.com/id/1036348
+    - http://www.slackware.com/security/viewer.php?l=slackware-security&y=2016&m=slackware-security.404722
+    - http://xmlsoft.org/news.html
+    - https://access.redhat.com/errata/RHSA-2016:1292
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1338700
+    - https://git.gnome.org/browse/libxml2/commit/?id=4472c3a5a5b516aaf59b89be602fbce52756c3e9
+    - https://git.gnome.org/browse/libxml2/commit/?id=502f6a6d08b08c04b3ddfb1cd21b2f699c1b7f5b
+    - https://h20566.www2.hpe.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c05194709
+    - https://kc.mcafee.com/corporate/index?page=content&id=SB10170
+    - https://support.apple.com/HT206899
+    - https://support.apple.com/HT206901
+    - https://support.apple.com/HT206902
+    - https://support.apple.com/HT206903
+    - https://support.apple.com/HT206904
+    - https://support.apple.com/HT206905
+    - https://www.tenable.com/security/tns-2016-18
+affected:
+    - name: local-web-server
+      version:
+        - "<=3.0.0-0"
+      fixedin:
+        - ">=3.0.0-1"
