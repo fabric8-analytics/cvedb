@@ -1,0 +1,16 @@
+---
+cve: 2019-1010024
+title: CVE in gnu-argv
+description: >
+    GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may bypass ASLR using cache of thread stack and heap. The component is: glibc.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/109162
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=22852
+    - https://support.f5.com/csp/article/K06046097
+affected:
+    - name: gnu-argv
+      version:
+        []
+      fixedin:
+        - ">=0.5.0"
