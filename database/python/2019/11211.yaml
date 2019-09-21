@@ -1,0 +1,15 @@
+---
+cve: 2019-11211
+title: CVE in edx-enterprise
+description: >
+    The server component of TIBCO Software Inc.'s TIBCO Enterprise Runtime for R - Server Edition, and TIBCO Spotfire Analytics Platform for AWS Marketplace contains a vulnerability that theoretically allows an authenticated user to trigger remote code execution in certain circumstances. When the affected component runs with the containerized TERR service on Linux the host can theoretically be tricked into running malicious code. This issue affects: TIBCO Enterprise Runtime for R - Server Edition version 1.2.0 and below, and TIBCO Spotfire Analytics Platform for AWS Marketplace 10.4.0; 10.5.0.
+cvss_v2: 9.0
+references:
+    - http://www.tibco.com/services/support/advisories
+    - https://www.tibco.com/support/advisories/2019/09/tibco-security-advisory-september-17-2019-tibco-enterprise-runtime-for-r-server-2019-11211
+affected:
+    - name: edx-enterprise
+      version:
+        - "<=1.2.0"
+      fixedin:
+        - ">=1.2.1"
