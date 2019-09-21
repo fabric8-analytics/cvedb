@@ -1,0 +1,19 @@
+---
+cve: 2005-0249
+title: CVE in org.kevoree.library:org.kevoree.library.web
+description: >
+    Heap-based buffer overflow in the DEC2EXE module for Symantec AntiVirus Library allows remote attackers to execute arbitrary code via a UPX compressed file containing a negative virtual offset to a crafted PE header.
+cvss_v2: 7.5
+references:
+    - http://securitytracker.com/id?1013133
+    - http://www.kb.cert.org/vuls/id/107822
+    - http://www.symantec.com/avcenter/security/Content/2005.02.08.html
+    - http://xforce.iss.net/xforce/alerts/id/187
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/18869
+affected:
+    - groupId: org.kevoree.library
+      artifactId: org.kevoree.library.web
+      version:
+        - "<=5.5.0"
+      fixedin:
+        - ">=5.5.2"
