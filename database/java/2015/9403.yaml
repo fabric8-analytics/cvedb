@@ -1,0 +1,17 @@
+---
+cve: 2015-9403
+title: CVE in org.tiogasolutions.jobs:tioga-jobs-pub
+description: >
+    The neuvoo-jobroll plugin 2.0 for WordPress has neuvoo_location XSS.
+cvss_v2: 4.3
+references:
+    - https://packetstormsecurity.com/files/134240/
+    - https://wordpress.org/plugins/neuvoo-jobroll/#developers
+affected:
+    - groupId: org.tiogasolutions.jobs
+      artifactId: tioga-jobs-pub
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - ">=2.0.1"
+        - "<=1.0.3,1.0.0"
