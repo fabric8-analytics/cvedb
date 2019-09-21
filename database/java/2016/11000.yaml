@@ -1,0 +1,16 @@
+---
+cve: 2016-11000
+title: CVE in org.mybatis.dynamic-sql:mybatis-dynamic-sql
+description: >
+    The wp-ultimate-exporter plugin through 1.1 for WordPress has SQL injection via the export_type_name parameter.
+cvss_v2: 7.5
+references:
+    - https://seclists.org/bugtraq/2016/Feb/183
+    - https://wordpress.org/plugins/wp-ultimate-exporter/#developers
+affected:
+    - groupId: org.mybatis.dynamic-sql
+      artifactId: mybatis-dynamic-sql
+      version:
+        - "<=1.1.0"
+      fixedin:
+        - ">=1.1.1"
