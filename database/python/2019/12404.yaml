@@ -1,0 +1,14 @@
+---
+cve: 2019-12404
+title: CVE in apache-beam
+description: >
+    On Apache JSPWiki, up to version 2.11.0.M4, a carefully crafted plugin link invocation could trigger an XSS vulnerability on Apache JSPWiki, related to InfoContent.jsp, which could allow the attacker to execute javascript in the victim's browser and get some sensitive information about the victim.
+cvss_v2: 4.3
+references:
+    - https://jspwiki-wiki.apache.org/Wiki.jsp?page=CVE-2019-12404
+affected:
+    - name: apache-beam
+      version:
+        - "<=2.11.0"
+      fixedin:
+        - ">=2.12.0"
