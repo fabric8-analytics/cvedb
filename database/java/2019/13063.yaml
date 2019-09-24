@@ -1,0 +1,16 @@
+---
+cve: 2019-13063
+title: CVE in de.pro-vision.maven:de.pro-vision.maven.build-tools.global-build-tools
+description: >
+    Within Sahi Pro 8.0.0, an attacker can send a specially crafted URL to include any victim files on the system via the script parameter on the Script_view page. This will result in file disclosure (i.e., being able to pull any file from the remote victim application). This can be used to steal and obtain sensitive config and other files. This can result in complete compromise of the application. The script parameter is vulnerable to directory traversal and both local and remote file inclusion.
+cvss_v2: 5.0
+references:
+    - https://sahipro.com/downloads-archive/
+    - https://www.exploit-db.com/exploits/47062
+affected:
+    - groupId: de.pro-vision.maven
+      artifactId: de.pro-vision.maven.build-tools.global-build-tools
+      version:
+        - "<=8"
+      fixedin:
+        - ">=9"
