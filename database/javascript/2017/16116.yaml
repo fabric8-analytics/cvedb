@@ -10,4 +10,7 @@ references:
 affected:
     - name: string
       version:
-        - "<=3.3.3"
+        - "<=0.2.1"
+        - "<=3.3.3,0.2.2"
+      fixedin:
+        - "<=0.2.1-2,0.2.1-1"
