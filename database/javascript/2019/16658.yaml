@@ -1,0 +1,15 @@
+---
+cve: 2019-16658
+title: CVE in csrf
+description: >
+    TuziCMS 2.0.6 has index.php/manage/notice/do_add CSRF.
+cvss_v2: 6.8
+references:
+    - https://github.com/yeyinshi/tuzicms/issues/4
+affected:
+    - name: csrf
+      version:
+        - "<=2.0.6,2.0.6"
+      fixedin:
+        - ">=2.0.7"
+        - "<=2.0.5,0.0.1"
