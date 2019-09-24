@@ -1,0 +1,17 @@
+---
+cve: 2019-5521
+title: CVE in vmware-nsx
+description: >
+    VMware ESXi (6.7 before ESXi670-201904101-SG and 6.5 before ESXi650-201903001), Workstation (15.x before 15.0.3 and 14.x before 14.1.6) and Fusion (11.x before 11.0.3 and 10.x before 10.1.6) contain an out-of-bounds read vulnerability in the pixel shader functionality. Successful exploitation of this issue may lead to information disclosure or may allow attackers with normal user privileges to create a denial-of-service condition on the host. Exploitation of this issue require an attacker to have access to a virtual machine with 3D graphics enabled. It is not enabled by default on ESXi and is enabled by default on Workstation and Fusion.
+cvss_v2: 5.5
+references:
+    - https://www.talosintelligence.com/vulnerability_reports/TALOS-2019-0757
+    - https://www.vmware.com/security/advisories/VMSA-2019-0012.html
+affected:
+    - name: vmware-nsx
+      version:
+        - "<=11.0.2,10.0.0"
+        - "<=14.0.0,14.0.0"
+      fixedin:
+        - "<=13.0.0,12.0.0"
+        - "<=9.2.0,0.1.0"
