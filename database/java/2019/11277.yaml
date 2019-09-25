@@ -1,0 +1,15 @@
+---
+cve: 2019-11277
+title: CVE in com.sap.cloud.yaas.service-generator:service-generator-raml
+description: >
+    Cloud Foundry NFS Volume Service, 1.7.x versions prior to 1.7.11 and 2.x versions prior to 2.3.0, is vulnerable to LDAP injection. A remote authenticated malicious space developer can potentially inject LDAP filters via service instance creation, facilitating the malicious space developer to deny service or perform a dictionary attack.
+cvss_v2: 5.5
+references:
+    - https://www.cloudfoundry.org/blog/cve-2019-11277
+affected:
+    - groupId: com.sap.cloud.yaas.service-generator
+      artifactId: service-generator-raml
+      version:
+        - "<=2.3.14"
+      fixedin:
+        []
