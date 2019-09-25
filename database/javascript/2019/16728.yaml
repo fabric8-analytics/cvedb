@@ -1,0 +1,14 @@
+---
+cve: 2019-16728
+title: CVE in dompurify
+description: >
+    DOMPurify before 2.0.1 allows XSS because of innerHTML mutation XSS (mXSS) for an SVG element or a MATH element, as demonstrated by Chrome and Safari.
+cvss_v2: 4.3
+references:
+    - https://research.securitum.com/dompurify-bypass-using-mxss/
+affected:
+    - name: dompurify
+      version:
+        - "<=2.0.0"
+      fixedin:
+        - ">=2.0.1"
