@@ -1,0 +1,19 @@
+---
+cve: 2019-10754
+title: CVE in org.apereo.cas:cas-server-support-soap-authentication
+description: >
+    Multiple classes used within Apereo CAS before release 6.1.0-RC5 makes use of apache commons-lang3 RandomStringUtils for token and ID generation which makes them predictable due to RandomStringUtils PRNG's algorithm not being cryptographically strong.
+cvss_v2: 5.5
+references:
+    - https://snyk.io/vuln/SNYK-JAVA-ORGAPEREOCAS-467402
+    - https://snyk.io/vuln/SNYK-JAVA-ORGAPEREOCAS-467404
+    - https://snyk.io/vuln/SNYK-JAVA-ORGAPEREOCAS-467406
+    - https://snyk.io/vuln/SNYK-JAVA-ORGAPEREOCAS-468868
+    - https://snyk.io/vuln/SNYK-JAVA-ORGAPEREOCAS-468869
+affected:
+    - groupId: org.apereo.cas
+      artifactId: cas-server-support-soap-authentication
+      version:
+        - "<=6.1.0-RC5"
+      fixedin:
+        []
