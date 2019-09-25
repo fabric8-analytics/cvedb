@@ -1,0 +1,18 @@
+---
+cve: 2019-14540
+title: CVE in com.fasterxml.jackson.core:jackson-databind
+description: >
+    A Polymorphic Typing issue was discovered in FasterXML jackson-databind before 2.9.10. It is related to com.zaxxer.hikari.HikariConfig.
+cvss_v2: 7.5
+references:
+    - https://github.com/FasterXML/jackson-databind/blob/master/release-notes/VERSION-2.x
+    - https://github.com/FasterXML/jackson-databind/issues/2410
+    - https://github.com/FasterXML/jackson-databind/issues/2449
+    - https://lists.apache.org/thread.html/0fcef7321095ce0bc597d468d150cff3d647f4cb3aef3bd4d20e1c69@%3Ccommits.tinkerpop.apache.org%3E
+affected:
+    - groupId: com.fasterxml.jackson.core
+      artifactId: jackson-databind
+      version:
+        - "<=2.9.9.3"
+      fixedin:
+        - ">=2.9.10"
