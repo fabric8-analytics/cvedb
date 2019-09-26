@@ -1,0 +1,16 @@
+---
+cve: 2019-5505
+title: CVE in com.vaynberg.wicket.select2:wicket-select2-examples
+description: >
+    ONTAP Select Deploy administration utility versions 2.2 through 2.12.1 transmit credentials in plaintext.
+cvss_v2: 5.0
+references:
+    - https://security.netapp.com/advisory/ntap-20190923-0002/
+affected:
+    - groupId: com.vaynberg.wicket.select2
+      artifactId: wicket-select2-examples
+      version:
+        - "<=2.4,2.2"
+      fixedin:
+        - ">=3.0"
+        - "<=2.1,0.5"
