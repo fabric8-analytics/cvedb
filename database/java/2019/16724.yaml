@@ -1,0 +1,16 @@
+---
+cve: 2019-16724
+title: CVE in org.awake-file:awake-file
+description: >
+    File Sharing Wizard 1.5.0 allows a remote attacker to obtain arbitrary code execution by exploiting a Structured Exception Handler (SEH) based buffer overflow in an HTTP POST parameter, a similar issue to CVE-2010-2330 and CVE-2010-2331.
+cvss_v2: 7.5
+references:
+    - http://packetstormsecurity.com/files/154586/File-Sharing-Wizard-1.5.0-SEH-Buffer-Overflow.html
+affected:
+    - groupId: org.awake-file
+      artifactId: awake-file
+      version:
+        - "<=1.5,1.5"
+      fixedin:
+        - ">=2.0.1"
+        - "<=1.4,1.0"
