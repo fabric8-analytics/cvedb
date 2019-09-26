@@ -1,0 +1,14 @@
+---
+cve: 2019-14826
+title: CVE in freeipa
+description: >
+    A flaw was found in FreeIPA versions 4.5.0 and later. Session cookies were retained in the cache after logout. An attacker could abuse this flaw if they obtain previously valid session cookies and can use this to gain access to the session.
+cvss_v2: 2.1
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-14826
+affected:
+    - name: freeipa
+      version:
+        - "<=4.8.1,4.5.0"
+      fixedin:
+        - "<=4.4.0.dev1,4.4.0.dev1"
