@@ -1,0 +1,16 @@
+---
+cve: 2019-10407
+title: CVE in com.homeaway.devtools.jenkins:jenkins-spock
+description: >
+    Jenkins Project Inheritance Plugin 2.0.0 and earlier displayed a list of environment variables passed to a build without masking sensitive variables contributed by the Mask Passwords Plugin.
+cvss_v2: 4.0
+references:
+    - http://www.openwall.com/lists/oss-security/2019/09/25/3
+    - https://jenkins.io/security/advisory/2019-09-25/#SECURITY-351
+affected:
+    - groupId: com.homeaway.devtools.jenkins
+      artifactId: jenkins-spock
+      version:
+        - "<=2.0.0"
+      fixedin:
+        - ">=2.0.1"
