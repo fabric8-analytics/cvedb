@@ -1,0 +1,15 @@
+---
+cve: 2019-10427
+title: CVE in hyper-aqua
+description: >
+    Jenkins Aqua MicroScanner Plugin 1.0.7 and earlier transmitted configured credentials in plain text as part of the global Jenkins configuration form, potentially resulting in their exposure.
+cvss_v2: 5.0
+references:
+    - http://www.openwall.com/lists/oss-security/2019/09/25/3
+    - https://jenkins.io/security/advisory/2019-09-25/#SECURITY-1507
+affected:
+    - name: hyper-aqua
+      version:
+        - "<=1.0.7"
+      fixedin:
+        - ">=1.0.8"
