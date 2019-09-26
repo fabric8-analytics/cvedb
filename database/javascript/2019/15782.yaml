@@ -7,6 +7,7 @@ cvss_v2: 4.3
 references:
     - https://github.com/webtorrent/webtorrent/compare/v0.107.5...v0.107.6
     - https://github.com/webtorrent/webtorrent/pull/1714
+    - https://hackerone.com/reports/681617
 affected:
     - name: webtorrent
       version:
