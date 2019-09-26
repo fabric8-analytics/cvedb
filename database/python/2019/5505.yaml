@@ -1,0 +1,14 @@
+---
+cve: 2019-5505
+title: CVE in apt-select
+description: >
+    ONTAP Select Deploy administration utility versions 2.2 through 2.12.1 transmit credentials in plaintext.
+cvss_v2: 5.0
+references:
+    - https://security.netapp.com/advisory/ntap-20190923-0002/
+affected:
+    - name: apt-select
+      version:
+        - "<=2.2.0,2.2.0"
+      fixedin:
+        - "<=2.1.0,1.0.0"
