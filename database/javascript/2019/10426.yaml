@@ -1,0 +1,15 @@
+---
+cve: 2019-10426
+title: CVE in gem-furigana
+description: >
+    Jenkins Gem Publisher Plugin stores credentials unencrypted in its global configuration file on the Jenkins master where they can be viewed by users with access to the master file system.
+cvss_v2: 2.1
+references:
+    - http://www.openwall.com/lists/oss-security/2019/09/25/3
+    - https://jenkins.io/security/advisory/2019-09-25/#SECURITY-1573
+affected:
+    - name: gem-furigana
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
