@@ -1,0 +1,14 @@
+---
+cve: 2019-16226
+title: CVE in lmdb
+description: >
+    An issue was discovered in py-lmdb 0.97. mdb_node_del does not validate a memmove in the case of an unexpected node->mn_hi, leading to an invalid write operation.
+cvss_v2: 5.0
+references:
+    - https://github.com/TeamSeri0us/pocs/tree/master/lmdb/lmdb%20memory%20corruption%20vuln
+affected:
+    - name: lmdb
+      version:
+        - "==0.97"
+      fixedin:
+        - "<=0.96,0.58"
