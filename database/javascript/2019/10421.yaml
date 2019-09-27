@@ -1,0 +1,15 @@
+---
+cve: 2019-10421
+title: CVE in azure-event-processor-host
+description: >
+    Jenkins Azure Event Grid Build Notifier Plugin stores credentials unencrypted in job config.xml files on the Jenkins master where they can be viewed by users with Extended Read permission, or access to the master file system.
+cvss_v2: 4.0
+references:
+    - http://www.openwall.com/lists/oss-security/2019/09/25/3
+    - https://jenkins.io/security/advisory/2019-09-25/#SECURITY-1544
+affected:
+    - name: azure-event-processor-host
+      version:
+        - "<=0.1.0"
+      fixedin:
+        - ">=0.1.1"
