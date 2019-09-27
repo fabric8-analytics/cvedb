@@ -1,0 +1,14 @@
+---
+cve: 2019-16882
+title: CVE in setuptools-rust
+description: >
+    An issue was discovered in the string-interner crate before 0.7.1 for Rust. It allows attackers to read from memory locations associated with dangling pointers, because of a cloning flaw.
+cvss_v2: 5.0
+references:
+    - https://rustsec.org/advisories/RUSTSEC-2019-0023.html
+affected:
+    - name: setuptools-rust
+      version:
+        - "<=0.7.0"
+      fixedin:
+        - ">=0.7.1"
