@@ -1,0 +1,15 @@
+---
+cve: 2015-9419
+title: CVE in xss
+description: >
+    The captain-slider plugin 1.0.6 for WordPress has XSS via a Title or Caption section.
+cvss_v2: 4.3
+references:
+    - https://packetstormsecurity.com/files/133362/
+    - https://wordpress.org/plugins/captain-slider/#developers
+affected:
+    - name: xss
+      version:
+        - "<=1.0.6,1.0.6"
+      fixedin:
+        - "<=1.0.5,0.0.1"
