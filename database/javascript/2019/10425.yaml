@@ -1,0 +1,15 @@
+---
+cve: 2019-10425
+title: CVE in pimatic-google-calendar
+description: >
+    Jenkins Google Calendar Plugin stores credentials unencrypted in job config.xml files on the Jenkins master where they can be viewed by users with Extended Read permission, or access to the master file system.
+cvss_v2: 4.0
+references:
+    - http://www.openwall.com/lists/oss-security/2019/09/25/3
+    - https://jenkins.io/security/advisory/2019-09-25/#SECURITY-1572
+affected:
+    - name: pimatic-google-calendar
+      version:
+        - "<=0.4.0"
+      fixedin:
+        - ">=0.4.1"
