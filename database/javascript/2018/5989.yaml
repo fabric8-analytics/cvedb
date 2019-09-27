@@ -1,0 +1,14 @@
+---
+cve: 2018-5989
+title: CVE in newsletter
+description: >
+    SQL Injection exists in the ccNewsletter 2.x component for Joomla! via the id parameter in a task=removeSubscriber action, a related issue to CVE-2011-5099.
+cvss_v2: 7.5
+references:
+    - https://exploit-db.com/exploits/44132
+affected:
+    - name: newsletter
+      version:
+        - "<=2.2.0,2.0.0"
+      fixedin:
+        - "<=1.0.0,0.1.0"
