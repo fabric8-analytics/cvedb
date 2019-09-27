@@ -1,0 +1,14 @@
+---
+cve: 2019-16228
+title: CVE in lmdb
+description: >
+    An issue was discovered in py-lmdb 0.97. There is a divide-by-zero error in the function mdb_env_open2 if mdb_env_read_header obtains a zero value for a certain size field.
+cvss_v2: 5.0
+references:
+    - https://github.com/TeamSeri0us/pocs/tree/master/lmdb/FPE
+affected:
+    - name: lmdb
+      version:
+        - "==0.97"
+      fixedin:
+        - "<=0.96,0.58"
