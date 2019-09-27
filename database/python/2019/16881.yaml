@@ -1,0 +1,14 @@
+---
+cve: 2019-16881
+title: CVE in setuptools-rust
+description: >
+    An issue was discovered in the portaudio-rs crate through 0.3.1 for Rust. There is a use-after-free with resultant arbitrary code execution because of a lack of unwind safety in stream_callback and stream_finished_callback.
+cvss_v2: 7.5
+references:
+    - https://rustsec.org/advisories/RUSTSEC-2019-0022.html
+affected:
+    - name: setuptools-rust
+      version:
+        - "<=0.3.1"
+      fixedin:
+        - ">=0.4"
