@@ -1,0 +1,16 @@
+---
+cve: 2019-4571
+title: CVE in content
+description: >
+    IBM Content Navigator 3.0CD is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 166721.
+cvss_v2: 3.5
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/166721
+    - https://www.ibm.com/support/pages/node/1073576
+affected:
+    - name: content
+      version:
+        - "<=3.0.0,3.0.0"
+      fixedin:
+        - ">=3.0.1"
+        - "<=2.0.0,1.0.0"
