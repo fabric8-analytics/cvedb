@@ -1,0 +1,15 @@
+---
+cve: 2018-5989
+title: CVE in org.awake-sql:awake-sql
+description: >
+    SQL Injection exists in the ccNewsletter 2.x component for Joomla! via the id parameter in a task=removeSubscriber action, a related issue to CVE-2011-5099.
+cvss_v2: 7.5
+references:
+    - https://exploit-db.com/exploits/44132
+affected:
+    - groupId: org.awake-sql
+      artifactId: awake-sql
+      version:
+        - "<=2.0.2,2.0"
+      fixedin:
+        - "<=1.3.3,1.0.3"
