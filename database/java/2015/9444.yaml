@@ -1,0 +1,17 @@
+---
+cve: 2015-9444
+title: CVE in cd.connect.plugins:connect-prescan-plugin
+description: >
+    The altos-connect plugin 1.3.0 for WordPress has XSS via the wp-content/plugins/altos-connect/jquery-validate/demo/demo/captcha/index.php/ PATH_SELF.
+cvss_v2: 4.3
+references:
+    - http://packetstormsecurity.com/files/132908/
+    - https://wordpress.org/plugins/altos-connect/#developers
+affected:
+    - groupId: cd.connect.plugins
+      artifactId: connect-prescan-plugin
+      version:
+        - "<=1.3,1.3"
+      fixedin:
+        - ">=1.4"
+        - "<=1.2,1.1"
