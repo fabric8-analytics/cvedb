@@ -1,0 +1,41 @@
+---
+cve: 2009-1690
+title: CVE in dom
+description: >
+    Use-after-free vulnerability in WebKit, as used in Apple Safari before 4.0, iPhone OS 1.0 through 2.2.1, iPhone OS for iPod touch 1.1 through 2.2.1, Google Chrome 1.0.154.53, and possibly other products, allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption and application crash) by setting an unspecified property of an HTML tag that causes child elements to be freed and later accessed when an HTML error occurs, related to "recursion in certain DOM event handlers."
+cvss_v2: 9.3
+references:
+    - http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=803
+    - http://lists.apple.com/archives/security-announce/2009/jun/msg00002.html
+    - http://lists.apple.com/archives/security-announce/2009/Jun/msg00005.html
+    - http://lists.opensuse.org/opensuse-security-announce/2011-01/msg00006.html
+    - http://osvdb.org/54990
+    - http://secunia.com/advisories/35379
+    - http://secunia.com/advisories/36057
+    - http://secunia.com/advisories/36062
+    - http://secunia.com/advisories/36790
+    - http://secunia.com/advisories/37746
+    - http://secunia.com/advisories/43068
+    - http://securitytracker.com/id?1022345
+    - http://support.apple.com/kb/HT3613
+    - http://support.apple.com/kb/HT3639
+    - http://www.debian.org/security/2009/dsa-1950
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2009:330
+    - http://www.securityfocus.com/bid/35260
+    - http://www.ubuntu.com/usn/USN-822-1
+    - http://www.ubuntu.com/usn/USN-836-1
+    - http://www.ubuntu.com/usn/USN-857-1
+    - http://www.vupen.com/english/advisories/2009/1522
+    - http://www.vupen.com/english/advisories/2009/1621
+    - http://www.vupen.com/english/advisories/2011/0212
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A11009
+    - https://www.redhat.com/archives/fedora-package-announce/2009-July/msg01177.html
+    - https://www.redhat.com/archives/fedora-package-announce/2009-July/msg01196.html
+    - https://www.redhat.com/archives/fedora-package-announce/2009-July/msg01199.html
+    - https://www.redhat.com/archives/fedora-package-announce/2009-July/msg01200.html
+affected:
+    - name: dom
+      version:
+        - "<=0.9"
+      fixedin:
+        []
