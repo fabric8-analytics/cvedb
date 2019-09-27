@@ -1,0 +1,15 @@
+---
+cve: 2019-11495
+title: CVE in alerta-server
+description: >
+    In Couchbase Server 5.1.1, the cookie used for intra-node communication was not generated securely. Couchbase Server uses erlang:now() to seed the PRNG which results in a small search space for potential random seeds that could then be used to brute force the cookie and execute code against a remote system. This has been fixed in version 6.0.0.
+cvss_v2: 7.5
+references:
+    - https://www.couchbase.com/resources/security#SecurityAlerts
+affected:
+    - name: alerta-server
+      version:
+        - "<=5.1.1,5.1.1"
+      fixedin:
+        - ">=5.2.0"
+        - "<=5.1.0,3.1.2"
