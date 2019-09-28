@@ -1,0 +1,15 @@
+---
+cve: 2019-10411
+title: CVE in jenkins-mocha
+description: >
+    Jenkins Inedo BuildMaster Plugin 2.4.0 and earlier transmitted configured credentials in plain text as part of the global Jenkins configuration form, potentially resulting in their exposure.
+cvss_v2: 5.0
+references:
+    - http://www.openwall.com/lists/oss-security/2019/09/25/3
+    - https://jenkins.io/security/advisory/2019-09-25/#SECURITY-1513
+affected:
+    - name: jenkins-mocha
+      version:
+        - "<=2.4.0"
+      fixedin:
+        - ">=2.5.0"
