@@ -1,0 +1,15 @@
+---
+cve: 2017-5942
+title: CVE in winston-mail
+description: >
+    An issue was discovered in the WP Mail plugin before 1.2 for WordPress. The replyto parameter when composing a mail allows for a reflected XSS. This would allow you to execute JavaScript in the context of the user receiving the mail.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/96211
+    - https://cjc.im/advisories/0006/
+affected:
+    - name: winston-mail
+      version:
+        - "<=1.1.0"
+      fixedin:
+        - ">=1.2.0"
