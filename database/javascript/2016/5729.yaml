@@ -1,0 +1,15 @@
+---
+cve: 2016-5729
+title: CVE in order-management-system
+description: >
+    Lenovo BIOS EFI Driver allows local administrators to execute arbitrary code with System Management Mode (SMM) privileges via unspecified vectors.
+cvss_v2: 6.8
+references:
+    - http://www.securityfocus.com/bid/91536
+    - https://support.lenovo.com/us/en/product_security/len_4901
+affected:
+    - name: order-management-system
+      version:
+        []
+      fixedin:
+        - ">=0.0.1-security"
