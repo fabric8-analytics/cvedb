@@ -1,0 +1,16 @@
+---
+cve: 2016-5729
+title: CVE in com.nummulus.amqp.driver:amqp-driver-blackbox_2.10
+description: >
+    Lenovo BIOS EFI Driver allows local administrators to execute arbitrary code with System Management Mode (SMM) privileges via unspecified vectors.
+cvss_v2: 6.8
+references:
+    - http://www.securityfocus.com/bid/91536
+    - https://support.lenovo.com/us/en/product_security/len_4901
+affected:
+    - groupId: com.nummulus.amqp.driver
+      artifactId: amqp-driver-blackbox_2.10
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
