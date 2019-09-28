@@ -1,0 +1,17 @@
+---
+cve: 2019-10412
+title: CVE in cgcloud-jenkins
+description: >
+    Jenkins Inedo ProGet Plugin 1.2 and earlier transmitted configured credentials in plain text as part of the global Jenkins configuration form, potentially resulting in their exposure.
+cvss_v2: 5.0
+references:
+    - http://www.openwall.com/lists/oss-security/2019/09/25/3
+    - https://jenkins.io/security/advisory/2019-09-25/#SECURITY-1514
+affected:
+    - name: cgcloud-jenkins
+      version:
+        - "<=1.1a1.dev149"
+        - "<=1.2,1.2"
+      fixedin:
+        - ">=1.2.1a1.dev161"
+        - "<=1.2a1.dev159,1.2a1.dev159"
