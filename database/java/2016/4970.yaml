@@ -1,0 +1,24 @@
+---
+cve: 2016-4970
+title: CVE in io.netty:netty-build
+description: >
+    handler/ssl/OpenSslEngine.java in Netty 4.0.x before 4.0.37.Final and 4.1.x before 4.1.1.Final allows remote attackers to cause a denial of service (infinite loop).
+<a href="http://cwe.mitre.org/data/definitions/835.html">CWE-835: Loop with Unreachable Exit Condition ('Infinite Loop')</a>
+cvss_v2: 7.8
+references:
+    - http://netty.io/news/2016/06/07/4-0-37-Final.html
+    - http://netty.io/news/2016/06/07/4-1-1-Final.html
+    - http://rhn.redhat.com/errata/RHSA-2017-0179.html
+    - http://rhn.redhat.com/errata/RHSA-2017-1097.html
+    - http://www.securityfocus.com/bid/96540
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1343616
+    - https://github.com/netty/netty/pull/5364
+    - https://wiki.opendaylight.org/view/Security_Advisories
+affected:
+    - groupId: io.netty
+      artifactId: netty-build
+      version:
+        - "<=4,4"
+      fixedin:
+        - ">=5"
+        - "<=3,1"
