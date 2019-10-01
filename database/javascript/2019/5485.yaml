@@ -1,0 +1,15 @@
+---
+cve: 2019-5485
+title: CVE in gitlabhook
+description: >
+    NPM package gitlabhook version 0.0.17 is vulnerable to a Command Injection vulnerability. Arbitrary commands can be injected through the repository name.
+cvss_v2: 10.0
+references:
+    - http://packetstormsecurity.com/files/154598/NPMJS-gitlabhook-0.0.17-Remote-Command-Execution.html
+    - https://hackerone.com/reports/685447
+affected:
+    - name: gitlabhook
+      version:
+        - "==0.0.17"
+      fixedin:
+        - "<=0.0.16,0.0.11"
