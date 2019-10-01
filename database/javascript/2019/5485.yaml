@@ -10,6 +10,6 @@ references:
 affected:
     - name: gitlabhook
       version:
-        - "<=0.0.17,0.0.17"
+        - "==0.0.17"
       fixedin:
         - "<=0.0.16,0.0.11"
