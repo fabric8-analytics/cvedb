@@ -1,0 +1,15 @@
+---
+cve: 2018-17789
+title: CVE in online-explorer
+description: >
+    Prospecta Master Data Online (MDO) allows CSRF.
+cvss_v2: 4.3
+references:
+    - http://packetstormsecurity.com/files/154498/Master-Data-Online-Cross-Site-Request-Forgery-Data-Tampering.html
+    - https://packetstormsecurity.com/files/cve/CVE-2018-17789
+affected:
+    - name: online-explorer
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
