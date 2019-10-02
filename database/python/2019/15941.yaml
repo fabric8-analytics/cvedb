@@ -1,0 +1,18 @@
+---
+cve: 2019-15941
+title: CVE in cert-issuer
+description: >
+    OpenID Connect Issuer in LemonLDAP::NG 2.x through 2.0.5 may allow an attacker to bypass access control rules via a crafted OpenID Connect authorization request. To be vulnerable, there must exist an OIDC Relaying party within the LemonLDAP configuration with weaker access control rules than the target RP, and no filtering on redirection URIs.
+cvss_v2: 7.5
+references:
+    - https://gitlab.ow2.org/lemonldap-ng/lemonldap-ng/issues/1881
+    - https://projects.ow2.org/view/lemonldap-ng/lemonldap-ng-2-0-6-is-out/
+    - https://seclists.org/bugtraq/2019/Sep/46
+    - https://www.debian.org/security/2019/dsa-4533
+affected:
+    - name: cert-issuer
+      version:
+        - "<=2.0.5,2.0b3"
+      fixedin:
+        - ">=2.0.6"
+        - "<=0.0.19,0.0.3"
