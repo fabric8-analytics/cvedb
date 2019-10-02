@@ -1,0 +1,14 @@
+---
+cve: 2019-16925
+title: CVE in flower-oauth-azure
+description: >
+    Flower 1.0.0 has XSS via the name parameter in an @app.task call.
+cvss_v2: 4.3
+references:
+    - https://fatihhcelik.blogspot.com/2019/09/flower-100-has-xss-via-name-parameter.html
+affected:
+    - name: flower-oauth-azure
+      version:
+        - "<=1.0"
+      fixedin:
+        []
