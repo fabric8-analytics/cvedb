@@ -1,0 +1,14 @@
+---
+cve: 2015-9239
+title: CVE in ansi2html
+description: >
+    ansi2html is vulnerable to regular expression denial of service (ReDoS) when certain types of user input is passed in.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/51
+affected:
+    - name: ansi2html
+      version:
+        - "<=0.0.1"
+      fixedin:
+        []
