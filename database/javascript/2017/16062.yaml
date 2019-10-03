@@ -1,0 +1,16 @@
+---
+cve: 2017-16062
+title: CVE in node-tkinter
+description: >
+    node-tkinter was a malicious module published with the intent to hijack environment variables. It has been unpublished by npm.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/501
+affected:
+    - name: node-tkinter
+      version:
+        - "==1.0.1"
+        - "==1.0.2"
+      fixedin:
+        - "==0.0.1-security"
+        - "==0.0.2-security"

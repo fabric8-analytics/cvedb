@@ -7,6 +7,7 @@ cvss_v2: 4.0
 references:
     - https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
     - https://hackerone.com/reports/310443
+    - https://security.netapp.com/advisory/ntap-20190919-0004/
     - https://nvd.nist.gov/vuln/detail/CVE-2018-3721
 affected:
     - name: lodash

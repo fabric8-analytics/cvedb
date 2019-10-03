@@ -1,0 +1,14 @@
+---
+cve: 2019-16225
+title: CVE in lmdb
+description: >
+    An issue was discovered in py-lmdb 0.97. For certain values of mp_flags, mdb_page_touch does not properly set up mc->mc_pg[mc->top], leading to an invalid write operation.
+cvss_v2: 7.5
+references:
+    - https://github.com/TeamSeri0us/pocs/tree/master/lmdb/lmdb%20write%20to%20illegal%20address
+affected:
+    - name: lmdb
+      version:
+        - "==0.97"
+      fixedin:
+        - "<=0.96,0.58"
