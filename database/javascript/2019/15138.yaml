@@ -1,0 +1,14 @@
+---
+cve: 2019-15138
+title: CVE in html-pdf
+description: >
+    The html-pdf package 2.2.0 for Node.js has an arbitrary file read vulnerability via an HTML file that uses XMLHttpRequest to access a file:/// URL.
+cvss_v2: 5.0
+references:
+    - https://www.npmjs.com/advisories/1095
+affected:
+    - name: html-pdf
+      version:
+        - ">=0.0.1"
+      fixedin:
+        []
