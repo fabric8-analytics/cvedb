@@ -1,0 +1,15 @@
+---
+cve: 2017-14635
+title: CVE in request-system
+description: >
+    In Open Ticket Request System (OTRS) 3.3.x before 3.3.18, 4.x before 4.0.25, and 5.x before 5.0.23, remote authenticated users can leverage statistics-write permissions to gain privileges via code injection.
+cvss_v2: 6.5
+references:
+    - https://www.debian.org/security/2017/dsa-4021
+    - https://www.otrs.com/security-advisory-2017-04-security-update-otrs-versions/
+affected:
+    - name: request-system
+      version:
+        - "<=5.0.1"
+      fixedin:
+        []
