@@ -1,0 +1,15 @@
+---
+cve: 2017-11438
+title: CVE in gitlab
+description: >
+    GitLab Community Edition (CE) and Enterprise Edition (EE) before 9.0.11, 9.1.8, 9.2.8 allow an authenticated user with the ability to create a group to add themselves to any project that is inside a subgroup.
+cvss_v2: 6.5
+references:
+    - https://about.gitlab.com/2017/07/19/gitlab-9-dot-3-dot-8-released/
+affected:
+    - name: gitlab
+      version:
+        - "<=9.1.0,9.0.0"
+      fixedin:
+        - ">=10.0.0"
+        - "<=8.0.0,0.0.1"
