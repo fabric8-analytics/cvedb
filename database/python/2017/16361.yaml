@@ -1,0 +1,16 @@
+---
+cve: 2017-16361
+title: CVE in brat-reader
+description: >
+    An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability is an instance of a security bypass vulnerability when handling XFDF files.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/101830
+    - http://www.securitytracker.com/id/1039791
+    - https://helpx.adobe.com/security/products/acrobat/apsb17-36.html
+affected:
+    - name: brat-reader
+      version:
+        - "<=0.0.0"
+      fixedin:
+        []
