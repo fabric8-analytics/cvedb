@@ -1,0 +1,17 @@
+---
+cve: 2017-5944
+title: CVE in then-request
+description: >
+    The dashboard subscription interface in Request Tracker (RT) 4.x before 4.0.25, 4.2.x before 4.2.14, and 4.4.x before 4.4.2 might allow remote authenticated users with certain privileges to execute arbitrary code via a crafted saved search name.
+cvss_v2: 6.5
+references:
+    - http://www.debian.org/security/2017/dsa-3882
+    - http://www.securityfocus.com/bid/99381
+    - https://forum.bestpractical.com/t/security-vulnerabilities-in-rt-2017-06-15/32016
+affected:
+    - name: then-request
+      version:
+        - "<=4.0.0,4.0.0"
+      fixedin:
+        - ">=4.1.0"
+        - "<=3.2.0,0.0.1"
