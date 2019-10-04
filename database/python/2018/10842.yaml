@@ -1,0 +1,14 @@
+---
+cve: 2018-10842
+title: CVE in django-rest-framework-keycloak
+description: >
+    It was found that an authenticated user could manipulate user session information to trigger an infinite loop in keycloak. A malicious user could use this flaw to conduct a denial of service attack against the server.
+cvss_v2: 4.0
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-10842
+affected:
+    - name: django-rest-framework-keycloak
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
