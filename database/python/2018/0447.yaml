@@ -1,0 +1,16 @@
+---
+cve: 2018-0447
+title: CVE in aiohttp-security
+description: >
+    A vulnerability in the anti-spam protection mechanisms of Cisco AsyncOS Software for the Cisco Email Security Appliance (ESA) could allow an unauthenticated, remote attacker to bypass certain content filters on an affected device. The vulnerability is due to incomplete input and validation checking mechanisms for certain Sender Policy Framework (SPF) messages that are sent to an affected device. An attacker could exploit this vulnerability by sending a customized SPF packet to an affected device. If successful, an exploit could allow the attacker to bypass the URL filters that are configured for the affected device, which could allow malicious URLs to pass through the device.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/105300
+    - http://www.securitytracker.com/id/1041687
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180905-esa-url-bypass
+affected:
+    - name: aiohttp-security
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
