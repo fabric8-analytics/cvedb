@@ -1,0 +1,17 @@
+---
+cve: 2017-14635
+title: CVE in org.apache.karaf.system:org.apache.karaf.system.core
+description: >
+    In Open Ticket Request System (OTRS) 3.3.x before 3.3.18, 4.x before 4.0.25, and 5.x before 5.0.23, remote authenticated users can leverage statistics-write permissions to gain privileges via code injection.
+cvss_v2: 6.5
+references:
+    - https://www.debian.org/security/2017/dsa-4021
+    - https://www.otrs.com/security-advisory-2017-04-security-update-otrs-versions/
+affected:
+    - groupId: org.apache.karaf.system
+      artifactId: org.apache.karaf.system.core
+      version:
+        - "<=4.0.10,4.0.0.M1"
+      fixedin:
+        - ">=4.1.0"
+        - "<=3.0.9,3.0.0.RC1"
