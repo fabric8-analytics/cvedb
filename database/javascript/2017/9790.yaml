@@ -1,0 +1,15 @@
+---
+cve: 2017-9790
+title: CVE in apache-crypt
+description: >
+    When handling a libprocess message wrapped in an HTTP request, libprocess in Apache Mesos before 1.1.3, 1.2.x before 1.2.2, 1.3.x before 1.3.1, and 1.4.0-dev crashes if the request path is empty, because the parser assumes the request path always starts with '/'. A malicious actor can therefore cause a denial of service of Mesos masters rendering the Mesos-controlled cluster inoperable.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/101023
+    - https://lists.apache.org/thread.html/cc1e7a69ea78da0511f5b54b6be7aa6e3c78edad5aaff430e7de028b@%3Cdev.mesos.apache.org%3E
+affected:
+    - name: apache-crypt
+      version:
+        - "<=1.2.1"
+      fixedin:
+        []
