@@ -1,0 +1,14 @@
+---
+cve: 2018-11752
+title: CVE in to-ssh
+description: >
+    Previous releases of the Puppet cisco_ios module output SSH session debug information including login credentials to a world readable file on every run. These issues have been resolved in the 0.4.0 release.
+cvss_v2: 2.1
+references:
+    - https://puppet.com/security/cve/CVE-2018-11752
+affected:
+    - name: to-ssh
+      version:
+        - "<=0.3.0"
+      fixedin:
+        - ">=0.4.0"
