@@ -1,0 +1,14 @@
+---
+cve: 2017-17751
+title: CVE in meshblu-core-protocol-adapter-websocket
+description: >
+    Bose SoundTouch devices allows remote attackers to achieve remote control via a crafted web site that uses the WebSocket Protocol.
+cvss_v2: 6.8
+references:
+    - http://aryanitin.com/2017-12-20-CVE-2017-17751/
+affected:
+    - name: meshblu-core-protocol-adapter-websocket
+      version:
+        []
+      fixedin:
+        - ">=2.0.7"
