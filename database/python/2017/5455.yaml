@@ -1,0 +1,19 @@
+---
+cve: 2017-5455
+title: CVE in firefox-puppeteer
+description: >
+    The internal feed reader APIs that crossed the sandbox barrier allowed for a sandbox escape and escalation of privilege if combined with another vulnerability that resulted in remote code execution inside the sandboxed process. This vulnerability affects Firefox ESR < 52.1 and Firefox < 53.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/97940
+    - http://www.securitytracker.com/id/1038320
+    - https://access.redhat.com/errata/RHSA-2017:1106
+    - https://bugzilla.mozilla.org/show_bug.cgi?id=1341191
+    - https://www.mozilla.org/security/advisories/mfsa2017-10/
+    - https://www.mozilla.org/security/advisories/mfsa2017-12/
+affected:
+    - name: firefox-puppeteer
+      version:
+        - "<=52.1.0"
+      fixedin:
+        []
