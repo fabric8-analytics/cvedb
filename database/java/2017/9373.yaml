@@ -1,0 +1,22 @@
+---
+cve: 2017-9373
+title: CVE in org.overturetool.ide:org.overture.ide.ui
+description: >
+    Memory leak in QEMU (aka Quick Emulator), when built with IDE AHCI Emulation support, allows local guest OS privileged users to cause a denial of service (memory consumption) by repeatedly hot-unplugging the AHCI device.
+cvss_v2: 1.9
+references:
+    - http://git.qemu.org/?p=qemu.git;a=commit;h=d68f0f778e7f4fbd674627274267f269e40f0b04
+    - http://www.debian.org/security/2017/dsa-3920
+    - http://www.openwall.com/lists/oss-security/2017/06/05/1
+    - http://www.securityfocus.com/bid/98921
+    - https://access.redhat.com/errata/RHSA-2017:2392
+    - https://access.redhat.com/errata/RHSA-2017:2408
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1458270
+    - https://lists.debian.org/debian-lts-announce/2018/09/msg00007.html
+affected:
+    - groupId: org.overturetool.ide
+      artifactId: org.overture.ide.ui
+      version:
+        []
+      fixedin:
+        - ">=2.3.8"
