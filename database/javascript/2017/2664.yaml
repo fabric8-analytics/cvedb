@@ -1,0 +1,17 @@
+---
+cve: 2017-2664
+title: CVE in @process-engine/management_api_contracts
+description: >
+    CloudForms Management Engine (cfme) before 5.7.3 and 5.8.x before 5.8.1 lacks RBAC controls on certain methods in the rails application portion of CloudForms. An attacker with access could use a variety of methods within the rails application portion of CloudForms to escalate privileges.
+cvss_v2: 4.0
+references:
+    - http://www.securityfocus.com/bid/100148
+    - https://access.redhat.com/errata/RHSA-2017:1758
+    - https://access.redhat.com/errata/RHSA-2017:3484
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2017-2664
+affected:
+    - name: @process-engine/management_api_contracts
+      version:
+        - "<=5.1.0-78712724-b5"
+      fixedin:
+        - ">=6.0.0"
