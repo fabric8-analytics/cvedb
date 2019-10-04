@@ -1,0 +1,14 @@
+---
+cve: 2017-13779
+title: CVE in alembic-offline
+description: >
+    GSTN_offline_tool in India Goods and Services Tax Network (GSTN) Offline Utility tool before 1.2 executes winstart-server.vbs from the "C:\GST Offline Tool" directory, which has insecure permissions. This allows local users to gain privileges by replacing winstart-server.vbs with arbitrary VBScript code. For example, a local user could create VBScript code for a TCP reverse shell, and use that later for Remote Command Execution.
+cvss_v2: 7.2
+references:
+    - https://tink2hack.blogspot.in/2017/09/writeup-of-cve-2017-13779-remote.html
+affected:
+    - name: alembic-offline
+      version:
+        - "<=1.1.0"
+      fixedin:
+        - ">=1.2.0"
