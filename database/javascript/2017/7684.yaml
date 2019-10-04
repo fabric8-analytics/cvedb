@@ -1,0 +1,15 @@
+---
+cve: 2017-7684
+title: CVE in apache-crypt
+description: >
+    Apache OpenMeetings 1.0.0 doesn't check contents of files being uploaded. An attacker can cause a denial of service by uploading multiple large files to the server.
+cvss_v2: 5.0
+references:
+    - http://markmail.org/message/v6dpmrdd6cgg66up
+    - http://www.securityfocus.com/bid/99584
+affected:
+    - name: apache-crypt
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
