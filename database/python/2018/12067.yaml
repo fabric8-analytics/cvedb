@@ -1,0 +1,14 @@
+---
+cve: 2018-12067
+title: CVE in mercador-sub
+description: >
+    The sell function of a smart contract implementation for Substratum (SUB), a tradable Ethereum ERC20 token, allows a potential trap that could be used to cause financial damage to the seller, because of overflow of the multiplication of its argument amount and a manipulable variable sellPrice, aka the "tradeTrap" issue.
+cvss_v2: 5.0
+references:
+    - https://peckshield.com/2018/06/11/tradeTrap/
+affected:
+    - name: mercador-sub
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
