@@ -1,0 +1,17 @@
+---
+cve: 2017-3817
+title: CVE in unified
+description: >
+    A vulnerability in the role-based resource checking functionality of Cisco Unified Computing System (UCS) Director could allow an authenticated, remote attacker to view unauthorized information for any virtual machine in a UCS domain. More Information: CSCvc32434. Known Affected Releases: 5.5(0.1) 6.0(0.0).
+cvss_v2: 4.0
+references:
+    - http://www.securityfocus.com/bid/97430
+    - http://www.securitytracker.com/id/1038194
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20170405-ucs-director
+affected:
+    - name: unified
+      version:
+        - "<=6.0.0,6.0.0"
+      fixedin:
+        - ">=6.1.0"
+        - "<=5.1.0,1.0.0"
