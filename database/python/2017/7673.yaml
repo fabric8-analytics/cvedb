@@ -1,0 +1,16 @@
+---
+cve: 2017-7673
+title: CVE in apache-beam
+description: >
+    Apache OpenMeetings 1.0.0 uses not very strong cryptographic storage, captcha is not used in registration and forget password dialogs and auth forms missing brute force protection.
+cvss_v2: 5.0
+references:
+    - http://markmail.org/message/3hshl26omwjo6c5i
+    - http://www.securityfocus.com/bid/99587
+affected:
+    - name: apache-beam
+      version:
+        - "<=2.2.0,2.0.0"
+      fixedin:
+        - ">=2.3.0"
+        - "<=0.6.0,0.6.0"
