@@ -1,0 +1,16 @@
+---
+cve: 2017-0352
+title: CVE in com.nummulus.amqp.driver:amqp-driver-blackbox_2.10
+description: >
+    All versions of the NVIDIA GPU Display Driver contain a vulnerability in the GPU firmware where incorrect access control may allow CPU access sensitive GPU control registers, leading to an escalation of privileges
+cvss_v2: 7.2
+references:
+    - http://nvidia.custhelp.com/app/answers/detail/a_id/4462
+    - http://www.securityfocus.com/bid/98517
+affected:
+    - groupId: com.nummulus.amqp.driver
+      artifactId: amqp-driver-blackbox_2.10
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
