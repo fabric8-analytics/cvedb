@@ -1,0 +1,17 @@
+---
+cve: 2017-5391
+title: CVE in firefox-puppeteer
+description: >
+    Special "about:" pages used by web content, such as RSS feeds, can load privileged "about:" pages in an iframe. If a content-injection bug were found in one of those pages this could allow for potential privilege escalation. This vulnerability affects Firefox < 51.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/95763
+    - http://www.securitytracker.com/id/1037693
+    - https://bugzilla.mozilla.org/show_bug.cgi?id=1309310
+    - https://www.mozilla.org/security/advisories/mfsa2017-01/
+affected:
+    - name: firefox-puppeteer
+      version:
+        - "<=50.0.0"
+      fixedin:
+        - ">=51.0.0"
