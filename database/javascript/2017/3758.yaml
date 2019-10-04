@@ -1,0 +1,14 @@
+---
+cve: 2017-3758
+title: CVE in brickwork-template-service-service
+description: >
+    Improper access controls on several Android components in the Lenovo Service Framework application can be exploited to enable remote code execution.
+cvss_v2: 7.5
+references:
+    - https://support.lenovo.com/us/en/product_security/LEN-15374
+affected:
+    - name: brickwork-template-service-service
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
