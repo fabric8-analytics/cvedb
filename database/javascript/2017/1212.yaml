@@ -1,0 +1,18 @@
+---
+cve: 2017-1212
+title: CVE in standard
+description: >
+    IBM Daeja ViewONE Professional, Standard & Virtual 4.1.5.1 and 5.0.2 is vulnerable to a denial of service when viewing or opening a large file. IBM X-Force ID: 123852.
+cvss_v2: 4.3
+references:
+    - http://www.ibm.com/support/docview.wss?uid=swg22007466
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/123852
+affected:
+    - name: standard
+      version:
+        - "<=5.0.0-0,5.0.0"
+        - "<=5.0.1-0,5.0.1"
+      fixedin:
+        - ">=5.0.2"
+        - "<=5.0.0-8,5.0.0-2"
+        - "<=4.5.4,1.0.0"
