@@ -1,0 +1,16 @@
+---
+cve: 2017-12728
+title: CVE in org.apache.karaf.management:org.apache.karaf.management.server
+description: >
+    An Improper Privilege Management issue was discovered in SpiderControl SCADA Web Server Version 2.02.0007 and prior. Authenticated, non-administrative local users are able to alter service executables with escalated privileges, which could allow an attacker to execute arbitrary code under the context of the current system services.
+cvss_v2: 7.2
+references:
+    - http://www.securityfocus.com/bid/100668
+    - https://ics-cert.us-cert.gov/advisories/ICSA-17-250-01
+affected:
+    - groupId: org.apache.karaf.management
+      artifactId: org.apache.karaf.management.server
+      version:
+        - "<=2.2.7"
+      fixedin:
+        - ">=2.2.8"
