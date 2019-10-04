@@ -1,0 +1,17 @@
+---
+cve: 2017-5634
+title: CVE in norwegian-saf-t
+description: >
+    The Norwegian Air Shuttle (aka norwegian.com) airline kiosk allows physically proximate attackers to bypass the intended "Please select booking identification" UI step, and obtain administrative privileges and network access on the underlying Windows OS, by accessing a touch-screen print icon to manipulate the print dialog.
+cvss_v2: 7.2
+references:
+    - http://www.securityfocus.com/bid/96230
+    - https://bugemot.com/bug/190
+    - https://www.youtube.com/watch?v=2j9gP5Qu2WA
+    - https://www.youtube.com/watch?v=WSQW0ipnXQg
+affected:
+    - name: norwegian-saf-t
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
