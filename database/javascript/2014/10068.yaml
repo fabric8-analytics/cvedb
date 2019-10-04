@@ -1,6 +1,6 @@
 ---
 cve: 2014-10068
-title: CVE in wicg-inert
+title: CVE in inert
 description: >
     The inert directory handler in inert node module before 1.1.1 always allows files in hidden directories to be served, even when `showHidden` is false.
 cvss_v2: 5.0
@@ -9,7 +9,7 @@ references:
     - https://github.com/hapijs/inert/pull/15
     - https://nodesecurity.io/advisories/14
 affected:
-    - name: wicg-inert
+    - name: inert
       version:
         - "<=1.1.0"
       fixedin:
