@@ -1,0 +1,15 @@
+---
+cve: 2018-0818
+title: CVE in engine
+description: >
+    Microsoft ChakraCore allows an attacker to bypass Control Flow Guard (CFG) in conjunction with another vulnerability to run arbitrary code on a target system, due to how the Chakra scripting engine handles accessing memory, aka "Scripting Engine Security Feature Bypass".
+cvss_v2: 8.5
+references:
+    - http://www.securityfocus.com/bid/102412
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2018-0818
+affected:
+    - name: engine
+      version:
+        []
+      fixedin:
+        - ">=0.6.0"
