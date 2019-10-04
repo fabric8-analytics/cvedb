@@ -1,0 +1,18 @@
+---
+cve: 2017-1601
+title: CVE in com.distelli.monitor:task-monitor-api
+description: >
+    IBM Security Guardium 10.0, 10.0.1, and 10.1 through 10.1.4 Database Activity Monitor does not require that users should have strong passwords by default, which makes it easier for attackers to compromise user accounts. IBM X-Force ID: 132624.
+cvss_v2: 7.5
+references:
+    - http://www.ibm.com/support/docview.wss?uid=swg22014230
+    - http://www.securitytracker.com/id/1040899
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/132624
+affected:
+    - groupId: com.distelli.monitor
+      artifactId: task-monitor-api
+      version:
+        - "<=10.0.1,10.0.0"
+      fixedin:
+        - ">=10.0.2"
+        - "<=9.19.2,9.1.0"
