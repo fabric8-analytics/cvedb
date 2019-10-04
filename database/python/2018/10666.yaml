@@ -1,0 +1,14 @@
+---
+cve: 2018-10666
+title: CVE in odoo10-addon-contract-membership-delegated-partner
+description: >
+    The Owned smart contract implementation for Aurora IDEX Membership (IDXM), an Ethereum ERC20 token, allows attackers to acquire contract ownership because the setOwner function is declared as public. A new owner can subsequently modify variables.
+cvss_v2: 5.0
+references:
+    - https://medium.com/@jonghyk.song/aurora-idex-membership-idxm-erc20-token-allows-attackers-to-acquire-contract-ownership-1ff426cee7c6
+affected:
+    - name: odoo10-addon-contract-membership-delegated-partner
+      version:
+        []
+      fixedin:
+        - ">=10.0.1.0.0"
