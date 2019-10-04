@@ -1,0 +1,16 @@
+---
+cve: 2017-10843
+title: CVE in django-cms
+description: >
+    baserCMS version 3.0.14 and earlier, 4.0.5 and earlier allows remote attackers to delete arbitrary files via unspecified vectors when the "File" field is being used in the mail form.
+cvss_v2: 6.4
+references:
+    - http://jvn.jp/en/jp/JVN78151490/index.html
+    - https://basercms.net/security/JVN78151490
+affected:
+    - name: django-cms
+      version:
+        - "<=3.0.14,3.0"
+      fixedin:
+        - ">=3.0.15"
+        - "<=2.4.3,2.0.1"
