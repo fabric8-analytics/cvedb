@@ -1,0 +1,17 @@
+---
+cve: 2017-4896
+title: CVE in com.mixpanel.android:mixpanel-android
+description: >
+    Airwatch Inbox for Android contains a vulnerability that may allow a rooted device to decrypt the local data used by the application. Successful exploitation of this issue may result in an unauthorized disclosure of confidential data.
+cvss_v2: 2.1
+references:
+    - http://www.securityfocus.com/bid/95889
+    - http://www.securitytracker.com/id/1037738
+    - http://www.vmware.com/us/security/advisories/VMSA-2017-0001.html
+affected:
+    - groupId: com.mixpanel.android
+      artifactId: mixpanel-android
+      version:
+        []
+      fixedin:
+        - ">=4.0.0-RC1"
