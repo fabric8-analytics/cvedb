@@ -1,0 +1,19 @@
+---
+cve: 2017-9036
+title: CVE in micro
+description: >
+    Trend Micro ServerProtect for Linux 3.0 before CP 1531 allows local users to gain privileges by leveraging an unrestricted quarantine directory.
+cvss_v2: 7.2
+references:
+    - http://packetstormsecurity.com/files/142645/Trend-Micro-ServerProtect-Disclosure-CSRF-XSS.html
+    - http://seclists.org/fulldisclosure/2017/May/91
+    - http://www.securitytracker.com/id/1038548
+    - https://success.trendmicro.com/solution/1117411
+    - https://www.coresecurity.com/advisories/trend-micro-serverprotect-multiple-vulnerabilities
+affected:
+    - name: micro
+      version:
+        - "<=3.0.0,3.0.0"
+      fixedin:
+        - ">=4.0.0"
+        - "<=2.1.0,0.9.9"
