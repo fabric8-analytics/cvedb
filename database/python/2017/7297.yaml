@@ -1,0 +1,15 @@
+---
+cve: 2017-7297
+title: CVE in rancher-autobackup
+description: >
+    Rancher Labs rancher server 1.2.0+ is vulnerable to authenticated users disabling access control via an API call. This is fixed in versions rancher/server:v1.2.4, rancher/server:v1.3.5, rancher/server:v1.4.3, and rancher/server:v1.5.3.
+cvss_v2: 6.5
+references:
+    - http://www.securityfocus.com/bid/97180
+    - https://github.com/rancher/rancher/issues/8296
+affected:
+    - name: rancher-autobackup
+      version:
+        - "<=1.2.0"
+      fixedin:
+        []
