@@ -1,0 +1,14 @@
+---
+cve: 2017-16857
+title: CVE in babel-plugin-auto-async
+description: >
+    It is possible to bypass the bitbucket auto-unapprove plugin via minimal brute-force because it is relying on asynchronous events on the back-end. This allows an attacker to merge any code into unsuspecting repositories. This affects all versions of the auto-unapprove plugin, however since the auto-unapprove plugin is not bundled with Bitbucket Server it does not affect any particular version of Bitbucket.
+cvss_v2: 6.0
+references:
+    - https://jira.atlassian.com/browse/BSERV-10439
+affected:
+    - name: babel-plugin-auto-async
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
