@@ -1,0 +1,17 @@
+---
+cve: 2017-1000086
+title: CVE in org.ligoj.plugin:plugin-redirect
+description: >
+    The Periodic Backup Plugin did not perform any permission checks, allowing any user with Overall/Read access to change its settings, trigger backups, restore backups, download backups, and also delete all previous backups via log rotation. Additionally, the plugin was not requiring requests to its API be sent via POST, thereby opening itself to Cross-Site Request Forgery attacks.
+cvss_v2: 6.0
+references:
+    - http://www.securityfocus.com/bid/100437
+    - https://jenkins.io/security/advisory/2017-07-10/
+affected:
+    - groupId: org.ligoj.plugin
+      artifactId: plugin-redirect
+      version:
+        - "<=1.0.0,1.0.0"
+      fixedin:
+        - ">=1.0.1"
+        - "<=0.0.2,0.0.1"
