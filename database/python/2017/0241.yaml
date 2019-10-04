@@ -1,0 +1,15 @@
+---
+cve: 2017-0241
+title: CVE in cloudfront-edge-codes
+description: >
+    An elevation of privilege vulnerability exists when Microsoft Edge renders a domain-less page in the URL, which could allow Microsoft Edge to perform actions in the context of the Intranet Zone and access functionality that is not typically available to the browser when browsing in the context of the Internet Zone, aka "Microsoft Edge Elevation of Privilege Vulnerability." This CVE ID is unique from CVE-2017-0233.
+cvss_v2: 5.4
+references:
+    - http://www.securityfocus.com/bid/98208
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2017-0241
+affected:
+    - name: cloudfront-edge-codes
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
