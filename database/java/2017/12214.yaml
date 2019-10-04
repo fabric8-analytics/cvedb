@@ -1,0 +1,18 @@
+---
+cve: 2017-12214
+title: CVE in org.sakaiproject.portal:portal
+description: >
+    A vulnerability in the Operations, Administration, Maintenance, and Provisioning (OAMP) credential reset functionality for Cisco Unified Customer Voice Portal (CVP) could allow an authenticated, remote attacker to gain elevated privileges. The vulnerability is due to a lack of proper input validation. An attacker could exploit this vulnerability by authenticating to the OAMP and sending a crafted HTTP request. A successful exploit could allow the attacker to gain administrator privileges. The attacker must successfully authenticate to the system to exploit this vulnerability. This vulnerability affects Cisco Unified Customer Voice Portal (CVP) running software release 10.5, 11.0, or 11.5. Cisco Bug IDs: CSCve92752.
+cvss_v2: 6.5
+references:
+    - http://www.securityfocus.com/bid/100931
+    - http://www.securitytracker.com/id/1039411
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20170920-cvp
+affected:
+    - groupId: org.sakaiproject.portal
+      artifactId: portal
+      version:
+        - "<=11.0,11.0"
+      fixedin:
+        - ">=11.1"
+        - "<=10.7,2.9.0-b03"
