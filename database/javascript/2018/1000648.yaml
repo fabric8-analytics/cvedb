@@ -1,0 +1,16 @@
+---
+cve: 2018-1000648
+title: CVE in write-file-atomic
+description: >
+    LibreHealthIO lh-ehr version REL-2.0.0 contains a Authenticated Unrestricted File Write vulnerability in Patient file letter functions that can result in Write files with malicious content and may lead to remote code execution. This attack appear to be exploitable via User controlled parameters.
+cvss_v2: 6.5
+references:
+    - https://0dd.zone/2018/08/07/lh-ehr-Authenticated-File-Write-Letter-PHP/
+    - https://github.com/LibreHealthIO/lh-ehr/issues/1213
+affected:
+    - name: write-file-atomic
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - ">=2.1.0"
+        - "<=1.3.4,1.0.0"
