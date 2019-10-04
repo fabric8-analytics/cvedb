@@ -1,0 +1,22 @@
+---
+cve: 2017-9375
+title: CVE in org.usb4java:usb4java-javax
+description: >
+    QEMU (aka Quick Emulator), when built with USB xHCI controller emulator support, allows local guest OS privileged users to cause a denial of service (infinite recursive call) via vectors involving control transfer descriptors sequencing.
+cvss_v2: 1.9
+references:
+    - http://git.qemu.org/?p=qemu.git;a=commit;h=96d87bdda3919bb16f754b3d3fd1227e1f38f13c
+    - http://www.debian.org/security/2017/dsa-3991
+    - http://www.openwall.com/lists/oss-security/2017/06/05/2
+    - http://www.securityfocus.com/bid/98915
+    - https://access.redhat.com/errata/RHSA-2017:2392
+    - https://access.redhat.com/errata/RHSA-2017:2408
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1458744
+    - https://lists.debian.org/debian-lts-announce/2019/09/msg00021.html
+affected:
+    - groupId: org.usb4java
+      artifactId: usb4java-javax
+      version:
+        []
+      fixedin:
+        - ">=1.2.0"
