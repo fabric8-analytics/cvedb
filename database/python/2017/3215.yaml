@@ -1,0 +1,14 @@
+---
+cve: 2017-3215
+title: CVE in highlander-one
+description: >
+    The Milwaukee ONE-KEY Android mobile application uses bearer tokens with an expiration of one year. This bearer token, in combination with a user_id can be used to perform user actions.
+cvss_v2: 5.0
+references:
+    - https://duo.com/blog/bug-hunting-drilling-into-the-internet-of-things-iot
+affected:
+    - name: highlander-one
+      version:
+        []
+      fixedin:
+        - ">=0.1.0b1"
