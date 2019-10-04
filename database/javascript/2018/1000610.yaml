@@ -1,0 +1,16 @@
+---
+cve: 2018-1000610
+title: CVE in wiki-plugin-code
+description: >
+    A exposure of sensitive information vulnerability exists in Jenkins Configuration as Code Plugin 0.7-alpha and earlier in DataBoundConfigurator.java, Attribute.java, BaseConfigurator.java, ExtensionConfigurator.java that allows attackers with access to Jenkins log files to obtain the passwords configured using Configuration as Code Plugin.
+cvss_v2: 4.0
+references:
+    - https://jenkins.io/security/advisory/2018-06-25/#SECURITY-929
+affected:
+    - name: wiki-plugin-code
+      version:
+        - "<=0.1.0"
+        - "<=0.2.0,0.2.0"
+      fixedin:
+        - ">=0.2.1"
+        - "<=0.1.1,0.1.1"
