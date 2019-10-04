@@ -1,0 +1,15 @@
+---
+cve: 2017-9212
+title: CVE in com.gitlab.lae.stack.source:stack-source-junit5
+description: >
+    The Bluetooth stack on the BMW 330i 2011 allows a remote crash of the CD/Multimedia software via %x or %c format string specifiers in a device name.
+cvss_v2: 7.8
+references:
+    - https://twitter.com/__Obzy__/status/864704956116254720
+affected:
+    - groupId: com.gitlab.lae.stack.source
+      artifactId: stack-source-junit5
+      version:
+        []
+      fixedin:
+        - ">=0.1.2"
