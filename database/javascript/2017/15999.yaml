@@ -1,0 +1,15 @@
+---
+cve: 2017-15999
+title: CVE in cognito-backup-restore
+description: >
+    In the "NQ Contacts Backup & Restore" application 1.1 for Android, no HTTPS is used for transmitting login and synced user data. When logging in, the username is transmitted in cleartext along with an SHA-1 hash of the password. The attacker can either crack this hash or use it for further attacks where only the hash value is required.
+cvss_v2: 5.0
+references:
+    - https://1337sec.blogspot.de/2017/10/auditing-nq-contacts-backup-restore-11.html
+affected:
+    - name: cognito-backup-restore
+      version:
+        - "<=1.1.0,1.1.0"
+      fixedin:
+        - ">=1.1.1"
+        - "<=1.0.0,0.1.0-rc1"
