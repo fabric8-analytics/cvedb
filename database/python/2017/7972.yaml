@@ -1,0 +1,16 @@
+---
+cve: 2017-7972
+title: CVE in django-managepy-anywhere
+description: >
+    A vulnerability exists in Schneider Electric's PowerSCADA Anywhere v1.0 redistributed with PowerSCADA Expert v8.1 and PowerSCADA Expert v8.2 and Citect Anywhere version 1.0 that allows the ability to escape out of remote PowerSCADA Anywhere applications and launch other processes.
+cvss_v2: 5.2
+references:
+    - http://www.schneider-electric.com/en/download/document/SEVD-2017-173-01/
+    - http://www.securityfocus.com/bid/99913
+    - https://www.citect.schneider-electric.com/safety-and-security-central/36-security-notifications/9071-security-notification-citect-anywhere
+affected:
+    - name: django-managepy-anywhere
+      version:
+        - "<=1.0"
+      fixedin:
+        - ">=2.0"
