@@ -1,0 +1,17 @@
+---
+cve: 2017-9966
+title: CVE in com.sun.electric:electric-minarea-api
+description: >
+    A privilege escalation vulnerability exists in Schneider Electric's Pelco VideoXpert Enterprise versions 2.0 and prior. By replacing certain files, an unauthorized user can obtain system privileges and the inserted code would execute at an elevated privilege level.
+cvss_v2: 7.1
+references:
+    - http://www.securityfocus.com/bid/102338
+    - https://ics-cert.us-cert.gov/advisories/ICSA-17-355-02
+    - https://www.schneider-electric.com/en/download/document/SEVD-2017-339-01/
+affected:
+    - groupId: com.sun.electric
+      artifactId: electric-minarea-api
+      version:
+        - "<=2.0"
+      fixedin:
+        - ">=2.1"
