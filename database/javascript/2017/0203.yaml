@@ -1,0 +1,16 @@
+---
+cve: 2017-0203
+title: CVE in edge-cs
+description: >
+    A vulnerability exists in Microsoft Edge when the Edge Content Security Policy (CSP) fails to properly validate certain specially crafted documents. An attacker could trick a user into loading a web page with malicious content, aka "Microsoft Edge Security Feature Bypass Vulnerability."
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/97443
+    - http://www.securitytracker.com/id/1038234
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2017-0203
+affected:
+    - name: edge-cs
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
