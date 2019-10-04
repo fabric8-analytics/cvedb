@@ -1,0 +1,19 @@
+---
+cve: 2017-5677
+title: CVE in ajax-views
+description: >
+    PEAR HTML_AJAX 0.3.0 through 0.5.7 has a PHP Object Injection Vulnerability in the PHP Serializer. It allows remote code execution. In one viewpoint, the root cause is an incorrect regular expression.
+cvss_v2: 7.5
+references:
+    - http://blog.pear.php.net/2017/02/02/security-html_ajax-058/
+    - http://karmainsecurity.com/KIS-2017-01
+    - http://seclists.org/fulldisclosure/2017/Feb/12
+    - http://www.securityfocus.com/bid/96044
+    - https://gitweb.gentoo.org/repo/gentoo.git/commit/?id=f5acb5adcd195f9a06b732794cb0de7620def646
+    - https://pear.php.net/bugs/bug.php?id=21165
+affected:
+    - name: ajax-views
+      version:
+        - "<=0.3.2,0.3.0"
+      fixedin:
+        - "<=0.2.2,0.1.4"
