@@ -1,0 +1,17 @@
+---
+cve: 2017-0926
+title: CVE in gitlab
+description: >
+    Gitlab Community Edition version 10.3 is vulnerable to an improper authorization issue in the Oauth sign-in component resulting in unauthorized user login.
+cvss_v2: 6.5
+references:
+    - https://about.gitlab.com/2018/01/16/gitlab-10-dot-3-dot-4-released/
+    - https://gitlab.com/gitlab-org/gitlab-ce/issues/32198
+    - https://www.debian.org/security/2018/dsa-4145
+affected:
+    - name: gitlab
+      version:
+        - "<=10.2.1,9.0.0"
+      fixedin:
+        - ">=11.0.0"
+        - "<=8.0.0,0.0.1"
