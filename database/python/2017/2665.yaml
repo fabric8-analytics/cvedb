@@ -1,0 +1,16 @@
+---
+cve: 2017-2665
+title: CVE in asphalt-mongodb
+description: >
+    The skyring-setup command creates random password for mongodb skyring database but it writes password in plain text to /etc/skyring/skyring.conf file which is owned by root but read by local user. Any local user who has access to system running skyring service will be able to get password in plain text.
+cvss_v2: 1.9
+references:
+    - http://www.securityfocus.com/bid/97612
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2017-2665
+affected:
+    - name: asphalt-mongodb
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - ">=3.0.0"
+        - "<=1.0.0,1.0.0"
