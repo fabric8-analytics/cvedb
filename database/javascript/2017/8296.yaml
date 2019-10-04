@@ -1,0 +1,17 @@
+---
+cve: 2017-8296
+title: CVE in the-password
+description: >
+    kedpm 0.5 and 1.0 creates a history file in ~/.kedpm/history that is written in cleartext. All of the commands performed in the password manager are written there. This can lead to the disclosure of the master password if the "password" command is used with an argument. The names of the password entries created and consulted are also accessible in cleartext.
+cvss_v2: 5.0
+references:
+    - http://openwall.com/lists/oss-security/2017/04/26/9
+    - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=860817
+    - https://security.gentoo.org/glsa/201708-04
+    - https://sourceforge.net/p/kedpm/bugs/6/
+affected:
+    - name: the-password
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
