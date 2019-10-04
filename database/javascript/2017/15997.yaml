@@ -1,0 +1,15 @@
+---
+cve: 2017-15997
+title: CVE in cognito-backup-restore
+description: >
+    In the "NQ Contacts Backup & Restore" application 1.1 for Android, RC4 encryption is used to secure the user password locally stored in shared preferences. Because there is a static RC4 key, an attacker can gain access to user credentials more easily by leveraging access to the preferences XML file.
+cvss_v2: 2.1
+references:
+    - https://1337sec.blogspot.de/2017/10/auditing-nq-contacts-backup-restore-11.html
+affected:
+    - name: cognito-backup-restore
+      version:
+        - "<=1.1.0,1.1.0"
+      fixedin:
+        - ">=1.1.1"
+        - "<=1.0.0,0.1.0-rc1"
