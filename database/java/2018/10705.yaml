@@ -1,0 +1,15 @@
+---
+cve: 2018-10705
+title: CVE in org.aeonbits.owner:owner-java8-extras
+description: >
+    The Owned smart contract implementation for Aurora DAO (AURA), an Ethereum ERC20 token, allows attackers to acquire contract ownership because the setOwner function is declared as public. An attacker can then conduct a lockBalances() denial of service attack.
+cvss_v2: 5.0
+references:
+    - https://peckshield.com/2018/05/03/ownerAnyone/
+affected:
+    - groupId: org.aeonbits.owner
+      artifactId: owner-java8-extras
+      version:
+        []
+      fixedin:
+        - ">=1.0.10"
