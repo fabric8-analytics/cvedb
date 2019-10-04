@@ -1,0 +1,19 @@
+---
+cve: 2017-5456
+title: CVE in firefox-puppeteer
+description: >
+    A mechanism to bypass file system access protections in the sandbox using the file system request constructor through an IPC message. This allows for read and write access to the local file system. This vulnerability affects Firefox ESR < 52.1 and Firefox < 53.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/97940
+    - http://www.securitytracker.com/id/1038320
+    - https://access.redhat.com/errata/RHSA-2017:1106
+    - https://bugzilla.mozilla.org/show_bug.cgi?id=1344415
+    - https://www.mozilla.org/security/advisories/mfsa2017-10/
+    - https://www.mozilla.org/security/advisories/mfsa2017-12/
+affected:
+    - name: firefox-puppeteer
+      version:
+        - "<=52.1.0"
+      fixedin:
+        []
