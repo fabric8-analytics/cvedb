@@ -1,0 +1,14 @@
+---
+cve: 2017-10600
+title: CVE in ubuntu
+description: >
+    ubuntu-image 1.0 before 2017-07-07, when invoked as non-root, creates files in the resulting image with the uid of the invoking user. When the resulting image is booted, a local attacker with the same uid as the image creator has unintended access to cloud-init and snapd directories.
+cvss_v2: 4.6
+references:
+    - https://forum.snapcraft.io/t/ownership-bug-in-ubuntu-image/1285
+affected:
+    - name: ubuntu
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=2.0.0"
