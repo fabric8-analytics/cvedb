@@ -1,0 +1,16 @@
+---
+cve: 2017-2094
+title: CVE in hurry-workflow
+description: >
+    Cybozu Garoon 3.0.0 to 4.2.3 allows remote authenticated attackers to bypass access restriction in Workflow and the "MultiReport" function to alter or delete information via unspecified vectors.
+cvss_v2: 4.0
+references:
+    - http://jvn.jp/en/jp/JVN73182875/index.html
+    - http://www.securityfocus.com/bid/96429
+    - https://support.cybozu.com/ja-jp/article/9655
+affected:
+    - name: hurry-workflow
+      version:
+        - "<=3.0.2,3.0.1"
+      fixedin:
+        - "<=0.13.1,0.9.1"
