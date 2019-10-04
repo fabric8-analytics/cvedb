@@ -1,0 +1,14 @@
+---
+cve: 2017-1000125
+title: CVE in codiad
+description: >
+    Codiad(full version) is vulnerable to write anything to configure file in the installation resulting upload a webshell.
+cvss_v2: 5.0
+references:
+    - http://www.jianshu.com/p/b09d20af2374
+affected:
+    - name: codiad
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
