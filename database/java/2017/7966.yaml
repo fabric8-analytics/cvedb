@@ -1,0 +1,16 @@
+---
+cve: 2017-7966
+title: CVE in com.sun.electric:electric-minarea-api
+description: >
+    A DLL Hijacking vulnerability in the programming software in Schneider Electric's SoMachine HVAC v2.1.0 allows a remote attacker to execute arbitrary code on the targeted system. The vulnerability exists due to the improper loading of a DLL.
+cvss_v2: 6.8
+references:
+    - http://www.schneider-electric.com/en/download/document/SEVD-2017-125-02/
+    - http://www.securityfocus.com/bid/98446
+affected:
+    - groupId: com.sun.electric
+      artifactId: electric-minarea-api
+      version:
+        - "<=2.1,2.1"
+      fixedin:
+        - "<=2.0,2.0"
