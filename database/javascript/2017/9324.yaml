@@ -1,0 +1,19 @@
+---
+cve: 2017-9324
+title: CVE in ovh-angular-otrs
+description: >
+    In Open Ticket Request System (OTRS) 3.3.x through 3.3.16, 4.x through 4.0.23, and 5.x through 5.0.19, an attacker with agent permission is capable of opening a specific URL in a browser to gain administrative privileges / full access. Afterward, all system settings can be read and changed. The URLs in question contain index.pl?Action=Installer with ;Subaction=Intro or ;Subaction=Start or ;Subaction=System appended at the end.
+cvss_v2: 6.5
+references:
+    - http://www.debian.org/security/2017/dsa-3876
+    - https://packetstormsecurity.com/files/142862/OTRS-Install-Dialog-Disclosure.html
+    - https://www.otrs.com/security-advisory-2017-03-security-update-otrs-versions/
+affected:
+    - name: ovh-angular-otrs
+      version:
+        - "<=4.0.1,4.0.0"
+        - "<=5.0.0,5.0.0"
+      fixedin:
+        - ">=6.0.0"
+        - "<=4.1.2,4.1.0"
+        - "<=3.0.1,1.1.0"
