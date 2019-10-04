@@ -1,6 +1,6 @@
 ---
 cve: 2017-16763
-title: CVE in confire
+title: CVE in aspy-yaml
 description: >
     An exploitable vulnerability exists in the YAML parsing functionality in config.py in Confire 0.2.0. Due to the user-specific configuration being loaded from "~/.confire.yaml" using the yaml.load function, a YAML parser can execute arbitrary Python commands resulting in command execution. An attacker can insert Python into loaded YAML to trigger this vulnerability.
 cvss_v2: 7.5
@@ -9,6 +9,8 @@ references:
     - https://github.com/bbengfort/confire/issues/24
     - https://joel-malwarebenchmark.github.io/blog/2017/11/12/cve-2017-16763-configure-loaded-through-confire/
 affected:
-    - name: confire
+    - name: aspy-yaml
       version:
-        - "==0.2.0"
+        - "<=0.2.0"
+      fixedin:
+        - ">=0.2.1"
