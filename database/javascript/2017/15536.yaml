@@ -1,0 +1,14 @@
+---
+cve: 2017-15536
+title: CVE in workbench
+description: >
+    An issue was discovered in Cloudera Data Science Workbench (CDSW) 1.x before 1.2.0. Several web application vulnerabilities allow malicious authenticated users of CDSW to escalate privileges in CDSW. CDSW users can exploit these vulnerabilities in combination to gain root access to CDSW nodes, gain access to the CDSW database which includes Kerberos keytabs of CDSW users and bcrypt hashed passwords, and gain access to other privileged information such as session tokens, invitation tokens, and environment variables.
+cvss_v2: 6.5
+references:
+    - https://www.cloudera.com/documentation/other/security-bulletins/topics/Security-Bulletin.html#tsb_248
+affected:
+    - name: workbench
+      version:
+        - "<=1.0.0,1.0.0"
+      fixedin:
+        - "<=0.1.0,0.1.0"
