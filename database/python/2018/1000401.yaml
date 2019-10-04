@@ -1,0 +1,14 @@
+---
+cve: 2018-1000401
+title: CVE in aws-cdk-aws-codepipeline
+description: >
+    Jenkins project Jenkins AWS CodePipeline Plugin version 0.36 and earlier contains a Insufficiently Protected Credentials vulnerability in AWSCodePipelineSCM.java that can result in Credentials Disclosure. This attack appear to be exploitable via local file access. This vulnerability appears to have been fixed in 0.37 and later.
+cvss_v2: 2.1
+references:
+    - https://jenkins.io/security/advisory/2018-06-25/#SECURITY-967
+affected:
+    - name: aws-cdk-aws-codepipeline
+      version:
+        - "<=0.36.0"
+      fixedin:
+        - ">=0.36.1"
