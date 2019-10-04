@@ -1,0 +1,22 @@
+---
+cve: 2017-8438
+title: CVE in com.sksamuel.elastic4s:elastic4s-play-json_2.11
+description: >
+    Elastic X-Pack Security versions 5.0.0 to 5.4.0 contain a privilege escalation bug in the run_as functionality. This bug prevents transitioning into the specified user specified in a run_as request. If a role has been created using a template that contains the _user properties, the behavior of run_as will be incorrect. Additionally if the run_as user specified does not exist, the transition will not happen.
+cvss_v2: 6.5
+references:
+    - https://discuss.elastic.co/t/elastic-stack-5-4-1-and-5-3-3-security-updates/87952
+    - https://www.elastic.co/blog/elasticsearch-5-4-1-and-5-3-3-released
+    - https://www.elastic.co/community/security
+affected:
+    - groupId: com.sksamuel.elastic4s
+      artifactId: elastic4s-play-json_2.11
+      version:
+        - "<=5.0.1,5.0.0-ALPHA1"
+        - "<=5.2.2,5.2.0-beta1"
+        - "<=5.4.0,5.3.0"
+      fixedin:
+        - ">=5.4.1"
+        - "<=5.2.11,5.2.3"
+        - "<=5.1.5,5.1.5"
+        - "<=2.4.1,2.4.0"
