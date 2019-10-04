@@ -1,0 +1,14 @@
+---
+cve: 2017-9212
+title: CVE in angel-cd
+description: >
+    The Bluetooth stack on the BMW 330i 2011 allows a remote crash of the CD/Multimedia software via %x or %c format string specifiers in a device name.
+cvss_v2: 7.8
+references:
+    - https://twitter.com/__Obzy__/status/864704956116254720
+affected:
+    - name: angel-cd
+      version:
+        []
+      fixedin:
+        - ">=1.0.1"
