@@ -1,0 +1,20 @@
+---
+cve: 2017-16666
+title: CVE in org.pcap4j:pcap4j-packetfactory-propertiesbased
+description: >
+    Xplico before 1.2.1 allows remote authenticated users to execute arbitrary commands via shell metacharacters in the name of an uploaded PCAP file.  NOTE: this issue can be exploited without authentication by leveraging the user registration feature.
+cvss_v2: 9.0
+references:
+    - http://blog.securityonion.net/2017/11/security-advisory-for-xplico-120.html
+    - http://packetstormsecurity.com/files/145639/Xplico-Remote-Code-Execution.html
+    - http://www.rapid7.com/db/modules/exploit/linux/http/xplico_exec
+    - https://pentest.blog/advisory-xplico-unauthenticated-remote-code-execution-cve-2017-16666/
+    - https://www.exploit-db.com/exploits/43430/
+    - https://www.xplico.org/archives/1538
+affected:
+    - groupId: org.pcap4j
+      artifactId: pcap4j-packetfactory-propertiesbased
+      version:
+        - "<=1.2.0"
+      fixedin:
+        - ">=1.2.1"
