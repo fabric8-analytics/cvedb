@@ -1,0 +1,17 @@
+---
+cve: 2017-17432
+title: CVE in x16r-hash
+description: >
+    OpenAFS 1.x before 1.6.22 does not properly validate Rx ack packets, which allows remote attackers to cause a denial of service (system crash or application crash) via crafted fields, as demonstrated by an integer underflow and assertion failure for a small MTU value.
+cvss_v2: 7.8
+references:
+    - https://bugs.debian.org/883602
+    - https://lists.debian.org/debian-lts-announce/2017/12/msg00016.html
+    - https://www.debian.org/security/2017/dsa-4067
+    - https://www.openafs.org/pages/security/OPENAFS-SA-2017-001.txt
+affected:
+    - name: x16r-hash
+      version:
+        - "<=1.0.1"
+      fixedin:
+        []
