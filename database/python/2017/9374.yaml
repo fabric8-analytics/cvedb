@@ -1,0 +1,21 @@
+---
+cve: 2017-9374
+title: CVE in dotstar-emulator
+description: >
+    Memory leak in QEMU (aka Quick Emulator), when built with USB EHCI Emulation support, allows local guest OS privileged users to cause a denial of service (memory consumption) by repeatedly hot-unplugging the device.
+cvss_v2: 2.1
+references:
+    - http://git.qemu.org/?p=qemu.git;a=commit;h=d710e1e7bd3d5bfc26b631f02ae87901ebe646b0
+    - http://www.debian.org/security/2017/dsa-3920
+    - http://www.openwall.com/lists/oss-security/2017/06/06/3
+    - http://www.securityfocus.com/bid/98905
+    - https://access.redhat.com/errata/RHSA-2017:2392
+    - https://access.redhat.com/errata/RHSA-2017:2408
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1459132
+    - https://lists.debian.org/debian-lts-announce/2018/09/msg00007.html
+affected:
+    - name: dotstar-emulator
+      version:
+        []
+      fixedin:
+        - ">=0.0.dev1"
