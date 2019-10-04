@@ -1,0 +1,16 @@
+---
+cve: 2017-11395
+title: CVE in micro
+description: >
+    Command injection vulnerability in Trend Micro Smart Protection Server (Standalone) 3.1 and 3.2 server administration UI allows attackers with authenticated access to execute arbitrary code on vulnerable installations.
+cvss_v2: 6.5
+references:
+    - http://www.coresecurity.com/advisories/trend-micro-smart-protection-os-command-injection
+    - http://www.securityfocus.com/bid/100461
+    - https://success.trendmicro.com/solution/1117933
+affected:
+    - name: micro
+      version:
+        - "<=3.1.0,3.1.0"
+      fixedin:
+        - "<=3.0.0,1.0.0"
