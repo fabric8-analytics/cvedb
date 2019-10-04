@@ -1,0 +1,18 @@
+---
+cve: 2018-11066
+title: CVE in org.thethingsnetwork.data:data-common
+description: >
+    Dell EMC Avamar Client Manager in Dell EMC Avamar Server versions 7.2.0, 7.2.1, 7.3.0, 7.3.1, 7.4.0, 7.4.1, 7.5.0, 7.5.1, 18.1 and Dell EMC Integrated Data Protection Appliance (IDPA) versions 2.0, 2.1 and 2.2 contain a Remote Code Execution vulnerability. A remote unauthenticated attacker could potentially exploit this vulnerability to execute arbitrary commands on the server.
+cvss_v2: 10.0
+references:
+    - http://www.securityfocus.com/bid/105968
+    - http://www.securitytracker.com/id/1042153
+    - https://seclists.org/fulldisclosure/2018/Nov/49
+    - https://www.vmware.com/security/advisories/VMSA-2018-0029.html
+affected:
+    - groupId: org.thethingsnetwork.data
+      artifactId: data-common
+      version:
+        - "<=2.0.0"
+      fixedin:
+        []
