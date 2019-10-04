@@ -1,0 +1,14 @@
+---
+cve: 2017-3760
+title: CVE in brickwork-template-service-service
+description: >
+    The Lenovo Service Framework Android application uses a set of nonsecure credentials when performing integrity verification of downloaded applications and/or data. This exposes the application to man-in-the-middle attacks leading to possible remote code execution.
+cvss_v2: 5.1
+references:
+    - https://support.lenovo.com/us/en/product_security/LEN-15374
+affected:
+    - name: brickwork-template-service-service
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
