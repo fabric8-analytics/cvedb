@@ -1,0 +1,17 @@
+---
+cve: 2017-0303
+title: CVE in lmn-gtm-analytics
+description: >
+    In F5 BIG-IP LTM, AAM, AFM, Analytics, APM, ASM, DNS, GTM, Link Controller, PEM and Websafe software version 13.0.0, 12.0.0 to 12.1.2 and 11.5.1 to 11.6.1, under limited circumstances connections handled by a Virtual Server with an associated SOCKS profile may not be properly cleaned up, potentially leading to resource starvation. Connections may be left in the connection table which then can only be removed by restarting TMM. Over time this may lead to the BIG-IP being unable to process further connections.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/101612
+    - http://www.securitytracker.com/id/1039674
+    - https://support.f5.com/csp/article/K30201296
+affected:
+    - name: lmn-gtm-analytics
+      version:
+        - "<=1.0.0,1.0.0"
+      fixedin:
+        - ">=1.0.1"
+        - "<=0.0.11,0.0.1"
