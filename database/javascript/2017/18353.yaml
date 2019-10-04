@@ -1,0 +1,16 @@
+---
+cve: 2017-18353
+title: CVE in chrome-net
+description: >
+    Rendertron 1.0.0 includes an _ah/stop route to shutdown the Chrome instance responsible for serving render requests to all users. Visiting this route with a GET request allows any unauthorized remote attacker to disable the core service of the application.
+cvss_v2: 5.0
+references:
+    - https://bugs.chromium.org/p/chromium/issues/detail?id=759111
+    - https://github.com/GoogleChrome/rendertron/commit/8d70628c96ae72eff6eebb451d26fc9ed6b58b0e
+    - https://github.com/GoogleChrome/rendertron/pull/88
+affected:
+    - name: chrome-net
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.1.0"
