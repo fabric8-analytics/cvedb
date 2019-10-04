@@ -1,0 +1,15 @@
+---
+cve: 2017-15379
+title: CVE in django-uri
+description: >
+    An authentication bypass exists in the E-Sic 1.0 /index (aka login) URI via '=''or' values for the username and password.
+cvss_v2: 7.5
+references:
+    - http://whiteboyz.xyz/esic-software-publico-autentication-bypass.html
+    - https://www.exploit-db.com/exploits/42980/
+affected:
+    - name: django-uri
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.2"
