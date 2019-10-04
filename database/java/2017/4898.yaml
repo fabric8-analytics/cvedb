@@ -1,0 +1,18 @@
+---
+cve: 2017-4898
+title: CVE in de.pro-vision.maven:de.pro-vision.maven.build-tools.global-build-tools
+description: >
+    VMware Workstation Pro/Player 12.x before 12.5.3 contains a DLL loading vulnerability that occurs due to the "vmware-vmx" process loading DLLs from a path defined in the local environment-variable. Successful exploitation of this issue may allow normal users to escalate privileges to System in the host machine where VMware Workstation is installed.
+cvss_v2: 6.9
+references:
+    - http://www.securityfocus.com/bid/96772
+    - http://www.securitytracker.com/id/1037979
+    - http://www.vmware.com/security/advisories/VMSA-2017-0003.html
+affected:
+    - groupId: de.pro-vision.maven
+      artifactId: de.pro-vision.maven.build-tools.global-build-tools
+      version:
+        - "<=12,12"
+      fixedin:
+        - ">=13"
+        - "<=11,8"
