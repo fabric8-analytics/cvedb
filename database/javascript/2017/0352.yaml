@@ -1,0 +1,15 @@
+---
+cve: 2017-0352
+title: CVE in gpu-z
+description: >
+    All versions of the NVIDIA GPU Display Driver contain a vulnerability in the GPU firmware where incorrect access control may allow CPU access sensitive GPU control registers, leading to an escalation of privileges
+cvss_v2: 7.2
+references:
+    - http://nvidia.custhelp.com/app/answers/detail/a_id/4462
+    - http://www.securityfocus.com/bid/98517
+affected:
+    - name: gpu-z
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
