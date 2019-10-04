@@ -1,0 +1,17 @@
+---
+cve: 2017-1118
+title: CVE in websphere-on-bluemix
+description: >
+    IBM WebSphere MQ Internet Pass-Thru 2.0 and 2.1 could allow n attacker to cause the MQIPT to stop responding due to an incorrectly configured security policy. IBM X-Force ID: 121156.
+cvss_v2: 5.0
+references:
+    - http://www.ibm.com/support/docview.wss?uid=swg22006580
+    - http://www.securityfocus.com/bid/100021
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/121156
+affected:
+    - name: websphere-on-bluemix
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - ">=3.0.0"
+        - "<=1.2.1,1.0.0"
