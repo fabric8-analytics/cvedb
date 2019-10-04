@@ -1,0 +1,15 @@
+---
+cve: 2017-2650
+title: CVE in grunt-maven-classpath
+description: >
+    It was found that the use of Pipeline: Classpath Step Jenkins plugin enables a bypass of the Script Security sandbox for users with SCM commit access, as well as users with e.g. Job/Configure permission in Jenkins.
+cvss_v2: 6.0
+references:
+    - http://www.securityfocus.com/bid/96981
+    - https://jenkins.io/security/advisory/2017-03-20/
+affected:
+    - name: grunt-maven-classpath
+      version:
+        - "<=0.1.0"
+      fixedin:
+        - ">=0.1.1"
