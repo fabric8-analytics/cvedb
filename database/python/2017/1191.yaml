@@ -1,0 +1,15 @@
+---
+cve: 2017-1191
+title: CVE in command-lifecycle
+description: >
+    An undisclosed vulnerability in CLM applications (including IBM Rational Collaborative Lifecycle Management 4.0, 5.0, and 6.0) with potential for failure to restrict URL Access. IBM X-Force ID: 123661.
+cvss_v2: 4.0
+references:
+    - http://www.ibm.com/support/docview.wss?uid=swg22011815
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/123661
+affected:
+    - name: command-lifecycle
+      version:
+        - "<=4.1.0,4.0.0"
+      fixedin:
+        - "<=2.1.6,0.4.0"
