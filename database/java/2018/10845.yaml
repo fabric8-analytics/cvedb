@@ -1,0 +1,22 @@
+---
+cve: 2018-10845
+title: CVE in com.github.ivangolubev.pbkdf2sha512:pbkdf2-sha512
+description: >
+    It was found that the GnuTLS implementation of HMAC-SHA-384 was vulnerable to a Lucky thirteen style attack. Remote attackers could use this flaw to conduct distinguishing attacks and plain text recovery attacks via statistical analysis of timing data using crafted packets.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/105138
+    - https://access.redhat.com/errata/RHSA-2018:3050
+    - https://access.redhat.com/errata/RHSA-2018:3505
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-10845
+    - https://eprint.iacr.org/2018/747
+    - https://gitlab.com/gnutls/gnutls/merge_requests/657
+    - https://lists.debian.org/debian-lts-announce/2018/10/msg00022.html
+    - https://usn.ubuntu.com/3999-1/
+affected:
+    - groupId: com.github.ivangolubev.pbkdf2sha512
+      artifactId: pbkdf2-sha512
+      version:
+        []
+      fixedin:
+        - ">=1.0.RELEASE"
