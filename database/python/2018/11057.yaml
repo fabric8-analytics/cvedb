@@ -1,0 +1,15 @@
+---
+cve: 2018-11057
+title: CVE in rsa
+description: >
+    RSA BSAFE Micro Edition Suite, versions prior to 4.0.11 (in 4.0.x) and prior to 4.1.6.1 (in 4.1.x) contains a Covert Timing Channel vulnerability during RSA decryption, also known as a Bleichenbacher attack on RSA decryption. A remote attacker may be able to recover a RSA key.
+cvss_v2: 4.3
+references:
+    - http://seclists.org/fulldisclosure/2018/Aug/46
+    - https://www.oracle.com/technetwork/security-advisory/cpujul2019-5072835.html
+affected:
+    - name: rsa
+      version:
+        - "<=4.0,4.0"
+      fixedin:
+        - "<=3.4.2,1.1"
