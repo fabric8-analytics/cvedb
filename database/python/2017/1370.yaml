@@ -1,0 +1,17 @@
+---
+cve: 2017-1370
+title: CVE in django-report-builder
+description: >
+    IBM Jazz Reporting Service (JRS) 5.0 and 6.0 could disclose sensitive information, including user credentials, through an error message from the Report Builder administrator configuration page. IBM X-Force ID: 126863.
+cvss_v2: 4.0
+references:
+    - http://www.ibm.com/support/docview.wss?uid=swg22005868
+    - http://www.securityfocus.com/bid/99954
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/126863
+affected:
+    - name: django-report-builder
+      version:
+        - "<=6.0.2,5.0.0b1"
+      fixedin:
+        - ">=6.1.0"
+        - "<=4.0.3,1.0"
