@@ -1,0 +1,16 @@
+---
+cve: 2017-8914
+title: CVE in security
+description: >
+    sinopia, as used in SAP HANA XS 1.00 and 2.00, allows remote attackers to hijack npm packages or host arbitrary files by leveraging an insecure user creation policy, aka SAP Security Note 2407694.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/96206
+    - https://erpscan.io/advisories/erpscan-17-009-sap-hana-sinopia-default-user-creation-policy-insecure/
+    - https://erpscan.io/press-center/blog/sap-cyber-threat-intelligence-report-february-2017/
+affected:
+    - name: security
+      version:
+        - "<=1.0"
+      fixedin:
+        []
