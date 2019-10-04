@@ -1,0 +1,19 @@
+---
+cve: 2017-13099
+title: CVE in wolfssl
+description: >
+    wolfSSL prior to version 3.12.2 provides a weak Bleichenbacher oracle when any TLS cipher suite using RSA key exchange is negotiated. An attacker can recover the private key from a vulnerable wolfSSL application. This vulnerability is referred to as "ROBOT."
+cvss_v2: 4.3
+references:
+    - http://www.arubanetworks.com/assets/alert/ARUBA-PSA-2018-002.txt
+    - http://www.kb.cert.org/vuls/id/144389
+    - http://www.securityfocus.com/bid/102174
+    - https://cert-portal.siemens.com/productcert/pdf/ssa-464260.pdf
+    - https://github.com/wolfSSL/wolfssl/pull/1229
+    - https://robotattack.org/
+affected:
+    - name: wolfssl
+      version:
+        - "<=4.1.0.post0"
+      fixedin:
+        []
