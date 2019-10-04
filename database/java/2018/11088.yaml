@@ -1,0 +1,15 @@
+---
+cve: 2018-11088
+title: CVE in io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry
+description: >
+    Pivotal Applications Manager in Pivotal Application Service, versions 2.0 prior to 2.0.21 and 2.1 prior to 2.1.13 and 2.2 prior to 2.2.5, contains a bug which may allow escalation of privileges. A space developer with access to the system org may be able to access an artifact which contains the CF admin credential, allowing them to escalate to an admin role.
+cvss_v2: 4.0
+references:
+    - https://pivotal.io/security/cve-2018-11088
+affected:
+    - groupId: io.pivotal.spring.cloud
+      artifactId: spring-cloud-services-starter-service-registry
+      version:
+        - "<=2.1.4.RELEASE,2.0.0.RELEASE"
+      fixedin:
+        - "<=1.6.6.RELEASE,1.0.1.RELEASE"
