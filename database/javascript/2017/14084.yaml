@@ -1,0 +1,25 @@
+---
+cve: 2017-14084
+title: CVE in unexpected-mitm
+description: >
+    A potential Man-in-the-Middle (MitM) attack vulnerability in Trend Micro OfficeScan 11.0 and XG may allow attackers to execute arbitrary code on vulnerable installations.
+cvss_v2: 6.8
+references:
+    - http://hyp3rlinx.altervista.org/advisories/CVE-2017-14084-TRENDMICRO-OFFICESCAN-XG-CURL-MITM-REMOTE-CODE-EXECUTION.txt
+    - http://packetstormsecurity.com/files/144400/TrendMicro-OfficeScan-11.0-XG-12.0-Man-In-The-Middle.html
+    - http://seclists.org/fulldisclosure/2017/Sep/87
+    - http://www.securityfocus.com/archive/1/541264/100/0/threaded
+    - http://www.securityfocus.com/archive/1/541275/100/0/threaded
+    - http://www.securityfocus.com/bid/101072
+    - http://www.securitytracker.com/id/1039500
+    - https://success.trendmicro.com/solution/1118372
+    - https://www.exploit-db.com/exploits/42891/
+affected:
+    - name: unexpected-mitm
+      version:
+        - "<=11.0.0,11.0.0"
+        - "<=12.0.0,12.0.0"
+      fixedin:
+        - ">=12.1.0"
+        - "<=11.1.0,11.1.0"
+        - "<=10.2.2,1.0.0"
