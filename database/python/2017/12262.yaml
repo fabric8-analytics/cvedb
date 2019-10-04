@@ -1,0 +1,16 @@
+---
+cve: 2017-12262
+title: CVE in python-application
+description: >
+    A vulnerability within the firewall configuration of the Cisco Application Policy Infrastructure Controller Enterprise Module (APIC-EM) could allow an unauthenticated, adjacent attacker to gain privileged access to services only available on the internal network of the device. The vulnerability is due to an incorrect firewall rule on the device. The misconfiguration could allow traffic sent to the public interface of the device to be forwarded to the internal virtual network of the APIC-EM. An attacker that is logically adjacent to the network on which the public interface of the affected APIC-EM resides could leverage this behavior to gain access to services listening on the internal network with elevated privileges. This vulnerability affects appliances or virtual devices running Cisco Application Policy Infrastructure Controller Enterprise Module prior to version 1.5. Cisco Bug IDs: CSCve89638.
+cvss_v2: 5.8
+references:
+    - http://www.securityfocus.com/bid/101647
+    - http://www.securitytracker.com/id/1039716
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20171101-apicem
+affected:
+    - name: python-application
+      version:
+        - "<=1.4.1"
+      fixedin:
+        - ">=1.5.0"
