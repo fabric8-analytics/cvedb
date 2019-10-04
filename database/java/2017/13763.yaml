@@ -1,0 +1,16 @@
+---
+cve: 2017-13763
+title: CVE in com.maojianwei.onos.network.troubleshoot:onos-network-troubleshoot-system-api
+description: >
+    ONOS versions 1.8.0, 1.9.0, and 1.10.0 do not restrict the amount of memory allocated. The Netty payload size is not limited.
+cvss_v2: 5.0
+references:
+    - https://gerrit.onosproject.org/#/c/13831/
+    - https://gerrit.onosproject.org/#/c/14318/
+affected:
+    - groupId: com.maojianwei.onos.network.troubleshoot
+      artifactId: onos-network-troubleshoot-system-api
+      version:
+        - "<=1.10.0"
+      fixedin:
+        []
