@@ -1,0 +1,14 @@
+---
+cve: 2017-16933
+title: CVE in icinga-slack-webhook
+description: >
+    etc/initsystem/prepare-dirs in Icinga 2.x through 2.8.1 has a chown call for a filename in a user-writable directory, which allows local users to gain privileges by leveraging access to the $ICINGA2_USER account for creation of a link.
+cvss_v2: 6.9
+references:
+    - https://github.com/Icinga/icinga2/issues/5793
+affected:
+    - name: icinga-slack-webhook
+      version:
+        - "<=2.1.1,2.0.0"
+      fixedin:
+        - "<=1.0.3,1.0.0"
