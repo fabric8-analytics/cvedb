@@ -1,0 +1,15 @@
+---
+cve: 2017-11326
+title: CVE in expand-tilde
+description: >
+    An issue was discovered in Tilde CMS 1.0.1. It is possible to bypass the implemented restrictions on arbitrary file upload via a filename.+php manipulation.
+cvss_v2: 5.0
+references:
+    - https://backbox.org/membership/sharing-board/tilde-cms-v1-01-multiple-vulnerabilities/
+affected:
+    - name: expand-tilde
+      version:
+        - "<=1.0.1,1.0.1"
+      fixedin:
+        - ">=1.1.0"
+        - "<=1.0.0,1.0.0"
