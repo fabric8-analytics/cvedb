@@ -1,0 +1,16 @@
+---
+cve: 2017-12467
+title: CVE in com.couchbase.lite:couchbase-lite-android
+description: >
+    Memory leak in CCN-lite before 2.00 allows context-dependent attackers to cause a denial of service (memory consumption) by leveraging failure to allocate memory for the comp or complen structure member.
+cvss_v2: 5.0
+references:
+    - https://github.com/cn-uofbasel/ccn-lite/issues/133
+    - https://github.com/cn-uofbasel/ccn-lite/releases/tag/2.0.0
+affected:
+    - groupId: com.couchbase.lite
+      artifactId: couchbase-lite-android
+      version:
+        - "<=1.4.4"
+      fixedin:
+        - ">=2.0.0"
