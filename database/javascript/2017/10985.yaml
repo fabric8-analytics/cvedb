@@ -1,0 +1,18 @@
+---
+cve: 2017-10985
+title: CVE in infinite-object
+description: >
+    An FR-GV-302 issue in FreeRADIUS 3.x before 3.0.15 allows "Infinite loop and memory exhaustion with 'concat' attributes" and a denial of service.
+cvss_v2: 7.8
+references:
+    - http://freeradius.org/security/fuzzer-2017.html
+    - http://www.debian.org/security/2017/dsa-3930
+    - http://www.securityfocus.com/bid/99968
+    - https://access.redhat.com/errata/RHSA-2017:2389
+affected:
+    - name: infinite-object
+      version:
+        - "<=3.0.0,3.0.0"
+      fixedin:
+        - ">=3.1.0"
+        - "<=2.0.0,1.0.0"
