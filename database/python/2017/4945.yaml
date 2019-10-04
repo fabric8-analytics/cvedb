@@ -1,0 +1,19 @@
+---
+cve: 2017-4945
+title: CVE in vmware-nsx
+description: >
+    VMware Workstation (14.x and 12.x) and Fusion (10.x and 8.x) contain a guest access control vulnerability. This issue may allow program execution via Unity on locked Windows VMs. VMware Tools must be updated to 10.2.0 for each VM to resolve CVE-2017-4945. VMware Tools 10.2.0 is consumed by Workstation 14.1.0 and Fusion 10.1.0 by default.
+cvss_v2: 2.1
+references:
+    - http://www.securityfocus.com/bid/102441
+    - http://www.securitytracker.com/id/1040109
+    - http://www.securitytracker.com/id/1040136
+    - https://www.vmware.com/us/security/advisories/VMSA-2018-0003.html
+affected:
+    - name: vmware-nsx
+      version:
+        - "<=12.0.1,12.0.0"
+        - "<=14.0.0,14.0.0"
+      fixedin:
+        - "<=13.0.0,12.0.2"
+        - "<=11.0.2,0.1.0"
