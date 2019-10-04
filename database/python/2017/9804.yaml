@@ -1,0 +1,21 @@
+---
+cve: 2017-9804
+title: CVE in apache-beam
+description: >
+    In Apache Struts 2.3.7 through 2.3.33 and 2.5 through 2.5.12, if an application allows entering a URL in a form field and built-in URLValidator is used, it is possible to prepare a special URL which will be used to overload server process when performing validation of the URL.  NOTE: this vulnerability exists because of an incomplete fix for S2-047 / CVE-2017-7672.
+cvss_v2: 5.0
+references:
+    - http://www.arubanetworks.com/assets/alert/ARUBA-PSA-2017-003.txt
+    - http://www.oracle.com/technetwork/security-advisory/alert-cve-2017-9805-3889403.html
+    - http://www.securityfocus.com/bid/100612
+    - http://www.securitytracker.com/id/1039261
+    - https://security.netapp.com/advisory/ntap-20180629-0001/
+    - https://struts.apache.org/docs/s2-050.html
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20170907-struts2
+affected:
+    - name: apache-beam
+      version:
+        - "<=2.5.0,2.5.0"
+      fixedin:
+        - ">=2.6.0"
+        - "<=2.4.0,0.6.0"
