@@ -1,0 +1,18 @@
+---
+cve: 2017-15908
+title: CVE in systemd-python
+description: >
+    In systemd 223 through 235, a remote DNS server can respond with a custom crafted DNS NSEC resource record to trigger an infinite loop in the dns_packet_read_type_window() function of the 'systemd-resolved' service and cause a DoS of the affected service.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/101600
+    - http://www.securitytracker.com/id/1039662
+    - https://bugs.launchpad.net/ubuntu/+source/systemd/+bug/1725351
+    - https://github.com/systemd/systemd/pull/7184
+    - https://usn.ubuntu.com/3558-1/
+affected:
+    - name: systemd-python
+      version:
+        - "<=234"
+      fixedin:
+        []
