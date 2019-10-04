@@ -1,0 +1,27 @@
+---
+cve: 2017-5405
+title: CVE in firefox-puppeteer
+description: >
+    Certain response codes in FTP connections can result in the use of uninitialized values for ports in FTP operations. This vulnerability affects Firefox < 52, Firefox ESR < 45.8, Thunderbird < 52, and Thunderbird < 45.8.
+cvss_v2: 5.0
+references:
+    - http://rhn.redhat.com/errata/RHSA-2017-0459.html
+    - http://rhn.redhat.com/errata/RHSA-2017-0461.html
+    - http://rhn.redhat.com/errata/RHSA-2017-0498.html
+    - http://www.securityfocus.com/bid/96693
+    - http://www.securitytracker.com/id/1037966
+    - https://bugzilla.mozilla.org/show_bug.cgi?id=1336699
+    - https://security.gentoo.org/glsa/201705-06
+    - https://security.gentoo.org/glsa/201705-07
+    - https://www.debian.org/security/2017/dsa-3805
+    - https://www.debian.org/security/2017/dsa-3832
+    - https://www.mozilla.org/security/advisories/mfsa2017-05/
+    - https://www.mozilla.org/security/advisories/mfsa2017-06/
+    - https://www.mozilla.org/security/advisories/mfsa2017-07/
+    - https://www.mozilla.org/security/advisories/mfsa2017-09/
+affected:
+    - name: firefox-puppeteer
+      version:
+        - "<=51.0.0"
+      fixedin:
+        - ">=52.0.0"
