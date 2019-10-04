@@ -1,0 +1,24 @@
+---
+cve: 2018-10930
+title: CVE in rpc-engine
+description: >
+    A flaw was found in RPC request using gfs3_rename_req in glusterfs server. An authenticated attacker could use this flaw to write to a destination outside the gluster volume.
+cvss_v2: 4.0
+references:
+    - https://access.redhat.com/errata/RHSA-2018:2607
+    - https://access.redhat.com/errata/RHSA-2018:2608
+    - https://access.redhat.com/errata/RHSA-2018:3470
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-10930
+    - https://lists.debian.org/debian-lts-announce/2018/09/msg00021.html
+    - https://review.gluster.org/#/c/glusterfs/+/21068/
+    - https://security.gentoo.org/glsa/201904-06
+affected:
+    - name: rpc-engine
+      version:
+        - "<=4.1.2,4.1.0"
+        - "<=6.0.0,6.0.0"
+        - "<=7.0.0,7.0.0"
+      fixedin:
+        - "<=6.0.1,6.0.1"
+        - "<=5.0.0,5.0.0"
+        - "<=4.0.2,2.0.0"
