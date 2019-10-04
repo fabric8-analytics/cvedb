@@ -1,0 +1,22 @@
+---
+cve: 2018-10846
+title: CVE in ansible-tower-cli
+description: >
+    A cache-based side channel in GnuTLS implementation that leads to plain text recovery in cross-VM attack setting was found. An attacker could use a combination of "Just in Time" Prime+probe attack in combination with Lucky-13 attack to recover plain text using crafted packets.
+cvss_v2: 1.9
+references:
+    - http://www.securityfocus.com/bid/105138
+    - https://access.redhat.com/errata/RHSA-2018:3050
+    - https://access.redhat.com/errata/RHSA-2018:3505
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-10846
+    - https://eprint.iacr.org/2018/747
+    - https://gitlab.com/gnutls/gnutls/merge_requests/657
+    - https://lists.debian.org/debian-lts-announce/2018/10/msg00022.html
+    - https://usn.ubuntu.com/3999-1/
+affected:
+    - name: ansible-tower-cli
+      version:
+        - "<=3.3.0,3.3.0"
+      fixedin:
+        - ">=3.3.1"
+        - "<=3.2.1,2.0.0"
