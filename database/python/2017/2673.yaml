@@ -1,0 +1,19 @@
+---
+cve: 2017-2673
+title: CVE in openstack-congress
+description: >
+    An authorization-check flaw was discovered in federation configurations of the OpenStack Identity service (keystone). An authenticated federated user could request permissions to a project and unintentionally be granted all related roles including administrative roles.
+cvss_v2: 6.5
+references:
+    - http://seclists.org/oss-sec/2017/q2/125
+    - http://www.securityfocus.com/bid/98032
+    - https://access.redhat.com/errata/RHSA-2017:1461
+    - https://access.redhat.com/errata/RHSA-2017:1597
+    - https://bugs.launchpad.net/keystone/+bug/1677723
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2017-2673
+affected:
+    - name: openstack-congress
+      version:
+        - "<=10.0.0.0rc1,9.0.0.0rc1"
+      fixedin:
+        - "<=8.0.1.dev17,6.0.2"
