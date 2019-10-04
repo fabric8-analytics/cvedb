@@ -1,0 +1,14 @@
+---
+cve: 2017-4992
+title: CVE in cloud
+description: >
+    An issue was discovered in Cloud Foundry Foundation cf-release versions prior to v261; UAA release 2.x versions prior to v2.7.4.17, 3.6.x versions prior to v3.6.11, 3.9.x versions prior to v3.9.13, and other versions prior to v4.2.0; and UAA bosh release (uaa-release) 13.x versions prior to v13.15, 24.x versions prior to v24.10, 30.x versions prior to 30.3, and other versions prior to v37. There is privilege escalation (arbitrary password reset) with user invitations.
+cvss_v2: 7.5
+references:
+    - https://www.cloudfoundry.org/cve-2017-4992/
+affected:
+    - name: cloud
+      version:
+        - "<=2.8.5"
+      fixedin:
+        []
