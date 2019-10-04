@@ -1,0 +1,15 @@
+---
+cve: 2017-7688
+title: CVE in apache-crypt
+description: >
+    Apache OpenMeetings 1.0.0 updates user password in insecure manner.
+cvss_v2: 5.0
+references:
+    - http://markmail.org/message/ctsiiqtekzsun6fi
+    - http://www.securityfocus.com/bid/99586
+affected:
+    - name: apache-crypt
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
