@@ -1,0 +1,15 @@
+---
+cve: 2017-15998
+title: CVE in ftw-contacts
+description: >
+    In the "NQ Contacts Backup & Restore" application 1.1 for Android, DES encryption with a static key is used to secure transmitted contact data. This makes it easier for remote attackers to obtain cleartext information by sniffing the network.
+cvss_v2: 5.0
+references:
+    - https://1337sec.blogspot.de/2017/10/auditing-nq-contacts-backup-restore-11.html
+affected:
+    - name: ftw-contacts
+      version:
+        - "<=1.1.0,1.1.0"
+      fixedin:
+        - ">=1.2.0"
+        - "<=1.0.0,1.0.0"
