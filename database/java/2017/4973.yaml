@@ -10,4 +10,6 @@ affected:
     - groupId: org.cloudfoundry.identity
       artifactId: cloudfoundry-identity-uaa
       version:
-        - "<=3.15.0"
+        - "<=4.30.0"
+      fixedin:
+        []
