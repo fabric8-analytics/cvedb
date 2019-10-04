@@ -1,0 +1,15 @@
+---
+cve: 2018-11446
+title: CVE in com.ericsson.research.trap:trap-transport-websocket
+description: >
+    The buy function of a smart contract implementation for Gold Reward (GRX), an Ethereum ERC20 token, allows a potential trap that could be used to cause financial damage to the buyer because of overflow of the multiplication of its argument amount and a manipulable variable buyPrice, aka the "tradeTrap" issue.
+cvss_v2: 5.0
+references:
+    - https://peckshield.com/2018/06/11/tradeTrap/
+affected:
+    - groupId: com.ericsson.research.trap
+      artifactId: trap-transport-websocket
+      version:
+        []
+      fixedin:
+        - ">=1.3"
