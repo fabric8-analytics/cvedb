@@ -1,0 +1,16 @@
+---
+cve: 2017-12412
+title: CVE in com.couchbase.lite:couchbase-lite-android
+description: >
+    ccn-lite-ccnb2xml in CCN-lite before 2.0.0 allows context-dependent attackers to have unspecified impact via a crafted file, which triggers infinite recursion and a stack overflow.
+cvss_v2: 6.8
+references:
+    - https://github.com/cn-uofbasel/ccn-lite/issues/128
+    - https://github.com/cn-uofbasel/ccn-lite/releases/tag/2.0.0
+affected:
+    - groupId: com.couchbase.lite
+      artifactId: couchbase-lite-android
+      version:
+        - "<=1.4.4"
+      fixedin:
+        - ">=2.0.0"
