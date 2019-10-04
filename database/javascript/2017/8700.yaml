@@ -1,0 +1,16 @@
+---
+cve: 2017-8700
+title: CVE in asp-pw
+description: >
+    ASP.NET Core 1.0, 1.1, and 2.0 allow an attacker to bypass Cross-origin Resource Sharing (CORS) configurations and retrieve normally restricted content from a web application, aka "ASP.NET Core Information Disclosure Vulnerability".
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/101712
+    - http://www.securitytracker.com/id/1039793
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2017-8700
+affected:
+    - name: asp-pw
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
