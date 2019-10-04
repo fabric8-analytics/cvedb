@@ -1,0 +1,15 @@
+---
+cve: 2017-12114
+title: CVE in node-json-rpc
+description: >
+    An exploitable improper authorization vulnerability exists in admin_peers API of cpp-ethereum's JSON-RPC (commit 4e1015743b95821849d001618a7ce82c7c073768). A JSON request can cause an access to the restricted functionality resulting in authorization bypass. An attacker can send JSON to trigger this vulnerability.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/102475
+    - https://www.talosintelligence.com/vulnerability_reports/TALOS-2017-0466
+affected:
+    - name: node-json-rpc
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
