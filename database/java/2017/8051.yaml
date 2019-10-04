@@ -1,0 +1,19 @@
+---
+cve: 2017-8051
+title: CVE in org.jboss.windup.web:windup-web-ui
+description: >
+    Tenable Appliance 3.5 - 4.4.0, and possibly prior versions, contains a flaw in the simpleupload.py script in the Web UI. Through the manipulation of the tns_appliance_session_user parameter, a remote attacker can inject arbitrary commands.
+cvss_v2: 10.0
+references:
+    - http://www.tenable.com/security/tns-2017-07
+    - https://vulndb.cyberriskanalytics.com/153135
+    - https://www.exploit-db.com/exploits/41892/
+affected:
+    - groupId: org.jboss.windup.web
+      artifactId: windup-web-ui
+      version:
+        - "<=4.0.0.Final"
+        - "<=4.2.0.Final,4.1.0.Alpha5"
+      fixedin:
+        - ">=4.2.1.Alpha1"
+        - "<=4.0.1.Final,4.0.1.Final"
