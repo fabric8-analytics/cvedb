@@ -1,0 +1,15 @@
+---
+cve: 2018-1195
+title: CVE in io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry
+description: >
+    In Cloud Controller versions prior to 1.46.0, cf-deployment versions prior to 1.3.0, and cf-release versions prior to 283, Cloud Controller accepts refresh tokens for authentication where access tokens are expected. This exposes a vulnerability where a refresh token that would otherwise be insufficient to obtain an access token, either due to lack of client credentials or revocation, would allow authentication.
+cvss_v2: 6.5
+references:
+    - https://www.cloudfoundry.org/blog/cve-2018-1195/
+affected:
+    - groupId: io.pivotal.spring.cloud
+      artifactId: spring-cloud-services-starter-service-registry
+      version:
+        - "<=2.1.4.RELEASE"
+      fixedin:
+        []
