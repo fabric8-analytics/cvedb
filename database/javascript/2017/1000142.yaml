@@ -1,0 +1,15 @@
+---
+cve: 2017-1000142
+title: CVE in @the-/url
+description: >
+    Mahara 1.8 before 1.8.7 and 1.9 before 1.9.5 and 1.10 before 1.10.3 and 15.04 before 15.04.0 are vulnerable to users being able to delete their submitted page through URL manipulation.
+cvss_v2: 5.5
+references:
+    - https://bugs.launchpad.net/mahara/+bug/1425306
+affected:
+    - name: @the-/url
+      version:
+        - "<=15.4.0,15.4.0"
+      fixedin:
+        - ">=15.4.1"
+        - "<=15.2.0,15.0.2"
