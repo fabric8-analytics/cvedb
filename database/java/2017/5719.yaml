@@ -1,0 +1,15 @@
+---
+cve: 2017-5719
+title: CVE in com.speedment.tool:tool-core
+description: >
+    A vulnerability in the Intel Deep Learning Training Tool Beta 1 allows a network attacker to remotely execute code as a local user.
+cvss_v2: 7.5
+references:
+    - https://security-center.intel.com/advisory.aspx?intelid=INTEL-SA-00100&languageid=en-fr
+affected:
+    - groupId: com.speedment.tool
+      artifactId: tool-core
+      version:
+        []
+      fixedin:
+        - ">=3.0.0"
