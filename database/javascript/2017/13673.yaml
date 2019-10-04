@@ -1,0 +1,21 @@
+---
+cve: 2017-13673
+title: CVE in qemu
+description: >
+    The vga display update in mis-calculated the region for the dirty bitmap snapshot in case split screen mode is used causing a denial of service (assertion failure) in the cpu_physical_memory_snapshot_get_dirty function.
+cvss_v2: 4.0
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2019-03/msg00042.html
+    - http://www.openwall.com/lists/oss-security/2017/09/10/1
+    - http://www.securityfocus.com/bid/100527
+    - https://access.redhat.com/errata/RHSA-2018:1104
+    - https://access.redhat.com/errata/RHSA-2018:1113
+    - https://git.qemu.org/gitweb.cgi?p=qemu.git;a=commit;h=bfc56535f793c557aa754c50213fc5f882e6482d
+    - https://lists.gnu.org/archive/html/qemu-devel/2017-08/msg04685.html
+affected:
+    - name: qemu
+      version:
+        - "<=2.9.0,2.8.0"
+      fixedin:
+        - ">=2.11.1"
+        - "<=2.7.0,2.6.0"
