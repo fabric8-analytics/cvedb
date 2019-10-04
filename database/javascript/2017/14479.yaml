@@ -1,0 +1,15 @@
+---
+cve: 2017-14479
+title: CVE in multi-master-merge
+description: >
+    In the MMM::Agent::Helpers::Network::clear_ip function in MySQL Multi-Master Replication Manager (MMM) mmm_agentd 2.2.1 (for Solaris), a specially crafted MMM protocol message can cause a shell command injection resulting in arbitrary command execution with the privileges of the mmm\_agentd process. An attacker that can initiate a TCP session with mmm\_agentd can trigger this vulnerability.
+cvss_v2: 10.0
+references:
+    - https://www.talosintelligence.com/vulnerability_reports/TALOS-2017-0501
+affected:
+    - name: multi-master-merge
+      version:
+        - "<=2.2.1,2.2.1"
+      fixedin:
+        - ">=2.3.0"
+        - "<=2.2.0,1.0.0"
