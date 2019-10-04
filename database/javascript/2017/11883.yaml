@@ -1,0 +1,16 @@
+---
+cve: 2017-11883
+title: CVE in service.core
+description: >
+    .NET Core 1.0, 1.1, and 2.0 allow an unauthenticated attacker to remotely cause a denial of service attack against a .NET Core web application by improperly handling web requests, aka ".NET CORE Denial Of Service Vulnerability".
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/101835
+    - http://www.securitytracker.com/id/1039793
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2017-11883
+affected:
+    - name: service.core
+      version:
+        - "<=1.1.0"
+      fixedin:
+        []
