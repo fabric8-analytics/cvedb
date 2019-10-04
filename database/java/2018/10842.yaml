@@ -1,0 +1,15 @@
+---
+cve: 2018-10842
+title: CVE in org.keycloak:keycloak-authentication-picketlink
+description: >
+    It was found that an authenticated user could manipulate user session information to trigger an infinite loop in keycloak. A malicious user could use this flaw to conduct a denial of service attack against the server.
+cvss_v2: 4.0
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-10842
+affected:
+    - groupId: org.keycloak
+      artifactId: keycloak-authentication-picketlink
+      version:
+        []
+      fixedin:
+        - ">=1.0-beta-1-snapshot-05092014"
