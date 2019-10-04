@@ -1,0 +1,17 @@
+---
+cve: 2017-7497
+title: CVE in contentful-management
+description: >
+    The dialog for creating cloud volumes (cinder provider) in CloudForms does not filter cloud tenants by user. An attacker with the ability to create storage volumes could use this to create storage volumes for any other tenant.
+cvss_v2: 4.0
+references:
+    - https://access.redhat.com/errata/RHSA-2017:1601
+    - https://access.redhat.com/errata/RHSA-2017:1758
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2017-7497
+affected:
+    - name: contentful-management
+      version:
+        - "<=5.8.0,5.7.2"
+      fixedin:
+        - ">=5.9.0"
+        - "<=5.7.1,0.0.0-determined-by-semantic-release"
