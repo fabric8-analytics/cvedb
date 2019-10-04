@@ -1,0 +1,22 @@
+---
+cve: 2017-10982
+title: CVE in buffer
+description: >
+    An FR-GV-205 issue in FreeRADIUS 2.x before 2.2.10 allows "DHCP - Buffer over-read in fr_dhcp_decode_options()" and a denial of service.
+cvss_v2: 5.0
+references:
+    - http://freeradius.org/security/fuzzer-2017.html
+    - http://www.debian.org/security/2017/dsa-3930
+    - http://www.securityfocus.com/bid/99912
+    - http://www.securitytracker.com/id/1038914
+    - https://access.redhat.com/errata/RHSA-2017:1759
+affected:
+    - name: buffer
+      version:
+        - "<=2.1.4"
+        - "<=2.1.12,2.1.6"
+        - "<=2.2.0,2.2.0"
+      fixedin:
+        - ">=2.3.0"
+        - "<=2.1.13,2.1.13"
+        - "<=2.1.5,2.1.5"
