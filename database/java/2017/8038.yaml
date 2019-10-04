@@ -1,0 +1,16 @@
+---
+cve: 2017-8038
+title: CVE in io.pivotal.spring.cloud:spring-cloud-sso-connector
+description: >
+    In Cloud Foundry Foundation Credhub-release version 1.1.0, access control lists (ACLs) enforce whether an authenticated user can perform an operation on a credential. For installations using ACLs, the ACL was bypassed for the CredHub interpolate endpoint, allowing authenticated applications to view any credential within the CredHub installation.
+cvss_v2: 4.0
+references:
+    - https://www.cloudfoundry.org/cve-2017-8038/
+affected:
+    - groupId: io.pivotal.spring.cloud
+      artifactId: spring-cloud-sso-connector
+      version:
+        - "<=1.1.0.RELEASE,1.1.0.RELEASE"
+      fixedin:
+        - ">=2.0.0.RELEASE"
+        - "<=1.0.2.RELEASE,1.0.0.RC3"
