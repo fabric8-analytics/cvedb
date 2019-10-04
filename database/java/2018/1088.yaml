@@ -1,0 +1,20 @@
+---
+cve: 2018-1088
+title: CVE in br.com.thiagomoreira.liferay.plugins.fix-virtual-host-app:fix-virtual-host-hook
+description: >
+    A privilege escalation flaw was found in gluster 3.x snapshot scheduler. Any gluster client allowed to mount gluster volumes could also mount shared gluster storage volume and escalate privileges by scheduling malicious cronjob via symlink.
+cvss_v2: 6.8
+references:
+    - https://access.redhat.com/errata/RHSA-2018:1136
+    - https://access.redhat.com/errata/RHSA-2018:1137
+    - https://access.redhat.com/errata/RHSA-2018:1275
+    - https://access.redhat.com/errata/RHSA-2018:1524
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1558721
+    - https://security.gentoo.org/glsa/201904-06
+affected:
+    - groupId: br.com.thiagomoreira.liferay.plugins.fix-virtual-host-app
+      artifactId: fix-virtual-host-hook
+      version:
+        - "<=3.0.0,3.0.0"
+      fixedin:
+        - "<=2.0.0,1.0.0"
