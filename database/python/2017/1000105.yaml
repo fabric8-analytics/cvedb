@@ -1,0 +1,14 @@
+---
+cve: 2017-1000105
+title: CVE in buildsystem-java
+description: >
+    The optional Run/Artifacts permission can be enabled by setting a Java system property. Blue Ocean did not check this permission before providing access to archived artifacts, Item/Read permission was sufficient.
+cvss_v2: 5.0
+references:
+    - https://jenkins.io/security/advisory/2017-08-07/
+affected:
+    - name: buildsystem-java
+      version:
+        - "<=1.2"
+      fixedin:
+        - ">=1.3"
