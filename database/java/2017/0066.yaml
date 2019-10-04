@@ -1,0 +1,17 @@
+---
+cve: 2017-0066
+title: CVE in com.microsoft.windowsazure:microsoft-azure-api-servicebus
+description: >
+    Microsoft Edge allows remote attackers to bypass the Same Origin Policy for HTML elements in other browser windows, aka "Microsoft Edge Security Feature Bypass Vulnerability." This vulnerability is different from those described in CVE-2017-0135 and CVE-2017-0140.
+cvss_v2: 4.0
+references:
+    - http://www.securityfocus.com/bid/96655
+    - http://www.securitytracker.com/id/1038006
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2017-0066
+affected:
+    - groupId: com.microsoft.windowsazure
+      artifactId: microsoft-azure-api-servicebus
+      version:
+        []
+      fixedin:
+        - ">=0.5.0"
