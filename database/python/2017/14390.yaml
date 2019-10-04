@@ -1,0 +1,16 @@
+---
+cve: 2017-14390
+title: CVE in cf
+description: >
+    In Cloud Foundry Foundation cf-deployment v0.35.0, a misconfiguration with Loggregator and syslog-drain causes logs to be drained to unintended locations.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/101972
+    - https://www.cloudfoundry.org/cve-2017-14390/
+affected:
+    - name: cf
+      version:
+        - "<=0.35,0.35"
+      fixedin:
+        - ">=0.40"
+        - "<=0.20,0.20"
