@@ -1,0 +1,15 @@
+---
+cve: 2018-0690
+title: CVE in p-c
+description: >
+    An unvalidated software update vulnerability in Music Center for PC version 1.0.02 and earlier could allow a man-in-the-middle attacker to tamper with an update file and inject executable files.
+cvss_v2: 5.1
+references:
+    - http://jvn.jp/en/jp/JVN36623716/index.html
+    - https://musiccenter.sony.net/en/downloads/update.php
+affected:
+    - name: p-c
+      version:
+        - "<=1.0.2"
+      fixedin:
+        - ">=1.0.3"
