@@ -1,0 +1,16 @@
+---
+cve: 2017-11767
+title: CVE in arduino-memory
+description: >
+    ChakraCore allows an attacker to gain the same user rights as the current user, due to the way that the ChakraCore scripting engine handles objects in memory, aka "Scripting Engine Memory Corruption Vulnerability".
+cvss_v2: 10.0
+references:
+    - http://www.securityfocus.com/bid/100838
+    - http://www.securitytracker.com/id/1039369
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2017-11767
+affected:
+    - name: arduino-memory
+      version:
+        []
+      fixedin:
+        - ">=0.1"
