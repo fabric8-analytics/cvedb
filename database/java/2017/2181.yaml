@@ -1,0 +1,15 @@
+---
+cve: 2017-2181
+title: CVE in com.speedment.tool:tool-core
+description: >
+    Hands-on Vulnerability Learning Tool "AppGoat" for Web Application V3.0.2 and earlier allow remote attackers to obtain local files via unspecified vectors, a different vulnerability than CVE-2017-2179 and CVE-2017-2182.
+cvss_v2: 6.8
+references:
+    - http://jvn.jp/en/jp/JVN20870477/index.html
+affected:
+    - groupId: com.speedment.tool
+      artifactId: tool-core
+      version:
+        - "<=3.0.2"
+      fixedin:
+        - ">=3.0.3"
