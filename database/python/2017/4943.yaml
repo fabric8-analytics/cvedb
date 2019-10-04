@@ -1,0 +1,16 @@
+---
+cve: 2017-4943
+title: CVE in alerta-server
+description: >
+    VMware vCenter Server Appliance (vCSA) (6.5 before 6.5 U1d) contains a local privilege escalation vulnerability via the 'showlog' plugin. Successful exploitation of this issue could result in a low privileged user gaining root level privileges over the appliance base OS.
+cvss_v2: 7.2
+references:
+    - http://www.securitytracker.com/id/1040026
+    - https://www.vmware.com/security/advisories/VMSA-2017-0021.html
+affected:
+    - name: alerta-server
+      version:
+        - "<=6.5.0,6.5.0"
+      fixedin:
+        - ">=6.6.0"
+        - "<=6.4.0,3.1.2"
