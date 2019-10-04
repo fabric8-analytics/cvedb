@@ -1,0 +1,16 @@
+---
+cve: 2017-8819
+title: CVE in trove-tempest-plugin
+description: >
+    In Tor before 0.2.5.16, 0.2.6 through 0.2.8 before 0.2.8.17, 0.2.9 before 0.2.9.14, 0.3.0 before 0.3.0.13, and 0.3.1 before 0.3.1.9, the replay-cache protection mechanism is ineffective for v2 onion services, aka TROVE-2017-009. An attacker can send many INTRODUCE2 cells to trigger this issue.
+cvss_v2: 5.0
+references:
+    - https://blog.torproject.org/new-stable-tor-releases-security-fixes-0319-03013-02914-02817-02516
+    - https://bugs.torproject.org/24244
+    - https://www.debian.org/security/2017/dsa-4054
+affected:
+    - name: trove-tempest-plugin
+      version:
+        - "<=0.3.0"
+      fixedin:
+        []
