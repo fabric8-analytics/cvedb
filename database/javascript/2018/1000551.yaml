@@ -1,0 +1,14 @@
+---
+cve: 2018-1000551
+title: CVE in type-of-is
+description: >
+    Trovebox version <= 4.0.0-rc6 contains a PHP Type juggling vulnerability in album view component that can result in Authentication bypass. This attack appear to be exploitable via HTTP Request. This vulnerability appears to have been fixed in after commit 742b8edbe.
+cvss_v2: 6.5
+references:
+    - https://telekomsecurity.github.io/2018/04/trovebox-vulnerabilities.html
+affected:
+    - name: type-of-is
+      version:
+        - "<=3.0.0"
+      fixedin:
+        - ">=3.1.0"
