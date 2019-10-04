@@ -1,0 +1,17 @@
+---
+cve: 2018-0262
+title: CVE in org.ow2.util.execution:execution
+description: >
+    A vulnerability in Cisco Meeting Server could allow an unauthenticated, remote attacker to gain unauthorized access to components of, or sensitive information in, an affected system, leading to Remote Code Execution. The vulnerability is due to incorrect default configuration of the device, which can expose internal interfaces and ports on the external interface of the system. A successful exploit could allow the attacker to gain unauthenticated access to configuration and database files as well as sensitive meeting information on an affected system. Additionally, if the Traversal Using Relay NAT (TURN) service is enabled and utilizing Transport Layer Security (TLS) connections, an attacker could utilize TURN credentials to forward traffic to device daemons, allowing for remote exploitation. This vulnerability affects Cisco Meeting Server (CMS) Acano X-series platforms that are running a CMS Software release prior to 2.2.11. Cisco Bug IDs: CSCvg76469.
+cvss_v2: 6.8
+references:
+    - http://www.securityfocus.com/bid/104079
+    - http://www.securitytracker.com/id/1040819
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180502-cms-cx
+affected:
+    - groupId: org.ow2.util.execution
+      artifactId: execution
+      version:
+        - "<=2.0.0"
+      fixedin:
+        []
