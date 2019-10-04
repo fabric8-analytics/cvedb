@@ -1,0 +1,17 @@
+---
+cve: 2017-11173
+title: CVE in cors-anywhere
+description: >
+    Missing anchor in generated regex for rack-cors before 0.4.1 allows a malicious third-party site to perform CORS requests. If the configuration were intended to allow only the trusted example.com domain name and not the malicious example.net domain name, then example.com.example.net (as well as example.com-example.net) would be inadvertently allowed.
+cvss_v2: 6.8
+references:
+    - http://seclists.org/fulldisclosure/2017/Jul/22
+    - http://www.debian.org/security/2017/dsa-3931
+    - https://github.com/cyu/rack-cors/commit/42ebe6caa8e85ffa9c8a171bda668ba1acc7a5e6
+    - https://packetstormsecurity.com/files/143345/rack-cors-Missing-Anchor.html
+affected:
+    - name: cors-anywhere
+      version:
+        - "<=0.4.0"
+      fixedin:
+        - ">=0.4.1"
