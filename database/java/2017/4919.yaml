@@ -1,0 +1,18 @@
+---
+cve: 2017-4919
+title: CVE in org.kie.server:kie-server-api
+description: >
+    VMware vCenter Server 5.5, 6.0, 6.5 allows vSphere users with certain, limited vSphere privileges to use the VIX API to access Guest Operating Systems without the need to authenticate.
+cvss_v2: 6.8
+references:
+    - http://www.securityfocus.com/bid/100102
+    - http://www.securitytracker.com/id/1039004
+    - http://www.vmware.com/security/advisories/VMSA-2017-0012.html
+affected:
+    - groupId: org.kie.server
+      artifactId: kie-server-api
+      version:
+        - "<=6.5.0.Final,6.5.0.Beta1"
+      fixedin:
+        - ">=7.0.0.Beta1"
+        - "<=6.4.0.Final,6.3.0.Beta1"
