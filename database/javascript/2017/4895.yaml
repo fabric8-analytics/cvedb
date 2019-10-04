@@ -1,0 +1,16 @@
+---
+cve: 2017-4895
+title: CVE in tunnel-agent
+description: >
+    Airwatch Agent for Android contains a vulnerability that may allow a device to bypass root detection. Successful exploitation of this issue may result in an enrolled device having unrestricted access over local Airwatch security controls and data.
+cvss_v2: 4.6
+references:
+    - http://www.securityfocus.com/bid/95892
+    - http://www.securitytracker.com/id/1037738
+    - http://www.vmware.com/us/security/advisories/VMSA-2017-0001.html
+affected:
+    - name: tunnel-agent
+      version:
+        []
+      fixedin:
+        - ">=0.2.0"
