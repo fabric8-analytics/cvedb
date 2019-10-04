@@ -1,0 +1,16 @@
+---
+cve: 2017-7988
+title: CVE in joomla-cli
+description: >
+    In Joomla! 1.6.0 through 3.6.5 (fixed in 3.7.0), inadequate filtering of form contents allows overwriting the author of an article.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/98022
+    - https://developer.joomla.org/security-centre/688-20170406-core-acl-violations
+affected:
+    - name: joomla-cli
+      version:
+        - "<=1.7.5,1.6.0"
+      fixedin:
+        - ">=1.7.6"
+        - "<=1.5.8,1.0.3"
