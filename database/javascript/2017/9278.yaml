@@ -1,0 +1,15 @@
+---
+cve: 2017-9278
+title: CVE in identity
+description: >
+    The NetIQ Identity Manager Oracle EBS driver before 4.0.2.0 sent EBS logs containing the driver authentication password, potentially disclosing this to attackers able to read the EBS tables.
+cvss_v2: 5.0
+references:
+    - https://bugzilla.suse.com/show_bug.cgi?id=1053200
+    - https://download.novell.com/Download?buildid=DKFkx_xPeaw~
+affected:
+    - name: identity
+      version:
+        - "<=4.0.1"
+      fixedin:
+        - ">=4.0.2"
