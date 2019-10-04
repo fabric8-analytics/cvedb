@@ -1,0 +1,14 @@
+---
+cve: 2018-1000404
+title: CVE in aws-cdk-aws-codebuild
+description: >
+    Jenkins project Jenkins AWS CodeBuild Plugin version 0.26 and earlier contains a Insufficiently Protected Credentials vulnerability in AWSClientFactory.java, CodeBuilder.java that can result in Credentials Disclosure. This attack appear to be exploitable via local file access. This vulnerability appears to have been fixed in 0.27 and later.
+cvss_v2: 2.1
+references:
+    - https://jenkins.io/security/advisory/2018-06-25/#SECURITY-834
+affected:
+    - name: aws-cdk-aws-codebuild
+      version:
+        - "<=0.26.0"
+      fixedin:
+        - ">=0.27.0"
