@@ -1,0 +1,17 @@
+---
+cve: 2017-4955
+title: CVE in io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry
+description: >
+    An issue was discovered in Pivotal PCF Elastic Runtime 1.6.x versions prior to 1.6.65, 1.7.x versions prior to 1.7.48, 1.8.x versions prior to 1.8.28, and 1.9.x versions prior to 1.9.5. Several credentials were present in the logs for the Notifications errand in the PCF Elastic Runtime tile.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/97082
+    - https://pivotal.io/security/cve-2017-4955
+affected:
+    - groupId: io.pivotal.spring.cloud
+      artifactId: spring-cloud-services-starter-service-registry
+      version:
+        - "<=1.6.6.RELEASE,1.6.0.RELEASE"
+      fixedin:
+        - ">=2.0.0.RELEASE"
+        - "<=1.5.0.RELEASE,1.0.1.RELEASE"
