@@ -1,0 +1,14 @@
+---
+cve: 2017-7696
+title: CVE in ts-security-authentication-web
+description: >
+    SAP AS JAVA SSO Authentication Library 2.0 through 3.0 allow remote attackers to cause a denial of service (memory consumption) via large values in the width and height parameters to otp_logon_ui_resources/qr, aka SAP Security Note 2389042.
+cvss_v2: 5.0
+references:
+    - https://erpscan.io/advisories/erpscan-17-001-sap-java-dos-bc-iam-sso-otp-package-use-qr-servlet/
+affected:
+    - name: ts-security-authentication-web
+      version:
+        - "<=3.0.0-alpha.32,3.0.0-alpha.1"
+      fixedin:
+        - "<=2.9.2,1.0.0"
