@@ -1,0 +1,17 @@
+---
+cve: 2017-0920
+title: CVE in gitlab
+description: >
+    GitLab Community and Enterprise Editions before 10.1.6, 10.2.6, and 10.3.4 are vulnerable to an authorization bypass issue in the Projects::MergeRequests::CreationsController component resulting in an attacker to see every project name and their respective namespace on a GitLab instance.
+cvss_v2: 4.0
+references:
+    - https://about.gitlab.com/2018/01/16/gitlab-10-dot-3-dot-4-released/
+    - https://hackerone.com/reports/301336
+    - https://www.debian.org/security/2018/dsa-4206
+affected:
+    - name: gitlab
+      version:
+        - "<=10.2.1,9.0.0"
+      fixedin:
+        - ">=11.0.0"
+        - "<=8.0.0,0.0.1"
