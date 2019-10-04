@@ -1,0 +1,18 @@
+---
+cve: 2017-4921
+title: CVE in org.kie.server:kie-server
+description: >
+    VMware vCenter Server (6.5 prior to 6.5 U1) contains an insecure library loading issue that occurs due to the use of LD_LIBRARY_PATH variable in an unsafe manner. Successful exploitation of this issue may allow unprivileged host users to load a shared library that may lead to privilege escalation.
+cvss_v2: 6.5
+references:
+    - http://www.securityfocus.com/bid/100006
+    - http://www.securitytracker.com/id/1039013
+    - https://www.vmware.com/security/advisories/VMSA-2017-0013.html
+affected:
+    - groupId: org.kie.server
+      artifactId: kie-server
+      version:
+        - "<=6.5.0.Final,6.5.0.Beta1"
+      fixedin:
+        - ">=7.0.0.Beta1"
+        - "<=6.4.0.Final,6.3.0.Beta1"
