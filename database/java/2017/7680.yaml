@@ -1,0 +1,15 @@
+---
+cve: 2017-7680
+title: CVE in org.apache.james:apache-james
+description: >
+    Apache OpenMeetings 1.0.0 has an overly permissive crossdomain.xml file. This allows for flash content to be loaded from untrusted domains.
+cvss_v2: 5.0
+references:
+    - http://markmail.org/message/whhibri7ervbjvda
+affected:
+    - groupId: org.apache.james
+      artifactId: apache-james
+      version:
+        - "<=3.0-beta4"
+      fixedin:
+        []
