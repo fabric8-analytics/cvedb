@@ -1,0 +1,17 @@
+---
+cve: 2017-1283
+title: CVE in com.ibm.mq:com.ibm.mq.allclient
+description: >
+    IBM WebSphere MQ 8.0 and 9.0 could allow an authenticated user to cause a shared memory leak by MQ applications using dynamic queues, which can lead to lack of resources for other MQ applications. IBM X-Force ID: 125144.
+cvss_v2: 4.0
+references:
+    - http://www.ibm.com/support/docview.wss?uid=swg22003852
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/125144
+affected:
+    - groupId: com.ibm.mq
+      artifactId: com.ibm.mq.allclient
+      version:
+        - "<=9.0.4.0,9.0.4.0"
+      fixedin:
+        - ">=9.0.5.0"
+        - "<=0.0.0.3,0.0.0.2"
