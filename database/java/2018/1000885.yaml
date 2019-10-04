@@ -1,0 +1,15 @@
+---
+cve: 2018-1000885
+title: CVE in de.devsurf.injection.guice:de.devsurf.injection.guice.examples
+description: >
+    PHKP version including commit 88fd9cfdf14ea4b6ac3e3967feea7bcaabb6f03b contains a Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability in function pgp_exec() phkp.php:98 that can result in It is possible to manipulate gpg-keys or execute commands remotely. This attack appear to be exploitable via HKP-Api: /pks/lookup?search.
+cvss_v2: 7.5
+references:
+    - https://tech.feedyourhead.at/content/full-disclosure-remote-command-execution-in-phkp
+affected:
+    - groupId: de.devsurf.injection.guice
+      artifactId: de.devsurf.injection.guice.examples
+      version:
+        []
+      fixedin:
+        - ">=0.6.2"
