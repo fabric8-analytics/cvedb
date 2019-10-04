@@ -1,0 +1,19 @@
+---
+cve: 2017-17428
+title: CVE in org.codelibs.robot:s2robot
+description: >
+    Cavium Nitrox SSL, Nitrox V SSL, and TurboSSL software development kits (SDKs) allow remote attackers to decrypt TLS ciphertext data by leveraging a Bleichenbacher RSA padding oracle, aka a ROBOT attack.
+cvss_v2: 7.1
+references:
+    - http://www.securityfocus.com/bid/102170
+    - http://www.securitytracker.com/id/1039984
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20171212-bleichenbacher
+    - https://www.cavium.com/security-advisory-cve-2017-17428.html
+    - https://www.kb.cert.org/vuls/id/144389
+affected:
+    - groupId: org.codelibs.robot
+      artifactId: s2robot
+      version:
+        - "<=1.0.0-beta1"
+      fixedin:
+        []
