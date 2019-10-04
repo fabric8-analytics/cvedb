@@ -1,0 +1,15 @@
+---
+cve: 2017-7685
+title: CVE in quiver-http-head
+description: >
+    Apache OpenMeetings 1.0.0 responds to the following insecure HTTP methods: PUT, DELETE, HEAD, and PATCH.
+cvss_v2: 5.0
+references:
+    - http://markmail.org/message/uxk4bpq35svnyjhb
+    - http://www.securityfocus.com/bid/99592
+affected:
+    - name: quiver-http-head
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
