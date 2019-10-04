@@ -1,0 +1,15 @@
+---
+cve: 2017-1000052
+title: CVE in com.opower.hadoop.elephant-plug:elephant-plug-kafka-test
+description: >
+    Elixir Plug before v1.0.4, v1.1.7, v1.2.3 and v1.3.2 is vulnerable to null byte injection in the Plug.Static component, which may allow users to bypass filetype restrictions.
+cvss_v2: 4.6
+references:
+    - https://elixirforum.com/t/security-releases-for-plug/3913
+affected:
+    - groupId: com.opower.hadoop.elephant-plug
+      artifactId: elephant-plug-kafka-test
+      version:
+        - "<=1.3.1"
+      fixedin:
+        - ">=2.99.0"
