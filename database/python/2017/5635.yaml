@@ -1,0 +1,18 @@
+---
+cve: 2017-5635
+title: CVE in apache-libcloud
+description: >
+    In Apache NiFi before 0.7.2 and 1.x before 1.1.2 in a cluster environment, if an anonymous user request is replicated to another node, the originating node identity is used rather than the "anonymous" user.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/96730
+    - https://nifi.apache.org/security.html#CVE-2017-5635
+affected:
+    - name: apache-libcloud
+      version:
+        - "<=0.7.1,0.7.1"
+        - "<=1.1.0,1.1.0"
+      fixedin:
+        - ">=1.2.1"
+        - "<=1.0.0-pre1,0.8.0"
+        - "<=0.6.2,0.3.1"
