@@ -1,0 +1,18 @@
+---
+cve: 2017-5419
+title: CVE in firefox-puppeteer
+description: >
+    If a malicious site repeatedly triggers a modal authentication prompt, eventually the browser UI will become non-responsive, requiring shutdown through the operating system. This is a denial of service (DOS) attack. This vulnerability affects Firefox < 52 and Thunderbird < 52.
+cvss_v2: 7.8
+references:
+    - http://www.securityfocus.com/bid/96692
+    - http://www.securitytracker.com/id/1037966
+    - https://bugzilla.mozilla.org/show_bug.cgi?id=1312243
+    - https://www.mozilla.org/security/advisories/mfsa2017-05/
+    - https://www.mozilla.org/security/advisories/mfsa2017-09/
+affected:
+    - name: firefox-puppeteer
+      version:
+        - "<=51.0.0"
+      fixedin:
+        - ">=52.0.0"
