@@ -1,0 +1,18 @@
+---
+cve: 2017-10987
+title: CVE in buffer
+description: >
+    An FR-GV-304 issue in FreeRADIUS 3.x before 3.0.15 allows "DHCP - Buffer over-read in fr_dhcp_decode_suboptions()" and a denial of service.
+cvss_v2: 5.0
+references:
+    - http://freeradius.org/security/fuzzer-2017.html
+    - http://www.debian.org/security/2017/dsa-3930
+    - http://www.securityfocus.com/bid/99970
+    - https://access.redhat.com/errata/RHSA-2017:2389
+affected:
+    - name: buffer
+      version:
+        - "<=3.0.3,3.0.0"
+      fixedin:
+        - ">=3.1.0"
+        - "<=2.8.2,2.1.1"
