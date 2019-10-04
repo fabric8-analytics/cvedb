@@ -1,0 +1,14 @@
+---
+cve: 2018-10971
+title: CVE in free-cinema
+description: >
+    An issue was discovered in Free Lossless Image Format (FLIF) 0.3. The Plane function in image/image.hpp allows remote attackers to cause a denial of service (attempted excessive memory allocation) via a crafted file.
+cvss_v2: 4.3
+references:
+    - https://github.com/FLIF-hub/FLIF/issues/501
+affected:
+    - name: free-cinema
+      version:
+        - "<=0.3.0,0.3.0"
+      fixedin:
+        - "<=0.2.1,0.2.0"
