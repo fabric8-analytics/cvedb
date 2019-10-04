@@ -1,0 +1,16 @@
+---
+cve: 2018-11792
+title: CVE in org.apache.karaf.shell:org.apache.karaf.shell.table
+description: >
+    In Apache Impala before 3.0.1, ALTER TABLE/VIEW RENAME required ALTER on the old table. This may pose a potential security risk, such as having ALTER on a table and ALL on a particular database allows a user to move the table to a database with ALL, which will automatically grant that user with ALL privilege on that table due to the privilege inherited from the database.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/105739
+    - https://lists.apache.org/thread.html/cba8f18df15af862aa07c584d8dc85c44a199fb8f460edd498059247@%3Cdev.impala.apache.org%3E
+affected:
+    - groupId: org.apache.karaf.shell
+      artifactId: org.apache.karaf.shell.table
+      version:
+        - "<=3.0.0"
+      fixedin:
+        - ">=3.0.1"
