@@ -1,0 +1,15 @@
+---
+cve: 2017-17751
+title: CVE in org.glassfish.websocket:websocket-sample-chat
+description: >
+    Bose SoundTouch devices allows remote attackers to achieve remote control via a crafted web site that uses the WebSocket Protocol.
+cvss_v2: 6.8
+references:
+    - http://aryanitin.com/2017-12-20-CVE-2017-17751/
+affected:
+    - groupId: org.glassfish.websocket
+      artifactId: websocket-sample-chat
+      version:
+        []
+      fixedin:
+        - ">=0.2"
