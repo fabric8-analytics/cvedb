@@ -1,0 +1,23 @@
+---
+cve: 2017-1339
+title: CVE in org.talend.esb.auxiliary.storage:auxiliary-storage-server
+description: >
+    IBM Spectrum Protect 7.1 and 8.1 (formerly Tivoli Storage Manager) Server uses weak encryption for the password. A database administrator may be able to decrypt the IBM Spectrum protect client or administrator password which can result in information disclosure or a denial of service. IBM X-Force ID: 126247.
+cvss_v2: 2.1
+references:
+    - http://www.ibm.com/support/docview.wss?uid=swg22007936
+    - http://www.securityfocus.com/bid/101113
+    - http://www.securitytracker.com/id/1039498
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/126247
+affected:
+    - groupId: org.talend.esb.auxiliary.storage
+      artifactId: auxiliary-storage-server
+      version:
+        - "<=6.3.1,6.1.0"
+        - "<=6.4.1,6.4.1"
+        - "<=7.1.1,7.1.1"
+      fixedin:
+        - ">=7.2.1"
+        - "<=7.0.1,6.5.1"
+        - "<=6.4.0,6.3.2"
+        - "<=6.0.1,5.6.0"
