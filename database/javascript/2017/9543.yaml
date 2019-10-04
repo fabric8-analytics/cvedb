@@ -1,0 +1,14 @@
+---
+cve: 2017-9543
+title: CVE in group_chat_server
+description: >
+    register.ghp in EFS Software Easy Chat Server versions 2.0 to 3.1 allows remote attackers to reset arbitrary passwords via a crafted POST request to registresult.htm.
+cvss_v2: 5.0
+references:
+    - https://www.exploit-db.com/exploits/42154/
+affected:
+    - name: group_chat_server
+      version:
+        - "<=2.0.0"
+      fixedin:
+        - ">=2.0.1"
