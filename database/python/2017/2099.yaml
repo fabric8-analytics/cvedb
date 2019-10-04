@@ -1,0 +1,15 @@
+---
+cve: 2017-2099
+title: CVE in infrared-v3
+description: >
+    Hands-on Vulnerability Learning Tool "AppGoat" for Web Application V3.0.0 and earlier allows remote code execution via unspecified vectors.
+cvss_v2: 6.8
+references:
+    - http://jvn.jp/en/jp/JVN71666779/index.html
+    - http://www.securityfocus.com/bid/96226
+affected:
+    - name: infrared-v3
+      version:
+        - "<=3.0.0"
+      fixedin:
+        - ">=3.0.1"
