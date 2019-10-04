@@ -1,0 +1,14 @@
+---
+cve: 2017-15519
+title: CVE in @file-services/types
+description: >
+    Versions of SnapCenter 2.0 through 3.0.1 allow unauthenticated remote attackers to view and modify backup related data via the Plug-in for NAS File Services. All users are urged to move to version 3.0.1 and perform the mitigation steps or upgrade to 4.0 following the product documentation.
+cvss_v2: 6.4
+references:
+    - https://security.netapp.com/advisory/ntap-20180306-0001/
+affected:
+    - name: @file-services/types
+      version:
+        - "<=2.0.1,2.0.0"
+      fixedin:
+        - "<=1.0.4,0.1.0"
