@@ -1,0 +1,16 @@
+---
+cve: 2017-11381
+title: CVE in deep-framework
+description: >
+    A command injection vulnerability exists in Trend Micro Deep Discovery Director 1.1 that allows an attacker to restore accounts that can access the pre-configuration console.
+cvss_v2: 7.5
+references:
+    - https://success.trendmicro.com/solution/1117663
+    - https://www.coresecurity.com/advisories/trend-micro-deep-discovery-director-multiple-vulnerabilities
+affected:
+    - name: deep-framework
+      version:
+        - "<=1.1.0,1.1.0"
+      fixedin:
+        - ">=1.1.1"
+        - "<=1.0.26,0.0.158"
