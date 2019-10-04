@@ -1,0 +1,18 @@
+---
+cve: 2017-5703
+title: CVE in com.googlecode.backport-spi:backport-spi
+description: >
+    Configuration of SPI Flash in platforms based on multiple Intel platforms allow a local attacker to alter the behavior of the SPI flash potentially leading to a Denial of Service.
+cvss_v2: 3.6
+references:
+    - http://www.securitytracker.com/id/1040626
+    - https://security.netapp.com/advisory/ntap-20180924-0004/
+    - https://security-center.intel.com/advisory.aspx?intelid=INTEL-SA-00087&languageid=en-fr
+    - https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbhf03867en_us
+affected:
+    - groupId: com.googlecode.backport-spi
+      artifactId: backport-spi
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
