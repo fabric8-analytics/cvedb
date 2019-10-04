@@ -1,0 +1,16 @@
+---
+cve: 2018-1117
+title: CVE in @manageiq/topological_inventory
+description: >
+    ovirt-ansible-roles before version 1.0.6 has a vulnerability due to a missing no_log directive, resulting in the 'Add oVirt Provider to ManageIQ/CloudForms' playbook inadvertently disclosing admin passwords in the provisioning log. In an environment where logs are shared with other parties, this could lead to privilege escalation.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/104186
+    - https://access.redhat.com/errata/RHSA-2018:1452
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-1117
+affected:
+    - name: @manageiq/topological_inventory
+      version:
+        - "<=1.0.5"
+      fixedin:
+        - ">=1.0.6"
