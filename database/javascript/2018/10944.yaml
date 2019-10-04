@@ -1,0 +1,14 @@
+---
+cve: 2018-10944
+title: CVE in is-erc20-token
+description: >
+    The request_dividend function of a smart contract implementation for ROC (aka Rasputin Online Coin), an Ethereum ERC20 token, allows attackers to steal all of the contract's Ether.
+cvss_v2: 4.3
+references:
+    - https://medium.com/@jonghyk.song/attackers-can-steal-all-of-ether-in-roc-rasputin-online-coin-token-smart-contract-ae928b4a935a
+affected:
+    - name: is-erc20-token
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
