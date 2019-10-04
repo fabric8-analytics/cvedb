@@ -1,0 +1,17 @@
+---
+cve: 2017-3801
+title: CVE in cloudera-director-python-client
+description: >
+    A vulnerability in the web-based GUI of Cisco UCS Director 6.0.0.0 and 6.0.0.1 could allow an authenticated, local attacker to execute arbitrary workflow items with just an end-user profile, a Privilege Escalation Vulnerability. The vulnerability is due to improper role-based access control (RBAC) after the Developer Menu is enabled in Cisco UCS Director. An attacker could exploit this vulnerability by enabling Developer Mode for his/her user profile with an end-user profile and then adding new catalogs with arbitrary workflow items to his/her profile. An exploit could allow an attacker to perform any actions defined by these workflow items, including actions affecting other tenants. Cisco Bug IDs: CSCvb64765.
+cvss_v2: 4.6
+references:
+    - http://www.securityfocus.com/bid/96235
+    - http://www.securitytracker.com/id/1037830
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20170215-ucs
+affected:
+    - name: cloudera-director-python-client
+      version:
+        - "<=6.0.0,6.0.0"
+      fixedin:
+        - ">=6.1.0"
+        - "<=2.8.0,1.1.0"
