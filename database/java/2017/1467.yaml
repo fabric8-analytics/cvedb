@@ -1,0 +1,18 @@
+---
+cve: 2017-1467
+title: CVE in org.infinispan.server:infinispan-server-testsuite
+description: >
+    A network layer security vulnerability in InfoSphere Information Server 9.1, 11.3, and 11.5 can lead to privilege escalation or unauthorized access. IBM X-Force ID: 128466.
+cvss_v2: 6.8
+references:
+    - http://www.ibm.com/support/docview.wss?uid=swg22006063
+    - http://www.securityfocus.com/bid/100103
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/128466
+affected:
+    - groupId: org.infinispan.server
+      artifactId: infinispan-server-testsuite
+      version:
+        - "<=9.1.0.Final,9.1.0.Alpha1"
+      fixedin:
+        - ">=9.1.1.Final"
+        - "<=9.0.3.Final,5.3.0.Beta1"
