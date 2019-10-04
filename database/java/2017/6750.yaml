@@ -1,0 +1,17 @@
+---
+cve: 2017-6750
+title: CVE in org.glassfish.web:web-gui-plugin-common
+description: >
+    A vulnerability in AsyncOS for the Cisco Web Security Appliance (WSA) could allow an unauthenticated, local attacker to log in to the device with the privileges of a limited user or an unauthenticated, remote attacker to authenticate to certain areas of the web GUI, aka a Static Credentials Vulnerability. Affected Products: virtual and hardware versions of Cisco Web Security Appliance (WSA). More Information: CSCve06124. Known Affected Releases: 10.1.0-204. Known Fixed Releases: 10.5.1-270.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/99924
+    - http://www.securitytracker.com/id/1038958
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20170719-wsa4
+affected:
+    - groupId: org.glassfish.web
+      artifactId: web-gui-plugin-common
+      version:
+        - "<=10.0-b28,10.0-b28"
+      fixedin:
+        - "<=3.2-b06,3.0-b29"
