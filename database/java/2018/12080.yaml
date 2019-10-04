@@ -1,0 +1,15 @@
+---
+cve: 2018-12080
+title: CVE in io.gravitee.node.services:gravitee-node-services-monitoring
+description: >
+    The mintToken function of a smart contract implementation for Internet Node Token (INT), a tradable Ethereum ERC20 token, has no period constraint, which allows the owner to increase the total supply of the digital assets arbitrarily so as to make profits, aka the "tradeTrap" issue.
+cvss_v2: 5.0
+references:
+    - https://peckshield.com/2018/06/11/tradeTrap/
+affected:
+    - groupId: io.gravitee.node.services
+      artifactId: gravitee-node-services-monitoring
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
