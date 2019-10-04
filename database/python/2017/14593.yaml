@@ -1,0 +1,16 @@
+---
+cve: 2017-14593
+title: CVE in mercurial-bitbucketize
+description: >
+    Sourcetree for Windows had several argument and command injection bugs in Mercurial and Git repository handling. An attacker with permission to commit to a repository linked in Sourcetree for Windows is able to exploit this issue to gain code execution on the system. From version 0.8.4b of Sourcetree for Windows, this vulnerability can be triggered from a webpage through the use of the Sourcetree URI handler. Versions of Sourcetree for Windows starting with 0.5.1.0 before version 2.4.7.0 are affected by this vulnerability
+cvss_v2: 9.0
+references:
+    - http://www.securityfocus.com/bid/102926
+    - https://confluence.atlassian.com/sourcetreekb/sourcetree-security-advisory-2018-01-24-942834324.html
+    - https://jira.atlassian.com/browse/SRCTREEWIN-8256
+affected:
+    - name: mercurial-bitbucketize
+      version:
+        - "<=0.9.2,0.5.1"
+      fixedin:
+        - "<=0.5.0,0.5.0"
