@@ -1,0 +1,17 @@
+---
+cve: 2017-2162
+title: CVE in io.swagger.core.v3:swagger-jaxrs2-servlet-initializer
+description: >
+    FlashAirTM SDHC Memory Card (SD-WE Series <W-03>) V3.00.02 and earlier and FlashAirTM SDHC Memory Card (SD-WD/WC Series <W-02>) V2.00.04 and earlier allows default credentials to be set for wireless LAN connections to the product when enabling the PhotoShare function through a web browser.
+cvss_v2: 3.3
+references:
+    - http://jvndb.jvn.jp/jvndb/JVNDB-2017-000091
+    - http://www.toshiba-personalstorage.net/news/20170516a.htm
+    - https://jvn.jp/en/jp/JVN81820501/index.html
+affected:
+    - groupId: io.swagger.core.v3
+      artifactId: swagger-jaxrs2-servlet-initializer
+      version:
+        - "<=2.0.9"
+      fixedin:
+        []
