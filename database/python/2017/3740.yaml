@@ -1,0 +1,14 @@
+---
+cve: 2017-3740
+title: CVE in active-alchemy
+description: >
+    In Lenovo Active Protection System before 1.82.0.14, an attacker with local privileges could send commands to the system's embedded controller, which could cause a denial of service attack on the system or the ability to alter hardware functionality.
+cvss_v2: 4.9
+references:
+    - https://support.lenovo.com/us/en/product_security/LEN-13637
+affected:
+    - name: active-alchemy
+      version:
+        - "<=1.0.0,1.0.0"
+      fixedin:
+        - "<=0.10.0,0.4.0"
