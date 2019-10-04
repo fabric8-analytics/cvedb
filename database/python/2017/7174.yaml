@@ -1,0 +1,16 @@
+---
+cve: 2017-7174
+title: CVE in sous-chef
+description: >
+    The user-account creation feature in Chef Manage 2.1.0 through 2.4.4 allows remote attackers to execute arbitrary code. This is fixed in 2.4.5.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/97069
+    - https://discourse.chef.io/t/chef-manage-2-4-5-security-release/10599
+affected:
+    - name: sous-chef
+      version:
+        - "<=2.2.0,2.1.0"
+      fixedin:
+        - ">=2.5.0"
+        - "<=2.0.1,0.3.0"
