@@ -1,0 +1,16 @@
+---
+cve: 2017-1000361
+title: CVE in org.opendaylight.odlparent:opendaylight-karaf-resources
+description: >
+    DOMRpcImplementationNotAvailableException when sending Port-Status packets to OpenDaylight. Controller launches exceptions and consumes more CPU resources. Component: OpenDaylight is vulnerable to this flaw. Version: The tested versions are OpenDaylight 3.3 and 4.0.
+cvss_v2: 5.0
+references:
+    - https://aaltodoc.aalto.fi/bitstream/handle/123456789/21584/master_Bidaj_Andi_2016.pdf
+affected:
+    - groupId: org.opendaylight.odlparent
+      artifactId: opendaylight-karaf-resources
+      version:
+        - "<=4.0.0,4.0.0"
+      fixedin:
+        - ">=4.0.1"
+        - "<=3.1.9,1.7.0-Boron"
