@@ -1,0 +1,14 @@
+---
+cve: 2017-14483
+title: CVE in flower
+description: >
+    flower.initd in the Gentoo dev-python/flower package before 0.9.1-r1 for Celery Flower sets PID file ownership to a non-root account, which might allow local users to kill arbitrary processes by leveraging access to this non-root account for PID file modification before a root script executes a "kill `cat /pathname`" command.
+cvss_v2: 4.9
+references:
+    - https://bugs.gentoo.org/631020
+affected:
+    - name: flower
+      version:
+        - "<=0.9.1"
+      fixedin:
+        - ">=0.9.2"
