@@ -1,0 +1,14 @@
+---
+cve: 2018-1000112
+title: CVE in mercurial
+description: >
+    An improper authorization vulnerability exists in Jenkins Mercurial Plugin version 2.2 and earlier in MercurialStatus.java that allows an attacker with network access to obtain a list of nodes and users.
+cvss_v2: 5.0
+references:
+    - https://jenkins.io/security/advisory/2018-02-26/#SECURITY-726
+affected:
+    - name: mercurial
+      version:
+        - "<=2.2"
+      fixedin:
+        - ">=2.2.2"
