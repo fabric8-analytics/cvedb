@@ -1,0 +1,19 @@
+---
+cve: 2018-10054
+title: CVE in com.h2database:h2-mvstore
+description: >
+    H2 1.4.197, as used in Datomic before 0.9.5697 and other products, allows remote code execution because CREATE ALIAS can execute arbitrary Java code.
+cvss_v2: 6.5
+references:
+    - http://blog.datomic.com/2018/03/important-security-update.html
+    - https://forum.datomic.com/t/important-security-update-0-9-5697/379
+    - https://mthbernardes.github.io/rce/2018/03/14/abusing-h2-database-alias.html
+    - https://www.exploit-db.com/exploits/44422/
+affected:
+    - groupId: com.h2database
+      artifactId: h2-mvstore
+      version:
+        - "<=1.4.197,1.4.197"
+      fixedin:
+        - ">=1.4.198"
+        - "<=1.4.196,1.4.183"
