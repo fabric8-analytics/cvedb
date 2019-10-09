@@ -1,0 +1,16 @@
+---
+cve: 2016-1144
+title: CVE in job
+description: >
+    Cross-site scripting (XSS) vulnerability in JOB-CUBE -JOB WEB SYSTEM before 1.2.2 and -JOB WEB SYSTEM High Income 1.0.6 and earlier allows remote authenticated users to inject arbitrary web script or HTML via unspecified vectors.
+cvss_v2: 3.5
+references:
+    - http://jvn.jp/en/jp/JVN26921563/index.html
+    - http://jvndb.jvn.jp/jvndb/JVNDB-2016-000017
+    - http://www.ws-download.net/info.php?type=version&id=V0001081
+affected:
+    - name: job
+      version:
+        - "<=1.2.1"
+      fixedin:
+        - ">=1.2.2"
