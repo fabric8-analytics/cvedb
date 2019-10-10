@@ -1,0 +1,15 @@
+---
+cve: 2018-15781
+title: CVE in org.everit.password:org.everit.password.encryptor.pbkdf2.ecm
+description: >
+    The Dell Wyse Password Encoder in ThinLinux2 versions prior to 2.1.0.01 contain a Hard-coded Cryptographic Key vulnerability. An unauthenticated remote attacker could reverse engineer the cryptographic system used in the Dell Wyse Password Encoder to discover the hard coded private key and decrypt locally stored cipher text.
+cvss_v2: 7.9
+references:
+    - https://www.dell.com/support/article/SLN316104
+affected:
+    - groupId: org.everit.password
+      artifactId: org.everit.password.encryptor.pbkdf2.ecm
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - "<=1.0.0,1.0.0"
