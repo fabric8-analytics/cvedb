@@ -2,7 +2,7 @@
 cve: 2018-1002200
 title: CVE in org.codehaus.plexus:plexus-archiver
 description: >
-    "plexus-archiver before 3.6.0 is vulnerable to directory traversal, allowing attackers to write to arbitrary files via a ../ (dot dot slash) in an archive entry that is mishandled during extraction. This vulnerability is also known as 'Zip-Slip'."
+    plexus-archiver before 3.6.0 is vulnerable to directory traversal, allowing attackers to write to arbitrary files via a ../ (dot dot slash) in an archive entry that is mishandled during extraction. This vulnerability is also known as 'Zip-Slip'.
 cvss_v2: 4.3
 references:
     - https://access.redhat.com/errata/RHSA-2018:1836
