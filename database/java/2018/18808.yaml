@@ -1,0 +1,17 @@
+---
+cve: 2018-18808
+title: CVE in net.sf.jasperreports:jasperreports
+description: >
+    The domain management component of TIBCO Software Inc.'s TIBCO JasperReports Server, TIBCO JasperReports Server Community Edition, TIBCO JasperReports Server for ActiveMatrix BPM, TIBCO Jaspersoft for AWS with Multi-Tenancy, and TIBCO Jaspersoft Reporting and Analytics for AWS contains a race-condition vulnerability that may allow any users with domain save privileges to gain superuser privileges. Affected releases are TIBCO Software Inc.'s TIBCO JasperReports Server: versions up to and including 6.3.4; 6.4.0; 6.4.1; 6.4.2; 6.4.3; 7.1.0, TIBCO JasperReports Server Community Edition: versions up to and including 7.1.0, TIBCO JasperReports Server for ActiveMatrix BPM: versions up to and including 6.4.3, TIBCO Jaspersoft for AWS with Multi-Tenancy: versions up to and including 7.1.0, and TIBCO Jaspersoft Reporting and Analytics for AWS: versions up to and including 7.1.0.
+cvss_v2: 8.5
+references:
+    - http://www.securityfocus.com/bid/107350
+    - http://www.tibco.com/services/support/advisories
+    - https://www.tibco.com/support/advisories/2019/03/tibco-security-advisory-march-6-2019-tibco-jasperreports-server-2018-18808
+affected:
+    - groupId: net.sf.jasperreports
+      artifactId: jasperreports
+      version:
+        - "<=6.10.0"
+      fixedin:
+        []
