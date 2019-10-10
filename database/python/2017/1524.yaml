@@ -1,0 +1,16 @@
+---
+cve: 2017-1524
+title: CVE in command-lifecycle
+description: >
+    IBM Jazz Foundation (IBM Rational Collaborative Lifecycle Management 5.0 and 6.0) could allow an authenticated user to obtain sensitive information from a specially crafted HTTP request that could be used to aid future attacks. IBM X-Force ID: 129970.
+cvss_v2: 4.0
+references:
+    - http://www.ibm.com/support/docview.wss?uid=swg22014815
+    - http://www.securityfocus.com/bid/103477
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/129970
+affected:
+    - name: command-lifecycle
+      version:
+        - "<=4.1.0,4.0.0"
+      fixedin:
+        - "<=2.1.6,0.4.0"
