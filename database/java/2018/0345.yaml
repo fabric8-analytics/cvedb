@@ -1,0 +1,16 @@
+---
+cve: 2018-0345
+title: CVE in org.terracotta.management:management-entity-tests
+description: >
+    A vulnerability in the configuration and management database of the Cisco SD-WAN Solution could allow an authenticated, remote attacker to execute arbitrary commands with the privileges of the vmanage user in the configuration management system of the affected software. The vulnerability is due to insufficient validation of command arguments that are passed to the configuration and management database of the affected software. An attacker could exploit this vulnerability by creating custom functions that contain malicious code and are executed as the vmanage user of the configuration management system. A successful exploit could allow the attacker to execute arbitrary commands with the privileges of the vmanage user in the configuration management system of the affected software. This vulnerability affects the following Cisco products if they are running a release of the Cisco SD-WAN Solution prior to Release 18.3.0: vBond Orchestrator Software, vManage Network Management Software, vSmart Controller Software. Cisco Bug IDs: CSCvi69937.
+cvss_v2: 9.0
+references:
+    - http://www.securityfocus.com/bid/104859
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180718-sdwan-cx
+affected:
+    - groupId: org.terracotta.management
+      artifactId: management-entity-tests
+      version:
+        []
+      fixedin:
+        - ">=2.5.0"
