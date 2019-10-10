@@ -1,0 +1,17 @@
+---
+cve: 2016-8651
+title: CVE in com.openshift:openshift-restclient-java
+description: >
+    An input validation flaw was found in the way OpenShift 3 handles requests for images. A user, with a copy of the manifest associated with an image, can pull an image even if they do not have access to the image normally, resulting in the disclosure of any information contained within the image.
+cvss_v2: 2.7
+references:
+    - http://www.securityfocus.com/bid/94935
+    - https://access.redhat.com/errata/RHSA-2016:2915
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2016-8651
+affected:
+    - groupId: com.openshift
+      artifactId: openshift-restclient-java
+      version:
+        - "<=3.0.0.Final"
+      fixedin:
+        - ">=3.0.1.Final"
