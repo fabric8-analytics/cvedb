@@ -1,0 +1,17 @@
+---
+cve: 2017-8441
+title: CVE in elasticsearch-xpack
+description: >
+    Elastic X-Pack Security versions prior to 5.4.1 and 5.3.3 did not always correctly apply Document Level Security to index aliases. This bug could allow a user with restricted permissions to view data they should not have access to when performing certain operations against an index alias.
+cvss_v2: 4.0
+references:
+    - https://discuss.elastic.co/t/elastic-stack-5-4-1-and-5-3-3-security-updates/87952
+    - https://www.elastic.co/blog/elasticsearch-5-4-1-and-5-3-3-released
+    - https://www.elastic.co/community/security
+affected:
+    - name: elasticsearch-xpack
+      version:
+        - "<=5.4.0,5.4.0"
+      fixedin:
+        - ">=6.0.0"
+        - "<=5.0.0,5.0.0"
