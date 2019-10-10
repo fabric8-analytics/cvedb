@@ -1,0 +1,16 @@
+---
+cve: 2017-12221
+title: CVE in org.terracotta.management:management-entity-tests
+description: >
+    A vulnerability in the web framework of Cisco Firepower Management Center could allow an authenticated, remote attacker to conduct a cross-site scripting (XSS) attack against a user of the web interface of the affected software. The vulnerability is due to insufficient validation of user-supplied input by the affected software. Successful exploitation of this vulnerability could allow the attacker to execute arbitrary code in the context of the affected system. Cisco Bug IDs: CSCvc38983.
+cvss_v2: 3.5
+references:
+    - http://www.securityfocus.com/bid/100640
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20170906-firepower-2
+affected:
+    - groupId: org.terracotta.management
+      artifactId: management-entity-tests
+      version:
+        []
+      fixedin:
+        - ">=2.5.0"
