@@ -1,0 +1,17 @@
+---
+cve: 2018-1684
+title: CVE in com.ibm.mq:com.ibm.mq.allclient
+description: >
+    IBM WebSphere MQ 8.0 through 9.1 is vulnerable to a error with MQTT topic string publishing that can cause a denial of service attack. IBM X-Force ID: 145456.
+cvss_v2: 4.0
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/145456
+    - https://www.ibm.com/support/docview.wss?uid=ibm10734297
+affected:
+    - groupId: com.ibm.mq
+      artifactId: com.ibm.mq.allclient
+      version:
+        - "<=9.1.0.0,9.0.4.0"
+      fixedin:
+        - ">=9.1.0.1"
+        - "<=0.0.0.3,0.0.0.2"
