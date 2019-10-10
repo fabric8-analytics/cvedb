@@ -1,0 +1,15 @@
+---
+cve: 2018-18982
+title: CVE in django-cms
+description: >
+    NUUO CMS All versions 3.3 and prior the web server application allows injection of arbitrary SQL characters, which can be used to inject SQL into an executing statement and allow arbitrary code execution.
+cvss_v2: 6.5
+references:
+    - https://ics-cert.us-cert.gov/advisories/ICSA-18-284-02
+    - https://www.exploit-db.com/exploits/46449/
+affected:
+    - name: django-cms
+      version:
+        - "<=3.3.0"
+      fixedin:
+        - ">=3.3.1"
