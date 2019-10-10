@@ -1,0 +1,17 @@
+---
+cve: 2014-2644
+title: CVE in org.fusesource.insight:insight-log-core
+description: >
+    Cross-site scripting (XSS) vulnerability in HP Systems Insight Manager (SIM) before 7.4 allows remote attackers to inject arbitrary web script or HTML via unknown vectors.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/70223
+    - http://www.securitytracker.com/id/1030970
+    - https://h20564.www2.hp.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c04468121
+affected:
+    - groupId: org.fusesource.insight
+      artifactId: insight-log-core
+      version:
+        - "<=7.2.0.redhat-060"
+      fixedin:
+        []
