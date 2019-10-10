@@ -1,0 +1,18 @@
+---
+cve: 2017-3199
+title: CVE in org.graniteds:granite-server-servlet3
+description: >
+    The Java implementation of GraniteDS, version 3.1.1.GA, AMF3 deserializers derives class instances from java.io.Externalizable rather than the AMF3 specification's recommendation of flash.utils.IExternalizable. A remote attacker with the ability to spoof or control an RMI server connection may be able to send serialized Java objects that execute arbitrary code when deserialized.
+cvss_v2: 6.8
+references:
+    - http://www.securityfocus.com/bid/97382
+    - http://www.securityweek.com/flaws-java-amf-libraries-allow-remote-code-execution
+    - https://codewhitesec.blogspot.com/2017/04/amf.html
+    - https://www.kb.cert.org/vuls/id/307983
+affected:
+    - groupId: org.graniteds
+      artifactId: granite-server-servlet3
+      version:
+        - "<=3.1.1.GA,3.1.1.GA"
+      fixedin:
+        - "<=3.1.0.GA,3.0.0.RC1"
