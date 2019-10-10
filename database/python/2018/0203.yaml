@@ -1,0 +1,16 @@
+---
+cve: 2018-0203
+title: CVE in adp-connection
+description: >
+    A vulnerability in the SMTP relay of Cisco Unity Connection could allow an unauthenticated, remote attacker to send unsolicited email messages, aka a Mail Relay Vulnerability. The vulnerability is due to improper handling of domain information in the affected software. An unauthenticated, remote attacker could exploit this vulnerability by sending crafted requests to the targeted application. A successful exploit could allow the attacker to send email messages to arbitrary addresses. Cisco Bug IDs: CSCvg62215.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/103142
+    - http://www.securitytracker.com/id/1040413
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180221-cuc
+affected:
+    - name: adp-connection
+      version:
+        []
+      fixedin:
+        - ">=1.0"
