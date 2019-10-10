@@ -1,0 +1,15 @@
+---
+cve: 2017-8450
+title: CVE in com.sksamuel.elastic4s:elastic4s-xpack-security_2.12
+description: >
+    X-Pack 5.1.1 did not properly apply document and field level security to multi-search and multi-get requests so users without access to a document and/or field may have been able to access this information.
+cvss_v2: 4.0
+references:
+    - https://www.elastic.co/community/security
+affected:
+    - groupId: com.sksamuel.elastic4s
+      artifactId: elastic4s-xpack-security_2.12
+      version:
+        - "<=5.1.1"
+      fixedin:
+        - ">=5.1.2"
