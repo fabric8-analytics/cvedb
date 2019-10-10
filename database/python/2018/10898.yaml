@@ -1,0 +1,15 @@
+---
+cve: 2018-10898
+title: CVE in openstack-heat
+description: >
+    A vulnerability was found in openstack-tripleo-heat-templates before version 8.0.2-40. When deployed using Director using default configuration, Opendaylight in RHOSP13 is configured with easily guessable default credentials.
+cvss_v2: 5.8
+references:
+    - https://access.redhat.com/errata/RHSA-2018:2214
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-10898
+affected:
+    - name: openstack-heat
+      version:
+        - "<=13.0.0.0rc2,13.0.0.0rc1"
+      fixedin:
+        - "<=12.0.0,11.0.0.0rc2.dev52"
