@@ -1,0 +1,17 @@
+---
+cve: 2018-0390
+title: CVE in com.distelli.objectStore:object-store-api
+description: >
+    A vulnerability in the web framework of Cisco Webex could allow an unauthenticated, remote attacker to conduct a Document Object Model-based (DOM-based) cross-site scripting (XSS) attack against the user of the web interface of an affected system. The vulnerability is due to insufficient input validation of certain parameters that are passed to the affected software by using the HTTP POST method. An attacker who can submit malicious scripts to the affected user interface element could execute arbitrary script or HTML code in the user's browser in the context of the affected site. Cisco Bug IDs: CSCvj33287.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/104865
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180718-webex-DOM-xss
+affected:
+    - groupId: com.distelli.objectStore
+      artifactId: object-store-api
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - ">=3.0.0"
+        - "<=1.5.0,1.0.0"
