@@ -1,0 +1,27 @@
+---
+cve: 2012-3278
+title: CVE in org.infinispan.server:infinispan-server-testsuite
+description: >
+    Stack-based buffer overflow in magentservice.exe in HP Diagnostics Server 8.x through 8.07 and 9.x through 9.21 allows remote attackers to execute arbitrary code via a malformed message packet.
+cvss_v2: 10.0
+references:
+    - http://www.zerodayinitiative.com/advisories/ZDI-12-162/
+    - https://h20566.www2.hp.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c03645497
+affected:
+    - groupId: org.infinispan.server
+      artifactId: infinispan-server-testsuite
+      version:
+        - "<=8.0.0.Final,8.0.0.Alpha1"
+        - "<=8.1.0.Final,8.1.0.Alpha1"
+        - "<=8.2.0.Final,8.2.0.Beta1"
+        - "<=9.0.0.Final,9.0.0.Alpha1"
+        - "<=9.1.0.Final,9.1.0.Alpha1"
+        - "<=9.2.0.Final,9.2.0.Alpha1"
+      fixedin:
+        - ">=9.2.1.Final"
+        - "<=9.1.7.Final,9.1.1.Final"
+        - "<=9.0.3.Final,9.0.1.Final"
+        - "<=8.2.11.Final,8.2.1.Final"
+        - "<=8.1.9.Final,8.1.1.Final"
+        - "<=8.0.2.Final,8.0.1.Final"
+        - "<=7.2.5.Final,5.3.0.Beta1"
