@@ -1,0 +1,16 @@
+---
+cve: 2017-8442
+title: CVE in org.elasticsearch:elasticsearch
+description: >
+    Elasticsearch X-Pack Security versions 5.0.0 to 5.4.3, when enabled, can result in the Elasticsearch _nodes API leaking sensitive configuration information, such as the paths and passphrases of SSL keys that were configured as part of an authentication realm. This could allow an authenticated Elasticsearch user to improperly view these details.
+cvss_v2: 4.0
+references:
+    - https://www.elastic.co/community/security
+affected:
+    - groupId: org.elasticsearch
+      artifactId: elasticsearch
+      version:
+        - "<=5.4.3,5.0.0-alpha1"
+      fixedin:
+        - ">=5.5.0"
+        - "<=2.4.6,0.6.0"
