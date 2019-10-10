@@ -1,0 +1,15 @@
+---
+cve: 2018-11082
+title: CVE in org.cloudfoundry.identity:cloudfoundry-identity-uaa
+description: >
+    Cloud Foundry UAA, all versions prior to 4.20.0 and Cloud Foundry UAA Release, all versions prior to 61.0, allows brute forcing of MFA codes. A remote unauthenticated malicious user in possession of a valid username and password can brute force MFA to login as the targeted user.
+cvss_v2: 5.0
+references:
+    - https://www.cloudfoundry.org/blog/cve-2018-11082/
+affected:
+    - groupId: org.cloudfoundry.identity
+      artifactId: cloudfoundry-identity-uaa
+      version:
+        - "<=4.30.0"
+      fixedin:
+        []
