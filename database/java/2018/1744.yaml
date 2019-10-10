@@ -1,0 +1,19 @@
+---
+cve: 2018-1744
+title: CVE in org.sonatype.security.realms:security-public-key-realm
+description: >
+    IBM Security Key Lifecycle Manager 2.5, 2.6, 2.7, and 3.0 could allow a remote attacker to traverse directories on the system. An attacker could send a specially-crafted URL request containing "dot dot" sequences (/../) to view arbitrary files on the system. IBM X-Force ID: 148423.
+cvss_v2: 4.0
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/148423
+    - https://www.ibm.com/support/docview.wss?uid=ibm10733353
+affected:
+    - groupId: org.sonatype.security.realms
+      artifactId: security-public-key-realm
+      version:
+        - "<=2.7,2.5"
+        - "<=3.0,3.0"
+      fixedin:
+        - ">=3.0.1"
+        - "<=2.8.2,2.8"
+        - "<=2.4.1,2.0.0"
