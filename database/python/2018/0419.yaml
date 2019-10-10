@@ -1,0 +1,16 @@
+---
+cve: 2018-0419
+title: CVE in aiohttp-security
+description: >
+    A vulnerability in certain attachment detection mechanisms of Cisco Email Security Appliances (ESA) could allow an unauthenticated, remote attacker to bypass the filtering functionality of an affected system. The vulnerability is due to the improper detection of content within executable (EXE) files. An attacker could exploit this vulnerability by sending a customized EXE file that is not recognized and blocked by the ESA. A successful exploit could allow an attacker to send email messages that contain malicious executable files to unsuspecting users. Cisco Bug IDs: CSCvh03786.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/105112
+    - http://www.securitytracker.com/id/1041531
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180815-esa-file-bypass
+affected:
+    - name: aiohttp-security
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
