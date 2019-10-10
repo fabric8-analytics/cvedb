@@ -1,0 +1,17 @@
+---
+cve: 2017-1795
+title: CVE in com.ibm.mq:com.ibm.mq.allclient
+description: >
+    IBM WebSphere MQ 7.5, 8.0, and 9.0 through 9.0.4 could allow a local user to obtain highly sensitive information via trace logs in IBM WebSphere MQ Managed File Transfer. IBM X-Force ID: 137042.
+cvss_v2: 2.1
+references:
+    - http://www.ibm.com/support/docview.wss?uid=swg22012389
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/137042
+affected:
+    - groupId: com.ibm.mq
+      artifactId: com.ibm.mq.allclient
+      version:
+        - "<=9.0.4.0,9.0.4.0"
+      fixedin:
+        - ">=9.0.5.0"
+        - "<=0.0.0.3,0.0.0.2"
