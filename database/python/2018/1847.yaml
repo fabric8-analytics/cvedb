@@ -1,0 +1,18 @@
+---
+cve: 2018-1847
+title: CVE in transaction
+description: >
+    IBM Financial Transaction Manager (FTM) for Multi-Platform (MP) v2.0.0.0 through 2.0.0.5, v2.1.0.0 through 2.1.0.4, v2.1.1.0 through 2.1.1.4, and v3.0.0.0 through 3.0.0.8 could allow a remote attacker to traverse directories on the system. An attacker could send a specially-crafted URL request containing "dot dot" sequences (/../) to view arbitrary files on the system. IBM X-Force ID: 150946.
+cvss_v2: 4.0
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/150946
+    - https://www.ibm.com/support/pages/security-bulletin-path-traversal-exposure-saveexport-function-ftm-oac
+affected:
+    - name: transaction
+      version:
+        - "<=2.0.0,2.0.0"
+        - "<=2.1.1,2.1.0"
+      fixedin:
+        - ">=2.1.2"
+        - "<=2.0.3,2.0.1"
+        - "<=1.7.0,1.0a1"
