@@ -1,0 +1,17 @@
+---
+cve: 2016-6545
+title: CVE in org.springframework.session:spring-session-data-mongodb
+description: >
+    Session cookies are not used for maintaining valid sessions in iTrack Easy. The user's password is passed as a POST parameter over HTTPS using a base64 encoded passwd field on every request. In this implementation, sessions can only be terminated when the user changes the associated password.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/93875
+    - https://blog.rapid7.com/2016/10/25/multiple-bluetooth-low-energy-ble-tracker-vulnerabilities/
+    - https://www.kb.cert.org/vuls/id/974055
+affected:
+    - groupId: org.springframework.session
+      artifactId: spring-session-data-mongodb
+      version:
+        []
+      fixedin:
+        - ">=2.0.0.RELEASE"
