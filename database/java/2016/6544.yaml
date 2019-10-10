@@ -1,0 +1,17 @@
+---
+cve: 2016-6544
+title: CVE in com.github.giulianini.track4j:track4j
+description: >
+    getgps data in iTrack Easy can be modified without authentication by setting the data using the parametercmd:setothergps. This vulnerability can be exploited to alter the GPS data of a lost device.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/93875
+    - https://blog.rapid7.com/2016/10/25/multiple-bluetooth-low-energy-ble-tracker-vulnerabilities/
+    - https://www.kb.cert.org/vuls/id/974055
+affected:
+    - groupId: com.github.giulianini.track4j
+      artifactId: track4j
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
