@@ -1,0 +1,16 @@
+---
+cve: 2018-15795
+title: CVE in io.pivotal.cfenv:java-cfenv-boot-pivotal-scs
+description: >
+    Pivotal CredHub Service Broker, versions prior to 1.1.0, uses a guessable form of random number generation in creating service broker's UAA client. A remote malicious user may guess the client secret and obtain or modify credentials for users of the CredHub Service.
+cvss_v2: 5.5
+references:
+    - http://www.securityfocus.com/bid/105915
+    - https://pivotal.io/security/cve-2018-15795
+affected:
+    - groupId: io.pivotal.cfenv
+      artifactId: java-cfenv-boot-pivotal-scs
+      version:
+        - "<=1.0.1.RELEASE"
+      fixedin:
+        - ">=1.1.0.RELEASE"
