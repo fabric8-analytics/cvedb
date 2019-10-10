@@ -1,0 +1,17 @@
+---
+cve: 2017-3203
+title: CVE in plaster-spring-boot
+description: >
+    The Java implementations of AMF3 deserializers in Pivotal/Spring Spring-flex derive class instances from java.io.Externalizable rather than the AMF3 specification's recommendation of flash.utils.IExternalizable. A remote attacker with the ability to spoof or control an RMI server connection may be able to send serialized Java objects that execute arbitrary code when deserialized.
+cvss_v2: 6.8
+references:
+    - http://www.securityweek.com/flaws-java-amf-libraries-allow-remote-code-execution
+    - https://codewhitesec.blogspot.com/2017/04/amf.html
+    - https://www.kb.cert.org/vuls/id/307983
+    - https://www.securityfocus.com/bid/97376
+affected:
+    - name: plaster-spring-boot
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
