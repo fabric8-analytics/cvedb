@@ -1,0 +1,24 @@
+---
+cve: 2018-10861
+title: CVE in ceph-deploy
+description: >
+    A flaw was found in the way ceph mon handles user requests. Any authenticated ceph user having read access to ceph can delete, create ceph storage pools and corrupt snapshot images. Ceph branches master, mimic, luminous and jewel are believed to be affected.
+cvss_v2: 5.5
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2019-04/msg00100.html
+    - http://tracker.ceph.com/issues/24838
+    - http://www.securityfocus.com/bid/104742
+    - https://access.redhat.com/errata/RHSA-2018:2177
+    - https://access.redhat.com/errata/RHSA-2018:2179
+    - https://access.redhat.com/errata/RHSA-2018:2261
+    - https://access.redhat.com/errata/RHSA-2018:2274
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1593308
+    - https://github.com/ceph/ceph/commit/975528f632f73fbffa3f1fee304e3bbe3296cffc
+    - https://www.debian.org/security/2018/dsa-4339
+affected:
+    - name: ceph-deploy
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - ">=2.0.1"
+        - "<=1.5.39,1.1"
