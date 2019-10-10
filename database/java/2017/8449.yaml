@@ -1,0 +1,16 @@
+---
+cve: 2017-8449
+title: CVE in com.sksamuel.elastic4s:elastic4s-xpack-security_2.12
+description: >
+    X-Pack Security 5.2.x would allow access to more fields than the user should have seen if the field level security rules used a mix of grant and exclude rules when merging multiple rules with field level security rules for the same index.
+cvss_v2: 4.3
+references:
+    - https://www.elastic.co/community/security
+affected:
+    - groupId: com.sksamuel.elastic4s
+      artifactId: elastic4s-xpack-security_2.12
+      version:
+        - "<=5.2.2,5.2.0-beta1"
+      fixedin:
+        - ">=5.2.3"
+        - "<=5.1.5,5.1.1"
