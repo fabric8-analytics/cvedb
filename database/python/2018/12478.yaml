@@ -1,0 +1,14 @@
+---
+cve: 2018-12478
+title: CVE in anaconda-build
+description: >
+    A Improper Input Validation vulnerability in Open Build Service allows remote attackers to extract files from the system where the service runs. Affected releases are openSUSE Open Build Service: status of is unknown.
+cvss_v2: 4.3
+references:
+    - https://bugzilla.suse.com/show_bug.cgi?id=1108280
+affected:
+    - name: anaconda-build
+      version:
+        []
+      fixedin:
+        - ">=0.7.7"
