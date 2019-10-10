@@ -1,0 +1,16 @@
+---
+cve: 2017-0890
+title: CVE in org.aarboard.nextcloud:nextcloud-api
+description: >
+    Nextcloud Server before 11.0.3 is vulnerable to an inadequate escaping leading to a XSS vulnerability in the search module. To be exploitable a user has to write or paste malicious content into the search dialogue.
+cvss_v2: 3.5
+references:
+    - https://hackerone.com/reports/213227
+    - https://nextcloud.com/security/advisory/?id=nc-sa-2017-007
+affected:
+    - groupId: org.aarboard.nextcloud
+      artifactId: nextcloud-api
+      version:
+        - "<=11.0.2"
+      fixedin:
+        - ">=11.0.3"
