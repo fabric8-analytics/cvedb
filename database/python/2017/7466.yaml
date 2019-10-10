@@ -1,6 +1,6 @@
 ---
 cve: 2017-7466
-title: CVE in ansible
+title: CVE in openstack-congress
 description: >
     Ansible before version 2.3 has an input validation vulnerability in the handling of data sent from client systems. An attacker with control over a client system being managed by Ansible, and the ability to send facts back to the Ansible server, could use this flaw to execute arbitrary code on the Ansible server using the Ansible server privileges.
 cvss_v2: 8.5
@@ -14,8 +14,8 @@ references:
     - https://access.redhat.com/errata/RHSA-2017:1685
     - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2017-7466
 affected:
-    - name: ansible
+    - name: openstack-congress
       version:
-        - "<=2.2.3.0"
+        - "<=10.0.0.0rc1,10.0.0.0rc1"
       fixedin:
-        - ">=2.3.0.0"
+        - "<=9.0.0,6.0.2"
