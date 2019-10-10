@@ -1,0 +1,15 @@
+---
+cve: 2018-1229
+title: CVE in plaster-spring-boot
+description: >
+    Pivotal Spring Batch Admin, all versions, contains a stored XSS vulnerability in the file upload feature. An unauthenticated malicious user with network access to Spring Batch Admin could store an arbitrary web script that would be executed by other users. This issue has not been patched because Spring Batch Admin has reached end of life.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/103462
+    - https://pivotal.io/security/cve-2018-1229
+affected:
+    - name: plaster-spring-boot
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
