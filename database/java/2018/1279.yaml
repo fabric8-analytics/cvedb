@@ -1,0 +1,15 @@
+---
+cve: 2018-1279
+title: CVE in io.pivotal.cfenv:java-cfenv-boot-pivotal-scs
+description: >
+    Pivotal RabbitMQ for PCF, all versions, uses a deterministically generated cookie that is shared between all machines when configured in a multi-tenant cluster. A remote attacker who can gain information about the network topology can guess this cookie and, if they have access to the right ports on any server in the MQ cluster can use this cookie to gain full control over the entire cluster.
+cvss_v2: 3.3
+references:
+    - https://pivotal.io/security/cve-2018-1279
+affected:
+    - groupId: io.pivotal.cfenv
+      artifactId: java-cfenv-boot-pivotal-scs
+      version:
+        []
+      fixedin:
+        - ">=1.0.0.RELEASE"
