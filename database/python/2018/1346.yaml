@@ -1,0 +1,15 @@
+---
+cve: 2018-1346
+title: CVE in directory-components
+description: >
+    Addresses denial of service attack to eDirectory versions prior to 9.1.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/103493
+    - https://www.netiq.com/documentation/edirectory-91/edirectory91_releasenotes/data/edirectory91_releasenotes.html
+affected:
+    - name: directory-components
+      version:
+        - "<=9.0.1"
+      fixedin:
+        - ">=9.1.0"
