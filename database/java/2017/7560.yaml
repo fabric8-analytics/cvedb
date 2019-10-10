@@ -1,0 +1,15 @@
+---
+cve: 2017-7560
+title: CVE in li.rudin.pid:pid-controller
+description: >
+    It was found that rhnsd PID files are created as world-writable that allows local attackers to fill the disks or to kill selected processes.
+cvss_v2: 4.9
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1480550
+affected:
+    - groupId: li.rudin.pid
+      artifactId: pid-controller
+      version:
+        []
+      fixedin:
+        - ">=1.0"
