@@ -1,0 +1,18 @@
+---
+cve: 2017-3200
+title: CVE in org.graniteds:granite-server-servlet3
+description: >
+    The Java implementation of AMF3 deserializers used in GraniteDS, version 3.1.1.G, may allow instantiation of arbitrary classes via their public parameter-less constructor and subsequently call arbitrary Java Beans setter methods. The ability to exploit this vulnerability depends on the availability of classes in the class path that make use of deserialization. A remote attacker with the ability to spoof or control information may be able to send serialized Java objects with pre-set properties that result in arbitrary code execution when deserialized.
+cvss_v2: 6.8
+references:
+    - http://www.securityfocus.com/bid/97382
+    - http://www.securityweek.com/flaws-java-amf-libraries-allow-remote-code-execution
+    - https://codewhitesec.blogspot.com/2017/04/amf.html
+    - https://www.kb.cert.org/vuls/id/307983
+affected:
+    - groupId: org.graniteds
+      artifactId: granite-server-servlet3
+      version:
+        - "<=3.1.1.GA,3.1.1.GA"
+      fixedin:
+        - "<=3.1.0.GA,3.0.0.RC1"
