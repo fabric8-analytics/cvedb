@@ -1,0 +1,15 @@
+---
+cve: 2017-16726
+title: CVE in com.bingzer.android.ads.networks.google:adnets-google-ads
+description: >
+    Beckhoff TwinCAT supports communication over ADS. ADS is a protocol for industrial automation in protected environments. ADS has not been designed to achieve security purposes and therefore does not include any encryption algorithms because of their negative effect on performance and throughput. An attacker can forge arbitrary ADS packets when legitimate ADS traffic is observable.
+cvss_v2: 6.4
+references:
+    - https://download.beckhoff.com/download/Document/product-security/Advisories/advisory-2017-001.pdf
+affected:
+    - groupId: com.bingzer.android.ads.networks.google
+      artifactId: adnets-google-ads
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
