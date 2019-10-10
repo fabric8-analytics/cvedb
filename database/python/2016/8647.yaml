@@ -1,0 +1,16 @@
+---
+cve: 2016-8647
+title: CVE in ansible
+description: >
+    An input validation vulnerability was found in Ansible's mysql_user module before 2.2.1.0, which may fail to correctly change a password in certain circumstances. Thus the previous password would still be active when it should have been changed.
+cvss_v2: 4.0
+references:
+    - https://access.redhat.com/errata/RHSA-2017:1685
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2016-8647
+    - https://github.com/ansible/ansible-modules-core/pull/5388
+affected:
+    - name: ansible
+      version:
+        - "<=2.2.0.0"
+      fixedin:
+        - ">=2.2.1.0"
