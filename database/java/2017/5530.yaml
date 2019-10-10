@@ -1,0 +1,15 @@
+---
+cve: 2017-5530
+title: CVE in org.wso2.carbon.identity.authenticator.outbound.saml2sso:identity-SAML-outbound-tests
+description: >
+    The tibbr web server components of tibbr Community, and tibbr Enterprise contain SAML protocol handling errors which may allow authorized users to impersonate other users, and therefore escalate their access privileges. Affected releases are tibbr Community 5.2.1 and below; 6.0.0; 6.0.1; 7.0.0, tibbr Enterprise 5.2.1 and below; 6.0.0; 6.0.1; 7.0.0.
+cvss_v2: 5.5
+references:
+    - https://www.tibco.com/support/advisories/2017/12/tibco-security-advisory-december-12-2017-tibbr-2017-5530
+affected:
+    - groupId: org.wso2.carbon.identity.authenticator.outbound.saml2sso
+      artifactId: identity-SAML-outbound-tests
+      version:
+        - "<=6.0.1"
+      fixedin:
+        - ">=6.0.2"
