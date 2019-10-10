@@ -1,0 +1,16 @@
+---
+cve: 2016-8653
+title: CVE in org.jboss.jbossas:jboss-as-jmx
+description: >
+    It was found that the JMX endpoint of Red Hat JBoss Fuse 6, and Red Hat A-MQ 6 deserializes the credentials passed to it. An attacker could use this flaw to launch a denial of service attack.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/94544
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2016-8653
+affected:
+    - groupId: org.jboss.jbossas
+      artifactId: jboss-as-jmx
+      version:
+        - "<=6.0.0.M1,6.0.0.M1"
+      fixedin:
+        - "<=5.1.0.GA,5.0.0.Beta4"
