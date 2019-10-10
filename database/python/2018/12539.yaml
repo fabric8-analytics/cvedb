@@ -1,0 +1,24 @@
+---
+cve: 2018-12539
+title: CVE in ibm-db
+description: >
+    In Eclipse OpenJ9 version 0.8, users other than the process owner may be able to use Java Attach API to connect to an Eclipse OpenJ9 or IBM JVM on the same machine and use Attach API operations, which includes the ability to execute untrusted native code. Attach API is enabled by default on Windows, Linux and AIX JVMs and can be disabled using the command line option -Dcom.ibm.tools.attach.enable=no.
+cvss_v2: 4.6
+references:
+    - http://www.securityfocus.com/bid/105126
+    - http://www.securitytracker.com/id/1041765
+    - https://access.redhat.com/errata/RHSA-2018:2568
+    - https://access.redhat.com/errata/RHSA-2018:2569
+    - https://access.redhat.com/errata/RHSA-2018:2575
+    - https://access.redhat.com/errata/RHSA-2018:2576
+    - https://access.redhat.com/errata/RHSA-2018:2712
+    - https://access.redhat.com/errata/RHSA-2018:2713
+    - https://bugs.eclipse.org/bugs/show_bug.cgi?id=534589
+    - https://www.oracle.com/technetwork/security-advisory/cpuapr2019-5072813.html
+affected:
+    - name: ibm-db
+      version:
+        - "<=0.8.0,0.8.0"
+      fixedin:
+        - ">=1.0"
+        - "<=0.7.2.5,0.1.0"
