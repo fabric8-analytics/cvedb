@@ -1,0 +1,17 @@
+---
+cve: 2017-12264
+title: CVE in org.reddwarfserver.server:sgs-server
+description: >
+    A vulnerability in the Web Admin Interface of Cisco Meeting Server could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition. The vulnerability is due to insufficient bound checks performed by the affected software. An attacker could exploit this vulnerability by sending a malicious HTTP packet to the affected system. A successful exploit could allow the attacker to cause a reload of the Web Admin Server. Cisco Bug IDs: CSCve89149.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/101148
+    - http://www.securitytracker.com/id/1039506
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20171004-cms
+affected:
+    - groupId: org.reddwarfserver.server
+      artifactId: sgs-server
+      version:
+        []
+      fixedin:
+        - ">=0.10.0"
