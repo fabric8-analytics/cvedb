@@ -1,6 +1,6 @@
 ---
 cve: 2016-9589
-title: CVE in Undertow
+title: CVE in org.wildfly:wildfly-undertow
 description: >
     Undertow in Red Hat wildfly before version 11.0.0.Beta1 is vulnerable to a resource exhaustion resulting in a denial of service. Undertow keeps a cache of seen HTTP headers in persistent connections. It was found that this cache can easily exploited to fill memory with garbage, up to "max-headers" (default 200) * "max-header-size" (default 1MB) per active TCP connection.
 cvss_v2: 5.0
@@ -18,11 +18,10 @@ references:
     - https://access.redhat.com/errata/RHSA-2017:3456
     - https://access.redhat.com/errata/RHSA-2017:3458
     - https://bugzilla.redhat.com/show_bug.cgi?id=1404782
-    - https://github.com/undertow-io/undertow/commit/86d52a5e9198991fe30a3616d9008cecc696fc0b
 affected:
-    - groupId: io.undertow
-      artifactId: undertow-core
+    - groupId: org.wildfly
+      artifactId: wildfly-undertow
       version:
-        - "<=1.4.8.Final"
+        - "<=11.0.0.Final"
       fixedin:
-        - ">=1.4.9.Final"
+        - ">=12.0.0.Beta1"
