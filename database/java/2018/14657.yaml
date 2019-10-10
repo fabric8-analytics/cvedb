@@ -1,0 +1,19 @@
+---
+cve: 2018-14657
+title: CVE in org.keycloak:keycloak-services
+description: >
+    A flaw was found in Keycloak 4.2.1.Final, 4.3.0.Final. When TOPT enabled, an improper implementation of the Brute Force detection algorithm will not enforce its protection measures.
+cvss_v2: 4.3
+references:
+    - https://access.redhat.com/errata/RHSA-2018:3592
+    - https://access.redhat.com/errata/RHSA-2018:3593
+    - https://access.redhat.com/errata/RHSA-2018:3595
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-14657
+affected:
+    - groupId: org.keycloak
+      artifactId: keycloak-services
+      version:
+        - "<=4.3.0.Final,4.2.1.Final"
+      fixedin:
+        - ">=4.4.0.Final"
+        - "<=4.2.0.Final,1.0-alpha-1"
