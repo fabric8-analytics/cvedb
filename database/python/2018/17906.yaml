@@ -1,0 +1,15 @@
+---
+cve: 2018-17906
+title: CVE in analyze-site
+description: >
+    Philips iSite and IntelliSpace PACS, iSite PACS, all versions, and IntelliSpace PACS, all versions. Default credentials and no authentication within third party software may allow an attacker to compromise a component of the system.
+cvss_v2: 3.3
+references:
+    - http://www.securityfocus.com/bid/105875
+    - https://ics-cert.us-cert.gov/advisories/ICSMA-18-312-01
+affected:
+    - name: analyze-site
+      version:
+        []
+      fixedin:
+        - ">=0.1.2"
