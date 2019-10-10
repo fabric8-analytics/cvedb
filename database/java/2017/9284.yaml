@@ -1,0 +1,16 @@
+---
+cve: 2017-9284
+title: CVE in org.cloudfoundry.identity:cloudfoundry-identity-uaa
+description: >
+    IDM 4.6 Identity Applications prior to 4.6.2.1 may expose sensitive information.
+cvss_v2: 5.0
+references:
+    - https://download.microfocus.com/Download?buildid=Xg1dZMVbBzs~
+affected:
+    - groupId: org.cloudfoundry.identity
+      artifactId: cloudfoundry-identity-uaa
+      version:
+        - "<=4.6.1,4.6.0"
+      fixedin:
+        - ">=4.7.0"
+        - "<=4.5.9,2.2.4"
