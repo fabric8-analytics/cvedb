@@ -1,0 +1,26 @@
+---
+cve: 2017-12165
+title: CVE in edx-enterprise
+description: >
+    It was discovered that Undertow before 1.4.17, 1.3.31 and 2.0.0 processes http request headers with unusual whitespaces which can cause possible http request smuggling.
+cvss_v2: 5.0
+references:
+    - https://access.redhat.com/errata/RHSA-2017:3454
+    - https://access.redhat.com/errata/RHSA-2017:3455
+    - https://access.redhat.com/errata/RHSA-2017:3456
+    - https://access.redhat.com/errata/RHSA-2017:3458
+    - https://access.redhat.com/errata/RHSA-2018:0002
+    - https://access.redhat.com/errata/RHSA-2018:0003
+    - https://access.redhat.com/errata/RHSA-2018:0004
+    - https://access.redhat.com/errata/RHSA-2018:0005
+    - https://access.redhat.com/errata/RHSA-2018:1322
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2017-12165
+affected:
+    - name: edx-enterprise
+      version:
+        - "<=1.4.10,1.0.0"
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - ">=2.0.1"
+        - "<=1.11.0,1.5.0"
+        - "<=0.74.0,0.1.0"
