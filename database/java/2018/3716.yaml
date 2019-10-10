@@ -1,0 +1,15 @@
+---
+cve: 2018-3716
+title: CVE in org.sonatype.nexus.repository.site:nexus-site-repository-client
+description: >
+    simplehttpserver node module suffers from a Cross-Site Scripting vulnerability to a lack of validation of file names.
+cvss_v2: 3.5
+references:
+    - https://hackerone.com/reports/309648
+affected:
+    - groupId: org.sonatype.nexus.repository.site
+      artifactId: nexus-site-repository-client
+      version:
+        []
+      fixedin:
+        - ">=1.1"
