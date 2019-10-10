@@ -1,0 +1,14 @@
+---
+cve: 2013-2322
+title: CVE in egenix-mx-base
+description: >
+    HP SQL/MX 3.2 and earlier on NonStop servers, when SQL/MP Objects are used, allows remote authenticated users to obtain sensitive information via unspecified vectors, aka the "SQL/MP index" issue.
+cvss_v2: 3.5
+references:
+    - http://h20565.www2.hp.com/portal/site/hpsc/template.PAGE/public/kb/docDisplay/?docId=emr_na-c03762155
+affected:
+    - name: egenix-mx-base
+      version:
+        - "<=3.2.0"
+      fixedin:
+        - ">=3.2.1"
