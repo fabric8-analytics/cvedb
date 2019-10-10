@@ -1,0 +1,17 @@
+---
+cve: 2018-0471
+title: CVE in ydk-models-cisco-ios-xe
+description: >
+    A vulnerability in the Cisco Discovery Protocol (CDP) module of Cisco IOS XE Software Releases 16.6.1 and 16.6.2 could allow an unauthenticated, adjacent attacker to cause a memory leak that may lead to a denial of service (DoS) condition. The vulnerability is due to incorrect processing of certain CDP packets. An attacker could exploit this vulnerability by sending certain CDP packets to an affected device. A successful exploit could cause an affected device to continuously consume memory and eventually result in a memory allocation failure that leads to a crash, triggering a reload of the affected device.
+cvss_v2: 6.1
+references:
+    - http://www.securityfocus.com/bid/105398
+    - http://www.securitytracker.com/id/1041737
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180926-cdp-memleak
+affected:
+    - name: ydk-models-cisco-ios-xe
+      version:
+        - "<=16.7.1,16.6.1"
+      fixedin:
+        - ">=16.8.1"
+        - "<=16.5.1,16.5.1"
