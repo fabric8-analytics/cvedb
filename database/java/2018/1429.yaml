@@ -1,0 +1,19 @@
+---
+cve: 2018-1429
+title: CVE in com.ibm.mq:com.ibm.mq.allclient
+description: >
+    IBM MQ Appliance 9.0.1, 9.0.2, 9.0.3, amd 9.0.4 is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 139077.
+cvss_v2: 3.5
+references:
+    - http://www.ibm.com/support/docview.wss?uid=swg22014046
+    - http://www.securityfocus.com/bid/103491
+    - http://www.securitytracker.com/id/1040564
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/139077
+affected:
+    - groupId: com.ibm.mq
+      artifactId: com.ibm.mq.allclient
+      version:
+        - "<=9.0.4.0,9.0.4.0"
+      fixedin:
+        - ">=9.0.5.0"
+        - "<=0.0.0.3,0.0.0.2"
