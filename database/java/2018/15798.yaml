@@ -1,0 +1,15 @@
+---
+cve: 2018-15798
+title: CVE in de.hilling.maven.release:smart-release-plugin
+description: >
+    Pivotal Concourse Release, versions 4.x prior to 4.2.2, login flow allows redirects to untrusted websites. A remote unauthenticated attacker could convince a user to click on a link using the oAuth redirect link with an untrusted website and gain access to that user's access token in Concourse.
+cvss_v2: 5.8
+references:
+    - https://pivotal.io/security/cve-2018-15798
+affected:
+    - groupId: de.hilling.maven.release
+      artifactId: smart-release-plugin
+      version:
+        - "<=4.1,4.0"
+      fixedin:
+        - "<=3.9,3.0"
