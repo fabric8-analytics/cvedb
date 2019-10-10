@@ -1,0 +1,16 @@
+---
+cve: 2016-2922
+title: CVE in com.ibm.sbt:com.ibm.commons
+description: >
+    IBM Rational ClearQuest 8.0 through 8.0.1.9 and 9.0 through 9.0.1.3 (CQ OSLC linkages, EmailRelay) fails to check the SSL certificate against the requested hostname. It is subject to a man-in-the-middle attack with an impersonating server observing all the data transmitted to the real server. IBM X-Force ID: 113353.
+cvss_v2: 4.3
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/113353
+    - https://www.ibm.com/support/docview.wss?uid=ibm10718377
+affected:
+    - groupId: com.ibm.sbt
+      artifactId: com.ibm.commons
+      version:
+        - "<=9.0.0,9.0.0"
+      fixedin:
+        - "<=1.1.12.20161007-1200,1.1.6.20150817-1200"
