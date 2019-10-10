@@ -1,0 +1,18 @@
+---
+cve: 2017-2621
+title: CVE in f5-openstack-heat-plugins
+description: >
+    An access-control flaw was found in the OpenStack Orchestration (heat) service before 8.0.0, 6.1.0 and 7.0.2 where a service log directory was improperly made world readable. A malicious system user could exploit this flaw to access sensitive information.
+cvss_v2: 2.1
+references:
+    - http://www.securityfocus.com/bid/96280
+    - https://access.redhat.com/errata/RHSA-2017:1243
+    - https://access.redhat.com/errata/RHSA-2017:1464
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2017-2621
+affected:
+    - name: f5-openstack-heat-plugins
+      version:
+        - "<=7.0.4"
+        - "<=10.0.0,10.0.0"
+      fixedin:
+        - "<=9.0.2,8.0.1"
