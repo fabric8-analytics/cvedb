@@ -1,0 +1,15 @@
+---
+cve: 2017-11481
+title: CVE in org.codelibs.elasticsearch.module:repository-url
+description: >
+    Kibana versions prior to 6.0.1 and 5.6.5 had a cross-site scripting (XSS) vulnerability via URL fields that could allow an attacker to obtain sensitive information from or perform destructive actions on behalf of other Kibana users.
+cvss_v2: 4.3
+references:
+    - https://discuss.elastic.co/t/kibana-6-0-1-and-5-6-5-security-update/110571
+affected:
+    - groupId: org.codelibs.elasticsearch.module
+      artifactId: repository-url
+      version:
+        - "<=6.0.0"
+      fixedin:
+        - ">=6.0.1"
