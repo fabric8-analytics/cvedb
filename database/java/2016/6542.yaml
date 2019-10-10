@@ -1,0 +1,17 @@
+---
+cve: 2016-6542
+title: CVE in org.id4me:relying-party-api
+description: >
+    The iTrack device tracking ID number, also called "LosserID" in the web API, can be obtained by being in the range of an iTrack device. The tracker ID is the device's BLE MAC address.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/93875
+    - https://blog.rapid7.com/2016/10/25/multiple-bluetooth-low-energy-ble-tracker-vulnerabilities/
+    - https://www.kb.cert.org/vuls/id/974055
+affected:
+    - groupId: org.id4me
+      artifactId: relying-party-api
+      version:
+        []
+      fixedin:
+        - ">=1.0"
