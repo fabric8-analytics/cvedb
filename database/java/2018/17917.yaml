@@ -1,0 +1,15 @@
+---
+cve: 2018-17917
+title: CVE in org.sonatype.p2.bridge:p2-bridge-model
+description: >
+    All versions of Hangzhou Xiongmai Technology Co., Ltd XMeye P2P Cloud Server may allow an attacker to use MAC addresses to enumerate potential Cloud IDs. Using this ID, the attacker can discover and connect to valid devices using one of the supported apps.
+cvss_v2: 5.0
+references:
+    - https://ics-cert.us-cert.gov/advisories/ICSA-18-282-06
+affected:
+    - groupId: org.sonatype.p2.bridge
+      artifactId: p2-bridge-model
+      version:
+        []
+      fixedin:
+        - ">=1.0.2"
