@@ -1,0 +1,14 @@
+---
+cve: 2014-8183
+title: CVE in foreman-yml
+description: >
+    It was found that foreman, versions 1.x.x before 1.15.6, in Satellite 6 did not properly enforce access controls on certain resources. An attacker with access to the API and knowledge of the resource name can access resources in other organizations.
+cvss_v2: 6.5
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2014-8183
+affected:
+    - name: foreman-yml
+      version:
+        - "<=1.0.4"
+      fixedin:
+        []
