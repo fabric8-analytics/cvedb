@@ -1,0 +1,15 @@
+---
+cve: 2018-15761
+title: CVE in org.cloudfoundry.identity:cloudfoundry-identity-uaa
+description: >
+    Cloud Foundry UAA release, versions prior to v64.0, and UAA, versions prior to 4.23.0, contains a validation error which allows for privilege escalation. A remote authenticated user may modify the url and content of a consent page to gain a token with arbitrary scopes that escalates their privileges.
+cvss_v2: 6.5
+references:
+    - https://www.cloudfoundry.org/blog/cve-2018-15761/
+affected:
+    - groupId: org.cloudfoundry.identity
+      artifactId: cloudfoundry-identity-uaa
+      version:
+        - "<=4.30.0"
+      fixedin:
+        []
