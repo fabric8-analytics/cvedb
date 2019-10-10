@@ -1,0 +1,17 @@
+---
+cve: 2017-9269
+title: CVE in org.sonatype.nexus.yum:nexus-yum-testsuite
+description: >
+    In libzypp before August 2018 GPG keys attached to YUM repositories were not correctly pinned, allowing malicious repository mirrors to silently downgrade to unsigned repositories with potential malicious content.
+cvss_v2: 7.5
+references:
+    - https://bugzilla.suse.com/show_bug.cgi?id=1045735
+    - https://lists.opensuse.org/opensuse-security-announce/2017-08/msg00002.html
+    - https://www.suse.com/de-de/security/cve/CVE-2017-9269/
+affected:
+    - groupId: org.sonatype.nexus.yum
+      artifactId: nexus-yum-testsuite
+      version:
+        []
+      fixedin:
+        - ">=3.0"
