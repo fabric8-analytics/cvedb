@@ -1,0 +1,17 @@
+---
+cve: 2018-0109
+title: CVE in org.reddwarfserver.server:sgs-server
+description: >
+    A vulnerability in Cisco WebEx Meetings Server could allow an authenticated, remote attacker to access sensitive data about the application. An attacker could exploit this vulnerability to obtain information to conduct additional reconnaissance attacks. The vulnerability is due to a design flaw in Cisco WebEx Meetings Server that could allow an attacker who is authenticated as root to gain shared secrets. An attacker could exploit the vulnerability by accessing the root account and viewing sensitive information. Successful exploitation could allow the attacker to discover sensitive information about the application. Cisco Bug IDs: CSCvg42664.
+cvss_v2: 4.0
+references:
+    - http://www.securityfocus.com/bid/102722
+    - http://www.securitytracker.com/id/1040235
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180117-wms1
+affected:
+    - groupId: org.reddwarfserver.server
+      artifactId: sgs-server
+      version:
+        []
+      fixedin:
+        - ">=0.10.0"
