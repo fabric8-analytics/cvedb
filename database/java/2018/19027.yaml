@@ -1,0 +1,16 @@
+---
+cve: 2018-19027
+title: CVE in org.jboss.arquillian.protocol:arquillian-osgi-protocol
+description: >
+    Three type confusion vulnerabilities exist in CX-One Versions 4.50 and prior and CX-Protocol Versions 2.0 and prior when processing project files. An attacker could use a specially crafted project file to exploit and execute code under the privileges of the application.
+cvss_v2: 6.8
+references:
+    - http://www.securityfocus.com/bid/106524
+    - https://ics-cert.us-cert.gov/advisories/ICSA-19-010-02
+affected:
+    - groupId: org.jboss.arquillian.protocol
+      artifactId: arquillian-osgi-protocol
+      version:
+        - "<=2.0.0.Final"
+      fixedin:
+        []
