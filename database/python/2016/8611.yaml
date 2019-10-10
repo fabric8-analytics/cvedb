@@ -1,0 +1,18 @@
+---
+cve: 2016-8611
+title: CVE in django-openstack
+description: >
+    A vulnerability was found in Openstack Glance. No limits are enforced within the Glance image service for both v1 and v2 `/images` API POST method for authenticated users, resulting in possible denial of service attacks through database table saturation.
+cvss_v2: 4.0
+references:
+    - http://seclists.org/oss-sec/2016/q4/266
+    - http://www.securityfocus.com/bid/94378
+    - http://www.securitytracker.com/id/1037312
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2016-8611
+    - https://h20566.www2.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-c05333384
+affected:
+    - name: django-openstack
+      version:
+        []
+      fixedin:
+        - ">=0.4"
