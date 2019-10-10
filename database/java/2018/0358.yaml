@@ -1,0 +1,17 @@
+---
+cve: 2018-0358
+title: CVE in org.reddwarfserver.server:sgs-server
+description: >
+    A vulnerability in the file descriptor handling of Cisco TelePresence Video Communication Server (VCS) Expressway could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition. The vulnerability is due to exhaustion of file descriptors while processing a high volume of traffic. An attacker could exploit this vulnerability by establishing a high number of concurrent TCP connections to the vulnerable system. An exploit could allow the attacker to cause a restart in a specific process, resulting in a temporary interruption of service. Cisco Bug IDs: CSCvh77056, CSCvh77058, CSCvh95264.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/104521
+    - http://www.securitytracker.com/id/1041172
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180620-vcse-dos
+affected:
+    - groupId: org.reddwarfserver.server
+      artifactId: sgs-server
+      version:
+        []
+      fixedin:
+        - ">=0.10.0"
