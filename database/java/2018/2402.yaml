@@ -1,0 +1,19 @@
+---
+cve: 2018-2402
+title: CVE in com.sap.cloud.s4hana:s4hana-all
+description: >
+    In systems using the optional capture & replay functionality of SAP HANA, 1.00 and 2.00, (see SAP Note 2362820 for more information about capture & replay), user credentials may be stored in clear text in the indexserver trace files of the control system. An attacker with the required authorizations on the control system may be able to access the user credentials and gain unauthorized access to data in the captured or target system.
+cvss_v2: 3.5
+references:
+    - http://www.securityfocus.com/bid/103369
+    - https://blogs.sap.com/2018/03/13/sap-security-patch-day-march-2018/
+    - https://launchpad.support.sap.com/#/notes/2587369
+affected:
+    - groupId: com.sap.cloud.s4hana
+      artifactId: s4hana-all
+      version:
+        - "<=1.0.0"
+        - "<=2.0.0,2.0.0-M3"
+      fixedin:
+        - ">=2.1.0"
+        - "<=1.11.1,1.1.1"
