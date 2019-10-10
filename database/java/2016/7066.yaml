@@ -1,0 +1,16 @@
+---
+cve: 2016-7066
+title: CVE in org.jboss.as:jboss-as-cli
+description: >
+    It was found that the improper default permissions on /tmp/auth directory in JBoss Enterprise Application Platform before 7.1.0 can allow any local user to connect to CLI and allow the user to execute any arbitrary operations.
+cvss_v2: 4.6
+references:
+    - https://access.redhat.com/errata/RHSA-2017:3456
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2016-7066
+affected:
+    - groupId: org.jboss.as
+      artifactId: jboss-as-cli
+      version:
+        - "<=7.0.2.Final"
+      fixedin:
+        - ">=7.1.0.Beta1"
