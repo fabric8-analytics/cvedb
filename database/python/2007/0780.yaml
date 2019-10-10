@@ -1,0 +1,60 @@
+---
+cve: 2007-0780
+title: CVE in firefox-puppeteer
+description: >
+    browser.js in Mozilla Firefox 1.5.x before 1.5.0.10 and 2.x before 2.0.0.2, and SeaMonkey before 1.0.8 uses the requesting URI to identify child windows, which allows remote attackers to conduct cross-site scripting (XSS) attacks by opening a blocked popup originating from a javascript: URI in combination with multiple frames having the same data: URI.
+cvss_v2: 6.8
+references:
+    - ftp://patches.sgi.com/support/free/security/advisories/20070202-01-P.asc
+    - ftp://patches.sgi.com/support/free/security/advisories/20070301-01-P.asc
+    - http://fedoranews.org/cms/node/2713
+    - http://fedoranews.org/cms/node/2728
+    - http://h20000.www2.hp.com/bizsupport/TechSupport/Document.jsp?objectID=c00771742
+    - http://lists.suse.com/archive/suse-security-announce/2007-Mar/0001.html
+    - http://rhn.redhat.com/errata/RHSA-2007-0077.html
+    - http://secunia.com/advisories/24205
+    - http://secunia.com/advisories/24238
+    - http://secunia.com/advisories/24287
+    - http://secunia.com/advisories/24290
+    - http://secunia.com/advisories/24293
+    - http://secunia.com/advisories/24320
+    - http://secunia.com/advisories/24328
+    - http://secunia.com/advisories/24333
+    - http://secunia.com/advisories/24342
+    - http://secunia.com/advisories/24343
+    - http://secunia.com/advisories/24384
+    - http://secunia.com/advisories/24393
+    - http://secunia.com/advisories/24395
+    - http://secunia.com/advisories/24437
+    - http://secunia.com/advisories/24455
+    - http://secunia.com/advisories/24457
+    - http://secunia.com/advisories/24650
+    - http://security.gentoo.org/glsa/glsa-200703-04.xml
+    - http://slackware.com/security/viewer.php?l=slackware-security&y=2007&m=slackware-security.338131
+    - http://slackware.com/security/viewer.php?l=slackware-security&y=2007&m=slackware-security.374851
+    - http://www.gentoo.org/security/en/glsa/glsa-200703-08.xml
+    - http://www.mandriva.com/security/advisories?name=MDKSA-2007:050
+    - http://www.mozilla.org/security/announce/2007/mfsa2007-05.html
+    - http://www.novell.com/linux/security/advisories/2007_22_mozilla.html
+    - http://www.osvdb.org/32107
+    - http://www.redhat.com/support/errata/RHSA-2007-0078.html
+    - http://www.redhat.com/support/errata/RHSA-2007-0079.html
+    - http://www.redhat.com/support/errata/RHSA-2007-0097.html
+    - http://www.redhat.com/support/errata/RHSA-2007-0108.html
+    - http://www.securityfocus.com/archive/1/461336/100/0/threaded
+    - http://www.securityfocus.com/archive/1/461809/100/0/threaded
+    - http://www.securityfocus.com/bid/22694
+    - http://www.securitytracker.com/id?1017702
+    - http://www.ubuntu.com/usn/usn-428-1
+    - http://www.vupen.com/english/advisories/2007/0718
+    - https://bugzilla.mozilla.org/show_bug.cgi?id=354973
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/32667
+    - https://issues.rpath.com/browse/RPL-1081
+    - https://issues.rpath.com/browse/RPL-1103
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A9884
+affected:
+    - name: firefox-puppeteer
+      version:
+        - "<=2.0.0"
+      fixedin:
+        - ">=3.1.0"
