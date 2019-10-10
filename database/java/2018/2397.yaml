@@ -1,0 +1,18 @@
+---
+cve: 2018-2397
+title: CVE in org.seedstack.business:business-core
+description: >
+    In SAP Business Objects Business Intelligence Platform, 4.00, 4.10, 4.20, 4.30, the Central Management Console (CMC) does not sufficiently encode user controlled inputs which results in Cross-Site Scripting.
+cvss_v2: 3.5
+references:
+    - http://www.securityfocus.com/bid/103373
+    - https://blogs.sap.com/2018/03/13/sap-security-patch-day-march-2018/
+    - https://launchpad.support.sap.com/#/notes/2550538
+affected:
+    - groupId: org.seedstack.business
+      artifactId: business-core
+      version:
+        - "<=4.0.0,4.0.0"
+      fixedin:
+        - ">=4.1.0"
+        - "<=3.1.0,2.0.0-M2"
