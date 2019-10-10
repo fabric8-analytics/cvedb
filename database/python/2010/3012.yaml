@@ -1,0 +1,16 @@
+---
+cve: 2010-3012
+title: CVE in girder-homepage
+description: >
+    Cross-site scripting (XSS) vulnerability in HP System Management Homepage (SMH) before 6.2 allows remote attackers to inject arbitrary web script or HTML via unspecified vectors.  NOTE: this issue was originally assigned CVE-2010-3010 due to a CNA error.
+cvss_v2: 4.3
+references:
+    - http://secunia.com/advisories/41480
+    - http://secunia.com/advisories/41490
+    - http://www.itrc.hp.com/service/cki/docDisplay.do?docId=emr_na-c02512995
+affected:
+    - name: girder-homepage
+      version:
+        - "<=3.0.4.dev4"
+      fixedin:
+        []
