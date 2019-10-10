@@ -1,0 +1,17 @@
+---
+cve: 2016-6546
+title: CVE in com.glookast.api:api-fims
+description: >
+    The iTrack Easy mobile application stores the account password used to authenticate to the cloud API in base64-encoding in the cache.db file. The base64 encoding format is considered equivalent to cleartext.
+cvss_v2: 2.1
+references:
+    - http://www.securityfocus.com/bid/93875
+    - https://blog.rapid7.com/2016/10/25/multiple-bluetooth-low-energy-ble-tracker-vulnerabilities/
+    - https://www.kb.cert.org/vuls/id/974055
+affected:
+    - groupId: com.glookast.api
+      artifactId: api-fims
+      version:
+        []
+      fixedin:
+        - ">=1.2.0"
