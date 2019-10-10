@@ -1,0 +1,17 @@
+---
+cve: 2017-2594
+title: CVE in io.hawt:hawtio-dozer
+description: >
+    hawtio before versions 2.0-beta-1, 2.0-beta-2 2.0-m1, 2.0-m2, 2.0-m3, and 1.5 is vulnerable to a path traversal that leads to a NullPointerException with a full stacktrace. An attacker could use this flaw to gather undisclosed information from within hawtio's root.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/95793
+    - https://access.redhat.com/errata/RHSA-2017:1832
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2017-2594
+affected:
+    - groupId: io.hawt
+      artifactId: hawtio-dozer
+      version:
+        - "<=1.4.68"
+      fixedin:
+        - ">=1.5.0"
