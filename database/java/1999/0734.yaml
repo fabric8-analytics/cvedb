@@ -1,0 +1,16 @@
+---
+cve: 1999-0734
+title: CVE in org.restcomm.media.core.control:media-core-control-mgcp
+description: >
+    A default configuration of CiscoSecure Access Control Server (ACS) allows remote users to modify the server database without authentication.
+cvss_v2: 7.5
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/3133
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-19990819-dbaccess
+affected:
+    - groupId: org.restcomm.media.core.control
+      artifactId: media-core-control-mgcp
+      version:
+        []
+      fixedin:
+        - ">=8.0.0-31"
