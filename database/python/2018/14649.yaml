@@ -1,0 +1,21 @@
+---
+cve: 2018-14649
+title: CVE in ceph-deploy
+description: >
+    It was found that ceph-isci-cli package as shipped by Red Hat Ceph Storage 2 and 3 is using python-werkzeug in debug shell mode. This is done by setting debug=True in file /usr/bin/rbd-target-api provided by ceph-isci-cli package. This allows unauthenticated attackers to access this debug shell and escalate privileges. Once an attacker has successfully connected to this debug shell they will be able to execute arbitrary commands remotely. These commands will run with the same privileges as of user executing the application which is using python-werkzeug with debug shell mode enabled. In - Red Hat Ceph Storage 2 and 3, ceph-isci-cli package runs python-werkzeug library with root level permissions.
+cvss_v2: 10.0
+references:
+    - http://www.securityfocus.com/bid/105434
+    - https://access.redhat.com/articles/3623521
+    - https://access.redhat.com/errata/RHSA-2018:2837
+    - https://access.redhat.com/errata/RHSA-2018:2838
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-14649
+    - https://github.com/ceph/ceph-iscsi-cli/issues/120
+    - https://github.com/ceph/ceph-iscsi-cli/pull/121/commits/c3812075e30c76a800a961e7291087d357403f6b
+affected:
+    - name: ceph-deploy
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - ">=2.0.1"
+        - "<=1.5.39,1.1"
