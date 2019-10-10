@@ -1,0 +1,17 @@
+---
+cve: 2017-1625
+title: CVE in mastercard-spending-pulse
+description: >
+    IBM Pulse for QRadar 1.0.0 - 1.0.3 discloses sensitive information to unauthorized users. The information can be used to mount further attacks on the system. IBM X-Force ID: 133123.
+cvss_v2: 5.0
+references:
+    - http://www.ibm.com/support/docview.wss?uid=swg22014284
+    - http://www.securityfocus.com/bid/103398
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/133123
+affected:
+    - name: mastercard-spending-pulse
+      version:
+        - "<=1.0.3,1.0.0"
+      fixedin:
+        - ">=1.0.4"
+        - "<=0.0.1,0.0.1"
