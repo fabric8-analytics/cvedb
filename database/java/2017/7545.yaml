@@ -1,0 +1,20 @@
+---
+cve: 2017-7545
+title: CVE in org.jbpm:jbpm-workitems
+description: >
+    It was discovered that the XmlUtils class in jbpmmigration 6.5 performed expansion of external parameter entities while parsing XML files. A remote attacker could use this flaw to read files accessible to the user running the application server and, potentially, perform other more advanced XML eXternal Entity (XXE) attacks.
+cvss_v2: 4.0
+references:
+    - http://www.securityfocus.com/bid/102179
+    - https://access.redhat.com/errata/RHSA-2017:3354
+    - https://access.redhat.com/errata/RHSA-2017:3355
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2017-7545
+    - https://github.com/kiegroup/jbpm-designer/commit/a143f3b92a6a5a527d929d68c02a0c5d914ab81d
+affected:
+    - groupId: org.jbpm
+      artifactId: jbpm-workitems
+      version:
+        - "<=7.0.0.Final,6.4.0.Beta1"
+      fixedin:
+        - ">=7.1.0.Beta1"
+        - "<=6.3.0.Final,5.0-CR1"
