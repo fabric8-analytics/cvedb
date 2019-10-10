@@ -1,0 +1,16 @@
+---
+cve: 2017-1202
+title: CVE in html
+description: >
+    IBM BigFix Compliance 1.7 through 1.9.91 (TEMA SUAv1 SCA SCM) is vulnerable to HTML injection. A remote attacker could inject malicious HTML code, which when viewed, would be executed in the victim's Web browser within the security context of the hosting site. IBM X-Force ID: 123677.
+cvss_v2: 3.5
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/123677
+    - https://www-01.ibm.com/support/docview.wss?uid=ibm10737581
+affected:
+    - name: html
+      version:
+        - "<=1.9,1.7"
+      fixedin:
+        - ">=1.10"
+        - "<=1.6,0.4.0"
