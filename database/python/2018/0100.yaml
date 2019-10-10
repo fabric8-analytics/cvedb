@@ -1,0 +1,16 @@
+---
+cve: 2018-0100
+title: CVE in django-secure
+description: >
+    A vulnerability in the Profile Editor of the Cisco AnyConnect Secure Mobility Client could allow an unauthenticated, local attacker to have read and write access to information stored in the affected system. The vulnerability is due to improper handling of the XML External Entity (XXE) entries when parsing an XML file. An attacker could exploit this vulnerability by injecting a crafted XML file with malicious entries, which could allow the attacker to read and write files. Cisco Bug IDs: CSCvg19341.
+cvss_v2: 3.6
+references:
+    - http://www.securityfocus.com/bid/102738
+    - http://www.securitytracker.com/id/1040246
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180117-acpe
+affected:
+    - name: django-secure
+      version:
+        []
+      fixedin:
+        - ">=0.1.0a1"
