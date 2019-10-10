@@ -1,0 +1,16 @@
+---
+cve: 2017-12694
+title: CVE in org.apache.directory.server:apacheds-server-main
+description: >
+    A Directory Traversal issue was discovered in SpiderControl SCADA Web Server. An attacker may be able to use a simple GET request to perform a directory traversal into system files.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/100456
+    - https://ics-cert.us-cert.gov/advisories/ICSA-17-234-03
+affected:
+    - groupId: org.apache.directory.server
+      artifactId: apacheds-server-main
+      version:
+        []
+      fixedin:
+        - ">=1.0-RC1"
