@@ -1,0 +1,15 @@
+---
+cve: 2017-2622
+title: CVE in openstack-congress
+description: >
+    An accessibility flaw was found in the OpenStack Workflow (mistral) service where a service log directory was improperly made world readable. A malicious system user could exploit this flaw to access sensitive information.
+cvss_v2: 2.1
+references:
+    - https://access.redhat.com/errata/RHSA-2017:1584
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2017-2622
+affected:
+    - name: openstack-congress
+      version:
+        - "<=10.0.0.0rc1,10.0.0.0rc1"
+      fixedin:
+        - "<=9.0.0,6.0.2"
