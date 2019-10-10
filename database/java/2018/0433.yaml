@@ -1,0 +1,16 @@
+---
+cve: 2018-0433
+title: CVE in commons-cli:commons-cli
+description: >
+    A vulnerability in the command-line interface (CLI) in the Cisco SD-WAN Solution could allow an authenticated, local attacker to inject arbitrary commands that are executed with root privileges. The vulnerability is due to insufficient input validation. An attacker could exploit this vulnerability by authenticating to the device and submitting crafted input to the CLI utility. The attacker must be authenticated to access the CLI utility. A successful exploit could allow the attacker to execute commands with root privileges.
+cvss_v2: 7.2
+references:
+    - http://www.securityfocus.com/bid/105295
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180905-sd-wan-injection
+affected:
+    - groupId: commons-cli
+      artifactId: commons-cli
+      version:
+        []
+      fixedin:
+        - ">=1.0-beta-1"
