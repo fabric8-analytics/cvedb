@@ -1,0 +1,17 @@
+---
+cve: 2017-2627
+title: CVE in tripleo-common
+description: >
+    A flaw was found in openstack-tripleo-common as shipped with Red Hat Openstack Enterprise 10 and 11. The sudoers file as installed with OSP's openstack-tripleo-common package is much too permissive. It contains several lines for the mistral user that have wildcards that allow directory traversal with '..' and it grants full passwordless root access to the validations user.
+cvss_v2: 7.2
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2017-2627
+affected:
+    - name: tripleo-common
+      version:
+        - "<=10.0.0,10.0.0"
+        - "<=11.0.0,11.0.0"
+      fixedin:
+        - ">=11.1.0"
+        - "<=10.8.1,10.1.0"
+        - "<=9.6.1,0.0.1"
