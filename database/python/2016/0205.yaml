@@ -1,0 +1,18 @@
+---
+cve: 2016-0205
+title: CVE in cloud
+description: >
+    A vulnerability has been identified in IBM Cloud Orchestrator 2.3, 2.3.0.1, 2.4, and 2.4.0.1 that could allow an attacker after authentication to enumerate valid users of the system. IBM X-Force ID: 109394.
+cvss_v2: 2.1
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/109394
+    - https://www-01.ibm.com/support/docview.wss?uid=swg2C4000049
+affected:
+    - name: cloud
+      version:
+        - "<=2.3.0,2.3.0"
+        - "<=2.4.0,2.4.0"
+      fixedin:
+        - ">=2.4.1"
+        - "<=2.3.9,2.3.1"
+        - "<=2.2.4,1.9.7"
