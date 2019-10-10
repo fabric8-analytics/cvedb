@@ -1,0 +1,21 @@
+---
+cve: 2017-2637
+title: CVE in openstack-congress
+description: >
+    A design flaw issue was found in the Red Hat OpenStack Platform director use of TripleO to enable libvirtd based live-migration. Libvirtd is deployed by default (by director) listening on 0.0.0.0 (all interfaces) with no-authentication or encryption. Anyone able to make a TCP connection to any compute host IP address, including 127.0.0.1, other loopback interface addresses, or in some cases possibly addresses that have been exposed beyond the management interface, could use this to open a virsh session to the libvirtd instance and gain control of virtual machine instances or possibly take over the host.
+cvss_v2: 10.0
+references:
+    - http://www.securityfocus.com/bid/98576
+    - https://access.redhat.com/errata/RHSA-2017:1242
+    - https://access.redhat.com/errata/RHSA-2017:1504
+    - https://access.redhat.com/errata/RHSA-2017:1537
+    - https://access.redhat.com/errata/RHSA-2017:1546
+    - https://access.redhat.com/solutions/3022771
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2017-2637
+    - https://wiki.openstack.org/wiki/OSSN/OSSN-0007
+affected:
+    - name: openstack-congress
+      version:
+        - "<=10.0.0.0rc1,9.0.0.0rc1"
+      fixedin:
+        - "<=8.0.1.dev17,6.0.2"
