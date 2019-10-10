@@ -1,0 +1,16 @@
+---
+cve: 2018-10884
+title: CVE in ansible-tower-cli
+description: >
+    Ansible Tower before versions 3.1.8 and 3.2.6 is vulnerable to cross-site request forgery (CSRF) in awx/api/authentication.py. An attacker could exploit this by tricking already authenticated users into visiting a malicious site and hijacking the authtoken cookie.
+cvss_v2: 6.8
+references:
+    - http://www.securityfocus.com/bid/105136
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-10884
+affected:
+    - name: ansible-tower-cli
+      version:
+        - "<=3.2.1,3.1.0"
+      fixedin:
+        - ">=3.3.0"
+        - "<=3.0.3,2.0.0"
