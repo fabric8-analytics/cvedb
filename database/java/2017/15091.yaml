@@ -1,0 +1,16 @@
+---
+cve: 2017-15091
+title: CVE in org.ligoj.api:plugin-api
+description: >
+    An issue has been found in the API component of PowerDNS Authoritative 4.x up to and including 4.0.4 and 3.x up to and including 3.4.11, where some operations that have an impact on the state of the server are still allowed even though the API has been configured as read-only via the api-readonly keyword. This missing check allows an attacker with valid API credentials to flush the cache, trigger a zone transfer or send a NOTIFY.
+cvss_v2: 5.5
+references:
+    - http://www.securityfocus.com/bid/101982
+    - https://doc.powerdns.com/authoritative/security-advisories/powerdns-advisory-2017-04.html
+affected:
+    - groupId: org.ligoj.api
+      artifactId: plugin-api
+      version:
+        - "<=3.2.3,3.0.0"
+      fixedin:
+        - "<=2.4.4,1.0.1"
