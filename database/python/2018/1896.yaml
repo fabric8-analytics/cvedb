@@ -1,0 +1,17 @@
+---
+cve: 2018-1896
+title: CVE in pyats-connections
+description: >
+    IBM Connections 5.0, 5.5, and 6.0 is vulnerable to possible host header injection attack that could cause navigation to the attacker's domain. IBM X-Force ID: 152456.
+cvss_v2: 3.5
+references:
+    - http://www.securityfocus.com/bid/106197
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/152456
+    - https://www.ibm.com/support/docview.wss?uid=ibm10742567
+affected:
+    - name: pyats-connections
+      version:
+        - "<=5.0.0,5.0.0"
+      fixedin:
+        - ">=5.1.0"
+        - "<=4.1.0,4.0.0"
