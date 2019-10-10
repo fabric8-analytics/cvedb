@@ -1,0 +1,14 @@
+---
+cve: 2017-16717
+title: CVE in bambu-buffer
+description: >
+    A Heap-based Buffer Overflow issue was discovered in WECON LeviStudio HMI. The heap-based buffer overflow vulnerability has been identified, which may allow remote code execution.
+cvss_v2: 9.0
+references:
+    - https://ics-cert.us-cert.gov/advisories/ICSA-17-353-05
+affected:
+    - name: bambu-buffer
+      version:
+        []
+      fixedin:
+        - ">=0.1"
