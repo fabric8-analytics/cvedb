@@ -1,0 +1,15 @@
+---
+cve: 2018-16460
+title: CVE in io.gravitee.node:gravitee-node-plugins-service
+description: >
+    A command Injection in ps package versions <1.0.0 for Node.js allowed arbitrary commands to be executed when attacker controls the PID.
+cvss_v2: 7.5
+references:
+    - https://hackerone.com/reports/390848
+affected:
+    - groupId: io.gravitee.node
+      artifactId: gravitee-node-plugins-service
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
