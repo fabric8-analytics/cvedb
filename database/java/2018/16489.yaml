@@ -1,0 +1,15 @@
+---
+cve: 2018-16489
+title: CVE in com.distelli.objectStore:object-store-api
+description: >
+    A prototype pollution vulnerability was found in just-extend <4.0.0 that allows attack to inject properties onto Object.prototype through its functions.
+cvss_v2: 7.5
+references:
+    - https://hackerone.com/reports/430291
+affected:
+    - groupId: com.distelli.objectStore
+      artifactId: object-store-api
+      version:
+        - "<=3.1.0"
+      fixedin:
+        - ">=4.0.0"
