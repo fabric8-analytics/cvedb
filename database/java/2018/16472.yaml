@@ -1,0 +1,15 @@
+---
+cve: 2018-16472
+title: CVE in com.js-lib:js-dom
+description: >
+    A prototype pollution attack in cached-path-relative versions <=1.0.1 allows an attacker to inject properties on Object.prototype which are then inherited by all the JS objects through the prototype chain causing a DoS attack.
+cvss_v2: 5.0
+references:
+    - https://hackerone.com/reports/390847
+affected:
+    - groupId: com.js-lib
+      artifactId: js-dom
+      version:
+        - "<=1.0.1"
+      fixedin:
+        []
