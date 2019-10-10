@@ -1,0 +1,15 @@
+---
+cve: 2013-6206
+title: CVE in org.infinispan.server:infinispan-server-feature-pack
+description: >
+    Unspecified vulnerability in HP Rapid Deployment Pack (RDP) and Insight Control Server Deployment allows remote attackers to obtain sensitive information, modify data, or cause a denial of service via unknown vectors.
+cvss_v2: 9.0
+references:
+    - https://h20564.www2.hp.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c04135307
+affected:
+    - groupId: org.infinispan.server
+      artifactId: infinispan-server-feature-pack
+      version:
+        []
+      fixedin:
+        - ">=8.0.0.Beta1"
