@@ -1,0 +1,16 @@
+---
+cve: 2010-3011
+title: CVE in girder-homepage
+description: >
+    CRLF injection vulnerability in HP System Management Homepage (SMH) before 6.2 allows remote attackers to inject arbitrary HTTP headers and conduct HTTP response splitting attacks via unspecified vectors.
+cvss_v2: 5.0
+references:
+    - http://secunia.com/advisories/41480
+    - http://secunia.com/advisories/41490
+    - http://www.itrc.hp.com/service/cki/docDisplay.do?docId=emr_na-c02512995
+affected:
+    - name: girder-homepage
+      version:
+        - "<=3.0.4.dev4"
+      fixedin:
+        []
