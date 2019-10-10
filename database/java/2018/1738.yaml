@@ -1,0 +1,19 @@
+---
+cve: 2018-1738
+title: CVE in org.sonatype.security.realms:security-public-key-realm
+description: >
+    IBM Security Key Lifecycle Manager 2.6, 2.7, 3.0 could allow an authenticated user to obtain highly sensitive information or jeopardize system integrity due to improper authentication mechanisms. IBM X-Force ID: 147907.
+cvss_v2: 5.5
+references:
+    - http://www.ibm.com/support/docview.wss?uid=ibm10733309
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/147907
+affected:
+    - groupId: org.sonatype.security.realms
+      artifactId: security-public-key-realm
+      version:
+        - "<=2.7,2.6"
+        - "<=3.0,3.0"
+      fixedin:
+        - ">=3.0.1"
+        - "<=2.8.2,2.8"
+        - "<=2.5,2.0.0"
