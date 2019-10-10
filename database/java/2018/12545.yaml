@@ -1,17 +1,23 @@
 ---
 cve: 2018-12545
-title: CVE in org.eclipse.jetty:jetty-server
+title: CVE in org.eclipse.jetty:jetty-jmx
 description: >
     In Eclipse Jetty version 9.3.x and 9.4.x, the server is vulnerable to Denial of Service conditions if a remote client sends either large SETTINGs frames container containing many settings, or many small SETTINGs frames. The vulnerability is due to the additional CPU and memory allocations required to handle changed settings.
 cvss_v2: 5.0
 references:
     - https://bugs.eclipse.org/bugs/show_bug.cgi?id=538096
+    - https://lists.apache.org/thread.html/13f5241048ec0bf966a6ddd306feaf40de5b20e1f09096b9cddeddf2@%3Ccommits.accumulo.apache.org%3E
+    - https://lists.apache.org/thread.html/70744fe4faba8e2fa7e50a7fc794dd03cb28dad8b21e08ee59bb1606@%3Cdevnull.infra.apache.org%3E
+    - https://lists.apache.org/thread.html/febc94ffec9275dcda64633e0276a1400cd318e571009e4cda9b7a79@%3Cnotifications.accumulo.apache.org%3E
+    - https://lists.apache.org/thread.html/ff8dcfe29377088ab655fda9d585dccd5b1f07fabd94ae84fd60a7f8@%3Ccommits.pulsar.apache.org%3E
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/CIS4LALKZNLF5X5IGNGRSKERG7FY4QG6/
 affected:
     - groupId: org.eclipse.jetty
-      artifactId: jetty-server
+      artifactId: jetty-jmx
       version:
         - "<=9.3.24.v20180605,9.3.0.M0"
-        - "<=9.4.12.RC2,9.4.0.RC0"
+        - "<=9.4.12.v20180830,9.4.0.M0"
       fixedin:
-        - ">=9.4.12.v20180830"
-        - ">=9.3.25.v20180904"
+        - ">=9.4.13.v20181111"
+        - "<=9.3.27.v20190418,9.3.25.v20180904"
+        - "<=9.2.28.v20190418,7.0.0.M0"
