@@ -1,0 +1,15 @@
+---
+cve: 2018-17919
+title: CVE in org.sonatype.p2.bridge:p2-bridge-model
+description: >
+    All versions of Hangzhou Xiongmai Technology Co., Ltd XMeye P2P Cloud Server may allow an attacker to use an undocumented user account "default" with its default password to login to XMeye and access/view video streams.
+cvss_v2: 6.4
+references:
+    - https://ics-cert.us-cert.gov/advisories/ICSA-18-282-06
+affected:
+    - groupId: org.sonatype.p2.bridge
+      artifactId: p2-bridge-model
+      version:
+        []
+      fixedin:
+        - ">=1.0.2"
