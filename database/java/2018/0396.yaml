@@ -1,0 +1,19 @@
+---
+cve: 2018-0396
+title: CVE in org.sakaiproject.presence:sakai-presence-util
+description: >
+    A vulnerability in the web framework of the Cisco Unified Communications Manager IM and Presence Service software could allow an authenticated, remote attacker to conduct a cross-site scripting (XSS) attack against the user of the web interface of an affected system. The vulnerability is due to insufficient input validation of certain parameters passed to the web server. An attacker could exploit this vulnerability by convincing the user to access a malicious link or by intercepting the user request and injecting certain malicious code. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected site or allow the attacker to access sensitive browser-based information. Cisco Bug IDs: CSCve25985.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/104872
+    - http://www.securitytracker.com/id/1041349
+    - http://www.securitytracker.com/id/1041350
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180718-ucmim-ps-xss
+affected:
+    - groupId: org.sakaiproject.presence
+      artifactId: sakai-presence-util
+      version:
+        - "<=12.0,12.0"
+      fixedin:
+        - ">=12.1"
+        - "<=11.4,2.9.0-b03"
