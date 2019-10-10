@@ -1,0 +1,19 @@
+---
+cve: 2017-12159
+title: CVE in org.keycloak:keycloak-authentication-picketlink
+description: >
+    It was found that the cookie used for CSRF prevention in Keycloak was not unique to each session. An attacker could use this flaw to gain access to an authenticated user session, leading to possible information disclosure or further attacks.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/101601
+    - https://access.redhat.com/errata/RHSA-2017:2904
+    - https://access.redhat.com/errata/RHSA-2017:2905
+    - https://access.redhat.com/errata/RHSA-2017:2906
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1484111
+affected:
+    - groupId: org.keycloak
+      artifactId: keycloak-authentication-picketlink
+      version:
+        []
+      fixedin:
+        - ">=1.0-beta-1-snapshot-05092014"
