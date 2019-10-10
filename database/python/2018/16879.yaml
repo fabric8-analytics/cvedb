@@ -1,0 +1,15 @@
+---
+cve: 2018-16879
+title: CVE in ansible-tower-cli
+description: >
+    Ansible Tower before version 3.3.3 does not set a secure channel as it is using the default insecure configuration channel settings for messaging celery workers from RabbitMQ. This could lead in data leak of sensitive information such as passwords as well as denial of service attacks by deleting projects or inventory files.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/106310
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-16879
+affected:
+    - name: ansible-tower-cli
+      version:
+        - "<=3.3.2"
+      fixedin:
+        - ">=3.3.3"
