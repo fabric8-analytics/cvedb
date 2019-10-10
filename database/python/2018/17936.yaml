@@ -1,0 +1,14 @@
+---
+cve: 2018-17936
+title: CVE in django-cms
+description: >
+    NUUO CMS All versions 3.3 and prior the application allows the upload of arbitrary files that can modify or overwrite configuration files to the server, which could allow remote code execution.
+cvss_v2: 7.5
+references:
+    - https://ics-cert.us-cert.gov/advisories/ICSA-18-284-02
+affected:
+    - name: django-cms
+      version:
+        - "<=3.3.0"
+      fixedin:
+        - ">=3.3.1"
