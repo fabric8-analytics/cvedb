@@ -1,0 +1,16 @@
+---
+cve: 2013-4821
+title: CVE in org.apache.karaf.system:org.apache.karaf.system.core
+description: >
+    Unspecified vulnerability in HP System Management Homepage (SMH) before 7.2.1 allows remote authenticated users to cause a denial of service via unknown vectors.
+cvss_v2: 4.0
+references:
+    - http://www.kb.cert.org/vuls/id/895524
+    - https://h20564.www2.hp.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c03839862
+affected:
+    - groupId: org.apache.karaf.system
+      artifactId: org.apache.karaf.system.core
+      version:
+        - "<=4.2.7"
+      fixedin:
+        []
