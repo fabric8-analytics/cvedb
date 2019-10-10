@@ -1,0 +1,16 @@
+---
+cve: 2018-0118
+title: CVE in xss-catcher
+description: >
+    A vulnerability in the web-based management interface of Cisco Unified Communications Manager could allow an unauthenticated, remote attacker to perform a cross-site scripting (XSS) attack against a user of the web-based management interface of an affected device. The vulnerability is due to insufficient validation of user-supplied input by the web-based management interface of an affected device. An attacker could exploit this vulnerability by persuading a user of the web-based management interface to click a link that is designed to submit malicious input to the interface. A successful exploit could allow the attacker to execute arbitrary script code in the context of the interface or allow the attacker to access sensitive browser-based information on the targeted device. Cisco Bug IDs: CSCvg51264.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/102478
+    - http://www.securitytracker.com/id/1040193
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180110-ucm
+affected:
+    - name: xss-catcher
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
