@@ -1,0 +1,18 @@
+---
+cve: 2018-17247
+title: CVE in org.elasticsearch:elasticsearch-storm
+description: >
+    Elasticsearch Security versions 6.5.0 and 6.5.1 contain an XXE flaw in Machine Learning's find_file_structure API. If a policy allowing external network access has been added to Elasticsearch's Java Security Manager then an attacker could send a specially crafted request capable of leaking content of local files on the Elasticsearch node. This could allow a user to access information that they should not have access to.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/106294
+    - https://discuss.elastic.co/t/elastic-stack-6-5-2-security-update/159594
+    - https://www.elastic.co/community/security
+affected:
+    - groupId: org.elasticsearch
+      artifactId: elasticsearch-storm
+      version:
+        - "<=6.5.1,6.5.0"
+      fixedin:
+        - ">=6.5.2"
+        - "<=6.4.3,2.1.0.Beta2"
