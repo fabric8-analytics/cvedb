@@ -1,0 +1,16 @@
+---
+cve: 2018-14620
+title: CVE in openstack-heat
+description: >
+    The OpenStack RabbitMQ container image insecurely retrieves the rabbitmq_clusterer component over HTTP during the build stage. This could potentially allow an attacker to serve malicious code to the image builder and install in the resultant container image. Version of openstack-rabbitmq-container and openstack-containers as shipped with Red Hat Openstack 12, 13, 14 are believed to be vulnerable.
+cvss_v2: 7.5
+references:
+    - https://access.redhat.com/errata/RHSA-2018:2721
+    - https://access.redhat.com/errata/RHSA-2018:2729
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-14620
+affected:
+    - name: openstack-heat
+      version:
+        - "<=13.0.0.0rc2,12.0.0.0rc1"
+      fixedin:
+        - "<=11.0.2,11.0.0.0rc2.dev52"
