@@ -1,0 +1,17 @@
+---
+cve: 2010-3011
+title: CVE in org.apache.karaf.management.mbeans:org.apache.karaf.management.mbeans.system
+description: >
+    CRLF injection vulnerability in HP System Management Homepage (SMH) before 6.2 allows remote attackers to inject arbitrary HTTP headers and conduct HTTP response splitting attacks via unspecified vectors.
+cvss_v2: 5.0
+references:
+    - http://secunia.com/advisories/41480
+    - http://secunia.com/advisories/41490
+    - http://www.itrc.hp.com/service/cki/docDisplay.do?docId=emr_na-c02512995
+affected:
+    - groupId: org.apache.karaf.management.mbeans
+      artifactId: org.apache.karaf.management.mbeans.system
+      version:
+        - "<=2.4.4"
+      fixedin:
+        []
