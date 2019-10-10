@@ -1,0 +1,19 @@
+---
+cve: 2017-2639
+title: CVE in com.openshift:openshift-restclient-java
+description: >
+    It was found that CloudForms does not verify that the server hostname matches the domain name in the certificate when using a custom CA and communicating with Red Hat Virtualization (RHEV) and OpenShift. This would allow an attacker to spoof RHEV or OpenShift systems and potentially harvest sensitive information from CloudForms.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/98769
+    - http://www.securitytracker.com/id/1038599
+    - https://access.redhat.com/errata/RHSA-2017:1367
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2017-2639
+affected:
+    - groupId: com.openshift
+      artifactId: openshift-restclient-java
+      version:
+        - "<=5.8.0.FINAL,5.8.0.FINAL"
+      fixedin:
+        - ">=5.9.0.Final"
+        - "<=5.6.0.Final,3.0.0.Final"
