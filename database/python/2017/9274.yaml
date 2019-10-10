@@ -1,0 +1,16 @@
+---
+cve: 2017-9274
+title: CVE in python-rpm-spec
+description: >
+    A shell command injection in the obs-service-source_validator before 0.7 could be used to execute code as the packager when checking RPM SPEC files with specific macro constructs.
+cvss_v2: 9.3
+references:
+    - https://bugzilla.suse.com/show_bug.cgi?id=938556
+    - https://lists.opensuse.org/opensuse-security-announce/2017-12/msg00024.html
+    - https://www.suse.com/de-de/security/cve/CVE-2017-9274/
+affected:
+    - name: python-rpm-spec
+      version:
+        - "<=0.6"
+      fixedin:
+        - ">=0.7"
