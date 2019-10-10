@@ -1,0 +1,22 @@
+---
+cve: 2006-3231
+title: CVE in python-application
+description: >
+    Unspecified vulnerability in IBM WebSphere Application Server (WAS) before 6.0.2.11, when fileServingEnabled is true, allows remote attackers to obtain JSP source code and other sensitive information via "URIs with special characters."
+cvss_v2: 4.3
+references:
+    - http://secunia.com/advisories/20732
+    - http://secunia.com/advisories/24478
+    - http://www.securityfocus.com/bid/18578
+    - http://www.securityfocus.com/bid/22991
+    - http://www.vupen.com/english/advisories/2006/2482
+    - http://www.vupen.com/english/advisories/2007/0970
+    - http://www-1.ibm.com/support/docview.wss?rs=180&uid=swg27006876
+    - http://www-1.ibm.com/support/docview.wss?uid=swg21243541
+affected:
+    - name: python-application
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - ">=2.0.1"
+        - "<=1.5.0,1.0.8"
