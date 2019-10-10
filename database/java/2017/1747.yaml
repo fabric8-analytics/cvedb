@@ -1,0 +1,18 @@
+---
+cve: 2017-1747
+title: CVE in com.ibm.mq:com.ibm.mq.allclient
+description: >
+    A specially crafted message could cause a denial of service in IBM WebSphere MQ 9.0, 9.0.0.1, 9.0.0.2, 9.0.1, 9.0.2, 9.0.3, and 9.0.4 applications consuming messages that it needs to perform data conversion on. IBM X-Force ID: 135520.
+cvss_v2: 4.0
+references:
+    - http://www.ibm.com/support/docview.wss?uid=swg22012992
+    - http://www.securityfocus.com/bid/103590
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/135520
+affected:
+    - groupId: com.ibm.mq
+      artifactId: com.ibm.mq.allclient
+      version:
+        - "<=9.0.4.0,9.0.4.0"
+      fixedin:
+        - ">=9.0.5.0"
+        - "<=0.0.0.3,0.0.0.2"
