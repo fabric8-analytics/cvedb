@@ -1,0 +1,16 @@
+---
+cve: 2018-1639
+title: CVE in django-report-builder
+description: >
+    The Report Builder of Jazz Reporting Service 5.0 through 5.0.2 and 6.0 through 6.0.6 could allow an authenticated user to obtain sensitive information beyond its assigned privileges. IBM X-Force ID: 144579.
+cvss_v2: 4.0
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/144579
+    - https://www.ibm.com/support/docview.wss?uid=ibm10731727
+affected:
+    - name: django-report-builder
+      version:
+        - "<=6.0.2,5.0.0b1"
+      fixedin:
+        - ">=6.1.0"
+        - "<=4.0.3,1.0"
