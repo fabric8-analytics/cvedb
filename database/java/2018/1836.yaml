@@ -1,0 +1,18 @@
+---
+cve: 2018-1836
+title: CVE in com.ibm.mq:com.ibm.mq.allclient
+description: >
+    IBM WebSphere MQ 9.0.2, 9.0.3, 9.0.4, 9.0.5, 9.1.0.0, and 9.1.0.1 console is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 150661.
+cvss_v2: 3.5
+references:
+    - http://www.securityfocus.com/bid/107530
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/150661
+    - https://www.ibm.com/support/docview.wss?uid=ibm10734457
+affected:
+    - groupId: com.ibm.mq
+      artifactId: com.ibm.mq.allclient
+      version:
+        - "<=9.1.0.1,9.0.4.0"
+      fixedin:
+        - ">=9.1.0.2"
+        - "<=0.0.0.3,0.0.0.2"
