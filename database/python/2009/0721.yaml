@@ -1,0 +1,20 @@
+---
+cve: 2009-0721
+title: CVE in graphics-py
+description: >
+    Unspecified vulnerability in Easy Login in the Sender module in HP Remote Graphics Software (RGS) 4.0.0 through 5.2.4 allows remote attackers to execute arbitrary code via unknown vectors.
+cvss_v2: 10.0
+references:
+    - http://secunia.com/advisories/35087
+    - http://secunia.com/advisories/35089
+    - http://securitytracker.com/id?1022221
+    - http://www.itrc.hp.com/service/cki/docDisplay.do?docId=emr_na-c01731970
+    - http://www.securityfocus.com/bid/34980
+    - http://www.vupen.com/english/advisories/2009/1323
+affected:
+    - name: graphics-py
+      version:
+        - "<=5.0,5.0"
+      fixedin:
+        - ">=5.0.1"
+        - "<=0.1,0.1"
