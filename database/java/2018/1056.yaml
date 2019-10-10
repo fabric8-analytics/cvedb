@@ -1,0 +1,20 @@
+---
+cve: 2018-1056
+title: CVE in net.lingala.zip4j:zip4j
+description: >
+    An out-of-bounds heap buffer read flaw was found in the way advancecomp before 2.1-2018/02 handled processing of ZIP files. An attacker could potentially use this flaw to crash the advzip utility by tricking it into processing crafted ZIP files.
+cvss_v2: 6.8
+references:
+    - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=889270
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-1056
+    - https://lists.debian.org/debian-lts-announce/2018/02/msg00016.html
+    - https://lists.debian.org/debian-lts-announce/2019/03/msg00004.html
+    - https://sourceforge.net/p/advancemame/bugs/259/
+    - https://usn.ubuntu.com/3570-1/
+affected:
+    - groupId: net.lingala.zip4j
+      artifactId: zip4j
+      version:
+        - "<=2.0.3"
+      fixedin:
+        - ">=2.1.0"
