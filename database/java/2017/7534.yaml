@@ -1,0 +1,16 @@
+---
+cve: 2017-7534
+title: CVE in com.openshift:openshift-restclient-java
+description: >
+    OpenShift Enterprise version 3.x is vulnerable to a stored XSS via the log viewer for pods. The flaw is due to lack of sanitation of user input, specifically terminal escape characters, and the creation of clickable links automatically when viewing the log files for a pod.
+cvss_v2: 3.5
+references:
+    - http://www.securityfocus.com/bid/103754
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1443003
+affected:
+    - groupId: com.openshift
+      artifactId: openshift-restclient-java
+      version:
+        - "<=3.0.0.Final"
+      fixedin:
+        - ">=3.0.1.Final"
