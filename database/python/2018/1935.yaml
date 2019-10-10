@@ -1,0 +1,17 @@
+---
+cve: 2018-1935
+title: CVE in pyats-connections
+description: >
+    IBM Connections 5.0, 5.5, and 6.0 could allow an authenticated user to obtain sensitive information from invalid request error messages. IBM X-Force ID: 153315.
+cvss_v2: 4.0
+references:
+    - http://www.securityfocus.com/bid/106134
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/153315
+    - https://www.ibm.com/support/docview.wss?uid=ibm10742575
+affected:
+    - name: pyats-connections
+      version:
+        - "<=5.0.0,5.0.0"
+      fixedin:
+        - ">=5.1.0"
+        - "<=4.1.0,4.0.0"
