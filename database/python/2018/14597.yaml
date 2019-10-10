@@ -1,0 +1,16 @@
+---
+cve: 2018-14597
+title: CVE in service-identity
+description: >
+    CA Technologies Identity Governance 12.6, 14.0, 14.1, and 14.2 and CA Identity Suite Virtual Appliance 14.0, 14.1, and 14.2 provide telling error messages that may allow remote attackers to enumerate account names.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/105688
+    - https://support.ca.com/us/product-content/recommended-reading/security-notices/ca20181017-01-security-notice-for-ca-identity-governance.html
+affected:
+    - name: service-identity
+      version:
+        - "<=14.0.0,14.0.0"
+      fixedin:
+        - ">=16.0.0"
+        - "<=1.0.0,0.1"
