@@ -1,0 +1,16 @@
+---
+cve: 2017-7519
+title: CVE in collectd-ceph-storage
+description: >
+    In Ceph, a format string flaw was found in the way libradosstriper parses input from user. A user could crash an application or service using the libradosstriper library.
+cvss_v2: 2.1
+references:
+    - http://www.securityfocus.com/bid/99075
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2017-7519
+    - https://www.debian.org/security/2018/dsa-4339
+affected:
+    - name: collectd-ceph-storage
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
