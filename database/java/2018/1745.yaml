@@ -1,0 +1,20 @@
+---
+cve: 2018-1745
+title: CVE in org.sonatype.security.realms:security-public-key-realm
+description: >
+    IBM Security Key Lifecycle Manager 2.7 and 3.0 could allow an unauthenticated user to restart the SKLM server due to missing authentication. IBM X-Force ID: 148424.
+cvss_v2: 7.8
+references:
+    - http://www.securityfocus.com/bid/105554
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/148424
+    - https://www.ibm.com/support/docview.wss?uid=ibm10733355
+affected:
+    - groupId: org.sonatype.security.realms
+      artifactId: security-public-key-realm
+      version:
+        - "<=2.7,2.7"
+        - "<=3.0,3.0"
+      fixedin:
+        - ">=3.0.1"
+        - "<=2.8.2,2.8"
+        - "<=2.6,2.0.0"
