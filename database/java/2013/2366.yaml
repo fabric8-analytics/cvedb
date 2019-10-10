@@ -1,0 +1,16 @@
+---
+cve: 2013-2366
+title: CVE in com.distelli.monitor:task-monitor-api
+description: >
+    Unspecified vulnerability in HP Business Process Monitor 9.13.1 patch 1 and 9.22 patch 1 allows remote attackers to execute arbitrary code and obtain sensitive information via unknown vectors, aka ZDI-CAN-1802.
+cvss_v2: 10.0
+references:
+    - http://h20000.www2.hp.com/bizsupport/TechSupport/Document.jsp?objectID=c03844594
+affected:
+    - groupId: com.distelli.monitor
+      artifactId: task-monitor-api
+      version:
+        - "<=9.13.1,9.13.1"
+      fixedin:
+        - ">=9.13.2"
+        - "<=9.13.0,9.1.0"
