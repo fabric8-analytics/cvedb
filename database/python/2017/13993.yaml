@@ -1,0 +1,15 @@
+---
+cve: 2017-13993
+title: CVE in contentful-management
+description: >
+    An Uncontrolled Search Path or Element issue was discovered in i-SENS SmartLog Diabetes Management Software, Version 2.4.0 and prior versions. An uncontrolled search path element vulnerability has been identified which could be exploited by placing a specially crafted DLL file in the search path. If the malicious DLL is loaded prior to the valid DLL, an attacker could execute arbitrary code on the system. This vulnerability does not affect the connected blood glucose monitor and would not impact delivery of therapy to the patient.
+cvss_v2: 9.3
+references:
+    - http://www.securityfocus.com/bid/100659
+    - https://ics-cert.us-cert.gov/advisories/ICSMA-17-250-01
+affected:
+    - name: contentful-management
+      version:
+        - "<=2.4.0"
+      fixedin:
+        - ">=2.5.0"
