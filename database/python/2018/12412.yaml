@@ -1,0 +1,16 @@
+---
+cve: 2018-12412
+title: CVE in developer-tools
+description: >
+    The realm server (tibrealmserver) component of TIBCO Software Inc. TIBCO FTL - Community Edition, TIBCO FTL - Developer Edition, and TIBCO FTL - Enterprise Edition contains a vulnerability which may allow an attacker to perform cross-site request forgery (CSRF) attacks. Affected releases are TIBCO Software Inc. TIBCO FTL - Community Edition: versions up to and including 5.4.0, TIBCO FTL - Developer Edition: versions up to and including 5.4.0, TIBCO FTL - Enterprise Edition: versions up to and including 5.4.0.
+cvss_v2: 6.8
+references:
+    - http://www.securityfocus.com/bid/105861
+    - http://www.tibco.com/services/support/advisories
+    - https://www.tibco.com/support/advisories/2018/11/tibco-security-advisory-november-6-2018-tibco-ftl
+affected:
+    - name: developer-tools
+      version:
+        - "<=1.0.7,1.0.0"
+      fixedin:
+        - "<=0.0.14,0.0.1"
