@@ -1,0 +1,16 @@
+---
+cve: 2016-6547
+title: CVE in abiquo-api
+description: >
+    The Zizai Tech Nut mobile app stores the account password used to authenticate to the cloud API in cleartext in the cache.db file.
+cvss_v2: 2.1
+references:
+    - https://blog.rapid7.com/2016/10/25/multiple-bluetooth-low-energy-ble-tracker-vulnerabilities/
+    - https://www.kb.cert.org/vuls/id/402847
+    - https://www.securityfocus.com/bid/93877
+affected:
+    - name: abiquo-api
+      version:
+        []
+      fixedin:
+        - ">=0.1.7"
