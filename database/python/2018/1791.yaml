@@ -1,0 +1,16 @@
+---
+cve: 2018-1791
+title: CVE in pyats-connections
+description: >
+    IBM Connections 5.0, 5.5, and 6.0 is vulnerable to an External Service Interaction attack, caused by improper validation of a request property. By submitting suitable payloads, an attacker could exploit this vulnerability to induce the Connections server to attack other systems. IBM X-Force ID: 148946.
+cvss_v2: 4.9
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/148946
+    - https://www.ibm.com/support/docview.wss?uid=ibm10731207
+affected:
+    - name: pyats-connections
+      version:
+        - "<=5.0.0,5.0.0"
+      fixedin:
+        - ">=5.1.0"
+        - "<=4.1.0,4.0.0"
