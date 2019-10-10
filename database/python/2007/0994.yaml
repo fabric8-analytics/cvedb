@@ -1,0 +1,39 @@
+---
+cve: 2007-0994
+title: CVE in html
+description: >
+    A regression error in Mozilla Firefox 2.x before 2.0.0.2 and 1.x before 1.5.0.10, and SeaMonkey 1.1 before 1.1.1 and 1.0 before 1.0.8, allows remote attackers to execute arbitrary JavaScript as the user via an HTML mail message with a javascript: URI in an (1) img, (2) link, or (3) style tag, which bypasses the access checks and executes code with chrome privileges.
+cvss_v2: 6.8
+references:
+    - ftp://patches.sgi.com/support/free/security/advisories/20070202-01-P.asc
+    - ftp://patches.sgi.com/support/free/security/advisories/20070301-01-P.asc
+    - http://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=230733
+    - http://h20000.www2.hp.com/bizsupport/TechSupport/Document.jsp?objectID=c00771742
+    - http://lists.suse.com/archive/suse-security-announce/2007-Mar/0001.html
+    - http://secunia.com/advisories/24384
+    - http://secunia.com/advisories/24395
+    - http://secunia.com/advisories/24455
+    - http://secunia.com/advisories/24457
+    - http://secunia.com/advisories/24650
+    - http://secunia.com/advisories/25588
+    - http://securitytracker.com/id?1017726
+    - http://slackware.com/security/viewer.php?l=slackware-security&y=2007&m=slackware-security.338131
+    - http://slackware.com/security/viewer.php?l=slackware-security&y=2007&m=slackware-security.374851
+    - http://www.debian.org/security/2007/dsa-1336
+    - http://www.mozilla.org/security/announce/2007/mfsa2007-09.html
+    - http://www.novell.com/linux/security/advisories/2007_22_mozilla.html
+    - http://www.redhat.com/support/errata/RHSA-2007-0078.html
+    - http://www.redhat.com/support/errata/RHSA-2007-0097.html
+    - http://www.securityfocus.com/bid/22826
+    - http://www.vupen.com/english/advisories/2007/0823
+    - https://issues.rpath.com/browse/RPL-1103
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A9749
+affected:
+    - name: html
+      version:
+        - "<=1.1,1.0"
+        - "<=1.5,1.5"
+      fixedin:
+        - ">=1.6"
+        - "<=1.4,1.2"
+        - "<=0.4.0,0.4.0"
