@@ -1,0 +1,15 @@
+---
+cve: 2017-10617
+title: CVE in django-entity
+description: >
+    The ifmap service that comes bundled with Contrail has an XML External Entity (XXE) vulnerability that may allow an attacker to retrieve sensitive system files. Affected releases are Juniper Networks Contrail 2.2 prior to 2.21.4; 3.0 prior to 3.0.3.4; 3.1 prior to 3.1.4.0; 3.2 prior to 3.2.5.0. CVE-2017-10616 and CVE-2017-10617 can be chained together and have a combined CVSSv3 score of 5.8 (AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:N/A:N).
+cvss_v2: 5.0
+references:
+    - https://kb.juniper.net/JSA10819
+affected:
+    - name: django-entity
+      version:
+        - "<=3.1.0,3.0.0"
+      fixedin:
+        - ">=3.1.1"
+        - "<=2.0.2,0.3.4"
