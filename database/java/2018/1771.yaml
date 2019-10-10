@@ -1,0 +1,16 @@
+---
+cve: 2018-1771
+title: CVE in com.ibm.sbt:com.ibm.commons
+description: >
+    IBM Domino 9.0 and 9.0.1 could allow an attacker to execute commands on the system by triggering a buffer overflow in the parsing of command line arguments passed to nsd.exe. IBM X-force ID: 148687.
+cvss_v2: 7.2
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/148687
+    - https://www.ibm.com/support/docview.wss?uid=ibm10743405
+affected:
+    - groupId: com.ibm.sbt
+      artifactId: com.ibm.commons
+      version:
+        - "<=9.0.0,9.0.0"
+      fixedin:
+        - "<=1.1.12.20161007-1200,1.1.6.20150817-1200"
