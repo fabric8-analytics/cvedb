@@ -1,0 +1,17 @@
+---
+cve: 2018-10616
+title: CVE in io.takari.builder:takari-builder-security-manager
+description: >
+    ABB Panel Builder 800 all versions has an improper input validation vulnerability which may allow an attacker to insert and run arbitrary code on a computer where the affected product is used.
+cvss_v2: 9.3
+references:
+    - http://search-ext.abb.com/library/Download.aspx?DocumentID=3BSE092089&Action=Launch
+    - http://www.securityfocus.com/bid/104882
+    - https://ics-cert.us-cert.gov/advisories/ICSA-18-198-01
+affected:
+    - groupId: io.takari.builder
+      artifactId: takari-builder-security-manager
+      version:
+        []
+      fixedin:
+        - ">=0.20.5"
