@@ -1,0 +1,15 @@
+---
+cve: 2010-1963
+title: CVE in org.apidesign.html:net.java.html.boot
+description: >
+    Cross-site scripting (XSS) vulnerability in HP ServiceCenter allows remote attackers to inject arbitrary web script or HTML via unspecified vectors.
+cvss_v2: 4.3
+references:
+    - http://marc.info/?l=bugtraq&m=127557884206863&w=2
+affected:
+    - groupId: org.apidesign.html
+      artifactId: net.java.html.boot
+      version:
+        []
+      fixedin:
+        - ">=0.4"
