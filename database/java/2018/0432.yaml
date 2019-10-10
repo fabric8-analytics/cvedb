@@ -1,0 +1,16 @@
+---
+cve: 2018-0432
+title: CVE in org.apache.karaf.system:org.apache.karaf.system.core
+description: >
+    A vulnerability in the error reporting feature of the Cisco SD-WAN Solution could allow an authenticated, remote attacker to gain elevated privileges on an affected device. The vulnerability is due to a failure to properly validate certain parameters included within the error reporting application configuration. An attacker could exploit this vulnerability by sending a crafted command to the error reporting feature. A successful exploit could allow the attacker to gain root-level privileges and take full control of the device.
+cvss_v2: 9.0
+references:
+    - http://www.securityfocus.com/bid/105296
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180905-sd-wan-escalation
+affected:
+    - groupId: org.apache.karaf.system
+      artifactId: org.apache.karaf.system.core
+      version:
+        []
+      fixedin:
+        - ">=3.0.0.RC1"
