@@ -1,0 +1,16 @@
+---
+cve: 2017-16718
+title: CVE in com.google.api-ads:ads-lib-axis
+description: >
+    Beckhoff TwinCAT 3 supports communication over ADS. ADS is a protocol for industrial automation in protected environments. This protocol uses user configured routes, that can be edited remotely via ADS. This special command supports encrypted authentication with username/password. The encryption uses a fixed key, that could be extracted by an attacker. Precondition of the exploitation of this weakness is network access at the moment a route is added.
+cvss_v2: 4.3
+references:
+    - https://download.beckhoff.com/download/Document/product-security/Advisories/advisory-2017-002.pdf
+affected:
+    - groupId: com.google.api-ads
+      artifactId: ads-lib-axis
+      version:
+        - "<=3.0.0,3.0.0"
+      fixedin:
+        - ">=3.1.0"
+        - "<=2.22.0,0.5.0"
