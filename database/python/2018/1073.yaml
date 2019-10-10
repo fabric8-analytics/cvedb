@@ -1,0 +1,16 @@
+---
+cve: 2018-1073
+title: CVE in ovirt-engine-sdk-python
+description: >
+    The web console login form in ovirt-engine before version 4.2.3 returned different errors for non-existent users and invalid passwords, allowing an attacker to discover the names of valid user accounts.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/104189
+    - https://access.redhat.com/errata/RHSA-2018:1525
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-1073
+affected:
+    - name: ovirt-engine-sdk-python
+      version:
+        - "<=4.2.2"
+      fixedin:
+        - ">=4.2.3"
