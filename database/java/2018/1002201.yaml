@@ -2,7 +2,7 @@
 cve: 2018-1002201
 title: CVE in org.zeroturnaround:zt-zip
 description: >
-    "zt-zip before 1.13 is vulnerable to directory traversal, allowing attackers to write to arbitrary files via a ../ (dot dot slash) in a Zip archive entry that is mishandled during extraction. This vulnerability is also known as 'Zip-Slip'."
+    zt-zip before 1.13 is vulnerable to directory traversal, allowing attackers to write to arbitrary files via a ../ (dot dot slash) in a Zip archive entry that is mishandled during extraction. This vulnerability is also known as 'Zip-Slip'.
 cvss_v2: 4.3
 references:
     - https://github.com/snyk/zip-slip-vulnerability
