@@ -1,0 +1,15 @@
+---
+cve: 2018-1191
+title: CVE in com.google.cloud:google-cloud-scheduler
+description: >
+    Cloud Foundry Garden-runC, versions prior to 1.11.0, contains an information exposure vulnerability. A user with access to Garden logs may be able to obtain leaked credentials and perform authenticated actions using those credentials.
+cvss_v2: 3.5
+references:
+    - https://www.cloudfoundry.org/blog/cve-2018-1191/
+affected:
+    - groupId: com.google.cloud
+      artifactId: google-cloud-scheduler
+      version:
+        - "<=1.10.0"
+      fixedin:
+        - ">=1.11.0"
