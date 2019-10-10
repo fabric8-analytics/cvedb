@@ -1,0 +1,16 @@
+---
+cve: 2017-1655
+title: CVE in command-lifecycle
+description: >
+    IBM Jazz Foundation (IBM Rational Collaborative Lifecycle Management 5.0 and 6.0) is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 133379.
+cvss_v2: 3.5
+references:
+    - http://www.ibm.com/support/docview.wss?uid=swg22014815
+    - http://www.securityfocus.com/bid/103477
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/133379
+affected:
+    - name: command-lifecycle
+      version:
+        - "<=4.1.0,4.0.0"
+      fixedin:
+        - "<=2.1.6,0.4.0"
