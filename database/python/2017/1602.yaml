@@ -1,0 +1,16 @@
+---
+cve: 2017-1602
+title: CVE in command-lifecycle
+description: >
+    IBM RSA DM (IBM Rational Collaborative Lifecycle Management 5.0 and 6.0) could allow an authenticated user to access settings that they should not be able to using a specially crafted URL. IBM X-Force ID: 132625.
+cvss_v2: 4.0
+references:
+    - http://www.ibm.com/support/docview.wss?uid=swg22014815
+    - http://www.securityfocus.com/bid/103477
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/132625
+affected:
+    - name: command-lifecycle
+      version:
+        - "<=4.1.0,4.0.0"
+      fixedin:
+        - "<=2.1.6,0.4.0"
