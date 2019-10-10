@@ -1,0 +1,14 @@
+---
+cve: 2014-2628
+title: CVE in psy-maps
+description: >
+    Unspecified vulnerability in HP Enterprise Maps 1 allows remote authenticated users to obtain sensitive information via unknown vectors.
+cvss_v2: 4.0
+references:
+    - https://h20564.www2.hp.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c04390793
+affected:
+    - name: psy-maps
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.1.0"
