@@ -1,0 +1,16 @@
+---
+cve: 2018-0121
+title: CVE in org.apache.cocoon.controller:cocoon-controller
+description: >
+    A vulnerability in the authentication functionality of the web-based service portal of Cisco Elastic Services Controller Software could allow an unauthenticated, remote attacker to bypass authentication and execute arbitrary actions with administrator privileges on an affected system. The vulnerability is due to improper security restrictions that are imposed by the web-based service portal of the affected software. An attacker could exploit this vulnerability by submitting an empty password value to an affected portal when prompted to enter an administrative password for the portal. A successful exploit could allow the attacker to bypass authentication and gain administrator privileges for the web-based service portal of the affected software. This vulnerability affects Cisco Elastic Services Controller Software Release 3.0.0. Cisco Bug IDs: CSCvg29809.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/103113
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180221-esc
+affected:
+    - groupId: org.apache.cocoon.controller
+      artifactId: cocoon-controller
+      version:
+        - "<=3.0.0-alpha-3"
+      fixedin:
+        []
