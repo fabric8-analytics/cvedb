@@ -1,0 +1,14 @@
+---
+cve: 2017-8448
+title: CVE in elasticsearch-xpack
+description: >
+    An error was found in the permission model used by X-Pack Alerting 5.0.0 to 5.6.0 whereby users mapped to certain built-in roles could create a watch that results in that user gaining elevated privileges.
+cvss_v2: 6.5
+references:
+    - https://discuss.elastic.co/t/x-pack-alerting-and-kibana-5-6-1-security-update/101884
+affected:
+    - name: elasticsearch-xpack
+      version:
+        - "<=5.4.0"
+      fixedin:
+        - ">=6.0.0"
