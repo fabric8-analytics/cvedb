@@ -1,0 +1,15 @@
+---
+cve: 2018-11746
+title: CVE in org.wildfly.discovery:wildfly-discovery-client
+description: >
+    In Puppet Discovery prior to 1.2.0, when running Discovery against Windows hosts, WinRM connections can fall back to using basic auth over insecure channels if a HTTPS server is not available. This can expose the login credentials being used by Puppet Discovery.
+cvss_v2: 5.0
+references:
+    - https://puppet.com/security/cve/CVE-2018-11746
+affected:
+    - groupId: org.wildfly.discovery
+      artifactId: wildfly-discovery-client
+      version:
+        - "<=1.1.2.Final"
+      fixedin:
+        - ">=1.2.0.Final"
