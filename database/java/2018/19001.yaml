@@ -1,0 +1,16 @@
+---
+cve: 2018-19001
+title: CVE in io.helidon.microprofile.health:helidon-microprofile-health-core
+description: >
+    Philips HealthSuite Health Android App, all versions. The software uses simple encryption that is not strong enough for the level of protection required.
+cvss_v2: 4.6
+references:
+    - http://www.securityfocus.com/bid/106126
+    - https://ics-cert.us-cert.gov/advisories/ICSMA-18-340-01
+affected:
+    - groupId: io.helidon.microprofile.health
+      artifactId: helidon-microprofile-health-core
+      version:
+        []
+      fixedin:
+        - ">=0.9.0"
