@@ -1,0 +1,16 @@
+---
+cve: 2018-0106
+title: CVE in org.fuin.esc:esc-jpa
+description: >
+    A vulnerability in the ConfD server of the Cisco Elastic Services Controller (ESC) could allow an unauthenticated, local attacker to access sensitive information on a targeted system. The vulnerability is due to insufficient security restrictions. An attacker could exploit this vulnerability by accessing unauthorized information within the ConfD directory and file structure. Successful exploitation could allow the attacker to view sensitive information. Cisco Bug IDs: CSCvg00221.
+cvss_v2: 2.1
+references:
+    - http://www.securityfocus.com/bid/102757
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180117-esc
+affected:
+    - groupId: org.fuin.esc
+      artifactId: esc-jpa
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
