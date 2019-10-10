@@ -1,0 +1,21 @@
+---
+cve: 2018-2419
+title: CVE in edx-enterprise
+description: >
+    SAP Enterprise Financial Services (SAPSCORE 1.11, 1.12; S4CORE 1.01, 1.02; EA-FINSERV 6.04, 6.05, 6.06, 6.16, 6.17, 6.18, 8.0) does not perform necessary authorization checks for an authenticated user, resulting in escalation of privileges.
+cvss_v2: 5.5
+references:
+    - http://www.securityfocus.com/bid/104116
+    - https://blogs.sap.com/2018/05/08/sap-security-patch-day-may-2018/
+    - https://launchpad.support.sap.com/#/notes/2596627
+affected:
+    - name: edx-enterprise
+      version:
+        - "<=1.1.0,1.1.0"
+        - "<=1.2.0,1.2.0"
+        - "<=1.11.0,1.11.0"
+      fixedin:
+        - ">=2.0.0"
+        - "<=1.10.8,1.2.1"
+        - "<=1.1.4,1.1.1"
+        - "<=1.0.6,0.1.0"
