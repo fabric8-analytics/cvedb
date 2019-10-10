@@ -1,0 +1,19 @@
+---
+cve: 2018-1747
+title: CVE in org.sonatype.security.realms:security-public-key-realm
+description: >
+    IBM Security Key Lifecycle Manager 2.5, 2.6, 2.7, and 3.0 is vulnerable to a XML External Entity Injection (XXE) attack when processing XML data. A remote attacker could exploit this vulnerability to expose sensitive information or consume memory resources. IBM X-Force ID: 148428.
+cvss_v2: 5.5
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/148428
+    - https://www.ibm.com/support/docview.wss?uid=ibm10733429
+affected:
+    - groupId: org.sonatype.security.realms
+      artifactId: security-public-key-realm
+      version:
+        - "<=2.7,2.5"
+        - "<=3.0,3.0"
+      fixedin:
+        - ">=3.0.1"
+        - "<=2.8.2,2.8"
+        - "<=2.4.1,2.0.0"
