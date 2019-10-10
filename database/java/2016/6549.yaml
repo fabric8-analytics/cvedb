@@ -1,0 +1,17 @@
+---
+cve: 2016-6549
+title: CVE in se.vgregion.mobile:mobile-mobile-composite-types
+description: >
+    The Zizai Tech Nut device allows unauthenticated Bluetooth pairing, which enables unauthenticated connected applications to write data to the device name attribute.
+cvss_v2: 3.3
+references:
+    - https://blog.rapid7.com/2016/10/25/multiple-bluetooth-low-energy-ble-tracker-vulnerabilities/
+    - https://www.kb.cert.org/vuls/id/402847
+    - https://www.securityfocus.com/bid/93877
+affected:
+    - groupId: se.vgregion.mobile
+      artifactId: mobile-mobile-composite-types
+      version:
+        []
+      fixedin:
+        - ">=1.0"
