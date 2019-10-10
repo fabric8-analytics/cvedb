@@ -1,0 +1,17 @@
+---
+cve: 2018-2408
+title: CVE in sap-cf-logging
+description: >
+    Improper Session Management in SAP Business Objects, 4.0, from 4.10, from 4.20, 4.30, CMC/BI Launchpad/Fiorified BI Launchpad. In case of password change for a user, all other active sessions created using older password continues to be active.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/103700
+    - https://blogs.sap.com/2018/04/10/sap-security-patch-day-april-2018/
+    - https://launchpad.support.sap.com/#/notes/2537150
+affected:
+    - name: sap-cf-logging
+      version:
+        - "<=4.0.0,4.0.0"
+      fixedin:
+        - ">=4.0.1"
+        - "<=3.3.1,3.0.0"
