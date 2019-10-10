@@ -1,0 +1,18 @@
+---
+cve: 2018-1419
+title: CVE in com.ibm.mq:com.ibm.mq.allclient
+description: >
+    IBM WebSphere MQ 8.0 and 9.0, when configured to use a PAM module for authentication, could allow a user to cause a deadlock in the IBM MQ PAM code which could result in a denial of service. IBM X-Force ID: 138949.
+cvss_v2: 3.5
+references:
+    - http://www.ibm.com/support/docview.wss?uid=swg22014650
+    - http://www.securityfocus.com/bid/104488
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/138949
+affected:
+    - groupId: com.ibm.mq
+      artifactId: com.ibm.mq.allclient
+      version:
+        - "<=9.0.4.0,9.0.4.0"
+      fixedin:
+        - ">=9.0.5.0"
+        - "<=0.0.0.3,0.0.0.2"
