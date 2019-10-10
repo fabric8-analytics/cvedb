@@ -1,0 +1,16 @@
+---
+cve: 2018-2409
+title: CVE in clickatell-platform
+description: >
+    Improper session management when using SAP Cloud Platform 2.0 (Connectivity Service and Cloud Connector). Under certain conditions, data of some other user may be shown or modified when using an application built on top of SAP Cloud Platform.
+cvss_v2: 6.5
+references:
+    - http://www.securityfocus.com/bid/103702
+    - https://blogs.sap.com/2018/04/10/sap-security-patch-day-april-2018/
+    - https://launchpad.support.sap.com/#/notes/2614141
+affected:
+    - name: clickatell-platform
+      version:
+        - "<=2.0.0"
+      fixedin:
+        - ">=2.0.1"
