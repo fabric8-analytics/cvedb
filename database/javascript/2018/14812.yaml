@@ -1,0 +1,16 @@
+---
+cve: 2018-14812
+title: CVE in difference-estimator
+description: >
+    An uncontrolled search path element (DLL Hijacking) vulnerability has been identified in Fuji Electric Energy Savings Estimator versions V.1.0.2.0 and prior. Exploitation of this vulnerability could give an attacker access to the system with the same level of privilege as the application that utilizes the malicious DLL.
+cvss_v2: 6.8
+references:
+    - http://www.securityfocus.com/bid/105543
+    - https://ics-cert.us-cert.gov/advisories/ICSA-18-282-07
+affected:
+    - name: difference-estimator
+      version:
+        - "<=1.0.2,1.0.2"
+      fixedin:
+        - ">=1.0.3"
+        - "<=1.0.1,1.0.0"
