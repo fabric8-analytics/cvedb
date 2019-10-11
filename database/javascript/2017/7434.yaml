@@ -1,0 +1,15 @@
+---
+cve: 2017-7434
+title: CVE in identity
+description: >
+    In the JDBC driver of NetIQ Identity Manager before 4.6 sending out incorrect XML configurations could result in passwords being logged into exception logfiles.
+cvss_v2: 5.0
+references:
+    - https://bugzilla.suse.com/show_bug.cgi?id=1005907
+    - https://www.netiq.com/documentation/identity-manager-46/releasenotes_idm46/data/releasenotes_idm46.html
+affected:
+    - name: identity
+      version:
+        - "<=4.5.3"
+      fixedin:
+        - ">=4.6.0"
