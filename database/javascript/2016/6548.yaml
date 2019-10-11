@@ -1,0 +1,16 @@
+---
+cve: 2016-6548
+title: CVE in nut-cli
+description: >
+    The Zizai Tech Nut mobile app makes requests via HTTP instead of HTTPS. These requests contain the user's authenticated session token with the URL. An attacker can capture these requests and reuse the session token to gain full access the user's account.
+cvss_v2: 5.0
+references:
+    - https://blog.rapid7.com/2016/10/25/multiple-bluetooth-low-energy-ble-tracker-vulnerabilities/
+    - https://www.kb.cert.org/vuls/id/402847
+    - https://www.securityfocus.com/bid/93877
+affected:
+    - name: nut-cli
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
