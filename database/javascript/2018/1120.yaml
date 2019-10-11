@@ -1,0 +1,28 @@
+---
+cve: 2018-1120
+title: CVE in linux-batteries
+description: >
+    A flaw was found affecting the Linux kernel before version 4.17. By mmap()ing a FUSE-backed file onto a process's memory containing command line arguments (or environment strings), an attacker can cause utilities from psutils or procps (such as ps, w) or any other program which makes a read() call to the /proc/<pid>/cmdline (or /proc/<pid>/environ) files to block indefinitely (denial of service) or for some controlled time (as a synchronization primitive for other attacks).
+cvss_v2: 3.5
+references:
+    - http://seclists.org/oss-sec/2018/q2/122
+    - http://www.securityfocus.com/bid/104229
+    - https://access.redhat.com/errata/RHSA-2018:2948
+    - https://access.redhat.com/errata/RHSA-2018:3083
+    - https://access.redhat.com/errata/RHSA-2018:3096
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-1120
+    - https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=7f7ccc2ccc2e70c6054685f5e3522efa81556830
+    - https://lists.debian.org/debian-lts-announce/2018/07/msg00020.html
+    - https://security.gentoo.org/glsa/201805-14
+    - https://usn.ubuntu.com/3752-1/
+    - https://usn.ubuntu.com/3752-2/
+    - https://usn.ubuntu.com/3752-3/
+    - https://usn.ubuntu.com/3910-1/
+    - https://usn.ubuntu.com/3910-2/
+    - https://www.exploit-db.com/exploits/44806/
+affected:
+    - name: linux-batteries
+      version:
+        - "<=4.0.0,4.0.0"
+      fixedin:
+        - "<=3.0.0,1.0.0"
