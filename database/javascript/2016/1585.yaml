@@ -1,0 +1,14 @@
+---
+cve: 2016-1585
+title: CVE in app-armor
+description: >
+    In all versions of AppArmor mount rules are accidentally widened when compiled.
+cvss_v2: 7.5
+references:
+    - https://bugs.launchpad.net/apparmor/+bug/1597017
+affected:
+    - name: app-armor
+      version:
+        []
+      fixedin:
+        - ">=0.0.2-alpha.2"
