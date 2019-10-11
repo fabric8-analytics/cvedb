@@ -1,0 +1,15 @@
+---
+cve: 1999-0734
+title: CVE in express-access-control
+description: >
+    A default configuration of CiscoSecure Access Control Server (ACS) allows remote users to modify the server database without authentication.
+cvss_v2: 7.5
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/3133
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-19990819-dbaccess
+affected:
+    - name: express-access-control
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
