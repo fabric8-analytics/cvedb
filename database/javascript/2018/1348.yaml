@@ -1,0 +1,15 @@
+---
+cve: 2018-1348
+title: CVE in identity
+description: >
+    NetIQ Identity Manager driver, in versions prior to 4.7, allows for an SSL handshake renegotiation which could result in a MITM attack.
+cvss_v2: 5.8
+references:
+    - http://www.securityfocus.com/bid/103530
+    - https://www.netiq.com/documentation/identity-manager-47/releasenotes_idm47/data/releasenotes_idm47.html
+affected:
+    - name: identity
+      version:
+        - "<=4.6.0"
+      fixedin:
+        - ">=4.6.1"
