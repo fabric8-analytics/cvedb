@@ -11,3 +11,5 @@ affected:
     - name: dylmomo
       version:
         - "<=1.0.0"
+      fixedin:
+        []
