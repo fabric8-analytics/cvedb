@@ -11,3 +11,5 @@ affected:
     - name: cypserver
       version:
         - "<=1.0.0"
+      fixedin:
+        []
