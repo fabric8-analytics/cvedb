@@ -1,14 +1,15 @@
 ---
 cve: 2017-16147
-title: CVE in shit-server
+title: CVE in node-shit
 description: >
     shit-server is a file server. shit-server is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
 cvss_v2: 5.0
 references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/shit-server
     - https://nodesecurity.io/advisories/430
-
 affected:
-    - name: shit-server
+    - name: node-shit
       version:
-        - "==1.0.0"
+        - "<=1.0.0"
+      fixedin:
+        []
