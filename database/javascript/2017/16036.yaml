@@ -1,6 +1,6 @@
 ---
 cve: 2017-16036
-title: CVE in badjs-sourcemap-server
+title: CVE in grunt-contrib-badjs
 description: >
     `badjs-sourcemap-server` receives files sent by `badjs-sourcemap`. `badjs-sourcemap-server` is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
 cvss_v2: 5.0
@@ -8,8 +8,8 @@ references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/badjs-sourcemap-server
     - https://nodesecurity.io/advisories/349
 affected:
-    - name: badjs-sourcemap-server
+    - name: grunt-contrib-badjs
       version:
-        - "<=0.1.11"
-      fixedin:
         []
+      fixedin:
+        - ">=1.0.0"
