@@ -1,0 +1,16 @@
+---
+cve: 2017-7427
+title: CVE in identity
+description: >
+    Multiple cross site scripting attacks were found in the Identity Manager Plug-in, hosted on iManager 2.7.7.7, before Identity Manager 4.6.1. In certain scenarios it was possible to execute arbitrary JavaScript code in the context of vulnerable application, via user.Context in the Object Selector, via vdtData in the Version discovery and via nextFrame in the Object Inspector and via Host GUID in the System details plugins.
+cvss_v2: 4.3
+references:
+    - https://bugzilla.suse.com/show_bug.cgi?id=1033828
+    - https://www.novell.com/support/kb/doc.php?id=7021423
+affected:
+    - name: identity
+      version:
+        - "<=4.6.0,3.0.0"
+      fixedin:
+        - ">=4.6.1"
+        - "<=2.2.12,0.1.0"
