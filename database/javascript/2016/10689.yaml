@@ -10,3 +10,5 @@ affected:
     - name: windows-iedriver
       version:
         - "<=2.48.0"
+      fixedin:
+        []
