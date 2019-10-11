@@ -1,0 +1,14 @@
+---
+cve: 2017-16049
+title: CVE in node10-sqlite
+description: >
+    `nodesqlite` was a malicious module published with the intent to hijack environment variables. It has been unpublished by npm.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/492
+affected:
+    - name: node10-sqlite
+      version:
+        []
+      fixedin:
+        - ">=2.9.3"
