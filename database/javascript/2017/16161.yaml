@@ -1,6 +1,6 @@
 ---
 cve: 2017-16161
-title: CVE in shenliru
+title: CVE in shenliru2
 description: >
     shenliru is a simple file server. shenliru is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
 cvss_v2: 5.0
@@ -8,6 +8,8 @@ references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/shenliru
     - https://nodesecurity.io/advisories/389
 affected:
-    - name: shenliru
+    - name: shenliru2
       version:
-        - "<=1.2.0"
+        - "<=1.0.0"
+      fixedin:
+        []
