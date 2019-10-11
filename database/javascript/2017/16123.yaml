@@ -7,8 +7,9 @@ cvss_v2: 5.0
 references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/pooledwebsocket
     - https://nodesecurity.io/advisories/388
-
 affected:
     - name: welcomyzt
       version:
         - "<=1.1.0"
+      fixedin:
+        []
