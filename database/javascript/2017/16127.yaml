@@ -1,12 +1,14 @@
 ---
 cve: 2017-16127
-title: CVE in pandora-doomsday
+title: CVE in midway-pandora
 description: >
     The module pandora-doomsday infects other modules. It's since been unpublished from the registry.
 cvss_v2: 10.0
 references:
     - https://nodesecurity.io/advisories/482
 affected:
-    - name: pandora-doomsday
+    - name: midway-pandora
       version:
-        - "<=0.0.1-security"
+        - "<=0.0.1"
+      fixedin:
+        []
