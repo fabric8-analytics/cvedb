@@ -1,0 +1,15 @@
+---
+cve: 2018-0271
+title: CVE in center-it
+description: >
+    A vulnerability in the API gateway of the Cisco Digital Network Architecture (DNA) Center could allow an unauthenticated, remote attacker to bypass authentication and access critical services. The vulnerability is due to a failure to normalize URLs prior to servicing requests. An attacker could exploit this vulnerability by submitting a crafted URL designed to exploit the issue. A successful exploit could allow the attacker to gain unauthenticated access to critical services, resulting in elevated privileges in DNA Center. This vulnerability affects Cisco DNA Center Software Releases prior to 1.1.2. Cisco Bug IDs: CSCvi09394.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/104191
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180516-dna2
+affected:
+    - name: center-it
+      version:
+        - "<=1.1.1"
+      fixedin:
+        - ">=1.1.2"
