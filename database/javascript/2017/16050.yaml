@@ -1,0 +1,14 @@
+---
+cve: 2017-16050
+title: CVE in sqlite-sync
+description: >
+    `sqlite.js` was a malicious module published with the intent to hijack environment variables. It has been unpublished by npm.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/491
+affected:
+    - name: sqlite-sync
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
