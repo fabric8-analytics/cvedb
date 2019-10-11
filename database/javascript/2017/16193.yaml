@@ -11,3 +11,5 @@ affected:
     - name: mfrs
       version:
         - "<=1.0.0"
+      fixedin:
+        []
