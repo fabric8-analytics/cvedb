@@ -1,0 +1,17 @@
+---
+cve: 2017-9270
+title: CVE in rpc-stream
+description: >
+    In cryptctl before version 2.0 a malicious server could send RPC requests that could overwrite files outside of the cryptctl key database.
+cvss_v2: 8.5
+references:
+    - https://bugzilla.suse.com/show_bug.cgi?id=1041963
+    - https://lists.opensuse.org/opensuse-security-announce/2017-07/msg00022.html
+    - https://www.suse.com/de-de/security/cve/CVE-2017-9270/
+affected:
+    - name: rpc-stream
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - ">=2.1.0"
+        - "<=1.0.5,0.0.0"
