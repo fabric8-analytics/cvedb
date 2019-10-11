@@ -9,4 +9,6 @@ references:
 affected:
     - name: augustine
       version:
-        - "<=0.2.3"
+        - "<=0.2.3,0.2.3"
+      fixedin:
+        - "<=0.2.2,0.1.0"
