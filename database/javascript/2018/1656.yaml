@@ -1,0 +1,27 @@
+---
+cve: 2018-1656
+title: CVE in generator-ibm-java-liberty
+description: >
+    The IBM Java Runtime Environment's Diagnostic Tooling Framework for Java (DTFJ) (IBM SDK, Java Technology Edition 6.0 , 7.0, and 8.0) does not protect against path traversal attacks when extracting compressed dump files. IBM X-Force ID: 144882.
+cvss_v2: 4.3
+references:
+    - http://www.ibm.com/support/docview.wss?uid=ibm10719653
+    - http://www.securityfocus.com/bid/105118
+    - http://www.securitytracker.com/id/1041765
+    - https://access.redhat.com/errata/RHSA-2018:2568
+    - https://access.redhat.com/errata/RHSA-2018:2569
+    - https://access.redhat.com/errata/RHSA-2018:2575
+    - https://access.redhat.com/errata/RHSA-2018:2576
+    - https://access.redhat.com/errata/RHSA-2018:2712
+    - https://access.redhat.com/errata/RHSA-2018:2713
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/144882
+    - https://www.oracle.com/technetwork/security-advisory/cpuapr2019-5072813.html
+affected:
+    - name: generator-ibm-java-liberty
+      version:
+        - "<=7.0.0,7.0.0"
+        - "<=8.0.0,8.0.0"
+      fixedin:
+        - ">=8.0.1"
+        - "<=7.4.0,7.1.0"
+        - "<=6.0.2,6.0.2"
