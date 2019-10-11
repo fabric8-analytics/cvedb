@@ -1,0 +1,14 @@
+---
+cve: 2018-13293
+title: CVE in terra-slide-panel-manager
+description: >
+    Cross-site scripting (XSS) vulnerability in Control Panel SSO Settings in Synology DiskStation Manager (DSM) before 6.2.1-23824 allows remote authenticated users to inject arbitrary web script or HTML via the URL parameter.
+cvss_v2: 3.5
+references:
+    - https://www.synology.com/security/advisory/Synology_SA_18_51
+affected:
+    - name: terra-slide-panel-manager
+      version:
+        - "<=5.13.0,5.2.0"
+      fixedin:
+        - "<=5.1.0,1.0.0"
