@@ -1,0 +1,15 @@
+---
+cve: 2018-0434
+title: CVE in touch
+description: >
+    A vulnerability in the Zero Touch Provisioning feature of the Cisco SD-WAN Solution could allow an unauthenticated, remote attacker to gain unauthorized access to sensitive data by using an invalid certificate. The vulnerability is due to insufficient certificate validation by the affected software. An attacker could exploit this vulnerability by supplying a crafted certificate to an affected device. A successful exploit could allow the attacker to conduct man-in-the-middle attacks to decrypt confidential information on user connections to the affected software.
+cvss_v2: 5.8
+references:
+    - http://www.securityfocus.com/bid/105294
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180905-sd-wan-validation
+affected:
+    - name: touch
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
