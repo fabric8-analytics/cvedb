@@ -10,3 +10,5 @@ affected:
     - name: ipip-coffee
       version:
         - "<=1.0.9"
+      fixedin:
+        []
