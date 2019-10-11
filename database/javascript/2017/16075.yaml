@@ -1,0 +1,14 @@
+---
+cve: 2017-16075
+title: CVE in http-proxy
+description: >
+    http-proxy.js was a malicious module published with the intent to hijack environment variables. It has been unpublished by npm.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/514
+affected:
+    - name: http-proxy
+      version:
+        []
+      fixedin:
+        - ">=0.5.9"
