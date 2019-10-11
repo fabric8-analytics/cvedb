@@ -9,4 +9,6 @@ references:
 affected:
     - name: bitty
       version:
-        - "<=0.2.10"
+        - "<=0.2.10,0.2.10"
+      fixedin:
+        - "<=0.2.9,0.0.1"
