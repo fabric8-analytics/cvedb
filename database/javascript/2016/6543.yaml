@@ -1,0 +1,16 @@
+---
+cve: 2016-6543
+title: CVE in gps
+description: >
+    A captured MAC/device ID of an iTrack Easy can be registered under multiple user accounts allowing access to getgps GPS data, which can allow unauthenticated parties to track the device.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/93875
+    - https://blog.rapid7.com/2016/10/25/multiple-bluetooth-low-energy-ble-tracker-vulnerabilities/
+    - https://www.kb.cert.org/vuls/id/974055
+affected:
+    - name: gps
+      version:
+        []
+      fixedin:
+        - ">=0.0.6"
