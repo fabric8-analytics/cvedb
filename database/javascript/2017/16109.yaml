@@ -11,3 +11,5 @@ affected:
     - name: easyquick
       version:
         - "<=0.1.1"
+      fixedin:
+        []
