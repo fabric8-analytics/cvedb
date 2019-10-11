@@ -1,0 +1,17 @@
+---
+cve: 2019-0367
+title: CVE in com.sap.devops.cmclient:ci-integration-cli
+description: >
+    SAP NetWeaver Process Integration (B2B Toolkit), before versions 1.0 and 2.0, does not perform necessary authorization checks for an authenticated user, allowing the import of B2B table content that leads to Missing Authorization Check.
+cvss_v2: 4.0
+references:
+    - https://launchpad.support.sap.com/#/notes/2805777
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=528123050
+affected:
+    - groupId: com.sap.devops.cmclient
+      artifactId: ci-integration-cli
+      version:
+        - "<=2.0.0,1.0.0"
+      fixedin:
+        - ">=2.0.1"
+        - "<=0.0.1,0.0.1"
