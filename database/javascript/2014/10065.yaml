@@ -1,0 +1,15 @@
+---
+cve: 2014-10065
+title: CVE in remarkable
+description: >
+    Certain input when passed into remarkable before 1.4.1 will bypass the bad protocol check that disallows the javascript: scheme allowing for javascript: url's to be injected into the rendered content.
+cvss_v2: 4.3
+references:
+    - https://github.com/jonschlinkert/remarkable/issues/97
+    - https://nodesecurity.io/advisories/30
+affected:
+    - name: remarkable
+      version:
+        - "<=1.4.0"
+      fixedin:
+        - ">=1.4.1"
