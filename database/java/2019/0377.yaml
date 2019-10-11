@@ -1,0 +1,16 @@
+---
+cve: 2019-0377
+title: CVE in org.seedstack.business:business-migrate
+description: >
+    SAP BusinessObjects Business Intelligence Platform (Web Intelligence HTML interface), before versions 4.2, does not sufficiently encode user-controlled inputs and allows an attacker to store malicious scripts in the input controls, resulting in Stored Cross-Site Scripting.
+cvss_v2: 3.5
+references:
+    - https://launchpad.support.sap.com/#/notes/2817945
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=528123050
+affected:
+    - groupId: org.seedstack.business
+      artifactId: business-migrate
+      version:
+        - "<=4.1.0"
+      fixedin:
+        - ">=4.1.1"
