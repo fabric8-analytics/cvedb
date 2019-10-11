@@ -1,0 +1,18 @@
+---
+cve: 2008-1508
+title: CVE in strongcanary-e
+description: >
+    SQL injection vulnerability in EfesTech E-Kont?r and earlier allows remote attackers to execute arbitrary SQL commands via the id parameter.
+cvss_v2: 7.5
+references:
+    - http://secunia.com/advisories/29499
+    - http://securityreason.com/securityalert/3776
+    - http://www.securityfocus.com/archive/1/489989/100/0/threaded
+    - http://www.securityfocus.com/bid/28412
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/41419
+affected:
+    - name: strongcanary-e
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
