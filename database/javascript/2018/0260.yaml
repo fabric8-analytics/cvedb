@@ -1,0 +1,16 @@
+---
+cve: 2018-0260
+title: CVE in first-mate
+description: >
+    A vulnerability in the web interface of Cisco MATE Live could allow an unauthenticated, remote attacker to view and download the contents of certain web application virtual directories. The vulnerability is due to lack of proper input validation and authorization of HTTP requests. An attacker could exploit this vulnerability by sending a malicious HTTP request to the targeted application. An exploit could allow the attacker to view sensitive information that should require authentication. Cisco Bug IDs: CSCvh31272.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/103946
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180418-MATE1
+affected:
+    - name: first-mate
+      version:
+        - "<=1.3.0,1.3.0"
+      fixedin:
+        - ">=1.4.0"
+        - "<=1.2.1,0.3.0"
