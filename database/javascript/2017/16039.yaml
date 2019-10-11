@@ -10,6 +10,6 @@ references:
 affected:
     - name: hftp
       version:
-        - "<=0.0.6"
-      fixedin:
         []
+      fixedin:
+        - ">=0.0.1"
