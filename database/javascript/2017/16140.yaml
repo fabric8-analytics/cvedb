@@ -1,6 +1,6 @@
 ---
 cve: 2017-16140
-title: CVE in lab6.brit95
+title: CVE in dmmcquay.lab6
 description: >
     lab6.brit95 is a file server. lab6.brit95 is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
 cvss_v2: 5.0
@@ -8,6 +8,8 @@ references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/lab6.brit95
     - https://nodesecurity.io/advisories/475
 affected:
-    - name: lab6.brit95
+    - name: dmmcquay.lab6
       version:
-        - "==0.1.1"
+        - "<=0.1.1"
+      fixedin:
+        []
