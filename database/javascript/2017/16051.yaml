@@ -9,7 +9,6 @@ references:
 affected:
     - name: sqliter
       version:
-        - "<=0.0.2-security"
-      fixedin:
         []
-
+      fixedin:
+        - ">=0.0.1-security"
