@@ -1,6 +1,6 @@
 ---
 cve: 2016-10563
-title: CVE in go-ipfs-dep
+title: CVE in go-ipfs
 description: >
     During the installation process, the go-ipfs-deps module before 0.4.4 insecurely downloads resources over HTTP. This allows for a MITM attack to compromise the integrity of the resources used by this module and could allow for further compromise.
 cvss_v2: 6.8
@@ -8,8 +8,8 @@ references:
     - https://github.com/diasdavid/go-ipfs-dep/pull/12
     - https://nodesecurity.io/advisories/156
 affected:
-    - name: go-ipfs-dep
+    - name: go-ipfs
       version:
-        - "<=0.4.3-2"
+        - "<=0.4.3-npmfix1"
       fixedin:
         - ">=0.4.4"
