@@ -1,0 +1,15 @@
+---
+cve: 2018-15461
+title: CVE in webex-date
+description: >
+    A vulnerability in the MyWebex component of Cisco Webex Business Suite could allow an unauthenticated, remote attacker to conduct a cross-site scripting (XSS) attack. The vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by convincing a user to click a crafted URL. To exploit this vulnerability, the attacker may provide a link that directs a user to a malicious site and use misleading language or instructions to persuade the user to follow the provided link.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/106505
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20190109-webex-bs-xss
+affected:
+    - name: webex-date
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
