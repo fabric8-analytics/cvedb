@@ -1,12 +1,15 @@
 ---
 cve: 2016-10691
-title: CVE in windows-seleniumjar
+title: CVE in selenium-server-standalone-jar
 description: >
     windows-seleniumjar is a module that downloads the Selenium Jar file windows-seleniumjar downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested resources with an attacker controlled copy if the attacker is on the network or positioned in between the user and the remote server.
 cvss_v2: 9.3
 references:
     - https://nodesecurity.io/advisories/296
 affected:
-    - name: windows-seleniumjar
+    - name: selenium-server-standalone-jar
       version:
-        - "<=2.48.2"
+        - "<=2.48.2,2.48.2"
+      fixedin:
+        - ">=2.50.1"
+        - "<=2.47.1,2.40.0"
