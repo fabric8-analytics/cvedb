@@ -1,0 +1,17 @@
+---
+cve: 2017-15113
+title: CVE in debug
+description: >
+    ovirt-engine before version 4.1.7.6 with log level set to DEBUG includes passwords in the log file without masking. Only administrators can change the log level and only administrators can access the logs. This presents a risk when debug-level logs are shared with vendors or other parties to troubleshoot issues.
+cvss_v2: 3.5
+references:
+    - http://www.securityfocus.com/bid/101933
+    - https://access.redhat.com/errata/RHEA-2017:3138
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2017-15113
+    - https://gerrit.ovirt.org/gitweb?p=ovirt-engine.git;a=commitdiff;h=f4a5d0cc772127dbfe40789e26c4633ceea07d14;hp=e6e8704ac9eb115624ff66e2965877d8e63a45f4
+affected:
+    - name: debug
+      version:
+        - "<=4.1.1"
+      fixedin:
+        []
