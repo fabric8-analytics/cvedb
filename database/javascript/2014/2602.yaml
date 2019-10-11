@@ -1,0 +1,14 @@
+---
+cve: 2014-2602
+title: CVE in @square-one/view-inject
+description: >
+    Unspecified vulnerability in HP OneView 1.0 and 1.01 allows remote authenticated users to gain privileges via unknown vectors.
+cvss_v2: 6.5
+references:
+    - https://h20564.www2.hp.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c04273152
+affected:
+    - name: @square-one/view-inject
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
