@@ -11,3 +11,5 @@ affected:
     - name: getcityapi.yoehoehne
       version:
         - "<=0.0.1"
+      fixedin:
+        []
