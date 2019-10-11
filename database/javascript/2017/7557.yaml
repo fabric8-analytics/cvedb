@@ -1,0 +1,16 @@
+---
+cve: 2017-7557
+title: CVE in rest-data-api
+description: >
+    dnsdist version 1.1.0 is vulnerable to a flaw in authentication mechanism for REST API potentially allowing CSRF attack.
+cvss_v2: 6.8
+references:
+    - http://www.securityfocus.com/bid/100508
+    - https://dnsdist.org/security-advisories/powerdns-advisory-for-dnsdist-2017-02.html
+affected:
+    - name: rest-data-api
+      version:
+        - "<=1.1.0,1.1.0"
+      fixedin:
+        - ">=1.1.2"
+        - "<=1.0.1,0.0.1"
