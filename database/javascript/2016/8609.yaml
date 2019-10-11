@@ -1,0 +1,17 @@
+---
+cve: 2016-8609
+title: CVE in keycloak-js
+description: >
+    It was found that the keycloak before 2.3.0 did not implement authentication flow correctly. An attacker could use this flaw to construct a phishing URL, from which he could hijack the user's session. This could lead to information disclosure, or permit further possible attacks.
+cvss_v2: 5.8
+references:
+    - http://rhn.redhat.com/errata/RHSA-2016-2945.html
+    - http://www.securityfocus.com/bid/95070
+    - http://www.securitytracker.com/id/1037460
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2016-8609
+affected:
+    - name: keycloak-js
+      version:
+        - "<=2.2.1"
+      fixedin:
+        - ">=2.3.0-cr.1"
