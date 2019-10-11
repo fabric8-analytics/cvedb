@@ -1,0 +1,15 @@
+---
+cve: 2017-16211
+title: CVE in less-index
+description: >
+    lessindex is a static file server. lessindex is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/lessindex
+    - https://nodesecurity.io/advisories/423
+affected:
+    - name: less-index
+      version:
+        []
+      fixedin:
+        - ">=0.0.0-work-in-progress"
