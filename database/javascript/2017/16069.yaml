@@ -1,0 +1,14 @@
+---
+cve: 2017-16069
+title: CVE in node-ffmpeg-stream-recorder
+description: >
+    nodeffmpeg was a malicious module published with the intent to hijack environment variables. It has been unpublished by npm.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/508
+affected:
+    - name: node-ffmpeg-stream-recorder
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
