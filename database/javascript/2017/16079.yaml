@@ -1,0 +1,14 @@
+---
+cve: 2017-16079
+title: CVE in smb-messaging-service-bus
+description: >
+    smb was a malicious module published with the intent to hijack environment variables. It has been unpublished by npm.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/518
+affected:
+    - name: smb-messaging-service-bus
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
