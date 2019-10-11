@@ -1,0 +1,15 @@
+---
+cve: 2017-16205
+title: CVE in tunnel-ssh
+description: >
+    The coffescript module exfiltrates sensitive data such as a user's private SSH key and bash history to a third party server during installation.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/542
+affected:
+    - name: tunnel-ssh
+      version:
+        - "<=1.0.1,1.0.1"
+      fixedin:
+        - ">=1.0.2"
+        - "<=1.0.0,0.0.1"
