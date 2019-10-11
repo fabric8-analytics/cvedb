@@ -1,0 +1,14 @@
+---
+cve: 2017-16058
+title: CVE in fis-msprd-grunt-cli_1_2_0
+description: >
+    gruntcli was a malicious module published with the intent to hijack environment variables. It has been unpublished by npm.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/498
+affected:
+    - name: fis-msprd-grunt-cli_1_2_0
+      version:
+        []
+      fixedin:
+        - ">=1.2.0"
