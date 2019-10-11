@@ -7,7 +7,6 @@ cvss_v2: 5.0
 references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/list-n-stream
     - https://nodesecurity.io/advisories/344
-    - https://nvd.nist.gov/vuln/detail/CVE-2017-16084
 affected:
     - name: list-n-stream
       version:
