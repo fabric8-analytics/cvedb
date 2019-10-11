@@ -1,0 +1,19 @@
+---
+cve: 2016-5402
+title: CVE in contentful-management
+description: >
+    A code injection flaw was found in the way capacity and utilization imported control files are processed. A remote, authenticated attacker with access to the capacity and utilization feature could use this flaw to execute arbitrary code as the user CFME runs as.
+cvss_v2: 9.0
+references:
+    - http://rhn.redhat.com/errata/RHSA-2016-2839.html
+    - http://www.securityfocus.com/bid/94612
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2016-5402
+affected:
+    - name: contentful-management
+      version:
+        - "<=4.1.0,4.1.0"
+        - "<=5.6.0,5.6.0"
+      fixedin:
+        - ">=5.7.0"
+        - "<=5.5.0,4.1.1"
+        - "<=4.0.3,0.0.0-determined-by-semantic-release"
