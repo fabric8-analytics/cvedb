@@ -1,0 +1,14 @@
+---
+cve: 2018-1345
+title: CVE in vue-i18n-manager
+description: >
+    NetIQ iManager, versions prior to 3.1, under some circumstances could be susceptible to an elevation of privilege attack.
+cvss_v2: 6.5
+references:
+    - https://www.netiq.com/documentation/imanager-31/imanager31_releasenotes/data/imanager31_releasenotes.html
+affected:
+    - name: vue-i18n-manager
+      version:
+        - "<=3.0.4"
+      fixedin:
+        - ">=3.1.0"
