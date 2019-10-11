@@ -1,0 +1,16 @@
+---
+cve: 2018-0269
+title: CVE in center-it
+description: >
+    A vulnerability in the web framework of the Cisco Digital Network Architecture Center (DNA Center) could allow an unauthenticated, remote attacker to communicate with the Kong API server without restriction. The vulnerability is due to an overly permissive Cross Origin Resource Sharing (CORS) policy. An attacker could exploit this vulnerability by convincing a user to follow a malicious link. An exploit could allow the attacker to communicate with the API and exfiltrate sensitive information. Cisco Bug IDs: CSCvh99208.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/103950
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180418-dna1
+affected:
+    - name: center-it
+      version:
+        - "<=1.1.0,1.1.0"
+      fixedin:
+        - ">=1.1.1"
+        - "<=1.0.1,0.0.1"
