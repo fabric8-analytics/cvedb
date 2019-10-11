@@ -10,3 +10,5 @@ affected:
     - name: scalajs-standalone-bin
       version:
         - "<=0.4.3"
+      fixedin:
+        []
