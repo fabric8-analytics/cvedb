@@ -1,0 +1,16 @@
+---
+cve: 2018-1970
+title: CVE in react-entity-manager
+description: >
+    IBM Security Identity Manager 7.0.1 is vulnerable to a XML External Entity Injection (XXE) attack when processing XML data. A remote attacker could exploit this vulnerability to expose sensitive information or consume memory resources. IBM X-Force ID: 153751.
+cvss_v2: 5.5
+references:
+    - http://www.ibm.com/support/docview.wss?uid=ibm10796380
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/153751
+affected:
+    - name: react-entity-manager
+      version:
+        - "<=7.0.1,7.0.1"
+      fixedin:
+        - ">=7.0.2"
+        - "<=7.0.0,2.0.1"
