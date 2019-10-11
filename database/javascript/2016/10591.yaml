@@ -9,6 +9,7 @@ references:
 affected:
     - name: prince
       version:
-        - "==1.4.4"
+        - "<=1.4.4,1.4.4"
       fixedin:
         - ">=1.4.6"
+        - "<=1.4.3,0.9.0"
