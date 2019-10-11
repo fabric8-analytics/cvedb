@@ -1,0 +1,16 @@
+---
+cve: 2018-0105
+title: CVE in unified-engine
+description: >
+    A vulnerability in the web framework of Cisco Unified Communications Manager could allow an unauthenticated, remote attacker to view sensitive data. The vulnerability is due to insufficient protection of database tables. An attacker could exploit this vulnerability by browsing to a specific URL. An exploit could allow the attacker to view data library information. Cisco Bug IDs: CSCvf20269.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/102725
+    - http://www.securitytracker.com/id/1040245
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180117-ucm
+affected:
+    - name: unified-engine
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
