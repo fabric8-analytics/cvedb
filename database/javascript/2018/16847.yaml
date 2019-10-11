@@ -1,0 +1,18 @@
+---
+cve: 2018-16847
+title: CVE in express-route-controller
+description: >
+    An OOB heap buffer r/w access issue was found in the NVM Express Controller emulation in QEMU. It could occur in nvme_cmb_ops routines in nvme device. A guest user/process could use this flaw to crash the QEMU process resulting in DoS or potentially run arbitrary code with privileges of the QEMU process.
+cvss_v2: 4.6
+references:
+    - http://www.securityfocus.com/bid/105866
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-16847
+    - https://lists.gnu.org/archive/html/qemu-devel/2018-11/msg00200.html
+    - https://usn.ubuntu.com/3826-1/
+    - https://www.openwall.com/lists/oss-security/2018/11/02/1
+affected:
+    - name: express-route-controller
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
