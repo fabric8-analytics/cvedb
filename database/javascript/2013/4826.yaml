@@ -1,0 +1,14 @@
+---
+cve: 2013-4826
+title: CVE in service-center
+description: >
+    Unspecified vulnerability in HP Intelligent Management Center (iMC) and HP IMC Service Operation Management Software Module allows remote attackers to obtain sensitive information via unknown vectors, aka ZDI-CAN-1647.
+cvss_v2: 5.0
+references:
+    - https://h20564.www2.hp.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c03943547
+affected:
+    - name: service-center
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
