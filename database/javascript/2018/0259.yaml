@@ -1,0 +1,16 @@
+---
+cve: 2018-0259
+title: CVE in first-mate
+description: >
+    A vulnerability in the web-based management interface of Cisco MATE Collector could allow an unauthenticated, remote attacker to conduct a cross-site request forgery (CSRF) attack and perform arbitrary actions on an affected device. The vulnerability is due to insufficient CSRF protections for the web-based management interface of an affected device. An attacker could exploit this vulnerability by persuading a user of the interface to follow a malicious link. A successful exploit could allow the attacker to perform arbitrary actions on a targeted device via a web browser and with the privileges of the user. Cisco Bug IDs: CSCvh31222.
+cvss_v2: 6.8
+references:
+    - http://www.securityfocus.com/bid/103928
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180418-MATE
+affected:
+    - name: first-mate
+      version:
+        - "<=7.1.0,7.1.0"
+      fixedin:
+        - ">=7.1.1"
+        - "<=7.0.10,0.3.0"
