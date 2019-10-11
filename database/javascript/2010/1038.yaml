@@ -1,0 +1,17 @@
+---
+cve: 2010-1038
+title: CVE in insight-ui
+description: >
+    Unspecified vulnerability in HP System Insight Manager before 6.0 allows remote authenticated users to gain privileges via unknown vectors.
+cvss_v2: 6.5
+references:
+    - http://marc.info/?l=bugtraq&m=127239985506823&w=2
+    - http://secunia.com/advisories/39645
+    - http://securitytracker.com/id?1023927
+    - http://www.securityfocus.com/bid/39734
+affected:
+    - name: insight-ui
+      version:
+        - "<=5.0.0-beta.44"
+      fixedin:
+        []
