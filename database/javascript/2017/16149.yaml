@@ -7,8 +7,9 @@ cvss_v2: 5.0
 references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/zwserver
     - https://nodesecurity.io/advisories/372
-
 affected:
     - name: zwserver
       version:
         - "<=0.1.1"
+      fixedin:
+        []
