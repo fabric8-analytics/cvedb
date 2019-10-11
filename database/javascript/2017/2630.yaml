@@ -1,0 +1,19 @@
+---
+cve: 2017-2630
+title: CVE in qemu
+description: >
+    A stack buffer overflow flaw was found in the Quick Emulator (QEMU) before 2.9 built with the Network Block Device (NBD) client support. The flaw could occur while processing server's response to a 'NBD_OPT_LIST' request. A malicious NBD server could use this issue to crash a remote NBD client resulting in DoS or potentially execute arbitrary code on client host with privileges of the QEMU process.
+cvss_v2: 6.5
+references:
+    - http://www.openwall.com/lists/oss-security/2017/02/15/2
+    - http://www.securityfocus.com/bid/96265
+    - https://access.redhat.com/errata/RHSA-2017:2392
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2017-2630
+    - https://lists.gnu.org/archive/html/qemu-devel/2017-02/msg01246.html
+    - https://security.gentoo.org/glsa/201704-01
+affected:
+    - name: qemu
+      version:
+        - "<=2.8.0"
+      fixedin:
+        - ">=2.9.0"
