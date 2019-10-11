@@ -1,0 +1,15 @@
+---
+cve: 2018-13289
+title: CVE in router
+description: >
+    Information exposure vulnerability in SYNO.FolderSharing.List in Synology Router Manager (SRM) before 1.1.7-6941-2 allows remote attackers to obtain sensitive information via the (1) folder_path or (2) real_path parameter.
+cvss_v2: 5.0
+references:
+    - https://www.synology.com/security/advisory/Synology_SA_18_48
+affected:
+    - name: router
+      version:
+        - "<=1.1.5,1.1.0"
+      fixedin:
+        - ">=1.2.0"
+        - "<=1.0.0,0.2.1"
