@@ -1,0 +1,16 @@
+---
+cve: 2018-15444
+title: CVE in also-energy-node
+description: >
+    A vulnerability in the web-based user interface of Cisco Energy Management Suite Software could allow an authenticated, remote attacker to gain read and write access to information that is stored on an affected system. The vulnerability is due to improper handling of XML External Entity (XXE) entries when parsing certain XML files. An attacker could exploit this vulnerability by convincing a user of an affected system to import a crafted XML file with malicious entries, which could allow the attacker to read and write files within the affected application.
+cvss_v2: 4.9
+references:
+    - http://www.securityfocus.com/bid/105860
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20181107-ems-xml-xxe
+    - https://www.tenable.com/security/research/tra-2018-36
+affected:
+    - name: also-energy-node
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
