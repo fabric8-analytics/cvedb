@@ -1,0 +1,14 @@
+---
+cve: 2017-16059
+title: CVE in node-red-contrib-mssql-pool
+description: >
+    mssql-node was a malicious module published with the intent to hijack environment variables. It has been unpublished by npm.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/480
+affected:
+    - name: node-red-contrib-mssql-pool
+      version:
+        []
+      fixedin:
+        - ">=0.0.6"
