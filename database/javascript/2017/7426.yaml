@@ -1,0 +1,14 @@
+---
+cve: 2017-7426
+title: CVE in identity
+description: >
+    The NetIQ Identity Manager Plugins before 4.6.1 contained various XML External XML Entity (XXE) handling flaws that could be used by attackers to leak information or cause denial of service attacks.
+cvss_v2: 6.4
+references:
+    - https://www.novell.com/support/kb/doc.php?id=7021173
+affected:
+    - name: identity
+      version:
+        - "<=4.6.0"
+      fixedin:
+        - ">=4.6.1"
