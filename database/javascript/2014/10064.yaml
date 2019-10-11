@@ -1,0 +1,14 @@
+---
+cve: 2014-10064
+title: CVE in koa-qs
+description: >
+    The qs module before 1.0.0 does not have an option or default for specifying object depth and when parsing a string representing a deeply nested object will block the event loop for long periods of time. An attacker could leverage this to cause a temporary denial-of-service condition, for example, in a web application, other requests would not be processed while this blocking is occurring.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/28
+affected:
+    - name: koa-qs
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
