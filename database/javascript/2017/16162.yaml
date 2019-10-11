@@ -1,6 +1,6 @@
 ---
 cve: 2017-16162
-title: CVE in 22lixian
+title: CVE in test_22
 description: >
     22lixian is a simple file server. 22lixian is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
 cvss_v2: 5.0
@@ -8,6 +8,8 @@ references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/22lixian
     - https://nodesecurity.io/advisories/390
 affected:
-    - name: 22lixian
+    - name: test_22
       version:
         - "<=1.0.0"
+      fixedin:
+        []
