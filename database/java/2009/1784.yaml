@@ -1,0 +1,18 @@
+---
+cve: 2009-1784
+title: CVE in org.infinispan.server:infinispan-server-security
+description: >
+    The AVG parsing engine 8.5 323, as used in multiple AVG anti-virus products including Anti-Virus Network Edition, Internet Security Netzwerk Edition, Server Edition f?r Linux/FreeBSD, Anti-Virus SBS Edition, and others allows remote attackers to bypass malware detection via a crafted (1) RAR and (2) ZIP archive.
+cvss_v2: 10.0
+references:
+    - http://blog.zoller.lu/2009/04/avg-zip-evasion-bypass.html
+    - http://www.securityfocus.com/archive/1/503392/100/0/threaded
+    - http://www.securityfocus.com/bid/34895
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/50426
+affected:
+    - groupId: org.infinispan.server
+      artifactId: infinispan-server-security
+      version:
+        - "<=7.0.0.Alpha4"
+      fixedin:
+        []
