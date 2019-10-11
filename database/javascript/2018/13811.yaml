@@ -1,0 +1,15 @@
+---
+cve: 2018-13811
+title: CVE in @the-/step
+description: >
+    A vulnerability has been identified in SIMATIC STEP 7 (TIA Portal) (All Versions < V15.1). Password hashes with insufficient computational effort could allow an attacker to access to a project file and reconstruct passwords. The vulnerability could be exploited by an attacker with local access to the project file. No user interaction is required to exploit the vulnerability. The vulnerability could allow the attacker to obtain certain passwords from the project. At the time of advisory publication no public exploitation of this vulnerability was known.
+cvss_v2: 2.1
+references:
+    - http://www.securityfocus.com/bid/105926
+    - https://cert-portal.siemens.com/productcert/pdf/ssa-621493.pdf
+affected:
+    - name: @the-/step
+      version:
+        []
+      fixedin:
+        - ">=15.1.0"
