@@ -1,0 +1,14 @@
+---
+cve: 2018-12550
+title: CVE in eclipse-validation
+description: >
+    When Eclipse Mosquitto version 1.0 to 1.5.5 (inclusive) is configured to use an ACL file, and that ACL file is empty, or contains only comments or blank lines, then Mosquitto will treat this as though no ACL file has been defined and use a default allow policy. The new behaviour is to have an empty ACL file mean that all access is denied, which is not a useful configuration but is not unexpected.
+cvss_v2: 6.8
+references:
+    - https://bugs.eclipse.org/bugs/show_bug.cgi?id=541870
+affected:
+    - name: eclipse-validation
+      version:
+        - "<=1.0.4"
+      fixedin:
+        []
