@@ -1,0 +1,16 @@
+---
+cve: 2017-7528
+title: CVE in @process-engine/management_api_contracts
+description: >
+    Ansible Tower as shipped with Red Hat CloudForms Management Engine 5 is vulnerable to CRLF Injection. It was found that X-Forwarded-For header allows internal servers to deploy other systems (using callback).
+cvss_v2: 3.3
+references:
+    - http://www.securityfocus.com/bid/105143
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2017-7528
+affected:
+    - name: @process-engine/management_api_contracts
+      version:
+        - "<=5.0.0,5.0.0"
+      fixedin:
+        - ">=5.0.0-c55e6a2a-b2"
+        - "<=5.0.0-a995f3fc-b5,0.1.0"
