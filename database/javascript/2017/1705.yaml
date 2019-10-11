@@ -1,0 +1,17 @@
+---
+cve: 2017-1705
+title: CVE in identity
+description: >
+    IBM Security Privileged Identity Manager 2.1.0 contains left-over, sensitive information in page comments. While this information is not visible at first it can be obtained by viewing the page source. IBM X-Force ID: 134427.
+cvss_v2: 4.0
+references:
+    - http://www.ibm.com/support/docview.wss?uid=swg22014988
+    - http://www.securityfocus.com/bid/103677
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/134427
+affected:
+    - name: identity
+      version:
+        - "<=2.1.0,2.1.0"
+      fixedin:
+        - ">=2.2.0"
+        - "<=2.0.1,0.1.0"
