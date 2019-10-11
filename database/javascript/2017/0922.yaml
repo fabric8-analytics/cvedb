@@ -1,0 +1,16 @@
+---
+cve: 2017-0922
+title: CVE in gitlab
+description: >
+    Gitlab Enterprise Edition version 10.3 is vulnerable to an authorization bypass issue in the GitLab Projects::BoardsController component resulting in an information disclosure on any board object.
+cvss_v2: 5.0
+references:
+    - https://about.gitlab.com/2018/01/16/gitlab-10-dot-3-dot-4-released/
+    - https://hackerone.com/reports/301123
+affected:
+    - name: gitlab
+      version:
+        - "<=10.2.1,9.1.0"
+      fixedin:
+        - ">=11.0.0"
+        - "<=9.0.1,0.0.1"
