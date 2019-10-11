@@ -7,8 +7,9 @@ cvss_v2: 5.0
 references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/node-server-forfront
     - https://nodesecurity.io/advisories/382
-
 affected:
     - name: node-server-forfront
       version:
         - "<=0.10.7"
+      fixedin:
+        []
