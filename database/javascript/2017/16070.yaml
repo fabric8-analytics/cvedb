@@ -1,0 +1,14 @@
+---
+cve: 2017-16070
+title: CVE in node-caffe
+description: >
+    nodecaffe was a malicious module published with the intent to hijack environment variables. It has been unpublished by npm.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/509
+affected:
+    - name: node-caffe
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
