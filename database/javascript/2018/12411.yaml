@@ -1,0 +1,18 @@
+---
+cve: 2018-12411
+title: CVE in csrf
+description: >
+    The administrative daemon (tibdgadmind) of TIBCO Software Inc.'s TIBCO ActiveSpaces - Community Edition, TIBCO ActiveSpaces - Developer Edition, and TIBCO ActiveSpaces - Enterprise Edition contains a vulnerability which may allow an attacker to perform cross-site request forgery (CSRF) attacks. Affected releases are TIBCO Software Inc.'s TIBCO ActiveSpaces - Community Edition: 3.3.0; 3.4.0; 3.5.0, TIBCO ActiveSpaces - Developer Edition: 3.0.0; 3.1.0; 3.3.0; 3.4.0; 3.5.0, and TIBCO ActiveSpaces - Enterprise Edition: 3.0.0; 3.1.0; 3.2.0; 3.3.0; 3.4.0; 3.5.0.
+cvss_v2: 6.8
+references:
+    - http://www.securityfocus.com/bid/105869
+    - http://www.tibco.com/services/support/advisories
+    - https://www.tibco.com/support/advisories/2018/11/tibco-security-advisory-november-6-2018-tibco-activespaces
+affected:
+    - name: csrf
+      version:
+        - "<=3.0.0,3.0.0"
+        - "<=3.1.0,3.1.0"
+      fixedin:
+        - "<=3.0.6,3.0.1"
+        - "<=2.0.7,0.0.1"
