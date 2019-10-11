@@ -1,0 +1,14 @@
+---
+cve: 2010-3283
+title: CVE in system
+description: >
+    Open redirect vulnerability in HP System Management Homepage (SMH) before 6.2 allows remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via unspecified vectors.
+cvss_v2: 4.3
+references:
+    - http://marc.info/?l=bugtraq&m=128525419119241&w=2
+affected:
+    - name: system
+      version:
+        - "<=2.0.1"
+      fixedin:
+        []
