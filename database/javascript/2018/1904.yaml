@@ -1,0 +1,21 @@
+---
+cve: 2018-1904
+title: CVE in generator-ibm-java-liberty
+description: >
+    IBM WebSphere Application Server 7.0, 8.0, 8.5, and 9.0 could allow remote attackers to execute arbitrary Java code through an administrative client class with a serialized object from untrusted sources. IBM X-Force ID: 152533.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/106193
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/152533
+    - https://www-01.ibm.com/support/docview.wss?uid=ibm10738735
+affected:
+    - name: generator-ibm-java-liberty
+      version:
+        - "<=7.0.0,7.0.0"
+        - "<=8.0.0,8.0.0"
+        - "<=8.5.2,8.5.0"
+      fixedin:
+        - ">=8.6.0"
+        - "<=8.4.0,8.0.1"
+        - "<=7.4.0,7.1.0"
+        - "<=6.0.2,6.0.2"
