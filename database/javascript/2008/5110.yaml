@@ -1,0 +1,20 @@
+---
+cve: 2008-5110
+title: CVE in node-syslog
+description: >
+    syslog-ng does not call chdir when it calls chroot, which might allow attackers to escape the intended jail.  NOTE: this is only a vulnerability when a separate vulnerability is present.
+cvss_v2: 9.3
+references:
+    - http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=505791
+    - http://itrc.hp.com/service/cki/docDisplay.do?docId=emr_na-c02286083
+    - http://secunia.com/advisories/35748
+    - http://secunia.com/advisories/40551
+    - http://security.gentoo.org/glsa/glsa-200907-10.xml
+    - http://www.openwall.com/lists/oss-security/2008/11/17/3
+    - http://www.vupen.com/english/advisories/2010/1796
+affected:
+    - name: node-syslog
+      version:
+        []
+      fixedin:
+        - ">=0.6.0"
