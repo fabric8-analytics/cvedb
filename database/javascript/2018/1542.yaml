@@ -1,0 +1,17 @@
+---
+cve: 2018-1542
+title: CVE in static-engine-content
+description: >
+    IBM FileNet Content Manager, IBM Content Foundation, and IBM Case Foundation Administration Console for Content Platform Engine (ACCE) 5.2.1 and 5.5.0 are vulnerable to a XML External Entity Injection (XXE) attack when processing XML data. A remote attacker could exploit this vulnerability to expose sensitive information or consume memory resources. IBM X-Force ID: 142597.
+cvss_v2: 5.5
+references:
+    - http://www.ibm.com/support/docview.wss?uid=swg22015943
+    - http://www.securitytracker.com/id/1041225
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/142597
+affected:
+    - name: static-engine-content
+      version:
+        - "<=5.2.1,5.2.1"
+      fixedin:
+        - ">=6.0.0"
+        - "<=5.2.0,1.0.0"
