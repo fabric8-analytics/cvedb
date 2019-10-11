@@ -1,0 +1,14 @@
+---
+cve: 2013-4846
+title: CVE in system
+description: >
+    Unspecified vulnerability in HP System Management Homepage (SMH) before 7.3 allows remote attackers to obtain sensitive information via unknown vectors.
+cvss_v2: 5.0
+references:
+    - https://h20564.www2.hp.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c04039138
+affected:
+    - name: system
+      version:
+        - "<=2.0.1"
+      fixedin:
+        []
