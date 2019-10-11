@@ -1,0 +1,14 @@
+---
+cve: 2018-12469
+title: CVE in realm-object-server-enterprise
+description: >
+    Incorrect handling of an invalid value for an HTTP request parameter by Directory Server (aka Enterprise Server Administration web UI) in Micro Focus Enterprise Developer and Enterprise Server 2.3 Update 2 and earlier, 3.0 before Patch Update 12, and 4.0 before Patch Update 2 causes a null pointer dereference (CWE-476) and subsequent denial of service due to process termination.
+cvss_v2: 5.0
+references:
+    - https://community.microfocus.com/microfocus/mainframe_solutions/enterprise_server/w/knowledge_base/29624/enterprise-server-security-fix-october-2018
+affected:
+    - name: realm-object-server-enterprise
+      version:
+        - "<=3.0.0"
+      fixedin:
+        - ">=3.0.1-beta.1"
