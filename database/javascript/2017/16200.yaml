@@ -1,6 +1,6 @@
 ---
 cve: 2017-16200
-title: CVE in uv-tj-demo
+title: CVE in uv-poll
 description: >
     uv-tj-demo is a static file server. uv-tj-demo is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
 cvss_v2: 5.0
@@ -8,6 +8,8 @@ references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/uv-tj-demo
     - https://nodesecurity.io/advisories/428
 affected:
-    - name: uv-tj-demo
+    - name: uv-poll
       version:
-        - "<=1.0.0"
+        - "<=1.0.0,1.0.0"
+      fixedin:
+        - "<=0.0.1,0.0.1"
