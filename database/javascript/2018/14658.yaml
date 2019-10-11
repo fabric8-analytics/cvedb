@@ -1,0 +1,18 @@
+---
+cve: 2018-14658
+title: CVE in keycloak-js
+description: >
+    A flaw was found in JBOSS Keycloak 3.2.1.Final. The Redirect URL for both Login and Logout are not normalized in org.keycloak.protocol.oidc.utils.RedirectUtils before the redirect url is verified. This can lead to an Open Redirection attack
+cvss_v2: 5.8
+references:
+    - https://access.redhat.com/errata/RHSA-2018:3592
+    - https://access.redhat.com/errata/RHSA-2018:3593
+    - https://access.redhat.com/errata/RHSA-2018:3595
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-14658
+affected:
+    - name: keycloak-js
+      version:
+        - "<=3.2.1,3.2.1"
+      fixedin:
+        - ">=3.3.0-cr.1"
+        - "<=3.2.0,1.4.0"
