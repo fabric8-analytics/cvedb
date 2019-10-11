@@ -10,3 +10,5 @@ affected:
     - name: box2d-native
       version:
         - "<=0.0.8"
+      fixedin:
+        []
