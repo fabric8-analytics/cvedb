@@ -1,0 +1,15 @@
+---
+cve: 2018-15447
+title: CVE in contentful-management
+description: >
+    A vulnerability in the web framework code of Cisco Integrated Management Controller (IMC) Supervisor could allow an unauthenticated, remote attacker to execute arbitrary SQL queries. The vulnerability is due to a lack of proper validation of user-supplied input in SQL queries. An attacker could exploit this vulnerability by sending crafted URLs that contain malicious SQL statements to the affected application.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/105855
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20181107-cimc-sql-inject
+affected:
+    - name: contentful-management
+      version:
+        []
+      fixedin:
+        - ">=0.0.0-determined-by-semantic-release"
