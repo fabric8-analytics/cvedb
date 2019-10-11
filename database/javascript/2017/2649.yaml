@@ -1,0 +1,15 @@
+---
+cve: 2017-2649
+title: CVE in directory-named-webpack-plugin
+description: >
+    It was found that the Active Directory Plugin for Jenkins up to and including version 2.2 did not verify certificates of the Active Directory server, thereby enabling Man-in-the-Middle attacks.
+cvss_v2: 6.8
+references:
+    - http://www.securityfocus.com/bid/96986
+    - https://jenkins.io/security/advisory/2017-03-20/
+affected:
+    - name: directory-named-webpack-plugin
+      version:
+        - "<=2.2.0"
+      fixedin:
+        - ">=2.2.1"
