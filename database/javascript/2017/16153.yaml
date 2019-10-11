@@ -10,6 +10,6 @@ references:
 affected:
     - name: gaoxuyan
       version:
-        - "<=1.1.0"
-      fixedin:
         []
+      fixedin:
+        - ">=1.0.0"
