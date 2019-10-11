@@ -1,0 +1,17 @@
+---
+cve: 2018-2019
+title: CVE in react-entity-manager
+description: >
+    IBM Security Identity Manager 6.0.0 Virtual Appliance is vulnerable to a XML External Entity Injection (XXE) attack when processing XML data. A remote attacker could exploit this vulnerability to expose sensitive information or consume memory resources. IBM X-Force ID: 155265.
+cvss_v2: 5.5
+references:
+    - http://www.securityfocus.com/bid/106657
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/155265
+    - https://www.ibm.com/support/docview.wss?uid=ibm10794615
+affected:
+    - name: react-entity-manager
+      version:
+        - "<=6.0.0,6.0.0"
+      fixedin:
+        - ">=6.0.1"
+        - "<=5.0.9,2.0.1"
