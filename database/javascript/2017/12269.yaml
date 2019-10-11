@@ -1,0 +1,15 @@
+---
+cve: 2017-12269
+title: CVE in js-spark
+description: >
+    A vulnerability in the web UI of Cisco Spark Messaging Software could allow an authenticated, remote attacker to perform a stored cross-site scripting (XSS) attack. The vulnerability is due to insufficient input validation by the web UI of the affected software. An attacker could exploit this vulnerability by injecting XSS content into the web UI of the affected software. A successful exploit could allow the attacker to force a user to execute code of the attacker's choosing or allow the attacker to retrieve sensitive information from the user. Cisco Bug IDs: CSCvf70587, CSCvf70592.
+cvss_v2: 3.5
+references:
+    - http://www.securityfocus.com/bid/101150
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20171004-sprk
+affected:
+    - name: js-spark
+      version:
+        []
+      fixedin:
+        - ">=0.2.0"
