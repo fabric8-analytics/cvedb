@@ -1,0 +1,16 @@
+---
+cve: 2017-7530
+title: CVE in @process-engine/management_api_http
+description: >
+    In CloudForms Management Engine (cfme) before 5.7.3 and 5.8.x before 5.8.1, it was found that privilege check is missing when invoking arbitrary methods via filtering on VMs that MiqExpression will execute that is triggerable by API users. An attacker could use this to execute actions they should not be allowed to (e.g. destroying VMs).
+cvss_v2: 6.5
+references:
+    - http://www.securityfocus.com/bid/100151
+    - https://access.redhat.com/errata/RHSA-2017:1758
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2017-7530
+affected:
+    - name: @process-engine/management_api_http
+      version:
+        - "<=5.2.0-feature-2259d1-k0wlqiuj"
+      fixedin:
+        []
