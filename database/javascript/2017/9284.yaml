@@ -1,0 +1,15 @@
+---
+cve: 2017-9284
+title: CVE in identity
+description: >
+    IDM 4.6 Identity Applications prior to 4.6.2.1 may expose sensitive information.
+cvss_v2: 5.0
+references:
+    - https://download.microfocus.com/Download?buildid=Xg1dZMVbBzs~
+affected:
+    - name: identity
+      version:
+        - "<=4.6.2,4.6.0"
+      fixedin:
+        - ">=4.6.3"
+        - "<=4.5.3,0.1.0"
