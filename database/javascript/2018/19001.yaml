@@ -1,0 +1,15 @@
+---
+cve: 2018-19001
+title: CVE in mean-health
+description: >
+    Philips HealthSuite Health Android App, all versions. The software uses simple encryption that is not strong enough for the level of protection required.
+cvss_v2: 4.6
+references:
+    - http://www.securityfocus.com/bid/106126
+    - https://ics-cert.us-cert.gov/advisories/ICSMA-18-340-01
+affected:
+    - name: mean-health
+      version:
+        []
+      fixedin:
+        - ">=0.0.0"
