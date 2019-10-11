@@ -1,0 +1,14 @@
+---
+cve: 2018-17917
+title: CVE in bitcore-p2p
+description: >
+    All versions of Hangzhou Xiongmai Technology Co., Ltd XMeye P2P Cloud Server may allow an attacker to use MAC addresses to enumerate potential Cloud IDs. Using this ID, the attacker can discover and connect to valid devices using one of the supported apps.
+cvss_v2: 5.0
+references:
+    - https://ics-cert.us-cert.gov/advisories/ICSA-18-282-06
+affected:
+    - name: bitcore-p2p
+      version:
+        []
+      fixedin:
+        - ">=0.8.5"
