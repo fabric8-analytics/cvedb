@@ -10,6 +10,6 @@ references:
 affected:
     - name: serverwzl
       version:
-        - "<=1.3.1"
-      fixedin:
         []
+      fixedin:
+        - ">=1.0.0"
