@@ -1,0 +1,15 @@
+---
+cve: 2016-3720
+title: CVE in com.fasterxml.jackson.dataformat:jackson-dataformat-cbor
+description: >
+    XML external entity (XXE) vulnerability in XmlMapper in the Data format extension for Jackson (aka jackson-dataformat-xml) allows attackers to have unspecified impact via unknown vectors.
+cvss_v2: 7.5
+references:
+    - http://lists.fedoraproject.org/pipermail/package-announce/2016-May/184561.html
+affected:
+    - groupId: com.fasterxml.jackson.dataformat
+      artifactId: jackson-dataformat-cbor
+      version:
+        - "<=2.7.3"
+      fixedin:
+        - ">=2.7.4"
