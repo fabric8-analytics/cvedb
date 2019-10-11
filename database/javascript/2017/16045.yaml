@@ -1,13 +1,14 @@
 ---
 cve: 2017-16045
-title: CVE in jquery.js
+title: CVE in jquery.wheel.js
 description: >
-  `jquery.js` was a malicious module published with the intent to hijack environment variables. It has been unpublished by npm.
+    `jquery.js` was a malicious module published with the intent to hijack environment variables. It has been unpublished by npm.
 cvss_v2: 5.0
 references:
-  - https://nodesecurity.io/advisories/496
+    - https://nodesecurity.io/advisories/496
 affected:
-  - name: jquery.js
-    version:
-      - "<=0.0.2-security"
-    fixedin: []
+    - name: jquery.wheel.js
+      version:
+        []
+      fixedin:
+        - ">=0.1.1"
