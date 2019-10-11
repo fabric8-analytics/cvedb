@@ -1,0 +1,16 @@
+---
+cve: 2015-9236
+title: CVE in hapi
+description: >
+    Hapi versions less than 11.0.0 implement CORS incorrectly and allowed for configurations that at best returned inconsistent headers and at worst allowed cross-origin activities that were expected to be forbidden. If the connection has CORS enabled but one route has it off, and the route is not GET, the OPTIONS prefetch request will return the default CORS headers and then the actual request will go through and return no CORS headers. This defeats the purpose of turning CORS on the route.
+cvss_v2: 5.0
+references:
+    - https://github.com/hapijs/hapi/issues/2840
+    - https://github.com/hapijs/hapi/issues/2850
+    - https://nodesecurity.io/advisories/45
+affected:
+    - name: hapi
+      version:
+        - "<=10.5.0"
+      fixedin:
+        - ">=11.0.0"
