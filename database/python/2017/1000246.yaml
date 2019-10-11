@@ -9,6 +9,6 @@ references:
 affected:
     - name: pysaml2
       version:
-        - "<=4.4.0"
+        - "<=4.5.0"
       fixedin:
-        - ">=4.5.0"
+        - ">=4.6.0"
