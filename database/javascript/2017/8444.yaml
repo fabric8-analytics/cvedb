@@ -1,0 +1,14 @@
+---
+cve: 2017-8444
+title: CVE in enterprise-create
+description: >
+    The client-forwarder in Elastic Cloud Enterprise versions prior to 1.0.2 do not properly encrypt traffic to ZooKeeper. If an attacker is able to man in the middle (MITM) the traffic between the client-forwarder and ZooKeeper they could potentially obtain sensitive data.
+cvss_v2: 4.3
+references:
+    - https://discuss.elastic.co/t/elastic-cloud-enterprise-1-0-2-security-update/100247
+affected:
+    - name: enterprise-create
+      version:
+        - "<=1.0.1"
+      fixedin:
+        - ">=1.0.2"
