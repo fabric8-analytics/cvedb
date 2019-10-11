@@ -1,14 +1,15 @@
 ---
 cve: 2017-16143
-title: CVE in commentapp.stetsonwood
+title: CVE in expresslab.stetsonwood
 description: >
     commentapp.stetsonwood is an http server. commentapp.stetsonwood is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
 cvss_v2: 5.0
 references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/commentapp.stetsonwood
     - https://nodesecurity.io/advisories/470
-
 affected:
-    - name: commentapp.stetsonwood
+    - name: expresslab.stetsonwood
       version:
-        - "==0.0.1"
+        - "<=0.0.1"
+      fixedin:
+        []
