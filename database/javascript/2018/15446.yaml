@@ -1,0 +1,15 @@
+---
+cve: 2018-15446
+title: CVE in wg-meeting-cli
+description: >
+    A vulnerability in Cisco Meeting Server could allow an unauthenticated, remote attacker to gain access to sensitive information. The vulnerability is due to improper protections on data that is returned from user meeting requests when the Guest access via ID and passcode option is set to Legacy mode. An attacker could exploit this vulnerability by sending meeting requests to an affected system. A successful exploit could allow the attacker to determine the values of meeting room unique identifiers, possibly allowing the attacker to conduct further exploits.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/105856
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20181107-meeting-server
+affected:
+    - name: wg-meeting-cli
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
