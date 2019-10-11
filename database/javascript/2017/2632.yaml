@@ -1,0 +1,16 @@
+---
+cve: 2017-2632
+title: CVE in contentful-management
+description: >
+    A logic error in valid_role() in CloudForms role validation before 5.7.1.3 could allow a tenant administrator to create groups with a higher privilege level than the tenant administrator should have. This would allow an attacker with tenant administration access to elevate privileges.
+cvss_v2: 4.0
+references:
+    - http://rhn.redhat.com/errata/RHSA-2017-0320.html
+    - http://www.securityfocus.com/bid/96478
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2017-2632
+affected:
+    - name: contentful-management
+      version:
+        - "<=5.7.1"
+      fixedin:
+        - ">=5.7.2"
