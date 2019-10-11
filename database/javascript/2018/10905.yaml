@@ -1,0 +1,17 @@
+---
+cve: 2018-10905
+title: CVE in contentful-management
+description: >
+    CloudForms Management Engine (cfme) is vulnerable to an improper security setting in the dRuby component of CloudForms. An attacker with access to an unprivileged local shell could use this flaw to execute commands as a high privileged user.
+cvss_v2: 7.2
+references:
+    - https://access.redhat.com/errata/RHSA-2018:2561
+    - https://access.redhat.com/errata/RHSA-2018:2745
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-10905
+affected:
+    - name: contentful-management
+      version:
+        - "<=5.9.0,5.8.0"
+      fixedin:
+        - ">=5.9.1"
+        - "<=5.7.2,0.0.0-determined-by-semantic-release"
