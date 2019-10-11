@@ -1,0 +1,16 @@
+---
+cve: 2018-0368
+title: CVE in center-it
+description: >
+    A vulnerability in Cisco Digital Network Architecture (DNA) Center could allow an authenticated, local attacker to access sensitive information on an affected system. The vulnerability is due to insufficient security restrictions imposed by the affected software. An attacker could exploit this vulnerability by accessing unprotected log files. A successful exploit could allow the attacker to access sensitive log files, which may include system credentials, on the affected device. Cisco Bug IDs: CSCvi22400.
+cvss_v2: 2.1
+references:
+    - http://www.securityfocus.com/bid/104729
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180711-dnac-id
+affected:
+    - name: center-it
+      version:
+        - "<=1.1.0,1.1.0"
+      fixedin:
+        - ">=1.1.1"
+        - "<=1.0.1,0.0.1"
