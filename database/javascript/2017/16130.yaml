@@ -1,6 +1,6 @@
 ---
 cve: 2017-16130
-title: CVE in exxxxxxxxxxx
+title: CVE in node-style-guide
 description: >
     exxxxxxxxxxx is an Http eX Frame Google Style JavaScript Guide. exxxxxxxxxxx is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url. Accessible files are restricted to those with a file extension. Files with no extension such as /etc/passwd throw an error.
 cvss_v2: 5.0
@@ -8,6 +8,8 @@ references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/exxxxxxxxxxx
     - https://nodesecurity.io/advisories/478
 affected:
-    - name: exxxxxxxxxxx
+    - name: node-style-guide
       version:
-        - "<=1.0.2"
+        - "<=1.0.0"
+      fixedin:
+        []
