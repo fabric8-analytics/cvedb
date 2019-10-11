@@ -1,0 +1,16 @@
+---
+cve: 2017-2575
+title: CVE in libbpg-bin
+description: >
+    A vulnerability was found while fuzzing libbpg 0.9.7. It is a NULL pointer dereference issue due to missing check of the return value of function malloc in the BPG encoder. This vulnerability appeared while converting a malicious JPEG file to BPG.
+cvss_v2: 4.3
+references:
+    - http://seclists.org/oss-sec/2017/q2/100
+    - http://www.securityfocus.com/bid/97963
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/148857
+affected:
+    - name: libbpg-bin
+      version:
+        - "<=0.9.7"
+      fixedin:
+        - ">=1.0.0"
