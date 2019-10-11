@@ -1,0 +1,16 @@
+---
+cve: 2016-7072
+title: CVE in tcp-log-server
+description: >
+    An issue has been found in PowerDNS Authoritative Server before 3.4.11 and 4.0.2 allowing a remote, unauthenticated attacker to cause a denial of service by opening a large number of TCP connections to the web server. If the web server runs out of file descriptors, it triggers an exception and terminates the whole PowerDNS process. While it's more complicated for an unauthorized attacker to make the web server run out of file descriptors since its connection will be closed just after being accepted, it might still be possible.
+cvss_v2: 5.0
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2016-7072
+    - https://doc.powerdns.com/md/security/powerdns-advisory-2016-03/
+    - https://www.debian.org/security/2017/dsa-3764
+affected:
+    - name: tcp-log-server
+      version:
+        - "<=4.0.0"
+      fixedin:
+        - ">=4.1.0"
