@@ -1,0 +1,14 @@
+---
+cve: 2010-5305
+title: CVE in lx
+description: >
+    The potential exists for exposure of the product's password used to restrict unauthorized access to Rockwell PLC5/SLC5/0x/RSLogix 1785-Lx and 1747-L5x controllers. The potential exists for an unauthorized programming and configuration client to gain access to the product and allow changes to the product?s configuration or program. When applicable, upgrade product firmware to a version that includes enhanced security functionality compatible with Rockwell Automation's FactoryTalk Security services.
+cvss_v2: 7.5
+references:
+    - https://ics-cert.us-cert.gov/advisories/ICSA-10-070-02
+affected:
+    - name: lx
+      version:
+        []
+      fixedin:
+        - ">=0.0.0"
