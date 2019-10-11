@@ -1,0 +1,14 @@
+---
+cve: 2017-16073
+title: CVE in blear.node.request
+description: >
+    noderequest was a malicious module published with the intent to hijack environment variables. It has been unpublished by npm.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/512
+affected:
+    - name: blear.node.request
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
