@@ -1,6 +1,6 @@
 ---
 cve: 2017-16183
-title: CVE in iter-server
+title: CVE in circ-iter
 description: >
     iter-server is a static file server. iter-server is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
 cvss_v2: 5.0
@@ -8,7 +8,8 @@ references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/iter-server
     - https://nodesecurity.io/advisories/454
 affected:
-    - name: iter-server
+    - name: circ-iter
       version:
-        - ">=1.0.0"
-
+        - "<=1.0.0"
+      fixedin:
+        - ">=2.0.0"
