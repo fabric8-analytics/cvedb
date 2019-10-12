@@ -1,0 +1,16 @@
+---
+cve: 2016-8628
+title: CVE in ansible
+description: >
+    Ansible before version 2.2.0 fails to properly sanitize fact variables sent from the Ansible controller. An attacker with the ability to create special variables on the controller could execute arbitrary commands on Ansible clients as the user Ansible runs as.
+cvss_v2: 9.0
+references:
+    - http://www.securityfocus.com/bid/94109
+    - https://access.redhat.com/errata/RHSA-2016:2778
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2016-8628
+affected:
+    - name: ansible
+      version:
+        - "<=2.1.6.0"
+      fixedin:
+        - ">=2.2.0.0"
