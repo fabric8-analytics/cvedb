@@ -1,0 +1,17 @@
+---
+cve: 2018-1998
+title: CVE in com.ibm.mq:com.ibm.mq.allclient
+description: >
+    IBM WebSphere MQ 8.0.0.0 through 9.1.1 could allow a local user to inject code that could be executed with root privileges. This is due to an incomplete fix for CVE-2018-1792. IBM X-ForceID: 154887.
+cvss_v2: 7.2
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/154887
+    - https://www.ibm.com/support/docview.wss?uid=ibm10870488
+affected:
+    - groupId: com.ibm.mq
+      artifactId: com.ibm.mq.allclient
+      version:
+        - "<=9.1.0.1,9.1.0.0"
+      fixedin:
+        - ">=9.1.0.2"
+        - "<=9.0.5.0,0.0.0.2"
