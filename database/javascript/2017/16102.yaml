@@ -10,6 +10,6 @@ references:
 affected:
     - name: serverhuwenhui
       version:
-        []
+        - "<=1.1.0"
       fixedin:
-        - ">=1.0.0"
+        []
