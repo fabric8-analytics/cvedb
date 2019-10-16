@@ -1,0 +1,16 @@
+---
+cve: 2018-15386
+title: CVE in io.apisense.network:android-network-measures
+description: >
+    A vulnerability in Cisco Digital Network Architecture (DNA) Center could allow an unauthenticated, remote attacker to bypass authentication and have direct unauthorized access to critical management functions. The vulnerability is due to an insecure default configuration of the affected system. An attacker could exploit this vulnerability by directly connecting to the exposed services. An exploit could allow the attacker to retrieve and modify critical system files.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/105504
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20181003-dna-unauth-access
+affected:
+    - groupId: io.apisense.network
+      artifactId: android-network-measures
+      version:
+        - "<=1.1.2,1.1.0"
+      fixedin:
+        - "<=1.0.0,1.0.0"
