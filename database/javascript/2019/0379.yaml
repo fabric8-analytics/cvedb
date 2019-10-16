@@ -1,0 +1,16 @@
+---
+cve: 2019-0379
+title: CVE in segmentio-integration
+description: >
+    SAP Process Integration, business-to-business add-on, versions 1.0, 2.0, does not perform authentication check properly when the default security provider is changed to BouncyCastle (BC), leading to Missing Authentication Check
+cvss_v2: 5.0
+references:
+    - https://launchpad.support.sap.com/#/notes/2826015
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=528123050
+affected:
+    - name: segmentio-integration
+      version:
+        - "<=1.0.0,1.0.0"
+      fixedin:
+        - ">=1.0.1"
+        - "<=0.2.1,0.1.0"
