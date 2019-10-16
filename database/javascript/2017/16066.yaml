@@ -1,0 +1,15 @@
+---
+cve: 2017-16066
+title: CVE in opencv.js
+description: >
+    opencv.js was a malicious module published with the intent to hijack environment variables. It has been unpublished by npm.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/505
+affected:
+    - name: opencv.js
+      version:
+        - "<=1.2.1"
+      fixedin:
+        - "==0.0.1-security"
+        - "==0.0.2-security"
