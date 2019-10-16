@@ -1,14 +1,16 @@
 ---
 cve: 2017-16065
-title: CVE in openssl-wrapper
+title: CVE in openssl.js
 description: >
     openssl.js was a malicious module published with the intent to hijack environment variables. It has been unpublished by npm.
 cvss_v2: 5.0
 references:
     - https://nodesecurity.io/advisories/504
 affected:
-    - name: openssl-wrapper
+    - name: openssl.js
       version:
-        []
+        - "==1.0.2"
+        - "==1.0.1"
       fixedin:
-        - ">=0.2.0"
+        - "==0.0.1-security"
+        - "==0.0.2-security"
