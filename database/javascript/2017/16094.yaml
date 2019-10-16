@@ -1,0 +1,15 @@
+---
+cve: 2017-16094
+title: CVE in iter-http
+description: >
+    iter-http is a server for static files. iter-http is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/iter-http
+    - https://nodesecurity.io/advisories/343
+affected:
+    - name: iter-http
+      version:
+        - "<=1.0.13"
+      fixedin:
+        []
