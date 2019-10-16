@@ -1,0 +1,14 @@
+---
+cve: 2017-16086
+title: CVE in ua-parser-js
+description: >
+    ua-parser is a port of Browserscope's user agent parser. ua-parser is vulnerable to a ReDoS (Regular Expression Denial of Service) attack when given a specially crafted UserAgent header.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/316
+affected:
+    - name: ua-parser-js
+      version:
+        - "<=0.3.5"
+      fixedin:
+        []
