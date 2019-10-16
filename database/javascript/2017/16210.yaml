@@ -1,0 +1,15 @@
+---
+cve: 2017-16210
+title: CVE in jn_jj_server
+description: >
+    jn_jj_server is a static file server. jn_jj_server is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/jn_jj_server
+    - https://nodesecurity.io/advisories/424
+affected:
+    - name: jn_jj_server
+      version:
+        - "<=0.0.8"
+      fixedin:
+        []
