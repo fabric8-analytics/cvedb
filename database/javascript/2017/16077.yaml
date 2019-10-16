@@ -9,6 +9,8 @@ references:
 affected:
     - name: mongose
       version:
-        []
+        - "==1.0.2"
+        - "==1.0.1"
       fixedin:
-        - ">=0.0.1-security"
+        - "==0.0.1-security"
+        - "==0.0.2-security"
