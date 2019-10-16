@@ -1,0 +1,15 @@
+---
+cve: 2017-16090
+title: CVE in fsk-server
+description: >
+    fsk-server is a simple http server. fsk-server is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/fsk-server
+    - https://nodesecurity.io/advisories/345
+affected:
+    - name: fsk-server
+      version:
+        - "<=0.2.1"
+      fixedin:
+        []
