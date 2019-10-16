@@ -10,6 +10,6 @@ references:
 affected:
     - name: mfrserver
       version:
-        []
+        - "==1.0.0"
       fixedin:
-        - ">=1.0.0"
+        []
