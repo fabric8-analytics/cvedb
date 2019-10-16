@@ -10,6 +10,6 @@ references:
 affected:
     - name: tmock
       version:
-        []
+        - "<=0.0.7"
       fixedin:
-        - ">=0.0.1"
+        []
