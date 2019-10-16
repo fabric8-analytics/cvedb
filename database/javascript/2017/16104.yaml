@@ -1,0 +1,15 @@
+---
+cve: 2017-16104
+title: CVE in citypredict.whauwiller
+description: >
+    citypredict.whauwiller is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/citypredict.whauwiller
+    - https://nodesecurity.io/advisories/370
+affected:
+    - name: citypredict.whauwiller
+      version:
+        - "<=1.0.0"
+      fixedin:
+        []
