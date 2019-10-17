@@ -1,0 +1,14 @@
+---
+cve: 2019-10757
+title: CVE in knex
+description: >
+    knex.js versions before 0.19.5 are vulnerable to SQL Injection attack. Identifiers are escaped incorrectly as part of the MSSQL dialect, allowing attackers to craft a malicious query to the host DB.
+cvss_v2: 7.5
+references:
+    - https://snyk.io/vuln/SNYK-JS-KNEX-471962
+affected:
+    - name: knex
+      version:
+        - "<=0.19.4"
+      fixedin:
+        - ">=0.19.5"
