@@ -1,0 +1,15 @@
+---
+cve: 2015-9469
+title: CVE in xss-filters
+description: >
+    The content-grabber plugin 1.0 for WordPress has XSS via obj_field_name or obj_field_id.
+cvss_v2: 3.5
+references:
+    - https://packetstormsecurity.com/files/132910/
+    - https://wordpress.org/plugins/content-grabber/#developers
+affected:
+    - name: xss-filters
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
