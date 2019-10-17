@@ -1,0 +1,17 @@
+---
+cve: 2015-1981
+title: CVE in odoo9-addon-html-image-url-extractor
+description: >
+    Cross-site scripting (XSS) vulnerability in the web server in IBM Domino 8.5.x before 8.5.3 FP6 IF8 and 9.x before 9.0.1 FP4, when Webmail is enabled, allows remote authenticated users to inject arbitrary web script or HTML via a crafted URL, aka SPR KLYH9WYPR5.
+cvss_v2: 2.1
+references:
+    - http://seclists.org/fulldisclosure/2015/Jun/56
+    - http://www.securityfocus.com/bid/74908
+    - http://www.securitytracker.com/id/1032673
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21959908
+affected:
+    - name: odoo9-addon-html-image-url-extractor
+      version:
+        - "<=9.0.1.0.0"
+      fixedin:
+        - ">=9.0.1.0.0.99.dev1"
