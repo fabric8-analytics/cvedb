@@ -1,0 +1,15 @@
+---
+cve: 2016-10546
+title: CVE in pouchdb
+description: >
+    An arbitrary code injection vector was found in PouchDB 6.0.4 and lesser via the map/reduce functions used in PouchDB temporary views and design documents. The code execution engine for this branch is not properly sandboxed and may be used to run arbitrary JavaScript as well as system commands.
+cvss_v2: 10.0
+references:
+    - https://nodesecurity.io/advisories/143
+affected:
+    - name: pouchdb
+      version:
+        - "<=6.0.4"
+      fixedin:
+        - ">=6.0.5"
+        - "==4.0.2-prerelease"
