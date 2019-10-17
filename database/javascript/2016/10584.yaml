@@ -1,0 +1,14 @@
+---
+cve: 2016-10584
+title: CVE in dalek-browser-chrome-canary
+description: >
+    dalek-browser-chrome-canary provides Google Chrome bindings for DalekJS. dalek-browser-chrome-canary downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/181
+affected:
+    - name: dalek-browser-chrome-canary
+      version:
+        - "<=0.0.10-2014-03-24-17-36-27"
+      fixedin:
+        []
