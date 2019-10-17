@@ -1,0 +1,17 @@
+---
+cve: 2016-4977
+title: CVE in spring-animator
+description: >
+    When processing authorization requests using the whitelabel views in Spring Security OAuth 2.0.0 to 2.0.9 and 1.0.0 to 1.0.5, the response_type parameter value was executed as Spring SpEL which enabled a malicious user to trigger remote code execution via the crafting of the value for response_type.
+cvss_v2: 6.5
+references:
+    - http://www.openwall.com/lists/oss-security/2019/10/16/1
+    - https://lists.apache.org/thread.html/0841d849c23418c473ccb9183cbf41a317cb0476e44be48022ce3488@%3Cdev.fineract.apache.org%3E
+    - https://lists.apache.org/thread.html/37d7e820fc65a768de3e096e98382d5529a52a039f093e59357d0bc0@%3Cdev.fineract.apache.org%3E
+    - https://pivotal.io/security/cve-2016-4977
+affected:
+    - name: spring-animator
+      version:
+        - "<=2.0.0"
+      fixedin:
+        []
