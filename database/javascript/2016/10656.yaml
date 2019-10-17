@@ -1,14 +1,14 @@
 ---
 cve: 2016-10656
-title: CVE in node-qbs
+title: CVE in qbs
 description: >
     qbs is a build tool that helps simplify the build process for developing projects across multiple platforms. qbs downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested resources with an attacker controlled copy if the attacker is on the network or positioned in between the user and the remote server.
 cvss_v2: 9.3
 references:
     - https://nodesecurity.io/advisories/266
 affected:
-    - name: node-qbs
+    - name: qbs
       version:
-        []
+        - "==1.4.3"
       fixedin:
-        - ">=0.0.1"
+        - "==1.4.3-1"
