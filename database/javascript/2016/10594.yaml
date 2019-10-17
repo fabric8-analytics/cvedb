@@ -1,0 +1,14 @@
+---
+cve: 2016-10594
+title: CVE in ipip
+description: >
+    ipip is a Node.js module to query geolocation information for an IP or domain, based on database by ipip.net. ipip downloads data resources over HTTP, which leaves it vulnerable to MITM attacks.
+cvss_v2: 6.8
+references:
+    - https://nodesecurity.io/advisories/184
+affected:
+    - name: ipip
+      version:
+        - "<=3.0.0"
+      fixedin:
+        []
