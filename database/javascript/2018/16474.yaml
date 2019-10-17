@@ -10,3 +10,5 @@ affected:
     - name: tianma-static
       version:
         - "<=1.0.4"
+      fixedin:
+        []
