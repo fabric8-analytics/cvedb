@@ -1,0 +1,17 @@
+---
+cve: 2015-4075
+title: CVE in gocardless-pro
+description: >
+    The Helpdesk Pro plugin before 1.4.0 for Joomla! allows remote attackers to write to arbitrary .ini files via a crafted language.save task.
+cvss_v2: 6.8
+references:
+    - http://packetstormsecurity.com/files/132766/Joomla-Helpdesk-Pro-XSS-File-Disclosure-SQL-Injection.html
+    - http://seclists.org/fulldisclosure/2015/Jul/102
+    - http://www.securityfocus.com/bid/75971
+    - https://www.exploit-db.com/exploits/37666/
+affected:
+    - name: gocardless-pro
+      version:
+        - "<=1.3.0"
+      fixedin:
+        - ">=1.3.1"
