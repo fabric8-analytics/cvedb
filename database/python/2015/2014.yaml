@@ -1,0 +1,16 @@
+---
+cve: 2015-2014
+title: CVE in odoo9-addon-purchase-open-qty
+description: >
+    Open redirect vulnerability in the web server in IBM Domino 8.5 before 8.5.3 FP6 IF9 and 9.0 before 9.0.1 FP4 allows remote attackers to redirect users to arbitrary web sites and conduct phishing attacks or cross-site scripting (XSS) attacks via a crafted URL, aka SPR SJAR9DNGDA.
+<a href="http://cwe.mitre.org/data/definitions/601.html">CWE-601: URL Redirection to Untrusted Site ('Open Redirect')</a>
+cvss_v2: 5.8
+references:
+    - http://www.securitytracker.com/id/1033271
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21963016
+affected:
+    - name: odoo9-addon-purchase-open-qty
+      version:
+        - "<=9.0.1.0.0"
+      fixedin:
+        - ">=9.0.1.0.0.99.dev1"
