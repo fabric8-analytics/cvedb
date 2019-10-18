@@ -1,0 +1,16 @@
+---
+cve: 2018-10624
+title: CVE in org.apache.karaf.system:org.apache.karaf.system.core
+description: >
+    In Johnson Controls Metasys System Versions 8.0 and prior and BCPro (BCM) all versions prior to 3.0.2, this vulnerability results from improper error handling in HTTP-based communications with the server, which could allow an attacker to obtain technical information.
+cvss_v2: 3.3
+references:
+    - http://www.securityfocus.com/bid/104937
+    - https://ics-cert.us-cert.gov/advisories/ICSA-18-212-02
+affected:
+    - groupId: org.apache.karaf.system
+      artifactId: org.apache.karaf.system.core
+      version:
+        - "<=4.2.7"
+      fixedin:
+        []
