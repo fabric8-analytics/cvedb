@@ -11,3 +11,5 @@ affected:
     - name: uv-tj-demo
       version:
         - "<=1.0.0"
+      fixedin:
+        []
