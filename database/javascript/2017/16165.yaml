@@ -11,3 +11,5 @@ affected:
     - name: calmquist.static-server
       version:
         - "<=0.1.1"
+      fixedin:
+        []
