@@ -10,6 +10,6 @@ references:
 affected:
     - name: wind-mvc
       version:
-        []
-      fixedin:
         - "<=0.0.6"
+      fixedin:
+        []
