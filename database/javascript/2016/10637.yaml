@@ -9,6 +9,6 @@ references:
 affected:
     - name: haxe-dev
       version:
-        - "<=0.0.8"
+        - "<=3.2.1"
       fixedin:
         []
