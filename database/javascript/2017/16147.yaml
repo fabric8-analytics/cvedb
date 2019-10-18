@@ -7,8 +7,9 @@ cvss_v2: 5.0
 references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/shit-server
     - https://nodesecurity.io/advisories/430
-
 affected:
     - name: shit-server
       version:
         - "==1.0.0"
+      fixedin:
+        []
