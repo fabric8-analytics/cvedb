@@ -1,0 +1,14 @@
+---
+cve: 2019-10756
+title: CVE in node-red-dashboard
+description: >
+    It is possible to inject JavaScript within node-red-dashboard versions prior to version 2.17.0 due to the ui_notification node accepting raw HTML by default.
+cvss_v2: 3.5
+references:
+    - https://snyk.io/vuln/SNYK-JS-NODEREDDASHBOARD-471939
+affected:
+    - name: node-red-dashboard
+      version:
+        - "<=2.16.3"
+      fixedin:
+        - ">=2.17.0"
