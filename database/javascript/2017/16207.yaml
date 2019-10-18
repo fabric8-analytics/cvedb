@@ -1,14 +1,14 @@
 ---
 cve: 2017-16207
-title: CVE in to-js
+title: CVE in discordi.js
 description: >
     discordi.js is a malicious module based on the discord.js library that exfiltrates login tokens to pastebin.
 cvss_v2: 5.0
 references:
     - https://nodesecurity.io/advisories/545
 affected:
-    - name: to-js
+    - name: discordi.js
       version:
-        - "<=0.0.1"
+        - "<=0.0.1-security"
       fixedin:
-        - ">=0.0.2"
+        []
