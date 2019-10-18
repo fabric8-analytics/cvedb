@@ -10,4 +10,6 @@ references:
 affected:
     - name: dasafio
       version:
-        - "<=1.2.0"
+        - "==1.2.0"
+      fixedin:
+        []
