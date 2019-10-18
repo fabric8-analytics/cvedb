@@ -1,0 +1,18 @@
+---
+cve: 2019-17267
+title: CVE in com.fasterxml.jackson.core:jackson-databind
+description: >
+    A Polymorphic Typing issue was discovered in FasterXML jackson-databind before 2.9.10. It is related to net.sf.ehcache.hibernate.EhcacheJtaTransactionManagerLookup.
+cvss_v2: 7.5
+references:
+    - https://github.com/FasterXML/jackson-databind/compare/jackson-databind-2.9.9.3...jackson-databind-2.9.10
+    - https://github.com/FasterXML/jackson-databind/issues/2460
+    - https://lists.apache.org/thread.html/b0656d359c7d40ec9f39c8cc61bca66802ef9a2a12ee199f5b0c1442@%3Cdev.drill.apache.org%3E
+    - https://security.netapp.com/advisory/ntap-20191017-0006/
+affected:
+    - groupId: com.fasterxml.jackson.core
+      artifactId: jackson-databind
+      version:
+        - "<=2.9.9.3"
+      fixedin:
+        - ">=2.9.10"
