@@ -11,3 +11,5 @@ affected:
     - name: earlybird
       version:
         - "<=0.1.7"
+      fixedin:
+        []
