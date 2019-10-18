@@ -9,7 +9,7 @@ references:
 affected:
     - name: babelcli
       version:
-        - "==1.0.1"
+        - "==1.0.0"
       fixedin:
         - "==0.0.1-security"
         - "==0.0.2-security"
