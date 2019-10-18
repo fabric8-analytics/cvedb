@@ -11,3 +11,5 @@ affected:
     - name: uekw1511server
       version:
         - "<=1.0.1"
+      fixedin:
+        []
