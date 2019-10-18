@@ -1,0 +1,14 @@
+---
+cve: 2019-10215
+title: CVE in django-bootstrap3
+description: >
+    Bootstrap-3-Typeahead after version 4.0.2 is vulnerable to a cross-site scripting flaw in the highlighter() function. An attacker could exploit this via user interaction to execute code in the user's browser.
+cvss_v2: 4.3
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-10215
+affected:
+    - name: django-bootstrap3
+      version:
+        - "<=11.1.0,4.0.3"
+      fixedin:
+        - "<=4.0.2,0.0.1"
