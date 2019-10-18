@@ -6,13 +6,13 @@ description: >
 cvss_v2: 3.5
 references:
     - http://www.securityfocus.com/bid/104140
+    - https://lists.apache.org/thread.html/b0656d359c7d40ec9f39c8cc61bca66802ef9a2a12ee199f5b0c1442@%3Cdev.drill.apache.org%3E
     - https://markmail.org/message/akkappppxcdqrgxk
     - https://www.oracle.com/technetwork/security-advisory/cpujan2019-5072801.html
-    - https://github.com/apache/derby/commit/a2027c64e185a9ce46929f352e2db03371c1f95b
 affected:
     - groupId: org.apache.derby
       artifactId: derby
       version:
-        - "<=10.14.1.0,10.3.1.4"
+        - "<=10.14.1.0"
       fixedin:
         - ">=10.14.2.0"
