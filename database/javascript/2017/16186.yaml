@@ -11,3 +11,5 @@ affected:
     - name: 360class.jansenhm
       version:
         - "<=0.1.1"
+      fixedin:
+        []
