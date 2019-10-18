@@ -9,7 +9,7 @@ references:
 affected:
     - name: js-given
       version:
-        - ">=0.0.1,0.0.17"
+        - "<=0.0.17,0.0.1"
       fixedin:
         - ">=0.0.8-alpha.1,0.0.18-alpha.0"
         - ">=0.0.18"
