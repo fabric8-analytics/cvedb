@@ -11,3 +11,5 @@ affected:
     - name: open-device
       version:
         - "<=4.0.1"
+      fixedin:
+        []
