@@ -11,3 +11,5 @@ affected:
     - name: 22lixian
       version:
         - "<=1.0.0"
+      fixedin:
+        []
