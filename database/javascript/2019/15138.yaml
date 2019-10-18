@@ -9,6 +9,6 @@ references:
 affected:
     - name: html-pdf
       version:
-        - ">=0.0.1"
+        - "<=2.2.0"
       fixedin:
         []
