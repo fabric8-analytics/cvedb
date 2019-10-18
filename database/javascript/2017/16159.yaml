@@ -1,6 +1,6 @@
 ---
 cve: 2017-16159
-title: CVE in caolilinode1
+title: CVE in caolilinode
 description: >
     caolilinode is a simple file server. caolilinode is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
 cvss_v2: 5.0
@@ -8,8 +8,8 @@ references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/caolilinode
     - https://nodesecurity.io/advisories/394
 affected:
-    - name: caolilinode1
+    - name: caolilinode
       version:
-        - "<=1.0.0"
+        - "==1.0.0"
       fixedin:
         []
