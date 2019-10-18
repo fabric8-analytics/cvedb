@@ -9,8 +9,6 @@ references:
 affected:
     - name: node-tkinter
       version:
-        - "==1.0.1"
-        - "==1.0.2"
+        - "<=0.0.2-security"
       fixedin:
-        - "==0.0.1-security"
-        - "==0.0.2-security"
+        []
