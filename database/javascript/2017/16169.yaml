@@ -7,8 +7,9 @@ cvss_v2: 5.0
 references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/looppake
     - https://nodesecurity.io/advisories/412
-
 affected:
     - name: looppake
       version:
         - "==3.0.0"
+      fixedin:
+        []
