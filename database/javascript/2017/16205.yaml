@@ -10,6 +10,7 @@ affected:
     - name: coffescript
       version:
         - "==1.0.1"
-      fixedin:
         - "==1.0.0"
         - "==0.0.1-security"
+      fixedin:
+        []
