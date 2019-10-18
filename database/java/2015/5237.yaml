@@ -1,0 +1,18 @@
+---
+cve: 2015-5237
+title: CVE in com.google.protobuf:protobuf-java-util
+description: >
+    protobuf allows remote authenticated attackers to cause a heap-based buffer overflow.
+cvss_v2: 6.5
+references:
+    - http://www.openwall.com/lists/oss-security/2015/08/27/2
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1256426
+    - https://github.com/google/protobuf/issues/760
+    - https://lists.apache.org/thread.html/b0656d359c7d40ec9f39c8cc61bca66802ef9a2a12ee199f5b0c1442@%3Cdev.drill.apache.org%3E
+affected:
+    - groupId: com.google.protobuf
+      artifactId: protobuf-java-util
+      version:
+        - "<=3.3.1"
+      fixedin:
+        - ">=3.4.0"
