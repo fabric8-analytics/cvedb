@@ -1,0 +1,15 @@
+---
+cve: 2019-16344
+title: CVE in org.opencord.ce:ce-api
+description: >
+    A cross-site scripting (XSS) vulnerability in the login form (/ScadaBR/login.htm) in ScadaBR 1.0CE allows a remote attacker to inject arbitrary web script or HTML via the username or password parameter.
+cvss_v2: 4.3
+references:
+    - https://fabiantronc.wordpress.com/2019/10/11/xss-on-scadabr-1-0ce/
+affected:
+    - groupId: org.opencord.ce
+      artifactId: ce-api
+      version:
+        - "<=1.0.0"
+      fixedin:
+        []
