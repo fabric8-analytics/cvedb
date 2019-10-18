@@ -11,3 +11,5 @@ affected:
     - name: sly07
       version:
         - "<=0.1.2"
+      fixedin:
+        []
