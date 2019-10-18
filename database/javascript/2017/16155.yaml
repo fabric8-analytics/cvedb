@@ -11,3 +11,5 @@ affected:
     - name: fast-http-cli
       version:
         - "<=0.0.8"
+      fixedin:
+        []
