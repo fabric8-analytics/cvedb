@@ -1,6 +1,6 @@
 ---
 cve: 2017-16155
-title: CVE in fast-express-cli
+title: CVE in fast-http-cli
 description: >
     fast-http-cli is the command line interface for fast-http, a simple web server. fast-http-cli is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
 cvss_v2: 5.0
@@ -8,8 +8,8 @@ references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/fast-http-cli
     - https://nodesecurity.io/advisories/383
 affected:
-    - name: fast-express-cli
+    - name: fast-http-cli
       version:
-        - "<=0.0.1"
+        - "<=0.0.8"
       fixedin:
         []
