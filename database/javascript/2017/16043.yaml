@@ -10,7 +10,6 @@ references:
 affected:
     - name: shout
       version:
-        - "<=0.49.3,0.44.0"
+        - "<=0.49.3"
       fixedin:
         - ">=0.50.0"
-        - "<=0.43.2,0.2.2"
