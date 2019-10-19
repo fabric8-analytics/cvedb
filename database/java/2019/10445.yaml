@@ -1,0 +1,16 @@
+---
+cve: 2019-10445
+title: CVE in com.bladecoder.engine:blade-engine-spine-plugin
+description: >
+    A missing permission check in Jenkins Google Kubernetes Engine Plugin 0.7.0 and earlier allowed attackers with Overall/Read permission to obtain limited information about the scope of a credential with an attacker-specified credentials ID.
+cvss_v2: 4.0
+references:
+    - http://www.openwall.com/lists/oss-security/2019/10/16/6
+    - https://jenkins.io/security/advisory/2019-10-16/#SECURITY-1607
+affected:
+    - groupId: com.bladecoder.engine
+      artifactId: blade-engine-spine-plugin
+      version:
+        - "<=0.7.0"
+      fixedin:
+        - ">=0.7.1"
