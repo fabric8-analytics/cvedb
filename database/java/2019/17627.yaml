@@ -1,0 +1,15 @@
+---
+cve: 2019-17627
+title: CVE in com.polysfactory.lib.glass.bluetooth:glass-bluetooth
+description: >
+    The Yale Bluetooth Key application for mobile devices allows unauthorized unlock actions by sniffing Bluetooth Low Energy (BLE) traffic during one authorized unlock action, and then calculating the authentication key via simple computations on the hex digits of a valid authentication request. This affects the Yale ZEN-R lock and unspecified other locks.
+cvss_v2: 3.3
+references:
+    - https://github.com/PwnMonkeyLab/YaleDoorlockVulnerability/blob/master/HowToDo.md
+affected:
+    - groupId: com.polysfactory.lib.glass.bluetooth
+      artifactId: glass-bluetooth
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
