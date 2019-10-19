@@ -1,0 +1,15 @@
+---
+cve: 2019-6474
+title: CVE in kea-call-center
+description: >
+    A missing check on incoming client requests can be exploited to cause a situation where the Kea server's lease storage contains leases which are rejected as invalid when the server tries to load leases from storage on restart. If the number of such leases exceeds a hard-coded limit in the Kea code, a server trying to restart will conclude that there is a problem with its lease store and give up. Versions affected: 1.4.0 to 1.5.0, 1.6.0-beta1, and 1.6.0-beta2
+cvss_v2: 6.1
+references:
+    - https://kb.isc.org/docs/cve-2019-6474
+affected:
+    - name: kea-call-center
+      version:
+        - "<=1.5.0,1.4.0"
+      fixedin:
+        - ">=1.5.1"
+        - "<=1.3.9,1.0.0"
