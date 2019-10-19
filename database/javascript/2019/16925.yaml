@@ -1,0 +1,14 @@
+---
+cve: 2019-16925
+title: CVE in ink-flower
+description: >
+    ** DISPUTED ** Flower 0.9.3 has XSS via the name parameter in an @app.task call. NOTE: The project author stated that he doesn't think this is a valid vulnerability. Worker name and task name aren?t user facing configuration options. They are internal backend config options and person having rights to change them already has full access.
+cvss_v2: 4.3
+references:
+    - https://fatihhcelik.blogspot.com/2019/09/flower-100-has-xss-via-name-parameter.html
+affected:
+    - name: ink-flower
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.1.0"
