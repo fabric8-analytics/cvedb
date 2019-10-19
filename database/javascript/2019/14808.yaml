@@ -1,0 +1,17 @@
+---
+cve: 2019-14808
+title: CVE in os-locale
+description: >
+    An issue was discovered in the RENPHO application 3.0.0 for iOS. It transmits JSON data unencrypted to a server without an integrity check, if a user changes personal data in his profile tab (e.g., exposure of his birthday) or logs into his account (i.e., exposure of credentials).
+cvss_v2: 4.0
+references:
+    - http://packetstormsecurity.com/files/154772/RENPHO-3.0.0-Information-Disclosure.html
+    - https://apps.apple.com/us/app/renpho/id1219889310
+    - https://renpho.com/pages/contact-us
+affected:
+    - name: os-locale
+      version:
+        - "<=3.0.0,3.0.0"
+      fixedin:
+        - ">=3.0.1"
+        - "<=2.1.0,1.0.0"
