@@ -1,0 +1,15 @@
+---
+cve: 2019-10447
+title: CVE in ai-cs
+description: >
+    Jenkins Sofy.AI Plugin stores credentials unencrypted in job config.xml files on the Jenkins master where they can be viewed by users with Extended Read permission, or access to the master file system.
+cvss_v2: 4.0
+references:
+    - http://www.openwall.com/lists/oss-security/2019/10/16/6
+    - https://jenkins.io/security/advisory/2019-10-16/#SECURITY-1431
+affected:
+    - name: ai-cs
+      version:
+        - "<=1.0.3"
+      fixedin:
+        - ">=1.0.4"
