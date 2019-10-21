@@ -7,8 +7,9 @@ cvss_v2: 5.0
 references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/sspa
     - https://nodesecurity.io/advisories/463
-
 affected:
     - name: sspa
       version:
         - "==0.1.0"
+      fixedin:
+        []
