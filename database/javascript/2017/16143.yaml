@@ -7,8 +7,9 @@ cvss_v2: 5.0
 references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/commentapp.stetsonwood
     - https://nodesecurity.io/advisories/470
-
 affected:
     - name: commentapp.stetsonwood
       version:
         - "==0.0.1"
+      fixedin:
+        []
