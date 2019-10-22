@@ -1,0 +1,14 @@
+---
+cve: 2019-10436
+title: CVE in google-oauth2l
+description: >
+    An arbitrary file read vulnerability in Jenkins Google OAuth Credentials Plugin 0.9 and earlier allowed attackers able to configure jobs and credentials in Jenkins to obtain the contents of any file on the Jenkins master.
+cvss_v2: 4.0
+references:
+    - https://jenkins.io/security/advisory/2019-10-16/#SECURITY-1583
+affected:
+    - name: google-oauth2l
+      version:
+        - "<=0.9.0"
+      fixedin:
+        - ">=0.9.1"
