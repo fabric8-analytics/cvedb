@@ -1,0 +1,20 @@
+---
+cve: 2019-2989
+title: CVE in javax.enterprise.deploy:javax.enterprise.deploy-api
+description: >
+    Vulnerability in the Oracle GraalVM Enterprise Edition product of Oracle GraalVM (component: Java). The supported version that is affected is 19.2.0. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle GraalVM Enterprise Edition. While the vulnerability is in Oracle GraalVM Enterprise Edition, attacks may significantly impact additional products. Successful attacks of this vulnerability can result in unauthorized creation, deletion or modification access to critical data or all Oracle GraalVM Enterprise Edition accessible data. CVSS 3.0 Base Score 6.8 (Integrity impacts). CVSS Vector: (CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:H/A:N).
+cvss_v2: 4.3
+references:
+    - http://www.oracle.com/technetwork/security-advisory/cpuoct2019-5072832.html
+    - https://access.redhat.com/errata/RHSA-2019:3134
+    - https://access.redhat.com/errata/RHSA-2019:3135
+    - https://access.redhat.com/errata/RHSA-2019:3136
+    - https://security.netapp.com/advisory/ntap-20191017-0001/
+    - https://www.debian.org/security/2019/dsa-4546
+affected:
+    - groupId: javax.enterprise.deploy
+      artifactId: javax.enterprise.deploy-api
+      version:
+        - "<=1.7,1.7"
+      fixedin:
+        - "<=1.6,1.6"
