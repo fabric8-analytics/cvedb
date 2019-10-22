@@ -1,0 +1,16 @@
+---
+cve: 2019-12638
+title: CVE in hearthsim-identity
+description: >
+    A vulnerability in the web-based management interface of Cisco Identity Services Engine (ISE) could allow an authenticated, remote attacker to conduct cross-site scripting (XSS) attacks against a user of the web-based management interface. The vulnerability is due to insufficient validation of user-supplied input that is processed by the web-based management interface. An attacker could exploit this vulnerability by persuading a user of the interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the context of the interface or access sensitive, browser-based information.
+cvss_v2: 3.5
+references:
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20191016-ise-store-xss
+affected:
+    - name: hearthsim-identity
+      version:
+        - "<=2.2.0"
+        - "<=2.4.0,2.3.0"
+      fixedin:
+        - ">=2.5.0"
+        - "<=2.2.5,2.2.1"
