@@ -1,0 +1,15 @@
+---
+cve: 2019-18192
+title: CVE in gnu-option
+description: >
+    GNU Guix 1.0.1 allows local users to gain access to an arbitrary user's account because the parent directory of the user-profile directories is world writable, a similar issue to CVE-2019-17365.
+cvss_v2: 4.6
+references:
+    - http://www.openwall.com/lists/oss-security/2019/10/17/3
+    - https://issues.guix.gnu.org/issue/37744
+affected:
+    - name: gnu-option
+      version:
+        - "<=1.0.1,1.0.1"
+      fixedin:
+        - "<=1.0.0,1.0.0"
