@@ -1,0 +1,16 @@
+---
+cve: 2014-8775
+title: CVE in org.webjars.bowergithub.js-cookie:js-cookie
+description: >
+    MODX Revolution 2.x before 2.2.15 does not include the HTTPOnly flag in a Set-Cookie header for the session cookie, which makes it easier for remote attackers to obtain potentially sensitive information via script access to this cookie.
+cvss_v2: 5.0
+references:
+    - http://forums.modx.com/thread/92152/critical-login-xss-csrf-revolution-2-2-1-4-and-prior
+    - http://hacktivity.websecgeeks.com/modx-csrf-and-xss/
+affected:
+    - groupId: org.webjars.bowergithub.js-cookie
+      artifactId: js-cookie
+      version:
+        - "<=2.2.0"
+      fixedin:
+        []
