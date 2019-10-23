@@ -1,0 +1,23 @@
+---
+cve: 2019-2983
+title: CVE in oslo-serialization
+description: >
+    Vulnerability in the Java SE, Java SE Embedded product of Oracle Java SE (component: Serialization). Supported versions that are affected are Java SE: 7u231, 8u221, 11.0.4 and 13; Java SE Embedded: 8u221. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Java SE Embedded. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets (in Java SE 8), that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability can also be exploited by using APIs in the specified Component, e.g., through a web service which supplies data to the APIs. CVSS 3.0 Base Score 3.7 (Availability impacts). CVSS Vector: (CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L).
+cvss_v2: 4.3
+references:
+    - http://www.oracle.com/technetwork/security-advisory/cpuoct2019-5072832.html
+    - https://access.redhat.com/errata/RHSA-2019:3134
+    - https://access.redhat.com/errata/RHSA-2019:3135
+    - https://access.redhat.com/errata/RHSA-2019:3136
+    - https://seclists.org/bugtraq/2019/Oct/27
+    - https://seclists.org/bugtraq/2019/Oct/31
+    - https://security.netapp.com/advisory/ntap-20191017-0001/
+    - https://www.debian.org/security/2019/dsa-4546
+    - https://www.debian.org/security/2019/dsa-4548
+affected:
+    - name: oslo-serialization
+      version:
+        - "<=1.8.0,1.7.0"
+      fixedin:
+        - ">=1.9.0"
+        - "<=1.6.0,0.1.0"
