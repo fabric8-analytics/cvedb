@@ -1,0 +1,16 @@
+---
+cve: 2019-16530
+title: CVE in org.sonatype.nexus:nexus-repository-metadata-api
+description: >
+    Sonatype Nexus Repository Manager 2.x before 2.14.15 and 3.x before 3.19, and IQ Server before 72, has remote code execution.
+cvss_v2: 9.0
+references:
+    - https://issues.sonatype.org/secure/ReleaseNote.jspa
+    - https://support.sonatype.com/hc/en-us/articles/360036132453
+affected:
+    - groupId: org.sonatype.nexus
+      artifactId: nexus-repository-metadata-api
+      version:
+        - "<=3.0.0-b2015020701"
+      fixedin:
+        []
