@@ -1,0 +1,14 @@
+---
+cve: 2019-18214
+title: CVE in ffmpeg-generate-video-preview
+description: >
+    The Video_Converter app 0.1.0 for Nextcloud allows denial of service (CPU and memory consumption) via multiple concurrent conversions because many FFmpeg processes may be running at once. (The workload is not queued for serial execution.)
+cvss_v2: 6.8
+references:
+    - https://github.com/PaulLereverend/NextcloudVideo_Converter/issues/22
+affected:
+    - name: ffmpeg-generate-video-preview
+      version:
+        - "<=0.1.0"
+      fixedin:
+        - ">=1.0.0"
