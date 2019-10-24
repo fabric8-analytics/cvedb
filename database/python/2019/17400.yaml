@@ -1,0 +1,15 @@
+---
+cve: 2019-17400
+title: CVE in universal-notifications
+description: >
+    The unoconv package before 0.9 mishandles untrusted pathnames, leading to SSRF and local file inclusion.
+cvss_v2: 5.0
+references:
+    - https://buer.haus/2019/10/18/a-tale-of-exploitation-in-spreadsheet-file-conversions/
+    - https://github.com/unoconv/unoconv/pull/510
+affected:
+    - name: universal-notifications
+      version:
+        - "<=0.8.6"
+      fixedin:
+        - ">=0.9.0"
