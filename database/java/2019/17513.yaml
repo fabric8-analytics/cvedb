@@ -1,0 +1,19 @@
+---
+cve: 2019-17513
+title: CVE in io.ratpack:ratpack-gson
+description: >
+    An issue was discovered in Ratpack before 1.7.5. Due to a misuse of the Netty library class DefaultHttpHeaders, there is no validation that headers lack HTTP control characters. Thus, if untrusted data is used to construct HTTP headers with Ratpack, HTTP Response Splitting can occur.
+cvss_v2: 5.0
+references:
+    - https://github.com/ratpack/ratpack/commit/c560a8d10cb8bdd7a526c1ca2e67c8f224ca23ae
+    - https://github.com/ratpack/ratpack/commit/efb910d38a96494256f36675ef0e5061097dd77d
+    - https://github.com/ratpack/ratpack/releases/tag/v1.7.5
+    - https://github.com/ratpack/ratpack/security/advisories/GHSA-mvqp-q37c-wf9j
+    - https://ratpack.io/versions/1.7.5
+affected:
+    - groupId: io.ratpack
+      artifactId: ratpack-gson
+      version:
+        - "<=1.7.4"
+      fixedin:
+        - ">=1.7.5"
