@@ -1,0 +1,16 @@
+---
+cve: 2019-10467
+title: CVE in com.sonymobile.tools.gerrit:gerrit-events
+description: >
+    Jenkins Sonar Gerrit Plugin stores credentials unencrypted in job config.xml files on the Jenkins master where they can be viewed by users with Extended Read permission, or access to the master file system.
+cvss_v2: 4.0
+references:
+    - http://www.openwall.com/lists/oss-security/2019/10/23/2
+    - https://jenkins.io/security/advisory/2019-10-23/#SECURITY-1003
+affected:
+    - groupId: com.sonymobile.tools.gerrit
+      artifactId: gerrit-events
+      version:
+        - "<=2.3.0"
+      fixedin:
+        - ">=2.4.0"
