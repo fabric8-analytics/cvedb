@@ -1,0 +1,21 @@
+---
+cve: 2010-3492
+title: CVE in python-js
+description: >
+    The asyncore module in Python before 3.2 does not properly handle unsuccessful calls to the accept function, and does not have accompanying documentation describing how daemon applications should handle unsuccessful calls to the accept function, which makes it easier for remote attackers to conduct denial of service attacks that terminate these applications via network connections.
+cvss_v2: 5.0
+references:
+    - http://bugs.python.org/issue6706
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2010:215
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2010:216
+    - http://www.openwall.com/lists/oss-security/2010/09/09/6
+    - http://www.openwall.com/lists/oss-security/2010/09/11/2
+    - http://www.openwall.com/lists/oss-security/2010/09/22/3
+    - http://www.openwall.com/lists/oss-security/2010/09/24/3
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A12111
+affected:
+    - name: python-js
+      version:
+        - "<=0.9.8"
+      fixedin:
+        []
