@@ -1,0 +1,17 @@
+---
+cve: 2019-17109
+title: CVE in koji
+description: >
+    Koji through 1.18.0 allows remote Directory Traversal, with resultant Privilege Escalation.
+cvss_v2: 4.0
+references:
+    - http://www.openwall.com/lists/oss-security/2019/10/09/5
+    - https://docs.pagure.org/koji/CVE-2019-17109/
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7PSCCFHLNVFLDPC7DB4UJGXD6ZWBSY57/
+    - https://pagure.io/koji/commits/master
+affected:
+    - name: koji
+      version:
+        - "<=1.18.0"
+      fixedin:
+        []
