@@ -1,0 +1,15 @@
+---
+cve: 2019-11933
+title: CVE in pl.droidsonroids.gif:android-gif-drawable
+description: >
+    A heap buffer overflow bug in libpl_droidsonroids_gif before 1.2.19, as used in WhatsApp for Android before version 2.19.291 could allow remote attackers to execute arbitrary code or cause a denial of service.
+cvss_v2: 7.5
+references:
+    - https://www.facebook.com/security/advisories/cve-2019-11933
+affected:
+    - groupId: pl.droidsonroids.gif
+      artifactId: android-gif-drawable
+      version:
+        - "<=1.2.19"
+      fixedin:
+        []
