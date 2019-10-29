@@ -1,0 +1,18 @@
+---
+cve: 2019-4400
+title: CVE in cloud
+description: >
+    IBM Cloud Orchestrator 2.4 through 2.4.0.5 and 2.5 through 2.5.0.9 could allow a remote attacker to traverse directories on the system. An attacker could send a specially-crafted URL request containing "dot dot" sequences (/../) to view arbitrary files on the system. IBM X-Force ID: 162261.
+cvss_v2: 4.0
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/162261
+    - https://www.ibm.com/support/pages/node/1077129
+affected:
+    - name: cloud
+      version:
+        - "<=2.4.0,2.4.0"
+        - "<=2.5.0,2.5.0"
+      fixedin:
+        - ">=2.5.1"
+        - "<=2.4.6,2.4.1"
+        - "<=2.3.9,1.9.7"
