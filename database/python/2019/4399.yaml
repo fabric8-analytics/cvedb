@@ -1,0 +1,18 @@
+---
+cve: 2019-4399
+title: CVE in cloud
+description: >
+    IBM Cloud Orchestrator 2.4 through 2.4.0.5 and 2.5 through 2.5.0.9 uses weaker than expected cryptographic algorithms that could allow an attacker to decrypt highly sensitive information. IBM X-Force ID: 162260.
+cvss_v2: 5.0
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/162260
+    - https://www.ibm.com/support/pages/node/1097307
+affected:
+    - name: cloud
+      version:
+        - "<=2.4.0,2.4.0"
+        - "<=2.5.0,2.5.0"
+      fixedin:
+        - ">=2.5.1"
+        - "<=2.4.6,2.4.1"
+        - "<=2.3.9,1.9.7"
