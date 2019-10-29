@@ -1,0 +1,14 @@
+---
+cve: 2016-4987
+title: CVE in image
+description: >
+    Directory traversal vulnerability in the Image Gallery plugin before 1.4 in Jenkins allows remote attackers to list arbitrary directories and read arbitrary files via unspecified form fields.
+cvss_v2: 4.0
+references:
+    - https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2016-06-20
+affected:
+    - name: image
+      version:
+        - "<=1.3.9"
+      fixedin:
+        - ">=1.4.0"
