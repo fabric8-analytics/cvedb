@@ -1,0 +1,14 @@
+---
+cve: 2019-18416
+title: CVE in management
+description: >
+    Sourcecodester Restaurant Management System 1.0 allows XSS via the Last Name field of a member.
+cvss_v2: 4.3
+references:
+    - https://www.sevenlayers.com/index.php/264-restaurant-management-system-1-0-xss-session-hijack
+affected:
+    - name: management
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.2"
