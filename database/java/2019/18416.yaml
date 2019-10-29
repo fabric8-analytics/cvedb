@@ -1,0 +1,15 @@
+---
+cve: 2019-18416
+title: CVE in org.coconut.management:coconut-management
+description: >
+    Sourcecodester Restaurant Management System 1.0 allows XSS via the Last Name field of a member.
+cvss_v2: 4.3
+references:
+    - https://www.sevenlayers.com/index.php/264-restaurant-management-system-1-0-xss-session-hijack
+affected:
+    - groupId: org.coconut.management
+      artifactId: coconut-management
+      version:
+        - "<=1.0-alpha3"
+      fixedin:
+        []
