@@ -1,0 +1,18 @@
+---
+cve: 2019-4398
+title: CVE in cloud
+description: >
+    IBM Cloud Orchestrator and IBM Cloud Orchestrator Enterprise 2.5 through 2.5.0.9 and 2.4 through 2.4.0.5 could allow a local user to obtain sensitive information from SessionManagement cookies. IBM X-Force ID: 162259.
+cvss_v2: 2.1
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/162259
+    - https://www.ibm.com/support/pages/node/1077123
+affected:
+    - name: cloud
+      version:
+        - "<=2.4.0,2.4.0"
+        - "<=2.5.0,2.5.0"
+      fixedin:
+        - ">=2.5.1"
+        - "<=2.4.6,2.4.1"
+        - "<=2.3.9,1.9.7"
