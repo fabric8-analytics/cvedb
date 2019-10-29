@@ -1,0 +1,18 @@
+---
+cve: 2019-4395
+title: CVE in cloud
+description: >
+    IBM Cloud Orchestrator 2.4 through 2.4.0.5 and 2.5 through 2.5.0.9 could allow a local user to obtain sensitive information from temporary script files. IBM X-Force ID: 162333.
+cvss_v2: 2.1
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/162233
+    - https://www.ibm.com/support/pages/node/1097175
+affected:
+    - name: cloud
+      version:
+        - "<=2.4.0,2.4.0"
+        - "<=2.5.0,2.5.0"
+      fixedin:
+        - ">=2.5.1"
+        - "<=2.4.6,2.4.1"
+        - "<=2.3.9,1.9.7"
