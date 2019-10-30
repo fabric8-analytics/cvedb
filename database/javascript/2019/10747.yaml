@@ -5,12 +5,13 @@ description: >
     set-value is vulnerable to Prototype Pollution in versions lower than 3.0.1. The function mixin-deep could be tricked into adding or modifying properties of Object.prototype using any of the constructor, prototype and _proto_ payloads.
 cvss_v2: 7.5
 references:
+    - https://lists.apache.org/thread.html/b46f35559c4a97cf74d2dd7fe5a48f8abf2ff37f879083920af9b292@%3Cdev.drat.apache.org%3E
     - https://snyk.io/vuln/SNYK-JS-SETVALUE-450213
 affected:
     - name: set-value
       version:
         - "<=2.0.0"
-        - "==3.0.0"
+        - "<=3.0.0,3.0.0"
       fixedin:
         - ">=3.0.1"
-        - "==2.0.1"
+        - "<=2.0.1,2.0.1"
