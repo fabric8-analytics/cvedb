@@ -1,0 +1,16 @@
+---
+cve: 2019-4306
+title: CVE in org.springframework.security:spring-security-data
+description: >
+    IBM Security Guardium Big Data Intelligence (SonarG) 4.0 specifies permissions for a security-critical resource which could lead to the exposure of sensitive information or the modification of that resource by unintended parties. IBM X-Force ID: 160986.
+cvss_v2: 6.4
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/160986
+    - https://www.ibm.com/support/pages/node/1096396
+affected:
+    - groupId: org.springframework.security
+      artifactId: spring-security-data
+      version:
+        - "<=4.0.0.RELEASE"
+      fixedin:
+        - ">=4.0.1.RELEASE"
