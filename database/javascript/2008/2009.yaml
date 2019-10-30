@@ -1,0 +1,21 @@
+---
+cve: 2008-2009
+title: CVE in ogg-packet
+description: >
+    Xiph.org libvorbis before 1.0 does not properly check for underpopulated Huffman trees, which allows remote attackers to cause a denial of service (crash) via a crafted OGG file that triggers memory corruption during execution of the _make_decode_tree function.
+Per http://svn.xiph.org/trunk/vorbis/CHANGES, 1.0 is the first stable release of libvorbis.  No version of libvorbis before 1.0 has been confirmed at this time.
+cvss_v2: 4.3
+references:
+    - http://secunia.com/advisories/30247
+    - http://www.redhat.com/support/errata/RHSA-2008-0271.html
+    - http://www.securitytracker.com/id?1020029
+    - http://www.ubuntu.com/usn/USN-861-1
+    - http://www.vupen.com/english/advisories/2008/1510/references
+    - https://bugzilla.redhat.com/show_bug.cgi?id=444443
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/42521
+affected:
+    - name: ogg-packet
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
