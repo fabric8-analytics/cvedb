@@ -1,0 +1,16 @@
+---
+cve: 2019-4309
+title: CVE in org.springframework.security:spring-security-data
+description: >
+    IBM Security Guardium Big Data Intelligence (SonarG) 4.0 uses hard coded credentials which could allow a local user to obtain highly sensitive information. IBM X-Force ID: 161035.
+cvss_v2: 2.1
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/161035
+    - https://www.ibm.com/support/pages/node/1096348
+affected:
+    - groupId: org.springframework.security
+      artifactId: spring-security-data
+      version:
+        - "<=4.0.0.RELEASE"
+      fixedin:
+        - ">=4.0.1.RELEASE"
