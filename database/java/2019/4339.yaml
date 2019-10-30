@@ -1,0 +1,16 @@
+---
+cve: 2019-4339
+title: CVE in org.springframework.security:spring-security-data
+description: >
+    IBM Security Guardium Big Data Intelligence (SonarG) 4.0 uses weaker than expected cryptographic algorithms that could allow an attacker to decrypt highly sensitive information. IBM X-Force ID: 161418.
+cvss_v2: 5.0
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/161418
+    - https://www.ibm.com/support/pages/node/1096924
+affected:
+    - groupId: org.springframework.security
+      artifactId: spring-security-data
+      version:
+        - "<=4.0.0.RELEASE"
+      fixedin:
+        - ">=4.0.1.RELEASE"
