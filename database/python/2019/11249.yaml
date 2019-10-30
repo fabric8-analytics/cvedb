@@ -1,0 +1,20 @@
+---
+cve: 2019-11249
+title: CVE in deploy-to-kubernetes
+description: >
+    The kubectl cp command allows copying files between containers and the user machine. To copy files from a container, Kubernetes runs tar inside the container to create a tar archive, copies it over the network, and kubectl unpacks it on the user?s machine. If the tar binary in the container is malicious, it could run any code and output unexpected, malicious results. An attacker could use this to write files to any path on the user?s machine when kubectl cp is called, limited only by the system permissions of the local user. Kubernetes affected versions include versions prior to 1.13.9, versions prior to 1.14.5, versions prior to 1.15.2, and versions 1.1, 1.2, 1.4, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 1.10, 1.11, 1.12.
+cvss_v2: 5.8
+references:
+    - https://access.redhat.com/errata/RHBA-2019:2794
+    - https://access.redhat.com/errata/RHBA-2019:2816
+    - https://access.redhat.com/errata/RHBA-2019:2824
+    - https://access.redhat.com/errata/RHSA-2019:3239
+    - https://github.com/kubernetes/kubernetes/issues/80984
+    - https://groups.google.com/d/msg/kubernetes-security-announce/vUtEcSEY6SM/v2ZZxsmtFQAJ
+    - https://security.netapp.com/advisory/ntap-20190919-0003/
+affected:
+    - name: deploy-to-kubernetes
+      version:
+        - "<=1.0.8"
+      fixedin:
+        []
