@@ -1,0 +1,18 @@
+---
+cve: 2019-4397
+title: CVE in cloud
+description: >
+    IBM Cloud Orchestrator and IBM Cloud Orchestrator Enterprise 2.5 through 2.5.0.9 and 2.4 through 2.4.0.5 stores sensitive information in URL parameters. This may lead to information disclosure if unauthorized parties have access to the URLs via server logs, referrer header or browser history. IBM X-Force ID: 162239
+cvss_v2: 4.0
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/162239
+    - https://www.ibm.com/support/pages/node/1077147
+affected:
+    - name: cloud
+      version:
+        - "<=2.4.0,2.4.0"
+        - "<=2.5.0,2.5.0"
+      fixedin:
+        - ">=2.5.1"
+        - "<=2.4.6,2.4.1"
+        - "<=2.3.9,1.9.7"
