@@ -1,0 +1,18 @@
+---
+cve: 2012-5577
+title: CVE in keyring
+description: >
+    Python keyring lib before 0.10 created keyring files with world-readable permissions.
+cvss_v2: 5.0
+references:
+    - http://www.openwall.com/lists/oss-security/2012/11/27/3
+    - https://bitbucket.org/kang/python-keyring-lib/commits/049cd181470f1ee6c540e1d64acf1def7b1de0c1
+    - https://bitbucket.org/kang/python-keyring-lib/issue/67/set-go-rwx-on-keyring_passcfg
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2012-5577
+    - https://security-tracker.debian.org/tracker/CVE-2012-5577
+affected:
+    - name: keyring
+      version:
+        - "<=0.9.3"
+      fixedin:
+        - ">=0.10"
