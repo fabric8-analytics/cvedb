@@ -1,0 +1,15 @@
+---
+cve: 2017-15725
+title: CVE in org.testifyproject.external:external-objenesis
+description: >
+    An XML External Entity Injection vulnerability exists in Dzone AnswerHub.
+cvss_v2: 5.0
+references:
+    - https://il.linkedin.com/in/nivlevy
+affected:
+    - groupId: org.testifyproject.external
+      artifactId: external-objenesis
+      version:
+        []
+      fixedin:
+        - ">=0.9.1"
