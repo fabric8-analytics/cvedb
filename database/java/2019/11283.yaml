@@ -1,0 +1,15 @@
+---
+cve: 2019-11283
+title: CVE in io.pivotal.spring.cloud:spring-cloud-services-connector-core
+description: >
+    Cloud Foundry SMB Volume, versions prior to v2.0.3, accidentally outputs sensitive information to the logs. A remote user with access to the SMB Volume logs can discover the username and password for volumes that have been recently created, allowing the user to take control of the SMB Volume.
+cvss_v2: 4.0
+references:
+    - https://www.cloudfoundry.org/blog/cve-2019-11283
+affected:
+    - groupId: io.pivotal.spring.cloud
+      artifactId: spring-cloud-services-connector-core
+      version:
+        - "<=2.1.4.RELEASE"
+      fixedin:
+        []
