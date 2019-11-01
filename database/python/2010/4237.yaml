@@ -1,0 +1,17 @@
+---
+cve: 2010-4237
+title: CVE in mercurial
+description: >
+    Mercurial before 1.6.4 fails to verify the Common Name field of SSL certificates which allows remote attackers who acquire a certificate signed by a Certificate Authority to perform a man-in-the-middle attack.
+cvss_v2: 4.3
+references:
+    - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=598841
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2010-4237
+    - https://bz.mercurial-scm.org/show_bug.cgi?id=2407
+    - https://security-tracker.debian.org/tracker/CVE-2010-4237
+affected:
+    - name: mercurial
+      version:
+        - "<=1.6.3"
+      fixedin:
+        - ">=1.6.4"
