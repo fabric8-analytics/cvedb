@@ -1,0 +1,15 @@
+---
+cve: 2018-1732
+title: CVE in @ibm-watson/food-coach
+description: >
+    IBM QRadar Advisor with Watson 1.14.0 discloses sensitive information to unauthorized users. The information can be used to mount further attacks on the system. IBM X-Force ID: 147810.
+cvss_v2: 5.0
+references:
+    - http://www.ibm.com/support/docview.wss?uid=ibm10736009
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/147810
+affected:
+    - name: @ibm-watson/food-coach
+      version:
+        - "<=1.1.0,1.1.0"
+      fixedin:
+        - "<=1.0.0,1.0.0"
