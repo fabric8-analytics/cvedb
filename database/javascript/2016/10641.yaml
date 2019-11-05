@@ -10,3 +10,5 @@ affected:
     - name: node-bsdiff-android
       version:
         - "<=0.1.5"
+      fixedin:
+        []
