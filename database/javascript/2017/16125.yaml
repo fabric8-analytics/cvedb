@@ -11,3 +11,5 @@ affected:
     - name: rtcmulticonnection-client
       version:
         - "<=1.0.5"
+      fixedin:
+        []
