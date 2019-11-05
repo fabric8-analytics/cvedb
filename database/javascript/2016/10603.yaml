@@ -10,3 +10,5 @@ affected:
     - name: air-sdk
       version:
         - "<=16.0.0-272-16"
+      fixedin:
+        []
