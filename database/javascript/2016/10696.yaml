@@ -10,3 +10,5 @@ affected:
     - name: windows-latestchromedriver
       version:
         - "<=0.1.0"
+      fixedin:
+        []
