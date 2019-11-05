@@ -11,3 +11,5 @@ affected:
     - name: summit
       version:
         - "<=0.1.22,0.1.0"
+      fixedin:
+        - ">=0.0.1,0.0.9"
