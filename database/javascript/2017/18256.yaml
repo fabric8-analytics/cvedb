@@ -10,6 +10,6 @@ references:
 affected:
     - name: brave-browser
       version:
-        - "<=0.12.9-2"
+        - "<=0.13.0"
       fixedin:
-        - ">=0.13.0"
+        []
