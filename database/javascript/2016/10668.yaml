@@ -10,3 +10,5 @@ affected:
     - name: libsbml
       version:
         - "<=0.0.2"
+      fixedin:
+        []
