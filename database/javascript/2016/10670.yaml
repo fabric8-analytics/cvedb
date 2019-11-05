@@ -10,3 +10,5 @@ affected:
     - name: windows-seleniumjar-mirror
       version:
         - "<=2.52.1"
+      fixedin:
+        []
