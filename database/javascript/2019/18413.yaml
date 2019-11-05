@@ -9,6 +9,6 @@ references:
 affected:
     - name: class-validator
       version:
-        - "<=0.10.2,0.10.2"
+        - "<=0.11.0"
       fixedin:
-        - "<=0.10.1,0.3.0"
+        []
