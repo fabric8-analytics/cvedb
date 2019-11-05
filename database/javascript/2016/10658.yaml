@@ -10,3 +10,5 @@ affected:
     - name: native-opencv
       version:
         - "<=3.0.0-b"
+      fixedin:
+        []
