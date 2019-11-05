@@ -10,3 +10,5 @@ affected:
     - name: bionode-sra
       version:
         - "<=1.0.3"
+      fixedin:
+        []
