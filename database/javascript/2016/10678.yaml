@@ -10,3 +10,5 @@ affected:
     - name: serc.js
       version:
         - "<=0.0.1"
+      fixedin:
+        []
