@@ -10,3 +10,5 @@ affected:
     - name: dalek-browser-chrome
       version:
         - "<=0.0.11"
+      fixedin:
+        []
