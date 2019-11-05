@@ -10,3 +10,5 @@ affected:
     - name: dwebp-bin
       version:
         - "<=0.1.6"
+      fixedin:
+        []
