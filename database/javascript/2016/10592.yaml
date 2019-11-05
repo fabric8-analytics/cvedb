@@ -11,3 +11,5 @@ affected:
     - name: jser-stat
       version:
         - "<=4.0.3"
+      fixedin:
+        []
