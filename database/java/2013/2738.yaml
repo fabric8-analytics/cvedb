@@ -1,0 +1,18 @@
+---
+cve: 2013-2738
+title: CVE in org.awake-sql:awake-sql
+description: >
+    minidlna has SQL Injection that may allow retrieval of arbitrary files
+cvss_v2: 7.5
+references:
+    - http://archives.neohapsis.com/archives/bugtraq/2013-07/0100.html
+    - http://media.blackhat.com/bh-us-12/Briefings/Cutlip/BH_US_12_Cutlip_SQL_Exploitation_WP.pdf
+    - https://security-tracker.debian.org/tracker/CVE-2013-2738
+    - https://www.securityfocus.com/archive/1/527299/30/0
+affected:
+    - groupId: org.awake-sql
+      artifactId: awake-sql
+      version:
+        - "<=1.0.13"
+      fixedin:
+        - ">=1.1"
