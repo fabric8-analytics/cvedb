@@ -10,3 +10,5 @@ affected:
     - name: react-native-baidu-voice-synthesizer
       version:
         - "<=1.0.0"
+      fixedin:
+        []
