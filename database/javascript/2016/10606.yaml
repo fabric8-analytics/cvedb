@@ -10,3 +10,5 @@ affected:
     - name: grunt-webdriver-qunit
       version:
         - "<=0.2.6"
+      fixedin:
+        []
