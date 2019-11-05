@@ -1,6 +1,6 @@
 ---
 cve: 2017-16121
-title: CVE in @dchowitz/webrtc-datachannel
+title: CVE in datachannel-client
 description: >
     datachannel-client is a signaling implementation for DataChannel.js. datachannel-client is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
 cvss_v2: 5.0
@@ -8,8 +8,8 @@ references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/datachannel-client
     - https://nodesecurity.io/advisories/391
 affected:
-    - name: @dchowitz/webrtc-datachannel
+    - name: datachannel-client
       version:
-        - "<=1.0.0"
+        - "<=1.0.2"
       fixedin:
-        - ">=1.1.0"
+        []
