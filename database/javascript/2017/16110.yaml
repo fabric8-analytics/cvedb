@@ -11,3 +11,5 @@ affected:
     - name: weather.swlyons
       version:
         - "<=0.1.6"
+      fixedin:
+        []
