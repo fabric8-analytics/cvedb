@@ -1,0 +1,15 @@
+---
+cve: 2017-11479
+title: CVE in kibana
+description: >
+    Kibana versions prior to 5.6.1 had a cross-site scripting (XSS) vulnerability in Timelion that could allow an attacker to obtain sensitive information from or perform destructive actions on behalf of other Kibana users.
+cvss_v2: 4.3
+references:
+    - http://www.openwall.com/lists/oss-security/2019/10/24/1
+    - https://discuss.elastic.co/t/x-pack-alerting-and-kibana-5-6-1-security-update/101884
+affected:
+    - name: kibana
+      version:
+        - "==5.1.1"
+      fixedin:
+        []
