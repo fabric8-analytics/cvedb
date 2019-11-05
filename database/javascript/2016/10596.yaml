@@ -10,3 +10,5 @@ affected:
     - name: imageoptim
       version:
         - "<=0.5.0"
+      fixedin:
+        []
