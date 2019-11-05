@@ -1,14 +1,14 @@
 ---
 cve: 2016-10654
-title: CVE in http-mitm
+title: CVE in sfml
 description: >
     sfml downloads resources over HTTP, which leaves it vulnerable to MITM attacks.
 cvss_v2: 6.8
 references:
     - https://nodesecurity.io/advisories/256
 affected:
-    - name: http-mitm
+    - name: sfml
       version:
         - "<=0.0.3"
       fixedin:
-        - ">=0.1.0"
+        []
