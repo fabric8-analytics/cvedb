@@ -10,3 +10,5 @@ affected:
     - name: macaca-chromedriver-zxa
       version:
         - "<=0.1.9"
+      fixedin:
+        []
