@@ -1,6 +1,6 @@
 ---
 cve: 2019-17606
-title: CVE in hexo-admin-lbwy
+title: CVE in hexo-admin
 description: >
     The Post editor functionality in the hexo-admin plugin versions 2.3.0 and earlier for Node.js is vulnerable to stored XSS via the content of a post.
 cvss_v2: 4.3
@@ -10,8 +10,8 @@ references:
     - https://www.npmjs.com/advisories
     - https://www.npmjs.com/advisories/1211
 affected:
-    - name: hexo-admin-lbwy
+    - name: hexo-admin
       version:
         - "<=2.3.0"
       fixedin:
-        - ">=2.3.1"
+        []
