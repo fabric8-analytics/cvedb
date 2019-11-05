@@ -10,3 +10,5 @@ affected:
     - name: pm2-kafka
       version:
         - "<=1.0.0"
+      fixedin:
+        []
