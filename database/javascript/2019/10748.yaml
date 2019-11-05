@@ -1,0 +1,22 @@
+---
+cve: 2019-10748
+title: CVE in sequelize
+description: >
+    Sequelize all versions prior to 3.35.1, 4.44.3, and 5.8.11 are vulnerable to SQL Injection due to JSON path keys not being properly escaped for the MySQL/MariaDB dialects.
+cvss_v2: 7.5
+references:
+    - https://github.com/sequelize/sequelize/commit/a72a3f5,
+    - https://github.com/sequelize/sequelize/pull/11089,
+    - https://snyk.io/vuln/SNYK-JS-SEQUELIZE-450221
+affected:
+    - name: sequelize
+      version:
+        - "<=3.35.0,3.0.0"
+        - "<=4.44.2,4.0.0"
+        - "<=5.8.10,5.0.0"
+      fixedin:
+        - ">=5.8.11"
+        - "==4.44.3"
+        - ">=4.0.0-0,4.0.0-2"
+        - "==3.35.1"
+        - "<=2.1.3,0.0.0-development"

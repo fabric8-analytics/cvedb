@@ -10,3 +10,5 @@ affected:
     - name: takeapeek
       version:
         - "<=0.2.2"
+      fixedin:
+        []

@@ -10,3 +10,5 @@ affected:
     - name: prebuild-lwip
       version:
         - "<=0.0.4"
+      fixedin:
+        []

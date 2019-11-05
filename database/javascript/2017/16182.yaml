@@ -11,3 +11,5 @@ affected:
     - name: serverxxx
       version:
         - "==1.0.0"
+      fixedin:
+        []

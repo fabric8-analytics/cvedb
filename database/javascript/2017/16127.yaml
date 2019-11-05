@@ -9,4 +9,6 @@ references:
 affected:
     - name: pandora-doomsday
       version:
-        - "<=0.0.1-security"
+        - "==0.0.1-security"
+      fixedin:
+        []

@@ -1,0 +1,15 @@
+---
+cve: 2017-16106
+title: CVE in tmock
+description: >
+    tmock is a static file server. tmock is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/tmock
+    - https://nodesecurity.io/advisories/375
+affected:
+    - name: tmock
+      version:
+        - "<=0.0.7"
+      fixedin:
+        []

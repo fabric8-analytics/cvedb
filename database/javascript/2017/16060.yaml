@@ -1,0 +1,14 @@
+---
+cve: 2017-16060
+title: CVE in babelcli
+description: >
+    babelcli was a malicious module published with the intent to hijack environment variables. It has been unpublished by npm.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/499
+affected:
+    - name: babelcli
+      version:
+        - "<=0.0.2-security"
+      fixedin:
+        []

@@ -1,0 +1,16 @@
+---
+cve: 2017-16079
+title: CVE in smb
+description: >
+    smb was a malicious module published with the intent to hijack environment variables. It has been unpublished by npm.
+cvss_v2: 5.0
+references:
+    - https://nodesecurity.io/advisories/518
+affected:
+    - name: smb
+      version:
+        - "==1.0.2"
+        - "==1.0.1"
+      fixedin:
+        - "==0.0.1-security"
+        - "==0.0.2-security"

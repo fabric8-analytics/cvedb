@@ -10,3 +10,5 @@ affected:
     - name: webrtc-native
       version:
         - "<=1.4.0"
+      fixedin:
+        []

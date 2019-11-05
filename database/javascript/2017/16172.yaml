@@ -10,4 +10,6 @@ references:
 affected:
     - name: section2.madisonjbrooks12
       version:
-        - "<=0.1.1"
+        - "==0.1.1"
+      fixedin:
+        []

@@ -10,3 +10,5 @@ affected:
     - name: adamvr-geoip-lite
       version:
         - "<=1.2.0"
+      fixedin:
+        []

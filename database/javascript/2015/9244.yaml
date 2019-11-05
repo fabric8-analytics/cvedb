@@ -1,0 +1,15 @@
+---
+cve: 2015-9244
+title: CVE in mysql
+description: >
+    Keys of objects in mysql node module v2.0.0-alpha7 and earlier are not escaped with `mysql.escape()` which could lead to SQL Injection.
+cvss_v2: 7.5
+references:
+    - https://github.com/felixge/node-mysql/issues/342
+    - https://nodesecurity.io/advisories/66
+affected:
+    - name: mysql
+      version:
+        - "<=2.0.0-alpha7"
+      fixedin:
+        - ">=2.0.0-alpha8"

@@ -1,0 +1,18 @@
+---
+cve: 2017-12155
+title: CVE in tripleo-heat-templates
+description: >
+    A resource-permission flaw was found in the openstack-tripleo-heat-templates package where ceph.client.openstack.keyring is created as world-readable. A local attacker with access to the key could read or modify data on Ceph cluster pools for OpenStack as though the attacker were the OpenStack service, thus potentially reading or modifying data in an OpenStack Block Storage volume.
+cvss_v2: 3.3
+references:
+    - https://access.redhat.com/errata/RHSA-2018:0602
+    - https://access.redhat.com/errata/RHSA-2018:1593
+    - https://access.redhat.com/errata/RHSA-2018:1627
+    - https://bugs.launchpad.net/tripleo/+bug/1720787
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1489360
+affected:
+    - name: tripleo-heat-templates
+      version:
+        - "<=8.4.1"
+      fixedin:
+        - ">=9.0.0.0b4"

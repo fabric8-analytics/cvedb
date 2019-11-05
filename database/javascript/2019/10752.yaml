@@ -1,0 +1,21 @@
+---
+cve: 2019-10752
+title: CVE in sequelize
+description: >
+    Sequelize, all versions prior to version 4.44.3 and 5.15.1, is vulnerable to SQL Injection due to sequelize.json() helper function not escaping values properly when formatting sub paths for JSON queries for MySQL, MariaDB and SQLite.
+cvss_v2: 7.5
+references:
+    - https://github.com/sequelize/sequelize/commit/9bd0bc1,
+    - https://github.com/sequelize/sequelize/commit/9bd0bc111b6f502223edf7e902680f7cc2ed541e
+    - https://snyk.io/vuln/SNYK-JS-SEQUELIZE-459751
+    - https://snyk.io/vuln/SNYK-JS-SEQUELIZE-459751,
+affected:
+    - name: sequelize
+      version:
+        - "<=4.44.2,4.0.0"
+        - "<=5.15.0,5.0.0"
+      fixedin:
+        - ">=5.15.1"
+        - ">=5.0.0-0,5.0.0-beta.17"
+        - "==4.44.3"
+        - "<=3.35.1,0.0.0-development"

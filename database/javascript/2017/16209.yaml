@@ -1,0 +1,15 @@
+---
+cve: 2017-16209
+title: CVE in enserver
+description: >
+    enserver is a simple web server. enserver is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/enserver
+    - https://nodesecurity.io/advisories/425
+affected:
+    - name: enserver
+      version:
+        - "==1.0.0"
+      fixedin:
+        []

@@ -10,3 +10,5 @@ affected:
     - name: bitty
       version:
         - "<=0.2.10"
+      fixedin:
+        []

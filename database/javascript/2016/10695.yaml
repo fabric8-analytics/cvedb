@@ -6,8 +6,9 @@ description: >
 cvss_v2: 9.3
 references:
     - https://nodesecurity.io/advisories/297
-    - https://nvd.nist.gov/vuln/detail/CVE-2016-10695
 affected:
     - name: npm-test-sqlite3-trunk
       version:
         - "<=2.2.2"
+      fixedin:
+        []

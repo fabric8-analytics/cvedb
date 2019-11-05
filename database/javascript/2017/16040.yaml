@@ -10,3 +10,5 @@ affected:
     - name: gfe-sass
       version:
         - "<=1.0.19"
+      fixedin:
+        []

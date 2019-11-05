@@ -1,0 +1,14 @@
+---
+cve: 2017-1000483
+title: CVE in Plone
+description: >
+    Accessing private content via str.format in through-the-web templates and scripts in Plone 2.5-5.1rc1. This improves an earlier hotfix. Since the format method was introduced in Python 2.6, this part of the hotfix is only relevant for Plone 4 and 5.
+cvss_v2: 4.0
+references:
+    - https://plone.org/security/hotfix/20171128/sandbox-escape
+affected:
+    - name: Plone
+      version:
+        - "<=5.1rc1"
+      fixedin:
+        - ">=5.1rc2"

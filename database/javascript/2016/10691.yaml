@@ -10,3 +10,5 @@ affected:
     - name: windows-seleniumjar
       version:
         - "<=2.48.2"
+      fixedin:
+        []

@@ -10,4 +10,6 @@ references:
 affected:
     - name: dcserver
       version:
-        - "<=1.0.0"
+        - "==1.0.0"
+      fixedin:
+        []

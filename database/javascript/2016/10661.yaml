@@ -1,0 +1,14 @@
+---
+cve: 2016-10661
+title: CVE in phantomjs-cheniu
+description: >
+    phantomjs-cheniu is a Headless WebKit with JS API phantomjs-cheniu downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested resources with an attacker controlled copy if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/262
+affected:
+    - name: phantomjs-cheniu
+      version:
+        - "<=2.0.1"
+      fixedin:
+        []

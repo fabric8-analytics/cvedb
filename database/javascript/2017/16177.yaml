@@ -10,4 +10,6 @@ references:
 affected:
     - name: chatbyvista
       version:
-        - "<=0.1.0"
+        - "==0.1.0"
+      fixedin:
+        []

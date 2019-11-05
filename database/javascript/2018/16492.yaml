@@ -1,0 +1,16 @@
+---
+cve: 2018-16492
+title: CVE in extend
+description: >
+    A prototype pollution vulnerability was found in module extend <2.0.2, ~<3.0.2 that allows an attacker to inject arbitrary properties onto Object.prototype.
+cvss_v2: 7.5
+references:
+    - https://hackerone.com/reports/381185
+affected:
+    - name: extend
+      version:
+        - "<=2.0.1"
+        - "<=3.0.1,3.0.0"
+      fixedin:
+        - ">=3.0.2"
+        - "==2.0.2"

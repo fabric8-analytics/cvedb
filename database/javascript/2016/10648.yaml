@@ -1,0 +1,14 @@
+---
+cve: 2016-10648
+title: CVE in marionette-socket-host
+description: >
+    marionette-socket-host is a marionette-js-runner host for sending actions over a socket. marionette-socket-host downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/252
+affected:
+    - name: marionette-socket-host
+      version:
+        - "<=0.1.1"
+      fixedin:
+        []

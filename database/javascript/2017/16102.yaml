@@ -1,0 +1,15 @@
+---
+cve: 2017-16102
+title: CVE in serverhuwenhui
+description: >
+    serverhuwenhui is a simple http server. serverhuwenhui is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the URL.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/serverhuwenhui
+    - https://nodesecurity.io/advisories/366
+affected:
+    - name: serverhuwenhui
+      version:
+        - "<=1.1.0"
+      fixedin:
+        []

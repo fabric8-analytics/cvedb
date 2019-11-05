@@ -1,0 +1,15 @@
+---
+cve: 2017-16101
+title: CVE in serverwg
+description: >
+    serverwg is a simple http server. serverwg is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the URL.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/serverwg
+    - https://nodesecurity.io/advisories/364
+affected:
+    - name: serverwg
+      version:
+        - ">=1.0.0"
+      fixedin:
+        []

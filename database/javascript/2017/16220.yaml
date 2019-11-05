@@ -1,0 +1,15 @@
+---
+cve: 2017-16220
+title: CVE in wind-mvc
+description: >
+    wind-mvc is an mvc framework. wind-mvc is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/wind-mvc
+    - https://nodesecurity.io/advisories/417
+affected:
+    - name: wind-mvc
+      version:
+        []
+      fixedin:
+        - "<=0.0.6"

@@ -1,0 +1,22 @@
+---
+cve: 2016-9587
+title: CVE in ansible
+description: >
+    Ansible before versions 2.1.4, 2.2.1 is vulnerable to an improper input validation in Ansible's handling of data sent from client systems. An attacker with control over a client system being managed by Ansible and the ability to send facts back to the Ansible server could use this flaw to execute arbitrary code on the Ansible server using the Ansible server privileges.
+cvss_v2: 9.3
+references:
+    - http://rhn.redhat.com/errata/RHSA-2017-0195.html
+    - http://rhn.redhat.com/errata/RHSA-2017-0260.html
+    - http://www.securityfocus.com/bid/95352
+    - https://access.redhat.com/errata/RHSA-2017:0448
+    - https://access.redhat.com/errata/RHSA-2017:0515
+    - https://access.redhat.com/errata/RHSA-2017:1685
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2016-9587
+    - https://security.gentoo.org/glsa/201701-77
+    - https://www.exploit-db.com/exploits/41013/
+affected:
+    - name: ansible
+      version:
+        - "<=2.2.0.0"
+      fixedin:
+        - ">=2.2.1.0"

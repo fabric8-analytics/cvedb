@@ -11,3 +11,5 @@ affected:
     - name: exxxxxxxxxxx
       version:
         - "<=1.0.2"
+      fixedin:
+        []

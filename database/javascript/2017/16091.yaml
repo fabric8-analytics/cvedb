@@ -10,4 +10,5 @@ affected:
     - name: xtalk
       version:
         - "<=0.0.7,0.0.2"
-
+      fixedin:
+        []

@@ -10,3 +10,5 @@ affected:
     - name: libsbmlsim
       version:
         - "<=0.0.2"
+      fixedin:
+        []

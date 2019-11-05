@@ -10,3 +10,5 @@ affected:
     - name: wasdk
       version:
         - "<=1.0.54"
+      fixedin:
+        []

@@ -1,0 +1,14 @@
+---
+cve: 2016-10660
+title: CVE in fis-parser-sass-bin
+description: >
+    fis-parser-sass-bin a plugin for fis to compile sass using node-sass-binaries. fis-parser-sass-bin downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested resources with an attacker controlled copy if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/269
+affected:
+    - name: fis-parser-sass-bin
+      version:
+        - "<=1.0.1"
+      fixedin:
+        []

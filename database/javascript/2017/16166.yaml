@@ -11,3 +11,5 @@ affected:
     - name: byucslabsix
       version:
         - "<=0.0.5"
+      fixedin:
+        []

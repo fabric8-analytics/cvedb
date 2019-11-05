@@ -1,0 +1,15 @@
+---
+cve: 2017-16217
+title: CVE in fbr-client
+description: >
+    fbr-client sends files through sockets via socket.io and webRTC. fbr-client is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/fbr-client
+    - https://nodesecurity.io/advisories/449
+affected:
+    - name: fbr-client
+      version:
+        - "<=1.0.3"
+      fixedin:
+        []

@@ -10,3 +10,5 @@ affected:
     - name: robot-js
       version:
         - "<=2.0.0"
+      fixedin:
+        []

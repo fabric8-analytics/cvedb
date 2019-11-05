@@ -11,3 +11,5 @@ affected:
     - name: yzt
       version:
         - "<=1.4.0"
+      fixedin:
+        []

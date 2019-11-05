@@ -1,0 +1,15 @@
+---
+cve: 2016-10638
+title: CVE in js-given
+description: >
+    js-given is a JavaScript frontend to jgiven. js-given downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested binary with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/241
+affected:
+    - name: js-given
+      version:
+        - ">=0.0.1,0.0.17"
+      fixedin:
+        - ">=0.0.8-alpha.1,0.0.18-alpha.0"
+        - ">=0.0.18"

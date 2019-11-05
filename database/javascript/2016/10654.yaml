@@ -10,3 +10,5 @@ affected:
     - name: sfml
       version:
         - "<=0.0.3"
+      fixedin:
+        []

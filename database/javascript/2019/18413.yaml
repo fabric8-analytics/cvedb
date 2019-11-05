@@ -1,0 +1,14 @@
+---
+cve: 2019-18413
+title: CVE in class-validator
+description: >
+    In TypeStack class-validator 0.10.2, validate() input validation can be bypassed because certain internal attributes can be overwritten via a conflicting name. Even though there is an optional forbidUnknownValues parameter that can be used to reduce the risk of this bypass, this option is not documented and thus most developers configure input validation in the vulnerable default manner. With this vulnerability, attackers can launch SQL Injection or XSS attacks by injecting arbitrary malicious input. NOTE: a software maintainer agrees with the "is not documented" finding but suggests that much of the responsibility for the risk lies in a different product.
+cvss_v2: 7.5
+references:
+    - https://github.com/typestack/class-validator/issues/438
+affected:
+    - name: class-validator
+      version:
+        - "<=0.11.0"
+      fixedin:
+        []

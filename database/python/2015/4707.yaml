@@ -1,0 +1,19 @@
+---
+cve: 2015-4707
+title: CVE in ipython
+description: >
+    Cross-site scripting (XSS) vulnerability in IPython before 3.2 allows remote attackers to inject arbitrary web script or HTML via vectors involving JSON error messages and the /api/notebooks path.
+cvss_v2: 4.3
+references:
+    - http://www.openwall.com/lists/oss-security/2015/06/22/7
+    - http://www.securityfocus.com/bid/75328
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1235688
+    - https://github.com/ipython/ipython/commit/7222bd53ad089a65fd610fab4626f9d0ab47dfce
+    - https://github.com/ipython/ipython/commit/c2078a53543ed502efd968649fee1125e0eb549c
+    - https://ipython.org/ipython-doc/3/whatsnew/version3.html
+affected:
+    - name: ipython
+      version:
+        - "<=3.1.0"
+      fixedin:
+        - ">=3.2.0"

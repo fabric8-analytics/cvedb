@@ -10,3 +10,5 @@ affected:
     - name: selenium-standalone-painful
       version:
         - "<=2.39.0-2.7.0"
+      fixedin:
+        []

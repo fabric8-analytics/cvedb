@@ -10,3 +10,5 @@ affected:
     - name: fis-sass-all
       version:
         - "<=0.2.0"
+      fixedin:
+        []

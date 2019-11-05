@@ -10,3 +10,5 @@ affected:
     - name: dalek-browser-ie
       version:
         - "<=0.0.5"
+      fixedin:
+        []

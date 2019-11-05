@@ -7,8 +7,9 @@ cvss_v2: 5.0
 references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/unicorn-list
     - https://nodesecurity.io/advisories/477
-
 affected:
     - name: unicorn-list
       version:
         - "<=1.0.4"
+      fixedin:
+        []

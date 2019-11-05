@@ -10,3 +10,5 @@ affected:
     - name: node-browser
       version:
         - "<=0.0.3"
+      fixedin:
+        []

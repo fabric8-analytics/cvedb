@@ -1,0 +1,15 @@
+---
+cve: 2017-16218
+title: CVE in dgard8.lab6
+description: >
+    dgard8.lab6 is a static file server. dgard8.lab6 is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/dgard8.lab6
+    - https://nodesecurity.io/advisories/444
+affected:
+    - name: dgard8.lab6
+      version:
+        - "==0.0.1"
+      fixedin:
+        []

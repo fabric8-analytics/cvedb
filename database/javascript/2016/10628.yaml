@@ -10,3 +10,5 @@ affected:
     - name: selenium-wrapper
       version:
         - "<=0.0.9"
+      fixedin:
+        []

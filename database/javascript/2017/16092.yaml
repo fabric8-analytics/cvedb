@@ -1,0 +1,15 @@
+---
+cve: 2017-16092
+title: CVE in sencisho
+description: >
+    Sencisho is a simple http server for local development. Sencisho is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the URL.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/sencisho
+    - https://nodesecurity.io/advisories/340
+affected:
+    - name: sencisho
+      version:
+        - "<=0.3.3"
+      fixedin:
+        []

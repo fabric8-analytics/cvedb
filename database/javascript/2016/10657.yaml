@@ -1,0 +1,14 @@
+---
+cve: 2016-10657
+title: CVE in co-cli-installer
+description: >
+    co-cli-installer downloads the co-cli module as part of the install process, but does so over HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping out the requested resources with an attacker controlled copy if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/268
+affected:
+    - name: co-cli-installer
+      version:
+        - "<=0.0.2"
+      fixedin:
+        []

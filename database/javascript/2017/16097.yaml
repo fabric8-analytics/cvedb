@@ -1,0 +1,15 @@
+---
+cve: 2017-16097
+title: CVE in tiny-http
+description: >
+    tiny-http is a simple http server. tiny-http is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the url.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/tiny-http
+    - https://nodesecurity.io/advisories/342
+affected:
+    - name: tiny-http
+      version:
+        - "<=2.0.8"
+      fixedin:
+        []

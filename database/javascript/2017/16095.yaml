@@ -1,0 +1,15 @@
+---
+cve: 2017-16095
+title: CVE in serverliujiayi1
+description: >
+    serverliujiayi1 is a simple http server. serverliujiayi1 is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing "../" in the URL.
+cvss_v2: 5.0
+references:
+    - https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/serverliujiayi1
+    - https://nodesecurity.io/advisories/367
+affected:
+    - name: serverliujiayi1
+      version:
+        - "<=1.1.0"
+      fixedin:
+        []

@@ -7,8 +7,9 @@ cvss_v2: 5.0
 references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/simple-npm-registry
     - https://nodesecurity.io/advisories/452
-
 affected:
     - name: simple-npm-registry
       version:
         - "<=0.0.4"
+      fixedin:
+        []

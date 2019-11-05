@@ -1,0 +1,15 @@
+---
+cve: 2017-18256
+title: CVE in brave-browser
+description: >
+    Brave Browser before 0.13.0 allows remote attackers to cause a denial of service (resource consumption) via a long alert() argument in JavaScript code, because window dialogs are mishandled.
+cvss_v2: 4.3
+references:
+    - https://hackerone.com/reports/176066
+    - https://www.exploit-db.com/exploits/44474/
+affected:
+    - name: brave-browser
+      version:
+        - "<=0.13.0"
+      fixedin:
+        []

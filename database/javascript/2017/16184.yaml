@@ -11,3 +11,5 @@ affected:
     - name: scott-blanch-weather-app
       version:
         - "<=1.0.0"
+      fixedin:
+        []

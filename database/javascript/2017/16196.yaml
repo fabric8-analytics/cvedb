@@ -11,3 +11,5 @@ affected:
     - name: quickserver
       version:
         - "<=1.1.0"
+      fixedin:
+        []

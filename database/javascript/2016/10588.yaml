@@ -1,0 +1,14 @@
+---
+cve: 2016-10588
+title: CVE in nw
+description: >
+    nw is an installer for nw.js. nw downloads zipped resources over HTTP, It may be possible to cause remote code execution (RCE) by swapping out the requested zip file with an attacker controlled binary if the attacker is on the network or positioned in between the user and the remote server.
+cvss_v2: 9.3
+references:
+    - https://nodesecurity.io/advisories/166
+affected:
+    - name: nw
+      version:
+        - "<=0.23.6-sdk"
+      fixedin:
+        - ">=0.23.6-1"

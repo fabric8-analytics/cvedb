@@ -7,8 +7,9 @@ cvss_v2: 5.0
 references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/mockserve
     - https://nodesecurity.io/advisories/445
-
 affected:
     - name: mockserve
       version:
         - "<=2.0.6"
+      fixedin:
+        []

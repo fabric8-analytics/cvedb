@@ -1,0 +1,15 @@
+---
+cve: 2016-10529
+title: CVE in droppy
+description: >
+    Droppy versions <3.5.0 does not perform any verification for cross-domain websocket requests. An attacker is able to make a specially crafted page that can send requests as the context of the currently logged in user. For example this means the malicious user could add a new admin account under his control and delete others.
+cvss_v2: 6.8
+references:
+    - https://nodesecurity.io/advisories/91
+affected:
+    - name: droppy
+      version:
+        - "<=3.4.0"
+      fixedin:
+        - ">=3.5.0"
+        - "==0.9.32-0"

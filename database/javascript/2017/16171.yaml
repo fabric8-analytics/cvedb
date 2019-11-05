@@ -7,8 +7,9 @@ cvss_v2: 5.0
 references:
     - https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/hcbserver
     - https://nodesecurity.io/advisories/414
-
 affected:
     - name: hcbserver
       version:
         - "==1.0.0"
+      fixedin:
+        []

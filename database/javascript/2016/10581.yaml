@@ -10,3 +10,5 @@ affected:
     - name: steroids
       version:
         - "<=4.1.27"
+      fixedin:
+        []

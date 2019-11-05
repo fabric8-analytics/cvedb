@@ -10,3 +10,5 @@ affected:
     - name: arcanist
       version:
         - "<=0.0.1"
+      fixedin:
+        []

@@ -11,3 +11,5 @@ affected:
     - name: whispercast
       version:
         - "==0.1.0"
+      fixedin:
+        []

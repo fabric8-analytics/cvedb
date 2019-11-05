@@ -10,3 +10,5 @@ affected:
     - name: static-resource-server
       version:
         - "<=1.7.2"
+      fixedin:
+        []

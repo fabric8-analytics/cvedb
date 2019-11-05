@@ -1,0 +1,15 @@
+---
+cve: 2019-17592
+title: CVE in csv-parse
+description: >
+    The csv-parse module before 4.4.6 for Node.js is vulnerable to Regular Expression Denial of Service. The __isInt() function contains a malformed regular expression that processes large crafted input very slowly. This is triggered when using the cast option.
+cvss_v2: 5.0
+references:
+    - https://github.com/adaltas/node-csv-parse/commit/b9d35940c6815cdf1dfd6b21857a1f6d0fd51e4a
+    - https://www.npmjs.com/advisories/1171
+affected:
+    - name: csv-parse
+      version:
+        - "<=4.4.5"
+      fixedin:
+        - ">=4.4.6"
