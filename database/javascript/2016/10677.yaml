@@ -10,3 +10,5 @@ affected:
     - name: google-closure-tools-latest
       version:
         - "<=0.1.1"
+      fixedin:
+        []
