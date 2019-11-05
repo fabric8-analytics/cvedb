@@ -9,6 +9,6 @@ references:
 affected:
   - name: mariadb
     version:
-      - ">=0.0.2-security"
+      - "<=2.1.2"
     fixedin:
-      - ">=0.7.0"
+      []
