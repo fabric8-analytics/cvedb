@@ -10,3 +10,5 @@ affected:
     - name: igniteui
       version:
         - "<=0.0.5"
+      fixedin:
+        []
