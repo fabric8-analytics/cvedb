@@ -10,3 +10,5 @@ affected:
     - name: mystem-fix
       version:
         - "<=0.0.5"
+      fixedin:
+        []
