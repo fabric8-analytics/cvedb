@@ -10,3 +10,5 @@ affected:
     - name: haxe
       version:
         - "<=5.0.10"
+      fixedin:
+        - ">=5.1.1"
