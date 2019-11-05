@@ -10,3 +10,5 @@ affected:
     - name: webdrvr
       version:
         - "<=2.43.0-1"
+      fixedin:
+        []
