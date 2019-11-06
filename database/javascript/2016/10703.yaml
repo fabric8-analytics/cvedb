@@ -1,0 +1,15 @@
+---
+cve: 2016-10703
+title: CVE in ecstatic
+description: >
+    A regular expression Denial of Service (DoS) vulnerability in the file lib/ecstatic.js of the ecstatic npm package, before version 2.0.0, allows a remote attacker to overload and crash a server by passing a maliciously crafted string.
+cvss_v2: 7.8
+references:
+    - https://github.com/jfhbrook/node-ecstatic/commit/71ce93988ead4b561a8592168c72143907189f01
+    - https://www.checkmarx.com/advisories/denial-of-service-dos-vulnerability-in-ecstatic-npm-package/
+affected:
+    - name: ecstatic
+      version:
+        - "<=1.4.1"
+      fixedin:
+        - ">=2.0.0"
