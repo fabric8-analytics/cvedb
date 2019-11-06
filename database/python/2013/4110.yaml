@@ -1,0 +1,17 @@
+---
+cve: 2013-4110
+title: CVE in bp-chat
+description: >
+    Cryptocat has an Unspecified Chat Participant User List Disclosure
+cvss_v2: 5.0
+references:
+    - https://tobtu.com/decryptocat.php
+    - https://vuldb.com/?id.9446
+    - https://www.openwall.com/lists/oss-security/2013/07/10/15
+    - https://www.securityfocus.com/bid/61117
+affected:
+    - name: bp-chat
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
