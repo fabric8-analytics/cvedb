@@ -1,0 +1,16 @@
+---
+cve: 2019-10249
+title: CVE in org.eclipse.xtext:org.eclipse.xtext.xtext.generator
+description: >
+    All Xtext & Xtend versions prior to 2.18.0 were built using HTTP instead of HTTPS file transfer and thus the built artifacts may have been compromised.
+cvss_v2: 6.8
+references:
+    - https://bugs.eclipse.org/bugs/show_bug.cgi?id=546996
+    - https://github.com/eclipse/xtext-xtend/issues/759
+affected:
+    - groupId: org.eclipse.xtext
+      artifactId: org.eclipse.xtext.xtext.generator
+      version:
+        - "<=2.17.1"
+      fixedin:
+        - ">=2.18.0.M1"
