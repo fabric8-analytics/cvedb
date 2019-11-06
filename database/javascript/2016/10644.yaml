@@ -9,6 +9,6 @@ references:
 affected:
     - name: slimerjs-edge
       version:
-        - ">=0.10.0-pre-3"
+        - "<=0.10.0-pre-3"
       fixedin:
         []
