@@ -1,0 +1,15 @@
+---
+cve: 2019-0350
+title: CVE in database-connector
+description: >
+    SAP HANA Database, versions 1.0, 2.0, allows an unauthorized attacker to send a malformed connection request, which crashes the indexserver of an SAP HANA instance, leading to Denial of Service
+cvss_v2: 5.0
+references:
+    - https://launchpad.support.sap.com/#/notes/2798243
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=523998017
+affected:
+    - name: database-connector
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=2.1.0"
