@@ -9,6 +9,6 @@ references:
 affected:
     - name: redis-srvr
       version:
-        - ">=2.8.17-beta.1"
+        - "<=2.8.17-beta.6"
       fixedin:
         []
