@@ -1,0 +1,14 @@
+---
+cve: 2010-0737
+title: CVE in azure-cli-network
+description: >
+    A missing permission check was found in The CLI in JBoss Operations Network before 2.3.1 does not properly check permissions, which allows JBoss ON users to perform management tasks and configuration changes with the privileges of the administrator user.
+cvss_v2: 5.2
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2010-0737
+affected:
+    - name: azure-cli-network
+      version:
+        - "<=2.3.0"
+      fixedin:
+        - ">=2.3.1"
