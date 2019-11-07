@@ -1,0 +1,14 @@
+---
+cve: 2013-1945
+title: CVE in atmos-ld
+description: >
+    ruby193 uses an insecure LD_LIBRARY_PATH setting.
+cvss_v2: 2.1
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-1945
+affected:
+    - name: atmos-ld
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
