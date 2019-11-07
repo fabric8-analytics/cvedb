@@ -1,0 +1,15 @@
+---
+cve: 2019-8119
+title: CVE in magento
+description: >
+    A remote code execution vulnerability exists in Magento 2.1 prior to 2.1.19, Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3. An authenticated admin user with import product privileges can delete files through bulk product import and inject code into XSLT file. The combination of these manipulations can lead to remote code execution.
+cvss_v2: 6.5
+references:
+    - https://magento.com/security/patches/magento-2.3.3-and-2.2.10-security-update
+affected:
+    - name: magento
+      version:
+        - "<=2.2,2.1"
+      fixedin:
+        - ">=3.0"
+        - "<=2.0,0.1.0"
