@@ -1,0 +1,16 @@
+---
+cve: 2013-4280
+title: CVE in azure-mgmt-servermanager
+description: >
+    Insecure temporary file vulnerability in RedHat vsdm 4.9.6.
+cvss_v2: 2.1
+references:
+    - https://access.redhat.com/security/cve/cve-2013-4280
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-4280
+    - https://security-tracker.debian.org/tracker/CVE-2013-4280
+affected:
+    - name: azure-mgmt-servermanager
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - "<=1.2.0,1.0.0"
