@@ -1,0 +1,15 @@
+---
+cve: 2009-5042
+title: CVE in @kata-kit/doc-utils
+description: >
+    python-docutils allows insecure usage of temporary files
+cvss_v2: 6.4
+references:
+    - https://security-tracker.debian.org/tracker/CVE-2009-5042
+affected:
+    - name: @kata-kit/doc-utils
+      version:
+        - "<=0.5.2,0.5.2"
+      fixedin:
+        - ">=0.6.0"
+        - "<=0.5.1,0.5.0"
