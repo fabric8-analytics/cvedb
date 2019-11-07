@@ -1,0 +1,15 @@
+---
+cve: 2016-3077
+title: CVE in com.sos-berlin.jobscheduler.engine:engine-job-api
+description: >
+    The VersionMapper.fromKernelVersionString method in oVirt Engine allows remote authenticated users to cause a denial of service (process crash) for all VMs.
+cvss_v2: 4.0
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1321972
+affected:
+    - groupId: com.sos-berlin.jobscheduler.engine
+      artifactId: engine-job-api
+      version:
+        []
+      fixedin:
+        - ">=1.9.8"
