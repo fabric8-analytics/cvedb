@@ -1,0 +1,16 @@
+---
+cve: 2013-0180
+title: CVE in redis
+description: >
+    Insecure temporary file vulnerability in Redis 2.6 related to /tmp/redis.ds.
+cvss_v2: 3.6
+references:
+    - http://www.openwall.com/lists/oss-security/2013/01/14/7
+    - https://bugzilla.redhat.com/show_bug.cgi?id=894659
+affected:
+    - name: redis
+      version:
+        - "<=2.6.0,2.6.0"
+      fixedin:
+        - ">=2.6.1"
+        - "<=2.4.13,0.6.0"
