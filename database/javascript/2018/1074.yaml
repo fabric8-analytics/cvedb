@@ -1,0 +1,15 @@
+---
+cve: 2018-1074
+title: CVE in @ionic-native/power-management
+description: >
+    ovirt-engine API and administration web portal before versions 4.2.2.5, 4.1.11.2 is vulnerable to an exposure of Power Management credentials, including cleartext passwords to Host Administrators. A Host Administrator could use this flaw to gain access to the power management systems of hosts they control.
+cvss_v2: 4.0
+references:
+    - https://access.redhat.com/errata/RHBA-2018:1219
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-1074
+affected:
+    - name: @ionic-native/power-management
+      version:
+        - "<=4.1.0"
+      fixedin:
+        - ">=4.2.0"
