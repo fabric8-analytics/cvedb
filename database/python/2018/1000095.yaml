@@ -1,0 +1,16 @@
+---
+cve: 2018-1000095
+title: CVE in ovirt-engine-sdk-python
+description: >
+    oVirt version 4.2.0 to 4.2.2 contains a Cross Site Scripting (XSS) vulnerability in the name/description of VMs portion of the web admin application. This vulnerability appears to have been fixed in version 4.2.3.
+cvss_v2: 3.5
+references:
+    - https://gerrit.ovirt.org/#/c/87265/2/frontend/webadmin/modules/webadmin/src/main/java/org/ovirt/engine/ui/webadmin/widget/host/HostNetworkInterfaceListViewItem.java
+    - https://gerrit.ovirt.org/c/87265/
+affected:
+    - name: ovirt-engine-sdk-python
+      version:
+        - "<=4.2.2,4.2.1a2"
+      fixedin:
+        - ">=4.2.3"
+        - "<=4.1.7,3.3.0.3-1"
