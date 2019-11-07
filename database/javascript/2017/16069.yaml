@@ -9,8 +9,8 @@ references:
 affected:
     - name: nodeffmpeg
       version:
-        - "==1.0.2"
-        - "==1.0.1"
-      fixedin:
-        - "==0.0.1-security"
         - "==0.0.2-security"
+        - "==0.0.1-security"
+        - "<=1.0.2"
+      fixedin:
+        []
