@@ -1,0 +1,20 @@
+---
+cve: 2013-4751
+title: CVE in cz.jirutka.validator:validator-collection
+description: >
+    php-symfony2-Validator has loss of information during serialization
+cvss_v2: 4.9
+references:
+    - http://lists.fedoraproject.org/pipermail/package-announce/2013-August/114380.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2013-August/114436.html
+    - http://symfony.com/blog/security-releases-symfony-2-0-24-2-1-12-2-2-5-and-2-3-3-released
+    - http://www.securityfocus.com/bid/61709
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-4751
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/86364
+affected:
+    - groupId: cz.jirutka.validator
+      artifactId: validator-collection
+      version:
+        - "<=2.2.0,2.0"
+      fixedin:
+        - "<=1.0.1,1.0"
