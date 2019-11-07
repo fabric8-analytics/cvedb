@@ -1,0 +1,16 @@
+---
+cve: 2019-13066
+title: CVE in de.pro-vision.maven:de.pro-vision.maven.build-tools.global-build-tools
+description: >
+    Sahi Pro 8.0.0 has a script manager arena located at _s_/dyn/pro/DBReports with many different areas that are vulnerable to reflected XSS, by updating a script's Script Name, Suite Name, Base URL, Android, iOS, Scripts Run, Origin Machine, or Comment field. The sql parameter can be used to trigger reflected XSS.
+cvss_v2: 4.3
+references:
+    - https://packetstormsecurity.com/files/154985/Sahi-Pro-8.x-Cross-Site-Scripting.html
+    - https://sahipro.com/downloads-archive/
+affected:
+    - groupId: de.pro-vision.maven
+      artifactId: de.pro-vision.maven.build-tools.global-build-tools
+      version:
+        - "<=8"
+      fixedin:
+        - ">=9"
