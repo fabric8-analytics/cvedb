@@ -9,6 +9,6 @@ references:
 affected:
     - name: openssl.js
       version:
-        - "<=0.0.2-security"
+        - "<=1.1.1"
       fixedin:
         []
