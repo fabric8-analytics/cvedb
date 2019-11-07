@@ -1,0 +1,16 @@
+---
+cve: 2014-0152
+title: CVE in org.ovirt.engine.sdk:ovirt-engine-sdk-java
+description: >
+    Session fixation vulnerability in the web admin interface in oVirt 3.4.0 and earlier allows remote attackers to hijack web sessions via unspecified vectors.
+cvss_v2: 6.8
+references:
+    - http://gerrit.ovirt.org/#/c/25959/
+    - http://www.ovirt.org/Security_advisories
+affected:
+    - groupId: org.ovirt.engine.sdk
+      artifactId: ovirt-engine-sdk-java
+      version:
+        - "<=3.3.5.0"
+      fixedin:
+        - ">=3.4.0.1-1"
