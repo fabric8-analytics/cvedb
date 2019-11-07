@@ -1,0 +1,15 @@
+---
+cve: 2019-8232
+title: CVE in magento
+description: >
+    In Magento prior to 1.9.4.3, Magento prior to 1.14.4.3, Magento 2.2 prior to 2.2.10, and Magento 2.3 prior to 2.3.3 or 2.3.2-p1, an authenticated user with administrative privileges for the import feature can execute arbitrary code through a race condition that allows webserver configuration file modification.
+cvss_v2: 6.0
+references:
+    - https://magento.com/security/patches/supee-11219
+affected:
+    - name: magento
+      version:
+        - "<=2.2,2.2"
+      fixedin:
+        - ">=3.0"
+        - "<=2.1,0.1.0"
