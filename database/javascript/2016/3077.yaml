@@ -1,0 +1,14 @@
+---
+cve: 2016-3077
+title: CVE in engine.io
+description: >
+    The VersionMapper.fromKernelVersionString method in oVirt Engine allows remote authenticated users to cause a denial of service (process crash) for all VMs.
+cvss_v2: 4.0
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1321972
+affected:
+    - name: engine.io
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
