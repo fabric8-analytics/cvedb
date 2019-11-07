@@ -1,0 +1,16 @@
+---
+cve: 2010-2490
+title: CVE in eslint-config-mumble
+description: >
+    Mumble: murmur-server has DoS due to malformed client query
+cvss_v2: 4.0
+references:
+    - https://access.redhat.com/security/cve/cve-2010-2490
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2010-2490
+    - https://security-tracker.debian.org/tracker/CVE-2010-2490
+affected:
+    - name: eslint-config-mumble
+      version:
+        []
+      fixedin:
+        - ">=0.0.11"
