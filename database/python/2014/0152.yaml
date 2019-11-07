@@ -1,0 +1,15 @@
+---
+cve: 2014-0152
+title: CVE in ovirt-engine-sdk-python
+description: >
+    Session fixation vulnerability in the web admin interface in oVirt 3.4.0 and earlier allows remote attackers to hijack web sessions via unspecified vectors.
+cvss_v2: 6.8
+references:
+    - http://gerrit.ovirt.org/#/c/25959/
+    - http://www.ovirt.org/Security_advisories
+affected:
+    - name: ovirt-engine-sdk-python
+      version:
+        - "<=3.3.5.0"
+      fixedin:
+        - ">=3.4.0.1-1"
