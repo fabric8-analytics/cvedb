@@ -1,0 +1,15 @@
+---
+cve: 2019-8133
+title: CVE in magento
+description: >
+    A security bypass vulnerability exists in Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 or 2.3.2-p1. A user with privileges to generate sitemaps can bypass configuration that restricts directory access. The bypass allows overwrite of a subset of configuration files which can lead to denial of service.
+cvss_v2: 4.0
+references:
+    - https://magento.com/security/patches/magento-2.3.3-and-2.2.10-security-update
+affected:
+    - name: magento
+      version:
+        - "<=2.2,2.2"
+      fixedin:
+        - ">=3.0"
+        - "<=2.1,0.1.0"
