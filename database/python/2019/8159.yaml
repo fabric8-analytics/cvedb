@@ -1,0 +1,15 @@
+---
+cve: 2019-8159
+title: CVE in magento
+description: >
+    A remote code execution vulnerability exists in Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 or 2.3.2-p1. An authenticated user with system data manipulation privileges can execute aribitrary code through arbitrary file deletion and OS command injection.
+cvss_v2: 9.0
+references:
+    - https://magento.com/security/patches/magento-2.3.3-and-2.2.10-security-update
+affected:
+    - name: magento
+      version:
+        - "<=2.2,2.2"
+      fixedin:
+        - ">=3.0"
+        - "<=2.1,0.1.0"
