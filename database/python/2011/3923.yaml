@@ -1,0 +1,20 @@
+---
+cve: 2011-3923
+title: CVE in apache-libcloud
+description: >
+    Apache Struts before 2.3.1.2 allows remote attackers to bypass security protections in the ParameterInterceptor class and execute arbitrary commands.
+cvss_v2: 7.5
+references:
+    - http://seclists.org/fulldisclosure/2014/Jul/38
+    - http://www.exploit-db.com/exploits/24874
+    - http://www.securityfocus.com/bid/51628
+    - http://www.securitytracker.com/id?1026575
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2011-3923
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/72585
+    - https://security-tracker.debian.org/tracker/CVE-2011-3923
+affected:
+    - name: apache-libcloud
+      version:
+        - "<=2.3.0"
+      fixedin:
+        - ">=2.4.0"
