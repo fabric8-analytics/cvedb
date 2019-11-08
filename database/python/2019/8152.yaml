@@ -1,0 +1,15 @@
+---
+cve: 2019-8152
+title: CVE in magento
+description: >
+    A stored cross-site scripting (XSS) vulnerability exists in in Magento 1 prior to 1.9.4.3 and 1.14.4.3, Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 or 2.3.2-p1. An authenticated user with access to the wysiwyg editor can abuse the blockDirective() function and inject malicious javascript in the cache of the admin dashboard.
+cvss_v2: 3.5
+references:
+    - https://magento.com/security/patches/supee-11219
+affected:
+    - name: magento
+      version:
+        - "<=2.2,2.2"
+      fixedin:
+        - ">=3.0"
+        - "<=2.1,0.1.0"
