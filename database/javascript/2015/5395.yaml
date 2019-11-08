@@ -1,0 +1,18 @@
+---
+cve: 2015-5395
+title: CVE in csrf
+description: >
+    Cross-site request forgery (CSRF) vulnerability in SOGo before 3.1.0.
+cvss_v2: 6.8
+references:
+    - http://www.openwall.com/lists/oss-security/2015/07/10/9
+    - https://github.com/inverse-inc/sogo/commit/582baf2960969c73f98643e46cfb49432c30b711
+    - https://lists.debian.org/debian-lts/2016/05/msg00197.html
+    - https://security-tracker.debian.org/tracker/CVE-2015-5395/
+    - https://sogo.nu/bugs/view.php?id=3246
+affected:
+    - name: csrf
+      version:
+        - "<=3.0.6"
+      fixedin:
+        - ">=3.1.0"
