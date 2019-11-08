@@ -1,0 +1,14 @@
+---
+cve: 2019-16876
+title: CVE in portainer-api
+description: >
+    Portainer before 1.22.1 allows Directory Traversal.
+cvss_v2: 5.0
+references:
+    - https://fortiguard.com/zeroday/FG-VD-19-123
+affected:
+    - name: portainer-api
+      version:
+        - "<=1.20.2"
+      fixedin:
+        - ">=1.22.1"
