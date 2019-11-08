@@ -1,0 +1,15 @@
+---
+cve: 2019-15966
+title: CVE in com.discursive.wicket.media:wicket-media
+description: >
+    A vulnerability in the web application of Cisco TelePresence Advanced Media Gateway could allow an authenticated, remote attacker to cause a denial of service (DoS) condition on an affected device. The vulnerability is due to the lack of input validation in the web application. An attacker could exploit this vulnerability by sending a crafted authenticated HTTP request to the device. An exploit could allow the attacker to stop services on an affected device. The device may become inoperable and results in a denial of service (DoS) condition.
+cvss_v2: 6.8
+references:
+    - https://quickview.cloudapps.cisco.com/quickview/bug/CSCvr69362
+affected:
+    - groupId: com.discursive.wicket.media
+      artifactId: wicket-media
+      version:
+        - "<=1.1,1.1"
+      fixedin:
+        - "<=1.0,1.0"
