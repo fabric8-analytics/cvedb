@@ -1,0 +1,16 @@
+---
+cve: 2019-8155
+title: CVE in org.ops4j.pax.url:pax-url-cache
+description: >
+    Magento prior to 1.9.4.3 and prior to 1.14.4.3 included a user's CSRF token in the URL of a GET request. This could be exploited by an attacker with access to network traffic to perform unauthorized actions.
+cvss_v2: 5.0
+references:
+    - https://magento.com/security/patches/supee-11219
+affected:
+    - groupId: org.ops4j.pax.url
+      artifactId: pax-url-cache
+      version:
+        - "<=1.6.0,1.5.0"
+      fixedin:
+        - ">=2.0.0"
+        - "<=1.4.2,1.0.0"
