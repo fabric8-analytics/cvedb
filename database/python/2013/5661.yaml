@@ -1,0 +1,16 @@
+---
+cve: 2013-5661
+title: CVE in bind
+description: >
+    Cache Poisoning issue exists in DNS Response Rate Limiting.
+cvss_v2: 2.6
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-5661
+    - https://bugzilla.suse.com/show_bug.cgi?id=CVE-2013-5661
+    - https://security-tracker.debian.org/tracker/CVE-2013-5661
+affected:
+    - name: bind
+      version:
+        - "<=1.2"
+      fixedin:
+        - ">=1.3.0"
