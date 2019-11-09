@@ -1,0 +1,15 @@
+---
+cve: 2019-8136
+title: CVE in magento
+description: >
+    An insecure component vulnerability exists in Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 or 2.3.2-p1. Magento 2 codebase leveraged outdated versions of HTTP specification abstraction implemented in symphony component.
+cvss_v2: 7.5
+references:
+    - https://magento.com/security/patches/magento-2.3.3-and-2.2.10-security-update
+affected:
+    - name: magento
+      version:
+        - "<=2.2,2.2"
+      fixedin:
+        - ">=3.0"
+        - "<=2.1,0.1.0"
