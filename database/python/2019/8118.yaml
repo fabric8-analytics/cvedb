@@ -1,0 +1,15 @@
+---
+cve: 2019-8118
+title: CVE in magento
+description: >
+    Magento 2.1 prior to 2.1.19, Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 uses weak cryptographic function to store the failed login attempts for customer accounts.
+cvss_v2: 5.0
+references:
+    - https://magento.com/security/patches/magento-2.3.3-and-2.2.10-security-update
+affected:
+    - name: magento
+      version:
+        - "<=2.2,2.1"
+      fixedin:
+        - ">=3.0"
+        - "<=2.0,0.1.0"
