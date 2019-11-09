@@ -1,0 +1,14 @@
+---
+cve: 2019-16872
+title: CVE in portainer-api
+description: >
+    Portainer before 1.22.1 has Incorrect Access Control (issue 1 of 4).
+cvss_v2: 9.0
+references:
+    - https://fortiguard.com/zeroday/FG-VD-19-120
+affected:
+    - name: portainer-api
+      version:
+        - "<=1.20.2"
+      fixedin:
+        - ">=1.22.1"
