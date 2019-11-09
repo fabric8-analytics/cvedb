@@ -1,0 +1,15 @@
+---
+cve: 2010-2446
+title: CVE in mupx-reaction
+description: >
+    Rbot Reaction plugin allows command execution
+cvss_v2: 7.5
+references:
+    - https://security-tracker.debian.org/tracker/CVE-2010-2446
+    - https://www.securityfocus.com/archive/1/509719/30/0/threaded
+affected:
+    - name: mupx-reaction
+      version:
+        []
+      fixedin:
+        - ">=1.5.2"
