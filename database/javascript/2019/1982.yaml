@@ -1,0 +1,15 @@
+---
+cve: 2019-1982
+title: CVE in @process-engine/management_api_http
+description: >
+    A vulnerability in the HTTP traffic filtering component of Cisco Firepower Threat Defense Software, Cisco FirePOWER Services Software for ASA, and Cisco Firepower Management Center Software could allow an unauthenticated, remote attacker to bypass filtering protections. The vulnerability is due to improper handling of HTTP requests, including those communicated over a secure HTTPS connection, that contain maliciously crafted headers. An attacker could exploit this vulnerability by sending malicious requests to an affected device. An exploit could allow the attacker to bypass filtering and deliver malicious requests to protected systems, allowing attackers to deliver malicious content that would otherwise be blocked.
+cvss_v2: 5.0
+references:
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20190816-ftd-http
+affected:
+    - name: @process-engine/management_api_http
+      version:
+        - "<=3.0.0,3.0.0"
+      fixedin:
+        - ">=3.0.0-cdc20da3-b9"
+        - "<=2.0.0-688f16ba-b5,0.1.0-a30faf51-b1"
