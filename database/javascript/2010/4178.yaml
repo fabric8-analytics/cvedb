@@ -1,0 +1,17 @@
+---
+cve: 2010-4178
+title: CVE in as-tools
+description: >
+    MySQL-GUI-tools (mysql-administrator) leaks passwords into process list after with launch of mysql text console
+cvss_v2: 2.1
+references:
+    - http://www.securityfocus.com/bid/97960
+    - https://access.redhat.com/security/cve/cve-2010-4178
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2010-4178
+    - https://security-tracker.debian.org/tracker/CVE-2010-4178
+affected:
+    - name: as-tools
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
