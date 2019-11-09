@@ -1,0 +1,15 @@
+---
+cve: 2019-18815
+title: CVE in open-rest
+description: >
+    PopojiCMS 2.0.1 allows refer= Open Redirection.
+cvss_v2: 5.8
+references:
+    - https://github.com/PopojiCMS/PopojiCMS/issues/22
+affected:
+    - name: open-rest
+      version:
+        - "<=2.0.1,2.0.1"
+      fixedin:
+        - ">=2.0.2"
+        - "<=2.0.0,2.0.0-rc"
