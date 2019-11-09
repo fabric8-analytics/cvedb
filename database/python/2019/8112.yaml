@@ -1,0 +1,15 @@
+---
+cve: 2019-8112
+title: CVE in magento
+description: >
+    A security bypass vulnerability exists in Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 or 2.3.2-p1. An unauthenticated user can bypass the email confirmation mechanism via GET request that captures relevant account data obtained from the POST response related to new user creation.
+cvss_v2: 5.0
+references:
+    - https://magento.com/security/patches/magento-2.3.3-and-2.2.10-security-update
+affected:
+    - name: magento
+      version:
+        - "<=2.2,2.2"
+      fixedin:
+        - ">=3.0"
+        - "<=2.1,0.1.0"
