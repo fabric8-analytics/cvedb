@@ -1,0 +1,15 @@
+---
+cve: 2019-8158
+title: CVE in magento
+description: >
+    An XPath entity injection vulnerability exists in Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 or 2.3.2-p1. An attacker can craft a GET request to page cache block rendering module that gets passed to XML data processing engine without validation. The crafted key/value GET request data allows an attacker to limited access to underlying XML data.
+cvss_v2: 7.5
+references:
+    - https://magento.com/security/patches/magento-2.3.3-and-2.2.10-security-update
+affected:
+    - name: magento
+      version:
+        - "<=2.2,2.2"
+      fixedin:
+        - ">=3.0"
+        - "<=2.1,0.1.0"
