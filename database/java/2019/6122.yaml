@@ -1,0 +1,16 @@
+---
+cve: 2019-6122
+title: CVE in com.truward.brikar.error:error-model
+description: >
+    A Username Enumeration via Error Message issue was discovered in NiceHash Miner before 2.0.3.0 because an "EMAIL DOES NOT EXIST" error message occurs whenever a submitted email address is incorrect, but there is a different error message for invalid credentials with a correct email address.
+cvss_v2: 4.3
+references:
+    - https://cyberworldmirror.com/nicehash-vulnerability-leaked-miners-information/
+    - https://docs.google.com/document/d/1OubhuTRzuTMnkZ9SCFb8BtJVbTu840wDxyWu3VWHwvs/edit
+affected:
+    - groupId: com.truward.brikar.error
+      artifactId: error-model
+      version:
+        - "<=2.0.2"
+      fixedin:
+        - ">=2.0.3"
