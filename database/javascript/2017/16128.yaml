@@ -9,6 +9,6 @@ references:
 affected:
     - name: npm-script-demo
       version:
-        - "<=0.0.1-security"
+        - "==0.0.1-security"
       fixedin:
         []
