@@ -1,0 +1,15 @@
+---
+cve: 2019-17495
+title: CVE in swagger-ui
+description: >
+    A Cascading Style Sheets (CSS) injection vulnerability in Swagger UI before 3.23.11 allows attackers to use the Relative Path Overwrite (RPO) technique to perform CSS-based input field value exfiltration, such as exfiltration of a CSRF token value. In other words, this product intentionally allows the embedding of untrusted JSON data from remote servers, but it was not previously known that <style>@import within the JSON data was a functional attack method.
+cvss_v2: 7.5
+references:
+    - https://github.com/swagger-api/swagger-ui/releases/tag/v3.23.11
+    - https://github.com/tarantula-team/CSS-injection-in-Swagger-UI
+affected:
+    - name: swagger-ui
+      version:
+        - "<=3.23.10"
+      fixedin:
+        - ">=3.23.11"
