@@ -1,0 +1,15 @@
+---
+cve: 2019-17626
+title: CVE in reportlab
+description: >
+    ReportLab through 3.5.26 allows remote code execution because of toColor(eval(arg)) in colors.py, as demonstrated by a crafted XML document with '<span color="' followed by arbitrary Python code.
+cvss_v2: 7.5
+references:
+    - https://bitbucket.org/rptlab/reportlab/issues/199/eval-in-colorspy-leads-to-remote-code
+    - https://bitbucket.org/rptlab/reportlab/src/default/CHANGES.md
+affected:
+    - name: reportlab
+      version:
+        - "<=3.5.26"
+      fixedin:
+        - ">=3.5.28"
