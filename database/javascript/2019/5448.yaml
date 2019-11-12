@@ -1,0 +1,16 @@
+---
+cve: 2019-5448
+title: CVE in yarn
+description: >
+    Yarn before 1.17.3 is vulnerable to Missing Encryption of Sensitive Data due to HTTP URLs in lockfile causing unencrypted authentication data to be sent over the network.
+cvss_v2: 4.3
+references:
+    - https://github.com/ChALkeR/notes/blob/master/Yarn-vuln.md
+    - https://hackerone.com/reports/640904
+    - https://yarnpkg.com/blog/2019/07/12/recommended-security-update/
+affected:
+    - name: yarn
+      version:
+        - "<=1.17.2"
+      fixedin:
+        - ">=1.17.3"
