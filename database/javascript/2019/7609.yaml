@@ -1,0 +1,17 @@
+---
+cve: 2019-7609
+title: CVE in kibana
+description: >
+    Kibana versions before 5.6.15 and 6.6.1 contain an arbitrary code execution flaw in the Timelion visualizer. An attacker with access to the Timelion application could send a request that will attempt to execute javascript code. This could possibly lead to an attacker executing arbitrary commands with permissions of the Kibana process on the host system.
+cvss_v2: 10.0
+references:
+    - https://access.redhat.com/errata/RHBA-2019:2824
+    - https://access.redhat.com/errata/RHSA-2019:2860
+    - https://discuss.elastic.co/t/elastic-stack-6-6-1-and-5-6-15-security-update/169077
+    - https://www.elastic.co/community/security
+affected:
+    - name: kibana
+      version:
+        - "<=5.1.1"
+      fixedin:
+        []
