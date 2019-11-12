@@ -1,0 +1,16 @@
+---
+cve: 2019-17206
+title: CVE in rediswrapper
+description: >
+    Uncontrolled deserialization of a pickled object in models.py in Frost Ming rediswrapper (aka Redis Wrapper) before 0.3.0 allows attackers to execute arbitrary scripts.
+cvss_v2: 7.5
+references:
+    - https://github.com/frostming/rediswrapper/compare/v0.2.1...v0.3.0
+    - https://github.com/frostming/rediswrapper/pull/1
+    - https://github.com/frostming/rediswrapper/releases/tag/v0.3.0
+affected:
+    - name: rediswrapper
+      version:
+        - "<=0.2.1"
+      fixedin:
+        - ">=0.3.0"
