@@ -1,10 +1,12 @@
 ---
 cve: 2019-12781
-title: CVE in django
+title: CVE in Django
 description: >
     An issue was discovered in Django 1.11 before 1.11.22, 2.1 before 2.1.10, and 2.2 before 2.2.3. An HTTP request is not redirected to HTTPS when the SECURE_PROXY_SSL_HEADER and SECURE_SSL_REDIRECT settings are used, and the proxy connects to Django via HTTPS. In other words, django.http.HttpRequest.scheme has incorrect behavior when a client uses HTTP.
 cvss_v2: 5.0
 references:
+    - http://lists.opensuse.org/opensuse-security-announce/2019-08/msg00006.html
+    - http://lists.opensuse.org/opensuse-security-announce/2019-08/msg00025.html
     - http://www.openwall.com/lists/oss-security/2019/07/01/3
     - http://www.securityfocus.com/bid/109018
     - https://docs.djangoproject.com/en/dev/releases/security/
@@ -16,13 +18,13 @@ references:
     - https://www.debian.org/security/2019/dsa-4476
     - https://www.djangoproject.com/weblog/2019/jul/01/security-releases/
 affected:
-    - name: django
+    - name: Django
       version:
         - "<=1.11.21,1.11a1"
         - "<=2.1.9,2.1a1"
         - "<=2.2.2,2.2a1"
       fixedin:
         - ">=2.2.3"
-        - "<=2.1.10,2.1.10"
+        - "<=2.1.14,2.1.10"
         - "<=2.0.13,1.11.22"
         - "<=1.10.8,1.0.1"
