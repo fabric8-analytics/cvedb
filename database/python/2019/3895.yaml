@@ -1,0 +1,16 @@
+---
+cve: 2019-3895
+title: CVE in tripleo-common
+description: >
+    An access-control flaw was found in the Octavia service when the cloud platform was deployed using Red Hat OpenStack Platform Director. An attacker could cause new amphorae to run based on any arbitrary image. This meant that a remote attacker could upload a new amphorae image and, if requested to spawn new amphorae, Octavia would then pick up the compromised image.
+cvss_v2: 6.8
+references:
+    - https://access.redhat.com/errata/RHSA-2019:1683
+    - https://access.redhat.com/errata/RHSA-2019:1742
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-3895
+affected:
+    - name: tripleo-common
+      version:
+        - "<=0.3.1"
+      fixedin:
+        - ">=1.0.0"
