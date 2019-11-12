@@ -1,0 +1,15 @@
+---
+cve: 2019-12309
+title: CVE in dotcms-ui
+description: >
+    dotCMS before 5.1.0 has a path traversal vulnerability exploitable by an administrator to create files. The vulnerability is caused by the insecure extraction of a ZIP archive.
+cvss_v2: 4.0
+references:
+    - https://dotcms.com/security/SI-48
+    - https://github.com/dotCMS/core/compare/605e5db...364c910
+affected:
+    - name: dotcms-ui
+      version:
+        - "<=5.0.3-1552491401992"
+      fixedin:
+        - ">=5.1.0"
