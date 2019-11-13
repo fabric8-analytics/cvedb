@@ -1,0 +1,14 @@
+---
+cve: 2019-5414
+title: CVE in kill-port
+description: >
+    If an attacker can control the port, which in itself is a very sensitive value, they can inject arbitrary OS commands due to the usage of the exec function in a third-party module kill-port < 1.3.2.
+cvss_v2: 9.3
+references:
+    - https://hackerone.com/reports/389561
+affected:
+    - name: kill-port
+      version:
+        - "<=1.3.1"
+      fixedin:
+        - ">=1.3.2"
