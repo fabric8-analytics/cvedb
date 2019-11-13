@@ -1,0 +1,14 @@
+---
+cve: 2019-5697
+title: CVE in gpu-z
+description: >
+    NVIDIA Virtual GPU Manager, all versions, contains a vulnerability in which it may grant a guest access to memory that it does not own, which may lead to information disclosure or denial of service.
+cvss_v2: 3.6
+references:
+    - https://nvidia.custhelp.com/app/answers/detail/a_id/4907
+affected:
+    - name: gpu-z
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
