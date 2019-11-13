@@ -1,0 +1,15 @@
+---
+cve: 2019-18856
+title: CVE in node-sanitizer
+description: >
+    A Denial Of Service vulnerability exists in the SVG Sanitizer module through 8.x-1.0-alpha1 for Drupal because access to external resources with an SVG use element is mishandled.
+cvss_v2: 5.0
+references:
+    - https://fortiguard.com/zeroday/FG-VD-19-115
+    - https://git.drupalcode.org/project/svg_sanitizer/commit/e1b0666
+affected:
+    - name: node-sanitizer
+      version:
+        - "<=1.0.5"
+      fixedin:
+        []
