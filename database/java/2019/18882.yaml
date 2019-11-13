@@ -1,0 +1,16 @@
+---
+cve: 2019-18882
+title: CVE in org.wso2.carbon.identity.framework:org.wso2.carbon.identity.entitlement
+description: >
+    WSO2 IS as Key Manager 5.7.0 allows stored XSS in download-userinfo.jag because Content-Type is mishandled.
+cvss_v2: 4.3
+references:
+    - https://docs.wso2.com/display/Security/Security+Advisory+WSO2-2019-0625
+affected:
+    - groupId: org.wso2.carbon.identity.framework
+      artifactId: org.wso2.carbon.identity.entitlement
+      version:
+        - "<=5.7.0,5.7.0"
+      fixedin:
+        - ">=5.7.1"
+        - "<=5.6.98,5.5.0"
