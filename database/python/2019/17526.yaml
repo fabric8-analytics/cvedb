@@ -11,6 +11,6 @@ references:
 affected:
     - name: sagecell
       version:
-        []
+        - "<=0.3rc6"
       fixedin:
-        - ">=0.1b3"
+        []
