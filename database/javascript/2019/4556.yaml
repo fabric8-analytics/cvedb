@@ -1,0 +1,15 @@
+---
+cve: 2019-4556
+title: CVE in azure-arm-advisor
+description: >
+    IBM QRadar Advisor 1.0.0 through 2.4.0 uses incomplete blacklisting for input validation which allows attackers to bypass application controls resulting in direct impact to the system and data integrity. IBM X-Force ID: 166205.
+cvss_v2: 4.0
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/166205
+    - https://www.ibm.com/support/pages/node/1102443
+affected:
+    - name: azure-arm-advisor
+      version:
+        - "<=1.2.0"
+      fixedin:
+        []
