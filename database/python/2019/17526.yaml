@@ -1,0 +1,16 @@
+---
+cve: 2019-17526
+title: CVE in sagecell
+description: >
+    ** DISPUTED ** An issue was discovered in SageMath Sage Cell Server through 2019-10-05. Python Code Injection can occur in the context of an internet facing web application. Malicious actors can execute arbitrary commands on the underlying operating system, as demonstrated by an __import__('os').popen('whoami').read() line. NOTE: the vendor's position is that the product is "vulnerable by design" and the current behavior will be retained.
+cvss_v2: 10.0
+references:
+    - https://gist.github.com/barrett092/0380a1c34c014e29b827d1f408381525
+    - https://github.com/sagemath/sagecell/commits/master
+    - https://sethsec.blogspot.com/2016/11/exploiting-python-code-injection-in-web.html
+affected:
+    - name: sagecell
+      version:
+        - "<=0.3rc6"
+      fixedin:
+        []
