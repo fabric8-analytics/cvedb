@@ -11,6 +11,6 @@ references:
 affected:
     - name: strapi
       version:
-        []
+        - "<=3.0.0-beta.17.4"
       fixedin:
-        - ">=1.0.0"
+        - ">=3.0.0-beta.17.5"
