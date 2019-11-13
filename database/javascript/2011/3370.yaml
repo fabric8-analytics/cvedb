@@ -1,0 +1,16 @@
+---
+cve: 2011-3370
+title: CVE in xss-filters
+description: >
+    statusnet before 0.9.9 has XSS
+cvss_v2: 4.3
+references:
+    - https://access.redhat.com/security/cve/cve-2011-3370
+    - https://seclists.org/oss-sec/2011/q3/488
+    - https://security-tracker.debian.org/tracker/CVE-2011-3370
+affected:
+    - name: xss-filters
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
