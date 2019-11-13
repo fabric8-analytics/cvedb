@@ -1,0 +1,17 @@
+---
+cve: 2007-2768
+title: CVE in net.time4tea:tea-time
+description: >
+    OpenSSH, when using OPIE (One-Time Passwords in Everything) for PAM, allows remote attackers to determine the existence of certain user accounts, which displays a different response if the user account exists and is configured to use one-time passwords (OTP), a similar issue to CVE-2007-2243.
+cvss_v2: 4.3
+references:
+    - http://archives.neohapsis.com/archives/fulldisclosure/2007-04/0635.html
+    - http://www.osvdb.org/34601
+    - https://security.netapp.com/advisory/ntap-20191107-0002/
+affected:
+    - groupId: net.time4tea
+      artifactId: tea-time
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
