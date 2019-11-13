@@ -1,0 +1,14 @@
+---
+cve: 2019-12417
+title: CVE in apache-airflow
+description: >
+    A malicious admin user could edit the state of objects in the Airflow metadata database to execute arbitrary javascript on certain page views. This also presented a Local File Disclosure vulnerability to any file readable by the webserver process.
+cvss_v2: 3.5
+references:
+    - https://lists.apache.org/thread.html/f3aa5ff9c7cdb5424b6463c9013f6cf5db83d26c66ea77130cbbe1bc@%3Cusers.airflow.apache.org%3E
+affected:
+    - name: apache-airflow
+      version:
+        - "<=1.10.5"
+      fixedin:
+        - ">=1.10.6rc1"
