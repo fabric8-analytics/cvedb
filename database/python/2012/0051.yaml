@@ -1,0 +1,20 @@
+---
+cve: 2012-0051
+title: CVE in allmydata-tahoe
+description: >
+    Tahoe-LAFS 1.9.0 fails to ensure integrity which allows remote attackers to corrupt mutable files or directories upon retrieval.
+cvss_v2: 5.8
+references:
+    - http://www.openwall.com/lists/oss-security/2012/01/15/11
+    - http://www.openwall.com/lists/oss-security/2012/01/26/7
+    - http://www.openwall.com/lists/oss-security/2012/01/26/8
+    - http://www.openwall.com/lists/oss-security/2012/01/26/9
+    - https://security-tracker.debian.org/tracker/CVE-2012-0051
+    - https://tahoe-lafs.org/trac/tahoe-lafs/ticket/1654
+affected:
+    - name: allmydata-tahoe
+      version:
+        - "<=1.9.0,1.9.0"
+      fixedin:
+        - ">=1.9.1"
+        - "<=1.8.3,0.6.0"
