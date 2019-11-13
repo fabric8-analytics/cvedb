@@ -1,0 +1,14 @@
+---
+cve: 2019-14322
+title: CVE in Werkzeug
+description: >
+    In Pallets Werkzeug before 0.15.5, SharedDataMiddleware mishandles drive names (such as C:) in Windows pathnames.
+cvss_v2: 5.0
+references:
+    - https://palletsprojects.com/blog/werkzeug-0-15-5-released/
+affected:
+    - name: Werkzeug
+      version:
+        - "<=0.15.4"
+      fixedin:
+        - ">=0.15.5"
