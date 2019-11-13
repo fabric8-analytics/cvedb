@@ -1,0 +1,14 @@
+---
+cve: 2019-18608
+title: CVE in cezerin
+description: >
+    Cezerin v0.33.0 allows unauthorized order-information modification because certain internal attributes can be overwritten via a conflicting name when processing order requests. Hence, a malicious customer can manipulate an order (e.g., its payment status or shipping fee) by adding additional attributes to user-input during the PUT /ajax/cart operation for a checkout, because of getValidDocumentForUpdate in api/server/services/orders/orders.js.
+cvss_v2: 5.0
+references:
+    - https://github.com/cl0udz/vulnerabilities/blob/master/cezerin-manipulate_order_information/README.md
+affected:
+    - name: cezerin
+      version:
+        - "<=0.32.0"
+      fixedin:
+        []
