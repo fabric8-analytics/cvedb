@@ -1,0 +1,17 @@
+---
+cve: 2019-15532
+title: CVE in cyberchef
+description: >
+    CyberChef before 8.31.2 allows XSS in core/operations/TextEncodingBruteForce.mjs.
+cvss_v2: 4.3
+references:
+    - https://github.com/gchq/CyberChef/commit/01f0625d6a177f9c5df9281f12a27c814c2d8bcf
+    - https://github.com/gchq/CyberChef/compare/v8.31.1...v8.31.2
+    - https://github.com/gchq/CyberChef/issues/539
+    - https://github.com/gchq/CyberChef/issues/544
+affected:
+    - name: cyberchef
+      version:
+        - "<=8.31.1"
+      fixedin:
+        - ">=8.31.2"
