@@ -1,0 +1,16 @@
+---
+cve: 2013-1426
+title: CVE in html
+description: >
+    Cross-site Scripting (XSS) in Mahara before 1.5.9 and 1.6.x before 1.6.4 allows remote attackers to inject arbitrary web script or HTML via the TinyMCE editor.
+cvss_v2: 4.3
+references:
+    - https://bugs.launchpad.net/mahara/+bug/1153423
+    - https://mahara.org/interaction/forum/topic.php?id=5365
+    - https://security-tracker.debian.org/tracker/CVE-2013-1426
+affected:
+    - name: html
+      version:
+        - "<=1.6"
+      fixedin:
+        - ">=1.7"
