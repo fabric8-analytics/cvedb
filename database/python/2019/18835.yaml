@@ -1,0 +1,15 @@
+---
+cve: 2019-18835
+title: CVE in matrix-synapse
+description: >
+    Matrix Synapse before 1.5.0 mishandles signature checking on some federation APIs. Events sent over /send_join, /send_leave, and /invite may not be correctly signed, or may not come from the expected servers.
+cvss_v2: 7.5
+references:
+    - https://github.com/matrix-org/synapse/pull/6262
+    - https://github.com/matrix-org/synapse/releases/tag/v1.5.0
+affected:
+    - name: matrix-synapse
+      version:
+        - "<=1.4.1"
+      fixedin:
+        - ">=1.5.0rc1"
