@@ -9,6 +9,6 @@ references:
 affected:
     - name: cezerin
       version:
-        []
+        - "<=0.32.0"
       fixedin:
-        - ">=0.1.0"
+        []
