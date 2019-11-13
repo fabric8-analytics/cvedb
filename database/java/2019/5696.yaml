@@ -1,0 +1,15 @@
+---
+cve: 2019-5696
+title: CVE in br.com.thiagomoreira.liferay.plugins.fix-virtual-host-app:fix-virtual-host-hook
+description: >
+    NVIDIA Virtual GPU Manager, all versions, contains a vulnerability in which the provision of an incorrectly sized buffer by a guest VM leads to GPU out-of-bound access, which may lead to a denial of service.
+cvss_v2: 2.1
+references:
+    - https://nvidia.custhelp.com/app/answers/detail/a_id/4907
+affected:
+    - groupId: br.com.thiagomoreira.liferay.plugins.fix-virtual-host-app
+      artifactId: fix-virtual-host-hook
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
