@@ -9,6 +9,6 @@ references:
 affected:
     - name: Werkzeug
       version:
-        []
+        - "<=0.15.4"
       fixedin:
-        - ">=0.1"
+        - ">=0.15.5"
