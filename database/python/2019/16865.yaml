@@ -1,0 +1,14 @@
+---
+cve: 2019-16865
+title: CVE in Pillow
+description: >
+    An issue was discovered in Pillow before 6.2.0. When reading specially crafted invalid image files, the library can either allocate very large amounts of memory or take an extremely long period of time to process the image.
+cvss_v2: 4.3
+references:
+    - https://pillow.readthedocs.io/en/latest/releasenotes/6.2.0.html
+affected:
+    - name: Pillow
+      version:
+        - "<=6.1.0"
+      fixedin:
+        - ">=6.2.0"
