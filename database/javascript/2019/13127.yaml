@@ -1,0 +1,16 @@
+---
+cve: 2019-13127
+title: CVE in mxgraph
+description: >
+    An issue was discovered in mxGraph through 4.0.0, related to the "draw.io Diagrams" plugin before 8.3.14 for Confluence and other products. Improper input validation/sanitization of a color field leads to XSS. This is associated with javascript/examples/grapheditor/www/js/Dialogs.js.
+cvss_v2: 4.3
+references:
+    - https://github.com/jgraph/mxgraph/commit/76e8e2809b622659a9c5ffdc4f19922b7a68cfa3
+    - https://marketplace.atlassian.com/apps/1210933/draw-io-diagrams-for-confluence/version-history
+    - https://www.syss.de/fileadmin/dokumente/Publikationen/Advisories/SYSS-2019-032.txt
+affected:
+    - name: mxgraph
+      version:
+        - "<=4.0.0"
+      fixedin:
+        - ">=4.0.1"
