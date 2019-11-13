@@ -1,0 +1,17 @@
+---
+cve: 2009-4011
+title: CVE in x-x
+description: >
+    dtc-xen 0.5.x before 0.5.4 suffers from a race condition where an attacker could potentially get a bash access as xenXX user on the dom0, and then access a potentially reuse an already opened VPS console.
+cvss_v2: 6.8
+references:
+    - https://bugs.launchpad.net/ubuntu/+source/dtc-xen/+bug/505072
+    - https://security-tracker.debian.org/tracker/CVE-2009-4011
+    - https://tracker.debian.org/media/packages/d/dtc-xen/changelog-0.5.17-1.1
+affected:
+    - name: x-x
+      version:
+        - "<=0.5,0.5"
+      fixedin:
+        - ">=0.6"
+        - "<=0.4,0.1"
