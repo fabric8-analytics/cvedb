@@ -1,0 +1,14 @@
+---
+cve: 2019-5416
+title: CVE in localhost-now
+description: >
+    A path traversal vulnerability in localhost-now npm package version 1.0.2 allows the attackers to read content of arbitrary files on the remote server.
+cvss_v2: 5.0
+references:
+    - https://hackerone.com/reports/334837
+affected:
+    - name: localhost-now
+      version:
+        - "==1.0.2"
+      fixedin:
+        - "<=1.0.1"
