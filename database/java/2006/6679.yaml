@@ -1,0 +1,21 @@
+---
+cve: 2006-6679
+title: CVE in com.ip2proxy:ip2proxy-java
+description: >
+    Pedro Lineu Orso chetcpasswd before 2.4 relies on the X-Forwarded-For HTTP header when verifying a client's status on an IP address ACL, which allows remote attackers to gain unauthorized access by spoofing this header.
+cvss_v2: 7.5
+references:
+    - http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=394454
+    - http://marc.info/?l=bugtraq&m=116371297325564&w=2
+    - http://secunia.com/advisories/22967
+    - http://sourceforge.net/project/shownotes.php?group_id=68912&release_id=466649
+    - http://www.osvdb.org/30544
+    - http://www.securityfocus.com/bid/21102
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/30451
+affected:
+    - groupId: com.ip2proxy
+      artifactId: ip2proxy-java
+      version:
+        - "<=2.1.0"
+      fixedin:
+        []
