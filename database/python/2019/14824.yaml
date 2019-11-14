@@ -1,0 +1,14 @@
+---
+cve: 2019-14824
+title: CVE in active-directory
+description: >
+    A flaw was found in the 'deref' plugin of 389-ds-base where it could use the 'search' permission to display attribute values. In some configurations, this could allow an authenticated attacker to view private attributes, such as password hashes.
+cvss_v2: 3.5
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-14824
+affected:
+    - name: active-directory
+      version:
+        []
+      fixedin:
+        - ">=0.67.0"
