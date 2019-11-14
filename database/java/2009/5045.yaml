@@ -1,0 +1,17 @@
+---
+cve: 2009-5045
+title: CVE in org.mortbay.jetty:jetty-servlet-tester
+description: >
+    Dump Servlet information leak in jetty before 6.1.22.
+cvss_v2: 5.0
+references:
+    - http://www.ush.it/team/ush/hack-jetty6x7x/jetty-adv.txt
+    - https://security-tracker.debian.org/tracker/CVE-2009-5045
+    - https://www.openwall.com/lists/oss-security/2011/01/14/2
+affected:
+    - groupId: org.mortbay.jetty
+      artifactId: jetty-servlet-tester
+      version:
+        - "<=6.1.21"
+      fixedin:
+        - ">=6.1.22"
