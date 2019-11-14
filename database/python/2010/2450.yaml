@@ -1,0 +1,17 @@
+---
+cve: 2010-2450
+title: CVE in django-des
+description: >
+    The keygen.sh script in Shibboleth SP 2.0 (located in /usr/local/etc/shibboleth by default) uses OpenSSL to create a DES private key which is placed in sp-key.pm. It relies on the root umask (default 22) instead of chmoding the resulting file itself, so the generated private key is world readable by default.
+cvss_v2: 5.0
+references:
+    - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=571631
+    - https://security-tracker.debian.org/tracker/CVE-2010-2450
+    - https://todos.internet2.edu/browse/SSPCPP-106
+affected:
+    - name: django-des
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - ">=2.1.0"
+        - "<=1.0.2,1.0.0"
