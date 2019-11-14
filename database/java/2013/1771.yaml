@@ -1,0 +1,16 @@
+---
+cve: 2013-1771
+title: CVE in com.jobhive.saki-monkey:saki-monkey
+description: >
+    The web server Monkeyd produces a world-readable log (/var/log/monkeyd/master.log) on gentoo.
+cvss_v2: 5.0
+references:
+    - http://www.openwall.com/lists/oss-security/2013/02/26/10
+    - https://security-tracker.debian.org/tracker/CVE-2013-1771
+affected:
+    - groupId: com.jobhive.saki-monkey
+      artifactId: saki-monkey
+      version:
+        []
+      fixedin:
+        - ">=1.0.0-BETA"
