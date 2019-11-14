@@ -1,0 +1,14 @@
+---
+cve: 2019-1369
+title: CVE in ef-open
+description: >
+    An information disclosure vulnerability exists when affected Open Enclave SDK versions improperly handle objects in memory, aka 'Open Enclave SDK Information Disclosure Vulnerability'.
+cvss_v2: 2.1
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1369
+affected:
+    - name: ef-open
+      version:
+        - "<=0.6.0"
+      fixedin:
+        - ">=0.6.1"
