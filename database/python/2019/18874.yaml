@@ -1,0 +1,14 @@
+---
+cve: 2019-18874
+title: CVE in psutil
+description: >
+    psutil (aka python-psutil) through 5.6.5 can have a double free. This occurs because of refcount mishandling within a while or for loop that converts system data into a Python object.
+cvss_v2: 5.0
+references:
+    - https://github.com/giampaolo/psutil/pull/1616
+affected:
+    - name: psutil
+      version:
+        - "<=5.6.5"
+      fixedin:
+        []
