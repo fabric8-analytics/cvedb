@@ -1,0 +1,21 @@
+---
+cve: 2016-1443
+title: CVE in grid
+description: >
+    The virtual network stack on Cisco AMP Threat Grid Appliance devices before 2.1.1 allows remote attackers to bypass a sandbox protection mechanism, and consequently obtain sensitive interprocess information or modify interprocess data, via a crafted malware sample.
+cvss_v2: 6.8
+references:
+    - http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160706-tg
+affected:
+    - name: grid
+      version:
+        - "<=1.0.0,1.0.0"
+        - "<=1.2.1,1.1.0"
+        - "<=1.4.2,1.3.0"
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - ">=3.0.0"
+        - "<=1.10.0,1.5.0"
+        - "<=1.2.5,1.2.2"
+        - "<=1.0.4,1.0.1"
+        - "<=0.1.1,0.1.0"
