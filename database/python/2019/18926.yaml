@@ -1,0 +1,15 @@
+---
+cve: 2019-18926
+title: CVE in bob-db-iris
+description: >
+    Systematic IRIS Standards Management (ISM) v2.1 SP1 89 is vulnerable to unauthenticated reflected Cross Site Scripting (XSS). A user input (related to dialog information) is reflected directly in the web page, allowing a malicious user to conduct a Cross Site Scripting attack against users of the application.
+cvss_v2: 4.3
+references:
+    - https://github.com/vulnerabilities-cve/vulnerabilities
+affected:
+    - name: bob-db-iris
+      version:
+        - "<=2.1.0,2.1.0"
+      fixedin:
+        - ">=2.1.1"
+        - "<=2.0.8,2.0.0a0"
