@@ -1,0 +1,15 @@
+---
+cve: 2016-1443
+title: CVE in com.hindog.grid:grid-executor_2.10
+description: >
+    The virtual network stack on Cisco AMP Threat Grid Appliance devices before 2.1.1 allows remote attackers to bypass a sandbox protection mechanism, and consequently obtain sensitive interprocess information or modify interprocess data, via a crafted malware sample.
+cvss_v2: 6.8
+references:
+    - http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160706-tg
+affected:
+    - groupId: com.hindog.grid
+      artifactId: grid-executor_2.10
+      version:
+        - "<=1.0.0"
+      fixedin:
+        []
