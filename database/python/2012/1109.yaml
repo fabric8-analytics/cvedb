@@ -1,0 +1,16 @@
+---
+cve: 2012-1109
+title: CVE in mwlib
+description: >
+    mwlib 0.13 through 0.13.4 has a denial of service vulnerability when parsing #iferror magic functions
+cvss_v2: 5.0
+references:
+    - http://www.openwall.com/lists/oss-security/2012/03/05/20
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2012-1109
+    - https://www.securityfocus.com/bid/52577
+affected:
+    - name: mwlib
+      version:
+        - "<=0.13.4"
+      fixedin:
+        - ">=0.13.5"
