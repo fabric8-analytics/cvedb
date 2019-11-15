@@ -1,0 +1,15 @@
+---
+cve: 2012-1572
+title: CVE in flask-keystone
+description: >
+    OpenStack Keystone: extremely long passwords can crash Keystone by exhausting stack space
+cvss_v2: 5.0
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2012-1572
+    - https://security-tracker.debian.org/tracker/CVE-2012-1572
+affected:
+    - name: flask-keystone
+      version:
+        []
+      fixedin:
+        - ">=0.2"
