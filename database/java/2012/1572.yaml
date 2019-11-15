@@ -1,0 +1,16 @@
+---
+cve: 2012-1572
+title: CVE in org.pacesys.openstack4j.plugins:openstack4j-log4j
+description: >
+    OpenStack Keystone: extremely long passwords can crash Keystone by exhausting stack space
+cvss_v2: 5.0
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2012-1572
+    - https://security-tracker.debian.org/tracker/CVE-2012-1572
+affected:
+    - groupId: org.pacesys.openstack4j.plugins
+      artifactId: openstack4j-log4j
+      version:
+        []
+      fixedin:
+        - ">=2.0.0"
