@@ -1,0 +1,14 @@
+---
+cve: 2019-1447
+title: CVE in albot-online
+description: >
+    A spoofing vulnerability exists when Office Online does not validate origin in cross-origin communications handlers correctly, aka 'Microsoft Office Online Spoofing Vulnerability'. This CVE ID is unique from CVE-2019-1445.
+cvss_v2: 5.8
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1447
+affected:
+    - name: albot-online
+      version:
+        []
+      fixedin:
+        - ">=0.6b0"
