@@ -1,0 +1,14 @@
+---
+cve: 2019-16205
+title: CVE in id-project
+description: >
+    A vulnerability, in Brocade SANnav versions before v2.0, could allow remote attackers to brute-force a valid session ID. The vulnerability is due to an insufficiently random session ID for several post-authentication actions in the SANnav portal.
+cvss_v2: 4.3
+references:
+    - https://www.broadcom.com/support/fibre-channel-networking/security-advisories/brocade-security-advisory-2019-864
+affected:
+    - name: id-project
+      version:
+        []
+      fixedin:
+        - ">=2.0.0"
