@@ -1,0 +1,15 @@
+---
+cve: 2019-0382
+title: CVE in phishme-intelligence
+description: >
+    A Cross-Site Scripting vulnerability exists in SAP BusinessObjects Business Intelligence Platform (Web Intelligence-Publication related pages); corrected in version 4.2. Privileges are required in order to exploit this vulnerability.
+cvss_v2: 3.5
+references:
+    - https://launchpad.support.sap.com/#/notes/2817937
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=528880390
+affected:
+    - name: phishme-intelligence
+      version:
+        - "<=4.1.9"
+      fixedin:
+        - ">=4.2.0"
