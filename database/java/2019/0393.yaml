@@ -1,0 +1,16 @@
+---
+cve: 2019-0393
+title: CVE in com.sap.hana.cloud:spring-cloud-sap-core
+description: >
+    An SQL Injection vulnerability in SAP Quality Management (corrected in S4CORE versions 1.0, 1.01, 1.02, 1.03) allows an attacker to carry out targeted database queries that can read individual fields of historical inspection results.
+cvss_v2: 4.0
+references:
+    - https://launchpad.support.sap.com/#/notes/2816035
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=528880390
+affected:
+    - groupId: com.sap.hana.cloud
+      artifactId: spring-cloud-sap-core
+      version:
+        - "<=1.0.0.RELEASE"
+      fixedin:
+        - ">=1.0.1.RELEASE"
