@@ -6,6 +6,7 @@ description: >
 cvss_v2: 9.3
 references:
     - http://www.securityfocus.com/bid/107605
+    - https://access.redhat.com/errata/RHSA-2019:3892
     - https://lists.apache.org/thread.html/b162dd624dc088cd634292f0402282a1d1d0ce853baeae8205bc033c@%3Cdev.mesos.apache.org%3E
 affected:
     - groupId: org.apache.mesos
@@ -15,8 +16,10 @@ affected:
         - "<=1.5.2,1.5.0"
         - "<=1.6.1,1.6.0"
         - "<=1.7.1,1.7.0"
+        - "<=1.8.0,1.8.0"
       fixedin:
-        - ">=1.7.2"
+        - ">=1.8.1"
+        - "<=1.7.2,1.7.2"
         - "<=1.6.2,1.6.2"
         - "<=1.5.3,1.5.3"
         - "<=1.4.3,1.4.3"
