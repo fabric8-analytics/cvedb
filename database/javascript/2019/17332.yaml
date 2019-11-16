@@ -1,0 +1,16 @@
+---
+cve: 2019-17332
+title: CVE in ons
+description: >
+    The Digital Asset Manager Web Interface component of TIBCO Software Inc.'s TIBCO EBX Add-ons contains a vulnerability that theoretically allows authenticated users to perform stored cross-site scripting (XSS) attacks. Affected releases are TIBCO Software Inc.'s TIBCO EBX Add-ons: versions up to and including 3.20.13, versions 4.1.0, 4.2.0, 4.2.1, and 4.2.2.
+cvss_v2: 4.3
+references:
+    - http://www.tibco.com/services/support/advisories
+    - https://www.tibco.com/support/advisories/2019/11/tibco-security-advisory-november-12-2019-tibco-ebx-add-on-2019-17332
+affected:
+    - name: ons
+      version:
+        - "<=3.0.4"
+        - "<=4.1.0,4.1.0"
+      fixedin:
+        - "<=4.0.3,4.0.0"
