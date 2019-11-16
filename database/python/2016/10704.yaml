@@ -1,0 +1,14 @@
+---
+cve: 2016-10704
+title: CVE in magento
+description: >
+    Magento Community Edition and Enterprise Edition before 2.0.10 and 2.1.x before 2.1.2 have XSS via e-mail templates that are mishandled during a preview, aka APPSEC-1503.
+cvss_v2: 4.3
+references:
+    - https://magento.com/security/patches/magento-2010-and-212-security-update
+affected:
+    - name: magento
+      version:
+        - "<=2.1"
+      fixedin:
+        - ">=2.2"
