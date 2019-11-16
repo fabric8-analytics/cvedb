@@ -1,0 +1,16 @@
+---
+cve: 2019-0396
+title: CVE in org.seedstack.business:business-migrate
+description: >
+    SAP BusinessObjects Business Intelligence Platform (Web Intelligence HTML interface), corrected in versions 4.1 and 4.2, does not sufficiently validate an XML document accepted from an untrusted source. An attacker can craft a message that contains malicious elements that will not be correctly filtered by Web Intelligence HTML interface in some specific workflows.
+cvss_v2: 5.5
+references:
+    - https://launchpad.support.sap.com/#/notes/2814007
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=528880390
+affected:
+    - groupId: org.seedstack.business
+      artifactId: business-migrate
+      version:
+        - "<=4.1.0"
+      fixedin:
+        - ">=4.1.1"
