@@ -1,0 +1,15 @@
+---
+cve: 2019-12719
+title: CVE in boss-admin-system-manage
+description: >
+    An issue was discovered in Picture_Manage_mvc.aspx in AUO SunVeillance Monitoring System before v1.1.9e. There is an incorrect access control vulnerability that can allow an unauthenticated user to upload files via a modified authority parameter.
+cvss_v2: 7.5
+references:
+    - https://drive.google.com/open?id=1Khz7x6b32g7JYCyA6ZQ6NGEc4I0yFA45
+    - https://www.exploit-db.com/exploits/47541
+affected:
+    - name: boss-admin-system-manage
+      version:
+        - "<=1.1.8"
+      fixedin:
+        - ">=1.1.9"
