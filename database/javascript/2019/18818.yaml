@@ -1,0 +1,16 @@
+---
+cve: 2019-18818
+title: CVE in strapi
+description: >
+    strapi before 3.0.0-beta.17.5 mishandles password resets within packages/strapi-admin/controllers/Auth.js and packages/strapi-plugin-users-permissions/controllers/Auth.js.
+cvss_v2: 5.0
+references:
+    - https://github.com/strapi/strapi/pull/4443
+    - https://github.com/strapi/strapi/releases/tag/v3.0.0-beta.17.5
+    - https://www.npmjs.com/advisories/1311
+affected:
+    - name: strapi
+      version:
+        - "<=3.0.0-beta.17.4"
+      fixedin:
+        - ">=3.0.0-beta.17.5"
