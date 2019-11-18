@@ -1,0 +1,18 @@
+---
+cve: 2014-7143
+title: CVE in twisted
+description: >
+    Python Twisted 14.0 trustRoot is not respected in HTTP client
+cvss_v2: 5.0
+references:
+    - http://www.openwall.com/lists/oss-security/2014/09/22/2
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2014-7143
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/96135
+    - https://security-tracker.debian.org/tracker/CVE-2014-7143
+affected:
+    - name: twisted
+      version:
+        - "==14.0.0"
+      fixedin:
+        - ">=14.0.1"
+        - "<=13.2.0,1.0.1"
