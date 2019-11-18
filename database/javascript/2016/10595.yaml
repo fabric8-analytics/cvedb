@@ -10,3 +10,5 @@ affected:
     - name: jdf-sass
       version:
         - "<=1.0.18"
+      fixedin:
+        []
