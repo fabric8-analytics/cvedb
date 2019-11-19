@@ -1,0 +1,16 @@
+---
+cve: 2017-15948
+title: CVE in org.apache.karaf.system:org.apache.karaf.system.core
+description: >
+    Perch Content Management System 3.0.3 allows unrestricted file upload (with resultant XSS) via the Asset Title field in conjunction with the Select File field. This is exploitable with a Limited Admin account.
+cvss_v2: 3.5
+references:
+    - https://www.vulnerability-lab.com/get_content.php?id=2067
+affected:
+    - groupId: org.apache.karaf.system
+      artifactId: org.apache.karaf.system.core
+      version:
+        - "<=3.0.3,3.0.3"
+      fixedin:
+        - ">=3.0.4"
+        - "<=3.0.2,3.0.0.RC1"
