@@ -1,0 +1,18 @@
+---
+cve: 2010-4653
+title: CVE in python-poppler-qt4
+description: >
+    An integer overflow condition in poppler before 0.16.3 can occur when parsing CharCodes for fonts.
+cvss_v2: 4.3
+references:
+    - http://security.gentoo.org/glsa/glsa-201310-03.xml
+    - http://www.securityfocus.com/bid/45948
+    - https://access.redhat.com/security/cve/cve-2010-4653
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2010-4653
+    - https://security-tracker.debian.org/tracker/CVE-2010-4653
+affected:
+    - name: python-poppler-qt4
+      version:
+        - "<=0.16.1"
+      fixedin:
+        - ">=0.16.3"
