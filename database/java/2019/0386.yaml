@@ -1,0 +1,16 @@
+---
+cve: 2019-0386
+title: CVE in com.sap.hana.cloud:spring-cloud-sap-connector
+description: >
+    Order processing in SAP ERP Sales (corrected in SAP_APPL 6.0, 6.02, 6.03, 6.04, 6.05, 6.06, 6.16, 6.17, 6.18) and S4HANA Sales (corrected in S4CORE 1.0, 1.01, 1.02, 1.03, 1.04) does not execute the required authorization checks for an authenticated user, which can result in an escalation of privileges.
+cvss_v2: 6.5
+references:
+    - https://launchpad.support.sap.com/#/notes/2840520
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=528880390
+affected:
+    - groupId: com.sap.hana.cloud
+      artifactId: spring-cloud-sap-connector
+      version:
+        - "<=1.0.0.RELEASE"
+      fixedin:
+        - ">=1.0.1.RELEASE"
