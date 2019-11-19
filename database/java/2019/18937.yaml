@@ -1,0 +1,15 @@
+---
+cve: 2019-18937
+title: CVE in com.github.zqq90.webit-script:webit-script-jodd3
+description: >
+    eQ-3 Homematic CCU2 2.47.20 and CCU3 3.47.18 with the Script Parser AddOn through 1.8 installed allow Remote Code Execution by unauthenticated attackers with access to the web interface via the exec.cgi script, which executes TCL script content from an HTTP POST request.
+cvss_v2: 7.5
+references:
+    - https://psytester.github.io/CVE-2019-18937/
+affected:
+    - groupId: com.github.zqq90.webit-script
+      artifactId: webit-script-jodd3
+      version:
+        - "<=1.5"
+      fixedin:
+        - ">=1.5.1"
