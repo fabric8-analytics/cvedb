@@ -1,0 +1,15 @@
+---
+cve: 2019-18954
+title: CVE in @sex-pomelo/sex-pomelo
+description: >
+    Pomelo v2.2.5 allows external control of critical state data. A malicious user input can corrupt arbitrary methods and attributes in template/game-server/app/servers/connector/handler/entryHandler.js because certain internal attributes can be overwritten via a conflicting name. Hence, a malicious attacker can manipulate internal attributes by adding additional attributes to user input.
+cvss_v2: 5.0
+references:
+    - https://github.com/cl0udz/vulnerabilities/tree/master/pomelo-critical-state-manipulation
+    - https://github.com/NetEase/pomelo/issues/1149
+affected:
+    - name: @sex-pomelo/sex-pomelo
+      version:
+        - "<=2.2.5"
+      fixedin:
+        - ">=2.2.6"
