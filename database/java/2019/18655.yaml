@@ -1,0 +1,16 @@
+---
+cve: 2019-18655
+title: CVE in org.awake-file:awake-file
+description: >
+    File Sharing Wizard version 1.5.0 build 2008 is affected by a Structured Exception Handler based buffer overflow vulnerability. An unauthenticated attacker is able to perform remote command execution and obtain a command shell by sending a HTTP GET request including the malicious payload in the URL. A similar issue to CVE-2019-17415, CVE-2019-16724, and CVE-2010-2331.
+cvss_v2: 10.0
+references:
+    - http://0xhuesca.com/cve-2019-18655.html
+affected:
+    - groupId: org.awake-file
+      artifactId: awake-file
+      version:
+        - "<=1.5,1.5"
+      fixedin:
+        - ">=2.0.1"
+        - "<=1.4,1.0"
