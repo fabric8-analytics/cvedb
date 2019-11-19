@@ -6,6 +6,7 @@ description: >
 cvss_v2: 5.0
 references:
     - https://github.com/giampaolo/psutil/pull/1616
+    - https://lists.debian.org/debian-lts-announce/2019/11/msg00018.html
 affected:
     - name: psutil
       version:
