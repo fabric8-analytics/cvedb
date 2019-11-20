@@ -1,0 +1,15 @@
+---
+cve: 2019-17427
+title: CVE in @datafire/redmine
+description: >
+    In Redmine before 3.4.11 and 4.0.x before 4.0.4, persistent XSS exists due to textile formatting errors.
+cvss_v2: 4.3
+references:
+    - https://www.debian.org/security/2019/dsa-4574
+    - https://www.redmine.org/projects/redmine/wiki/Security_Advisories
+affected:
+    - name: @datafire/redmine
+      version:
+        - "<=4.0.0"
+      fixedin:
+        []
