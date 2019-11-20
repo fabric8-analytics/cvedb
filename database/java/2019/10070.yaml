@@ -1,0 +1,18 @@
+---
+cve: 2019-10070
+title: CVE in org.apache.atlas:atlas-webapp
+description: >
+    Apache Atlas versions 0.8.3 and 1.1.0 were found vulnerable to Stored Cross-Site Scripting in the search functionality
+cvss_v2: 4.3
+references:
+    - https://lists.apache.org/thread.html/cc21437c4c5053a13e13332d614d5172f39da03491fe17ae260be221@%3Cdev.atlas.apache.org%3E
+affected:
+    - groupId: org.apache.atlas
+      artifactId: atlas-webapp
+      version:
+        - "<=0.8.3,0.8.3"
+        - "<=1.1.0,1.1.0"
+      fixedin:
+        - ">=1.2.0"
+        - "<=1.0.0,0.8.4"
+        - "<=0.8.2,0.5-incubating"
