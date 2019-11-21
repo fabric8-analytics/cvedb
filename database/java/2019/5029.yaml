@@ -1,0 +1,15 @@
+---
+cve: 2019-5029
+title: CVE in org.jbundle.config.web:org.jbundle.config.web.httpservice
+description: >
+    An exploitable command injection vulnerability exists in the Config editor of the Exhibitor Web UI versions 1.0.9 to 1.7.1. Arbitrary shell commands surrounded by backticks or $() can be inserted into the editor and will be executed by the Exhibitor process when it launches ZooKeeper. An attacker can execute any command as the user running the Exhibitor process.
+cvss_v2: 10.0
+references:
+    - https://talosintelligence.com/vulnerability_reports/TALOS-2019-0790
+affected:
+    - groupId: org.jbundle.config.web
+      artifactId: org.jbundle.config.web.httpservice
+      version:
+        - "<=1.0.9,1.0.9"
+      fixedin:
+        - "<=1.0.3,1.0.1"
