@@ -1,0 +1,14 @@
+---
+cve: 2019-10766
+title: CVE in dependencies-injection
+description: >
+    Pixie versions 1.0.x before 1.0.3, and 2.0.x before 2.0.2 allow SQL Injection in the limit() function due to improper sanitization.
+cvss_v2: 7.5
+references:
+    - https://snyk.io/vuln/SNYK-PHP-USMANHALALITPIXIE-534879
+affected:
+    - name: dependencies-injection
+      version:
+        - "<=1.0"
+      fixedin:
+        []
