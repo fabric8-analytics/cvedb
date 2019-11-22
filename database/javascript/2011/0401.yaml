@@ -1,0 +1,19 @@
+---
+cve: 2011-0401
+title: CVE in piwik-tracker
+description: >
+    Piwik before 1.1 does not properly limit the number of files stored under tmp/sessions/, which might allow remote attackers to cause a denial of service (inode consumption) by establishing many sessions.
+cvss_v2: 5.0
+references:
+    - http://dev.piwik.org/trac/ticket/1279#comment:13
+    - http://dev.piwik.org/trac/ticket/1910
+    - http://osvdb.org/70381
+    - http://piwik.org/blog/2011/01/piwik-1-1-2/
+    - http://www.securityfocus.com/bid/45787
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/64638
+affected:
+    - name: piwik-tracker
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.1.0"
