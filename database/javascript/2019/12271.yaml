@@ -1,0 +1,15 @@
+---
+cve: 2019-12271
+title: CVE in ng-file-upload
+description: >
+    Sandline Centraleyezer (On Premises) allows unrestricted File Upload with a dangerous type, because the feature of adding ".jpg" to any uploaded filename is not enforced on the server side.
+cvss_v2: 7.5
+references:
+    - http://packetstormsecurity.com/files/155355/Centraleyezer-Shell-Upload.html
+    - https://link.medium.com/Y2S4ZJbMy1
+affected:
+    - name: ng-file-upload
+      version:
+        []
+      fixedin:
+        - ">=2.2.2"
