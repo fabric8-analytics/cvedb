@@ -1,0 +1,15 @@
+---
+cve: 2019-12311
+title: CVE in xss-catcher
+description: >
+    Sandline Centraleyezer (On Premises) allows Unrestricted File Upload leading to Stored XSS. An HTML page running a script could be uploaded to the server. When a victim tries to download a CISO Report template, the script is loaded.
+cvss_v2: 4.3
+references:
+    - http://seclists.org/fulldisclosure/2019/Nov/9
+    - https://medium.com/insidersec0x42/centraleyezer-unrestricted-file-upload-cve-2019-12311-7cad12e95165
+affected:
+    - name: xss-catcher
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
