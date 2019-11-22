@@ -1,0 +1,16 @@
+---
+cve: 2013-1844
+title: CVE in org.netbeans.html:net.java.html.boot
+description: >
+    Cross-site scripting (XSS) vulnerability in Piwik before 1.11 allows remote attackers to inject arbitrary web script or HTML via unspecified vectors.
+cvss_v2: 4.3
+references:
+    - http://piwik.org/blog/2013/03/piwik-1-11/
+    - http://www.openwall.com/lists/oss-security/2013/03/12/4
+affected:
+    - groupId: org.netbeans.html
+      artifactId: net.java.html.boot
+      version:
+        - "<=1.7"
+      fixedin:
+        []
