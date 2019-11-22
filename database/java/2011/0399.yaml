@@ -1,0 +1,19 @@
+---
+cve: 2011-0399
+title: CVE in org.apidesign.html:net.java.html.boot
+description: >
+    Piwik before 1.1 does not prevent the rendering of the login form inside a frame in a third-party HTML document, which makes it easier for remote attackers to conduct clickjacking attacks via a crafted web site.
+cvss_v2: 4.3
+references:
+    - http://dev.piwik.org/trac/ticket/1679
+    - http://osvdb.org/70383
+    - http://piwik.org/blog/2011/01/piwik-1-1-2/
+    - http://www.securityfocus.com/bid/45787
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/64640
+affected:
+    - groupId: org.apidesign.html
+      artifactId: net.java.html.boot
+      version:
+        - "<=0.6"
+      fixedin:
+        []
