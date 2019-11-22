@@ -1,0 +1,18 @@
+---
+cve: 2011-4954
+title: CVE in egg-wechat-api-cache
+description: >
+    cobbler has local privilege escalation via the use of insecure location for PYTHON_EGG_CACHE
+cvss_v2: 7.2
+references:
+    - http://www.openwall.com/lists/oss-security/2012/04/12/10
+    - https://access.redhat.com/security/cve/cve-2011-4954
+    - https://bugs.gentoo.org/show_bug.cgi?id=CVE-2011-4954
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2011-4954
+    - https://security-tracker.debian.org/tracker/CVE-2011-4954
+affected:
+    - name: egg-wechat-api-cache
+      version:
+        []
+      fixedin:
+        - ">=1.1.0"
