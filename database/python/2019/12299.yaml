@@ -1,0 +1,15 @@
+---
+cve: 2019-12299
+title: CVE in django-stored-filters
+description: >
+    Sandline Centraleyezer (On Premises) allows Stored XSS using HTML entities in the name field of the Category section.
+cvss_v2: 4.3
+references:
+    - http://seclists.org/fulldisclosure/2019/Nov/8
+    - https://medium.com/insidersec0x42/centraleyezer-stored-xss-using-html-entities-cve-2019-12299-5c295ae54ef
+affected:
+    - name: django-stored-filters
+      version:
+        []
+      fixedin:
+        - ">=0.1.1"
