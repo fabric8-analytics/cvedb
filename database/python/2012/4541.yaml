@@ -1,0 +1,16 @@
+---
+cve: 2012-4541
+title: CVE in html
+description: >
+    Cross-site scripting (XSS) vulnerability in Piwik before 1.9 allows remote attackers to inject arbitrary web script or HTML via unspecified vectors.
+cvss_v2: 4.3
+references:
+    - http://piwik.org/blog/2012/10/piwik-1-9/
+    - http://www.openwall.com/lists/oss-security/2012/10/22/1
+    - http://www.openwall.com/lists/oss-security/2012/10/23/2
+affected:
+    - name: html
+      version:
+        - "<=1.8"
+      fixedin:
+        - ">=1.9"
