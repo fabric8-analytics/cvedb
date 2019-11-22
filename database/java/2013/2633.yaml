@@ -1,0 +1,15 @@
+---
+cve: 2013-2633
+title: CVE in se.vgregion.oppna-program-piwik-tracking:oppna-program-piwik-tracking-core-bc-composite-svc
+description: >
+    Piwik before 1.11 accepts input from a POST request instead of a GET request in unspecified circumstances, which might allow attackers to obtain sensitive information by leveraging the logging of parameters.
+cvss_v2: 5.0
+references:
+    - http://piwik.org/blog/2013/03/piwik-1-11/
+affected:
+    - groupId: se.vgregion.oppna-program-piwik-tracking
+      artifactId: oppna-program-piwik-tracking-core-bc-composite-svc
+      version:
+        - "<=1.0"
+      fixedin:
+        []
