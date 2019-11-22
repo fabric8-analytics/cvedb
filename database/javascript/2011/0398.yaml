@@ -1,0 +1,18 @@
+---
+cve: 2011-0398
+title: CVE in matomo
+description: >
+    The Piwik_Common::getIP function in Piwik before 1.1 does not properly determine the client IP address, which allows remote attackers to bypass intended geolocation and logging functionality via (1) use of a private (aka RFC 1918) address behind a proxy server or (2) spoofing of the X-Forwarded-For HTTP header.
+cvss_v2: 6.4
+references:
+    - http://dev.piwik.org/trac/ticket/567
+    - http://osvdb.org/70384
+    - http://piwik.org/blog/2011/01/piwik-1-1-2/
+    - http://www.securityfocus.com/bid/45787
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/64641
+affected:
+    - name: matomo
+      version:
+        - "<=0.1.0"
+      fixedin:
+        []
