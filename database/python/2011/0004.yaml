@@ -1,0 +1,22 @@
+---
+cve: 2011-0004
+title: CVE in multiple-printer
+description: >
+    Multiple cross-site scripting (XSS) vulnerabilities in Piwik before 1.1 allow remote attackers to inject arbitrary web script or HTML via unspecified vectors.
+cvss_v2: 4.3
+references:
+    - http://openwall.com/lists/oss-security/2011/01/06/1
+    - http://openwall.com/lists/oss-security/2011/01/06/15
+    - http://osvdb.org/70310
+    - http://piwik.org/blog/2011/01/piwik-1-1-2/
+    - http://piwik.org/blog/2011/01/piwik-1-1-security-advisory/
+    - http://piwik.org/blog/2011/01/professional-security-audit-in-piwik/
+    - http://secunia.com/advisories/42809
+    - http://www.securityfocus.com/bid/45659
+    - http://www.vupen.com/english/advisories/2011/0013
+affected:
+    - name: multiple-printer
+      version:
+        - "<=1.0.0"
+      fixedin:
+        []
