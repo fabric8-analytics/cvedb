@@ -1,0 +1,21 @@
+---
+cve: 2009-4611
+title: CVE in org.mortbay.jetty:jetty-spring
+description: >
+    Mort Bay Jetty 6.x through 6.1.22 and 7.0.0 writes backtrace data without sanitizing non-printable characters, which might allow remote attackers to modify a window's title, or possibly execute arbitrary commands or overwrite files, via an HTTP request containing an escape sequence for a terminal emulator, related to (1) a string value in the Age parameter to the default URI for the Cookie Dump Servlet in test-jetty-webapp/src/main/java/com/acme/CookieDump.java under cookie/, (2) an alphabetic value in the A parameter to jsp/expr.jsp, or (3) an alphabetic value in the Content-Length HTTP header to an arbitrary application.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/archive/1/508830/100/0/threaded
+    - http://www.ush.it/team/ush/hack_httpd_escape/adv.txt
+    - http://www.ush.it/team/ush/hack-jetty6x7x/jetty-adv.txt
+affected:
+    - groupId: org.mortbay.jetty
+      artifactId: jetty-spring
+      version:
+        - "<=6.1H.22"
+        - "<=6.1.20,6.1.19"
+        - "<=7.0.0.v20091005,7.0.0.RC6"
+      fixedin:
+        - ">=7.0.1.v20091125"
+        - "<=6.1.26,6.1.21"
+        - "<=6.1.18,6.1.17"
