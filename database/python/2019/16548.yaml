@@ -1,0 +1,15 @@
+---
+cve: 2019-16548
+title: CVE in azure-mgmt-compute
+description: >
+    A cross-site request forgery vulnerability in Jenkins Google Compute Engine Plugin 4.1.1 and earlier in ComputeEngineCloud#doProvision could be used to provision new agents.
+cvss_v2: 6.8
+references:
+    - http://www.openwall.com/lists/oss-security/2019/11/21/1
+    - https://jenkins.io/security/advisory/2019-11-21/#SECURITY-1586
+affected:
+    - name: azure-mgmt-compute
+      version:
+        - "<=4.1.0"
+      fixedin:
+        - ">=4.2.0"
