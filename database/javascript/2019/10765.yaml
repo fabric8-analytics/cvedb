@@ -1,0 +1,15 @@
+---
+cve: 2019-10765
+title: CVE in iobroker.admin
+description: >
+    iobroker.admin before 3.6.12 allows attacker to include file contents from outside the `/log/file1/` directory.
+cvss_v2: 7.5
+references:
+    - https://github.com/ioBroker/ioBroker.admin/commit/16b2b325ab47896090bc7f54b77b0a97ed74f5cd
+    - https://snyk.io/vuln/SNYK-JS-IOBROKERADMIN-534634
+affected:
+    - name: iobroker.admin
+      version:
+        - "<=3.6.10"
+      fixedin:
+        - ">=3.6.12"
