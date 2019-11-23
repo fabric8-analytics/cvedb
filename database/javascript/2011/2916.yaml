@@ -1,0 +1,17 @@
+---
+cve: 2011-2916
+title: CVE in simple-ssh
+description: >
+    qtnx 0.9 stores non-custom SSH keys in a world-readable configuration file. If a user has a world-readable or world-executable home directory, another local system user could obtain the private key used to connect to remote NX sessions.
+cvss_v2: 2.1
+references:
+    - https://access.redhat.com/security/cve/cve-2011-2916
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2011-2916
+    - https://security-tracker.debian.org/tracker/CVE-2011-2916
+affected:
+    - name: simple-ssh
+      version:
+        - "<=0.9.0,0.9.0"
+      fixedin:
+        - ">=1.0.0"
+        - "<=0.8.9,0.5.0"
