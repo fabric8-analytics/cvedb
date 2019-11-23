@@ -1,0 +1,15 @@
+---
+cve: 2011-0529
+title: CVE in brewblox-service
+description: >
+    Weborf before 0.12.5 is affected by a Denial of Service (DOS) due to malformed fields in HTTP.
+cvss_v2: 5.0
+references:
+    - https://security-tracker.debian.org/tracker/CVE-2011-0529
+    - https://www.openwall.com/lists/oss-security/2011/01/31/6
+affected:
+    - name: brewblox-service
+      version:
+        - "<=0.12.4.dev2"
+      fixedin:
+        - ">=0.12.5"
