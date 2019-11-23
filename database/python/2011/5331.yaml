@@ -1,0 +1,15 @@
+---
+cve: 2011-5331
+title: CVE in distributed
+description: >
+    Distributed Ruby (aka DRuby) 1.8 mishandles instance_eval.
+cvss_v2: 7.5
+references:
+    - https://www.exploit-db.com/exploits/17058
+affected:
+    - name: distributed
+      version:
+        - "<=1.8.0,1.8.0"
+      fixedin:
+        - ">=1.8.1"
+        - "<=1.7.4,1.0.0"
