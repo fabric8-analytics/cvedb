@@ -1,0 +1,22 @@
+---
+cve: 2012-1155
+title: CVE in @ryansmith94/moodle-plugin-release
+description: >
+    Moodle has a database activity export permission issue where the export function of the database activity module exports all entries even those from groups the user does not belong to
+cvss_v2: 5.0
+references:
+    - http://lists.fedoraproject.org/pipermail/package-announce/2012-April/077635.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2012-April/078209.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2012-April/078210.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2012-May/080712.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2012-May/081047.html
+    - https://access.redhat.com/security/cve/cve-2012-1155
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2012-1155
+    - https://moodle.org/mod/forum/discuss.php?d=198621
+    - https://security-tracker.debian.org/tracker/CVE-2012-1155
+affected:
+    - name: @ryansmith94/moodle-plugin-release
+      version:
+        - "<=2.0.2,2.0.0"
+      fixedin:
+        - "<=1.0.6,1.0.0"
