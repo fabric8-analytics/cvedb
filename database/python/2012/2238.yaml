@@ -1,6 +1,6 @@
 ---
 cve: 2012-2238
-title: CVE in trytond-account
+title: CVE in trytond
 description: >
     trytond 2.4: ModelView.button fails to validate authorization
 cvss_v2: 5.0
@@ -11,9 +11,8 @@ references:
     - https://exchange.xforce.ibmcloud.com/vulnerabilities/78435
     - https://security-tracker.debian.org/tracker/CVE-2012-2238
 affected:
-    - name: trytond-account
+    - name: trytond
       version:
-        - "<=2.4.1,2.4.0"
+        - "<=2.2.14"
       fixedin:
-        - ">=2.4.2"
-        - "<=2.2.7,1.0.0"
+        - ">=2.4.0"
