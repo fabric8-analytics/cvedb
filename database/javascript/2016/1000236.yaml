@@ -1,0 +1,19 @@
+---
+cve: 2016-1000236
+title: CVE in cookie-signature
+description: >
+    Node-cookie-signature before 1.0.6 is affected by a timing attack due to the type of comparison used.
+cvss_v2: 3.5
+references:
+    - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=838618
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1371409
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2016-1000236
+    - https://security-tracker.debian.org/tracker/CVE-2016-1000236
+    - https://travis-ci.com/nodejs/security-wg/builds/76423102
+    - https://www.mail-archive.com/secure-testing-team@lists.alioth.debian.org/msg06583.html
+affected:
+    - name: cookie-signature
+      version:
+        - "<=1.0.3"
+      fixedin:
+        - ">=1.0.4"
