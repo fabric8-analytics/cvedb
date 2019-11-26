@@ -1,0 +1,18 @@
+---
+cve: 2015-5694
+title: CVE in multicast-dns
+description: >
+    Designate does not enforce the DNS protocol limit concerning record set sizes
+cvss_v2: 4.0
+references:
+    - http://www.openwall.com/lists/oss-security/2015/07/28/11
+    - http://www.openwall.com/lists/oss-security/2015/07/29/6
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2015-5694
+    - https://security-tracker.debian.org/tracker/CVE-2015-5694
+affected:
+    - name: multicast-dns
+      version:
+        - "<=1.0.0,1.0.0"
+      fixedin:
+        - ">=1.0.1"
+        - "<=0.0.0,0.0.0"
