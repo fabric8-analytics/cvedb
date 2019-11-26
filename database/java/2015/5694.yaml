@@ -1,0 +1,18 @@
+---
+cve: 2015-5694
+title: CVE in com.microsoft.azure.dns.v2016_04_01:azure-mgmt-dns
+description: >
+    Designate does not enforce the DNS protocol limit concerning record set sizes
+cvss_v2: 4.0
+references:
+    - http://www.openwall.com/lists/oss-security/2015/07/28/11
+    - http://www.openwall.com/lists/oss-security/2015/07/29/6
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2015-5694
+    - https://security-tracker.debian.org/tracker/CVE-2015-5694
+affected:
+    - groupId: com.microsoft.azure.dns.v2016_04_01
+      artifactId: azure-mgmt-dns
+      version:
+        - "<=1.0.0-beta-1"
+      fixedin:
+        []
