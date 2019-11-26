@@ -1,0 +1,14 @@
+---
+cve: 2014-1238
+title: CVE in q
+description: >
+    Cross-site scripting (XSS) vulnerability in ui/common/managedlistdialog.aspx in Gael Q-Pulse 0.6 and earlier.
+cvss_v2: 4.3
+references:
+    - https://seclists.org/bugtraq/2014/Jan/41
+affected:
+    - name: q
+      version:
+        - "<=0.6.0"
+      fixedin:
+        - ">=0.7.0"
