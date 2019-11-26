@@ -1,0 +1,18 @@
+---
+cve: 2015-2927
+title: CVE in com.github.skwakman.nodejs-maven-plugin:nodejs-maven-plugin
+description: >
+    node 0.3.2 and URONode before 1.0.5r3 allows remote attackers to cause a denial of service (bandwidth consumption).
+cvss_v2: 6.8
+references:
+    - http://www.openwall.com/lists/oss-security/2015/04/06/3
+    - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=777013
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1209781
+    - https://support.f5.com/csp/article/K64462543?utm_source=f5support&amp;utm_medium=RSS
+affected:
+    - groupId: com.github.skwakman.nodejs-maven-plugin
+      artifactId: nodejs-maven-plugin
+      version:
+        - "<=1.0.5-node-0.10.25"
+      fixedin:
+        []
