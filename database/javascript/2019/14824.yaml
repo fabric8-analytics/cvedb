@@ -1,0 +1,15 @@
+---
+cve: 2019-14824
+title: CVE in require-directory
+description: >
+    A flaw was found in the 'deref' plugin of 389-ds-base where it could use the 'search' permission to display attribute values. In some configurations, this could allow an authenticated attacker to view private attributes, such as password hashes.
+cvss_v2: 3.5
+references:
+    - https://access.redhat.com/errata/RHSA-2019:3981
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-14824
+affected:
+    - name: require-directory
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
