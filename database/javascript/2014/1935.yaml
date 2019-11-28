@@ -1,0 +1,16 @@
+---
+cve: 2014-1935
+title: CVE in node-9-9-9
+description: >
+    9base 1:6-6 and 1:6-7 insecurely creates temporary files which results in predictable filenames.
+cvss_v2: 5.0
+references:
+    - http://www.openwall.com/lists/oss-security/2014/02/11/1
+    - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=737206
+    - https://security-tracker.debian.org/tracker/CVE-2014-1935
+affected:
+    - name: node-9-9-9
+      version:
+        - "<=1.0.0"
+      fixedin:
+        []
