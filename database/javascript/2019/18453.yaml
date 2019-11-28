@@ -1,0 +1,15 @@
+---
+cve: 2019-18453
+title: CVE in gitlab
+description: >
+    An issue was discovered in GitLab Community and Enterprise Edition 11.6 through 12.4 in the add comments via email feature. It has Insecure Permissions.
+cvss_v2: 4.0
+references:
+    - https://about.gitlab.com/blog/2019/10/30/security-release-gitlab-12-dot-4-dot-1-released/
+    - https://about.gitlab.com/blog/categories/releases/
+affected:
+    - name: gitlab
+      version:
+        - "<=12.0.1,11.6.0"
+      fixedin:
+        - "<=11.5.1,0.0.1"
