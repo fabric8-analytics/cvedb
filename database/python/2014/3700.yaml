@@ -1,0 +1,15 @@
+---
+cve: 2014-3700
+title: CVE in cfn-deploy
+description: >
+    eDeploy through at least 2014-10-14 has remote code execution due to eval() of untrusted data
+cvss_v2: 7.5
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2014-3700
+    - https://security-tracker.debian.org/tracker/CVE-2014-3700
+affected:
+    - name: cfn-deploy
+      version:
+        - "<=1.0.9"
+      fixedin:
+        []
