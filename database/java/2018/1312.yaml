@@ -1,0 +1,30 @@
+---
+cve: 2018-1312
+title: CVE in com.joyent.http-signature:apache-http-client-signature
+description: >
+    In Apache httpd 2.2.0 to 2.4.29, when generating an HTTP Digest authentication challenge, the nonce sent to prevent reply attacks was not correctly generated using a pseudo-random seed. In a cluster of servers using a common Digest authentication configuration, HTTP requests could be replayed across servers by an attacker without detection.
+cvss_v2: 6.8
+references:
+    - http://www.openwall.com/lists/oss-security/2018/03/24/7
+    - http://www.securityfocus.com/bid/103524
+    - http://www.securitytracker.com/id/1040571
+    - https://access.redhat.com/errata/RHSA-2018:3558
+    - https://access.redhat.com/errata/RHSA-2019:0366
+    - https://access.redhat.com/errata/RHSA-2019:0367
+    - https://access.redhat.com/errata/RHSA-2019:1898
+    - https://httpd.apache.org/security/vulnerabilities_24.html
+    - https://lists.debian.org/debian-lts-announce/2018/05/msg00020.html
+    - https://security.netapp.com/advisory/ntap-20180601-0004/
+    - https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbux03909en_us
+    - https://usn.ubuntu.com/3627-1/
+    - https://usn.ubuntu.com/3627-2/
+    - https://usn.ubuntu.com/3937-2/
+    - https://www.debian.org/security/2018/dsa-4164
+affected:
+    - groupId: com.joyent.http-signature
+      artifactId: apache-http-client-signature
+      version:
+        - "<=2.2.2,2.2.0"
+      fixedin:
+        - ">=3.0.0"
+        - "<=2.1.0,1.0.0"
