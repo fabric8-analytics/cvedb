@@ -1,0 +1,15 @@
+---
+cve: 2019-10767
+title: CVE in iobroker.js-controller
+description: >
+    An attacker can include file contents from outside the `/adapter/xxx/` directory, where `xxx` is the name of an existent adapter like "admin". It is exploited using the administrative web panel with a request for an adapter file. **Note:** The attacker has to be logged in if the authentication is enabled (by default isn't enabled).
+cvss_v2: 5.0
+references:
+    - https://github.com/ioBroker/ioBroker.js-controller/commit/f6e292c6750a491a5000d0f851b2fede4f9e2fda
+    - https://snyk.io/vuln/SNYK-JS-IOBROKERJSCONTROLLER-534881
+affected:
+    - name: iobroker.js-controller
+      version:
+        - "<=1.5.14"
+      fixedin:
+        - ">=2.0.25"
