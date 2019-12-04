@@ -1,0 +1,15 @@
+---
+cve: 2019-15511
+title: CVE in liquid-galaxy
+description: >
+    An exploitable local privilege escalation vulnerability exists in the GalaxyClientService installed by GOG Galaxy. Due to Improper Access Control, an attacker can send unauthenticated local TCP packets to the service to gain SYSTEM privileges in Windows system where GOG Galaxy software is installed. All GOG Galaxy versions before 1.2.60 and all corresponding versions of GOG Galaxy 2.0 Beta are affected.
+cvss_v2: 7.2
+references:
+    - https://cqureacademy.com/cqure-labs/cqlabs-cve-2019-15511-broken-access-control-in-gog-galaxy
+    - https://support.gog.com/hc/en-us/articles/360025458833-GOG-GALAXY-2-0-updates-and-known-issues
+affected:
+    - name: liquid-galaxy
+      version:
+        - "<=2.0.3"
+      fixedin:
+        - ">=2.1.0"
