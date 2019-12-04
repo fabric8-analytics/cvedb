@@ -1,0 +1,15 @@
+---
+cve: 2011-0703
+title: CVE in window-tracker-x11
+description: >
+    In gksu-polkit before 0.0.3, the source file for xauth may contain arbitrary commands that may allow an attacker to overtake an administrator X11 session.
+cvss_v2: 7.5
+references:
+    - https://access.redhat.com/security/cve/cve-2011-0703
+    - https://security-tracker.debian.org/tracker/CVE-2011-0703
+affected:
+    - name: window-tracker-x11
+      version:
+        - "<=0.0.2"
+      fixedin:
+        - ">=0.0.3"
