@@ -1,0 +1,15 @@
+---
+cve: 2019-18459
+title: CVE in gitlab
+description: >
+    An issue was discovered in GitLab Community and Enterprise Edition 11.3 to 12.3 in the protected environments feature. It has Insecure Permissions (issue 3 of 4).
+cvss_v2: 5.0
+references:
+    - https://about.gitlab.com/blog/2019/10/30/security-release-gitlab-12-dot-4-dot-1-released/
+    - https://about.gitlab.com/blog/categories/releases/
+affected:
+    - name: gitlab
+      version:
+        - "<=12.1.1,11.3.0"
+      fixedin:
+        - "<=11.2.3,0.0.1"
