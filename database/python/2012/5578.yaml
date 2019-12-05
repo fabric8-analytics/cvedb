@@ -14,6 +14,6 @@ references:
 affected:
     - name: keyring
       version:
-        - "<=0.10"
+        - "<=0.9.3"
       fixedin:
-        - ">=0.10.1"
+        - ">=0.10"
