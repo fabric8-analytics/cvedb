@@ -1,0 +1,15 @@
+---
+cve: 2017-7399
+title: CVE in webdriver-manager
+description: >
+    Cloudera Manager 5.8.x before 5.8.5, 5.9.x before 5.9.2, and 5.10.x before 5.10.1 allows a read-only Cloudera Manager user to discover the usernames of other users and elevate the privileges of those users.
+cvss_v2: 6.5
+references:
+    - https://docs.cloudera.com/documentation/other/security-bulletins/topics/Security-Bulletin.html#concept_tvf_34r_1cb
+affected:
+    - name: webdriver-manager
+      version:
+        - "<=5.2.0,5.0.0"
+      fixedin:
+        - ">=6.0.0"
+        - "<=4.0.0,0.0.1"
