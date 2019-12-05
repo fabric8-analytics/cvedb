@@ -1,0 +1,16 @@
+---
+cve: 2013-6234
+title: CVE in ng-file-upload
+description: >
+    Unrestricted file upload vulnerability in the Worksheet designer in SpagoBI before 4.1 allows remote authenticated users to execute arbitrary code by uploading a file with an executable extension, then accessing it via a direct request to the file in an unspecified directory, aka "XSS File Upload."
+cvss_v2: 6.0
+references:
+    - http://packetstormsecurity.com/files/125497
+    - http://www.exploit-db.com/exploits/32040
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/91504
+affected:
+    - name: ng-file-upload
+      version:
+        - "<=4.0.4"
+      fixedin:
+        - ">=4.1.0"
