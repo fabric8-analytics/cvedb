@@ -1,0 +1,14 @@
+---
+cve: 2013-6879
+title: CVE in joomla
+description: >
+    The Mijosoft MijoSearch component 2.0.1 and earlier for Joomla! allows remote attackers to obtain sensitive information via a request to component/mijosearch/search, which reveals the installation path in an error message.
+cvss_v2: 5.0
+references:
+    - https://www.htbridge.com/advisory/HTB23186
+affected:
+    - name: joomla
+      version:
+        - "<=2.0.1"
+      fixedin:
+        - ">=2.1.0"
