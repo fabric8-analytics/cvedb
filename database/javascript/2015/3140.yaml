@@ -1,0 +1,16 @@
+---
+cve: 2015-3140
+title: CVE in @intugine-technologies/geocenter
+description: >
+    Multiple cross-site request forgery (CSRF) vulnerabilities in Synametrics Technologies SynaMan before 3.5 Build 1451, Syncrify before 3.7 Build 856, and SynTail before 1.5 Build 567
+cvss_v2: 6.8
+references:
+    - http://web.synametrics.com/SynamanVersionHistory.htm
+    - https://web.synametrics.com/SyncrifyVersionHistory.htm
+    - https://web.synametrics.com/SyntailVersionHistory.htm
+affected:
+    - name: @intugine-technologies/geocenter
+      version:
+        - "<=1.0.0"
+      fixedin:
+        []
