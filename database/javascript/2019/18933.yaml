@@ -1,0 +1,16 @@
+---
+cve: 2019-18933
+title: CVE in zulip-js
+description: >
+    In Zulip Server versions from 1.7.0 to before 2.0.7, a bug in the new user signup process meant that users who registered their account using social authentication (e.g., GitHub or Google SSO) in an organization that also allows password authentication could have their personal API key stolen by an unprivileged attacker, allowing nearly full access to the user's account.
+cvss_v2: 7.5
+references:
+    - https://blog.zulip.org/2019/11/21/zulip-2-0-7-security-release/
+    - https://github.com/zulip/zulip/commit/0c2cc41d2e40807baa5ee2c72987ebfb64ea2eb6
+affected:
+    - name: zulip-js
+      version:
+        - "<=2.0.6,2.0.0"
+      fixedin:
+        - ">=2.0.7"
+        - "<=1.0.12,1.0.0"
