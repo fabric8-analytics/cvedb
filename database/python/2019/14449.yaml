@@ -1,0 +1,15 @@
+---
+cve: 2019-14449
+title: CVE in cloudera-director-python-client
+description: >
+    An issue was discovered in Cloudera Manager 5.x before 5.16.2, 6.0.x before 6.0.2, and 6.1.x before 6.1.1. Malicious impala queries can result in Cross Site Scripting (XSS) when viewed within this product.
+cvss_v2: 3.5
+references:
+    - https://docs.cloudera.com/documentation/other/security-bulletins/topics/Security-Bulletin.html#concept_sky_fq1_cjb
+affected:
+    - name: cloudera-director-python-client
+      version:
+        - "<=6.1.0,6.0.0"
+      fixedin:
+        - ">=6.2.0.1"
+        - "<=2.8.0,1.1.0"
