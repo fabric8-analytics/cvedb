@@ -1,0 +1,15 @@
+---
+cve: 2016-9271
+title: CVE in webdriver-manager
+description: >
+    Cloudera Manager 5.7.x before 5.7.6, 5.8.x before 5.8.4, and 5.9.x before 5.9.1 allows XSS in the help search feature.
+cvss_v2: 3.5
+references:
+    - https://docs.cloudera.com/documentation/other/security-bulletins/topics/Security-Bulletin.html#tsb_210
+affected:
+    - name: webdriver-manager
+      version:
+        - "<=5.2.0,5.0.0"
+      fixedin:
+        - ">=6.0.0"
+        - "<=4.0.0,0.0.1"
