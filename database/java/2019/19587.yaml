@@ -1,0 +1,15 @@
+---
+cve: 2019-19587
+title: CVE in org.wso2.ei:org.wso2.carbon.micro.integrator.security
+description: >
+    In WSO2 Enterprise Integrator 6.5.0, reflected XSS occurs when updating the message processor configuration from the source view in the Management Console.
+cvss_v2: 4.3
+references:
+    - https://docs.wso2.com/display/Security/Security+Advisory+WSO2-2019-0658
+affected:
+    - groupId: org.wso2.ei
+      artifactId: org.wso2.carbon.micro.integrator.security
+      version:
+        - "<=6.5.0-m4,6.5.0-m1"
+      fixedin:
+        - "<=6.4.0,1.0.0-m1"
