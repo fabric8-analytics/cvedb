@@ -1,0 +1,17 @@
+---
+cve: 2019-11287
+title: CVE in collectd-rabbitmq
+description: >
+    Pivotal RabbitMQ, versions 3.7.x prior to 3.7.21 and 3.8.x prior to 3.8.1, and RabbitMQ for Pivotal Platform, 1.16.x versions prior to 1.16.7 and 1.17.x versions prior to 1.17.4, contain a web management plugin that is vulnerable to a denial of service attack. The "X-Reason" HTTP Header can be leveraged to insert a malicious Erlang format string that will expand and consume the heap, resulting in the server crashing.
+cvss_v2: 5.0
+references:
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/EEQ6O7PMNJKYFMQYHAB55L423GYK63SO/
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PYTGR3D5FW2O25RXZOTIZMOD2HAUVBE4/
+    - https://pivotal.io/security/cve-2019-11287
+affected:
+    - name: collectd-rabbitmq
+      version:
+        - "<=1.17.0,1.16.0"
+      fixedin:
+        - ">=1.18.0"
+        - "<=1.15.1,1.0.0"
