@@ -1,0 +1,14 @@
+---
+cve: 2019-15997
+title: CVE in dna-features-viewer
+description: >
+    A vulnerability in Cisco DNA Spaces: Connector could allow an authenticated, local attacker to perform a command injection attack and execute arbitrary commands on the underlying operating system as root. The vulnerability is due to insufficient validation of arguments passed to a specific CLI command. An attacker could exploit this vulnerability by including malicious input during the execution of the affected command. A successful exploit could allow the attacker to execute arbitrary commands on the underlying operating system as root.
+cvss_v2: 7.2
+references:
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20191120-dna-cmd-injection
+affected:
+    - name: dna-features-viewer
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=2.0.0"
