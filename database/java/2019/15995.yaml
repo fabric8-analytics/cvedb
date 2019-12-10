@@ -1,0 +1,15 @@
+---
+cve: 2019-15995
+title: CVE in org.openengsb.connector:org.openengsb.connector.promreport
+description: >
+    A vulnerability in the web UI of Cisco DNA Spaces: Connector could allow an authenticated, remote attacker to execute arbitrary SQL queries. The vulnerability exists because the web UI does not properly validate user-supplied input. An attacker could exploit this vulnerability by entering malicious SQL statements in an affected field in the web UI. A successful exploit could allow the attacker to remove the SQL database, which would require the reinstallation of the Connector VM.
+cvss_v2: 5.5
+references:
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20191120-dna-sqlinjection
+affected:
+    - groupId: org.openengsb.connector
+      artifactId: org.openengsb.connector.promreport
+      version:
+        []
+      fixedin:
+        - ">=2.0.0"
