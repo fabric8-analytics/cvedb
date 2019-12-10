@@ -1,0 +1,14 @@
+---
+cve: 2019-15996
+title: CVE in thumbor-spaces
+description: >
+    A vulnerability in Cisco DNA Spaces: Connector could allow an authenticated, local attacker to elevate privileges and execute arbitrary commands on the underlying operating system as root. The vulnerability is due to insufficient restrictions during the execution of an affected CLI command. An attacker could exploit this vulnerability by leveraging the insufficient restrictions to modify sensitive files. A successful exploit could allow the attacker to elevate privileges and execute arbitrary commands on the underlying operating system as root.
+cvss_v2: 7.2
+references:
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20191120-dna-priv-esca
+affected:
+    - name: thumbor-spaces
+      version:
+        - "<=2.0"
+      fixedin:
+        - ">=2.1"
