@@ -1,0 +1,18 @@
+---
+cve: 2012-5582
+title: CVE in com.glookast.api:api-fims
+description: >
+    opendnssec misuses libcurl API
+cvss_v2: 7.5
+references:
+    - http://www.openwall.com/lists/oss-security/2012/11/28/12
+    - http://www.openwall.com/lists/oss-security/2012/11/29/3
+    - http://www.openwall.com/lists/oss-security/2012/11/29/6
+    - https://security-tracker.debian.org/tracker/CVE-2012-5582
+affected:
+    - groupId: com.glookast.api
+      artifactId: api-fims
+      version:
+        []
+      fixedin:
+        - ">=1.2.0"
