@@ -1,0 +1,17 @@
+---
+cve: 2012-5518
+title: CVE in org.ovirt.vdsm-jsonrpc-java.vdsm-jsonrpc-java-client.1.1.6.client.org.ovirt.vdsm-jsonrpc-java:vdsm-jsonrpc-java-client
+description: >
+    vdsm: certificate generation upon node creation allowing vdsm to start and serve requests from anyone who has a matching key (and certificate)
+cvss_v2: 4.3
+references:
+    - http://www.openwall.com/lists/oss-security/2012/11/11/3
+    - https://access.redhat.com/security/cve/cve-2012-5518
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2012-5518
+affected:
+    - groupId: org.ovirt.vdsm-jsonrpc-java.vdsm-jsonrpc-java-client.1.1.6.client.org.ovirt.vdsm-jsonrpc-java
+      artifactId: vdsm-jsonrpc-java-client
+      version:
+        []
+      fixedin:
+        - ">=1.1.6"
