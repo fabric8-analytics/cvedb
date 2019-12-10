@@ -1,6 +1,6 @@
 ---
 cve: 2017-15881
-title: CVE in keystone
+title: CVE in complex-scripting
 description: >
     Cross-Site Scripting vulnerability in KeystoneJS before 4.0.0-beta.7 allows remote authenticated administrators to inject arbitrary web script or HTML via the "content brief" or "content extended" field, a different vulnerability than CVE-2017-15878.
 cvss_v2: 3.5
@@ -10,6 +10,10 @@ references:
     - https://github.com/keystonejs/keystone/issues/4437
     - https://github.com/keystonejs/keystone/pull/4478
 affected:
-    - name: keystone
+    - name: complex-scripting
       version:
-        - "<=4.0.0-beta.5"
+        - "<=0.0.1"
+        - "<=4.0.0,4.0.0"
+      fixedin:
+        - ">=5.0.0"
+        - "<=3.1.2,0.5.0"
