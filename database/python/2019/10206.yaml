@@ -1,0 +1,19 @@
+---
+cve: 2019-10206
+title: CVE in ansible
+description: >
+    ansible-playbook -k and ansible cli tools, all versions 2.8.x before 2.8.4, all 2.7.x before 2.7.13 and all 2.6.x before 2.6.19, prompt passwords by expanding them from templates as they could contain special characters. Passwords should be wrapped to prevent templates trigger and exposing them.
+cvss_v2: 4.0
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-10206
+affected:
+    - name: ansible
+      version:
+        - "<=2.6.18,2.6.0a1"
+        - "<=2.7.12,2.7.0a1"
+        - "<=2.8.3,2.8.0a1"
+      fixedin:
+        - ">=2.8.4"
+        - "<=2.7.15,2.7.13"
+        - "<=2.6.20,2.6.19"
+        - "<=2.5.15,1.0"
