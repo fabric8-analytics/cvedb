@@ -1,0 +1,17 @@
+---
+cve: 2012-5582
+title: CVE in mandrill-api
+description: >
+    opendnssec misuses libcurl API
+cvss_v2: 7.5
+references:
+    - http://www.openwall.com/lists/oss-security/2012/11/28/12
+    - http://www.openwall.com/lists/oss-security/2012/11/29/3
+    - http://www.openwall.com/lists/oss-security/2012/11/29/6
+    - https://security-tracker.debian.org/tracker/CVE-2012-5582
+affected:
+    - name: mandrill-api
+      version:
+        []
+      fixedin:
+        - ">=1.0.2"
