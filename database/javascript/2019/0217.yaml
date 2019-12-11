@@ -1,0 +1,42 @@
+---
+cve: 2019-0217
+title: CVE in node-http-server
+description: >
+    In Apache HTTP Server 2.4 release 2.4.38 and prior, a race condition in mod_auth_digest when running in a threaded server could allow a user with valid credentials to authenticate using another username, bypassing configured access control restrictions.
+cvss_v2: 6.0
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2019-04/msg00051.html
+    - http://lists.opensuse.org/opensuse-security-announce/2019-04/msg00061.html
+    - http://lists.opensuse.org/opensuse-security-announce/2019-04/msg00084.html
+    - http://www.openwall.com/lists/oss-security/2019/04/02/5
+    - http://www.securityfocus.com/bid/107668
+    - https://access.redhat.com/errata/RHSA-2019:2343
+    - https://access.redhat.com/errata/RHSA-2019:3436
+    - https://access.redhat.com/errata/RHSA-2019:3932
+    - https://access.redhat.com/errata/RHSA-2019:3933
+    - https://access.redhat.com/errata/RHSA-2019:3935
+    - https://access.redhat.com/errata/RHSA-2019:4126
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1695020
+    - https://httpd.apache.org/security/vulnerabilities_24.html
+    - https://lists.apache.org/thread.html/56c2e7cc9deb1c12a843d0dc251ea7fd3e7e80293cde02fcd65286ba@%3Ccvs.httpd.apache.org%3E
+    - https://lists.apache.org/thread.html/84a3714f0878781f6ed84473d1a503d2cc382277e100450209231830@%3Ccvs.httpd.apache.org%3E
+    - https://lists.apache.org/thread.html/e0b8f6e858b1c8ec2ce8e291a2c543d438915037c7af661ab6d33808@%3Cdev.httpd.apache.org%3E
+    - https://lists.debian.org/debian-lts-announce/2019/04/msg00008.html
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ALIR5S3O7NRHEGFMIDMUSYQIZOE4TJJN/
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/EZRMTEIGZKYFNGIDOTXN3GNEJTLVCYU7/
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/WETXNQWNQLWHV6XNW6YTO5UGDTIWAQGT/
+    - https://seclists.org/bugtraq/2019/Apr/5
+    - https://security.netapp.com/advisory/ntap-20190423-0001/
+    - https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbux03950en_us
+    - https://usn.ubuntu.com/3937-1/
+    - https://usn.ubuntu.com/3937-2/
+    - https://www.debian.org/security/2019/dsa-4422
+    - https://www.oracle.com/technetwork/security-advisory/cpujul2019-5072835.html
+    - https://www.oracle.com/technetwork/security-advisory/cpuoct2019-5072832.html
+affected:
+    - name: node-http-server
+      version:
+        - "<=7.1.0,7.0.0"
+      fixedin:
+        - ">=8.0.0"
+        - "<=6.2.1,1.0.0"
