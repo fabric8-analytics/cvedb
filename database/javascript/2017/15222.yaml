@@ -1,0 +1,17 @@
+---
+cve: 2017-15222
+title: CVE in tachyons-overflow
+description: >
+    Buffer Overflow vulnerability in Ayukov NFTPD 2.0 and earlier allows remote attackers to execute arbitrary code.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/101602
+    - https://www.exploit-db.com/exploits/43025/
+    - https://www.exploit-db.com/exploits/43448/
+    - https://www.exploit-db.com/exploits/46070/
+affected:
+    - name: tachyons-overflow
+      version:
+        - "<=2.0.0"
+      fixedin:
+        - ">=2.0.1"
