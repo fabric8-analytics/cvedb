@@ -1,0 +1,18 @@
+---
+cve: 2009-1802
+title: CVE in koa-csrf
+description: >
+    Multiple cross-site request forgery (CSRF) vulnerabilities in FreePBX 2.5.1, and other 2.4.x, 2.5.x, and pre-release 2.6.x versions, allow remote attackers to hijack the authentication of admins for requests that create a new admin account or have unspecified other impact.
+cvss_v2: 6.8
+references:
+    - http://freepbx.org/trac/ticket/3660
+    - http://osvdb.org/54262
+    - http://secunia.com/advisories/34772
+    - http://www.securityfocus.com/bid/34857
+affected:
+    - name: koa-csrf
+      version:
+        - "<=2.5.0,2.4.0"
+      fixedin:
+        - ">=3.0.2"
+        - "<=2.3.0,0.0.1"
