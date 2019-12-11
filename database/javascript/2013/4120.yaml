@@ -1,0 +1,15 @@
+---
+cve: 2013-4120
+title: CVE in service-api
+description: >
+    Katello has a Denial of Service vulnerability in API OAuth authentication
+cvss_v2: 5.0
+references:
+    - https://access.redhat.com/security/cve/cve-2013-4120
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-4120
+affected:
+    - name: service-api
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
