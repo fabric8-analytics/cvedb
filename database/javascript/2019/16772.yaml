@@ -1,0 +1,15 @@
+---
+cve: 2019-16772
+title: CVE in serialize-to-js
+description: >
+    The serialize-to-js NPM package before version 3.0.1 is vulnerable to Cross-site Scripting (XSS). It does not properly mitigate against unsafe characters in serialized regular expressions. This vulnerability is not affected on Node.js environment since Node.js's implementation of RegExp.prototype.toString() backslash-escapes all forward slashes in regular expressions. If serialized data of regular expression objects are used in an environment other than Node.js, it is affected by this vulnerability.
+cvss_v2: 4.3
+references:
+    - https://github.com/commenthol/serialize-to-js/commit/181d7d583ae5293cd47cc99b14ad13352875f3e3
+    - https://github.com/commenthol/serialize-to-js/security/advisories/GHSA-3fjq-93xj-3f3f
+affected:
+    - name: serialize-to-js
+      version:
+        - "<=3.0.0"
+      fixedin:
+        - ">=3.0.1"
