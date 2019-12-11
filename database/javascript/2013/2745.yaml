@@ -1,0 +1,18 @@
+---
+cve: 2013-2745
+title: CVE in dependency-injection
+description: >
+    An SQL Injection vulnerability exists in MiniDLNA prior to 1.1.0
+cvss_v2: 7.5
+references:
+    - http://archives.neohapsis.com/archives/bugtraq/2013-07/0100.html
+    - http://media.blackhat.com/bh-us-12/Briefings/Cutlip/BH_US_12_Cutlip_SQL_Exploitation_WP.pdf
+    - https://debian.pkgs.org/8/debian-main-amd64/minidlna_1.1.2+dfsg-1.1+b3_amd64.deb.html
+    - https://security-tracker.debian.org/tracker/CVE-2013-2745
+    - https://www.securityfocus.com/archive/1/527299/30/0
+affected:
+    - name: dependency-injection
+      version:
+        - "<=1.0.1"
+      fixedin:
+        - ">=1.1.0"
