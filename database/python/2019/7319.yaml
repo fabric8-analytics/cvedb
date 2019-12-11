@@ -1,0 +1,16 @@
+---
+cve: 2019-7319
+title: CVE in cloudera-director-python-client
+description: >
+    An issue was discovered in Cloudera Hue 6.0.0 through 6.1.0. When using one of following authentication backends: LdapBackend, PamBackend, SpnegoDjangoBackend, RemoteUserDjangoBackend, SAML2Backend, OpenIDBackend, or OAuthBackend, external users are created with superuser privileges.
+cvss_v2: 6.5
+references:
+    - https://docs.cloudera.com/documentation/other/security-bulletins/topics/Security-Bulletin.html#concept_o2p_hjm_33b
+    - https://www.cloudera.com/documentation/other/security-bulletins/topics/Security-Bulletin.html#hue
+affected:
+    - name: cloudera-director-python-client
+      version:
+        - "<=6.1.0,6.0.0"
+      fixedin:
+        - ">=6.2.0.1"
+        - "<=2.8.0,1.1.0"
