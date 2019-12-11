@@ -1,0 +1,17 @@
+---
+cve: 2015-7892
+title: CVE in org.json4s:json4s-native_2.13.0-M1
+description: >
+    Stack-based buffer overflow in the m2m1shot_compat_ioctl32 function in the Samsung m2m1shot driver framework, as used in Samsung S6 Edge, allows local users to have unspecified impact via a large data.buf_out.num_planes value in an ioctl call.
+cvss_v2: 4.6
+references:
+    - http://packetstormsecurity.com/files/134108/Samsung-M2m1shot-Kernel-Driver-Buffer-Overflow.html
+    - https://code.google.com/p/google-security-research/issues/detail?id=493
+    - https://www.exploit-db.com/exploits/38555/
+affected:
+    - groupId: org.json4s
+      artifactId: json4s-native_2.13.0-M1
+      version:
+        []
+      fixedin:
+        - ">=3.5.2"
