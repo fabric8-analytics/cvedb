@@ -1,0 +1,25 @@
+---
+cve: 2013-4411
+title: CVE in org.ops4j.pax.url:pax-url-cache
+description: >
+    Review Board: URL processing gives unauthorized users access to review lists
+cvss_v2: 4.0
+references:
+    - http://lists.fedoraproject.org/pipermail/package-announce/2013-November/120619.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2013-October/119819.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2013-October/119820.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2013-October/119830.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2013-October/119831.html
+    - http://www.securityfocus.com/bid/63023
+    - https://access.redhat.com/security/cve/cve-2013-4411
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-4411
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/88061
+    - https://security-tracker.debian.org/tracker/CVE-2013-4411
+affected:
+    - groupId: org.ops4j.pax.url
+      artifactId: pax-url-cache
+      version:
+        - "<=1.6.0,1.6.0"
+      fixedin:
+        - ">=2.0.0"
+        - "<=1.5.2,1.0.0"
