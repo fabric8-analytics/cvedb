@@ -1,0 +1,16 @@
+---
+cve: 2019-4612
+title: CVE in io.astronomer.analytics.java:analytics
+description: >
+    IBM Planning Analytics 2.0 is vulnerable to malicious file upload in the My Account Portal. Attackers can make use of this weakness and upload malicious executable files into the system and it can be sent to victim for performing further attacks. IBM X-Force ID: 168523.
+cvss_v2: 6.5
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/168523
+    - https://www.ibm.com/support/pages/node/1118565
+affected:
+    - groupId: io.astronomer.analytics.java
+      artifactId: analytics
+      version:
+        - "<=2.0.0-RC5"
+      fixedin:
+        []
