@@ -1,0 +1,19 @@
+---
+cve: 2012-5527
+title: CVE in net.israfil.services.mail:israfil-mail-service-javamail
+description: >
+    Claws Mail vCalendar plugin: credentials exposed on interface
+cvss_v2: 2.1
+references:
+    - http://www.openwall.com/lists/oss-security/2012/11/28/10
+    - http://www.openwall.com/lists/oss-security/2012/11/28/8
+    - http://www.openwall.com/lists/oss-security/2012/11/28/9
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2012-5527
+    - https://security-tracker.debian.org/tracker/CVE-2012-5527
+affected:
+    - groupId: net.israfil.services.mail
+      artifactId: israfil-mail-service-javamail
+      version:
+        []
+      fixedin:
+        - ">=0.5"
