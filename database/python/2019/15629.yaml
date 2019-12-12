@@ -1,0 +1,14 @@
+---
+cve: 2019-15629
+title: CVE in micro
+description: >
+    Trend Micro Password Manager versions 3.x, 5.0, and 5.1 for Android is affected by a FLAG_MISUSE vulnerability that could be exploited to allow the application to share information to third-party applications on the device.
+cvss_v2: 5.0
+references:
+    - https://esupport.trendmicro.com/en-us/home/pages/technical-support/1124012.aspx
+affected:
+    - name: micro
+      version:
+        - "<=3.1.0,3.0.0"
+      fixedin:
+        - "<=2.0.0,1.0.0"
