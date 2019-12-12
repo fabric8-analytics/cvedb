@@ -1,0 +1,19 @@
+---
+cve: 2019-19551
+title: CVE in django-user-management
+description: >
+    In userman 13.0.76.43 through 15.0.20 in Sangoma FreePBX, XSS exists in the User Management screen of the Administrator web site. An attacker with access to the User Control Panel application can submit malicious values in some of the time/date formatting and time-zone fields. These fields are not being properly sanitized. If this is done and a user (such as an admin) visits the User Management screen and views that user's profile, the XSS payload will render and execute in the context of the victim user's account.
+cvss_v2: 3.5
+references:
+    - https://wiki.freepbx.org/display/FOP/2019-12-03+Multiple+XSS+Vulnerabilities
+affected:
+    - name: django-user-management
+      version:
+        - "<=13.0.0,13.0.0"
+        - "<=14.0.0,14.0.0"
+        - "<=15.0.0,15.0.0"
+      fixedin:
+        - ">=16.0.0"
+        - "<=14.5.0,14.1.0"
+        - "<=13.1.1,13.1.0"
+        - "<=12.0.1,0.0.1"
