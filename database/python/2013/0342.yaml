@@ -1,0 +1,20 @@
+---
+cve: 2013-0342
+title: CVE in pyrad
+description: >
+    The CreateID function in packet.py in pyrad before 2.1 uses sequential packet IDs, which makes it easier for remote attackers to spoof packets by predicting the next ID, a different vulnerability than CVE-2013-0294.
+cvss_v2: 4.3
+references:
+    - http://www.openwall.com/lists/oss-security/2013/02/15/9
+    - http://www.openwall.com/lists/oss-security/2013/02/21/27
+    - http://www.openwall.com/lists/oss-security/2013/02/22/2
+    - http://www.securityfocus.com/bid/57984
+    - https://bugzilla.redhat.com/show_bug.cgi?id=911685
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/82134
+    - https://github.com/pyradius/pyrad/commit/38f74b36814ca5b1a27d9898141126af4953bee5
+affected:
+    - name: pyrad
+      version:
+        - "<=2.0"
+      fixedin:
+        - ">=2.1"
