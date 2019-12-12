@@ -1,0 +1,17 @@
+---
+cve: 2011-3617
+title: CVE in allmydata-tahoe
+description: >
+    Tahoe-LAFS v1.3.0 through v1.8.2 could allow unauthorized users to delete immutable files in some cases.
+cvss_v2: 5.5
+references:
+    - https://access.redhat.com/security/cve/cve-2011-3617
+    - https://people.canonical.com/~ubuntu-security/cve/2011/CVE-2011-3617.html
+    - https://security-tracker.debian.org/tracker/CVE-2011-3617
+affected:
+    - name: allmydata-tahoe
+      version:
+        - "<=1.8.2,1.3.0"
+      fixedin:
+        - ">=1.8.3"
+        - "<=1.2.0,0.6.0"
