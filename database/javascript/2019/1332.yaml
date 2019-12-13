@@ -1,0 +1,14 @@
+---
+cve: 2019-1332
+title: CVE in node-simple-odata-server-power-bi
+description: >
+    A cross-site scripting (XSS) vulnerability exists when Microsoft SQL Server Reporting Services (SSRS) does not properly sanitize a specially-crafted web request to an affected SSRS server, aka 'Microsoft SQL Server Reporting Services XSS Vulnerability'.
+cvss_v2: 4.3
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1332
+affected:
+    - name: node-simple-odata-server-power-bi
+      version:
+        []
+      fixedin:
+        - ">=0.3.1"
