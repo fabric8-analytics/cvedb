@@ -1,0 +1,14 @@
+---
+cve: 2019-12393
+title: CVE in angr-management
+description: >
+    Anviz access control devices are vulnerable to replay attacks which could allow attackers to intercept and replay open door requests.
+cvss_v2: 5.0
+references:
+    - https://www.0x90.zone/multiple/reverse/2019/11/28/Anviz-pwn.html
+affected:
+    - name: angr-management
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
