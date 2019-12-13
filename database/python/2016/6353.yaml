@@ -1,0 +1,15 @@
+---
+cve: 2016-6353
+title: CVE in sentry
+description: >
+    Cloudera Search in CDH before 5.7.0 allows unauthorized document access because Solr Queries by document id can bypass Sentry document-level security via the RealTimeGetHandler.
+cvss_v2: 3.5
+references:
+    - https://docs.cloudera.com/documentation/other/security-bulletins/topics/Security-Bulletin.html#tsb_165
+affected:
+    - name: sentry
+      version:
+        - "<=5.5.0-DEV,5.0.0"
+      fixedin:
+        - ">=6.0.0"
+        - "<=4.10.0,2.0.0-Alpha1"
