@@ -1,0 +1,16 @@
+---
+cve: 2018-17860
+title: CVE in cloudera-director-python-client
+description: >
+    Cloudera CDH has Insecure Permissions because ALL cannot be revoked.This affects 5.x through 5.15.1 and 6.x through 6.0.1.
+cvss_v2: 6.5
+references:
+    - https://docs.cloudera.com/documentation/other/security-bulletins/topics/Security-Bulletin.html#concept_vp4_q2x_thb
+    - https://www.cloudera.com/documentation/other/security-bulletins/topics/Security-Bulletin.html#hadoop
+affected:
+    - name: cloudera-director-python-client
+      version:
+        - "<=6.0.0,6.0.0"
+      fixedin:
+        - ">=6.1.0"
+        - "<=2.8.0,1.1.0"
