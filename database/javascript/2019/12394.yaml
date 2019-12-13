@@ -1,0 +1,14 @@
+---
+cve: 2019-12394
+title: CVE in system
+description: >
+    Anviz access control devices allow unverified password change which allows remote attackers to change the administrator password without prior authentication.
+cvss_v2: 7.5
+references:
+    - https://www.0x90.zone/multiple/reverse/2019/11/28/Anviz-pwn.html
+affected:
+    - name: system
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
