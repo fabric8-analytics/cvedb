@@ -1,0 +1,16 @@
+---
+cve: 2019-18250
+title: CVE in org.smartparam.manager:smartparam-manager-parent
+description: >
+    In all versions of ABB Power Generation Information Manager (PGIM) and Plant Connect, the affected product is vulnerable to authentication bypass, which may allow an attacker to remotely bypass authentication and extract credentials from the affected device.
+cvss_v2: 7.5
+references:
+    - https://iotsecuritynews.com/abb-power-generation-information-manager-pgim-and-plant-connect/
+    - https://www.us-cert.gov/ics/advisories/icsa-19-318-05
+affected:
+    - groupId: org.smartparam.manager
+      artifactId: smartparam-manager-parent
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
