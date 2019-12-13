@@ -1,0 +1,14 @@
+---
+cve: 2019-12391
+title: CVE in contentful-management
+description: >
+    The Anviz Management System for access control has insufficient logging for device events such as door open requests.
+cvss_v2: 5.0
+references:
+    - https://www.0x90.zone/multiple/reverse/2019/11/28/Anviz-pwn.html
+affected:
+    - name: contentful-management
+      version:
+        []
+      fixedin:
+        - ">=0.0.0-determined-by-semantic-release"
