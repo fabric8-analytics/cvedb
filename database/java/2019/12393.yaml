@@ -1,0 +1,15 @@
+---
+cve: 2019-12393
+title: CVE in fr.norad.operating.system.specific:operating-system-specific
+description: >
+    Anviz access control devices are vulnerable to replay attacks which could allow attackers to intercept and replay open door requests.
+cvss_v2: 5.0
+references:
+    - https://www.0x90.zone/multiple/reverse/2019/11/28/Anviz-pwn.html
+affected:
+    - groupId: fr.norad.operating.system.specific
+      artifactId: operating-system-specific
+      version:
+        []
+      fixedin:
+        - ">=0.5"
