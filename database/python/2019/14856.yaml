@@ -1,0 +1,19 @@
+---
+cve: 2019-14856
+title: CVE in ansible
+description: >
+    ansible before versions 2.8.6, 2.7.14, 2.6.20 is vulnerable to a None
+cvss_v2: 4.0
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-14856
+affected:
+    - name: ansible
+      version:
+        - "<=2.6.19,2.6.0a1"
+        - "<=2.7.13,2.7.0a1"
+        - "<=2.8.5,2.8.0a1"
+      fixedin:
+        - ">=2.8.6"
+        - "<=2.7.15,2.7.14"
+        - "<=2.6.20,2.6.20"
+        - "<=2.5.15,1.0"
