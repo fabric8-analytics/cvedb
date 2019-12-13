@@ -1,0 +1,15 @@
+---
+cve: 2019-14853
+title: CVE in ecdsa
+description: >
+    An error-handling flaw was found in python-ecdsa before version 0.13.3. During signature decoding, malformed DER signatures could raise unexpected exceptions (or no exceptions at all), which could lead to a denial of service.
+cvss_v2: 5.0
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-14853
+    - https://github.com/warner/python-ecdsa/releases/tag/python-ecdsa-0.13.3
+affected:
+    - name: ecdsa
+      version:
+        - "<=0.13.2"
+      fixedin:
+        - ">=0.13.3"
