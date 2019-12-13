@@ -1,0 +1,15 @@
+---
+cve: 2019-15685
+title: CVE in org.activiti.cloud.common:activiti-cloud-services-common-security
+description: >
+    Kaspersky Anti-Virus, Kaspersky Internet Security, Kaspersky Total Security, Kaspersky Free Anti-Virus, Kaspersky Small Office Security, Kaspersky Security Cloud up to 2020, the web protection component allowed an attacker remotely disable such product's security features as private browsing and anti-banner. Bypass.
+cvss_v2: 4.3
+references:
+    - https://support.kaspersky.com/general/vulnerability.aspx?el=12430#251119_1
+affected:
+    - groupId: org.activiti.cloud.common
+      artifactId: activiti-cloud-services-common-security
+      version:
+        - "<=7.1.0.M5"
+      fixedin:
+        []
