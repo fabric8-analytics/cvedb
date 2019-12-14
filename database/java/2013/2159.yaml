@@ -1,0 +1,19 @@
+---
+cve: 2013-2159
+title: CVE in commons-daemon:commons-daemon
+description: >
+    Monkey HTTP Daemon: broken user name authentication
+cvss_v2: 7.5
+references:
+    - http://www.openwall.com/lists/oss-security/2013/06/07/4
+    - http://www.securityfocus.com/bid/60415
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/85138
+    - https://security-tracker.debian.org/tracker/CVE-2013-2159
+affected:
+    - groupId: commons-daemon
+      artifactId: commons-daemon
+      version:
+        - "<=1.2.1,1.2.1"
+      fixedin:
+        - ">=1.2.2"
+        - "<=1.2.0,1.0.1"
