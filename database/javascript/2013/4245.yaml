@@ -1,0 +1,17 @@
+---
+cve: 2013-4245
+title: CVE in cordova-willow-orca
+description: >
+    Orca has arbitrary code execution due to insecure Python module load
+cvss_v2: 4.4
+references:
+    - https://access.redhat.com/security/cve/cve-2013-4245
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-4245
+    - https://bugzilla.suse.com/show_bug.cgi?id=CVE-2013-4245
+    - https://security-tracker.debian.org/tracker/CVE-2013-4245
+affected:
+    - name: cordova-willow-orca
+      version:
+        []
+      fixedin:
+        - ">=1.0.3"
