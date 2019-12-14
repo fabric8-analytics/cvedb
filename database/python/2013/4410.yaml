@@ -1,0 +1,26 @@
+---
+cve: 2013-4410
+title: CVE in reviewboard
+description: >
+    ReviewBoard: has an access-control problem in REST API
+cvss_v2: 5.0
+references:
+    - http://lists.fedoraproject.org/pipermail/package-announce/2013-November/120619.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2013-October/119819.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2013-October/119820.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2013-October/119830.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2013-October/119831.html
+    - http://www.securityfocus.com/bid/63022
+    - https://access.redhat.com/security/cve/cve-2013-4410
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-4410
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/88060
+    - https://security-tracker.debian.org/tracker/CVE-2013-4410
+affected:
+    - name: reviewboard
+      version:
+        - "<=1.6.18,1.6"
+        - "<=1.7.14,1.7"
+      fixedin:
+        - ">=1.7.15"
+        - "<=1.6.22,1.6.19"
+        - "<=1.5.7,1.0"
