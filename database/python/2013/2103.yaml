@@ -1,0 +1,16 @@
+---
+cve: 2013-2103
+title: CVE in openshift-under-kubernetes
+description: >
+    OpenShift cartridge allows remote URL retrieval
+cvss_v2: 5.5
+references:
+    - https://access.redhat.com/security/cve/cve-2013-2103
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-2103
+affected:
+    - name: openshift-under-kubernetes
+      version:
+        - "<=1.0.0,1.0.0"
+      fixedin:
+        - ">=1.0.1"
+        - "<=0.1.0,0.0.1"
