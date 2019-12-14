@@ -1,0 +1,15 @@
+---
+cve: 2013-4968
+title: CVE in org.appverse.web.framework.modules.backend.core.enterprise.log:appverse-web-modules-backend-core-enterprise-log
+description: >
+    Puppet Enterprise before 3.0.1 allows remote attackers to (1) conduct clickjacking attacks via unspecified vectors related to the console, and (2) conduct cross-site scripting (XSS) attacks via unspecified vectors related to "live management."
+cvss_v2: 4.3
+references:
+    - http://puppetlabs.com/security/cve/cve-2013-4968
+affected:
+    - groupId: org.appverse.web.framework.modules.backend.core.enterprise.log
+      artifactId: appverse-web-modules-backend-core-enterprise-log
+      version:
+        - "<=2.0.0-RC10"
+      fixedin:
+        []
