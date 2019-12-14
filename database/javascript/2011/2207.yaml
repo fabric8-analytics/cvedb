@@ -1,0 +1,18 @@
+---
+cve: 2011-2207
+title: CVE in dos-config
+description: >
+    dirmngr before 2.1.0 improperly handles certain system calls, which allows remote attackers to cause a denial of service (DOS) via a specially-crafted certificate.
+cvss_v2: 5.0
+references:
+    - https://access.redhat.com/security/cve/cve-2011-2207
+    - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=627377
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2011-2207
+    - https://security-tracker.debian.org/tracker/CVE-2011-2207
+    - https://www.openwall.com/lists/oss-security/2011/06/15/6
+affected:
+    - name: dos-config
+      version:
+        - "<=2.0.0"
+      fixedin:
+        - ">=2.1.0"
