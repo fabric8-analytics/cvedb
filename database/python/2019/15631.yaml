@@ -1,0 +1,14 @@
+---
+cve: 2019-15631
+title: CVE in gateway
+description: >
+    Remote Code Execution vulnerability in MuleSoft Mule CE/EE 3.x and API Gateway 2.x released before October 31, 2019 allows remote attackers to execute arbitrary code.
+cvss_v2: 7.5
+references:
+    - https://help.salesforce.com/articleView?id=000351827&language=en_US&type=1&mode=1
+affected:
+    - name: gateway
+      version:
+        - "<=2.0"
+      fixedin:
+        []
