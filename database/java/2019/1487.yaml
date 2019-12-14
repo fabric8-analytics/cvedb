@@ -1,0 +1,15 @@
+---
+cve: 2019-1487
+title: CVE in com.microsoft.identity.client:msal
+description: >
+    An information disclosure vulnerability in Android Apps using Microsoft Authentication Library (MSAL) 0.3.1-Alpha or later exists under specific conditions, aka 'Microsoft Authentication Library for Android Information Disclosure Vulnerability'.
+cvss_v2: 4.0
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1487
+affected:
+    - groupId: com.microsoft.identity.client
+      artifactId: msal
+      version:
+        - "<=0.3.1-alpha"
+      fixedin:
+        - ">=0.3.2-alpha"
