@@ -1,0 +1,16 @@
+---
+cve: 2019-4521
+title: CVE in cloud
+description: >
+    Platform System Manager in IBM Cloud Pak System 2.3 is potentially vulnerable to CVS Injection. A remote attacker could execute arbitrary commands on the system, caused by improper validation of csv file contents. IBM X-Force ID: 165179.
+cvss_v2: 10.0
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/165179
+    - https://www.ibm.com/support/pages/node/1126605
+affected:
+    - name: cloud
+      version:
+        - "<=2.3.0,2.3.0"
+      fixedin:
+        - ">=2.3.1"
+        - "<=2.2.4,1.9.7"
