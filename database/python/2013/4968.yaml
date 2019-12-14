@@ -1,0 +1,14 @@
+---
+cve: 2013-4968
+title: CVE in collectd-puppet
+description: >
+    Puppet Enterprise before 3.0.1 allows remote attackers to (1) conduct clickjacking attacks via unspecified vectors related to the console, and (2) conduct cross-site scripting (XSS) attacks via unspecified vectors related to "live management."
+cvss_v2: 4.3
+references:
+    - http://puppetlabs.com/security/cve/cve-2013-4968
+affected:
+    - name: collectd-puppet
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - "<=1.6.0,1.4.2"
