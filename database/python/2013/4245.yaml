@@ -1,0 +1,17 @@
+---
+cve: 2013-4245
+title: CVE in org-python
+description: >
+    Orca has arbitrary code execution due to insecure Python module load
+cvss_v2: 4.4
+references:
+    - https://access.redhat.com/security/cve/cve-2013-4245
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-4245
+    - https://bugzilla.suse.com/show_bug.cgi?id=CVE-2013-4245
+    - https://security-tracker.debian.org/tracker/CVE-2013-4245
+affected:
+    - name: org-python
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
