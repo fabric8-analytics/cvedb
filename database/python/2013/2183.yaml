@@ -1,0 +1,17 @@
+---
+cve: 2013-2183
+title: CVE in asyncio-monkey
+description: >
+    Monkey HTTP Daemon has local security bypass
+cvss_v2: 3.6
+references:
+    - http://www.openwall.com/lists/oss-security/2013/06/14/12
+    - http://www.openwall.com/lists/oss-security/2013/06/14/13
+    - https://security-tracker.debian.org/tracker/CVE-2013-2183
+    - https://www.securityfocus.com/bid/60589
+affected:
+    - name: asyncio-monkey
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
