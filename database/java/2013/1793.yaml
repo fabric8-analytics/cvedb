@@ -1,0 +1,17 @@
+---
+cve: 2013-1793
+title: CVE in org.pacesys.openstack4j.connectors:openstack4j-http-connector
+description: >
+    openstack-utils openstack-db has insecure password creation
+cvss_v2: 5.0
+references:
+    - https://access.redhat.com/security/cve/cve-2013-1793
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-1793
+affected:
+    - groupId: org.pacesys.openstack4j.connectors
+      artifactId: openstack4j-http-connector
+      version:
+        - "<=3.0.0,3.0.0"
+      fixedin:
+        - ">=3.0.1"
+        - "<=2.20,2.0.2"
