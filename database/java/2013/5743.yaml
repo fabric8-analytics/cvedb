@@ -1,0 +1,18 @@
+---
+cve: 2013-5743
+title: CVE in org.awake-sql:awake-sql
+description: >
+    Multiple SQL injection vulnerabilities in Zabbix 1.8.x before 1.8.18rc1, 2.0.x before 2.0.9rc1, and 2.1.x before 2.1.7.
+cvss_v2: 7.5
+references:
+    - https://admin.fedoraproject.org/updates/zabbix-1.8.18-1.el6
+    - https://admin.fedoraproject.org/updates/zabbix20-2.0.8-3.el6
+    - https://admin.fedoraproject.org/updates/zabbix20-2.0.9-1.el5
+    - https://support.zabbix.com/browse/ZBX-7091
+affected:
+    - groupId: org.awake-sql
+      artifactId: awake-sql
+      version:
+        - "<=2.0.2,2.0"
+      fixedin:
+        - "<=1.3.3,1.0.3"
