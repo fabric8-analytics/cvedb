@@ -1,0 +1,15 @@
+---
+cve: 2019-14909
+title: CVE in keycloak-js
+description: >
+    A vulnerability was found in Keycloak 7.x where the user federation LDAP bind type is none (LDAP anonymous bind), any password, invalid or valid will be accepted.
+cvss_v2: 7.5
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-14909
+affected:
+    - name: keycloak-js
+      version:
+        - "<=7.0.1,7.0.0"
+      fixedin:
+        - ">=8.0.0"
+        - "<=6.0.1,1.4.0"
