@@ -1,0 +1,23 @@
+---
+cve: 2013-2167
+title: CVE in org-python
+description: >
+    python-keystoneclient version 0.2.3 to 0.2.5 has middleware memcache signing bypass
+cvss_v2: 7.5
+references:
+    - http://lists.fedoraproject.org/pipermail/package-announce/2013-August/113944.html
+    - http://rhn.redhat.com/errata/RHSA-2013-0992.html
+    - http://www.openwall.com/lists/oss-security/2013/06/19/5
+    - http://www.securityfocus.com/bid/60680
+    - https://access.redhat.com/security/cve/cve-2013-2167
+    - https://bugs.gentoo.org/show_bug.cgi?id=CVE-2013-2167
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-2167
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/85492
+    - https://security-tracker.debian.org/tracker/CVE-2013-2167
+affected:
+    - name: org-python
+      version:
+        - "<=0.2.5,0.2.3"
+      fixedin:
+        - ">=0.2.6"
+        - "<=0.2.2,0.1.0"
