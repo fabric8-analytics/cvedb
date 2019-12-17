@@ -1,0 +1,15 @@
+---
+cve: 2014-7257
+title: CVE in agate-sql
+description: >
+    SQL injection vulnerability in DBD::PgPP 0.05 and earlier
+cvss_v2: 7.5
+references:
+    - http://jvn.jp/en/jp/JVN70490316/index.html
+    - http://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-000142.html
+affected:
+    - name: agate-sql
+      version:
+        - "<=0.5.0"
+      fixedin:
+        - ">=0.5.1"
