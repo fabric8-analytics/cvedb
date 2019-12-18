@@ -1,0 +1,24 @@
+---
+cve: 2012-2749
+title: CVE in mysql:mysql-connector-java
+description: >
+    MySQL 5.1.x before 5.1.63 and 5.5.x before 5.5.24 allows remote authenticated users to cause a denial of service (mysqld crash) via vectors related to incorrect calculation and a sort order index.
+cvss_v2: 4.0
+references:
+    - http://dev.mysql.com/doc/refman/5.1/en/news-5-1-63.html
+    - http://rhn.redhat.com/errata/RHSA-2012-1462.html
+    - http://rhn.redhat.com/errata/RHSA-2013-0180.html
+    - http://secunia.com/advisories/51309
+    - http://secunia.com/advisories/53372
+    - http://security.gentoo.org/glsa/glsa-201308-06.xml
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2013:150
+    - http://www.securityfocus.com/bid/55120
+    - https://bugzilla.redhat.com/show_bug.cgi?id=833737
+affected:
+    - groupId: mysql
+      artifactId: mysql-connector-java
+      version:
+        - "<=5.1.48,5.1.1"
+      fixedin:
+        - ">=6.0.2"
+        - "<=5.0.8,2.0.14"
