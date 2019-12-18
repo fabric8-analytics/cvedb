@@ -1,0 +1,24 @@
+---
+cve: 2012-3177
+title: CVE in mysql:mysql-connector-java
+description: >
+    Unspecified vulnerability in the MySQL Server component in Oracle MySQL 5.1.65 and earlier, and 5.5.27 and earlier, allows remote authenticated users to affect availability via unknown vectors related to Server.
+cvss_v2: 6.8
+references:
+    - http://rhn.redhat.com/errata/RHSA-2012-1462.html
+    - http://secunia.com/advisories/51177
+    - http://secunia.com/advisories/51309
+    - http://secunia.com/advisories/53372
+    - http://security.gentoo.org/glsa/glsa-201308-06.xml
+    - http://www.debian.org/security/2012/dsa-2581
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2013:150
+    - http://www.oracle.com/technetwork/topics/security/cpuoct2012-1515893.html
+    - http://www.ubuntu.com/usn/USN-1621-1
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/79383
+affected:
+    - groupId: mysql
+      artifactId: mysql-connector-java
+      version:
+        - "<=5.1.48"
+      fixedin:
+        - ">=6.0.2"
