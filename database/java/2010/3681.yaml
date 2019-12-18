@@ -1,0 +1,40 @@
+---
+cve: 2010-3681
+title: CVE in mysql:mysql-connector-java
+description: >
+    Oracle MySQL 5.1 before 5.1.49 and 5.5 before 5.5.5 allows remote authenticated users to cause a denial of service (mysqld daemon crash) by using the HANDLER interface and performing "alternate reads from two indexes on a table," which triggers an assertion failure.
+cvss_v2: 4.0
+references:
+    - http://bugs.mysql.com/bug.php?id=54007
+    - http://dev.mysql.com/doc/refman/5.1/en/news-5-1-49.html
+    - http://dev.mysql.com/doc/refman/5.5/en/news-5-5-5.html
+    - http://lists.opensuse.org/opensuse-security-announce/2010-10/msg00006.html
+    - http://lists.opensuse.org/opensuse-security-announce/2010-11/msg00005.html
+    - http://secunia.com/advisories/42875
+    - http://secunia.com/advisories/42936
+    - http://www.debian.org/security/2011/dsa-2143
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2010:155
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2010:222
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2011:012
+    - http://www.openwall.com/lists/oss-security/2010/09/28/10
+    - http://www.redhat.com/support/errata/RHSA-2010-0824.html
+    - http://www.redhat.com/support/errata/RHSA-2010-0825.html
+    - http://www.redhat.com/support/errata/RHSA-2011-0164.html
+    - http://www.securityfocus.com/bid/42633
+    - http://www.turbolinux.co.jp/security/2011/TLSA-2011-3j.txt
+    - http://www.ubuntu.com/usn/USN-1017-1
+    - http://www.ubuntu.com/usn/USN-1397-1
+    - http://www.vupen.com/english/advisories/2011/0105
+    - http://www.vupen.com/english/advisories/2011/0133
+    - http://www.vupen.com/english/advisories/2011/0170
+    - http://www.vupen.com/english/advisories/2011/0345
+    - https://bugzilla.redhat.com/show_bug.cgi?id=628680
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/64685
+affected:
+    - groupId: mysql
+      artifactId: mysql-connector-java
+      version:
+        - "<=5.1.48,5.1.1"
+      fixedin:
+        - ">=6.0.2"
+        - "<=5.0.8,2.0.14"
