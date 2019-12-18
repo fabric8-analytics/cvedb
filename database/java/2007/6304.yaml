@@ -1,0 +1,40 @@
+---
+cve: 2007-6304
+title: CVE in mysql:mysql-connector-mxj-db-files
+description: >
+    The federated engine in MySQL 5.0.x before 5.0.51a, 5.1.x before 5.1.23, and 6.0.x before 6.0.4, when performing a certain SHOW TABLE STATUS query, allows remote MySQL servers to cause a denial of service (federated handler crash and daemon crash) via a response that lacks the minimum required number of columns.
+cvss_v2: 5.0
+references:
+    - http://bugs.mysql.com/bug.php?id=29801
+    - http://dev.mysql.com/doc/refman/5.0/en/releasenotes-es-5-0-52.html
+    - http://dev.mysql.com/doc/refman/5.1/en/news-5-1-23.html
+    - http://dev.mysql.com/doc/refman/6.0/en/news-6-0-4.html
+    - http://lists.mysql.com/announce/502
+    - http://lists.opensuse.org/opensuse-security-announce/2008-02/msg00003.html
+    - http://osvdb.org/42609
+    - http://secunia.com/advisories/28063
+    - http://secunia.com/advisories/28128
+    - http://secunia.com/advisories/28343
+    - http://secunia.com/advisories/28637
+    - http://secunia.com/advisories/28739
+    - http://secunia.com/advisories/28838
+    - http://secunia.com/advisories/29706
+    - http://security.gentoo.org/glsa/glsa-200804-04.xml
+    - http://securitytracker.com/id?1019085
+    - http://wiki.rpath.com/wiki/Advisories:rPSA-2008-0040
+    - http://www.debian.org/security/2008/dsa-1451
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2008:017
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2008:028
+    - http://www.securityfocus.com/archive/1/487606/100/0/threaded
+    - http://www.securityfocus.com/bid/26832
+    - http://www.vupen.com/english/advisories/2007/4198
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/38990
+    - https://issues.rpath.com/browse/RPL-2187
+    - https://usn.ubuntu.com/559-1/
+affected:
+    - groupId: mysql
+      artifactId: mysql-connector-mxj-db-files
+      version:
+        - "<=5.0.12"
+      fixedin:
+        []
