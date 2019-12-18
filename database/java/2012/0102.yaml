@@ -1,0 +1,27 @@
+---
+cve: 2012-0102
+title: CVE in mysql:mysql-connector-java
+description: >
+    Unspecified vulnerability in the MySQL Server component in Oracle MySQL 5.0.x and 5.1.x allows remote authenticated users to affect availability via unknown vectors, a different vulnerability than CVE-2012-0087 and CVE-2012-0101.
+cvss_v2: 4.0
+references:
+    - http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=659687
+    - http://lists.opensuse.org/opensuse-security-announce/2012-08/msg00007.html
+    - http://osvdb.org/78379
+    - http://secunia.com/advisories/48250
+    - http://secunia.com/advisories/53372
+    - http://security.gentoo.org/glsa/glsa-201308-06.xml
+    - http://www.debian.org/security/2012/dsa-2429
+    - http://www.oracle.com/technetwork/topics/security/cpujan2012-366304.html
+    - http://www.ubuntu.com/usn/USN-1397-1
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/72521
+affected:
+    - groupId: mysql
+      artifactId: mysql-connector-java
+      version:
+        - "<=5.0.5,5.0.2"
+        - "<=5.1.48,5.1.1"
+      fixedin:
+        - ">=6.0.2"
+        - "<=5.0.8,5.0.7"
+        - "<=3.1.14,2.0.14"
