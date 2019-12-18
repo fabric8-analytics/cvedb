@@ -1,0 +1,27 @@
+---
+cve: 2004-0836
+title: CVE in promise-mysql
+description: >
+    Buffer overflow in the mysql_real_connect function in MySQL 4.x before 4.0.21, and 3.x before 3.23.49, allows remote DNS servers to cause a denial of service and possibly execute arbitrary code via a DNS response with a large address length (h_length).
+cvss_v2: 10.0
+references:
+    - http://bugs.mysql.com/bug.php?id=4017
+    - http://distro.conectiva.com.br/atualizacoes/?id=a&anuncio=000892
+    - http://lists.mysql.com/internals/14726
+    - http://marc.info/?l=bugtraq&m=110140517515735&w=2
+    - http://secunia.com/advisories/12305/
+    - http://www.ciac.org/ciac/bulletins/p-018.shtml
+    - http://www.debian.org/security/2004/dsa-562
+    - http://www.gentoo.org/security/en/glsa/glsa-200410-22.xml
+    - http://www.redhat.com/support/errata/RHSA-2004-597.html
+    - http://www.redhat.com/support/errata/RHSA-2004-611.html
+    - http://www.securityfocus.com/bid/10981
+    - http://www.trustix.org/errata/2004/0054/
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/17047
+affected:
+    - name: promise-mysql
+      version:
+        - "<=4.0.4,4.0.0-beta.0"
+      fixedin:
+        - ">=4.1.0"
+        - "<=3.3.2,0.0.1"
