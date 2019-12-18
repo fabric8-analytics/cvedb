@@ -1,0 +1,34 @@
+---
+cve: 2007-1420
+title: CVE in mysql:mysql-connector-java
+description: >
+    MySQL 5.x before 5.0.36 allows local users to cause a denial of service (database crash) by performing information_schema table subselects and using ORDER BY to sort a single-row result, which prevents certain structure elements from being initialized and triggers a NULL dereference in the filesort function.
+cvss_v2: 2.1
+references:
+    - http://bugs.mysql.com/bug.php?id=24630
+    - http://dev.mysql.com/doc/refman/5.0/en/releasenotes-es-5-0-36.html
+    - http://secunia.com/advisories/24483
+    - http://secunia.com/advisories/24609
+    - http://secunia.com/advisories/25196
+    - http://secunia.com/advisories/25389
+    - http://secunia.com/advisories/25946
+    - http://secunia.com/advisories/30351
+    - http://security.gentoo.org/glsa/glsa-200705-11.xml
+    - http://securityreason.com/securityalert/2413
+    - http://www.mandriva.com/security/advisories?name=MDKSA-2007:139
+    - http://www.redhat.com/support/errata/RHSA-2008-0364.html
+    - http://www.sec-consult.com/284.html
+    - http://www.securityfocus.com/archive/1/462339/100/0/threaded
+    - http://www.securityfocus.com/bid/22900
+    - http://www.securitytracker.com/id?1017746
+    - http://www.ubuntu.com/usn/usn-440-1
+    - http://www.vupen.com/english/advisories/2007/0908
+    - https://issues.rpath.com/browse/RPL-1127
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A9530
+affected:
+    - groupId: mysql
+      artifactId: mysql-connector-java
+      version:
+        - "<=5.0.8"
+      fixedin:
+        - ">=5.1.1"
