@@ -1,0 +1,39 @@
+---
+cve: 2006-0903
+title: CVE in mysql:mysql-connector-mxj-db-files
+description: >
+    MySQL 5.0.18 and earlier allows local users to bypass logging mechanisms via SQL queries that contain the NULL character, which are not properly handled by the mysql_real_query function.  NOTE: this issue was originally reported for the mysql_query function, but the vendor states that since mysql_query expects a null character, this is not an issue for mysql_query.
+cvss_v2: 4.6
+references:
+    - http://archives.neohapsis.com/archives/fulldisclosure/2006-02/0653.html
+    - http://bugs.mysql.com/bug.php?id=17667
+    - http://rst.void.ru/papers/advisory39.txt
+    - http://secunia.com/advisories/19034
+    - http://secunia.com/advisories/19502
+    - http://secunia.com/advisories/19814
+    - http://secunia.com/advisories/20241
+    - http://secunia.com/advisories/20253
+    - http://secunia.com/advisories/20333
+    - http://secunia.com/advisories/20625
+    - http://secunia.com/advisories/30351
+    - http://securitytracker.com/id?1015693
+    - http://www.debian.org/security/2006/dsa-1071
+    - http://www.debian.org/security/2006/dsa-1073
+    - http://www.debian.org/security/2006/dsa-1079
+    - http://www.mandriva.com/security/advisories?name=MDKSA-2006:064
+    - http://www.redhat.com/support/errata/RHSA-2006-0544.html
+    - http://www.redhat.com/support/errata/RHSA-2007-0083.html
+    - http://www.redhat.com/support/errata/RHSA-2008-0364.html
+    - http://www.securityfocus.com/bid/16850
+    - http://www.ubuntu.com/usn/usn-274-2
+    - http://www.vupen.com/english/advisories/2006/0752
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/24966
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A9915
+    - https://usn.ubuntu.com/274-1/
+affected:
+    - groupId: mysql
+      artifactId: mysql-connector-mxj-db-files
+      version:
+        - "<=5.0.12"
+      fixedin:
+        []
