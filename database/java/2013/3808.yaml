@@ -1,0 +1,23 @@
+---
+cve: 2013-3808
+title: CVE in mysql:mysql-connector-java
+description: >
+    Unspecified vulnerability in the MySQL Server component in Oracle MySQL 5.1.68 and earlier, 5.5.30 and earlier, and 5.6.10 allows remote authenticated users to affect availability via unknown vectors related to Server Options.
+cvss_v2: 4.0
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2013-08/msg00022.html
+    - http://lists.opensuse.org/opensuse-security-announce/2013-10/msg00001.html
+    - http://lists.opensuse.org/opensuse-updates/2013-08/msg00024.html
+    - http://lists.opensuse.org/opensuse-updates/2013-09/msg00008.html
+    - http://osvdb.org/95330
+    - http://secunia.com/advisories/53372
+    - http://security.gentoo.org/glsa/glsa-201308-06.xml
+    - http://www.oracle.com/technetwork/topics/security/cpujuly2013-1899826.html
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/85717
+affected:
+    - groupId: mysql
+      artifactId: mysql-connector-java
+      version:
+        - "<=5.1.48"
+      fixedin:
+        - ">=6.0.2"
