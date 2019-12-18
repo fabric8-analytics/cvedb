@@ -1,0 +1,21 @@
+---
+cve: 2005-2573
+title: CVE in mysql:mysql-connector-java
+description: >
+    The mysql_create_function function in sql_udf.cc for MySQL 4.0 before 4.0.25, 4.1 before 4.1.13, and 5.0 before 5.0.7-beta, when running on Windows, uses an incomplete blacklist in a directory traversal check, which allows attackers to include arbitrary files via the backslash (\) character.
+cvss_v2: 5.0
+references:
+    - http://lists.grok.org.uk/pipermail/full-disclosure/2005-August/035847.html
+    - http://marc.info/?l=bugtraq&m=112360618320729&w=2
+    - http://mysql.bkbits.net:8080/mysql-4.0/cset@428b981bg2iwh3CbGANDaF-W6DbttA
+    - http://mysql.bkbits.net:8080/mysql-4.0/gnupatch@428b981bg2iwh3CbGANDaF-W6DbttA
+    - http://www.appsecinc.com/resources/alerts/mysql/2005-001.html
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/21738
+affected:
+    - groupId: mysql
+      artifactId: mysql-connector-java
+      version:
+        - "<=5.0.4,5.0.2"
+      fixedin:
+        - ">=5.0.5"
+        - "<=3.1.14,2.0.14"
