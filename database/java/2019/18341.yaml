@@ -1,0 +1,15 @@
+---
+cve: 2019-18341
+title: CVE in com.mebigfatguy.central4j:central4j
+description: >
+    A vulnerability has been identified in SiNVR 3 Central Control Server (CCS) (all versions), SiNVR 3 Video Server (all versions). The SFTP service (default port 22/tcp) of the SiNVR 3 Central Control Server (CCS) contains an authentication bypass vulnerability. A remote attacker with network access to the CCS server could exploit this vulnerability to read data from the EDIR directory (for example, the list of all configured stations).
+cvss_v2: 5.0
+references:
+    - https://cert-portal.siemens.com/productcert/pdf/ssa-761617.pdf
+affected:
+    - groupId: com.mebigfatguy.central4j
+      artifactId: central4j
+      version:
+        []
+      fixedin:
+        - ">=0.2.0"
