@@ -1,0 +1,19 @@
+---
+cve: 2003-1480
+title: CVE in promise-mysql
+description: >
+    MySQL 3.20 through 4.1.0 uses a weak algorithm for hashed passwords, which makes it easier for attackers to decrypt the password via brute force methods.
+cvss_v2: 4.3
+references:
+    - http://secunia.com/advisories/8753
+    - http://www.securiteam.com/tools/5WP031FA0U.html
+    - http://www.securityfocus.com/bid/7500
+affected:
+    - name: promise-mysql
+      version:
+        - "<=4.0.3,4.0.0-beta.0"
+        - "<=4.1.0,4.1.0"
+      fixedin:
+        - ">=4.1.1"
+        - "<=4.0.4,4.0.4"
+        - "<=3.3.2,0.0.1"
