@@ -1,0 +1,19 @@
+---
+cve: 2006-3486
+title: CVE in mysql:mysql-connector-mxj-db-files
+description: >
+    ** DISPUTED **  Off-by-one buffer overflow in the Instance_options::complete_initialization function in instance_options.cc in the Instance Manager in MySQL before 5.0.23 and 5.1 before 5.1.12 might allow local users to cause a denial of service (application crash) via unspecified vectors, which triggers the overflow when the convert_dirname function is called.  NOTE: the vendor has disputed this issue via e-mail to CVE, saying that it is only exploitable when the user has access to the configuration file or the Instance Manager daemon.  Due to intended functionality, this level of access would already allow the user to disrupt program operation, so this does not cross security boundaries and is not a vulnerability.
+cvss_v2: 2.1
+references:
+    - http://bugs.mysql.com/bug.php?id=20622
+    - http://dev.mysql.com/doc/refman/5.0/en/news-5-0-23.html
+    - http://dev.mysql.com/doc/refman/5.1/en/news-5-1-12.html
+    - http://www.vupen.com/english/advisories/2006/2700
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/27635
+affected:
+    - groupId: mysql
+      artifactId: mysql-connector-mxj-db-files
+      version:
+        - "<=5.0.12"
+      fixedin:
+        []
