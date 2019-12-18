@@ -1,0 +1,16 @@
+---
+cve: 2019-0398
+title: CVE in phishme-intelligence
+description: >
+    Due to insufficient CSRF protection, SAP BusinessObjects Business Intelligence Platform (Monitoring Application), before versions 4.1, 4.2 and 4.3, may lead to an authenticated user to send unintended request to the web server, leading to Cross Site Request Forgery.
+cvss_v2: 6.8
+references:
+    - https://launchpad.support.sap.com/#/notes/2701027
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=533660397
+affected:
+    - name: phishme-intelligence
+      version:
+        - "<=4.3.0,4.2.0"
+      fixedin:
+        - ">=4.3.1"
+        - "<=4.1.9,4.1.1"
