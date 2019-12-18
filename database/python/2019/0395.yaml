@@ -1,0 +1,15 @@
+---
+cve: 2019-0395
+title: CVE in phishme-intelligence
+description: >
+    SAP BusinessObjects Business Intelligence Platform (Fiori BI Launchpad), before version 4.2, allows execution of JavaScript in a text module in Fiori BI Launchpad, leading to Stored Cross Site Scripting vulnerability.
+cvss_v2: 3.5
+references:
+    - https://launchpad.support.sap.com/#/notes/2830578
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=533660397
+affected:
+    - name: phishme-intelligence
+      version:
+        - "<=4.1.9"
+      fixedin:
+        - ">=4.2.0"
