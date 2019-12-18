@@ -1,0 +1,36 @@
+---
+cve: 2010-3833
+title: CVE in mysql:mysql-connector-mxj-db-files
+description: >
+    MySQL 5.0 before 5.0.92, 5.1 before 5.1.51, and 5.5 before 5.5.6 does not properly propagate type errors, which allows remote attackers to cause a denial of service (server crash) via crafted arguments to extreme-value functions such as (1) LEAST and (2) GREATEST, related to KILL_BAD_DATA and a "CREATE TABLE ... SELECT."
+cvss_v2: 5.0
+references:
+    - http://bugs.mysql.com/bug.php?id=55826
+    - http://dev.mysql.com/doc/refman/5.0/en/news-5-0-92.html
+    - http://dev.mysql.com/doc/refman/5.1/en/news-5-1-51.html
+    - http://dev.mysql.com/doc/refman/5.5/en/news-5-5-6.html
+    - http://lists.apple.com/archives/security-announce/2011//Jun/msg00000.html
+    - http://secunia.com/advisories/42875
+    - http://secunia.com/advisories/42936
+    - http://support.apple.com/kb/HT4723
+    - http://www.debian.org/security/2011/dsa-2143
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2010:222
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2010:223
+    - http://www.redhat.com/support/errata/RHSA-2010-0825.html
+    - http://www.redhat.com/support/errata/RHSA-2011-0164.html
+    - http://www.securityfocus.com/bid/43676
+    - http://www.turbolinux.co.jp/security/2011/TLSA-2011-3j.txt
+    - http://www.ubuntu.com/usn/USN-1017-1
+    - http://www.ubuntu.com/usn/USN-1397-1
+    - http://www.vupen.com/english/advisories/2011/0105
+    - http://www.vupen.com/english/advisories/2011/0170
+    - http://www.vupen.com/english/advisories/2011/0345
+    - https://bugzilla.redhat.com/show_bug.cgi?id=640751
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/64845
+affected:
+    - groupId: mysql
+      artifactId: mysql-connector-mxj-db-files
+      version:
+        - "<=5.0.12"
+      fixedin:
+        []
