@@ -1,0 +1,20 @@
+---
+cve: 2015-1855
+title: CVE in com.indvd00m.ascii.render:ascii-render-api
+description: >
+    verify_certificate_identity in the OpenSSL extension in Ruby before 2.0.0 patchlevel 645, 2.1.x before 2.1.6, and 2.2.x before 2.2.2 does not properly validate hostnames, which allows remote attackers to spoof servers via vectors related to (1) multiple wildcards, (1) wildcards in IDNA names, (3) case sensitivity, and (4) non-ASCII characters.
+cvss_v2: 4.3
+references:
+    - http://www.debian.org/security/2015/dsa-3245
+    - http://www.debian.org/security/2015/dsa-3246
+    - http://www.debian.org/security/2015/dsa-3247
+    - https://bugs.ruby-lang.org/issues/9644
+    - https://puppetlabs.com/security/cve/cve-2015-1855
+    - https://www.ruby-lang.org/en/news/2015/04/13/ruby-openssl-hostname-matching-vulnerability/
+affected:
+    - groupId: com.indvd00m.ascii.render
+      artifactId: ascii-render-api
+      version:
+        - "<=2.1.2"
+      fixedin:
+        []
