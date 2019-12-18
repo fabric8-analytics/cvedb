@@ -1,0 +1,20 @@
+---
+cve: 2004-0956
+title: CVE in promise-mysql
+description: >
+    MySQL before 4.0.20 allows remote attackers to cause a denial of service (application crash) via a MATCH AGAINST query with an opening double quote but no closing double quote.
+cvss_v2: 5.0
+references:
+    - http://bugs.mysql.com/bug.php?id=3870
+    - http://lists.mysql.com/packagers/202
+    - http://www.gentoo.org/security/en/glsa/glsa-200410-22.xml
+    - http://www.novell.com/linux/security/advisories/2004_01_sr.html
+    - http://www.trustix.net/errata/2004/0054/
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/17768
+affected:
+    - name: promise-mysql
+      version:
+        - "<=4.0.4,4.0.0-beta.0"
+      fixedin:
+        - ">=4.1.0"
+        - "<=3.3.2,0.0.1"
