@@ -1,0 +1,44 @@
+---
+cve: 2006-4031
+title: CVE in mysql:mysql-connector-mxj-db-files
+description: >
+    MySQL 4.1 before 4.1.21 and 5.0 before 5.0.24 allows a local user to access a table through a previously created MERGE table, even after the user's privileges are revoked for the original table, which might violate intended security policy.
+This vulnerability is addressed in the following product releases:
+MySQL, MySQL, 4.1.21 
+MySQL, MySQL, 5.0.24
+cvss_v2: 2.1
+references:
+    - http://bugs.mysql.com/bug.php?id=15195
+    - http://dev.mysql.com/doc/refman/4.1/en/news-4-1-21.html
+    - http://dev.mysql.com/doc/refman/5.0/en/news-5-0-24.html
+    - http://docs.info.apple.com/article.html?artnum=305214
+    - http://lists.apple.com/archives/security-announce/2007/Mar/msg00002.html
+    - http://secunia.com/advisories/21259
+    - http://secunia.com/advisories/21382
+    - http://secunia.com/advisories/21627
+    - http://secunia.com/advisories/21685
+    - http://secunia.com/advisories/21770
+    - http://secunia.com/advisories/22080
+    - http://secunia.com/advisories/24479
+    - http://secunia.com/advisories/30351
+    - http://secunia.com/advisories/31226
+    - http://securitytracker.com/id?1016617
+    - http://www.mandriva.com/security/advisories?name=MDKSA-2006:149
+    - http://www.novell.com/linux/security/advisories/2006_23_sr.html
+    - http://www.redhat.com/support/errata/RHSA-2007-0083.html
+    - http://www.redhat.com/support/errata/RHSA-2008-0364.html
+    - http://www.redhat.com/support/errata/RHSA-2008-0768.html
+    - http://www.securityfocus.com/bid/19279
+    - http://www.ubuntu.com/usn/usn-338-1
+    - http://www.us-cert.gov/cas/techalerts/TA07-072A.html
+    - http://www.vupen.com/english/advisories/2006/3079
+    - http://www.vupen.com/english/advisories/2007/0930
+    - https://issues.rpath.com/browse/RPL-568
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A10468
+affected:
+    - groupId: mysql
+      artifactId: mysql-connector-mxj-db-files
+      version:
+        - "<=5.0.12"
+      fixedin:
+        []
