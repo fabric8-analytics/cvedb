@@ -1,0 +1,17 @@
+---
+cve: 2004-0627
+title: CVE in promise-mysql
+description: >
+    The check_scramble_323 function in MySQL 4.1.x before 4.1.3, and 5.0, allows remote attackers to bypass authentication via a zero-length scrambled string.
+cvss_v2: 10.0
+references:
+    - http://archives.neohapsis.com/archives/vulnwatch/2004-q3/0001.html
+    - http://marc.info/?l=bugtraq&m=108904917528205&w=2
+    - http://www.kb.cert.org/vuls/id/184030
+affected:
+    - name: promise-mysql
+      version:
+        - "<=4.1.0,4.1.0"
+      fixedin:
+        - ">=4.1.1"
+        - "<=4.0.4,0.0.1"
