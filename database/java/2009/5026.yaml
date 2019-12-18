@@ -1,0 +1,26 @@
+---
+cve: 2009-5026
+title: CVE in mysql:mysql-connector-java
+description: >
+    The executable comment feature in MySQL 5.0.x before 5.0.93 and 5.1.x before 5.1.50, when running in certain slave configurations in which the slave is running a newer version than the master, allows remote attackers to execute arbitrary SQL commands via custom comments.
+cvss_v2: 6.8
+references:
+    - http://bugs.mysql.com/bug.php?id=49124
+    - http://dev.mysql.com/doc/refman/5.0/en/news-5-0-93.html
+    - http://dev.mysql.com/doc/refman/5.1/en/news-5-1-50.html
+    - http://lists.opensuse.org/opensuse-security-announce/2012-08/msg00007.html
+    - http://seclists.org/oss-sec/2011/q4/101
+    - http://secunia.com/advisories/49179
+    - https://bugzilla.redhat.com/show_bug.cgi?id=640177
+affected:
+    - groupId: mysql
+      artifactId: mysql-connector-java
+      version:
+        - "<=5.0.5,5.0.2"
+        - "<=5.1.4,5.1.1"
+        - "<=5.1.48,5.1.10"
+      fixedin:
+        - ">=6.0.2"
+        - "<=5.1.9,5.1.5"
+        - "<=5.0.8,5.0.7"
+        - "<=3.1.14,2.0.14"
