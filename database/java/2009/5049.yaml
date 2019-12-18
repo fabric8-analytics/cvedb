@@ -1,0 +1,17 @@
+---
+cve: 2009-5049
+title: CVE in org.mortbay.jetty:jsp-2.1-jetty
+description: >
+    WebApp JSP Snoop page XSS in jetty though 6.1.21.
+cvss_v2: 4.3
+references:
+    - http://www.ush.it/team/ush/hack-jetty6x7x/jetty-adv.txt
+    - https://security-tracker.debian.org/tracker/CVE-2009-5049
+    - https://www.openwall.com/lists/oss-security/2011/01/14/2
+affected:
+    - groupId: org.mortbay.jetty
+      artifactId: jsp-2.1-jetty
+      version:
+        - "<=6.1.21"
+      fixedin:
+        - ">=6.1.22"
