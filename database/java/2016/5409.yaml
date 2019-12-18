@@ -1,0 +1,16 @@
+---
+cve: 2016-5409
+title: CVE in io.openshift:openshift-test-utils
+description: >
+    Red Hat OpenShift Enterprise 2 does not include the HTTPOnly flag in a Set-Cookie header for the GEARID cookie, which makes it easier for remote attackers to obtain potentially sensitive information via script access to the cookies.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/97988
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1366461
+affected:
+    - groupId: io.openshift
+      artifactId: openshift-test-utils
+      version:
+        - "<=2,2"
+      fixedin:
+        - "<=1,1"
