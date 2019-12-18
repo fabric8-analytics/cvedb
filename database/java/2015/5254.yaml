@@ -1,6 +1,6 @@
 ---
 cve: 2015-5254
-title: CVE in org.apache.activemq:activemq-broker
+title: CVE in com.openshift:openshift-restclient-java
 description: >
     Apache ActiveMQ 5.x before 5.13.0 does not restrict the classes that can be serialized in the broker, which allows remote attackers to execute arbitrary code via a crafted serialized Java Message Service (JMS) ObjectMessage object.
 cvss_v2: 7.5
@@ -19,9 +19,10 @@ references:
     - https://issues.apache.org/jira/browse/AMQ-6013
     - https://lists.apache.org/thread.html/a859563f05fbe7c31916b3178c2697165bd9bbf5a65d1cf62aef27d2@%3Ccommits.activemq.apache.org%3E
 affected:
-    - groupId: org.apache.activemq
-      artifactId: activemq-broker
+    - groupId: com.openshift
+      artifactId: openshift-restclient-java
       version:
-        - "<=5.12.3,5.0.0"
+        - "<=5.9.1.Final,5.0.0-RC1"
       fixedin:
-        - ">=5.13.0"
+        - ">=5.9.2.Final"
+        - "<=4.0.5.Final,3.0.0.Final"
