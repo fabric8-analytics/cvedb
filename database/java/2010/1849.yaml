@@ -1,0 +1,29 @@
+---
+cve: 2010-1849
+title: CVE in mysql:mysql-connector-mxj-db-files
+description: >
+    The my_net_skip_rest function in sql/net_serv.cc in MySQL 5.0 through 5.0.91 and 5.1 before 5.1.47 allows remote attackers to cause a denial of service (CPU and bandwidth consumption) by sending a large number of packets that exceed the maximum length.
+Per: http://cwe.mitre.org/data/definitions/371.html
+
+'CWE-371: State Issues'
+cvss_v2: 5.0
+references:
+    - http://bugs.mysql.com/bug.php?id=50974
+    - http://dev.mysql.com/doc/refman/5.0/en/news-5-0-91.html
+    - http://dev.mysql.com/doc/refman/5.1/en/news-5-1-47.html
+    - http://lists.apple.com/archives/security-announce/2010//Nov/msg00000.html
+    - http://lists.mysql.com/commits/106060
+    - http://lists.opensuse.org/opensuse-security-announce/2010-10/msg00006.html
+    - http://lists.opensuse.org/opensuse-security-announce/2010-11/msg00005.html
+    - http://securitytracker.com/id?1024032
+    - http://support.apple.com/kb/HT4435
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2010:107
+    - http://www.ubuntu.com/usn/USN-1397-1
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A7328
+affected:
+    - groupId: mysql
+      artifactId: mysql-connector-mxj-db-files
+      version:
+        - "<=5.0.12"
+      fixedin:
+        []
