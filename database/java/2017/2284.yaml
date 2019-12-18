@@ -1,0 +1,17 @@
+---
+cve: 2017-2284
+title: CVE in org.netbeans.html:net.java.html.boot
+description: >
+    Cross-site scripting vulnerability in Popup Maker prior to version 1.6.5 allows remote attackers to inject arbitrary web script or HTML via unspecified vectors.
+cvss_v2: 4.3
+references:
+    - https://jvn.jp/en/jp/JVN92921024/index.html
+    - https://plugins.trac.wordpress.org/changeset/1697216/#file3
+    - https://wordpress.org/plugins/popup-maker/#developers
+affected:
+    - groupId: org.netbeans.html
+      artifactId: net.java.html.boot
+      version:
+        - "<=1.6.1"
+      fixedin:
+        - ">=1.7"
