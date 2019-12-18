@@ -1,0 +1,24 @@
+---
+cve: 2012-0540
+title: CVE in mysql:mysql-connector-java
+description: >
+    Unspecified vulnerability in Oracle MySQL Server 5.1.62 and earlier and 5.5.23 and earlier allows remote authenticated users to affect availability, related to GIS Extension.
+cvss_v2: 4.0
+references:
+    - http://osvdb.org/83976
+    - http://rhn.redhat.com/errata/RHSA-2012-1462.html
+    - http://secunia.com/advisories/51309
+    - http://secunia.com/advisories/53372
+    - http://security.gentoo.org/glsa/glsa-201308-06.xml
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2013:150
+    - http://www.oracle.com/technetwork/topics/security/cpujul2012-392727.html
+    - http://www.securityfocus.com/bid/54551
+    - http://www.securitytracker.com/id?1027263
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/77061
+affected:
+    - groupId: mysql
+      artifactId: mysql-connector-java
+      version:
+        - "<=5.1.48"
+      fixedin:
+        - ">=6.0.2"
