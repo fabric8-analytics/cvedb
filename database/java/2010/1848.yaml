@@ -1,0 +1,29 @@
+---
+cve: 2010-1848
+title: CVE in mysql:mysql-connector-mxj-db-files
+description: >
+    Directory traversal vulnerability in MySQL 5.0 through 5.0.91 and 5.1 before 5.1.47 allows remote authenticated users to bypass intended table grants to read field definitions of arbitrary tables, and on 5.1 to read or delete content of arbitrary tables, via a .. (dot dot) in a table name.
+cvss_v2: 6.5
+references:
+    - http://bugs.mysql.com/bug.php?id=53371
+    - http://dev.mysql.com/doc/refman/5.0/en/news-5-0-91.html
+    - http://dev.mysql.com/doc/refman/5.1/en/news-5-1-47.html
+    - http://lists.apple.com/archives/security-announce/2010//Nov/msg00000.html
+    - http://lists.mysql.com/commits/107532
+    - http://lists.opensuse.org/opensuse-security-announce/2010-10/msg00006.html
+    - http://lists.opensuse.org/opensuse-security-announce/2010-11/msg00005.html
+    - http://securitytracker.com/id?1024031
+    - http://support.apple.com/kb/HT4435
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2010:107
+    - http://www.redhat.com/support/errata/RHSA-2010-0442.html
+    - http://www.redhat.com/support/errata/RHSA-2010-0824.html
+    - http://www.ubuntu.com/usn/USN-1397-1
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A10258
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A7210
+affected:
+    - groupId: mysql
+      artifactId: mysql-connector-mxj-db-files
+      version:
+        - "<=5.0.12"
+      fixedin:
+        []
