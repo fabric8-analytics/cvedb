@@ -1,0 +1,16 @@
+---
+cve: 2014-3602
+title: CVE in io.openshift:openshift-test-utils
+description: >
+    Red Hat OpenShift Enterprise before 2.2 allows local users to obtain IP address and port number information for remote systems by reading /proc/net/tcp.
+cvss_v2: 2.1
+references:
+    - http://rhn.redhat.com/errata/RHSA-2014-1796.html
+    - http://rhn.redhat.com/errata/RHSA-2014-1906.html
+affected:
+    - groupId: io.openshift
+      artifactId: openshift-test-utils
+      version:
+        - "<=2"
+      fixedin:
+        []
