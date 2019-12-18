@@ -1,0 +1,17 @@
+---
+cve: 2014-0233
+title: CVE in io.openshift:openshift-test-utils
+description: >
+    Red Hat OpenShift Enterprise 2.0 and 2.1 and OpenShift Origin allow remote authenticated users to execute arbitrary commands via shell metacharacters in a directory name that is referenced by a cartridge using the file: URI scheme.
+cvss_v2: 6.5
+references:
+    - http://rhn.redhat.com/errata/RHSA-2014-0529.html
+    - http://rhn.redhat.com/errata/RHSA-2014-0530.html
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1096955
+affected:
+    - groupId: io.openshift
+      artifactId: openshift-test-utils
+      version:
+        - "<=2,2"
+      fixedin:
+        - "<=1,1"
