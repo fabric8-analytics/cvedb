@@ -1,0 +1,42 @@
+---
+cve: 2008-3963
+title: CVE in mysql:mysql-connector-java
+description: >
+    MySQL 5.0 before 5.0.66, 5.1 before 5.1.26, and 6.0 before 6.0.6 does not properly handle a b'' (b single-quote single-quote) token, aka an empty bit-string literal, which allows remote attackers to cause a denial of service (daemon crash) by using this token in a SQL statement.
+cvss_v2: 4.0
+references:
+    - http://bugs.mysql.com/bug.php?id=35658
+    - http://dev.mysql.com/doc/refman/5.0/en/releasenotes-es-5-0-66.html
+    - http://dev.mysql.com/doc/refman/5.1/en/news-5-1-26.html
+    - http://dev.mysql.com/doc/refman/6.0/en/news-6-0-6.html
+    - http://lists.opensuse.org/opensuse-security-announce/2008-11/msg00001.html
+    - http://secunia.com/advisories/31769
+    - http://secunia.com/advisories/32759
+    - http://secunia.com/advisories/32769
+    - http://secunia.com/advisories/34907
+    - http://secunia.com/advisories/36566
+    - http://www.debian.org/security/2009/dsa-1783
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2009:094
+    - http://www.openwall.com/lists/oss-security/2008/09/09/4
+    - http://www.openwall.com/lists/oss-security/2008/09/09/7
+    - http://www.redhat.com/support/errata/RHSA-2009-1067.html
+    - http://www.redhat.com/support/errata/RHSA-2009-1289.html
+    - http://www.securitytracker.com/id?1020858
+    - http://www.ubuntu.com/usn/USN-1397-1
+    - http://www.ubuntu.com/usn/USN-671-1
+    - http://www.vupen.com/english/advisories/2008/2554
+    - https://bugs.gentoo.org/237166
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/45042
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A10521
+affected:
+    - groupId: mysql
+      artifactId: mysql-connector-java
+      version:
+        - "<=5.0.5,5.0.2"
+        - "<=5.1.23,5.1.1"
+        - "<=6.0.4,6.0.2"
+      fixedin:
+        - ">=6.0.5"
+        - "<=5.1.48,5.1.24"
+        - "<=5.0.8,5.0.7"
+        - "<=3.1.14,2.0.14"
