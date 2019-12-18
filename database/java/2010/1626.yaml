@@ -1,0 +1,26 @@
+---
+cve: 2010-1626
+title: CVE in mysql:mysql-connector-java
+description: >
+    MySQL before 5.1.46 allows local users to delete the data and index files of another user's MyISAM table via a symlink attack in conjunction with the DROP TABLE command, a different vulnerability than CVE-2008-4098 and CVE-2008-7247.
+cvss_v2: 3.6
+references:
+    - http://bugs.mysql.com/bug.php?id=40980
+    - http://lists.opensuse.org/opensuse-security-announce/2010-10/msg00006.html
+    - http://lists.opensuse.org/opensuse-security-announce/2010-11/msg00005.html
+    - http://securitytracker.com/id?1024004
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2010:101
+    - http://www.openwall.com/lists/oss-security/2010/05/10/2
+    - http://www.openwall.com/lists/oss-security/2010/05/18/4
+    - http://www.redhat.com/support/errata/RHSA-2010-0442.html
+    - http://www.securityfocus.com/bid/40257
+    - http://www.ubuntu.com/usn/USN-1397-1
+    - http://www.vupen.com/english/advisories/2010/1194
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A9490
+affected:
+    - groupId: mysql
+      artifactId: mysql-connector-java
+      version:
+        - "<=5.1.45"
+      fixedin:
+        - ">=5.1.46"
