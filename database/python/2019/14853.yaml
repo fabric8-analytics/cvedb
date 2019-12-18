@@ -7,6 +7,7 @@ cvss_v2: 5.0
 references:
     - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-14853
     - https://github.com/warner/python-ecdsa/releases/tag/python-ecdsa-0.13.3
+    - https://www.debian.org/security/2019/dsa-4588
 affected:
     - name: ecdsa
       version:
