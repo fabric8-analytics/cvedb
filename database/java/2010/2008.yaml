@@ -1,0 +1,26 @@
+---
+cve: 2010-2008
+title: CVE in mysql:mysql-connector-java
+description: >
+    MySQL before 5.1.48 allows remote authenticated users with alter database privileges to cause a denial of service (server crash and database loss) via an ALTER DATABASE command with a #mysql50# string followed by a . (dot), .. (dot dot), ../ (dot dot slash) or similar sequence, and an UPGRADE DATA DIRECTORY NAME command, which causes MySQL to move certain directories to the server data directory.
+cvss_v2: 3.5
+references:
+    - http://bugs.mysql.com/bug.php?id=53804
+    - http://dev.mysql.com/doc/refman/5.1/en/news-5-1-48.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2010-July/044546.html
+    - http://secunia.com/advisories/40333
+    - http://secunia.com/advisories/40762
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2010:155
+    - http://www.securityfocus.com/bid/41198
+    - http://www.securitytracker.com/id?1024160
+    - http://www.ubuntu.com/usn/USN-1017-1
+    - http://www.ubuntu.com/usn/USN-1397-1
+    - http://www.vupen.com/english/advisories/2010/1918
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A11869
+affected:
+    - groupId: mysql
+      artifactId: mysql-connector-java
+      version:
+        - "<=5.1.47"
+      fixedin:
+        - ">=5.1.48"
