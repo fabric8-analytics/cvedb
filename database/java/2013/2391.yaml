@@ -1,0 +1,19 @@
+---
+cve: 2013-2391
+title: CVE in mysql:mysql-connector-java
+description: >
+    Unspecified vulnerability in Oracle MySQL 5.1.68 and earlier, 5.5.30 and earlier, and 5.6.10 and earlier allows local users to affect confidentiality and integrity via unknown vectors related to Server Install.
+cvss_v2: 3.0
+references:
+    - http://rhn.redhat.com/errata/RHSA-2013-0772.html
+    - http://secunia.com/advisories/53372
+    - http://security.gentoo.org/glsa/glsa-201308-06.xml
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2013:150
+    - http://www.oracle.com/technetwork/topics/security/cpuapr2013-1899555.html
+affected:
+    - groupId: mysql
+      artifactId: mysql-connector-java
+      version:
+        - "<=5.1.48"
+      fixedin:
+        - ">=6.0.2"
