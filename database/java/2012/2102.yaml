@@ -1,0 +1,23 @@
+---
+cve: 2012-2102
+title: CVE in mysql:mysql-connector-java
+description: >
+    MySQL 5.1.x before 5.1.62 and 5.5.x before 5.5.22 allows remote authenticated users to cause a denial of service (assertion failure and mysqld abort) by deleting a record and using HANDLER READ NEXT.
+cvss_v2: 3.5
+references:
+    - http://bazaar.launchpad.net/~mysql/mysql-server/5.5/revision/3097.15.15
+    - http://dev.mysql.com/doc/refman/5.1/en/news-5-1-62.html
+    - http://dev.mysql.com/doc/refman/5.5/en/news-5-5-22.html
+    - http://eromang.zataz.com/2012/04/10/oracle-mysql-innodb-bugs-13510739-and-63775-dos-demo/
+    - http://secunia.com/advisories/53372
+    - http://security.gentoo.org/glsa/glsa-201308-06.xml
+    - http://www.openwall.com/lists/oss-security/2012/04/13/7
+    - http://www.securityfocus.com/bid/52931
+affected:
+    - groupId: mysql
+      artifactId: mysql-connector-java
+      version:
+        - "<=5.1.48,5.1.1"
+      fixedin:
+        - ">=6.0.2"
+        - "<=5.0.8,2.0.14"
