@@ -1,0 +1,16 @@
+---
+cve: 2014-3674
+title: CVE in io.openshift:openshift-test-utils
+description: >
+    Red Hat OpenShift Enterprise before 2.2 does not properly restrict access to gears, which allows remote attackers to access the network resources of arbitrary gears via unspecified vectors.
+cvss_v2: 7.5
+references:
+    - http://rhn.redhat.com/errata/RHSA-2014-1796.html
+    - http://rhn.redhat.com/errata/RHSA-2014-1906.html
+affected:
+    - groupId: io.openshift
+      artifactId: openshift-test-utils
+      version:
+        - "<=2"
+      fixedin:
+        []
