@@ -1,0 +1,33 @@
+---
+cve: 2008-4098
+title: CVE in mysql:mysql-connector-java
+description: >
+    MySQL before 5.0.67 allows local users to bypass certain privilege checks by calling CREATE TABLE on a MyISAM table with modified (1) DATA DIRECTORY or (2) INDEX DIRECTORY arguments that are originally associated with pathnames without symlinks, and that can point to tables created at a future time at which a pathname is modified to contain a symlink to a subdirectory of the MySQL home data directory. NOTE: this vulnerability exists because of an incomplete fix for CVE-2008-4097.
+cvss_v2: 4.6
+references:
+    - http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=480292#25
+    - http://bugs.mysql.com/bug.php?id=32167
+    - http://lists.opensuse.org/opensuse-security-announce/2008-11/msg00001.html
+    - http://secunia.com/advisories/32578
+    - http://secunia.com/advisories/32759
+    - http://secunia.com/advisories/32769
+    - http://secunia.com/advisories/38517
+    - http://ubuntu.com/usn/usn-897-1
+    - http://www.debian.org/security/2008/dsa-1662
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2009:094
+    - http://www.openwall.com/lists/oss-security/2008/09/09/20
+    - http://www.openwall.com/lists/oss-security/2008/09/16/3
+    - http://www.redhat.com/support/errata/RHSA-2009-1067.html
+    - http://www.redhat.com/support/errata/RHSA-2010-0110.html
+    - http://www.ubuntu.com/usn/USN-1397-1
+    - http://www.ubuntu.com/usn/USN-671-1
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/45649
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A10591
+affected:
+    - groupId: mysql
+      artifactId: mysql-connector-java
+      version:
+        - "<=5.0.5,5.0.2"
+      fixedin:
+        - ">=5.0.7"
+        - "<=3.1.14,2.0.14"
