@@ -1,0 +1,29 @@
+---
+cve: 2010-3839
+title: CVE in mysql:mysql-connector-java
+description: >
+    MySQL 5.1 before 5.1.51 and 5.5 before 5.5.6 allows remote authenticated users to cause a denial of service (infinite loop) via multiple invocations of a (1) prepared statement or (2) stored procedure that creates a query with nested JOIN statements.
+cvss_v2: 4.0
+references:
+    - http://bugs.mysql.com/bug.php?id=53544
+    - http://dev.mysql.com/doc/refman/5.1/en/news-5-1-51.html
+    - http://dev.mysql.com/doc/refman/5.5/en/news-5-5-6.html
+    - http://secunia.com/advisories/42936
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2010:222
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2010:223
+    - http://www.redhat.com/support/errata/RHSA-2010-0825.html
+    - http://www.redhat.com/support/errata/RHSA-2011-0164.html
+    - http://www.securityfocus.com/bid/43676
+    - http://www.ubuntu.com/usn/USN-1017-1
+    - http://www.ubuntu.com/usn/USN-1397-1
+    - http://www.vupen.com/english/advisories/2011/0170
+    - https://bugzilla.redhat.com/show_bug.cgi?id=640861
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/64839
+affected:
+    - groupId: mysql
+      artifactId: mysql-connector-java
+      version:
+        - "<=5.1.48,5.1.1"
+      fixedin:
+        - ">=6.0.2"
+        - "<=5.0.8,2.0.14"
