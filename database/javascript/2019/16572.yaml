@@ -1,0 +1,15 @@
+---
+cve: 2019-16572
+title: CVE in weibo-article
+description: >
+    Jenkins Weibo Plugin 1.0.1 and earlier stores credentials unencrypted in its global configuration file on the Jenkins master where they can be viewed by users with access to the master file system.
+cvss_v2: 2.1
+references:
+    - http://www.openwall.com/lists/oss-security/2019/12/17/1
+    - https://jenkins.io/security/advisory/2019-12-17/#SECURITY-1597
+affected:
+    - name: weibo-article
+      version:
+        - "<=1.0.1"
+      fixedin:
+        - ">=1.0.2"
