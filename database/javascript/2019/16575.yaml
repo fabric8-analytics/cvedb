@@ -1,0 +1,15 @@
+---
+cve: 2019-16575
+title: CVE in alauda
+description: >
+    A cross-site request forgery vulnerability in Jenkins Alauda Kubernetes Suport Plugin 2.3.0 and earlier allows attackers to connect to an attacker-specified URL using attacker-specified credentials IDs obtained through another method, capturing the Kubernetes service account token or credentials stored in Jenkins.
+cvss_v2: 6.8
+references:
+    - http://www.openwall.com/lists/oss-security/2019/12/17/1
+    - https://jenkins.io/security/advisory/2019-12-17/#SECURITY-1602
+affected:
+    - name: alauda
+      version:
+        - "<=2.3.0"
+      fixedin:
+        - ">=2.4.0"
