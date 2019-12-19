@@ -1,6 +1,6 @@
 ---
 cve: 2013-7370
-title: CVE in gulp-connect
+title: CVE in connect
 description: >
     node-connect before 2.8.1 has XSS in the Sencha Labs Connect middleware
 cvss_v2: 4.3
@@ -13,8 +13,8 @@ references:
     - https://nodesecurity.io/advisories/methodOverride_Middleware_Reflected_Cross-Site_Scripting
     - https://security-tracker.debian.org/tracker/CVE-2013-7370
 affected:
-    - name: gulp-connect
+    - name: connect
       version:
-        - "<=2.3.1"
+        - "<=2.8.0"
       fixedin:
-        - ">=3.0.0"
+        - ">=2.8.1"
