@@ -1,0 +1,15 @@
+---
+cve: 2019-16568
+title: CVE in jenkins-mocha
+description: >
+    Jenkins SCTMExecutor Plugin 2.2 and earlier transmits previously configured service credentials in plain text as part of the global configuration, as well as individual jobs' configurations.
+cvss_v2: 5.0
+references:
+    - http://www.openwall.com/lists/oss-security/2019/12/17/1
+    - https://jenkins.io/security/advisory/2019-12-17/#SECURITY-1521
+affected:
+    - name: jenkins-mocha
+      version:
+        - "<=2.2.0"
+      fixedin:
+        - ">=2.3.0"
