@@ -1,0 +1,14 @@
+---
+cve: 2019-18337
+title: CVE in control
+description: >
+    A vulnerability has been identified in SiNVR 3 Central Control Server (CCS) (all versions), SiNVR 3 Video Server (all versions). The SiNVR 3 Central Control Server (CCS) contains an authentication bypass vulnerability in its XML-based communication protocol as provided by default on ports 5444/tcp and 5440/tcp. A remote attacker with network access to the CCS server could exploit this vulnerability to read the CCS users database, including the passwords of all users in obfuscated cleartext.
+cvss_v2: 5.0
+references:
+    - https://cert-portal.siemens.com/productcert/pdf/ssa-761617.pdf
+affected:
+    - name: control
+      version:
+        []
+      fixedin:
+        - ">=0.1.1"
