@@ -1,0 +1,15 @@
+---
+cve: 2019-16570
+title: CVE in jenkins-mocha
+description: >
+    A cross-site request forgery vulnerability in Jenkins RapidDeploy Plugin 4.1 and earlier allows attackers to connect to an attacker-specified web server.
+cvss_v2: 6.8
+references:
+    - http://www.openwall.com/lists/oss-security/2019/12/17/1
+    - https://jenkins.io/security/advisory/2019-12-17/#SECURITY-1604
+affected:
+    - name: jenkins-mocha
+      version:
+        - "<=4.1.0"
+      fixedin:
+        - ">=4.1.1"
