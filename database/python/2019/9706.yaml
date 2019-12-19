@@ -1,0 +1,18 @@
+---
+cve: 2019-9706
+title: CVE in bambu-cron
+description: >
+    Vixie Cron before the 3.0pl1-133 Debian package allows local users to cause a denial of service (use-after-free and daemon crash) because of a force_rescan_user error.
+cvss_v2: 2.1
+references:
+    - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=809167
+    - https://lists.debian.org/debian-lts-announce/2019/03/msg00025.html
+    - https://packages.qa.debian.org/c/cron/news/20190311T170403Z.html
+    - https://salsa.debian.org/debian/cron/commit/40791b93
+affected:
+    - name: bambu-cron
+      version:
+        - "<=3.0,3.0"
+      fixedin:
+        - ">=3.1"
+        - "<=2.0,0.0.1"
