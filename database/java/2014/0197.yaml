@@ -1,0 +1,17 @@
+---
+cve: 2014-0197
+title: CVE in com.bladecoder.engine:blade-engine
+description: >
+    CFME: CSRF protection vulnerability via permissive check of the referrer header
+cvss_v2: 6.8
+references:
+    - https://access.redhat.com/security/cve/cve-2014-0197
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2014-0197
+affected:
+    - groupId: com.bladecoder.engine
+      artifactId: blade-engine
+      version:
+        - "<=3.0.0,3.0.0"
+      fixedin:
+        - ">=3.0.1"
+        - "<=2.2.0,0.3.1"
