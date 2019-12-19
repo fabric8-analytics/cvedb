@@ -1,0 +1,16 @@
+---
+cve: 2019-18285
+title: CVE in org.apache.aries.application:org.apache.aries.application.install
+description: >
+    A vulnerability has been identified in SPPA-T3000 Application Server (All versions). The RMI communication between the client and the Application Server is unencrypted. An attacker with access to the communication channel can read credentials of a valid user. Please note that an attacker needs to have access to the Application Highway in order to exploit this vulnerability. At the time of advisory publication no public exploitation of this security vulnerability was known.
+cvss_v2: 4.3
+references:
+    - http://packetstormsecurity.com/files/155665/Siemens-Security-Advisory-SPPA-T3000-Code-Execution.html
+    - https://cert-portal.siemens.com/productcert/pdf/ssa-451445.pdf
+affected:
+    - groupId: org.apache.aries.application
+      artifactId: org.apache.aries.application.install
+      version:
+        []
+      fixedin:
+        - ">=0.1-incubating"
