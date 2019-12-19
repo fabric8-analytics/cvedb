@@ -1,0 +1,18 @@
+---
+cve: 2018-5743
+title: CVE in com.nhl.link.rest:link-rest
+description: >
+    By design, BIND is intended to limit the number of TCP clients that can be connected at any given time. The number of allowed connections is a tunable parameter which, if unset, defaults to a conservative value for most servers. Unfortunately, the code which was intended to limit the number of simultaneous connections contained an error which could be exploited to grow the number of simultaneous connections beyond this limit. Versions affected: BIND 9.9.0 -> 9.10.8-P1, 9.11.0 -> 9.11.6, 9.12.0 -> 9.12.4, 9.14.0. BIND 9 Supported Preview Edition versions 9.9.3-S1 -> 9.11.5-S3, and 9.11.5-S5. Versions 9.13.0 -> 9.13.7 of the 9.13 development branch are also affected. Versions prior to BIND 9.9.0 have not been evaluated for vulnerability to CVE-2018-5743.
+cvss_v2: 4.3
+references:
+    - https://kb.isc.org/docs/cve-2018-5743
+    - https://support.f5.com/csp/article/K74009656?utm_source=f5support&amp;utm_medium=RSS
+    - https://www.synology.com/security/advisory/Synology_SA_19_20
+affected:
+    - groupId: com.nhl.link.rest
+      artifactId: link-rest
+      version:
+        - "<=2.3,2.3"
+      fixedin:
+        - ">=2.4"
+        - "<=2.2,1.14"
