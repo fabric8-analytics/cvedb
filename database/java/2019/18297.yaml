@@ -1,0 +1,16 @@
+---
+cve: 2019-18297
+title: CVE in org.reddwarfserver.server:sgs-server
+description: >
+    A vulnerability has been identified in SPPA-T3000 MS3000 Migration Server (All versions). An attacker with local access to the MS3000 Server and low privileges could gain root privileges by sending specifically crafted packets to a named pipe. Please note that an attacker needs to have local access to the MS3000 in order to exploit this vulnerability. At the time of advisory publication no public exploitation of this security vulnerability was known.
+cvss_v2: 7.2
+references:
+    - http://packetstormsecurity.com/files/155665/Siemens-Security-Advisory-SPPA-T3000-Code-Execution.html
+    - https://cert-portal.siemens.com/productcert/pdf/ssa-451445.pdf
+affected:
+    - groupId: org.reddwarfserver.server
+      artifactId: sgs-server
+      version:
+        []
+      fixedin:
+        - ">=0.10.0"
