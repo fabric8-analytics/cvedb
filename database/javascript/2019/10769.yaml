@@ -1,6 +1,6 @@
 ---
 cve: 2019-10769
-title: CVE in safer-regex
+title: CVE in safer-eval
 description: >
     safer-eval is a npm package to sandbox the he evaluation of code used within the eval function. Affected versions of this package are vulnerable to Arbitrary Code Execution via generating a RangeError.
 cvss_v2: 7.5
@@ -8,8 +8,8 @@ references:
     - https://github.com/commenthol/safer-eval/security/advisories/GHSA-v63x-xc9j-hhvq
     - https://snyk.io/vuln/SNYK-JS-SAFEREVAL-534901
 affected:
-    - name: safer-regex
+    - name: safer-eval
       version:
-        []
+        - "<=1.3.6"
       fixedin:
-        - ">=0.0.2"
+        []
