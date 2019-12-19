@@ -1,0 +1,15 @@
+---
+cve: 2019-18284
+title: CVE in mojo-application
+description: >
+    A vulnerability has been identified in SPPA-T3000 Application Server (All versions). The AdminService is available without authentication on the Application Server. An attacker can use methods exposed via this interface to receive password hashes of other users and to change user passwords. Please note that an attacker needs to have access to the Application Highway in order to exploit this vulnerability. At the time of advisory publication no public exploitation of this security vulnerability was known.
+cvss_v2: 5.0
+references:
+    - http://packetstormsecurity.com/files/155665/Siemens-Security-Advisory-SPPA-T3000-Code-Execution.html
+    - https://cert-portal.siemens.com/productcert/pdf/ssa-451445.pdf
+affected:
+    - name: mojo-application
+      version:
+        []
+      fixedin:
+        - ">=0.0.0"
