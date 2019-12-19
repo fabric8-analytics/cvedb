@@ -1,0 +1,21 @@
+---
+cve: 2019-19118
+title: CVE in Django
+description: >
+    Django 2.1 before 2.1.15 and 2.2 before 2.2.8 allows unintended model editing. A Django model admin displaying inline related models, where the user has view-only permissions to a parent model but edit permissions to the inline model, would be presented with an editing UI, allowing POST requests, for updating the inline model. Directly editing the view-only parent model was not possible, but the parent model's save() method was called, triggering potential side effects, and causing pre and post-save signal handlers to be invoked. (To resolve this, the Django admin is adjusted to require edit permissions on the parent model in order for inline models to be editable.)
+cvss_v2: 6.5
+references:
+    - http://www.openwall.com/lists/oss-security/2019/12/02/1
+    - https://docs.djangoproject.com/en/dev/releases/security/
+    - https://groups.google.com/forum/#!topic/django-announce/GjGqDvtNmWQ
+    - https://security.netapp.com/advisory/ntap-20191217-0003/
+    - https://www.djangoproject.com/weblog/2019/dec/02/security-releases/
+affected:
+    - name: Django
+      version:
+        - "<=2.1.14,2.1a1"
+        - "<=2.2.7,2.2a1"
+      fixedin:
+        - ">=2.2.8"
+        - "==2.1.15"
+        - "<=2.0.13,1.0.1"
