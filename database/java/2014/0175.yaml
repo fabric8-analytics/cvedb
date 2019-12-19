@@ -1,0 +1,17 @@
+---
+cve: 2014-0175
+title: CVE in io.openshift:openshift-test-utils
+description: >
+    mcollective has a default password set at install
+cvss_v2: 7.5
+references:
+    - https://access.redhat.com/security/cve/cve-2014-0175
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2014-0175
+    - https://security-tracker.debian.org/tracker/CVE-2014-0175
+affected:
+    - groupId: io.openshift
+      artifactId: openshift-test-utils
+      version:
+        - "<=1"
+      fixedin:
+        - ">=2"
