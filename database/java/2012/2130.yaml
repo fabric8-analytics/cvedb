@@ -1,0 +1,20 @@
+---
+cve: 2012-2130
+title: CVE in in.s8tech.rsa:RSA-Encryption-Decryption
+description: >
+    A Security Bypass vulnerability exists in PolarSSL 0.99pre4 through 1.1.1 due to a weak encryption error when generating Diffie-Hellman values and RSA keys.
+cvss_v2: 5.8
+references:
+    - http://security.gentoo.org/glsa/glsa-201310-10.xml
+    - http://www.securityfocus.com/bid/53610
+    - https://bugs.gentoo.org/show_bug.cgi?id=CVE-2012-2130
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2012-2130
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/75726
+    - https://security-tracker.debian.org/tracker/CVE-2012-2130
+affected:
+    - groupId: in.s8tech.rsa
+      artifactId: RSA-Encryption-Decryption
+      version:
+        - "<=1.1"
+      fixedin:
+        []
