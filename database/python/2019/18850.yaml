@@ -1,0 +1,15 @@
+---
+cve: 2019-18850
+title: CVE in pcap2http
+description: >
+    TrevorC2 v1.1/v1.2 fails to prevent fingerprinting primarily via a discrepancy between response headers when responding to different HTTP methods, also via predictible responses when accessing and interacting with the "SITE_PATH_QUERY".
+cvss_v2: 5.0
+references:
+    - https://github.com/trustedsec/trevorc2/blob/master/CHANGELOG.txt
+    - https://github.com/trustedsec/trevorc2/issues/18
+affected:
+    - name: pcap2http
+      version:
+        - "<=1.1,1.1"
+      fixedin:
+        - "<=1.0,1.0"
