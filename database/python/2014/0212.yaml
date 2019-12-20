@@ -1,0 +1,16 @@
+---
+cve: 2014-0212
+title: CVE in acl-anthology
+description: >
+    qpid-cpp: ACL policies only loaded if the acl-file option specified enabling DoS by consuming all available file descriptors
+cvss_v2: 5.0
+references:
+    - https://access.redhat.com/security/cve/cve-2014-0212
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2014-0212
+    - https://security-tracker.debian.org/tracker/CVE-2014-0212
+affected:
+    - name: acl-anthology
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
