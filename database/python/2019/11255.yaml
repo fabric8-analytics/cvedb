@@ -1,0 +1,19 @@
+---
+cve: 2019-11255
+title: CVE in autoqube-kubernetes
+description: >
+    Improper input validation in Kubernetes CSI sidecar containers for external-provisioner (<v0.4.3, <v1.0.2, v1.1, <v1.2.2, <v1.3.1), external-snapshotter (<v0.4.2, <v1.0.2, v1.1, <1.2.2), and external-resizer (v0.1, v0.2) could result in unauthorized PersistentVolume data access or volume mutation during snapshot, restore from snapshot, cloning and resizing operations.
+cvss_v2: 5.5
+references:
+    - https://access.redhat.com/errata/RHSA-2019:4054
+    - https://access.redhat.com/errata/RHSA-2019:4096
+    - https://access.redhat.com/errata/RHSA-2019:4099
+    - https://access.redhat.com/errata/RHSA-2019:4225
+    - https://github.com/kubernetes/kubernetes/issues/85233
+    - https://groups.google.com/forum/#!topic/kubernetes-security-announce/aXiYN0q4uIw
+affected:
+    - name: autoqube-kubernetes
+      version:
+        - "<=1.0.1"
+      fixedin:
+        - ">=1.0.2"
