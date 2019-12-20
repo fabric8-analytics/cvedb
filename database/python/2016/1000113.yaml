@@ -1,0 +1,17 @@
+---
+cve: 2016-1000113
+title: CVE in cmsplugin-gallery
+description: >
+    XSS and SQLi in huge IT gallery v1.1.5 for Joomla
+cvss_v2: 7.5
+references:
+    - http://extensions.joomla.org/extensions/extension/photos-a-images/galleries/gallery-pro
+    - http://www.securityfocus.com/bid/92102
+    - http://www.vapidlabs.com/advisory.php?v=164
+affected:
+    - name: cmsplugin-gallery
+      version:
+        - "<=1.1.5,1.1.5"
+      fixedin:
+        - ">=1.1.7"
+        - "<=1.1.4,0.1.2"
