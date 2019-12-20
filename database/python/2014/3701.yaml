@@ -1,0 +1,16 @@
+---
+cve: 2014-3701
+title: CVE in cfn-deploy
+description: >
+    eDeploy has tmp file race condition flaws
+cvss_v2: 9.3
+references:
+    - https://access.redhat.com/security/cve/cve-2014-3701
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2014-3701
+    - https://security-tracker.debian.org/tracker/CVE-2014-3701
+affected:
+    - name: cfn-deploy
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
