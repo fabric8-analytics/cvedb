@@ -1,0 +1,18 @@
+---
+cve: 2013-2625
+title: CVE in aldryn-faq
+description: >
+    An Access Bypass issue exists in OTRS Help Desk before 3.2.4, 3.1.14, and 3.0.19, OTRS ITSM before 3.2.3, 3.1.8, and 3.0.7, and FAQ before 2.2.3, 2.1.4, and 2.0.8. Access rights by the object linking mechanism is not verified
+cvss_v2: 6.4
+references:
+    - http://archives.neohapsis.com/archives/bugtraq/2013-08/0009.html
+    - http://lists.opensuse.org/opensuse-updates/2013-08/msg00027.html
+    - http://www.securityfocus.com/bid/58936
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/83287
+    - https://security-tracker.debian.org/tracker/CVE-2013-2625
+affected:
+    - name: aldryn-faq
+      version:
+        - "<=2.1.2,2.0.0"
+      fixedin:
+        - "<=1.2.3,0.10.0"
