@@ -1,6 +1,6 @@
 ---
 cve: 2019-19729
-title: CVE in bson-type-of-is
+title: CVE in bson-objectid
 description: >
     An issue was discovered in the BSON ObjectID (aka bson-objectid) package 1.3.0 for Node.js. ObjectID() allows an attacker to generate a malformed objectid by inserting an additional property to the user-input, because bson-objectid will return early if it detects _bsontype==ObjectID in the user-input object. As a result, objects in arbitrary forms can bypass formatting if they have a valid bsontype.
 cvss_v2: 5.0
@@ -8,9 +8,8 @@ references:
     - https://github.com/williamkapke/bson-objectid/issues/30
     - https://www.npmjs.com/package/bson-objectid
 affected:
-    - name: bson-type-of-is
+    - name: bson-objectid
       version:
-        - "<=1.3.0,1.3.0"
+        - "<=1.3.0"
       fixedin:
-        - ">=1.3.1"
-        - "<=1.2.0,1.0.0"
+        []
