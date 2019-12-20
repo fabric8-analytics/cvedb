@@ -1,0 +1,14 @@
+---
+cve: 2019-19702
+title: CVE in modoboa-dmarc
+description: >
+    The modoboa-dmarc plugin 1.1.0 for Modoboa is vulnerable to an XML External Entity Injection (XXE) attack when processing XML data. A remote attacker could exploit this to perform a denial of service against the DMARC reporting functionality, such as by referencing the /dev/random file within XML documents that are emailed to the address in the rua field of the DMARC records of a domain.
+cvss_v2: 5.0
+references:
+    - https://github.com/modoboa/modoboa-dmarc/issues/38
+affected:
+    - name: modoboa-dmarc
+      version:
+        - "<=1.1.0"
+      fixedin:
+        []
