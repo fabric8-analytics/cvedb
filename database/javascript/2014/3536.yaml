@@ -1,0 +1,16 @@
+---
+cve: 2014-3536
+title: CVE in contentful-management
+description: >
+    CFME (CloudForms Management Engine) 5: RHN account information is logged to top_output.log during registration
+cvss_v2: 2.1
+references:
+    - https://access.redhat.com/security/cve/cve-2014-3536
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2014-3536
+affected:
+    - name: contentful-management
+      version:
+        - "<=5.0.0,5.0.0-beta0"
+      fixedin:
+        - ">=5.0.1"
+        - "<=4.2.2,0.0.0-determined-by-semantic-release"
