@@ -1,0 +1,17 @@
+---
+cve: 2014-3652
+title: CVE in org.keycloak:keycloak-services
+description: >
+    JBoss KeyCloak: Open redirect vulnerability via failure to validate the redirect URL.
+cvss_v2: 5.8
+references:
+    - https://access.redhat.com/security/cve/cve-2014-3652
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2014-3652
+affected:
+    - groupId: org.keycloak
+      artifactId: keycloak-services
+      version:
+        - "<=1.0.1.Final,1.0.1.Final"
+      fixedin:
+        - ">=1.0.2.Final"
+        - "<=1.0-final,1.0-alpha-1"
