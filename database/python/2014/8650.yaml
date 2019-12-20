@@ -1,0 +1,17 @@
+---
+cve: 2014-8650
+title: CVE in requests-kerberos
+description: >
+    python-requests-Kerberos through 0.5 does not handle mutual authentication
+cvss_v2: 7.5
+references:
+    - http://www.openwall.com/lists/oss-security/2014/11/07/1
+    - http://www.securityfocus.com/bid/70909
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2014-8650
+    - https://security-tracker.debian.org/tracker/CVE-2014-8650
+affected:
+    - name: requests-kerberos
+      version:
+        - "<=0.5"
+      fixedin:
+        - ">=0.6"
