@@ -1,0 +1,16 @@
+---
+cve: 2014-3699
+title: CVE in larch-pickle
+description: >
+    eDeploy has RCE via cPickle deserialization of untrusted data
+cvss_v2: 7.5
+references:
+    - https://access.redhat.com/security/cve/cve-2014-3699
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2014-3699
+    - https://security-tracker.debian.org/tracker/CVE-2014-3699
+affected:
+    - name: larch-pickle
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
