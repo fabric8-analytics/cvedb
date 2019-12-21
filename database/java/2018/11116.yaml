@@ -1,0 +1,16 @@
+---
+cve: 2018-11116
+title: CVE in org.wso2.extension.siddhi.execution.reorder:siddhi-execution-reorder
+description: >
+    ** DISPUTED ** OpenWrt mishandles access control in /etc/config/rpcd and the /usr/share/rpcd/acl.d files, which allows remote authenticated users to call arbitrary methods (i.e., achieve ubus access over HTTP) that were only supposed to be accessible to a specific user, as demonstrated by the file, log, and service namespaces, potentially leading to remote Information Disclosure or Code Execution. NOTE: The developer disputes this as a vulnerability, indicating that rpcd functions appropriately.
+cvss_v2: 6.5
+references:
+    - http://blog.hac425.top/2018/05/16/openwrt_rpcd_acl_fail.html
+    - https://forum.openwrt.org/t/rpcd-vulnerability-reported-on-vultdb/16497/3
+affected:
+    - groupId: org.wso2.extension.siddhi.execution.reorder
+      artifactId: siddhi-execution-reorder
+      version:
+        []
+      fixedin:
+        - ">=4.0.0"
