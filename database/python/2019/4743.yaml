@@ -1,0 +1,15 @@
+---
+cve: 2019-4743
+title: CVE in transaction
+description: >
+    IBM Financial Transaction Manager 3.0 does not set the secure attribute on authorization tokens or session cookies. Attackers may be able to get the cookie values by sending a http:// link to a user or by planting this link in a site the user goes to. The cookie will be sent to the insecure link and the attacker can then obtain the cookie value by snooping the traffic. IBM X-Force ID: 172880.
+cvss_v2: 4.3
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/172880
+    - https://www.ibm.com/support/pages/node/1135173
+affected:
+    - name: transaction
+      version:
+        - "<=3.0.0,3.0.0"
+      fixedin:
+        - "<=2.4.0,1.0a1"
