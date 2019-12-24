@@ -1,0 +1,14 @@
+---
+cve: 2019-19919
+title: CVE in execution-trace
+description: >
+    Versions of handlebars prior to 4.3.0 are vulnerable to Prototype Pollution leading to Remote Code Execution. Templates may alter an Object's __proto__ and __defineGetter__ properties, which may allow an attacker to execute arbitrary code through crafted payloads.
+cvss_v2: 7.5
+references:
+    - https://www.npmjs.com/advisories/1164
+affected:
+    - name: execution-trace
+      version:
+        - "<=1.2.0,1.1.0"
+      fixedin:
+        - "<=1.0.4,1.0.0"
