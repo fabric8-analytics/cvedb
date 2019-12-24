@@ -1,0 +1,15 @@
+---
+cve: 2019-4742
+title: CVE in transaction
+description: >
+    IBM Financial Transaction Manager 3.0 could allow a remote attacker to hijack the clicking action of the victim. By persuading a victim to visit a malicious Web site, a remote attacker could exploit this vulnerability to hijack the victim's click actions and possibly launch further attacks against the victim. IBM X-Force ID: 172877.
+cvss_v2: 4.3
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/172877
+    - https://www.ibm.com/support/pages/node/1135173
+affected:
+    - name: transaction
+      version:
+        - "<=3.0.0,3.0.0"
+      fixedin:
+        - "<=2.4.0,1.0a1"
