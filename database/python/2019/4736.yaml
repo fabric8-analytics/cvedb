@@ -1,0 +1,15 @@
+---
+cve: 2019-4736
+title: CVE in transaction
+description: >
+    IBM Financial Transaction Manager 3.0 is vulnerable to cross-site request forgery which could allow an attacker to execute malicious and unauthorized actions transmitted from a user that the website trusts. IBM X-Force ID: 172706.
+cvss_v2: 4.3
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/172706
+    - https://www.ibm.com/support/pages/node/1135173
+affected:
+    - name: transaction
+      version:
+        - "<=3.0.0,3.0.0"
+      fixedin:
+        - "<=2.4.0,1.0a1"
