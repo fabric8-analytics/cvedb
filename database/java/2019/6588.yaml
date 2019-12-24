@@ -1,0 +1,15 @@
+---
+cve: 2019-6588
+title: CVE in com.liferay.portal:portal-pacl
+description: >
+    In Liferay Portal before 7.1 CE GA4, an XSS vulnerability exists in the SimpleCaptcha API when custom code passes unsanitized input into the "url" parameter of the JSP taglib call <liferay-ui:captcha url="<%= url %>" /> or <liferay-captcha:captcha url="<%= url %>" />. Liferay Portal out-of-the-box behavior with no customizations is not vulnerable.
+cvss_v2: 2.6
+references:
+    - https://dev.liferay.com/web/community-security-team/known-vulnerabilities/liferay-portal-71/-/asset_publisher/7v4O7y85hZMo/content/cst-7130-multiple-xss-vulnerabilities-in-7-1-ce-ga3
+affected:
+    - groupId: com.liferay.portal
+      artifactId: portal-pacl
+      version:
+        - "<=6.2.5"
+      fixedin:
+        []
