@@ -1,0 +1,15 @@
+---
+cve: 2019-14605
+title: CVE in net.digitalid.utility:utility-concurrency
+description: >
+    Improper permissions in the installer for the Intel(R) SCS Platform Discovery Utility, all versions, may allow an authenticated user to potentially enable escalation of privilege via local attack.
+cvss_v2: 4.6
+references:
+    - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00312.html
+affected:
+    - groupId: net.digitalid.utility
+      artifactId: utility-concurrency
+      version:
+        []
+      fixedin:
+        - ">=0.7.0"
