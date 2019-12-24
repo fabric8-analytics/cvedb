@@ -1,0 +1,22 @@
+---
+cve: 2019-4736
+title: CVE in org.glassfish.transaction:transaction-internal-api
+description: >
+    IBM Financial Transaction Manager 3.0 is vulnerable to cross-site request forgery which could allow an attacker to execute malicious and unauthorized actions transmitted from a user that the website trusts. IBM X-Force ID: 172706.
+cvss_v2: 4.3
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/172706
+    - https://www.ibm.com/support/pages/node/1135173
+affected:
+    - groupId: org.glassfish.transaction
+      artifactId: transaction-internal-api
+      version:
+        - "<=3.0-b74"
+        - "<=3.0,3.0"
+        - "<=3.0-Prelude-Embedded-m2,3.0-Prelude"
+        - "<=3.0-Preview,3.0-Preview"
+      fixedin:
+        - ">=3.0.1-b01"
+        - "<=3.0-Preview-b47c,3.0-Preview-b47a"
+        - "<=3.0-Prelude-b28b,3.0-Prelude-b28b"
+        - "<=3.0-b74b,3.0-b74a"
