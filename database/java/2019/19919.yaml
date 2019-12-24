@@ -1,0 +1,15 @@
+---
+cve: 2019-19919
+title: CVE in com.github.ruediste.remoteJUnit:remoteJUnit-codeRunnerCommon
+description: >
+    Versions of handlebars prior to 4.3.0 are vulnerable to Prototype Pollution leading to Remote Code Execution. Templates may alter an Object's __proto__ and __defineGetter__ properties, which may allow an attacker to execute arbitrary code through crafted payloads.
+cvss_v2: 7.5
+references:
+    - https://www.npmjs.com/advisories/1164
+affected:
+    - groupId: com.github.ruediste.remoteJUnit
+      artifactId: remoteJUnit-codeRunnerCommon
+      version:
+        - "<=1.1,1.1"
+      fixedin:
+        - "<=1.0,1.0"
