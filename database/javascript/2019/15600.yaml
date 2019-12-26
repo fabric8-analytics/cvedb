@@ -1,0 +1,14 @@
+---
+cve: 2019-15600
+title: CVE in http_server
+description: >
+    A Path traversal exists in http_server which allows an attacker to read arbitrary system files.
+cvss_v2: 5.0
+references:
+    - https://hackerone.com/reports/692262
+affected:
+    - name: http_server
+      version:
+        - "<=1.0.12"
+      fixedin:
+        []
