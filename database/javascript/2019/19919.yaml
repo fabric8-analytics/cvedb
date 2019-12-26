@@ -1,0 +1,14 @@
+---
+cve: 2019-19919
+title: CVE in handlebars
+description: >
+    Versions of handlebars prior to 4.3.0 are vulnerable to Prototype Pollution leading to Remote Code Execution. Templates may alter an Object's __proto__ and __defineGetter__ properties, which may allow an attacker to execute arbitrary code through crafted payloads.
+cvss_v2: 7.5
+references:
+    - https://www.npmjs.com/advisories/1164
+affected:
+    - name: handlebars
+      version:
+        - "<=4.2.2"
+      fixedin:
+        - ">=4.3.0"
