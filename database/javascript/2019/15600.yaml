@@ -9,6 +9,6 @@ references:
 affected:
     - name: http_server
       version:
-        - "<=1.0.12,1.0.12"
+        - "<=1.0.12"
       fixedin:
-        - "<=1.0.11,1.0.11"
+        []
