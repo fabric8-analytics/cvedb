@@ -1,0 +1,15 @@
+---
+cve: 2019-15598
+title: CVE in cn.joylau.code:joylau-springboot-daemon-windows
+description: >
+    A Code Injection exists in treekill on Windows which allows a remote code execution when an attacker is able to control the input into the command.
+cvss_v2: 7.5
+references:
+    - https://hackerone.com/reports/703415
+affected:
+    - groupId: cn.joylau.code
+      artifactId: joylau-springboot-daemon-windows
+      version:
+        - "<=1.0.RELEASE"
+      fixedin:
+        - ">=1.1.RELEASE"
