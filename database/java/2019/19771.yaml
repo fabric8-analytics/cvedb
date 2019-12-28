@@ -1,0 +1,16 @@
+---
+cve: 2019-19771
+title: CVE in io.gravitee.node.services:gravitee-node-services-monitoring
+description: >
+    The lodahs package 0.0.1 for Node.js is a Trojan horse, and may have been installed by persons who mistyped the lodash package name. In particular, the Trojan horse finds and exfiltrates cryptocurrency wallets.
+cvss_v2: 9.3
+references:
+    - https://www.npmjs.com/advisories/1417
+    - https://www.npmjs.com/package/lodahs
+affected:
+    - groupId: io.gravitee.node.services
+      artifactId: gravitee-node-services-monitoring
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.1.0"
