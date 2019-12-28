@@ -1,0 +1,14 @@
+---
+cve: 2019-15596
+title: CVE in statics-server
+description: >
+    A path traversal in statics-server exists in all version that allows an attacker to perform a path traversal when a symlink is used within the working directory.
+cvss_v2: 5.0
+references:
+    - https://hackerone.com/reports/695416
+affected:
+    - name: statics-server
+      version:
+        - "<=0.0.9"
+      fixedin:
+        []
