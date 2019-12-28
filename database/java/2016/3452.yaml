@@ -1,0 +1,29 @@
+---
+cve: 2016-3452
+title: CVE in org.mariadb.jdbc:mariadb-java-client
+description: >
+    Unspecified vulnerability in Oracle MySQL 5.5.48 and earlier, 5.6.29 and earlier, and 5.7.10 and earlier and MariaDB before 5.5.49, 10.0.x before 10.0.25, and 10.1.x before 10.1.14 allows remote attackers to affect confidentiality via vectors related to Server: Security: Encryption.
+cvss_v2: 4.3
+references:
+    - http://rhn.redhat.com/errata/RHSA-2016-0705.html
+    - http://rhn.redhat.com/errata/RHSA-2016-1480.html
+    - http://rhn.redhat.com/errata/RHSA-2016-1481.html
+    - http://rhn.redhat.com/errata/RHSA-2016-1602.html
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2016-2881720.html
+    - http://www.oracle.com/technetwork/topics/security/linuxbulletinjul2016-3090544.html
+    - http://www.securityfocus.com/bid/91787
+    - http://www.securityfocus.com/bid/91999
+    - http://www.securitytracker.com/id/1036362
+    - http://www-01.ibm.com/support/docview.wss?uid=isg3T1024168
+    - https://access.redhat.com/errata/RHSA-2016:1132
+    - https://mariadb.com/kb/en/mariadb/mariadb-10025-release-notes/
+    - https://mariadb.com/kb/en/mariadb/mariadb-10114-release-notes/
+    - https://mariadb.com/kb/en/mariadb/mariadb-5549-release-notes/
+affected:
+    - groupId: org.mariadb.jdbc
+      artifactId: mariadb-java-client
+      version:
+        - "<=2.1.0,2.1.0"
+      fixedin:
+        - ">=2.1.1"
+        - "<=2.0.3,1.1.7"
