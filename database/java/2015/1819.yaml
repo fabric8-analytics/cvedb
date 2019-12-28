@@ -1,0 +1,38 @@
+---
+cve: 2015-1819
+title: CVE in org.sonarsource.xml:xml-squid
+description: >
+    The xmlreader in libxml allows remote attackers to cause a denial of service (memory consumption) via crafted XML data, related to an XML Entity Expansion (XEE) attack.
+cvss_v2: 5.0
+references:
+    - http://lists.apple.com/archives/security-announce/2016/Mar/msg00000.html
+    - http://lists.apple.com/archives/security-announce/2016/Mar/msg00001.html
+    - http://lists.apple.com/archives/security-announce/2016/Mar/msg00002.html
+    - http://lists.apple.com/archives/security-announce/2016/Mar/msg00004.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2015-November/172710.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2015-November/172943.html
+    - http://lists.opensuse.org/opensuse-updates/2015-12/msg00120.html
+    - http://lists.opensuse.org/opensuse-updates/2016-01/msg00031.html
+    - http://rhn.redhat.com/errata/RHSA-2015-1419.html
+    - http://rhn.redhat.com/errata/RHSA-2015-2550.html
+    - http://www.debian.org/security/2015/dsa-3430
+    - http://www.oracle.com/technetwork/topics/security/bulletinoct2015-2511968.html
+    - http://www.oracle.com/technetwork/topics/security/linuxbulletinoct2015-2719645.html
+    - http://www.securityfocus.com/bid/75570
+    - http://www.securitytracker.com/id/1034243
+    - http://www.ubuntu.com/usn/USN-2812-1
+    - http://xmlsoft.org/news.html
+    - https://git.gnome.org/browse/libxml2/commit/?id=213f1fe0d76d30eaed6e5853057defc43e6df2c9
+    - https://security.gentoo.org/glsa/201507-08
+    - https://security.gentoo.org/glsa/201701-37
+    - https://support.apple.com/HT206166
+    - https://support.apple.com/HT206167
+    - https://support.apple.com/HT206168
+    - https://support.apple.com/HT206169
+affected:
+    - groupId: org.sonarsource.xml
+      artifactId: xml-squid
+      version:
+        []
+      fixedin:
+        - ">=1.4"
