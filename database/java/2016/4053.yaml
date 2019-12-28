@@ -1,0 +1,32 @@
+---
+cve: 2016-4053
+title: CVE in org.ops4j.pax.wicket.samples.edge.inheritinjection:org.ops4j.pax.wicket.samples.edge.inheritinjection.inherit
+description: >
+    Squid 3.x before 3.5.17 and 4.x before 4.0.9 allow remote attackers to obtain sensitive stack layout information via crafted Edge Side Includes (ESI) responses, related to incorrect use of assert and compiler optimization.
+cvss_v2: 4.3
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2016-08/msg00010.html
+    - http://lists.opensuse.org/opensuse-security-announce/2016-08/msg00040.html
+    - http://lists.opensuse.org/opensuse-updates/2016-08/msg00069.html
+    - http://www.debian.org/security/2016/dsa-3625
+    - http://www.openwall.com/lists/oss-security/2016/04/20/6
+    - http://www.openwall.com/lists/oss-security/2016/04/20/9
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2016-2881720.html
+    - http://www.oracle.com/technetwork/topics/security/linuxbulletinapr2016-2952096.html
+    - http://www.securityfocus.com/bid/86788
+    - http://www.securityfocus.com/bid/91787
+    - http://www.securitytracker.com/id/1035647
+    - http://www.squid-cache.org/Advisories/SQUID-2016_6.txt
+    - http://www.ubuntu.com/usn/USN-2995-1
+    - https://access.redhat.com/errata/RHSA-2016:1138
+    - https://access.redhat.com/errata/RHSA-2016:1139
+    - https://access.redhat.com/errata/RHSA-2016:1140
+    - https://security.gentoo.org/glsa/201607-01
+affected:
+    - groupId: org.ops4j.pax.wicket.samples.edge.inheritinjection
+      artifactId: org.ops4j.pax.wicket.samples.edge.inheritinjection.inherit
+      version:
+        - "<=3.0.0,3.0.0"
+      fixedin:
+        - ">=3.0.1"
+        - "<=2.1.1,0.8.0"
