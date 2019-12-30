@@ -1,0 +1,17 @@
+---
+cve: 2019-10773
+title: CVE in yarn
+description: >
+    In Yarn before 1.21.1, the package install functionality can be abused to generate arbitrary symlinks on the host filesystem by using specially crafted "bin" keys. Existing files could be overwritten depending on the current user permission set.
+cvss_v2: 6.8
+references:
+    - https://blog.daniel-ruf.de/critical-design-flaw-npm-pnpm-yarn/
+    - https://github.com/yarnpkg/yarn/commit/039bafd74b7b1a88a53a54f8fa6fa872615e90e7
+    - https://github.com/yarnpkg/yarn/issues/7761#issuecomment-565493023
+    - https://snyk.io/vuln/SNYK-JS-YARN-537806,
+affected:
+    - name: yarn
+      version:
+        - "<=1.21.0"
+      fixedin:
+        - ">=1.21.1"
