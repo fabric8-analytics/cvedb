@@ -1,6 +1,6 @@
 ---
 cve: 2019-19771
-title: CVE in is-node
+title: CVE in lodahs
 description: >
     The lodahs package 0.0.1 for Node.js is a Trojan horse, and may have been installed by persons who mistyped the lodash package name. In particular, the Trojan horse finds and exfiltrates cryptocurrency wallets.
 cvss_v2: 9.3
@@ -8,9 +8,8 @@ references:
     - https://www.npmjs.com/advisories/1417
     - https://www.npmjs.com/package/lodahs
 affected:
-    - name: is-node
+    - name: lodahs
       version:
-        - "<=1.0.0,1.0.0"
+        - "<=1.0.0"
       fixedin:
-        - ">=1.0.1"
-        - "<=0.0.1-security,0.0.0"
+        []
