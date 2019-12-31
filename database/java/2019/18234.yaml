@@ -1,0 +1,15 @@
+---
+cve: 2019-18234
+title: CVE in org.restcomm.media.core.control:media-core-control-mgcp
+description: >
+    Equinox Control Expert all versions, is vulnerable to an SQL injection attack, which may allow an attacker to remotely execute arbitrary code.
+cvss_v2: 7.5
+references:
+    - https://www.us-cert.gov/ics/advisories/icsa-19-353-02
+affected:
+    - groupId: org.restcomm.media.core.control
+      artifactId: media-core-control-mgcp
+      version:
+        []
+      fixedin:
+        - ">=8.0.0-31"
