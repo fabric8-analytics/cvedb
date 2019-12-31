@@ -1,0 +1,14 @@
+---
+cve: 2019-18234
+title: CVE in android-control
+description: >
+    Equinox Control Expert all versions, is vulnerable to an SQL injection attack, which may allow an attacker to remotely execute arbitrary code.
+cvss_v2: 7.5
+references:
+    - https://www.us-cert.gov/ics/advisories/icsa-19-353-02
+affected:
+    - name: android-control
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
