@@ -1,0 +1,16 @@
+---
+cve: 2019-15011
+title: CVE in terra-application-links
+description: >
+    The ListEntityLinksServlet resource in Application Links before version 5.0.12, from version 5.1.0 before version 5.2.11, from version 5.3.0 before version 5.3.7, from version 5.4.0 before 5.4.13, and from version 6.0.0 before 6.0.5 disclosed application link information to non-admin users via a missing permissions check.
+cvss_v2: 4.0
+references:
+    - https://ecosystem.atlassian.net/browse/APL-1386
+affected:
+    - name: terra-application-links
+      version:
+        - "<=5.4.0"
+        - "<=6.0.0,6.0.0"
+      fixedin:
+        - ">=6.1.0"
+        - "<=5.12.0,5.5.0"
