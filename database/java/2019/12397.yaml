@@ -1,0 +1,19 @@
+---
+cve: 2019-12397
+title: CVE in org.apache.ranger:ranger-plugins-common
+description: >
+    Policy import functionality in Apache Ranger 0.7.0 to 1.2.0 is vulnerable to a cross-site scripting issue. Upgrade to 2.0.0 or later version of Apache Ranger with the fix.
+cvss_v2: 4.3
+references:
+    - http://www.openwall.com/lists/oss-security/2019/08/08/1
+    - https://cwiki.apache.org/confluence/display/RANGER/Vulnerabilities+found+in+Ranger
+    - https://lists.apache.org/thread.html/ab2de1adad96f5dbd19d976b28715dfc60dbe75e82a74f48be8ef695@%3Cdev.ranger.apache.org%3E
+    - https://lists.apache.org/thread.html/cbc6346708ef2b9ffb2555637311bf6294923c609c029389fa39de8f@%3Cdev.ranger.apache.org%3E
+affected:
+    - groupId: org.apache.ranger
+      artifactId: ranger-plugins-common
+      version:
+        - "<=1.2.0,0.7.0"
+      fixedin:
+        - ">=2.0.0"
+        - "<=0.6.3,0.6.0"
