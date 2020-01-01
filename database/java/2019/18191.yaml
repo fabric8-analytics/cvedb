@@ -1,0 +1,15 @@
+---
+cve: 2019-18191
+title: CVE in com.daioware.security:security
+description: >
+    A privilege escalation vulnerability in the Trend Micro Deep Security as a Service Quick Setup cloud formation template could allow an authenticated entity with certain unrestricted AWS execution privileges to escalate to full privileges within the target AWS account.
+cvss_v2: 6.5
+references:
+    - https://success.trendmicro.com/solution/000157758
+affected:
+    - groupId: com.daioware.security
+      artifactId: security
+      version:
+        []
+      fixedin:
+        - ">=1.0.0.RELEASE"
