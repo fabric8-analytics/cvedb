@@ -1,0 +1,15 @@
+---
+cve: 2014-4523
+title: CVE in org.apidesign.html:net.java.html
+description: >
+    Cross-site scripting (XSS) vulnerability in the Easy Career Openings plugin 0.4 and earlier for WordPress allows remote attackers to inject arbitrary web script or HTML via unspecified parameters.
+cvss_v2: 4.3
+references:
+    - http://codevigilant.com/disclosure/wp-plugin-easy-career-openings-a3-cross-site-scripting-xss
+affected:
+    - groupId: org.apidesign.html
+      artifactId: net.java.html
+      version:
+        - "<=0.4"
+      fixedin:
+        - ">=0.5"
