@@ -1,0 +1,21 @@
+---
+cve: 2019-17563
+title: CVE in org.apache.tomcat:tomcat-jasper
+description: >
+    When using FORM authentication with Apache Tomcat 9.0.0.M1 to 9.0.29, 8.5.0 to 8.5.49 and 7.0.0 to 7.0.98 there was a narrow window where an attacker could perform a session fixation attack. The window was considered too narrow for an exploit to be practical but, erring on the side of caution, this issue has been treated as a security vulnerability.
+cvss_v2: 7.5
+references:
+    - https://lists.apache.org/thread.html/8b4c1db8300117b28a0f3f743c0b9e3f964687a690cdf9662a884bbd%40%3Cannounce.tomcat.apache.org%3E
+    - https://seclists.org/bugtraq/2019/Dec/43
+    - https://www.debian.org/security/2019/dsa-4596
+affected:
+    - groupId: org.apache.tomcat
+      artifactId: tomcat-jasper
+      version:
+        - "<=7.0.96"
+        - "<=8.5.49,8.5.0"
+        - "<=9.0.29,9.0.0.M1"
+      fixedin:
+        - ">=9.0.30"
+        - "<=8.5.50,8.5.50"
+        - "<=8.0.53,7.0.99"
