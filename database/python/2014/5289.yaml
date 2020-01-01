@@ -1,0 +1,17 @@
+---
+cve: 2014-5289
+title: CVE in uri
+description: >
+    Buffer overflow in Senkas Kolibri 2.0 allows remote attackers to execute arbitrary code via a long URI in a POST request.
+cvss_v2: 7.5
+references:
+    - http://packetstormsecurity.com/files/127912/Senkas-Kolibri-WebServer-2.0-Buffer-Overflow.html
+    - http://www.securityfocus.com/bid/69263
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/95350
+affected:
+    - name: uri
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - ">=2.0.1"
+        - "<=1.0.1,1.0"
