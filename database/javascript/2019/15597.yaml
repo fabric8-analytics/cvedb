@@ -1,0 +1,14 @@
+---
+cve: 2019-15597
+title: CVE in node-df
+description: >
+    A code injection exists in node-df v0.1.4 that can allow an attacker to remote code execution by unsanitized input.
+cvss_v2: 7.5
+references:
+    - https://hackerone.com/reports/703412
+affected:
+    - name: node-df
+      version:
+        - "<=0.1.4"
+      fixedin:
+        []
