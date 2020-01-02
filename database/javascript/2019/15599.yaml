@@ -1,0 +1,14 @@
+---
+cve: 2019-15599
+title: CVE in tree-kill
+description: >
+    A Code Injection exists in tree-kill on Windows which allows a remote code execution when an attacker is able to control the input into the command.
+cvss_v2: 7.5
+references:
+    - https://hackerone.com/reports/701183
+affected:
+    - name: tree-kill
+      version:
+        - "<=1.2.1"
+      fixedin:
+        - ">=1.2.2"
