@@ -1,0 +1,15 @@
+---
+cve: 2019-11294
+title: CVE in com.sap.cloud.lm.sl.cf:com.sap.cloud.lm.sl.cf.api
+description: >
+    Cloud Foundry Cloud Controller API (CAPI), version 1.88.0, allows space developers to list all global service brokers, including service broker URLs and GUIDs, which should only be accessible to admins.
+cvss_v2: 4.0
+references:
+    - https://www.cloudfoundry.org/blog/cve-2019-11294
+affected:
+    - groupId: com.sap.cloud.lm.sl.cf
+      artifactId: com.sap.cloud.lm.sl.cf.api
+      version:
+        - "<=1.94.0"
+      fixedin:
+        []
