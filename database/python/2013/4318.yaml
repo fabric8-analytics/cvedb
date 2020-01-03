@@ -1,0 +1,16 @@
+---
+cve: 2013-4318
+title: CVE in market-features
+description: >
+    File injection vulnerability in Ruby gem Features 0.3.0 allows remote attackers to inject malicious html in the /tmp directory.
+cvss_v2: 3.5
+references:
+    - http://www.openwall.com/lists/oss-security/2013/09/09/10
+    - https://security-tracker.debian.org/tracker/CVE-2013-4318
+affected:
+    - name: market-features
+      version:
+        - "<=0.3,0.3"
+      fixedin:
+        - ">=0.3.1"
+        - "<=0.2.1,0.1"
