@@ -1,0 +1,18 @@
+---
+cve: 2012-5639
+title: CVE in org.apache.metamodel:MetaModel-openoffice
+description: >
+    LibreOffice and OpenOffice automatically open embedded content
+cvss_v2: 4.3
+references:
+    - http://www.openwall.com/lists/oss-security/2012/12/14/1
+    - https://access.redhat.com/security/cve/cve-2012-5639
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2012-5639
+    - https://security-tracker.debian.org/tracker/CVE-2012-5639
+affected:
+    - groupId: org.apache.metamodel
+      artifactId: MetaModel-openoffice
+      version:
+        []
+      fixedin:
+        - ">=4.0.0-incubating"
