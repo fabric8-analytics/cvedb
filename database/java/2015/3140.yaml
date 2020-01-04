@@ -1,0 +1,17 @@
+---
+cve: 2015-3140
+title: CVE in org.jomc.build:jomc-build-resources
+description: >
+    Multiple cross-site request forgery (CSRF) vulnerabilities in Synametrics Technologies SynaMan before 3.5 Build 1451, Syncrify before 3.7 Build 856, and SynTail before 1.5 Build 567
+cvss_v2: 6.8
+references:
+    - http://web.synametrics.com/SynamanVersionHistory.htm
+    - https://web.synametrics.com/SyncrifyVersionHistory.htm
+    - https://web.synametrics.com/SyntailVersionHistory.htm
+affected:
+    - groupId: org.jomc.build
+      artifactId: jomc-build-resources
+      version:
+        - "<=1.5"
+      fixedin:
+        - ">=1.6"
