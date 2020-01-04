@@ -1,0 +1,16 @@
+---
+cve: 2019-6029
+title: CVE in org.apidesign.html:net.java.html.boot
+description: >
+    Cross-site scripting vulnerability in Custom Body Class 0.6.0 and earlier allows remote attackers to inject arbitrary web script or HTML via unspecified vectors.
+cvss_v2: 4.3
+references:
+    - http://jvn.jp/en/jp/JVN26847507/index.html
+    - https://wordpress.org/plugins/wp-custom-body-class/
+affected:
+    - groupId: org.apidesign.html
+      artifactId: net.java.html.boot
+      version:
+        - "<=0.6"
+      fixedin:
+        []
