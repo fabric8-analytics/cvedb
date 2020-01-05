@@ -1,0 +1,14 @@
+---
+cve: 2013-4691
+title: CVE in gulp-connect
+description: >
+    Sencha Labs Connect has XSS with connect.methodOverride()
+cvss_v2: 4.3
+references:
+    - http://github.com/senchalabs/connect/issues/831
+affected:
+    - name: gulp-connect
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
