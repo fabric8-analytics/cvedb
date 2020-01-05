@@ -1,0 +1,16 @@
+---
+cve: 2019-16927
+title: CVE in org.apache.karaf.profile:org.apache.karaf.profile.core
+description: >
+    Xpdf 4.01.01 has an out-of-bounds write in the vertProfile part of the TextPage::findGaps function in TextOutputDev.cc, a different vulnerability than CVE-2019-9877.
+cvss_v2: 4.3
+references:
+    - https://forum.xpdfreader.com/viewtopic.php?f=3&t=41885
+affected:
+    - groupId: org.apache.karaf.profile
+      artifactId: org.apache.karaf.profile.core
+      version:
+        - "<=4.1.1,4.1.1"
+      fixedin:
+        - ">=4.1.2"
+        - "<=4.1.0,4.0.0.M2"
