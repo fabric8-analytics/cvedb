@@ -1,0 +1,17 @@
+---
+cve: 2013-4692
+title: CVE in org.mobicents.protocols.ss7.clock:clock
+description: >
+    Xorbin Analog Flash Clock 1.0 extension for Joomia has XSS
+cvss_v2: 4.3
+references:
+    - http://packetstormsecurity.com/files/122224/Xorbin-Analog-Flash-Clock-1.0-For-Joomla-XSS.html
+    - http://www.securityfocus.com/bid/60860
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/85418
+affected:
+    - groupId: org.mobicents.protocols.ss7.clock
+      artifactId: clock
+      version:
+        - "<=1.0.0.FINAL"
+      fixedin:
+        - ">=2.0.0.BETA1"
