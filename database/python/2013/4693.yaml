@@ -1,0 +1,14 @@
+---
+cve: 2013-4693
+title: CVE in terminal-digital-clock
+description: >
+    WordPress Xorbin Digital Flash Clock 1.0 has XSS
+cvss_v2: 4.3
+references:
+    - http://packetstormsecurity.com/files/122223/Xorbin-Digital-Flash-Clock-1.0-For-WordPress-XSS.html
+affected:
+    - name: terminal-digital-clock
+      version:
+        - "<=1.0.0"
+      fixedin:
+        []
