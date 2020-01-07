@@ -1,0 +1,15 @@
+---
+cve: 2019-20199
+title: CVE in xml-crypto
+description: >
+    An issue was discovered in ezXML 0.8.3 through 0.8.6. The function ezxml_decode, while parsing a crafted XML file, performs incorrect memory handling, leading to NULL pointer dereference while running strlen() on a NULL pointer.
+cvss_v2: 4.3
+references:
+    - https://sourceforge.net/p/ezxml/bugs/18/
+affected:
+    - name: xml-crypto
+      version:
+        - "<=0.8.5,0.8.3"
+      fixedin:
+        - ">=0.9.0"
+        - "<=0.8.2,0.0.1"
