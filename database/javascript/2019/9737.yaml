@@ -1,14 +1,14 @@
 ---
 cve: 2019-9737
-title: CVE in editor.md
+title: CVE in editor.md.webpack
 description: >
-  Editor.md 1.5.0 has DOM-based XSS via vectors involving the '<EMBED SRC="data:image/svg+xml' substring.
+    Editor.md 1.5.0 has DOM-based XSS via vectors involving the '<EMBED SRC="data:image/svg+xml' substring.
 cvss_v2: 4.3
 references:
-  - https://github.com/pandao/editor.md/issues/662
+    - https://github.com/pandao/editor.md/issues/662
 affected:
-  - name: editor.md
-    version:
-      - "<=1.5.0"
-    fixedin:
-      []
+    - name: editor.md.webpack
+      version:
+        - "<=1.5.0"
+      fixedin:
+        []
