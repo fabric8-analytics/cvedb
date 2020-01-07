@@ -1,0 +1,15 @@
+---
+cve: 2019-6017
+title: CVE in jquery.payment
+description: >
+    REMISE Payment Module (2.11, 2.12 and 2.13) version 3.0.12 and earlier allow remote attackers to [Disclosed_Information_type] via unspecified vectors.
+cvss_v2: 5.0
+references:
+    - http://jvn.jp/en/jp/JVN59436681/index.html
+    - http://www.remise.jp/data/pdf/20191002.pdf
+affected:
+    - name: jquery.payment
+      version:
+        - "<=3.0.0,3.0.0"
+      fixedin:
+        - "<=2.0.0,0.0.1"
