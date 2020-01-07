@@ -1,0 +1,16 @@
+---
+cve: 2019-6017
+title: CVE in com.tchepannou.payment:tch-payment-mock
+description: >
+    REMISE Payment Module (2.11, 2.12 and 2.13) version 3.0.12 and earlier allow remote attackers to [Disclosed_Information_type] via unspecified vectors.
+cvss_v2: 5.0
+references:
+    - http://jvn.jp/en/jp/JVN59436681/index.html
+    - http://www.remise.jp/data/pdf/20191002.pdf
+affected:
+    - groupId: com.tchepannou.payment
+      artifactId: tch-payment-mock
+      version:
+        - "<=3.0"
+      fixedin:
+        []
