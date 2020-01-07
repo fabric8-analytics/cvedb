@@ -1,0 +1,15 @@
+---
+cve: 2019-20201
+title: CVE in xml-crypto
+description: >
+    An issue was discovered in ezXML 0.8.3 through 0.8.6. The ezxml_parse_* functions mishandle XML entities, leading to an infinite loop in which memory allocations occur.
+cvss_v2: 4.3
+references:
+    - https://sourceforge.net/p/ezxml/bugs/16/
+affected:
+    - name: xml-crypto
+      version:
+        - "<=0.8.5,0.8.3"
+      fixedin:
+        - ">=0.9.0"
+        - "<=0.8.2,0.0.1"
