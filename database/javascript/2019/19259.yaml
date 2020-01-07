@@ -1,0 +1,16 @@
+---
+cve: 2019-19259
+title: CVE in gitlab
+description: >
+    GitLab Enterprise Edition (EE) 11.3 and later through 12.5 allows an Insecure Direct Object Reference (IDOR).
+cvss_v2: 4.0
+references:
+    - https://about.gitlab.com/blog/2019/11/27/security-release-gitlab-12-5-1-released/
+    - https://about.gitlab.com/blog/categories/releases/
+affected:
+    - name: gitlab
+      version:
+        - "<=12.1.2,11.3.0"
+      fixedin:
+        - ">=13.0.0"
+        - "<=11.2.3,0.0.1"
