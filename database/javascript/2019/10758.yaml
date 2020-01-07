@@ -1,0 +1,14 @@
+---
+cve: 2019-10758
+title: CVE in mongo-express
+description: >
+    mongo-express before 0.54.0 is vulnerable to Remote Code Execution via endpoints that uses the `toBSON` method. A misuse of the `vm` dependency to perform `exec` commands in a non-safe environment.
+cvss_v2: 9.0
+references:
+    - https://snyk.io/vuln/SNYK-JS-MONGOEXPRESS-473215
+affected:
+    - name: mongo-express
+      version:
+        - "<=0.53.0"
+      fixedin:
+        - ">=0.54.0"
