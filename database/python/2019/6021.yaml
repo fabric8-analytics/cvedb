@@ -1,0 +1,15 @@
+---
+cve: 2019-6021
+title: CVE in project-system
+description: >
+    Open redirect vulnerability in Library Information Management System LIMEDIO all versions allows remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via a specially crafted URL.
+cvss_v2: 5.8
+references:
+    - http://jvn.jp/en/jp/JVN45633549/index.html
+    - https://www.ricoh.co.jp/limedio/user/
+affected:
+    - name: project-system
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
