@@ -1,0 +1,15 @@
+---
+cve: 2019-0980
+title: CVE in org.ryoframework.core:ryo-core-service-adapter
+description: >
+    A denial of service vulnerability exists when .NET Framework or .NET Core improperly handle web requests, aka '.Net Framework and .Net Core Denial of Service Vulnerability'. This CVE ID is unique from CVE-2019-0820, CVE-2019-0981.
+cvss_v2: 5.0
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0980
+affected:
+    - groupId: org.ryoframework.core
+      artifactId: ryo-core-service-adapter
+      version:
+        - "<=1.1.0"
+      fixedin:
+        - ">=1.1.1"
