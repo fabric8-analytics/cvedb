@@ -1,0 +1,16 @@
+---
+cve: 2013-4743
+title: CVE in org.smartboot.http:smart-http-server
+description: >
+    Static HTTP Server 1.0 has a Local Overflow
+cvss_v2: 7.5
+references:
+    - http://www.exploit-db.com/exploits/26520
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/85417
+affected:
+    - groupId: org.smartboot.http
+      artifactId: smart-http-server
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
