@@ -1,0 +1,16 @@
+---
+cve: 2013-4796
+title: CVE in reviewboard
+description: >
+    ReviewBoard 1.6.17 allows code execution by attaching PHP scripts to review request
+cvss_v2: 6.5
+references:
+    - http://www.tripwire.com/state-of-security/vulnerability-management/vulnerabilities-its-time-to-review-your-reviewboard/
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/86411
+affected:
+    - name: reviewboard
+      version:
+        - "<=1.6.17,1.6.17"
+      fixedin:
+        - ">=1.6.18"
+        - "<=1.6.16,1.0"
