@@ -1,0 +1,17 @@
+---
+cve: 2019-20049
+title: CVE in cloudshell-networking-alcatel
+description: >
+    An issue was discovered on Alcatel-Lucent OmniVista 4760 devices. A remote unauthenticated attacker can chain a directory traversal (which helps to bypass authentication) with an insecure file upload to achieve Remote Code Execution as SYSTEM. The directory traversal is in the __construct() whereas the insecure file upload is in SetSkinImages().
+cvss_v2: 10.0
+references:
+    - https://git.lsd.cat/g/omnivista-rce
+    - https://packetstormsecurity.com/files/155595/Alcatel-Lucent-Omnivista-8770-Remote-Code-Execution.html
+    - https://www.al-enterprise.com/en/-/media/assets/internet/documents/sa-c0065-ov8770-rce-vulnerability-en.pdf
+    - https://www.exploit-db.com/exploits/47761
+affected:
+    - name: cloudshell-networking-alcatel
+      version:
+        []
+      fixedin:
+        - ">=1.1.0"
