@@ -1,0 +1,15 @@
+---
+cve: 2017-18514
+title: CVE in org.mybatis.dynamic-sql:mybatis-dynamic-sql
+description: >
+    The simple-login-log plugin before 1.1.2 for WordPress has SQL injection.
+cvss_v2: 7.5
+references:
+    - https://wordpress.org/plugins/simple-login-log/#developers
+affected:
+    - groupId: org.mybatis.dynamic-sql
+      artifactId: mybatis-dynamic-sql
+      version:
+        - "<=1.1.1"
+      fixedin:
+        - ">=1.1.2"
