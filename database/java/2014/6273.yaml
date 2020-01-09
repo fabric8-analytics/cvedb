@@ -1,0 +1,20 @@
+---
+cve: 2014-6273
+title: CVE in org.wildfly.url.http:wildfly-url-http
+description: >
+    Buffer overflow in the HTTP transport code in apt-get in APT 1.0.1 and earlier allows man-in-the-middle attackers to cause a denial of service (crash) or possibly execute arbitrary code via a crafted URL.
+cvss_v2: 6.8
+references:
+    - http://secunia.com/advisories/61605
+    - http://secunia.com/advisories/61710
+    - http://www.debian.org/security/2014/dsa-3031
+    - http://www.securityfocus.com/bid/70075
+    - http://www.ubuntu.com/usn/USN-2353-1
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/96151
+affected:
+    - groupId: org.wildfly.url.http
+      artifactId: wildfly-url-http
+      version:
+        - "<=1.0.1.Final"
+      fixedin:
+        - ">=1.0.2.Final"
