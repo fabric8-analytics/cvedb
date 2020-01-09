@@ -1,0 +1,20 @@
+---
+cve: 2019-15006
+title: CVE in org.randombits.confluence:confluence-metadata-compat
+description: >
+    There was a man-in-the-middle (MITM) vulnerability present in the Confluence Previews plugin in Confluence Server and Confluence Data Center. This plugin was used to facilitate communication with the Atlassian Companion application. The Confluence Previews plugin in Confluence Server and Confluence Data Center communicated with the Companion application via the atlassian-domain-for-localhost-connections-only.com domain name, the DNS A record of which points at 127.0.0.1. Additionally, a signed certificate for the domain was publicly distributed with the Companion application. An attacker in the position to control DNS resolution of their victim could carry out a man-in-the-middle (MITM) attack between Confluence Server (or Confluence Data Center) and the atlassian-domain-for-localhost-connections-only.com domain intended to be used with the Companion application. This certificate has been revoked, however, usage of the atlassian-domain-for-localhost-connections-only.com domain name was still present in Confluence Server and Confluence Data Center. An attacker could perform the described attack by denying their victim access to certificate revocation information, and carry out a man-in-the-middle (MITM) attack to observe files being edited using the Companion application and/or modify them, and access some limited user information.
+cvss_v2: 5.8
+references:
+    - http://packetstormsecurity.com/files/155742/Atlassian-Confluence-Man-In-The-Middle.html
+    - https://confluence.atlassian.com/doc/confluence-security-advisory-2019-12-18-982324349.html
+    - https://jira.atlassian.com/browse/CONFSERVER-59244
+    - https://seclists.org/bugtraq/2019/Dec/36
+    - https://twitter.com/SwiftOnSecurity/status/1202034106495832067
+affected:
+    - groupId: org.randombits.confluence
+      artifactId: confluence-metadata-compat
+      version:
+        - "<=7.1.0,7.1.0"
+      fixedin:
+        - ">=7.2.0"
+        - "<=7.0.0,6.0.6"
