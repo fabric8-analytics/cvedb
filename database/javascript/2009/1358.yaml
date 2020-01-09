@@ -1,0 +1,22 @@
+---
+cve: 2009-1358
+title: CVE in package
+description: >
+    apt-get in apt before 0.7.21 does not check for the correct error code from gpgv, which causes apt to treat a repository as valid even when it has been signed with a key that has been revoked or expired, which might allow remote attackers to trick apt into installing malicious repositories.
+cvss_v2: 10.0
+references:
+    - http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=433091
+    - http://secunia.com/advisories/34829
+    - http://secunia.com/advisories/34832
+    - http://secunia.com/advisories/34874
+    - http://www.debian.org/security/2009/dsa-1779
+    - http://www.securityfocus.com/bid/34630
+    - https://bugs.launchpad.net/ubuntu/+source/apt/+bug/356012
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/50086
+    - https://usn.ubuntu.com/762-1/
+affected:
+    - name: package
+      version:
+        - "<=0.0.3"
+      fixedin:
+        - ">=1.0.0"
