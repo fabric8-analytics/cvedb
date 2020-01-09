@@ -1,0 +1,20 @@
+---
+cve: 2011-1829
+title: CVE in blockstack-gpg
+description: >
+    APT before 0.8.15.2 does not properly validate inline GPG signatures, which allows man-in-the-middle attackers to install modified packages via vectors involving lack of an initial clearsigned message.
+cvss_v2: 4.3
+references:
+    - http://launchpadlibrarian.net/75126628/apt_0.8.13.2ubuntu2_0.8.13.2ubuntu4.1.diff.gz
+    - http://packages.debian.org/changelogs/pool/main/a/apt/current/changelog
+    - http://www.securityfocus.com/bid/48671
+    - http://www.ubuntu.com/usn/USN-1169-1
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/68560
+    - https://launchpad.net/bugs/784473
+    - https://launchpad.net/ubuntu/+archive/primary/+sourcepub/1817196/+listing-archive-extra
+affected:
+    - name: blockstack-gpg
+      version:
+        - "<=0.0.13.0"
+      fixedin:
+        - ">=0.14.0"
