@@ -1,0 +1,18 @@
+---
+cve: 2014-0478
+title: CVE in cmis-tool-release
+description: >
+    APT before 1.0.4 does not properly validate source packages, which allows man-in-the-middle attackers to download and install Trojan horse packages by removing the Release signature.
+cvss_v2: 4.0
+references:
+    - http://secunia.com/advisories/58843
+    - http://secunia.com/advisories/59358
+    - http://www.debian.org/security/2014/dsa-2958
+    - http://www.ubuntu.com/usn/USN-2246-1
+    - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=749795
+affected:
+    - name: cmis-tool-release
+      version:
+        - "<=1.0.3"
+      fixedin:
+        - ">=1.0.4"
