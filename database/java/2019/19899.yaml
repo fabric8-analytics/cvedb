@@ -1,0 +1,15 @@
+---
+cve: 2019-19899
+title: CVE in io.pebbletemplates:pebble-spring5
+description: >
+    Pebble Templates 3.1.2 allows attackers to bypass a protection mechanism (intended to block access to instances of java.lang.Class) because getClass is accessible via the public static java.lang.Class java.lang.Class.forName(java.lang.Module,java.lang.String) signature.
+cvss_v2: 7.5
+references:
+    - https://github.com/PebbleTemplates/pebble/issues/493
+affected:
+    - groupId: io.pebbletemplates
+      artifactId: pebble-spring5
+      version:
+        - "<=3.1.2,3.1.2"
+      fixedin:
+        - "<=3.1.1,2.6.0"
