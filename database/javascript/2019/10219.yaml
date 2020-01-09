@@ -1,0 +1,16 @@
+---
+cve: 2019-10219
+title: CVE in validator
+description: >
+    A vulnerability was found in Hibernate-Validator. The SafeHtml validator annotation fails to properly sanitize payloads consisting of potentially malicious code in HTML comments and instructions. This vulnerability can result in an XSS attack.
+cvss_v2: 4.3
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-10219
+    - https://lists.apache.org/thread.html/r87b7e2d22982b4ca9f88f5f4f22a19b394d2662415b233582ed22ebf@%3Cnotifications.accumulo.apache.org%3E
+affected:
+    - name: validator
+      version:
+        - "<=7.0.0,7.0.0"
+      fixedin:
+        - ">=7.1.0"
+        - "<=6.3.0,0.1.0"
