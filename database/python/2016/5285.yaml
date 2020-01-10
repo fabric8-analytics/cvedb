@@ -1,0 +1,26 @@
+---
+cve: 2016-5285
+title: CVE in proactive
+description: >
+    A Null pointer dereference vulnerability exists in Mozilla Network Security Services due to a missing NULL check in PK11_SignWithSymKey / ssl3_ComputeRecordMACConstantTime, which could let a remote malicious user cause a Denial of Service.
+cvss_v2: 5.0
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2016-12/msg00011.html
+    - http://lists.opensuse.org/opensuse-security-announce/2016-12/msg00037.html
+    - http://lists.opensuse.org/opensuse-security-announce/2016-12/msg00049.html
+    - http://rhn.redhat.com/errata/RHSA-2016-2779.html
+    - http://www.securityfocus.com/bid/94349
+    - http://www.ubuntu.com/usn/USN-3163-1
+    - https://bto.bluecoat.com/security-advisory/sa137
+    - https://bugzilla.mozilla.org/show_bug.cgi?id=1306103
+    - https://security.gentoo.org/glsa/201701-46
+affected:
+    - name: proactive
+      version:
+        - "<=1.0.0a2"
+        - "<=8.1.0.dev1527036020,8.1.0rc1"
+        - "<=10.0.0,10.0.0rc2"
+      fixedin:
+        - ">=10.0.1"
+        - "<=8.5.0.2019.5.2.17.35,8.2.0.dev1527122436"
+        - "<=7.35.0.dev1522917385,7.35.0.dev1522917385"
