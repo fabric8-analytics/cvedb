@@ -1,0 +1,23 @@
+---
+cve: 2016-5285
+title: CVE in org.apache.cxf.services.ws-discovery:cxf-services-ws-discovery-service
+description: >
+    A Null pointer dereference vulnerability exists in Mozilla Network Security Services due to a missing NULL check in PK11_SignWithSymKey / ssl3_ComputeRecordMACConstantTime, which could let a remote malicious user cause a Denial of Service.
+cvss_v2: 5.0
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2016-12/msg00011.html
+    - http://lists.opensuse.org/opensuse-security-announce/2016-12/msg00037.html
+    - http://lists.opensuse.org/opensuse-security-announce/2016-12/msg00049.html
+    - http://rhn.redhat.com/errata/RHSA-2016-2779.html
+    - http://www.securityfocus.com/bid/94349
+    - http://www.ubuntu.com/usn/USN-3163-1
+    - https://bto.bluecoat.com/security-advisory/sa137
+    - https://bugzilla.mozilla.org/show_bug.cgi?id=1306103
+    - https://security.gentoo.org/glsa/201701-46
+affected:
+    - groupId: org.apache.cxf.services.ws-discovery
+      artifactId: cxf-services-ws-discovery-service
+      version:
+        - "<=3.3.4"
+      fixedin:
+        []
