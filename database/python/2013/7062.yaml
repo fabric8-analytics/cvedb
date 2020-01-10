@@ -1,0 +1,22 @@
+---
+cve: 2013-7062
+title: CVE in bobtemplates-plone
+description: >
+    Multiple cross-site scripting (XSS) vulnerabilities in Zope, as used in Plone 3.3.x through 3.3.6, 4.0.x through 4.0.9, 4.1.x through 4.1.6, 4.2.x through 4.2.7, and 4.3 through 4.3.2, allow remote attackers to inject arbitrary web script or HTML via unspecified input in the (1) browser_id_manager or (2) OFS.Image method.
+cvss_v2: 4.3
+references:
+    - http://seclists.org/oss-sec/2013/q4/467
+    - http://seclists.org/oss-sec/2013/q4/485
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/89623
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/89627
+    - https://plone.org/security/20131210/zope-xss-in-browseridmanager
+    - https://plone.org/security/20131210/zope-xss-in-OFS
+affected:
+    - name: bobtemplates-plone
+      version:
+        - "<=3.3.0,3.3.0"
+        - "<=4.1.4,4.0"
+      fixedin:
+        - ">=5.0.0"
+        - "<=3.6.0,3.4.0"
+        - "<=3.2.0,0.2"
