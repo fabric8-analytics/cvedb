@@ -1,0 +1,15 @@
+---
+cve: 2019-20005
+title: CVE in xml-crypto
+description: >
+    An issue was discovered in ezXML 0.8.3 through 0.8.6. The function ezxml_decode, while parsing a crafted XML file, performs incorrect memory handling, leading to a heap-based buffer over-read while running strchr() starting with a pointer after a '\0' character (where the processing of a string was finished).
+cvss_v2: 4.3
+references:
+    - https://sourceforge.net/p/ezxml/bugs/14/
+affected:
+    - name: xml-crypto
+      version:
+        - "<=0.8.5,0.8.3"
+      fixedin:
+        - ">=0.9.0"
+        - "<=0.8.2,0.0.1"
