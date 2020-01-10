@@ -1,0 +1,19 @@
+---
+cve: 2019-16871
+title: CVE in com.google.api-ads:ads-lib-axis
+description: >
+    Beckhoff Embedded Windows PLCs through 3.1.4024.0, and Beckhoff Twincat on Windows Engineering stations, allow an attacker to achieve Remote Code Execution (as SYSTEM) via the Beckhoff ADS protocol.
+cvss_v2: 9.3
+references:
+    - https://download.beckhoff.com/download/document/product-security/Advisories/advisory-2017-001.pdf
+    - https://www.ic4.be/2019/12/18/beckhoff-cve-2019-16871/#more-648
+affected:
+    - groupId: com.google.api-ads
+      artifactId: ads-lib-axis
+      version:
+        - "<=2.0.0,2.0.0"
+        - "<=3.1.0,3.0.0"
+      fixedin:
+        - ">=3.1.1"
+        - "<=2.22.0,2.2.0"
+        - "<=1.39.0,0.5.0"
