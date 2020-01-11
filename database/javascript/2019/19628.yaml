@@ -1,0 +1,16 @@
+---
+cve: 2019-19628
+title: CVE in gitlab
+description: >
+    In GitLab EE 11.3 through 12.5.3, 12.4.5, and 12.3.8, insufficient parameter sanitization for the Maven package registry could lead to privilege escalation and remote code execution vulnerabilities under certain conditions.
+cvss_v2: 7.5
+references:
+    - https://about.gitlab.com/blog/2019/12/10/critical-security-release-gitlab-12-5-4-released/
+    - https://about.gitlab.com/blog/categories/releases/
+affected:
+    - name: gitlab
+      version:
+        - "<=12.1.2,11.3.0"
+      fixedin:
+        - ">=13.0.0"
+        - "<=11.2.3,0.0.1"
