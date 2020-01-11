@@ -1,0 +1,16 @@
+---
+cve: 2019-19629
+title: CVE in org.sakaiproject.search.elasticsearch:elasticsearch-api
+description: >
+    In GitLab EE 10.5 through 12.5.3, 12.4.5, and 12.3.8, when transferring a public project to a private group, private code would be disclosed via the Group Search API provided by the Elasticsearch integration.
+cvss_v2: 5.0
+references:
+    - https://about.gitlab.com/blog/2019/12/10/critical-security-release-gitlab-12-5-4-released/
+    - https://about.gitlab.com/blog/categories/releases/
+affected:
+    - groupId: org.sakaiproject.search.elasticsearch
+      artifactId: elasticsearch-api
+      version:
+        - "<=12.5"
+      fixedin:
+        - ">=12.6"
