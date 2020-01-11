@@ -1,0 +1,19 @@
+---
+cve: 2016-1000022
+title: CVE in @types/negotiator
+description: >
+    negotiator before 0.6.1 is vulnerable to a regular expression DoS
+cvss_v2: 5.0
+references:
+    - https://access.redhat.com/errata/RHSA-2016:1605
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2016-1000022
+    - https://bugzilla.suse.com/show_bug.cgi?id=CVE-2016-1000022
+    - https://raw.githubusercontent.com/distributedweaknessfiling/cvelist/master/2016/1000xxx/CVE-2016-1000022.json
+    - https://security-tracker.debian.org/tracker/CVE-2016-1000022
+    - https://www.npmjs.com/advisories/106
+affected:
+    - name: @types/negotiator
+      version:
+        - "<=0.6.0"
+      fixedin:
+        - ">=0.6.1"
