@@ -1,0 +1,15 @@
+---
+cve: 2014-1454
+title: CVE in edx-enterprise
+description: >
+    Pearson eSIS (Enterprise Student Information System) message board has stored XSS due to improper validation of user input
+cvss_v2: 3.5
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/92341
+    - https://www.securityfocus.com/archive/1/531750
+affected:
+    - name: edx-enterprise
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
