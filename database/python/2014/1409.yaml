@@ -1,0 +1,16 @@
+---
+cve: 2014-1409
+title: CVE in sentry
+description: >
+    MobileIron VSP versions prior to 5.9.1 and Sentry versions prior to 5.0 have an authentication bypass vulnerability due to an XML file with obfuscated passwords
+cvss_v2: 6.4
+references:
+    - http://seclists.org/fulldisclosure/2014/Apr/21
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/92351
+    - https://packetstormsecurity.com/files/cve/CVE-2014-1409
+affected:
+    - name: sentry
+      version:
+        - "<=5.5.0-DEV"
+      fixedin:
+        - ">=6.0.0"
