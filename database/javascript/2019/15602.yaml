@@ -1,0 +1,15 @@
+---
+cve: 2019-15602
+title: CVE in xss
+description: >
+    The fileview package v0.1.6 has inadequate output encoding and escaping, which leads to a stored Cross-Site Scripting (XSS) vulnerability in files it serves.
+cvss_v2: 4.3
+references:
+    - https://hackerone.com/reports/507159
+affected:
+    - name: xss
+      version:
+        - "<=0.1.6,0.1.6"
+      fixedin:
+        - ">=0.1.7"
+        - "<=0.1.5,0.0.1"
