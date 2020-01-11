@@ -1,0 +1,15 @@
+---
+cve: 2019-6032
+title: CVE in ver
+description: >
+    The NTV News24 prior to Ver.3.0.0 does not verify X.509 certificates from SSL servers, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate.
+cvss_v2: 5.8
+references:
+    - http://jvn.jp/en/jp/JVN01236065/index.html
+    - https://play.google.com/store/apps/details?id=jp.co.ntv.news24&hl=en
+affected:
+    - name: ver
+      version:
+        - "<=2.0.1"
+      fixedin:
+        - ">=3.0.0"
