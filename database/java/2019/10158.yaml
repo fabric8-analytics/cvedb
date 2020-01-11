@@ -1,0 +1,17 @@
+---
+cve: 2019-10158
+title: CVE in org.infinispan:infinispan-tasks
+description: >
+    A flaw was found in Infinispan through version 9.4.14.Final. An improper implementation of the session fixation protection in the Spring Session integration can result in incorrect session handling.
+cvss_v2: 7.5
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-10158
+    - https://github.com/infinispan/infinispan/pull/6960
+    - https://github.com/infinispan/infinispan/pull/7025
+affected:
+    - groupId: org.infinispan
+      artifactId: infinispan-tasks
+      version:
+        - "<=9.4.14.Final"
+      fixedin:
+        - ">=9.4.15.Final"
