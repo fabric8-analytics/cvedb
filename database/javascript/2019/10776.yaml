@@ -1,0 +1,16 @@
+---
+cve: 2019-10776
+title: CVE in git-diff-apply
+description: >
+    In "index.js" file line 240, the run command executes the git command with a user controlled variable called remoteUrl. This affects git-diff-apply all versions prior to 0.22.2.
+cvss_v2: 7.5
+references:
+    - https://github.com/kellyselden/git-diff-apply/commit/106d61d3ae723b4257c2a13e67b95eb40a27e0b5
+    - https://snyk.io/vuln/SNYK-JS-GITDIFFAPPLY-540774
+    - https://snyk.io/vuln/SNYK-JS-GITDIFFAPPLY-540774,
+affected:
+    - name: git-diff-apply
+      version:
+        - "<=0.22.1"
+      fixedin:
+        - ">=0.22.2"
