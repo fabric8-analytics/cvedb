@@ -1,0 +1,14 @@
+---
+cve: 2014-4561
+title: CVE in xss-filters
+description: >
+    The ultimate-weather plugin 1.0 for WordPress has XSS
+cvss_v2: 4.3
+references:
+    - http://codevigilant.com/disclosure/wp-plugin-ultimate-weather-plugin-a3-cross-site-scripting-xss/
+affected:
+    - name: xss-filters
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
