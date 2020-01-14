@@ -1,0 +1,17 @@
+---
+cve: 2014-3743
+title: CVE in meta-marked
+description: >
+    Multiple cross-site scripting (XSS) vulnerabilities in the Marked module before 0.3.1 for Node.js allow remote attackers to inject arbitrary web script or HTML via vectors related to (1) gfm codeblocks (language) or (2) javascript url's.
+cvss_v2: 4.3
+references:
+    - http://www.openwall.com/lists/oss-security/2014/05/13/1
+    - http://www.openwall.com/lists/oss-security/2014/05/15/2
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2014-3743
+    - https://nodesecurity.io/advisories/marked_multiple_content_injection_vulnerabilities
+affected:
+    - name: meta-marked
+      version:
+        - "<=0.3.0"
+      fixedin:
+        - ">=0.3.1"
