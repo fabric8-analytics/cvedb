@@ -1,14 +1,14 @@
 ---
 cve: 2019-10775
-title: CVE in gemini-ecstatic2
+title: CVE in ecstatic
 description: >
     ecstatic have a denial of service vulnerability. Successful exploitation could lead to crash of an application.
 cvss_v2: 5.0
 references:
     - https://snyk.io/vuln/SNYK-JS-ECSTATIC-540354
 affected:
-    - name: gemini-ecstatic2
+    - name: ecstatic
       version:
-        []
+        - "4.1.2"
       fixedin:
-        - ">=1.0.0"
+        []
