@@ -1,0 +1,14 @@
+---
+cve: 2014-4530
+title: CVE in django-wordpress
+description: >
+    flog plugin 0.1 for WordPress has XSS
+cvss_v2: 4.3
+references:
+    - http://codevigilant.com/disclosure/wp-plugin-flog-a3-cross-site-scripting-xss/
+affected:
+    - name: django-wordpress
+      version:
+        - "<=0.1"
+      fixedin:
+        - ">=1.1"
