@@ -1,0 +1,14 @@
+---
+cve: 2014-4530
+title: CVE in xss-clean
+description: >
+    flog plugin 0.1 for WordPress has XSS
+cvss_v2: 4.3
+references:
+    - http://codevigilant.com/disclosure/wp-plugin-flog-a3-cross-site-scripting-xss/
+affected:
+    - name: xss-clean
+      version:
+        - "<=0.1.0"
+      fixedin:
+        - ">=0.1.1"
