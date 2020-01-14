@@ -1,0 +1,16 @@
+---
+cve: 2019-17076
+title: CVE in de.pro-vision.maven:de.pro-vision.maven.build-tools.global-build-tools
+description: >
+    An issue was discovered in Jamf Pro 9.x and 10.x before 10.15.1. Deserialization of untrusted data when parsing JSON in several APIs may cause Denial of Service (DoS), remote code execution (RCE), and/or deletion of files on the Jamf Pro server.
+cvss_v2: 7.5
+references:
+    - https://resources.jamf.com/documents/products/security-disclosure-notice-jamf-pro-10.15.1.pdf
+affected:
+    - groupId: de.pro-vision.maven
+      artifactId: de.pro-vision.maven.build-tools.global-build-tools
+      version:
+        - "<=10,10"
+      fixedin:
+        - ">=11"
+        - "<=9,8"
