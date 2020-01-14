@@ -1,0 +1,15 @@
+---
+cve: 2019-14862
+title: CVE in knockout
+description: >
+    There is a vulnerability in knockout before version 3.5.0-beta, where after escaping the context of the web application, the web application delivers data to its users along with other trusted dynamic content, without validating it.
+cvss_v2: 4.3
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-14862
+    - https://snyk.io/vuln/npm:knockout:20180213
+affected:
+    - name: knockout
+      version:
+        - "<=3.4.2"
+      fixedin:
+        - ">=3.5.0-beta"
