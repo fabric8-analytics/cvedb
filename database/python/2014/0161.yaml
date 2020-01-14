@@ -1,6 +1,6 @@
 ---
 cve: 2014-0161
-title: CVE in ovirt-engine-sdk-python
+title: CVE in ovirt-engine-sdk
 description: >
     ovirt-engine-sdk-python before 3.4.0.7 and 3.5.0.4 does not verify that the hostname of the remote endpoint matches the Common Name (CN) or subjectAltName as specified by its x.509 certificate in a TLS/SSL session. This could allow man-in-the-middle attackers to spoof remote endpoints via an arbitrary valid certificate.
 cvss_v2: 4.3
@@ -8,8 +8,8 @@ references:
     - https://access.redhat.com/security/cve/cve-2014-0161
     - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2014-0161
 affected:
-    - name: ovirt-engine-sdk-python
+    - name: ovirt-engine-sdk
       version:
-        - "<=3.4.0.6"
+        - "<=3.2.0.11-SNAPSHOT"
       fixedin:
-        - ">=3.4.0.7"
+        []
