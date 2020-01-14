@@ -1,0 +1,20 @@
+---
+cve: 2019-7619
+title: CVE in org.elasticsearch:elasticsearch-storm
+description: >
+    Elasticsearch versions 7.0.0-7.3.2 and 6.7.0-6.8.3 contain a username disclosure flaw was found in the API Key service. An unauthenticated attacker could send a specially crafted request and determine if a username exists in the Elasticsearch native realm.
+cvss_v2: 5.0
+references:
+    - https://discuss.elastic.co/t/elastic-stack-6-8-4-security-update/204908
+    - https://discuss.elastic.co/t/elastic-stack-7-4-0-security-update/201831
+    - https://www.elastic.co/community/security
+affected:
+    - groupId: org.elasticsearch
+      artifactId: elasticsearch-storm
+      version:
+        - "<=6.8.3,6.7.0"
+        - "<=7.3.2,7.0.0-alpha1"
+      fixedin:
+        - ">=7.4.0"
+        - "<=6.8.4,6.8.4"
+        - "<=6.6.2,2.1.0.Beta2"
