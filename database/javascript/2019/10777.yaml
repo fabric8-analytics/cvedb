@@ -1,0 +1,14 @@
+---
+cve: 2019-10777
+title: CVE in aws-lambda-invoke
+description: >
+    In aws-lambda versions prior to version 1.0.5, the "config.FunctioName" is used to construct the argument used within the "exec" function without any sanitization. It is possible for a user to inject arbitrary commands to the "zipCmd" used within "config.FunctionName".
+cvss_v2: 7.5
+references:
+    - https://snyk.io/vuln/SNYK-JS-AWSLAMBDA-540839
+affected:
+    - name: aws-lambda-invoke
+      version:
+        - "<=1.0.4"
+      fixedin:
+        - ">=1.0.5"
