@@ -1,0 +1,16 @@
+---
+cve: 2019-20330
+title: CVE in com.fasterxml.jackson.core:jackson-databind
+description: >
+    FasterXML jackson-databind 2.x before 2.9.10.2 lacks certain net.sf.ehcache blocking.
+cvss_v2: 7.5
+references:
+    - https://github.com/FasterXML/jackson-databind/compare/jackson-databind-2.9.10.1...jackson-databind-2.9.10.2
+    - https://github.com/FasterXML/jackson-databind/issues/2526
+affected:
+    - groupId: com.fasterxml.jackson.core
+      artifactId: jackson-databind
+      version:
+        - "<=2.9.10.1"
+      fixedin:
+        - ">=2.9.10.2"
