@@ -1,0 +1,18 @@
+---
+cve: 2014-1860
+title: CVE in django-cms
+description: >
+    Contao CMS through 3.2.4 has PHP Object Injection Vulnerabilities
+cvss_v2: 7.5
+references:
+    - http://www.openwall.com/lists/oss-security/2014/02/03/14
+    - http://www.openwall.com/lists/oss-security/2014/02/07/7
+    - http://www.securityfocus.com/bid/65293
+    - https://packetstormsecurity.com/files/cve/CVE-2014-1860
+    - https://www.exploit-database.net/?id=21609
+affected:
+    - name: django-cms
+      version:
+        - "<=3.2.4"
+      fixedin:
+        - ">=3.2.5"
