@@ -1,0 +1,15 @@
+---
+cve: 2019-16154
+title: CVE in freezer-web-ui
+description: >
+    An improper neutralization of input during web page generation in FortiAuthenticator WEB UI 6.0.0 may allow an unauthenticated user to perform a cross-site scripting attack (XSS) via a parameter of the logon page.
+cvss_v2: 4.3
+references:
+    - https://fortiguard.com/advisory/FG-IR-19-104
+affected:
+    - name: freezer-web-ui
+      version:
+        - "<=6.0.0,6.0.0.0b2"
+      fixedin:
+        - ">=7.0.0.0b1"
+        - "<=5.0.1,0.0.1.dev19"
