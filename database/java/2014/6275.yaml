@@ -1,0 +1,16 @@
+---
+cve: 2014-6275
+title: CVE in org.apache.activemq:apache-activemq
+description: >
+    FusionForge before 5.3.2 use scripts that run under the shared Apache user, which is also used by project homepages by default. If project webpages are hosted on the same server than FusionForge, it can allow users to incorrectly access on-disk private data in FusionForge.
+cvss_v2: 4.3
+references:
+    - http://lists.fusionforge.org/pipermail/fusionforge-general/2014-September/002824.html
+    - https://security-tracker.debian.org/tracker/CVE-2014-6275
+affected:
+    - groupId: org.apache.activemq
+      artifactId: apache-activemq
+      version:
+        - "<=5.3.1"
+      fixedin:
+        - ">=5.3.2"
