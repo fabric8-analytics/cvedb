@@ -1,0 +1,21 @@
+---
+cve: 2012-4420
+title: CVE in machine
+description: >
+    An information disclosure flaw was found in the way the Java Virtual Machine (JVM) implementation of Java SE 7 as provided by OpenJDK 7 incorrectly initialized integer arrays after memory allocation (in certain circumstances they had nonzero elements right after the allocation). A remote attacker could use this flaw to obtain potentially sensitive information.
+cvss_v2: 5.0
+references:
+    - http://www.openwall.com/lists/oss-security/2012/09/13/3
+    - http://www.securityfocus.com/bid/55538
+    - https://access.redhat.com/security/cve/cve-2012-4420
+    - https://bugs.java.com/bugdatabase/view_bug.do?bug_id=7196857
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2012-4420
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/78693
+    - https://www.openwall.com/lists/oss-security/2012/09/12/4
+affected:
+    - name: machine
+      version:
+        - "<=7.0.0,7.0.0"
+      fixedin:
+        - ">=7.1.0"
+        - "<=6.0.2,0.0.0"
