@@ -1,0 +1,15 @@
+---
+cve: 2018-19833
+title: CVE in org.seedstack.functions.w20:w20-function-web
+description: >
+    The owned function of a smart contract implementation for DDQ, an tradable Ethereum ERC20 token, allows attackers to change the owner of the contract, because the function does not check the caller's identity.
+cvss_v2: 5.0
+references:
+    - https://github.com/SmartContractResearcher/SmartContractSecurity/blob/master/New%20Vulnerabilities%20Allow%20Anyone%20to%20Own%20Certain%20ERC20-Based%20Smart%20Contracts(CVE-2018-19830%2C%20CVE-2018-19831%2C%20CVE-2018-19832%2C%20CVE-2018-19833%2C%20CVE-2018-19834)/README.md
+affected:
+    - groupId: org.seedstack.functions.w20
+      artifactId: w20-function-web
+      version:
+        []
+      fixedin:
+        - ">=2.0.0-M2"
