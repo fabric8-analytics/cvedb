@@ -1,0 +1,16 @@
+---
+cve: 2019-14837
+title: CVE in keycloak-js
+description: >
+    A flaw was found in keycloack before version 8.0.0. The owner of 'placeholder.org' domain can setup mail server on this domain and knowing only name of a client can reset password and then log in. For example, for client name 'test' the email address will be 'service-account-test@placeholder.org'.
+cvss_v2: 6.4
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-14837
+    - https://github.com/keycloak/keycloak/commit/9a7c1a91a59ab85e7f8889a505be04a71580777f
+    - https://issues.jboss.org/browse/KEYCLOAK-10780
+affected:
+    - name: keycloak-js
+      version:
+        - "<=7.0.1"
+      fixedin:
+        - ">=8.0.0"
