@@ -1,0 +1,17 @@
+---
+cve: 2012-5474
+title: CVE in openstack-release-test
+description: >
+    The file /etc/openstack-dashboard/local_settings within Red Hat OpenStack Platform 2.0 and RHOS Essex Release (python-django-horizon package before 2012.1.1) is world readable and exposes the secret key value.
+cvss_v2: 2.1
+references:
+    - http://lists.fedoraproject.org/pipermail/package-announce/2012-November/092841.html
+    - https://access.redhat.com/security/cve/cve-2012-5474
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2012-5474
+    - https://security-tracker.debian.org/tracker/CVE-2012-5474
+affected:
+    - name: openstack-release-test
+      version:
+        - "<=2.0.0"
+      fixedin:
+        []
