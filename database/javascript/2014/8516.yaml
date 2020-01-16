@@ -1,0 +1,17 @@
+---
+cve: 2014-8516
+title: CVE in server
+description: >
+    Unrestricted file upload vulnerability in Visual Mining NetCharts Server allows remote attackers to execute arbitrary code by uploading a file with an executable extension, then accessing it via unspecified vectors.
+cvss_v2: 10.0
+references:
+    - http://www.securityfocus.com/bid/70895
+    - http://www.zerodayinitiative.com/advisories/ZDI-14-372/
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/98475
+    - https://packetstormsecurity.com/files/129023
+affected:
+    - name: server
+      version:
+        []
+      fixedin:
+        - ">=0.0.0"
