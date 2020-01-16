@@ -1,0 +1,19 @@
+---
+cve: 2019-12419
+title: CVE in org.apache.cxf:cxf-testutils
+description: >
+    Apache CXF before 3.3.4 and 3.2.11 provides all of the components that are required to build a fully fledged OpenId Connect service. There is a vulnerability in the access token services, where it does not validate that the authenticated principal is equal to that of the supplied clientId parameter in the request. If a malicious client was able to somehow steal an authorization code issued to another client, then they could exploit this vulnerability to obtain an access token for the other client.
+cvss_v2: 7.5
+references:
+    - http://cxf.apache.org/security-advisories.data/CVE-2019-12419.txt.asc
+    - https://www.oracle.com/security-alerts/cpujan2020.html
+affected:
+    - groupId: org.apache.cxf
+      artifactId: cxf-testutils
+      version:
+        - "<=3.2.10,3.2.0"
+        - "<=3.3.3,3.3.0"
+      fixedin:
+        - ">=3.3.4"
+        - "<=3.2.12,3.2.11"
+        - "<=3.1.18,2.0.6"
