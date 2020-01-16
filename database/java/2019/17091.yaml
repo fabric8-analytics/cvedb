@@ -1,0 +1,27 @@
+---
+cve: 2019-17091
+title: CVE in org.metawidget.modules.faces:metawidget-faces
+description: >
+    faces/context/PartialViewContextImpl.java in Eclipse Mojarra, as used in Mojarra for Eclipse EE4J before 2.3.10 and Mojarra JavaServer Faces before 2.2.20, allows Reflected XSS because a client window field is mishandled.
+cvss_v2: 4.3
+references:
+    - https://bugs.eclipse.org/bugs/show_bug.cgi?id=548244
+    - https://github.com/eclipse-ee4j/mojarra/commit/8f70f2bd024f00ecd5b3dcca45df73edda29dcee
+    - https://github.com/eclipse-ee4j/mojarra/commit/a3fa9573789ed5e867c43ea38374f4dbd5a8f81f
+    - https://github.com/eclipse-ee4j/mojarra/compare/2.3.9-RELEASE...2.3.10-RELEASE
+    - https://github.com/eclipse-ee4j/mojarra/files/3039198/advisory.txt
+    - https://github.com/eclipse-ee4j/mojarra/issues/4556
+    - https://github.com/eclipse-ee4j/mojarra/pull/4567
+    - https://github.com/javaserverfaces/mojarra/commit/ae1c234d0a6750822ac69d4ae26d90e3571f27fe
+    - https://github.com/javaserverfaces/mojarra/commit/f61935cd39f34329fbf27b1972a506fbdd0ab4d4
+    - https://github.com/javaserverfaces/mojarra/compare/2.2.19...2.2.20
+    - https://www.oracle.com/security-alerts/cpujan2020.html
+    - https://www.oracle.com/technetwork/security-advisory/cpuoct2019-5072832.html
+affected:
+    - groupId: org.metawidget.modules.faces
+      artifactId: metawidget-faces
+      version:
+        - "<=2.3,2.2.Beta1"
+      fixedin:
+        - ">=2.4"
+        - "<=2.1,1.15"
