@@ -1,6 +1,6 @@
 ---
 cve: 2016-5019
-title: CVE in Apache MyFaces Trinidad
+title: CVE in org.apache.myfaces.buildtools:myfaces-archetype-trinidad
 description: >
     CoreResponseStateManager in Apache MyFaces Trinidad 1.0.0 through 1.0.13, 1.2.x before 1.2.15, 2.0.x before 2.0.2, and 2.1.x before 2.1.2 might allow attackers to conduct deserialization attacks via a crafted serialized view state string.
 cvss_v2: 7.5
@@ -16,15 +16,11 @@ references:
     - http://www.securityfocus.com/bid/93236
     - http://www.securitytracker.com/id/1037633
     - https://issues.apache.org/jira/browse/TRINIDAD-2542
+    - https://www.oracle.com/security-alerts/cpujan2020.html
 affected:
-    - groupId: org.apache.myfaces.trinidad
-      artifactId: trinidad-impl
+    - groupId: org.apache.myfaces.buildtools
+      artifactId: myfaces-archetype-trinidad
       version:
-        - "<=1.0.13"
-        - "<=1.2.14,1.2.0"
-        - "<=2.0.1,2.0.0"
-        - "<=2.1.1,2.1.0"
+        - "<=1.0.4"
       fixedin:
-        - ">=1.2.15"
-        - ">=2.0.2"
-        - ">=2.1.2"
+        []
