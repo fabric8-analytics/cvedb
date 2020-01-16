@@ -1,0 +1,18 @@
+---
+cve: 2018-1437
+title: CVE in com.ibm.sbt:com.ibm.commons
+description: >
+    IBM Notes 8.5 and 9.0 could allow an attacker to execute arbitrary code on the system, caused by an error related to multiple untrusted search path. A local attacker could exploit this vulnerability to DLL hijacking to execute arbitrary code on the system or cause the application to crash. IBM X-Force ID: 139565.
+cvss_v2: 9.3
+references:
+    - http://www.ibm.com/support/docview.wss?uid=swg22014201
+    - http://www.securityfocus.com/bid/103401
+    - http://www.securitytracker.com/id/1040563
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/139565
+affected:
+    - groupId: com.ibm.sbt
+      artifactId: com.ibm.commons
+      version:
+        - "<=9.0.0,9.0.0"
+      fixedin:
+        - "<=1.1.12.20161007-1200,1.1.6.20150817-1200"
