@@ -1,0 +1,15 @@
+---
+cve: 2019-20149
+title: CVE in kind-of
+description: >
+    ctorName in index.js in kind-of v6.0.2 allows external user input to overwrite certain internal attributes via a conflicting name, as demonstrated by 'constructor': {'name':'Symbol'}. Hence, a crafted payload can overwrite this builtin attribute to manipulate the type detection result.
+cvss_v2: 5.0
+references:
+    - https://github.com/jonschlinkert/kind-of/issues/30
+    - https://github.com/jonschlinkert/kind-of/pull/31
+affected:
+    - name: kind-of
+      version:
+        - "<=6.0.2"
+      fixedin:
+        []
