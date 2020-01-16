@@ -1,0 +1,21 @@
+---
+cve: 2019-20330
+title: CVE in com.fasterxml.jackson.core:jackson-databind
+description: >
+    FasterXML jackson-databind 2.x before 2.9.10.2 lacks certain net.sf.ehcache blocking.
+cvss_v2: 7.5
+references:
+    - https://github.com/FasterXML/jackson-databind/compare/jackson-databind-2.9.10.1...jackson-databind-2.9.10.2
+    - https://github.com/FasterXML/jackson-databind/issues/2526
+    - https://lists.apache.org/thread.html/r392099ed2757ff2e383b10440594e914d080511d7da1c8fed0612c1f@%3Ccommits.druid.apache.org%3E
+    - https://lists.apache.org/thread.html/r5c3644c97f0434d1ceb48ff48897a67bdbf3baf7efbe7d04625425b3@%3Ccommits.druid.apache.org%3E
+    - https://lists.apache.org/thread.html/r7fb123e7dad49af5886cfec7135c0fd5b74e4c67af029e1dc91ba744@%3Ccommits.druid.apache.org%3E
+    - https://lists.apache.org/thread.html/rb532fed78d031fff477fd840b81946f6d1200f93a63698dae65aa528@%3Ccommits.druid.apache.org%3E
+    - https://lists.apache.org/thread.html/rd6c6fef14944f3dcfb58d35f9317eb1c32a700e86c1b5231e45d3d0b@%3Ccommits.druid.apache.org%3E
+affected:
+    - groupId: com.fasterxml.jackson.core
+      artifactId: jackson-databind
+      version:
+        - "<=2.9.10.1"
+      fixedin:
+        - ">=2.9.10.2"
