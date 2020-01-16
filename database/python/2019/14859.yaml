@@ -1,6 +1,6 @@
 ---
 cve: 2019-14859
-title: CVE in ceph-deploy
+title: CVE in ecdsa
 description: >
     A flaw was found in all python-ecdsa versions before 0.13.3, where it did not correctly verify whether signatures used DER encoding. Without this verification, a malformed signature could be accepted, making the signature malleable. Without proper verification, an attacker could use a malleable signature to create false transactions.
 cvss_v2: 6.4
@@ -10,9 +10,8 @@ references:
     - https://github.com/warner/python-ecdsa/releases/tag/python-ecdsa-0.13.3
     - https://pypi.org/project/ecdsa/0.13.3/
 affected:
-    - name: ceph-deploy
+    - name: ecdsa
       version:
-        - "<=2.0.0,2.0.0"
+        - "<=0.13.2"
       fixedin:
-        - ">=2.0.1"
-        - "<=1.5.39,1.1"
+        - ">=0.13.3"
