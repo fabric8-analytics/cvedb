@@ -1,0 +1,16 @@
+---
+cve: 2012-5878
+title: CVE in hydrate-spf
+description: >
+    Bulb Security Smartphone Pentest Framework (SPF) 0.1.2 through 0.1.4 allows remote attackers to execute arbitrary commands via shell metacharacters in the hostingPath parameter to (1) SEAttack.pl or (2) CSAttack.pl in frameworkgui/ or the (3) appURLPath parameter to frameworkgui/attachMobileModem.pl.
+cvss_v2: 10.0
+references:
+    - https://www.htbridge.com/advisory/HTB23123
+    - https://www.htbridge.com/advisory/HTB23127
+affected:
+    - name: hydrate-spf
+      version:
+        - "<=0.1.2,0.1.2"
+      fixedin:
+        - ">=0.2.0"
+        - "<=0.1.1,0.1.0"
