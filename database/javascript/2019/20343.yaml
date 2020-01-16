@@ -1,0 +1,17 @@
+---
+cve: 2019-20343
+title: CVE in exec-then
+description: >
+    The MojoHaus Exec Maven plugin 1.1.1 for Maven allows code execution via a crafted XML document because a configuration element (within a plugin element) can specify an arbitrary program in an executable element (and can also specify arbitrary command-line arguments in an arguments element).
+cvss_v2: 7.5
+references:
+    - https://drive.google.com/open?id=0B5UvrSwn4wuwTnNqSzZESjIwZHo5ZXhWdHh2T2Z0eWRCT1hF
+    - https://drive.google.com/open?id=1GLs0d9IGArMVrlbEGbxgCjA1MuzIJk-3
+    - https://www.mojohaus.org/exec-maven-plugin/
+affected:
+    - name: exec-then
+      version:
+        - "<=1.1.1,1.1.1"
+      fixedin:
+        - ">=1.1.2"
+        - "<=1.1.0,1.0.1"
