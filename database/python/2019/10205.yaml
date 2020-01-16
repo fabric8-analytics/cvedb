@@ -1,0 +1,15 @@
+---
+cve: 2019-10205
+title: CVE in quay-client
+description: >
+    A flaw was found in the way Red Hat Quay stores robot account tokens in plain text. An attacker able to perform database queries in the Red Hat Quay database could use the tokens to read or write container images stored in the registry.
+cvss_v2: 4.6
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-10205
+affected:
+    - name: quay-client
+      version:
+        - "<=3,3"
+      fixedin:
+        - ">=4"
+        - "<=2,1"
