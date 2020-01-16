@@ -1,0 +1,16 @@
+---
+cve: 2014-4984
+title: CVE in capsule-crm
+description: >
+    D?j? Vu Crescendo Sales CRM has remote SQL Injection
+cvss_v2: 7.5
+references:
+    - http://packetstormsecurity.com/files/127769/Crescendo-Sales-CRM-SQL-Injection.html
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/95176
+    - https://www.securityfocus.com/bid/69085/info
+affected:
+    - name: capsule-crm
+      version:
+        []
+      fixedin:
+        - ">=0.1.1"
