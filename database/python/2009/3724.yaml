@@ -1,0 +1,15 @@
+---
+cve: 2009-3724
+title: CVE in markdown2
+description: >
+    python-markdown2 before 1.0.1.14 has multiple cross-site scripting (XSS) issues.
+cvss_v2: 4.3
+references:
+    - https://snyk.io/vuln/SNYK-PYTHON-PYRAD-40000
+    - https://www.openwall.com/lists/oss-security/2009/10/29/5
+affected:
+    - name: markdown2
+      version:
+        - "<=1.0.1.13"
+      fixedin:
+        - ">=1.0.1.14"
