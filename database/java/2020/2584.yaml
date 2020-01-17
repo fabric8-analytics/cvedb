@@ -1,0 +1,16 @@
+---
+cve: 2020-2584
+title: CVE in mysql:mysql-connector-java
+description: >
+    Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Options). Supported versions that are affected are 5.7.28 and prior and 8.0.18 and prior. Difficult to exploit vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized access to critical data or complete access to all MySQL Server accessible data. CVSS 3.0 Base Score 4.4 (Confidentiality impacts). CVSS Vector: (CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N).
+cvss_v2: 3.5
+references:
+    - https://www.oracle.com/security-alerts/cpujan2020.html
+affected:
+    - groupId: mysql
+      artifactId: mysql-connector-java
+      version:
+        - "<=8.0.18,8.0.7"
+      fixedin:
+        - ">=8.0.19"
+        - "<=6.0.6,2.0.14"
