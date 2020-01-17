@@ -1,0 +1,22 @@
+---
+cve: 2017-5653
+title: CVE in org.apache.cxf:cxf-rt-security
+description: >
+    JAX-RS XML Security streaming clients in Apache CXF before 3.1.11 and 3.0.13 do not validate that the service response was signed or encrypted, which allows remote attackers to spoof servers.
+cvss_v2: 5.0
+references:
+    - http://cxf.apache.org/security-advisories.data/CVE-2017-5653.txt.asc?version=1&modificationDate=1492515074710&api=v2
+    - http://www.securityfocus.com/bid/97968
+    - http://www.securitytracker.com/id/1038279
+    - https://access.redhat.com/errata/RHSA-2017:1832
+    - https://lists.apache.org/thread.html/rc774278135816e7afc943dc9fc78eb0764f2c84a2b96470a0187315c@%3Ccommits.cxf.apache.org%3E
+affected:
+    - groupId: org.apache.cxf
+      artifactId: cxf-rt-security
+      version:
+        - "<=3.0.13,3.0.0-milestone1"
+        - "<=3.1.11,3.1.0"
+      fixedin:
+        - ">=3.1.12"
+        - "<=3.0.16,3.0.14"
+        - "<=2.7.18,2.7.1"
