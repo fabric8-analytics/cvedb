@@ -1,0 +1,20 @@
+---
+cve: 2012-0803
+title: CVE in org.apache.cxf:cxf-bundle
+description: >
+    The WS-SP UsernameToken policy in Apache CXF 2.4.5 and 2.5.1 allows remote attackers to bypass authentication by sending an empty UsernameToken as part of a SOAP request.
+cvss_v2: 7.5
+references:
+    - http://marc.info/?l=full-disclosure&m=132861746008002
+    - http://svn.apache.org/viewvc?view=revision&revision=1233457
+    - https://lists.apache.org/thread.html/rc774278135816e7afc943dc9fc78eb0764f2c84a2b96470a0187315c@%3Ccommits.cxf.apache.org%3E
+affected:
+    - groupId: org.apache.cxf
+      artifactId: cxf-bundle
+      version:
+        - "<=2.4.5,2.4.5"
+        - "<=2.5.1,2.5.1"
+      fixedin:
+        - ">=2.5.2"
+        - "<=2.5.0,2.4.6"
+        - "<=2.4.4,2.0.6"
