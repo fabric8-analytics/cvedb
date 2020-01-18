@@ -1,13 +1,13 @@
 ---
 cve: 2019-16769
-title: CVE in serialize-javascript
+title: CVE in dcl-scripting
 description: >
     The serialize-javascript npm package before version 2.1.1 is vulnerable to Cross-site Scripting (XSS). It does not properly mitigate against unsafe characters in serialized regular expressions. This vulnerability is not affected on Node.js environment since Node.js's implementation of RegExp.prototype.toString() backslash-escapes all forward slashes in regular expressions. If serialized data of regular expression objects are used in an environment other than Node.js, it is affected by this vulnerability.
 cvss_v2: 3.5
 references:
     - https://github.com/yahoo/serialize-javascript/security/advisories/GHSA-h9rv-jmmf-4pgx
 affected:
-    - name: serialize-javascript
+    - name: dcl-scripting
       version:
         - "<=2.1.0"
       fixedin:
