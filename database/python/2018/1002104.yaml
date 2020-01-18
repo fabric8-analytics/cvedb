@@ -1,0 +1,14 @@
+---
+cve: 2018-1002104
+title: CVE in buildout-versions
+description: >
+    Versions < 1.5 of the Kubernetes ingress default backend, which handles invalid ingress traffic, exposed prometheus metrics publicly.
+cvss_v2: 5.0
+references:
+    - https://github.com/kubernetes/ingress-nginx/pull/3125
+affected:
+    - name: buildout-versions
+      version:
+        - "<=1.4"
+      fixedin:
+        - ">=1.5"
