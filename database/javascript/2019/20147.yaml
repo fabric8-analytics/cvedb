@@ -1,0 +1,16 @@
+---
+cve: 2019-20147
+title: CVE in gitlab
+description: >
+    An issue was discovered in GitLab Community Edition (CE) and Enterprise Edition (EE) 9.1 through 12.6.1. It has Incorrect Access Control.
+cvss_v2: 5.0
+references:
+    - https://about.gitlab.com/blog/categories/releases/
+    - https://about.gitlab.com/releases/2020/01/02/security-release-gitlab-12-6-2-released/
+affected:
+    - name: gitlab
+      version:
+        - "<=12.1.2,9.1.0"
+      fixedin:
+        - ">=13.0.0"
+        - "<=9.0.1,0.0.1"
