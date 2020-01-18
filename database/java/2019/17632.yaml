@@ -1,0 +1,17 @@
+---
+cve: 2019-17632
+title: CVE in org.eclipse.jetty:jetty-jmx
+description: >
+    In Eclipse Jetty versions 9.4.21.v20190926, 9.4.22.v20191022, and 9.4.23.v20191118, the generation of default unhandled Error response content (in text/html and text/json Content-Type) does not escape Exception messages in stacktraces included in error output.
+cvss_v2: 4.3
+references:
+    - https://bugs.eclipse.org/bugs/show_bug.cgi?id=553443
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SAITZ27GKPD2CCNHGT2VBT4VWIBUJJNS/
+affected:
+    - groupId: org.eclipse.jetty
+      artifactId: jetty-jmx
+      version:
+        - "<=9.4.23.v20191118,9.4.21.v20190926"
+      fixedin:
+        - ">=9.4.24.v20191120"
+        - "<=9.4.20.v20190813,7.0.0.M0"
