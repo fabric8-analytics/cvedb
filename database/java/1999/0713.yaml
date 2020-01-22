@@ -1,0 +1,15 @@
+---
+cve: 1999-0713
+title: CVE in org.codehaus.mojo.unix:unix-handbook
+description: >
+    The dtlogin program in Compaq Tru64 UNIX allows local users to gain root privileges.
+cvss_v2: 7.2
+references:
+    - http://www.ciac.org/ciac/bulletins/j-044.shtml
+affected:
+    - groupId: org.codehaus.mojo.unix
+      artifactId: unix-handbook
+      version:
+        []
+      fixedin:
+        - ">=1.0-alpha-4"
