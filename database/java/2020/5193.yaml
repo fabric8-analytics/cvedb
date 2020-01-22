@@ -1,0 +1,16 @@
+---
+cve: 2020-5193
+title: CVE in org.apache.karaf.system:org.apache.karaf.system.core
+description: >
+    PHPGurukul Hospital Management System in PHP v4.0 suffers from multiple reflected XSS vulnerabilities via the searchdata or Doctorspecialization parameter.
+cvss_v2: 4.3
+references:
+    - http://packetstormsecurity.com/files/155929/Hospital-Management-System-4.0-Cross-Site-Scripting.html
+affected:
+    - groupId: org.apache.karaf.system
+      artifactId: org.apache.karaf.system.core
+      version:
+        - "<=4.0.0,4.0.0.M1"
+      fixedin:
+        - ">=4.0.1"
+        - "<=3.0.10,3.0.0.RC1"
