@@ -1,0 +1,32 @@
+---
+cve: 2010-4021
+title: CVE in org.apache.deltaspike.distribution:distribution-full
+description: >
+    The Key Distribution Center (KDC) in MIT Kerberos 5 (aka krb5) 1.7 does not properly restrict the use of TGT credentials for armoring TGS requests, which might allow remote authenticated users to impersonate a client by rewriting an inner request, aka a "KrbFastReq forgery issue."
+cvss_v2: 2.1
+references:
+    - http://kb.vmware.com/kb/1035108
+    - http://lists.apple.com/archives/security-announce/2011/Mar/msg00006.html
+    - http://lists.opensuse.org/opensuse-security-announce/2010-12/msg00000.html
+    - http://lists.opensuse.org/opensuse-security-announce/2010-12/msg00006.html
+    - http://lists.vmware.com/pipermail/security-announce/2011/000133.html
+    - http://osvdb.org/69607
+    - http://support.apple.com/kb/HT4581
+    - http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2010-007.txt
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2010:246
+    - http://www.securityfocus.com/archive/1/514953/100/0/threaded
+    - http://www.securityfocus.com/archive/1/517739/100/0/threaded
+    - http://www.securityfocus.com/bid/45122
+    - http://www.securitytracker.com/id?1024803
+    - http://www.ubuntu.com/usn/USN-1030-1
+    - http://www.vmware.com/security/advisories/VMSA-2011-0007.html
+    - http://www.vupen.com/english/advisories/2010/3094
+    - http://www.vupen.com/english/advisories/2010/3118
+affected:
+    - groupId: org.apache.deltaspike.distribution
+      artifactId: distribution-full
+      version:
+        - "<=1.7.0,1.7.0"
+      fixedin:
+        - ">=1.7.1"
+        - "<=1.6.1,1.0.0"
