@@ -1,0 +1,16 @@
+---
+cve: 2020-2595
+title: CVE in org.graalvm.compiler:compiler
+description: >
+    Vulnerability in the Oracle GraalVM Enterprise Edition product of Oracle GraalVM (component: GraalVM Compiler). The supported version that is affected is 19.3.0.2. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle GraalVM Enterprise Edition. While the vulnerability is in Oracle GraalVM Enterprise Edition, attacks may significantly impact additional products. Successful attacks of this vulnerability can result in unauthorized read access to a subset of Oracle GraalVM Enterprise Edition accessible data. CVSS 3.0 Base Score 5.8 (Confidentiality impacts). CVSS Vector: (CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:N/A:N).
+cvss_v2: 5.0
+references:
+    - https://www.oracle.com/security-alerts/cpujan2020.html
+affected:
+    - groupId: org.graalvm.compiler
+      artifactId: compiler
+      version:
+        - "<=19.3.0.2,19.3.0.2"
+      fixedin:
+        - ">=19.3.1"
+        - "<=19.3.0,1.0.0-rc8"
