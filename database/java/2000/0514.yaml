@@ -1,0 +1,19 @@
+---
+cve: 2000-0514
+title: CVE in com.dominikcebula.hadoop.ftp:hdfs-ftp
+description: >
+    GSSFTP FTP daemon in Kerberos 5 1.1.x does not properly restrict access to some FTP commands, which allows remote attackers to cause a denial of service, and local users to gain root privileges.
+cvss_v2: 10.0
+references:
+    - http://web.mit.edu/kerberos/www/advisories/ftp.txt
+    - http://www.osvdb.org/4885
+    - http://www.securityfocus.com/bid/1374
+    - http://www.securityfocus.com/templates/archive.pike?list=1&msg=ldvsnufao18.fsf@saint-elmos-fire.mit.edu
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/4734
+affected:
+    - groupId: com.dominikcebula.hadoop.ftp
+      artifactId: hdfs-ftp
+      version:
+        - "<=1.1,1.1"
+      fixedin:
+        - "<=1.0,1.0"
