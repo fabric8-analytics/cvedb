@@ -1,0 +1,17 @@
+---
+cve: 2015-1869
+title: CVE in bug-repo-syncer
+description: >
+    The default event handling scripts in Automatic Bug Reporting Tool (ABRT) allow local users to gain privileges as demonstrated by a symlink attack on a var_log_messages file.
+cvss_v2: 7.2
+references:
+    - http://www.openwall.com/lists/oss-security/2015/04/17/5
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1212861
+    - https://github.com/abrt/abrt/commit/3287aa12eb205cff95cdd00d6d6c5c9a4f8f0eca
+    - https://github.com/abrt/abrt/commit/7417505e1d93cc95ec648b74e3c801bc67aacb9f
+affected:
+    - name: bug-repo-syncer
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
