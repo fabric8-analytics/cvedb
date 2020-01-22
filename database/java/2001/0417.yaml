@@ -1,0 +1,17 @@
+---
+cve: 2001-0417
+title: CVE in org.got5:tapestry5-jquery
+description: >
+    Kerberos 4 (aka krb4) allows local users to overwrite arbitrary files via a symlink attack on new ticket files.
+cvss_v2: 2.1
+references:
+    - http://archives.neohapsis.com/archives/bugtraq/2001-03/0078.html
+    - http://www.redhat.com/support/errata/RHSA-2001-025.html
+affected:
+    - groupId: org.got5
+      artifactId: tapestry5-jquery
+      version:
+        - "<=4.0.0,4.0-beta-29"
+      fixedin:
+        - ">=4.1.0"
+        - "<=3.5.3,3.4.2"
