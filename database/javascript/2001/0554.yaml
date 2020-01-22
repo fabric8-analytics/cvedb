@@ -1,0 +1,39 @@
+---
+cve: 2001-0554
+title: CVE in vinyl-buffer
+description: >
+    Buffer overflow in BSD-based telnetd telnet daemon on various operating systems allows remote attackers to execute arbitrary commands via a set of options including AYT (Are You There), which is not properly handled by the telrcv function.
+cvss_v2: 10.0
+references:
+    - ftp://ftp.FreeBSD.org/pub/FreeBSD/CERT/advisories/FreeBSD-SA-01:49.telnetd.asc
+    - ftp://ftp.netbsd.org/pub/NetBSD/security/advisories/NetBSD-SA2001-012.txt.asc
+    - ftp://patches.sgi.com/support/free/security/advisories/20010801-01-P
+    - ftp://stage.caldera.com/pub/security/openserver/CSSA-2001-SCO.10/CSSA-2001-SCO.10.txt
+    - http://archives.neohapsis.com/archives/hp/2001-q4/0014.html
+    - http://distro.conectiva.com.br/atualizacoes/?id=a&anuncio=000413
+    - http://ftp.support.compaq.com/patches/.new/html/SSRT0745U.shtml
+    - http://online.securityfocus.com/advisories/3476
+    - http://online.securityfocus.com/archive/1/199496
+    - http://online.securityfocus.com/archive/1/199541
+    - http://online.securityfocus.com/archive/1/203000
+    - http://www.calderasystems.com/support/security/advisories/CSSA-2001-030.0.txt
+    - http://www.cert.org/advisories/CA-2001-21.html
+    - http://www.ciac.org/ciac/bulletins/l-131.shtml
+    - http://www.cisco.com/warp/public/707/catos-telrcv-vuln-pub.shtml
+    - http://www.debian.org/security/2001/dsa-070
+    - http://www.debian.org/security/2001/dsa-075
+    - http://www.linux-mandrake.com/en/security/2001/MDKSA-2001-068.php3
+    - http://www.novell.com/linux/security/advisories/2001_029_nkitb_txt.html
+    - http://www.osvdb.org/809
+    - http://www.redhat.com/support/errata/RHSA-2001-099.html
+    - http://www.redhat.com/support/errata/RHSA-2001-100.html
+    - http://www.securityfocus.com/archive/1/197804
+    - http://www.securityfocus.com/bid/3064
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/6875
+affected:
+    - name: vinyl-buffer
+      version:
+        - "<=1.0.0,1.0.0"
+      fixedin:
+        - ">=1.0.1"
+        - "<=0.0.0,0.0.0"
