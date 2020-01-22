@@ -1,0 +1,15 @@
+---
+cve: 2020-0653
+title: CVE in com.microsoft.windowsazure:microsoft-azure-api-servicebus
+description: >
+    A remote code execution vulnerability exists in Microsoft Excel software when the software fails to properly handle objects in memory, aka 'Microsoft Excel Remote Code Execution Vulnerability'. This CVE ID is unique from CVE-2020-0650, CVE-2020-0651.
+cvss_v2: 9.3
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0653
+affected:
+    - groupId: com.microsoft.windowsazure
+      artifactId: microsoft-azure-api-servicebus
+      version:
+        []
+      fixedin:
+        - ">=0.5.0"
