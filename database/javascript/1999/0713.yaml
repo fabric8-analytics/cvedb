@@ -1,0 +1,14 @@
+---
+cve: 1999-0713
+title: CVE in unix-dgram
+description: >
+    The dtlogin program in Compaq Tru64 UNIX allows local users to gain root privileges.
+cvss_v2: 7.2
+references:
+    - http://www.ciac.org/ciac/bulletins/j-044.shtml
+affected:
+    - name: unix-dgram
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
