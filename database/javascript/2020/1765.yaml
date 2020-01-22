@@ -1,0 +1,14 @@
+---
+cve: 2020-1765
+title: CVE in @ovh-ux/ng-ovh-otrs
+description: >
+    An improper control of parameters allows the spoofing of the from fields of the following screens: AgentTicketCompose, AgentTicketForward, AgentTicketBounce and AgentTicketEmailOutbound. This issue affects: ((OTRS)) Community Edition 5.0.x version 5.0.39 and prior versions; 6.0.x version 6.0.24 and prior versions. OTRS 7.0.x version 7.0.13 and prior versions.
+cvss_v2: 5.0
+references:
+    - https://otrs.com/release-notes/otrs-security-advisory-2020-01/
+affected:
+    - name: @ovh-ux/ng-ovh-otrs
+      version:
+        - "<=7.0.2"
+      fixedin:
+        - ">=7.1.0"
