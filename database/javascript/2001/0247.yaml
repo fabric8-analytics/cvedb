@@ -1,0 +1,21 @@
+---
+cve: 2001-0247
+title: CVE in ftp-deploy
+description: >
+    Buffer overflows in BSD-based FTP servers allows remote attackers to execute arbitrary commands via a long pattern string containing a {} sequence, as seen in (1) g_opendir, (2) g_lstat, (3) g_stat, and (4) the glob0 buffer as used in the glob functions glob2 and glob3.
+cvss_v2: 10.0
+references:
+    - ftp://ftp.NetBSD.ORG/pub/NetBSD/misc/security/advisories/NetBSD-SA2000-018.txt.asc
+    - ftp://patches.sgi.com/support/free/security/advisories/20010802-01-P
+    - http://archives.neohapsis.com/archives/freebsd/2001-04/0466.html
+    - http://www.cert.org/advisories/CA-2001-07.html
+    - http://www.nai.com/research/covert/advisories/048.asp
+    - http://www.securityfocus.com/bid/2548
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/6332
+affected:
+    - name: ftp-deploy
+      version:
+        - "<=1.2.2,1.2.0"
+      fixedin:
+        - ">=2.0.0"
+        - "<=1.1.0,0.1.0"
