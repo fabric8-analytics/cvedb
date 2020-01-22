@@ -1,0 +1,19 @@
+---
+cve: 2015-3151
+title: CVE in bug-repo-syncer
+description: >
+    Directory traversal vulnerability in abrt-dbus in Automatic Bug Reporting Tool (ABRT) allows local users to read, write to, or change ownership of arbitrary files via unspecified vectors to the (1) NewProblem, (2) GetInfo, (3) SetElement, or (4) DeleteElement method.
+cvss_v2: 7.2
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2015-3151
+    - https://github.com/abrt/abrt/commit/7a47f57975be0d285a2f20758e4572dca6d9cdd3
+    - https://github.com/abrt/abrt/commit/c796c76341ee846cfb897ed645bac211d7d0a932
+    - https://github.com/abrt/abrt/commit/f3c2a6af3455b2882e28570e8a04f1c2d4500d5b
+    - https://github.com/abrt/libreport/commit/239c4f7d1f47265526b39ad70106767d00805277
+    - https://github.com/abrt/libreport/commit/54ecf8d017580b495d6501e53ca54e453a73a364
+affected:
+    - name: bug-repo-syncer
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
