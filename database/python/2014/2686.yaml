@@ -1,0 +1,14 @@
+---
+cve: 2014-2686
+title: CVE in ansible
+description: >
+    Ansible prior to 1.5.4 mishandles the evaluation of some strings.
+cvss_v2: 5.0
+references:
+    - https://groups.google.com/forum/#!searchin/ansible-project/1.5.4/ansible-project/MUQxiKwSQDc/id6aVaawVboJ
+affected:
+    - name: ansible
+      version:
+        - "<=1.5.3"
+      fixedin:
+        - ">=1.5.4"
