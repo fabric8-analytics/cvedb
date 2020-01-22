@@ -1,0 +1,19 @@
+---
+cve: 2000-0392
+title: CVE in com.daioware.security:security
+description: >
+    Buffer overflow in ksu in Kerberos 5 allows local users to gain root privileges.
+cvss_v2: 7.2
+references:
+    - http://archives.neohapsis.com/archives/bugtraq/2000-05/0184.html
+    - http://archives.neohapsis.com/archives/freebsd/2000-05/0295.html
+    - http://www.cert.org/advisories/CA-2000-06.html
+    - http://www.redhat.com/support/errata/RHSA-2000-025.html
+    - http://www.securityfocus.com/bid/1220
+affected:
+    - groupId: com.daioware.security
+      artifactId: security
+      version:
+        - "<=1.0.0.RELEASE"
+      fixedin:
+        []
