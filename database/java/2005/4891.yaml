@@ -1,0 +1,16 @@
+---
+cve: 2005-4891
+title: CVE in tech.rsqn.simple-cluster-utilities:simple-cluster-utilities
+description: >
+    Simple Machine Forum (SMF) versions 1.0.4 and earlier have an SQL injection vulnerability that allows remote attackers to inject arbitrary SQL statements.
+cvss_v2: 7.5
+references:
+    - http://www.openwall.com/lists/oss-security/2012/11/14/10
+    - https://securiteam.com/exploits/5HP0N0KG0O/
+affected:
+    - groupId: tech.rsqn.simple-cluster-utilities
+      artifactId: simple-cluster-utilities
+      version:
+        - "<=1.0.4"
+      fixedin:
+        - ">=1.0.5"
