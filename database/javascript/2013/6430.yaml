@@ -1,0 +1,17 @@
+---
+cve: 2013-6430
+title: CVE in css-spring
+description: >
+    The JavaScriptUtils.javaScriptEscape method in web/util/JavaScriptUtils.java in Spring MVC in Spring Framework before 3.2.2 does not properly escape certain characters, which allows remote attackers to conduct cross-site scripting (XSS) attacks via a (1) line separator or (2) paragraph separator Unicode character or (3) left or (4) right angle bracket.
+cvss_v2: 3.5
+references:
+    - http://www.gopivotal.com/security/cve-2013-6430
+    - https://github.com/spring-projects/spring-framework/commit/7a7df6637478607bef0277bf52a4e0a03e20a248
+    - https://jira.springsource.org/browse/SPR-9983
+affected:
+    - name: css-spring
+      version:
+        - "<=3.0.0,3.0.0"
+      fixedin:
+        - ">=4.0.0"
+        - "<=2.1.1,2.0.0"
