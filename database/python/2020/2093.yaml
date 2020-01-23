@@ -1,0 +1,14 @@
+---
+cve: 2020-2093
+title: CVE in azure-mgmt-advisor
+description: >
+    A cross-site request forgery vulnerability in Jenkins Health Advisor by CloudBees Plugin 3.0 and earlier allows attackers to send an email with fixed content to an attacker-specified recipient.
+cvss_v2: 6.8
+references:
+    - https://jenkins.io/security/advisory/2020-01-15/#SECURITY-1708
+affected:
+    - name: azure-mgmt-advisor
+      version:
+        - "<=3.0.0"
+      fixedin:
+        []
