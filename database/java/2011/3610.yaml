@@ -1,0 +1,17 @@
+---
+cve: 2011-3610
+title: CVE in org.andromda.maven.plugins.site:andromda-site-skin
+description: >
+    A Cross-site Scripting (XSS) vulnerability exists in the Serendipity freetag plugin before 3.30 in the tagcloud parameter to plugins/serendipity_event_freetag/tagcloud.swf.
+cvss_v2: 4.3
+references:
+    - https://git.schokokeks.org/freewvs.git/blob/ddc4be296c9c49987b53be064d6d2a9d12f50452/freewvsdb/plugins.freewvs
+    - https://packetstormsecurity.com/files/105054/Secunia-Security-Advisory-46005.html
+    - https://www.openwall.com/lists/oss-security/2011/10/10/3
+affected:
+    - groupId: org.andromda.maven.plugins.site
+      artifactId: andromda-site-skin
+      version:
+        []
+      fixedin:
+        - ">=3.3"
