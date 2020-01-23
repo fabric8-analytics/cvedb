@@ -1,0 +1,16 @@
+---
+cve: 2011-4907
+title: CVE in joomla-cli
+description: >
+    Joomla! 1.5x through 1.5.12: Missing JEXEC Check
+cvss_v2: 5.0
+references:
+    - https://developer.joomla.org/security/news/301-20090722-core-file-upload.html
+    - https://www.openwall.com/lists/oss-security/2011/12/25/7
+affected:
+    - name: joomla-cli
+      version:
+        - "<=1.5.8,1.5.0"
+      fixedin:
+        - ">=1.6.0"
+        - "<=1.4.2,1.0.3"
