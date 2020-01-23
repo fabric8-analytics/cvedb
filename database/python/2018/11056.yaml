@@ -1,0 +1,16 @@
+---
+cve: 2018-11056
+title: CVE in rsa
+description: >
+    RSA BSAFE Micro Edition Suite, prior to 4.1.6.1 (in 4.1.x), and RSA BSAFE Crypto-C Micro Edition versions prior to 4.0.5.3 (in 4.0.x) contain an Uncontrolled Resource Consumption ('Resource Exhaustion') vulnerability when parsing ASN.1 data. A remote attacker could use maliciously constructed ASN.1 data that would exhaust the stack, potentially causing a Denial Of Service.
+cvss_v2: 4.0
+references:
+    - http://seclists.org/fulldisclosure/2018/Aug/46
+    - https://www.oracle.com/security-alerts/cpujan2020.html
+    - https://www.oracle.com/technetwork/security-advisory/cpujul2019-5072835.html
+affected:
+    - name: rsa
+      version:
+        - "<=4.0,4.0"
+      fixedin:
+        - "<=3.4.2,1.1"
