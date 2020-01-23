@@ -1,0 +1,17 @@
+---
+cve: 2015-8549
+title: CVE in pyamf
+description: >
+    XML external entity (XXE) vulnerability in PyAMF before 0.8.0 allows remote attackers to cause a denial of service or read arbitrary files via a crafted Action Message Format (AMF) payload.
+cvss_v2: 5.8
+references:
+    - http://www.ocert.org/advisories/ocert-2015-011.html
+    - http://www.securityfocus.com/archive/1/archive/1/537151/100/0/threaded
+    - https://github.com/hydralabs/pyamf/pull/58
+    - https://github.com/hydralabs/pyamf/releases/tag/v0.8.0
+affected:
+    - name: pyamf
+      version:
+        - "<=0.7.2"
+      fixedin:
+        - ">=0.8.0"
