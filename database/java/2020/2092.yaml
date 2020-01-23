@@ -1,0 +1,15 @@
+---
+cve: 2020-2092
+title: CVE in com.infotel.seleniumRobot:seleniumRobot-example
+description: >
+    Jenkins Robot Framework Plugin 2.0.0 and earlier does not configure its XML parser to prevent XML external entity (XXE) attacks, allowing users with Job/Configure to have Jenkins parse crafted XML documents.
+cvss_v2: 6.5
+references:
+    - https://jenkins.io/security/advisory/2020-01-15/#SECURITY-1698
+affected:
+    - groupId: com.infotel.seleniumRobot
+      artifactId: seleniumRobot-example
+      version:
+        - "<=2.0.0"
+      fixedin:
+        - ">=2.2.0"
