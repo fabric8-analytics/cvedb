@@ -1,0 +1,32 @@
+---
+cve: 2011-1072
+title: CVE in cve-to-usn
+description: >
+    The installer in PEAR before 1.9.2 allows local users to overwrite arbitrary files via a symlink attack on the package.xml file, related to the (1) download_dir, (2) cache_dir, (3) tmp_dir, and (4) pear-build-download directories, a different vulnerability than CVE-2007-2519.
+cvss_v2: 3.3
+references:
+    - http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=546164
+    - http://news.php.net/php.pear.cvs/61264
+    - http://openwall.com/lists/oss-security/2011/02/28/12
+    - http://openwall.com/lists/oss-security/2011/02/28/3
+    - http://openwall.com/lists/oss-security/2011/02/28/5
+    - http://openwall.com/lists/oss-security/2011/03/01/4
+    - http://openwall.com/lists/oss-security/2011/03/01/5
+    - http://openwall.com/lists/oss-security/2011/03/01/7
+    - http://openwall.com/lists/oss-security/2011/03/01/8
+    - http://openwall.com/lists/oss-security/2011/03/01/9
+    - http://pear.php.net/advisory-20110228.txt
+    - http://pear.php.net/bugs/bug.php?id=18056
+    - http://secunia.com/advisories/43533
+    - http://security-tracker.debian.org/tracker/CVE-2011-1072
+    - http://svn.php.net/viewvc?view=revision&revision=308687
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2011:187
+    - http://www.redhat.com/support/errata/RHSA-2011-1741.html
+    - http://www.securityfocus.com/bid/46605
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/65721
+affected:
+    - name: cve-to-usn
+      version:
+        - "<=1.0.0"
+      fixedin:
+        []
