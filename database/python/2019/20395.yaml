@@ -1,0 +1,17 @@
+---
+cve: 2019-20395
+title: CVE in libyang
+description: >
+    A stack consumption issue is present in libyang before v1.0-r1 due to the self-referential union type containing leafrefs. Applications that use libyang to parse untrusted input yang files may crash.
+cvss_v2: 4.3
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1793924
+    - https://github.com/CESNET/libyang/commit/4e610ccd87a2ba9413819777d508f71163fcc237
+    - https://github.com/CESNET/libyang/compare/v0.16-r3...v1.0-r1
+    - https://github.com/CESNET/libyang/issues/724
+affected:
+    - name: libyang
+      version:
+        - "<=0.16.dev6"
+      fixedin:
+        - ">=0.16.65"
