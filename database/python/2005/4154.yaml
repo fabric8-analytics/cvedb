@@ -1,0 +1,18 @@
+---
+cve: 2005-4154
+title: CVE in asoundconf-gtk
+description: >
+    Unspecified vulnerability in PEAR installer 1.4.2 and earlier allows user-assisted attackers to execute arbitrary code via a crafted package that can execute code when the pear command is executed or when the Web/Gtk frontend is loaded.
+cvss_v2: 5.1
+references:
+    - http://pear.php.net/advisory-20051104.txt
+    - http://secunia.com/advisories/17563/
+    - http://securitytracker.com/alerts/2005/Nov/1015161.html
+    - http://www.vupen.com/english/advisories/2005/2444
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/23021
+affected:
+    - name: asoundconf-gtk
+      version:
+        - "<=1.1"
+      fixedin:
+        []
