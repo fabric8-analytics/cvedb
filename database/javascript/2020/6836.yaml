@@ -1,6 +1,6 @@
 ---
 cve: 2020-6836
-title: CVE in @logoran/formula-parser
+title: CVE in hot-formula-parser
 description: >
     grammar-parser.jison in the hot-formula-parser package before 3.0.1 for Node.js is vulnerable to arbitrary code injection. The package fails to sanitize values passed to the parse function and concatenates them in an eval call. If a value of the formula is taken from user-controlled input, it may allow attackers to run arbitrary commands on the server.
 cvss_v2: 7.5
@@ -9,7 +9,7 @@ references:
     - https://github.com/handsontable/formula-parser/commit/396b089738d4bf30eb570a4fe6a188affa95cd5e
     - https://www.npmjs.com/advisories/1439
 affected:
-    - name: @logoran/formula-parser
+    - name: hot-formula-parser
       version:
         - "<=3.0.0"
       fixedin:
