@@ -1,0 +1,16 @@
+---
+cve: 2019-20396
+title: CVE in libyang
+description: >
+    A segmentation fault is present in yyparse in libyang before v1.0-r1 due to a malformed pattern statement value during lys_parse_path parsing.
+cvss_v2: 4.3
+references:
+    - https://github.com/CESNET/libyang/commit/a1f17693904ed6fecc8902c747fc50a8f20e6af8
+    - https://github.com/CESNET/libyang/compare/v0.16-r3...v1.0-r1
+    - https://github.com/CESNET/libyang/issues/740
+affected:
+    - name: libyang
+      version:
+        - "<=0.16.dev6"
+      fixedin:
+        - ">=0.16.65"
