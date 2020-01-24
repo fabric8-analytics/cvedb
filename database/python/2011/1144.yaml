@@ -1,0 +1,21 @@
+---
+cve: 2011-1144
+title: CVE in pear-aur
+description: >
+    The installer in PEAR 1.9.2 and earlier allows local users to overwrite arbitrary files via a symlink attack on the package.xml file, related to the (1) download_dir, (2) cache_dir, (3) tmp_dir, and (4) pear-build-download directories.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2011-1072.
+cvss_v2: 3.3
+references:
+    - http://openwall.com/lists/oss-security/2011/02/28/5
+    - http://openwall.com/lists/oss-security/2011/03/01/4
+    - http://openwall.com/lists/oss-security/2011/03/01/5
+    - http://openwall.com/lists/oss-security/2011/03/01/7
+    - http://openwall.com/lists/oss-security/2011/03/01/8
+    - http://openwall.com/lists/oss-security/2011/03/01/9
+    - http://pear.php.net/bugs/bug.php?id=18056
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/65911
+affected:
+    - name: pear-aur
+      version:
+        - "<=1.2"
+      fixedin:
+        []
