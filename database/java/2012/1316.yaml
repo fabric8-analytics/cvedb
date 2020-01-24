@@ -1,0 +1,16 @@
+---
+cve: 2012-1316
+title: CVE in org.appverse.web.framework.modules.backend.security.oauth2:appverse-web-modules-backend-security-oauth2
+description: >
+    Cisco IronPort Web Security Appliance does not check for certificate revocation which could lead to MITM attacks
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/52981
+    - https://www.secureworks.com/research/transitive-trust
+affected:
+    - groupId: org.appverse.web.framework.modules.backend.security.oauth2
+      artifactId: appverse-web-modules-backend-security-oauth2
+      version:
+        []
+      fixedin:
+        - ">=1.4-RELEASE"
