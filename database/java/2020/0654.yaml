@@ -1,0 +1,15 @@
+---
+cve: 2020-0654
+title: CVE in com.microsoft.windowsazure:microsoft-azure-api-servicebus
+description: >
+    A security feature bypass vulnerability exists in Microsoft OneDrive App for Android.This could allow an attacker to bypass the passcode or fingerprint requirements of the App.The security update addresses the vulnerability by correcting the way Microsoft OneDrive App for Android handles sharing links., aka 'Microsoft OneDrive for Android Security Feature Bypass Vulnerability'.
+cvss_v2: 6.4
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0654
+affected:
+    - groupId: com.microsoft.windowsazure
+      artifactId: microsoft-azure-api-servicebus
+      version:
+        []
+      fixedin:
+        - ">=0.5.0"
