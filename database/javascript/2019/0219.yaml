@@ -1,0 +1,15 @@
+---
+cve: 2019-0219
+title: CVE in cordova-plugin-inappbrowser
+description: >
+    A website running in the InAppBrowser webview on Android could execute arbitrary JavaScript in the main application's webview using a specially crafted gap-iab: URI.
+cvss_v2: 7.5
+references:
+    - http://www.openwall.com/lists/oss-security/2019/11/28/1
+    - https://lists.apache.org/thread.html/197482d5ab80c0bff4a5ec16e1b0466df38389d9a4b5331d777f14fc%40%3Cdev.cordova.apache.org%3E
+affected:
+    - name: cordova-plugin-inappbrowser
+      version:
+        - "<=3.0.0"
+      fixedin:
+        - ">=3.1.0"
