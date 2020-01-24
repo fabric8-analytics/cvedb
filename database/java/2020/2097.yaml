@@ -1,0 +1,15 @@
+---
+cve: 2020-2097
+title: CVE in website.automate.jenkins:jenkins-automate-website-plugin
+description: >
+    Jenkins Sounds Plugin 0.5 and earlier does not perform permission checks in URLs performing form validation, allowing attackers with Overall/Read access to execute arbitrary OS commands as the OS user account running Jenkins.
+cvss_v2: 6.5
+references:
+    - https://jenkins.io/security/advisory/2020-01-15/#SECURITY-814
+affected:
+    - groupId: website.automate.jenkins
+      artifactId: jenkins-automate-website-plugin
+      version:
+        - "<=0.5.0"
+      fixedin:
+        - ">=0.6.0"
