@@ -1,0 +1,19 @@
+---
+cve: 1999-0144
+title: CVE in haraka-plugin-rcpt-ldap
+description: >
+    Denial of service in Qmail by specifying a large number of recipients with the RCPT command.
+cvss_v2: 2.1
+references:
+    - http://cr.yp.to/qmail/venema.html
+    - http://marc.info/?l=bugtraq&m=87602558319024&w=2
+    - http://marc.info/?l=bugtraq&m=87602558319029&w=2
+    - http://www.ornl.gov/its/archives/mailing-lists/qmail/1997/06/threads.html
+    - http://www.securityfocus.com/bid/2237
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/208
+affected:
+    - name: haraka-plugin-rcpt-ldap
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
