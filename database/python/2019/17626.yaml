@@ -11,6 +11,6 @@ references:
 affected:
     - name: reportlab
       version:
-        - "<=3.5.26"
+        - "<=3.5.28"
       fixedin:
-        - ">=3.5.28"
+        - ">=3.5.31"
