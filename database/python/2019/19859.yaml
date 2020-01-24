@@ -1,0 +1,14 @@
+---
+cve: 2019-19859
+title: CVE in m3-simple-report
+description: >
+    An issue was discovered in Serpico (aka SimplE RePort wrIting and CollaboratiOn tool) 1.3.0. The Add Collaborator allows unlimited data via the author parameter, even if the data does not match anything in the database.
+cvss_v2: 5.0
+references:
+    - https://www.websec.nl/news.php
+affected:
+    - name: m3-simple-report
+      version:
+        - "<=1.3"
+      fixedin:
+        - ">=1.3.4.4"
