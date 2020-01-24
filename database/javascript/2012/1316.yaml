@@ -1,0 +1,15 @@
+---
+cve: 2012-1316
+title: CVE in @nodert-win10/windows.security.authentication.web
+description: >
+    Cisco IronPort Web Security Appliance does not check for certificate revocation which could lead to MITM attacks
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/52981
+    - https://www.secureworks.com/research/transitive-trust
+affected:
+    - name: @nodert-win10/windows.security.authentication.web
+      version:
+        []
+      fixedin:
+        - ">=0.2.2"
