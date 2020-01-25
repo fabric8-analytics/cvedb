@@ -1,0 +1,17 @@
+---
+cve: 2020-7936
+title: CVE in @plone/create-volto-app
+description: >
+    An open redirect on the login form (and possibly other places) in Plone 4.0 through 5.2.1 allows an attacker to craft a link to a Plone Site that, when followed, and possibly after login, will redirect to an attacker's site.
+cvss_v2: 5.8
+references:
+    - http://www.openwall.com/lists/oss-security/2020/01/24/1
+    - https://plone.org/security/hotfix/20200121
+    - https://plone.org/security/hotfix/20200121/an-open-redirection-on-the-login-form-and-possibly-other-places
+    - https://www.openwall.com/lists/oss-security/2020/01/22/1
+affected:
+    - name: @plone/create-volto-app
+      version:
+        - "<=4.0.0-alpha.8,4.0.0-alpha.0"
+      fixedin:
+        - "<=3.2.1,0.1.0"
