@@ -1,0 +1,17 @@
+---
+cve: 2020-7939
+title: CVE in @plone/create-volto-app
+description: >
+    SQL Injection in DTML or in connection objects in Plone 4.0 through 5.2.1 allows users to perform unwanted SQL queries. (This is a problem in Zope.)
+cvss_v2: 6.5
+references:
+    - http://www.openwall.com/lists/oss-security/2020/01/24/1
+    - https://plone.org/security/hotfix/20200121
+    - https://plone.org/security/hotfix/20200121/sql-injection-in-dtml-or-in-connection-objects
+    - https://www.openwall.com/lists/oss-security/2020/01/22/1
+affected:
+    - name: @plone/create-volto-app
+      version:
+        - "<=4.0.0-alpha.8,4.0.0-alpha.0"
+      fixedin:
+        - "<=3.2.1,0.1.0"
