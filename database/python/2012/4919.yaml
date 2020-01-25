@@ -1,0 +1,16 @@
+---
+cve: 2012-4919
+title: CVE in gallery-dl
+description: >
+    Gallery Plugin1.4 for WordPress has a Remote File Include Vulnerability
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/57650
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/81713
+affected:
+    - name: gallery-dl
+      version:
+        - "<=1.4.0,1.4.0"
+      fixedin:
+        - ">=1.4.1"
+        - "<=1.3.5,0.6.1"
