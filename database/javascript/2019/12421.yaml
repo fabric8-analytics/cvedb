@@ -1,0 +1,15 @@
+---
+cve: 2019-12421
+title: CVE in rk8-pki
+description: >
+    When using an authentication mechanism other than PKI, when the user clicks Log Out in NiFi versions 1.0.0 to 1.9.2, NiFi invalidates the authentication token on the client side but not on the server side. This permits the user's client-side token to be used for up to 12 hours after logging out to make API requests to NiFi.
+cvss_v2: 6.5
+references:
+    - https://lists.apache.org/thread.html/rca37935d661f4689cb4119f1b3b224413b22be161b678e6e6ce0c69b@%3Ccommits.nifi.apache.org%3E
+    - https://nifi.apache.org/security.html#CVE-2019-12421
+affected:
+    - name: rk8-pki
+      version:
+        - "<=1.2.0-alpha"
+      fixedin:
+        []
