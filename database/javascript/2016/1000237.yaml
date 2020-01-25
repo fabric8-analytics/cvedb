@@ -1,0 +1,15 @@
+---
+cve: 2016-1000237
+title: CVE in sanitize-html
+description: >
+    sanitize-html before 1.4.3 has XSS.
+cvss_v2: 4.3
+references:
+    - https://nodesecurity.io/advisories/135
+    - https://raw.githubusercontent.com/distributedweaknessfiling/cvelist/master/2016/1000xxx/CVE-2016-1000237.json
+affected:
+    - name: sanitize-html
+      version:
+        - "<=1.4.2"
+      fixedin:
+        - ">=1.4.3"
