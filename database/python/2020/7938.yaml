@@ -1,0 +1,17 @@
+---
+cve: 2020-7938
+title: CVE in plone
+description: >
+    plone.restapi in Plone 5.2.0 through 5.2.1 allows users with a certain privilege level to escalate their privileges up to the highest level.
+cvss_v2: 6.5
+references:
+    - http://www.openwall.com/lists/oss-security/2020/01/24/1
+    - https://plone.org/security/hotfix/20200121
+    - https://plone.org/security/hotfix/20200121/privilege-escalation-when-plone-restapi-is-installed
+    - https://www.openwall.com/lists/oss-security/2020/01/22/1
+affected:
+    - name: plone
+      version:
+        - "<=5.2.1,5.2a1"
+      fixedin:
+        - "<=5.1.6,3.2a1"
