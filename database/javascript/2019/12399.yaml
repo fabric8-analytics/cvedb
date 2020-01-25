@@ -1,0 +1,19 @@
+---
+cve: 2019-12399
+title: CVE in salesforce-kafka-connect
+description: >
+    When Connect workers in Apache Kafka 2.0.0, 2.0.1, 2.1.0, 2.1.1, 2.2.0, 2.2.1, or 2.3.0 are configured with one or more config providers, and a connector is created/updated on that Connect cluster to use an externalized secret variable in a substring of a connector configuration property value, then any client can issue a request to the same Connect cluster to obtain the connector's task configuration and the response will contain the plaintext secret rather than the externalized secrets variables.
+cvss_v2: 5.0
+references:
+    - http://www.openwall.com/lists/oss-security/2020/01/14/1
+    - https://lists.apache.org/thread.html/r6af5ed95726874e9add022955be83c192428c248d1c9a1914aff89d9%40%3Cdev.kafka.apache.org%3E
+    - https://lists.apache.org/thread.html/r6af5ed95726874e9add022955be83c192428c248d1c9a1914aff89d9@%3Cannounce.apache.org%3E
+    - https://lists.apache.org/thread.html/r6af5ed95726874e9add022955be83c192428c248d1c9a1914aff89d9@%3Cusers.kafka.apache.org%3E
+    - https://lists.apache.org/thread.html/rc27d424d0bdeaf31081c3e246db3c66e882243ae3f342dfa845e0261@%3Ccommits.kafka.apache.org%3E
+affected:
+    - name: salesforce-kafka-connect
+      version:
+        - "<=2.3.0,2.0.0"
+      fixedin:
+        - ">=2.4.0"
+        - "<=1.5.0,1.0.0"
