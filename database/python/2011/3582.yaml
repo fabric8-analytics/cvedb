@@ -1,0 +1,14 @@
+---
+cve: 2011-3582
+title: CVE in django-simple-forums
+description: >
+    A Cross-site Request Forgery (CSRF) vulnerability exists in Advanced Electron Forums (AEF) through 1.0.9 due to inadequate confirmation for sensitive transactions in the administrator functions.
+cvss_v2: 6.8
+references:
+    - https://www.openwall.com/lists/oss-security/2011/09/30/3
+affected:
+    - name: django-simple-forums
+      version:
+        - "<=1.0.9"
+      fixedin:
+        - ">=1.1.1"
