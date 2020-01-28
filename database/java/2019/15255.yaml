@@ -1,0 +1,16 @@
+---
+cve: 2019-15255
+title: CVE in com.bladecoder.engine:blade-engine-spine-plugin
+description: >
+    A vulnerability in the web-based management interface of Cisco Identity Services Engine (ISE) could allow an authenticated, remote attacker to bypass authorization and access sensitive information related to the device. The vulnerability exists because the software fails to sanitize URLs before it handles requests. An attacker could exploit this vulnerability by submitting a crafted URL. A successful exploit could allow the attacker to gain unauthorized access to sensitive information.
+cvss_v2: 4.0
+references:
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20200108-ise-auth-bypass
+affected:
+    - groupId: com.bladecoder.engine
+      artifactId: blade-engine-spine-plugin
+      version:
+        - "<=2.2.0,2.2.0"
+      fixedin:
+        - ">=3.0.0"
+        - "<=2.1.4,0.6.0"
