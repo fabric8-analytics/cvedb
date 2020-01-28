@@ -1,0 +1,15 @@
+---
+cve: 2019-1460
+title: CVE in com.microsoft.windowsazure:microsoft-azure-api-servicebus
+description: >
+    A spoofing vulnerability exists in the way Microsoft Outlook for Android software parses specifically crafted email messages, aka 'Outlook for Android Spoofing Vulnerability'.
+cvss_v2: 3.5
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1460
+affected:
+    - groupId: com.microsoft.windowsazure
+      artifactId: microsoft-azure-api-servicebus
+      version:
+        []
+      fixedin:
+        - ">=0.5.0"
