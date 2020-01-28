@@ -1,0 +1,14 @@
+---
+cve: 2020-3940
+title: CVE in one
+description: >
+    VMware Workspace ONE SDK and dependent mobile application updates address sensitive information disclosure vulnerability.
+cvss_v2: 4.3
+references:
+    - https://www.vmware.com/security/advisories/VMSA-2020-0001.html
+affected:
+    - name: one
+      version:
+        - "<=6.0.1"
+      fixedin:
+        []
