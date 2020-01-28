@@ -1,0 +1,21 @@
+---
+cve: 2015-6748
+title: CVE in org.jsoup:jsoup
+description: >
+    Cross-site scripting (XSS) vulnerability in jsoup before 1.8.3.
+cvss_v2: 4.3
+references:
+    - http://www.openwall.com/lists/oss-security/2015/08/28/5
+    - http://www.securityfocus.com/bid/76504
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1258310
+    - https://github.com/jhy/jsoup/pull/582
+    - https://hibernate.atlassian.net/browse/HV-1012
+    - https://issues.jboss.org/browse/WFLY-5223?_sscc=t
+    - https://lists.debian.org/debian-lts-announce/2020/01/msg00021.html
+affected:
+    - groupId: org.jsoup
+      artifactId: jsoup
+      version:
+        - "<=1.8.2"
+      fixedin:
+        - ">=1.8.3"
