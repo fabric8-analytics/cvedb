@@ -1,0 +1,14 @@
+---
+cve: 2012-5340
+title: CVE in is-pdf
+description: >
+    SumatraPDF 2.1.1/MuPDF 1.0 allows remote attackers to cause an Integer Overflow in the lex_number() function via a corrupt PDF file.
+cvss_v2: 6.8
+references:
+    - http://www.exploit-db.com/exploits/23246
+affected:
+    - name: is-pdf
+      version:
+        - "<=1.0.0,1.0.0"
+      fixedin:
+        - "<=0.1.0,0.1.0"
