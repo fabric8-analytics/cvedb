@@ -1,0 +1,15 @@
+---
+cve: 2019-16005
+title: CVE in org.fudaa.soft.fudaa-mesh:fudaa-mesh
+description: >
+    A vulnerability in the web-based management interface of Cisco Webex Video Mesh could allow an authenticated, remote attacker to execute arbitrary commands on the affected system. The vulnerability is due to improper validation of user-supplied input by the web-based management interface of the affected software. An attacker could exploit this vulnerability by logging in to the web-based management interface with administrative privileges and supplying crafted requests to the application. A successful exploit could allow the attacker to execute arbitrary commands on the underlying Linux operating system with root privileges on a targeted node.
+cvss_v2: 9.0
+references:
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20200108-webex-video
+affected:
+    - groupId: org.fudaa.soft.fudaa-mesh
+      artifactId: fudaa-mesh
+      version:
+        - "<=2.5"
+      fixedin:
+        []
