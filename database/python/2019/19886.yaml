@@ -1,0 +1,14 @@
+---
+cve: 2019-19886
+title: CVE in transaction
+description: >
+    Trustwave ModSecurity 3.0.0 through 3.0.3 allows an attacker to send crafted requests that may, when sent quickly in large volumes, lead to the server becoming slow or unresponsive (Denial of Service) because of a flaw in Transaction::addRequestHeader in transaction.cc.
+cvss_v2: 5.0
+references:
+    - https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/modsecurity-denial-of-service-details-cve-2019-19886/
+affected:
+    - name: transaction
+      version:
+        - "<=3.0.0,3.0.0"
+      fixedin:
+        - "<=2.4.0,1.0a1"
