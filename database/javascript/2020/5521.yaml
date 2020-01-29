@@ -1,0 +1,15 @@
+---
+cve: 2020-5521
+title: CVE in x-hexo-app-connect
+description: >
+    The kantan netprint App for iOS 2.0.2 and earlier does not verify X.509 certificates from servers, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate.
+cvss_v2: 5.8
+references:
+    - http://jvn.jp/en/jp/JVN66435380/index.html
+    - https://www.printing.ne.jp/support/information/AppVulnerability.html
+affected:
+    - name: x-hexo-app-connect
+      version:
+        - "<=2.0.2"
+      fixedin:
+        - ">=2.0.3"
