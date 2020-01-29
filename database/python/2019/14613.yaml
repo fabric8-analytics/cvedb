@@ -1,0 +1,14 @@
+---
+cve: 2019-14613
+title: CVE in intel-openmp
+description: >
+    Improper access control in driver for Intel(R) VTune(TM) Amplifier for Windows* before update 8 may allow an authenticated user to potentially enable escalation of privilege via local access.
+cvss_v2: 4.6
+references:
+    - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00325.html
+affected:
+    - name: intel-openmp
+      version:
+        - "<=2019.0"
+      fixedin:
+        - ">=2020.0.133"
