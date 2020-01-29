@@ -1,0 +1,16 @@
+---
+cve: 2012-5340
+title: CVE in com.planbase.pdf:PdfLayoutMgr2
+description: >
+    SumatraPDF 2.1.1/MuPDF 1.0 allows remote attackers to cause an Integer Overflow in the lex_number() function via a corrupt PDF file.
+cvss_v2: 6.8
+references:
+    - http://www.exploit-db.com/exploits/23246
+affected:
+    - groupId: com.planbase.pdf
+      artifactId: PdfLayoutMgr2
+      version:
+        - "<=2.1.1,2.1.1"
+      fixedin:
+        - ">=2.1.2"
+        - "<=2.1.0,2.0.2"
