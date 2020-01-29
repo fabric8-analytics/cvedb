@@ -1,0 +1,14 @@
+---
+cve: 2019-14600
+title: CVE in not-alone
+description: >
+    Uncontrolled search path element in the installer for Intel(R) SNMP Subagent Stand-Alone for Windows* may allow an authenticated user to potentially enable escalation of privilege via local access.
+cvss_v2: 4.6
+references:
+    - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00300.html
+affected:
+    - name: not-alone
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
