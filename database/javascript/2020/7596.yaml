@@ -1,0 +1,14 @@
+---
+cve: 2020-7596
+title: CVE in codecov
+description: >
+    Codecov npm module before 3.6.2 allows remote attackers to execute arbitrary commands via the "gcov-args" argument.
+cvss_v2: 6.5
+references:
+    - https://snyk.io/vuln/SNYK-JS-CODECOV-543183
+affected:
+    - name: codecov
+      version:
+        - "<=3.6.1"
+      fixedin:
+        - ">=3.6.2"
