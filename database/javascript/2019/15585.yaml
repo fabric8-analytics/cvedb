@@ -1,0 +1,16 @@
+---
+cve: 2019-15585
+title: CVE in gitlab
+description: >
+    Improper authentication exists in < 12.3.2, < 12.2.6, and < 12.1.12 for GitLab Community Edition (CE) and Enterprise Edition (EE) in the GitLab SAML integration had a validation issue that permitted an attacker to takeover another user's account.
+cvss_v2: 7.5
+references:
+    - https://about.gitlab.com/blog/2019/09/30/security-release-gitlab-12-dot-3-dot-2-released/
+    - https://hackerone.com/reports/471323
+affected:
+    - name: gitlab
+      version:
+        - "<=12.1.2,12.1.0"
+      fixedin:
+        - ">=13.0.0"
+        - "<=12.0.1,0.0.1"
