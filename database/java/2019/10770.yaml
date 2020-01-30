@@ -1,0 +1,15 @@
+---
+cve: 2019-10770
+title: CVE in io.ratpack:ratpack-gson
+description: >
+    All versions of io.ratpack:ratpack-core from 0.9.10 inclusive and before 1.7.6 are vulnerable to Cross-site Scripting (XSS). This affects the development mode error handler when an exception message contains untrusted data. Note the production mode error handler is not vulnerable - so for this to be utilized in production it would require users to not disable development mode.
+cvss_v2: 4.3
+references:
+    - https://snyk.io/vuln/SNYK-JAVA-IORATPACK-534882
+affected:
+    - groupId: io.ratpack
+      artifactId: ratpack-gson
+      version:
+        - "<=1.7.5"
+      fixedin:
+        - ">=1.7.6"
