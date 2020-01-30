@@ -1,0 +1,15 @@
+---
+cve: 2014-8742
+title: CVE in edx-enterprise
+description: >
+    Directory traversal vulnerability in the ReportDownloadServlet servlet in Lexmark MarkVision Enterprise before 2.1 allows remote attackers to read arbitrary files via unspecified vectors.
+cvss_v2: 7.8
+references:
+    - http://support.lexmark.com/index?page=content&id=TE666
+    - http://www.zerodayinitiative.com/advisories/ZDI-14-411/
+affected:
+    - name: edx-enterprise
+      version:
+        - "<=2.0.50"
+      fixedin:
+        - ">=2.1.0"
