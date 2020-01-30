@@ -1,0 +1,14 @@
+---
+cve: 2019-15607
+title: CVE in node-red
+description: >
+    A stored XSS vulnerability is present within node-red (version: <= 0.20.7) npm package, which is a visual tool for wiring the Internet of Things. This issue will allow the attacker to steal session cookies, deface web applications, etc.
+cvss_v2: 3.5
+references:
+    - https://hackerone.com/reports/681986
+affected:
+    - name: node-red
+      version:
+        - "<=0.20.7"
+      fixedin:
+        - ">=0.20.8"
