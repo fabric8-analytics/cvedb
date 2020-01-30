@@ -1,0 +1,15 @@
+---
+cve: 2014-8741
+title: CVE in edx-enterprise
+description: >
+    Directory traversal vulnerability in the GfdFileUploadServerlet servlet in Lexmark MarkVision Enterprise before 2.1 allows remote attackers to write to arbitrary files via unspecified vectors.
+cvss_v2: 10.0
+references:
+    - http://support.lexmark.com/index?page=content&id=TE666
+    - http://www.zerodayinitiative.com/advisories/ZDI-14-410/
+affected:
+    - name: edx-enterprise
+      version:
+        - "<=2.0.50"
+      fixedin:
+        - ">=2.1.0"
