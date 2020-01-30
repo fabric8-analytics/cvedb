@@ -1,0 +1,17 @@
+---
+cve: 2019-15590
+title: CVE in org.sakaiproject.search.elasticsearch:elasticsearch-api
+description: >
+    An access control issue exists in < 12.3.5, < 12.2.8, and < 12.1.14 for GitLab Community Edition (CE) and Enterprise Edition (EE) where private merge requests and issues would be disclosed with the Group Search feature provided by Elasticsearch integration
+cvss_v2: 5.0
+references:
+    - https://about.gitlab.com/releases/2019/10/07/security-release-gitlab-12-dot-3-dot-5-released/
+    - https://hackerone.com/reports/701144
+affected:
+    - groupId: org.sakaiproject.search.elasticsearch
+      artifactId: elasticsearch-api
+      version:
+        - "<=12.3,12.1"
+      fixedin:
+        - ">=12.4"
+        - "<=12.0,12.0"
