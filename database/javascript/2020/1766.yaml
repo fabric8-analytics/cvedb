@@ -1,0 +1,17 @@
+---
+cve: 2020-1766
+title: CVE in ovh-angular-otrs
+description: >
+    Due to improper handling of uploaded images it is possible in very unlikely and rare conditions to force the agents browser to execute malicious javascript from a special crafted SVG file rendered as inline jpg file. This issue affects: ((OTRS)) Community Edition 5.0.x version 5.0.39 and prior versions; 6.0.x version 6.0.24 and prior versions. OTRS 7.0.x version 7.0.13 and prior versions.
+cvss_v2: 4.3
+references:
+    - https://lists.debian.org/debian-lts-announce/2020/01/msg00027.html
+    - https://otrs.com/release-notes/otrs-security-advisory-2020-02/
+affected:
+    - name: ovh-angular-otrs
+      version:
+        - "<=6.0.1,5.0.0"
+        - "<=7.0.0-alpha.1,7.0.0-alpha.0"
+      fixedin:
+        - "<=6.3.0,6.1.0"
+        - "<=4.1.2,1.1.0"
