@@ -1,0 +1,15 @@
+---
+cve: 2020-1767
+title: CVE in @ovh-ux/ng-ovh-otrs
+description: >
+    Agent A is able to save a draft (i.e. for customer reply). Then Agent B can open the draft, change the text completely and send it in the name of Agent A. For the customer it will not be visible that the message was sent by another agent. This issue affects: ((OTRS)) Community Edition 6.0.x version 6.0.24 and prior versions. OTRS 7.0.x version 7.0.13 and prior versions.
+cvss_v2: 3.5
+references:
+    - https://lists.debian.org/debian-lts-announce/2020/01/msg00027.html
+    - https://otrs.com/release-notes/otrs-security-advisory-2020-03/
+affected:
+    - name: @ovh-ux/ng-ovh-otrs
+      version:
+        - "<=7.0.2"
+      fixedin:
+        - ">=7.1.0"
