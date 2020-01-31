@@ -1,0 +1,15 @@
+---
+cve: 2020-8001
+title: CVE in gulp-ftp
+description: >
+    The Intellian Aptus application 1.0.2 for Android has a hardcoded password of intellian for the masteruser FTP account.
+cvss_v2: 10.0
+references:
+    - https://sku11army.blogspot.com/2020/01/intellian-multiple-vulnerabilities-in.html
+affected:
+    - name: gulp-ftp
+      version:
+        - "<=1.0.2,1.0.2"
+      fixedin:
+        - ">=1.0.3"
+        - "<=1.0.1,0.1.0"
