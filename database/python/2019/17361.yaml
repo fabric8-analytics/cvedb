@@ -1,0 +1,15 @@
+---
+cve: 2019-17361
+title: CVE in salt
+description: >
+    In SaltStack Salt through 2019.2.0, the salt-api NET API with the ssh client enabled is vulnerable to command injection. This allows an unauthenticated attacker with network access to the API endpoint to execute arbitrary code on the salt-api host.
+cvss_v2: 6.8
+references:
+    - https://docs.saltstack.com/en/latest/topics/releases/2019.2.3.html#security-fix
+    - https://github.com/saltstack/salt/commits/master
+affected:
+    - name: salt
+      version:
+        - "<=2019.2.2"
+      fixedin:
+        - ">=2019.2.3"
