@@ -1,0 +1,15 @@
+---
+cve: 2020-7052
+title: CVE in react-gateway
+description: >
+    CODESYS Control V3, Gateway V3, and HMI V3 before 3.5.15.30 allow uncontrolled memory allocation which can result in a remote denial of service condition.
+cvss_v2: 4.0
+references:
+    - https://customers.codesys.com/index.php?eID=dumpFile&t=f&f=12977&token=33f948eed0c2fd69d238d9515779be337ef7592d&download=
+    - https://www.tenable.com/security/research/tra-2020-04
+affected:
+    - name: react-gateway
+      version:
+        - "<=3.0.0"
+      fixedin:
+        []
