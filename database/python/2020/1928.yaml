@@ -1,0 +1,15 @@
+---
+cve: 2020-1928
+title: CVE in apache-airflow
+description: >
+    An information disclosure vulnerability was found in Apache NiFi 1.10.0. The sensitive parameter parser would log parsed values for debugging purposes. This would expose literal values entered in a sensitive property when no parameter was present.
+cvss_v2: 5.0
+references:
+    - https://nifi.apache.org/security.html#CVE-2020-1928
+affected:
+    - name: apache-airflow
+      version:
+        - "<=1.10.0,1.10.0"
+      fixedin:
+        - ">=1.10.1b1"
+        - "<=1.9.0,1.8.1"
