@@ -1,6 +1,6 @@
 ---
 cve: 2020-7940
-title: CVE in plone
+title: CVE in Products.CMFPlone
 description: >
     Missing password strength checks on some forms in Plone 4.3 through 5.2.0 allow users to set weak passwords, leading to easier cracking.
 cvss_v2: 5.0
@@ -10,9 +10,8 @@ references:
     - https://plone.org/security/hotfix/20200121/password-strength-checks-were-not-always-checked
     - https://www.openwall.com/lists/oss-security/2020/01/22/1
 affected:
-    - name: plone
+    - name: Products.CMFPlone
       version:
-        - "<=5.2.0,4.3a1"
+        - "<=5.2.1"
       fixedin:
-        - ">=5.2.1"
-        - "<=4.2.7,3.2a1"
+        []
