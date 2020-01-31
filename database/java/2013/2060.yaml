@@ -1,0 +1,18 @@
+---
+cve: 2013-2060
+title: CVE in io.openshift:openshift-test-utils
+description: >
+    The download_from_url function in OpenShift Origin allows remote attackers to execute arbitrary commands via shell metacharacters in the URL of a request to download a cart.
+cvss_v2: 10.0
+references:
+    - http://www.openwall.com/lists/oss-security/2013/05/07/1
+    - http://www.securityfocus.com/bid/59687
+    - https://bugzilla.redhat.com/show_bug.cgi?id=960363
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/84075
+affected:
+    - groupId: io.openshift
+      artifactId: openshift-test-utils
+      version:
+        - "<=1"
+      fixedin:
+        - ">=2"
