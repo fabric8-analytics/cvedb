@@ -10,6 +10,6 @@ references:
 affected:
     - name: salt
       version:
-        - "<=2019.2.0"
+        - "<=2019.2.2"
       fixedin:
-        - ">=2019.2.1"
+        - ">=2019.2.3"
