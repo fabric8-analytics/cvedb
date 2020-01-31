@@ -1,0 +1,18 @@
+---
+cve: 2014-9720
+title: CVE in tornado
+description: >
+    Tornado before 3.2.2 sends arbitrary responses that contain a fixed CSRF token and may be sent with HTTP compression, which makes it easier for remote attackers to conduct a BREACH attack and determine this token via a series of crafted requests.
+cvss_v2: 4.3
+references:
+    - http://openwall.com/lists/oss-security/2015/05/19/4
+    - http://www.tornadoweb.org/en/stable/releases/v3.2.2.html
+    - https://bugzilla.novell.com/show_bug.cgi?id=930362
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1222816
+    - https://github.com/tornadoweb/tornado/commit/1c36307463b1e8affae100bf9386948e6c1b2308
+affected:
+    - name: tornado
+      version:
+        - "<=3.2.1"
+      fixedin:
+        - ">=3.2.2"
