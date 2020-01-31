@@ -1,0 +1,15 @@
+---
+cve: 2017-1000498
+title: CVE in svg-sprite
+description: >
+    AndroidSVG version 1.2.2 is vulnerable to XXE attacks in the SVG parsing component resulting in denial of service and possibly remote code execution
+cvss_v2: 6.8
+references:
+    - https://github.com/BigBadaboom/androidsvg/issues/122
+affected:
+    - name: svg-sprite
+      version:
+        - "<=1.2.2,1.2.2"
+      fixedin:
+        - ">=1.2.3"
+        - "<=1.2.1,0.0.1"
