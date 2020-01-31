@@ -1,0 +1,19 @@
+---
+cve: 2015-5334
+title: CVE in io.xream.x7:x7-reyc
+description: >
+    Off-by-one error in the OBJ_obj2txt function in LibreSSL before 2.3.1 allows remote attackers to cause a denial of service (program crash) or possible execute arbitrary code via a crafted X.509 certificate, which triggers a stack-based buffer overflow. Note: this vulnerability exists because of an incorrect fix for CVE-2014-3508.
+cvss_v2: 7.5
+references:
+    - http://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-2.3.1-relnotes.txt
+    - http://lists.opensuse.org/opensuse-updates/2015-10/msg00050.html
+    - http://packetstormsecurity.com/files/133998/Qualys-Security-Advisory-LibreSSL-Leak-Overflow.html
+    - http://seclists.org/fulldisclosure/2015/Oct/75
+    - http://www.securityfocus.com/archive/1/archive/1/536692/100/0/threaded
+affected:
+    - groupId: io.xream.x7
+      artifactId: x7-reyc
+      version:
+        - "<=2.3.0.RELEASE"
+      fixedin:
+        - ">=2.3.1.RELEASE"
