@@ -1,6 +1,6 @@
 ---
 cve: 2020-7941
-title: CVE in plone
+title: CVE in plone.app.contenttypes
 description: >
     A privilege escalation issue in plone.app.contenttypes in Plone 4.3 through 5.2.1 allows users to PUT (overwrite) some content without needing write permission.
 cvss_v2: 7.5
@@ -10,8 +10,8 @@ references:
     - https://plone.org/security/hotfix/20200121/privilege-escalation-for-overwriting-content
     - https://www.openwall.com/lists/oss-security/2020/01/22/1
 affected:
-    - name: plone
+    - name: plone.app.contenttypes
       version:
-        - "<=5.2.1,4.3a1"
+        - "<=2.1.5"
       fixedin:
-        - "<=4.2.7,3.2a1"
+        []
