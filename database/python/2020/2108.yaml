@@ -1,0 +1,15 @@
+---
+cve: 2020-2108
+title: CVE in jenkins-job-builder
+description: >
+    Jenkins WebSphere Deployer Plugin 1.6.1 and earlier does not configure the XML parser to prevent XXE attacks which can be exploited by a user with Job/Configure permissions.
+cvss_v2: 6.5
+references:
+    - http://www.openwall.com/lists/oss-security/2020/01/29/1
+    - https://jenkins.io/security/advisory/2020-01-29/#SECURITY-1719
+affected:
+    - name: jenkins-job-builder
+      version:
+        - "<=1.6.1"
+      fixedin:
+        - ">=1.6.2"
