@@ -1,0 +1,16 @@
+---
+cve: 2020-1928
+title: CVE in org.apache.nifi:nifi-framework-nar
+description: >
+    An information disclosure vulnerability was found in Apache NiFi 1.10.0. The sensitive parameter parser would log parsed values for debugging purposes. This would expose literal values entered in a sensitive property when no parameter was present.
+cvss_v2: 5.0
+references:
+    - https://nifi.apache.org/security.html#CVE-2020-1928
+affected:
+    - groupId: org.apache.nifi
+      artifactId: nifi-framework-nar
+      version:
+        - "<=1.10.0,1.10.0"
+      fixedin:
+        - ">=1.11.0"
+        - "<=1.9.2,0.0.1-incubating"
