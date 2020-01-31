@@ -1,6 +1,6 @@
 ---
 cve: 2020-7937
-title: CVE in bobtemplates-plone
+title: CVE in plone.app.content and plone.app.layout and Products.CMFPlone
 description: >
     An XSS issue in the title field in Plone 5.0 through 5.2.1 allows users with a certain privilege level to insert JavaScript that will be executed when other users access the site.
 cvss_v2: 3.5
@@ -10,8 +10,18 @@ references:
     - https://plone.org/security/hotfix/20200121/xss-in-the-title-field-on-plone-5-0-and-higher
     - https://www.openwall.com/lists/oss-security/2020/01/22/1
 affected:
-    - name: bobtemplates-plone
+    - name: plone.app.content
       version:
-        - "<=5.0.4,5.0.0"
+        - "<=3.7.4"
       fixedin:
-        - "<=4.1.4,0.2"
+        - "<=3.8.0"
+    - name: plone.app.layout
+      version:
+        - "<=3.4.0"
+      fixedin:
+        []
+    - name: Products.CMFPlone
+      version:
+        - "<=5.2.1"
+      fixedin:
+        []   
