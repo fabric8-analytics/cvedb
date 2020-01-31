@@ -1,0 +1,15 @@
+---
+cve: 2020-7999
+title: CVE in download-file-sync
+description: >
+    The Intellian Aptus application 1.0.2 for Android has hardcoded values for DOWNLOAD_API_KEY and FILE_DOWNLOAD_API_KEY.
+cvss_v2: 7.5
+references:
+    - https://sku11army.blogspot.com/2020/01/intellian-multiple-vulnerabilities-in.html
+affected:
+    - name: download-file-sync
+      version:
+        - "<=1.0.2,1.0.2"
+      fixedin:
+        - ">=1.0.3"
+        - "<=1.0.1,1.0.0"
