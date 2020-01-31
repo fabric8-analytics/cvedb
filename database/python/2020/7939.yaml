@@ -1,6 +1,6 @@
 ---
 cve: 2020-7939
-title: CVE in bobtemplates-plone
+title: CVE in Products.Pythonscripts and DocumentTemplate
 description: >
     SQL Injection in DTML or in connection objects in Plone 4.0 through 5.2.1 allows users to perform unwanted SQL queries. (This is a problem in Zope.)
 cvss_v2: 6.5
@@ -10,8 +10,13 @@ references:
     - https://plone.org/security/hotfix/20200121/sql-injection-in-dtml-or-in-connection-objects
     - https://www.openwall.com/lists/oss-security/2020/01/22/1
 affected:
-    - name: bobtemplates-plone
+    - name: Products.Pythonscripts
       version:
-        - "<=5.0.4,4.0"
+        - "<=4.9"
       fixedin:
-        - "<=3.6.0,0.2"
+        []
+    - name: DocumentTemplate
+      version:
+        - "<=3.1b2"
+      fixedin:
+        []    
