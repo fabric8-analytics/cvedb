@@ -1,0 +1,16 @@
+---
+cve: 2019-4679
+title: CVE in content
+description: >
+    IBM Content Navigator 3.0CD could allow an authenticated user to gain information about the hosting operating system and version that could be used in further attacks against the system. IBM X-Force ID: 171515.
+cvss_v2: 4.0
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/171515
+    - https://www.ibm.com/support/pages/node/1283458
+affected:
+    - name: content
+      version:
+        - "<=3.0.0,3.0.0"
+      fixedin:
+        - ">=3.0.1"
+        - "<=2.0.0,1.0.0"
