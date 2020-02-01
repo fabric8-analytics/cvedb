@@ -1,0 +1,14 @@
+---
+cve: 2019-3697
+title: CVE in symbolic
+description: >
+    UNIX Symbolic Link (Symlink) Following vulnerability in the packaging of gnump3d in openSUSE Leap 15.1 allows local attackers to escalate from user gnump3d to root. This issue affects: openSUSE Leap 15.1 gnump3d version 3.0-lp151.2.1 and prior versions.
+cvss_v2: 7.2
+references:
+    - https://bugzilla.suse.com/show_bug.cgi?id=1154229
+affected:
+    - name: symbolic
+      version:
+        - "<=3.0.0"
+      fixedin:
+        - ">=3.0.1"
