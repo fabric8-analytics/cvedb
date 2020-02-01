@@ -1,0 +1,15 @@
+---
+cve: 2013-3321
+title: CVE in major-system
+description: >
+    NetApp OnCommand System Manager 2.1 and earlier allows remote attackers to include arbitrary files through specially crafted requests to the "diagnostic" page using the SnapMirror log path parameter.
+cvss_v2: 6.0
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/84062
+    - https://www.securityfocus.com/archive/1/526552
+affected:
+    - name: major-system
+      version:
+        - "<=2.1.0"
+      fixedin:
+        []
