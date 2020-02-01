@@ -1,0 +1,15 @@
+---
+cve: 2013-4462
+title: CVE in portable-uuid
+description: >
+    WordPress Portable phpMyAdmin Plugin has an authentication bypass vulnerability
+cvss_v2: 6.4
+references:
+    - http://www.openwall.com/lists/oss-security/2013/10/24/1
+    - http://www.securityfocus.com/bid/63249
+affected:
+    - name: portable-uuid
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
