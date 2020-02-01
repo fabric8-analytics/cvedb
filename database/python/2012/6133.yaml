@@ -1,0 +1,18 @@
+---
+cve: 2012-6133
+title: CVE in roundup
+description: >
+    Multiple cross-site scripting (XSS) vulnerabilities in Roundup before 1.4.20 allow remote attackers to inject arbitrary web script or HTML via the (1) @ok_message or (2) @error_message parameter to issue*.
+cvss_v2: 4.3
+references:
+    - http://issues.roundup-tracker.org/issue2550724
+    - http://www.openwall.com/lists/oss-security/2012/11/10/2
+    - http://www.openwall.com/lists/oss-security/2013/02/13/8
+    - https://bugzilla.redhat.com/show_bug.cgi?id=722672
+    - https://pypi.python.org/pypi/roundup/1.4.20
+affected:
+    - name: roundup
+      version:
+        - "<=1.4.19"
+      fixedin:
+        - ">=1.4.20"
