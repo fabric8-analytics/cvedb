@@ -1,0 +1,15 @@
+---
+cve: 2019-14888
+title: CVE in io.undertow:undertow-websockets-jsr
+description: >
+    A vulnerability was found in the Undertow HTTP server in versions before 2.0.28.SP1 when listening on HTTPS. An attacker can target the HTTPS port to carry out a Denial Of Service (DOS) to make the service unavailable on SSL.
+cvss_v2: 5.0
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-14888
+affected:
+    - groupId: io.undertow
+      artifactId: undertow-websockets-jsr
+      version:
+        - "<=2.0.28.Final"
+      fixedin:
+        - ">=2.0.29.Final"
