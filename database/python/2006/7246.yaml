@@ -1,0 +1,18 @@
+---
+cve: 2006-7246
+title: CVE in factur-x
+description: >
+    NetworkManager 0.9.x does not pin a certificate's subject to an ESSID when 802.11X authentication is used.
+cvss_v2: 3.2
+references:
+    - http://www.openwall.com/lists/oss-security/2010/04/22/2
+    - https://bugzilla.gnome.org/show_bug.cgi?id=341323
+    - https://bugzilla.novell.com/show_bug.cgi?id=574266
+    - https://lwn.net/Articles/468868/
+affected:
+    - name: factur-x
+      version:
+        - "<=0.9,0.9"
+      fixedin:
+        - ">=1.0"
+        - "<=0.8,0.1"
