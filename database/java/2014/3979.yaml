@@ -1,0 +1,17 @@
+---
+cve: 2014-3979
+title: CVE in com.ip2proxy:ip2proxy-java
+description: >
+    Bytemark Symbiosis allows remote attackers to cause a denial of service via a crafted username, which triggers the firewall to blacklist the IP.
+cvss_v2: 5.0
+references:
+    - http://www.openwall.com/lists/oss-security/2014/06/06/10
+    - http://www.openwall.com/lists/oss-security/2014/06/11/2
+    - http://www.securityfocus.com/bid/67948
+affected:
+    - groupId: com.ip2proxy
+      artifactId: ip2proxy-java
+      version:
+        []
+      fixedin:
+        - ">=1.0.1"
