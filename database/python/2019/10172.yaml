@@ -1,0 +1,16 @@
+---
+cve: 2019-10172
+title: CVE in edx-enterprise
+description: >
+    A flaw was found in org.codehaus.jackson:jackson-mapper-asl:1.9.x libraries. XML external entity vulnerabilities similar CVE-2016-3720 also affects codehaus jackson-mapper-asl libraries but in different classes.
+cvss_v2: 5.0
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-10172
+    - https://lists.debian.org/debian-lts-announce/2020/01/msg00037.html
+affected:
+    - name: edx-enterprise
+      version:
+        - "<=1.9.12,1.9.0"
+      fixedin:
+        - ">=1.10.0"
+        - "<=1.8.9,0.1.0"
