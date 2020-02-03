@@ -1,0 +1,22 @@
+---
+cve: 2019-14907
+title: CVE in org.antframework.manager:manager-biz
+description: >
+    All samba versions 4.9.x before 4.9.18, 4.10.x before 4.10.12 and 4.11.x before 4.11.5 have an issue where if it is set with "log level = 3" (or above) then the string obtained from the client, after a failed character conversion, is printed. Such strings can be provided during the NTLMSSP authentication exchange. In the Samba AD DC in particular, this may cause a long-lived process(such as the RPC server) to terminate. (In the file server case, the most likely target, smbd, operates as process-per-client and so a crash there is harmless).
+cvss_v2: 4.3
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2020-01/msg00055.html
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-14907
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GQ6U65I2K23YJC4FESW477WL55TU3PPT/
+    - https://security.netapp.com/advisory/ntap-20200122-0001/
+    - https://usn.ubuntu.com/4244-1/
+    - https://www.samba.org/samba/security/CVE-2019-14907.html
+    - https://www.synology.com/security/advisory/Synology_SA_20_01
+affected:
+    - groupId: org.antframework.manager
+      artifactId: manager-biz
+      version:
+        - "<=1.2.0.RELEASE,1.2.0.RELEASE"
+      fixedin:
+        - ">=1.3.0.RELEASE"
+        - "<=1.1.0.RELEASE,1.1.0.RELEASE"
