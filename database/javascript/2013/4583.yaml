@@ -1,0 +1,18 @@
+---
+cve: 2013-4583
+title: CVE in gitlab
+description: >
+    The parse_cmd function in lib/gitlab_shell.rb in GitLab 5.0 before 5.4.2, Community Edition before 6.2.4, and Enterprise Edition before 6.2.1 and gitlab-shell before 1.7.8 allows remote authenticated users to gain privileges and clone arbitrary repositories.
+cvss_v2: 6.5
+references:
+    - http://www.openwall.com/lists/oss-security/2013/11/15/4
+    - https://www.gitlab.com/2013/11/14/multiple-critical-vulnerabilities-in-gitlab/
+    - https://www.openwall.com/lists/oss-security/2013/11/18/4
+affected:
+    - name: gitlab
+      version:
+        - "<=1.7.1"
+        - "<=6.2.0,5.0.0-rc.1"
+      fixedin:
+        - ">=6.3.0"
+        - "<=4.5.1,1.8.0"
