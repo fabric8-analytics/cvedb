@@ -1,0 +1,21 @@
+---
+cve: 2013-0294
+title: CVE in pyrad
+description: >
+    packet.py in pyrad before 2.1 uses weak random numbers to generate RADIUS authenticators and hash passwords, which makes it easier for remote attackers to obtain sensitive information via a brute force attack.
+cvss_v2: 4.3
+references:
+    - http://lists.fedoraproject.org/pipermail/package-announce/2013-September/115677.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2013-September/115705.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2013-September/116567.html
+    - http://www.openwall.com/lists/oss-security/2013/02/15/13
+    - http://www.securityfocus.com/bid/57984
+    - https://bugzilla.redhat.com/show_bug.cgi?id=911682
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/82133
+    - https://github.com/wichert/pyrad/commit/38f74b36814ca5b1a27d9898141126af4953bee5
+affected:
+    - name: pyrad
+      version:
+        - "<=2.0"
+      fixedin:
+        - ">=2.1"
