@@ -1,0 +1,18 @@
+---
+cve: 2013-4241
+title: CVE in @berlitz/testimonials
+description: >
+    Multiple cross-site scripting (XSS) vulnerabilities in the HMS Testimonials plugin before 2.0.11 for WordPress allow remote attackers to inject arbitrary web script or HTML via the (1) name, (2) image, (3) url, or (4) testimonial parameter to the Testimonial form (hms-testimonials-addnew page); (5) date_format parameter to the Settings - Default form (hms-testimonials-settings page); (6) name parameter in a Save action to the Settings - Custom Fields form (hms-testimonials-settings-fields page); or (7) name parameter in a Save action to the Settings - Template form (hms-testimonials-templates-new page).
+cvss_v2: 4.3
+references:
+    - http://seclists.org/fulldisclosure/2013/Aug/96
+    - http://seclists.org/fulldisclosure/2013/Aug/98
+    - http://seclists.org/oss-sec/2013/q3/345
+    - http://seclists.org/oss-sec/2013/q3/361
+    - https://wordpress.org/plugins/hms-testimonials/#developers
+affected:
+    - name: @berlitz/testimonials
+      version:
+        - "<=2.0.10"
+      fixedin:
+        - ">=2.0.11"
