@@ -1,0 +1,19 @@
+---
+cve: 2015-5290
+title: CVE in org.apache.karaf.service:org.apache.karaf.service.command
+description: >
+    A Denial of Service vulnerability exists in ircd-ratbox 3.0.9 in the MONITOR Command Handler.
+cvss_v2: 5.0
+references:
+    - http://www.openwall.com/lists/oss-security/2015/10/11/1
+    - http://www.openwall.com/lists/oss-security/2015/10/12/1
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1271113
+    - https://github.com/skyhighwings/CVE-2015-5290
+affected:
+    - groupId: org.apache.karaf.service
+      artifactId: org.apache.karaf.service.command
+      version:
+        - "<=3.0.9,3.0.9"
+      fixedin:
+        - ">=3.0.10"
+        - "<=3.0.8,3.0.0.RC1"
