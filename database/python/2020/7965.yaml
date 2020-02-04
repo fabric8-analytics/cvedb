@@ -9,6 +9,9 @@ references:
 affected:
     - name: webargs
       version:
-        - "<=5.5.1"
+        - "<=5.5.2"
+        - "==6.0.0b1"
+        - "==6.0.0b2"
+        - "==6.0.0b3"
       fixedin:
-        - ">=5.5.2"
+        - ">=5.5.3"
