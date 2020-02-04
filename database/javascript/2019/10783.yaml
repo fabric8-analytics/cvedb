@@ -1,14 +1,14 @@
 ---
 cve: 2019-10783
-title: CVE in sql-injection
+title: CVE in lsof
 description: >
     All versions including 0.0.4 of lsof npm module are vulnerable to Command Injection. Every exported method used by the package uses the exec function to parse user input.
 cvss_v2: 7.5
 references:
     - https://snyk.io/vuln/SNYK-JS-LSOF-543632
 affected:
-    - name: sql-injection
+    - name: lsof
       version:
-        - "<=0.0.4"
+        - "<=0.1.0"
       fixedin:
-        - ">=0.0.5"
+        []
