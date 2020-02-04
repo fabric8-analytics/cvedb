@@ -1,0 +1,17 @@
+---
+cve: 2019-13000
+title: CVE in com.fatboyindustrial.crowd-control:crowd-control
+description: >
+    Eclair through 0.3 allows attackers to trigger loss of funds because of Incorrect Access Control. NOTE: README.md states "it is beta-quality software and don't put too much money in it."
+cvss_v2: 5.0
+references:
+    - https://github.com/ACINQ/eclair/commits/master
+    - https://github.com/ACINQ/eclair/releases
+    - https://lists.linuxfoundation.org/pipermail/lightning-dev/2019-September/002174.html
+affected:
+    - groupId: com.fatboyindustrial.crowd-control
+      artifactId: crowd-control
+      version:
+        - "<=0.3.0"
+      fixedin:
+        []
