@@ -9,6 +9,6 @@ references:
 affected:
     - name: simditor
       version:
-        - ">=2.3.18"
+        - "<=2.3.21"
       fixedin:
-        - ">=2.3.6"
+        - ">=2.3.22"
