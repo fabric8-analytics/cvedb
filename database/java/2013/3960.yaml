@@ -1,0 +1,16 @@
+---
+cve: 2013-3960
+title: CVE in org.antframework.manager:manager-biz
+description: >
+    Easytime Studio Easy File Manager 1.1 has a HTTP request security bypass
+cvss_v2: 8.7
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/89171
+    - https://www.trustwave.com/en-us/resources/security-resources/security-advisories/?fid=18896
+affected:
+    - groupId: org.antframework.manager
+      artifactId: manager-biz
+      version:
+        - "<=1.1.0.RELEASE"
+      fixedin:
+        - ">=1.2.0.RELEASE"
