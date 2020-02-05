@@ -1,0 +1,15 @@
+---
+cve: 2014-7302
+title: CVE in tap-tempo
+description: >
+    SGI Tempo, as used on SGI ICE-X systems, uses weak permissions for certain files, which allows local users to change the permissions of arbitrary files by executing /opt/sgi/sgimc/bin/vx.
+cvss_v2: 7.2
+references:
+    - http://packetstormsecurity.com/files/129465/SGI-Tempo-vx-Setuid-Privilege-Escalation.html
+    - https://labs.mwrinfosecurity.com/advisories/2014/12/02/sgi-suid-root-privilege-escalation/
+affected:
+    - name: tap-tempo
+      version:
+        []
+      fixedin:
+        - ">=0.0.0"
