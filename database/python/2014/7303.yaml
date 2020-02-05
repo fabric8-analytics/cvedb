@@ -1,0 +1,15 @@
+---
+cve: 2014-7303
+title: CVE in ice-adverlet
+description: >
+    SGI Tempo, as used on SGI ICE-X systems, uses weak permissions for certain files, which allows local users to obtain password hashes and possibly other unspecified sensitive information by reading etc/dbdump.db.
+cvss_v2: 7.2
+references:
+    - https://labs.f-secure.com/advisories/sgi-tempo-system-database-exposure/
+    - https://packetstormsecurity.com/files/129467/SGI-Tempo-Database-Exposure.html
+affected:
+    - name: ice-adverlet
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
