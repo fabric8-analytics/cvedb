@@ -1,0 +1,15 @@
+---
+cve: 2014-7301
+title: CVE in tap-tempo
+description: >
+    SGI Tempo, as used on SGI ICE-X systems, uses weak permissions for certain files, which allows local users to obtain password hashes and possibly other unspecified sensitive information by reading /etc/odapw.
+cvss_v2: 4.6
+references:
+    - https://labs.f-secure.com/advisories/sgi-tempo-system-database-password-exposure/
+    - https://packetstormsecurity.com/files/129466/SGI-Tempo-Database-Password-Disclosure.html
+affected:
+    - name: tap-tempo
+      version:
+        []
+      fixedin:
+        - ">=0.0.0"
