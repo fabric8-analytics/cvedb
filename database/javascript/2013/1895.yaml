@@ -1,0 +1,18 @@
+---
+cve: 2013-1895
+title: CVE in python-shell
+description: >
+    The py-bcrypt module before 0.3 for Python does not properly handle concurrent memory access, which allows attackers to bypass authentication via multiple authentication requests, which trigger the password hash to be overwritten.
+cvss_v2: 5.0
+references:
+    - http://lists.fedoraproject.org/pipermail/package-announce/2013-April/101382.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2013-April/101387.html
+    - http://www.openwall.com/lists/oss-security/2013/03/26/2
+    - http://www.securityfocus.com/bid/58702
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/83039
+affected:
+    - name: python-shell
+      version:
+        - "<=0.2.0"
+      fixedin:
+        - ">=0.3.0"
