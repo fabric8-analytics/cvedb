@@ -1,0 +1,16 @@
+---
+cve: 2014-2843
+title: CVE in backports-html
+description: >
+    Cross-site scripting (XSS) vulnerability in infoware MapSuite MapAPI 1.0.x before 1.0.36 and 1.1.x before 1.1.49 allows remote attackers to inject arbitrary web script or HTML via unspecified vectors.
+cvss_v2: 4.3
+references:
+    - http://iw.mapandroute.de/MapAPI-1.0/releaseHistory.jsp
+    - http://iw.mapandroute.de/MapAPI-1.1/releaseHistory.jsp
+    - http://www.christian-schneider.net/advisories/CVE-2014-2843.txt
+affected:
+    - name: backports-html
+      version:
+        - "<=1.1.0"
+      fixedin:
+        []
