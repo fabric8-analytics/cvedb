@@ -1,0 +1,16 @@
+---
+cve: 2019-5636
+title: CVE in obj-udp
+description: >
+    When a Beckhoff TwinCAT Runtime receives a malformed UDP packet, the ADS Discovery Service shuts down. Note that the TwinCAT devices are still performing as normal. This issue affects TwinCAT 2 version 2304 (and prior) and TwinCAT 3.1 version 4204.0 (and prior).
+cvss_v2: 5.0
+references:
+    - https://blog.rapid7.com/2019/10/08/r7-2019-32-denial-of-service-vulnerabilities-in-beckhoff-twincat-plc-environment-fixed/
+    - https://download.beckhoff.com/download/Document/product-security/Advisories/advisory-2019-004.pdf
+affected:
+    - name: obj-udp
+      version:
+        - "<=2,2"
+      fixedin:
+        - ">=3"
+        - "<=1,1"
