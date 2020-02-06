@@ -1,0 +1,15 @@
+---
+cve: 2019-20174
+title: CVE in auth0-lock
+description: >
+    Auth0 Lock before 11.21.0 allows XSS when additionalSignUpFields is used with an untrusted placeholder.
+cvss_v2: 4.3
+references:
+    - https://auth0.com/docs/security/bulletins/cve-2019-20174
+    - https://github.com/auth0/lock/releases/tag/v11.21.0
+affected:
+    - name: auth0-lock
+      version:
+        - "<=11.20.4"
+      fixedin:
+        - ">=11.21.0"
