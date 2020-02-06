@@ -1,0 +1,18 @@
+---
+cve: 2019-1353
+title: CVE in com.madgag.scala-git:scala-git-test_2.11
+description: >
+    An issue was found in Git before v2.24.1, v2.23.1, v2.22.2, v2.21.1, v2.20.2, v2.19.3, v2.18.2, v2.17.3, v2.16.6, v2.15.4, and v2.14.6. When running Git in the Windows Subsystem for Linux (also known as "WSL") while accessing a working directory on a regular Windows drive, none of the NTFS protections were active.
+cvss_v2: 7.5
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2020-01/msg00056.html
+    - https://lore.kernel.org/git/xmqqr21cqcn9.fsf@gitster-ct.c.googlers.com/T/#u
+    - https://public-inbox.org/git/xmqqr21cqcn9.fsf@gitster-ct.c.googlers.com/
+affected:
+    - groupId: com.madgag.scala-git
+      artifactId: scala-git-test_2.11
+      version:
+        - "<=2.14,2.14"
+      fixedin:
+        - ">=3.0"
+        - "<=2.9,2.0"
