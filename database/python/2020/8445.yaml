@@ -1,0 +1,16 @@
+---
+cve: 2020-8445
+title: CVE in os-brick
+description: >
+    In OSSEC-HIDS 2.7 through 3.5.0, the OS_CleanMSG function in ossec-analysisd doesn't remove or encode terminal control characters or newlines from processed log messages. In many cases, those characters are later logged. Because newlines (\n) are permitted in messages processed by ossec-analysisd, it may be possible to inject nested events into the ossec log. Use of terminal control characters may allow obfuscating events or executing commands when viewed through vulnerable terminal emulators. This may be an unauthenticated remote attack for certain types and origins of logged data.
+cvss_v2: 10.0
+references:
+    - https://github.com/ossec/ossec-hids/issues/1814
+    - https://github.com/ossec/ossec-hids/issues/1821
+    - https://www.ossec.net/
+affected:
+    - name: os-brick
+      version:
+        - "<=2.11.0,2.7.0"
+      fixedin:
+        - "<=2.6.2,0.0.0"
