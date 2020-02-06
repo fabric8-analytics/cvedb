@@ -1,0 +1,16 @@
+---
+cve: 2020-7226
+title: CVE in org.cryptacular:cryptacular
+description: >
+    CiphertextHeader.java in Cryptacular 1.2.3, as used in Apereo CAS and other products, allows attackers to trigger excessive memory allocation during a decode operation, because the nonce array length associated with "new byte" may depend on untrusted input within the header of encoded data.
+cvss_v2: 5.0
+references:
+    - https://github.com/vt-middleware/cryptacular/blob/master/src/main/java/org/cryptacular/CiphertextHeader.java#L153
+    - https://github.com/vt-middleware/cryptacular/issues/52
+affected:
+    - groupId: org.cryptacular
+      artifactId: cryptacular
+      version:
+        - "<=1.2.3,1.2.3"
+      fixedin:
+        - "<=1.2.2,1.0"
