@@ -1,0 +1,17 @@
+---
+cve: 2011-4937
+title: CVE in joomla-cli
+description: >
+    Joomla! 1.7.1 has core information disclosure due to inadequate error checking.
+cvss_v2: 5.0
+references:
+    - http://www.openwall.com/lists/oss-security/2012/03/02/1
+    - http://www.openwall.com/lists/oss-security/2012/03/02/4
+    - http://www.openwall.com/lists/oss-security/2012/03/28/6
+    - https://developer.joomla.org/security/news/371-20111002-core-information-disclosure.html
+affected:
+    - name: joomla-cli
+      version:
+        - "<=1.7.1"
+      fixedin:
+        - ">=1.7.2"
