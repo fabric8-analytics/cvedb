@@ -1,0 +1,17 @@
+---
+cve: 2014-8328
+title: CVE in org.rapidpm.dynamic-cdi:rapidpm-dynamic-cdi-bom
+description: >
+    The default configuration in the Dynamic Content Elements (dce) extension before 0.11.5 for TYPO3 allows remote attackers to obtain sensitive installation environment information by reading the update check request.
+cvss_v2: 5.0
+references:
+    - http://typo3.org/extensions/repository/view/dce
+    - http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2014-015/
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/97673
+affected:
+    - groupId: org.rapidpm.dynamic-cdi
+      artifactId: rapidpm-dynamic-cdi-bom
+      version:
+        - "<=0.9.1"
+      fixedin:
+        - ">=1.0.0"
