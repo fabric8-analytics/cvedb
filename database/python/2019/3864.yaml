@@ -1,0 +1,14 @@
+---
+cve: 2019-3864
+title: CVE in quay-client
+description: >
+    A vulnerability was discovered in all quay-2 versions before quay-3.0.0, in the Quay web GUI where POST requests include a specific parameter which is used as a CSRF token. The token is not refreshed for every request or when a user logged out and in again. An attacker could use a leaked token to gain access to the system using the user's account.
+cvss_v2: 6.8
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-3864
+affected:
+    - name: quay-client
+      version:
+        - "<=2"
+      fixedin:
+        - ">=3"
