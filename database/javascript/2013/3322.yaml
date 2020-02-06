@@ -1,0 +1,15 @@
+---
+cve: 2013-3322
+title: CVE in halt
+description: >
+    NetApp OnCommand System Manager 2.1 and earlier allows remote attackers to inject arbitrary commands in the Halt/Reboot interface.
+cvss_v2: 9.0
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/84063
+    - https://www.securityfocus.com/archive/1/526552
+affected:
+    - name: halt
+      version:
+        - "<=2.1.0"
+      fixedin:
+        - ">=2.2.0"
