@@ -1,0 +1,17 @@
+---
+cve: 2015-3612
+title: CVE in complex-scripting
+description: >
+    A Cross-site Scripting (XSS) vulnerability exists in FortiManager 5.2.1 and earlier and 5.0.10 and earlier via an unspecified parameter in the FortiWeb auto update service page.
+cvss_v2: 3.5
+references:
+    - http://www.securityfocus.com/bid/74444
+    - http://www.securitytracker.com/id/1032188
+    - https://fortiguard.com/psirt/FG-IR-15-011
+affected:
+    - name: complex-scripting
+      version:
+        - "<=5.0.1,5.0.0"
+      fixedin:
+        - ">=6.0.1"
+        - "<=4.0.0,0.0.1"
