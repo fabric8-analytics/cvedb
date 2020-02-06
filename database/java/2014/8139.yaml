@@ -1,0 +1,18 @@
+---
+cve: 2014-8139
+title: CVE in info.archinnov:integration-test-3_2
+description: >
+    Heap-based buffer overflow in the CRC32 verification in Info-ZIP UnZip 6.0 and earlier allows remote attackers to execute arbitrary code via a crafted zip file in the -t command argument to the unzip command.
+cvss_v2: 6.8
+references:
+    - http://www.ocert.org/advisories/ocert-2014-011.html
+    - http://www.securitytracker.com/id/1031433
+    - https://access.redhat.com/errata/RHSA-2015:0700
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1174844
+affected:
+    - groupId: info.archinnov
+      artifactId: integration-test-3_2
+      version:
+        - "<=6.0.0"
+      fixedin:
+        - ">=6.0.1"
