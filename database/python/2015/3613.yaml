@@ -1,0 +1,17 @@
+---
+cve: 2015-3613
+title: CVE in freezer-web-ui
+description: >
+    A vulnerability exists in in FortiManager 5.2.1 and earlier and 5.0.10 and earlier in the WebUI FTP backup page
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/74444
+    - http://www.securitytracker.com/id/1032188
+    - https://fortiguard.com/psirt/FG-IR-15-011
+affected:
+    - name: freezer-web-ui
+      version:
+        - "<=5.0.1,5.0.0.0b1"
+      fixedin:
+        - ">=6.0.0.0b2"
+        - "<=4.0.1,0.0.1.dev19"
