@@ -1,0 +1,20 @@
+---
+cve: 2014-8328
+title: CVE in export-elements
+description: >
+    The default configuration in the Dynamic Content Elements (dce) extension before 0.11.5 for TYPO3 allows remote attackers to obtain sensitive installation environment information by reading the update check request.
+cvss_v2: 5.0
+references:
+    - http://typo3.org/extensions/repository/view/dce
+    - http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2014-015/
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/97673
+affected:
+    - name: export-elements
+      version:
+        - "<=0.7.5"
+        - "<=0.10.2,0.8.1"
+        - "<=0.11.1,0.11.0"
+      fixedin:
+        - ">=0.12.0"
+        - "<=0.10.6,0.10.3"
+        - "<=0.7.6,0.7.6"
