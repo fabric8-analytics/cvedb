@@ -1,14 +1,14 @@
 ---
 cve: 2020-8123
-title: CVE in strapi-bookshelf
+title: CVE in strapi
 description: >
     A denial of service exists in strapi v3.0.0-beta.18.3 and earlier that can be abused in the admin console using admin rights can lead to arbitrary restart of the application.
 cvss_v2: 4.0
 references:
     - https://hackerone.com/reports/768574
 affected:
-    - name: strapi-bookshelf
+    - name: strapi
       version:
-        - "<=3.0.0-alpha.12.7.1"
+        - "<=3.0.0-beta.18.3"
       fixedin:
-        []
+        - ">=3.0.0-beta.18.4"
