@@ -1,6 +1,6 @@
 ---
 cve: 2020-5232
-title: CVE in nas-name-service
+title: CVE in @ensdomains/ens
 description: >
     A user who owns an ENS domain can set a trapdoor, allowing them to transfer ownership to another user, and later regain ownership without the new owners consent or awareness. A new ENS deployment is being rolled out that fixes this vulnerability in the ENS registry.
 cvss_v2: 4.9
@@ -8,8 +8,8 @@ references:
     - https://github.com/ensdomains/ens/commit/36e10e71fcddcade88646821e0a57cc6c19e1ecf
     - https://github.com/ensdomains/ens/security/advisories/GHSA-8f9f-pc5v-9r5h
 affected:
-    - name: nas-name-service
+    - name: @ensdomains/ens
       version:
-        - "<=0.1.0"
+        - "<=0.3.11"
       fixedin:
-        - ">=0.1.1"
+        - ">=0.4.0"
