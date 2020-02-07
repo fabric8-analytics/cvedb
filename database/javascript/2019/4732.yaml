@@ -1,0 +1,20 @@
+---
+cve: 2019-4732
+title: CVE in generator-ibm-java-liberty
+description: >
+    IBM SDK, Java Technology Edition Version 7.0.0.0 through 7.0.10.55, 7.1.0.0 through 7.1.4.55, and 8.0.0.0 through 8.0.6.0 could allow a local authenticated attacker to execute arbitrary code on the system, caused by DLL search order hijacking vulnerability in Microsoft Windows client. By placing a specially-crafted file in a compromised folder, an attacker could exploit this vulnerability to execute arbitrary code on the system. IBM X-Force ID: 172618.
+cvss_v2: 6.9
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/172618
+    - https://www.ibm.com/support/pages/node/1288060
+affected:
+    - name: generator-ibm-java-liberty
+      version:
+        - "<=7.0.0,7.0.0"
+        - "<=8.0.0,8.0.0"
+        - "<=8.5.0,8.5.0"
+      fixedin:
+        - ">=8.5.1-alpha.0"
+        - "<=8.4.0,8.0.1"
+        - "<=7.4.0,7.1.0"
+        - "<=6.0.2,6.0.2"
