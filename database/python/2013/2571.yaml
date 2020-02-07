@@ -1,0 +1,17 @@
+---
+cve: 2013-2571
+title: CVE in mopidy-iris
+description: >
+    Iris 3.8 before build 1548, as used in Xpient point of sale (POS) systems, allows remote attackers to execute arbitrary commands via a crafted request to TCP port 7510, as demonstrated by opening the cash drawer.
+cvss_v2: 7.5
+references:
+    - http://www.exploit-db.com/exploits/25987
+    - http://www.securityfocus.com/bid/60359
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/84761
+    - https://packetstormsecurity.com/files/121917/Xpient-POS-Iris-3.8-Cash-Drawer-Operation-Remote-Trigger.html
+affected:
+    - name: mopidy-iris
+      version:
+        - "<=3.8.0"
+      fixedin:
+        - ">=3.8.1"
