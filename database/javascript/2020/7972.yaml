@@ -1,0 +1,16 @@
+---
+cve: 2020-7972
+title: CVE in gitlab
+description: >
+    GitLab EE 12.2 has Insecure Permissions (issue 2 of 2).
+cvss_v2: 5.0
+references:
+    - https://about.gitlab.com/blog/categories/releases/
+    - https://about.gitlab.com/releases/2020/01/30/security-release-gitlab-12-7-4-released/
+affected:
+    - name: gitlab
+      version:
+        - "<=12.1.2,12.0.0"
+      fixedin:
+        - ">=13.0.0"
+        - "<=11.6.1,0.0.1"
