@@ -1,0 +1,14 @@
+---
+cve: 2020-8116
+title: CVE in dot-prop
+description: >
+    Prototype pollution vulnerability in dot-prop npm package version 5.1.0 and earlier allows an attacker to add arbitrary properties to JavaScript language constructs such as objects.
+cvss_v2: 7.5
+references:
+    - https://hackerone.com/reports/719856
+affected:
+    - name: dot-prop
+      version:
+        - "<=5.1.0"
+      fixedin:
+        - ">=5.1.1"
