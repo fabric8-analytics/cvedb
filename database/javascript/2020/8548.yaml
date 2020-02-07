@@ -1,0 +1,15 @@
+---
+cve: 2020-8548
+title: CVE in markdown-code-hashtags
+description: >
+    massCode 1.0.0-alpha.6 allows XSS via crafted Markdown text, with resultant remote code execution (because nodeIntegration in webPreferences is true).
+cvss_v2: 4.3
+references:
+    - https://github.com/antonreshetov/massCode/issues/43
+    - https://github.com/antonreshetov/massCode/issues/44
+affected:
+    - name: markdown-code-hashtags
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
