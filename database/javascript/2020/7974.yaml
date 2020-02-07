@@ -1,0 +1,16 @@
+---
+cve: 2020-7974
+title: CVE in gitlab
+description: >
+    GitLab EE 10.1 through 12.7.2 allows Information Disclosure.
+cvss_v2: 5.0
+references:
+    - https://about.gitlab.com/blog/categories/releases/
+    - https://about.gitlab.com/releases/2020/01/30/security-release-gitlab-12-7-4-released/
+affected:
+    - name: gitlab
+      version:
+        - "<=12.1.2,10.1.0"
+      fixedin:
+        - ">=13.0.0"
+        - "<=10.0.3,0.0.1"
