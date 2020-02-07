@@ -1,0 +1,18 @@
+---
+cve: 2020-7799
+title: CVE in io.fusionauth:fusionauth-java-client
+description: >
+    An issue was discovered in FusionAuth before 1.11.0. An authenticated user, allowed to edit e-mail templates (Home -> Settings -> Email Templates) or themes (Home -> Settings -> Themes), can execute commands on the underlying operating system by abusing freemarker.template.utility.Execute in the Apache FreeMarker engine that processes custom templates.
+cvss_v2: 9.0
+references:
+    - http://packetstormsecurity.com/files/156102/FusionAuth-1.10-Remote-Command-Execution.html
+    - https://fusionauth.io/docs/v1/tech/release-notes
+    - https://lab.mediaservice.net/advisory/2020-03-fusionauth.txt
+    - https://seclists.org/bugtraq/2020/Jan/39
+affected:
+    - groupId: io.fusionauth
+      artifactId: fusionauth-java-client
+      version:
+        - "<=1.10.0"
+      fixedin:
+        - ">=1.11.0"
