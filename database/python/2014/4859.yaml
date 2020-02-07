@@ -1,0 +1,14 @@
+---
+cve: 2014-4859
+title: CVE in execution-asserts
+description: >
+    Integer overflow in the Drive Execution Environment (DXE) phase in the Capsule Update feature in the UEFI implementation in EDK2 allows physically proximate attackers to bypass intended access restrictions via crafted data.
+cvss_v2: 7.2
+references:
+    - http://www.kb.cert.org/vuls/id/552286
+affected:
+    - name: execution-asserts
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
