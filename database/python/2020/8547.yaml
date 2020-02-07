@@ -1,0 +1,15 @@
+---
+cve: 2020-8547
+title: CVE in fiduswriter-phplist
+description: >
+    phpList 3.5.0 allows type juggling for admin login bypass because == is used instead of === for password hashes, which mishandles hashes that begin with 0e followed by exclusively numerical characters.
+cvss_v2: 7.5
+references:
+    - https://www.exploit-db.com/exploits/47989
+affected:
+    - name: fiduswriter-phplist
+      version:
+        - "<=3.5.0,3.5.0"
+      fixedin:
+        - ">=3.6.0rc1"
+        - "<=3.4.3,3.4.0"
