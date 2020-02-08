@@ -1,0 +1,16 @@
+---
+cve: 2011-1151
+title: CVE in joomla-cli
+description: >
+    Joomla! 1.6.0 is vulnerable to SQL Injection via the filter_order and filer_order_Dir parameters.
+cvss_v2: 6.4
+references:
+    - https://packetstormsecurity.com/files/101835/Joomla-1.6.0-SQL-Injection.html
+    - https://www.openwall.com/lists/oss-security/2011/03/14/21
+affected:
+    - name: joomla-cli
+      version:
+        - "<=1.6.0,1.6.0"
+      fixedin:
+        - ">=1.6.1"
+        - "<=1.5.8,1.0.3"
