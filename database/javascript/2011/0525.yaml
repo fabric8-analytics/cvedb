@@ -1,0 +1,15 @@
+---
+cve: 2011-0525
+title: CVE in koa-csrf
+description: >
+    Batavi before 1.0 has CSRF.
+cvss_v2: 6.8
+references:
+    - https://packetstormsecurity.com/files/cve/CVE-2011-0525
+    - https://www.openwall.com/lists/oss-security/2011/01/27/3
+affected:
+    - name: koa-csrf
+      version:
+        - "<=0.1.0"
+      fixedin:
+        - ">=1.0.0"
