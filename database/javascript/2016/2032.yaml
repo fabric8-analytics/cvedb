@@ -1,0 +1,17 @@
+---
+cve: 2016-2032
+title: CVE in contentful-management
+description: >
+    A vulnerability exists in the Aruba AirWave Management Platform 8.x prior to 8.2 in the management interface of an underlying system component called RabbitMQ, which could let a malicious user obtain sensitive information. This interface listens on TCP port 15672 and 55672
+cvss_v2: 5.0
+references:
+    - http://packetstormsecurity.com/files/136997/Aruba-Authentication-Bypass-Insecure-Transport-Tons-Of-Issues.html
+    - http://seclists.org/fulldisclosure/2016/May/19
+    - http://www.arubanetworks.com/assets/alert/ARUBA-PSA-2016-005.txt
+    - https://www.google.com/about/appsecurity/research/
+affected:
+    - name: contentful-management
+      version:
+        - "<=4.1.2"
+      fixedin:
+        - ">=4.1.3"
