@@ -1,0 +1,17 @@
+---
+cve: 2020-6854
+title: CVE in com.sos-berlin:jobscheduler.engine
+description: >
+    A cross-site scripting (XSS) vulnerability in the JOC Cockpit component of SOS JobScheduler 1.11 and 1.13.2 allows attackers to inject arbitrary web script or HTML via JSON properties available from the REST API.
+cvss_v2: 3.5
+references:
+    - https://change.sos-berlin.com/browse/JOC-854
+affected:
+    - groupId: com.sos-berlin
+      artifactId: jobscheduler.engine
+      version:
+        - "<=1.11.0,1.11.0"
+        - "<=1.13.2,1.13.2"
+      fixedin:
+        - "<=1.12.8,1.11.1"
+        - "<=1.10.6,1.9.6"
