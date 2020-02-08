@@ -1,0 +1,17 @@
+---
+cve: 2012-6114
+title: CVE in aframe-extras
+description: >
+    The git-changelog utility in git-extras 1.7.0 allows local users to overwrite arbitrary files via a symlink attack on (1) /tmp/changelog or (2) /tmp/.git-effort.
+cvss_v2: 3.6
+references:
+    - http://www.openwall.com/lists/oss-security/2013/01/22/8
+    - http://www.openwall.com/lists/oss-security/2013/01/23/5
+    - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=698490
+affected:
+    - name: aframe-extras
+      version:
+        - "<=1.7.0,1.7.0"
+      fixedin:
+        - ">=1.8.0"
+        - "<=1.6.1,1.0.0"
