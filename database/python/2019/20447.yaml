@@ -1,0 +1,15 @@
+---
+cve: 2019-20447
+title: CVE in jaraco-path
+description: >
+    Jobberbase 2.0 has SQL injection via the PATH_INFO to the jobs-in endpoint.
+cvss_v2: 7.5
+references:
+    - https://packetstormsecurity.com/files/152503/Jobberbase-CMS-2.0-SQL-Injection.html
+    - https://www.exploit-db.com/exploits/47311
+affected:
+    - name: jaraco-path
+      version:
+        - "<=2.0,2.0"
+      fixedin:
+        - "<=1.2,1.0"
