@@ -1,0 +1,17 @@
+---
+cve: 2020-6855
+title: CVE in com.sos-berlin:jobscheduler.engine
+description: >
+    A large or infinite loop vulnerability in the JOC Cockpit component of SOS JobScheduler 1.11 and 1.13.2 allows attackers to parameterize housekeeping jobs in a way that exhausts system resources and results in a denial of service.
+cvss_v2: 6.8
+references:
+    - https://change.sos-berlin.com/browse/JITL-590
+affected:
+    - groupId: com.sos-berlin
+      artifactId: jobscheduler.engine
+      version:
+        - "<=1.11.0,1.11.0"
+        - "<=1.13.2,1.13.2"
+      fixedin:
+        - "<=1.12.8,1.11.1"
+        - "<=1.10.6,1.9.6"
