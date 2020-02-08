@@ -1,0 +1,17 @@
+---
+cve: 2020-6856
+title: CVE in com.sos-berlin:jobscheduler.engine
+description: >
+    An XML External Entity (XEE) vulnerability exists in the JOC Cockpit component of SOS JobScheduler 1.12 and 1.13.2 allows attackers to read files from the server via an entity declaration in any of the XML documents that are used to specify the run-time settings of jobs and orders.
+cvss_v2: 4.0
+references:
+    - https://change.sos-berlin.com/browse/JOC-853
+affected:
+    - groupId: com.sos-berlin
+      artifactId: jobscheduler.engine
+      version:
+        - "<=1.11.0,1.11.0"
+        - "<=1.13.2,1.13.2"
+      fixedin:
+        - "<=1.12.8,1.11.1"
+        - "<=1.10.6,1.9.6"
