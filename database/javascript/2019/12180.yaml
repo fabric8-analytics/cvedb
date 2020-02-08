@@ -1,0 +1,14 @@
+---
+cve: 2019-12180
+title: CVE in @nezam/firebase-chat-ready-api
+description: >
+    An issue was discovered in SmartBear ReadyAPI through 2.8.2 and 3.0.0 and SoapUI through 5.5. When opening a project, the Groovy "Load Script" is automatically executed. This allows an attacker to execute arbitrary Groovy Language code (Java scripting language) on the victim machine by inducing it to open a malicious Project. The same issue is present in the "Save Script" function, which is executed automatically when saving a project.
+cvss_v2: 9.3
+references:
+    - https://lab.mediaservice.net/advisory/2020-04-readyapi-soapui.txt
+affected:
+    - name: @nezam/firebase-chat-ready-api
+      version:
+        - "<=4.1.4"
+      fixedin:
+        []
