@@ -1,0 +1,16 @@
+---
+cve: 2019-20447
+title: CVE in the-info
+description: >
+    Jobberbase 2.0 has SQL injection via the PATH_INFO to the jobs-in endpoint.
+cvss_v2: 7.5
+references:
+    - https://packetstormsecurity.com/files/152503/Jobberbase-CMS-2.0-SQL-Injection.html
+    - https://www.exploit-db.com/exploits/47311
+affected:
+    - name: the-info
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - ">=2.0.1"
+        - "<=1.0.3,1.0.0"
