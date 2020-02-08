@@ -1,0 +1,16 @@
+---
+cve: 2015-0102
+title: CVE in node-workflow
+description: >
+    IBM Workflow for Bluemix does not set the secure flag for the session cookie in an https session, which makes it easier for remote attackers to capture this cookie by intercepting its transmission within an http session.
+cvss_v2: 5.8
+references:
+    - http://www.securityfocus.com/bid/74220
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21694941
+    - https://www.ibm.com/blogs/psirt/ibm-security-bulletin-authentication-session-cookie-in-ibm-workflow-for-bluemix-was-missing-secure-flag-cve-2015-0102/
+affected:
+    - name: node-workflow
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
