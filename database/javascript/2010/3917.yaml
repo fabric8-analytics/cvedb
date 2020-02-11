@@ -1,0 +1,15 @@
+---
+cve: 2010-3917
+title: CVE in chrome-dgram
+description: >
+    Google Chrome before 3.0 does not properly handle XML documents, which allows remote attackers to obtain sensitive information via a crafted web site.
+cvss_v2: 4.3
+references:
+    - http://jvn.jp/en/jp/JVN36765384/index.html
+    - http://jvndb.jvn.jp/en/contents/2010/JVNDB-2010-000056.html
+affected:
+    - name: chrome-dgram
+      version:
+        - "<=2.1.7"
+      fixedin:
+        - ">=3.0.0"
