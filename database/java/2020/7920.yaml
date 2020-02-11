@@ -1,0 +1,19 @@
+---
+cve: 2020-7920
+title: CVE in org.seedstack.addons.monitoring:monitoring-batch
+description: >
+    pmm-server in Percona Monitoring and Management (PMM) 2.2.x before 2.2.1 allows unauthenticated denial of service.
+cvss_v2: 7.8
+references:
+    - https://jira.percona.com/browse/PMM-5232
+    - https://jira.percona.com/browse/PMM-5233
+    - https://www.percona.com/blog/2020/02/03/improvements-in-pmm-bug-fixes-in-percona-server-percona-backup-for-mongodb-alert-release-roundup-2-3-2020/
+    - https://www.percona.com/doc/percona-monitoring-and-management/2.x/release-notes/2.2.1.html
+affected:
+    - groupId: org.seedstack.addons.monitoring
+      artifactId: monitoring-batch
+      version:
+        - "<=2.2.0,2.2.0"
+      fixedin:
+        - ">=2.2.1"
+        - "<=2.1.1,2.1.0"
