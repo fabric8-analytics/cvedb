@@ -1,0 +1,20 @@
+---
+cve: 2013-2009
+title: CVE in org.codehaus.sonar-plugins.php:sonar-php-plugin
+description: >
+    WordPress WP Super Cache Plugin 1.2 has Remote PHP Code Execution
+cvss_v2: 6.8
+references:
+    - http://www.openwall.com/lists/oss-security/2013/04/24/10
+    - http://www.openwall.com/lists/oss-security/2013/04/24/12
+    - http://www.openwall.com/lists/oss-security/2013/04/24/8
+    - http://www.securityfocus.com/bid/59470
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/83799
+affected:
+    - groupId: org.codehaus.sonar-plugins.php
+      artifactId: sonar-php-plugin
+      version:
+        - "<=1.2,1.2"
+      fixedin:
+        - ">=2.0"
+        - "<=1.1,0.5-SNAPSHOT"
