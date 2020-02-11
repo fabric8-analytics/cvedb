@@ -1,0 +1,16 @@
+---
+cve: 2020-5526
+title: CVE in org.solovyev.android:calculatorpp-android-app
+description: >
+    The AWMS Mobile App for Android 2.0.0 to 2.0.5 and for iOS 2.0.0 to 2.0.8 does not verify X.509 certificates from servers, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate.
+cvss_v2: 4.3
+references:
+    - http://jvn.jp/en/jp/JVN00014057/index.html
+    - http://onlinesupport.fujixerox.com/processDriverForm.do?ctry_code=SG&lang_code=en&d_lang=en&corp_pid=AWMS2&rts=null&model=ApeosWare+Management+Suite+2&type_id=7&oslist=Windows+10+64bit&lang_list=en
+affected:
+    - groupId: org.solovyev.android
+      artifactId: calculatorpp-android-app
+      version:
+        - "<=2.0.6,2.0.0"
+      fixedin:
+        - "<=1.6.3-b,1.5.3"
