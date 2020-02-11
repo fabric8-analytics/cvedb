@@ -1,6 +1,6 @@
 ---
 cve: 2019-10789
-title: CVE in dependency-injection
+title: CVE in curling
 description: >
     All versions of curling.js are vulnerable to Command Injection via the run function. The command argument can be controlled by users without any sanitization.
 cvss_v2: 10.0
@@ -8,8 +8,8 @@ references:
     - https://github.com/hgarcia/curling/blob/e861d625c074679a2931bcf4ce8da0afa8162c53/lib/curl-transport.js#L56
     - https://snyk.io/vuln/SNYK-JS-CURLING-546484
 affected:
-    - name: dependency-injection
+    - name: curling
       version:
-        []
+        - "<=0.3.0"
       fixedin:
-        - ">=1.0.0"
+        []
