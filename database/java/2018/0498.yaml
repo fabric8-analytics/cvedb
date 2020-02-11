@@ -1,0 +1,18 @@
+---
+cve: 2018-0498
+title: CVE in com.arm.mbed.cloud.sdk:mbed-cloud-sdk
+description: >
+    ARM mbed TLS before 2.12.0, before 2.7.5, and before 2.1.14 allows local users to achieve partial plaintext recovery (for a CBC based ciphersuite) via a cache-based side-channel attack.
+cvss_v2: 1.9
+references:
+    - https://lists.debian.org/debian-lts-announce/2018/09/msg00029.html
+    - https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2018-02
+    - https://usn.ubuntu.com/4267-1/
+    - https://www.debian.org/security/2018/dsa-4296
+affected:
+    - groupId: com.arm.mbed.cloud.sdk
+      artifactId: mbed-cloud-sdk
+      version:
+        - "<=2.5.0"
+      fixedin:
+        []
