@@ -1,0 +1,17 @@
+---
+cve: 2019-9501
+title: CVE in org.antframework.manager:manager-biz
+description: >
+    The Broadcom wl WiFi driver is vulnerable to a heap buffer overflow. By supplying a vendor information element with a data length larger than 32 bytes, a heap buffer overflow is triggered in wlc_wpa_sup_eapol. In the worst case scenario, by sending specially-crafted WiFi packets, a remote, unauthenticated attacker may be able to execute arbitrary code on a vulnerable system. More typically, this vulnerability will result in denial-of-service conditions.
+cvss_v2: 8.3
+references:
+    - https://blog.quarkslab.com/reverse-engineering-broadcom-wireless-chipsets.html
+    - https://kb.cert.org/vuls/id/166939/
+affected:
+    - groupId: org.antframework.manager
+      artifactId: manager-biz
+      version:
+        - "<=1.2.0.RELEASE,1.2.0.RELEASE"
+      fixedin:
+        - ">=1.3.0.RELEASE"
+        - "<=1.1.0.RELEASE,1.1.0.RELEASE"
