@@ -1,0 +1,14 @@
+---
+cve: 2011-1597
+title: CVE in aio-manager
+description: >
+    OpenVAS Manager v2.0.3 allows plugin remote code execution.
+cvss_v2: 6.5
+references:
+    - https://www.openwall.com/lists/oss-security/2011/04/20/5
+affected:
+    - name: aio-manager
+      version:
+        - "<=2.0.3,2.0.3"
+      fixedin:
+        - "<=2.0.2,0.1"
