@@ -1,0 +1,16 @@
+---
+cve: 2020-5854
+title: CVE in org.openengsb.domain:org.openengsb.domain.binarytransformation
+description: >
+    On BIG-IP 15.0.0-15.0.1.1, 14.1.0-14.1.2.2, 14.0.0-14.0.1, 13.1.0-13.1.3.1, 12.1.0-12.1.5, and 11.6.0-11.6.5.1, the tmm crashes under certain circumstances when using the connector profile if a specific sequence of connections are made.
+cvss_v2: 4.3
+references:
+    - https://support.f5.com/csp/article/K50046200
+affected:
+    - groupId: org.openengsb.domain
+      artifactId: org.openengsb.domain.binarytransformation
+      version:
+        - "<=2.3.0,2.3.0"
+      fixedin:
+        - ">=2.3.1"
+        - "<=2.2.2,2.2.0"
