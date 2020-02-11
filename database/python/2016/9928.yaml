@@ -1,0 +1,21 @@
+---
+cve: 2016-9928
+title: CVE in botz-xmpp
+description: >
+    MCabber before 1.0.4 is vulnerable to roster push attacks, which allows remote attackers to intercept communications, or add themselves as an entity on a 3rd party's roster as another user, which will also garner associated privileges, via crafted XMPP packets.
+cvss_v2: 5.8
+references:
+    - http://lists.opensuse.org/opensuse-updates/2017-01/msg00130.html
+    - http://www.openwall.com/lists/oss-security/2016/12/11/2
+    - http://www.openwall.com/lists/oss-security/2017/02/09/29
+    - http://www.securityfocus.com/bid/94862
+    - https://bitbucket.org/McKael/mcabber-crew/commits/6e1ead98930d7dd0a520ad17c720ae4908429033/raw
+    - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=845258
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1403790
+    - https://gultsch.de/gajim_roster_push_and_message_interception.html
+affected:
+    - name: botz-xmpp
+      version:
+        - "<=1"
+      fixedin:
+        - ">=2"
