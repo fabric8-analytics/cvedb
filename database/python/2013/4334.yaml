@@ -1,0 +1,15 @@
+---
+cve: 2013-4334
+title: CVE in browser-vulnerabilities
+description: >
+    opWebAPIPlugin 0.5.1, 0.4.0, and 0.1.0: XXE Vulnerabilities
+cvss_v2: 7.5
+references:
+    - http://www.openpne.jp/archives/12091/
+    - http://www.openwall.com/lists/oss-security/2013/09/11/6
+affected:
+    - name: browser-vulnerabilities
+      version:
+        - "<=0.1.0,0.1.0"
+      fixedin:
+        - "<=0.0.4,0.0.1"
