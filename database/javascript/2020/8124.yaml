@@ -1,0 +1,14 @@
+---
+cve: 2020-8124
+title: CVE in url-parse
+description: >
+    Insufficient validation and sanitization of user input exists in url-parse npm package version 1.4.4 and earlier may allow attacker to bypass security checks.
+cvss_v2: 5.0
+references:
+    - https://hackerone.com/reports/496293
+affected:
+    - name: url-parse
+      version:
+        - "<=1.4.4"
+      fixedin:
+        - ">=1.4.5"
