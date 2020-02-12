@@ -1,0 +1,26 @@
+---
+cve: 2019-17571
+title: CVE in log4j:log4j
+description: >
+    Included in Log4j 1.2 is a SocketServer class that is vulnerable to deserialization of untrusted data which can be exploited to remotely execute arbitrary code when combined with a deserialization gadget when listening to untrusted network traffic for log data. This affects Log4j versions up to 1.2 up to 1.2.17.
+cvss_v2: 7.5
+references:
+    - https://lists.apache.org/thread.html/277b4b5c2b0e06a825ccec565fa65bd671f35a4d58e3e2ec5d0618e1@%3Cdev.tika.apache.org%3E
+    - https://lists.apache.org/thread.html/44491fb9cc19acc901f7cff34acb7376619f15638439416e3e14761c@%3Cdev.tika.apache.org%3E
+    - https://lists.apache.org/thread.html/479471e6debd608c837b9815b76eab24676657d4444fcfd5ef96d6e6@%3Cdev.tika.apache.org%3E
+    - https://lists.apache.org/thread.html/564f03b4e9511fcba29c68fc0299372dadbdb002718fa8edcc4325e4@%3Cjira.kafka.apache.org%3E
+    - https://lists.apache.org/thread.html/6114ce566200d76e3cc45c521a62c2c5a4eac15738248f58a99f622c@%3Cissues.activemq.apache.org%3E
+    - https://lists.apache.org/thread.html/752ec92cd1e334a639e79bfbd689a4ec2c6579ec5bb41b53ffdf358d@%3Cdev.kafka.apache.org%3E
+    - https://lists.apache.org/thread.html/8ab32b4c9f1826f20add7c40be08909de9f58a89dc1de9c09953f5ac@%3Cissues.activemq.apache.org%3E
+    - https://lists.apache.org/thread.html/eea03d504b36e8f870e8321d908e1def1addda16adda04327fe7c125%40%3Cdev.logging.apache.org%3E
+    - https://lists.apache.org/thread.html/r189aaeaad897f7d6b96f7c43a8ef2dfb9f6e9f8c1cc9ad182ce9b9ae@%3Cjira.kafka.apache.org%3E
+    - https://lists.apache.org/thread.html/r2756fd570b6709d55a61831ca028405bcb3e312175a60bc5d911c81f@%3Cjira.kafka.apache.org%3E
+    - https://lists.apache.org/thread.html/r3c575cabc7386e646fb12cb82b0b38ae5a6ade8a800f827107824495@%3Cjira.kafka.apache.org%3E
+    - https://lists.apache.org/thread.html/rf2567488cfc9212b42e34c6393cfa1c14e30e4838b98dda84d71041f@%3Cdev.tika.apache.org%3E
+affected:
+    - groupId: log4j
+      artifactId: log4j
+      version:
+        - "<=1.2.17,1.2.4"
+      fixedin:
+        - "<=1.1.3,1.1.3"
