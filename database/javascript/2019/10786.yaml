@@ -1,13 +1,13 @@
 ---
 cve: 2019-10786
-title: CVE in pm-woodwind-network-manager
+title: CVE in network-manager
 description: >
     network-manager through 1.0.2 allows remote attackers to execute arbitrary commands via the "execSync()" argument.
 cvss_v2: 7.5
 references:
     - https://snyk.io/vuln/SNYK-JS-NETWORKMANAGER-544035
 affected:
-    - name: pm-woodwind-network-manager
+    - name: network-manager
       version:
         - "<=1.0.2"
       fixedin:
