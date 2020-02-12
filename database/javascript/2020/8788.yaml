@@ -1,0 +1,15 @@
+---
+cve: 2020-8788
+title: CVE in username
+description: >
+    Synaptive Medical ClearCanvas ImageServer 3.0 Alpha allows XSS (and HTML injection) via the Default.aspx UserName parameter. NOTE: the issues/227 reference does not imply that the affected product can be downloaded from GitHub. It was simply a convenient location for a public bug report.
+cvss_v2: 4.3
+references:
+    - https://github.com/ClearCanvas/ClearCanvas/issues/227
+affected:
+    - name: username
+      version:
+        - "<=3.0.0,3.0.0"
+      fixedin:
+        - ">=4.0.0"
+        - "<=2.3.0,0.1.0"
