@@ -1,0 +1,14 @@
+---
+cve: 2020-1768
+title: CVE in @ovh-ux/ng-ovh-otrs
+description: >
+    The external frontend system uses numerous background calls to the backend. Each background request is treated as user activity so the SessionMaxIdleTime will not be reached. This issue affects: OTRS 7.0.x version 7.0.14 and prior versions.
+cvss_v2: 5.5
+references:
+    - https://otrs.com/release-notes/otrs-security-advisory-2020-04/
+affected:
+    - name: @ovh-ux/ng-ovh-otrs
+      version:
+        - "<=7.0.2"
+      fixedin:
+        - ">=7.1.0"
