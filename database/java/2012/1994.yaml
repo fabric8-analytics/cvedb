@@ -1,0 +1,17 @@
+---
+cve: 2012-1994
+title: CVE in org.fusesource.insight:insight-log
+description: >
+    HP Systems Insight Manager before 7.0 allows a remote user on adjacent network to access information
+cvss_v2: 2.7
+references:
+    - http://www.securityfocus.com/bid/53315
+    - http://www.securitytracker.com/id?1026987
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/75294
+affected:
+    - groupId: org.fusesource.insight
+      artifactId: insight-log
+      version:
+        - "<=1.1"
+      fixedin:
+        - ">=7.0.0.fuse-061"
