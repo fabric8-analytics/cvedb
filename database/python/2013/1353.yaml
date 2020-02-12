@@ -1,0 +1,15 @@
+---
+cve: 2013-1353
+title: CVE in orange
+description: >
+    Orange HRM 2.7.1 allows XSS via the vacancy name.
+cvss_v2: 3.5
+references:
+    - https://packetstormsecurity.com/files/119461/OrangeHRM-2.7.1-Cross-Site-Scripting.html
+affected:
+    - name: orange
+      version:
+        - "<=2.7.1,2.7.1"
+      fixedin:
+        - ">=2.7.2"
+        - "<=2.7,2.0.0b"
