@@ -1,0 +1,15 @@
+---
+cve: 2019-11481
+title: CVE in kevin-scraper-engine
+description: >
+    Kevin Backhouse discovered that apport would read a user-supplied configuration file with elevated privileges. By replacing the file with a symbolic link, a user could get apport to read any file on the system as root, with unknown consequences.
+cvss_v2: 6.1
+references:
+    - https://usn.ubuntu.com/usn/usn-4171-1
+    - https://usn.ubuntu.com/usn/usn-4171-2
+affected:
+    - name: kevin-scraper-engine
+      version:
+        []
+      fixedin:
+        - ">=0.1"
