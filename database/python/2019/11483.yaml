@@ -1,0 +1,15 @@
+---
+cve: 2019-11483
+title: CVE in bos-python-sdk
+description: >
+    Sander Bos discovered Apport mishandled crash dumps originating from containers. This could be used by a local attacker to generate a crash report for a privileged process that is readable by an unprivileged user.
+cvss_v2: 2.1
+references:
+    - https://usn.ubuntu.com/usn/usn-4171-1
+    - https://usn.ubuntu.com/usn/usn-4171-2
+affected:
+    - name: bos-python-sdk
+      version:
+        []
+      fixedin:
+        - ">=0.8.1"
