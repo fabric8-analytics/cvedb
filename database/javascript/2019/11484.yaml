@@ -1,0 +1,15 @@
+---
+cve: 2019-11484
+title: CVE in kevin-johnson
+description: >
+    Kevin Backhouse discovered an integer overflow in bson_ensure_space, as used in whoopsie.
+cvss_v2: 4.6
+references:
+    - https://usn.ubuntu.com/usn/usn-4170-1
+    - https://usn.ubuntu.com/usn/usn-4170-2
+affected:
+    - name: kevin-johnson
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
