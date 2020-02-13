@@ -1,0 +1,15 @@
+---
+cve: 2017-18641
+title: CVE in com.jsunsoft.http:http-request
+description: >
+    In LXC 2.0, many template scripts download code over cleartext HTTP, and omit a digital-signature check, before running it to bootstrap containers.
+cvss_v2: 9.3
+references:
+    - https://bugs.launchpad.net/ubuntu/+source/lxc/+bug/1661447
+affected:
+    - groupId: com.jsunsoft.http
+      artifactId: http-request
+      version:
+        - "<=2.0.0-rc3,2.0.0-alpha"
+      fixedin:
+        - "<=1.0.4,0.0.1"
