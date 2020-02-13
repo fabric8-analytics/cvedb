@@ -1,0 +1,17 @@
+---
+cve: 2019-15619
+title: CVE in talk
+description: >
+    Improper neutralization of file names, conversation names and board names in Nextcloud Server 16.0.3, Nextcloud Talk 6.0.3 and Nextcloud Deck 0.6.5 causes an XSS when linking them with each others in a project.
+cvss_v2: 3.5
+references:
+    - https://hackerone.com/reports/662204
+    - https://nextcloud.com/security/advisory/?id=NC-SA-2020-008
+    - https://nextcloud.com/security/advisory/?id=NC-SA-2020-009
+    - https://nextcloud.com/security/advisory/?id=NC-SA-2020-010
+affected:
+    - name: talk
+      version:
+        - "<=0.7.1"
+      fixedin:
+        []
