@@ -1,0 +1,15 @@
+---
+cve: 2019-10788
+title: CVE in im-metadata
+description: >
+    im-metadata through 3.0.1 allows remote attackers to execute arbitrary commands via the "exec" argument. It is possible to inject arbitrary commands as part of the metadata options which is given to the "exec" function.
+cvss_v2: 7.5
+references:
+    - https://github.com/Turistforeningen/node-im-metadata/commit/ea15dddbe0f65694bfde36b78dd488e90f246639
+    - https://snyk.io/vuln/SNYK-JS-IMMETADATA-544184
+affected:
+    - name: im-metadata
+      version:
+        - "<=3.0.1"
+      fixedin:
+        []
