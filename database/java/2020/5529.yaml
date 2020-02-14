@@ -1,0 +1,16 @@
+---
+cve: 2020-5529
+title: CVE in net.sourceforge.htmlunit:htmlunit-core-js
+description: >
+    HtmlUnit prior to 2.37.0 contains code execution vulnerabilities. HtmlUnit initializes Rhino engine improperly, hence a malicious JavScript code can execute arbitrary Java code on the application. Moreover, when embedded in Android application, Android-specific initialization of Rhino engine is done in an improper way, hence a malicious JavaScript code can execute arbitrary Java code on the application.
+cvss_v2: 6.8
+references:
+    - https://github.com/HtmlUnit/htmlunit/releases/tag/2.37.0
+    - https://jvn.jp/en/jp/JVN34535327/
+affected:
+    - groupId: net.sourceforge.htmlunit
+      artifactId: htmlunit-core-js
+      version:
+        - "<=2.36.0"
+      fixedin:
+        - ">=2.37.0"
