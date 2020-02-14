@@ -1,0 +1,16 @@
+---
+cve: 2019-1234
+title: CVE in com.microsoft.azure:azure-documentdb
+description: >
+    A spoofing vulnerability exists when Azure Stack fails to validate certain requests, aka 'Azure Stack Spoofing Vulnerability'.
+cvss_v2: 5.0
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1234
+    - https://research.checkpoint.com/2020/remote-cloud-execution-critical-vulnerabilities-in-azure-cloud-infrastructure-part-i/
+affected:
+    - groupId: com.microsoft.azure
+      artifactId: azure-documentdb
+      version:
+        []
+      fixedin:
+        - ">=0.9.0"
