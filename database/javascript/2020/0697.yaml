@@ -1,0 +1,14 @@
+---
+cve: 2020-0697
+title: CVE in office365-nodejs-authentication
+description: >
+    An elevation of privilege vulnerability exists in Microsoft Office OLicenseHeartbeat task, where an attacker who successfully exploited this vulnerability could run this task as SYSTEM.To exploit the vulnerability, an authenticated attacker would need to place a specially crafted file in a specific location, thereby allowing arbitrary file corruption.The security update addresses the vulnerability by correcting how the process validates the log file., aka 'Microsoft Office Tampering Vulnerability'.
+cvss_v2: 7.2
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0697
+affected:
+    - name: office365-nodejs-authentication
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
