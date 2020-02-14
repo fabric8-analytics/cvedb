@@ -9,6 +9,6 @@ references:
 affected:
     - name: node
       version:
-        - "<=4.0.0"
+        - "<=4.8.7"
       fixedin:
         - ">=4.9.0"
