@@ -1,0 +1,19 @@
+---
+cve: 2013-1360
+title: CVE in node-analyzer
+description: >
+    An Authentication Bypass vulnerability exists in DELL SonicWALL Global Management System (GMS) 4.1, 5.0, 5.1, 6.0, and 7.0, Analyzer 7.0, Universal Management Appliance (UMA) 5.1, 6.0, and 7.0 and ViewPoint 4.1, 5.0, and 6.0 via a crafted request to the SGMS interface, which could let a remote malicious user obtain administrative access.
+cvss_v2: 10.0
+references:
+    - http://archives.neohapsis.com/archives/bugtraq/2013-01/0075.html
+    - http://www.exploit-db.com/exploits/24203
+    - http://www.securityfocus.com/bid/57446
+    - http://www.securitytracker.com/id/1028007
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/81366
+    - https://packetstormsecurity.com/files/cve/CVE-2013-1360
+affected:
+    - name: node-analyzer
+      version:
+        - "<=5.0.0"
+      fixedin:
+        - ">=5.0.1"
