@@ -1,0 +1,15 @@
+---
+cve: 2020-2124
+title: CVE in parameter-sherpa
+description: >
+    Jenkins Dynamic Extended Choice Parameter Plugin 1.0.1 and earlier stores a password unencrypted in job config.xml files on the Jenkins master where it can be viewed by users with Extended Read permission, or access to the master file system.
+cvss_v2: 4.0
+references:
+    - http://www.openwall.com/lists/oss-security/2020/02/12/3
+    - https://jenkins.io/security/advisory/2020-02-12/#SECURITY-1560
+affected:
+    - name: parameter-sherpa
+      version:
+        - "<=1.0.1"
+      fixedin:
+        - ">=1.0.2"
