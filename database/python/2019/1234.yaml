@@ -1,0 +1,15 @@
+---
+cve: 2019-1234
+title: CVE in alchemist-stack
+description: >
+    A spoofing vulnerability exists when Azure Stack fails to validate certain requests, aka 'Azure Stack Spoofing Vulnerability'.
+cvss_v2: 5.0
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1234
+    - https://research.checkpoint.com/2020/remote-cloud-execution-critical-vulnerabilities-in-azure-cloud-infrastructure-part-i/
+affected:
+    - name: alchemist-stack
+      version:
+        []
+      fixedin:
+        - ">=0.1.0.dev1"
