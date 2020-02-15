@@ -1,0 +1,15 @@
+---
+cve: 2020-2119
+title: CVE in ad-geo-backend
+description: >
+    Jenkins Azure AD Plugin 1.1.2 and earlier transmits configured credentials in plain text as part of the global Jenkins configuration form, potentially resulting in their exposure.
+cvss_v2: 5.0
+references:
+    - http://www.openwall.com/lists/oss-security/2020/02/12/3
+    - https://jenkins.io/security/advisory/2020-02-12/#SECURITY-1717
+affected:
+    - name: ad-geo-backend
+      version:
+        - "<=1.1.2"
+      fixedin:
+        - ">=1.1.3"
