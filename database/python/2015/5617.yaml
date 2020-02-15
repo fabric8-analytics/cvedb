@@ -1,0 +1,15 @@
+---
+cve: 2015-5617
+title: CVE in asm-cms
+description: >
+    SQL injection vulnerability in pub/m_pending_news/delete_pending_news.jsp in Enorth Webpublisher CMS allows remote attackers to execute arbitrary SQL commands via the cbNewsId parameter.
+cvss_v2: 7.5
+references:
+    - http://packetstormsecurity.com/files/133082/Enorth-Webpublisher-CMS-SQL-Injection.html
+    - http://seclists.org/fulldisclosure/2015/Aug/55
+affected:
+    - name: asm-cms
+      version:
+        []
+      fixedin:
+        - ">=0.1"
