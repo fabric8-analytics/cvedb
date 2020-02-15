@@ -1,0 +1,18 @@
+---
+cve: 2013-2010
+title: CVE in org.jibx.schema.org.w3:org.jibx.schema.org.w3._2001._12.soap_envelope
+description: >
+    WordPress W3 Total Cache Plugin 0.9.2.8 has a Remote PHP Code Execution Vulnerability
+cvss_v2: 7.5
+references:
+    - http://packetstormsecurity.com/files/130999/WordPress-W3-Total-Cache-PHP-Code-Execution.html
+    - http://www.exploit-db.com/exploits/25137
+    - http://www.openwall.com/lists/oss-security/2013/04/24/9
+    - http://www.securityfocus.com/bid/59316
+affected:
+    - groupId: org.jibx.schema.org.w3
+      artifactId: org.jibx.schema.org.w3._2001._12.soap_envelope
+      version:
+        - "<=1.2.0"
+      fixedin:
+        - ">=1.2.1"
