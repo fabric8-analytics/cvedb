@@ -1,0 +1,16 @@
+---
+cve: 2020-2121
+title: CVE in com.bladecoder.engine:blade-engine-spine-plugin
+description: >
+    Jenkins Google Kubernetes Engine Plugin 0.8.0 and earlier does not configure its YAML parser to prevent the instantiation of arbitrary types, resulting in a remote code execution vulnerability.
+cvss_v2: 6.5
+references:
+    - http://www.openwall.com/lists/oss-security/2020/02/12/3
+    - https://jenkins.io/security/advisory/2020-02-12/#SECURITY-1731
+affected:
+    - groupId: com.bladecoder.engine
+      artifactId: blade-engine-spine-plugin
+      version:
+        - "<=0.8.0"
+      fixedin:
+        - ">=0.8.1"
