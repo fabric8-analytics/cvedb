@@ -1,0 +1,15 @@
+---
+cve: 2013-1607
+title: CVE in pdfkit
+description: >
+    Ruby PDFKit gem prior to 0.5.3 has a Code Execution Vulnerability
+cvss_v2: 7.5
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/82563
+    - https://www.securityfocus.com/bid/58303/info
+affected:
+    - name: pdfkit
+      version:
+        - "<=0.5.2"
+      fixedin:
+        - ">=0.5.3"
