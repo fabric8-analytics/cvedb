@@ -1,0 +1,16 @@
+---
+cve: 2009-5139
+title: CVE in org.mobicents.ha.javax.sip:mobicents-jain-sip-jboss5
+description: >
+    The SIP implementation on the Gizmo5 software phone provides hashed credentials in a response to an invalid authentication challenge, which makes it easier for remote attackers to obtain access via a brute-force attack, related to a "SIP Digest Leak" issue.
+cvss_v2: 4.3
+references:
+    - http://voipsa.org/pipermail/voipsec_voipsa.org/2009-April/002946.html
+    - https://resources.enablesecurity.com/resources/sipdigestleak-tut.pdf
+affected:
+    - groupId: org.mobicents.ha.javax.sip
+      artifactId: mobicents-jain-sip-jboss5
+      version:
+        []
+      fixedin:
+        - ">=1.3.1.FINAL"
