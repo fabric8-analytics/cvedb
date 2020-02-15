@@ -1,0 +1,14 @@
+---
+cve: 2014-5084
+title: CVE in desc-pro
+description: >
+    A Command Execution vulnerability exists in Sphider Pro 3.2 due to insufficient sanitization of fwrite, which could let a remote malicious user execute arbitrary code. CVE-2014-5084 pertains to instances of fwrite in Sphider Pro only, but do not exist in either Sphider or Sphider Plus.
+cvss_v2: 6.5
+references:
+    - http://packetstormsecurity.com/files/127720/Sphider-Search-Engine-Command-Execution-SQL-Injection.html
+affected:
+    - name: desc-pro
+      version:
+        - "<=3.2.0,3.2.0"
+      fixedin:
+        - "<=1.8.2,1.8.2"
