@@ -1,0 +1,15 @@
+---
+cve: 2020-2130
+title: CVE in netcdf-scm
+description: >
+    Jenkins Harvest SCM Plugin 0.5.1 and earlier stores a password unencrypted in its global configuration file on the Jenkins master where it can be viewed by users with access to the master file system.
+cvss_v2: 4.0
+references:
+    - http://www.openwall.com/lists/oss-security/2020/02/12/3
+    - https://jenkins.io/security/advisory/2020-02-12/#SECURITY-1553
+affected:
+    - name: netcdf-scm
+      version:
+        - "<=0.5.1"
+      fixedin:
+        - ">=0.6.1a0"
