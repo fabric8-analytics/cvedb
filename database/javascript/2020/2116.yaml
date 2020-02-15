@@ -1,0 +1,15 @@
+---
+cve: 2020-2116
+title: CVE in jenkins-pipeline
+description: >
+    A cross-site request forgery vulnerability in Jenkins Pipeline GitHub Notify Step Plugin 1.0.4 and earlier allows attackers to connect to an attacker-specified URL using attacker-specified credentials IDs obtained through another method, capturing credentials stored in Jenkins.
+cvss_v2: 6.8
+references:
+    - http://www.openwall.com/lists/oss-security/2020/02/12/3
+    - https://jenkins.io/security/advisory/2020-02-12/#SECURITY-812%20(1)
+affected:
+    - name: jenkins-pipeline
+      version:
+        - "<=1.0.4"
+      fixedin:
+        - ">=1.0.5"
