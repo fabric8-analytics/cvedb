@@ -1,0 +1,15 @@
+---
+cve: 2020-2122
+title: CVE in django-jenkins
+description: >
+    Jenkins Brakeman Plugin 0.12 and earlier did not escape values received from parsed JSON files when rendering them, resulting in a stored cross-site scripting vulnerability exploitable by users able to control the Brakeman post-build step input data.
+cvss_v2: 3.5
+references:
+    - http://www.openwall.com/lists/oss-security/2020/02/12/3
+    - https://jenkins.io/security/advisory/2020-02-12/#SECURITY-1644
+affected:
+    - name: django-jenkins
+      version:
+        - "<=0.12.0"
+      fixedin:
+        - ">=0.12.1"
