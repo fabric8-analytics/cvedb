@@ -1,0 +1,35 @@
+---
+cve: 2015-3253
+title: CVE in org.codehaus.groovy:groovy-xml
+description: >
+    The MethodClosure class in runtime/MethodClosure.java in Apache Groovy 1.7.0 through 2.4.3 allows remote attackers to execute arbitrary code or cause a denial of service via a crafted serialized object.
+cvss_v2: 7.5
+references:
+    - http://groovy-lang.org/security.html
+    - http://packetstormsecurity.com/files/132714/Apache-Groovy-2.4.3-Code-Execution.html
+    - http://rhn.redhat.com/errata/RHSA-2016-0066.html
+    - http://www.oracle.com/technetwork/security-advisory/cpuapr2016v3-2985753.html
+    - http://www.oracle.com/technetwork/security-advisory/cpujan2018-3236628.html
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2016-2881720.html
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2017-3236622.html
+    - http://www.oracle.com/technetwork/security-advisory/cpuoct2016-2881722.html
+    - http://www.oracle.com/technetwork/security-advisory/cpuoct2017-3236626.html
+    - http://www.securityfocus.com/archive/1/536012/100/0/threaded
+    - http://www.securityfocus.com/bid/75919
+    - http://www.securityfocus.com/bid/91787
+    - http://www.securitytracker.com/id/1034815
+    - http://www.zerodayinitiative.com/advisories/ZDI-15-365/
+    - https://access.redhat.com/errata/RHSA-2016:1376
+    - https://access.redhat.com/errata/RHSA-2017:2486
+    - https://access.redhat.com/errata/RHSA-2017:2596
+    - https://h20566.www2.hpe.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c05324755
+    - https://security.gentoo.org/glsa/201610-01
+    - https://security.netapp.com/advisory/ntap-20160623-0001/
+    - https://www.oracle.com/technetwork/security-advisory/cpuapr2019-5072813.html
+affected:
+    - groupId: org.codehaus.groovy
+      artifactId: groovy-xml
+      version:
+        - "<=2.4.3"
+      fixedin:
+        - ">=2.4.4"
