@@ -1,0 +1,16 @@
+---
+cve: 2017-15870
+title: CVE in org.apache.karaf.system:org.apache.karaf.system.core
+description: >
+    Palo Alto Networks GlobalProtect Agent before 4.0.3 allows attackers with administration rights on the local station to gain SYSTEM privileges via vectors involving "image path execution hijacking."
+cvss_v2: 7.2
+references:
+    - http://www.securityfocus.com/bid/102083
+    - https://security.paloaltonetworks.com/CVE-2017-15870
+affected:
+    - groupId: org.apache.karaf.system
+      artifactId: org.apache.karaf.system.core
+      version:
+        - "<=4.0.2"
+      fixedin:
+        - ">=4.0.3"
