@@ -1,0 +1,17 @@
+---
+cve: 2013-7381
+title: CVE in libnotify
+description: >
+    libnotify before 1.0.4 for Node.js allows remote attackers to execute arbitrary commands via unspecified characters in a call to libnotify.notify.
+cvss_v2: 7.5
+references:
+    - http://www.openwall.com/lists/oss-security/2014/05/13/1
+    - http://www.openwall.com/lists/oss-security/2014/05/15/2
+    - https://github.com/mytrile/node-libnotify/commit/dfe7801d73a0dda10663a0ff3d0ec8b4d5f0d448
+    - https://nodesecurity.io/advisories/libnotify_potential_command_injection_in_libnotify.notify
+affected:
+    - name: libnotify
+      version:
+        - "<=1.0.3"
+      fixedin:
+        - ">=1.0.4"
