@@ -1,0 +1,15 @@
+---
+cve: 2013-5582
+title: CVE in org.glassfish.admin:admin-cli
+description: >
+    Ammyy Admin 3.2 and earlier stores the client ID at a fixed memory location, which might make it easier for user-assisted remote attackers to bypass authentication by running a local program that extracts a field from the AA_v3.2.exe file.
+cvss_v2: 6.8
+references:
+    - http://www.securityfocus.com/archive/1/530827
+affected:
+    - groupId: org.glassfish.admin
+      artifactId: admin-cli
+      version:
+        - "<=3.2-b06"
+      fixedin:
+        - ">=10.0-b28"
