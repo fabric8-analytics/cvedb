@@ -1,0 +1,15 @@
+---
+cve: 2018-13211
+title: CVE in django-ethereum
+description: >
+    The sell function of a smart contract implementation for MyToken, an Ethereum token, has an integer overflow in which "amount * sellPrice" can be zero, consequently reducing a seller's assets.
+cvss_v2: 5.0
+references:
+    - https://github.com/BlockChainsSecurity/EtherTokens/blob/master/ETHEREUMBLACK/sell%20integer%20overflow.md
+    - https://github.com/BlockChainsSecurity/EtherTokens/tree/master/MyToken
+affected:
+    - name: django-ethereum
+      version:
+        []
+      fixedin:
+        - ">=0.0.4"
