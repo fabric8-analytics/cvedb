@@ -1,0 +1,14 @@
+---
+cve: 2016-3113
+title: CVE in xss-filters
+description: >
+    Cross-site scripting (XSS) vulnerability in ovirt-engine allows remote attackers to inject arbitrary web script or HTML.
+cvss_v2: 4.3
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1326598
+affected:
+    - name: xss-filters
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
