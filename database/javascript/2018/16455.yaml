@@ -1,0 +1,15 @@
+---
+cve: 2018-16455
+title: CVE in xss
+description: >
+    PHP Scripts Mall Market Place Script 1.0.1 allows XSS via a keyword.
+cvss_v2: 4.3
+references:
+    - https://googlequeens.com/2018/09/04/cve-2018-16455-market-place-script-1-0-1-stored-xss-via-search-by-keyword/
+affected:
+    - name: xss
+      version:
+        - "<=1.0.1,1.0.1"
+      fixedin:
+        - ">=1.0.2"
+        - "<=1.0.0,0.0.1"
