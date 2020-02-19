@@ -1,0 +1,14 @@
+---
+cve: 2020-0695
+title: CVE in office-addin-test-server
+description: >
+    A spoofing vulnerability exists when Office Online Server does not validate origin in cross-origin communications correctly, aka 'Microsoft Office Online Server Spoofing Vulnerability'.
+cvss_v2: 5.8
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0695
+affected:
+    - name: office-addin-test-server
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
