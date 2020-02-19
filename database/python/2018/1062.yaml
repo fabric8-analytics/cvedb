@@ -1,0 +1,19 @@
+---
+cve: 2018-1062
+title: CVE in ovirt-engine-sdk-python
+description: >
+    A vulnerability was discovered in oVirt 4.1.x before 4.1.9, where the combination of Enable Discard and Wipe After Delete flags for VM disks managed by oVirt, could cause a disk to be incompletely zeroed when removed from a VM. If the same storage blocks happen to be later allocated to a new disk attached to another VM, potentially sensitive data could be revealed to privileged users of that VM.
+cvss_v2: 3.5
+references:
+    - http://www.securityfocus.com/bid/103433
+    - https://access.redhat.com/errata/RHBA-2018:0135
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1549944
+    - https://gerrit.ovirt.org/#/c/84861/
+    - https://gerrit.ovirt.org/#/c/84875/
+affected:
+    - name: ovirt-engine-sdk-python
+      version:
+        - "<=4.1.7,4.1.0a1"
+      fixedin:
+        - ">=4.2.1a2"
+        - "<=4.0.4,3.3.0.3-1"
