@@ -1,0 +1,15 @@
+---
+cve: 2018-12079
+title: CVE in com.ericsson.research.trap:trap-transport-websocket
+description: >
+    The mintToken function of a smart contract implementation for Substratum (SUB), a tradable Ethereum ERC20 token, has no period constraint, which allows the owner to increase the total supply of the digital assets arbitrarily so as to make profits, aka the "tradeTrap" issue.
+cvss_v2: 5.0
+references:
+    - https://peckshield.com/2018/06/11/tradeTrap/
+affected:
+    - groupId: com.ericsson.research.trap
+      artifactId: trap-transport-websocket
+      version:
+        []
+      fixedin:
+        - ">=1.3"
