@@ -1,0 +1,16 @@
+---
+cve: 2019-15592
+title: CVE in com.devskiller.friendly-id:friendly-id-spring-boot-starter
+description: >
+    GitLab 12.2.2 and below contains a security vulnerability that allows a guest user in a private project to see the merge request ID associated to an issue via the activity timeline.
+cvss_v2: 4.0
+references:
+    - https://about.gitlab.com/releases/2019/08/29/security-release-gitlab-12-dot-2-dot-3-released/
+    - https://hackerone.com/reports/588876
+affected:
+    - groupId: com.devskiller.friendly-id
+      artifactId: friendly-id-spring-boot-starter
+      version:
+        []
+      fixedin:
+        - ">=0.9.0"
