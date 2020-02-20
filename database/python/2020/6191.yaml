@@ -1,0 +1,16 @@
+---
+cve: 2020-6191
+title: CVE in missing
+description: >
+    SAP Landscape Management, version 3.0, allows an attacker with admin privileges to execute malicious executables with root privileges in SAP Host Agent via SAP Landscape Management due to Missing Input Validation.
+cvss_v2: 9.0
+references:
+    - https://launchpad.support.sap.com/#/notes/2878030
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=537788812
+affected:
+    - name: missing
+      version:
+        - "<=3.0,3.0"
+      fixedin:
+        - ">=3.1"
+        - "<=2.13.1,2.13.0"
