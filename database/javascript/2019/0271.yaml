@@ -1,0 +1,19 @@
+---
+cve: 2019-0271
+title: CVE in @angular/platform-server
+description: >
+    ABAP Server (used in NetWeaver and Suite/ERP) and ABAP Platform does not sufficiently validate an XML document accepted from an untrusted source, leading to an XML External Entity (XEE) vulnerability. Fixed in Kernel 7.21 or 7.22, that is ABAP Server 7.00 to 7.31 and Kernel 7.45, 7.49 or 7.53, that is ABAP Server 7.40 to 7.52 or ABAP Platform. For more recent updates please refer to Security Note 2870067 (which supersedes the solution of Security Note 2736825) in the reference section below.
+cvss_v2: 4.0
+references:
+    - http://www.securityfocus.com/bid/107355
+    - https://launchpad.support.sap.com/#/notes/2736825
+    - https://launchpad.support.sap.com/#/notes/2870067
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=515408080
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=537788812
+affected:
+    - name: @angular/platform-server
+      version:
+        - "<=7.2.16,7.0.0-beta.0"
+      fixedin:
+        - ">=8.0.0-beta.0"
+        - "<=6.1.10,0.0.0-0"
