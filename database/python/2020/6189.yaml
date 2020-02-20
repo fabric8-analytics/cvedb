@@ -1,0 +1,16 @@
+---
+cve: 2020-6189
+title: CVE in phishme-intelligence
+description: >
+    Certain settings page(s) in SAP Business Objects Business Intelligence Platform (CMC), version 4.2, generates error messages that can give enterprise private-network related information which would otherwise be restricted leading to Information Disclosure.
+cvss_v2: 5.0
+references:
+    - https://launchpad.support.sap.com/#/notes/2695210
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=537788812
+affected:
+    - name: phishme-intelligence
+      version:
+        - "<=4.2.0,4.2.0"
+      fixedin:
+        - ">=4.3.0"
+        - "<=4.1.9,4.1.1"
