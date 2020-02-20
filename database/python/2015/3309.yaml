@@ -1,0 +1,16 @@
+---
+cve: 2015-3309
+title: CVE in collective-etherpad
+description: >
+    Directory traversal vulnerability in node/utils/Minify.js in Etherpad 1.1.2 through 1.5.4 allows remote attackers to read arbitrary files with permissions of the user running the service via a .. (dot dot) in the path parameter of HTTP API requests. NOTE: This vulnerability is due to an incomplete fix to CVE-2015-3297.
+cvss_v2: 5.0
+references:
+    - http://cve.killedkenny.io/cve/CVE-2015-3309
+    - http://www.openwall.com/lists/oss-security/2015/04/16/8
+    - https://github.com/ether/etherpad-lite/commit/0fa7650df8f940ed6b577d79836a78eb09726c4b
+affected:
+    - name: collective-etherpad
+      version:
+        - "<=1.1.2,1.1.2"
+      fixedin:
+        - "<=1.1.1,1.0"
