@@ -1,0 +1,15 @@
+---
+cve: 2020-1942
+title: CVE in org.apache.nifi:nifi-framework-nar
+description: >
+    In Apache NiFi 0.0.1 to 1.11.0, the flow fingerprint factory generated flow fingerprints which included sensitive property descriptor values. In the event a node attempted to join a cluster and the cluster flow was not inheritable, the flow fingerprint of both the cluster and local flow was printed, potentially containing sensitive values in plaintext.
+cvss_v2: 5.0
+references:
+    - https://nifi.apache.org/security.html#CVE-2020-1942
+affected:
+    - groupId: org.apache.nifi
+      artifactId: nifi-framework-nar
+      version:
+        - "<=1.11.0"
+      fixedin:
+        - ">=1.11.1"
