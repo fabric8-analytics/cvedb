@@ -1,0 +1,16 @@
+---
+cve: 2013-1924
+title: CVE in com.liferay.commerce:com.liferay.commerce.api
+description: >
+    Commerce Skrill (Formerly Moneybookers) has an Access bypass vulnerability in all versions prior to 7.x-1.2
+cvss_v2: 5.0
+references:
+    - http://drupal.org/node/1960338
+    - http://www.openwall.com/lists/oss-security/2013/04/04/6
+affected:
+    - groupId: com.liferay.commerce
+      artifactId: com.liferay.commerce.api
+      version:
+        - "<=6.0.0"
+      fixedin:
+        - ">=7.0.0"
