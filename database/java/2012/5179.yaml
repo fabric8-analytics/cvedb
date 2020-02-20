@@ -1,0 +1,16 @@
+---
+cve: 2012-5179
+title: CVE in org.mini2Dx:mini2Dx-core
+description: >
+    The Boat Browser application before 4.2 and Boat Browser Mini application before 3.9 for Android do not properly implement the WebView class, which allows attackers to obtain sensitive information via a crafted application.
+cvss_v2: 2.1
+references:
+    - http://jvn.jp/en/jp/JVN69589791/index.html
+    - http://jvndb.jvn.jp/jvndb/JVNDB-2012-000111
+affected:
+    - groupId: org.mini2Dx
+      artifactId: mini2Dx-core
+      version:
+        - "<=2.0.0-alpha.19"
+      fixedin:
+        []
