@@ -1,0 +1,15 @@
+---
+cve: 2018-6180
+title: CVE in statutory-voting
+description: >
+    A flaw in the profile section of Online Voting System 1.0 allows an unauthenticated user to set an arbitrary password for other accounts.
+cvss_v2: 5.0
+references:
+    - http://packetstormsecurity.com/files/146254/Online-Voting-System-Authentication-Bypass.html
+    - https://www.exploit-db.com/exploits/43967/
+affected:
+    - name: statutory-voting
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
