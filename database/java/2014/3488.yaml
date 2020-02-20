@@ -1,0 +1,19 @@
+---
+cve: 2014-3488
+title: CVE in io.netty:netty
+description: >
+    The SslHandler in Netty before 3.9.2 allows remote attackers to cause a denial of service (infinite loop and CPU consumption) via a crafted SSLv2Hello message.
+cvss_v2: 5.0
+references:
+    - http://netty.io/news/2014/06/11/3-9-2-Final.html
+    - http://secunia.com/advisories/59196
+    - https://github.com/netty/netty/commit/2fa9400a59d0563a66908aba55c41e7285a04994
+    - https://github.com/netty/netty/issues/2562
+    - https://lists.debian.org/debian-lts-announce/2020/02/msg00018.html
+affected:
+    - groupId: io.netty
+      artifactId: netty
+      version:
+        - "<=3.9.1.1.Final"
+      fixedin:
+        - ">=3.9.2.Final"
