@@ -1,0 +1,17 @@
+---
+cve: 2020-6189
+title: CVE in org.seedstack.business:business-migrate
+description: >
+    Certain settings page(s) in SAP Business Objects Business Intelligence Platform (CMC), version 4.2, generates error messages that can give enterprise private-network related information which would otherwise be restricted leading to Information Disclosure.
+cvss_v2: 5.0
+references:
+    - https://launchpad.support.sap.com/#/notes/2695210
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=537788812
+affected:
+    - groupId: org.seedstack.business
+      artifactId: business-migrate
+      version:
+        - "<=4.2.0,4.2.0"
+      fixedin:
+        - ">=4.2.1"
+        - "<=4.1.1,4.1.0"
