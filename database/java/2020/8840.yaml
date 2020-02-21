@@ -1,0 +1,18 @@
+---
+cve: 2020-8840
+title: CVE in com.fasterxml.jackson.core:jackson-databind
+description: >
+    FasterXML jackson-databind 2.0.0 through 2.9.10.2 lacks certain xbean-reflect/JNDI blocking, as demonstrated by org.apache.xbean.propertyeditor.JndiConverter.
+cvss_v2: 7.5
+references:
+    - https://github.com/FasterXML/jackson-databind/issues/2620
+    - https://lists.apache.org/thread.html/r078e68a926ea6be12e8404e47f45aabf04bb4668e8265c0de41db6db@%3Ccommits.druid.apache.org%3E
+    - https://lists.apache.org/thread.html/r319f19c74e06c201b9d4e8b282a4e4b2da6dcda022fb46f007dd00d3@%3Ccommits.druid.apache.org%3E
+    - https://lists.debian.org/debian-lts-announce/2020/02/msg00020.html
+affected:
+    - groupId: com.fasterxml.jackson.core
+      artifactId: jackson-databind
+      version:
+        - "<=2.9.10.2"
+      fixedin:
+        - ">=2.10.0"
