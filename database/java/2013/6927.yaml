@@ -1,0 +1,16 @@
+---
+cve: 2013-6927
+title: CVE in org.infinispan.server:infinispan-server-testsuite
+description: >
+    Internet TRiLOGI Server (unknown versions) could allow a local user to bypass security and create a local user account.
+cvss_v2: 2.1
+references:
+    - http://www.securityfocus.com/bid/64192
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/90077
+affected:
+    - groupId: org.infinispan.server
+      artifactId: infinispan-server-testsuite
+      version:
+        []
+      fixedin:
+        - ">=5.3.0.Beta1"
