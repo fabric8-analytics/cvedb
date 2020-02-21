@@ -1,0 +1,15 @@
+---
+cve: 2017-5247
+title: CVE in django-secure
+description: >
+    Biscom Secure File Transfer is vulnerable to cross-site scripting in the File Name field. An authenticated user with permissions to upload or send files can populate this field with a filename that contains standard HTML scripting tags. The resulting script will evaluated by any other authenticated user who views the attacker-supplied file name. All versions of SFT prior to 5.1.1028 are affected. The fix version is 5.1.1028.
+cvss_v2: 3.5
+references:
+    - https://cve.biscom.com/bis-sft-cv-0005/
+    - https://twitter.com/i_bo0om/status/885050741567750145
+affected:
+    - name: django-secure
+      version:
+        []
+      fixedin:
+        - ">=0.1.0a1"
