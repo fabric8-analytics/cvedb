@@ -1,6 +1,6 @@
 ---
 cve: 2017-16115
-title: CVE in timespan
+title: CVE in time-span
 description: >
     The timespan module is vulnerable to regular expression denial of service. Given 50k characters of untrusted user input it will block the event loop for around 10 seconds.
 cvss_v2: 5.0
@@ -8,8 +8,8 @@ references:
     - https://github.com/indexzero/TimeSpan.js/issues/10
     - https://nodesecurity.io/advisories/533
 affected:
-    - name: timespan
+    - name: time-span
       version:
-        - "<=2.3.0"
-      fixedin:
         []
+      fixedin:
+        - ">=1.0.0"
