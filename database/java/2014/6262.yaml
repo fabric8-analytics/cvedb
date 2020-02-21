@@ -1,0 +1,17 @@
+---
+cve: 2014-6262
+title: CVE in org.srcdeps.core:srcdeps-core
+description: >
+    Multiple format string vulnerabilities in the python module in RRDtool, as used in Zenoss Core before 4.2.5 and other products, allow remote attackers to execute arbitrary code or cause a denial of service (application crash) via a crafted third argument to the rrdtool.graph function, aka ZEN-15415, a related issue to CVE-2013-2131.
+cvss_v2: 5.0
+references:
+    - http://www.kb.cert.org/vuls/id/449452
+    - https://docs.google.com/spreadsheets/d/1dHAc4PxUbs-4Dxzm1wSCE0sMz5UCMY6SW3PlMHSyuuQ/edit?usp=sharing
+    - https://www.securityfocus.com/bid/71540
+affected:
+    - groupId: org.srcdeps.core
+      artifactId: srcdeps-core
+      version:
+        - "<=4.2.4"
+      fixedin:
+        - ">=4.2.5"
