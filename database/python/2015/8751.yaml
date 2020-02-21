@@ -1,0 +1,18 @@
+---
+cve: 2015-8751
+title: CVE in epub-extract-jpeg
+description: >
+    Integer overflow in the jas_matrix_create function in JasPer allows context-dependent attackers to have unspecified impact via a crafted JPEG 2000 image, related to integer multiplication for memory allocation.
+cvss_v2: 6.8
+references:
+    - http://www.openwall.com/lists/oss-security/2016/01/07/10
+    - http://www.openwall.com/lists/oss-security/2016/01/08/2
+    - http://www.openwall.com/lists/oss-security/2016/01/11/3
+    - http://www.securityfocus.com/bid/80035
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1294039
+affected:
+    - name: epub-extract-jpeg
+      version:
+        []
+      fixedin:
+        - ">=0.5.0"
