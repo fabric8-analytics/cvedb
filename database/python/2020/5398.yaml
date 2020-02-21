@@ -1,0 +1,16 @@
+---
+cve: 2020-5398
+title: CVE in spring
+description: >
+    In Spring Framework, versions 5.2.x prior to 5.2.3, versions 5.1.x prior to 5.1.13, and versions 5.0.x prior to 5.0.16, an application is vulnerable to a reflected file download (RFD) attack when it sets a "Content-Disposition" header in the response where the filename attribute is derived from user supplied input.
+cvss_v2: 7.6
+references:
+    - https://lists.apache.org/thread.html/rf8dc72b974ee74f17bce661ea7d124e733a1f4c4f236354ac0cf48e8@%3Ccommits.camel.apache.org%3E
+    - https://pivotal.io/security/cve-2020-5398
+affected:
+    - name: spring
+      version:
+        - "<=5.2.2,5.0.0"
+      fixedin:
+        - ">=5.3.0"
+        - "<=4.4.7,3.3.0"
