@@ -1,0 +1,15 @@
+---
+cve: 2017-5246
+title: CVE in cordova-plugin-file-transfer
+description: >
+    Biscom Secure File Transfer is vulnerable to AngularJS expression injection in the Display Name field. An authenticated user can populate this field with a valid AngularJS expression, wrapped in double curly-braces ({{ }}). This expression will be evaluated by any other authenticated user who views the attacker's display name. Affected versions are 5.0.0000 through 5.1.1026. The Issue is fixed in 5.1.1028.
+cvss_v2: 4.0
+references:
+    - https://cve.biscom.com/bis-sft-cv-0004/
+    - https://twitter.com/i_bo0om/status/885050741567750145
+affected:
+    - name: cordova-plugin-file-transfer
+      version:
+        []
+      fixedin:
+        - ">=0.3.0"
