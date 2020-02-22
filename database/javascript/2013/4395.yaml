@@ -1,0 +1,16 @@
+---
+cve: 2013-4395
+title: CVE in machinepack-machines
+description: >
+    Simple Machines Forum (SMF) through 2.0.5 has XSS
+cvss_v2: 4.3
+references:
+    - http://www.openwall.com/lists/oss-security/2013/10/01/8
+    - http://www.openwall.com/lists/oss-security/2013/10/02/1
+    - http://www.openwall.com/lists/oss-security/2013/10/02/3
+affected:
+    - name: machinepack-machines
+      version:
+        - "<=2.0.5"
+      fixedin:
+        - ">=2.0.6"
