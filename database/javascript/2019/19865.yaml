@@ -1,0 +1,15 @@
+---
+cve: 2019-19865
+title: CVE in nutforms-web-client
+description: >
+    Atos Unify OpenScape UC Web Client 1.0 allows XSS. An attacker could exploit this by convincing an authenticated user to inject arbitrary JavaScript code in the Profile Name field. A browser would execute this stored XSS payload.
+cvss_v2: 4.3
+references:
+    - https://networks.unify.com/security/advisories/OBSO-2002-01.pdf
+    - https://unify.com/en/support/security-advisories
+affected:
+    - name: nutforms-web-client
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.1.0"
