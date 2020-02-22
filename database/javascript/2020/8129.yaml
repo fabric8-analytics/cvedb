@@ -1,0 +1,14 @@
+---
+cve: 2020-8129
+title: CVE in script-manager
+description: >
+    An unintended require vulnerability in script-manager npm package version 0.8.6 and earlier may allow attackers to execute arbitrary code.
+cvss_v2: 7.5
+references:
+    - https://hackerone.com/reports/660563
+affected:
+    - name: script-manager
+      version:
+        - "<=0.8.6"
+      fixedin:
+        - ">=0.9.0"
