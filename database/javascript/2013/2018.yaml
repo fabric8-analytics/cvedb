@@ -1,0 +1,15 @@
+---
+cve: 2013-2018
+title: CVE in multiple-contains
+description: >
+    Multiple SQL injection vulnerabilities in BOINC allow remote attackers to execute arbitrary SQL commands via unspecified vectors.
+cvss_v2: 7.5
+references:
+    - http://www.openwall.com/lists/oss-security/2013/04/28/3
+    - http://www.openwall.com/lists/oss-security/2013/04/29/11
+affected:
+    - name: multiple-contains
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
