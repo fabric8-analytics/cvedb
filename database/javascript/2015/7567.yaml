@@ -1,0 +1,18 @@
+---
+cve: 2015-7567
+title: CVE in @raketa-cms/raketa-cms
+description: >
+    SQL injection vulnerability in Yeager CMS 1.2.1 allows remote attackers to execute arbitrary SQL commands via the "passwordreset&token" parameter.
+cvss_v2: 7.5
+references:
+    - http://packetstormsecurity.com/files/135716/Yeager-CMS-1.2.1-File-Upload-SQL-Injection-XSS-SSRF.html
+    - http://seclists.org/fulldisclosure/2016/Feb/44
+    - http://www.securityfocus.com/archive/1/archive/1/537493/100/0/threaded
+    - https://www.exploit-db.com/exploits/39436/
+affected:
+    - name: @raketa-cms/raketa-cms
+      version:
+        - "<=1.2.1,1.2.1"
+      fixedin:
+        - ">=1.2.2"
+        - "<=1.2.0,1.0.0"
