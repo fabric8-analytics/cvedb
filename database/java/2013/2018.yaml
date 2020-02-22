@@ -1,0 +1,16 @@
+---
+cve: 2013-2018
+title: CVE in org.java-sql-generator:org.java-sql-generator.api
+description: >
+    Multiple SQL injection vulnerabilities in BOINC allow remote attackers to execute arbitrary SQL commands via unspecified vectors.
+cvss_v2: 7.5
+references:
+    - http://www.openwall.com/lists/oss-security/2013/04/28/3
+    - http://www.openwall.com/lists/oss-security/2013/04/29/11
+affected:
+    - groupId: org.java-sql-generator
+      artifactId: org.java-sql-generator.api
+      version:
+        []
+      fixedin:
+        - ">=0.2.2"
