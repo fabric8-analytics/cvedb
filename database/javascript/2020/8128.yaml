@@ -1,13 +1,13 @@
 ---
 cve: 2020-8128
-title: CVE in jsreport-core
+title: CVE in jsreport
 description: >
     An unintended require and server-side request forgery vulnerabilities in jsreport version 2.5.0 and earlier allow attackers to execute arbitrary code.
 cvss_v2: 7.5
 references:
     - https://hackerone.com/reports/660565
 affected:
-    - name: jsreport-core
+    - name: jsreport
       version:
         - "<=2.5.0"
       fixedin:
