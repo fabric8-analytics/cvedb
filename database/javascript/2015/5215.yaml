@@ -1,0 +1,18 @@
+---
+cve: 2015-5215
+title: CVE in bedrock-idp
+description: >
+    ** DISPUTED ** The default configuration of the Jinja templating engine used in the Identity Provider (IdP) server in Ipsilon 0.1.0 before 1.0.1 does not enable auto-escaping, which makes it easier for remote attackers to conduct cross-site scripting (XSS) attacks via template variables. NOTE: This may be a duplicate of CVE-2015-5216. Moreover, the Jinja development team does not enable auto-escape by default for performance issues as explained in https://jinja.palletsprojects.com/en/master/faq/#why-is-autoescaping-not-the-default.
+cvss_v2: 4.3
+references:
+    - http://www.openwall.com/lists/oss-security/2015/10/23/10
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1255168
+    - https://fedorahosted.org/ipsilon/wiki/Releases/v1.0.1
+    - https://pagure.io/ipsilon/a503aa9c2a30a74e709d1c88099befd50fb2eb16
+affected:
+    - name: bedrock-idp
+      version:
+        - "<=1.0.0,0.1.0"
+      fixedin:
+        - ">=1.0.1"
+        - "<=0.0.1,0.0.1"
