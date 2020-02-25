@@ -1,0 +1,14 @@
+---
+cve: 2020-9336
+title: CVE in presidential-election-data
+description: >
+    fauzantrif eLection 2.0 has XSS via the Admin Dashboard -> Settings -> Election -> "message if election is closed" field.
+cvss_v2: 3.5
+references:
+    - https://github.com/0xEmma/CVEs/blob/master/CVEs/eLection-2.0-XSS.md
+affected:
+    - name: presidential-election-data
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - "<=1.0.0,1.0.0"
