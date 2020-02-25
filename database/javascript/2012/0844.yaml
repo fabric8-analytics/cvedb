@@ -1,0 +1,17 @@
+---
+cve: 2012-0844
+title: CVE in terra-disclosure-manager
+description: >
+    Information-disclosure vulnerability in Netsurf through 2.8 due to a world-readable cookie jar.
+cvss_v2: 2.1
+references:
+    - http://www.openwall.com/lists/oss-security/2012/02/11/3
+    - https://access.redhat.com/security/cve/cve-2012-0844
+    - https://security-tracker.debian.org/tracker/CVE-2012-0844
+    - https://www.securityfocus.com/bid/51981
+affected:
+    - name: terra-disclosure-manager
+      version:
+        - "<=2.8.0"
+      fixedin:
+        - ">=2.9.0"
