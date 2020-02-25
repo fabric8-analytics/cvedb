@@ -1,0 +1,15 @@
+---
+cve: 2020-0562
+title: CVE in com.io7m.r2:io7m-r2-examples
+description: >
+    Improper permissions in the installer for Intel(R) RWC2, all versions, may allow an authenticated user to potentially enable escalation of privilege via local access.
+cvss_v2: 4.6
+references:
+    - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00339.html
+affected:
+    - groupId: com.io7m.r2
+      artifactId: io7m-r2-examples
+      version:
+        []
+      fixedin:
+        - ">=0.2.0"
