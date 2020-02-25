@@ -1,0 +1,17 @@
+---
+cve: 2014-5876
+title: CVE in wd-ct
+description: >
+    The WD My Cloud (aka com.wdc.wd2go) application 4.0.0 for Android does not verify X.509 certificates from SSL servers, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate.
+cvss_v2: 5.4
+references:
+    - http://www.kb.cert.org/vuls/id/582497
+    - http://www.kb.cert.org/vuls/id/633273
+    - https://docs.google.com/spreadsheets/d/1t5GXwjw82SyunALVJb2w0zi3FoLRIkfGPc7AMjRF0r4/edit?usp=sharing
+affected:
+    - name: wd-ct
+      version:
+        - "<=4.0.0,4.0.0"
+      fixedin:
+        - ">=4.0.1"
+        - "<=3.5.1,0.0.1"
