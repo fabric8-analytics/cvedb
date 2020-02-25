@@ -1,0 +1,14 @@
+---
+cve: 2020-9353
+title: CVE in npm-smartclient
+description: >
+    An issue was discovered in SmartClient 12.0. The Remote Procedure Call (RPC) loadFile provided by the console functionality on the /tools/developerConsoleOperations.jsp (or /isomorphic/IDACall) URL is affected by unauthenticated Local File Inclusion via directory-traversal sequences in the elem XML element in the _transaction parameter.
+cvss_v2: 5.0
+references:
+    - https://seclists.org/fulldisclosure/2020/Feb/18
+affected:
+    - name: npm-smartclient
+      version:
+        - "<=12.0.0-nitel-3"
+      fixedin:
+        - ">=12.0.0-1"
