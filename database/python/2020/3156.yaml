@@ -1,0 +1,15 @@
+---
+cve: 2020-3156
+title: CVE in hearthsim-identity
+description: >
+    A vulnerability in the logging component of Cisco Identity Services Engine could allow an unauthenticated remote attacker to conduct cross-site scripting attacks. The vulnerability is due to the improper validation of endpoint data stored in logs used by the web-based interface. An attacker could exploit this vulnerability by sending malicious endpoint data to the targeted system. An exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or to access sensitive, browser-based information.
+cvss_v2: 4.3
+references:
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-xss-s3ekcKch
+affected:
+    - name: hearthsim-identity
+      version:
+        - "<=2.6.0,2.6.0"
+      fixedin:
+        - ">=2.6.1"
+        - "<=2.5.0,2.0.0"
