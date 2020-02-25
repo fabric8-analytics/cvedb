@@ -1,0 +1,14 @@
+---
+cve: 2020-0562
+title: CVE in carbonara-r2
+description: >
+    Improper permissions in the installer for Intel(R) RWC2, all versions, may allow an authenticated user to potentially enable escalation of privilege via local access.
+cvss_v2: 4.6
+references:
+    - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00339.html
+affected:
+    - name: carbonara-r2
+      version:
+        []
+      fixedin:
+        - ">=1.0.1"
