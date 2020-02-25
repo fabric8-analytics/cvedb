@@ -1,0 +1,15 @@
+---
+cve: 2020-8990
+title: CVE in @nuskin/my-site-home
+description: >
+    Western Digital My Cloud Home before 3.6.0 and ibi before 3.6.0 allow Session Fixation.
+cvss_v2: 6.4
+references:
+    - https://support.wdc.com/downloads.aspx?g=907&lang=en#downloads
+    - https://www.westerndigital.com/support/productsecurity/wdc-19013-my-cloud-home-and-ibi-session-invalidation-vulnerability
+affected:
+    - name: @nuskin/my-site-home
+      version:
+        - "<=3.5.15"
+      fixedin:
+        - ">=3.6.0"
