@@ -1,0 +1,14 @@
+---
+cve: 2020-9351
+title: CVE in npm-smartclient
+description: >
+    An issue was discovered in SmartClient 12.0. If an unauthenticated attacker makes a POST request to /tools/developerConsoleOperations.jsp or /isomorphic/IDACall with malformed XML data in the _transaction parameter, the server replies with a verbose error showing where the application resides (the absolute path).
+cvss_v2: 5.0
+references:
+    - https://seclists.org/fulldisclosure/2020/Feb/18
+affected:
+    - name: npm-smartclient
+      version:
+        - "<=12.0.0-nitel-3"
+      fixedin:
+        - ">=12.0.0-1"
