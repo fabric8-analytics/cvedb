@@ -1,0 +1,16 @@
+---
+cve: 2020-9336
+title: CVE in org.settings4j:settings4j
+description: >
+    fauzantrif eLection 2.0 has XSS via the Admin Dashboard -> Settings -> Election -> "message if election is closed" field.
+cvss_v2: 3.5
+references:
+    - https://github.com/0xEmma/CVEs/blob/master/CVEs/eLection-2.0-XSS.md
+affected:
+    - groupId: org.settings4j
+      artifactId: settings4j
+      version:
+        - "<=2.0,2.0"
+      fixedin:
+        - ">=2.0.1"
+        - "<=1.0,1.0-beta4"
