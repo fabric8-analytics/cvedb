@@ -1,0 +1,15 @@
+---
+cve: 2020-9336
+title: CVE in onegov-election-day
+description: >
+    fauzantrif eLection 2.0 has XSS via the Admin Dashboard -> Settings -> Election -> "message if election is closed" field.
+cvss_v2: 3.5
+references:
+    - https://github.com/0xEmma/CVEs/blob/master/CVEs/eLection-2.0-XSS.md
+affected:
+    - name: onegov-election-day
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - ">=2.0.1"
+        - "<=1.19.9,0.0.0"
