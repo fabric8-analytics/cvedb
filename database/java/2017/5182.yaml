@@ -1,0 +1,17 @@
+---
+cve: 2017-5182
+title: CVE in jakarta.enterprise.concurrent:jakarta.enterprise.concurrent-api
+description: >
+    Remote Manager in Open Enterprise Server (OES) allows unauthenticated remote attackers to read any arbitrary file, via a specially crafted URL, that allows complete directory traversal and total information disclosure. This vulnerability is present on all versions of OES for linux, it applies to OES2015 SP1 before Maintenance Update 11080, OES2015 before Maintenance Update 11079, OES11 SP3 before Maintenance Update 11078, OES11 SP2 before Maintenance Update 11077).
+cvss_v2: 7.8
+references:
+    - http://www.securityfocus.com/bid/95743
+    - http://www.securitytracker.com/id/1037689
+    - https://www.novell.com/support/kb/doc.php?id=7018503
+affected:
+    - groupId: jakarta.enterprise.concurrent
+      artifactId: jakarta.enterprise.concurrent-api
+      version:
+        - "<=2.0.0-RC1,2.0.0-RC1"
+      fixedin:
+        - "<=1.1.2,1.1.1"
