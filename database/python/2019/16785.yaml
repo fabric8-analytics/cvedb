@@ -8,6 +8,7 @@ references:
     - https://docs.pylonsproject.org/projects/waitress/en/latest/#security-fixes
     - https://github.com/Pylons/waitress/commit/8eba394ad75deaf9e5cd15b78a3d16b12e6b0eba
     - https://github.com/Pylons/waitress/security/advisories/GHSA-pg36-wpm5-g57p
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GVDHR2DNKCNQ7YQXISJ45NT4IQDX3LJ7/
 affected:
     - name: waitress
       version:
