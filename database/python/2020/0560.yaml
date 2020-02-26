@@ -1,0 +1,14 @@
+---
+cve: 2020-0560
+title: CVE in lcd2usb
+description: >
+    Improper permissions in the installer for the Intel(R) Renesas Electronics(R) USB 3.0 Driver, all versions, may allow an authenticated user to potentially enable escalation of privilege via local access.
+cvss_v2: 4.6
+references:
+    - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00273.html
+affected:
+    - name: lcd2usb
+      version:
+        []
+      fixedin:
+        - ">=1.0"
