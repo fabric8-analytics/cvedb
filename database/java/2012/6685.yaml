@@ -1,0 +1,17 @@
+---
+cve: 2012-6685
+title: CVE in org.sweble.engine:sweble-engine-serialization
+description: >
+    Nokogiri before 1.5.4 is vulnerable to XXE attacks
+cvss_v2: 5.0
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1178970
+    - https://github.com/sparklemotion/nokogiri/issues/693
+    - https://nokogiri.org/CHANGELOG.html#154-2012-06-12
+affected:
+    - groupId: org.sweble.engine
+      artifactId: sweble-engine-serialization
+      version:
+        - "<=2.0.0"
+      fixedin:
+        - ">=2.1.0"
