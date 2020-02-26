@@ -1,0 +1,15 @@
+---
+cve: 2013-7286
+title: CVE in sentry
+description: >
+    MobileIron VSP < 5.9.1 and Sentry < 5.0 has a weak password obfuscation algorithm
+cvss_v2: 5.0
+references:
+    - http://seclists.org/fulldisclosure/2014/Apr/21
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/92352
+affected:
+    - name: sentry
+      version:
+        - "<=5.5.0-DEV"
+      fixedin:
+        - ">=6.0.0"
