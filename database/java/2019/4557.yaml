@@ -1,0 +1,16 @@
+---
+cve: 2019-4557
+title: CVE in com.ibm.watson.developer_cloud:watson-spring-boot-starter
+description: >
+    IBM Qradar Advisor 1.1 through 2.5 with Watson uses weaker than expected cryptographic algorithms that could allow an attacker to decrypt highly sensitive information. IBM X-Force ID: 166206.
+cvss_v2: 5.0
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/166206
+    - https://www.ibm.com/support/pages/node/3379947
+affected:
+    - groupId: com.ibm.watson.developer_cloud
+      artifactId: watson-spring-boot-starter
+      version:
+        - "<=1.1.0,1.1.0"
+      fixedin:
+        - "<=1.0.0,0.0.1"
