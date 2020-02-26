@@ -1,0 +1,15 @@
+---
+cve: 2019-4672
+title: CVE in azure-arm-advisor
+description: >
+    IBM QRadar Advisor 1.1 through 2.5 could allow an unauthorized attacker to obtain sensitive information from specially crafted HTTP requests that could aid in further attacks against the system. IBM X-Force ID: 171438.
+cvss_v2: 5.0
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/171438
+    - https://www.ibm.com/support/pages/node/3379965
+affected:
+    - name: azure-arm-advisor
+      version:
+        - "<=1.2.0,1.1.0"
+      fixedin:
+        - "<=1.0.0-preview,1.0.0-preview"
