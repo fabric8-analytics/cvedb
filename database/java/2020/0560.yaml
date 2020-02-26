@@ -1,0 +1,15 @@
+---
+cve: 2020-0560
+title: CVE in se.ugli.habanero.servlet-driver:habanero-servlet-driver-driver
+description: >
+    Improper permissions in the installer for the Intel(R) Renesas Electronics(R) USB 3.0 Driver, all versions, may allow an authenticated user to potentially enable escalation of privilege via local access.
+cvss_v2: 4.6
+references:
+    - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00273.html
+affected:
+    - groupId: se.ugli.habanero.servlet-driver
+      artifactId: habanero-servlet-driver-driver
+      version:
+        []
+      fixedin:
+        - ">=0.9.0"
