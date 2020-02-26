@@ -1,0 +1,15 @@
+---
+cve: 2019-19866
+title: CVE in nutforms-web-client
+description: >
+    Atos Unify OpenScape UC Web Client 1.0 allows remote attackers to obtain sensitive information. By iterating the value of conferenceId to getMailFunction in the JSON API, one can enumerate all conferences scheduled on the platform, with their numbers and access PINs.
+cvss_v2: 5.0
+references:
+    - https://networks.unify.com/security/advisories/OBSO-2002-01.pdf
+    - https://unify.com/en/support/security-advisories
+affected:
+    - name: nutforms-web-client
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.1.0"
