@@ -1,0 +1,18 @@
+---
+cve: 2013-4088
+title: CVE in ovh-angular-otrs
+description: >
+    Kernel/Modules/AgentTicketWatcher.pm in Open Ticket Request System (OTRS) 3.0.x before 3.0.21, 3.1.x before 3.1.17, and 3.2.x before 3.2.8 does not properly restrict tickets, which allows remote attackers with a valid agent login to read restricted tickets via a crafted URL involving the ticket split mechanism.
+cvss_v2: 4.0
+references:
+    - http://advisories.mageia.org/MGASA-2013-0196.html
+    - http://archives.neohapsis.com/archives/bugtraq/2013-07/0015.html
+    - https://bugs.gentoo.org/show_bug.cgi?id=CVE-2013-4088
+    - https://www.securityfocus.com/bid/60688/discuss
+affected:
+    - name: ovh-angular-otrs
+      version:
+        - "<=3.0.1,3.0.0"
+      fixedin:
+        - ">=4.0.0"
+        - "<=2.0.1,1.1.0"
