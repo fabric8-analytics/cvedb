@@ -1,0 +1,14 @@
+---
+cve: 2020-9039
+title: CVE in obj-server-rest
+description: >
+    Couchbase Server 4.x and 5.x before 6.0.0 has Insecure Permissions for the projector and indexer REST endpoints (they allow unauthenticated access).
+cvss_v2: 7.5
+references:
+    - https://www.couchbase.com/resources/security#SecurityAlerts
+affected:
+    - name: obj-server-rest
+      version:
+        - "<=4,4"
+      fixedin:
+        - "<=3,1"
