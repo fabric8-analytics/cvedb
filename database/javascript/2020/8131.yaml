@@ -1,0 +1,14 @@
+---
+cve: 2020-8131
+title: CVE in yarn
+description: >
+    Arbitrary filesystem write vulnerability in Yarn 1.21.1 and earlier allows attackers to write to any path on the filesystem and potentially lead to arbitrary code execution by forcing the user to install a malicious package.
+cvss_v2: 7.5
+references:
+    - https://hackerone.com/reports/730239
+affected:
+    - name: yarn
+      version:
+        - "<=1.21.1"
+      fixedin:
+        - ">=1.22.0"
