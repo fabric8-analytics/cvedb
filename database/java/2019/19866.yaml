@@ -1,0 +1,16 @@
+---
+cve: 2019-19866
+title: CVE in com.tcdng.unify:unify-jcifs
+description: >
+    Atos Unify OpenScape UC Web Client V9 before version V9 R4.31.0 and V10 before version V10 R0.6.0 allows remote attackers to obtain sensitive information. By iterating the value of conferenceId to getMailFunction in the JSON API, one can enumerate all conferences scheduled on the platform, with their numbers and access PINs.
+cvss_v2: 5.0
+references:
+    - https://networks.unify.com/security/advisories/OBSO-2002-01.pdf
+    - https://unify.com/en/support/security-advisories
+affected:
+    - groupId: com.tcdng.unify
+      artifactId: unify-jcifs
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
