@@ -1,0 +1,17 @@
+---
+cve: 2015-1425
+title: CVE in castle-cms
+description: >
+    JAKWEB Gecko CMS has Multiple Input Validation Vulnerabilities
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/72085
+affected:
+    - name: castle-cms
+      version:
+        - "<=2.2.0,2.2.0"
+        - "<=2.3.0,2.3.0"
+      fixedin:
+        - ">=2.3.1"
+        - "<=2.2.2,2.2.1"
+        - "<=2.1.1,2.0.0"
