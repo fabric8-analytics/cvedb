@@ -1,0 +1,17 @@
+---
+cve: 2014-4651
+title: CVE in org.apache.jclouds:jclouds-drivers-project
+description: >
+    It was found that the jclouds scriptbuilder Statements class wrote a temporary file to a predictable location. An attacker could use this flaw to access sensitive data, cause a denial of service, or perform other attacks.
+cvss_v2: 7.5
+references:
+    - http://seclists.org/oss-sec/2014/q2/579
+    - https://issues.apache.org/jira/browse/JCLOUDS-612
+affected:
+    - groupId: org.apache.jclouds
+      artifactId: jclouds-drivers-project
+      version:
+        - "<=1.7.3,1.7.3"
+      fixedin:
+        - ">=1.8.0"
+        - "<=1.7.2,1.6.1-incubating"
