@@ -1,0 +1,16 @@
+---
+cve: 2020-9337
+title: CVE in org.antframework.manager:manager-biz
+description: >
+    In GolfBuddy Course Manager 1.1, passwords are sent (with base64 encoding) via a GET request.
+cvss_v2: 4.0
+references:
+    - https://github.com/0xEmma/CVEs/blob/master/CVEs/CVE-2020-9337-Golf-Buddy-Insecure-Passwords.md
+    - https://help.golfbuddyglobal.com/sList.asp?searchproduct=29&searchcategory=5
+affected:
+    - groupId: org.antframework.manager
+      artifactId: manager-biz
+      version:
+        - "<=1.1.0.RELEASE"
+      fixedin:
+        - ">=1.2.0.RELEASE"
