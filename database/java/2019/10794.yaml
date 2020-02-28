@@ -1,0 +1,17 @@
+---
+cve: 2019-10794
+title: CVE in org.talend.sdk.component:component-api
+description: >
+    All versions of component-flatten are vulnerable to Prototype Pollution. The a function could be tricked into adding or modifying properties of Object.prototype using a __proto__ payload.
+cvss_v2: 6.5
+references:
+    - https://snyk.io/vuln/SNYK-JS-COMPONENTFLATTEN-548907
+affected:
+    - groupId: org.talend.sdk.component
+      artifactId: component-api
+      version:
+        - "<=0.0.1"
+        - "<=1.0.0,1.0.0"
+      fixedin:
+        - ">=1.0.1"
+        - "<=0.0.6,0.0.2"
