@@ -1,0 +1,15 @@
+---
+cve: 2019-10792
+title: CVE in store-prototype
+description: >
+    bodymen before 1.1.1 is vulnerable to Prototype Pollution. The handler function could be tricked into adding or modifying properties of Object.prototype using a __proto__ payload.
+cvss_v2: 6.5
+references:
+    - https://github.com/diegohaz/bodymen/commit/5d52e8cf360410ee697afd90937e6042c3a8653b
+    - https://snyk.io/vuln/SNYK-JS-BODYMEN-548897
+affected:
+    - name: store-prototype
+      version:
+        - "<=1.1.0"
+      fixedin:
+        - ">=1.1.1"
