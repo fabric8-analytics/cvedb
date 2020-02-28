@@ -1,0 +1,15 @@
+---
+cve: 2019-10793
+title: CVE in dot-object
+description: >
+    dot-object before 2.1.3 is vulnerable to Prototype Pollution. The set function could be tricked into adding or modifying properties of Object.prototype using a __proto__ payload.
+cvss_v2: 6.5
+references:
+    - https://github.com/rhalff/dot-object/commit/f76cff5fe6d01d30ce110d8f454db2e5bd28a7de
+    - https://snyk.io/vuln/SNYK-JS-DOTOBJECT-548905
+affected:
+    - name: dot-object
+      version:
+        - "<=2.1.2"
+      fixedin:
+        - ">=2.1.3"
