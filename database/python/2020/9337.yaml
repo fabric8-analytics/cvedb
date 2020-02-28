@@ -1,0 +1,16 @@
+---
+cve: 2020-9337
+title: CVE in cmu-course-api
+description: >
+    In GolfBuddy Course Manager 1.1, passwords are sent (with base64 encoding) via a GET request.
+cvss_v2: 4.0
+references:
+    - https://github.com/0xEmma/CVEs/blob/master/CVEs/CVE-2020-9337-Golf-Buddy-Insecure-Passwords.md
+    - https://help.golfbuddyglobal.com/sList.asp?searchproduct=29&searchcategory=5
+affected:
+    - name: cmu-course-api
+      version:
+        - "<=1.1.0,1.1.0"
+      fixedin:
+        - ">=1.2.0"
+        - "<=1.0.0,0.1.0"
