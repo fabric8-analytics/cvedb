@@ -1,0 +1,17 @@
+---
+cve: 2013-7324
+title: CVE in net.sourceforge.html5valdialect:html5valdialect
+description: >
+    Webkit-GTK 2.x (any version with HTML5 audio/video support based on GStreamer) allows remote attackers to trigger unexpectedly high sound volume via malicious javascript. NOTE: this WebKit-GTK behavior complies with existing W3C standards and existing practices for GNOME desktop integration.
+cvss_v2: 5.0
+references:
+    - http://www.openwall.com/lists/oss-security/2014/02/10/13
+    - https://people.canonical.com/~ubuntu-security/cve/2013/CVE-2013-7324.html
+    - https://www.openwall.com/lists/oss-security/2013/10/08/4
+affected:
+    - groupId: net.sourceforge.html5valdialect
+      artifactId: html5valdialect
+      version:
+        - "<=2.1.2,2.1.0"
+      fixedin:
+        - "<=2.0.0,1.0.0-beta1"
