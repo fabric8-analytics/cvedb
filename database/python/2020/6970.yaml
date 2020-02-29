@@ -1,0 +1,14 @@
+---
+cve: 2020-6970
+title: CVE in modbus
+description: >
+    A Heap-based Buffer Overflow was found in Emerson OpenEnterprise SCADA Server 2.83 (if Modbus or ROC Interfaces have been installed and are in use) and all versions of OpenEnterprise 3.1 through 3.3.3, where a specially crafted script could execute code on the OpenEnterprise Server.
+cvss_v2: 7.5
+references:
+    - https://www.us-cert.gov/ics/advisories/icsa-20-049-02
+affected:
+    - name: modbus
+      version:
+        - "<=3.2,3.1"
+      fixedin:
+        - "<=3.0,0.1"
