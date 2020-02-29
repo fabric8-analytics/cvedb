@@ -1,0 +1,14 @@
+---
+cve: 2020-1704
+title: CVE in openshift-uptimer
+description: >
+    An insecure modification vulnerability in the /etc/passwd file was found in all versions of OpenShift ServiceMesh (maistra) before 1.0.8 in the openshift/istio-kialia-rhel7-operator-container. An attacker with access to the container could use this flaw to modify /etc/passwd and escalate their privileges.
+cvss_v2: 4.6
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-1704
+affected:
+    - name: openshift-uptimer
+      version:
+        - "<=1.0.7"
+      fixedin:
+        - ">=1.0.8"
