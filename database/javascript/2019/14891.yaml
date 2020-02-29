@@ -1,0 +1,16 @@
+---
+cve: 2019-14891
+title: CVE in crio
+description: >
+    A flaw was found in cri-o, as a result of all pod-related processes being placed in the same memory cgroup. This can result in container management (conmon) processes being killed if a workload process triggers an out-of-memory (OOM) condition for the cgroup. An attacker could abuse this flaw to get host network access on an cri-o host.
+cvss_v2: 6.0
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-14891
+affected:
+    - name: crio
+      version:
+        - "<=1.0.1"
+        - "<=4.1.0,4.1.0"
+      fixedin:
+        - ">=4.1.1"
+        - "<=4.0.0,2.0.0"
