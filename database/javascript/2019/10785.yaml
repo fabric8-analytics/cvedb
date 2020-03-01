@@ -1,0 +1,25 @@
+---
+cve: 2019-10785
+title: CVE in dojox
+description: >
+    dojox is vulnerable to Cross-site Scripting in all versions before version 1.16.1, 1.15.2, 1.14.5, 1.13.6, 1.12.7 and 1.11.9. This is due to dojox.xmpp.util.xmlEncode only encoding the first occurrence of each character, not all of them.
+cvss_v2: 4.3
+references:
+    - https://github.com/dojo/dojox/security/advisories/GHSA-pg97-ww7h-5mjr
+    - https://lists.debian.org/debian-lts-announce/2020/02/msg00033.html
+    - https://snyk.io/vuln/SNYK-JS-DOJOX-548257,
+affected:
+    - name: dojox
+      version:
+        - "<=1.11.8,1.11.0-rc1"
+        - "<=1.12.6,1.12.1"
+        - "<=1.13.5,1.13.0"
+        - "<=1.14.4,1.14.0"
+        - "<=1.16.0,1.15.0"
+      fixedin:
+        - ">=1.16.1"
+        - "<=1.14.5,1.14.5"
+        - "<=1.13.6,1.13.6"
+        - "<=1.12.7,1.12.7"
+        - "<=1.11.9,1.11.9"
+        - "<=1.10.10,1.6.4"
