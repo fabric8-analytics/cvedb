@@ -1,0 +1,17 @@
+---
+cve: 2017-11509
+title: CVE in net.sf.squirrel-sql:squirrel-sql
+description: >
+    An authenticated remote attacker can execute arbitrary code in Firebird SQL Server versions 2.5.7 and 3.0.2 by executing a malformed SQL statement.
+cvss_v2: 9.0
+references:
+    - https://lists.debian.org/debian-lts-announce/2018/05/msg00005.html
+    - https://lists.debian.org/debian-lts-announce/2020/02/msg00036.html
+    - https://www.tenable.com/security/research/tra-2017-36
+affected:
+    - groupId: net.sf.squirrel-sql
+      artifactId: squirrel-sql
+      version:
+        - "<=3.0.2"
+      fixedin:
+        - ">=3.2.0-RC1"
