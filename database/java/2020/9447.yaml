@@ -1,0 +1,15 @@
+---
+cve: 2020-9447
+title: CVE in com.googlecode.gwtupload:gwtupload-samples
+description: >
+    The file-upload feature in GwtUpload 1.0.3 allows XSS via a crafted filename.
+cvss_v2: 4.3
+references:
+    - https://github.com/manolo/gwtupload/issues/32
+affected:
+    - groupId: com.googlecode.gwtupload
+      artifactId: gwtupload-samples
+      version:
+        - "<=1.0.3,1.0.3"
+      fixedin:
+        - "<=1.0.1,0.6.4"
