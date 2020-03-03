@@ -1,0 +1,15 @@
+---
+cve: 2019-10797
+title: CVE in org.wso2.transport.http:org.wso2.transport.http.netty.statistics.feature
+description: >
+    Netty in WSO2 transport-http before v6.3.1 is vulnerable to HTTP Response Splitting due to HTTP Header validation being disabled.
+cvss_v2: 4.3
+references:
+    - https://snyk.io/vuln/SNYK-JAVA-ORGWSO2TRANSPORTHTTP-548944
+affected:
+    - groupId: org.wso2.transport.http
+      artifactId: org.wso2.transport.http.netty.statistics.feature
+      version:
+        - "<=6.3.0"
+      fixedin:
+        - ">=6.3.1"
