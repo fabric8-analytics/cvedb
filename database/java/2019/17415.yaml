@@ -1,0 +1,16 @@
+---
+cve: 2019-17415
+title: CVE in org.awake-file:awake-file
+description: >
+    A Structured Exception Handler (SEH) based buffer overflow in File Sharing Wizard 1.5.0 26-8-2008 allows remote unauthenticated attackers to execute arbitrary code via the HTTP DELETE method, a similar issue to CVE-2019-16724 and CVE-2010-2331.
+cvss_v2: 7.5
+references:
+    - https://packetstormsecurity.com/files/154738/File-Sharing-Wizard-1.5.0-DELETE-SEH-Buffer-Overflow.html
+affected:
+    - groupId: org.awake-file
+      artifactId: awake-file
+      version:
+        - "<=1.5,1.5"
+      fixedin:
+        - ">=2.0.1"
+        - "<=1.4,1.0"
