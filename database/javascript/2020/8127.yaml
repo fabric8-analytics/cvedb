@@ -1,0 +1,14 @@
+---
+cve: 2020-8127
+title: CVE in reveal.js
+description: >
+    Insufficient validation in cross-origin communication (postMessage) in reveal.js version 3.9.1 and earlier allow attackers to perform cross-site scripting attacks.
+cvss_v2: 4.3
+references:
+    - https://hackerone.com/reports/691977
+affected:
+    - name: reveal.js
+      version:
+        - "<=3.9.1"
+      fixedin:
+        - ">=3.9.2"
