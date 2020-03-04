@@ -1,0 +1,15 @@
+---
+cve: 2019-10803
+title: CVE in push-dir
+description: >
+    push-dir through 0.4.1 allows execution of arbritary commands. Arguments provided as part of the variable "opt.branch" is not validated before being provided to the "git" command within "index.js#L139". This could be abused by an attacker to inject arbitrary commands.
+cvss_v2: 7.5
+references:
+    - https://github.com/L33T-KR3W/push-dir/blob/master/index.js#L139
+    - https://snyk.io/vuln/SNYK-JS-PUSHDIR-559009
+affected:
+    - name: push-dir
+      version:
+        - "<=0.4.1"
+      fixedin:
+        []
