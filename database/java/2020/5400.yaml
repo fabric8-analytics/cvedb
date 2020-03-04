@@ -1,0 +1,15 @@
+---
+cve: 2020-5400
+title: CVE in com.sap.cloud.lm.sl.cf:com.sap.cloud.lm.sl.cf.web
+description: >
+    Cloud Foundry Cloud Controller (CAPI), versions prior to 1.91.0, logs properties of background jobs when they are run, which may include sensitive information such as credentials if provided to the job. A malicious user with access to those logs may gain unauthorized access to resources protected by such credentials.
+cvss_v2: 4.0
+references:
+    - https://www.cloudfoundry.org/blog/cve-2020-5400
+affected:
+    - groupId: com.sap.cloud.lm.sl.cf
+      artifactId: com.sap.cloud.lm.sl.cf.web
+      version:
+        - "<=1.98.0"
+      fixedin:
+        []
