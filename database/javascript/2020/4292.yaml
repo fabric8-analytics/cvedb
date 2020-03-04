@@ -1,0 +1,15 @@
+---
+cve: 2020-4292
+title: CVE in property-information
+description: >
+    IBM Security Information Queue (ISIQ) 1.0.0, 1.0.1, 1.0.2, 1.0.3, and 1.0.4 uses a cross-domain policy file that includes domains that should not be trusted which could disclose sensitive information. IBM X-Force ID: 176335.
+cvss_v2: 5.0
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/176335
+    - https://www.ibm.com/support/pages/node/5390193
+affected:
+    - name: property-information
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=2.0.0"
