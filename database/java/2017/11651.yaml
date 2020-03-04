@@ -1,0 +1,16 @@
+---
+cve: 2017-11651
+title: CVE in org.ops4j.pax.url:pax-url-cache
+description: >
+    NexusPHP V1.5 has XSS via a javascript: or data: URL in a UBBCode url tag.
+cvss_v2: 4.3
+references:
+    - http://118.89.230.52/about/details.docx
+affected:
+    - groupId: org.ops4j.pax.url
+      artifactId: pax-url-cache
+      version:
+        - "<=1.5.0,1.5.0"
+      fixedin:
+        - ">=1.5.1"
+        - "<=1.4.2,1.0.0"
