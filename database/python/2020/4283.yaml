@@ -1,0 +1,15 @@
+---
+cve: 2020-4283
+title: CVE in expected-information-gain
+description: >
+    IBM Security Information Queue (ISIQ) 1.0.0, 1.0.1, 1.0.2, 1.0.3, and 1.0.4 contains hard-coded credentials, such as a password or cryptographic key, which it uses for its own inbound authentication, outbound communication to external components, or encryption of internal data. IBM X-Force ID: 176206.
+cvss_v2: 5.0
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/176206
+    - https://www.ibm.com/support/pages/node/5383395
+affected:
+    - name: expected-information-gain
+      version:
+        - "<=1.0.3"
+      fixedin:
+        []
