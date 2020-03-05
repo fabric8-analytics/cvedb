@@ -1,0 +1,15 @@
+---
+cve: 2019-10804
+title: CVE in serial-number
+description: >
+    serial-number through 1.3.0 allows execution of arbritary commands. The "cmdPrefix" argument in serialNumber function is used by the "exec" function without any validation.
+cvss_v2: 7.5
+references:
+    - https://github.com/es128/serial-number/blob/master/index.js#L106
+    - https://snyk.io/vuln/SNYK-JS-SERIALNUMBER-559010
+affected:
+    - name: serial-number
+      version:
+        - "<=1.3.0"
+      fixedin:
+        []
