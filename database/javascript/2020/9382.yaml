@@ -1,0 +1,15 @@
+---
+cve: 2020-9382
+title: CVE in react-widgets
+description: >
+    An issue was discovered in the Widgets extension through 1.4.0 for MediaWiki. Improper title sanitization allowed for the execution of any wiki page as a widget (as defined by this extension) via MediaWiki's {{#widget:}} parser function.
+cvss_v2: 5.5
+references:
+    - https://gerrit.wikimedia.org/r/q/I953e060bc6994ffdba9f380c98173f53f8ca1ea8
+    - https://phabricator.wikimedia.org/T245850
+affected:
+    - name: react-widgets
+      version:
+        - "<=1.4.0"
+      fixedin:
+        - ">=1.4.1"
