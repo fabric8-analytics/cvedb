@@ -1,0 +1,14 @@
+---
+cve: 2018-20343
+title: CVE in arya-build
+description: >
+    Multiple buffer overflow vulnerabilities have been found in Ken Silverman Build Engine 1. An attacker could craft a special map file to execute arbitrary code when the map file is loaded.
+cvss_v2: 6.8
+references:
+    - https://github.com/Alexandre-Bartel/CVE-2018-20343
+affected:
+    - name: arya-build
+      version:
+        - "<=1"
+      fixedin:
+        - ">=2"
