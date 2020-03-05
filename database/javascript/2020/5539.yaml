@@ -1,0 +1,18 @@
+---
+cve: 2020-5539
+title: CVE in ver
+description: >
+    GRANDIT Ver.1.6, Ver.2.0, Ver.2.1, Ver.2.2, Ver.2.3, and Ver.3.0 do not properly manage sessions, which allows remote attackers to impersonate an arbitrary user and then alter or disclose the information via unspecified vectors.
+cvss_v2: 6.4
+references:
+    - https://jvn.jp/en/jp/JVN73472345/index.html
+    - https://www.grandit.jp/etc/20200228_letter.pdf
+affected:
+    - name: ver
+      version:
+        - "<=2.0.0,2.0.0"
+        - "<=3.0.0,3.0.0"
+      fixedin:
+        - ">=3.0.1"
+        - "<=2.0.1,2.0.1"
+        - "<=1.1.1,0.0.0"
