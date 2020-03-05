@@ -1,0 +1,16 @@
+---
+cve: 2020-5403
+title: CVE in io.projectreactor.netty:reactor-netty
+description: >
+    Reactor Netty HttpServer, versions 0.9.3 and 0.9.4, is exposed to a URISyntaxException that causes the connection to be closed prematurely instead of producing a 400 response.
+cvss_v2: 5.0
+references:
+    - https://pivotal.io/security/cve-2020-5403
+affected:
+    - groupId: io.projectreactor.netty
+      artifactId: reactor-netty
+      version:
+        - "<=0.9.4.RELEASE,0.9.3.RELEASE"
+      fixedin:
+        - ">=0.9.5.RELEASE"
+        - "<=0.9.2.RELEASE,0.8.0.RELEASE"
