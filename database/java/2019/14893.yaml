@@ -1,0 +1,17 @@
+---
+cve: 2019-14893
+title: CVE in org.apache.karaf.jndi:org.apache.karaf.jndi.core
+description: >
+    A flaw was discovered in FasterXML jackson-databind in all versions before 2.9.10 and 2.10.0, where it would permit polymorphic deserialization of malicious objects using the xalan JNDI gadget when used in conjunction with polymorphic type handling methods such as `enableDefaultTyping()` or when @JsonTypeInfo is using `Id.CLASS` or `Id.MINIMAL_CLASS` or in any other way which ObjectMapper.readValue might instantiate objects from unsafe sources. An attacker could use this flaw to execute arbitrary code.
+cvss_v2: 7.5
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-14893
+    - https://github.com/FasterXML/jackson-databind/issues/2469
+affected:
+    - groupId: org.apache.karaf.jndi
+      artifactId: org.apache.karaf.jndi.core
+      version:
+        - "<=2.4.4"
+        - "<=4.3.0.RC1,4.3.0.RC1"
+      fixedin:
+        - "<=4.2.8,3.0.0"
