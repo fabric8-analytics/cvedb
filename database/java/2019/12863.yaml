@@ -1,0 +1,16 @@
+---
+cve: 2019-12863
+title: CVE in com.opdar.platform:gulosity-platform
+description: >
+    SolarWinds Orion Platform 2018.4 HF3 (NPM 12.4, NetPath 1.1.4) allows Stored HTML Injection by administrators via the Web Console Settings screen.
+cvss_v2: 3.5
+references:
+    - https://www.esecforte.com/responsible-vulnerability-disclosure-cve-2019-12863-stored-html-injection-vulnerability-in-solarwinds-orion-platform-2018-4-hf3-npm-12-4-netpath-1-1-4/
+    - https://www.solarwinds.com/network-performance-monitor
+affected:
+    - groupId: com.opdar.platform
+      artifactId: gulosity-platform
+      version:
+        - "<=1.1.4,1.1.4"
+      fixedin:
+        - "<=1.1.2,1.1"
