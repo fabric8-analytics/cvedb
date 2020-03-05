@@ -1,0 +1,15 @@
+---
+cve: 2019-19607
+title: CVE in awv3
+description: >
+    A SQL injection vulnerability in the web conferencing component of Mitel MiCollab AWV before 8.1.2.2 could allow an unauthenticated attack due to insufficient input validation for the session parameter. A successful exploit could allow an attacker to extract sensitive information from the database and execute arbitrary scripts.
+cvss_v2: 7.5
+references:
+    - https://www.mitel.com/support/security-advisories
+    - https://www.mitel.com/support/security-advisories/mitel-product-security-advisory-19-0007
+affected:
+    - name: awv3
+      version:
+        - "<=8.1.1"
+      fixedin:
+        - ">=8.1.2"
