@@ -1,0 +1,14 @@
+---
+cve: 2020-10097
+title: CVE in @patrickkeller/zammad-integration
+description: >
+    An issue was discovered in Zammad 3.0 through 3.2. It may respond with verbose error messages that disclose internal application or infrastructure information. This information could aid attackers in successfully exploiting other vulnerabilities.
+cvss_v2: 5.0
+references:
+    - https://zammad.com/news/security-advisory-zaa-2020-10
+affected:
+    - name: @patrickkeller/zammad-integration
+      version:
+        - "<=1.0.2"
+      fixedin:
+        []
