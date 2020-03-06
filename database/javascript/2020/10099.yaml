@@ -1,0 +1,14 @@
+---
+cve: 2020-10099
+title: CVE in xss-filters
+description: >
+    An XSS issue was discovered in Zammad 3.0 through 3.2. Malicious code can be provided by a low-privileged user through the Ticket functionality in Zammad. The malicious JavaScript will execute within the browser of any user who opens the ticket or has the ticket within the Toolbar.
+cvss_v2: 3.5
+references:
+    - https://zammad.com/news/security-advisory-zaa-2020-01
+affected:
+    - name: xss-filters
+      version:
+        - "<=1.2.7"
+      fixedin:
+        []
