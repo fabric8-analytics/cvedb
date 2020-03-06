@@ -1,0 +1,16 @@
+---
+cve: 2019-10805
+title: CVE in de.philippkatz.swing.property:property-editor
+description: >
+    valib through 2.0.0 allows Internal Property Tampering. A maliciously crafted JavaScript object can bypass several inspection functions provided by valib. Valib uses a built-in function (hasOwnProperty) from the unsafe user-input to examine an object. It is possible for a crafted payload to overwrite this function to manipulate the inspection results to bypass security checks.
+cvss_v2: 5.0
+references:
+    - https://snyk.io/vuln/SNYK-JS-VALIB-559015
+    - https://www.npmjs.com/package/valib
+affected:
+    - groupId: de.philippkatz.swing.property
+      artifactId: property-editor
+      version:
+        - "<=2.0.0"
+      fixedin:
+        - ">=2.0.1"
