@@ -1,0 +1,15 @@
+---
+cve: 2020-8659
+title: CVE in nomad-envoy-cli
+description: >
+    CNCF Envoy through 1.13.0 may consume excessive amounts of memory when proxying HTTP/1.1 requests or responses with many small (i.e. 1 byte) chunks.
+cvss_v2: 5.0
+references:
+    - https://github.com/envoyproxy/envoy/security/advisories/GHSA-jwcm-4pwp-c2qv
+    - https://www.envoyproxy.io/docs/envoy/v1.13.1/intro/version_history
+affected:
+    - name: nomad-envoy-cli
+      version:
+        - "<=1.13.0"
+      fixedin:
+        - ">=1.14.0"
