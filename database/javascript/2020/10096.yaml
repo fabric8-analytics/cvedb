@@ -1,0 +1,14 @@
+---
+cve: 2020-10096
+title: CVE in @patrickkeller/zammad-integration
+description: >
+    An issue was discovered in Zammad 3.0 through 3.2. It does not prevent caching of confidential data within browser memory. An attacker who either remotely compromises or obtains physical access to a user's workstation can browse the browser cache contents and obtain sensitive information. The attacker does not need to be authenticated with the application to view this information, as it would be available via the browser cache.
+cvss_v2: 5.0
+references:
+    - https://zammad.com/news/security-advisory-zaa-2020-11
+affected:
+    - name: @patrickkeller/zammad-integration
+      version:
+        - "<=1.0.2"
+      fixedin:
+        []
