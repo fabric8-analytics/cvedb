@@ -1,0 +1,17 @@
+---
+cve: 2020-5404
+title: CVE in io.projectreactor.netty:reactor-netty
+description: >
+    The HttpClient from Reactor Netty, versions 0.9.x prior to 0.9.5, and versions 0.8.x prior to 0.8.16, may be used incorrectly, leading to a credentials leak during a redirect to a different domain. In order for this to happen, the HttpClient must have been explicitly configured to follow redirects.
+cvss_v2: 4.9
+references:
+    - https://pivotal.io/security/cve-2020-5404
+affected:
+    - groupId: io.projectreactor.netty
+      artifactId: reactor-netty
+      version:
+        - "<=0.8.15.RELEASE"
+        - "<=0.9.4.RELEASE,0.9.0.RELEASE"
+      fixedin:
+        - ">=0.9.5.RELEASE"
+        - "<=0.8.16.RELEASE,0.8.16.RELEASE"
