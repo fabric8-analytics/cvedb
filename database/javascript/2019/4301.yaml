@@ -1,0 +1,14 @@
+---
+cve: 2019-4301
+title: CVE in ember-data-application-adapter-service
+description: >
+    BigFix Self-Service Application (SSA) is vulnerable to arbitrary code execution if Javascript code is included in Running Message or Post Message HTML.
+cvss_v2: 6.0
+references:
+    - https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0076139
+affected:
+    - name: ember-data-application-adapter-service
+      version:
+        - "<=3.0.0,3.0.0"
+      fixedin:
+        - "<=2.0.0,0.0.1"
