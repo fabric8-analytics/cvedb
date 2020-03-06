@@ -1,0 +1,15 @@
+---
+cve: 2020-3127
+title: CVE in windows-network-drive
+description: >
+    Multiple vulnerabilities in Cisco Webex Network Recording Player for Microsoft Windows and Cisco Webex Player for Microsoft Windows could allow an attacker to execute arbitrary code on an affected system. The vulnerabilities are due to insufficient validation of certain elements within a Webex recording that is stored in either the Advanced Recording Format (ARF) or the Webex Recording Format (WRF). An attacker could exploit these vulnerabilities by sending a malicious ARF or WRF file to a user through a link or email attachment and persuading the user to open the file on the local system. A successful exploit could allow the attacker to execute arbitrary code on the affected system with the privileges of the targeted user.
+cvss_v2: 9.3
+references:
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20200304-webex-player
+    - https://www.zerodayinitiative.com/advisories/ZDI-20-269/
+affected:
+    - name: windows-network-drive
+      version:
+        - "<=3.0.1"
+      fixedin:
+        []
