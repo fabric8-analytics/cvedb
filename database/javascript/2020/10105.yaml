@@ -1,0 +1,14 @@
+---
+cve: 2020-10105
+title: CVE in @patrickkeller/zammad-integration
+description: >
+    An issue was discovered in Zammad 3.0 through 3.2. It returns source code of static resources when submitting an OPTIONS request, rather than a GET request. Disclosure of source code allows for an attacker to formulate more precise attacks. Source code was disclosed for the file 404.html (/zammad/public/404.html)
+cvss_v2: 5.0
+references:
+    - https://zammad.com/news/security-advisory-zaa-2020-09
+affected:
+    - name: @patrickkeller/zammad-integration
+      version:
+        - "<=1.0.2"
+      fixedin:
+        []
