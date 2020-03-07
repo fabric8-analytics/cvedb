@@ -1,0 +1,15 @@
+---
+cve: 2020-10180
+title: CVE in org.glassfish.main.security:security
+description: >
+    The ESET AV parsing engine allows virus-detection bypass via a crafted BZ2 Checksum field in an archive. This affects versions before 1294 of Smart Security Premium, Internet Security, NOD32 Antivirus, Cyber Security Pro (macOS), Cyber Security (macOS), Mobile Security for Android, Smart TV Security, and NOD32 Antivirus 4 for Linux Desktop.
+cvss_v2: 7.5
+references:
+    - https://blog.zoller.lu/p/tzo-11-2020-eset-generic-malformed.html
+affected:
+    - groupId: org.glassfish.main.security
+      artifactId: security
+      version:
+        - "<=5.1.0"
+      fixedin:
+        []
