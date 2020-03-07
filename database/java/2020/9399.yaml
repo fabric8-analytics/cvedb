@@ -1,0 +1,16 @@
+---
+cve: 2020-9399
+title: CVE in de.pro-vision.maven:de.pro-vision.maven.build-tools.global-build-tools
+description: >
+    The Avast AV parsing engine allows virus-detection bypass via a crafted ZIP archive. This affects versions before 12 definitions 200114-0 of Antivirus Pro, Antivirus Pro Plus, and Antivirus for Linux.
+cvss_v2: 4.3
+references:
+    - https://blog.zoller.lu/p/tzo-23-2020-avast-generic-archive.html
+    - https://seclists.org/fulldisclosure/2020/Feb/35
+affected:
+    - groupId: de.pro-vision.maven
+      artifactId: de.pro-vision.maven.build-tools.global-build-tools
+      version:
+        - "<=11"
+      fixedin:
+        - ">=12"
