@@ -1,0 +1,14 @@
+---
+cve: 2014-2228
+title: CVE in xstream
+description: >
+    The XStream extension in HP Fortify SCA before 2.2 RC3 allows remote attackers to execute arbitrary code via unsafe deserialization of XML messages.
+cvss_v2: 7.5
+references:
+    - https://web.archive.org/web/20140425095352/http://h30499.www3.hp.com/t5/HP-Security-Research-Blog/Remote-code-execution-and-XML-Entity-Expansion-injection/ba-p/6403370
+affected:
+    - name: xstream
+      version:
+        - "<=2.2.0"
+      fixedin:
+        - ">=2.2.1"
