@@ -1,0 +1,15 @@
+---
+cve: 2020-2146
+title: CVE in mac-alias
+description: >
+    Jenkins Mac Plugin 1.1.0 and earlier does not validate SSH host keys when connecting agents created by the plugin, enabling man-in-the-middle attacks.
+cvss_v2: 5.8
+references:
+    - http://www.openwall.com/lists/oss-security/2020/03/09/1
+    - https://jenkins.io/security/advisory/2020-03-09/#SECURITY-1692
+affected:
+    - name: mac-alias
+      version:
+        - "<=1.1.0"
+      fixedin:
+        - ">=2.0.0"
