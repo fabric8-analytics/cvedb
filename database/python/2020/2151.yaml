@@ -1,0 +1,15 @@
+---
+cve: 2020-2151
+title: CVE in quality-report
+description: >
+    Jenkins Quality Gates Plugin 2.5 and earlier transmits configured credentials in plain text as part of its global Jenkins configuration form, potentially resulting in their exposure.
+cvss_v2: 5.0
+references:
+    - http://www.openwall.com/lists/oss-security/2020/03/09/1
+    - https://jenkins.io/security/advisory/2020-03-09/#SECURITY-1519
+affected:
+    - name: quality-report
+      version:
+        - "<=2.5.0"
+      fixedin:
+        - ">=2.5.1"
