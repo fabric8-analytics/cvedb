@@ -1,0 +1,15 @@
+---
+cve: 2020-2158
+title: CVE in cgcloud-jenkins
+description: >
+    Jenkins Literate Plugin 1.0 and earlier does not configure its YAML parser to prevent the instantiation of arbitrary types, resulting in a remote code execution vulnerability.
+cvss_v2: 6.5
+references:
+    - http://www.openwall.com/lists/oss-security/2020/03/09/1
+    - https://jenkins.io/security/advisory/2020-03-09/#SECURITY-1750
+affected:
+    - name: cgcloud-jenkins
+      version:
+        - "<=1.0.dev8"
+      fixedin:
+        - ">=1.1a1.dev129"
