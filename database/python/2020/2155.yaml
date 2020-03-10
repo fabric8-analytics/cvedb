@@ -1,0 +1,15 @@
+---
+cve: 2020-2155
+title: CVE in openshift-under-kubernetes
+description: >
+    Jenkins OpenShift Deployer Plugin 1.2.0 and earlier transmits configured credentials in plain text as part of its global Jenkins configuration form, potentially resulting in their exposure.
+cvss_v2: 5.0
+references:
+    - http://www.openwall.com/lists/oss-security/2020/03/09/1
+    - https://jenkins.io/security/advisory/2020-03-09/#SECURITY-1518
+affected:
+    - name: openshift-under-kubernetes
+      version:
+        - "<=1.2.0"
+      fixedin:
+        - ">=1.2.1"
