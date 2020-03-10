@@ -1,0 +1,15 @@
+---
+cve: 2020-2157
+title: CVE in cloud
+description: >
+    Jenkins Skytap Cloud CI Plugin 2.07 and earlier transmits configured credentials in plain text as part of job configuration forms, potentially resulting in their exposure.
+cvss_v2: 4.0
+references:
+    - http://www.openwall.com/lists/oss-security/2020/03/09/1
+    - https://jenkins.io/security/advisory/2020-03-09/#SECURITY-1522
+affected:
+    - name: cloud
+      version:
+        - "<=2.7.0"
+      fixedin:
+        - ">=2.7.1"
