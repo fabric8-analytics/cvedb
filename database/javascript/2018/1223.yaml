@@ -1,0 +1,14 @@
+---
+cve: 2018-1223
+title: CVE in runtime
+description: >
+    Cloud Foundry Container Runtime (kubo-release), versions prior to 0.14.0, may leak UAA and vCenter credentials to application logs. A malicious user with the ability to read the application logs could use these credentials to escalate privileges.
+cvss_v2: 4.0
+references:
+    - https://www.cloudfoundry.org/blog/cve-2018-1223/
+affected:
+    - name: runtime
+      version:
+        - "<=0.13.0"
+      fixedin:
+        - ">=0.14.0"
