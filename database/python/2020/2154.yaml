@@ -1,0 +1,15 @@
+---
+cve: 2020-2154
+title: CVE in contentful-management
+description: >
+    Jenkins Zephyr for JIRA Test Management Plugin 1.5 and earlier stores its credentials in plain text in a global configuration file on the Jenkins master file system.
+cvss_v2: 2.1
+references:
+    - http://www.openwall.com/lists/oss-security/2020/03/09/1
+    - https://jenkins.io/security/advisory/2020-03-09/#SECURITY-1550
+affected:
+    - name: contentful-management
+      version:
+        - "<=1.5.0"
+      fixedin:
+        - ">=1.5.1"
