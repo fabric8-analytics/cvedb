@@ -1,0 +1,15 @@
+---
+cve: 2015-7344
+title: CVE in grokcore-component
+description: >
+    HikaShop Joomla Component before 2.6.0 has XSS via an injected payload[/caption].
+cvss_v2: 3.5
+references:
+    - https://labs.integrity.pt/advisories/cve-2015-7344/
+affected:
+    - name: grokcore-component
+      version:
+        - "<=2.5,2.5"
+      fixedin:
+        - ">=2.5.1"
+        - "<=2.4,1.0"
