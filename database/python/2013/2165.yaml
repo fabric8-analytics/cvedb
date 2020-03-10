@@ -1,0 +1,28 @@
+---
+cve: 2013-2165
+title: CVE in edx-enterprise
+description: >
+    ResourceBuilderImpl.java in the RichFaces 3.x through 5.x implementation in Red Hat JBoss Web Framework Kit before 2.3.0, Red Hat JBoss Web Platform through 5.2.0, Red Hat JBoss Enterprise Application Platform through 4.3.0 CP10 and 5.x through 5.2.0, Red Hat JBoss BRMS through 5.3.1, Red Hat JBoss SOA Platform through 4.3.0 CP05 and 5.x through 5.3.1, Red Hat JBoss Portal through 4.3 CP07 and 5.x through 5.2.2, and Red Hat JBoss Operations Network through 2.4.2 and 3.x through 3.1.2 does not restrict the classes for which deserialization methods can be called, which allows remote attackers to execute arbitrary code via crafted serialized data.
+Per: http://www.bleathem.ca/blog/2013/07/richfaces-CVE-2013-2165.html
+
+"Download RichFaces 3.3.4.Final or RichFaces 4.3.3.Final and use them in your applications to protect yourself from this vulnerability."
+cvss_v2: 7.5
+references:
+    - http://jvn.jp/en/jp/JVN38787103/index.html
+    - http://jvndb.jvn.jp/jvndb/JVNDB-2013-000072
+    - http://packetstormsecurity.com/files/156663/Richsploit-RichFaces-Exploitation-Toolkit.html
+    - http://rhn.redhat.com/errata/RHSA-2013-1041.html
+    - http://rhn.redhat.com/errata/RHSA-2013-1042.html
+    - http://rhn.redhat.com/errata/RHSA-2013-1043.html
+    - http://rhn.redhat.com/errata/RHSA-2013-1044.html
+    - http://rhn.redhat.com/errata/RHSA-2013-1045.html
+    - https://access.redhat.com/security/cve/CVE-2013-2165
+    - https://bugzilla.redhat.com/show_bug.cgi?id=973570
+affected:
+    - name: edx-enterprise
+      version:
+        - "<=2.3.0"
+        - "<=2.4.1,2.4.0"
+      fixedin:
+        - ">=2.5.0"
+        - "<=2.3.9,2.3.2"
