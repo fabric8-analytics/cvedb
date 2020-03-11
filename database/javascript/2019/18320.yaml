@@ -1,0 +1,14 @@
+---
+cve: 2019-18320
+title: CVE in sp2-node-cli
+description: >
+    A vulnerability has been identified in SPPA-T3000 Application Server (All versions < Service Pack R8.2 SP2). An attacker with network access to the Application Server could be able to upload arbitrary files without authentication. Please note that an attacker needs to have network access to the Application Server in order to exploit this vulnerability. At the time of advisory publication no public exploitation of this security vulnerability was known.
+cvss_v2: 5.0
+references:
+    - https://cert-portal.siemens.com/productcert/pdf/ssa-451445.pdf
+affected:
+    - name: sp2-node-cli
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
