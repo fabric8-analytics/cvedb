@@ -1,0 +1,15 @@
+---
+cve: 2020-2145
+title: CVE in edx-enterprise
+description: >
+    Jenkins Zephyr Enterprise Test Management Plugin 1.9.1 and earlier stores its Zephyr password in plain text on the Jenkins master file system.
+cvss_v2: 2.1
+references:
+    - http://www.openwall.com/lists/oss-security/2020/03/09/1
+    - https://jenkins.io/security/advisory/2020-03-09/#SECURITY-1596
+affected:
+    - name: edx-enterprise
+      version:
+        - "<=1.9.1"
+      fixedin:
+        - ">=1.9.3"
