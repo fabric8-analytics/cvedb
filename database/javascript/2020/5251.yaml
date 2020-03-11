@@ -1,0 +1,15 @@
+---
+cve: 2020-5251
+title: CVE in parse-server
+description: >
+    In parser-server before version 4.1.0, you can fetch all the users objects, by using regex in the NoSQL query. Using the NoSQL, you can use a regex on sessionToken and find valid accounts this way.
+cvss_v2: 5.0
+references:
+    - https://github.com/parse-community/parse-server/commit/3a3a5eee5ffa48da1352423312cb767de14de269
+    - https://github.com/parse-community/parse-server/security/advisories/GHSA-h4mf-75hf-67w4
+affected:
+    - name: parse-server
+      version:
+        - "<=4.0.2"
+      fixedin:
+        - ">=4.1.0"
