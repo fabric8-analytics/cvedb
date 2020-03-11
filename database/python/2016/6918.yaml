@@ -1,0 +1,14 @@
+---
+cve: 2016-6918
+title: CVE in edx-enterprise
+description: >
+    Lexmark Markvision Enterprise (MVE) before 2.4.1 allows remote attackers to execute arbitrary commands by uploading files. (
+cvss_v2: 7.5
+references:
+    - http://support.lexmark.com/index?page=content&id=TE828&locale=EN&userlocale=EN_US
+affected:
+    - name: edx-enterprise
+      version:
+        - "<=2.4.0"
+      fixedin:
+        - ">=2.4.1"
