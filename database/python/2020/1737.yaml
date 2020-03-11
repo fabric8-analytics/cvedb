@@ -1,0 +1,15 @@
+---
+cve: 2020-1737
+title: CVE in ansible
+description: >
+    A flaw was found in Ansible 2.7.17 and prior, 2.8.9 and prior, and 2.9.6 and prior when using the Extract-Zip function from the win_unzip module as the extracted file(s) are not checked if they belong to the destination folder. An attacker could take advantage of this flaw by crafting an archive anywhere in the file system, using a path traversal. This issue is fixed in 2.10.
+cvss_v2: 4.6
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-1737
+    - https://github.com/ansible/ansible/issues/67795
+affected:
+    - name: ansible
+      version:
+        - "<=2.9.6"
+      fixedin:
+        []
