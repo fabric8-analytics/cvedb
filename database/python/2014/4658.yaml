@@ -1,0 +1,15 @@
+---
+cve: 2014-4658
+title: CVE in ansible
+description: >
+    The vault subsystem in Ansible before 1.5.5 does not set the umask before creation or modification of a vault file, which allows local users to obtain sensitive key information by reading a file.
+cvss_v2: 2.1
+references:
+    - https://github.com/ansible/ansible/blob/release1.5.5/CHANGELOG.md
+    - https://www.securityfocus.com/bid/68233
+affected:
+    - name: ansible
+      version:
+        - "<=1.5.4"
+      fixedin:
+        - ">=1.5.5"
