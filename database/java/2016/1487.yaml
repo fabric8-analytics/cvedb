@@ -1,0 +1,15 @@
+---
+cve: 2016-1487
+title: CVE in org.apache.karaf.assemblies.features:enterprise
+description: >
+    Lexmark Markvision Enterprise before 2.3.0 misuses the Apache Commons Collections Library, leading to remote code execution because of Java deserialization.
+cvss_v2: 6.8
+references:
+    - http://support.lexmark.com/index?page=content&id=TE747&locale=EN&userlocale=EN_US
+affected:
+    - groupId: org.apache.karaf.assemblies.features
+      artifactId: enterprise
+      version:
+        - "<=2.2.11"
+      fixedin:
+        - ">=2.3.0"
