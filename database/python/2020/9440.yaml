@@ -1,0 +1,14 @@
+---
+cve: 2020-9440
+title: CVE in collective-ckeditor
+description: >
+    A cross-site scripting (XSS) vulnerability in the WSC plugin through 5.5.7.5 for CKEditor 4 allows remote attackers to run arbitrary web script inside an IFRAME element by injecting a crafted HTML element into the editor.
+cvss_v2: 4.3
+references:
+    - https://ckeditor.com/blog/CKEditor-4.14-with-Paste-from-LibreOffice-released/#security-issues-fixed
+affected:
+    - name: collective-ckeditor
+      version:
+        - "<=4.9.0"
+      fixedin:
+        []
