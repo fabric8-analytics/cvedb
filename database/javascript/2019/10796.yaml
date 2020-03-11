@@ -1,6 +1,6 @@
 ---
 cve: 2019-10796
-title: CVE in rpi-gpio
+title: CVE in rpi
 description: >
     rpi through 0.0.3 allows execution of arbritary commands. The variable pinNumbver in function GPIO within src/lib/gpio.js is used as part of the arguement of exec function without any sanitization.
 cvss_v2: 6.8
@@ -8,8 +8,8 @@ references:
     - https://github.com/xseignard/rpi/blob/master/src/lib/gpio.js#L47
     - https://snyk.io/vuln/SNYK-JS-RPI-548942
 affected:
-    - name: rpi-gpio
+    - name: rpi
       version:
         - "<=0.0.3"
       fixedin:
-        - ">=0.0.4"
+        []
