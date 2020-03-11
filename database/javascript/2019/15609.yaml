@@ -1,0 +1,14 @@
+---
+cve: 2019-15609
+title: CVE in kill-port-process
+description: >
+    The kill-port-process package version < 2.2.0 is vulnerable to a Command Injection vulnerability.
+cvss_v2: 10.0
+references:
+    - https://hackerone.com/reports/661959
+affected:
+    - name: kill-port-process
+      version:
+        - "<=2.1.0"
+      fixedin:
+        - ">=2.2.0"
