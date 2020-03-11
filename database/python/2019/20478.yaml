@@ -1,13 +1,13 @@
 ---
 cve: 2019-20478
-title: CVE in ruamel-yaml
+title: CVE in ruamel.yaml
 description: >
     In ruamel.yaml through 0.16.7, the load method allows remote code execution if the application calls this method with an untrusted argument. In other words, this issue affects developers who are unaware of the need to use methods such as safe_load in these use cases.
 cvss_v2: 10.0
 references:
     - https://www.exploit-db.com/exploits/47655
 affected:
-    - name: ruamel-yaml
+    - name: ruamel.yaml
       version:
         - "<=0.16.7"
       fixedin:
