@@ -1,0 +1,15 @@
+---
+cve: 2019-10798
+title: CVE in rdf-graph-array
+description: >
+    rdf-graph-array through 0.3.0-rc6 manipulation of JavaScript objects resutling in Prototype Pollution. The rdf.Graph.prototype.add method could be tricked into adding or modifying properties of Object.prototype.
+cvss_v2: 5.0
+references:
+    - https://github.com/rdf-ext-archive/rdf-graph-array/blob/master/index.js#L211
+    - https://snyk.io/vuln/SNYK-JS-RDFGRAPHARRAY-551803
+affected:
+    - name: rdf-graph-array
+      version:
+        - "<=0.3.0"
+      fixedin:
+        []
