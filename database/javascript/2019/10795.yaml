@@ -1,0 +1,15 @@
+---
+cve: 2019-10795
+title: CVE in undefsafe
+description: >
+    undefsafe before 2.0.3 is vulnerable to Prototype Pollution. The 'a' function could be tricked into adding or modifying properties of Object.prototype using a __proto__ payload.
+cvss_v2: 6.5
+references:
+    - https://github.com/remy/undefsafe/commit/f272681b3a50e2c4cbb6a8533795e1453382c822
+    - https://snyk.io/vuln/SNYK-JS-UNDEFSAFE-548940
+affected:
+    - name: undefsafe
+      version:
+        - "<=2.0.2"
+      fixedin:
+        - ">=2.0.3"
