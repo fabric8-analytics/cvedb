@@ -1,0 +1,15 @@
+---
+cve: 2014-4657
+title: CVE in ansible
+description: >
+    The safe_eval function in Ansible before 1.5.4 does not properly restrict the code subset, which allows remote attackers to execute arbitrary code via crafted instructions.
+cvss_v2: 7.5
+references:
+    - https://github.com/ansible/ansible/blob/release1.5.5/CHANGELOG.md
+    - https://www.securityfocus.com/bid/68232
+affected:
+    - name: ansible
+      version:
+        - "<=1.5.3"
+      fixedin:
+        - ">=1.5.4"
