@@ -12,7 +12,6 @@ references:
 affected:
     - name: pyyaml
       version:
-        - "<=5.1.2,5.1b1"
+        - "<=5.1.2"
       fixedin:
         - ">=5.2b1"
-        - "<=4.2b4,3.01"
