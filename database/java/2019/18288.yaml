@@ -1,0 +1,16 @@
+---
+cve: 2019-18288
+title: CVE in org.apache.aries.application:org.apache.aries.application
+description: >
+    A vulnerability has been identified in SPPA-T3000 Application Server (All versions < Service Pack R8.2 SP2). An attacker with valid authentication at the RMI interface could be able to gain remote code execution through an unsecured file upload. Please note that an attacker needs to have access to the Application Highway in order to exploit this vulnerability. At the time of advisory publication no public exploitation of this security vulnerability was known.
+cvss_v2: 6.5
+references:
+    - http://packetstormsecurity.com/files/155665/Siemens-Security-Advisory-SPPA-T3000-Code-Execution.html
+    - https://cert-portal.siemens.com/productcert/pdf/ssa-451445.pdf
+affected:
+    - groupId: org.apache.aries.application
+      artifactId: org.apache.aries.application
+      version:
+        []
+      fixedin:
+        - ">=0.1-incubating"
