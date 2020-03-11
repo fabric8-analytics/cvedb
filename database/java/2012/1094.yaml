@@ -1,0 +1,16 @@
+---
+cve: 2012-1094
+title: CVE in org.jboss.as:jboss-as-naming
+description: >
+    JBoss AS 7 prior to 7.1.1 and mod_cluster do not handle default hostname in the same way, which can cause the excluded-contexts list to be mismatched and the root context to be exposed.
+cvss_v2: 5.0
+references:
+    - https://access.redhat.com/security/cve/cve-2012-1094
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2012-1094
+affected:
+    - groupId: org.jboss.as
+      artifactId: jboss-as-naming
+      version:
+        - "<=7.1.0.Final"
+      fixedin:
+        - ">=7.1.1.Final"
