@@ -1,0 +1,14 @@
+---
+cve: 2016-1487
+title: CVE in edx-enterprise
+description: >
+    Lexmark Markvision Enterprise before 2.3.0 misuses the Apache Commons Collections Library, leading to remote code execution because of Java deserialization.
+cvss_v2: 6.8
+references:
+    - http://support.lexmark.com/index?page=content&id=TE747&locale=EN&userlocale=EN_US
+affected:
+    - name: edx-enterprise
+      version:
+        - "<=2.2.0"
+      fixedin:
+        - ">=2.3.0"
