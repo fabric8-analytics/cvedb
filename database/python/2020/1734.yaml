@@ -10,6 +10,6 @@ references:
 affected:
     - name: ansible
       version:
-        - "<=2.9.6"
+        - "<=2.9.4"
       fixedin:
-        []
+        - ">=2.9.5"
