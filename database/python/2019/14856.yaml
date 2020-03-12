@@ -5,6 +5,7 @@ description: >
     ansible before versions 2.8.6, 2.7.14, 2.6.20 is vulnerable to a None
 cvss_v2: 4.0
 references:
+    - https://access.redhat.com/errata/RHSA-2020:0756
     - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-14856
 affected:
     - name: ansible
@@ -14,6 +15,6 @@ affected:
         - "<=2.8.5,2.8.0a1"
       fixedin:
         - ">=2.8.6"
-        - "<=2.7.15,2.7.14"
+        - "<=2.7.16,2.7.14"
         - "<=2.6.20,2.6.20"
         - "<=2.5.15,1.0"
