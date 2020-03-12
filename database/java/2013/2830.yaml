@@ -1,0 +1,15 @@
+---
+cve: 2013-2830
+title: CVE in eu.de-swaef.pdf:Markdown2Pdf
+description: >
+    Use-after-free vulnerability in SumatraPDF Reader 2.x before 2.2.1 allows remote attackers to execute arbitrary code via a crafted PDF file.
+cvss_v2: 9.3
+references:
+    - https://docs.microsoft.com/en-us/security-updates/vulnerabilityresearchadvisories/2013/msvr13-005
+affected:
+    - groupId: eu.de-swaef.pdf
+      artifactId: Markdown2Pdf
+      version:
+        - "<=2.0.1"
+      fixedin:
+        []
