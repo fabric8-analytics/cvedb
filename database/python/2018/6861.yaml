@@ -1,0 +1,15 @@
+---
+cve: 2018-6861
+title: CVE in cross
+description: >
+    Cross Site Scripting (XSS) exists in PHP Scripts Mall Lawyer Search Script 1.0.2 via a profile update parameter.
+cvss_v2: 3.5
+references:
+    - https://www.exploit-db.com/exploits/44012
+affected:
+    - name: cross
+      version:
+        - "<=1.0.2,1.0.2"
+      fixedin:
+        - ">=1.0.3"
+        - "<=1.0.1,1.0.0"
