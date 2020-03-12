@@ -1,0 +1,18 @@
+---
+cve: 2019-17636
+title: CVE in @theia/mini-browser
+description: >
+    In Eclipse Theia versions 0.3.9 through 0.15.0, one of the default pre-packaged Theia extensions is "Mini-Browser", published as "@theia/mini-browser" on npmjs.com. This extension, for its own needs, exposes a HTTP endpoint that allows to read the content of files on the host's filesystem, given their path, without restrictions on the requester's origin. This design is vulnerable to being exploited remotely through a DNS rebinding attack or a drive-by download of a carefully crafted exploit.
+cvss_v2: 5.8
+references:
+    - https://bugs.eclipse.org/bugs/show_bug.cgi?id=551747
+affected:
+    - name: @theia/mini-browser
+      version:
+        - "<=0.15.0"
+        - "<=0.15.0-next.e5492122,0.15.0-next.e0644971"
+        - "<=0.15.0-next.87487802,0.15.0-next.23875560"
+      fixedin:
+        - ">=0.16.0"
+        - "<=0.15.0-next.8033853c,0.15.0-next.ec2a8663"
+        - "<=0.15.0-next.e9449a0e,0.15.0-next.a6d565ef"
