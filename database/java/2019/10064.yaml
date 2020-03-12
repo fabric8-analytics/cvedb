@@ -1,0 +1,20 @@
+---
+cve: 2019-10064
+title: CVE in org.jboss.eap.additional.testsuite:eap-additional-testsuite-source-distribution
+description: >
+    hostapd before 2.6, in EAP mode, makes calls to the rand() and random() standard library functions without any preceding srand() or srandom() call, which results in inappropriate use of deterministic values. This was fixed in conjunction with CVE-2016-10743.
+cvss_v2: 5.0
+references:
+    - http://packetstormsecurity.com/files/156573/Hostapd-Insufficient-Entropy.html
+    - http://seclists.org/fulldisclosure/2020/Feb/26
+    - http://www.openwall.com/lists/oss-security/2020/02/27/1
+    - http://www.openwall.com/lists/oss-security/2020/02/27/2
+    - https://lists.debian.org/debian-lts-announce/2020/03/msg00010.html
+    - https://w1.fi/cgit/hostap/commit/?id=98a516eae8260e6fd5c48ddecf8d006285da7389
+affected:
+    - groupId: org.jboss.eap.additional.testsuite
+      artifactId: eap-additional-testsuite-source-distribution
+      version:
+        - "<=2.5.0.Final"
+      fixedin:
+        - ">=2.6.0.Final"
