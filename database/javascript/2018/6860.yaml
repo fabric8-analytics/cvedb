@@ -1,0 +1,15 @@
+---
+cve: 2018-6860
+title: CVE in @icedesign/schools-scaffold
+description: >
+    Arbitrary File Upload and Remote Code Execution exist in PHP Scripts Mall Schools Alert Management Script 2.0.2 via a profile picture.
+cvss_v2: 6.5
+references:
+    - https://www.exploit-db.com/exploits/44011
+affected:
+    - name: @icedesign/schools-scaffold
+      version:
+        - "<=2.0.2,2.0.2"
+      fixedin:
+        - ">=2.0.3"
+        - "<=2.0.1,1.0.0"
