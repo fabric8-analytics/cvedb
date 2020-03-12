@@ -1,0 +1,17 @@
+---
+cve: 2018-1311
+title: CVE in apache-libcloud
+description: >
+    The Apache Xerces-C 3.0.0 to 3.2.2 XML parser contains a use-after-free error triggered during the scanning of external DTDs. This flaw has not been addressed in the maintained version of the library and has no current mitigation other than to disable DTD processing. This can be accomplished via the DOM using a standard parser feature, or via SAX using the XERCES_DISABLE_DTD environment variable.
+cvss_v2: 6.8
+references:
+    - https://access.redhat.com/errata/RHSA-2020:0702
+    - https://access.redhat.com/errata/RHSA-2020:0704
+    - https://lists.apache.org/thread.html/r48ea463fde218b1e4cc1a1d05770a0cea34de0600b4355315a49226b@%3Cc-dev.xerces.apache.org%3E
+    - https://marc.info/?l=xerces-c-users&m=157653840106914&w=2
+affected:
+    - name: apache-libcloud
+      version:
+        - "<=3.0.0rc1,3.0.0rc1"
+      fixedin:
+        - "<=2.8.1,0.3.1"
