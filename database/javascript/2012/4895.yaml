@@ -1,0 +1,16 @@
+---
+cve: 2012-4895
+title: CVE in html-pdf
+description: >
+    Heap-based buffer overflow in SumatraPDF before 2.1 allows remote attackers to execute arbitrary code via a crafted PDF document, a different vulnerability than CVE-2012-4896.
+cvss_v2: 9.3
+references:
+    - http://code.google.com/p/sumatrapdf/source/browse/trunk/docs/releasenotes.txt
+    - http://secunia.com/advisories/50656
+    - http://technet.microsoft.com/security/msvr/msvr12-014
+affected:
+    - name: html-pdf
+      version:
+        - "<=2.0.1"
+      fixedin:
+        - ">=2.1.0"
