@@ -1,0 +1,16 @@
+---
+cve: 2020-8661
+title: CVE in nomad-envoy-cli
+description: >
+    CNCF Envoy through 1.13.0 may consume excessive amounts of memory when responding internally to pipelined requests.
+cvss_v2: 5.0
+references:
+    - https://access.redhat.com/errata/RHSA-2020:0734
+    - https://github.com/envoyproxy/envoy/security/advisories/GHSA-36cq-ww7h-p4j7
+    - https://www.envoyproxy.io/docs/envoy/v1.13.1/intro/version_history
+affected:
+    - name: nomad-envoy-cli
+      version:
+        - "<=1.13.0"
+      fixedin:
+        - ">=1.14.0"
