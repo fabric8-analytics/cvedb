@@ -1,0 +1,17 @@
+---
+cve: 2012-4896
+title: CVE in org.jibx.schema.org.opentravel._2012A:org.jibx.schema.org.opentravel._2012A.cruise
+description: >
+    Heap-based buffer overflow in SumatraPDF before 2.1 allows remote attackers to execute arbitrary code via a crafted PDF document, a different vulnerability than CVE-2012-4895.
+cvss_v2: 9.3
+references:
+    - http://code.google.com/p/sumatrapdf/source/browse/trunk/docs/releasenotes.txt
+    - http://secunia.com/advisories/50656
+    - http://technet.microsoft.com/security/msvr/msvr12-014
+affected:
+    - groupId: org.jibx.schema.org.opentravel._2012A
+      artifactId: org.jibx.schema.org.opentravel._2012A.cruise
+      version:
+        - "<=1.1.4"
+      fixedin:
+        []
