@@ -1,0 +1,14 @@
+---
+cve: 2013-2830
+title: CVE in rn-pdf-reader-js
+description: >
+    Use-after-free vulnerability in SumatraPDF Reader 2.x before 2.2.1 allows remote attackers to execute arbitrary code via a crafted PDF file.
+cvss_v2: 9.3
+references:
+    - https://docs.microsoft.com/en-us/security-updates/vulnerabilityresearchadvisories/2013/msvr13-005
+affected:
+    - name: rn-pdf-reader-js
+      version:
+        - "<=2.0.2,2.0.0"
+      fixedin:
+        - "<=1.0.0,0.0.1"
