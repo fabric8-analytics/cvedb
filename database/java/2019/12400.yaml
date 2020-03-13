@@ -1,0 +1,23 @@
+---
+cve: 2019-12400
+title: CVE in org.sonatype.security.realms:security-xml-realm
+description: >
+    In version 2.0.3 Apache Santuario XML Security for Java, a caching mechanism was introduced to speed up creating new XML documents using a static pool of DocumentBuilders. However, if some untrusted code can register a malicious implementation with the thread context class loader first, then this implementation might be cached and re-used by Apache Santuario - XML Security for Java, leading to potential security flaws when validating signed documents, etc. The vulnerability affects Apache Santuario - XML Security for Java 2.0.x releases from 2.0.3 and all 2.1.x releases before 2.1.4.
+cvss_v2: 1.9
+references:
+    - http://santuario.apache.org/secadv.data/CVE-2019-12400.asc?version=1&modificationDate=1566573083000&api=v2
+    - https://access.redhat.com/errata/RHSA-2020:0804
+    - https://access.redhat.com/errata/RHSA-2020:0805
+    - https://access.redhat.com/errata/RHSA-2020:0806
+    - https://access.redhat.com/errata/RHSA-2020:0811
+    - https://lists.apache.org/thread.html/8e814b925bf580bc527d96ff51e72ffe5bdeaa4b8bf5b89498cab24c@%3Cdev.santuario.apache.org%3E
+    - https://lists.apache.org/thread.html/edaa7edb9c58e5f5bd0c950f2b6232b62b15f5c44ad803e8728308ce@%3Cdev.santuario.apache.org%3E
+    - https://security.netapp.com/advisory/ntap-20190910-0003/
+affected:
+    - groupId: org.sonatype.security.realms
+      artifactId: security-xml-realm
+      version:
+        - "<=2.1,2.1"
+      fixedin:
+        - ">=2.2"
+        - "<=2.0.0,1.1.0"
