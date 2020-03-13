@@ -1,0 +1,15 @@
+---
+cve: 2020-6206
+title: CVE in advoservice-integration
+description: >
+    SAP Cloud Platform Integration for Data Services, version 1.0, allows user inputs to be reflected as error or warning massages. This could mislead the victim to follow malicious instructions inserted by external attackers, leading to Cross Site Request Forgery.
+cvss_v2: 4.3
+references:
+    - https://launchpad.support.sap.com/#/notes/2859004
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=540935305
+affected:
+    - name: advoservice-integration
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.1.0"
