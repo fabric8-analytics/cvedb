@@ -1,0 +1,50 @@
+---
+cve: 2017-13077
+title: CVE in de.fau.cs.osr.ptk:ptk-nodegen-maven-plugin
+description: >
+    Wi-Fi Protected Access (WPA and WPA2) allows reinstallation of the Pairwise Transient Key (PTK) Temporal Key (TK) during the four-way handshake, allowing an attacker within radio range to replay, decrypt, or spoof frames.
+cvss_v2: 5.4
+references:
+    - http://www.arubanetworks.com/assets/alert/ARUBA-PSA-2017-007.txt
+    - http://www.debian.org/security/2017/dsa-3999
+    - http://www.kb.cert.org/vuls/id/228519
+    - http://www.oracle.com/technetwork/security-advisory/cpuapr2018-3678067.html
+    - http://www.oracle.com/technetwork/security-advisory/cpujan2018-3236628.html
+    - http://www.securityfocus.com/bid/101274
+    - http://www.securitytracker.com/id/1039573
+    - http://www.securitytracker.com/id/1039576
+    - http://www.securitytracker.com/id/1039577
+    - http://www.securitytracker.com/id/1039578
+    - http://www.securitytracker.com/id/1039581
+    - http://www.securitytracker.com/id/1039585
+    - http://www.securitytracker.com/id/1041432
+    - http://www.ubuntu.com/usn/USN-3455-1
+    - https://access.redhat.com/errata/RHSA-2017:2907
+    - https://access.redhat.com/errata/RHSA-2017:2911
+    - https://access.redhat.com/security/vulnerabilities/kracks
+    - https://cert.vde.com/en-us/advisories/vde-2017-003
+    - https://cert.vde.com/en-us/advisories/vde-2017-005
+    - https://cert-portal.siemens.com/productcert/pdf/ssa-901333.pdf
+    - https://lists.debian.org/debian-lts-announce/2018/11/msg00015.html
+    - https://security.FreeBSD.org/advisories/FreeBSD-SA-17:07.wpa.asc
+    - https://security.gentoo.org/glsa/201711-03
+    - https://source.android.com/security/bulletin/2017-11-01
+    - https://source.android.com/security/bulletin/2018-04-01
+    - https://source.android.com/security/bulletin/2018-06-01
+    - https://support.apple.com/HT208219
+    - https://support.apple.com/HT208220
+    - https://support.apple.com/HT208221
+    - https://support.apple.com/HT208222
+    - https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbhf03792en_us
+    - https://support.lenovo.com/us/en/product_security/LEN-17420
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20171016-wpa
+    - https://w1.fi/security/2017-1/wpa-packet-number-reuse-with-replayed-messages.txt
+    - https://www.krackattacks.com/
+affected:
+    - groupId: de.fau.cs.osr.ptk
+      artifactId: ptk-nodegen-maven-plugin
+      version:
+        - "<=1.1.0,1.1.0"
+      fixedin:
+        - ">=1.1.1"
+        - "<=1.0.0.1,1.0.0.1"
