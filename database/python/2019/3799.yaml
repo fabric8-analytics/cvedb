@@ -1,0 +1,16 @@
+---
+cve: 2019-3799
+title: CVE in cloud
+description: >
+    Spring Cloud Config, versions 2.1.x prior to 2.1.2, versions 2.0.x prior to 2.0.4, and versions 1.4.x prior to 1.4.6, and older unsupported versions allow applications to serve arbitrary configuration files through the spring-cloud-config-server module. A malicious user, or attacker, can send a request using a specially crafted URL that can lead a directory traversal attack.
+cvss_v2: 4.3
+references:
+    - https://github.com/mpgn/CVE-2019-3799
+    - https://pivotal.io/security/cve-2019-3799
+affected:
+    - name: cloud
+      version:
+        - "<=2.1.1,2.1.0"
+      fixedin:
+        - ">=2.1.2"
+        - "<=1.9.8,1.9.7"
