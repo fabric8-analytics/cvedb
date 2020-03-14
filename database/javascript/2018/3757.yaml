@@ -1,6 +1,6 @@
 ---
 cve: 2018-3757
-title: CVE in pdf-image
+title: CVE in botyo-command-reverse-image-search
 description: >
     Command injection exists in pdf-image v2.0.0 due to an unescaped string parameter.
 cvss_v2: 10.0
@@ -8,6 +8,8 @@ references:
     - https://github.com/roest01/node-pdf-image/commit/54679496a89738443917608c2bbe2f6e5dd20e83
     - https://hackerone.com/reports/340208
 affected:
-    - name: pdf-image
+    - name: botyo-command-reverse-image-search
       version:
-        - ">=2.0.0"
+        - "<=2.0.0"
+      fixedin:
+        []
