@@ -1,0 +1,17 @@
+---
+cve: 2016-1000111
+title: CVE in twisted
+description: >
+    Twisted before 16.3.1 does not attempt to address RFC 3875 section 4.1.18 namespace conflicts and therefore does not protect CGI applications from the presence of untrusted client data in the HTTP_PROXY environment variable, which might allow remote attackers to redirect a CGI application's outbound HTTP traffic to an arbitrary proxy server via a crafted Proxy header in an HTTP request, aka an "httpoxy" issue.
+cvss_v2: 5.0
+references:
+    - http://www.oracle.com/technetwork/topics/security/linuxbulletinoct2016-3090545.html
+    - https://twistedmatrix.com/pipermail/twisted-web/2016-August/005268.html
+    - https://twistedmatrix.com/trac/ticket/8623
+    - https://www.openwall.com/lists/oss-security/2016/07/18/6
+affected:
+    - name: twisted
+      version:
+        - "<=16.3.0"
+      fixedin:
+        - ">=16.3.1"
