@@ -1,0 +1,20 @@
+---
+cve: 2018-12533
+title: CVE in django-el-pagination
+description: >
+    JBoss RichFaces 3.1.0 through 3.3.4 allows unauthenticated remote attackers to inject expression language (EL) expressions and execute arbitrary Java code via a /DATA/ substring in a path with an org.richfaces.renderkit.html.Paint2DResource$ImageData object, aka RF-14310.
+cvss_v2: 7.5
+references:
+    - http://seclists.org/fulldisclosure/2020/Mar/21
+    - http://www.securityfocus.com/bid/104502
+    - http://www.securitytracker.com/id/1041617
+    - https://access.redhat.com/errata/RHSA-2018:2663
+    - https://access.redhat.com/errata/RHSA-2018:2664
+    - https://access.redhat.com/errata/RHSA-2018:2930
+    - https://codewhitesec.blogspot.com/2018/05/poor-richfaces.html
+affected:
+    - name: django-el-pagination
+      version:
+        - "<=3.3.0,3.1.0"
+      fixedin:
+        - "<=3.0.1,2.1.0"
