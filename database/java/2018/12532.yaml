@@ -1,0 +1,18 @@
+---
+cve: 2018-12532
+title: CVE in org.richfaces:richfaces-resource-optimizer-maven-plugin
+description: >
+    JBoss RichFaces 4.5.3 through 4.5.17 allows unauthenticated remote attackers to inject an arbitrary expression language (EL) variable mapper and execute arbitrary Java code via a MediaOutputResource's resource request, aka RF-14309.
+cvss_v2: 7.5
+references:
+    - http://seclists.org/fulldisclosure/2020/Mar/21
+    - http://www.securityfocus.com/bid/104503
+    - https://codewhitesec.blogspot.com/2018/05/poor-richfaces.html
+affected:
+    - groupId: org.richfaces
+      artifactId: richfaces-resource-optimizer-maven-plugin
+      version:
+        - "<=4.5.17.Final,4.5.3.Final"
+      fixedin:
+        - ">=5.0.0.Alpha1"
+        - "<=4.5.2.Final,4.5.0.Alpha3"
