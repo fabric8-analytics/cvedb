@@ -1,0 +1,15 @@
+---
+cve: 2020-1937
+title: CVE in org.apache.kylin:kylin-query
+description: >
+    Kylin has some restful apis which will concatenate SQLs with the user input string, a user is likely to be able to run malicious database queries.
+cvss_v2: 4.0
+references:
+    - https://lists.apache.org/thread.html/rc574fef23740522f62ab3bbda4f6171be98aa7a25f3f54be143a80a8%40%3Cuser.kylin.apache.org%3E
+affected:
+    - groupId: org.apache.kylin
+      artifactId: kylin-query
+      version:
+        - "<=3.0.0,2.3.0"
+      fixedin:
+        - "<=2.2.0,0.7.1-incubating"
