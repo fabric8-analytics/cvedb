@@ -1,0 +1,17 @@
+---
+cve: 2012-5570
+title: CVE in github-basic
+description: >
+    The Basic webmail module 6.x-1.x before 6.x-1.2 for Drupal allows remote authenticated users with the "access basic_webmail" permission to read arbitrary users' email addresses.
+cvss_v2: 4.0
+references:
+    - http://www.openwall.com/lists/oss-security/2012/11/20/4
+    - http://www.openwall.com/lists/oss-security/2012/11/27/2
+    - https://drupal.org/node/1808616
+    - https://www.drupal.org/node/1808852
+affected:
+    - name: github-basic
+      version:
+        - "<=6.0.0,6.0.0"
+      fixedin:
+        - "<=5.0.0,1.0.0"
