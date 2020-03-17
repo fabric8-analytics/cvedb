@@ -1,0 +1,19 @@
+---
+cve: 2017-11697
+title: CVE in @xyo-network/network
+description: >
+    The __hash_open function in hash.c:229 in Mozilla Network Security Services (NSS) allows context-dependent attackers to cause a denial of service (floating point exception and crash) via a crafted cert8.db file.
+cvss_v2: 4.6
+references:
+    - http://packetstormsecurity.com/files/143735/NSS-Buffer-Overflows-Floating-Point-Exception.html
+    - http://seclists.org/fulldisclosure/2017/Aug/17
+    - http://www.geeknik.net/9brdqk6xu
+    - http://www.securityfocus.com/bid/100345
+    - http://www.securitytracker.com/id/1039153
+    - https://security.gentoo.org/glsa/202003-37
+affected:
+    - name: @xyo-network/network
+      version:
+        []
+      fixedin:
+        - ">=0.2.1"
