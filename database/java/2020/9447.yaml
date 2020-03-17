@@ -1,0 +1,16 @@
+---
+cve: 2020-9447
+title: CVE in com.googlecode.gwtupload:gwtupload-samples
+description: >
+    There is an XSS (cross-site scripting) vulnerability in GwtUpload 1.0.3 in the file upload functionality. Someone can upload a file with a malicious filename, which contains JavaScript code, which would result in XSS. Cross-site scripting enables attackers to steal data, change the appearance of a website, and perform other malicious activities like phishing or drive-by hacking.
+cvss_v2: 4.3
+references:
+    - https://github.com/manolo/gwtupload/issues/32
+    - https://www.coresecurity.com/advisories/gwtupload-xss-file-upload-functionality
+affected:
+    - groupId: com.googlecode.gwtupload
+      artifactId: gwtupload-samples
+      version:
+        - "<=1.0.3,1.0.3"
+      fixedin:
+        - "<=1.0.1,0.6.4"
