@@ -1,0 +1,14 @@
+---
+cve: 2020-0852
+title: CVE in crowdin-without-vulnerability
+description: >
+    A remote code execution vulnerability exists in Microsoft Word software when it fails to properly handle objects in memory, aka 'Microsoft Word Remote Code Execution Vulnerability'. This CVE ID is unique from CVE-2020-0850, CVE-2020-0851, CVE-2020-0855, CVE-2020-0892.
+cvss_v2: 9.3
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0852
+affected:
+    - name: crowdin-without-vulnerability
+      version:
+        - "<=1.0.0"
+      fixedin:
+        []
