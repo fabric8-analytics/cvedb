@@ -1,0 +1,15 @@
+---
+cve: 2020-7606
+title: CVE in org.lastaflute.remoteapi:lasta-remoteapi
+description: >
+    docker-compose-remote-api through 0.1.4 allows execution of arbitrary commands. Within 'index.js' of the package, the function 'exec(serviceName, cmd, fnStdout, fnStderr, fnExit)' uses the variable 'serviceName' which can be controlled by users without any sanitization.
+cvss_v2: 7.5
+references:
+    - https://snyk.io/vuln/SNYK-JS-DOCKERCOMPOSEREMOTEAPI-560125
+affected:
+    - groupId: org.lastaflute.remoteapi
+      artifactId: lasta-remoteapi
+      version:
+        - "<=0.1.4"
+      fixedin:
+        - ">=0.1.5"
