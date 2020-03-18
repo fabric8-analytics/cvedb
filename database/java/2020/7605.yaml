@@ -1,0 +1,15 @@
+---
+cve: 2020-7605
+title: CVE in com.vtence.tape:tape
+description: >
+    gulp-tape through 1.0.0 allows execution of arbitrary commands. It is possible to inject arbitrary commands as part of 'gulp-tape' options.
+cvss_v2: 7.5
+references:
+    - https://snyk.io/vuln/SNYK-JS-GULPTAPE-560124
+affected:
+    - groupId: com.vtence.tape
+      artifactId: tape
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
