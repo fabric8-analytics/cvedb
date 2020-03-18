@@ -1,0 +1,16 @@
+---
+cve: 2020-10076
+title: CVE in gitlab
+description: >
+    GitLab 12.1 through 12.8.1 allows XSS. A stored cross-site scripting vulnerability was discovered when displaying merge requests.
+cvss_v2: 4.3
+references:
+    - https://about.gitlab.com/releases/2020/03/04/gitlab-12-dot-8-dot-2-released/
+    - https://about.gitlab.com/releases/2020/03/04/gitlab-12-dot-8-dot-2-released/index.html
+affected:
+    - name: gitlab
+      version:
+        - "<=12.1.2,12.1.0"
+      fixedin:
+        - ">=13.0.0"
+        - "<=12.0.1,0.0.1"
