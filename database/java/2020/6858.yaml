@@ -1,0 +1,16 @@
+---
+cve: 2020-6858
+title: CVE in com.dexmatech.styx:styx-core
+description: >
+    Hotels Styx through 1.0.0.beta8 allows HTTP response splitting due to CRLF Injection. This is exploitable if untrusted user input can appear in a response header.
+cvss_v2: 4.3
+references:
+    - https://github.com/HotelsDotCom/styx/security/advisories/GHSA-6v7p-v754-j89v
+    - https://twitter.com/JLLeitschuh
+affected:
+    - groupId: com.dexmatech.styx
+      artifactId: styx-core
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.4"
