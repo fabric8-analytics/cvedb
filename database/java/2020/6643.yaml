@@ -1,0 +1,15 @@
+---
+cve: 2020-6643
+title: CVE in org.ops4j.pax.url:pax-url-cache
+description: >
+    An improper neutralization of input vulnerability in the URL Description in Fortinet FortiIsolator version 1.2.2 allows a remote authenticated attacker to perform a cross site scripting attack (XSS).
+cvss_v2: 3.5
+references:
+    - https://fortiguard.com/advisory/FG-IR-19-270
+affected:
+    - groupId: org.ops4j.pax.url
+      artifactId: pax-url-cache
+      version:
+        - "<=1.2.2"
+      fixedin:
+        - ">=1.2.3"
