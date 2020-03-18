@@ -1,0 +1,15 @@
+---
+cve: 2019-18856
+title: CVE in opentype-sanitizer
+description: >
+    A Denial Of Service vulnerability exists in the SVG Sanitizer module through 8.x-1.0-alpha1 for Drupal because access to external resources with an SVG use element is mishandled.
+cvss_v2: 5.0
+references:
+    - https://fortiguard.com/zeroday/FG-VD-19-115
+    - https://git.drupalcode.org/project/svg_sanitizer/commit/e1b0666
+affected:
+    - name: opentype-sanitizer
+      version:
+        - "<=8.0.0.post2,8.0.0"
+      fixedin:
+        - "<=7.1.9,7.1.8b1"
