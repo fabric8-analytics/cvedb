@@ -1,0 +1,14 @@
+---
+cve: 2020-7605
+title: CVE in duct-tape-basic
+description: >
+    gulp-tape through 1.0.0 allows execution of arbitrary commands. It is possible to inject arbitrary commands as part of 'gulp-tape' options.
+cvss_v2: 7.5
+references:
+    - https://snyk.io/vuln/SNYK-JS-GULPTAPE-560124
+affected:
+    - name: duct-tape-basic
+      version:
+        - "<=.000001"
+      fixedin:
+        []
