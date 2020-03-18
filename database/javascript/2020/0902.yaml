@@ -1,0 +1,14 @@
+---
+cve: 2020-0902
+title: CVE in file-system-service
+description: >
+    An elevation of privilege vulnerability exists in Service Fabric File Store Service under certain conditions, aka 'Service Fabric Elevation of Privilege'.
+cvss_v2: 6.8
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0902
+affected:
+    - name: file-system-service
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
