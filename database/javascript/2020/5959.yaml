@@ -1,0 +1,14 @@
+---
+cve: 2020-5959
+title: CVE in gpu-z
+description: >
+    NVIDIA Virtual GPU Manager, all versions, contains a vulnerability in the vGPU plugin in which an input index value is incorrectly validated which may lead to denial of service.
+cvss_v2: 2.1
+references:
+    - https://nvidia.custhelp.com/app/answers/detail/a_id/4996
+affected:
+    - name: gpu-z
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
