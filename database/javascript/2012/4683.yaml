@@ -1,0 +1,15 @@
+---
+cve: 2012-4683
+title: CVE in bitcoin-util
+description: >
+    Unspecified vulnerability in bitcoind and Bitcoin-Qt allows attackers to cause a denial of service via unknown vectors, a different vulnerability than CVE-2012-4682.
+cvss_v2: 5.0
+references:
+    - http://www.osvdb.org/85354
+    - https://en.bitcoin.it/wiki/CVEs
+affected:
+    - name: bitcoin-util
+      version:
+        []
+      fixedin:
+        - ">=0.0.0"
