@@ -1,0 +1,14 @@
+---
+cve: 2020-7604
+title: CVE in pulverizr
+description: >
+    pulverizr through 0.7.0 allows execution of arbitrary commands. Within "lib/job.js", the variable "filename" can be controlled by the attacker. This function uses the variable "filename" to construct the argument of the exec call without any sanitization. In order to successfully exploit this vulnerability, an attacker will need to create a new file with the same name as the attack command.
+cvss_v2: 7.5
+references:
+    - https://snyk.io/vuln/SNYK-JS-PULVERIZR-560122
+affected:
+    - name: pulverizr
+      version:
+        - "<=0.7.0"
+      fixedin:
+        []
