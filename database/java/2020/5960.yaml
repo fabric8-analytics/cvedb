@@ -1,0 +1,15 @@
+---
+cve: 2020-5960
+title: CVE in org.smartparam.manager:smartparam-manager-parent
+description: >
+    NVIDIA Virtual GPU Manager contains a vulnerability in the kernel module (nvidia.ko), where a null pointer dereference may occur, which may lead to denial of service.
+cvss_v2: 2.1
+references:
+    - https://nvidia.custhelp.com/app/answers/detail/a_id/4996
+affected:
+    - groupId: org.smartparam.manager
+      artifactId: smartparam-manager-parent
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
