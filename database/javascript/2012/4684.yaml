@@ -1,0 +1,18 @@
+---
+cve: 2012-4684
+title: CVE in bitcoind-rpc
+description: >
+    The alert functionality in bitcoind and Bitcoin-Qt before 0.7.0 supports different character representations of the same signature data, but relies on a hash of this signature, which allows remote attackers to cause a denial of service (resource consumption) via a valid modified signature for a circulating alert.
+cvss_v2: 7.8
+references:
+    - https://bitcointalk.org/index.php?topic=148109.0
+    - https://bitcointalk.org/index.php?topic=8392.0
+    - https://en.bitcoin.it/wiki/CVE-2012-4684
+    - https://en.bitcoin.it/wiki/CVEs
+affected:
+    - name: bitcoind-rpc
+      version:
+        - "<=0.5.0,0.4.0"
+      fixedin:
+        - ">=0.6.0"
+        - "<=0.3.1,0.0.0"
