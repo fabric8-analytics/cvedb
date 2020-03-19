@@ -1,0 +1,16 @@
+---
+cve: 2013-5700
+title: CVE in bloom
+description: >
+    The Bloom Filter implementation in bitcoind and Bitcoin-Qt 0.8.x before 0.8.4rc1 allows remote attackers to cause a denial of service (divide-by-zero error and daemon crash) via a crafted sequence of messages.
+cvss_v2: 5.0
+references:
+    - https://bitcointalk.org/index.php?topic=287351
+    - https://en.bitcoin.it/wiki/Common_Vulnerabilities_and_Exposures
+affected:
+    - name: bloom
+      version:
+        - "<=0.8.0,0.8.0"
+      fixedin:
+        - ">=0.9.0"
+        - "<=0.7.2,0.0.1"
