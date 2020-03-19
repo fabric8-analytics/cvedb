@@ -1,0 +1,17 @@
+---
+cve: 2020-9543
+title: CVE in manila
+description: >
+    OpenStack Manila <7.4.1, >=8.0.0 <8.1.1, and >=9.0.0 <9.1.1 allows attackers to view, update, delete, or share resources that do not belong to them, because of a context-free lookup of a UUID. Attackers may also create resources, such as shared file systems and groups of shares on such share networks.
+cvss_v2: 7.5
+references:
+    - http://www.openwall.com/lists/oss-security/2020/03/12/1
+    - https://bugs.launchpad.net/manila/+bug/1861485
+    - https://security.openstack.org/ossa/OSSA-2020-002.html
+affected:
+    - name: manila
+      version:
+        - "<=7.4.0"
+        - "<=9.1.0,8.0.0.0rc1"
+      fixedin:
+        - "<=7.4.1,7.4.1"
