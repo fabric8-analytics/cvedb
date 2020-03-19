@@ -1,0 +1,17 @@
+---
+cve: 2013-2293
+title: CVE in fr.norad.core:core
+description: >
+    The CTransaction::FetchInputs method in bitcoind and Bitcoin-Qt before 0.8.0rc1 copies transactions from disk to memory without incrementally checking for spent prevouts, which allows remote attackers to cause a denial of service (disk I/O consumption) via a Bitcoin transaction with many inputs corresponding to many different parts of the stored block chain.
+cvss_v2: 5.0
+references:
+    - https://bitcointalk.org/?topic=144122
+    - https://en.bitcoin.it/wiki/CVE-2013-2293
+    - https://en.bitcoin.it/wiki/CVEs
+affected:
+    - groupId: fr.norad.core
+      artifactId: core
+      version:
+        - "<=0.7"
+      fixedin:
+        - ">=0.8"
