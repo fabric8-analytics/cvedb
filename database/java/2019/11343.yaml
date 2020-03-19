@@ -1,0 +1,16 @@
+---
+cve: 2019-11343
+title: CVE in org.torpedoquery:org.torpedoquery
+description: >
+    Torpedo Query before 2.5.3 mishandles the LIKE operator in ConditionBuilder.java, LikeCondition.java, and NotLikeCondition.java.
+cvss_v2: 7.5
+references:
+    - https://github.com/xjodoin/torpedoquery/commit/3c20b874fba9cc2a78b9ace10208de1602b56c3f
+    - https://github.com/xjodoin/torpedoquery/compare/v2.5.2...v2.5.3
+affected:
+    - groupId: org.torpedoquery
+      artifactId: org.torpedoquery
+      version:
+        - "<=2.5.2"
+      fixedin:
+        - ">=2.5.3"
