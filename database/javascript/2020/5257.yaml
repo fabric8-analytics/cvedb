@@ -1,0 +1,15 @@
+---
+cve: 2020-5257
+title: CVE in sql
+description: >
+    In Administrate (rubygem) before version 0.13.0, when sorting by attributes on a dashboard, the direction parameter was not validated before being interpolated into the SQL query. This could present a SQL injection if the attacker were able to modify the `direction` parameter and bypass ActiveRecord SQL protections. Whilst this does have a high-impact, to exploit this you need access to the Administrate dashboards, which we would expect to be behind authentication. This is patched in wersion 0.13.0.
+cvss_v2: 5.5
+references:
+    - https://github.com/thoughtbot/administrate/commit/3ab838b83c5f565fba50e0c6f66fe4517f98eed3
+    - https://github.com/thoughtbot/administrate/security/advisories/GHSA-2p5p-m353-833w
+affected:
+    - name: sql
+      version:
+        - "<=0.12.0"
+      fixedin:
+        - ">=0.13.0"
