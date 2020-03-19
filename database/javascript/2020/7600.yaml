@@ -1,0 +1,15 @@
+---
+cve: 2020-7600
+title: CVE in querymen-custom
+description: >
+    querymen prior to 2.1.4 allows modification of object properties. The parameters of exported function handler(type, name, fn) can be controlled by users without any sanitization. This could be abused for Prototype Pollution attacks.
+cvss_v2: 5.0
+references:
+    - https://github.com/diegohaz/querymen/commit/1987fefcb3b7508253a29502a008d5063a873cef
+    - https://snyk.io/vuln/SNYK-JS-QUERYMEN-559867
+affected:
+    - name: querymen-custom
+      version:
+        []
+      fixedin:
+        - ">=2.1.4"
