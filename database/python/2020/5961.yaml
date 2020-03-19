@@ -1,0 +1,14 @@
+---
+cve: 2020-5961
+title: CVE in aixm-gpu
+description: >
+    NVIDIA vGPU graphics driver for guest OS contains a vulnerability in which an incorrect resource clean up on a failure path can impact the guest VM, leading to denial of service.
+cvss_v2: 2.1
+references:
+    - https://nvidia.custhelp.com/app/answers/detail/a_id/4996
+affected:
+    - name: aixm-gpu
+      version:
+        []
+      fixedin:
+        - ">=0.1.9.9"
