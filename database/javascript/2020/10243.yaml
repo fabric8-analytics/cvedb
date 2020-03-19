@@ -1,0 +1,14 @@
+---
+cve: 2020-10243
+title: CVE in joomla-cli
+description: >
+    An issue was discovered in Joomla! before 3.9.16. The lack of type casting of a variable in a SQL statement leads to a SQL injection vulnerability in the Featured Articles frontend menutype.
+cvss_v2: 7.5
+references:
+    - https://developer.joomla.org/security-centre/807-20200306-core-sql-injection-in-featured-articles-menu-parameters
+affected:
+    - name: joomla-cli
+      version:
+        - "<=1.9.0,1.7.0"
+      fixedin:
+        - "<=1.6.2,1.0.3"
