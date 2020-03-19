@@ -1,0 +1,14 @@
+---
+cve: 2019-3769
+title: CVE in mob-suite
+description: >
+    Dell Wyse Management Suite versions prior to 1.4.1 contain a stored cross-site scripting vulnerability. A remote authenticated malicious user with low privileges could exploit this vulnerability to store malicious payload in the device heartbeat request. When victim users access the submitted data through their browsers, the malicious code gets executed by the web browser in the context of the vulnerable application.
+cvss_v2: 3.5
+references:
+    - https://www.dell.com/support/article/SLN319512
+affected:
+    - name: mob-suite
+      version:
+        - "<=1.4"
+      fixedin:
+        - ">=1.4.1"
