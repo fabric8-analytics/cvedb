@@ -1,0 +1,28 @@
+---
+cve: 2011-2487
+title: CVE in apache-beam
+description: >
+    The implementations of PKCS#1 v1.5 key transport mechanism for XMLEncryption in JBossWS and Apache WSS4J before 1.6.5 is susceptible to a Bleichenbacher attack.
+cvss_v2: 4.3
+references:
+    - http://cxf.apache.org/note-on-cve-2011-2487.html
+    - http://rhn.redhat.com/errata/RHSA-2013-0191.html
+    - http://rhn.redhat.com/errata/RHSA-2013-0192.html
+    - http://rhn.redhat.com/errata/RHSA-2013-0193.html
+    - http://rhn.redhat.com/errata/RHSA-2013-0194.html
+    - http://rhn.redhat.com/errata/RHSA-2013-0195.html
+    - http://rhn.redhat.com/errata/RHSA-2013-0196.html
+    - http://rhn.redhat.com/errata/RHSA-2013-0198.html
+    - http://rhn.redhat.com/errata/RHSA-2013-0221.html
+    - http://www.securityfocus.com/bid/57549
+    - https://bugzilla.redhat.com/show_bug.cgi?id=713539
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/81737
+    - https://www.nds.ruhr-uni-bochum.de/research/publications/breaking-xml-encryption-pkcs15/
+affected:
+    - name: apache-beam
+      version:
+        - "<=0.6.0"
+        - "<=2.5.0,2.4.0"
+      fixedin:
+        - ">=2.6.0"
+        - "<=2.3.0,2.0.0"
