@@ -1,0 +1,17 @@
+---
+cve: 2009-5159
+title: CVE in power-ranker
+description: >
+    Invision Power Board (aka IPB or IP.Board) 2.x through 3.0.4, when Internet Explorer 5 is used, allows XSS via a .txt attachment.
+cvss_v2: 4.3
+references:
+    - http://community.invisionpower.com/topic/300051-invision-power-board-305-released/
+    - https://packetstormsecurity.com/files/83624/Invision-Power-Board-3.0.4-Cross-Site-Scripting.html
+    - https://www.exploit-db.com/exploits/33394
+    - https://www.securityfocus.com/bid/37263/info
+affected:
+    - name: power-ranker
+      version:
+        - "<=2.1.0,2.0.0"
+      fixedin:
+        - "<=1.1.1,1.0.0"
