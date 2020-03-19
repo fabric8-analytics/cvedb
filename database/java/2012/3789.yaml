@@ -1,0 +1,15 @@
+---
+cve: 2012-3789
+title: CVE in net.awired.core:core
+description: >
+    Unspecified vulnerability in bitcoind and Bitcoin-Qt before 0.4.7rc3, 0.5.x before 0.5.6rc3, 0.6.0.x before 0.6.0.9rc1, and 0.6.x before 0.6.3rc1 allows remote attackers to cause a denial of service (process hang) via unknown behavior on a Bitcoin network.
+cvss_v2: 5.0
+references:
+    - https://en.bitcoin.it/wiki/CVEs
+affected:
+    - groupId: net.awired.core
+      artifactId: core
+      version:
+        - "<=0.6"
+      fixedin:
+        []
