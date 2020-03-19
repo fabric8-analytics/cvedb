@@ -1,0 +1,16 @@
+---
+cve: 2013-4627
+title: CVE in fr.norad.core:core
+description: >
+    Unspecified vulnerability in bitcoind and Bitcoin-Qt 0.8.x allows remote attackers to cause a denial of service (memory consumption) via a large amount of tx message data.
+cvss_v2: 5.0
+references:
+    - https://en.bitcoin.it/wiki/Common_Vulnerabilities_and_Exposures
+affected:
+    - groupId: fr.norad.core
+      artifactId: core
+      version:
+        - "<=0.8,0.8"
+      fixedin:
+        - ">=0.9"
+        - "<=0.7,0.7"
