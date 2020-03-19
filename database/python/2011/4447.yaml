@@ -1,0 +1,17 @@
+---
+cve: 2011-4447
+title: CVE in bitcoin-framework
+description: >
+    The "encrypt wallet" feature in wxBitcoin and bitcoind 0.4.x before 0.4.1, and 0.5.0rc, does not properly interact with the deletion functionality of BSDDB, which allows context-dependent attackers to obtain unencrypted private keys from Bitcoin wallet files by bypassing the BSDDB interface and reading entries that are marked for deletion.
+cvss_v2: 4.3
+references:
+    - http://bitcoin.org/releases/2011/11/21/v0.5.0.html
+    - https://bitcointalk.org/index.php?topic=51474.0
+    - https://bitcointalk.org/index.php?topic=51604.0
+    - https://en.bitcoin.it/wiki/CVEs
+affected:
+    - name: bitcoin-framework
+      version:
+        - "<=0.5,0.4"
+      fixedin:
+        - "<=0.3,0.1"
