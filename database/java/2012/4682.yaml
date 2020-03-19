@@ -1,0 +1,16 @@
+---
+cve: 2012-4682
+title: CVE in fr.norad.core:core
+description: >
+    Unspecified vulnerability in bitcoind and Bitcoin-Qt allows attackers to cause a denial of service via unknown vectors, a different vulnerability than CVE-2012-4683.
+cvss_v2: 5.0
+references:
+    - http://www.osvdb.org/85353
+    - https://en.bitcoin.it/wiki/CVEs
+affected:
+    - groupId: fr.norad.core
+      artifactId: core
+      version:
+        []
+      fixedin:
+        - ">=0.7"
