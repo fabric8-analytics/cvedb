@@ -1,0 +1,14 @@
+---
+cve: 2019-19677
+title: CVE in biomaj-user
+description: >
+    arxes-tolina 3.0.0 allows User Enumeration.
+cvss_v2: 4.0
+references:
+    - https://www2.deloitte.com/de/de/pages/risk/articles/arxes-tolina-user-disclosure-via-application-function.html
+affected:
+    - name: biomaj-user
+      version:
+        - "<=3.0.0"
+      fixedin:
+        - ">=3.0.1"
