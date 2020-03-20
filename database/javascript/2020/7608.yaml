@@ -1,0 +1,18 @@
+---
+cve: 2020-7608
+title: CVE in yargs-parser
+description: >
+    yargs-parser could be tricked into adding or modifying properties of Object.prototype using a "__proto__" payload.
+cvss_v2: 6.4
+references:
+    - https://snyk.io/vuln/SNYK-JS-YARGSPARSER-560381
+affected:
+    - name: yargs-parser
+      version:
+        - "<=13.1.1"
+        - "<=15.0.0,14.0.0"
+        - "<=18.1.0,16.0.0"
+      fixedin:
+        - ">=18.1.1-beta.0"
+        - "<=15.0.1,15.0.1"
+        - "<=13.1.2,13.1.2"
