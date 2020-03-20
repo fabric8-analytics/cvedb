@@ -1,0 +1,15 @@
+---
+cve: 2020-10571
+title: CVE in psd-tools
+description: >
+    An issue was discovered in psd-tools before 1.9.4. The Cython implementation of RLE decoding did not check for malicious data.
+cvss_v2: 7.5
+references:
+    - https://github.com/psd-tools/psd-tools/pull/198
+    - https://github.com/psd-tools/psd-tools/releases/tag/v1.9.4
+affected:
+    - name: psd-tools
+      version:
+        - "<=1.9.3"
+      fixedin:
+        - ">=1.9.4"
