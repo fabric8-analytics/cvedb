@@ -1,0 +1,18 @@
+---
+cve: 2019-17573
+title: CVE in org.apache.cxf:cxf-testutils
+description: >
+    By default, Apache CXF creates a /services page containing a listing of the available endpoint names and addresses. This webpage is vulnerable to a reflected Cross-Site Scripting (XSS) attack, which allows a malicious actor to inject javascript into the web page. Please note that the attack exploits a feature which is not typically not present in modern browsers, who remove dot segments before sending the request. However, Mobile applications may be vulnerable.
+cvss_v2: 4.3
+references:
+    - http://cxf.apache.org/security-advisories.data/CVE-2019-17573.txt.asc?version=1&modificationDate=1579178542000&api=v2
+    - https://lists.apache.org/thread.html/r36e44ffc1a9b365327df62cdfaabe85b9a5637de102cea07d79b2dbf@%3Ccommits.cxf.apache.org%3E
+    - https://lists.apache.org/thread.html/rf3b50583fefce2810cbd37c3d358cbcd9a03e750005950bf54546194@%3Cannounce.apache.org%3E
+affected:
+    - groupId: org.apache.cxf
+      artifactId: cxf-testutils
+      version:
+        - "<=3.3.4,3.2.0"
+      fixedin:
+        - ">=3.3.5"
+        - "<=3.1.18,2.0.6"
