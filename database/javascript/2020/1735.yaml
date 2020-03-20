@@ -1,0 +1,21 @@
+---
+cve: 2020-1735
+title: CVE in @process-engine/management_api_contracts
+description: >
+    A flaw was found in the Ansible Engine when the fetch module is used. An attacker could intercept the module, inject a new path, and then choose a new destination path on the controller node. All versions in 2.7.x, 2.8.x and 2.9.x branches are believed to be vulnerable.
+cvss_v2: 3.6
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-1735
+    - https://github.com/ansible/ansible/issues/67793
+affected:
+    - name: @process-engine/management_api_contracts
+      version:
+        - "<=3.0.1-41907cd3-b60"
+        - "<=5.0.0,5.0.0"
+        - "<=13.0.0-alpha.3,13.0.0-alpha.1"
+        - "<=13.0.0,13.0.0-beta.1"
+      fixedin:
+        - ">=13.0.0-d2eb9786-b32"
+        - "<=13.0.0-b50aa169-b3,13.0.0-b50aa169-b3"
+        - "<=12.1.0-62813667-b3,5.0.0-c55e6a2a-b2"
+        - "<=5.0.0-a995f3fc-b5,4.0.0"
