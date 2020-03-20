@@ -1,0 +1,14 @@
+---
+cve: 2019-20512
+title: CVE in xss-filters
+description: >
+    Open edX Ironwood.1 allows support/certificates?course_id= reflected XSS.
+cvss_v2: 4.3
+references:
+    - https://www.netsparker.com/web-applications-advisories/ns-19-014-reflected-cross-site-scripting-in-openedx/
+affected:
+    - name: xss-filters
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
