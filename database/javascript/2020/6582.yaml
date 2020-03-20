@@ -1,0 +1,16 @@
+---
+cve: 2020-6582
+title: CVE in buffer
+description: >
+    Nagios NRPE 3.2.1 has a Heap-Based Buffer Overflow, as demonstrated by interpretation of a small negative number as a large positive number during a bzero call.
+cvss_v2: 5.0
+references:
+    - https://herolab.usd.de/security-advisories/
+    - https://herolab.usd.de/security-advisories/usd-2020-0001/
+affected:
+    - name: buffer
+      version:
+        - "<=3.2.1,3.2.1"
+      fixedin:
+        - ">=3.2.2"
+        - "<=3.2.0,2.1.1"
