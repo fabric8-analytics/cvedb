@@ -1,0 +1,16 @@
+---
+cve: 2019-19677
+title: CVE in com.hp.autonomy.frontend.user:idol-user-service
+description: >
+    arxes-tolina 3.0.0 allows User Enumeration.
+cvss_v2: 4.0
+references:
+    - https://www2.deloitte.com/de/de/pages/risk/articles/arxes-tolina-user-disclosure-via-application-function.html
+affected:
+    - groupId: com.hp.autonomy.frontend.user
+      artifactId: idol-user-service
+      version:
+        - "<=3.0.0,3.0.0"
+      fixedin:
+        - ">=3.1.0"
+        - "<=2.1.1-paged,1.0.0"
