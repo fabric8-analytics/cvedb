@@ -1,0 +1,15 @@
+---
+cve: 2019-12127
+title: CVE in @oom/page-loader
+description: >
+    In ONAP OOM through Dublin, by accessing an applicable port (30234, 30290, 32010, 30270, 30224, 30281, 30254, 30285, and/or 30271), an attacker gains full access to the respective ONAP services without any authentication. All ONAP Operations Manager (OOM) setups are affected.
+cvss_v2: 7.5
+references:
+    - https://jira.onap.org/browse/OJSI-27
+affected:
+    - name: @oom/page-loader
+      version:
+        - "<=3.0.0,3.0.0"
+      fixedin:
+        - ">=4.0.0"
+        - "<=2.0.0,1.0.0"
