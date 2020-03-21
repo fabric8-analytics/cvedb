@@ -1,0 +1,14 @@
+---
+cve: 2019-12124
+title: CVE in appc-platform-sdk
+description: >
+    An issue was discovered in ONAP APPC before Dublin. By using an exposed unprotected Jolokia interface, an unauthenticated attacker can read or overwrite an arbitrary file. All APPC setups are affected.
+cvss_v2: 6.4
+references:
+    - https://jira.onap.org/browse/OJSI-63
+affected:
+    - name: appc-platform-sdk
+      version:
+        - "<=3.2.0,3.0.0"
+      fixedin:
+        - "<=2.4.2,1.0.3"
