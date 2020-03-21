@@ -1,0 +1,15 @@
+---
+cve: 2018-20586
+title: CVE in wf.bitcoin:bitcoinj-core
+description: >
+    bitcoind and Bitcoin-Qt prior to 0.17.1 allow injection of arbitrary data into the debug log via an RPC call.
+cvss_v2: 4.3
+references:
+    - https://en.bitcoin.it/wiki/Common_Vulnerabilities_and_Exposures#CVE-2018-20586
+affected:
+    - groupId: wf.bitcoin
+      artifactId: bitcoinj-core
+      version:
+        - "<=0.15-cm06"
+      fixedin:
+        []
