@@ -1,0 +1,16 @@
+---
+cve: 2020-1951
+title: CVE in org.apache.tika:tika-parsers
+description: >
+    A carefully crafted or corrupt PSD file can cause an infinite loop in Apache Tika's PSDParser in versions 1.0-1.23.
+cvss_v2: 4.3
+references:
+    - https://lists.apache.org/thread.html/rd8c1b42bd0e31870d804890b3f00b13d837c528f7ebaf77031323172%40%3Cdev.tika.apache.org%3E
+affected:
+    - groupId: org.apache.tika
+      artifactId: tika-parsers
+      version:
+        - "<=1.23,1.0"
+      fixedin:
+        - ">=1.24"
+        - "<=0.10,0.4"
