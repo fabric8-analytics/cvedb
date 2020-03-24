@@ -1,0 +1,15 @@
+---
+cve: 2019-16375
+title: CVE in @ovh-ux/ng-ovh-otrs
+description: >
+    An issue was discovered in Open Ticket Request System (OTRS) 7.0.x through 7.0.11, and Community Edition 5.0.x through 5.0.37 and 6.0.x through 6.0.22. An attacker who is logged in as an agent or customer user with appropriate permissions can create a carefully crafted string containing malicious JavaScript code as an article body. This malicious code is executed when an agent composes an answer to the original article.
+cvss_v2: 3.5
+references:
+    - https://community.otrs.com/category/security-advisories-en/
+    - https://otrs.com/release-notes/otrs-security-advisory-2019-13/
+affected:
+    - name: @ovh-ux/ng-ovh-otrs
+      version:
+        - "<=7.0.2"
+      fixedin:
+        - ">=7.1.0"
