@@ -1,0 +1,14 @@
+---
+cve: 2020-10593
+title: CVE in service
+description: >
+    Tor before 0.3.5.10, 0.4.x before 0.4.1.9, and 0.4.2.x before 0.4.2.7 allows remote attackers to cause a Denial of Service (memory leak), aka TROVE-2020-004. This occurs in circpad_setup_machine_on_circ because a circuit-padding machine can be negotiated twice on the same circuit.
+cvss_v2: 5.0
+references:
+    - https://trac.torproject.org/projects/tor/ticket/33619
+affected:
+    - name: service
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
