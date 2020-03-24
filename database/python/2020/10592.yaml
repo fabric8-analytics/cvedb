@@ -1,0 +1,14 @@
+---
+cve: 2020-10592
+title: CVE in service
+description: >
+    Tor before 0.3.5.10, 0.4.x before 0.4.1.9, and 0.4.2.x before 0.4.2.7 allows remote attackers to cause a Denial of Service (CPU consumption), aka TROVE-2020-002.
+cvss_v2: 5.0
+references:
+    - https://trac.torproject.org/projects/tor/ticket/33120
+affected:
+    - name: service
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
