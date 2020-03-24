@@ -1,0 +1,15 @@
+---
+cve: 2019-19676
+title: CVE in csv-parse
+description: >
+    A CSV injection in arxes-tolina 3.0.0 allows malicious users to gain remote control of other computers. By entering formula code in the following columns: Kundennummer, Firma, Street, PLZ, Ort, Zahlziel, and Bemerkung, an attacker can create a user with a name that contains malicious code. Other users might download this data as a CSV file and corrupt their PC by opening it in a tool such as Microsoft Excel. The attacker could gain remote access to the user's PC.
+cvss_v2: 9.3
+references:
+    - https://www2.deloitte.com/de/de/pages/risk/articles/arxes-tolina-csv-injection.html
+affected:
+    - name: csv-parse
+      version:
+        - "<=3.0.0,3.0.0"
+      fixedin:
+        - ">=3.1.0"
+        - "<=2.5.0,0.0.0"
