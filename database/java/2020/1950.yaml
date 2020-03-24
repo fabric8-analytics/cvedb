@@ -1,0 +1,16 @@
+---
+cve: 2020-1950
+title: CVE in org.apache.tika:tika-parsers
+description: >
+    A carefully crafted or corrupt PSD file can cause excessive memory usage in Apache Tika's PSDParser in versions 1.0-1.23.
+cvss_v2: 4.3
+references:
+    - https://lists.apache.org/thread.html/r463b1a67817ae55fe022536edd6db34e8f9636971188430cbcf8a8dd%40%3Cdev.tika.apache.org%3E
+affected:
+    - groupId: org.apache.tika
+      artifactId: tika-parsers
+      version:
+        - "<=1.23,1.0"
+      fixedin:
+        - ">=1.24"
+        - "<=0.10,0.4"
