@@ -1,0 +1,19 @@
+---
+cve: 2002-0824
+title: CVE in org.jboss.arquillian.protocol:arquillian-protocol-servlet
+description: >
+    BSD pppd allows local users to change the permissions of arbitrary files via a symlink attack on a file that is specified as a tty device.
+cvss_v2: 1.2
+references:
+    - ftp://ftp.netbsd.org/pub/NetBSD/security/advisories/NetBSD-SA2002-010.txt.asc
+    - http://marc.info/?l=bugtraq&m=102812546815606&w=2
+    - http://www.iss.net/security_center/static/9738.php
+    - http://www.openbsd.org/errata31.html
+    - http://www.securityfocus.com/bid/5355
+affected:
+    - groupId: org.jboss.arquillian.protocol
+      artifactId: arquillian-protocol-servlet
+      version:
+        []
+      fixedin:
+        - ">=1.0.0.Alpha1"
