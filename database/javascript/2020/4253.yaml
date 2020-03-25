@@ -1,0 +1,16 @@
+---
+cve: 2020-4253
+title: CVE in content
+description: >
+    IBM Content Navigator 3.0CD does not invalidate session after logout which could allow an authenticated user to impersonate another user on the system. IBM X-Force ID: 175559.
+cvss_v2: 6.5
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/175559
+    - https://www.ibm.com/support/pages/node/6116020
+affected:
+    - name: content
+      version:
+        - "<=3.0.0,3.0.0"
+      fixedin:
+        - ">=3.0.1"
+        - "<=2.0.0,1.0.0"
