@@ -1,0 +1,16 @@
+---
+cve: 2019-11688
+title: CVE in cassandra-driver
+description: >
+    An issue was discovered in ASUSTOR exFAT Driver through 1.0.0.r20. When conducting license validation, exfat.cgi and exfatctl accept any certificate for asustornasapi.asustor.com. In other words, there is Missing SSL Certificate Validation.
+cvss_v2: 8.8
+references:
+    - https://github.com/mikedamm/CVEs/blob/master/CVE-2019-11688.md
+    - https://www.asustor.com/app_central/app_detail?id=776
+affected:
+    - name: cassandra-driver
+      version:
+        - "<=1.0.0,1.0.0-beta1"
+      fixedin:
+        - ">=1.0.1"
+        - "<=0.0.1-beta1,0.0.1-beta1"
