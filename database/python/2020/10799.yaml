@@ -1,0 +1,14 @@
+---
+cve: 2020-10799
+title: CVE in svglib
+description: >
+    The svglib package through 0.9.3 for Python allows XXE attacks via an svg2rlg call.
+cvss_v2: 7.5
+references:
+    - https://github.com/deeplook/svglib/issues/229
+affected:
+    - name: svglib
+      version:
+        - "<=0.9.3"
+      fixedin:
+        - ">=0.9.4"
