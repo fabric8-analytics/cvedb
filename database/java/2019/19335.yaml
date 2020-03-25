@@ -1,0 +1,16 @@
+---
+cve: 2019-19335
+title: CVE in com.openshift:openshift-restclient-java
+description: >
+    During installation of an OpenShift 4 cluster, the `openshift-install` command line tool creates an `auth` directory, with `kubeconfig` and `kubeadmin-password` files. Both files contain credentials used to authenticate to the OpenShift API server, and are incorrectly assigned word-readable permissions. ose-installer as shipped in Openshift 4.2 is vulnerable.
+cvss_v2: 2.1
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-19335
+affected:
+    - groupId: com.openshift
+      artifactId: openshift-restclient-java
+      version:
+        - "<=4.0.0.Final,4.0.0.Final"
+      fixedin:
+        - ">=4.0.1.Final"
+        - "<=3.0.1.Final,3.0.0.Final"
