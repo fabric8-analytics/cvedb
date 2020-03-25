@@ -1,0 +1,16 @@
+---
+cve: 2020-4309
+title: CVE in content
+description: >
+    IBM Content Navigator 3.0CD could disclose sensitive information to an unauthenticated user which could be used to aid in further attacks against the system. IBM X-Force ID: 177080.
+cvss_v2: 5.0
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/177080
+    - https://www.ibm.com/support/pages/node/6116032
+affected:
+    - name: content
+      version:
+        - "<=3.0.0,3.0.0"
+      fixedin:
+        - ">=3.0.1"
+        - "<=2.0.0,1.0.0"
