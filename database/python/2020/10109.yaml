@@ -1,0 +1,16 @@
+---
+cve: 2020-10109
+title: CVE in twisted
+description: >
+    In Twisted Web through 19.10.0, there was an HTTP request splitting vulnerability. When presented with a content-length and a chunked encoding header, the content-length took precedence and the remainder of the request body was interpreted as a pipelined request.
+cvss_v2: 7.5
+references:
+    - https://know.bishopfox.com/advisories
+    - https://know.bishopfox.com/advisories/twisted-version-19.10.0
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YW3NIL7VXSGJND2Q4BSXM3CFTAFU6T7D/
+affected:
+    - name: twisted
+      version:
+        - "<=19.10.0"
+      fixedin:
+        - ">=20.3.0rc1"
