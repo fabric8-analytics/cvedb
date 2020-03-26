@@ -1,0 +1,15 @@
+---
+cve: 2020-5552
+title: CVE in html
+description: >
+    Cross-site scripting vulnerability in mailform version 1.04 allows remote attackers to inject arbitrary web script or HTML via unspecified vectors.
+cvss_v2: 4.3
+references:
+    - https://jvn.jp/en/jp/JVN85942151/index.html
+affected:
+    - name: html
+      version:
+        - "<=1.4,1.4"
+      fixedin:
+        - ">=1.5"
+        - "<=1.3,0.4.0"
