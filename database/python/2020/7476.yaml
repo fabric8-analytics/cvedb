@@ -1,0 +1,14 @@
+---
+cve: 2020-7476
+title: CVE in django-versions
+description: >
+    A CWE-426: Untrusted Search Path vulnerability exists in ZigBee Installation Kit (Versions prior to 1.0.1), which could cause execution of malicious code when a malicious file is put in the search path.
+cvss_v2: 4.4
+references:
+    - https://www.se.com/ww/en/download/document/SEVD-2020-070-03
+affected:
+    - name: django-versions
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
