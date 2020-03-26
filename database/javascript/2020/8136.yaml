@@ -1,0 +1,14 @@
+---
+cve: 2020-8136
+title: CVE in sa-prototype
+description: >
+    Prototype pollution vulnerability in fastify-multipart < 1.0.5 allows an attacker to crash fastify applications parsing multipart requests by sending a specially crafted request.
+cvss_v2: 5.0
+references:
+    - https://hackerone.com/reports/804772
+affected:
+    - name: sa-prototype
+      version:
+        - "<=1.0.4"
+      fixedin:
+        - ">=1.0.5"
