@@ -1,0 +1,16 @@
+---
+cve: 2020-8868
+title: CVE in hg-evolve
+description: >
+    This vulnerability allows remote attackers to execute arbitrary code on affected installations of Quest Foglight Evolve 9.0.0. Authentication is not required to exploit this vulnerability. The specific flaw exists within the __service__ user account. The product contains a hard-coded password for this account. An attacker can leverage this vulnerability to execute arbitrary code in the context of SYSTEM. Was ZDI-CAN-9553.
+cvss_v2: 10.0
+references:
+    - https://support.quest.com/foglight/kb/315091/fms-5-9-5-hotfix-hfix-314
+    - https://www.zerodayinitiative.com/advisories/ZDI-20-290/
+affected:
+    - name: hg-evolve
+      version:
+        - "<=9.0.0,9.0.0"
+      fixedin:
+        - ">=9.1.0"
+        - "<=8.5.1,6.0.0"
