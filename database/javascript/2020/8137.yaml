@@ -1,0 +1,14 @@
+---
+cve: 2020-8137
+title: CVE in is-code
+description: >
+    Code injection vulnerability in blamer 1.0.0 and earlier may result in remote code execution when the input can be controlled by an attacker.
+cvss_v2: 7.5
+references:
+    - https://hackerone.com/reports/772448
+affected:
+    - name: is-code
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
