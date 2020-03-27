@@ -1,0 +1,14 @@
+---
+cve: 2020-5557
+title: CVE in as-html
+description: >
+    Cross-site scripting vulnerability in CuteNews 2.0.1 allows remote attackers to inject arbitrary web script or HTML via unspecified vectors.
+cvss_v2: 4.3
+references:
+    - https://jvn.jp/en/jp/JVN29095127/index.html
+affected:
+    - name: as-html
+      version:
+        - "<=2.0.1,2.0.1"
+      fixedin:
+        - "<=2.0.0,1.0.0"
