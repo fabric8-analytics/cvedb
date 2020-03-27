@@ -1,0 +1,24 @@
+---
+cve: 2018-8029
+title: CVE in org.apache.hadoop:hadoop-extras
+description: >
+    In Apache Hadoop versions 3.0.0-alpha1 to 3.1.0, 2.9.0 to 2.9.1, and 2.2.0 to 2.8.4, a user who can escalate to yarn user can possibly run arbitrary commands as root user.
+cvss_v2: 9.0
+references:
+    - http://www.securityfocus.com/bid/108518
+    - https://lists.apache.org/thread.html/0b8d58e02dbd0fb8bf7320c514fe58da1d6728bdc150f1ba04e0d9fc@%3Cissues.hbase.apache.org%3E
+    - https://lists.apache.org/thread.html/17084c09e6dedf60efe08028b429c92ffd28aacc28454e4fa924578a@%3Cgeneral.hadoop.apache.org%3E
+    - https://lists.apache.org/thread.html/a0164b87660223a2d491f83c88f905fe1a9fa8dc795148d9b0d968c8@%3Cdev.hbase.apache.org%3E
+    - https://lists.apache.org/thread.html/a97c53a81e639ca2fc7b8f61a4fcd1842c2a78544041244a7c624727@%3Cissues.hbase.apache.org%3E
+affected:
+    - groupId: org.apache.hadoop
+      artifactId: hadoop-extras
+      version:
+        - "<=2.8.4,2.2.0"
+        - "<=2.9.1,2.9.0"
+        - "<=3.1.0,3.0.0-alpha1"
+      fixedin:
+        - ">=3.1.1"
+        - "<=2.9.2,2.9.2"
+        - "<=2.8.5,2.8.5"
+        - "<=2.1.1-beta,0.23.1"
