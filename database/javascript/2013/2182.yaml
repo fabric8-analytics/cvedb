@@ -1,0 +1,20 @@
+---
+cve: 2013-2182
+title: CVE in browser-monkey
+description: >
+    The Mandril security plugin in Monkey HTTP Daemon (monkeyd) before 1.5.0 allows remote attackers to bypass access restrictions via a crafted URI, as demonstrated by an encoded forward slash.
+cvss_v2: 5.8
+references:
+    - http://bugs.monkey-project.com/ticket/186
+    - http://osvdb.org/94287
+    - http://secunia.com/advisories/53638
+    - http://www.openwall.com/lists/oss-security/2013/06/14/11
+    - http://www.securityfocus.com/bid/60569
+    - https://github.com/monkey/monkey/commit/15f72c1ee5e0afad20232bdf0fcecab8d62a5d89
+    - https://github.com/monkey/monkey/issues/92
+affected:
+    - name: browser-monkey
+      version:
+        - "<=1.4.0"
+      fixedin:
+        - ">=1.5.0"
