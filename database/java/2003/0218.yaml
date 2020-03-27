@@ -1,0 +1,19 @@
+---
+cve: 2003-0218
+title: CVE in com.github.veithen.daemon:daemon-maven-plugin
+description: >
+    Buffer overflow in PostMethod() function for Monkey HTTP Daemon (monkeyd) 0.6.1 and earlier allows remote attackers to execute arbitrary code via a POST request with a large body.
+cvss_v2: 7.5
+references:
+    - http://archives.neohapsis.com/archives/vulnwatch/2003-q2/0029.html
+    - http://marc.info/?l=bugtraq&m=105094204204166&w=2
+    - http://marc.info/?l=bugtraq&m=105154473526898&w=2
+    - http://monkeyd.sourceforge.net/Changelog.txt
+    - http://www.securityfocus.com/bid/7202
+affected:
+    - groupId: com.github.veithen.daemon
+      artifactId: daemon-maven-plugin
+      version:
+        - "<=0.1.1"
+      fixedin:
+        []
