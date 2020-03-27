@@ -1,0 +1,16 @@
+---
+cve: 2003-1209
+title: CVE in asyncio-monkey
+description: >
+    The Post_Method function in Monkey HTTP Daemon before 0.6.2 allows remote attackers to cause a denial of service (crash) via a POST request without a Content-Type header.
+cvss_v2: 5.0
+references:
+    - http://monkeyd.sourceforge.net/Changelog.txt
+    - http://www.securityfocus.com/bid/7201
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/11650
+affected:
+    - name: asyncio-monkey
+      version:
+        - "<=0.1.1"
+      fixedin:
+        []
