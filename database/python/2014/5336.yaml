@@ -1,0 +1,20 @@
+---
+cve: 2014-5336
+title: CVE in asyncio-monkey
+description: >
+    Monkey HTTP Server before 1.5.3, when the File Descriptor Table (FDT) is enabled and custom error messages are set, allows remote attackers to cause a denial of service (file descriptor consumption) via an HTTP request that triggers an error message.
+cvss_v2: 4.3
+references:
+    - http://monkey-project.com/Announcements/v1.5.3
+    - http://seclists.org/oss-sec/2014/q3/397
+    - http://seclists.org/oss-sec/2014/q3/412
+    - http://secunia.com/advisories/60783
+    - http://www.securityfocus.com/bid/69279
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/95336
+    - https://github.com/monkey/monkey/commit/b2d0e6f92310bb14a15aa2f8e96e1fb5379776dd
+affected:
+    - name: asyncio-monkey
+      version:
+        - "<=0.1.1"
+      fixedin:
+        []
