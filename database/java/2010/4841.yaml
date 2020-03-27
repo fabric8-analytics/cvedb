@@ -1,0 +1,16 @@
+---
+cve: 2010-4841
+title: CVE in com.peterphi.std.index:index-common
+description: >
+    Multiple cross-site scripting (XSS) vulnerabilities in ManageEngine EventLog Analyzer 6.1 allow remote attackers to inject arbitrary web script or HTML via the (1) HOST_ID, (2) OS, (3) GROUP, (4) exportFile, (5) load, (6) type, or (7) tab parameter to INDEX.do, the (8) reported parameter to INDEX2.do, the (9) gId parameter to hostlist.do, the (10) newWindow parameter to globalSettings.do, or the (11) STATUS parameter to enableHost.do. Fixed in Build 9000.
+cvss_v2: 4.3
+references:
+    - http://www.solutionary.com/index/SERT/Vuln-Disclosures/ManageEngine-XSS-vulnerabilities.html
+affected:
+    - groupId: com.peterphi.std.index
+      artifactId: index-common
+      version:
+        - "<=6.1.0,6.1.0"
+      fixedin:
+        - ">=6.1.1"
+        - "<=6.0.6,4.0.0"
