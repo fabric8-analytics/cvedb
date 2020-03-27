@@ -1,0 +1,14 @@
+---
+cve: 2020-8134
+title: CVE in ghost
+description: >
+    Server-side request forgery (SSRF) vulnerability in Ghost CMS < 3.10.0 allows an attacker to scan local or external network or otherwise interact with internal systems.
+cvss_v2: 5.5
+references:
+    - https://hackerone.com/reports/793704
+affected:
+    - name: ghost
+      version:
+        - "<=3.9.0"
+      fixedin:
+        - ">=3.10.0"
