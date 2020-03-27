@@ -1,0 +1,15 @@
+---
+cve: 2020-5559
+title: CVE in html
+description: >
+    Cross-site scripting vulnerability in WL-Enq 1.11 and 1.12 allows remote attackers to inject arbitrary web script or HTML via unspecified vectors.
+cvss_v2: 4.3
+references:
+    - https://jvn.jp/en/jp/JVN88033799/index.html
+affected:
+    - name: html
+      version:
+        - "<=1.12,1.11"
+      fixedin:
+        - ">=1.13"
+        - "<=1.10,0.4.0"
