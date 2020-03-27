@@ -1,0 +1,19 @@
+---
+cve: 2004-0276
+title: CVE in asyncio-monkey
+description: >
+    The get_real_string function in Monkey HTTP Daemon (monkeyd) 0.8.1 and earlier allows remote attackers to cause a denial of service (crash) via an HTTP request with a sequence of "%" characters and a missing Host field.
+cvss_v2: 5.0
+references:
+    - http://aluigi.altervista.org/poc/monkeydos.zip
+    - http://marc.info/?l=bugtraq&m=107652610506968&w=2
+    - http://monkeyd.sourceforge.net/
+    - http://www.osvdb.org/3921
+    - http://www.securityfocus.com/bid/9642
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/15187
+affected:
+    - name: asyncio-monkey
+      version:
+        - "<=0.1.1"
+      fixedin:
+        []
