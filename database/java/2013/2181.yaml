@@ -1,0 +1,16 @@
+---
+cve: 2013-2181
+title: CVE in commons-daemon:commons-daemon
+description: >
+    Cross-site scripting (XSS) vulnerability in the Directory Listing plugin in Monkey HTTP Daemon (monkeyd) 1.2.2 allows attackers to inject arbitrary web script or HTML via a file name.
+cvss_v2: 4.3
+references:
+    - http://bugs.monkey-project.com/ticket/185
+    - http://www.securitytracker.com/id/1028670
+affected:
+    - groupId: commons-daemon
+      artifactId: commons-daemon
+      version:
+        - "<=1.2.2,1.2.2"
+      fixedin:
+        - "<=1.2.1,1.0.1"
