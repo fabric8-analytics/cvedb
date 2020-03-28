@@ -1,0 +1,14 @@
+---
+cve: 2020-6967
+title: CVE in bisos-platform
+description: >
+    In Rockwell Automation all versions of FactoryTalk Diagnostics software, a subsystem of the FactoryTalk Services Platform, FactoryTalk Diagnostics exposes a .NET Remoting endpoint via RNADiagnosticsSrv.exe at TCPtcp/8082, which can insecurely deserialize untrusted data.
+cvss_v2: 10.0
+references:
+    - https://www.us-cert.gov/ics/advisories/icsa-20-051-02
+affected:
+    - name: bisos-platform
+      version:
+        []
+      fixedin:
+        - ">=0.1"
