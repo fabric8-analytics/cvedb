@@ -1,0 +1,14 @@
+---
+cve: 2020-6816
+title: CVE in bleach
+description: >
+    In Mozilla Bleach before 3.12, a mutation XSS in bleach.clean when RCDATA and either svg or math tags are whitelisted and the keyword argument strip=False.
+cvss_v2: 4.3
+references:
+    - https://github.com/mozilla/bleach/security/advisories/GHSA-m6xf-fq7q-8743
+affected:
+    - name: bleach
+      version:
+        - "<=3.1.1"
+      fixedin:
+        - ">=3.1.2"
