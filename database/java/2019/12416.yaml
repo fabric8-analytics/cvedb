@@ -1,0 +1,15 @@
+---
+cve: 2019-12416
+title: CVE in org.apache.deltaspike.modules:deltaspike-scheduler-module-impl
+description: >
+    we got reports for 2 injection attacks against the DeltaSpike windowhandler.js. This is only active if a developer selected the ClientSideWindowStrategy which is not the default.
+cvss_v2: 4.3
+references:
+    - https://lists.apache.org/thread.html/r8f327712b2b07f867fde1e77cbafcf8cc6a3facaa693ffdd2c3285e3%40%3Cdev.deltaspike.apache.org%3E
+affected:
+    - groupId: org.apache.deltaspike.modules
+      artifactId: deltaspike-scheduler-module-impl
+      version:
+        - "<=1.9.2"
+      fixedin:
+        - ">=1.9.3"
