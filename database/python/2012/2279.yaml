@@ -1,0 +1,14 @@
+---
+cve: 2012-2279
+title: CVE in erp5-appliance-test
+description: >
+    Open redirect vulnerability in the Security Console in EMC RSA Authentication Manager 7.1 before SP4 P14 and RSA SecurID Appliance 3.0 before SP4 P14 allows remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via unspecified vectors.
+cvss_v2: 6.4
+references:
+    - http://archives.neohapsis.com/archives/bugtraq/2012-07/0064.html
+affected:
+    - name: erp5-appliance-test
+      version:
+        - "<=2.14"
+      fixedin:
+        []
