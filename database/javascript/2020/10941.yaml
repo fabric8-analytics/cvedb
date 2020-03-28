@@ -1,0 +1,14 @@
+---
+cve: 2020-10941
+title: CVE in mbed-edge-js
+description: >
+    Arm Mbed TLS before 2.6.15 allows attackers to obtain sensitive information (an RSA private key) by measuring cache usage during an import.
+cvss_v2: 4.3
+references:
+    - https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2020-02
+affected:
+    - name: mbed-edge-js
+      version:
+        - "<=3.0.0"
+      fixedin:
+        - ">=3.1.0"
