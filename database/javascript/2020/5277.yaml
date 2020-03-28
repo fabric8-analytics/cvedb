@@ -1,0 +1,16 @@
+---
+cve: 2020-5277
+title: CVE in hire-faceted-search
+description: >
+    PrestaShop module ps_facetedsearch versions before 3.5.0 has a reflected XSS with `url_name` parameter. The problem is fixed in 3.5.0
+cvss_v2: 3.5
+references:
+    - https://github.com/PrestaShop/ps_facetedsearch/commit/c792ddcdd84ec208a6dfa4a30fd66d8bc9863f4a
+    - https://github.com/PrestaShop/ps_facetedsearch/security/advisories/GHSA-mmmv-m5q9-g3cm
+affected:
+    - name: hire-faceted-search
+      version:
+        - "<=3.4.2,1.1.0"
+      fixedin:
+        - ">=3.5.0"
+        - "<=1.0.0,1.0.0"
