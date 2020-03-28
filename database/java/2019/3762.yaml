@@ -1,0 +1,19 @@
+---
+cve: 2019-3762
+title: CVE in org.springframework.data:spring-data-couchbase
+description: >
+    Data Protection Central versions 1.0, 1.0.1, 18.1, 18.2, and 19.1 contains an Improper Certificate Chain of Trust Vulnerability. A remote unauthenticated attacker could potentially exploit this vulnerability by obtaining a CA signed certificate from Data Protection Central to impersonate a valid system to compromise the integrity of data.
+cvss_v2: 5.0
+references:
+    - https://www.dell.com/support/security/en-us/details/537007/DSA-2019-135-Dell-EMC-Data-Protection-Central-Improper-Chain-of-Trust-Vulnerability
+affected:
+    - groupId: org.springframework.data
+      artifactId: spring-data-couchbase
+      version:
+        - "<=1.0.0.RELEASE"
+        - "<=2.1.0.RELEASE,2.0.0.RELEASE"
+        - "<=2.2.0.RELEASE,2.2.0.RELEASE"
+      fixedin:
+        - ">=2.2.1.RELEASE"
+        - "<=2.1.11.RELEASE,2.1.1.RELEASE"
+        - "<=1.4.6.RELEASE,1.1.0.RELEASE"
