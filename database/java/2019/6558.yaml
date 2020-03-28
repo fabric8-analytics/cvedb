@@ -1,0 +1,15 @@
+---
+cve: 2019-6558
+title: CVE in org.solovyev.android:android-app
+description: >
+    In Auto-Maskin RP210E Versions 3.7 and prior, DCU210E Versions 3.7 and prior and Marine Observer Pro (Android App), the software contains a mechanism for users to recover or change their passwords without knowing the original password, but the mechanism is weak.
+cvss_v2: 5.0
+references:
+    - https://www.us-cert.gov/ics/advisories/icsa-20-051-04
+affected:
+    - groupId: org.solovyev.android
+      artifactId: android-app
+      version:
+        []
+      fixedin:
+        - ">=2.1.0"
