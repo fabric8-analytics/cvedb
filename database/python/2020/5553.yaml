@@ -1,0 +1,14 @@
+---
+cve: 2020-5553
+title: CVE in php-whisperer
+description: >
+    mailform version 1.04 allows remote attackers to execute arbitrary PHP code via unspecified vectors.
+cvss_v2: 10.0
+references:
+    - https://jvn.jp/en/jp/JVN77634892/index.html
+affected:
+    - name: php-whisperer
+      version:
+        - "<=1.4,1.4"
+      fixedin:
+        - "<=1.0.0,1.0.0"
