@@ -8,6 +8,8 @@ references:
     - https://github.com/mssalvatore/CVE-2019-14751_PoC
     - https://github.com/nltk/nltk/blob/3.4.5/ChangeLog
     - https://github.com/nltk/nltk/commit/f59d7ed8df2e0e957f7f247fe218032abdbe9a10
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QI4IJGLZQ5S7C5LNRNROHAO2P526XE3D/
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZGZSSEJH7RHH3RBUEVWWYT75QU67J7SE/
     - https://salvatoresecurity.com/zip-slip-in-nltk-cve-2019-14751/
 affected:
     - name: nltk
