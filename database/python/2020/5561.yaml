@@ -1,0 +1,15 @@
+---
+cve: 2020-5561
+title: CVE in os-brick
+description: >
+    Keijiban Tsumiki v1.15 allows remote attackers to execute arbitrary OS commands via unspecified vectors.
+cvss_v2: 10.0
+references:
+    - https://jvn.jp/en/jp/JVN88277644/index.html
+affected:
+    - name: os-brick
+      version:
+        - "<=1.15.0,1.15.0"
+      fixedin:
+        - ">=1.15.1"
+        - "<=1.14.0,0.0.0"
