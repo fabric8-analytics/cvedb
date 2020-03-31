@@ -1,0 +1,15 @@
+---
+cve: 2016-11024
+title: CVE in org.odata4j:odata4j-dist
+description: >
+    odata4j 0.7.0 allows ExecuteJPQLQueryCommand.java SQL injection. NOTE: this product is apparently discontinued.
+cvss_v2: 7.5
+references:
+    - https://groups.google.com/d/msg/odata4j-discuss/_lBwwXP30g0/Av6zkZMdBwAJ
+affected:
+    - groupId: org.odata4j
+      artifactId: odata4j-dist
+      version:
+        - "<=0.7.0,0.7.0"
+      fixedin:
+        - "<=0.6.0,0.6.0"
