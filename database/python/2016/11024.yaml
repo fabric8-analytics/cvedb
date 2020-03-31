@@ -1,0 +1,15 @@
+---
+cve: 2016-11024
+title: CVE in p4j
+description: >
+    odata4j 0.7.0 allows ExecuteJPQLQueryCommand.java SQL injection. NOTE: this product is apparently discontinued.
+cvss_v2: 7.5
+references:
+    - https://groups.google.com/d/msg/odata4j-discuss/_lBwwXP30g0/Av6zkZMdBwAJ
+affected:
+    - name: p4j
+      version:
+        - "<=0.7,0.7"
+      fixedin:
+        - ">=0.8"
+        - "<=0.6,0.3"
