@@ -1,0 +1,15 @@
+---
+cve: 2020-10660
+title: CVE in node-vault
+description: >
+    HashiCorp Vault and Vault Enterprise versions 0.9.0 through 1.3.3 may, under certain circumstances, have an Entity's Group membership inadvertently include Groups the Entity no longer has permissions to. Fixed in 1.3.4.
+cvss_v2: 4.3
+references:
+    - https://github.com/hashicorp/vault/blob/master/CHANGELOG.md#134-march-19th-2020
+    - https://www.hashicorp.com/blog/category/vault/
+affected:
+    - name: node-vault
+      version:
+        - "<=0.9.15,0.9.0"
+      fixedin:
+        - "<=0.8.0,0.0.1"
