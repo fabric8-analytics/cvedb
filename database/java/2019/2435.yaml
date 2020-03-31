@@ -1,0 +1,18 @@
+---
+cve: 2019-2435
+title: CVE in com.github.s7connector:s7connector
+description: >
+    Vulnerability in the MySQL Connectors component of Oracle MySQL (subcomponent: Connector/Python). Supported versions that are affected are 8.0.13 and prior and 2.1.8 and prior. Easily exploitable vulnerability allows unauthenticated attacker with network access via TLS to compromise MySQL Connectors. Successful attacks require human interaction from a person other than the attacker. Successful attacks of this vulnerability can result in unauthorized creation, deletion or modification access to critical data or all MySQL Connectors accessible data as well as unauthorized access to critical data or complete access to all MySQL Connectors accessible data. CVSS 3.0 Base Score 8.1 (Confidentiality and Integrity impacts). CVSS Vector: (CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N).
+cvss_v2: 5.8
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2020-03/msg00044.html
+    - http://www.oracle.com/technetwork/security-advisory/cpujan2019-5072801.html
+    - http://www.securityfocus.com/bid/106616
+    - https://security.netapp.com/advisory/ntap-20190118-0002/
+affected:
+    - groupId: com.github.s7connector
+      artifactId: s7connector
+      version:
+        - "<=2.1,2.1"
+      fixedin:
+        - "<=2.0,1.2"
