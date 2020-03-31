@@ -1,0 +1,16 @@
+---
+cve: 2020-2168
+title: CVE in com.rei.jenkins.systemdsl:jenkins-system-config-dsl
+description: >
+    Jenkins Azure Container Service Plugin 1.0.1 and earlier does not configure its YAML parser to prevent the instantiation of arbitrary types, resulting in a remote code execution vulnerability.
+cvss_v2: 6.5
+references:
+    - http://www.openwall.com/lists/oss-security/2020/03/25/2
+    - https://jenkins.io/security/advisory/2020-03-25/#SECURITY-1732
+affected:
+    - groupId: com.rei.jenkins.systemdsl
+      artifactId: jenkins-system-config-dsl
+      version:
+        - "<=1.0.1"
+      fixedin:
+        - ">=1.0.2"
