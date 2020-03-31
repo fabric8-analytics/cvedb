@@ -1,0 +1,16 @@
+---
+cve: 2020-1764
+title: CVE in io.openshift:openshift-test-utils
+description: >
+    A hard-coded cryptographic key vulnerability in the default configuration file was found in Kiali, all versions prior to 1.15.1. A remote attacker could abuse this flaw by creating their own JWT signed tokens and bypass Kiali authentication mechanisms, possibly gaining privileges to view and alter the Istio configuration.
+cvss_v2: 7.5
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-1764
+    - https://kiali.io/news/security-bulletins/kiali-security-001/
+affected:
+    - groupId: io.openshift
+      artifactId: openshift-test-utils
+      version:
+        - "<=1"
+      fixedin:
+        - ">=2"
