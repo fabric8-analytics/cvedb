@@ -1,0 +1,14 @@
+---
+cve: 2020-1773
+title: CVE in @ovh-ux/ng-ovh-otrs
+description: >
+    It's possible that an authenticated user guess other session IDs based on its own. Also it's possible to guess a password reset token or an automated password generated. This issue affects ((OTRS)) Community Edition: 5.0.41 and prior versions, 6.0.26 and prior versions. OTRS; 7.0.15 and prior versions.
+cvss_v2: 5.5
+references:
+    - https://otrs.com/release-notes/otrs-security-advisory-2020-10/
+affected:
+    - name: @ovh-ux/ng-ovh-otrs
+      version:
+        - "<=7.0.2"
+      fixedin:
+        - ">=7.1.0"
