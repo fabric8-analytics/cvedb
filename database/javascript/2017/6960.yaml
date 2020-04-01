@@ -1,0 +1,15 @@
+---
+cve: 2017-6960
+title: CVE in apng2gif-bin
+description: >
+    An issue was discovered in apng2gif 1.7. There is an integer overflow resulting in a heap-based buffer over-read, related to the load_apng function and the imagesize variable.
+cvss_v2: 5.0
+references:
+    - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=854367
+    - https://lists.debian.org/debian-lts-announce/2020/03/msg00039.html
+affected:
+    - name: apng2gif-bin
+      version:
+        - "<=1.7.0"
+      fixedin:
+        - ">=1.7.1"
