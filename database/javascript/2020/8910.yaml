@@ -1,0 +1,15 @@
+---
+cve: 2020-8910
+title: CVE in google-closure-library
+description: >
+    A URL parsing issue in goog.uri of the Google Closure Library versions up to and including v20200224 allows an attacker to send malicious URLs to be parsed by the library and return the wrong authority. Mitigation: update your library to version v20200315.
+cvss_v2: 4.3
+references:
+    - https://github.com/google/closure-library/commit/294fc00b01d248419d8f8de37580adf2a0024fc9
+    - https://github.com/google/closure-library/releases/tag/v20200315
+affected:
+    - name: google-closure-library
+      version:
+        - "<=20200224.0.0"
+      fixedin:
+        - ">=20200315.0.0"
