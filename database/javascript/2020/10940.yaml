@@ -1,0 +1,14 @@
+---
+cve: 2020-10940
+title: CVE in local-web-server
+description: >
+    Local Privilege Escalation can occur in PHOENIX CONTACT PORTICO SERVER through 3.0.7 when installed to run as a service.
+cvss_v2: 4.6
+references:
+    - https://cert.vde.com/en-us/advisories/vde-2020-013
+affected:
+    - name: local-web-server
+      version:
+        - "<=3.0.7"
+      fixedin:
+        - ">=4.0.0"
