@@ -1,0 +1,19 @@
+---
+cve: 2019-10098
+title: CVE in @hint/hint-no-http-redirects
+description: >
+    In Apache HTTP server 2.4.0 to 2.4.39, Redirects configured with mod_rewrite that were intended to be self-referential might be fooled by encoded newlines and redirect instead to an unexpected URL within the request URL.
+cvss_v2: 5.8
+references:
+    - http://www.openwall.com/lists/oss-security/2020/04/01/4
+    - https://httpd.apache.org/security/vulnerabilities_24.html
+    - https://lists.apache.org/thread.html/rd18c3c43602e66f9cdcf09f1de233804975b9572b0456cc582390b6f@%3Ccvs.httpd.apache.org%3E
+    - https://lists.apache.org/thread.html/re3d27b6250aa8548b8845d314bb8a350b3df326cacbbfdfe4d455234@%3Ccvs.httpd.apache.org%3E
+    - https://www.oracle.com/security-alerts/cpujan2020.html
+    - https://www.oracle.com/technetwork/security-advisory/cpuoct2019-5072832.html
+affected:
+    - name: @hint/hint-no-http-redirects
+      version:
+        - "<=2.4.2,2.4.0"
+      fixedin:
+        - "<=2.3.11,1.0.0-beta.0"
