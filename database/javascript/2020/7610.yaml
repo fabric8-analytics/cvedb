@@ -1,0 +1,15 @@
+---
+cve: 2020-7610
+title: CVE in bson-objectid
+description: >
+    All versions of bson before 1.1.4 are vulnerable to Deserialization of Untrusted Data. The package will ignore an unknown value for an object's _bsotype, leading to cases where an object is serialized as a document rather than the intended BSON type.
+cvss_v2: 7.5
+references:
+    - https://snyk.io/vuln/SNYK-JS-BSON-561052
+affected:
+    - name: bson-objectid
+      version:
+        - "<=1.1.3,1.0.0"
+      fixedin:
+        - ">=1.1.4"
+        - "<=0.1.1,0.1.1"
