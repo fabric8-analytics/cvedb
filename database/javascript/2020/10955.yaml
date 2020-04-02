@@ -1,0 +1,16 @@
+---
+cve: 2020-10955
+title: CVE in gitlab
+description: >
+    GitLab EE/CE 11.1 through 12.9 is vulnerable to parameter tampering on an upload feature that allows an unauthorized user to read content available under specific folders.
+cvss_v2: 4.0
+references:
+    - https://about.gitlab.com/releases/2020/03/26/security-release-12-dot-9-dot-1-released/
+    - https://about.gitlab.com/releases/categories/releases/
+affected:
+    - name: gitlab
+      version:
+        - "<=12.1.2,11.1.0"
+      fixedin:
+        - ">=13.0.0"
+        - "<=11.0.2,0.0.1"
