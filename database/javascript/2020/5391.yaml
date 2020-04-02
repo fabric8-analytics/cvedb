@@ -1,0 +1,16 @@
+---
+cve: 2020-5391
+title: CVE in auth0-js
+description: >
+    Cross-site request forgery (CSRF) vulnerabilities exist in the Auth0 plugin before 4.0.0 for WordPress via the domain field.
+cvss_v2: 6.8
+references:
+    - https://auth0.com/docs/security/bulletins/2020-03-31_wpauth0
+    - https://github.com/auth0/wp-auth0/releases
+    - https://github.com/auth0/wp-auth0/security/advisories/GHSA-59vf-cgfw-6h6v
+affected:
+    - name: auth0-js
+      version:
+        - "<=3.2.3"
+      fixedin:
+        - ">=4.0.0"
