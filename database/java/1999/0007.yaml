@@ -1,0 +1,15 @@
+---
+cve: 1999-0007
+title: CVE in org.testifyproject.server:server-core
+description: >
+    Information from SSL-encrypted sessions via PKCS #1.
+cvss_v2: 5.0
+references:
+    - https://docs.microsoft.com/en-us/security-updates/securitybulletins/1998/ms98-002
+affected:
+    - groupId: org.testifyproject.server
+      artifactId: server-core
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
