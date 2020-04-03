@@ -1,0 +1,17 @@
+---
+cve: 2020-7948
+title: CVE in auth0-js
+description: >
+    An issue was discovered in the Login by Auth0 plugin before 4.0.0 for WordPress. A user can perform an insecure direct object reference.
+cvss_v2: 6.5
+references:
+    - https://auth0.com/docs/cms/wordpress
+    - https://auth0.com/docs/security/bulletins/2020-03-31_wpauth0
+    - https://github.com/auth0/wp-auth0/security/advisories/GHSA-59vf-cgfw-6h6v
+    - https://wordpress.org/plugins/auth0/#developers
+affected:
+    - name: auth0-js
+      version:
+        - "<=3.2.3"
+      fixedin:
+        - ">=4.0.0"
