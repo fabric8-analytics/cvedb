@@ -1,0 +1,14 @@
+---
+cve: 1999-0007
+title: CVE in pkcs1
+description: >
+    Information from SSL-encrypted sessions via PKCS #1.
+cvss_v2: 5.0
+references:
+    - https://docs.microsoft.com/en-us/security-updates/securitybulletins/1998/ms98-002
+affected:
+    - name: pkcs1
+      version:
+        - "<=0.9.0"
+      fixedin:
+        - ">=0.9.1"
