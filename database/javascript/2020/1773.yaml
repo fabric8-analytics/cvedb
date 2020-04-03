@@ -1,0 +1,14 @@
+---
+cve: 2020-1773
+title: CVE in @ovh-ux/ng-ovh-otrs
+description: >
+    An attacker with the ability to generate session IDs or password reset tokens, either by being able to authenticate or by exploiting OSA-2020-09, may be able to predict other users session IDs, password reset tokens and automatically generated passwords. This issue affects ((OTRS)) Community Edition: 5.0.41 and prior versions, 6.0.26 and prior versions. OTRS; 7.0.15 and prior versions.
+cvss_v2: 5.5
+references:
+    - https://otrs.com/release-notes/otrs-security-advisory-2020-10/
+affected:
+    - name: @ovh-ux/ng-ovh-otrs
+      version:
+        - "<=7.0.2"
+      fixedin:
+        - ">=7.1.0"
