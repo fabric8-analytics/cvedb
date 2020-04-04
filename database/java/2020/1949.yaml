@@ -1,0 +1,15 @@
+---
+cve: 2020-1949
+title: CVE in org.apache.sling:org.apache.sling.cms.core
+description: >
+    Scripts in Sling CMS before 0.16.0 do not property escape the Sling Selector from URLs when generating navigational elements for the administrative consoles and are vulnerable to reflected XSS attacks.
+cvss_v2: 4.3
+references:
+    - https://s.apache.org/CVE-2020-1949
+affected:
+    - groupId: org.apache.sling
+      artifactId: org.apache.sling.cms.core
+      version:
+        - "<=0.14.0"
+      fixedin:
+        - ">=0.16.0"
