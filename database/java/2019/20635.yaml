@@ -1,0 +1,15 @@
+---
+cve: 2019-20635
+title: CVE in com.graphql-java:graphql-java
+description: >
+    codeBeamer before 9.5.0-RC3 does not properly restrict the ability to execute custom Java code and access the Java class loader via computed fields.
+cvss_v2: 4.3
+references:
+    - https://codebeamer.com/cb/wiki/7372223
+affected:
+    - groupId: com.graphql-java
+      artifactId: graphql-java
+      version:
+        - "<=9.5"
+      fixedin:
+        - ">=9.7"
