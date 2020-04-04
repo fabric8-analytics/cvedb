@@ -1,0 +1,14 @@
+---
+cve: 2019-19090
+title: CVE in flag
+description: >
+    For ABB eSOMS versions 4.0 to 6.0.2, the Secure Flag is not set in the HTTP response header. Unencrypted connections might access the cookie information, thus making it susceptible to eavesdropping.
+cvss_v2: 3.5
+references:
+    - https://search.abb.com/library/Download.aspx?DocumentID=9AKK107492A9964&LanguageCode=en&DocumentPartId=&Action=Launch
+affected:
+    - name: flag
+      version:
+        - "<=4.4.0,4.0.0"
+      fixedin:
+        - "<=3.0.0-1,0.0.0"
