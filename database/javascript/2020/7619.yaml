@@ -1,0 +1,15 @@
+---
+cve: 2020-7619
+title: CVE in injection
+description: >
+    get-git-data through 1.3.1 is vulnerable to Command Injection. It is possible to inject arbitrary commands as part of the arguments provided to get-git-data.
+cvss_v2: 7.5
+references:
+    - https://github.com/chardos/get-git-data/blob/master/index.js#L7,
+    - https://snyk.io/vuln/SNYK-JS-GETGITDATA-564222
+affected:
+    - name: injection
+      version:
+        - "<=1.3.1"
+      fixedin:
+        - ">=1.3.2"
