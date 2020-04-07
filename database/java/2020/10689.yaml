@@ -1,0 +1,16 @@
+---
+cve: 2020-10689
+title: CVE in org.eclipse.che.selenium:che-selenium-core
+description: >
+    A flaw was found in the Eclipse Che up to version 7.8.x, where it did not properly restrict access to workspace pods. An authenticated user can exploit this flaw to bypass JWT proxy and gain access to the workspace pods of another user. Successful exploitation requires knowledge of the service name and namespace of the target pod.
+cvss_v2: 4.9
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-10689
+    - https://github.com/eclipse/che/issues/15651
+affected:
+    - groupId: org.eclipse.che.selenium
+      artifactId: che-selenium-core
+      version:
+        - "<=7.8.0"
+      fixedin:
+        - ">=7.9.0"
