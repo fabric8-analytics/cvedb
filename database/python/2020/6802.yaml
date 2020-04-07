@@ -1,0 +1,14 @@
+---
+cve: 2020-6802
+title: CVE in bleach
+description: >
+    In Mozilla Bleach before 3.11, a mutation XSS affects users calling bleach.clean with noscript and a raw tag in the allowed/whitelisted tags option.
+cvss_v2: 4.3
+references:
+    - https://github.com/mozilla/bleach/security/advisories/GHSA-q65m-pv3f-wr5r
+affected:
+    - name: bleach
+      version:
+        - "<=3.1.0"
+      fixedin:
+        - ">=3.1.1"
