@@ -1,0 +1,15 @@
+---
+cve: 2020-8147
+title: CVE in xyz.truenight.utils:utils
+description: >
+    Flaw in input validation in npm package utils-extend version 1.0.8 and earlier may allow prototype pollution attack that may result in remote code execution or denial of service of applications using utils-extend.
+cvss_v2: 7.5
+references:
+    - https://hackerone.com/reports/801522
+affected:
+    - groupId: xyz.truenight.utils
+      artifactId: utils
+      version:
+        - "<=1.0.8"
+      fixedin:
+        []
