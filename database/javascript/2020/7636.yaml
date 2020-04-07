@@ -1,0 +1,15 @@
+---
+cve: 2020-7636
+title: CVE in adb-driver
+description: >
+    adb-driver through 0.1.8 is vulnerable to Command Injection.It allows execution of arbitrary commands via the command function.
+cvss_v2: 7.5
+references:
+    - https://snyk.io/vuln/SNYK-JS-ADBDRIVER-564430
+    - https://www.npmjs.com/package/adb-driver
+affected:
+    - name: adb-driver
+      version:
+        - "<=0.1.8"
+      fixedin:
+        []
