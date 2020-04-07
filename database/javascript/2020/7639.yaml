@@ -1,0 +1,15 @@
+---
+cve: 2020-7639
+title: CVE in object-dot-keys
+description: >
+    eivindfjeldstad-dot below 1.0.3 is vulnerable to Prototype Pollution.The function 'set' could be tricked into adding or modifying properties of 'Object.prototype' using a '__proto__' payload.
+cvss_v2: 5.0
+references:
+    - https://github.com/eivindfjeldstad/dot/commit/774e4b0c97ca35d2ae40df2cd14428d37dd07a0b
+    - https://snyk.io/vuln/SNYK-JS-EIVIFJDOT-564435
+affected:
+    - name: object-dot-keys
+      version:
+        - "<=1.0.3"
+      fixedin:
+        []
