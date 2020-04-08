@@ -1,0 +1,16 @@
+---
+cve: 2020-11444
+title: CVE in nexus-flux
+description: >
+    Sonatype Nexus Repository Manager 3.x up to and including 3.21.2 has Incorrect Access Control.
+cvss_v2: 6.5
+references:
+    - https://support.sonatype.com
+    - https://support.sonatype.com/hc/en-us/articles/360046133553
+affected:
+    - name: nexus-flux
+      version:
+        - "<=3.4.4,3.0.0"
+      fixedin:
+        - ">=4.0.0"
+        - "<=2.1.0,0.0.0"
