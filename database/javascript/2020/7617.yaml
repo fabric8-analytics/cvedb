@@ -1,0 +1,15 @@
+---
+cve: 2020-7617
+title: CVE in ini-parser-encoder
+description: >
+    ini-parser through 0.0.2 is vulnerable to Prototype Pollution.The library could be tricked into adding or modifying properties of Object.prototype using a '__proto__' payload.
+cvss_v2: 7.5
+references:
+    - https://github.com/rawiroaisen/node-ini-parser/blob/master/index.js#L14
+    - https://snyk.io/vuln/SNYK-JS-INIPARSER-564122
+affected:
+    - name: ini-parser-encoder
+      version:
+        - "<=0.0.2"
+      fixedin:
+        - ">=0.0.3"
