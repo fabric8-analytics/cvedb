@@ -1,0 +1,23 @@
+---
+cve: 2020-1711
+title: CVE in qemu
+description: >
+    An out-of-bounds heap buffer access flaw was found in the way the iSCSI Block driver in QEMU versions 2.12.0 before 4.2.1 handled a response coming from an iSCSI server while checking the status of a Logical Address Block (LBA) in an iscsi_co_block_status() routine. A remote user could use this flaw to crash the QEMU process, resulting in a denial of service or potential execution of arbitrary code with privileges of the QEMU process on the host.
+cvss_v2: 6.5
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2020-04/msg00007.html
+    - https://access.redhat.com/errata/RHSA-2020:0669
+    - https://access.redhat.com/errata/RHSA-2020:0730
+    - https://access.redhat.com/errata/RHSA-2020:0731
+    - https://access.redhat.com/errata/RHSA-2020:0773
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-1711
+    - https://lists.debian.org/debian-lts-announce/2020/03/msg00017.html
+    - https://lists.gnu.org/archive/html/qemu-devel/2020-01/msg05535.html
+    - https://usn.ubuntu.com/4283-1/
+    - https://www.openwall.com/lists/oss-security/2020/01/23/3
+affected:
+    - name: qemu
+      version:
+        - "<=2.12.0,2.12.0"
+      fixedin:
+        - "<=2.11.1,2.6.0"
