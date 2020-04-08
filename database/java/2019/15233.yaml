@@ -1,0 +1,16 @@
+---
+cve: 2019-15233
+title: CVE in com.box:box-java-sdk
+description: >
+    The Live:Text Box macro in the Old Street Live Input Macros app before 2.11 for Confluence has XSS, leading to theft of the Administrator Session Cookie.
+cvss_v2: 4.3
+references:
+    - https://github.com/l0nax/CVE-2019-15233
+    - https://marketplace.atlassian.com/apps/1215287/live-input-macros?hosting=server&tab=versions
+affected:
+    - groupId: com.box
+      artifactId: box-java-sdk
+      version:
+        - "<=2.10.0"
+      fixedin:
+        - ">=2.11.0"
