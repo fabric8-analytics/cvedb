@@ -1,0 +1,15 @@
+---
+cve: 2020-2176
+title: CVE in ansible-runner
+description: >
+    Multiple form validation endpoints in Jenkins useMango Runner Plugin 1.4 and earlier do not escape values received from the useMango service, resulting in a cross-site scripting (XSS) vulnerability exploitable by users able to control the values returned from the useMango service.
+cvss_v2: 3.5
+references:
+    - http://www.openwall.com/lists/oss-security/2020/04/07/3
+    - https://jenkins.io/security/advisory/2020-04-07/#SECURITY-1780
+affected:
+    - name: ansible-runner
+      version:
+        - "<=1.4.0"
+      fixedin:
+        - ">=1.4.1"
