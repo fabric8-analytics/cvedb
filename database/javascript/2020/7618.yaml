@@ -1,0 +1,15 @@
+---
+cve: 2020-7618
+title: CVE in sds
+description: >
+    sds through 3.2.0 is vulnerable to Prototype Pollution.The library could be tricked into adding or modifying properties of the 'Object.prototype' by abusing the 'set' function located in 'js/set.js'.
+cvss_v2: 5.0
+references:
+    - https://github.com/monsterkodi/sds/blob/master/js/set.js#L31
+    - https://snyk.io/vuln/SNYK-JS-SDS-564123
+affected:
+    - name: sds
+      version:
+        - "<=3.2.0"
+      fixedin:
+        []
