@@ -1,0 +1,15 @@
+---
+cve: 2020-7613
+title: CVE in dependency-injection
+description: >
+    clamscan through 1.2.0 is vulnerable to Command Injection. It is possible to inject arbitrary commands as part of the `_is_clamav_binary` function located within `Index.js`. It should be noted that this vulnerability requires a pre-requisite that a folder should be created with the same command that will be chained to execute. This lowers the risk of this issue.
+cvss_v2: 6.8
+references:
+    - https://github.com/kylefarris/clamscan/blob/master/index.js#L34
+    - https://snyk.io/vuln/SNYK-JS-CLAMSCAN-564113
+affected:
+    - name: dependency-injection
+      version:
+        - "<=1.2.0"
+      fixedin:
+        - ">=1.2.1"
