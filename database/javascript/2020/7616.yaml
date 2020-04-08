@@ -1,0 +1,15 @@
+---
+cve: 2020-7616
+title: CVE in express-mock-middleware
+description: >
+    express-mock-middleware through 0.0.6 is vulnerable to Prototype Pollution. Exported functions by the package can be tricked into adding or modifying properties of the `Object.prototype`. Exploitation of this vulnerability requires creation of a new directory where an attack code can be placed which will then be exported by `express-mock-middleware`. As such, this is considered to be a low risk.
+cvss_v2: 5.0
+references:
+    - https://github.com/LingyuCoder/express-mock-middleware/blob/master/lib/index.js#L39
+    - https://snyk.io/vuln/SNYK-JS-EXPRESSMOCKMIDDLEWARE-564120
+affected:
+    - name: express-mock-middleware
+      version:
+        - "<=0.0.6"
+      fixedin:
+        []
