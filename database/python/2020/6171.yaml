@@ -1,0 +1,15 @@
+---
+cve: 2020-6171
+title: CVE in django-post-office
+description: >
+    A cross-site scripting (XSS) vulnerability in the index page of the CLink Office 2.0 management console allows remote attackers to inject arbitrary web script or HTML via the lang parameter.
+cvss_v2: 4.3
+references:
+    - https://www.deepcode.ca/index.php/2020/04/07/cve-2020-xss-in-clink-office-v2/
+affected:
+    - name: django-post-office
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - ">=2.0.1"
+        - "<=1.1.2,0.1.0"
