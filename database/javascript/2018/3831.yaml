@@ -1,0 +1,16 @@
+---
+cve: 2018-3831
+title: CVE in elasticsearch
+description: >
+    Elasticsearch Alerting and Monitoring in versions before 6.4.1 or 5.6.12 have an information disclosure issue when secrets are configured via the API. The Elasticsearch _cluster/settings API, when queried, could leak sensitive configuration information such as passwords, tokens, or usernames. This could allow an authenticated Elasticsearch user to improperly view these details.
+cvss_v2: 4.0
+references:
+    - https://discuss.elastic.co/t/elastic-stack-6-4-1-and-5-6-12-security-update/149035
+    - https://www.elastic.co/community/security
+affected:
+    - name: elasticsearch
+      version:
+        - "<=6.1.0,6.0.0"
+      fixedin:
+        - ">=8.0.1"
+        - "<=5.0.0,0.2.0"
