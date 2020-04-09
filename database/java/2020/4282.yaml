@@ -1,0 +1,16 @@
+---
+cve: 2020-4282
+title: CVE in com.ibm.websphere.appserver.api:com.ibm.websphere.appserver.api.webcontainer.security.app
+description: >
+    IBM Security Information Queue (ISIQ) 1.0.0, 1.0.1, 1.0.2, 1.0.3, 1.0.4, and 1.0.5 could allow an authenticated user to perform unauthorized actions by bypassing illegal character restrictions. X-Force ID: 176205.
+cvss_v2: 4.0
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/176205
+    - https://www.ibm.com/support/pages/node/6172587
+affected:
+    - groupId: com.ibm.websphere.appserver.api
+      artifactId: com.ibm.websphere.appserver.api.webcontainer.security.app
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.1.0"
