@@ -1,0 +1,16 @@
+---
+cve: 2020-4284
+title: CVE in queue
+description: >
+    IBM Security Information Queue (ISIQ) 1.0.0, 1.0.1, 1.0.2, 1.0.3, 1.0.4, and 1.0.5 could disclose sensitive information to an unauthorized user due to insufficient timeout functionality in the Web UI. IBM X-Force ID: 176207.
+cvss_v2: 5.0
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/176207
+    - https://www.ibm.com/support/pages/node/6172551
+affected:
+    - name: queue
+      version:
+        - "<=1.0.2,1.0.0"
+      fixedin:
+        - ">=2.0.0"
+        - "<=0.0.2,0.0.1"
