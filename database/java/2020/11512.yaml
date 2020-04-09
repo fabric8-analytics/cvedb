@@ -1,0 +1,16 @@
+---
+cve: 2020-11512
+title: CVE in org.apache.activemq.examples.broker:broker-plugin
+description: >
+    Stored XSS in the IMPress for IDX Broker WordPress plugin before 2.6.2 allows authenticated attackers with minimal (subscriber-level) permissions to save arbitrary JavaScript in the plugin's settings panel via the idx_update_recaptcha_key AJAX action and a crafted idx_recaptcha_site_key parameter, which would then be executed in the browser of any administrator visiting the panel. This could be used to create new administrator-level accounts.
+cvss_v2: 3.5
+references:
+    - https://wordpress.org/plugins/idx-broker-platinum/#developers
+    - https://www.wordfence.com/blog/2020/03/vulnerabilities-patched-in-impress-for-idx-broker/
+affected:
+    - groupId: org.apache.activemq.examples.broker
+      artifactId: broker-plugin
+      version:
+        - "<=2.6.1"
+      fixedin:
+        - ">=2.6.2"
