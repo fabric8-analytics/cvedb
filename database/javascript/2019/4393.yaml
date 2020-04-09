@@ -1,0 +1,14 @@
+---
+cve: 2019-4393
+title: CVE in standard
+description: >
+    HCL AppScan Standard is vulnerable to excessive authorization attempts
+cvss_v2: 5.0
+references:
+    - https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0077916
+affected:
+    - name: standard
+      version:
+        - "<=10.0.0"
+      fixedin:
+        - ">=10.0.1"
