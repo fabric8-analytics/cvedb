@@ -1,0 +1,15 @@
+---
+cve: 2020-4290
+title: CVE in expected-information-gain
+description: >
+    IBM Security Information Queue (ISIQ) 1.0.0, 1.0.1, 1.0.2, 1.0.3, 1.0.4, and 1.0.5 could allow any authenticated user to spoof the configuration owner of any other user which disclose sensitive information or allow for unauthorized access. IBM X-Force ID: 176333.
+cvss_v2: 5.5
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/176333
+    - https://www.ibm.com/support/pages/node/6172599
+affected:
+    - name: expected-information-gain
+      version:
+        - "<=1.0.3"
+      fixedin:
+        []
