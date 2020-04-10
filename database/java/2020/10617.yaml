@@ -1,0 +1,15 @@
+---
+cve: 2020-10617
+title: CVE in net.sf.squirrel-sql:squirrel-sql
+description: >
+    There are multiple ways an unauthenticated attacker could perform SQL injection on WebAccess/NMS (versions prior to 3.0.2) to gain access to sensitive information.
+cvss_v2: 5.0
+references:
+    - https://www.us-cert.gov/ics/advisories/icsa-20-098-01
+affected:
+    - groupId: net.sf.squirrel-sql
+      artifactId: squirrel-sql
+      version:
+        []
+      fixedin:
+        - ">=3.0.2"
