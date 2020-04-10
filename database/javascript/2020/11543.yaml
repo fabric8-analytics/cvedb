@@ -1,0 +1,14 @@
+---
+cve: 2020-11543
+title: CVE in react-gateway
+description: >
+    OpsRamp Gateway 3.0.0 has a backdoor account vadmin with the password 9vt@f3Vt that allows root SSH access to the server.
+cvss_v2: 10.0
+references:
+    - https://www.criticalstart.com/hard-coded-administrator-password-discovered-in-opsramp/
+affected:
+    - name: react-gateway
+      version:
+        - "<=3.0.0,3.0.0"
+      fixedin:
+        - "<=2.8.0,1.0.0"
