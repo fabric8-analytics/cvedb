@@ -1,0 +1,14 @@
+---
+cve: 2020-1988
+title: CVE in plone-protect
+description: >
+    An unquoted search path vulnerability in the Windows release of Global Protect Agent allows an authenticated local user with file creation privileges on the root of the OS disk (C:\) or to Program Files directory to gain system privileges. This issue affects Palo Alto Networks GlobalProtect Agent 5.0 versions before 5.0.5; 4.1 versions before 4.1.13 on Windows;
+cvss_v2: 7.2
+references:
+    - https://security.paloaltonetworks.com/CVE-2020-1988
+affected:
+    - name: plone-protect
+      version:
+        - "<=4.1.4,4.1.0"
+      fixedin:
+        - "<=4.0.1,1.0rc1"
