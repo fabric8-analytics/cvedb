@@ -1,0 +1,17 @@
+---
+cve: 2020-8827
+title: CVE in @vaiton86/argo-api
+description: >
+    As of v1.5.0, the Argo API does not implement anti-automation measures such as rate limiting, account lockouts, or other anti-bruteforce measures. Attackers can submit an unlimited number of authentication attempts without consequence.
+cvss_v2: 5.0
+references:
+    - https://argoproj.github.io/argo-cd/operator-manual/user-management/#disable-admin-user
+    - https://argoproj.github.io/argo-cd/security_considerations/
+    - https://github.com/argoproj/argo/releases
+    - https://www.soluble.ai/blog/argo-cves-2020
+affected:
+    - name: @vaiton86/argo-api
+      version:
+        - "<=1.4.0"
+      fixedin:
+        - ">=1.5.0"
