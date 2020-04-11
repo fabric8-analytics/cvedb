@@ -1,0 +1,15 @@
+---
+cve: 2019-18376
+title: CVE in org.terracotta.management:management-model
+description: >
+    A CSRF token disclosure vulnerability allows a remote attacker, with access to an authenticated Management Center (MC) user's web browser history or a network device that intercepts/logs traffic to MC, to obtain CSRF tokens and use them to perform CSRF attacks against MC.
+cvss_v2: 4.3
+references:
+    - https://support.broadcom.com/security-advisory/security-advisory-detail.html?notificationId=SYMSA1751
+affected:
+    - groupId: org.terracotta.management
+      artifactId: management-model
+      version:
+        - "<=2.4.0"
+      fixedin:
+        - ">=2.5.0"
