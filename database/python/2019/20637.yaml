@@ -1,0 +1,14 @@
+---
+cve: 2019-20637
+title: CVE in plone-recipe-varnish
+description: >
+    An issue was discovered in Varnish Cache before 6.0.5 LTS, 6.1.x and 6.2.x before 6.2.2, and 6.3.x before 6.3.1. It does not clear a pointer between the handling of one client request and the next request within the same connection. This sometimes causes information to be disclosed from the connection workspace, such as data structures associated with previous requests within this connection or VCL-related temporary headers.
+cvss_v2: 5.0
+references:
+    - http://varnish-cache.org/security/VSV00004.html#vsv00004
+affected:
+    - name: plone-recipe-varnish
+      version:
+        - "<=6.0.0b1,6.0.0b1"
+      fixedin:
+        - "<=2.3.0,1.0b1"
