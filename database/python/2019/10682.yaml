@@ -11,6 +11,6 @@ references:
 affected:
     - name: django-nopassword
       version:
-        - "<=4.0.2"
+        - "<=4.0.1"
       fixedin:
-        - ">=5.0.0"
+        - ">=4.0.2"
