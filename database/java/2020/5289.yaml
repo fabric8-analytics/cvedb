@@ -1,0 +1,17 @@
+---
+cve: 2020-5289
+title: CVE in com.yahoo.elide:elide-datastore-inmemorydb
+description: >
+    In Elide before 4.5.14, it is possible for an adversary to "guess and check" the value of a model field they do not have access to assuming they can read at least one other field in the model. The adversary can construct filter expressions for an inaccessible field to filter a collection. The presence or absence of models in the returned collection can be used to reconstruct the value of the inaccessible field. Resolved in Elide 4.5.14 and greater.
+cvss_v2: 4.0
+references:
+    - https://github.com/yahoo/elide/pull/1236
+    - https://github.com/yahoo/elide/pull/1236/commits/a985f0f9c448aabe70bc904337096399de4576dc
+    - https://github.com/yahoo/elide/security/advisories/GHSA-2mxr-89gf-rc4v
+affected:
+    - groupId: com.yahoo.elide
+      artifactId: elide-datastore-inmemorydb
+      version:
+        - "<=4.5.13"
+      fixedin:
+        - ">=4.5.14"
