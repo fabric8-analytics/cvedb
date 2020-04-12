@@ -1,0 +1,16 @@
+---
+cve: 2019-10682
+title: CVE in django-nopassword
+description: >
+    django-nopassword before 5.0.0 stores cleartext secrets in the database.
+cvss_v2: 5.0
+references:
+    - https://github.com/relekang/django-nopassword/blob/8e8cfc765ee00adfed120c2c79bf71ef856e9022/nopassword/models.py#L14
+    - https://github.com/relekang/django-nopassword/commit/d8b4615f5fbfe3997d96cf4cb3e342406396193c
+    - https://github.com/relekang/django-nopassword/compare/v4.0.1...v5.0.0
+affected:
+    - name: django-nopassword
+      version:
+        - "<=4.0.1"
+      fixedin:
+        - ">=4.0.2"
