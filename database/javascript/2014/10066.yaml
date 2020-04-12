@@ -1,13 +1,13 @@
 ---
 cve: 2014-10066
-title: CVE in available-versions
+title: CVE in fancy-server
 description: >
     Versions less than 0.1.4 of the static file server module fancy-server are vulnerable to directory traversal. An attacker can provide input such as `../` to read files outside of the served directory.
 cvss_v2: 5.0
 references:
     - https://nodesecurity.io/advisories/9
 affected:
-    - name: available-versions
+    - name: fancy-server
       version:
         - "<=0.1.3"
       fixedin:
