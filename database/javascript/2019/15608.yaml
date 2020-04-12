@@ -1,0 +1,16 @@
+---
+cve: 2019-15608
+title: CVE in yarn
+description: >
+    The package integrity validation in yarn < 1.19.0 contains a TOCTOU vulnerability where the hash is computed before writing a package to cache. It's not computed again when reading from the cache. This may lead to a cache pollution attack.
+cvss_v2: 4.3
+references:
+    - https://github.com/yarnpkg/yarn/blob/master/CHANGELOG.md#1190
+    - https://github.com/yarnpkg/yarn/commit/0474b8c66a8ea298f5e4dedc67b2de464297ad1c
+    - https://hackerone.com/reports/703138
+affected:
+    - name: yarn
+      version:
+        - "<=1.18.0"
+      fixedin:
+        - ">=1.19.0"
