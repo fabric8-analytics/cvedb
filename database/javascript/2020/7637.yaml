@@ -1,0 +1,15 @@
+---
+cve: 2020-7637
+title: CVE in class-transformer
+description: >
+    class-transformer through 0.2.3 is vulnerable to Prototype Pollution. The 'classToPlainFromExist' function could be tricked into adding or modifying properties of 'Object.prototype' using a '__proto__' payload.
+cvss_v2: 5.0
+references:
+    - https://github.com/typestack/class-transformer/blob/a650d9f490573443f62508bc063b857bcd5e2525/src/ClassTransformer.ts#L29-L31,
+    - https://snyk.io/vuln/SNYK-JS-CLASSTRANSFORMER-564431
+affected:
+    - name: class-transformer
+      version:
+        - "<=0.2.3"
+      fixedin:
+        []
