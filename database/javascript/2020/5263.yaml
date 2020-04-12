@@ -1,0 +1,16 @@
+---
+cve: 2020-5263
+title: CVE in auth0-js
+description: >
+    auth0.js (NPM package auth0-js) greater than version 8.0.0 and before version 9.12.3 has a vulnerability. In the case of an (authentication) error, the error object returned by the library contains the original request of the user, which may include the plaintext password the user entered. If the error object is exposed or logged without modification, the application risks password exposure. This is fixed in version 9.12.3
+cvss_v2: 4.0
+references:
+    - https://github.com/auth0/auth0.js/commit/355ca749b229fb93142f0b3978399b248d710828
+    - https://github.com/auth0/auth0.js/security/advisories/GHSA-prfq-f66g-43mp
+affected:
+    - name: auth0-js
+      version:
+        - "<=9.13.1,8.0.0-alpha.1"
+      fixedin:
+        - ">=9.13.2"
+        - "<=7.6.1,0.1.5"
