@@ -1,0 +1,21 @@
+---
+cve: 2020-1958
+title: CVE in org.apache.druid:druid-indexing-service
+description: >
+    When LDAP authentication is enabled in Apache Druid 0.17.0, callers of Druid APIs with a valid set of LDAP credentials can bypass the credentialsValidator.userSearch filter barrier that determines if a valid LDAP user is allowed to authenticate with Druid. They are still subject to role-based authorization checks, if configured. Callers of Druid APIs can also retrieve any LDAP attribute values of users that exist on the LDAP server, so long as that information is visible to the Druid server. This information disclosure does not require the caller itself to be a valid LDAP user.
+cvss_v2: 3.5
+references:
+    - https://lists.apache.org/thread.html/r026540c617d334007810cd8f0068f617b5c78444be00a31fc1b03390@%3Ccommits.druid.apache.org%3E
+    - https://lists.apache.org/thread.html/r1526dbce98a138629a41daa06c13393146ddcaf8f9d273cc49d57681@%3Ccommits.druid.apache.org%3E
+    - https://lists.apache.org/thread.html/r1c32c95543d44559b8d7fd89b0a85f728c80e8b715685bbf788a15a4@%3Ccommits.druid.apache.org%3E
+    - https://lists.apache.org/thread.html/r9d437371793b410f8a8e18f556d52d4bb68e18c537962f6a97f4945e%40%3Cdev.druid.apache.org%3E
+    - https://lists.apache.org/thread.html/rf70876ecafb45b314eff9d040c5281c4adb0cb7771eb029448cfb79b@%3Cannounce.apache.org%3E
+    - https://lists.apache.org/thread.html/rffabc9e83cc2831bbee5db32b3965b84b09346a26ebc1012db63d28c@%3Ccommits.druid.apache.org%3E
+affected:
+    - groupId: org.apache.druid
+      artifactId: druid-indexing-service
+      version:
+        - "<=0.17.0,0.17.0"
+      fixedin:
+        - ">=0.17.1"
+        - "<=0.16.1-incubating,0.13.0-incubating"
