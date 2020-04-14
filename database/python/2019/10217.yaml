@@ -5,6 +5,7 @@ description: >
     A flaw was found in ansible 2.8.0 before 2.8.4. Fields managing sensitive data should be set as such by no_log feature. Some of these fields in GCP modules are not set properly. service_account_contents() which is common class for all gcp modules is not setting no_log to True. Any sensitive data managed by that function would be leak as an output when running ansible playbooks.
 cvss_v2: 4.0
 references:
+    - http://lists.opensuse.org/opensuse-security-announce/2020-04/msg00021.html
     - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-10217
     - https://github.com/ansible/ansible/issues/56269
     - https://github.com/ansible/ansible/pull/59427
@@ -14,4 +15,4 @@ affected:
         - "<=2.8.3,2.8.0a1"
       fixedin:
         - ">=2.8.4"
-        - "<=2.7.15,1.0"
+        - "<=2.7.16,1.0"
