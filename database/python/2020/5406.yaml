@@ -1,0 +1,14 @@
+---
+cve: 2020-5406
+title: CVE in python-application
+description: >
+    VMware Tanzu Application Service for VMs, 2.6.x versions prior to 2.6.18, 2.7.x versions prior to 2.7.11, and 2.8.x versions prior to 2.8.5, includes a version of PCF Autoscaling that writes database connection properties to its log, including database username and password. A malicious user with access to those logs may gain unauthorized access to the database being used by Autoscaling.
+cvss_v2: 4.0
+references:
+    - https://tanzu.vmware.com/security/cve-2020-5406
+affected:
+    - name: python-application
+      version:
+        - "<=2.8.0,2.6.0"
+      fixedin:
+        - "<=2.5.0,1.0.8"
