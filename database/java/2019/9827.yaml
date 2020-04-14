@@ -1,0 +1,15 @@
+---
+cve: 2019-9827
+title: CVE in io.hawt:hawtio-default
+description: >
+    Hawt Hawtio through 2.5.0 is vulnerable to SSRF, allowing a remote attacker to trigger an HTTP request from an affected server to an arbitrary host via the initial /proxy/ substring of a URI.
+cvss_v2: 7.5
+references:
+    - https://www.ciphertechs.com/hawtio-advisory/
+affected:
+    - groupId: io.hawt
+      artifactId: hawtio-default
+      version:
+        - "<=2.5.0"
+      fixedin:
+        - ">=2.6.0"
