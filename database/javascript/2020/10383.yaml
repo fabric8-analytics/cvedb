@@ -1,0 +1,14 @@
+---
+cve: 2020-10383
+title: CVE in connect-redis
+description: >
+    An issue was discovered in the MB CONNECT LINE mymbCONNECT24 and mbCONNECT24 software in all versions through 2.5.0. There is an unauthenticated remote code execution in the com_mb24sysapi module.
+cvss_v2: 7.5
+references:
+    - https://www.mbconnectline.de/en/support/sicherheitshinweise.html
+affected:
+    - name: connect-redis
+      version:
+        - "<=2.5.0"
+      fixedin:
+        - ">=2.5.1"
