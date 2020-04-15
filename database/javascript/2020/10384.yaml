@@ -1,0 +1,14 @@
+---
+cve: 2020-10384
+title: CVE in connect-redis
+description: >
+    An issue was discovered in the MB CONNECT LINE mymbCONNECT24 and mbCONNECT24 software in all versions through 2.5.0. There is a local privilege escalation from the www-data account to the root account.
+cvss_v2: 7.2
+references:
+    - https://www.mbconnectline.de/en/support/sicherheitshinweise.html
+affected:
+    - name: connect-redis
+      version:
+        - "<=2.5.0"
+      fixedin:
+        - ">=2.5.1"
