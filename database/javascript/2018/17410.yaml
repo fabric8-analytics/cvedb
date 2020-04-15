@@ -1,0 +1,15 @@
+---
+cve: 2018-17410
+title: CVE in @assaiatacadista_horus/model
+description: >
+    Horus CMS allows SQL Injection, as demonstrated by a request to the /busca or /home URI.
+cvss_v2: 7.5
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/150531
+    - https://lab.insightsecurity.com.br/horus-cms/
+affected:
+    - name: @assaiatacadista_horus/model
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
