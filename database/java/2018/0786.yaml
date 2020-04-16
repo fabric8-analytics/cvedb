@@ -1,0 +1,17 @@
+---
+cve: 2018-0786
+title: CVE in com.microsoft.graph:microsoft-graph
+description: >
+    Microsoft .NET Framework 2.0 SP2, 3.0 SP2, 3.5, 3.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, .NET Core 1.0 and 2.0, and PowerShell Core 6.0.0 allow a security feature bypass vulnerability due to the way certificates are validated, aka ".NET Security Feature Bypass Vulnerability."
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/102380
+    - http://www.securitytracker.com/id/1040152
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2018-0786
+affected:
+    - groupId: com.microsoft.graph
+      artifactId: microsoft-graph
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
