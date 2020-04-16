@@ -1,0 +1,17 @@
+---
+cve: 2020-6230
+title: CVE in org.cstamas.vertx.orientdb:vertx-orientdb-examples
+description: >
+    SAP OrientDB, version 3.0, allows an authenticated attacker with script execute/write permissions to inject code that can be executed by the application and lead to Code Injection. An attacker could thereby control the behavior of the application.
+cvss_v2: 6.5
+references:
+    - https://launchpad.support.sap.com/#/notes/2900118
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=544214202
+affected:
+    - groupId: org.cstamas.vertx.orientdb
+      artifactId: vertx-orientdb-examples
+      version:
+        - "<=3.0.0,3.0.0"
+      fixedin:
+        - ">=3.0.1"
+        - "<=2.0.0,1.0.0"
