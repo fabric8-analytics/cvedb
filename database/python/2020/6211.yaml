@@ -1,0 +1,16 @@
+---
+cve: 2020-6211
+title: CVE in phishme-intelligence
+description: >
+    SAP Business Objects Business Intelligence Platform (AdminTools), versions 4.1, 4.2, allows an attacker to redirect users to a malicious site due to insufficient URL validation and steal credentials of the victim, leading to URL Redirection vulnerability.
+cvss_v2: 5.8
+references:
+    - https://launchpad.support.sap.com/#/notes/2878507
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=544214202
+affected:
+    - name: phishme-intelligence
+      version:
+        - "<=4.2.0,4.2.0"
+      fixedin:
+        - ">=4.3.0"
+        - "<=4.1.9,4.1.1"
