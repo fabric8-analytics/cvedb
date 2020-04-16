@@ -1,0 +1,16 @@
+---
+cve: 2020-6195
+title: CVE in phishme-intelligence
+description: >
+    SAP Business Objects Business Intelligence Platform (CMC), version 4.1, 4.2, shows cleartext password in the response, leading to Information Disclosure. It involves social engineering in order to gain access to system and If password is known, it would give administrative rights to the attacker to read/modify delete the data and rights within the system.
+cvss_v2: 5.0
+references:
+    - https://launchpad.support.sap.com/#/notes/2878507
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=544214202
+affected:
+    - name: phishme-intelligence
+      version:
+        - "<=4.2.0,4.2.0"
+      fixedin:
+        - ">=4.3.0"
+        - "<=4.1.9,4.1.1"
