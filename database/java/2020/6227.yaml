@@ -1,0 +1,17 @@
+---
+cve: 2020-6227
+title: CVE in org.seedstack.business:business-migrate
+description: >
+    SAP Business Objects Business Intelligence Platform (CMS / Auditing issues), version 4.2, allows attacker to send specially crafted GIOP packets to several services due to Improper Input Validation, allowing to forge additional entries in GLF log files.
+cvss_v2: 5.0
+references:
+    - https://launchpad.support.sap.com/#/notes/2863396
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=544214202
+affected:
+    - groupId: org.seedstack.business
+      artifactId: business-migrate
+      version:
+        - "<=4.2.0,4.2.0"
+      fixedin:
+        - ">=4.2.1"
+        - "<=4.1.1,4.1.0"
