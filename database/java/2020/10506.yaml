@@ -1,0 +1,15 @@
+---
+cve: 2020-10506
+title: CVE in co.jufeng:co.jufeng.core
+description: >
+    The School Manage System, developed by ALLE INFORMATION CO., LTD., contains a vulnerability of Path Traversal, allowing attackers to access arbitrary files.
+cvss_v2: 5.0
+references:
+    - https://www.twcert.org.tw/tw/cp-132-3531-cba24-1.html
+affected:
+    - groupId: co.jufeng
+      artifactId: co.jufeng.core
+      version:
+        []
+      fixedin:
+        - ">=2.0.0"
