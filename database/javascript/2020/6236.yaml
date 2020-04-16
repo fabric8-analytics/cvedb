@@ -1,0 +1,15 @@
+---
+cve: 2020-6236
+title: CVE in adaptive-threshold
+description: >
+    SAP Landscape Management, version 3.0, and SAP Adaptive Extensions, version 1.0, allows an attacker with admin_group privileges to change ownership and permissions (including S-user ID bit s-bit) of arbitrary files remotely. This results in the possibility to execute these files as root user from a non-root context, leading to Privilege Escalation.
+cvss_v2: 6.5
+references:
+    - https://launchpad.support.sap.com/#/notes/2902456
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=544214202
+affected:
+    - name: adaptive-threshold
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.1.0"
