@@ -1,0 +1,15 @@
+---
+cve: 2020-6230
+title: CVE in sap-cf-logging
+description: >
+    SAP OrientDB, version 3.0, allows an authenticated attacker with script execute/write permissions to inject code that can be executed by the application and lead to Code Injection. An attacker could thereby control the behavior of the application.
+cvss_v2: 6.5
+references:
+    - https://launchpad.support.sap.com/#/notes/2900118
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=544214202
+affected:
+    - name: sap-cf-logging
+      version:
+        - "<=3.0.0"
+      fixedin:
+        - ">=3.0.1"
