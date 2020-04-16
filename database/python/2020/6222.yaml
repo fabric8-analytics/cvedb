@@ -1,0 +1,16 @@
+---
+cve: 2020-6222
+title: CVE in phishme-intelligence
+description: >
+    SAP Business Objects Business Intelligence Platform (Web Intelligence HTML interface), versions 4.1, 4.2, does not sufficiently encode user-controlled inputs, resulting in Cross-Site Scripting (XSS) vulnerability.
+cvss_v2: 3.5
+references:
+    - https://launchpad.support.sap.com/#/notes/2880804
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=544214202
+affected:
+    - name: phishme-intelligence
+      version:
+        - "<=4.2.0,4.2.0"
+      fixedin:
+        - ">=4.3.0"
+        - "<=4.1.9,4.1.1"
