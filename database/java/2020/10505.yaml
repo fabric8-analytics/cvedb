@@ -1,0 +1,15 @@
+---
+cve: 2020-10505
+title: CVE in org.skife.url:url-scheme-registry
+description: >
+    The School Manage System, developed by ALLE INFORMATION CO., LTD., contains a vulnerability of SQL Injection, allowing attackers to inject SQL commands into the URL.
+cvss_v2: 7.5
+references:
+    - https://www.twcert.org.tw/tw/cp-132-3530-53d32-1.html
+affected:
+    - groupId: org.skife.url
+      artifactId: url-scheme-registry
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
