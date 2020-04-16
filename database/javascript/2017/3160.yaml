@@ -7,6 +7,7 @@ cvss_v2: 5.8
 references:
     - http://www.securityfocus.com/bid/95838
     - https://cordova.apache.org/announcements/2017/01/27/android-612.html
+    - https://www.oracle.com/security-alerts/cpuapr2020.html
 affected:
     - name: cordova-android
       version:
