@@ -1,0 +1,14 @@
+---
+cve: 2020-10505
+title: CVE in bottle-manage
+description: >
+    The School Manage System, developed by ALLE INFORMATION CO., LTD., contains a vulnerability of SQL Injection, an attacker can use a union based injection query string to get databases schema and username/password.
+cvss_v2: 7.5
+references:
+    - https://www.twcert.org.tw/tw/cp-132-3530-53d32-1.html
+affected:
+    - name: bottle-manage
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
