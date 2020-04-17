@@ -1,0 +1,14 @@
+---
+cve: 2020-10507
+title: CVE in bottle-manage
+description: >
+    The School Manage System, developed by ALLE INFORMATION CO., LTD., contains a vulnerability of Unrestricted file upload (RCE) , that would allow attackers to gain access in the hosting machine.
+cvss_v2: 7.5
+references:
+    - https://www.twcert.org.tw/tw/cp-132-3532-26d71-1.html
+affected:
+    - name: bottle-manage
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
