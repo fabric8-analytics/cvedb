@@ -1,0 +1,17 @@
+---
+cve: 2019-14492
+title: CVE in opencv
+description: >
+    An issue was discovered in OpenCV before 3.4.7 and 4.x before 4.1.1. There is an out of bounds read/write in the function HaarEvaluator::OptFeature::calc in modules/objdetect/src/cascadedetect.hpp, which leads to denial of service.
+cvss_v2: 5.0
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2019-12/msg00025.html
+    - https://github.com/opencv/opencv/compare/33b765d...4a7ca5a
+    - https://github.com/opencv/opencv/compare/371bba8...ddbd10c
+    - https://github.com/opencv/opencv/issues/15124
+affected:
+    - name: opencv
+      version:
+        - "<=4.0.0"
+      fixedin:
+        - ">=5.0.0"
