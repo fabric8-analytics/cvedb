@@ -1,0 +1,15 @@
+---
+cve: 2020-11820
+title: CVE in mongo-sql
+description: >
+    Rukovoditel 2.5.2 is affected by a SQL injection vulnerability because of improper handling of the entities_id parameter.
+cvss_v2: 7.5
+references:
+    - https://fatihhcelik.blogspot.com/2020/01/rukovoditel-sql-injection-entitiesid.html
+affected:
+    - name: mongo-sql
+      version:
+        - "<=2.5.2,2.5.2"
+      fixedin:
+        - ">=2.5.3"
+        - "<=2.5.1,0.0.3"
