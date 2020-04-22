@@ -1,0 +1,14 @@
+---
+cve: 2020-0935
+title: CVE in @abskmj/onedrive-api
+description: >
+    An elevation of privilege vulnerability exists when the OneDrive for Windows Desktop application improperly handles symbolic links, aka 'OneDrive for Windows Elevation of Privilege Vulnerability'.
+cvss_v2: 2.1
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0935
+affected:
+    - name: @abskmj/onedrive-api
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
