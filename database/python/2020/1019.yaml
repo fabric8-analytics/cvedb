@@ -1,0 +1,14 @@
+---
+cve: 2020-1019
+title: CVE in mac-app
+description: >
+    An elevation of privilege vulnerability exists in RMS Sharing App for Mac in the way it allows an attacker to load unsigned binaries, aka 'Microsoft RMS Sharing App for Mac Elevation of Privilege Vulnerability'.
+cvss_v2: 4.6
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1019
+affected:
+    - name: mac-app
+      version:
+        []
+      fixedin:
+        - ">=0.0.0"
