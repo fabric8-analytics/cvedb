@@ -1,0 +1,14 @@
+---
+cve: 2020-0979
+title: CVE in tadmin-office365
+description: >
+    A remote code execution vulnerability exists in Microsoft Excel software when the software fails to properly handle objects in memory, aka 'Microsoft Excel Remote Code Execution Vulnerability'. This CVE ID is unique from CVE-2020-0906.
+cvss_v2: 9.3
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0979
+affected:
+    - name: tadmin-office365
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
