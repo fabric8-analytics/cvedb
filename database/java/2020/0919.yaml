@@ -1,0 +1,15 @@
+---
+cve: 2020-0919
+title: CVE in org.kie.remote:kie-services-remote
+description: >
+    An elevation of privilege vulnerability exists in Remote Desktop App for Mac in the way it allows an attacker to load unsigned binaries, aka 'Microsoft Remote Desktop App for Mac Elevation of Privilege Vulnerability'.
+cvss_v2: 4.6
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0919
+affected:
+    - groupId: org.kie.remote
+      artifactId: kie-services-remote
+      version:
+        []
+      fixedin:
+        - ">=6.0.0.Beta3"
