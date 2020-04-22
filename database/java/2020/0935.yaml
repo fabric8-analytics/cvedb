@@ -1,0 +1,15 @@
+---
+cve: 2020-0935
+title: CVE in au.net.causal.groovysh-windows-fix:groovysh-windows-fix
+description: >
+    An elevation of privilege vulnerability exists when the OneDrive for Windows Desktop application improperly handles symbolic links, aka 'OneDrive for Windows Elevation of Privilege Vulnerability'.
+cvss_v2: 2.1
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0935
+affected:
+    - groupId: au.net.causal.groovysh-windows-fix
+      artifactId: groovysh-windows-fix
+      version:
+        []
+      fixedin:
+        - ">=1.0"
