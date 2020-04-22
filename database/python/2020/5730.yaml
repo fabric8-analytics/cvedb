@@ -1,0 +1,14 @@
+---
+cve: 2020-5730
+title: CVE in location-extractor
+description: >
+    In OpenMRS 2.9 and prior, the sessionLocation parameter for the login page is vulnerable to cross-site scripting.
+cvss_v2: 4.3
+references:
+    - https://www.tenable.com/security/research/tra-2020-18
+affected:
+    - name: location-extractor
+      version:
+        - "<=2.9"
+      fixedin:
+        - ">=3.0"
