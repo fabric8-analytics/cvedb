@@ -1,0 +1,15 @@
+---
+cve: 2020-10951
+title: CVE in cloud
+description: >
+    Western Digital My Cloud Home and ibi devices before 2.2.0 allow clickjacking on sign-in pages.
+cvss_v2: 4.3
+references:
+    - https://support.wdc.com/downloads.aspx?g=907&lang=en
+    - https://www.westerndigital.com/support/productsecurity/wdc-19012-my-cloud-home-and-ibi-portal-websites-clickjacking-vulnerability
+affected:
+    - name: cloud
+      version:
+        - "<=2.1.6"
+      fixedin:
+        - ">=2.2.0"
