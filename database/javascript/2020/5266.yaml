@@ -1,0 +1,15 @@
+---
+cve: 2020-5266
+title: CVE in prestashop-webservice-client
+description: >
+    In the ps_link module for PrestaShop before version 3.1.0, there is a stored XSS when you create or edit a link list block with the title field. The problem is fixed in 3.1.0
+cvss_v2: 3.5
+references:
+    - https://github.com/PrestaShop/ps_linklist/commit/b90005c2cfed949ab564228b277a728e0a62a876
+    - https://github.com/PrestaShop/ps_linklist/security/advisories/GHSA-vr7g-vqp5-966j
+affected:
+    - name: prestashop-webservice-client
+      version:
+        - "<=1.0.18,1.0.4"
+      fixedin:
+        - "<=1.0.3,1.0.0"
