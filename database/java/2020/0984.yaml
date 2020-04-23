@@ -1,0 +1,15 @@
+---
+cve: 2020-0984
+title: CVE in com.microsoft.windowsazure:microsoft-azure-api-servicebus
+description: >
+    An elevation of privilege vulnerability exists when the Microsoft AutoUpdate (MAU) application for Mac improperly validates updates before executing them, aka 'Microsoft (MAU) Office Elevation of Privilege Vulnerability'.
+cvss_v2: 4.6
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0984
+affected:
+    - groupId: com.microsoft.windowsazure
+      artifactId: microsoft-azure-api-servicebus
+      version:
+        []
+      fixedin:
+        - ">=0.5.0"
