@@ -1,0 +1,17 @@
+---
+cve: 2020-4338
+title: CVE in com.ibm.mq:com.ibm.mq.allclient
+description: >
+    IBM MQ 9.1.4 could allow a local attacker to obtain sensitive information by inclusion of sensitive data within runmqras data. IBM X-Force ID: 177937.
+cvss_v2: 2.1
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/177937
+    - https://www.ibm.com/support/pages/node/6172539
+affected:
+    - groupId: com.ibm.mq
+      artifactId: com.ibm.mq.allclient
+      version:
+        - "<=9.1.4.0,9.1.0.0"
+      fixedin:
+        - ">=9.1.5.0"
+        - "<=9.0.5.0,0.0.0.2"
