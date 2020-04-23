@@ -1,0 +1,14 @@
+---
+cve: 2020-0835
+title: CVE in capstone-windows
+description: >
+    An elevation of privilege vulnerability exists when Windows Defender antimalware platform improperly handles hard links, aka 'Windows Defender Antimalware Platform Hard Link Elevation of Privilege Vulnerability'.
+cvss_v2: 7.2
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0835
+affected:
+    - name: capstone-windows
+      version:
+        []
+      fixedin:
+        - ">=3.0.1"
