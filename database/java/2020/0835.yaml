@@ -1,0 +1,15 @@
+---
+cve: 2020-0835
+title: CVE in com.nhl.link.move:link-move-csv
+description: >
+    An elevation of privilege vulnerability exists when Windows Defender antimalware platform improperly handles hard links, aka 'Windows Defender Antimalware Platform Hard Link Elevation of Privilege Vulnerability'.
+cvss_v2: 7.2
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0835
+affected:
+    - groupId: com.nhl.link.move
+      artifactId: link-move-csv
+      version:
+        []
+      fixedin:
+        - ">=1.7"
