@@ -1,0 +1,14 @@
+---
+cve: 2020-11887
+title: CVE in svg2png
+description: >
+    svg2png 4.1.1 allows XSS with resultant SSRF via JavaScript inside an SVG document.
+cvss_v2: 4.3
+references:
+    - https://github.com/domenic/svg2png/issues/117
+affected:
+    - name: svg2png
+      version:
+        - "<=4.1.1,4.1.1"
+      fixedin:
+        - "<=4.1.0,1.0.0"
