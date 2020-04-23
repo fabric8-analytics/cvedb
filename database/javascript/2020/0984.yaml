@@ -1,0 +1,14 @@
+---
+cve: 2020-0984
+title: CVE in react-autoupdate-time
+description: >
+    An elevation of privilege vulnerability exists when the Microsoft AutoUpdate (MAU) application for Mac improperly validates updates before executing them, aka 'Microsoft (MAU) Office Elevation of Privilege Vulnerability'.
+cvss_v2: 4.6
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0984
+affected:
+    - name: react-autoupdate-time
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
