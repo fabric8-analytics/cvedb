@@ -1,0 +1,14 @@
+---
+cve: 2020-3251
+title: CVE in cloudera-director-python-client
+description: >
+    Multiple vulnerabilities in the REST API of Cisco UCS Director and Cisco UCS Director Express for Big Data may allow a remote attacker to bypass authentication or conduct directory traversal attacks on an affected device. For more information about these vulnerabilities, see the Details section of this advisory.
+cvss_v2: 9.0
+references:
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ucsd-mult-vulns-UNfpdW4E
+affected:
+    - name: cloudera-director-python-client
+      version:
+        - "<=6.0.0"
+      fixedin:
+        - ">=6.1.0"
