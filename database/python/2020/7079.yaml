@@ -1,0 +1,15 @@
+---
+cve: 2020-7079
+title: CVE in dynamo-consistency
+description: >
+    An improper signature validation vulnerability in Autodesk Dynamo BIM versions 2.5.1 and 2.5.0 may lead to code execution through maliciously crafted DLL files.
+cvss_v2: 4.4
+references:
+    - https://www.autodesk.com/trust/security-advisories/adsk-sa-2020-0001
+affected:
+    - name: dynamo-consistency
+      version:
+        - "<=2.5.1,2.5.0"
+      fixedin:
+        - ">=2.6.0"
+        - "<=2.4.1,1.2.1"
