@@ -1,0 +1,15 @@
+---
+cve: 2020-0598
+title: CVE in commons-configuration:commons-configuration
+description: >
+    Uncontrolled search path in the installer for the Intel(R) Binary Configuration Tool for Windows, all versions, may allow an authenticated user to potentially enable escalation of privilege via local access.
+cvss_v2: 4.4
+references:
+    - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00359.html
+affected:
+    - groupId: commons-configuration
+      artifactId: commons-configuration
+      version:
+        []
+      fixedin:
+        - ">=1.0-rc1"
