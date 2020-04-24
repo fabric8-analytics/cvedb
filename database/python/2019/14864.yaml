@@ -5,6 +5,7 @@ description: >
     Ansible, versions 2.9.x before 2.9.1, 2.8.x before 2.8.7 and Ansible versions 2.7.x before 2.7.15, is not respecting the flag no_log set it to True when Sumologic and Splunk callback plugins are used send tasks results events to collectors. This would discloses and collects any sensitive data.
 cvss_v2: 4.0
 references:
+    - http://lists.opensuse.org/opensuse-security-announce/2020-04/msg00021.html
     - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-14864
     - https://github.com/ansible/ansible/issues/63522
     - https://github.com/ansible/ansible/pull/63527
@@ -16,6 +17,6 @@ affected:
         - "<=2.9.0,2.9.0b1"
       fixedin:
         - ">=2.9.1"
-        - "<=2.8.7,2.8.7"
-        - "<=2.7.15,2.7.15"
+        - "<=2.8.10,2.8.7"
+        - "<=2.7.16,2.7.15"
         - "<=2.6.20,1.0"
