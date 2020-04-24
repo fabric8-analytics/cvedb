@@ -1,0 +1,16 @@
+---
+cve: 2020-11812
+title: CVE in mongo-sql
+description: >
+    Rukovoditel 2.5.2 is affected by a SQL injection vulnerability because of improper handling of the filters[0][value] or filters[1][value] parameter.
+cvss_v2: 7.5
+references:
+    - https://fatihhcelik.blogspot.com/2020/01/rukovoditel-sql-injection-filters0value.html
+    - https://fatihhcelik.blogspot.com/2020/01/rukovoditel-sql-injection-filters1value.html
+affected:
+    - name: mongo-sql
+      version:
+        - "<=2.5.2,2.5.2"
+      fixedin:
+        - ">=2.5.3"
+        - "<=2.5.1,0.0.3"
