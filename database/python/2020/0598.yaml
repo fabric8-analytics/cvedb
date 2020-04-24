@@ -1,0 +1,14 @@
+---
+cve: 2020-0598
+title: CVE in bacula-configuration
+description: >
+    Uncontrolled search path in the installer for the Intel(R) Binary Configuration Tool for Windows, all versions, may allow an authenticated user to potentially enable escalation of privilege via local access.
+cvss_v2: 4.4
+references:
+    - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00359.html
+affected:
+    - name: bacula-configuration
+      version:
+        []
+      fixedin:
+        - ">=0.6"
