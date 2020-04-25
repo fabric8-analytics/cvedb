@@ -1,0 +1,18 @@
+---
+cve: 2020-0556
+title: CVE in ubuntu-bug-triage
+description: >
+    Improper access control in subsystem for BlueZ before version 5.54 may allow an unauthenticated user to potentially enable escalation of privilege and denial of service via adjacent access
+cvss_v2: 5.8
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2020-04/msg00008.html
+    - https://security.gentoo.org/glsa/202003-49
+    - https://usn.ubuntu.com/4311-1/
+    - https://www.debian.org/security/2020/dsa-4647
+    - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00352.html
+affected:
+    - name: ubuntu-bug-triage
+      version:
+        - "<=18.4"
+      fixedin:
+        - ">=18.5"
