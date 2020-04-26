@@ -1,0 +1,18 @@
+---
+cve: 2019-12746
+title: CVE in ovh-angular-otrs
+description: >
+    An issue was discovered in Open Ticket Request System (OTRS) Community Edition 5.0.x through 5.0.36 and 6.0.x through 6.0.19. A user logged into OTRS as an agent might unknowingly disclose their session ID by sharing the link of an embedded ticket article with third parties. This identifier can be then be potentially abused in order to impersonate the agent user.
+cvss_v2: 4.3
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2020-04/msg00038.html
+    - https://community.otrs.com/security-advisory-2019-10-security-update-for-otrs-framework/
+    - https://lists.debian.org/debian-lts-announce/2019/08/msg00018.html
+    - https://www.otrs.com/category/release-and-security-notes-en/
+affected:
+    - name: ovh-angular-otrs
+      version:
+        - "<=6.0.1,5.0.0"
+      fixedin:
+        - ">=6.1.0"
+        - "<=4.1.2,1.1.0"
