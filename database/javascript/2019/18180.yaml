@@ -1,0 +1,17 @@
+---
+cve: 2019-18180
+title: CVE in ovh-angular-otrs
+description: >
+    Improper Check for filenames with overly long extensions in PostMaster (sending in email) or uploading files (e.g. attaching files to mails) of ((OTRS)) Community Edition and OTRS allows an remote attacker to cause an endless loop. This issue affects: OTRS AG: ((OTRS)) Community Edition 5.0.x version 5.0.38 and prior versions; 6.0.x version 6.0.23 and prior versions. OTRS AG: OTRS 7.0.x version 7.0.12 and prior versions.
+cvss_v2: 5.0
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2020-04/msg00038.html
+    - https://community.otrs.com/security-advisory-2019-15-security-update-for-otrs-framework/
+affected:
+    - name: ovh-angular-otrs
+      version:
+        - "<=6.0.1,5.0.0"
+        - "<=7.0.0-alpha.1,7.0.0-alpha.0"
+      fixedin:
+        - "<=6.3.0,6.1.0"
+        - "<=4.1.2,1.1.0"
