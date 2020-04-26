@@ -1,0 +1,15 @@
+---
+cve: 2019-10067
+title: CVE in @ovh-ux/ng-ovh-otrs
+description: >
+    An issue was discovered in Open Ticket Request System (OTRS) 7.x through 7.0.6 and Community Edition 5.0.x through 5.0.35 and 6.0.x through 6.0.17. An attacker who is logged into OTRS as an agent user with appropriate permissions may manipulate the URL to cause execution of JavaScript in the context of OTRS.
+cvss_v2: 3.5
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2020-04/msg00038.html
+    - https://community.otrs.com/security-advisory-2019-05-security-update-for-otrs-framework/
+affected:
+    - name: @ovh-ux/ng-ovh-otrs
+      version:
+        - "<=7.0.2"
+      fixedin:
+        - ">=7.1.0"
