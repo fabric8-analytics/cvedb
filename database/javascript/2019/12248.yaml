@@ -1,0 +1,16 @@
+---
+cve: 2019-12248
+title: CVE in @ovh-ux/ng-ovh-otrs
+description: >
+    An issue was discovered in Open Ticket Request System (OTRS) 7.0.x through 7.0.7, Community Edition 6.0.x through 6.0.19, and Community Edition 5.0.x through 5.0.36. An attacker could send a malicious email to an OTRS system. If a logged-in agent user quotes it, the email could cause the browser to load external image resources.
+cvss_v2: 4.3
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2020-04/msg00038.html
+    - https://lists.debian.org/debian-lts-announce/2019/06/msg00004.html
+    - https://www.otrs.com/category/release-and-security-notes-en/
+affected:
+    - name: @ovh-ux/ng-ovh-otrs
+      version:
+        - "<=7.0.2"
+      fixedin:
+        - ">=7.1.0"
