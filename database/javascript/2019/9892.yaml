@@ -1,0 +1,16 @@
+---
+cve: 2019-9892
+title: CVE in @ovh-ux/ng-ovh-otrs
+description: >
+    An issue was discovered in Open Ticket Request System (OTRS) 5.x through 5.0.34, 6.x through 6.0.17, and 7.x through 7.0.6. An attacker who is logged into OTRS as an agent user with appropriate permissions may try to import carefully crafted Report Statistics XML that will result in reading of arbitrary files on the OTRS filesystem.
+cvss_v2: 4.0
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2020-04/msg00038.html
+    - https://community.otrs.com/security-advisory-2019-04-security-update-for-otrs-framework/
+    - https://lists.debian.org/debian-lts-announce/2019/05/msg00003.html
+affected:
+    - name: @ovh-ux/ng-ovh-otrs
+      version:
+        - "<=7.0.2"
+      fixedin:
+        - ">=7.1.0"
