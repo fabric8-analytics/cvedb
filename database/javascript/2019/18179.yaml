@@ -1,0 +1,16 @@
+---
+cve: 2019-18179
+title: CVE in @ovh-ux/ng-ovh-otrs
+description: >
+    An issue was discovered in Open Ticket Request System (OTRS) 7.0.x through 7.0.12, and Community Edition 5.0.x through 5.0.38 and 6.0.x through 6.0.23. An attacker who is logged into OTRS as an agent is able to list tickets assigned to other agents, even tickets in a queue where the attacker doesn't have permissions.
+cvss_v2: 4.0
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2020-04/msg00038.html
+    - https://community.otrs.com/security-advisory-2019-14-security-update-for-otrs-framework/
+    - https://lists.debian.org/debian-lts-announce/2020/01/msg00000.html
+affected:
+    - name: @ovh-ux/ng-ovh-otrs
+      version:
+        - "<=7.0.2"
+      fixedin:
+        - ">=7.1.0"
