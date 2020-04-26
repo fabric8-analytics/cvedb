@@ -1,0 +1,16 @@
+---
+cve: 2019-12497
+title: CVE in @ovh-ux/ng-ovh-otrs
+description: >
+    An issue was discovered in Open Ticket Request System (OTRS) 7.0.x through 7.0.8, Community Edition 6.0.x through 6.0.19, and Community Edition 5.0.x through 5.0.36. In the customer or external frontend, personal information of agents (e.g., Name and mail address) can be disclosed in external notes.
+cvss_v2: 5.0
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2020-04/msg00038.html
+    - https://community.otrs.com/category/security-advisories-en/
+    - https://lists.debian.org/debian-lts-announce/2019/06/msg00004.html
+affected:
+    - name: @ovh-ux/ng-ovh-otrs
+      version:
+        - "<=7.0.2"
+      fixedin:
+        - ">=7.1.0"
