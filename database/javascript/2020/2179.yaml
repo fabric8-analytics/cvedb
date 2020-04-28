@@ -1,0 +1,15 @@
+---
+cve: 2020-2179
+title: CVE in yaml
+description: >
+    Jenkins Yaml Axis Plugin 0.2.0 and earlier does not configure its YAML parser to prevent the instantiation of arbitrary types, resulting in a remote code execution vulnerability.
+cvss_v2: 6.5
+references:
+    - http://www.openwall.com/lists/oss-security/2020/04/16/4
+    - https://jenkins.io/security/advisory/2020-04-16/#SECURITY-1825
+affected:
+    - name: yaml
+      version:
+        - "<=0.2.0"
+      fixedin:
+        - ">=0.2.1"
