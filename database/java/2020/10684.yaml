@@ -1,0 +1,22 @@
+---
+cve: 2020-10684
+title: CVE in org.ovirt.engine.sdk:ovirt-engine-sdk-java
+description: >
+    A flaw was found in Ansible Engine, all versions 2.7.x, 2.8.x and 2.9.x prior to 2.7.17, 2.8.9 and 2.9.6 respectively, when using ansible_facts as a subkey of itself and promoting it to a variable when inject is enabled, overwriting the ansible_facts after the clean. An attacker could take advantage of this by altering the ansible_facts, such as ansible_hosts, users and any other key data which would lead into privilege escalation or code injection.
+cvss_v2: 3.6
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-10684
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DKPA4KC3OJSUFASUYMG66HKJE7ADNGFW/
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MRRYUU5ZBLPBXCYG6CFP35D64NP2UB2S/
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/WQVOQD4VAIXXTVQAJKTN7NUGTJFE2PCB/
+affected:
+    - groupId: org.ovirt.engine.sdk
+      artifactId: ovirt-engine-sdk-java
+      version:
+        - "<=3.3.5.0"
+        - "<=3.5.4.0,3.5.0.2"
+        - "<=3.6.3.0,3.6.0.0"
+      fixedin:
+        - ">=3.6.8.0"
+        - "<=3.5.6.0,3.5.6.0"
+        - "<=3.4.4.0,3.4.0.1-1"
