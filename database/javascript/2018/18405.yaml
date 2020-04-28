@@ -1,0 +1,14 @@
+---
+cve: 2018-18405
+title: CVE in jquery-query-object
+description: >
+    jQuery v2.2.2 allows XSS via a crafted onerror attribute of an IMG element.
+cvss_v2: 4.3
+references:
+    - https://br.linkedin.com/in/joas-antonio-dos-santos
+affected:
+    - name: jquery-query-object
+      version:
+        - "<=2.2.2"
+      fixedin:
+        - ">=2.2.3"
