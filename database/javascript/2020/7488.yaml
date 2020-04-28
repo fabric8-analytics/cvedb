@@ -1,0 +1,14 @@
+---
+cve: 2020-7488
+title: CVE in view-toast-m-m
+description: >
+    A CWE-319: Cleartext Transmission of Sensitive Information vulnerability exists which could leak sensitive information transmitted between the software and the Modicon M218, M241, M251, and M258 controllers.
+cvss_v2: 5.0
+references:
+    - https://www.se.com/ww/en/download/document/SEVD-2020-105-02
+affected:
+    - name: view-toast-m-m
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
