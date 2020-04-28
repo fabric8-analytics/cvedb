@@ -1,0 +1,16 @@
+---
+cve: 2020-11543
+title: CVE in io.gravitee.gateway:gravitee-gateway-dictionary
+description: >
+    OpsRamp Gateway before 5.5.0 has a backdoor account vadmin with the password 9vt@f3Vt that allows root SSH access to the server.
+cvss_v2: 10.0
+references:
+    - https://docs.opsramp.com/opsramp-5-5-0-updates-release-notes/
+    - https://www.criticalstart.com/hard-coded-administrator-password-discovered-in-opsramp/
+affected:
+    - groupId: io.gravitee.gateway
+      artifactId: gravitee-gateway-dictionary
+      version:
+        - "<=3.0.0-alpha,3.0.0-alpha"
+      fixedin:
+        - "<=1.30.9,1.19.0"
