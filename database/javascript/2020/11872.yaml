@@ -1,0 +1,14 @@
+---
+cve: 2020-11872
+title: CVE in uppercase-cloud-functions
+description: >
+    The Cloud Functions subsystem in OpenTrace 1.0 might allow fabrication attacks by making billions of TempID requests before an AES-256-GCM key rotation occurs.
+cvss_v2: 5.0
+references:
+    - https://github.com/opentrace-community/opentrace-cloud-functions/issues/7
+affected:
+    - name: uppercase-cloud-functions
+      version:
+        - "<=1.0.0,1.0.0"
+      fixedin:
+        - "<=0.9.8,0.0.1"
