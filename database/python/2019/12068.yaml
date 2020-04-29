@@ -1,0 +1,22 @@
+---
+cve: 2019-12068
+title: CVE in devstack-libvirt-qemu-plugin-drivers
+description: >
+    In QEMU 1:4.1-1, 1:2.1+dfsg-12+deb8u6, 1:2.8+dfsg-6+deb9u8, 1:3.1+dfsg-8~deb10u1, 1:3.1+dfsg-8+deb10u2, and 1:2.1+dfsg-12+deb8u12 (fixed), when executing script in lsi_execute_script(), the LSI scsi adapter emulator advances 's->dsp' index to read next opcode. This can lead to an infinite loop if the next opcode is empty. Move the existing loop exit after 10k iterations so that it covers no-op opcodes as well.
+cvss_v2: 2.1
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2019-11/msg00034.html
+    - http://lists.opensuse.org/opensuse-security-announce/2019-11/msg00038.html
+    - https://git.qemu.org/?p=qemu.git;a=commit;h=de594e47659029316bbf9391efb79da0a1a08e08
+    - https://lists.debian.org/debian-lts-announce/2019/09/msg00021.html
+    - https://lists.gnu.org/archive/html/qemu-devel/2019-08/msg01518.html
+    - https://security-tracker.debian.org/tracker/CVE-2019-12068
+    - https://usn.ubuntu.com/4191-1/
+    - https://usn.ubuntu.com/4191-2/
+    - https://www.debian.org/security/2020/dsa-4665
+affected:
+    - name: devstack-libvirt-qemu-plugin-drivers
+      version:
+        - "<=1.0.0"
+      fixedin:
+        []
