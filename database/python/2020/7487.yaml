@@ -1,0 +1,14 @@
+---
+cve: 2020-7487
+title: CVE in localize-m
+description: >
+    A CWE-345: Insufficient Verification of Data Authenticity vulnerability exists which could allow the attacker to execute malicious code on the Modicon M218, M241, M251, and M258 controllers.
+cvss_v2: 7.5
+references:
+    - https://www.se.com/ww/en/download/document/SEVD-2020-105-02
+affected:
+    - name: localize-m
+      version:
+        []
+      fixedin:
+        - ">=1.0.1"
