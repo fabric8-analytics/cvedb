@@ -1,0 +1,15 @@
+---
+cve: 2018-3627
+title: CVE in angr-management
+description: >
+    Logic bug in Intel Converged Security Management Engine 11.x may allow an attacker to execute arbitrary code via local privileged access.
+cvss_v2: 4.6
+references:
+    - https://security.netapp.com/advisory/ntap-20190327-0006/
+    - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00118.html
+affected:
+    - name: angr-management
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
