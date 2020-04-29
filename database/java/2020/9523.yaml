@@ -1,0 +1,15 @@
+---
+cve: 2020-9523
+title: CVE in org.wildfly.extras.patch:fuse-patch-config
+description: >
+    Insufficiently protected credentials vulnerability on Micro Focus enterprise developer and enterprise server, affecting all version prior to 4.0 Patch Update 16, and version 5.0 Patch Update 6. The vulnerability could allow an attacker to transmit hashed credentials for the user account running the Micro Focus Directory Server (MFDS) to an arbitrary site, compromising that account's security.
+cvss_v2: 6.5
+references:
+    - https://softwaresupport.softwaregrp.com/doc/KM03634936
+affected:
+    - groupId: org.wildfly.extras.patch
+      artifactId: fuse-patch-config
+      version:
+        - "<=5.0.0"
+      fixedin:
+        []
