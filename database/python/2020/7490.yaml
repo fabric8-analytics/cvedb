@@ -1,0 +1,14 @@
+---
+cve: 2020-7490
+title: CVE in fib-2013-v1
+description: >
+    A CWE-426: Untrusted Search Path vulnerability exists in Vijeo Designer Basic (V1.1 HotFix 15 and prior) and Vijeo Designer (V6.9 SP9 and prior), which could cause arbitrary code execution on the system running Vijeo Basic when a malicious DLL library is loaded by the Product.
+cvss_v2: 6.9
+references:
+    - https://www.se.com/ww/en/download/document/SEVD-2020-105-03
+affected:
+    - name: fib-2013-v1
+      version:
+        - "<=1.0.0"
+      fixedin:
+        []
