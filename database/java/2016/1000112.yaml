@@ -1,0 +1,16 @@
+---
+cve: 2016-1000112
+title: CVE in com.warnyul.android.fast-video-view:fast-video-view
+description: >
+    Unauthenticated remote .jpg file upload in contus-video-comments v1.0 wordpress plugin
+cvss_v2: 9.4
+references:
+    - http://www.securityfocus.com/bid/93967
+    - http://www.vapidlabs.com/advisory.php?v=163
+affected:
+    - groupId: com.warnyul.android.fast-video-view
+      artifactId: fast-video-view
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
