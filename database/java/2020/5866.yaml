@@ -1,0 +1,15 @@
+---
+cve: 2020-5866
+title: CVE in org.apache.cocoon.controller:cocoon-controller
+description: >
+    In versions of NGINX Controller prior to 3.3.0, the helper.sh script, which is used optionally in NGINX Controller to change settings, uses sensitive items as command-line arguments.
+cvss_v2: 2.1
+references:
+    - https://support.f5.com/csp/article/K11922628
+affected:
+    - groupId: org.apache.cocoon.controller
+      artifactId: cocoon-controller
+      version:
+        - "<=3.0.0-alpha-3"
+      fixedin:
+        []
