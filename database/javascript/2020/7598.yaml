@@ -3,7 +3,7 @@ cve: 2020-7598
 title: CVE in minimist
 description: >
     minimist before 1.2.2 could be tricked into adding or modifying properties of Object.prototype using a "constructor" or "__proto__" payload.
-cvss_v2: 7.5
+cvss_v2: 6.8
 references:
     - https://snyk.io/vuln/SNYK-JS-MINIMIST-559764
 affected:
