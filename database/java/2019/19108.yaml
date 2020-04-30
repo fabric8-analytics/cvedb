@@ -1,0 +1,18 @@
+---
+cve: 2019-19108
+title: CVE in org.snmp4j:snmp4j-agent-db
+description: >
+    An authentication weakness in the SNMP service in B&R Automation Runtime versions 2.96, 3.00, 3.01, 3.06 to 3.10, 4.00 to 4.63, 4.72 and above allows unauthenticated users to modify the configuration of B&R products via SNMP.
+cvss_v2: 7.5
+references:
+    - https://www.br-automation.com/en/downloads/012020-automation-runtime-snmp-authentication-weakness/
+    - https://www.us-cert.gov/ics/advisories/icsa-20-051-01
+affected:
+    - groupId: org.snmp4j
+      artifactId: snmp4j-agent-db
+      version:
+        - "<=3.0.0"
+        - "<=3.1.0,3.1.0"
+      fixedin:
+        - ">=3.1.1"
+        - "<=3.0.3,3.0.2"
