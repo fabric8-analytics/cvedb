@@ -1,0 +1,16 @@
+---
+cve: 2020-5865
+title: CVE in nginx-etag
+description: >
+    In versions prior to 3.3.0, the NGINX Controller is configured to communicate with its Postgres database server over unencrypted channels, making the communicated data vulnerable to interception via man-in-the-middle (MiTM) attacks.
+cvss_v2: 5.8
+references:
+    - https://support.f5.com/csp/article/K21009022
+affected:
+    - name: nginx-etag
+      version:
+        - "<=1.0.1,1.0.1"
+        - "<=2.0.2,2.0.0"
+      fixedin:
+        - "<=1.0.2,1.0.2"
+        - "<=1.0.0,1.0.0"
