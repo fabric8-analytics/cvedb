@@ -1,0 +1,15 @@
+---
+cve: 2017-2239
+title: CVE in @marp-team/marpit
+description: >
+    Marp versions v0.0.10 and earlier may allow an attacker to access local resources and files using JavaScript.
+cvss_v2: 6.8
+references:
+    - http://jvn.jp/en/jp/JVN21174546/index.html
+affected:
+    - name: @marp-team/marpit
+      version:
+        - "<=0.0.10,0.0.10"
+      fixedin:
+        - ">=0.0.11"
+        - "<=0.0.9,0.0.0"
