@@ -1,0 +1,17 @@
+---
+cve: 2019-11213
+title: CVE in com.ingenico.connect.gateway:connect-sdk-client-android
+description: >
+    In Pulse Secure Pulse Desktop Client and Network Connect, an attacker could access session tokens to replay and spoof sessions, and as a result, gain unauthorized access as an end user, a related issue to CVE-2019-1573. (The endpoint would need to be already compromised for exploitation to succeed.) This affects Pulse Desktop Client 5.x before Secure Desktop 5.3R7 and Pulse Desktop Client 9.x before Secure Desktop 9.0R3. It also affects (for Network Connect customers) Pulse Connect Secure 8.1 before 8.1R14, 8.3 before 8.3R7, and 9.0 before 9.0R3.
+cvss_v2: 6.8
+references:
+    - https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44114
+    - https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44114/
+    - https://www.kb.cert.org/vuls/id/192371
+affected:
+    - groupId: com.ingenico.connect.gateway
+      artifactId: connect-sdk-client-android
+      version:
+        - "<=5.1.0,5.0.0"
+      fixedin:
+        - "<=4.9.0,3.1.1"
