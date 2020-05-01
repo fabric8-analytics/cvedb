@@ -1,0 +1,17 @@
+---
+cve: 2020-5565
+title: CVE in org.imixs.workflow:imixs-workflow-engine
+description: >
+    Improper input validation vulnerability in Cybozu Garoon 4.0.0 to 4.10.3 allows a remote authenticated attacker to alter the application's data via the applications 'Workflow' and 'MultiReport'.
+cvss_v2: 4.0
+references:
+    - https://jvn.jp/en/jp/JVN35649781/index.html
+    - https://kb.cybozu.support/article/36119/
+affected:
+    - groupId: org.imixs.workflow
+      artifactId: imixs-workflow-engine
+      version:
+        - "<=4.5.8,4.0.0"
+      fixedin:
+        - ">=5.0.0"
+        - "<=3.9.2,3.0.0"
