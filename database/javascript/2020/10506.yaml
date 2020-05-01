@@ -1,0 +1,15 @@
+---
+cve: 2020-10506
+title: CVE in object-traversal-by-path
+description: >
+    The School Manage System before 2020, developed by ALLE INFORMATION CO., LTD., contains a vulnerability of Path Traversal, allowing attackers to access arbitrary files.
+cvss_v2: 5.0
+references:
+    - https://www.chtsecurity.com/news/be93c576-e421-489f-9453-a462bdd4c90d
+    - https://www.twcert.org.tw/tw/cp-132-3531-cba24-1.html
+affected:
+    - name: object-traversal-by-path
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
