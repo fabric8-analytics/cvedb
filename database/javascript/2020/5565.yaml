@@ -1,0 +1,16 @@
+---
+cve: 2020-5565
+title: CVE in build-workflow
+description: >
+    Improper input validation vulnerability in Cybozu Garoon 4.0.0 to 4.10.3 allows a remote authenticated attacker to alter the application's data via the applications 'Workflow' and 'MultiReport'.
+cvss_v2: 4.0
+references:
+    - https://jvn.jp/en/jp/JVN35649781/index.html
+    - https://kb.cybozu.support/article/36119/
+affected:
+    - name: build-workflow
+      version:
+        - "<=4.8.1,4.0.0"
+      fixedin:
+        - ">=5.0.1"
+        - "<=3.2.10,0.0.1"
