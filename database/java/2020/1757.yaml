@@ -1,0 +1,15 @@
+---
+cve: 2020-1757
+title: CVE in org.jboss.spec.javax.servlet:jboss-servlet-api_4.0_spec
+description: >
+    A flaw was found in all undertow-2.x.x SP1 versions prior to undertow-2.0.30.SP1, all undertow-1.x.x and undertow-2.x.x versions prior to undertow-2.1.0.Final, where the Servlet container causes servletPath to normalize incorrectly by truncating the path after semicolon which may lead to an application mapping resulting in the security bypass.
+cvss_v2: 5.5
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-1757
+affected:
+    - groupId: org.jboss.spec.javax.servlet
+      artifactId: jboss-servlet-api_4.0_spec
+      version:
+        - "<=2.0.0.Final"
+      fixedin:
+        []
