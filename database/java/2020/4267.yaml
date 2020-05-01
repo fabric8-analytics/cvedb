@@ -1,0 +1,17 @@
+---
+cve: 2020-4267
+title: CVE in com.ibm.mq:com.ibm.mq.allclient
+description: >
+    IBM MQ and MQ Appliance 8.0, 9.1 LTS, and 9.1 CD could allow an authenticated user cause a denial of service due to a memory leak. IBM X-Force ID: 175840.
+cvss_v2: 4.0
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/175840
+    - https://www.ibm.com/support/pages/node/6195384
+affected:
+    - groupId: com.ibm.mq
+      artifactId: com.ibm.mq.allclient
+      version:
+        - "<=9.1.4.0,9.1.0.0"
+      fixedin:
+        - ">=9.1.5.0"
+        - "<=9.0.5.0,0.0.0.2"
