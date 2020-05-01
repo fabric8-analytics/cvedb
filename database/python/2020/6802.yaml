@@ -6,6 +6,8 @@ description: >
 cvss_v2: 4.3
 references:
     - https://github.com/mozilla/bleach/security/advisories/GHSA-q65m-pv3f-wr5r
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/72R4VFFHDRSQMNT7IZU3X2755ZP4HGNI/
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OCNLM2MGQTOLCIVVYS2Z5S7KOQJR5JC4/
 affected:
     - name: bleach
       version:
