@@ -1,0 +1,15 @@
+---
+cve: 2020-12128
+title: CVE in org.ow2.util.file:file
+description: >
+    DONG JOO CHO File Transfer iFamily 2.1 allows directory traversal related to the ./etc/ path.
+cvss_v2: 5.0
+references:
+    - https://www.vulnerability-lab.com/get_content.php?id=2199
+affected:
+    - groupId: org.ow2.util.file
+      artifactId: file
+      version:
+        - "<=2.1.0,2.1.0"
+      fixedin:
+        - "<=2.0.0,2.0.0"
