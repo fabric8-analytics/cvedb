@@ -1,0 +1,16 @@
+---
+cve: 2020-5567
+title: CVE in @cybozu/eslint-config
+description: >
+    Improper authentication vulnerability in Cybozu Garoon 4.0.0 to 4.10.3 allows remote attackers to obtain data in Application Menu.
+cvss_v2: 5.0
+references:
+    - https://jvn.jp/en/jp/JVN35649781/index.html
+    - https://kb.cybozu.support/article/36114/
+affected:
+    - name: @cybozu/eslint-config
+      version:
+        - "<=4.0.1,4.0.0"
+      fixedin:
+        - ">=5.0.0"
+        - "<=3.2.1,1.0.0"
