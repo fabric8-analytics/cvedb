@@ -1,0 +1,16 @@
+---
+cve: 2020-10505
+title: CVE in uk.co.real-logic:artio-system-tests
+description: >
+    The School Manage System before 2020, developed by ALLE INFORMATION CO., LTD., contains a vulnerability of SQL Injection, an attacker can use a union based injection query string to get databases schema and username/password.
+cvss_v2: 7.5
+references:
+    - https://www.chtsecurity.com/news/be93c576-e421-489f-9453-a462bdd4c90d
+    - https://www.twcert.org.tw/tw/cp-132-3530-53d32-1.html
+affected:
+    - groupId: uk.co.real-logic
+      artifactId: artio-system-tests
+      version:
+        []
+      fixedin:
+        - ">=0.19"
