@@ -1,0 +1,16 @@
+---
+cve: 2020-5864
+title: CVE in org.apache.cocoon.controller:cocoon-controller
+description: >
+    In versions of NGINX Controller prior to 3.2.0, communication between NGINX Controller and NGINX Plus instances skip TLS verification by default.
+cvss_v2: 5.8
+references:
+    - https://security.netapp.com/advisory/ntap-20200430-0005/
+    - https://support.f5.com/csp/article/K27205552
+affected:
+    - groupId: org.apache.cocoon.controller
+      artifactId: cocoon-controller
+      version:
+        - "<=3.0.0-alpha-3"
+      fixedin:
+        []
