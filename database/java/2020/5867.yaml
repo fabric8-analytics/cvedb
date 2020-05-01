@@ -1,0 +1,16 @@
+---
+cve: 2020-5867
+title: CVE in org.hawkular.agent:hawkular-wildfly-agent
+description: >
+    In versions prior to 3.3.0, the NGINX Controller Agent installer script 'install.sh' uses HTTP instead of HTTPS to check and install packages
+cvss_v2: 6.8
+references:
+    - https://security.netapp.com/advisory/ntap-20200430-0005/
+    - https://support.f5.com/csp/article/K00958787
+affected:
+    - groupId: org.hawkular.agent
+      artifactId: hawkular-wildfly-agent
+      version:
+        - "<=1.0.1.Final,1.0.1.Final"
+      fixedin:
+        - "<=1.0.0.Final,0.12.0.Final"
