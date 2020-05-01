@@ -1,0 +1,15 @@
+---
+cve: 2020-9488
+title: CVE in org.apache.logging.log4j:log4j-couchdb
+description: >
+    Improper validation of certificate with host mismatch in Apache Log4j SMTP appender. This could allow an SMTPS connection to be intercepted by a man-in-the-middle attack which could leak any log messages sent through that appender.
+cvss_v2: 4.3
+references:
+    - https://issues.apache.org/jira/browse/LOG4J2-2819
+affected:
+    - groupId: org.apache.logging.log4j
+      artifactId: log4j-couchdb
+      version:
+        - "<=2.13.1"
+      fixedin:
+        - ">=2.13.2"
