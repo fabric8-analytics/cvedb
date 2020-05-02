@@ -1,0 +1,16 @@
+---
+cve: 2020-12245
+title: CVE in @grafana/ui
+description: >
+    Grafana before 6.7.3 allows table-panel XSS via column.title or cellLinkTooltip.
+cvss_v2: 4.3
+references:
+    - https://community.grafana.com/t/release-notes-v6-7-x/27119
+    - https://github.com/grafana/grafana/blob/master/CHANGELOG.md#673-2020-04-23
+    - https://github.com/grafana/grafana/pull/23816
+affected:
+    - name: @grafana/ui
+      version:
+        - "<=6.7.2"
+      fixedin:
+        - ">=6.7.3"
