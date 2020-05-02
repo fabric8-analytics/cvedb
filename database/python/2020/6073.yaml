@@ -1,0 +1,15 @@
+---
+cve: 2020-6073
+title: CVE in reqs-txt
+description: >
+    An exploitable denial-of-service vulnerability exists in the TXT record-parsing functionality of Videolabs libmicrodns 0.1.0. When parsing the RDATA section in a TXT record in mDNS messages, multiple integer overflows can be triggered, leading to a denial of service. An attacker can send an mDNS message to trigger this vulnerability.
+cvss_v2: 5.0
+references:
+    - https://talosintelligence.com/vulnerability_reports/TALOS-2020-0996
+    - https://www.debian.org/security/2020/dsa-4671
+affected:
+    - name: reqs-txt
+      version:
+        - "<=0.1"
+      fixedin:
+        []
