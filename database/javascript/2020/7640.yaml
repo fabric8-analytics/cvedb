@@ -1,0 +1,16 @@
+---
+cve: 2020-7640
+title: CVE in pixl-xml
+description: >
+    pixl-class prior to 1.0.3 allows execution of arbitrary commands. The members argument of the create function can be controlled by users without any sanitization.
+cvss_v2: 7.5
+references:
+    - https://github.com/jhuckaby/pixl-class/commit/47677a3638e3583e42f3a05cc7f0b30293d2acc8
+    - https://github.com/jhuckaby/pixl-class/commit/47677a3638e3583e42f3a05cc7f0b30293d2acc8,
+    - https://snyk.io/vuln/SNYK-JS-PIXLCLASS-564968
+affected:
+    - name: pixl-xml
+      version:
+        - "<=1.0.2"
+      fixedin:
+        - ">=1.0.3"
