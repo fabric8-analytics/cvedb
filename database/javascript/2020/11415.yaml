@@ -1,0 +1,15 @@
+---
+cve: 2020-11415
+title: CVE in nexus-flux
+description: >
+    An issue was discovered in Sonatype Nexus Repository Manager 2.x before 2.14.17 and 3.x before 3.22.1. Admin users can retrieve the LDAP server system username/password (as configured in nxrm) in cleartext.
+cvss_v2: 4.0
+references:
+    - https://support.sonatype.com/hc/en-us/articles/360045360854
+affected:
+    - name: nexus-flux
+      version:
+        - "<=3.4.4,2.0.0"
+      fixedin:
+        - ">=4.0.0"
+        - "<=1.6.1,0.0.0"
