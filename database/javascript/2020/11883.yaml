@@ -1,0 +1,15 @@
+---
+cve: 2020-11883
+title: CVE in @vue-storefront/theme-catalog
+description: >
+    In Divante vue-storefront-api through 1.11.1 and storefront-api through 1.0-rc.1, as used in VueStorefront PWA, unexpected HTTP requests lead to an exception that discloses the error stack trace, with absolute file paths and Node.js module names.
+cvss_v2: 5.0
+references:
+    - https://github.com/DivanteLtd/storefront-api/pull/59
+    - https://github.com/DivanteLtd/vue-storefront-api/pull/431
+affected:
+    - name: @vue-storefront/theme-catalog
+      version:
+        - "<=1.0.0-rc.3"
+      fixedin:
+        []
