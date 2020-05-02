@@ -1,0 +1,15 @@
+---
+cve: 2020-7643
+title: CVE in paypal-adaptive
+description: >
+    paypal-adaptive through 0.4.2 manipulation of JavaScript objects resulting in Prototype Pollution. The PayPal function could be tricked into adding or modifying properties of Object.prototype using a __proto__ payload.
+cvss_v2: 5.0
+references:
+    - https://github.com/Ideame/paypal-adaptive-sdk-nodejs/blob/master/lib/paypal-adaptive.js#L31
+    - https://snyk.io/vuln/SNYK-JS-PAYPALADAPTIVE-565089
+affected:
+    - name: paypal-adaptive
+      version:
+        - "<=0.4.2"
+      fixedin:
+        []
