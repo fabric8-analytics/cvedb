@@ -1,0 +1,15 @@
+---
+cve: 2020-11415
+title: CVE in org.sonatype.nexus.plugins:nexus-repository-raw
+description: >
+    An issue was discovered in Sonatype Nexus Repository Manager 2.x before 2.14.17 and 3.x before 3.22.1. Admin users can retrieve the LDAP server system username/password (as configured in nxrm) in cleartext.
+cvss_v2: 4.0
+references:
+    - https://support.sonatype.com/hc/en-us/articles/360045360854
+affected:
+    - groupId: org.sonatype.nexus.plugins
+      artifactId: nexus-repository-raw
+      version:
+        - "<=3.22.0-02"
+      fixedin:
+        - ">=3.22.1-01"
