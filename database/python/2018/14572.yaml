@@ -6,7 +6,10 @@ description: >
 cvss_v2: 6.8
 references:
     - https://github.com/PyconUK/ConferenceScheduler-cli/issues/19
+    - https://joel-malwarebenchmark.github.io/blog/2020/04/25/cve-2018-14572-conference-scheduler-cli/
 affected:
     - name: conference-scheduler-cli
       version:
         - "<=0.10.1"
+      fixedin:
+        []
