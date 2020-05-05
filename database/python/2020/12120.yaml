@@ -1,0 +1,16 @@
+---
+cve: 2020-12120
+title: CVE in pymata-express
+description: >
+    The Correos Express addon for PrestaShop 1.6 through 1.7 allows remote attackers to obtain sensitive information, such as a service's owner password that can be used to modify orders via SOAP. Attackers can also retrieve information about orders or buyers.
+cvss_v2: 5.0
+references:
+    - https://addons.prestashop.com/en/delivery-date/27273-correos-express-solutions-of-urgent-transport.html
+    - https://ia-informatica.com/it/CVE-2020-12120
+affected:
+    - name: pymata-express
+      version:
+        - "<=1.7,1.6"
+      fixedin:
+        - ">=1.8"
+        - "<=1.5,1.0"
