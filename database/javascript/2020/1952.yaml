@@ -1,0 +1,17 @@
+---
+cve: 2020-1952
+title: CVE in iotdb
+description: >
+    An issue was found in Apache IoTDB .9.0 to 0.9.1 and 0.8.0 to 0.8.2. When starting IoTDB, the JMX port 31999 is exposed with no certification.Then, clients could execute code remotely.
+cvss_v2: 7.5
+references:
+    - https://lists.apache.org/thread.html/r3d2ff899ead64d2952fdc1fbb1f520ca42011ed2b4c7f786e921f6b9%40%3Cdev.iotdb.apache.org%3E
+affected:
+    - name: iotdb
+      version:
+        - "<=0.8.2,0.8.1"
+        - "<=0.9.1,0.9.1"
+      fixedin:
+        - ">=0.9.2"
+        - "<=0.8.3,0.8.3"
+        - "<=0.7.13,0.0.1"
