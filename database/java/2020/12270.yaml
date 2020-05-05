@@ -1,0 +1,21 @@
+---
+cve: 2020-12270
+title: CVE in com.dou361.scan:jjdxm-scan
+description: >
+    ** DISPUTED ** React Native Bluetooth Scan in Bluezone 1.0.0 uses six-character alphanumeric IDs, which might make it easier for remote attackers to interfere with COVID-19 contact tracing by using many IDs. NOTE: the vendor disputes the relevance of this report because the recipient of an F1 alert will know it was a false alert if this recipient is not actually part of the contact history obtained from the device of an F0.
+cvss_v2: 3.3
+references:
+    - https://bluezone.ai/CVE
+    - https://github.com/BluezoneGlobal/bluezone-app/blob/afa15fcec391f0edc51d0486a4ca84dd2520bbb3/CHANGELOG.md
+    - https://github.com/BluezoneGlobal/bluezone-app/blob/afa15fcec391f0edc51d0486a4ca84dd2520bbb3/package.json#L27
+    - https://github.com/BluezoneGlobal/react-native-bluetooth-scan/blob/d9ee70fd594093a30e50b6e62a7593a8397c2dab/lib/android/src/main/AndroidManifest.xml#L11-L12
+    - https://github.com/BluezoneGlobal/react-native-bluetooth-scan/blob/d9ee70fd594093a30e50b6e62a7593a8397c2dab/lib/android/src/main/java/com/scan/BluezonerIdGenerator.java#L18-L28
+    - https://github.com/BluezoneGlobal/react-native-bluetooth-scan/blob/d9ee70fd594093a30e50b6e62a7593a8397c2dab/lib/android/src/main/java/com/scan/TraceCovidModule.java#L98
+    - https://vnhacker.blogspot.com/2020/04/vietnams-contact-tracing-app_26.html
+affected:
+    - groupId: com.dou361.scan
+      artifactId: jjdxm-scan
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
