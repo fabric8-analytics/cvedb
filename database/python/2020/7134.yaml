@@ -1,0 +1,15 @@
+---
+cve: 2020-7134
+title: CVE in horizon-hpe-storage-ui
+description: >
+    A remote access to sensitive data vulnerability was discovered in HPE IOT + GCP version(s): 1.4.0, 1.4.1, 1.4.2, 1.2.4.2.
+cvss_v2: 4.0
+references:
+    - https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbhf03947en_us
+affected:
+    - name: horizon-hpe-storage-ui
+      version:
+        - "<=1.4.1,1.4.0"
+      fixedin:
+        - ">=1.5.0"
+        - "<=1.3.1,1.2.0"
