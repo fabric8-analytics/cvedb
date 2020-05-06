@@ -1,0 +1,16 @@
+---
+cve: 2020-11944
+title: CVE in abe-cli
+description: >
+    Abe (aka bitcoin-abe) through 0.7.2, and 0.8pre, allows XSS in __call__ in abe.py because the PATH_INFO environment variable is mishandled during a PageNotFound exception.
+cvss_v2: 4.3
+references:
+    - https://geeknik-labs.com
+    - https://github.com/bitcoin-abe/bitcoin-abe/blob/d33f6e85de74e708e11cabe4ed0246e12025c726/Abe/abe.py#L253-L254
+    - https://github.com/bitcoin-abe/bitcoin-abe/issues/292
+affected:
+    - name: abe-cli
+      version:
+        - "<=0.7.2"
+      fixedin:
+        - ">=0.7.3"
