@@ -1,0 +1,14 @@
+---
+cve: 2020-9482
+title: CVE in configuration-registry
+description: >
+    If NiFi Registry 0.1.0 to 0.5.0 uses an authentication mechanism other than PKI, when the user clicks Log Out, NiFi Registry invalidates the authentication token on the client side but not on the server side. This permits the user's client-side token to be used for up to 12 hours after logging out to make API requests to NiFi Registry.
+cvss_v2: 6.4
+references:
+    - https://nifi.apache.org/registry-security.html#CVE-2020-9482
+affected:
+    - name: configuration-registry
+      version:
+        - "<=0.5.0"
+      fixedin:
+        []
