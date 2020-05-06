@@ -1,0 +1,17 @@
+---
+cve: 2020-1774
+title: CVE in ovh-angular-otrs
+description: >
+    When user downloads PGP or S/MIME keys/certificates, exported file has same name for private and public keys. Therefore it's possible to mix them and to send private key to the third-party instead of public key. This issue affects ((OTRS)) Community Edition: 5.0.42 and prior versions, 6.0.27 and prior versions. OTRS: 7.0.16 and prior versions.
+cvss_v2: 4.0
+references:
+    - https://lists.debian.org/debian-lts-announce/2020/05/msg00000.html
+    - https://otrs.com/release-notes/otrs-security-advisory-2020-11/
+affected:
+    - name: ovh-angular-otrs
+      version:
+        - "<=6.0.1,5.0.0"
+        - "<=7.0.0-alpha.1,7.0.0-alpha.0"
+      fixedin:
+        - "<=6.3.0,6.1.0"
+        - "<=4.1.2,1.1.0"
