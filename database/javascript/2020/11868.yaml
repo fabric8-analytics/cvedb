@@ -1,0 +1,17 @@
+---
+cve: 2020-11868
+title: CVE in internal-ip
+description: >
+    ntpd in ntp before 4.2.8p14 and 4.3.x before 4.3.100 allows an off-path attacker to block unauthenticated synchronization via a server mode packet with a spoofed source IP address, because transmissions are rescheduled even when a packet lacks a valid origin timestamp.
+cvss_v2: 5.0
+references:
+    - http://support.ntp.org/bin/view/Main/NtpBug3592
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1716665
+    - https://lists.debian.org/debian-lts-announce/2020/05/msg00004.html
+    - https://security.netapp.com/advisory/ntap-20200424-0002/
+affected:
+    - name: internal-ip
+      version:
+        - "<=4.3.0"
+      fixedin:
+        - ">=5.0.0"
