@@ -1,0 +1,18 @@
+---
+cve: 2020-12459
+title: CVE in @grafana/ui
+description: >
+    In certain Red Hat packages for Grafana 6.x through 6.3.6, the configuration files /etc/grafana/grafana.ini and /etc/grafana/ldap.toml (which contain a secret_key and a bind_password) are world readable.
+cvss_v2: 2.1
+references:
+    - https://access.redhat.com/security/cve/CVE-2020-12459
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1829724
+    - https://github.com/grafana/grafana/issues/8283
+    - https://src.fedoraproject.org/rpms/grafana/c/fab93d67363eb0a9678d9faf160cc88237f26277
+affected:
+    - name: @grafana/ui
+      version:
+        - "<=6.3.2,6.0.0-alpha.0"
+      fixedin:
+        - ">=6.4.0-alpha.2"
+        - "<=1.0.0-alpha.0,1.0.0-alpha.0"
