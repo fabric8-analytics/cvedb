@@ -1,0 +1,76 @@
+---
+cve: 2013-0169
+title: CVE in org.wildfly.openssl:wildfly-openssl-solaris-sparcv9
+description: >
+    The TLS protocol 1.1 and 1.2 and the DTLS protocol 1.0 and 1.2, as used in OpenSSL, OpenJDK, PolarSSL, and other products, do not properly consider timing side-channel attacks on a MAC check requirement during the processing of malformed CBC padding, which allows remote attackers to conduct distinguishing attacks and plaintext-recovery attacks via statistical analysis of timing data for crafted packets, aka the "Lucky Thirteen" issue.
+Per http://www.openssl.org/news/vulnerabilities.html:
+Fixed in OpenSSL 1.0.1d (Affected 1.0.1c, 1.0.1b, 1.0.1a, 1.0.1) 
+Fixed in OpenSSL 1.0.0k (Affected 1.0.0j, 1.0.0i, 1.0.0g, 1.0.0f, 1.0.0e, 1.0.0d, 1.0.0c, 1.0.0b, 1.0.0a, 1.0.0) 
+Fixed in OpenSSL 0.9.8y (Affected 0.9.8x, 0.9.8w, 0.9.8v, 0.9.8u, 0.9.8t, 0.9.8s, 0.9.8r, 0.9.8q, 0.9.8p, 0.9.8o, 0.9.8n, 0.9.8m, 0.9.8l, 0.9.8k, 0.9.8j, 0.9.8i, 0.9.8h, 0.9.8g, 0.9.8f, 0.9.8d, 0.9.8c, 0.9.8b, 0.9.8a, 0.9.8)
+
+Affected users should upgrade to OpenSSL 1.0.1e, 1.0.0k or 0.9.8y
+(The fix in 1.0.1d wasn't complete, so please use 1.0.1e or later)
+cvss_v2: 2.6
+references:
+    - http://blog.fuseyism.com/index.php/2013/02/20/security-icedtea-2-1-6-2-2-6-2-3-7-for-openjdk-7-released/
+    - http://lists.apple.com/archives/security-announce/2013/Sep/msg00002.html
+    - http://lists.fedoraproject.org/pipermail/package-announce/2013-April/101366.html
+    - http://lists.opensuse.org/opensuse-security-announce/2013-02/msg00020.html
+    - http://lists.opensuse.org/opensuse-security-announce/2013-03/msg00000.html
+    - http://lists.opensuse.org/opensuse-security-announce/2013-03/msg00002.html
+    - http://lists.opensuse.org/opensuse-security-announce/2013-04/msg00020.html
+    - http://lists.opensuse.org/opensuse-security-announce/2014-03/msg00001.html
+    - http://lists.opensuse.org/opensuse-security-announce/2015-03/msg00027.html
+    - http://lists.opensuse.org/opensuse-security-announce/2016-03/msg00011.html
+    - http://marc.info/?l=bugtraq&m=136396549913849&w=2
+    - http://marc.info/?l=bugtraq&m=136432043316835&w=2
+    - http://marc.info/?l=bugtraq&m=136439120408139&w=2
+    - http://marc.info/?l=bugtraq&m=136733161405818&w=2
+    - http://marc.info/?l=bugtraq&m=137545771702053&w=2
+    - http://openwall.com/lists/oss-security/2013/02/05/24
+    - http://rhn.redhat.com/errata/RHSA-2013-0587.html
+    - http://rhn.redhat.com/errata/RHSA-2013-0782.html
+    - http://rhn.redhat.com/errata/RHSA-2013-0783.html
+    - http://rhn.redhat.com/errata/RHSA-2013-0833.html
+    - http://rhn.redhat.com/errata/RHSA-2013-1455.html
+    - http://rhn.redhat.com/errata/RHSA-2013-1456.html
+    - http://secunia.com/advisories/53623
+    - http://secunia.com/advisories/55108
+    - http://secunia.com/advisories/55139
+    - http://secunia.com/advisories/55322
+    - http://secunia.com/advisories/55350
+    - http://secunia.com/advisories/55351
+    - http://security.gentoo.org/glsa/glsa-201406-32.xml
+    - http://support.apple.com/kb/HT5880
+    - http://www.debian.org/security/2013/dsa-2621
+    - http://www.debian.org/security/2013/dsa-2622
+    - http://www.isg.rhul.ac.uk/tls/TLStiming.pdf
+    - http://www.kb.cert.org/vuls/id/737740
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2013:095
+    - http://www.matrixssl.org/news.html
+    - http://www.openssl.org/news/secadv_20130204.txt
+    - http://www.oracle.com/technetwork/topics/security/javacpufeb2013update-1905892.html
+    - http://www.securityfocus.com/bid/57778
+    - http://www.securitytracker.com/id/1029190
+    - http://www.splunk.com/view/SP-CAAAHXG
+    - http://www.ubuntu.com/usn/USN-1735-1
+    - http://www.us-cert.gov/cas/techalerts/TA13-051A.html
+    - http://www-01.ibm.com/support/docview.wss?uid=swg21644047
+    - https://cert-portal.siemens.com/productcert/pdf/ssa-556833.pdf
+    - https://lists.debian.org/debian-lts-announce/2018/09/msg00029.html
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A18841
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A19016
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A19424
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A19540
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A19608
+    - https://polarssl.org/tech-updates/releases/polarssl-1.2.5-released
+    - https://puppet.com/security/cve/cve-2013-0169
+    - https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-c03883001
+    - https://wiki.mageia.org/en/Support/Advisories/MGASA-2013-0084
+affected:
+    - groupId: org.wildfly.openssl
+      artifactId: wildfly-openssl-solaris-sparcv9
+      version:
+        - "<=1.0.0.Final"
+      fixedin:
+        - ">=1.0.2.Final"
