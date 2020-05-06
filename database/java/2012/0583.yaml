@@ -1,0 +1,22 @@
+---
+cve: 2012-0583
+title: CVE in mysql:mysql-connector-java
+description: >
+    Unspecified vulnerability in the MySQL Server component in Oracle MySQL 5.1.60 and earlier, and 5.5.19 and earlier, allows remote authenticated users to affect availability, related to MyISAM.
+cvss_v2: 4.0
+references:
+    - http://secunia.com/advisories/48890
+    - http://secunia.com/advisories/49179
+    - http://secunia.com/advisories/53372
+    - http://security.gentoo.org/glsa/glsa-201308-06.xml
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2013:150
+    - http://www.oracle.com/technetwork/topics/security/cpuapr2012-366314.html
+    - http://www.securityfocus.com/bid/53061
+    - http://www.securitytracker.com/id?1026934
+affected:
+    - groupId: mysql
+      artifactId: mysql-connector-java
+      version:
+        - "<=5.1.48"
+      fixedin:
+        - ">=6.0.2"
