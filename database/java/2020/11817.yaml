@@ -1,0 +1,15 @@
+---
+cve: 2020-11817
+title: CVE in com.getchute.android.sdk.v2:chute-sdk-v2-android
+description: >
+    In Rukovoditel V2.5.2, attackers can upload an arbitrary file to the server just changing the the content-type value. As a result of that, an attacker can execute a command on the server. This specific attack only occurs with the Maintenance Mode setting.
+cvss_v2: 6.8
+references:
+    - https://fatihhcelik.blogspot.com/2020/01/rukovoditel-maintenance-mode.html
+affected:
+    - groupId: com.getchute.android.sdk.v2
+      artifactId: chute-sdk-v2-android
+      version:
+        - "<=2.5.2,2.5.2"
+      fixedin:
+        - "<=2.5.1,2.0.2"
