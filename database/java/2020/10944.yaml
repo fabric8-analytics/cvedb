@@ -1,0 +1,15 @@
+---
+cve: 2020-10944
+title: CVE in io.github.zanella.nomad:nomad-api
+description: >
+    HashiCorp Nomad and Nomad Enterprise up to 0.10.4 contained a cross-site scripting vulnerability such that files from a malicious workload could cause arbitrary JavaScript to execute in the web UI. Fixed in 0.10.5.
+cvss_v2: 3.5
+references:
+    - https://github.com/hashicorp/nomad/issues/7468
+affected:
+    - groupId: io.github.zanella.nomad
+      artifactId: nomad-api
+      version:
+        - "<=0.10,0.3"
+      fixedin:
+        - "<=0.2,0.1"
