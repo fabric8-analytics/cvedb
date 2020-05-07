@@ -1,0 +1,15 @@
+---
+cve: 2017-15990
+title: CVE in org.hawkular.inventory:hawkular-inventory-api
+description: >
+    Php Inventory & Invoice Management System allows Arbitrary File Upload via dashboard/edit_myaccountdetail/.
+cvss_v2: 7.5
+references:
+    - https://www.exploit-db.com/exploits/43069/
+affected:
+    - groupId: org.hawkular.inventory
+      artifactId: hawkular-inventory-api
+      version:
+        []
+      fixedin:
+        - ">=0.2.0.Final"
