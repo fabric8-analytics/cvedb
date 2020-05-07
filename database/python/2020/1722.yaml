@@ -1,0 +1,14 @@
+---
+cve: 2020-1722
+title: CVE in freeipa
+description: >
+    A flaw was found in all ipa versions 4.x.x through 4.8.0. When sending a very long password (>= 1,000,000 characters) to the server, the password hashing process could exhaust memory and CPU leading to a denial of service and the website becoming unresponsive. The highest threat from this vulnerability is to system availability.
+cvss_v2: 7.8
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-1722
+affected:
+    - name: freeipa
+      version:
+        - "<=4.8.0"
+      fixedin:
+        - ">=4.8.1"
