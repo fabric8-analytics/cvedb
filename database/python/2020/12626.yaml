@@ -1,0 +1,18 @@
+---
+cve: 2020-12626
+title: CVE in modoboa-webmail
+description: >
+    An issue was discovered in Roundcube Webmail before 1.4.4. A CSRF attack can cause an authenticated user to be logged out because POST was not considered.
+cvss_v2: 4.3
+references:
+    - https://github.com/roundcube/roundcubemail/commit/9bbda422ff0b782b81de59c86994f1a5fd93f8e6
+    - https://github.com/roundcube/roundcubemail/compare/1.4.3...1.4.4
+    - https://github.com/roundcube/roundcubemail/pull/7302
+    - https://github.com/roundcube/roundcubemail/releases/tag/1.4.4
+    - https://www.debian.org/security/2020/dsa-4674
+affected:
+    - name: modoboa-webmail
+      version:
+        - "<=1.4.3"
+      fixedin:
+        - ">=1.4.4"
