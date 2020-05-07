@@ -1,0 +1,14 @@
+---
+cve: 2019-7634
+title: CVE in ftl-framework-v2
+description: >
+    SUAP V2 allows XSS during the update of user information.
+cvss_v2: 3.5
+references:
+    - https://medium.com/@crhenr/cve-2019-7634-my-first-cve-61db875dc94a
+affected:
+    - name: ftl-framework-v2
+      version:
+        - "<=2.0.0"
+      fixedin:
+        - ">=2.0.1"
