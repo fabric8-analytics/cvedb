@@ -1,0 +1,16 @@
+---
+cve: 2020-11821
+title: CVE in org.ops4j.pax.url:pax-url-cache
+description: >
+    In Rukovoditel 2.5.2, users' passwords and usernames are stored in a cookie with URL encoding, base64 encoding, and hashing. Thus, an attacker can easily apply brute force on them.
+cvss_v2: 5.0
+references:
+    - https://fatihhcelik.blogspot.com/2020/01/rukovoditel-password-hash-in-cookie-url.html
+affected:
+    - groupId: org.ops4j.pax.url
+      artifactId: pax-url-cache
+      version:
+        - "<=2.5.2,2.5.2"
+      fixedin:
+        - ">=2.5.3"
+        - "<=2.5.1,1.0.0"
