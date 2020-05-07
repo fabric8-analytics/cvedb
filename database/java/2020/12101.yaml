@@ -1,0 +1,18 @@
+---
+cve: 2020-12101
+title: CVE in com.liferay.commerce:com.liferay.commerce.service
+description: >
+    The address-management feature in xt:Commerce 5.1 to 6.2.2 allows remote authenticated users to zero out other user's stored addresses by manipulating an id field in the POST request for altering an address.
+cvss_v2: 4.0
+references:
+    - http://packetstormsecurity.com/files/157534/xt-Commerce-5.4.1-6.2.1-6.2.2-Improper-Access-Control.html
+    - http://seclists.org/fulldisclosure/2020/May/0
+    - https://helpdesk.xt-commerce.com/index.php?/Knowledgebase/Article/View/1784/294/adressbuch-sicherheitspatch-17042020-fr-xtcommerce-51-bis-622
+    - https://www.syss.de/fileadmin/dokumente/Publikationen/Advisories/SYSS-2020-012.txt
+affected:
+    - groupId: com.liferay.commerce
+      artifactId: com.liferay.commerce.service
+      version:
+        - "<=6.1.0,5.1.0"
+      fixedin:
+        - "<=5.0.1,1.0.0"
