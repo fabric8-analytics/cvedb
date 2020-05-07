@@ -1,0 +1,14 @@
+---
+cve: 2017-15990
+title: CVE in odoo10-addons-oca-management-system
+description: >
+    Php Inventory & Invoice Management System allows Arbitrary File Upload via dashboard/edit_myaccountdetail/.
+cvss_v2: 7.5
+references:
+    - https://www.exploit-db.com/exploits/43069/
+affected:
+    - name: odoo10-addons-oca-management-system
+      version:
+        []
+      fixedin:
+        - ">=10.0.20161007"
