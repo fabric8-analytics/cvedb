@@ -1,0 +1,15 @@
+---
+cve: 2018-13256
+title: CVE in sv-auditor
+description: >
+    PHP Scripts Mall Auditor Website 2.0.1 has XSS via the lastname or firstname parameter.
+cvss_v2: 4.3
+references:
+    - https://gkaim.com/cve-2018-13256-vikas-chaudhary/
+    - https://www.exploit-db.com/exploits/45125/
+affected:
+    - name: sv-auditor
+      version:
+        - "<=2.0.1,2.0.1"
+      fixedin:
+        - "<=2.0.0,2.0.0"
