@@ -1,0 +1,14 @@
+---
+cve: 2020-12474
+title: CVE in os-url
+description: >
+    Telegram Desktop through 2.0.1, Telegram through 6.0.1 for Android, and Telegram through 6.0.1 for iOS allow an IDN Homograph attack via Punycode in a public URL or a group chat invitation URL.
+cvss_v2: 4.3
+references:
+    - https://github.com/VijayT007/Vulnerability-Database/blob/master/Telegram:CVE-2020-12474
+affected:
+    - name: os-url
+      version:
+        - "<=2.0.1"
+      fixedin:
+        []
