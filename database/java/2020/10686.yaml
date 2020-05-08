@@ -1,0 +1,16 @@
+---
+cve: 2020-10686
+title: CVE in org.keycloak:keycloak-services
+description: >
+    A flaw was found in Keycloak version 8.0.2 and 9.0.0, and was fixed in Keycloak version 9.0.1, where a malicious user registers as oneself. The attacker could then use the remove devices form to post different credential IDs and possibly remove MFA devices for other users.
+cvss_v2: 6.5
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-10686
+affected:
+    - groupId: org.keycloak
+      artifactId: keycloak-services
+      version:
+        - "<=9.0.0,8.0.2"
+      fixedin:
+        - ">=9.0.2"
+        - "<=8.0.1,1.0-alpha-1"
