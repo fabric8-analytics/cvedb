@@ -1,0 +1,15 @@
+---
+cve: 2020-7644
+title: CVE in fun-map
+description: >
+    fun-map through 3.3.1 is vulnerable to Prototype Pollution. The function assocInM could be tricked into adding or modifying properties of 'Object.prototype' using a '__proto__' payload.
+cvss_v2: 6.8
+references:
+    - https://github.com/nathan7/fun-map/blob/master/index.js#L137,
+    - https://snyk.io/vuln/SNYK-JS-FUNMAP-564436
+affected:
+    - name: fun-map
+      version:
+        - "<=3.3.1"
+      fixedin:
+        []
