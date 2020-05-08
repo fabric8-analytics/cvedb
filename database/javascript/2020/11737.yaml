@@ -1,0 +1,17 @@
+---
+cve: 2020-11737
+title: CVE in @zimbra/api-client
+description: >
+    A cross-site scripting (XSS) vulnerability in Web Client in Zimbra 9.0 allows a remote attacker to craft links in an E-Mail message or calendar invite to execute arbitrary JavaScript. The attack requires an A element containing an href attribute with a "www" substring (including the quotes) followed immediately by a DOM event listener such as onmouseover. This is fixed in 9.0.0 Patch 2.
+cvss_v2: 4.3
+references:
+    - https://blog.zimbra.com/2020/05/new-zimbra-9-kepler-patch-2/
+    - https://wiki.zimbra.com/wiki/Zimbra_Releases/9.0.0/P2
+    - https://wiki.zimbra.com/wiki/Zimbra_Security_Advisories
+affected:
+    - name: @zimbra/api-client
+      version:
+        - "<=9.0.0,9.0.0-beta.1"
+      fixedin:
+        - ">=10.0.0-beta.1"
+        - "<=8.2.0,0.1.0"
