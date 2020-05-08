@@ -1,0 +1,15 @@
+---
+cve: 2020-1961
+title: CVE in jexl
+description: >
+    Vulnerability to Server-Side Template Injection on Mail templates for Apache Syncope 2.0.X releases prior to 2.0.15, 2.1.X releases prior to 2.1.6, enabling attackers to inject arbitrary JEXL expressions, leading to Remote Code Execution (RCE) was discovered.
+cvss_v2: 7.5
+references:
+    - http://syncope.apache.org/security
+affected:
+    - name: jexl
+      version:
+        - "<=2.1.1,2.0.0"
+      fixedin:
+        - ">=2.2.0"
+        - "<=1.1.4,0.1.0"
