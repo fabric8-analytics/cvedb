@@ -1,0 +1,15 @@
+---
+cve: 2020-2189
+title: CVE in not-filter
+description: >
+    Jenkins SCM Filter Jervis Plugin 0.2.1 and earlier does not configure its YAML parser to prevent the instantiation of arbitrary types, resulting in a remote code execution vulnerability.
+cvss_v2: 6.5
+references:
+    - http://www.openwall.com/lists/oss-security/2020/05/06/3
+    - https://jenkins.io/security/advisory/2020-05-06/#SECURITY-1826
+affected:
+    - name: not-filter
+      version:
+        - "<=0.2.1"
+      fixedin:
+        - ">=0.2.2"
