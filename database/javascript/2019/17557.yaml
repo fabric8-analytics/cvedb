@@ -1,0 +1,15 @@
+---
+cve: 2019-17557
+title: CVE in semantic-ui-message
+description: >
+    It was found that the Apache Syncope EndUser UI login page prio to 2.0.15 and 2.1.6 reflects the successMessage parameters. By this mean, a user accessing the Enduser UI could execute javascript code from URL query string.
+cvss_v2: 3.5
+references:
+    - http://syncope.apache.org/security
+affected:
+    - name: semantic-ui-message
+      version:
+        - "<=2.1.4,2.0.2"
+      fixedin:
+        - ">=2.1.6"
+        - "<=1.12.3,1.0.0-beta"
