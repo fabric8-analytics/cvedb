@@ -1,0 +1,16 @@
+---
+cve: 2020-12265
+title: CVE in decompress
+description: >
+    The decompress package before 4.2.1 for Node.js is vulnerable to Arbitrary File Write via ../ in an archive member, when a symlink is used, because of Directory Traversal.
+cvss_v2: 7.5
+references:
+    - https://github.com/kevva/decompress/issues/71
+    - https://github.com/kevva/decompress/pull/73
+    - https://www.npmjs.com/advisories/1217
+affected:
+    - name: decompress
+      version:
+        - "<=4.2.0"
+      fixedin:
+        - ">=4.2.1"
