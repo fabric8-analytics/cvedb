@@ -1,0 +1,18 @@
+---
+cve: 2019-17557
+title: CVE in org.apache.syncope:syncope-common
+description: >
+    It was found that the Apache Syncope EndUser UI login page prio to 2.0.15 and 2.1.6 reflects the successMessage parameters. By this mean, a user accessing the Enduser UI could execute javascript code from URL query string.
+cvss_v2: 3.5
+references:
+    - http://syncope.apache.org/security
+affected:
+    - groupId: org.apache.syncope
+      artifactId: syncope-common
+      version:
+        - "<=2.0.14,2.0.0-M1"
+        - "<=2.1.5,2.1.0"
+      fixedin:
+        - ">=2.1.6"
+        - "<=2.0.15,2.0.15"
+        - "<=1.2.11,1.1.0"
