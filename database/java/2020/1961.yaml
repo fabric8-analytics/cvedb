@@ -1,0 +1,18 @@
+---
+cve: 2020-1961
+title: CVE in org.apache.syncope:syncope-common
+description: >
+    Vulnerability to Server-Side Template Injection on Mail templates for Apache Syncope 2.0.X releases prior to 2.0.15, 2.1.X releases prior to 2.1.6, enabling attackers to inject arbitrary JEXL expressions, leading to Remote Code Execution (RCE) was discovered.
+cvss_v2: 7.5
+references:
+    - http://syncope.apache.org/security
+affected:
+    - groupId: org.apache.syncope
+      artifactId: syncope-common
+      version:
+        - "<=2.0.14,2.0.0-M1"
+        - "<=2.1.5,2.1.0"
+      fixedin:
+        - ">=2.1.6"
+        - "<=2.0.15,2.0.15"
+        - "<=1.2.11,1.1.0"
