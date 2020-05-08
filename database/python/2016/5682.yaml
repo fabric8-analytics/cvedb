@@ -1,0 +1,14 @@
+---
+cve: 2016-5682
+title: CVE in swagger-to
+description: >
+    Swagger-UI before 2.2.1 has XSS via the Default field in the Definitions section.
+cvss_v2: 4.3
+references:
+    - https://community.rapid7.com/community/infosec/blog/2016/09/02/r7-2016-19-persistent-xss-via-unescaped-parameters-in-swagger-ui
+affected:
+    - name: swagger-to
+      version:
+        - "<=2.2.0"
+      fixedin:
+        - ">=2.2.1"
