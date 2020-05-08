@@ -1,0 +1,15 @@
+---
+cve: 2020-8485
+title: CVE in org.mod4j:mod4j-runtime-common
+description: >
+    Insufficient protection of the inter-process communication functions in ABB System 800xA for MOD 300 (all published versions) enables an attacker authenticated on the local system to inject data, allowing reads and writes to the controllers or cause windows processes to crash.
+cvss_v2: 4.6
+references:
+    - https://search.abb.com/library/Download.aspx?DocumentID=2PAA121236&LanguageCode=en&DocumentPartId=&Action=Launch
+affected:
+    - groupId: org.mod4j
+      artifactId: mod4j-runtime-common
+      version:
+        []
+      fixedin:
+        []
