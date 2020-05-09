@@ -1,0 +1,15 @@
+---
+cve: 2020-1732
+title: CVE in lambda-continuous-delivery
+description: >
+    A flaw was found in Soteria before 1.0.1, in a way that multiple requests occurring concurrently causing security identity corruption across concurrent threads when using EE Security with WildFly Elytron which can lead to the possibility of being handled using the identity from another request.
+cvss_v2: 4.9
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-1732
+    - https://github.com/wildfly-security/soteria/commit/c2479f8c39d7d661341fdcaff7f5e97c5eea1a54
+affected:
+    - name: lambda-continuous-delivery
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
