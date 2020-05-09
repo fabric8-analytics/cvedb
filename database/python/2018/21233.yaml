@@ -1,0 +1,15 @@
+---
+cve: 2018-21233
+title: CVE in tensorflow
+description: >
+    TensorFlow before 1.7.0 has an integer overflow that causes an out-of-bounds read, possibly causing disclosure of the contents of process memory. This occurs in the DecodeBmp feature of the BMP decoder in core/kernels/decode_bmp_op.cc.
+cvss_v2: 4.3
+references:
+    - https://github.com/tensorflow/tensorflow/blob/master/tensorflow/security/advisory/tfsa-2018-001.md
+    - https://github.com/tensorflow/tensorflow/commit/49f73c55d56edffebde4bca4a407ad69c1cae433
+affected:
+    - name: tensorflow
+      version:
+        - "<=1.6.0"
+      fixedin:
+        - ">=1.7.0rc0"
