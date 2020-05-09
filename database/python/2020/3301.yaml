@@ -1,0 +1,17 @@
+---
+cve: 2020-3301
+title: CVE in django-user-management
+description: >
+    Multiple vulnerabilities in Cisco Firepower Management Center (FMC) Software and Cisco Firepower User Agent Software could allow an attacker to access a sensitive part of an affected system with a high-privileged account. For more information about these vulnerabilities, see the Details section of this advisory.
+cvss_v2: 2.1
+references:
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-fmcua-statcred-weeCcZct
+affected:
+    - name: django-user-management
+      version:
+        - "<=2.1.1,2.1.0"
+        - "<=6.0.0,5.0.0"
+      fixedin:
+        - ">=7.0.0"
+        - "<=4.2.0,3.0.0"
+        - "<=2.0.0,0.0.1"
