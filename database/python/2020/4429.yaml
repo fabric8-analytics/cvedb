@@ -1,0 +1,15 @@
+---
+cve: 2020-4429
+title: CVE in risk-distributions
+description: >
+    IBM Data Risk Manager 2.0.1, 2.0.2, 2.0.3, 2.0.4, 2.0.5, and 2.0.6 contains a default password for an IDRM administrative account. A remote attacker could exploit this vulnerability to login and execute arbitrary code on the system with root privileges. IBM X-Force ID: 180534.
+cvss_v2: 10.0
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/180534
+    - https://www.ibm.com/support/pages/node/6206875
+affected:
+    - name: risk-distributions
+      version:
+        - "<=2.0.2,2.0.1"
+      fixedin:
+        - "<=2.0.0,1.0.0"
