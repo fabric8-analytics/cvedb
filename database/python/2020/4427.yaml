@@ -1,0 +1,15 @@
+---
+cve: 2020-4427
+title: CVE in risk-distributions
+description: >
+    IBM Data Risk Manager 2.0.1, 2.0.2, 2.0.3, 2.0.4, 2.0.5, and 2.0.6 could allow a remote attacker to bypass security restrictions when configured with SAML authentication. By sending a specially crafted HTTP request, an attacker could exploit this vulnerability to bypass the authentication process and gain full administrative access to the system. IBM X-Force ID: 180532.
+cvss_v2: 9.0
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/180532
+    - https://www.ibm.com/support/pages/node/6206875
+affected:
+    - name: risk-distributions
+      version:
+        - "<=2.0.2,2.0.1"
+      fixedin:
+        - "<=2.0.0,1.0.0"
