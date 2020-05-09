@@ -1,0 +1,21 @@
+---
+cve: 2020-11652
+title: CVE in salt
+description: >
+    An issue was discovered in SaltStack Salt before 2019.2.4 and 3000 before 3000.2. The salt-master process ClearFuncs class allows access to some methods that improperly sanitize paths. These methods allow arbitrary directory access to authenticated users.
+cvss_v2: 4.0
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2020-04/msg00047.html
+    - http://packetstormsecurity.com/files/157560/Saltstack-3000.1-Remote-Code-Execution.html
+    - http://www.vmware.com/security/advisories/VMSA-2020-0009.html
+    - https://docs.saltstack.com/en/latest/topics/releases/2019.2.4.html
+    - https://github.com/saltstack/salt/blob/v3000.2_docs/doc/topics/releases/3000.2.rst
+    - https://www.debian.org/security/2020/dsa-4676
+affected:
+    - name: salt
+      version:
+        - "<=2019.2.3"
+        - "<=3000.1,3000.0.0rc1"
+      fixedin:
+        - ">=3000.2"
+        - "<=2019.2.4,2019.2.4"
