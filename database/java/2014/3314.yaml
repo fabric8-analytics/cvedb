@@ -1,0 +1,15 @@
+---
+cve: 2014-3314
+title: CVE in org.beangle.ids.cas:beangle-ids-cas-core_2.12
+description: >
+    Cisco AnyConnect on Android and OS X does not properly verify the host type, which allows remote attackers to spoof authentication forms and possibly capture credentials via unspecified vectors, aka Bug IDs CSCuo24931 and CSCuo24940.
+cvss_v2: 5.0
+references:
+    - http://tools.cisco.com/security/center/content/CiscoSecurityNotice/CVE-2014-3314
+affected:
+    - groupId: org.beangle.ids.cas
+      artifactId: beangle-ids-cas-core_2.12
+      version:
+        []
+      fixedin:
+        - ">=0.0.2"
