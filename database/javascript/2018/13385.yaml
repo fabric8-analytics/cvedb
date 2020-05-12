@@ -1,0 +1,14 @@
+---
+cve: 2018-13385
+title: CVE in os-homedir
+description: >
+    There was an argument injection vulnerability in Sourcetree for macOS via filenames in Mercurial repositories. An attacker with permission to commit to a Mercurial repository linked in Sourcetree for macOS is able to exploit this issue to gain code execution on the system. Versions of Sourcetree for macOS from 1.0b2 before 2.7.6 are affected by this vulnerability.
+cvss_v2: 7.5
+references:
+    - https://jira.atlassian.com/browse/SRCTREE-5846
+affected:
+    - name: os-homedir
+      version:
+        - "<=2.0.0,1.0.0"
+      fixedin:
+        - "<=0.1.0,0.1.0"
