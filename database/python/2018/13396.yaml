@@ -1,0 +1,14 @@
+---
+cve: 2018-13396
+title: CVE in mercurial-keyring
+description: >
+    There was an argument injection vulnerability in Sourcetree for macOS from version 1.0b2 before version 3.0.0 via Git subrepositories in Mercurial repositories. An attacker with permission to commit to a Mercurial repository linked in Sourcetree for macOS is able to exploit this issue to gain code execution on the system.
+cvss_v2: 9.0
+references:
+    - https://jira.atlassian.com/browse/SRCTREE-5985
+affected:
+    - name: mercurial-keyring
+      version:
+        - "<=1.3.0,1.0.0"
+      fixedin:
+        - "<=0.8.0,0.3.0"
