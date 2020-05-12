@@ -1,6 +1,6 @@
 ---
 cve: 2020-11023
-title: CVE in jquery
+title: CVE in query-dom
 description: >
     In jQuery versions greater than or equal to 1.0.3 and before 3.5.0, passing HTML containing <option> elements from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0.
 cvss_v2: 4.3
@@ -8,9 +8,11 @@ references:
     - https://blog.jquery.com/2020/04/10/jquery-3-5-0-released
     - https://github.com/jquery/jquery/security/advisories/GHSA-jpcq-cgw6-v4j6
     - https://jquery.com/upgrade-guide/3.5/
+    - https://security.netapp.com/advisory/ntap-20200511-0006/
 affected:
-    - name: jquery
+    - name: query-dom
       version:
-        - "<=3.4.1,1.0.3"
+        - "<=3.0.4,2.0.0"
       fixedin:
-        - ">=3.5.0"
+        - ">=3.0.5"
+        - "<=1.0.2,1.0.0"
