@@ -1,0 +1,15 @@
+---
+cve: 2020-12052
+title: CVE in @grafana/ui
+description: >
+    Grafana version < 6.7.3 is vulnerable for annotation popup XSS.
+cvss_v2: 4.3
+references:
+    - https://community.grafana.com/t/release-notes-v6-7-x/27119
+    - https://security.netapp.com/advisory/ntap-20200511-0001/
+affected:
+    - name: @grafana/ui
+      version:
+        - "<=6.7.2"
+      fixedin:
+        - ">=6.7.3"
