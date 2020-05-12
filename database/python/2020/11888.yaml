@@ -1,0 +1,15 @@
+---
+cve: 2020-11888
+title: CVE in markdown2
+description: >
+    python-markdown2 through 2.3.8 allows XSS because element names are mishandled unless a \w+ match succeeds. For example, an attack might use elementname@ or elementname- with an onclick attribute.
+cvss_v2: 4.3
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2020-05/msg00031.html
+    - https://github.com/trentm/python-markdown2/issues/348
+affected:
+    - name: markdown2
+      version:
+        - "<=2.3.8"
+      fixedin:
+        - ">=2.3.9"
