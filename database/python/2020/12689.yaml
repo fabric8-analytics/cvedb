@@ -1,0 +1,17 @@
+---
+cve: 2020-12689
+title: CVE in keystone
+description: >
+    An issue was discovered in OpenStack Keystone before 15.0.1, and 16.0.0. Any user authenticated within a limited scope (trust/oauth/application credential) can create an EC2 credential with an escalated permission, such as obtaining admin while the user is on a limited viewer role. This potentially allows a malicious user to act as the admin on a project another user has the admin role on, which can effectively grant that user global admin privileges.
+cvss_v2: 6.5
+references:
+    - http://www.openwall.com/lists/oss-security/2020/05/07/2
+    - https://bugs.launchpad.net/keystone/+bug/1872735
+    - https://security.openstack.org/ossa/OSSA-2020-004.html
+    - https://www.openwall.com/lists/oss-security/2020/05/06/5
+affected:
+    - name: keystone
+      version:
+        - "<=16.0.0"
+      fixedin:
+        - ">=17.0.0.0rc1"
