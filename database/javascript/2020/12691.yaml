@@ -1,0 +1,19 @@
+---
+cve: 2020-12691
+title: CVE in @keystone-alpha/keystone
+description: >
+    An issue was discovered in OpenStack Keystone before 15.0.1, and 16.0.0. Any authenticated user can create an EC2 credential for themselves for a project that they have a specified role on, and then perform an update to the credential user and project, allowing them to masquerade as another user. This potentially allows a malicious user to act as the admin on a project another user has the admin role on, which can effectively grant that user global admin privileges.
+cvss_v2: 6.5
+references:
+    - http://www.openwall.com/lists/oss-security/2020/05/07/2
+    - https://bugs.launchpad.net/keystone/+bug/1872733
+    - https://security.openstack.org/ossa/OSSA-2020-004.html
+    - https://www.openwall.com/lists/oss-security/2020/05/06/5
+affected:
+    - name: @keystone-alpha/keystone
+      version:
+        - "<=15.0.0"
+        - "<=16.0.0,16.0.0"
+      fixedin:
+        - ">=16.0.1"
+        - "<=15.4.1,15.0.1"
