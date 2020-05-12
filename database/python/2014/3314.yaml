@@ -1,0 +1,14 @@
+---
+cve: 2014-3314
+title: CVE in bug-gd
+description: >
+    Cisco AnyConnect on Android and OS X does not properly verify the host type, which allows remote attackers to spoof authentication forms and possibly capture credentials via unspecified vectors, aka Bug IDs CSCuo24931 and CSCuo24940.
+cvss_v2: 5.0
+references:
+    - http://tools.cisco.com/security/center/content/CiscoSecurityNotice/CVE-2014-3314
+affected:
+    - name: bug-gd
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
