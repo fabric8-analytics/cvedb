@@ -1,0 +1,15 @@
+---
+cve: 2020-4092
+title: CVE in django-nomad-notifier
+description: >
+    "If port encryption is not enabled on the Domino Server, HCL Nomad on Android and iOS Platforms will communicate in clear text and does not currently have a user interface option to change the setting to request an encrypted communication channel with the Domino server. This can potentially expose sensitive information including but not limited to server names, user IDs and document content."
+cvss_v2: 5.0
+references:
+    - https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0078969
+affected:
+    - name: django-nomad-notifier
+      version:
+        - "<=1.0.1,1.0.0"
+      fixedin:
+        - ">=1.1.0"
+        - "<=0.2,0.1"
