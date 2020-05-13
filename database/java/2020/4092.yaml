@@ -1,0 +1,15 @@
+---
+cve: 2020-4092
+title: CVE in com.progressoft.brix.domino.test:domino-server-test
+description: >
+    "If port encryption is not enabled on the Domino Server, HCL Nomad on Android and iOS Platforms will communicate in clear text and does not currently have a user interface option to change the setting to request an encrypted communication channel with the Domino server. This can potentially expose sensitive information including but not limited to server names, user IDs and document content."
+cvss_v2: 5.0
+references:
+    - https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0078969
+affected:
+    - groupId: com.progressoft.brix.domino.test
+      artifactId: domino-server-test
+      version:
+        - "<=1.0-rc.2"
+      fixedin:
+        []
