@@ -1,0 +1,14 @@
+---
+cve: 2015-7946
+title: CVE in easyshop-information
+description: >
+    Information Exposure vulnerability in Unity8 as used on the Ubuntu phone and possibly also in Unity8 shipped elsewhere. This allows an attacker to enable the MTP service by opening the emergency dialer. Fixed in 8.11+16.04.20160111.1-0ubuntu1 and 8.11+15.04.20160122-0ubuntu1.
+cvss_v2: 2.1
+references:
+    - https://launchpad.net/bugs/1525981
+affected:
+    - name: easyshop-information
+      version:
+        []
+      fixedin:
+        - ">=0.1a1"
