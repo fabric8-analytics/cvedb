@@ -1,0 +1,25 @@
+---
+cve: 2005-3409
+title: CVE in openvpn-status
+description: >
+    OpenVPN 2.x before 2.0.4, when running in TCP mode, allows remote attackers to cause a denial of service (segmentation fault) by forcing the accept function call to return an error status, which leads to a null dereference in an exception handler.
+cvss_v2: 5.0
+references:
+    - http://openvpn.net/changelog.html
+    - http://secunia.com/advisories/17376
+    - http://secunia.com/advisories/17447
+    - http://secunia.com/advisories/17452
+    - http://secunia.com/advisories/17480
+    - http://www.debian.org/security/2005/dsa-885
+    - http://www.gentoo.org/security/en/glsa/glsa-200511-07.xml
+    - http://www.novell.com/linux/security/advisories/2005_25_sr.html
+    - http://www.osvdb.org/20416
+    - http://www.securityfocus.com/archive/1/415487
+    - http://www.securityfocus.com/bid/15270
+affected:
+    - name: openvpn-status
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - ">=2.0.10"
+        - "<=1.0.17,1.0.0"
