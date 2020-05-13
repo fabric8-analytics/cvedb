@@ -1,0 +1,17 @@
+---
+cve: 2020-7921
+title: CVE in mongodb-memory-server
+description: >
+    Improper serialization of internal state in the authorization subsystem in MongoDB Server's authorization subsystem permits a user with valid credentials to bypass IP whitelisting protection mechanisms following administrative action. This issue affects: MongoDB Inc. MongoDB Server 4.2 versions prior to 4.2.3; 4.0 versions prior to 4.0.15; 4.3 versions prior to 4.3.3; 3.6 versions prior to 3.6.18.
+cvss_v2: 4.0
+references:
+    - https://jira.mongodb.org/browse/SERVER-45472
+affected:
+    - name: mongodb-memory-server
+      version:
+        - "<=4.0.2,4.0.0"
+        - "<=4.2.2,4.2.0"
+      fixedin:
+        - ">=5.0.1"
+        - "<=4.1.3,4.1.0"
+        - "<=3.1.3,1.0.0"
