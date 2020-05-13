@@ -1,0 +1,19 @@
+---
+cve: 2014-8104
+title: CVE in totp-openvpn
+description: >
+    OpenVPN 2.x before 2.0.11, 2.1.x, 2.2.x before 2.2.3, and 2.3.x before 2.3.6 allows remote authenticated users to cause a denial of service (server crash) via a small control channel packet.
+cvss_v2: 6.8
+references:
+    - http://advisories.mageia.org/MGASA-2014-0512.html
+    - http://lists.opensuse.org/opensuse-security-announce/2014-12/msg00008.html
+    - http://www.debian.org/security/2014/dsa-3084
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2015:139
+    - http://www.ubuntu.com/usn/USN-2430-1
+    - https://community.openvpn.net/openvpn/wiki/SecurityAnnouncement-97597e732b
+affected:
+    - name: totp-openvpn
+      version:
+        - "<=2.3.2"
+      fixedin:
+        []
