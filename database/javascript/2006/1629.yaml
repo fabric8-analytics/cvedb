@@ -1,0 +1,29 @@
+---
+cve: 2006-1629
+title: CVE in openvpn-status
+description: >
+    OpenVPN 2.0 through 2.0.5 allows remote malicious servers to execute arbitrary code on the client by using setenv with the LD_PRELOAD environment variable.
+OpenVPN version 2.0.6 fixes this vulnerability.
+cvss_v2: 9.0
+references:
+    - http://openvpn.net/changelog.html
+    - http://secunia.com/advisories/19531
+    - http://secunia.com/advisories/19598
+    - http://secunia.com/advisories/19837
+    - http://secunia.com/advisories/19897
+    - http://sourceforge.net/mailarchive/forum.php?thread_id=10093825&forum_id=8482
+    - http://www.debian.org/security/2006/dsa-1045
+    - http://www.mandriva.com/security/advisories?name=MDKSA-2006:069
+    - http://www.novell.com/linux/security/advisories/2006_04_28.html
+    - http://www.osreviews.net/reviews/security/openvpn-print
+    - http://www.osvdb.org/24444
+    - http://www.securityfocus.com/bid/17392
+    - http://www.vupen.com/english/advisories/2006/1261
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/25667
+affected:
+    - name: openvpn-status
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - ">=2.0.10"
+        - "<=1.0.17,1.0.0"
