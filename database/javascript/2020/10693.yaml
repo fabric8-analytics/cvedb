@@ -1,0 +1,17 @@
+---
+cve: 2020-10693
+title: CVE in validator
+description: >
+    A flaw was found in Hibernate Validator version 6.1.2.Final. A bug in the message interpolation processor enables invalid EL expressions to be evaluated as if they were valid. This flaw allows attackers to bypass input sanitation (escaping, stripping) controls that developers may have put in place when handling user-controlled data in error messages.
+cvss_v2: 5.0
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-10693
+affected:
+    - name: validator
+      version:
+        - "<=6.0.0,6.0.0"
+        - "<=7.0.0,7.0.0"
+      fixedin:
+        - ">=7.1.0"
+        - "<=6.3.0,6.1.0"
+        - "<=5.7.0,0.1.0"
