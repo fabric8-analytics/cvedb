@@ -1,0 +1,16 @@
+---
+cve: 2020-11006
+title: CVE in com.shopizer:shopizer-shipping-canadapost-module
+description: >
+    In Shopizer before version 2.11.0, a script can be injected in various forms and saved in the database, then executed when information is fetched from backend. This has been patched in version 2.11.0.
+cvss_v2: 3.5
+references:
+    - https://github.com/shopizer-ecommerce/shopizer/commit/929ca0839a80c6f4dad087e0259089908787ad2a
+    - https://github.com/shopizer-ecommerce/shopizer/security/advisories/GHSA-8pc4-gvfw-634p
+affected:
+    - groupId: com.shopizer
+      artifactId: shopizer-shipping-canadapost-module
+      version:
+        - "<=2.10.5"
+      fixedin:
+        - ">=2.11.0"
