@@ -1,0 +1,14 @@
+---
+cve: 2020-8159
+title: CVE in erb
+description: >
+    There is a vulnerability in actionpack_page-caching gem < v1.2.1 that allows an attacker to write arbitrary files to a web server, potentially resulting in remote code execution if the attacker can write unescaped ERB to a view.
+cvss_v2: 7.5
+references:
+    - https://groups.google.com/forum/#!topic/rubyonrails-security/CFRVkEytdP8
+affected:
+    - name: erb
+      version:
+        - "<=1.2.0"
+      fixedin:
+        - ">=1.2.1"
