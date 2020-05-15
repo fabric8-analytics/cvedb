@@ -1,0 +1,15 @@
+---
+cve: 2018-20225
+title: CVE in open-pip
+description: >
+    An issue was discovered in pip (all versions) because it installs the version with the highest version number, even if the user had intended to obtain a private package from a private index. This only affects use of the --extra-index-url option, and exploitation requires that the package does not already exist in the public index (and thus the attacker can put the package there with an arbitrary version number).
+cvss_v2: 6.8
+references:
+    - https://cowlicks.website/posts/arbitrary-code-execution-from-pips-extra-index-url.html
+    - https://pip.pypa.io/en/stable/news/
+affected:
+    - name: open-pip
+      version:
+        []
+      fixedin:
+        - ">=2.0.0"
