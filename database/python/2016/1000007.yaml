@@ -1,0 +1,15 @@
+---
+cve: 2016-1000007
+title: CVE in pagure-importer
+description: >
+    Pagure 2.2.1 XSS in raw file endpoint
+cvss_v2: 4.3
+references:
+    - https://pagure.io/pagure/c/070d63983fe5daef92005ea33d3b8c693c224c77.patch
+affected:
+    - name: pagure-importer
+      version:
+        - "<=2.2.1,2.2.1"
+      fixedin:
+        - ">=2.2.2"
+        - "<=2.2,0.0.1"
