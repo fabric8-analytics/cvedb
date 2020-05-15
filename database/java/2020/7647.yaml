@@ -1,0 +1,17 @@
+---
+cve: 2020-7647
+title: CVE in org.jooby:jooby-netty
+description: >
+    All versions before 1.6.7 and all versions after 2.0.0 inclusive and before 2.8.2 of io.jooby:jooby and org.jooby:jooby are vulnerable to Directory Traversal via two separate vectors.
+cvss_v2: 5.0
+references:
+    - https://github.com/jooby-project/jooby/commit/34f526028e6cd0652125baa33936ffb6a8a4a009
+    - https://snyk.io/vuln/SNYK-JAVA-IOJOOBY-568806,
+    - https://snyk.io/vuln/SNYK-JAVA-ORGJOOBY-568807,
+affected:
+    - groupId: org.jooby
+      artifactId: jooby-netty
+      version:
+        - "<=1.6.6"
+      fixedin:
+        - ">=1.6.7"
