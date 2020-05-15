@@ -1,0 +1,17 @@
+---
+cve: 2020-6251
+title: CVE in org.seedstack.business:business-migrate
+description: >
+    Under certain conditions or error scenarios SAP Business Objects Business Intelligence Platform, version 4.2, allows an attacker to access information which would otherwise be restricted.
+cvss_v2: 5.0
+references:
+    - https://launchpad.support.sap.com/#/notes/2828558
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=545396222
+affected:
+    - groupId: org.seedstack.business
+      artifactId: business-migrate
+      version:
+        - "<=4.2.0,4.2.0"
+      fixedin:
+        - ">=4.2.1"
+        - "<=4.1.1,4.1.0"
