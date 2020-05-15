@@ -1,0 +1,14 @@
+---
+cve: 2020-12242
+title: CVE in source-map
+description: >
+    Valve Source allows local users to gain privileges by writing to the /tmp/hl2_relaunch file, which is later executed in the context of a different user account.
+cvss_v2: 7.2
+references:
+    - https://0xem.ma/cve/2020/04/28/Source-hl2-relaunch-exec.html
+affected:
+    - name: source-map
+      version:
+        []
+      fixedin:
+        - ">=0.0.0"
