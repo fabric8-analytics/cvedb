@@ -1,0 +1,17 @@
+---
+cve: 2020-6245
+title: CVE in org.seedstack.business:business-migrate
+description: >
+    SAP Business Objects Business Intelligence Platform, version 4.2, allows an attacker with access to local instance, to inject file or code that can be executed by the application due to Improper Control of Resource Identifiers.
+cvss_v2: 4.6
+references:
+    - https://launchpad.support.sap.com/#/notes/2828558
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=545396222
+affected:
+    - groupId: org.seedstack.business
+      artifactId: business-migrate
+      version:
+        - "<=4.2.0,4.2.0"
+      fixedin:
+        - ">=4.2.1"
+        - "<=4.1.1,4.1.0"
