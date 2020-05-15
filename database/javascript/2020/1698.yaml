@@ -1,0 +1,14 @@
+---
+cve: 2020-1698
+title: CVE in keycloak-js
+description: >
+    A flaw was found in keycloak in versions before 9.0.0. A logged exception in the HttpMethod class may leak the password given as parameter. The highest threat from this vulnerability is to data confidentiality.
+cvss_v2: 2.1
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-1698
+affected:
+    - name: keycloak-js
+      version:
+        - "<=8.0.2"
+      fixedin:
+        - ">=9.0.0"
