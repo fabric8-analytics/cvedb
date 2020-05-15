@@ -1,0 +1,25 @@
+---
+cve: 2016-3712
+title: CVE in qemu
+description: >
+    Integer overflow in the VGA module in QEMU allows local guest OS users to cause a denial of service (out-of-bounds read and QEMU process crash) by editing VGA registers in VBE mode.
+CWE-190: Integer Overflow or Wraparound
+cvss_v2: 2.1
+references:
+    - http://rhn.redhat.com/errata/RHSA-2016-2585.html
+    - http://rhn.redhat.com/errata/RHSA-2017-0621.html
+    - http://support.citrix.com/article/CTX212736
+    - http://www.debian.org/security/2016/dsa-3573
+    - http://www.openwall.com/lists/oss-security/2016/05/09/4
+    - http://www.oracle.com/technetwork/topics/security/ovmbulletinjul2016-3090546.html
+    - http://www.securityfocus.com/bid/90314
+    - http://www.securitytracker.com/id/1035794
+    - http://www.ubuntu.com/usn/USN-2974-1
+    - http://xenbits.xen.org/xsa/advisory-179.html
+    - https://lists.gnu.org/archive/html/qemu-devel/2016-05/msg01196.html
+affected:
+    - name: qemu
+      version:
+        - "<=2.12.0"
+      fixedin:
+        []
