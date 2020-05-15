@@ -1,0 +1,14 @@
+---
+cve: 2020-10706
+title: CVE in openshift-uptimer
+description: >
+    A flaw was found in OpenShift Container Platform where OAuth tokens are not encrypted when the encryption of data at rest is enabled. This flaw allows an attacker with access to a backup to obtain OAuth tokens and then use them to log into the cluster as any user who logged into the cluster via the WebUI or via the command line in the last 24 hours. Once the backup is older than 24 hours the OAuth tokens are no longer valid.
+cvss_v2: 4.6
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-10706
+affected:
+    - name: openshift-uptimer
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
