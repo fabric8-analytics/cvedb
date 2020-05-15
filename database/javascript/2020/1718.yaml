@@ -1,0 +1,14 @@
+---
+cve: 2020-1718
+title: CVE in keycloak-js
+description: >
+    A flaw was found in the reset credential flow in all Keycloak versions before 8.0.0. This flaw allows an attacker to gain unauthorized access to the application.
+cvss_v2: 6.5
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-1718
+affected:
+    - name: keycloak-js
+      version:
+        - "<=7.0.1"
+      fixedin:
+        - ">=8.0.0"
