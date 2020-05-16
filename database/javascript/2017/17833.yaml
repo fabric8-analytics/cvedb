@@ -1,0 +1,20 @@
+---
+cve: 2017-17833
+title: CVE in imm-validate
+description: >
+    OpenSLP releases in the 1.0.2 and 1.1.0 code streams have a heap-related memory corruption issue which may manifest itself as a denial-of-service or a remote code-execution vulnerability.
+cvss_v2: 7.5
+references:
+    - http://support.lenovo.com/us/en/solutions/LEN-18247
+    - https://access.redhat.com/errata/RHSA-2018:2240
+    - https://access.redhat.com/errata/RHSA-2018:2308
+    - https://lists.debian.org/debian-lts-announce/2018/04/msg00029.html
+    - https://security.gentoo.org/glsa/202005-12
+    - https://sourceforge.net/p/openslp/mercurial/ci/151f07745901cbdba6e00e4889561b4083250da1/
+    - https://usn.ubuntu.com/3708-1/
+affected:
+    - name: imm-validate
+      version:
+        - "<=1.2.4"
+      fixedin:
+        []
