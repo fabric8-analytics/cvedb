@@ -1,0 +1,17 @@
+---
+cve: 2020-6257
+title: CVE in org.seedstack.business:business-migrate
+description: >
+    SAP Business Objects Business Intelligence Platform (CMC and BI Launchpad) 4.2 does not sufficiently encode user-controlled inputs, resulting in Cross-Site Scripting vulnerability.
+cvss_v2: 3.5
+references:
+    - https://launchpad.support.sap.com/#/notes/2907781
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=545396222
+affected:
+    - groupId: org.seedstack.business
+      artifactId: business-migrate
+      version:
+        - "<=4.2.0,4.2.0"
+      fixedin:
+        - ">=4.2.1"
+        - "<=4.1.1,4.1.0"
