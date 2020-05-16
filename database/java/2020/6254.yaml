@@ -1,0 +1,16 @@
+---
+cve: 2020-6254
+title: CVE in jakarta.enterprise.concurrent:jakarta.enterprise.concurrent-api
+description: >
+    SAP Enterprise Threat Detection, versions 1.0, 2.0, does not sufficiently encode error response pages in case of errors, allowing XSS payload reflecting in the response, leading to reflected Cross Site Scripting.
+cvss_v2: 4.3
+references:
+    - https://launchpad.support.sap.com/#/notes/2913293
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=545396222
+affected:
+    - groupId: jakarta.enterprise.concurrent
+      artifactId: jakarta.enterprise.concurrent-api
+      version:
+        - "<=2.0.0-RC1,2.0.0-RC1"
+      fixedin:
+        - "<=1.1.2,1.1.1"
