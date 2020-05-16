@@ -1,0 +1,14 @@
+---
+cve: 2019-18866
+title: CVE in klay-kiln-sql
+description: >
+    Unauthenticated SQL injection via the username in the login mechanism in Blaauw Remote Kiln Control through v3.00r4 allows a user to extract arbitrary data from the rkc database.
+cvss_v2: 5.0
+references:
+    - https://github.com/lodestone-security/CVEs/blob/master/remote_kiln_control/an_unfortunate_kilnundrum.md
+affected:
+    - name: klay-kiln-sql
+      version:
+        - "<=3.0.0-alpha.5"
+      fixedin:
+        []
