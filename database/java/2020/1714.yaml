@@ -1,0 +1,16 @@
+---
+cve: 2020-1714
+title: CVE in org.keycloak:keycloak-services
+description: >
+    A flaw was found in Keycloak before version 11.0.0, where the code base contains usages of ObjectInputStream without type checks. This flaw allows an attacker to inject arbitrarily serialized Java Objects, which would then get deserialized in a privileged context and potentially lead to remote code execution.
+cvss_v2: 6.5
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-1714
+    - https://github.com/keycloak/keycloak/pull/7053
+affected:
+    - groupId: org.keycloak
+      artifactId: keycloak-services
+      version:
+        - "<=10.0.1"
+      fixedin:
+        []
