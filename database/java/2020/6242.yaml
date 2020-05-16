@@ -1,0 +1,16 @@
+---
+cve: 2020-6242
+title: CVE in org.junit.platform:junit-platform-console-standalone
+description: >
+    SAP Business Objects Business Intelligence Platform (Live Data Connect), versions 1.0, 2.0, 2.x, allows an attacker to logon on the Central Management Console without password in case of the BIPRWS application server was not protected with some specific certificate, leading to Missing Authentication Check.
+cvss_v2: 7.5
+references:
+    - https://launchpad.support.sap.com/#/notes/2885244
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=545396222
+affected:
+    - groupId: org.junit.platform
+      artifactId: junit-platform-console-standalone
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
