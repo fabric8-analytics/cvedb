@@ -1,0 +1,15 @@
+---
+cve: 2019-0202
+title: CVE in org.apache.storm:storm-druid
+description: >
+    The Apache Storm Logviewer daemon exposes HTTP-accessible endpoints to read/search log files on hosts running Storm. In Apache Storm versions 0.9.1-incubating to 1.2.2, it is possible to read files off the host's file system that were not intended to be accessible via these endpoints.
+cvss_v2: 5.0
+references:
+    - https://lists.apache.org/thread.html/220f1a77ff20749326a4c130446c5521db854da0afe81d1974b8109f@%3Cuser.storm.apache.org%3E
+affected:
+    - groupId: org.apache.storm
+      artifactId: storm-druid
+      version:
+        - "<=1.2.2"
+      fixedin:
+        - ">=1.2.3"
