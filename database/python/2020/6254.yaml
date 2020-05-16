@@ -1,0 +1,15 @@
+---
+cve: 2020-6254
+title: CVE in anomaly-detection
+description: >
+    SAP Enterprise Threat Detection, versions 1.0, 2.0, does not sufficiently encode error response pages in case of errors, allowing XSS payload reflecting in the response, leading to reflected Cross Site Scripting.
+cvss_v2: 4.3
+references:
+    - https://launchpad.support.sap.com/#/notes/2913293
+    - https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=545396222
+affected:
+    - name: anomaly-detection
+      version:
+        - "<=1.0.0"
+      fixedin:
+        []
