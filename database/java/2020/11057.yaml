@@ -1,0 +1,18 @@
+---
+cve: 2020-11057
+title: CVE in org.xwiki.commons:xwiki-commons-filter
+description: >
+    In XWiki Platform 7.2 through 11.10.2, registered users without scripting/programming permissions are able to execute python/groovy scripts while editing personal dashboards. This has been fixed 11.3.7 , 11.10.3 and 12.0.
+cvss_v2: 9.0
+references:
+    - https://github.com/xwiki/xwiki-platform/security/advisories/GHSA-rmp6-jjg8-9424
+    - https://jira.xwiki.org/browse/XWIKI-16960
+    - https://medium.com/@andrew.levkin/tews-4c47cfc011d1
+affected:
+    - groupId: org.xwiki.commons
+      artifactId: xwiki-commons-filter
+      version:
+        - "<=11.10.2,7.2-milestone-1"
+      fixedin:
+        - ">=11.10.3"
+        - "<=7.1.4,5.2-milestone-1"
