@@ -1,0 +1,15 @@
+---
+cve: 2020-7266
+title: CVE in org.appverse.web.framework.modules.backend.core.enterprise.log:appverse-web-modules-backend-core-enterprise-log
+description: >
+    Privilege Escalation vulnerability in McAfee VirusScan Enterprise (VSE) for Windows prior to 8.8 Patch 14 Hotfix 116778 allows local users to delete files the user would otherwise not have access to via manipulating symbolic links to redirect a McAfee delete action to an unintended file. This is achieved through running a malicious script or program on the target machine.
+cvss_v2: 3.6
+references:
+    - https://kc.mcafee.com/corporate/index?page=content&id=SB10316
+affected:
+    - groupId: org.appverse.web.framework.modules.backend.core.enterprise.log
+      artifactId: appverse-web-modules-backend-core-enterprise-log
+      version:
+        - "<=2.0.0-RC10"
+      fixedin:
+        []
