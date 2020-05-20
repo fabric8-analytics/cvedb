@@ -1,0 +1,15 @@
+---
+cve: 2020-10626
+title: CVE in com.fazecast:jSerialComm
+description: >
+    In Fazecast jSerialComm, Version 2.2.2 and prior, an uncontrolled search path element vulnerability could allow a malicious DLL file with the same name of any resident DLLs inside the software installation to execute arbitrary code.
+cvss_v2: 6.9
+references:
+    - https://www.us-cert.gov/ics/advisories/ICSA2012601
+affected:
+    - groupId: com.fazecast
+      artifactId: jSerialComm
+      version:
+        - "<=2.2.2"
+      fixedin:
+        - ">=2.3.0"
