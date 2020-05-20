@@ -1,0 +1,15 @@
+---
+cve: 2020-13129
+title: CVE in jaraco-windows
+description: >
+    An issue was discovered in the stashcat app through 3.9.1 for macOS, Windows, Android, iOS, and possibly other platforms. The GET method is used with client_key and device_id data in the query string, which allows attackers to obtain sensitive information by reading web-server logs.
+cvss_v2: 9.0
+references:
+    - https://www.jvanlaak.de/stashcat.html
+    - https://www.jvanlaak.de/stashcat_CWE_598_200517.pdf
+affected:
+    - name: jaraco-windows
+      version:
+        - "<=3.9.1"
+      fixedin:
+        - ">=3.9.2"
