@@ -1,0 +1,15 @@
+---
+cve: 2019-19456
+title: CVE in com.bladecoder.engine:blade-engine
+description: >
+    A Reflected XSS was found in the server selection box inside the login page at: enginemanager/loginfailed.html in Wowza Streaming Engine <= 4.x.x.
+cvss_v2: 4.3
+references:
+    - https://www.telecomitalia.com/it/innovazione/servizi-digitali/cybersecurity/red-team.html
+affected:
+    - groupId: com.bladecoder.engine
+      artifactId: blade-engine
+      version:
+        - "<=4.0.0,4.0.0"
+      fixedin:
+        - "<=3.2.5,0.3.1"
