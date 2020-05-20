@@ -1,0 +1,15 @@
+---
+cve: 2020-13092
+title: CVE in scikit-learn
+description: >
+    ** DISPUTED ** scikit-learn (aka sklearn) through 0.23.0 can unserialize and execute commands from an untrusted file that is passed to the joblib.load() function, if __reduce__ makes an os.system call. NOTE: third parties dispute this issue because the joblib.load() function is documented as unsafe and it is the user's responsibility to use the function in a secure manner.
+cvss_v2: 7.5
+references:
+    - https://github.com/0FuzzingQ/vuln/blob/master/sklearn%20unserialize.md
+    - https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+affected:
+    - name: scikit-learn
+      version:
+        - "<=0.23.0"
+      fixedin:
+        - ">=0.23.1"
