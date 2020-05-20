@@ -1,0 +1,25 @@
+---
+cve: 2007-2893
+title: CVE in uk.camsw.rx:rx-test-dsl
+description: >
+    Heap-based buffer overflow in the bx_ne2k_c::rx_frame function in iodev/ne2k.cc in the emulated NE2000 device in Bochs 2.3 allows local users of the guest operating system to write to arbitrary memory locations and gain privileges on the host operating system via vectors that cause TXCNT register values to exceed the device memory size, aka "RX Frame heap overflow."
+cvss_v2: 7.2
+references:
+    - http://bugs.gentoo.org/show_bug.cgi?id=188148
+    - http://osvdb.org/36799
+    - http://secunia.com/advisories/25470
+    - http://secunia.com/advisories/26364
+    - http://secunia.com/advisories/27715
+    - http://security.gentoo.org/glsa/glsa-200711-21.xml
+    - http://taviso.decsystem.org/virtsec.pdf
+    - http://www.debian.org/security/2007/dsa-1351
+    - http://www.securityfocus.com/bid/24246
+    - http://www.vupen.com/english/advisories/2007/1936
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/34508
+affected:
+    - groupId: uk.camsw.rx
+      artifactId: rx-test-dsl
+      version:
+        - "<=2.3.0,2.3.0"
+      fixedin:
+        - "<=2.2.0,1.0.0"
