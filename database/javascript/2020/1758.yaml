@@ -1,0 +1,15 @@
+---
+cve: 2020-1758
+title: CVE in keycloak-js
+description: >
+    A flaw was found in Keycloak in versions before 10.0.0, where it does not perform the TLS hostname verification while sending emails using the SMTP server. This flaw allows an attacker to perform a man-in-the-middle (MITM) attack.
+cvss_v2: 4.3
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-1758
+    - https://issues.redhat.com/browse/KEYCLOAK-13285
+affected:
+    - name: keycloak-js
+      version:
+        - "<=10.0.0"
+      fixedin:
+        - ">=10.0.1"
