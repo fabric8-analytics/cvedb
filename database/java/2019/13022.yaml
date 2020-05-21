@@ -1,0 +1,15 @@
+---
+cve: 2019-13022
+title: CVE in org.sonarsource.java:java-squid
+description: >
+    Bond JetSelect (all versions) has an issue in the Java class (ENCtool.jar) and corresponding password generation algorithm (used to set initial passwords upon first installation). It XORs the plaintext into the 'encrypted' password that is then stored within the database. These steps are able to be trivially reversed, allowing for escalation of privilege within the JetSelect application through obtaining the passwords of JetSelect administrators. JetSelect administrators have the ability to modify and delete all networking configuration across a vessel, as well as altering network configuration of all managed network devices (switches, routers).
+cvss_v2: 10.0
+references:
+    - https://labs.nettitude.com/blog/cve-2019-13021-22-23-jetselect-network-segregation-application/
+affected:
+    - groupId: org.sonarsource.java
+      artifactId: java-squid
+      version:
+        []
+      fixedin:
+        - ">=3.4"
