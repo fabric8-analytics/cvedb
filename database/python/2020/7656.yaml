@@ -1,0 +1,14 @@
+---
+cve: 2020-7656
+title: CVE in django-jquery
+description: >
+    jquery prior to 1.9.0 allows Cross-site Scripting attacks via the load method. The load method fails to recognize and remove "<script>" HTML tags that contain a whitespace character, i.e: "</script >", which results in the enclosed script logic to be executed.
+cvss_v2: 4.3
+references:
+    - https://snyk.io/vuln/SNYK-JS-JQUERY-569619
+affected:
+    - name: django-jquery
+      version:
+        - "<=1.8.3"
+      fixedin:
+        - ">=1.9.0"
