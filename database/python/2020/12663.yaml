@@ -1,0 +1,15 @@
+---
+cve: 2020-12663
+title: CVE in bits-dns
+description: >
+    Unbound before 1.10.1 has an infinite loop via malformed DNS answers received from upstream servers.
+cvss_v2: 5.0
+references:
+    - http://www.openwall.com/lists/oss-security/2020/05/19/5
+    - https://nlnetlabs.nl/downloads/unbound/CVE-2020-12662_2020-12663.txt
+affected:
+    - name: bits-dns
+      version:
+        - "<=1.10"
+      fixedin:
+        - ">=1.10.1"
