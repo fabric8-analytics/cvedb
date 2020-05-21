@@ -1,0 +1,17 @@
+---
+cve: 2020-13110
+title: CVE in webpack-get-dlls
+description: >
+    The kerberos package before 1.0.0 for Node.js allows arbitrary code execution and privilege escalation via injection of malicious DLLs through use of the kerberos_sspi LoadLibrary() method, because of a DLL path search.
+cvss_v2: 6.9
+references:
+    - https://medium.com/@kiddo_Ha3ker/dll-injection-attack-in-kerberos-npm-package-cb4b32031cd
+    - https://www.linkedin.com/posts/op-innovate_dll-injection-attack-in-kerberos-npm-package-activity-6667043749547253760-kVlW
+    - https://www.npmjs.com/advisories/1514
+    - https://www.op-c.net/2020/05/15/dll-injection-attack-in-kerberos-npm-package/
+affected:
+    - name: webpack-get-dlls
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
