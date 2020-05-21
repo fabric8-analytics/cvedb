@@ -1,0 +1,15 @@
+---
+cve: 2020-12858
+title: CVE in macaca-android
+description: >
+    Non-reinitialisation of random data in the advertising payload in COVIDSafe v1.0.15 and v1.0.16 allows a remote attacker to re-identify Android devices running COVIDSafe by scanning for their advertising beacons.
+cvss_v2: 5.0
+references:
+    - https://docs.google.com/document/d/1u5a5ersKBH6eG362atALrzuXo3zuZ70qrGomWVEC27U/edit?usp=sharing
+    - https://www.health.gov.au/resources/apps-and-tools/covidsafe-app
+affected:
+    - name: macaca-android
+      version:
+        - "<=1.0.16"
+      fixedin:
+        - ">=1.0.17"
