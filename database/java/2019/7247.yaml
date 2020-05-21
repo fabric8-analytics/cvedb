@@ -1,0 +1,15 @@
+---
+cve: 2019-7247
+title: CVE in org.specs2:specs2_2.12
+description: >
+    An issue was discovered in AODDriver2.sys in AMD OverDrive. The vulnerable driver exposes a wrmsr instruction via IOCTL 0x81112ee0 and does not properly filter the Model Specific Register (MSR). Allowing arbitrary MSR writes can lead to Ring-0 code execution and escalation of privileges.
+cvss_v2: 7.5
+references:
+    - https://github.com/fireeye/Vulnerability-Disclosures/blob/master/FEYE-2019-0014/FEYE-2019-0014.md
+affected:
+    - groupId: org.specs2
+      artifactId: specs2_2.12
+      version:
+        []
+      fixedin:
+        - ">=2.4.17"
