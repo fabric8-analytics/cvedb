@@ -1,0 +1,14 @@
+---
+cve: 2019-13023
+title: CVE in ew-link-bond
+description: >
+    An issue was discovered in all versions of Bond JetSelect. Within the JetSelect Application, the web interface hides RADIUS secrets, WPA passwords, and SNMP strings from 'non administrative' users using HTML 'password field' obfuscation. By using Developer tools or similar, it is possible to change the obfuscation so that the credentials are visible.
+cvss_v2: 4.0
+references:
+    - https://labs.nettitude.com/blog/cve-2019-13021-22-23-jetselect-network-segregation-application/
+affected:
+    - name: ew-link-bond
+      version:
+        []
+      fixedin:
+        []
