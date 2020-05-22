@@ -1,0 +1,14 @@
+---
+cve: 2020-7655
+title: CVE in netius
+description: >
+    netius prior to 1.17.58 is vulnerable to HTTP Request Smuggling. HTTP pipelining issues and request smuggling attacks might be possible due to incorrect Transfer encoding header parsing which could allow for CL:TE or TE:TE attacks.
+cvss_v2: 4.3
+references:
+    - https://snyk.io/vuln/SNYK-PYTHON-NETIUS-569141
+affected:
+    - name: netius
+      version:
+        - "<=1.17.57"
+      fixedin:
+        - ">=1.17.58"
