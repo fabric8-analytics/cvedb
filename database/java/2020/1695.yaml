@@ -1,0 +1,18 @@
+---
+cve: 2020-1695
+title: CVE in org.jboss.resteasy:resteasy-jsapi
+description: >
+    A flaw was found in all resteasy 3.x.x versions prior to 3.12.0.Final and all resteasy 4.x.x versions prior to 4.6.0.Final, where an improper input validation results in returning an illegal header that integrates into the server's response. This flaw may result in an injection, which leads to unexpected behavior when the HTTP response is constructed.
+cvss_v2: 5.0
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-1695
+affected:
+    - groupId: org.jboss.resteasy
+      artifactId: resteasy-jsapi
+      version:
+        - "<=3.11.2.Final,3.0-beta-1"
+        - "<=4.0.0.Final,4.0.0.Beta1"
+      fixedin:
+        - ">=4.1.0.Final"
+        - "<=3.12.0.Final,3.12.0.Final"
+        - "<=2.3.10.Final,2.0-beta-1"
