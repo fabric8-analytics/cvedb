@@ -1,0 +1,19 @@
+---
+cve: 2020-13226
+title: CVE in org.wso2.am:org.wso2.carbon.apimgt.clients.publisher.api
+description: >
+    WSO2 API Manager 3.0.0 does not properly restrict outbound network access from a Publisher node, opening up the possibility of SSRF to this node's entire intranet.
+cvss_v2: 7.5
+references:
+    - https://docs.wso2.com/display/Security/Security+Advisories
+    - https://docs.wso2.com/display/Security/WSO2+Security+Vulnerability+Management+Process
+    - https://github.com/wso2/docs-apim/issues/816
+    - https://github.com/wso2/product-apim/issues/7677
+affected:
+    - groupId: org.wso2.am
+      artifactId: org.wso2.carbon.apimgt.clients.publisher.api
+      version:
+        - "<=3.0.0,3.0.0-alpha"
+      fixedin:
+        - ">=3.1.0-alpha"
+        - "<=2.6.0,2.1.0-update4"
