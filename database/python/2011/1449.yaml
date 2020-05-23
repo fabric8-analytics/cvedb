@@ -1,0 +1,23 @@
+---
+cve: 2011-1449
+title: CVE in websockets
+description: >
+    Use-after-free vulnerability in the WebSockets implementation in Google Chrome before 11.0.696.57 allows remote attackers to cause a denial of service or possibly have unspecified other impact via unknown vectors.
+cvss_v2: 6.8
+references:
+    - http://code.google.com/p/chromium/issues/detail?id=77346
+    - http://googlechromereleases.blogspot.com/2011/04/chrome-stable-update.html
+    - http://lists.apple.com/archives/security-announce/2011//Jul/msg00002.html
+    - http://lists.apple.com/archives/Security-announce/2011//Oct/msg00000.html
+    - http://lists.apple.com/archives/Security-announce/2011//Oct/msg00001.html
+    - http://support.apple.com/kb/HT4808
+    - http://support.apple.com/kb/HT4981
+    - http://support.apple.com/kb/HT4999
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/67156
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A14478
+affected:
+    - name: websockets
+      version:
+        - "<=8.1"
+      fixedin:
+        []
