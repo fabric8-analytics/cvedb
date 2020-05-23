@@ -1,0 +1,17 @@
+---
+cve: 2005-0087
+title: CVE in org.red5:red5-server-common
+description: >
+    The alsa-lib package in Red Hat Linux 4 disables stack protection for the libasound.so library, which makes it easier for attackers to execute arbitrary code if there are other vulnerabilities in the library.
+cvss_v2: 4.6
+references:
+    - http://www.redhat.com/support/errata/RHSA-2005-033.html
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A10355
+affected:
+    - groupId: org.red5
+      artifactId: red5-server-common
+      version:
+        - "<=1.0.6-RELEASE,1.0.6-RELEASE"
+      fixedin:
+        - ">=1.0.7-M6"
+        - "<=1.0.5-RELEASE,1.0.4-RELEASE"
