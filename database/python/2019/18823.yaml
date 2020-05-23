@@ -1,0 +1,25 @@
+---
+cve: 2019-18823
+title: CVE in htcondor
+description: >
+    HTCondor up to and including stable series 8.8.6 and development series 8.9.4 has Incorrect Access Control. It is possible to use a different authentication method to submit a job than the administrator has specified. If the administrator has configured the READ or WRITE methods to include CLAIMTOBE, then it is possible to impersonate another user to the condor_schedd. (For example to submit or remove jobs)
+cvss_v2: 7.5
+references:
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3EOTJJOSMYKXIYXWSG3H4KN332EDSEB6/
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BL5YCZXYS67MLJSHR4OLSWVHBE6PZJSB/
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VMPZ7XPOPA4JGAQAUJ4K7JV653DSCIDK/
+    - https://research.cs.wisc.edu/htcondor/
+    - https://research.cs.wisc.edu/htcondor/new.html
+    - https://research.cs.wisc.edu/htcondor/security/vulnerabilities/HTCONDOR-2020-0001.html
+    - https://research.cs.wisc.edu/htcondor/security/vulnerabilities/HTCONDOR-2020-0002.html
+    - https://research.cs.wisc.edu/htcondor/security/vulnerabilities/HTCONDOR-2020-0003.html
+    - https://research.cs.wisc.edu/htcondor/security/vulnerabilities/HTCONDOR-2020-0004.html
+affected:
+    - name: htcondor
+      version:
+        - "<=8.8.6,8.8.0"
+        - "<=8.9.4,8.9.0"
+      fixedin:
+        - ">=8.9.5"
+        - "<=8.8.9,8.8.7"
+        - "<=8.7.10,8.7.3rc1"
