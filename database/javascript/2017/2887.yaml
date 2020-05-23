@@ -1,0 +1,18 @@
+---
+cve: 2017-2887
+title: CVE in node-sdl2
+description: >
+    An exploitable buffer overflow vulnerability exists in the XCF property handling functionality of SDL_image 2.0.1. A specially crafted xcf file can cause a stack-based buffer overflow resulting in potential code execution. An attacker can provide a specially crafted XCF file to trigger this vulnerability.
+cvss_v2: 6.8
+references:
+    - http://www.securityfocus.com/bid/101215
+    - https://www.debian.org/security/2018/dsa-4177
+    - https://www.debian.org/security/2018/dsa-4184
+    - https://www.talosintelligence.com/vulnerability_reports/TALOS-2017-0394
+affected:
+    - name: node-sdl2
+      version:
+        - "<=2.0.1,2.0.1"
+      fixedin:
+        - ">=2.0.2"
+        - "<=2.0.0,1.0.1"
