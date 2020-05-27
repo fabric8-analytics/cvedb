@@ -1,0 +1,15 @@
+---
+cve: 2020-9039
+title: CVE in couchbase-promises
+description: >
+    Couchbase Server 4.0.0, 4.1.0, 4.1.1, 4.5.0, 4.5.1, 4.6.0 through 4.6.5, 5.0.0, 5.1.1, 5.5.0 and 5.5.1 have Insecure Permissions for the projector and indexer REST endpoints (they allow unauthenticated access).The /settings REST endpoint exposed by the projector process is an endpoint that administrators can use for various tasks such as updating configuration and collecting performance profiles. The endpoint was unauthenticated and has been updated to only allow authenticated users to access these administrative APIs.
+cvss_v2: 7.5
+references:
+    - https://www.couchbase.com/resources/security#SecurityAlerts
+affected:
+    - name: couchbase-promises
+      version:
+        - "<=4.0.0,4.0.0"
+      fixedin:
+        - ">=4.0.1"
+        - "<=3.0.1,1.0.0"
