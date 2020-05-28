@@ -1,0 +1,14 @@
+---
+cve: 2020-1195
+title: CVE in cloudfront-edge-codes
+description: >
+    An elevation of privilege vulnerability exists in Microsoft Edge (Chromium-based) when the Feedback extension improperly validates input, aka 'Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability'.
+cvss_v2: 4.3
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1195
+affected:
+    - name: cloudfront-edge-codes
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
