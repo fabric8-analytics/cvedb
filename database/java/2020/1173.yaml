@@ -1,0 +1,15 @@
+---
+cve: 2020-1173
+title: CVE in com.microsoft.windowsazure:microsoft-azure-api-servicebus
+description: >
+    A spoofing vulnerability exists in Microsoft Power BI Report Server in the way it validates the content-type of uploaded attachments, aka 'Microsoft Power BI Report Server Spoofing Vulnerability'.
+cvss_v2: 3.5
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1173
+affected:
+    - groupId: com.microsoft.windowsazure
+      artifactId: microsoft-azure-api-servicebus
+      version:
+        []
+      fixedin:
+        - ">=0.5.0"
