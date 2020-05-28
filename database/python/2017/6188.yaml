@@ -1,0 +1,18 @@
+---
+cve: 2017-6188
+title: CVE in munin-zope
+description: >
+    Munin before 2.999.6 has a local file write vulnerability when CGI graphs are enabled. Setting multiple upper_limit GET parameters allows overwriting any file accessible to the www-data user.
+cvss_v2: 1.9
+references:
+    - http://www.securityfocus.com/bid/96399
+    - https://bugs.debian.org/855705
+    - https://github.com/munin-monitoring/munin/issues/721
+    - https://security.gentoo.org/glsa/201710-05
+    - https://www.debian.org/security/2017/dsa-3794
+affected:
+    - name: munin-zope
+      version:
+        - "<=2.1"
+      fixedin:
+        []
