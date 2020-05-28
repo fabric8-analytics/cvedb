@@ -1,0 +1,14 @@
+---
+cve: 2020-1173
+title: CVE in xtuple-server-bi-install
+description: >
+    A spoofing vulnerability exists in Microsoft Power BI Report Server in the way it validates the content-type of uploaded attachments, aka 'Microsoft Power BI Report Server Spoofing Vulnerability'.
+cvss_v2: 3.5
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1173
+affected:
+    - name: xtuple-server-bi-install
+      version:
+        []
+      fixedin:
+        - ">=unpublished"
