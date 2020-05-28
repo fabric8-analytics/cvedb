@@ -1,0 +1,15 @@
+---
+cve: 2020-1195
+title: CVE in com.microsoft.windowsazure:microsoft-azure-api-servicebus
+description: >
+    An elevation of privilege vulnerability exists in Microsoft Edge (Chromium-based) when the Feedback extension improperly validates input, aka 'Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability'.
+cvss_v2: 4.3
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1195
+affected:
+    - groupId: com.microsoft.windowsazure
+      artifactId: microsoft-azure-api-servicebus
+      version:
+        []
+      fixedin:
+        - ">=0.5.0"
