@@ -1,0 +1,16 @@
+---
+cve: 2020-13430
+title: CVE in @grafana/ui
+description: >
+    Grafana before 7.0.0 allows tag value XSS via the OpenTSDB datasource.
+cvss_v2: 4.3
+references:
+    - https://github.com/grafana/grafana/pull/24539
+    - https://github.com/grafana/grafana/releases/tag/v7.0.0
+    - https://security.netapp.com/advisory/ntap-20200528-0003/
+affected:
+    - name: @grafana/ui
+      version:
+        - "<=6.7.3"
+      fixedin:
+        - ">=7.0.0-beta.1"
