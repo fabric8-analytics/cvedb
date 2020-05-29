@@ -1,0 +1,18 @@
+---
+cve: 2015-1864
+title: CVE in org.apidesign.html:net.java.html.json
+description: >
+    Multiple cross-site scripting (XSS) vulnerabilities in the administration pages in Kallithea before 0.2.1 allow remote attackers to inject arbitrary web script or HTML via the (1) first name or (2) last name user details, or the (3) repository, (4) repository group, or (5) user group description.
+cvss_v2: 3.5
+references:
+    - http://www.openwall.com/lists/oss-security/2015/04/14/12
+    - http://www.securityfocus.com/bid/74184
+    - https://kallithea-scm.org/repos/kallithea/changeset/a8f2986afc18c9221bf99f88b06e60ab83c86c55
+    - https://kallithea-scm.org/security/cve-2015-1864.html
+affected:
+    - groupId: org.apidesign.html
+      artifactId: net.java.html.json
+      version:
+        - "<=0.2"
+      fixedin:
+        - ">=0.3"
