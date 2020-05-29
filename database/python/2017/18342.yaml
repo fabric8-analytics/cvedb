@@ -1,15 +1,22 @@
 ---
 cve: 2017-18342
-title: CVE in pyyaml
+title: CVE in abiquo-api
 description: >
-    In PyYAML before 4.1, the yaml.load() API could execute arbitrary code. In other words, yaml.safe_load is not used.
+    In PyYAML before 5.1, the yaml.load() API could execute arbitrary code if used with untrusted data. The load() function has been deprecated in version 5.1 and the 'UnsafeLoader' has been introduced for backward compatibility with the function.
 cvss_v2: 7.5
 references:
+    - https://github.com/marshmallow-code/apispec/issues/278
     - https://github.com/yaml/pyyaml/blob/master/CHANGES
+    - https://github.com/yaml/pyyaml/issues/193
     - https://github.com/yaml/pyyaml/pull/74
+    - https://github.com/yaml/pyyaml/wiki/PyYAML-yaml.load(input)-Deprecation
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JEX7IPV5P2QJITAMA5Z63GQCZA5I6NVZ/
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KSQQMRUQSXBSUXLCRD3TSZYQ7SEZRKCE/
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/M6JCFGEIEOFMWWIXGHSELMKQDD4CV2BA/
+    - https://security.gentoo.org/glsa/202003-45
 affected:
-    - name: pyyaml
+    - name: abiquo-api
       version:
-        - "<=3.13"
+        []
       fixedin:
-        - ">=4.2b1"
+        - ">=0.1.7"
