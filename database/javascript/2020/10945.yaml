@@ -1,0 +1,14 @@
+---
+cve: 2020-10945
+title: CVE in @centreon/react-components
+description: >
+    Centreon before 19.10.7 exposes Session IDs in server responses.
+cvss_v2: 3.3
+references:
+    - https://sysdream.com/news/lab/2020-05-13-cve-2020-10945-centreon-session-id-exposure/
+affected:
+    - name: @centreon/react-components
+      version:
+        - "<=19.10.2"
+      fixedin:
+        - ">=20.4.0-alpha.187"
