@@ -1,0 +1,21 @@
+---
+cve: 2010-3457
+title: CVE in castle-cms
+description: >
+    Multiple cross-site scripting (XSS) vulnerabilities in Symphony CMS 2.0.7 and 2.1.1 allow remote attackers to inject arbitrary web script or HTML via the (1) fields[website] parameter in the post comments feature in articles/a-primer-to-symphony-2s-default-theme/ or (2) send-email[recipient] parameter to about/.  NOTE: some of these details are obtained from third party information.
+cvss_v2: 4.3
+references:
+    - http://packetstormsecurity.org/1009-exploits/symphony-sqlxss.txt
+    - http://secunia.com/advisories/41379
+    - http://www.exploit-db.com/exploits/14968
+    - http://www.securityfocus.com/bid/43180
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/61750
+affected:
+    - name: castle-cms
+      version:
+        - "<=2.0.7,2.0.7"
+        - "<=2.1.1,2.1.1"
+      fixedin:
+        - ">=2.2.0"
+        - "<=2.1.0,2.0.8"
+        - "<=2.0.6,2.0.0"
