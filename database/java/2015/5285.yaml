@@ -1,0 +1,19 @@
+---
+cve: 2015-5285
+title: CVE in cc.protea.foundation.http:http
+description: >
+    CRLF injection vulnerability in Kallithea before 0.3 allows remote attackers to inject arbitrary HTTP headers and conduct HTTP response splitting attacks via the came_from parameter to _admin/login.
+<a href="http://cwe.mitre.org/data/definitions/113.html">CWE-113: Improper Neutralization of CRLF Sequences in HTTP Headers ('HTTP Response Splitting')</a>
+cvss_v2: 5.0
+references:
+    - http://packetstormsecurity.com/files/133897/Kallithea-0.2.9-HTTP-Response-Splitting.html
+    - http://www.zeroscience.mk/en/vulnerabilities/ZSL-2015-5267.php
+    - https://kallithea-scm.org/security/cve-2015-5285.html
+    - https://www.exploit-db.com/exploits/38424/
+affected:
+    - groupId: cc.protea.foundation.http
+      artifactId: http
+      version:
+        - "<=0.2"
+      fixedin:
+        - ">=0.2.1"
