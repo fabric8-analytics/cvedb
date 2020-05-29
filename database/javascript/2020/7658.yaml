@@ -1,0 +1,15 @@
+---
+cve: 2020-7658
+title: CVE in request_http
+description: >
+    meinheld prior to 1.0.2 is vulnerable to HTTP Request Smuggling. HTTP pipelining issues and request smuggling attacks might be possible due to incorrect Content-Length and Transfer encoding header parsing.
+cvss_v2: 4.3
+references:
+    - https://github.com/mopemope/meinheld/blob/master/CHANGES.rst,
+    - https://snyk.io/vuln/SNYK-PYTHON-MEINHELD-569140
+affected:
+    - name: request_http
+      version:
+        - "<=1.0.1"
+      fixedin:
+        - ">=1.0.2"
