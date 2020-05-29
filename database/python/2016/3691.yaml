@@ -1,0 +1,14 @@
+---
+cve: 2016-3691
+title: CVE in kallithea
+description: >
+    Routes in Kallithea before 0.3.2 allows remote attackers to bypass the CSRF protection by using the GET HTTP request method.
+cvss_v2: 6.8
+references:
+    - http://www.openwall.com/lists/oss-security/2016/05/02/3
+affected:
+    - name: kallithea
+      version:
+        - "<=0.3.1"
+      fixedin:
+        - ">=0.3.2"
