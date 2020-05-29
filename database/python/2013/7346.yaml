@@ -1,0 +1,15 @@
+---
+cve: 2013-7346
+title: CVE in castle-cms
+description: >
+    Cross-site request forgery (CSRF) vulnerability in Symphony CMS before 2.3.2 allows remote attackers to hijack the authentication of administrators for requests that conduct SQL injection attacks via the sort parameter to system/authors/, related to CVE-2013-2559.
+cvss_v2: 6.8
+references:
+    - http://archives.neohapsis.com/archives/bugtraq/2013-04/0018.html
+    - https://www.htbridge.com/advisory/HTB23148
+affected:
+    - name: castle-cms
+      version:
+        - "<=2.3.1"
+      fixedin:
+        - ">=2.3.2"
