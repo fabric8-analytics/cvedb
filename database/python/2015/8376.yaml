@@ -1,0 +1,16 @@
+---
+cve: 2015-8376
+title: CVE in castle-cms
+description: >
+    Multiple cross-site scripting (XSS) vulnerabilities in Symphony CMS 2.6.3 allow remote attackers to inject arbitrary web script or HTML via the (1) Name, (2) Navigation Group, or (3) Label parameter to blueprints/sections/edit/1.
+cvss_v2: 4.3
+references:
+    - http://seclists.org/fulldisclosure/2015/Dec/101
+    - http://seclists.org/fulldisclosure/2015/Dec/7
+affected:
+    - name: castle-cms
+      version:
+        - "<=2.6.3,2.6.3"
+      fixedin:
+        - ">=2.6.4"
+        - "<=2.6.2,2.0.0"
