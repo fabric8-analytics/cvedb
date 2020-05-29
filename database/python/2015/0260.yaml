@@ -1,0 +1,18 @@
+---
+cve: 2015-0260
+title: CVE in kallithea
+description: >
+    RhodeCode before 2.2.7 and Kallithea 0.1 allows remote authenticated users to obtain API keys and other sensitive information via the get_repo API method.
+cvss_v2: 4.0
+references:
+    - http://seclists.org/oss-sec/2015/q1/505
+    - http://www.securityfocus.com/bid/72573
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/100888
+    - https://kallithea-scm.org/security/cve-2015-0260.html
+    - https://rhodecode.com/blog/rhodecode-enterprise-security-release/
+affected:
+    - name: kallithea
+      version:
+        - "<=0.6.0"
+      fixedin:
+        []
