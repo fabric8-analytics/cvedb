@@ -1,0 +1,15 @@
+---
+cve: 2020-1037
+title: CVE in com.microsoft.windowsazure:microsoft-azure-api-servicebus
+description: >
+    A remote code execution vulnerability exists in the way that the Chakra scripting engine handles objects in memory in Microsoft Edge (HTML-based), aka 'Chakra Scripting Engine Memory Corruption Vulnerability'.
+cvss_v2: 7.6
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1037
+affected:
+    - groupId: com.microsoft.windowsazure
+      artifactId: microsoft-azure-api-servicebus
+      version:
+        []
+      fixedin:
+        - ">=0.5.0"
