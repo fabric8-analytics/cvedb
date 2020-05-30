@@ -1,0 +1,16 @@
+---
+cve: 2020-5572
+title: CVE in adb-android
+description: >
+    Android App 'Mailwise for Android' 1.0.0 to 1.0.1 allows an attacker to obtain credential information registered in the product via unspecified vectors.
+cvss_v2: 2.1
+references:
+    - https://jvn.jp/en/jp/JVN78745667/index.html
+    - https://kb.cybozu.support/article/36411/
+affected:
+    - name: adb-android
+      version:
+        - "<=1.0.0,1.0.0"
+      fixedin:
+        - ">=1.1.0"
+        - "<=0.5.0,0.1.0"
