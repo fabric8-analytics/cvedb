@@ -3,22 +3,32 @@ cve: 2018-16876
 title: CVE in ansible
 description: >
     ansible before versions 2.5.14, 2.6.11, 2.7.5 is vulnerable to a information disclosure flaw in vvv+ mode with no_log on that can lead to leakage of sensible data.
-cvss_v2: 5.0
+cvss_v2: 3.5
 references:
+    - http://lists.opensuse.org/opensuse-security-announce/2019-04/msg00021.html
+    - http://lists.opensuse.org/opensuse-security-announce/2019-06/msg00077.html
+    - http://lists.opensuse.org/opensuse-security-announce/2019-08/msg00020.html
     - http://www.securityfocus.com/bid/106225
     - https://access.redhat.com/errata/RHSA-2018:3835
     - https://access.redhat.com/errata/RHSA-2018:3836
     - https://access.redhat.com/errata/RHSA-2018:3837
     - https://access.redhat.com/errata/RHSA-2018:3838
+    - https://access.redhat.com/errata/RHSA-2019:0564
+    - https://access.redhat.com/errata/RHSA-2019:0590
     - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-16876
     - https://github.com/ansible/ansible/pull/49569
+    - https://usn.ubuntu.com/4072-1/
+    - https://www.debian.org/security/2019/dsa-4396
 affected:
     - name: ansible
       version:
-        - "<=2.5.13,2.5.0"
-        - "<=2.6.10,2.6.0"
-        - "<=2.7.4,2.7.0"
+        - "<=2.0.0,2.0.0.0"
+        - "<=2.5.13,2.5.0a1"
+        - "<=2.6.10,2.6.0a1"
+        - "<=2.7.4,2.7.0a1"
       fixedin:
-        - ">=2.5.14"
-        - ">=2.6.11"
         - ">=2.7.5"
+        - "<=2.6.20,2.6.11"
+        - "<=2.5.15,2.5.14"
+        - "<=2.4.6.0,2.0.0.1"
+        - "<=1.9.6,1.0"
