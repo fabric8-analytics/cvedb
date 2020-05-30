@@ -1,0 +1,14 @@
+---
+cve: 2020-10744
+title: CVE in ansible
+description: >
+    An incomplete fix was found for the fix of the flaw CVE-2020-1733 ansible: insecure temporary directory when running become_user from become directive. The provided fix is insufficient to prevent the race condition on systems using ACLs and FUSE filesystems. Ansible Engine 2.7.18, 2.8.12, and 2.9.9 as well as previous versions are affected and Ansible Tower 3.4.5, 3.5.6 and 3.6.4 as well as previous versions are affected.
+cvss_v2: 3.7
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-10744
+affected:
+    - name: ansible
+      version:
+        - "<=2.9.9,2.7.0a1"
+      fixedin:
+        - "<=2.6.20,1.0"
