@@ -1,0 +1,15 @@
+---
+cve: 2020-10719
+title: CVE in io.undertow:undertow-websockets-jsr
+description: >
+    A flaw was found in Undertow in versions before 2.1.1.Final, regarding the processing of invalid HTTP requests with large chunk sizes. This flaw allows an attacker to take advantage of HTTP request smuggling.
+cvss_v2: 6.4
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-10719
+affected:
+    - groupId: io.undertow
+      artifactId: undertow-websockets-jsr
+      version:
+        - "<=2.1.0.Final"
+      fixedin:
+        - ">=2.1.1.Final"
