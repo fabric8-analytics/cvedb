@@ -1,9 +1,9 @@
 ---
 cve: 2018-10875
-title: CVE in ansible
+title: CVE in ceph-deploy
 description: >
     A flaw was found in ansible. ansible.cfg is read from the current working directory which can be altered to make it point to a plugin or a module path under the control of an attacker, thus allowing the attacker to execute arbitrary code.
-cvss_v2: 7.5
+cvss_v2: 4.6
 references:
     - http://lists.opensuse.org/opensuse-security-announce/2019-04/msg00021.html
     - http://www.securitytracker.com/id/1041396
@@ -16,14 +16,13 @@ references:
     - https://access.redhat.com/errata/RHSA-2018:2585
     - https://access.redhat.com/errata/RHSA-2019:0054
     - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-10875
+    - https://lists.debian.org/debian-lts-announce/2019/09/msg00016.html
+    - https://usn.ubuntu.com/4072-1/
     - https://www.debian.org/security/2019/dsa-4396
 affected:
-    - name: ansible
+    - name: ceph-deploy
       version:
-        - "<=2.4.5.0"
-        - "<=2.5.5,2.5.0a1"
-        - "<=2.6.0,2.6.0a1"
+        - "<=2.0.0,2.0.0"
       fixedin:
-        - ">=2.6.1"
-        - ">=2.5.6"
-        - "==2.4.6.0"
+        - ">=2.0.1"
+        - "<=1.5.39,1.1"
