@@ -1,0 +1,15 @@
+---
+cve: 2020-5573
+title: CVE in is-android
+description: >
+    Android App 'kintone mobile for Android' 1.0.0 to 2.5 allows an attacker to obtain credential information registered in the product via unspecified vectors.
+cvss_v2: 2.1
+references:
+    - https://jvn.jp/en/jp/JVN78745667/index.html
+    - https://kb.cybozu.support/article/36211/
+affected:
+    - name: is-android
+      version:
+        - "<=1.0.1"
+      fixedin:
+        []
