@@ -1,0 +1,15 @@
+---
+cve: 2019-13508
+title: CVE in overflow
+description: >
+    FreeTDS through 1.1.11 has a Buffer Overflow.
+cvss_v2: 7.5
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2020-05/msg00067.html
+    - https://usn.ubuntu.com/4173-1/
+affected:
+    - name: overflow
+      version:
+        - "<=1.1.11"
+      fixedin:
+        []
