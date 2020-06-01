@@ -2,9 +2,11 @@
 cve: 2017-1000427
 title: CVE in marked
 description: >
-    "marked version 0.3.6 and earlier is vulnerable to an XSS attack in the data: URI parser."
+    marked version 0.3.6 and earlier is vulnerable to an XSS attack in the data: URI parser.
 cvss_v2: 4.3
 references:
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BO2RMVVZVV6NFTU46B5RYRK7ZCXYARZS/
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/M6BJG6RGDH7ZWVVAUFBFI5L32RSMQN2S/
     - https://snyk.io/vuln/npm:marked:20170112
 affected:
     - name: marked
