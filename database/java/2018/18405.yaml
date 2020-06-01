@@ -1,0 +1,19 @@
+---
+cve: 2018-18405
+title: CVE in org.webjars.bowergithub.jquery:jquery-dist
+description: >
+    ** DISPUTED ** jQuery v2.2.2 allows XSS via a crafted onerror attribute of an IMG element. NOTE: this vulnerability has been reported to be spam entry.
+cvss_v2: 4.3
+references:
+    - https://gist.github.com/CyberSecurityUP/26c5b032897630fe8407da4a8ef216d4
+    - https://gitter.im/jquery/jquery?at=5ea844a05cd4fe50a3d7ddc9
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VOE7P7APPRQKD4FGNHBKJPDY6FFCOH3W/
+    - https://twitter.com/DanielRufde/status/1255185961866145792
+affected:
+    - groupId: org.webjars.bowergithub.jquery
+      artifactId: jquery-dist
+      version:
+        - "<=2.2.2,2.2.2"
+      fixedin:
+        - ">=2.2.4"
+        - "<=2.1.4,1.6.4"
