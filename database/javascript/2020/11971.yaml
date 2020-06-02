@@ -1,0 +1,20 @@
+---
+cve: 2020-11971
+title: CVE in camel-case
+description: >
+    Apache Camel's JMX is vulnerable to Rebind Flaw. Apache Camel 2.22.x, 2.23.x, 2.24.x, 2.25.x, 3.0.0 up to 3.1.0 is affected. Users should upgrade to 3.2.0.
+cvss_v2: 5.0
+references:
+    - http://www.openwall.com/lists/oss-security/2020/05/14/7
+    - https://camel.apache.org/security/CVE-2020-11971.html
+    - https://lists.apache.org/thread.html/r16f4f9019840bc923e25d1b029fb42fe2676c4ba36e54824749a8da9@%3Ccommits.camel.apache.org%3E
+    - https://lists.apache.org/thread.html/r3d0ae14ca224e69fb1c653f0a5d9e56370ee12d8896aa4490aeae14a@%3Ccommits.camel.apache.org%3E
+    - https://lists.apache.org/thread.html/r45da6abb42a9e6853ec8affdbf591f1db3e90c5288de9d3753124c79@%3Cissues.activemq.apache.org%3E
+    - https://lists.apache.org/thread.html/r7968b5086e861da2cf635a7b215e465ce9912d5f16c683b8e56819c4@%3Ccommits.camel.apache.org%3E
+affected:
+    - name: camel-case
+      version:
+        - "<=3.0.0,3.0.0"
+      fixedin:
+        - ">=4.0.0"
+        - "<=2.1.0,0.0.1"
