@@ -1,0 +1,14 @@
+---
+cve: 2018-17060
+title: CVE in asp-pw
+description: >
+    Telerik Extensions for ASP.NET MVC (all versions) does not whitelist requests, which can allow a remote attacker to access files inside the server's web directory.  NOTE: this product has been obsolete since June 2013.
+cvss_v2: 5.0
+references:
+    - https://www.telerik.com/support/code-library/security-alert-for-the-obsolete-telerik-extensions-for-asp-net-mvc
+affected:
+    - name: asp-pw
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
