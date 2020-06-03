@@ -1,0 +1,18 @@
+---
+cve: 2015-3646
+title: CVE in keystone-voms
+description: >
+    OpenStack Identity (Keystone) before 2014.1.5 and 2014.2.x before 2014.2.4 logs the backend_argument configuration option content, which allows remote authenticated users to obtain passwords and other sensitive backend information by reading the Keystone logs.
+cvss_v2: 4.0
+references:
+    - http://lists.openstack.org/pipermail/openstack-announce/2015-May/000356.html
+    - http://www.oracle.com/technetwork/topics/security/bulletinapr2015-2511959.html
+    - http://www.securityfocus.com/bid/74456
+    - https://bugs.launchpad.net/keystone/+bug/1443598
+affected:
+    - name: keystone-voms
+      version:
+        - "<=2014.2.2,2014.2"
+      fixedin:
+        - ">=2015.1"
+        - "<=10.0.0,8.0.0"
