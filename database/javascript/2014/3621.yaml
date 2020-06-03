@@ -1,0 +1,19 @@
+---
+cve: 2014-3621
+title: CVE in keystone-z
+description: >
+    The catalog url replacement in OpenStack Identity (Keystone) before 2013.2.3 and 2014.1 before 2014.1.2.1 allows remote authenticated users to read sensitive configuration options via a crafted endpoint, as demonstrated by "$(admin_token)" in the publicurl endpoint field.
+cvss_v2: 4.0
+references:
+    - http://rhn.redhat.com/errata/RHSA-2014-1688.html
+    - http://rhn.redhat.com/errata/RHSA-2014-1789.html
+    - http://rhn.redhat.com/errata/RHSA-2014-1790.html
+    - http://www.openwall.com/lists/oss-security/2014/09/16/10
+    - http://www.ubuntu.com/usn/USN-2406-1
+    - https://bugs.launchpad.net/keystone/+bug/1354208
+affected:
+    - name: keystone-z
+      version:
+        - "<=4.0.0-beta.51"
+      fixedin:
+        []
