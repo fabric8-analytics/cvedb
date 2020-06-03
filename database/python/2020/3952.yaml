@@ -1,0 +1,16 @@
+---
+cve: 2020-3952
+title: CVE in alerta-server
+description: >
+    Under certain conditions, vmdir that ships with VMware vCenter Server, as part of an embedded or external Platform Services Controller (PSC), does not correctly implement access controls.
+cvss_v2: 6.8
+references:
+    - http://packetstormsecurity.com/files/157896/VMware-vCenter-Server-6.7-Authentication-Bypass.html
+    - https://www.vmware.com/security/advisories/VMSA-2020-0006
+affected:
+    - name: alerta-server
+      version:
+        - "<=6.7.0,6.7.0"
+      fixedin:
+        - ">=6.7.1"
+        - "<=6.6.1,3.1.2"
