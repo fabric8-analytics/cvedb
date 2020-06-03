@@ -1,0 +1,14 @@
+---
+cve: 2020-4020
+title: CVE in failure
+description: >
+    The file downloading functionality in the Atlassian Companion App before version 1.0.0 allows remote attackers, who control a Confluence Server instance that the Companion App is connected to, execute arbitrary .exe files via a Protection Mechanism Failure.
+cvss_v2: 6.5
+references:
+    - https://jira.atlassian.com/browse/CONFSERVER-59733
+affected:
+    - name: failure
+      version:
+        - "<=0.0.0"
+      fixedin:
+        - ">=1.0.0"
