@@ -1,0 +1,20 @@
+---
+cve: 2014-3476
+title: CVE in @keystone-alpha/keystone
+description: >
+    OpenStack Identity (Keystone) before 2013.2.4, 2014.1 before 2014.1.2, and Juno before Juno-2 does not properly handle chained delegation, which allows remote authenticated users to gain privileges by leveraging a (1) trust or (2) OAuth token with impersonation enabled to create a new token with additional roles.
+cvss_v2: 6.0
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2014-06/msg00031.html
+    - http://secunia.com/advisories/57886
+    - http://secunia.com/advisories/59547
+    - http://www.openwall.com/lists/oss-security/2014/06/12/3
+    - http://www.securityfocus.com/bid/68026
+    - https://bugs.launchpad.net/keystone/+bug/1324592
+affected:
+    - name: @keystone-alpha/keystone
+      version:
+        - "<=3.0.0,3.0.0"
+      fixedin:
+        - ">=3.1.0"
+        - "<=2.0.0,1.0.0"
