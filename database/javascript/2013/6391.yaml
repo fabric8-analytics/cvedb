@@ -1,0 +1,22 @@
+---
+cve: 2013-6391
+title: CVE in @keystone-alpha/keystone
+description: >
+    The ec2tokens API in OpenStack Identity (Keystone) before Havana 2013.2.1 and Icehouse before icehouse-2 does not return a trust-scoped token when one is received, which allows remote trust users to gain privileges by generating EC2 credentials from a trust-scoped token and using them in an ec2tokens API request.
+cvss_v2: 5.8
+references:
+    - http://rhn.redhat.com/errata/RHSA-2014-0089.html
+    - http://secunia.com/advisories/56079
+    - http://secunia.com/advisories/56154
+    - http://www.openwall.com/lists/oss-security/2013/12/11/7
+    - http://www.securityfocus.com/bid/64253
+    - http://www.ubuntu.com/usn/USN-2061-1
+    - https://bugs.launchpad.net/keystone/+bug/1242597
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/89657
+affected:
+    - name: @keystone-alpha/keystone
+      version:
+        - "<=4.0.0,4.0.0"
+      fixedin:
+        - ">=5.0.0"
+        - "<=3.1.0,1.0.0"
