@@ -1,0 +1,15 @@
+---
+cve: 2020-6937
+title: CVE in org.mule.runtime:mule-module-tls
+description: >
+    A Denial of Service vulnerability in MuleSoft Mule CE/EE 3.8.x, 3.9.x, and 4.x released before April 7, 2020, could allow remote attackers to submit data which can lead to resource exhaustion.
+cvss_v2: 5.0
+references:
+    - https://help.salesforce.com/articleView?id=000353701&language=en_US&type=1&mode=1
+affected:
+    - groupId: org.mule.runtime
+      artifactId: mule-module-tls
+      version:
+        - "<=4.1.1"
+      fixedin:
+        []
