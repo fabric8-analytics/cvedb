@@ -1,0 +1,16 @@
+---
+cve: 2020-4367
+title: CVE in io.astronomer.analytics.java:analytics
+description: >
+    IBM Planning Analytics Local 2.0 uses weaker than expected cryptographic algorithms that could allow an attacker to decrypt highly sensitive information. IBM X-Force ID: 179001.
+cvss_v2: 5.0
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/179001
+    - https://www.ibm.com/support/pages/node/6214472
+affected:
+    - groupId: io.astronomer.analytics.java
+      artifactId: analytics
+      version:
+        - "<=2.0.0-RC5"
+      fixedin:
+        []
