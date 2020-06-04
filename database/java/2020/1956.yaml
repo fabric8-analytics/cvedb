@@ -1,0 +1,19 @@
+---
+cve: 2020-1956
+title: CVE in org.apache.kylin:kylin-query
+description: >
+    Apache Kylin 2.3.0, and releases up to 2.6.5 and 3.0.1 has some restful apis which will concatenate os command with the user input string, a user is likely to be able to execute any os command without any protection or validation.
+cvss_v2: 9.0
+references:
+    - https://community.sonarsource.com/t/apache-kylin-3-0-1-command-injection-vulnerability/25706
+    - https://lists.apache.org/thread.html/r1332ef34cf8e2c0589cf44ad269fb1fb4c06addec6297f0320f5111d%40%3Cuser.kylin.apache.org%3E
+affected:
+    - groupId: org.apache.kylin
+      artifactId: kylin-query
+      version:
+        - "<=2.6.5,2.3.0"
+        - "<=3.0.1,3.0.0-alpha"
+      fixedin:
+        - ">=3.0.2"
+        - "<=2.6.6,2.6.6"
+        - "<=2.2.0,0.7.1-incubating"
