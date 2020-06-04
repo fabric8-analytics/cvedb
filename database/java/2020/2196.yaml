@@ -1,0 +1,16 @@
+---
+cve: 2020-2196
+title: CVE in org.seleniumhq.selenium:selenium-java
+description: >
+    Jenkins Selenium Plugin 3.141.59 and earlier has no CSRF protection for its HTTP endpoints, allowing attackers to perform all administrative actions provided by the plugin.
+cvss_v2: 6.0
+references:
+    - http://www.openwall.com/lists/oss-security/2020/06/03/3
+    - https://jenkins.io/security/advisory/2020-06-03/#SECURITY-1766
+affected:
+    - groupId: org.seleniumhq.selenium
+      artifactId: selenium-java
+      version:
+        - "<=3.141.59"
+      fixedin:
+        - ">=4.0.0-alpha-1"
