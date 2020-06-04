@@ -1,0 +1,21 @@
+---
+cve: 2014-3149
+title: CVE in nexus-flux
+description: >
+    Cross-site scripting (XSS) vulnerability in Invision Power IP.Board (aka IPB or Power Board) 3.3.x and 3.4.x through 3.4.6, as downloaded before 20140424, or IP.Nexus 1.5.x through 1.5.9, as downloaded before 20140424, allows remote attackers to inject arbitrary web script or HTML via unspecified vectors.
+cvss_v2: 4.3
+references:
+    - http://community.invisionpower.com/topic/399747-ipboard-33x-34x-security-update
+    - http://packetstormsecurity.com/files/127328/IP.Board-3.4.x-3.3.x-Cross-Site-Scripting.html
+    - http://www.christian-schneider.net/advisories/CVE-2014-3149.txt
+    - http://www.securityfocus.com/archive/1/532618/100/0/threaded
+    - http://www.securityfocus.com/bid/67164
+affected:
+    - name: nexus-flux
+      version:
+        - "<=1.5.9,1.5.0"
+        - "<=3.4.4,3.3.0"
+      fixedin:
+        - ">=4.0.0"
+        - "<=3.2.1,1.5.10"
+        - "<=1.4.0,0.0.0"
