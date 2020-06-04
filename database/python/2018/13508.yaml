@@ -1,0 +1,15 @@
+---
+cve: 2018-13508
+title: CVE in django-ethereum
+description: >
+    The mintToken function of a smart contract implementation for VITToken, an Ethereum token, has an integer overflow that allows the owner of the contract to set the balance of an arbitrary user to any value.
+cvss_v2: 5.0
+references:
+    - https://github.com/BlockChainsSecurity/EtherTokens/blob/master/GEMCHAIN/mint%20integer%20overflow.md
+    - https://github.com/BlockChainsSecurity/EtherTokens/tree/master/VITToken
+affected:
+    - name: django-ethereum
+      version:
+        []
+      fixedin:
+        - ">=0.0.4"
