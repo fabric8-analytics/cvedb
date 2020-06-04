@@ -1,0 +1,17 @@
+---
+cve: 2020-12607
+title: CVE in fastecdsa
+description: >
+    An issue was discovered in fastecdsa before 2.1.2. When using the NIST P-256 curve in the ECDSA implementation, the point at infinity is mishandled. This means that for an extreme value in k and s^-1, the signature verification fails even if the signature is correct. This behavior is not solely a usability problem. There are some threat models where an attacker can benefit by successfully guessing users for whom signature verification will fail.
+cvss_v2: 5.0
+references:
+    - https://github.com/AntonKueltz/fastecdsa/commit/4a16daeaf139be20654ef58a9fe4c79dc030458c
+    - https://github.com/AntonKueltz/fastecdsa/commit/7b64e3efaa806b4daaf73bb5172af3581812f8de
+    - https://github.com/AntonKueltz/fastecdsa/commit/e592f106edd5acf6dacedfab2ad16fe6c735c9d1
+    - https://github.com/AntonKueltz/fastecdsa/issues/52
+affected:
+    - name: fastecdsa
+      version:
+        - "<=2.1.1"
+      fixedin:
+        - ">=2.1.2"
