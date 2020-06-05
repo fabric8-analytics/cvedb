@@ -1,0 +1,16 @@
+---
+cve: 2013-5119
+title: CVE in pyobjc-framework-collaboration
+description: >
+    Zimbra Collaboration Suite (ZCS) 6.0.16 and earlier allows man-in-the-middle attackers to obtain access by sniffing the network and replaying the ZM_AUTH_TOKEN token.
+cvss_v2: 6.8
+references:
+    - http://archives.neohapsis.com/archives/bugtraq/2013-09/0063.html
+    - http://osvdb.org/97290
+    - http://www.securityfocus.com/bid/62407
+affected:
+    - name: pyobjc-framework-collaboration
+      version:
+        - "<=6.0.1"
+      fixedin:
+        - ">=6.1"
