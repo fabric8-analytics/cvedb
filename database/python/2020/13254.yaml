@@ -1,0 +1,19 @@
+---
+cve: 2020-13254
+title: CVE in django
+description: >
+    An issue was discovered in Django 2.2 before 2.2.13 and 3.0 before 3.0.7. In cases where a memcached backend does not perform key validation, passing malformed cache keys could result in a key collision, and potential data leakage.
+cvss_v2: 5.0
+references:
+    - https://docs.djangoproject.com/en/3.0/releases/security/
+    - https://groups.google.com/d/msg/django-announce/pPEmb2ot4Fo/X-SMalYSBAAJ
+    - https://www.djangoproject.com/weblog/2020/jun/03/security-releases/
+affected:
+    - name: django
+      version:
+        - "<=2.2.12,2.2a1"
+        - "<=3.0.6,3.0a1"
+      fixedin:
+        - ">=3.0.7"
+        - "<=2.2.13,2.2.13"
+        - "<=2.1.15,1.0.1"
