@@ -1,0 +1,15 @@
+---
+cve: 2020-2200
+title: CVE in espn-play-by-play-scraper
+description: >
+    Jenkins Play Framework Plugin 1.0.2 and earlier lets users specify the path to the `play` command on the Jenkins master for a form validation endpoint, resulting in an OS command injection vulnerability exploitable by users able to store such a file on the Jenkins master.
+cvss_v2: 6.5
+references:
+    - http://www.openwall.com/lists/oss-security/2020/06/03/3
+    - https://jenkins.io/security/advisory/2020-06-03/#SECURITY-1879
+affected:
+    - name: espn-play-by-play-scraper
+      version:
+        - "<=1.0.2"
+      fixedin:
+        - ">=1.0.3"
