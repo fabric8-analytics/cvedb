@@ -1,0 +1,46 @@
+---
+cve: 2010-4008
+title: CVE in com.github.simy4.xpath:xpath-to-xml-core
+description: >
+    libxml2 before 2.7.8, as used in Google Chrome before 7.0.517.44, Apple Safari 5.0.2 and earlier, and other products, reads from invalid memory locations during processing of malformed XPath expressions, which allows context-dependent attackers to cause a denial of service (application crash) via a crafted XML document.
+cvss_v2: 4.3
+references:
+    - http://blog.bkis.com/en/libxml2-vulnerability-in-google-chrome-and-apple-safari/
+    - http://code.google.com/p/chromium/issues/detail?id=58731
+    - http://googlechromereleases.blogspot.com/2010/11/stable-channel-update.html
+    - http://lists.apple.com/archives/security-announce/2010//Nov/msg00003.html
+    - http://lists.apple.com/archives/security-announce/2011//Mar/msg00004.html
+    - http://lists.apple.com/archives/security-announce/2011/Mar/msg00000.html
+    - http://lists.apple.com/archives/security-announce/2011/Mar/msg00006.html
+    - http://lists.opensuse.org/opensuse-security-announce/2010-12/msg00000.html
+    - http://mail.gnome.org/archives/xml/2010-November/msg00015.html
+    - http://marc.info/?l=bugtraq&m=130331363227777&w=2
+    - http://marc.info/?l=bugtraq&m=139447903326211&w=2
+    - http://rhn.redhat.com/errata/RHSA-2013-0217.html
+    - http://secunia.com/advisories/40775
+    - http://secunia.com/advisories/42109
+    - http://secunia.com/advisories/42175
+    - http://secunia.com/advisories/42314
+    - http://secunia.com/advisories/42429
+    - http://support.apple.com/kb/HT4456
+    - http://support.apple.com/kb/HT4554
+    - http://support.apple.com/kb/HT4566
+    - http://support.apple.com/kb/HT4581
+    - http://www.debian.org/security/2010/dsa-2128
+    - http://www.mandriva.com/security/advisories?name=MDVSA-2010:243
+    - http://www.openoffice.org/security/cves/CVE-2010-4008_CVE-2010-4494.html
+    - http://www.redhat.com/support/errata/RHSA-2011-1749.html
+    - http://www.securityfocus.com/bid/44779
+    - http://www.ubuntu.com/usn/USN-1016-1
+    - http://www.vupen.com/english/advisories/2010/3046
+    - http://www.vupen.com/english/advisories/2010/3076
+    - http://www.vupen.com/english/advisories/2010/3100
+    - http://www.vupen.com/english/advisories/2011/0230
+    - https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A12148
+affected:
+    - groupId: com.github.simy4.xpath
+      artifactId: xpath-to-xml-core
+      version:
+        - "<=2.1.8"
+      fixedin:
+        []
