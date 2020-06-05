@@ -1,0 +1,16 @@
+---
+cve: 2014-9685
+title: CVE in vanilla-framework
+description: >
+    Multiple cross-site scripting (XSS) vulnerabilities in Vanilla Forums before 2.0.18.13 and 2.1.x before 2.1.1 allow remote attackers to inject arbitrary web script or HTML via unspecified vectors.
+cvss_v2: 4.3
+references:
+    - http://vanillaforums.org/discussion/27540/vanilla-2-1-1-important-security-bug-release
+    - http://vanillaforums.org/discussion/27541/vanilla-2-0-18-12-security-release-for-old-2-0-18-installs
+    - http://www.securitytracker.com/id/1031822
+affected:
+    - name: vanilla-framework
+      version:
+        - "<=2.1.0"
+      fixedin:
+        - ">=2.2.0"
