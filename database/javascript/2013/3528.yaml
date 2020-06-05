@@ -1,0 +1,16 @@
+---
+cve: 2013-3528
+title: CVE in vanilla-framework
+description: >
+    Unspecified vulnerability in the update check in Vanilla Forums before 2.0.18.8 has unspecified impact and remote attack vectors, related to "object injection."
+cvss_v2: 7.5
+references:
+    - http://vanillaforums.org/discussion/23339/security-update-vanilla-2-0-18-7
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/84167
+    - https://github.com/vanillaforums/Garden/commit/b9a10dabb15c697347bfa7baef69a6e211b2f804
+affected:
+    - name: vanilla-framework
+      version:
+        - "<=2.0.1"
+      fixedin:
+        - ">=2.1.0"
