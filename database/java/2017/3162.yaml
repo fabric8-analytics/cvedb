@@ -1,0 +1,17 @@
+---
+cve: 2017-3162
+title: CVE in org.apache.hadoop.contrib:hadoop-hdfs-bkjournal
+description: >
+    HDFS clients interact with a servlet on the DataNode to browse the HDFS namespace. The NameNode is provided as a query parameter that is not validated in Apache Hadoop before 2.7.0.
+cvss_v2: 7.5
+references:
+    - http://www.securityfocus.com/bid/98017
+    - https://lists.apache.org/thread.html/r127f75748fcabc63bc5a1bec6885753eb9b2bed803b6ed7bd46f965b@%3Cuser.hadoop.apache.org%3E
+    - https://s.apache.org/k2ss
+affected:
+    - groupId: org.apache.hadoop.contrib
+      artifactId: hadoop-hdfs-bkjournal
+      version:
+        - "<=2.6.5"
+      fixedin:
+        - ">=2.7.0"
