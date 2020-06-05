@@ -1,0 +1,17 @@
+---
+cve: 2017-3161
+title: CVE in org.apache.hadoop.contrib:hadoop-hdfs-bkjournal
+description: >
+    The HDFS web UI in Apache Hadoop before 2.7.0 is vulnerable to a cross-site scripting (XSS) attack through an unescaped query parameter.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/98025
+    - https://lists.apache.org/thread.html/r127f75748fcabc63bc5a1bec6885753eb9b2bed803b6ed7bd46f965b@%3Cuser.hadoop.apache.org%3E
+    - https://s.apache.org/4MQm
+affected:
+    - groupId: org.apache.hadoop.contrib
+      artifactId: hadoop-hdfs-bkjournal
+      version:
+        - "<=2.6.5"
+      fixedin:
+        - ">=2.7.0"
