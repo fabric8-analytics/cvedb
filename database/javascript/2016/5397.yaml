@@ -1,0 +1,19 @@
+---
+cve: 2016-5397
+title: CVE in thrift
+description: >
+    The Apache Thrift Go client library exposed the potential during code generation for command injection due to using an external formatting tool. Affected Apache Thrift 0.9.3 and older, Fixed in Apache Thrift 0.10.0.
+cvss_v2: 9.0
+references:
+    - http://mail-archives.apache.org/mod_mbox/thrift-user/201701.mbox/raw/%3CCANyrgvc3W%3DMJ9S-hMZecPNzxkyfgNmuSgVfW2hdDSz5ke%2BOPhQ%40mail.gmail.com%3E
+    - http://www.securityfocus.com/bid/103025
+    - https://access.redhat.com/errata/RHSA-2018:2669
+    - https://access.redhat.com/errata/RHSA-2019:3140
+    - https://issues.apache.org/jira/browse/THRIFT-3893
+    - https://lists.apache.org/thread.html/r4d3f1d3e333d9c2b2f6e6ae8ed8750d4de03410ac294bcd12c7eefa3@%3Ccommits.cassandra.apache.org%3E
+affected:
+    - name: thrift
+      version:
+        - "<=0.9.3"
+      fixedin:
+        - ">=0.10.0"
