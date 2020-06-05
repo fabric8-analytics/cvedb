@@ -1,0 +1,15 @@
+---
+cve: 2019-20809
+title: CVE in com.oracle.tools:oracle-tools-runtime-virtual
+description: >
+    The price oracle in PriceOracle.sol in Compound Finance Compound Price Oracle 1.0 through 2.0 allows a price poster to set an invalid asset price via the setPrice function, and consequently violate the intended limits on price swings.
+cvss_v2: 5.0
+references:
+    - https://privacylog.blogspot.com/2019/10/compound-finance-zero-day-prices-can.html
+affected:
+    - groupId: com.oracle.tools
+      artifactId: oracle-tools-runtime-virtual
+      version:
+        - "<=2.0.0-RC9"
+      fixedin:
+        []
