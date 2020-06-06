@@ -1,0 +1,14 @@
+---
+cve: 2020-13803
+title: CVE in bgen-reader
+description: >
+    An issue was discovered in Foxit PhantomPDF Mac and Foxit Reader for Mac before 4.0. It allows signature validation bypass via a modified file or a file with non-standard signatures.
+cvss_v2: 5.0
+references:
+    - https://www.foxitsoftware.com/support/security-bulletins.php
+affected:
+    - name: bgen-reader
+      version:
+        - "<=3.0.7"
+      fixedin:
+        - ">=4.0.0"
