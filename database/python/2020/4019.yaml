@@ -1,0 +1,14 @@
+---
+cve: 2020-4019
+title: CVE in atlassian-jwt
+description: >
+    The file editing functionality in the Atlassian Companion App before version 1.0.0 allows local attackers to have the app run a different executable in place of the app's cmd.exe via a untrusted search path vulnerability.
+cvss_v2: 4.4
+references:
+    - https://jira.atlassian.com/browse/CONFSERVER-59734
+affected:
+    - name: atlassian-jwt
+      version:
+        []
+      fixedin:
+        - ">=1.0"
