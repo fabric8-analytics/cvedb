@@ -1,0 +1,19 @@
+---
+cve: 2020-13379
+title: CVE in @grafana/ui
+description: >
+    The avatar feature in Grafana 3.0.1 through 7.0.1 has an SSRF Incorrect Access Control issue. This vulnerability allows any unauthenticated user/client to make Grafana send HTTP requests to any URL and return its result to the user/client. This can be used to gain information about the network that Grafana is running on.
+cvss_v2: 5.0
+references:
+    - http://www.openwall.com/lists/oss-security/2020/06/03/4
+    - https://community.grafana.com/t/grafana-7-0-2-and-6-7-4-security-update/31408
+    - https://community.grafana.com/t/release-notes-v6-7-x/27119
+    - https://community.grafana.com/t/release-notes-v7-0-x/29381
+    - https://grafana.com/blog/2020/06/03/grafana-6.7.4-and-7.0.2-released-with-important-security-fix/
+affected:
+    - name: @grafana/ui
+      version:
+        - "<=7.0.1,6.0.0-alpha.0"
+      fixedin:
+        - ">=7.0.3"
+        - "<=1.0.0-alpha.0,1.0.0-alpha.0"
