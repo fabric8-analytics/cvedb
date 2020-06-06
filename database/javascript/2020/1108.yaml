@@ -1,0 +1,15 @@
+---
+cve: 2020-1108
+title: CVE in vulnerability-api
+description: >
+    A denial of service vulnerability exists when .NET Core or .NET Framework improperly handles web requests, aka '.NET Core & .NET Framework Denial of Service Vulnerability'.
+cvss_v2: 5.0
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1108
+affected:
+    - name: vulnerability-api
+      version:
+        - "<=2.1.0,2.1.0"
+      fixedin:
+        - ">=2.1.1"
+        - "<=2.0.4,1.0.0"
