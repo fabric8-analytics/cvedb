@@ -1,6 +1,6 @@
 ---
 cve: 2020-11079
-title: CVE in node-dns-sd
+title: CVE in dns-sync
 description: >
     node-dns-sync (npm module dns-sync) through 0.2.0 allows execution of arbitrary commands . This issue may lead to remote code execution if a client of the library calls the vulnerable method with untrusted input. This has been fixed in 0.2.1.
 cvss_v2: 7.5
@@ -8,7 +8,7 @@ references:
     - https://github.com/skoranga/node-dns-sync/commit/cb10a5ac7913eacc031ade7d91596277f31645dc
     - https://github.com/skoranga/node-dns-sync/security/advisories/GHSA-wh69-wc6q-7888
 affected:
-    - name: node-dns-sd
+    - name: dns-sync
       version:
         - "<=0.2.0"
       fixedin:
