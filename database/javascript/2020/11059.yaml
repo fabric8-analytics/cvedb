@@ -1,0 +1,15 @@
+---
+cve: 2020-11059
+title: CVE in aegir
+description: >
+    In AEgir greater than or equal to 21.7.0 and less than 21.10.1, aegir publish and aegir build may leak secrets from environment variables in the browser bundle published to npm. This has been fixed in 21.10.1.
+cvss_v2: 5.0
+references:
+    - https://github.com/ipfs/aegir/security/advisories/GHSA-qfcv-5whw-7pcw
+affected:
+    - name: aegir
+      version:
+        - "<=21.10.0,21.7.0"
+      fixedin:
+        - ">=21.10.1"
+        - "<=21.6.0,2.0.0"
