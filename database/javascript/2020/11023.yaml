@@ -8,9 +8,11 @@ references:
     - https://blog.jquery.com/2020/04/10/jquery-3-5-0-released
     - https://github.com/jquery/jquery/security/advisories/GHSA-jpcq-cgw6-v4j6
     - https://jquery.com/upgrade-guide/3.5/
+    - https://security.netapp.com/advisory/ntap-20200511-0006/
 affected:
     - name: jquery
       version:
         - "<=3.4.1,1.0.3"
       fixedin:
         - ">=3.5.0"
+        - "<=1.0.2,1.0.0"
