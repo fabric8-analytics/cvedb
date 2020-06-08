@@ -1,0 +1,14 @@
+---
+cve: 2020-8149
+title: CVE in logkitty
+description: >
+    Lack of output sanitization allowed an attack to execute arbitrary shell commands via the logkitty npm package before version 0.7.1.
+cvss_v2: 7.5
+references:
+    - https://hackerone.com/reports/825729
+affected:
+    - name: logkitty
+      version:
+        - "<=0.7.0"
+      fixedin:
+        - ">=0.7.1"
