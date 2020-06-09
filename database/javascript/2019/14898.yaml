@@ -1,0 +1,20 @@
+---
+cve: 2019-14898
+title: CVE in linux-battery
+description: >
+    The fix for CVE-2019-11599, affecting the Linux kernel before 5.0.10 was not complete. A local user could use this flaw to obtain sensitive information, cause a denial of service, or possibly have other unspecified impacts by triggering a race condition with mmget_not_zero or get_task_mm calls.
+cvss_v2: 6.9
+references:
+    - https://bugs.chromium.org/p/project-zero/issues/detail?id=1790
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-14898
+    - https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.114
+    - https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.37
+    - https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.0.10
+    - https://security.netapp.com/advisory/ntap-20200608-0001/
+affected:
+    - name: linux-battery
+      version:
+        - "<=2.0.0,2.0.0"
+      fixedin:
+        - ">=3.0.0"
+        - "<=1.1.0,1.0.0"
