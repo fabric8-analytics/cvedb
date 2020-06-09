@@ -1,0 +1,20 @@
+---
+cve: 2020-10711
+title: CVE in br.com.thiagomoreira.liferay.plugins.fix-virtual-host-app:fix-virtual-host-hook
+description: >
+    A NULL pointer dereference flaw was found in the Linux kernel's SELinux subsystem in versions before 5.7. This flaw occurs while importing the Commercial IP Security Option (CIPSO) protocol's category bitmap into the SELinux extensible bitmap via the' ebitmap_netlbl_import' routine. While processing the CIPSO restricted bitmap tag in the 'cipso_v4_parsetag_rbm' routine, it sets the security attribute to indicate that the category bitmap is present, even if it has not been allocated. This issue leads to a NULL pointer dereference issue while importing the same category bitmap into SELinux. This flaw allows a remote network user to crash the system kernel, resulting in a denial of service.
+cvss_v2: 5.0
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-10711
+    - https://security.netapp.com/advisory/ntap-20200608-0001/
+    - https://www.openwall.com/lists/oss-security/2020/05/12/2
+affected:
+    - groupId: br.com.thiagomoreira.liferay.plugins.fix-virtual-host-app
+      artifactId: fix-virtual-host-hook
+      version:
+        - "<=2.0.0,2.0.0"
+        - "<=4.0.0,4.0.0"
+      fixedin:
+        - ">=4.1.0"
+        - "<=3.0.0,3.0.0"
+        - "<=1.1.0,1.0.0"
