@@ -1,0 +1,17 @@
+---
+cve: 2020-13822
+title: CVE in elliptic
+description: >
+    The Elliptic package 6.5.2 for Node.js allows ECDSA signature malleability via variations in encoding, leading '\0' bytes, or integer overflows. This could conceivably have a security-relevant impact if an application relied on a single canonical signature.
+cvss_v2: 7.5
+references:
+    - https://github.com/indutny/elliptic/issues/226
+    - https://medium.com/@herman_10687/malleability-attack-why-it-matters-7b5f59fb99a4
+    - https://www.npmjs.com/package/elliptic
+    - https://yondon.blog/2019/01/01/how-not-to-use-ecdsa/
+affected:
+    - name: elliptic
+      version:
+        - "<=6.5.2,6.5.2"
+      fixedin:
+        - "<=6.5.1,0.1.0"
