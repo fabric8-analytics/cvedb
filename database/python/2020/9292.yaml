@@ -1,0 +1,14 @@
+---
+cve: 2020-9292
+title: CVE in jaraco-windows
+description: >
+    An unquoted service path vulnerability in the FortiSIEM Windows Agent component may allow an attacker to gain elevated privileges via the AoWinAgt executable service path.
+cvss_v2: 7.5
+references:
+    - https://fortiguard.com/advisory/FG-IR-20-021
+affected:
+    - name: jaraco-windows
+      version:
+        - "<=3.1.2"
+      fixedin:
+        - ">=3.2"
