@@ -1,15 +1,15 @@
 ---
 cve: 2020-7646
-title: CVE in curlrequest
+title: CVE in curl-request
 description: >
-    curlrequest through 1.0.1 allows execution of arbitrary commands.It is possible to inject arbitrary commands by using a semicolon char in any of the `options` values.
+    curlrequest through 1.0.1 allows reading any file by populating the file parameter with user input.
 cvss_v2: 7.5
 references:
-    - https://github.com/node-js-libs/curlrequest/blob/master/index.js#L232
+    - https://github.com/node-js-libs/curlrequest/blob/master/index.js#L239,
     - https://snyk.io/vuln/SNYK-JS-CURLREQUEST-568274
 affected:
-    - name: curlrequest
+    - name: curl-request
       version:
         - "<=1.0.1"
       fixedin:
-        []
+        - ">=1.0.2"
