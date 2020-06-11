@@ -1,0 +1,15 @@
+---
+cve: 2020-13883
+title: CVE in org.wso2.carbon.identity.framework:org.wso2.carbon.identity.entitlement
+description: >
+    In WSO2 API Manager 3.0.0 and earlier, WSO2 API Microgateway 2.2.0, and WSO2 IS as Key Manager 5.9.0 and earlier, Management Console allows XXE during addition or update of a Lifecycle.
+cvss_v2: 6.5
+references:
+    - https://docs.wso2.com/display/Security/Security+Advisory+WSO2-2020-0727
+affected:
+    - groupId: org.wso2.carbon.identity.framework
+      artifactId: org.wso2.carbon.identity.entitlement
+      version:
+        - "<=5.9.0"
+      fixedin:
+        - ">=5.10.0"
