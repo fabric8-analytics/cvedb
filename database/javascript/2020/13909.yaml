@@ -1,0 +1,15 @@
+---
+cve: 2020-13909
+title: CVE in @browser-logos/v8-ignition
+description: >
+    The Ignition page before 2.0.5 for Laravel mishandles globals, _get, _post, _cookie, and _env.
+cvss_v2: 7.5
+references:
+    - https://github.com/facade/ignition/compare/2.0.4...2.0.5
+    - https://github.com/facade/ignition/releases/tag/2.0.5
+affected:
+    - name: @browser-logos/v8-ignition
+      version:
+        - "<=2.0.4"
+      fixedin:
+        - ">=2.0.5"
