@@ -1,0 +1,14 @@
+---
+cve: 2020-13890
+title: CVE in nittro-neon
+description: >
+    The Neon theme 2.0 before 2020-06-03 for Bootstrap allows XSS via an Add Task Input operation in a dashboard.
+cvss_v2: 3.5
+references:
+    - https://jizen0x01.blogspot.com/2020/06/neon-dashboard-xss.html
+affected:
+    - name: nittro-neon
+      version:
+        - "<=2.0.0"
+      fixedin:
+        []
