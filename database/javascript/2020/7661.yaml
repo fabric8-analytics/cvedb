@@ -1,0 +1,15 @@
+---
+cve: 2020-7661
+title: CVE in css-url-regex
+description: >
+    all versions of url-regex are vulnerable to Regular Expression Denial of Service. An attacker providing a very long string in String.test can cause a Denial of Service.
+cvss_v2: 7.8
+references:
+    - https://github.com/kevva/url-regex/issues/70
+    - https://snyk.io/vuln/SNYK-JS-URLREGEX-569472
+affected:
+    - name: css-url-regex
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
