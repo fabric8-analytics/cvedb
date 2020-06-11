@@ -1,0 +1,16 @@
+---
+cve: 2020-13849
+title: CVE in mqtt-packet
+description: >
+    The MQTT protocol 3.1.1 requires a server to set a timeout value of 1.5 times the Keep-Alive value specified by a client, which allows remote attackers to cause a denial of service (loss of the ability to establish new connections), as demonstrated by SlowITe.
+cvss_v2: 5.0
+references:
+    - https://doi.org/10.3390/s20102932
+    - https://www.mdpi.com/1424-8220/20/10/2932
+affected:
+    - name: mqtt-packet
+      version:
+        - "<=3.1.1,3.1.1"
+      fixedin:
+        - ">=3.2.0"
+        - "<=3.1.0,1.0.0"
