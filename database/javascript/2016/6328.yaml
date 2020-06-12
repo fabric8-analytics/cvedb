@@ -1,0 +1,17 @@
+---
+cve: 2016-6328
+title: CVE in libexif
+description: >
+    A vulnerability was found in libexif. An integer overflow when parsing the MNOTE entry data of the input file. This can cause Denial-of-Service (DoS) and Information Disclosure (disclosing some critical heap chunk metadata, even other applications' private data).
+cvss_v2: 5.8
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2020-06/msg00017.html
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2016-6328
+    - https://lists.debian.org/debian-lts-announce/2020/05/msg00016.html
+    - https://usn.ubuntu.com/4277-1/
+affected:
+    - name: libexif
+      version:
+        []
+      fixedin:
+        - ">=0.0.1"
