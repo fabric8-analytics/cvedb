@@ -1,0 +1,16 @@
+---
+cve: 2019-10755
+title: CVE in org.pac4j:j2e-pac4j
+description: >
+    The SAML identifier generated within SAML2Utils.java was found to make use of the apache commons-lang3 RandomStringUtils class which makes them predictable due to RandomStringUtils PRNG's algorithm not being cryptographically strong. This issue only affects the 3.X release of pac4j-saml.
+cvss_v2: 4.0
+references:
+    - https://snyk.io/vuln/SNYK-JAVA-ORGPAC4J-467407
+affected:
+    - groupId: org.pac4j
+      artifactId: j2e-pac4j
+      version:
+        - "<=3.0.0,3.0.0"
+      fixedin:
+        - ">=4.0.0-RC1"
+        - "<=2.1.0,1.0.0"
