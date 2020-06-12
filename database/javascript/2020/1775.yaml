@@ -1,0 +1,16 @@
+---
+cve: 2020-1775
+title: CVE in @ovh-ux/ng-ovh-otrs
+description: >
+    BCC recipients in mails sent from OTRS are visible in article detail on external interface. This issue affects OTRS: 8.0.3 and prior versions, 7.0.17 and prior versions.
+cvss_v2: 4.3
+references:
+    - https://otrs.com/release-notes/otrs-security-advisory-2020-12/
+affected:
+    - name: @ovh-ux/ng-ovh-otrs
+      version:
+        - "<=7.0.2"
+        - "<=8.0.2,8.0.0"
+      fixedin:
+        - ">=9.0.0"
+        - "<=7.1.12,7.1.0"
