@@ -1,0 +1,15 @@
+---
+cve: 2020-9041
+title: CVE in io.gravitee.am.gateway:gravitee-am-gateway-services-sync
+description: >
+    In Couchbase Server 6.0.3 and Couchbase Sync Gateway through 2.7.0, the Cluster management, views, query, and full-text search endpoints are vulnerable to the Slowloris denial-of-service attack because they don't more aggressively terminate slow connections.
+cvss_v2: 5.0
+references:
+    - https://www.couchbase.com/resources/security#SecurityAlerts
+affected:
+    - groupId: io.gravitee.am.gateway
+      artifactId: gravitee-am-gateway-services-sync
+      version:
+        - "<=2.7.0"
+      fixedin:
+        - ">=2.7.1"
