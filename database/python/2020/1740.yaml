@@ -7,12 +7,14 @@ cvss_v2: 1.9
 references:
     - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-1740
     - https://github.com/ansible/ansible/issues/67798
+    - https://lists.debian.org/debian-lts-announce/2020/05/msg00005.html
     - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DKPA4KC3OJSUFASUYMG66HKJE7ADNGFW/
     - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MRRYUU5ZBLPBXCYG6CFP35D64NP2UB2S/
     - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/WQVOQD4VAIXXTVQAJKTN7NUGTJFE2PCB/
+    - https://security.gentoo.org/glsa/202006-11
 affected:
     - name: ansible
       version:
-        - "<=2.9.6"
+        - "<=2.9.9"
       fixedin:
-        - ">=2.9.7"
+        []
