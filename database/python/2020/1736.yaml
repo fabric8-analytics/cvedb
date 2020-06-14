@@ -7,9 +7,10 @@ cvss_v2: 2.1
 references:
     - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-1736
     - https://github.com/ansible/ansible/issues/67794
+    - https://security.gentoo.org/glsa/202006-11
 affected:
     - name: ansible
       version:
-        - "<=2.9.6"
+        - "<=2.9.9"
       fixedin:
         []
