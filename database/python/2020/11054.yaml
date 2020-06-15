@@ -22,6 +22,6 @@ references:
 affected:
     - name: qutebrowser
       version:
-        - "<=1.10.2"
+        - "<=1.11.0"
       fixedin:
-        - ">=1.11.0"
+        - ">=1.11.1"
