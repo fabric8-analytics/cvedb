@@ -5,10 +5,13 @@ description: >
     minimist before 1.2.2 could be tricked into adding or modifying properties of Object.prototype using a "constructor" or "__proto__" payload.
 cvss_v2: 6.8
 references:
+    - http://lists.opensuse.org/opensuse-security-announce/2020-06/msg00024.html
     - https://snyk.io/vuln/SNYK-JS-MINIMIST-559764
 affected:
     - name: minimist
       version:
-        - "<=1.2.1"
+        - "<=0.2.0"
+        - "<=1.2.2,1.0.0"
       fixedin:
-        - ">=1.2.2"
+        - ">=1.2.3"
+        - ">=0.2.1"
