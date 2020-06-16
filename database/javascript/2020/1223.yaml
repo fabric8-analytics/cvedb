@@ -1,0 +1,14 @@
+---
+cve: 2020-1223
+title: CVE in word-wrap
+description: >
+    A remote code execution vulnerability exists when Microsoft Word for Android fails to properly handle certain files.To exploit the vulnerability, an attacker would have to convince a user to open a specially crafted URL file.The update addresses the vulnerability by correcting how Microsoft Word for Android handles specially crafted URL files., aka 'Word for Android Remote Code Execution Vulnerability'.
+cvss_v2: 6.8
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1223
+affected:
+    - name: word-wrap
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
