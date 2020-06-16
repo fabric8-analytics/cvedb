@@ -1,0 +1,14 @@
+---
+cve: 2020-1331
+title: CVE in openerp-mrp-operations
+description: >
+    A spoofing vulnerability exists when System Center Operations Manager (SCOM) does not properly sanitize a specially crafted web request to an affected SCOM instance, aka 'System Center Operations Manager Spoofing Vulnerability'.
+cvss_v2: 3.5
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1331
+affected:
+    - name: openerp-mrp-operations
+      version:
+        []
+      fixedin:
+        - ">=7.0.355"
