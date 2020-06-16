@@ -1,0 +1,15 @@
+---
+cve: 2020-4432
+title: CVE in pywren-ibm-cloud
+description: >
+    Certain IBM Aspera applications are vulnerable to command injection after valid authentication, which could allow an attacker with intimate knowledge of the system to execute commands in a SOAP API. IBM X-Force ID: 180810.
+cvss_v2: 6.0
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/180810
+    - https://www.ibm.com/support/pages/node/6221324
+affected:
+    - name: pywren-ibm-cloud
+      version:
+        - "<=1.6.0"
+      fixedin:
+        []
