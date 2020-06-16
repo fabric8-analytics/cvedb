@@ -1,0 +1,15 @@
+---
+cve: 2019-3613
+title: CVE in agent-base
+description: >
+    DLL Search Order Hijacking vulnerability in McAfee Agent (MA) prior to 5.6.4 allows attackers with local access to execute arbitrary code via execution from a compromised folder.
+cvss_v2: 4.4
+references:
+    - https://kc.mcafee.com/corporate/index?page=content&id=SB10320
+affected:
+    - name: agent-base
+      version:
+        - "<=5.0.0,5.0.0"
+      fixedin:
+        - ">=5.1.0"
+        - "<=4.3.0,0.0.1"
