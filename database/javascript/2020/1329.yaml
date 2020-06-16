@@ -1,0 +1,14 @@
+---
+cve: 2020-1329
+title: CVE in bing-translator
+description: >
+    A spoofing vulnerability exists when Microsoft Bing Search for Android improperly handles specific HTML content, aka 'Microsoft Bing Search Spoofing Vulnerability'.
+cvss_v2: 4.3
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1329
+affected:
+    - name: bing-translator
+      version:
+        []
+      fixedin:
+        - ">=0.1.1"
