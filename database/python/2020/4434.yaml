@@ -1,0 +1,15 @@
+---
+cve: 2020-4434
+title: CVE in pywren-ibm-cloud
+description: >
+    Certain IBM Aspera applications are vulnerable to buffer overflow based on the product configuration and valid authentication, which could allow an attacker with intimate knowledge of the system to execute arbitrary code or perform a denial-of-service (DoS) through the http fallback service. IBM X-Force ID: 180900.
+cvss_v2: 6.0
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/180900
+    - https://www.ibm.com/support/pages/node/6221324
+affected:
+    - name: pywren-ibm-cloud
+      version:
+        - "<=1.6.0"
+      fixedin:
+        []
