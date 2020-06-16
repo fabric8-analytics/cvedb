@@ -1,0 +1,15 @@
+---
+cve: 2020-4433
+title: CVE in pywren-ibm-cloud
+description: >
+    Certain IBM Aspera applications are vulnerable to a stack-based buffer overflow, caused by improper bounds checking. This could allow a remote attacker with intimate knowledge of the server to execute arbitrary code on the system with the privileges of root or cause server to crash. IBM X-Force ID: 180814.
+cvss_v2: 9.3
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/180814
+    - https://www.ibm.com/support/pages/node/6221324
+affected:
+    - name: pywren-ibm-cloud
+      version:
+        - "<=1.6.0"
+      fixedin:
+        []
