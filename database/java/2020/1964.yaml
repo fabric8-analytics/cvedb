@@ -1,0 +1,19 @@
+---
+cve: 2020-1964
+title: CVE in org.apache.heron:heron-api
+description: >
+    It was noticed that Apache Heron 0.20.2-incubating, Release 0.20.1-incubating, and Release v-0.20.0-incubating does not configure its YAML parser to prevent the instantiation of arbitrary types, resulting in a remote code execution vulnerabilities (CWE-502: Deserialization of Untrusted Data).
+cvss_v2: 7.5
+references:
+    - https://lists.apache.org/thread.html/r16dd39f4180e4443ef4ca774a3a5a3d7ac69f91812c183ed2a99e959%40%3Cdev.heron.apache.org%3E
+    - https://lists.apache.org/thread.html/rd43ae18588fd7bdb375be63bc95a651aab319ced6306759e1237ce67@%3Cdev.ignite.apache.org%3E
+    - https://lists.apache.org/thread.html/re7b43cf8333ee30b6589e465f72a6ed4a082222612d1a0fdd30beb94@%3Cdev.ignite.apache.org%3E
+    - https://lists.apache.org/thread.html/re7b43cf8333ee30b6589e465f72a6ed4a082222612d1a0fdd30beb94@%3Cuser.ignite.apache.org%3E
+    - https://lists.apache.org/thread.html/rf032a13a4711f88c0a2c0734eecbee1026cc1b6cde27d16a653f8755@%3Cdev.ignite.apache.org%3E
+affected:
+    - groupId: org.apache.heron
+      artifactId: heron-api
+      version:
+        - "<=0.20.1-incubating,0.20.0-incubating"
+      fixedin:
+        - "<=v0.20.1-incubating-rc1,v0.20.1-incubating-rc1"
