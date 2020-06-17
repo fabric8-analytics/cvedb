@@ -1,0 +1,14 @@
+---
+cve: 2020-7673
+title: CVE in node-extend
+description: >
+    node-extend through 0.2.0 is vulnerable to Arbitrary Code Execution. User input provided to the argument `A` of `extend` function`(A,B,as,isAargs)` located within `lib/extend.js` is executed by the `eval` function, resulting in code execution.
+cvss_v2: 7.5
+references:
+    - https://snyk.io/vuln/SNYK-JS-NODEEXTEND-571491
+affected:
+    - name: node-extend
+      version:
+        - "<=0.2.0"
+      fixedin:
+        []
