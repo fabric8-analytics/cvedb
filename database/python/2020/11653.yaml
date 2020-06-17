@@ -1,0 +1,16 @@
+---
+cve: 2020-11653
+title: CVE in plone-recipe-varnish
+description: >
+    An issue was discovered in Varnish Cache before 6.0.6 LTS, 6.1.x and 6.2.x before 6.2.3, and 6.3.x before 6.3.2. It occurs when communication with a TLS termination proxy uses PROXY version 2. There can be an assertion failure and daemon restart, which causes a performance loss.
+cvss_v2: 5.0
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2020-06/msg00026.html
+    - http://lists.opensuse.org/opensuse-security-announce/2020-06/msg00031.html
+    - https://varnish-cache.org/security/VSV00005.html#vsv00005
+affected:
+    - name: plone-recipe-varnish
+      version:
+        - "<=6.0.0b1,6.0.0b1"
+      fixedin:
+        - "<=2.3.0,1.0b1"
