@@ -1,0 +1,17 @@
+---
+cve: 2020-13269
+title: CVE in gitlab
+description: >
+    A Reflected Cross-Site Scripting vulnerability allowed the execution of arbitrary Javascript code on the Static Site Editor in GitLab CE/EE 12.10 and later through 13.0.1
+cvss_v2: 4.3
+references:
+    - https://gitlab.com/gitlab-org/cves/-/blob/master/2020/CVE-2020-13269.json
+    - https://gitlab.com/gitlab-org/gitlab/-/issues/216528
+    - https://hackerone.com/reports/864356
+affected:
+    - name: gitlab
+      version:
+        - "<=13.0.0,13.0.0"
+      fixedin:
+        - ">=14.0.0"
+        - "<=12.1.2,0.0.1"
