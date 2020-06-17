@@ -1,0 +1,21 @@
+---
+cve: 2018-2839
+title: CVE in org.infinispan.server:infinispan-server-testsuite
+description: >
+    Vulnerability in the MySQL Server component of Oracle MySQL (subcomponent: Server: DML). Supported versions that are affected are 5.7.21 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.0 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H).
+cvss_v2: 4.0
+references:
+    - http://www.oracle.com/technetwork/security-advisory/cpuapr2018-3678067.html
+    - http://www.securityfocus.com/bid/103845
+    - http://www.securitytracker.com/id/1040698
+    - https://access.redhat.com/errata/RHSA-2018:3655
+    - https://security.netapp.com/advisory/ntap-20180419-0002/
+    - https://usn.ubuntu.com/3629-1/
+    - https://usn.ubuntu.com/3629-3/
+affected:
+    - groupId: org.infinispan.server
+      artifactId: infinispan-server-testsuite
+      version:
+        - "<=10.0.0.CR2,8.0.0.Alpha1"
+      fixedin:
+        - "<=7.2.5.Final,5.3.0.Beta1"
