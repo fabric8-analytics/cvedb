@@ -1,0 +1,16 @@
+---
+cve: 2020-13271
+title: CVE in gitlab
+description: >
+    A Stored Cross-Site Scripting vulnerability allowed the execution of arbitrary Javascript code in the blobs API in all previous GitLab CE/EE versions through 13.0.1
+cvss_v2: 4.3
+references:
+    - https://gitlab.com/gitlab-org/cves/-/blob/master/2020/CVE-2020-13271.json
+    - https://gitlab.com/gitlab-org/gitlab/-/issues/200094
+    - https://hackerone.com/reports/672150
+affected:
+    - name: gitlab
+      version:
+        - "<=13.0.0"
+      fixedin:
+        - ">=14.0.0"
