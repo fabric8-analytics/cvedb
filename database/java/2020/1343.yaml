@@ -1,0 +1,15 @@
+---
+cve: 2020-1343
+title: CVE in com.github.onepiecex.session.share.core:onepiecex-session-share-core
+description: >
+    An information disclosure vulnerability exists in Visual Studio Code Live Share Extension when it exposes tokens in plain text, aka 'Visual Studio Code Live Share Information Disclosure Vulnerability'.
+cvss_v2: 5.0
+references:
+    - https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1343
+affected:
+    - groupId: com.github.onepiecex.session.share.core
+      artifactId: onepiecex-session-share-core
+      version:
+        []
+      fixedin:
+        - ">=1.0"
