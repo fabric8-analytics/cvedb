@@ -1,0 +1,15 @@
+---
+cve: 2018-16848
+title: CVE in mistral
+description: >
+    A Denial of Service (DoS) condition is possible in OpenStack Mistral in versions up to and including 7.0.3. Submitting a specially crafted workflow definition YAML file containing nested anchors can lead to resource exhaustion culminating in a denial of service.
+cvss_v2: 4.0
+references:
+    - https://bugs.launchpad.net/mistral/+bug/1785657
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1645332
+affected:
+    - name: mistral
+      version:
+        - "<=7.0.3"
+      fixedin:
+        - ">=7.0.4"
