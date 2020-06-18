@@ -1,0 +1,18 @@
+---
+cve: 2020-14004
+title: CVE in icinga-slack-webhook
+description: >
+    An issue was discovered in Icinga2 before v2.12.0-rc1. The prepare-dirs script (run as part of the icinga2 systemd service) executes chmod 2750 /run/icinga2/cmd. /run/icinga2 is under control of an unprivileged user by default. If /run/icinga2/cmd is a symlink, then it will by followed and arbitrary files can be changed to mode 2750 by the unprivileged icinga2 user.
+cvss_v2: 4.6
+references:
+    - http://www.openwall.com/lists/oss-security/2020/06/12/1
+    - https://bugzilla.suse.com/show_bug.cgi?id=CVE-2020-14004
+    - https://github.com/Icinga/icinga2/compare/v2.12.0-rc1...master
+    - https://github.com/Icinga/icinga2/pull/8045/commits/2f0f2e8c355b75fa4407d23f85feea037d2bc4b6
+    - https://github.com/Icinga/icinga2/releases
+affected:
+    - name: icinga-slack-webhook
+      version:
+        - "<=2.1.1,2.0.0"
+      fixedin:
+        - "<=1.0.3,1.0.0"
