@@ -1,0 +1,15 @@
+---
+cve: 2020-7493
+title: CVE in org.apache.karaf.service:org.apache.karaf.service.command
+description: >
+    A CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability exists in EcoStruxure Operator Terminal Expert 3.1 Service Pack 1 and prior (formerly known as Vijeo XD) which could cause malicious code execution when opening the project file.
+cvss_v2: 6.8
+references:
+    - https://www.se.com/ww/en/download/document/SEVD-2020-133-04
+affected:
+    - groupId: org.apache.karaf.service
+      artifactId: org.apache.karaf.service.command
+      version:
+        - "<=3.0.0"
+      fixedin:
+        - ">=3.0.1"
