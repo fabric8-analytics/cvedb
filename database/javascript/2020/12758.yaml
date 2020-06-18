@@ -1,0 +1,17 @@
+---
+cve: 2020-12758
+title: CVE in consul-utils
+description: >
+    HashiCorp Consul and Consul Enterprise could crash when configured with an abnormally-formed service-router entry. Introduced in 1.6.0, fixed in 1.6.6 and 1.7.4.
+cvss_v2: 5.0
+references:
+    - https://github.com/hashicorp/consul/blob/v1.6.6/CHANGELOG.md
+    - https://github.com/hashicorp/consul/blob/v1.7.4/CHANGELOG.md
+    - https://github.com/hashicorp/consul/pull/7783
+affected:
+    - name: consul-utils
+      version:
+        - "<=1.7.0,1.6.0"
+      fixedin:
+        - ">=1.8.0"
+        - "<=1.5.0,1.2.0"
