@@ -1,0 +1,17 @@
+---
+cve: 2020-13270
+title: CVE in gitlab
+description: >
+    Missing permission check on fork relation creation in GitLab CE/EE 11.3 and later through 13.0.1 allows guest users to create a fork relation on restricted public projects via API
+cvss_v2: 6.5
+references:
+    - https://gitlab.com/gitlab-org/cves/-/blob/master/2020/CVE-2020-13270.json
+    - https://gitlab.com/gitlab-org/gitlab/-/issues/24648
+    - https://hackerone.com/reports/419977
+affected:
+    - name: gitlab
+      version:
+        - "<=13.0.0,11.3.0"
+      fixedin:
+        - ">=14.0.0"
+        - "<=11.2.3,0.0.1"
