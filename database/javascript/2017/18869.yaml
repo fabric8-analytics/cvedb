@@ -1,0 +1,17 @@
+---
+cve: 2017-18869
+title: CVE in chownr
+description: >
+    A TOCTOU issue in the chownr package before 1.1.0 for Node.js 10.10 could allow a local attacker to trick it into descending into unintended directories via symlink attacks.
+cvss_v2: 1.9
+references:
+    - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=863985
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1611614
+    - https://github.com/isaacs/chownr/issues/14
+    - https://snyk.io/vuln/npm:chownr:20180731
+affected:
+    - name: chownr
+      version:
+        - "<=1.0.1"
+      fixedin:
+        - ">=1.1.0"
