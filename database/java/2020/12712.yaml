@@ -1,0 +1,18 @@
+---
+cve: 2020-12712
+title: CVE in com.sos-berlin:jobscheduler.engine
+description: >
+    A vulnerability based on insecure user/password encryption in the JOE (job editor) component of SOS JobScheduler 1.12 and 1.13 allows attackers to decrypt the user/password that is optionally stored with a user's profile.
+cvss_v2: 5.0
+references:
+    - http://packetstormsecurity.com/files/158112/SOS-JobScheduler-1.13.3-Stored-Password-Decryption.html
+    - https://change.sos-berlin.com/browse/JOE-290
+    - https://kb.sos-berlin.com/display/PKB/Vulnerability+Release+1.13.4
+    - https://www.sos-berlin.com/en/news
+affected:
+    - groupId: com.sos-berlin
+      artifactId: jobscheduler.engine
+      version:
+        - "<=1.13.3,1.12.0"
+      fixedin:
+        - "<=1.11.7,1.9.6"
