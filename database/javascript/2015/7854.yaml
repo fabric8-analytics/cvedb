@@ -1,0 +1,20 @@
+---
+cve: 2015-7854
+title: CVE in buffer
+description: >
+    Buffer overflow in the password management functionality in NTP 4.2.x before 4.2.8p4, and 4.3.x before 4.3.77 allows remote authenticated users to cause a denial of service (daemon crash) or possibly execute arbitrary code via a crafted key file.
+cvss_v2: 6.5
+references:
+    - http://support.ntp.org/bin/view/Main/NtpBug2921
+    - http://www.securityfocus.com/bid/77277
+    - http://www.securitytracker.com/id/1033951
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1274263
+    - https://security.gentoo.org/glsa/201607-15
+    - https://security.netapp.com/advisory/ntap-20171004-0001/
+affected:
+    - name: buffer
+      version:
+        - "<=4.3.1,4.2.0"
+      fixedin:
+        - ">=4.4.0"
+        - "<=4.1.0,2.1.1"
