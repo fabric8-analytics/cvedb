@@ -1,0 +1,18 @@
+---
+cve: 2020-11866
+title: CVE in arc-library
+description: >
+    libEMF (aka ECMA-234 Metafile Library) through 1.0.11 allows a use-after-free.
+cvss_v2: 6.8
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2020-06/msg00036.html
+    - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2DFYDSKWFM2R5NKZOO2IN6X7SM3T2PWL/
+    - https://sourceforge.net/p/libemf/code/commit_browser
+    - https://sourceforge.net/p/libemf/mailman/libemf-devel/
+    - https://sourceforge.net/p/libemf/news/2020/05/re-release-of-libemf-1012/
+affected:
+    - name: arc-library
+      version:
+        - "<=1.0.11"
+      fixedin:
+        - ">=1.0.12"
