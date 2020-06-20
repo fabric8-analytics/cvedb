@@ -1,0 +1,44 @@
+---
+cve: 2019-11479
+title: CVE in mss
+description: >
+    Jonathan Looney discovered that the Linux kernel default MSS is hard-coded to 48 bytes. This allows a remote peer to fragment TCP resend queues significantly more than if a larger MSS were enforced. A remote attacker could use this to cause a denial of service. This has been fixed in stable kernel releases 4.4.182, 4.9.182, 4.14.127, 4.19.52, 5.1.11, and is fixed in commits 967c05aee439e6e5d7d805e195b3a20ef5c433d6 and 5f3e2bf008c2221478101ee72f5cb4654b9fc363.
+cvss_v2: 5.0
+references:
+    - http://www.openwall.com/lists/oss-security/2019/06/28/2
+    - http://www.openwall.com/lists/oss-security/2019/07/06/3
+    - http://www.openwall.com/lists/oss-security/2019/07/06/4
+    - http://www.securityfocus.com/bid/108818
+    - https://access.redhat.com/errata/RHSA-2019:1594
+    - https://access.redhat.com/errata/RHSA-2019:1602
+    - https://access.redhat.com/errata/RHSA-2019:1699
+    - https://access.redhat.com/security/vulnerabilities/tcpsack
+    - https://cert-portal.siemens.com/productcert/pdf/ssa-462066.pdf
+    - https://git.kernel.org/pub/scm/linux/kernel/git/davem/net.git/commit/?id=5f3e2bf008c2221478101ee72f5cb4654b9fc363
+    - https://git.kernel.org/pub/scm/linux/kernel/git/davem/net.git/commit/?id=967c05aee439e6e5d7d805e195b3a20ef5c433d6
+    - https://github.com/Netflix/security-bulletins/blob/master/advisories/third-party/2019-001.md
+    - https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44193
+    - https://kc.mcafee.com/corporate/index?page=content&id=SB10287
+    - https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2019-0008
+    - https://security.netapp.com/advisory/ntap-20190625-0001/
+    - https://support.f5.com/csp/article/K35421172
+    - https://support.f5.com/csp/article/K35421172?utm_source=f5support&amp;utm_medium=RSS
+    - https://usn.ubuntu.com/4041-1/
+    - https://usn.ubuntu.com/4041-2/
+    - https://wiki.ubuntu.com/SecurityTeam/KnowledgeBase/SACKPanic
+    - https://www.kb.cert.org/vuls/id/905115
+    - https://www.oracle.com/security-alerts/cpujan2020.html
+    - https://www.synology.com/security/advisory/Synology_SA_19_28
+    - https://www.us-cert.gov/ics/advisories/icsa-19-253-03
+    - https://www.us-cert.gov/ics/advisories/icsma-20-170-06
+affected:
+    - name: mss
+      version:
+        - "<=2.0.0,2.0.0"
+        - "<=4.0.0,4.0.0"
+        - "<=5.0.0,5.0.0"
+      fixedin:
+        - ">=5.1.0"
+        - "<=4.0.3,4.0.1"
+        - "<=3.3.2,2.0.18"
+        - "<=1.0.2,0.0.2"
