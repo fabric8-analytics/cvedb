@@ -1,0 +1,14 @@
+---
+cve: 2018-21245
+title: CVE in on-http
+description: >
+    Pound before 2.8 allows HTTP request smuggling, a related issue to CVE-2016-10711.
+cvss_v2: 6.4
+references:
+    - https://admin.hostpoint.ch/pipermail/pound_apsis.ch/2018-May/000054.html
+affected:
+    - name: on-http
+      version:
+        - "<=2.7.1-20170601UTC-e2e4ba6"
+      fixedin:
+        - ">=2.8.0"
