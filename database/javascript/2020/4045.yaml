@@ -1,0 +1,16 @@
+---
+cve: 2020-4045
+title: CVE in ssb-db
+description: >
+    SSB-DB version 20.0.0 has an information disclosure vulnerability. The get() method is supposed to only decrypt messages when you explicitly ask it to, but there is a bug where it's decrypting any message that it can. This means that it is returning the decrypted content of private messages, which a malicious peer could use to get access to private data. This only affects peers running SSB-DB@20.0.0 who also have private messages, and is only known to be exploitable if you're also running SSB-OOO (default in SSB-Server), which exposes a thin wrapper around get() to anonymous peers. This is fixed in version 20.0.1. Note that users of SSB-Server verion 16.0.0 should upgrade to 16.0.1 to get the fixed version of SSB-DB.
+cvss_v2: 5.0
+references:
+    - https://github.com/ssbc/ssb-db/commit/43334d0871c9cc6220e0f6d6338499060f7761d4
+    - https://github.com/ssbc/ssb-db/security/advisories/GHSA-mpgr-2cx9-327h
+affected:
+    - name: ssb-db
+      version:
+        - "==20.0.0"
+      fixedin:
+        - ">=20.0.1"
+        - "<=19.4.0,18.6.0"
