@@ -1,0 +1,14 @@
+---
+cve: 2020-5358
+title: CVE in kronos-endpoint
+description: >
+    Dell Encryption versions prior to 10.7 and Dell Endpoint Security Suite versions prior to 2.7 contain a privilege escalation vulnerability due to incorrect permissions. A local malicious user with low privileges could potentially exploit this vulnerability to gain elevated privilege on the affected system with the help of a symbolic link.
+cvss_v2: 7.2
+references:
+    - https://www.dell.com/support/article/SLN321789
+affected:
+    - name: kronos-endpoint
+      version:
+        - "<=2.15.0"
+      fixedin:
+        []
