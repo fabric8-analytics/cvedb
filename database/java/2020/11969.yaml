@@ -1,0 +1,20 @@
+---
+cve: 2020-11969
+title: CVE in org.apache.tomee:tomee-juli
+description: >
+    If Apache TomEE is configured to use the embedded ActiveMQ broker, and the broker URI includes the useJMX=true parameter, a JMX port is opened on TCP port 1099, which does not include authentication. This affects Apache TomEE 8.0.0-M1 - 8.0.1, Apache TomEE 7.1.0 - 7.1.2, Apache TomEE 7.0.0-M1 - 7.0.7, Apache TomEE 1.0.0 - 1.7.5.
+cvss_v2: 6.8
+references:
+    - https://lists.apache.org/thread.html/rbd23418646dedda70a546331ea1c1d115b8975b7e7dc452d10e2e773%40%3Cdev.tomee.apache.org%3E
+    - https://lists.apache.org/thread.html/rbd23418646dedda70a546331ea1c1d115b8975b7e7dc452d10e2e773@%3Cannounce.apache.org%3E
+affected:
+    - groupId: org.apache.tomee
+      artifactId: tomee-juli
+      version:
+        - "<=7.0.7"
+        - "<=7.1.2,7.1.0"
+        - "<=8.0.1,8.0.0-M1"
+      fixedin:
+        - ">=8.0.2"
+        - "<=7.1.3,7.1.3"
+        - "<=7.0.8,7.0.8"
