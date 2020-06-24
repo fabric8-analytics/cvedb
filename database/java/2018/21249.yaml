@@ -1,0 +1,15 @@
+---
+cve: 2018-21249
+title: CVE in org.infinispan.server:infinispan-server-testsuite
+description: >
+    An issue was discovered in Mattermost Server before 5.3.0. It mishandles timing.
+cvss_v2: 4.3
+references:
+    - https://mattermost.com/security-updates/
+affected:
+    - groupId: org.infinispan.server
+      artifactId: infinispan-server-testsuite
+      version:
+        []
+      fixedin:
+        - ">=5.3.0.Beta1"
