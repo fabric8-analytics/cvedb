@@ -1,0 +1,15 @@
+---
+cve: 2017-18917
+title: CVE in mattermost-client
+description: >
+    An issue was discovered in Mattermost Server before 3.8.2, 3.7.5, and 3.6.7. Weak hashing was used for e-mail invitations, OAuth, and e-mail verification tokens.
+cvss_v2: 5.0
+references:
+    - https://mattermost.com/security-updates/
+affected:
+    - name: mattermost-client
+      version:
+        - "<=3.7.3,3.6.0"
+      fixedin:
+        - ">=3.9.0"
+        - "<=3.5.1,1.0.0"
