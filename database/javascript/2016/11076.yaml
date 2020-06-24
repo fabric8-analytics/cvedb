@@ -1,0 +1,14 @@
+---
+cve: 2016-11076
+title: CVE in mattermost-client
+description: >
+    An issue was discovered in Mattermost Server before 3.0.0. It does not ensure that a cookie is used over SSL.
+cvss_v2: 5.0
+references:
+    - https://mattermost.com/security-updates/
+affected:
+    - name: mattermost-client
+      version:
+        - "<=1.5.0"
+      fixedin:
+        - ">=3.0.0"
