@@ -1,0 +1,15 @@
+---
+cve: 2019-1003078
+title: CVE in oslo-vmware
+description: >
+    A cross-site request forgery vulnerability in Jenkins VMware Lab Manager Slaves Plugin in the LabManager.DescriptorImpl#doTestConnection form validation method allows attackers to initiate a connection to an attacker-specified server.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/107790
+    - https://jenkins.io/security/advisory/2019-04-03/#SECURITY-979
+affected:
+    - name: oslo-vmware
+      version:
+        []
+      fixedin:
+        - ">=0"
