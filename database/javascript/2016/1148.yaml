@@ -1,0 +1,16 @@
+---
+cve: 2016-1148
+title: CVE in @edu-fe/os-app
+description: >
+    Akerun - Smart Lock Robot App for iOS before 1.2.4 does not verify SSL certificates.
+cvss_v2: 4.3
+references:
+    - http://jvn.jp/en/jp/JVN22578691/index.html
+    - http://jvndb.jvn.jp/en/contents/2016/JVNDB-2016-000019.html
+    - https://akerun.com/2016-02-12-akerun-ios-app-security-update/
+affected:
+    - name: @edu-fe/os-app
+      version:
+        - "<=1.2.3"
+      fixedin:
+        - ">=1.2.4"
