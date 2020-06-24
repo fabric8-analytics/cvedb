@@ -1,0 +1,20 @@
+---
+cve: 2020-12827
+title: CVE in mjml-core
+description: >
+    MJML prior to 4.6.3 contains a path traversal vulnerability when processing the mj-include directive within an MJML document.
+cvss_v2: 6.4
+references:
+    - http://packetstormsecurity.com/files/158111/MJML-4.6.2-Path-Traversal.html
+    - http://seclists.org/fulldisclosure/2020/Jun/23
+    - https://github.com/mjmlio/mjml/commit/30e29ed2cdaec8684d60a6d12ea07b611c765a12
+    - https://github.com/mjmlio/mjml/releases/tag/v4.6.3
+    - https://mjml.io/community
+    - https://rcesecurity.com
+    - https://twitter.com/mjmlio
+affected:
+    - name: mjml-core
+      version:
+        - "<=4.6.2"
+      fixedin:
+        - ">=4.6.3-alpha.0"
