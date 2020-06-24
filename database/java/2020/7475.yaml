@@ -1,0 +1,15 @@
+---
+cve: 2020-7475
+title: CVE in de.pro-vision.maven:de.pro-vision.maven.build-tools.global-build-tools
+description: >
+    A CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection'), reflective DLL, vulnerability exists in EcoStruxure Control Expert (all versions prior to 14.1 Hot Fix), Unity Pro (all versions), Modicon M340 (all versions prior to V3.20), Modicon M580 (all versions prior to V3.10), which, if exploited, could allow attackers to transfer malicious code to the controller.
+cvss_v2: 7.5
+references:
+    - http://www.se.com/ww/en/download/document/SEVD-2020-080-01
+affected:
+    - groupId: de.pro-vision.maven
+      artifactId: de.pro-vision.maven.build-tools.global-build-tools
+      version:
+        - "<=14"
+      fixedin:
+        - ">=15"
