@@ -1,0 +1,15 @@
+---
+cve: 2017-18918
+title: CVE in mattermost-client
+description: >
+    An issue was discovered in Mattermost Server before 3.7.3 and 3.6.5. A System Administrator can place a SAML certificate at an arbitrary pathname.
+cvss_v2: 4.0
+references:
+    - https://mattermost.com/security-updates/
+affected:
+    - name: mattermost-client
+      version:
+        - "<=3.7.2,3.6.0"
+      fixedin:
+        - ">=3.7.3"
+        - "<=3.5.1,1.0.0"
