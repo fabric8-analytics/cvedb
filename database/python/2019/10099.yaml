@@ -1,0 +1,16 @@
+---
+cve: 2019-10099
+title: CVE in jmrpi-spark
+description: >
+    Prior to Spark 2.3.3, in certain situations Spark would write user data to local disk unencrypted, even if spark.io.encryption.enabled=true. This includes cached blocks that are fetched to disk (controlled by spark.maxRemoteBlockSizeFetchToMem); in SparkR, using parallelize; in Pyspark, using broadcast and parallelize; and use of python udfs.
+cvss_v2: 4.3
+references:
+    - https://lists.apache.org/thread.html/c2a39c207421797f82823a8aff488dcd332d9544038307bf69a2ba9e@%3Cuser.spark.apache.org%3E
+    - https://lists.apache.org/thread.html/ra216b7b0dd82a2c12c2df9d6095e689eb3f3d28164e6b6587da69fae@%3Ccommits.spark.apache.org%3E
+    - https://lists.apache.org/thread.html/rabe1d47e2bf8b8f6d9f3068c8d2679731d57fa73b3a7ed1fa82406d2@%3Cissues.spark.apache.org%3E
+affected:
+    - name: jmrpi-spark
+      version:
+        - "<=1.0.9,1.0.2"
+      fixedin:
+        - "<=1.0.1,1.0.0"
