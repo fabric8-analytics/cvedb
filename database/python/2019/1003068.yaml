@@ -1,0 +1,16 @@
+---
+cve: 2019-1003068
+title: CVE in oslo-vmware
+description: >
+    Jenkins VMware vRealize Automation Plugin stores credentials unencrypted in job config.xml files on the Jenkins master where they can be viewed by users with Extended Read permission, or access to the master file system.
+cvss_v2: 4.0
+references:
+    - http://www.openwall.com/lists/oss-security/2019/04/12/2
+    - http://www.securityfocus.com/bid/107790
+    - https://jenkins.io/security/advisory/2019-04-03/#SECURITY-945
+affected:
+    - name: oslo-vmware
+      version:
+        []
+      fixedin:
+        - ">=0"
