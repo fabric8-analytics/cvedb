@@ -1,0 +1,14 @@
+---
+cve: 2020-7501
+title: CVE in fib-2013-v1
+description: >
+    A CWE-798: Use of Hard-coded Credentials vulnerability exists in Vijeo Designer Basic (V1.1 HotFix 16 and prior) and Vijeo Designer (V6.2 SP9 and prior) which could cause unauthorized read and write when downloading and uploading project or firmware into Vijeo Designer Basic and Vijeo Designer.
+cvss_v2: 6.5
+references:
+    - https://www.se.com/ww/en/download/document/SEVD-2020-133-02/
+affected:
+    - name: fib-2013-v1
+      version:
+        - "<=1.0.0"
+      fixedin:
+        []
