@@ -1,0 +1,14 @@
+---
+cve: 2017-5902
+title: CVE in green-ssl
+description: >
+    The PayQuicker app 1.0.0 for iOS does not verify X.509 certificates from SSL servers, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate.
+cvss_v2: 4.3
+references:
+    - https://medium.com/@chronic_9612/follow-up-76-popular-apps-confirmed-vulnerable-to-silent-interception-of-tls-protected-data-64185035029f
+affected:
+    - name: green-ssl
+      version:
+        - "<=1.0"
+      fixedin:
+        - ">=1.0.1"
