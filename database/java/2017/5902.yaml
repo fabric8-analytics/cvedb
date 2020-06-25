@@ -1,0 +1,15 @@
+---
+cve: 2017-5902
+title: CVE in io.xream.x7:x7-repository
+description: >
+    The PayQuicker app 1.0.0 for iOS does not verify X.509 certificates from SSL servers, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate.
+cvss_v2: 4.3
+references:
+    - https://medium.com/@chronic_9612/follow-up-76-popular-apps-confirmed-vulnerable-to-silent-interception-of-tls-protected-data-64185035029f
+affected:
+    - groupId: io.xream.x7
+      artifactId: x7-repository
+      version:
+        - "<=1.0.0.RELEASE"
+      fixedin:
+        - ">=1.0.1.RELEASE"
