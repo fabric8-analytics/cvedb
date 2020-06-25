@@ -1,0 +1,17 @@
+---
+cve: 2020-5590
+title: CVE in cube-less
+description: >
+    Directory traversal vulnerability in EC-CUBE 3.0.0 to 3.0.18 and 4.0.0 to 4.0.3 allows remote authenticated attackers to delete arbitrary files and/or directories on the server via unspecified vectors.
+cvss_v2: 5.5
+references:
+    - https://jvn.jp/en/jp/JVN77458946/index.html
+    - https://www.ec-cube.net/info/weakness/weakness.php?id=73
+    - https://www.ec-cube.net/info/weakness/weakness.php?id=74
+affected:
+    - name: cube-less
+      version:
+        - "<=3.0.0,3.0.0"
+      fixedin:
+        - ">=3.1.0"
+        - "<=2.0.1,0.0.1"
