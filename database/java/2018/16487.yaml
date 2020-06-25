@@ -1,0 +1,16 @@
+---
+cve: 2018-16487
+title: CVE in org.webjars.bowergithub.lodash:lodash
+description: >
+    A prototype pollution vulnerability was found in lodash <4.17.11 where the functions merge, mergeWith, and defaultsDeep can be tricked into adding or modifying properties of Object.prototype.
+cvss_v2: 6.8
+references:
+    - https://hackerone.com/reports/380873
+    - https://security.netapp.com/advisory/ntap-20190919-0004/
+affected:
+    - groupId: org.webjars.bowergithub.lodash
+      artifactId: lodash
+      version:
+        - "<=4.17.10"
+      fixedin:
+        - ">=4.17.11"
