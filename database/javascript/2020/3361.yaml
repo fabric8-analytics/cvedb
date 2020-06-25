@@ -1,0 +1,14 @@
+---
+cve: 2020-3361
+title: CVE in opengov-meetings
+description: >
+    A vulnerability in Cisco Webex Meetings and Cisco Webex Meetings Server could allow an unauthenticated, remote attacker to gain unauthorized access to a vulnerable Webex site. The vulnerability is due to improper handling of authentication tokens by a vulnerable Webex site. An attacker could exploit this vulnerability by sending crafted requests to a vulnerable Cisco Webex Meetings or Cisco Webex Meetings Server site. If successful, the attacker could gain the privileges of another user within the affected Webex site.
+cvss_v2: 7.5
+references:
+    - https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-webex-token-zPvEjKN
+affected:
+    - name: opengov-meetings
+      version:
+        - "<=6.0.0"
+      fixedin:
+        []
