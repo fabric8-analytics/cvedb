@@ -1,0 +1,15 @@
+---
+cve: 2020-8162
+title: CVE in activestorage
+description: >
+    A client side enforcement of server side security vulnerability exists in rails < 5.2.4.2 and rails < 6.0.3.1 ActiveStorage's S3 adapter that allows the Content-Length of a direct file upload to be modified by an end user bypassing upload limits.
+cvss_v2: 5.0
+references:
+    - https://groups.google.com/g/rubyonrails-security/c/PjU3946mreQ
+    - https://hackerone.com/reports/789579
+affected:
+    - name: activestorage
+      version:
+        - "<=5.2.4-1"
+      fixedin:
+        - ">=5.2.4-2"
