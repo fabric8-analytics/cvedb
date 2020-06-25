@@ -1,0 +1,18 @@
+---
+cve: 2020-4281
+title: CVE in next
+description: >
+    IBM DOORS Next Generation (DNG/RRC) 6.0.2, 6.0.6, 6.0.6.1, and 7.0 is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 176141.
+cvss_v2: 3.5
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/176141
+    - https://www.ibm.com/support/pages/node/6235162
+affected:
+    - name: next
+      version:
+        - "<=6.0.2-canary.0,6.0.2"
+        - "<=7.0.0-canary.20,7.0.0"
+      fixedin:
+        - ">=7.0.1"
+        - "<=6.1.2,6.0.3"
+        - "<=6.0.1-canary.2,0.1.0"
