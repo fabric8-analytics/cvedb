@@ -1,0 +1,16 @@
+---
+cve: 2020-13961
+title: CVE in strapi-generate
+description: >
+    Strapi before 3.0.2 could allow a remote authenticated attacker to bypass security restrictions because templates are stored in a global variable without any sanitation. By sending a specially crafted request, an attacker could exploit this vulnerability to update the email template for both password reset and account confirmation emails.
+cvss_v2: 4.0
+references:
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/183045
+    - https://github.com/strapi/strapi/pull/6599
+    - https://github.com/strapi/strapi/releases/tag/v3.0.2
+affected:
+    - name: strapi-generate
+      version:
+        - "<=3.0.1"
+      fixedin:
+        - ">=3.0.2"
