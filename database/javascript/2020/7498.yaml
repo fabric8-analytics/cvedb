@@ -1,0 +1,14 @@
+---
+cve: 2020-7498
+title: CVE in use-cache-loader
+description: >
+    A CWE-798: Use of Hard-coded Credentials vulnerability exists in the Unity Loader and OS Loader Software (all versions). The fixed credentials are used to simplify file transfer. Today the use of fixed credentials is considered a vulnerability, which could cause unauthorized access to the file transfer service provided by the Modicon PLCs. This could result in various unintended results.
+cvss_v2: 7.5
+references:
+    - https://www.se.com/ww/en/download/document/SEVD-2020-161-02
+affected:
+    - name: use-cache-loader
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
