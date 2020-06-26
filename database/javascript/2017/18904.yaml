@@ -1,0 +1,14 @@
+---
+cve: 2017-18904
+title: CVE in mattermost-client
+description: >
+    An issue was discovered in Mattermost Server before 4.0.0, 3.10.2, and 3.9.2. It allows XSS via an uploaded file.
+cvss_v2: 4.3
+references:
+    - https://mattermost.com/security-updates/
+affected:
+    - name: mattermost-client
+      version:
+        - "<=3.10.0"
+      fixedin:
+        - ">=4.1.0"
