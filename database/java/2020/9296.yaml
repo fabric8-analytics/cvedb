@@ -1,0 +1,15 @@
+---
+cve: 2020-9296
+title: CVE in com.netflix.conductor:conductor-mysql-persistence
+description: >
+    Netflix Conductor uses Java Bean Validation (JSR 380) custom constraint validators. When building custom constraint violation error messages, different types of interpolation are supported, including Java EL expressions. If an attacker can inject arbitrary data in the error message template being passed to ConstraintValidatorContext.buildConstraintViolationWithTemplate() argument, they will be able to run arbitrary Java code.
+cvss_v2: 7.5
+references:
+    - https://github.com/Netflix/security-bulletins/blob/master/advisories/nflx-2020-001.md
+affected:
+    - groupId: com.netflix.conductor
+      artifactId: conductor-mysql-persistence
+      version:
+        - "<=2.25.3"
+      fixedin:
+        - ">=2.25.4"
