@@ -1,0 +1,16 @@
+---
+cve: 2020-1941
+title: CVE in org.apache.activemq:activemq-all
+description: >
+    In Apache ActiveMQ 5.0.0 to 5.15.11, the webconsole admin GUI is open to XSS, in the view that lists the contents of a queue.
+cvss_v2: 4.3
+references:
+    - http://activemq.apache.org/security-advisories.data/CVE-2020-1941-announcement.txt
+affected:
+    - groupId: org.apache.activemq
+      artifactId: activemq-all
+      version:
+        - "<=5.15.11,5.0.0"
+      fixedin:
+        - ">=5.15.12"
+        - "<=4.1.2,4.1.2"
