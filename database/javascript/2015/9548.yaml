@@ -1,0 +1,14 @@
+---
+cve: 2015-9548
+title: CVE in mattermost-client
+description: >
+    An issue was discovered in Mattermost Server before 1.2.0. It allows attackers to cause a denial of service (memory consumption) via a small compressed file that has a large size when uncompressed.
+cvss_v2: 5.0
+references:
+    - https://mattermost.com/security-updates/
+affected:
+    - name: mattermost-client
+      version:
+        - "<=1.1.0"
+      fixedin:
+        - ">=1.2.0"
