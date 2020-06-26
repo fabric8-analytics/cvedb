@@ -1,0 +1,14 @@
+---
+cve: 2016-11063
+title: CVE in mattermost-client
+description: >
+    An issue was discovered in Mattermost Server before 3.5.1. XSS can occur via file preview.
+cvss_v2: 4.3
+references:
+    - https://mattermost.com/security-updates/
+affected:
+    - name: mattermost-client
+      version:
+        - "<=3.5.0"
+      fixedin:
+        - ">=3.5.1"
