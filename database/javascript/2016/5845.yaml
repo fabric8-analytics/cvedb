@@ -1,0 +1,21 @@
+---
+cve: 2016-5845
+title: CVE in note-parser
+description: >
+    SAP SAPCAR does not check the return value of file operations when extracting files, which allows remote attackers to cause a denial of service (program crash) via an invalid file name in an archive file, aka SAP Security Note 2312905.
+<a href="http://cwe.mitre.org/data/definitions/252.html">CWE-252: Unchecked Return Value</a>
+cvss_v2: 2.1
+references:
+    - http://packetstormsecurity.com/files/138284/SAP-CAR-Archive-Tool-Denial-Of-Service-Security-Bypass.html
+    - http://seclists.org/fulldisclosure/2016/Aug/46
+    - http://www.securityfocus.com/archive/1/539180/100/0/threaded
+    - http://www.securityfocus.com/bid/92406
+    - https://www.coresecurity.com/advisories/sap-car-multiple-vulnerabilities
+    - https://www.exploit-db.com/exploits/40230/
+    - https://www.onapsis.com/blog/denial-service-attacks-sap-security-notes-august-2016
+affected:
+    - name: note-parser
+      version:
+        []
+      fixedin:
+        - ">=0.3.0"
