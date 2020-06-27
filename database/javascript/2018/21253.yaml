@@ -1,0 +1,14 @@
+---
+cve: 2018-21253
+title: CVE in mattermost-client
+description: >
+    An issue was discovered in Mattermost Server before 5.1, 5.0.2, and 4.10.2. An attacker could use the invite_people slash command to invite a non-permitted user.
+cvss_v2: 4.0
+references:
+    - https://mattermost.com/security-updates/
+affected:
+    - name: mattermost-client
+      version:
+        - "<=5.0.0"
+      fixedin:
+        - ">=6.1.0"
