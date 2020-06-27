@@ -1,0 +1,16 @@
+---
+cve: 2020-13431
+title: CVE in net.i2p:servlet-i2p
+description: >
+    I2P before 0.9.46 allows local users to gain privileges via a Trojan horse I2PSvc.exe file because of weak permissions on a certain %PROGRAMFILES% subdirectory.
+cvss_v2: 7.2
+references:
+    - https://blog.blazeinfosec.com/security-advisory-i2p-for-windows-local-privilege-escalation/
+    - https://geti2p.net/en
+affected:
+    - groupId: net.i2p
+      artifactId: servlet-i2p
+      version:
+        - "<=0.9.45"
+      fixedin:
+        - ">=0.9.46"
