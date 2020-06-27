@@ -1,0 +1,14 @@
+---
+cve: 2016-11074
+title: CVE in mattermost-client
+description: >
+    An issue was discovered in Mattermost Server before 3.0.0. A password-reset link could be reused.
+cvss_v2: 7.5
+references:
+    - https://mattermost.com/security-updates/
+affected:
+    - name: mattermost-client
+      version:
+        - "<=1.5.0"
+      fixedin:
+        - ">=3.0.0"
