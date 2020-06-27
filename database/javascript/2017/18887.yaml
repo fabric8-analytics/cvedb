@@ -1,0 +1,14 @@
+---
+cve: 2017-18887
+title: CVE in mattermost-client
+description: >
+    An issue was discovered in Mattermost Server before 4.3.0, 4.2.1, and 4.1.2. It discloses the team creator's e-mail address to members.
+cvss_v2: 5.0
+references:
+    - https://mattermost.com/security-updates/
+affected:
+    - name: mattermost-client
+      version:
+        - "<=4.3.0"
+      fixedin:
+        - ">=4.4.0"
