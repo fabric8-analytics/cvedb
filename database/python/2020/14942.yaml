@@ -1,0 +1,15 @@
+---
+cve: 2020-14942
+title: CVE in tendenci
+description: >
+    Tendenci 12.0.10 allows unrestricted deserialization in apps\helpdesk\views\staff.py.
+cvss_v2: 7.5
+references:
+    - https://github.com/tendenci/tendenci/issues/867
+affected:
+    - name: tendenci
+      version:
+        - "<=12.0.10,12.0.10"
+      fixedin:
+        - ">=12.0.11"
+        - "<=12.0.9,5.1.0"
