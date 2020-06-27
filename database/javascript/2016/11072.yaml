@@ -1,0 +1,14 @@
+---
+cve: 2016-11072
+title: CVE in mattermost
+description: >
+    An issue was discovered in Mattermost Server before 3.0.2. The purposes of a session ID and a Session Token were mishandled.
+cvss_v2: 6.4
+references:
+    - https://mattermost.com/security-updates/
+affected:
+    - name: mattermost
+      version:
+        - "<=3.0.1"
+      fixedin:
+        - ">=3.0.2"
