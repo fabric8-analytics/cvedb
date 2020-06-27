@@ -1,0 +1,21 @@
+---
+cve: 2020-13426
+title: CVE in @wordpress/api-request
+description: >
+    The Multi-Scheduler plugin 1.0.0 for WordPress has a Cross-Site Request Forgery (CSRF) vulnerability in the forms it presents, allowing the possibility of deleting records (users) when an ID is known.
+cvss_v2: 4.3
+references:
+    - https://0day.today/exploit/34496
+    - https://cxsecurity.com/issue/WLB-2020050235
+    - https://infayer.com/archivos/448
+    - https://packetstormsecurity.com/files/157867/WordPress-Multi-Scheduler-1.0.0-Cross-Site-Request-Forgery.html
+    - https://research-labs.net/search/exploits/wordpress-plugin-multi-scheduler-100-cross-site-request-forgery-delete-user
+    - https://twitter.com/UnD3sc0n0c1d0
+    - https://wordpress.org/plugins/multi-scheduler/#developers
+    - https://www.exploit-db.com/exploits/48532
+affected:
+    - name: @wordpress/api-request
+      version:
+        - "<=1.0.0"
+      fixedin:
+        []
