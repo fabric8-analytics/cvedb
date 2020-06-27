@@ -1,0 +1,14 @@
+---
+cve: 2017-18889
+title: CVE in mattermost-client
+description: >
+    An issue was discovered in Mattermost Server before 4.3.0, 4.2.1, and 4.1.2. An attacker could create fictive system-message posts via webhooks and slash commands, in the v3 or v4 REST API.
+cvss_v2: 4.0
+references:
+    - https://mattermost.com/security-updates/
+affected:
+    - name: mattermost-client
+      version:
+        - "<=4.3.0"
+      fixedin:
+        - ">=4.4.0"
