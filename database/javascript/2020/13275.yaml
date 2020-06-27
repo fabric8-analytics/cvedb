@@ -1,0 +1,17 @@
+---
+cve: 2020-13275
+title: CVE in gitlab
+description: >
+    A user with an unverified email address could request an access to domain restricted groups in GitLab EE 12.2 and later through 13.0.1
+cvss_v2: 5.5
+references:
+    - https://gitlab.com/gitlab-org/cves/-/blob/master/2020/CVE-2020-13275.json
+    - https://gitlab.com/gitlab-org/gitlab/-/issues/209254
+    - https://hackerone.com/reports/806255
+affected:
+    - name: gitlab
+      version:
+        - "<=13.0.0,13.0.0"
+      fixedin:
+        - ">=14.0.0"
+        - "<=12.1.2,0.0.1"
