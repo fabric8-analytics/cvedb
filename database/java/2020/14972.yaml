@@ -1,0 +1,16 @@
+---
+cve: 2020-14972
+title: CVE in org.ow2.jonas.jpaas.system-representation:system-representation-ejb
+description: >
+    Multiple SQL injection vulnerabilities in Sourcecodester Pisay Online E-Learning System 1.0 allow remote unauthenticated attackers to bypass authentication and achieve Remote Code Execution (RCE) via the user_email, user_pass, and id parameters on the admin login-portal and the edit-lessons webpages.
+cvss_v2: 7.5
+references:
+    - https://www.exploit-db.com/exploits/48439
+    - https://www.sourcecodester.com
+affected:
+    - groupId: org.ow2.jonas.jpaas.system-representation
+      artifactId: system-representation-ejb
+      version:
+        - "<=1.0.0-M1"
+      fixedin:
+        []
