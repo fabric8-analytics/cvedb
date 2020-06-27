@@ -1,0 +1,14 @@
+---
+cve: 2016-11064
+title: CVE in mattermost
+description: >
+    An issue was discovered in Mattermost Desktop App before 3.4.0. Strings could be executed as code via injection.
+cvss_v2: 7.5
+references:
+    - https://mattermost.com/security-updates/
+affected:
+    - name: mattermost
+      version:
+        - "<=3.0.3"
+      fixedin:
+        - ">=3.4.0"
