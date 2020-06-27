@@ -1,0 +1,14 @@
+---
+cve: 2016-11065
+title: CVE in mattermost-client
+description: >
+    An issue was discovered in Mattermost Server before 3.3.0. An attacker could use the WebSocket feature to send pop-up messages to users or change a post's appearance.
+cvss_v2: 4.0
+references:
+    - https://mattermost.com/security-updates/
+affected:
+    - name: mattermost-client
+      version:
+        - "<=3.1.1"
+      fixedin:
+        - ">=3.3.0"
