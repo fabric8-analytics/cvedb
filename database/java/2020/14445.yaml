@@ -1,0 +1,15 @@
+---
+cve: 2020-14445
+title: CVE in org.wso2.carbon.identity.framework:org.wso2.carbon.identity.entitlement
+description: >
+    An issue was discovered in WSO2 Identity Server through 5.9.0 and WSO2 IS as Key Manager through 5.9.0. A potential Reflected Cross-Site Scripting (XSS) vulnerability has been identified in the Management Console Basic Policy Editor user Interface.
+cvss_v2: 3.5
+references:
+    - https://docs.wso2.com/display/Security/Security+Advisory+WSO2-2020-0711
+affected:
+    - groupId: org.wso2.carbon.identity.framework
+      artifactId: org.wso2.carbon.identity.entitlement
+      version:
+        - "<=5.9.0"
+      fixedin:
+        - ">=5.10.0"
