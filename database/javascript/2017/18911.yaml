@@ -1,0 +1,14 @@
+---
+cve: 2017-18911
+title: CVE in mattermost-client
+description: >
+    An issue was discovered in Mattermost Server before 3.8.2, 3.7.5, and 3.6.7. The X.509 certificate validation can be skipped for a TLS-based e-mail server.
+cvss_v2: 6.4
+references:
+    - https://mattermost.com/security-updates/
+affected:
+    - name: mattermost-client
+      version:
+        - "<=3.7.3"
+      fixedin:
+        - ">=3.9.0"
