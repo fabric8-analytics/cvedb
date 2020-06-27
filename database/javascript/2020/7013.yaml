@@ -1,0 +1,14 @@
+---
+cve: 2020-7013
+title: CVE in kibana-recycler
+description: >
+    Kibana versions before 6.8.9 and 7.7.0 contain a prototype pollution flaw in TSVB. An authenticated attacker with privileges to create TSVB visualizations could insert data that would cause Kibana to execute arbitrary code. This could possibly lead to an attacker executing code with the permissions of the Kibana process on the host system.
+cvss_v2: 6.5
+references:
+    - https://www.elastic.co/community/security/
+affected:
+    - name: kibana-recycler
+      version:
+        - "<=4.0.0"
+      fixedin:
+        []
