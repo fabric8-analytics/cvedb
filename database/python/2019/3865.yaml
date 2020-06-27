@@ -1,0 +1,15 @@
+---
+cve: 2019-3865
+title: CVE in quay-client
+description: >
+    A vulnerability was found in quay-2, where a stored XSS vulnerability has been found in the super user function of quay. Attackers are able to use the name field of service key to inject scripts and make it run when admin users try to change the name.
+cvss_v2: 4.3
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-3865
+affected:
+    - name: quay-client
+      version:
+        - "<=2,2"
+      fixedin:
+        - ">=3"
+        - "<=1,1"
