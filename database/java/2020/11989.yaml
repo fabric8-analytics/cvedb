@@ -1,0 +1,15 @@
+---
+cve: 2020-11989
+title: CVE in org.apache.shiro:shiro-web
+description: >
+    Apache Shiro before 1.5.3, when using Apache Shiro with Spring dynamic controllers, a specially crafted request may cause an authentication bypass.
+cvss_v2: 7.5
+references:
+    - https://lists.apache.org/thread.html/r72815a124a119c450b86189767d06848e0d380b1795c6c511d54a675%40%3Cuser.shiro.apache.org%3E
+affected:
+    - groupId: org.apache.shiro
+      artifactId: shiro-web
+      version:
+        - "<=1.5.2"
+      fixedin:
+        - ">=1.5.3"
