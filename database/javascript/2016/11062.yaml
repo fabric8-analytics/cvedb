@@ -1,0 +1,14 @@
+---
+cve: 2016-11062
+title: CVE in mattermost-client
+description: >
+    An issue was discovered in Mattermost Server before 3.5.1. E-mail address verification can be bypassed.
+cvss_v2: 5.0
+references:
+    - https://mattermost.com/security-updates/
+affected:
+    - name: mattermost-client
+      version:
+        - "<=3.5.0"
+      fixedin:
+        - ">=3.5.1"
