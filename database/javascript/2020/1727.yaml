@@ -1,0 +1,14 @@
+---
+cve: 2020-1727
+title: CVE in keycloak-js
+description: >
+    A vulnerability was found in Keycloak before 9.0.2, where every Authorization URL that points to an IDP server lacks proper input validation as it allows a wide range of characters. This flaw allows a malicious to craft deep links that introduce further attack scenarios on affected clients.
+cvss_v2: 5.5
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-1727
+affected:
+    - name: keycloak-js
+      version:
+        - "<=9.0.0"
+      fixedin:
+        - ">=9.0.2"
