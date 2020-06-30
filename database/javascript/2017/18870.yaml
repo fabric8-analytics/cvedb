@@ -1,0 +1,14 @@
+---
+cve: 2017-18870
+title: CVE in mattermost-client
+description: >
+    An issue was discovered in Mattermost Server before 4.5.0, 4.4.5, and 4.3.4. It mishandled webhook access control in the EnableOnlyAdminIntegrations case.
+cvss_v2: 3.5
+references:
+    - https://mattermost.com/security-updates/
+affected:
+    - name: mattermost-client
+      version:
+        - "<=4.4.0"
+      fixedin:
+        - ">=5.0.0"
