@@ -1,0 +1,18 @@
+---
+cve: 2020-14968
+title: CVE in jsrsasign
+description: >
+    An issue was discovered in the jsrsasign package before 8.0.17 for Node.js. Its RSASSA-PSS (RSA-PSS) implementation does not detect signature manipulation/modification by prepending '\0' bytes to a signature (it accepts these modified signatures as valid). An attacker can abuse this behavior in an application by creating multiple valid signatures where only one signature should exist. Also, an attacker might prepend these bytes with the goal of triggering memory corruption issues.
+cvss_v2: 7.5
+references:
+    - https://github.com/kjur/jsrsasign/issues/438
+    - https://github.com/kjur/jsrsasign/releases/tag/8.0.17
+    - https://github.com/kjur/jsrsasign/releases/tag/8.0.18
+    - https://kjur.github.io/jsrsasign/
+    - https://www.npmjs.com/package/jsrsasign
+affected:
+    - name: jsrsasign
+      version:
+        - "<=8.0.16"
+      fixedin:
+        - ">=8.0.17"
