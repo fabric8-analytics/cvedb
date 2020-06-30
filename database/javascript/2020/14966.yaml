@@ -1,0 +1,18 @@
+---
+cve: 2020-14966
+title: CVE in jsrsasign
+description: >
+    An issue was discovered in the jsrsasign package through 8.0.18 for Node.js. It allows a malleability in ECDSA signatures by not checking overflows in the length of a sequence and '0' characters appended or prepended to an integer. The modified signatures are verified as valid. This could have a security-relevant impact if an application relied on a single canonical signature.
+cvss_v2: 5.0
+references:
+    - https://github.com/kjur/jsrsasign/issues/437
+    - https://github.com/kjur/jsrsasign/releases/tag/8.0.17
+    - https://github.com/kjur/jsrsasign/releases/tag/8.0.18
+    - https://kjur.github.io/jsrsasign/
+    - https://www.npmjs.com/package/jsrsasign
+affected:
+    - name: jsrsasign
+      version:
+        - "<=8.0.18"
+      fixedin:
+        - ">=8.0.19"
