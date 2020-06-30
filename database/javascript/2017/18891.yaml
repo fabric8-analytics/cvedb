@@ -1,0 +1,16 @@
+---
+cve: 2017-18891
+title: CVE in mattermost-client
+description: >
+    An issue was discovered in Mattermost Server before 4.2.0, 4.1.1, and 4.0.5. It allows Phishing because an error page can have a link.
+cvss_v2: 5.8
+references:
+    - https://mattermost.com/security-updates/
+affected:
+    - name: mattermost-client
+      version:
+        - "<=4.1.0"
+        - "<=4.2.0,4.2.0"
+      fixedin:
+        - ">=4.3.0"
+        - "<=4.1.1,4.1.1"
