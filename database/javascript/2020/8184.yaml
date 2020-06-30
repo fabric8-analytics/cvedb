@@ -1,0 +1,16 @@
+---
+cve: 2020-8184
+title: CVE in asset-rack
+description: >
+    A reliance on cookies without validation/integrity check security vulnerability exists in rack < 2.2.3, rack < 2.1.4 that makes it is possible for an attacker to forge a secure or host-only cookie prefix.
+cvss_v2: 5.0
+references:
+    - https://groups.google.com/g/rubyonrails-security/c/OWtmozPH9Ak
+    - https://hackerone.com/reports/895727
+affected:
+    - name: asset-rack
+      version:
+        - "<=2.1.3"
+        - "<=2.2.2,2.2.0"
+      fixedin:
+        - "<=2.1.5,2.1.4"
