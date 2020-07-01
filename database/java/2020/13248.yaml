@@ -1,0 +1,15 @@
+---
+cve: 2020-13248
+title: CVE in net.digitalid.utility:utility-concurrency
+description: >
+    BooleBox Secure File Sharing Utility (potentially all versions) allows stored XSS via a crafted avatar field within My Account JSON data to Account.aspx.
+cvss_v2: 3.5
+references:
+    - https://members.backbox.org/boolebox-secure-sharing-multiple-vulnerabilities/
+affected:
+    - groupId: net.digitalid.utility
+      artifactId: utility-concurrency
+      version:
+        []
+      fixedin:
+        - ">=0.7.0"
