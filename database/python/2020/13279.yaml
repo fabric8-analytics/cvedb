@@ -1,0 +1,15 @@
+---
+cve: 2020-13279
+title: CVE in acos-client
+description: >
+    Client side code execution in gitlab-vscode-extension v2.2.0 allows attacker to execute code on user system
+cvss_v2: 6.8
+references:
+    - https://gitlab.com/gitlab-org/cves/-/blob/master/2020/CVE-2020-13279.json
+    - https://gitlab.com/gitlab-org/gitlab-vscode-extension/-/issues/170
+affected:
+    - name: acos-client
+      version:
+        - "<=2.2.0"
+      fixedin:
+        []
