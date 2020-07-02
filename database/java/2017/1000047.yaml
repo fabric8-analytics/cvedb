@@ -1,0 +1,15 @@
+---
+cve: 2017-1000047
+title: CVE in org.apache.directory.studio:org.apache.directory.server.config
+description: >
+    rbenv (all current versions) is vulnerable to Directory Traversal in the specification of Ruby version resulting in arbitrary code execution
+cvss_v2: 7.5
+references:
+    - https://github.com/justinsteven/advisories/blob/master/2017_rbenv_ruby_version_directory_traversal.md
+affected:
+    - groupId: org.apache.directory.studio
+      artifactId: org.apache.directory.server.config
+      version:
+        []
+      fixedin:
+        - ">=2.0.0-M4"
