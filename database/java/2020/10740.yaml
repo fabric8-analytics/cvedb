@@ -1,0 +1,15 @@
+---
+cve: 2020-10740
+title: CVE in org.wildfly:wildfly-clustering-ejb-infinispan
+description: >
+    A vulnerability was found in Wildfly in versions before 20.0.0.Final, where a remote deserialization attack is possible in the Enterprise Application Beans(EJB) due to lack of validation/filtering capabilities in wildfly.
+cvss_v2: 6.5
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-10740
+affected:
+    - groupId: org.wildfly
+      artifactId: wildfly-clustering-ejb-infinispan
+      version:
+        - "<=19.1.0.Final"
+      fixedin:
+        - ">=20.0.0.Beta1"
