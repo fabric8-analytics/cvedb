@@ -1,0 +1,15 @@
+---
+cve: 2020-3969
+title: CVE in oslo-vmware
+description: >
+    VMware ESXi (7.0 before ESXi_7.0.0-1.20.16321839, 6.7 before ESXi670-202004101-SG and 6.5 before ESXi650-202005401-SG), Workstation (15.x before 15.5.5), and Fusion (11.x before 11.5.5) contain an off-by-one heap-overflow vulnerability in the SVGA device. A malicious actor with local access to a virtual machine with 3D graphics enabled may be able to exploit this vulnerability to execute code on the hypervisor from a virtual machine. Additional conditions beyond the attacker's control must be present for exploitation to be possible.
+cvss_v2: 4.4
+references:
+    - https://www.vmware.com/security/advisories/VMSA-2020-0015.html
+    - https://www.zerodayinitiative.com/advisories/ZDI-20-786/
+affected:
+    - name: oslo-vmware
+      version:
+        - "<=3.4.0,3.0.0"
+      fixedin:
+        - "<=2.35.0,0"
