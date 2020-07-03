@@ -1,0 +1,17 @@
+---
+cve: 2020-13423
+title: CVE in magento
+description: >
+    Form Builder 2.1.0 for Magento has multiple XSS issues that can be exploited against Magento 2 admin accounts via the Current_url or email field, or the User-Agent HTTP header.
+cvss_v2: 3.5
+references:
+    - https://anothernetsecblog.com
+    - https://anothernetsecblog.com/magento-2-extension-security/
+    - https://landofcoder.com/magento-2-form-builder.html
+affected:
+    - name: magento
+      version:
+        - "<=2.1,2.1"
+      fixedin:
+        - ">=2.2"
+        - "<=2.0,0.1.0"
