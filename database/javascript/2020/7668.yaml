@@ -1,0 +1,14 @@
+---
+cve: 2020-7668
+title: CVE in tz2tz
+description: >
+    The ExtractTo function doesn't securely escape file paths in zip archives which include leading or non-leading "..". This allows an attacker to add or replace files system-wide.
+cvss_v2: 5.0
+references:
+    - https://snyk.io/vuln/SNYK-GOLANG-GITHUBCOMUNKNWONCAETZ-570384
+affected:
+    - name: tz2tz
+      version:
+        []
+      fixedin:
+        - ">=1.0.0"
