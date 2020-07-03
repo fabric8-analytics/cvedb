@@ -1,0 +1,16 @@
+---
+cve: 2020-10665
+title: CVE in peek-desktop
+description: >
+    Docker Desktop allows local privilege escalation to NT AUTHORITY\SYSTEM because it mishandles the collection of diagnostics with Administrator privileges, leading to arbitrary DACL permissions overwrites and arbitrary file writes. This affects Docker Desktop Enterprise before 2.1.0.9, Docker Desktop for Windows Stable before 2.2.0.4, and Docker Desktop for Windows Edge before 2.2.2.0.
+cvss_v2: 7.2
+references:
+    - https://docs.docker.com/release-notes/
+    - https://github.com/active-labs/Advisories/blob/master/2020/ACTIVE-2020-002.md
+    - https://github.com/spaceraccoon/CVE-2020-10665
+affected:
+    - name: peek-desktop
+      version:
+        - "<=2.2.1"
+      fixedin:
+        - ">=2.2.2"
