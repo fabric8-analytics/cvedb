@@ -1,0 +1,18 @@
+---
+cve: 2020-13423
+title: CVE in io.github.openfeign.form:feign-form-spring
+description: >
+    Form Builder 2.1.0 for Magento has multiple XSS issues that can be exploited against Magento 2 admin accounts via the Current_url or email field, or the User-Agent HTTP header.
+cvss_v2: 3.5
+references:
+    - https://anothernetsecblog.com
+    - https://anothernetsecblog.com/magento-2-extension-security/
+    - https://landofcoder.com/magento-2-form-builder.html
+affected:
+    - groupId: io.github.openfeign.form
+      artifactId: feign-form-spring
+      version:
+        - "<=2.1.0,2.1.0"
+      fixedin:
+        - ">=2.2.0"
+        - "<=2.0.9,2.0.2"
