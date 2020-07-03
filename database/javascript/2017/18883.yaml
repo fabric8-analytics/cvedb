@@ -1,0 +1,14 @@
+---
+cve: 2017-18883
+title: CVE in mattermost-client
+description: >
+    An issue was discovered in Mattermost Server before 4.3.0, 4.2.1, and 4.1.2, when serving as an OAuth 2.0 Service Provider. There is low entropy for authorization data.
+cvss_v2: 6.4
+references:
+    - https://mattermost.com/security-updates/
+affected:
+    - name: mattermost-client
+      version:
+        - "<=4.3.0"
+      fixedin:
+        - ">=4.4.0"
