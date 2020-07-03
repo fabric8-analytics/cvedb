@@ -1,0 +1,16 @@
+---
+cve: 2020-5586
+title: CVE in @cybozu/eslint-config
+description: >
+    Cross-site scripting vulnerability in Cybozu Garoon 4.10.3 to 5.0.1 allows attacker with administrator rights to inject an arbitrary script via unspecified vectors.
+cvss_v2: 3.5
+references:
+    - https://jvn.jp/en/jp/JVN55497111/index.html
+    - https://kb.cybozu.support/article/36453/
+affected:
+    - name: @cybozu/eslint-config
+      version:
+        - "<=5.0.1,5.0.0"
+      fixedin:
+        - ">=5.1.0"
+        - "<=4.0.1,1.0.0"
