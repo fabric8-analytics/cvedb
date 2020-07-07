@@ -1,0 +1,15 @@
+---
+cve: 2020-8161
+title: CVE in directory-components
+description: >
+    A directory traversal vulnerability exists in rack < 2.2.0 that allows an attacker perform directory traversal vulnerability in the Rack::Directory app that is bundled with Rack which could result in information disclosure.
+cvss_v2: 5.0
+references:
+    - https://groups.google.com/g/rubyonrails-security/c/IOO1vNZTzPA
+    - https://hackerone.com/reports/434404
+affected:
+    - name: directory-components
+      version:
+        - "<=2.1.1"
+      fixedin:
+        - ">=2.2.0"
