@@ -1,0 +1,16 @@
+---
+cve: 2020-2208
+title: CVE in com.hubspot.slack:slack-java-client-examples
+description: >
+    Jenkins Slack Upload Plugin 1.7 and earlier stores a secret unencrypted in job config.xml files on the Jenkins master where it can be viewed by users with Extended Read permission, or access to the master file system.
+cvss_v2: 4.0
+references:
+    - http://www.openwall.com/lists/oss-security/2020/07/02/7
+    - https://jenkins.io/security/advisory/2020-07-02/#SECURITY-1627
+affected:
+    - groupId: com.hubspot.slack
+      artifactId: slack-java-client-examples
+      version:
+        - "<=1.7"
+      fixedin:
+        - ">=1.8"
