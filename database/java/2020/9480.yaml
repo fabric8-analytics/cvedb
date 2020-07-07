@@ -1,0 +1,15 @@
+---
+cve: 2020-9480
+title: CVE in org.apache.spark:spark-kvstore_2.11
+description: >
+    In Apache Spark 2.4.5 and earlier, a standalone resource manager's master may be configured to require authentication (spark.authenticate) via a shared secret. When enabled, however, a specially-crafted RPC to the master can succeed in starting an application's resources on the Spark cluster, even without the shared key. This can be leveraged to execute shell commands on the host machine. This does not affect Spark clusters using other resource managers (YARN, Mesos, etc).
+cvss_v2: 9.3
+references:
+    - https://spark.apache.org/security.html#CVE-2020-9480
+affected:
+    - groupId: org.apache.spark
+      artifactId: spark-kvstore_2.11
+      version:
+        - "<=2.4.5"
+      fixedin:
+        - ">=2.4.6"
