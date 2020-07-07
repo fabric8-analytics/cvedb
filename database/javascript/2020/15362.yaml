@@ -1,0 +1,15 @@
+---
+cve: 2020-15362
+title: CVE in panasonic-bar-code-scanner
+description: >
+    wifiscanner.js in thingsSDK WiFi Scanner 1.0.1 allows Code Injection because it can be used with options to overwrite the default executable/binary path and its arguments. An attacker can abuse this functionality to execute arbitrary code.
+cvss_v2: 7.5
+references:
+    - https://github.com/thingsSDK/wifiscanner/issues/1
+affected:
+    - name: panasonic-bar-code-scanner
+      version:
+        - "<=1.0.1,1.0.1"
+      fixedin:
+        - ">=1.0.2"
+        - "<=1.0.0,1.0.0"
