@@ -1,0 +1,15 @@
+---
+cve: 2020-5601
+title: CVE in major-system
+description: >
+    Chrome Extension for e-Tax Reception System Ver1.0.0.0 allows remote attackers to execute an arbitrary command via unspecified vectors.
+cvss_v2: 6.8
+references:
+    - https://jvn.jp/en/jp/JVN40039627/index.html
+    - https://www.e-tax.nta.go.jp/topics/topics_200618.htm
+affected:
+    - name: major-system
+      version:
+        - "<=1.0.0"
+      fixedin:
+        - ">=1.0.1"
