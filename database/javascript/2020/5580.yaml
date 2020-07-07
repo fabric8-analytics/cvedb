@@ -1,0 +1,16 @@
+---
+cve: 2020-5580
+title: CVE in @cybozu/eslint-config
+description: >
+    Cybozu Garoon 4.0.0 to 5.0.1 allows remote authenticated attackers to bypass access restriction to view and/or alter Single sign-on settings via unspecified vectors.
+cvss_v2: 5.5
+references:
+    - https://jvn.jp/en/jp/JVN55497111/index.html
+    - https://kb.cybozu.support/article/36391
+affected:
+    - name: @cybozu/eslint-config
+      version:
+        - "<=5.0.1,4.0.0"
+      fixedin:
+        - ">=5.1.0"
+        - "<=3.2.1,1.0.0"
