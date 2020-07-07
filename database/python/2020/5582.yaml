@@ -1,0 +1,15 @@
+---
+cve: 2020-5582
+title: CVE in chanjo-report
+description: >
+    Cybozu Garoon 4.0.0 to 5.0.1 allows remote authenticated attackers to bypass access restriction to alter the data for the file attached to Report via unspecified vectors.
+cvss_v2: 4.0
+references:
+    - https://jvn.jp/en/jp/JVN55497111/index.html
+    - https://kb.cybozu.support/article/36455/
+affected:
+    - name: chanjo-report
+      version:
+        - "<=4.2.0,4.0.0"
+      fixedin:
+        - "<=3.0.5,0.0.2"
