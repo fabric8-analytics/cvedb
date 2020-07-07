@@ -1,0 +1,16 @@
+---
+cve: 2013-7489
+title: CVE in beaker
+description: >
+    The Beaker library through 1.11.0 for Python is affected by deserialization of untrusted data, which could lead to arbitrary code execution.
+cvss_v2: 5.2
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1850105
+    - https://github.com/bbangert/beaker/issues/191
+    - https://www.openwall.com/lists/oss-security/2020/05/14/11
+affected:
+    - name: beaker
+      version:
+        - "<=1.11.0"
+      fixedin:
+        []
