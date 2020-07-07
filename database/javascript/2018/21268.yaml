@@ -1,0 +1,21 @@
+---
+cve: 2018-21268
+title: CVE in traceroute-reader
+description: >
+    The traceroute (aka node-traceroute) package through 1.0.0 for Node.js allows remote command injection via the host parameter. This occurs because the Child.exec() method, which is considered to be not entirely safe, is used. In particular, an OS command can be placed after a newline character.
+cvss_v2: 7.5
+references:
+    - https://github.com/jaw187/node-traceroute/commit/b99ee024a01a40d3d20a92ad3769cc78a3f6386f
+    - https://github.com/jaw187/node-traceroute/tags
+    - https://medium.com/@shay_62828/shell-command-injection-through-traceroute-npm-package-a4cf7b6553e3
+    - https://snyk.io/vuln/npm:traceroute:20160311
+    - https://www.linkedin.com/posts/op-innovate_shell-command-injection-through-traceroute-activity-6678956453086191616-Rcpy
+    - https://www.npmjs.com/advisories/1465
+    - https://www.npmjs.com/package/traceroute
+    - https://www.op-c.net/2020/06/17/shell-command-injection-through-traceroute-npm-package/
+affected:
+    - name: traceroute-reader
+      version:
+        - "<=1.0.0"
+      fixedin:
+        []
