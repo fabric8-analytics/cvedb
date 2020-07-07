@@ -1,0 +1,16 @@
+---
+cve: 2020-15324
+title: CVE in cloud-blobstore
+description: >
+    Zyxel CloudCNM SecuManager 3.1.0 and 3.1.1 has a world-readable axess/opt/axXMPPHandler/config/xmpp_config.py file that stores hardcoded credentials.
+cvss_v2: 7.5
+references:
+    - https://pierrekim.github.io/blog/2020-03-09-zyxel-secumanager-0day-vulnerabilities.html
+    - https://www.zyxel.com/support/vulnerabilities-of-CloudCNM-SecuManager.shtml
+affected:
+    - name: cloud-blobstore
+      version:
+        - "<=3.1.0,3.1.0"
+      fixedin:
+        - ">=3.2.0"
+        - "<=3.0.0,0.0.1"
