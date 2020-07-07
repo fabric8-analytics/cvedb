@@ -1,0 +1,15 @@
+---
+cve: 2020-2219
+title: CVE in djangocms-column
+description: >
+    Jenkins Link Column Plugin 1.0 and earlier does not filter URLs of links created by users with View/Configure permission, resulting in a stored cross-site scripting vulnerability.
+cvss_v2: 3.5
+references:
+    - http://www.openwall.com/lists/oss-security/2020/07/02/7
+    - https://jenkins.io/security/advisory/2020-07-02/#SECURITY-1803
+affected:
+    - name: djangocms-column
+      version:
+        - "<=1.0"
+      fixedin:
+        - ">=1.0.1"
