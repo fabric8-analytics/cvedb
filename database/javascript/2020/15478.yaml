@@ -1,0 +1,16 @@
+---
+cve: 2020-15478
+title: CVE in cmdr-journal
+description: >
+    The Journal theme before 3.1.0 for OpenCart allows exposure of sensitive data via SQL errors.
+cvss_v2: 5.0
+references:
+    - https://docs.journal-theme.com/changelog
+    - https://www.getastra.com/blog/911/plugin-exploit/sql-errors-data-exposure-in-journal-opencart-theme/
+    - https://www.jinsonvarghese.com/sensitive-data-exposure-in-journal-theme/
+affected:
+    - name: cmdr-journal
+      version:
+        - "<=3.0.0"
+      fixedin:
+        - ">=3.1.0"
