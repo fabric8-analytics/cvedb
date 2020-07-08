@@ -1,0 +1,16 @@
+---
+cve: 2020-7679
+title: CVE in analyze-objects
+description: >
+    In all versions of package casperjs, the mergeObjects utility function is susceptible to Prototype Pollution.
+cvss_v2: 7.5
+references:
+    - https://github.com/casperjs/casperjs/blob/master/modules/utils.js%23L680
+    - https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWER-572804
+    - https://snyk.io/vuln/SNYK-JS-CASPERJS-572803
+affected:
+    - name: analyze-objects
+      version:
+        []
+      fixedin:
+        - ">=0.1.0"
