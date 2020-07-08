@@ -1,0 +1,16 @@
+---
+cve: 2020-13619
+title: CVE in locutus
+description: >
+    php/exec/escapeshellarg in Locutus PHP through 2.0.11 allows an attacker to achieve code execution.
+cvss_v2: 7.5
+references:
+    - https://locutus.io/php/
+    - https://reallinkers.github.io/CVE-2020-13619/
+    - https://www.npmjs.com/package/locutus
+affected:
+    - name: locutus
+      version:
+        - "<=2.0.11"
+      fixedin:
+        []
