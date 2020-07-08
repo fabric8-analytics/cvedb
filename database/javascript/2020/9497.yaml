@@ -1,0 +1,19 @@
+---
+cve: 2020-9497
+title: CVE in guacamole-common-js
+description: >
+    Apache Guacamole 1.1.0 and older do not properly validate datareceived from RDP servers via static virtual channels. If a userconnects to a malicious or compromised RDP server, specially-craftedPDUs could result in disclosure of information within the memory ofthe guacd process handling the connection.
+cvss_v2: 4.3
+references:
+    - https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44525
+    - https://lists.apache.org/thread.html/r066543f0565e97b27c0dfe27e93e8a387b99e1e35764000224ed96e7@%3Cuser.guacamole.apache.org%3E
+    - https://lists.apache.org/thread.html/r181b1d5b1acb31cfa69f41b2c86ed3a2cb0b5bc09c2cbd31e9e7c847@%3Cuser.guacamole.apache.org%3E
+    - https://lists.apache.org/thread.html/r3f071de70ea1facd3601e0fa894e6cadc960627ee7199437b5a56f7f@%3Cannounce.apache.org%3E
+    - https://lists.apache.org/thread.html/r65f75d3d65d1af68141f42071ebb27dda24af3e45570e593c1dbd81f%40%3Cannounce.guacamole.apache.org%3E
+    - https://research.checkpoint.com/2020/apache-guacamole-rce/
+affected:
+    - name: guacamole-common-js
+      version:
+        - "<=1.1.0-b"
+      fixedin:
+        []
