@@ -1,0 +1,21 @@
+---
+cve: 2019-10172
+title: CVE in org.jboss.as:jboss-as-naming
+description: >
+    A flaw was found in org.codehaus.jackson:jackson-mapper-asl:1.9.x libraries. XML external entity vulnerabilities similar CVE-2016-3720 also affects codehaus jackson-mapper-asl libraries but in different classes.
+cvss_v2: 5.0
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-10172
+    - https://lists.apache.org/thread.html/r0066c1e862613de402fee04e81cbe00bcd64b64a2711beb9a13c3b25@%3Ccommits.cassandra.apache.org%3E
+    - https://lists.apache.org/thread.html/r25e25973e9577c62fd0221b4b52990851adf11cbe33036bd67d4b13d@%3Ccommits.cassandra.apache.org%3E
+    - https://lists.apache.org/thread.html/r37eb6579fa0bf94a72b6c978e2fee96f68a2b1b3ac1b1ce60aee86cf@%3Ccommits.cassandra.apache.org%3E
+    - https://lists.apache.org/thread.html/ra37700b842790883b9082e6b281fb7596f571b13078a4856cd38f2c2@%3Ccommits.cassandra.apache.org%3E
+    - https://lists.apache.org/thread.html/rb47911c179c9f3e8ea3f134b5645e63cd20c6fc63bd0b43ab5864bd1@%3Ccommits.cassandra.apache.org%3E
+    - https://lists.debian.org/debian-lts-announce/2020/01/msg00037.html
+affected:
+    - groupId: org.jboss.as
+      artifactId: jboss-as-naming
+      version:
+        - "<=7.0.0.Final"
+      fixedin:
+        - ">=7.0.1.Final"
