@@ -1,0 +1,16 @@
+---
+cve: 2018-14062
+title: CVE in org.ow2.jonas.jpaas.system-representation:system-representation-ejb
+description: >
+    The COSPAS-SARSAT protocol allows remote attackers to forge messages, replay encrypted messages, conduct denial of service attacks, and send private messages (unrelated to distress alerts) via a crafted 406 MHz digital signal.
+cvss_v2: 9.4
+references:
+    - https://conference.hitb.org/hitbsecconf2019ams/materials/D1T1%20-%20The%20Birdman%20and%20Cospas-Sarsat%20Satellites%20-%20Hao%20Jingli.pdf
+    - https://conference.hitb.org/hitbsecconf2019ams/sessions/the-birdman-hacking-cospas-sarsat-satellites/
+affected:
+    - groupId: org.ow2.jonas.jpaas.system-representation
+      artifactId: system-representation-ejb
+      version:
+        []
+      fixedin:
+        - ">=1.0.0-M1"
