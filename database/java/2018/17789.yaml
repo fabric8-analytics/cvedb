@@ -1,0 +1,15 @@
+---
+cve: 2018-17789
+title: CVE in io.fabric8.online.packages:fabric8-online-team-test
+description: >
+    Prospecta Master Data Online (MDO) allows CSRF.
+cvss_v2: 4.3
+references:
+    - http://packetstormsecurity.com/files/154498/Master-Data-Online-Cross-Site-Request-Forgery-Data-Tampering.html
+affected:
+    - groupId: io.fabric8.online.packages
+      artifactId: fabric8-online-team-test
+      version:
+        []
+      fixedin:
+        - ">=1.0.165"
