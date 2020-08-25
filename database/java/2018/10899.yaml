@@ -1,0 +1,19 @@
+---
+cve: 2018-10899
+title: CVE in org.jolokia:jolokia-osgi
+description: >
+    A flaw was found in Jolokia versions from 1.2 to before 1.6.1. Affected versions are vulnerable to a system-wide CSRF. This holds true for properly configured instances with strict checking for origin and referrer headers. This could result in a Remote Code Execution attack.
+cvss_v2: 6.8
+references:
+    - https://access.redhat.com/errata/RHSA-2019:2413
+    - https://access.redhat.com/errata/RHSA-2019:2804
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-10899
+    - https://jolokia.org/changes-report.html#a1.6.1
+affected:
+    - groupId: org.jolokia
+      artifactId: jolokia-osgi
+      version:
+        - "<=1.6.0,1.2.0"
+      fixedin:
+        - ">=1.6.1"
+        - "<=1.1.5,1.0.0"
