@@ -1,0 +1,14 @@
+---
+cve: 2020-7686
+title: CVE in rollup-plugin-server
+description: >
+    This affects all versions of package rollup-plugin-dev-server. There is no path sanitization in readFile operation inside the readFileFromContentBase function.
+cvss_v2: 5.0
+references:
+    - https://snyk.io/vuln/SNYK-JS-ROLLUPPLUGINDEVSERVER-590124
+affected:
+    - name: rollup-plugin-server
+      version:
+        []
+      fixedin:
+        - ">=0.6.0"
