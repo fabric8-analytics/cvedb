@@ -10,6 +10,6 @@ references:
 affected:
     - name: uvicorn
       version:
-        []
+        - "<=0.11.6"
       fixedin:
-        - ">=0.0.1"
+        - ">=0.11.7"
