@@ -6,6 +6,7 @@ description: >
 cvss_v2: 4.3
 references:
     - https://github.com/mozilla/bleach/security/advisories/GHSA-m6xf-fq7q-8743
+    - https://www.checkmarx.com/blog/vulnerabilities-discovered-in-mozilla-bleach
 affected:
     - name: bleach
       version:
