@@ -1,0 +1,17 @@
+---
+cve: 2018-21036
+title: CVE in sails-hook-sockets
+description: >
+    Sails.js before v1.0.0-46 allows attackers to cause a denial of service with a single request because there is no error handler in sails-hook-sockets to handle an empty pathname in a WebSocket request.
+cvss_v2: 5.0
+references:
+    - http://www.openwall.com/lists/oss-security/2020/07/19/1
+    - https://github.com/balderdashy/sails/blob/56f8276f6501a144a03d1f0f28df4ccdb4ad82e2/CHANGELOG.md
+    - https://github.com/balderdashy/sails-hook-sockets/commit/0533a4864b1920fd8fbb5287bc0889193c5faf44
+    - https://github.com/balderdashy/sails-hook-sockets/commit/ff02114eaec090ee51db48435cc32d451662606e
+affected:
+    - name: sails-hook-sockets
+      version:
+        - "<=1.5.4"
+      fixedin:
+        - ">=1.5.5"
