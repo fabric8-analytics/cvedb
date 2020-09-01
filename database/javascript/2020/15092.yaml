@@ -10,6 +10,6 @@ references:
 affected:
     - name: @knight-lab/timelinejs
       version:
-        []
+        - "<=3.6.6"
       fixedin:
         - ">=3.7.0"
