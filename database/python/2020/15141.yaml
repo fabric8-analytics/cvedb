@@ -1,0 +1,17 @@
+---
+cve: 2020-15141
+title: CVE in openapi-python-client
+description: >
+    In openapi-python-client before version 0.5.3, there is a path traversal vulnerability. If a user generated a client using a maliciously crafted OpenAPI document, it is possible for generated files to be placed in arbitrary locations on disk.
+cvss_v2: 4.0
+references:
+    - https://github.com/triaxtec/openapi-python-client/blob/main/CHANGELOG.md#053---2020-08-13
+    - https://github.com/triaxtec/openapi-python-client/commit/3e7dfae5d0b3685abf1ede1bc6c086a116ac4746
+    - https://github.com/triaxtec/openapi-python-client/security/advisories/GHSA-7wgr-7666-7pwj
+    - https://pypi.org/project/openapi-python-client
+affected:
+    - name: openapi-python-client
+      version:
+        - "<=0.5.2"
+      fixedin:
+        - ">=0.5.3"
