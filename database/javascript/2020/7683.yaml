@@ -9,6 +9,6 @@ references:
 affected:
     - name: rollup-plugin-server
       version:
-        []
+        - "<=0.7.0"
       fixedin:
-        - ">=0.6.0"
+        []
