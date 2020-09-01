@@ -1,0 +1,16 @@
+---
+cve: 2020-15095
+title: CVE in npm
+description: >
+    Versions of the npm CLI prior to 6.14.6 are vulnerable to an information exposure vulnerability through log files. The CLI supports URLs like "<protocol>://[<user>[:<password>]@]<hostname>[:<port>][:][/]<path>". The password value is not redacted and is printed to stdout and also to any generated log files.
+cvss_v2: 2.1
+references:
+    - https://github.com/npm/cli/blob/66aab417f836a901f8afb265251f761bb0422463/CHANGELOG.md#6146-2020-07-07
+    - https://github.com/npm/cli/commit/a9857b8f6869451ff058789c4631fadfde5bbcbc
+    - https://github.com/npm/cli/security/advisories/GHSA-93f3-23rq-pjfp
+affected:
+    - name: npm
+      version:
+        - "<=6.14.5"
+      fixedin:
+        - ">=6.14.6"
