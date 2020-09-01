@@ -1,0 +1,15 @@
+---
+cve: 2020-7695
+title: CVE in uvicorn
+description: >
+    Uvicorn before 0.11.7 is vulnerable to HTTP response splitting. CRLF sequences are not escaped in the value of HTTP headers. Attackers can exploit this to add arbitrary headers to HTTP responses, or even return an arbitrary response body, whenever crafted input is used to construct HTTP headers.
+cvss_v2: 5.0
+references:
+    - https://github.com/encode/uvicorn
+    - https://snyk.io/vuln/SNYK-PYTHON-UVICORN-570471
+affected:
+    - name: uvicorn
+      version:
+        - "<=0.11.6"
+      fixedin:
+        - ">=0.11.7"
