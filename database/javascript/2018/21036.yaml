@@ -12,6 +12,6 @@ references:
 affected:
     - name: sails-hook-sockets
       version:
-        - "<=0.13.14"
+        - "<=1.5.4"
       fixedin:
-        - ">=1.0.1"
+        - ">=1.5.5"
