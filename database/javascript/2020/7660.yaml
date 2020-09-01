@@ -1,0 +1,14 @@
+---
+cve: 2020-7660
+title: CVE in serialize-javascript
+description: >
+    serialize-javascript prior to 3.1.0 allows remote attackers to inject arbitrary code via the function "deleteFunctions" within "index.js".
+cvss_v2: 6.8
+references:
+    - https://github.com/yahoo/serialize-javascript/commit/f21a6fb3ace2353413761e79717b2d210ba6ccbd
+affected:
+    - name: serialize-javascript
+      version:
+        - "<=3.0.0"
+      fixedin:
+        - ">=3.1.0"
