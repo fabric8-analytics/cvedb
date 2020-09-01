@@ -1,0 +1,15 @@
+---
+cve: 2020-15140
+title: CVE in Red-DiscordBot
+description: >
+    In Red Discord Bot before version 3.3.11, a RCE exploit has been discovered in the Trivia module: this exploit allows Discord users with specifically crafted usernames to inject code into the Trivia module's leaderboard command. By abusing this exploit, it's possible to perform destructive actions and/or access sensitive information. This critical exploit has been fixed on version 3.3.11.
+cvss_v2: 5.5
+references:
+    - https://github.com/Cog-Creators/Red-DiscordBot/pull/4175/commits/9ab536235bafc2b42c3c17d7ce26f1cc64482a81
+    - https://github.com/Cog-Creators/Red-DiscordBot/security/advisories/GHSA-55j9-849x-26h4
+affected:
+    - name: Red-DiscordBot
+      version:
+        - "<=3.3.10"
+      fixedin:
+        - ">=3.3.11"
