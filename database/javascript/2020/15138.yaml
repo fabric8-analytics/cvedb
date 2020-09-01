@@ -11,6 +11,6 @@ references:
 affected:
     - name: prismjs
       version:
-        []
+        - "<=1.20.0,1.1.0"
       fixedin:
-        - ">=0.0.1"
+        - ">=1.21.0"
