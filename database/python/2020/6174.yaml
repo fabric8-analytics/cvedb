@@ -1,0 +1,14 @@
+---
+cve: 2020-6174
+title: CVE in tuf
+description: >
+    TUF (aka The Update Framework) through 0.12.1 has Improper Verification of a Cryptographic Signature.
+cvss_v2: 7.5
+references:
+    - https://github.com/theupdateframework/tuf/pull/974
+affected:
+    - name: tuf
+      version:
+        - "<=0.12.1"
+      fixedin:
+        - ">=0.12.2"
