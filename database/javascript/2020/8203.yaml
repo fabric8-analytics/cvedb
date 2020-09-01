@@ -1,0 +1,16 @@
+---
+cve: 2020-8203
+title: CVE in lodash
+description: >
+    Prototype pollution attack when using _.zipObjectDeep in lodash <= 4.17.15.
+cvss_v2: 5.8
+references:
+    - https://github.com/lodash/lodash/issues/4874
+    - https://hackerone.com/reports/712065
+    - https://security.netapp.com/advisory/ntap-20200724-0006/
+affected:
+    - name: lodash
+      version:
+        - "<=4.17.19"
+      fixedin:
+        - ">=4.17.20"
