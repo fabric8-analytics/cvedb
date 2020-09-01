@@ -1,0 +1,17 @@
+---
+cve: 2020-15126
+title: CVE in parse-server
+description: >
+    In parser-server from version 3.5.0 and before 4.3.0, an authenticated user using the viewer GraphQL query can by pass all read security on his User object and can also by pass all objects linked via relation or Pointer on his User object.
+cvss_v2: 4.0
+references:
+    - https://github.com/parse-community/parse-server/blob/master/CHANGELOG.md#430
+    - https://github.com/parse-community/parse-server/commit/78239ac9071167fdf243c55ae4bc9a2c0b0d89aa
+    - https://github.com/parse-community/parse-server/security/advisories/GHSA-236h-rqv8-8q73
+affected:
+    - name: parse-server
+      version:
+        - "<=4.2.0,3.5.0"
+      fixedin:
+        - ">=4.3.0"
+        - "<=3.4.4,1.0.0"
