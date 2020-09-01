@@ -13,4 +13,4 @@ affected:
       version:
         - "<=1.0.4"
       fixedin:
-        - ">=1.0.6"
+        - ">=1.0.7"
