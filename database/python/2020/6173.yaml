@@ -1,0 +1,15 @@
+---
+cve: 2020-6173
+title: CVE in tuf
+description: >
+    TUF (aka The Update Framework) 0.7.2 through 0.12.1 allows Uncontrolled Resource Consumption.
+cvss_v2: 5.0
+references:
+    - https://github.com/theupdateframework/tuf/commits/develop
+    - https://github.com/theupdateframework/tuf/issues/973
+affected:
+    - name: tuf
+      version:
+        - "<=0.12.1"
+      fixedin:
+        - ">=0.12.2"
