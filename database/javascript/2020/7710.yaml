@@ -10,6 +10,6 @@ references:
 affected:
     - name: safe-eval
       version:
-        []
+        - "0.4.1"
       fixedin:
-        - ">=0.0.0"
+        []
