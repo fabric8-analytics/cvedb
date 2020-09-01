@@ -1,0 +1,17 @@
+---
+cve: 2020-15779
+title: CVE in socket.io-file
+description: >
+    A Path Traversal issue was discovered in the socket.io-file package through 2.0.31 for Node.js. The socket.io-file::createFile message uses path.join with ../ in the name option, and the uploadDir and rename options determine the path.
+cvss_v2: 5.0
+references:
+    - https://github.com/advisories/GHSA-9h4g-27m8-qjrg
+    - https://github.com/rico345100/socket.io-file
+    - https://www.npmjs.com/advisories/1519
+    - https://www.npmjs.com/package/socket.io-file
+affected:
+    - name: socket.io-file
+      version:
+        - "<=2.0.31"
+      fixedin:
+        []
