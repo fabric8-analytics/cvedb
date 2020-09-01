@@ -16,6 +16,6 @@ references:
 affected:
     - name: @novnc/novnc
       version:
-        []
+        - "<=0.6.1"
       fixedin:
         - ">=1.0.0-beta"
