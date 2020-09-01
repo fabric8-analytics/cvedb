@@ -11,6 +11,6 @@ references:
 affected:
     - name: nodebb-plugin-blog-comments
       version:
-        []
+        - "<=0.6.3"
       fixedin:
-        - ">=0.0.1"
+        - ">=0.7.0"
