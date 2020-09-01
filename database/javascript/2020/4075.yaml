@@ -1,0 +1,20 @@
+---
+cve: 2020-4075
+title: CVE in electron
+description: >
+    In Electron before versions 7.2.4, 8.2.4, and 9.0.0-beta21, arbitrary local file read is possible by defining unsafe window options on a child window opened via window.open. As a workaround, ensure you are calling `event.preventDefault()` on all new-window events where the `url` or `options` is not something you expect. This is fixed in versions 9.0.0-beta.21, 8.2.4 and 7.2.4.
+cvss_v2: 2.1
+references:
+    - https://github.com/electron/electron/security/advisories/GHSA-f9mq-jph6-9mhm
+    - https://www.electronjs.org/releases/stable?page=3#release-notes-for-v824
+affected:
+    - name: electron
+      version:
+        - "<=7.2.3,7.0.0-beta.1"
+        - "<=8.2.3,8.0.0-beta.1"
+        - "<=9.0.0,9.0.0-beta.1"
+      fixedin:
+        - ">=9.0.1"
+        - "<=8.5.0,8.2.4"
+        - "<=7.3.3,7.2.4"
+        - "<=6.1.12,0.1.0"
