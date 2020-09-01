@@ -1,0 +1,17 @@
+---
+cve: 2020-7689
+title: CVE in bcrypt
+description: >
+    Data is truncated wrong when its length is greater than 255 bytes.
+cvss_v2: 4.3
+references:
+    - https://github.com/kelektiv/node.bcrypt.js/issues/776
+    - https://github.com/kelektiv/node.bcrypt.js/pull/806
+    - https://github.com/kelektiv/node.bcrypt.js/pull/807
+    - https://snyk.io/vuln/SNYK-JS-BCRYPT-572911
+affected:
+    - name: bcrypt
+      version:
+        - "<=4.0.1"
+      fixedin:
+        - ">=5.0.0"
