@@ -1,0 +1,14 @@
+---
+cve: 2020-11981
+title: CVE in apache-airflow
+description: >
+    An issue was found in Apache Airflow versions 1.10.10 and below. When using CeleryExecutor, if an attacker can connect to the broker (Redis, RabbitMQ) directly, it is possible to inject commands, resulting in the celery worker running arbitrary commands.
+cvss_v2: 7.5
+references:
+    - https://lists.apache.org/thread.html/r7255cf0be3566f23a768e2a04b40fb09e52fcd1872695428ba9afe91%40%3Cusers.airflow.apache.org%3E
+affected:
+    - name: apache-airflow
+      version:
+        - "<=1.10.10"
+      fixedin:
+        - ">=1.10.11rc1"
