@@ -1,0 +1,14 @@
+---
+cve: 2020-15119
+title: CVE in auth0-lock
+description: >
+    In auth0-lock versions before and including 11.25.1, dangerouslySetInnerHTML is used to update the DOM. When dangerouslySetInnerHTML is used, the application and its users might be exposed to cross-site scripting (XSS) attacks.
+cvss_v2: 3.5
+references:
+    - https://github.com/auth0/lock/security/advisories/GHSA-6gg3-pmm7-97xc
+affected:
+    - name: auth0-lock
+      version:
+        - "<=11.25.1"
+      fixedin:
+        - ">=11.26.0"
