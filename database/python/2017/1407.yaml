@@ -1,0 +1,16 @@
+---
+cve: 2017-1407
+title: CVE in hearthsim-identity
+description: >
+    IBM Security Identity Manager Virtual Appliance 6.0 and 7.0 could allow a remote authenticated attacker to execute arbitrary commands on the system. By sending a specially-crafted request, an attacker could exploit this vulnerability to execute arbitrary commands on the system. IBM X-Force ID: 127394.
+cvss_v2: 9.0
+references:
+    - http://www.ibm.com/support/docview.wss?uid=swg22007377
+    - http://www.securityfocus.com/bid/101015
+    - https://exchange.xforce.ibmcloud.com/vulnerabilities/127394
+affected:
+    - name: hearthsim-identity
+      version:
+        - "<=2.0.0.post1"
+      fixedin:
+        - ">=2.1.0"
