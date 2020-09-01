@@ -1,0 +1,21 @@
+---
+cve: 2017-18635
+title: CVE in @novnc/novnc
+description: >
+    An XSS vulnerability was discovered in noVNC before 0.6.2 in which the remote VNC server could inject arbitrary HTML into the noVNC web page via the messages propagated to the status field, such as the VNC server name.
+cvss_v2: 4.3
+references:
+    - https://access.redhat.com/errata/RHSA-2020:0754
+    - https://bugs.launchpad.net/horizon/+bug/1656435
+    - https://github.com/novnc/noVNC/commit/6048299a138e078aed210f163111698c8c526a13#diff-286f7dc7b881e942e97cd50c10898f03L534
+    - https://github.com/novnc/noVNC/issues/748
+    - https://github.com/novnc/noVNC/releases/tag/v0.6.2
+    - https://github.com/ShielderSec/cve-2017-18635
+    - https://lists.debian.org/debian-lts-announce/2019/10/msg00004.html
+    - https://www.shielder.it/blog/exploiting-an-old-novnc-xss-cve-2017-18635-in-openstack/
+affected:
+    - name: @novnc/novnc
+      version:
+        - "<=0.6.1"
+      fixedin:
+        - ">=1.0.0-beta"
