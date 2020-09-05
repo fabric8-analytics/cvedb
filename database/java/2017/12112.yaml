@@ -1,0 +1,16 @@
+---
+cve: 2017-12112
+title: CVE in com.google.api.client:google-api-client-googleapis-json
+description: >
+    An exploitable improper authorization vulnerability exists in admin_addPeer API of cpp-ethereum's JSON-RPC (commit 4e1015743b95821849d001618a7ce82c7c073768). A JSON request can cause an access to the restricted functionality resulting in authorization bypass. An attacker can send JSON to trigger this vulnerability.
+cvss_v2: 6.8
+references:
+    - http://www.securityfocus.com/bid/102475
+    - https://www.talosintelligence.com/vulnerability_reports/TALOS-2017-0464
+affected:
+    - groupId: com.google.api.client
+      artifactId: google-api-client-googleapis-json
+      version:
+        []
+      fixedin:
+        - ">=1.0.6-alpha"
