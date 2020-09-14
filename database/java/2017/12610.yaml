@@ -1,0 +1,20 @@
+---
+cve: 2017-12610
+title: CVE in org.apache.kafka:kafka_2.11
+description: >
+    In Apache Kafka 0.10.0.0 to 0.10.2.1 and 0.11.0.0 to 0.11.0.1, authenticated Kafka clients may use impersonation via a manually crafted protocol message with SASL/PLAIN or SASL/SCRAM authentication when using the built-in PLAIN or SCRAM server implementations in Apache Kafka.
+cvss_v2: 4.9
+references:
+    - http://www.securityfocus.com/bid/104899
+    - https://lists.apache.org/thread.html/b0656d359c7d40ec9f39c8cc61bca66802ef9a2a12ee199f5b0c1442@%3Cdev.drill.apache.org%3E
+    - https://lists.apache.org/thread.html/b6157be1a09df332294213bd21e90dcf9fe4c1810193be54620e4210@%3Cusers.kafka.apache.org%3E
+affected:
+    - groupId: org.apache.kafka
+      artifactId: kafka_2.11
+      version:
+        - "<=0.10.2.1,0.10.0.0"
+        - "<=0.11.0.1,0.11.0.0"
+      fixedin:
+        - ">=0.11.0.2"
+        - "<=0.10.2.2,0.10.2.2"
+        - "<=0.9.0.1,0.8.2-beta"
