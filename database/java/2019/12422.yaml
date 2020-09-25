@@ -1,0 +1,16 @@
+---
+cve: 2019-12422
+title: CVE in org.apache.shiro:shiro-web
+description: >
+    Apache Shiro before 1.4.2, when using the default "remember me" configuration, cookies could be susceptible to a padding attack.
+cvss_v2: 5.0
+references:
+    - https://lists.apache.org/thread.html/c9db14cfebfb8e74205884ed2bf2e2b30790ce24b7dde9191c82572c@%3Cdev.shiro.apache.org%3E
+    - https://lists.apache.org/thread.html/r2d2612c034ab21a3a19d2132d47d3e4aa70105008dd58af62b653040@%3Ccommits.shiro.apache.org%3E
+affected:
+    - groupId: org.apache.shiro
+      artifactId: shiro-web
+      version:
+        - "<=1.4.1"
+      fixedin:
+        - ">=1.4.2"
