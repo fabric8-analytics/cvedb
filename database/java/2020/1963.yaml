@@ -1,0 +1,19 @@
+---
+cve: 2020-1963
+title: CVE in org.apache.ignite:ignite-yarn
+description: >
+    Apache Ignite uses H2 database to build SQL distributed execution engine. H2 provides SQL functions which could be used by attacker to access to a filesystem.
+cvss_v2: 6.4
+references:
+    - http://www.openwall.com/lists/oss-security/2020/06/03/2
+    - https://lists.apache.org/thread.html/r1933faf8a26c431f38a5f8dbbfab80254454e54e33a79be474b67dc4%40%3Cdev.ignite.apache.org%3E
+    - https://lists.apache.org/thread.html/rdf37011b92a31a67c299ff45655e2638f194fc814e5c6e2fde352884@%3Cdev.ignite.apache.org%3E
+    - https://lists.apache.org/thread.html/rdf37011b92a31a67c299ff45655e2638f194fc814e5c6e2fde352884@%3Cuser.ignite.apache.org%3E
+    - https://lists.apache.org/thread.html/rf032a13a4711f88c0a2c0734eecbee1026cc1b6cde27d16a653f8755@%3Cdev.ignite.apache.org%3E
+affected:
+    - groupId: org.apache.ignite
+      artifactId: ignite-yarn
+      version:
+        - "<=2.8.0"
+      fixedin:
+        - ">=2.8.1"
