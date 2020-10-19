@@ -1,0 +1,17 @@
+---
+cve: 2018-20242
+title: CVE in org.apache.jspwiki.wikipages:jspwiki-wikipages-it
+description: >
+    A carefully crafted URL could trigger an XSS vulnerability on Apache JSPWiki, from versions up to 2.10.5, which could lead to session hijacking.
+cvss_v2: 4.3
+references:
+    - http://www.securityfocus.com/bid/106804
+    - https://lists.apache.org/thread.html/8ee4644432c0a433c5c514a57d940cf6dcb0a0094acd97b36290f0b4@%3Cuser.jspwiki.apache.org%3E
+    - https://lists.apache.org/thread.html/e42d6e93384d4a33e939989cd00ea2a06ccf1e7bb1e6bdd3bf5187c1@%3Ccommits.jspwiki.apache.org%3E
+affected:
+    - groupId: org.apache.jspwiki.wikipages
+      artifactId: jspwiki-wikipages-it
+      version:
+        - "<=2.10.5"
+      fixedin:
+        - ">=2.11.0.M1"
