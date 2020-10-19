@@ -1,0 +1,19 @@
+---
+cve: 2014-8361
+title: CVE in org.jomc.sdk:jomc-sdk
+description: >
+    The miniigd SOAP service in Realtek SDK allows remote attackers to execute arbitrary code via a crafted NewInternalClient request.
+cvss_v2: 10.0
+references:
+    - http://packetstormsecurity.com/files/132090/Realtek-SDK-Miniigd-UPnP-SOAP-Command-Execution.html
+    - http://securityadvisories.dlink.com/security/publication.aspx?name=SAP10055
+    - http://www.securityfocus.com/bid/74330
+    - http://www.zerodayinitiative.com/advisories/ZDI-15-155/
+    - https://www.exploit-db.com/exploits/37169/
+affected:
+    - groupId: org.jomc.sdk
+      artifactId: jomc-sdk
+      version:
+        []
+      fixedin:
+        - ">=1.0-alpha-7"
