@@ -1,0 +1,18 @@
+---
+cve: 2020-7238
+title: CVE in io.netty:netty-common
+description: >
+    Netty 4.1.43.Final allows HTTP Request Smuggling because it mishandles Transfer-Encoding whitespace (such as a [space]Transfer-Encoding:chunked line) and a later Content-Length header. This issue exists because of an incomplete fix for CVE-2019-16869.
+cvss_v2: 5.0
+references:
+    - https://access.redhat.com/errata/RHSA-2020:0497
+    - https://github.com/jdordonezn/CVE-2020-72381/issues/1
+    - https://netty.io/news/
+affected:
+    - groupId: io.netty
+      artifactId: netty-common
+      version:
+        - "<=4.1.43.Final,4.1.43.Final"
+      fixedin:
+        - ">=4.1.44.Final"
+        - "<=4.1.42.Final,4.0.0.Alpha1"
