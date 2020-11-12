@@ -1,0 +1,15 @@
+---
+cve: 2020-13445
+title: CVE in com.liferay.portal:release.portal.api
+description: >
+    In Liferay Portal before 7.3.2 and Liferay DXP 7.0 before fix pack 92, 7.1 before fix pack 18, and 7.2 before fix pack 6, the template API does not restrict user access to sensitive objects, which allows remote authenticated users to execute arbitrary code via crafted FreeMarker and Velocity templates.
+cvss_v2: 6.5
+references:
+    - https://portal.liferay.dev/learn/security/known-vulnerabilities/-/asset_publisher/HbL5mxmVrnXW/content/id/119317411
+affected:
+    - groupId: com.liferay.portal
+      artifactId: release.portal.api
+      version:
+        - "<=7.2.0"
+      fixedin:
+        - ">=7.3.1"
