@@ -1,0 +1,22 @@
+---
+cve: 2016-0749
+title: CVE in spice:spice-netserve
+description: >
+    The smartcard interaction in SPICE allows remote attackers to cause a denial of service (QEMU-KVM process crash) or possibly execute arbitrary code via vectors related to connecting to a guest VM, which triggers a heap-based buffer overflow.
+cvss_v2: 10.0
+references:
+    - http://lists.opensuse.org/opensuse-updates/2016-07/msg00003.html
+    - http://lists.opensuse.org/opensuse-updates/2016-07/msg00004.html
+    - http://www.debian.org/security/2016/dsa-3596
+    - http://www.oracle.com/technetwork/topics/security/linuxbulletinapr2016-2952096.html
+    - http://www.ubuntu.com/usn/USN-3014-1
+    - https://access.redhat.com/errata/RHSA-2016:1204
+    - https://access.redhat.com/errata/RHSA-2016:1205
+    - https://security.gentoo.org/glsa/201606-05
+affected:
+    - groupId: spice
+      artifactId: spice-netserve
+      version:
+        []
+      fixedin:
+        - ">=1.0-b1"
