@@ -1,0 +1,17 @@
+---
+cve: 2019-1010180
+title: CVE in net.sf.gnu-hylafax:gnu-hylafax-inet-ftp
+description: >
+    GNU gdb All versions is affected by: Buffer Overflow - Out of bound memory access. The impact is: Deny of Service, Memory Disclosure, and Possible Code Execution. The component is: The main gdb module. The attack vector is: Open an ELF for debugging. The fixed version is: Not fixed yet.
+cvss_v2: 6.8
+references:
+    - http://lists.opensuse.org/opensuse-security-announce/2019-10/msg00072.html
+    - http://www.securityfocus.com/bid/109367
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=23657
+affected:
+    - groupId: net.sf.gnu-hylafax
+      artifactId: gnu-hylafax-inet-ftp
+      version:
+        []
+      fixedin:
+        - ">=1.0.0-b1"
