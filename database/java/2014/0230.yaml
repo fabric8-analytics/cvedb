@@ -1,0 +1,52 @@
+---
+cve: 2014-0230
+title: CVE in org.apache.tomcat:tomcat-jasper
+description: >
+    Apache Tomcat 6.x before 6.0.44, 7.x before 7.0.55, and 8.x before 8.0.9 does not properly handle cases where an HTTP response occurs before finishing the reading of an entire request body, which allows remote attackers to cause a denial of service (thread consumption) via a series of aborted upload attempts.
+cvss_v2: 7.8
+references:
+    - http://mail-archives.apache.org/mod_mbox/tomcat-announce/201505.mbox/%3C554949D1.8030904%40apache.org%3E
+    - http://marc.info/?l=bugtraq&m=144498216801440&w=2
+    - http://marc.info/?l=bugtraq&m=145974991225029&w=2
+    - http://openwall.com/lists/oss-security/2015/04/10/1
+    - http://rhn.redhat.com/errata/RHSA-2015-1621.html
+    - http://rhn.redhat.com/errata/RHSA-2015-1622.html
+    - http://rhn.redhat.com/errata/RHSA-2015-2661.html
+    - http://rhn.redhat.com/errata/RHSA-2016-0595.html
+    - http://rhn.redhat.com/errata/RHSA-2016-0596.html
+    - http://rhn.redhat.com/errata/RHSA-2016-0597.html
+    - http://rhn.redhat.com/errata/RHSA-2016-0598.html
+    - http://rhn.redhat.com/errata/RHSA-2016-0599.html
+    - http://svn.apache.org/viewvc?view=revision&revision=1603770
+    - http://svn.apache.org/viewvc?view=revision&revision=1603775
+    - http://svn.apache.org/viewvc?view=revision&revision=1603779
+    - http://tomcat.apache.org/security-6.html
+    - http://tomcat.apache.org/security-7.html
+    - http://tomcat.apache.org/security-8.html
+    - http://www.debian.org/security/2016/dsa-3447
+    - http://www.debian.org/security/2016/dsa-3530
+    - http://www.oracle.com/technetwork/security-advisory/cpujul2018-4258247.html
+    - http://www.oracle.com/technetwork/topics/security/bulletinoct2015-2511968.html
+    - http://www.oracle.com/technetwork/topics/security/cpujul2015-2367936.html
+    - http://www.securityfocus.com/bid/74475
+    - http://www.ubuntu.com/usn/USN-2654-1
+    - http://www.ubuntu.com/usn/USN-2655-1
+    - https://access.redhat.com/errata/RHSA-2015:2659
+    - https://access.redhat.com/errata/RHSA-2015:2660
+    - https://h20564.www2.hpe.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c04851013
+    - https://h20566.www2.hpe.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c05054964
+    - https://issues.jboss.org/browse/JWS-219
+    - https://issues.jboss.org/browse/JWS-220
+    - https://lists.apache.org/thread.html/37220405a377c0182d2afdbc36461c4783b2930fbeae3a17f1333113@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/39ae1f0bd5867c15755a6f959b271ade1aea04ccdc3b2e639dcd903b@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/b84ad1258a89de5c9c853c7f2d3ad77e5b8b2930be9e132d5cef6b95@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/b8a1bf18155b552dcf9a928ba808cbadad84c236d85eab3033662cfb@%3Cdev.tomcat.apache.org%3E
+affected:
+    - groupId: org.apache.tomcat
+      artifactId: tomcat-jasper
+      version:
+        - "<=7.0.54"
+        - "<=8.0.8,8.0.0-RC1"
+      fixedin:
+        - ">=8.0.9"
+        - "<=7.0.94,7.0.55"
