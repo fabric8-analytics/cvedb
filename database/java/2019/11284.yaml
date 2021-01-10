@@ -1,0 +1,15 @@
+---
+cve: 2019-11284
+title: CVE in io.projectreactor.netty:reactor-netty
+description: >
+    Pivotal Reactor Netty, versions prior to 0.8.11, passes headers through redirects, including authorization ones. A remote unauthenticated malicious user may gain access to credentials for a different server than they have access to.
+cvss_v2: 5.0
+references:
+    - https://pivotal.io/security/cve-2019-11284
+affected:
+    - groupId: io.projectreactor.netty
+      artifactId: reactor-netty
+      version:
+        - "<=0.8.10.RELEASE"
+      fixedin:
+        - ">=0.8.11.RELEASE"
