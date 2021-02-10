@@ -1,0 +1,17 @@
+---
+cve: 2011-4941
+title: CVE in org.piwik.java.tracking:piwik-java-tracker
+description: >
+    Unspecified vulnerability in Piwik 1.2 through 1.4 allows remote attackers with the view permission to execute arbitrary code via unknown attack vectors.
+cvss_v2: 6.8
+references:
+    - http://piwik.org/blog/2011/06/piwik-1-5-security-advisory/
+    - http://www.openwall.com/lists/oss-security/2012/03/18/1
+    - http://www.openwall.com/lists/oss-security/2012/03/19/8
+affected:
+    - groupId: org.piwik.java.tracking
+      artifactId: piwik-java-tracker
+      version:
+        - "<=1.2,1.2"
+      fixedin:
+        - "<=1.1,1.0"
