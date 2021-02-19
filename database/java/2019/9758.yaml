@@ -1,0 +1,16 @@
+---
+cve: 2019-9758
+title: CVE in org.labkey:labkey-client-api
+description: >
+    An issue was discovered in LabKey Server 19.1.0. The display name of a user is vulnerable to stored XSS that can execute on administrators from security/permissions.view, security/addUsers.view, or wiki/Administration/page.view in the admin panel, leading to privilege escalation.
+cvss_v2: 3.5
+references:
+    - https://github.com/RhinoSecurityLabs/CVEs/tree/master/CVE-2019-9758
+    - https://rhinosecuritylabs.com/application-security/labkey-server-vulnerabilities-to-rce
+affected:
+    - groupId: org.labkey
+      artifactId: labkey-client-api
+      version:
+        - "<=19.1.0,19.1.0"
+      fixedin:
+        - "<=18.2,0.1"
