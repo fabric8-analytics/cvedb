@@ -1,0 +1,35 @@
+---
+cve: 2017-15706
+title: CVE in org.apache.tomcat:tomcat-jasper
+description: >
+    As part of the fix for bug 61201, the documentation for Apache Tomcat 9.0.0.M22 to 9.0.1, 8.5.16 to 8.5.23, 8.0.45 to 8.0.47 and 7.0.79 to 7.0.82 included an updated description of the search algorithm used by the CGI Servlet to identify which script to execute. The update was not correct. As a result, some scripts may have failed to execute as expected and other scripts may have been executed unexpectedly. Note that the behaviour of the CGI servlet has remained unchanged in this regard. It is only the documentation of the behaviour that was wrong and has been corrected.
+cvss_v2: 5.0
+references:
+    - http://www.securityfocus.com/bid/103069
+    - https://lists.apache.org/thread.html/1dd0a59c1295cc08ce4c9e7edae5ad2268acc9ba55adcefa0532e5ba@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/343558d982879bf88ec20dbf707f8c11255f8e219e81d45c4f8d0551@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/388a323769f1dff84c9ec905455aa73fbcb20338e3c7eb131457f708@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/3d19773b4cf0377db62d1e9328bf9160bf1819f04f988315086931d7@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/5c0e00fd31efc11e147bf99d0f03c00a734447d3b131ab0818644cdb@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/6af47120905aa7d8fe12f42e8ff2284fb338ba141d3b77b8c7cb61b3@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/845312a10aabbe2c499fca94003881d2c79fc993d85f34c1f5c77424@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/88855876c33f2f9c532ffb75bfee570ccf0b17ffa77493745af9a17a@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/b5e3f51d28cd5d9b1809f56594f2cf63dcd6a90429e16ea9f83bbedc@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/e1ef853fc0079cdb55befbd2dac042934e49288b476d5f6a649e5da2@%3Cannounce.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/e85e83e9954f169bbb77b44baae5a33d8de878df557bb32b7f793661@%3Cdev.tomcat.apache.org%3E
+    - https://lists.apache.org/thread.html/eb6efa8d59c45a7a9eff94c4b925467d3b3fec8ba7697f3daa314b04@%3Cdev.tomcat.apache.org%3E
+    - https://usn.ubuntu.com/3665-1/
+affected:
+    - groupId: org.apache.tomcat
+      artifactId: tomcat-jasper
+      version:
+        - "<=7.0.82,7.0.79"
+        - "<=8.0.47,8.0.45"
+        - "<=8.5.23,8.5.16"
+        - "<=9.0.1,9.0.0.M1"
+      fixedin:
+        - ">=9.0.2"
+        - "<=8.5.40,8.5.24"
+        - "<=8.5.15,8.0.48"
+        - "<=8.0.44,7.0.84"
+        - "<=7.0.78,7.0.0"
