@@ -1,0 +1,16 @@
+---
+cve: 2018-10857
+title: CVE in io.github.svndump-to-git:repository-tools-common-git
+description: >
+    git-annex is vulnerable to a private data exposure and exfiltration attack. It could expose the content of files located outside the git-annex repository, or content from a private web server on localhost or the LAN.
+cvss_v2: 5.0
+references:
+    - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-10857
+    - https://lists.debian.org/debian-lts-announce/2018/09/msg00004.html
+affected:
+    - groupId: io.github.svndump-to-git
+      artifactId: repository-tools-common-git
+      version:
+        []
+      fixedin:
+        - ">=1.0"
